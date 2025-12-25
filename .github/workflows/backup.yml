@@ -1,0 +1,51 @@
+name: Backup Sourceforge
+
+on:
+  schedule:
+  - cron: "9/15 * * * *"
+  workflow_dispatch:
+
+permissions: {}
+
+env:
+  FORCE_COLOR: "1"
+
+jobs:
+  backup:
+    if: github.repository_owner == 'docutils'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        persist-credentials: true
+
+    - name: Configure git
+      run: |
+        git config user.name "Adam Turner"
+        git config user.email "9087854+aa-turner@users.noreply.github.com"
+
+    # https://sourceforge.net/p/forge/documentation/rsync%20Backups/
+    - name: Fetch Docutils SVN repository
+      run: >
+        rsync
+        --archive --human-readable --partial --progress --verbose --itemize-changes
+        "svn.code.sf.net::p/docutils/code/*"
+        docutils-svnroot
+
+    - name: Fetch CVS archives
+      if: github.event_name == 'workflow_dispatch'
+      run: ./archive-cvs.sh
+
+    - name: Fetch Docutils release tarballs
+      if: github.event_name == 'workflow_dispatch'
+      run: ./archive-docutils-files.sh
+
+    - name: Push to GitHub
+      run: |
+        git add --all
+        git commit -m "SF backup: $(date --utc +'%Y-%m-%d %H:%M:%S GMT')" || echo "No changes to commit"
+        git push origin master --force-with-lease || echo "Nothing to push"
