@@ -1,0 +1,27 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-09-14T10:26:03.648018Z
+K 7
+svn:log
+V 587
+Limit length of input lines and substitution expansion.
+
+Mitigate the danger of DoS attacs using
+specially crafted rST input (cf. bug #381).
+
+The default value of 10 000 characters should suffice for
+legitimate use cases (e.g. long paragraphs in auto-wrapping editors
+or extensive creative use of substitutions).
+
+Applications processing untrusted rST might wish to lower this
+limitation (together with other safety measures described in
+docs/howto/security.txt).
+
+Unsupervised processing of untrusted rST input should always
+be safeguarded with limits on processing time and memory use.
+END

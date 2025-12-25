@@ -1,0 +1,233 @@
+id: 6-2369.0-4011.r4135/0
+type: file
+pred: 6-2369.0-4011.r4134/2266
+count: 15
+text: 4133 0 379 8003 5b97be25b6477ff985c3f4f94ab022ad 77eeb1bf642ad6d550523f280f5256c143792d3a 4134-36u/_5
+props: 2606 181 110 0 705660468cdcbf270377dea86b274451
+cpath: /branches/s5/docs/dev/testing.txt
+copyroot: 4011 /branches/s5
+
+PLAIN
+K 16
+distributing.txt
+V 25
+file 4-3527.0.r3968/12067
+K 18
+enthought-plan.txt
+V 24
+file 4-2241.0.r3363/1004
+K 17
+enthought-rfp.txt
+V 23
+file 7-2241.0.r3979/497
+K 11
+hacking.txt
+V 24
+file 4-3431.0.r3940/5594
+K 12
+policies.txt
+V 22
+file 4-2183.0.r3993/97
+K 12
+pysource.dtd
+V 23
+file c-18.0.r2223/13206
+K 12
+pysource.txt
+V 23
+file f-18.0.r2223/13620
+K 11
+release.txt
+V 24
+file 7-2183.0.r3417/6721
+K 14
+repository.txt
+V 23
+file 4-3057.0.r4002/570
+K 3
+rst
+V 22
+dir h-18.0.r3974/13298
+K 13
+semantics.txt
+V 23
+file 5-12.0.r1409/24162
+K 11
+testing.txt
+V 26
+file 6-2369.0-4011.r4135/0
+K 8
+todo.txt
+V 22
+file n-18.0.r4003/1241
+K 11
+website.txt
+V 23
+file 9-2183.0.r3952/128
+END
+ENDREP
+id: 3-12.0-4011.r4135/990
+type: dir
+pred: 3-12.0-4011.r4134/3266
+count: 466
+text: 4135 311 666 666 1b5763d9d928469e13bd344cff9e8c5e
+cpath: /branches/s5/docs/dev
+copyroot: 4011 /branches/s5
+
+PLAIN
+K 3
+api
+V 22
+dir 3-2394.0.r3599/791
+K 3
+dev
+V 25
+dir 3-12.0-4011.r4135/990
+K 5
+howto
+V 22
+dir 3-749.0.r3913/1024
+K 9
+index.txt
+V 25
+file 3-2171.0.r3981/36096
+K 4
+peps
+V 21
+dir 5-7.0.r3974/10637
+K 3
+ref
+V 26
+dir w-18.0-4011.r4036/2068
+K 4
+user
+V 27
+dir 1c-18.0-4011.r4134/5340
+END
+ENDREP
+id: 3-7.0-4011.r4135/1473
+type: dir
+pred: 3-7.0-4011.r4134/5829
+count: 1070
+text: 4135 1180 280 280 4f189a61f08d3c96a2861911bda0172b
+cpath: /branches/s5/docs
+copyroot: 4011 /branches/s5
+
+PLAIN
+K 8
+BUGS.txt
+V 23
+file 2-2181.0.r3973/437
+K 11
+COPYING.txt
+V 27
+file 2-18.0-4011.r4086/7668
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r3953/422
+K 11
+HISTORY.txt
+V 26
+file 5-18.0-4011.r4127/247
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r2513/394
+K 10
+README.txt
+V 21
+file 9-18.0.r3997/242
+K 10
+THANKS.txt
+V 23
+file 2-2182.0.r3900/404
+K 4
+docs
+V 25
+dir 3-7.0-4011.r4135/1473
+K 8
+docutils
+V 27
+dir 1w-18.0-4011.r4134/1713
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 28
+file 46-18.0-4011.r4134/1962
+K 4
+test
+V 27
+dir 48-18.0-4011.r4128/3954
+K 5
+tools
+V 26
+dir 6w-18.0-4011.r4012/910
+END
+ENDREP
+id: 1-7.0-4011.r4135/2332
+type: dir
+pred: 1-7.0-4011.r4134/6688
+count: 3075
+text: 4135 1660 659 659 ee714c48e3660c3c14ef9dd5616e58be
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /branches/s5
+copyroot: 4011 /branches/s5
+
+PLAIN
+K 7
+nesting
+V 27
+dir 3-1.0-1813.r2577/106277
+K 2
+s5
+V 25
+dir 1-7.0-4011.r4135/2332
+END
+ENDREP
+id: 0-1.0.r4135/2667
+type: dir
+pred: 0-1.0.r4134/7024
+count: 215
+text: 4135 2567 87 87 ef4ba46336cb1ca3595db76c3d143217
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r4135/2667
+K 4
+tags
+V 19
+dir 2-1.0.r3816/482
+K 5
+trunk
+V 20
+dir 3-1.0.r4132/9589
+END
+ENDREP
+id: 0.0.r4135/2945
+type: dir
+pred: 0.0.r4134/7303
+count: 4135
+text: 4135 2819 113 113 1d63e7140ede1657a70988a1725978fc
+cpath: /
+copyroot: 0 /
+
+6-2369.0-4011.t4134-36u modify-file true false /branches/s5/docs/dev/testing.txt
+
+
+2945 3088

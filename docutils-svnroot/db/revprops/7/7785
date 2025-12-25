@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2015-02-08T23:51:45.824338Z
+K 7
+svn:log
+V 94
+patch [120] 0002 tables accept option widths: list of relative widths, 'auto'  
+    or 'grid'
+
+END

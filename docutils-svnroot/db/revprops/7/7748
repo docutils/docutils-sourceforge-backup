@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2014-05-13T08:33:28.501076Z
+K 7
+svn:log
+V 34
+Fix svn chcekout includes sandbox
+
+END

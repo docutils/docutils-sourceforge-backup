@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-07-07T06:50:09.473324Z
+K 7
+svn:log
+V 77
+Auto-close `docutils.io.FileInput.source` in case of reading/decoding errors.
+END

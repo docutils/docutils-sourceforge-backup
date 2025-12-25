@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-06-26T11:57:11.780648Z
+K 7
+svn:log
+V 402
+Use "console_scripts" entry points instead of tools/rst2*.py scripts.
+
+Update the installation of command line tools to modern standards:
+
+Do not install scripts from the ``tools/`` directory into the binary
+path. Instead, tell the installer to create and install ``rst2*``
+console scripts from "entry point" definitions using functions
+in `docutils.core`.
+
+Cf. [feature-requests:88] and [patches:186].
+END

@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2008-05-26T14:39:21.807517Z
+K 7
+svn:log
+V 199
+**higly experimental** is IMO overcautious, as docutils has riped over the
+years and is in active use in quite a lot of settings by now.
+
+Are there good examples of docutils use we could report here?
+END

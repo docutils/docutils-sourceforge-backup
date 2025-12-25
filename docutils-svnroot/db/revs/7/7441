@@ -1,0 +1,488 @@
+PLAIN
+K 18
+compact_lists.html
+V 25
+file 9-4219.0.r7437/18260
+K 12
+cyrillic.tex
+V 25
+file a-6456.0.r7325/13564
+K 14
+dangerous.html
+V 30
+file f-3071.0-3285.r7437/16306
+K 21
+field_name_limit.html
+V 25
+file c-3164.0.r7437/15327
+K 17
+latex_docinfo.tex
+V 24
+file 8-2937.0.r6455/4932
+K 21
+math_output_html.html
+V 30
+file i-7008.0-7010.r7437/17514
+K 22
+math_output_latex.html
+V 25
+file d-7010.0.r7437/18579
+K 24
+math_output_mathjax.html
+V 25
+file f-7010.0.r7437/15979
+K 24
+math_output_mathml.xhtml
+V 30
+file m-7008.0-7012.r7437/17912
+K 23
+misc_rst_html4css1.html
+V 24
+file 5-2993.0.r7418/4115
+K 13
+odt_basic.odt
+V 25
+file j-5834.0.r6939/38761
+K 23
+odt_custom_headfoot.odt
+V 25
+file a-6214.0.r6939/39079
+K 15
+odt_tables1.odt
+V 25
+file m-5834.0.r6988/13102
+K 13
+pep_html.html
+V 25
+file 5-3040.0.r7437/18902
+K 29
+standalone_rst_html4css1.html
+V 25
+file 9-2357.0.r7437/15646
+K 24
+standalone_rst_latex.tex
+V 25
+file c-2357.0.r7325/13877
+K 26
+standalone_rst_manpage.man
+V 24
+file c-6085.0.r7321/3284
+K 28
+standalone_rst_pseudoxml.txt
+V 24
+file 5-3185.0.r7363/1328
+K 29
+standalone_rst_s5_html_1.html
+V 30
+file 5-4124.7-4156.r7437/16690
+K 29
+standalone_rst_s5_html_2.html
+V 30
+file 8-4124.8-4156.r7437/17102
+K 24
+standalone_rst_xetex.tex
+V 24
+file e-6428.0.r7389/8203
+K 2
+ui
+V 28
+dir a-4124.9-4156.r4241/2580
+K 18
+xetex-cyrillic.tex
+V 25
+file d-6456.0.r7325/13245
+END
+ENDREP
+id: 8-2357.0.r7441/1359
+type: dir
+pred: 8-2357.0.r7437/20648
+count: 281
+text: 7441 0 1346 1346 0635caa301eff4572163806055e7ed89
+cpath: /trunk/docutils/test/functional/expected
+copyroot: 0 /
+
+PLAIN
+K 11
+_default.py
+V 26
+file 11-2357.0.r7320/20238
+K 27
+_standalone_rst_defaults.py
+V 25
+file 5-3366.0.r7120/10954
+K 16
+compact_lists.py
+V 25
+file f-4219.0.r7437/21637
+K 12
+dangerous.py
+V 30
+file l-3071.2-3285.r7437/23934
+K 19
+field_name_limit.py
+V 25
+file i-3164.0.r7437/22969
+K 17
+latex_cyrillic.py
+V 24
+file f-6456.0.r7101/5569
+K 16
+latex_docinfo.py
+V 24
+file e-2937.0.r2937/3869
+K 19
+math_output_html.py
+V 30
+file t-6471.2-7010.r7437/21250
+K 20
+math_output_latex.py
+V 25
+file j-7010.0.r7437/21952
+K 22
+math_output_mathjax.py
+V 25
+file l-7010.0.r7437/23613
+K 21
+math_output_mathml.py
+V 30
+file u-7008.3-7010.r7437/22578
+K 21
+misc_rst_html4css1.py
+V 25
+file b-2991.0.r7320/20549
+K 11
+pep_html.py
+V 25
+file b-3040.0.r7437/22270
+K 27
+standalone_rst_html4css1.py
+V 26
+file 14-2357.0.r7437/23286
+K 23
+standalone_rst_latex.py
+V 25
+file 16-2357.0.r5618/2641
+K 25
+standalone_rst_manpage.py
+V 24
+file i-6085.0.r6085/8999
+K 27
+standalone_rst_pseudoxml.py
+V 24
+file 8-3185.0.r7363/3270
+K 27
+standalone_rst_s5_html_1.py
+V 31
+file 1k-4124.b-4156.r7437/20843
+K 27
+standalone_rst_s5_html_2.py
+V 30
+file 1n-4124.c-4156.r5618/2235
+K 23
+standalone_rst_xetex.py
+V 25
+file n-6428.0.r6428/38593
+K 17
+xetex_cyrillic.py
+V 24
+file i-6456.0.r6484/3238
+END
+ENDREP
+id: 10-2357.0.r7441/2795
+type: dir
+pred: 10-2357.0.r7437/25621
+count: 53
+text: 7441 1550 1232 1232 7322ff0edb32fed39f91b7b8e23ed8e3
+props: 4447 277 31 0 b9ebe853b7baef2573e3487e43637c6a
+cpath: /trunk/docutils/test/functional/tests
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 24
+file 5-2357.0.r2369/2122
+K 8
+expected
+V 23
+dir 8-2357.0.r7441/1359
+K 5
+input
+V 24
+dir e-2357.0.r7437/15124
+K 6
+output
+V 23
+dir w-2357.0.r6448/3773
+K 5
+tests
+V 24
+dir 10-2357.0.r7441/2795
+END
+ENDREP
+id: 3-2357.0.r7441/3266
+type: dir
+pred: 3-2357.0.r7437/26095
+count: 322
+text: 7441 3041 212 212 4d307208ad981a7fbad5e0d502b7637d
+cpath: /trunk/docutils/test/functional
+copyroot: 0 /
+minfo-cnt: 1
+
+PLAIN
+K 22
+DocutilsTestSupport.py
+V 23
+file 49-18.0.r7440/4313
+K 11
+alltests.py
+V 23
+file 4e-18.0.r7433/3057
+K 11
+coverage.sh
+V 28
+file 6-3449.0-3489.r5539/255
+K 4
+data
+V 24
+dir 3-1662.0.r7317/10380
+K 13
+docutils.conf
+V 24
+file 6-1661.0.r2385/2146
+K 10
+functional
+V 23
+dir 3-2357.0.r7441/3266
+K 19
+package_unittest.py
+V 23
+file 3-44.0.r7320/17875
+K 15
+test__init__.py
+V 24
+file 7-7007.0.r7337/8945
+K 20
+test_command_line.py
+V 23
+file 6-6487.0.r7247/476
+K 20
+test_dependencies.py
+V 25
+file 3-2679.0.r7437/26595
+K 23
+test_error_reporting.py
+V 24
+file i-7037.0.r7440/4010
+K 18
+test_functional.py
+V 25
+file 18-2357.0.r7337/9238
+K 10
+test_io.py
+V 24
+file 5-3138.0.r7440/3719
+K 16
+test_language.py
+V 23
+file 3-940.0.r6433/5770
+K 13
+test_nodes.py
+V 23
+file 4i-18.0.r7400/4067
+K 12
+test_parsers
+V 22
+dir 4k-18.0.r7433/8378
+K 14
+test_pickle.py
+V 25
+file 9-4487.0.r7337/10132
+K 17
+test_publisher.py
+V 29
+file 6-3525.0-3602.r7384/2619
+K 12
+test_readers
+V 20
+dir 3-89.0.r6495/104
+K 16
+test_settings.py
+V 24
+file g-1662.0.r7400/2888
+K 20
+test_statemachine.py
+V 23
+file 6a-18.0.r7400/3183
+K 15
+test_transforms
+V 22
+dir 6c-18.0.r6351/4967
+K 18
+test_traversals.py
+V 24
+file 5-4641.0.r7400/4663
+K 13
+test_utils.py
+V 22
+file 6u-18.0.r7338/672
+K 16
+test_viewlist.py
+V 23
+file 3-916.0.r7400/3482
+K 12
+test_writers
+V 24
+dir 5-1211.0.r7437/11720
+END
+ENDREP
+id: 48-18.0.r7441/4797
+type: dir
+pred: 48-18.0.r7440/5949
+count: 969
+text: 7441 3462 1322 1322 438c79c4c65420523c9bd65df0aa9faa
+props: 343 993 44 0 e8789a4081469b0bbc8d88dcdbd925ef
+cpath: /trunk/docutils/test
+copyroot: 0 /
+minfo-cnt: 1
+
+PLAIN
+K 8
+BUGS.txt
+V 22
+file 2-2181.0.r7304/46
+K 11
+COPYING.txt
+V 21
+file 2-18.0.r7298/440
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r7361/342
+K 11
+HISTORY.txt
+V 22
+file 5-18.0.r7440/3430
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r6258/102
+K 10
+README.txt
+V 23
+file 9-18.0.r7437/28757
+K 17
+RELEASE-NOTES.txt
+V 22
+file 2-4204.0.r7425/99
+K 10
+THANKS.txt
+V 24
+file 2-2182.0.r5637/7316
+K 4
+docs
+V 20
+dir 3-7.0.r7406/1603
+K 8
+docutils
+V 22
+dir 1w-18.0.r7440/7358
+K 13
+docutils.conf
+V 23
+file 2-7375.0.r7375/485
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 24
+dir 2-1465.0.r7058/32984
+K 9
+setup.cfg
+V 22
+file 4-6255.0.r7077/73
+K 8
+setup.py
+V 24
+file 46-18.0.r7437/28474
+K 4
+test
+V 22
+dir 48-18.0.r7441/4797
+K 5
+tools
+V 22
+dir 6w-18.0.r7399/2095
+END
+ENDREP
+id: 1-7.0.r7441/5778
+type: dir
+pred: 1-7.0.r7440/8330
+count: 4230
+text: 7441 5034 731 731 31128f1f9cd8e5836a26b44ac157f10c
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+minfo-cnt: 1
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r7441/5778
+K 5
+prest
+V 24
+dir 1-4326.0.r6498/50375
+K 7
+sandbox
+V 22
+dir 1-17.0.r7438/19171
+K 3
+web
+V 19
+dir 1-2.0.r7419/968
+END
+ENDREP
+id: 3-1.0.r7441/6174
+type: dir
+pred: 3-1.0.r7440/8726
+count: 6981
+text: 7441 6005 156 156 2aae7dca635e51555c60616e13e06f7b
+cpath: /trunk
+copyroot: 0 /
+minfo-cnt: 2
+
+PLAIN
+K 8
+branches
+V 21
+dir 0-1.0.r6260/33253
+K 4
+tags
+V 19
+dir 2-1.0.r7412/918
+K 5
+trunk
+V 20
+dir 3-1.0.r7441/6174
+END
+ENDREP
+id: 0.0.r7441/6466
+type: dir
+pred: 0.0.r7440/9018
+count: 7441
+text: 7441 6339 114 114 0f9a6c8eefab7552606ef9825fbe2cc0
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+minfo-cnt: 7
+
+8-5802.0-7317.r7418/7021 delete-file false false /trunk/docutils/test/functional/expected/stylesheet_path_html4css1.html
+
+f-5800.1-7317.r7374/2539 delete-file false false /trunk/docutils/test/functional/tests/stylesheet_path_html4css1.py
+
+
+6466 6673

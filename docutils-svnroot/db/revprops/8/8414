@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-11-15T10:36:15.377266Z
+K 7
+svn:log
+V 69
+tests/functional: Set "auto_id_prefix" to "%" (expands to tag-names).
+END

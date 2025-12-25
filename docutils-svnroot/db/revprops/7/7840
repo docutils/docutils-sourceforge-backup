@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+gitpull
+K 8
+svn:date
+V 27
+2015-03-15T22:47:49.268239Z
+K 7
+svn:log
+V 122
+README for restructure of Docutils' docs. Incorporate info on 301 redirects (SF Project Web Services supports mod_rewrite)
+END

@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2023-08-23T12:02:41.983974Z
+K 7
+svn:log
+V 132
+Add language support for georgian language (thanks to NorwayFun)
+
+- docutils/languages/ka.py
+- docutils/parsers/rst/languages/ka.py
+
+END

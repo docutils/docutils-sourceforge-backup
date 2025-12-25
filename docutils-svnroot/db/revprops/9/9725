@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-05T10:22:44.486127Z
+K 7
+svn:log
+V 350
+Doctree validation: new attribute `Element.content_model`.
+
+A Python-representation of the element's content model.
+
+Replaces attributes `Element.valid_len` and `Element.valid_children`.
+
+Allows validating category, number, and order of the children.
+
+Work in progress. Still missing:
+
+* validating method
+* representation for complex content models.
+END

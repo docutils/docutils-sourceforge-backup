@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2016-07-28T20:59:14.829385Z
+K 7
+svn:log
+V 201
+Revert application of [ 132 ] (SOURCE_DATE_EPOCH for "date" directive).
+
+The patch is incomplete and does not solve the single use case.
+See https://sourceforge.net/p/docutils/patches/132/ for details.
+END

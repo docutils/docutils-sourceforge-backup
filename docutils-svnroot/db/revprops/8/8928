@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-03T23:50:23.378610Z
+K 7
+svn:log
+V 108
+Drop (most) special-casing for Python 2.x.
+
+Simplifications for nodes.py and error_reporting.py will follow.
+END

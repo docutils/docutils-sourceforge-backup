@@ -1,0 +1,25 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-08-26T12:10:34.214185Z
+K 7
+svn:log
+V 505
+Drop support for Python 3.4
+
+This doesn't involve a whole lot of changes, but references to Python
+3.3 and 3.4 (plus some to the already removed Python 2.6) are removed
+and 'setup.py' is updated as necessary. This has already been agreed
+upon, as noted in RELEASE-NOTES.txt:
+
+  Docutils 0.15.x is the last version supporting Python 2.6, 3.3, and 3.4.
+  Docutils 0.16 is compatible with Python versions 2.7 and 3.5 to 3.7.
+
+Signed-off-by: Stephen Finucane <stephen@that.guru>
+
+Small fixes by Günter Milde.
+END

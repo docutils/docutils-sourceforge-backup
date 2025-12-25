@@ -1,0 +1,244 @@
+id: 13-18.0.r5945/0
+type: file
+pred: 13-18.0.r5944/89
+count: 110
+text: 5942 0 392 53961 c862f25656c02acdaa6aade835eb40bf 9882756ddb23c84cd826eaa023649b966307b80c 5944-4l4/_6
+props: 3074 828 111 0 b4cfde065419379bdf3504580a67fa13
+cpath: /trunk/docutils/docs/ref/rst/directives.txt
+copyroot: 0 /
+
+PLAIN
+K 15
+definitions.txt
+V 30
+file b-3472.0-4156.r4156/45466
+K 14
+directives.txt
+V 20
+file 13-18.0.r5945/0
+K 16
+introduction.txt
+V 25
+file 16-18.0.r4564/142276
+K 20
+restructuredtext.txt
+V 22
+file 18-18.0.r5902/245
+K 9
+roles.txt
+V 26
+file 5-1085.0.r4564/142582
+END
+ENDREP
+id: 12-18.0.r5945/568
+type: dir
+pred: 12-18.0.r5944/660
+count: 217
+text: 5945 295 260 260 3a4d8623bd3b1b43d2035ed9b52e3626
+cpath: /trunk/docutils/docs/ref/rst
+copyroot: 0 /
+
+PLAIN
+K 11
+doctree.txt
+V 22
+file x-18.0.r5868/2480
+K 12
+docutils.dtd
+V 25
+file 10-18.0.r4564/141684
+K 3
+rst
+V 21
+dir 12-18.0.r5945/568
+K 12
+soextblx.dtd
+V 23
+file 1a-18.0.r18/303406
+K 14
+transforms.txt
+V 22
+file 4-855.0.r4914/114
+END
+ENDREP
+id: w-18.0.r5945/983
+type: dir
+pred: w-18.0.r5944/1076
+count: 319
+text: 5945 742 228 228 2bff393968be82bb668668d19dc80b87
+cpath: /trunk/docutils/docs/ref
+copyroot: 0 /
+
+PLAIN
+K 3
+api
+V 22
+dir 3-2394.0.r5916/885
+K 3
+dev
+V 22
+dir 3-12.0.r5938/24071
+K 5
+howto
+V 22
+dir 3-749.0.r5818/1462
+K 9
+index.txt
+V 25
+file 3-2171.0.r5834/59896
+K 4
+peps
+V 22
+dir 5-7.0.r4564/140856
+K 3
+ref
+V 20
+dir w-18.0.r5945/983
+K 4
+user
+V 22
+dir 1c-18.0.r5941/4035
+END
+ENDREP
+id: 3-7.0.r5945/1432
+type: dir
+pred: 3-7.0.r5944/1527
+count: 1300
+text: 5945 1152 267 267 a4217e747441e74872474ae880e711e2
+cpath: /trunk/docutils/docs
+copyroot: 0 /
+
+PLAIN
+K 8
+BUGS.txt
+V 23
+file 2-2181.0.r4628/817
+K 11
+COPYING.txt
+V 24
+file 2-18.0.r4564/100662
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r5495/336
+K 11
+HISTORY.txt
+V 22
+file 5-18.0.r5934/9647
+K 11
+MANIFEST.in
+V 23
+file 7-18.0.r4156/57222
+K 10
+README.txt
+V 22
+file 9-18.0.r5909/2167
+K 17
+RELEASE-NOTES.txt
+V 25
+file 2-4204.0.r5931/25712
+K 10
+THANKS.txt
+V 24
+file 2-2182.0.r5637/7316
+K 4
+docs
+V 20
+dir 3-7.0.r5945/1432
+K 8
+docutils
+V 23
+dir 1w-18.0.r5938/22870
+K 6
+extras
+V 24
+dir 2-1467.0.r5618/33257
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 24
+file 46-18.0.r5889/49466
+K 4
+test
+V 23
+dir 48-18.0.r5940/13371
+K 5
+tools
+V 22
+dir 6w-18.0.r5905/1291
+END
+ENDREP
+id: 1-7.0.r5945/2302
+type: dir
+pred: 1-7.0.r5944/2397
+count: 3697
+text: 5945 1598 691 691 ebc4cb75f9d2b2b0ab12e1ad8913ae4b
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+minfo-cnt: 1
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r5945/2302
+K 5
+prest
+V 23
+dir 1-4326.0.r5810/4201
+K 7
+sandbox
+V 21
+dir 1-17.0.r5939/6392
+K 3
+web
+V 20
+dir 1-2.0.r5909/3955
+END
+ENDREP
+id: 3-1.0.r5945/2697
+type: dir
+pred: 3-1.0.r5944/2792
+count: 5491
+text: 5945 2529 155 155 0500dd5e45b7c948c2fe049f248519f5
+cpath: /trunk
+copyroot: 0 /
+minfo-cnt: 2
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r5624/351
+K 4
+tags
+V 19
+dir 2-1.0.r5579/673
+K 5
+trunk
+V 20
+dir 3-1.0.r5945/2697
+END
+ENDREP
+id: 0.0.r5945/2987
+type: dir
+pred: 0.0.r5944/3082
+count: 5945
+text: 5945 2862 112 112 8e26d9cde2dc82566ba4a5f15f7ee1c6
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+minfo-cnt: 2
+
+13-18.0.t5944-4l4 modify-file true false /trunk/docutils/docs/ref/rst/directives.txt
+
+
+2987 3194

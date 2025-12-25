@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-01-13T09:50:21.036996Z
+K 7
+svn:log
+V 141
+Simplify HTML math handling.
+
+Define new function `utils.math.wrap_math_code()`.
+Use it to simplify the `HTMLTranslator.visit_math()` method.
+END

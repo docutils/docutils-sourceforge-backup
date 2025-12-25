@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+gitpull
+K 8
+svn:date
+V 27
+2015-03-15T22:08:25.940715Z
+K 7
+svn:log
+V 145
+sandbox branch: restructure docutils' docs to try to make it easier for newcomers to distinguish docutils the project from the reST specification
+END

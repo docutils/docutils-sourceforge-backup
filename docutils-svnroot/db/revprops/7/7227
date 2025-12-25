@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-11-25T07:07:10.928550Z
+K 7
+svn:log
+V 105
+Change HTML math-output default to MathJax
+
+Makes `standalone_rst_html4css1.html` a valid document again.
+END

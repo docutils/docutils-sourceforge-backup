@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+gitpull
+K 8
+svn:date
+V 27
+2015-03-12T17:14:09.522163Z
+K 7
+svn:log
+V 54
+try using README.rst - see if sf.net will process reST
+END

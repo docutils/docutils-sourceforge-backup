@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-09-17T08:41:21.934793Z
+K 7
+svn:log
+V 63
+LaTeX writer: Deprecation warning for ``\docutilsrole``-prefix.
+END

@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-05-10T11:24:54.508374Z
+K 7
+svn:log
+V 166
+Include "docutils.conf" in the source package.
+
+This file contains the configuration used when generating
+Docutil's HTML documentation.
+
+May help solving [bugs:#461].
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-10-11T19:26:35.916119Z
+K 7
+svn:log
+V 63
+removed now-fixed "targets inside substitution definitions" bug
+END

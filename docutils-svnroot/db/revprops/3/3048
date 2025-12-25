@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-03-15T15:23:52.000000Z
+K 7
+svn:log
+V 100
+removed Node.flattened(); added Node.traverse();
+implemented Node.next_node() using Node.traverse()
+
+END

@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-11-24T15:09:24.826808Z
+K 7
+svn:log
+V 565
+Make "record_dependecies" test independent of the working dir.
+
+In rST, the location of images and figures is specified as URI
+and used literally. As a consequence, finding a corresponding
+image file in the local filesystem depends on the current working
+directory. The tests are designed to work if the cwd is the test root.
+As only files that are actually found are written to the "dependencies",
+we disable the tests for image file registry if cwd != test root.
+
+Also, use "pathlib.Path" for simpler path manipulations.
+
+Signed-off-by: milde <milde@users.sf.net>
+END

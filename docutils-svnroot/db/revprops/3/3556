@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-22T19:16:46.057025Z
+K 7
+svn:log
+V 70
+removed usage of "copy" module; test suite runs 1.6 seconds faster now
+END

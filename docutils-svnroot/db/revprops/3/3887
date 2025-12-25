@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-09-18T16:03:19.797527Z
+K 7
+svn:log
+V 245
+reverted last check-in; it was committed to "transforms" branch
+instead of trunk, and it causes conflicts when merging to trunk; I'll
+redo that change after merging the "transforms" branch into the trunk
+in order to avoid unnecessary merge-work
+
+END

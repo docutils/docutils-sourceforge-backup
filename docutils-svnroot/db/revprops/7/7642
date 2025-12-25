@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2013-03-27T16:48:25.500009Z
+K 7
+svn:log
+V 136
+Fix LaTeX syntax-highlight stylesheets pygments*sty and generating script.
+
+Bugfix for pygments_css2sty.py by Juan Luis Cano Rodríguez.
+END

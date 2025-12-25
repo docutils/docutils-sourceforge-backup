@@ -1,0 +1,71 @@
+id: 1-7.0-3162.r3162/0
+type: dir
+pred: 1-7.0.r3161/4351
+count: 2376
+text: 3161 3711 627 627 3d37d41ca7c34fb5b7df3c3d1424b38b
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /branches/reporter-categories
+copyfrom: 3161 /trunk/docutils
+
+PLAIN
+K 2
+ax
+V 24
+dir 3-1.0-1551.r1551/296
+K 7
+goodger
+V 22
+dir 3-1.0-19.r21/10951
+K 7
+nesting
+V 27
+dir 3-1.0-1813.r2577/106277
+K 19
+reporter-categories
+V 22
+dir 1-7.0-3162.r3162/0
+K 4
+tibs
+V 20
+dir 3-1.0-63.r63/279
+K 6
+vendor
+V 21
+dir 3-1.0-3.r1556/334
+END
+ENDREP
+id: 0-1.0.r3162/512
+type: dir
+pred: 0-1.0.r3130/212
+count: 39
+text: 3162 247 252 252 50a4ca5ecd5dbc814e1fc09184efaf99
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r3162/512
+K 4
+tags
+V 20
+dir 2-1.0.r2576/3944
+K 5
+trunk
+V 20
+dir 3-1.0.r3161/4694
+END
+ENDREP
+id: 0.0.r3162/788
+type: dir
+pred: 0.0.r3161/4972
+count: 3162
+text: 3162 662 113 113 f3c355daa6be1292ab93a0ae28648fea
+cpath: /
+copyroot: 0 /
+
+1-7._0.t3161-2ft add-dir false false /branches/reporter-categories
+3161 /trunk/docutils
+
+788 929

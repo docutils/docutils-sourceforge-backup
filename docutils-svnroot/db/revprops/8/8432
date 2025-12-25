@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2019-12-03T22:22:38.359524Z
+K 7
+svn:log
+V 47
+upload to test.pypi but py3 test needs  a look
+
+END

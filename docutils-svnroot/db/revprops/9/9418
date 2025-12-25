@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-06-29T13:49:33.361833Z
+K 7
+svn:log
+V 436
+Update ODT writer configuration settings documentation.
+
+Use the conventions of config.txt also for the ODF/ODT writer:
+
+- one sub section per configuration setting
+  (also if there are 2 corresponding command line options).
+- sort settings alphabetically.
+- Specify default and options at end of section.
+
+Add links to the detailled ODT writer documentation.
+
+More concise help output. Consistent meta-variable format ``XYZ -> <xyz>``.
+END

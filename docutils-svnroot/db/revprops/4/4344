@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2006-02-24T21:18:55.082533Z
+K 7
+svn:log
+V 124
+* Improved compatibility of testing with different gnu make versions.
+* Fixed compatibility issues arising with perl 5.8.8.
+
+END

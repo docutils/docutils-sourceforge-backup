@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-11-26T23:15:13.288822Z
+K 7
+svn:log
+V 311
+Fix IndexError when running individual test modules under Python <3.9
+
+Up to Python 3.8, __file__ returns a relative path for the main script
+specified on the command line. Use `Path.resolve()` to make it absolute before
+calling `Path.parents`.
+https://docs.python.org/3/whatsnew/3.9.html#other-language-changes
+END

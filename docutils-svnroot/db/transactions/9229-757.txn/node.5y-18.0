@@ -1,0 +1,9 @@
+id: 5y-18.0.t9229-757
+type: file
+pred: 5y-18.0.r9141/38919
+count: 13
+text: -1 1954 388 1920 ce663f5bceba5bedc2ed809f89e7da5b a1c0dd96e5ff55bcebad7acecffe4e99c766a550 9229-757/_a
+props: 778 27146 136 0 29ccea28ae79d5811a999bb52f60a875
+cpath: /trunk/docutils/test/test_parsers/test_rst/test_paragraphs.py
+copyroot: 0 /
+

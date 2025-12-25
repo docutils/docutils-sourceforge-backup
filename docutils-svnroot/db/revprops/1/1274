@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 6
+fdrake
+K 8
+svn:date
+V 27
+2003-04-10T16:03:45.000000Z
+K 7
+svn:log
+V 101
+Don't use len(L) > 0 to test for non-emptiness of L; lists are true if
+non-empty and false if empty.
+
+END

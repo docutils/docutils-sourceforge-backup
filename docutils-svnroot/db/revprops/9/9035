@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-03-05T23:29:48.267348Z
+K 7
+svn:log
+V 150
+Avoid line break after binary operator.
+
+Breaking before binary operators is the recommended style
+in PEP 8 (changed in April 2016).
+
+flake8 rule W504
+END

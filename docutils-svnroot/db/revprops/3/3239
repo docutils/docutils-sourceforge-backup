@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-04-21T19:23:36.592448Z
+K 7
+svn:log
+V 46
+fixed bug in LaTeX writer with --use-latex-toc
+END

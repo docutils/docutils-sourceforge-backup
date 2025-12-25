@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-03-04T10:34:23.440562Z
+K 7
+svn:log
+V 133
+sandbox:README.txt: Add a note that the Python documentation uses rst now,
+add link to LaTeX math project, 
+strip-trailing whitespace
+END

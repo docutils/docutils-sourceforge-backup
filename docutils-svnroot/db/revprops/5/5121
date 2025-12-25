@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+gbrandl
+K 8
+svn:date
+V 27
+2007-05-24T14:27:46.146345Z
+K 7
+svn:log
+V 75
+Don't require to use strange Unicode characters in the menuselection role.
+
+END

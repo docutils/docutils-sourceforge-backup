@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-11-25T20:45:27.996623Z
+K 7
+svn:log
+V 149
+Change default of "root_prefix" setting to empty string.
+
+Part of a patch by Adam Turner
+(cf. https://sourceforge.net/p/docutils/bugs/493/#55f0 ff.).
+END

@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-05-18T21:33:04.795757Z
+K 7
+svn:log
+V 162
+Small documentation update.
+
+restructuredtext.txt:
+  Clarify which elements may come before the docinfo.
+
+Add missing classes in "transforms.universal" docstring.
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-06-23T12:49:56.792139Z
+K 7
+svn:log
+V 90
+ODT writer: download images also for URLs starting with "https:".
+
+Cf. feature request 25.
+END

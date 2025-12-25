@@ -1,0 +1,158 @@
+id: 5-18.0.r7558/0
+type: file
+pred: 5-18.0.r7547/1073
+count: 665
+text: 7540 3501 101 106927 ba05924de1c95c5f391af2ed2ff36334 1b519426b8ac2324857922c30622767f03c95aab 7557-5u5/_3
+props: 3071 4401 112 0 65fc8d0258b5c9fe68529b22bd8c9e94
+cpath: /trunk/docutils/HISTORY.txt
+copyroot: 0 /
+
+id: 2-4204.0.r7558/284
+type: file
+pred: 2-4204.0.r7547/1357
+count: 79
+text: 7540 5056 116 13863 c590627a5ddedbde009564679254151d eb61bfa4b493b9d0e81972441c60f2bdcc87da6b 7557-5u5/_4
+props: 4204 1738 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/docutils/RELEASE-NOTES.txt
+copyroot: 0 /
+
+PLAIN
+K 8
+BUGS.txt
+V 22
+file 2-2181.0.r7304/46
+K 11
+COPYING.txt
+V 23
+file 2-18.0.r7530/19019
+K 7
+FAQ.txt
+V 24
+file 2-788.0.r7530/18731
+K 11
+HISTORY.txt
+V 19
+file 5-18.0.r7558/0
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r6258/102
+K 10
+README.txt
+V 23
+file 9-18.0.r7463/30710
+K 17
+RELEASE-NOTES.txt
+V 23
+file 2-4204.0.r7558/284
+K 10
+THANKS.txt
+V 25
+file 2-2182.0.r7503/10719
+K 4
+docs
+V 20
+dir 3-7.0.r7557/1860
+K 8
+docutils
+V 21
+dir 1w-18.0.r7549/964
+K 13
+docutils.conf
+V 23
+file 2-7375.0.r7375/485
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 24
+dir 2-1465.0.r7058/32984
+K 9
+setup.cfg
+V 24
+file 4-6255.0.r7442/5812
+K 8
+setup.py
+V 22
+file 46-18.0.r7529/762
+K 4
+test
+V 23
+dir 48-18.0.r7540/11859
+K 5
+tools
+V 23
+dir 6w-18.0.r7515/31659
+END
+ENDREP
+id: 1-7.0.r7558/1325
+type: dir
+pred: 1-7.0.r7557/2778
+count: 4305
+text: 7558 577 735 735 4cef16dbc5a9b1eaebc11e65aaf538d1
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+minfo-cnt: 1
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r7558/1325
+K 5
+prest
+V 24
+dir 1-4326.0.r6498/50375
+K 7
+sandbox
+V 21
+dir 1-17.0.r7556/4125
+K 3
+web
+V 19
+dir 1-2.0.r7460/974
+END
+ENDREP
+id: 3-1.0.r7558/1719
+type: dir
+pred: 3-1.0.r7557/3173
+count: 7097
+text: 7558 1551 155 155 49273ad842cad7d1efe7d2b2658ace72
+cpath: /trunk
+copyroot: 0 /
+minfo-cnt: 2
+
+PLAIN
+K 8
+branches
+V 21
+dir 0-1.0.r6260/33253
+K 4
+tags
+V 19
+dir 2-1.0.r7453/967
+K 5
+trunk
+V 20
+dir 3-1.0.r7558/1719
+END
+ENDREP
+id: 0.0.r7558/2011
+type: dir
+pred: 0.0.r7557/3465
+count: 7558
+text: 7558 1884 114 114 1781408e1c75a1dff644d1412b886a73
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+minfo-cnt: 8
+
+5-18.0.t7557-5u5 modify-file true false /trunk/docutils/HISTORY.txt
+
+2-4204.0.t7557-5u5 modify-file true false /trunk/docutils/RELEASE-NOTES.txt
+
+
+2011 2218

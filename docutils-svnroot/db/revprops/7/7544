@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-12-12T22:04:49.050000Z
+K 7
+svn:log
+V 79
+smartquotes: non-breaking spaces for french quotes, LaTeX character conversion.
+END

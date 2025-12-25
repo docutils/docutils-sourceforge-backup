@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+jensj
+K 8
+svn:date
+V 27
+2005-02-04T13:15:35.000000Z
+K 7
+svn:log
+V 76
+Operator symbols are now in a <mo> element.
+Added a simple latex front-end.
+
+END

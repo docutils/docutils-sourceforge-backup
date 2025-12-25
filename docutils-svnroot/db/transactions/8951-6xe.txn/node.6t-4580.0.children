@@ -1,0 +1,19 @@
+K 11
+raw02.mydom
+V 26
+file 6u-4580.0.r4580/67621
+K 8
+raw1.txt
+V 26
+file 6x-4580.0.r4580/68181
+K 11
+test_raw.py
+V 26
+file 6z-4580.0.r4580/67894
+END
+D 11
+raw02.mydom
+D 8
+raw1.txt
+D 11
+test_raw.py

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2003-03-25T09:04:00.000000Z
+K 7
+svn:log
+V 46
+no treatment of quotes inside literal-blocks.
+
+END

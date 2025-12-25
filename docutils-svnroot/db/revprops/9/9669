@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-02T15:55:31.759180Z
+K 7
+svn:log
+V 302
+More precise wording in directives documentation.
+
+Use "caption" instead of "title" for the short description of a table.
+
+While the XML Exchange Model employed in the Docutils Document Tree uses
+a <title> element for "historic reasons", the main output formats
+HTML and LaTeX both call it a "caption".
+END

@@ -1,0 +1,40 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-10-25T17:45:15.630650Z
+K 7
+svn:log
+V 619
+Doctree documentation revision.
+
+Update documentation regarding the "colwidth" attribute handling.
+and the included `Exchange Table Model`.
+
+Unify name use.
+
+Revise/fix hyperlinks.
+
+Improve wording/formatting.
+
+Correct description of the "names" doctree element attribute:
+
+Under specific circumstances, an element may have both,
+``names`` and ``dupnames`` attributes.
+This is intentional to provide a means to solve conflicts in
+implicit hyperlink targets (e.g. two section headings with similar title),
+e.g. ::
+
+  My Title
+  --------
+
+  .. _my title:
+
+  my title
+  --------
+
+  `My title`_ links to the second section.
+END

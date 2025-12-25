@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-02-23T12:47:48.824161Z
+K 7
+svn:log
+V 161
+Update functional test sample.
+
+Update some links.
+
+Describe "meta" directive.
+
+Don't use too wide images and tables
+to allow adaption to small screens (mobile).
+END

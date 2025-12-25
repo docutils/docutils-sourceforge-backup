@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-01-08T16:38:44.563018Z
+K 7
+svn:log
+V 112
+Rewrote DFS (depth-first search) subroutine to be non-recursive to
+avoid deep recursion errors on large tables.
+
+END

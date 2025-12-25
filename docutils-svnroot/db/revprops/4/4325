@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-01-26T22:32:37.112088Z
+K 7
+svn:log
+V 157
+moved commit-email, fsfsbackup.sh, dbackport.sh, release.sh, uploaddocutils.sh
+from fwiemann to infrastructure; added README.txt for infrastructure directory
+END

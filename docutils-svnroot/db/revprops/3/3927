@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-10-08T20:22:52.728075Z
+K 7
+svn:log
+V 110
+added "Local Variables" block because most blocks are wrapped at column
+78 but Emacs uses column 70 by default
+END

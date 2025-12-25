@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2004-04-08T01:58:27.000000Z
+K 7
+svn:log
+V 100
+Fixed bug relating to role-less interpreted text in non-English contexts.  Reported by Lele Gaifax.
+
+END

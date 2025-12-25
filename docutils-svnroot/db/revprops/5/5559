@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2008-05-20T12:59:38.793010Z
+K 7
+svn:log
+V 84
+Adapt documentation to the new option ``--literal-block-env`` 
+of the latex2e writer
+END

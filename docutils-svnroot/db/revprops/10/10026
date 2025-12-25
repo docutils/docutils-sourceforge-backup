@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2025-03-08T01:26:07.079213Z
+K 7
+svn:log
+V 50
+Resolve Ruff lint warnings
+
+Targeting Ruff 0.9.10
+
+END

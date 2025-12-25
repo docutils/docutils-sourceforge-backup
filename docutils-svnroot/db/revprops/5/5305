@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2007-06-29T03:29:36.989090Z
+K 7
+svn:log
+V 327
+renamed .html to .htm to avoid collisions with the docutils-update website updater script; it was sending me email because the code-block directive caused error messages; this is kindof a hack, but it should work for now; Guenther, if the changed extensions are a problem for you, please feel free to revert (or drop me a line)
+END

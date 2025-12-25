@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 7
+mmgilbe
+K 8
+svn:date
+V 27
+2005-01-22T16:51:24.000000Z
+K 7
+svn:log
+V 127
+Changed recursive include limiting from just a fixed number of includes
+to limiting an included page to once per parsing.
+
+MMG
+
+END

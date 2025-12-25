@@ -1,0 +1,37 @@
+K 10
+svn:author
+V 8
+dkuhlman
+K 8
+svn:date
+V 27
+2007-08-16T22:39:10.094407Z
+K 7
+svn:log
+V 858
+Added admonitions and rubric; fixed import of ElementTree and Directives
+
+Added:
+
+- Added support for admonitions.  Both specific admonitions and
+  generic admonition are supported.  There are specific styles for
+  the header and the body of each admonition (see doc).
+
+- Added support for the rubric directive.  There is a specific
+  style for the rubric, but you can also specific a style by using
+  the "class" option on the rubric directive.  (see doc)
+
+Fixes:
+
+- Fixed error produced when odtwriter is used with a version of
+  Docutils that does not implement the Directive class.
+  (docutils.parsers.rst.Directive).
+
+- If you have Python 2.5, you should now be able to use odtwriter
+  without installing either Lxml or ElementTree.  ElementTree is in
+  the standard library in Python 2.5, but odtwriter was not looking
+  for it there.  Now, it does.
+
+
+
+END

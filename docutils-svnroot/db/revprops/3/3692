@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T01:32:36.592945Z
+K 7
+svn:log
+V 238
+Making the included docutils.conf complete is a bad idea since
+we have so many options.  The reference in docs/user/config.txt is fine.
+``tools/docutils.conf`` contains the settings for processing the included
+documentation, nothing more.
+END

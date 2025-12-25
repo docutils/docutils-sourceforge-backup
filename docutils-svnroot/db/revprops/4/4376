@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-03-09T21:28:49.695597Z
+K 7
+svn:log
+V 152
+added parsers.rst.Directive base class;
+derived html.meta from that base class;
+added support for object-oriented directive interface in the reST parser
+END

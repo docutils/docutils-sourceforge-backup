@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2016-11-29T12:03:44.295020Z
+K 7
+svn:log
+V 119
+Docutils Generic DTD: some corrections after test with xlmlint.
+
+More work to do, many documents still do not validate.
+END

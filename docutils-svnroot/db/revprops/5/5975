@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 8
+cliechti
+K 8
+svn:date
+V 27
+2009-06-07T15:54:00.659169Z
+K 7
+svn:log
+V 94
+[PATCH] aafigure: Fix svg output when using the reST directive (SF-ID: 2801751)
+thanks llucax
+
+END

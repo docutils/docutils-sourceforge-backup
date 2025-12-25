@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T01:50:00.369812Z
+K 7
+svn:log
+V 324
+Inline markup rule 7 says:
+
+7. An unescaped backslash preceding a start-string or end-string will
+   disable markup recognition, except for the end-string of `inline
+   literals`_.  See `Escaping Mechanism`_ above for details.
+
+That's absolutely fine.  The referenced "Escaping Mechanism" section
+explains it all in detail.
+
+END

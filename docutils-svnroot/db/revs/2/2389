@@ -1,0 +1,254 @@
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 5
+1.118
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 9-1202.0.r2389/125
+type: file
+pred: 9-1202.0.r2388/695
+count: 117
+text: 2380 0 262 72625 e8e57f4dc64a64e2c6a92844500289b0 1ef81e09462bdcece5a51b890f9243d4726d88a2 2388-1uc/_5
+props: 2389 0 112 0 858133ad234580a5fc7c24a791c3b702
+cpath: /trunk/docutils/docutils/writers/latex2e.py
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 3x-18.0.r2321/1152
+K 15
+docutils_xml.py
+V 24
+file 4-244.0.r2223/10556
+K 12
+html4css1.py
+V 22
+file 40-18.0.r2122/186
+K 10
+latex2e.py
+V 23
+file 9-1202.0.r2389/125
+K 11
+pep_html.py
+V 22
+file 4-281.0.r1823/272
+K 12
+pseudoxml.py
+V 22
+file 4-84.0.r1645/8532
+END
+ENDREP
+id: 3w-18.0.r2389/719
+type: dir
+pred: 3w-18.0.r2388/1291
+count: 264
+text: 2389 423 283 283 37979fa3125aee13f9b1ebe36e501772
+props: 342 6175 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils/writers
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 1x-18.0.r2070/2040
+K 7
+core.py
+V 22
+file 20-18.0.r2384/840
+K 11
+examples.py
+V 23
+file 3-1928.0.r2028/395
+K 11
+frontend.py
+V 22
+file 3-150.0.r2383/357
+K 5
+io.py
+V 23
+file 3-217.0.r2321/2108
+K 9
+languages
+V 22
+dir 22-18.0.r2333/1038
+K 8
+nodes.py
+V 22
+file 28-18.0.r2362/185
+K 7
+parsers
+V 22
+dir 2a-18.0.r2365/2253
+K 7
+readers
+V 22
+dir 36-18.0.r2287/9245
+K 15
+statemachine.py
+V 22
+file 3e-18.0.r2299/866
+K 10
+transforms
+V 22
+dir 3g-18.0.r2289/1207
+K 13
+urischemes.py
+V 22
+file 3s-18.0.r1829/714
+K 8
+utils.py
+V 22
+file 3u-18.0.r2322/657
+K 7
+writers
+V 21
+dir 3w-18.0.r2389/719
+END
+ENDREP
+id: 1w-18.0.r2389/1568
+type: dir
+pred: 1w-18.0.r2388/2142
+count: 822
+text: 2389 952 603 603 f5db58d6cb7e5512b1686c112631799f
+props: 342 8363 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 21
+file 2-340.0.r340/154
+K 8
+BUGS.txt
+V 24
+file 2-2181.0.r2350/1345
+K 11
+COPYING.txt
+V 22
+file 2-18.0.r2354/3164
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r2351/227
+K 11
+HISTORY.txt
+V 22
+file 5-18.0.r2385/1292
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r1505/219
+K 10
+README.txt
+V 22
+file 9-18.0.r2248/1148
+K 10
+THANKS.txt
+V 23
+file 2-2182.0.r2248/742
+K 4
+docs
+V 20
+dir 3-7.0.r2386/1484
+K 8
+docutils
+V 22
+dir 1w-18.0.r2389/1568
+K 6
+extras
+V 23
+dir 2-1467.0.r1686/1264
+K 10
+install.py
+V 24
+file 44-18.0.r1409/28098
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 22
+file 46-18.0.r2071/198
+K 4
+test
+V 22
+dir 48-18.0.r2385/3383
+K 5
+tools
+V 22
+dir 6w-18.0.r2368/1918
+END
+ENDREP
+id: 1-7.0.r2389/2480
+type: dir
+pred: 1-7.0.r2388/3055
+count: 1743
+text: 2389 1794 673 673 10bfd763aec8a61ba0cc5016dc2254d3
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r2389/2480
+K 7
+sandbox
+V 21
+dir 1-17.0.r2387/3485
+K 3
+web
+V 19
+dir 1-2.0.r2316/797
+END
+ENDREP
+id: 3-1.0.r2389/2822
+type: dir
+pred: 3-1.0.r2388/3397
+count: 2369
+text: 2389 2694 115 115 6cc8543f4977abcca3d7897a0757e9ec
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 21
+dir 0-1.0.r1822/10965
+K 4
+tags
+V 20
+dir 2-1.0.r1558/2271
+K 5
+trunk
+V 20
+dir 3-1.0.r2389/2822
+END
+ENDREP
+id: 0.0.r2389/3102
+type: dir
+pred: 0.0.r2388/3677
+count: 2389
+text: 2389 2974 115 115 1e3f1c1ceb715c09521ba7a6a3ace586
+cpath: /
+copyroot: 0 /
+
+9-1202.0.t2388-1uc modify-file true true /trunk/docutils/docutils/writers/latex2e.py
+
+
+3102 3245

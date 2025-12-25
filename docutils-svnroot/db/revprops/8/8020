@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-02-02T16:05:23.257075Z
+K 7
+svn:log
+V 177
+Document caveats when subclassing HTMLTranslator.
+
+Add warning and examples for robust coding to the class docstring.
+
+Convert comment for the `context` variable into docstring.
+END

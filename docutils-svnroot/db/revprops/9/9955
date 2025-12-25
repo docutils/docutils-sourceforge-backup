@@ -1,0 +1,31 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-10-20T18:57:49.967611Z
+K 7
+svn:log
+V 593
+Small fixes and additions.
+
+Be more specific in FAQ answer.
+
+Don't list minor fix (bug #287) in HISTORY.
+
+Shorten some docstrings to adhere to documentation policy
+(multi-line docstrings should be summary line, blank line, details).
+
+Better name for function factory that returns a keyword validating function.
+(cf. https://stackoverflow.com/questions/3368830/how-to-name-factory-like-methods).
+
+Fix attribute name mismatch "autonum" -> "auto".
+
+Explain F401 noqa comment.
+
+Fix typo in "writers/html5_polyglot/minimal.css" stylesheet.
+
+Avoid confusing variable name ``twidth`` in latex writer.
+END

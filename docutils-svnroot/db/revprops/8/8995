@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-29T22:26:10.686808Z
+K 7
+svn:log
+V 43
+Fix trailing whitespace (non-Python files).
+END

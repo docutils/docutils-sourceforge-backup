@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2011-12-02T00:43:32.975062Z
+K 7
+svn:log
+V 101
+change references to berlios to sourceforge
+release.txt and the script in sandbox need rework though
+
+END

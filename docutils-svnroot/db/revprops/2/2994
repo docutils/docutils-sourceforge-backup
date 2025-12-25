@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-02-26T23:44:13.000000Z
+K 7
+svn:log
+V 142
+skip tests whose output contains "UnicodeDecodeErro" on Python 2.2 or lower,
+because the exception class was "UnicodeError" before Python 2.3
+
+END

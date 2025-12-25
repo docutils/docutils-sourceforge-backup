@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-12-06T12:58:38.823448Z
+K 7
+svn:log
+V 62
+Fix false positive with non-UTF8, non-latin1 locale encodings.
+END

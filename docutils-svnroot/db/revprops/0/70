@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-05-05T14:49:10.000000Z
+K 7
+svn:log
+V 147
+  - Added ``TreeCopyVisitor`` class.  - Added a ``copy`` method to ``Node`` and subclasses.  - Added a ``SkipDeparture`` exception for visitors.
+
+END

@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-02-07T14:24:46.982270Z
+K 7
+svn:log
+V 135
+Avoid ambiguous module name `io`.
+
+There are standard `io` and `docutils.io`.
+Avoid ambiguity by not using ``from docutils import io``.
+END

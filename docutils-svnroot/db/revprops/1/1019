@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2002-12-12T14:34:28.000000Z
+K 7
+svn:log
+V 59
++ use a newenvironment instead of a table for optoinlists.
+
+END

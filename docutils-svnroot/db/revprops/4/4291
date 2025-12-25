@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 8
+cliechti
+K 8
+svn:date
+V 27
+2006-01-11T02:42:21.113375Z
+K 7
+svn:log
+V 92
+- fix squared arrow heads, reversed arrow head
+- add diagonal lines
+- more examples and docs
+END

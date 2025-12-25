@@ -1,0 +1,84 @@
+id: 1w-18.0-5604.r5604/0
+type: dir
+pred: 1w-18.0.r5602/6734
+count: 1522
+text: 5602 6056 665 665 ef0680bb00385eee9511c7e5239eeab1
+props: 342 8363 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /branches/abolish-userstring
+copyfrom: 5603 /trunk/docutils/docutils
+
+PLAIN
+K 18
+abolish-userstring
+V 24
+dir 1w-18.0-5604.r5604/0
+K 17
+address-rendering
+V 26
+dir 1-7.0-4314.r4314/16372
+K 18
+adjacent-citations
+V 25
+dir 1-7.0-5043.r5600/5654
+K 12
+docutils-0.4
+V 25
+dir 1-7.0-4266.r5500/7199
+K 9
+index-bug
+V 25
+dir 1-7.0-5587.r5594/4767
+K 19
+lossless-rst-writer
+V 25
+dir 1-7.0-5514.r5516/4944
+K 7
+nesting
+V 25
+dir 3-1.0-1813.r4356/3347
+K 7
+plugins
+V 25
+dir 1-7.0-4952.r4987/1225
+K 7
+subdocs
+V 25
+dir 1-7.0-5265.r5427/8605
+END
+ENDREP
+id: 0-1.0.r5604/720
+type: dir
+pred: 0-1.0.r5600/6328
+count: 426
+text: 5604 260 447 447 2a4f6a11413c8c034d1461f45f9756d3
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r5604/720
+K 4
+tags
+V 19
+dir 2-1.0.r5579/673
+K 5
+trunk
+V 20
+dir 3-1.0.r5603/2996
+END
+ENDREP
+id: 0.0.r5604/997
+type: dir
+pred: 0.0.r5603/3274
+count: 5604
+text: 5604 872 112 112 6a5bb4588d12226a769aba3ed508f783
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+
+1w-18._0.t5603-4bn add-dir false false /branches/abolish-userstring
+5603 /trunk/docutils/docutils
+
+997 1189

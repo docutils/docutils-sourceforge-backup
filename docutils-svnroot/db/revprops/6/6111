@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-09-02T21:36:05.739279Z
+K 7
+svn:log
+V 478
+Updated template support: more parts, alternative template
+
+Rename default template to "default.tex".
+Alternative template "titlepage.tex".
+Remove --use-titlepage-env option.
+LaTeXTranslator: sort initialization code.
+Generate PDF setup code unconditionally. Put in its own part 
+so it can be (re)moved in a custom template.
+Comment out Writer.astext().
+Put header and footer directive content in \\\\DUheader, \\\\DUfooter macros
+(not printed with the default style/template).
+
+END

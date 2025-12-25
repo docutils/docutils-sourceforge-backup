@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-01-21T13:13:11.170083Z
+K 7
+svn:log
+V 237
+LaTeX writer: outsourcing of some code from `depart_document()`.
+
+Move parts of the spaghetti code in `LaTeXTranslator.depart_document()
+to new auxiliary methods `LaTeXTranslator.make_title()` and
+`LaTeXTranslator.append_bibliography()`.
+END

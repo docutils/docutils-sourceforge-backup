@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-03-04T15:55:26.649852Z
+K 7
+svn:log
+V 145
+Fix (some) missing blank lines
+
+flake8 rules
+E301: expected 1 blank line, found 0
+E306: expected 1 blank line before a nested definition, found 0
+END

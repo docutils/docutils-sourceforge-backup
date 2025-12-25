@@ -1,0 +1,131 @@
+id: 4-4580.0.r4871/0
+type: file
+pred: 4-4580.0.r4799/49274
+count: 6
+text: 526 3779 4 0 d41d8cd98f00b204e9800998ecf8427e da39a3ee5e6b4b0d3255bfef95601890afd80709 4870-3ra/_3
+cpath: /trunk/prest/MANIFEST
+copyroot: 0 /
+
+PLAIN
+K 11
+COPYING.txt
+V 26
+file 2-4327.0.r4580/172511
+K 7
+GPL.txt
+V 26
+file 5-4327.0.r4327/840766
+K 8
+MANIFEST
+V 21
+file 4-4580.0.r4871/0
+K 13
+MANIFEST.SKIP
+V 24
+file 6-4580.0.r4737/2360
+K 10
+MODIFY.txt
+V 23
+file 7-4327.0.r4330/211
+K 11
+Makefile.PL
+V 25
+file 8-4580.0.r4799/53752
+K 6
+README
+V 23
+file b-4327.0.r4636/389
+K 16
+ReleaseNotes.txt
+V 26
+file d-4327.0.r4580/181227
+K 3
+doc
+V 23
+dir h-4327.0.r4863/2278
+K 13
+insertperl.pl
+V 25
+file k-4580.0.r4580/61534
+K 3
+lib
+V 23
+dir m-4580.0.r4869/4015
+K 5
+prest
+V 29
+file 7z-4327.7-4580.r4870/132
+K 1
+t
+V 25
+dir 1h-4580.0.r4862/18415
+K 4
+tbin
+V 30
+dir 139-4327.1d-4580.r4864/928
+END
+ENDREP
+id: 1-4326.0.r4871/854
+type: dir
+pred: 1-4326.0.r4870/1078
+count: 76
+text: 4871 217 624 624 99d460e7119b56e1d6f775e2fcae07f2
+props: 4637 0 91 0 65ecddde2db82a61df86d65d40320524
+cpath: /trunk/prest
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r4837/5560
+K 5
+prest
+V 22
+dir 1-4326.0.r4871/854
+K 7
+sandbox
+V 22
+dir 1-17.0.r4852/20595
+K 3
+web
+V 20
+dir 1-2.0.r4806/2887
+END
+ENDREP
+id: 3-1.0.r4871/1234
+type: dir
+pred: 3-1.0.r4870/1460
+count: 4508
+text: 4871 1066 155 155 856dd8685af29988135a7e2e1d3ba929
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r4816/8776
+K 4
+tags
+V 19
+dir 2-1.0.r4584/629
+K 5
+trunk
+V 20
+dir 3-1.0.r4871/1234
+END
+ENDREP
+id: 0.0.r4871/1512
+type: dir
+pred: 0.0.r4870/1738
+count: 4871
+text: 4871 1386 113 113 c2d43383df3baf2909279c061c0f6c81
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+
+4-4580.0.t4870-3ra modify-file true false /trunk/prest/MANIFEST
+
+
+1512 1706

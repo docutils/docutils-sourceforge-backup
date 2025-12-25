@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2009-07-27T09:05:01.171158Z
+K 7
+svn:log
+V 95
+Images print *alt* and *uri*.
+Definition lists print also th eclassifier and are more compact.
+
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 8
+dkuhlman
+K 8
+svn:date
+V 27
+2013-04-08T17:35:15.066196Z
+K 7
+svn:log
+V 73
+Ticket #102: Fix citation rendering in rst2odt with --create-links option
+END

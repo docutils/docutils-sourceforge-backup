@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-02-28T22:33:41.317307Z
+K 7
+svn:log
+V 121
+added link to config.html to --help output;
+for "general" options: shortened --help output, added CLI index to config.txt
+END

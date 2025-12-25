@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2008-02-15T19:25:44.266492Z
+K 7
+svn:log
+V 34
+Fix: escaping ``%`` in href urls.
+
+END

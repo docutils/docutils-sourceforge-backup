@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2013-06-04T12:46:30.883725Z
+K 7
+svn:log
+V 182
+Consistently use "utf-8" (not "utf8") in magic comment giving source encoding.
+
+Fixes problems with Docutils installed in "virtualenv"
+https://sourceforge.net/p/docutils/patches/105/
+END

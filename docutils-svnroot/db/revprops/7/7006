@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-04-12T07:16:39.855241Z
+K 7
+svn:log
+V 133
+Simpler and more robust test of command line decoding.
+
+Test `Publisher` class after modifying sys.argv 
+instead of testing frontend.
+END

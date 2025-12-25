@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-06-05T20:21:34.104857Z
+K 7
+svn:log
+V 111
+--- MERGE: merged r4499 to maintenance branch; original log message:
+    changed "class" attribute to "classes"
+END

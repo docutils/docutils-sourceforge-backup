@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-05-13T08:37:56.877684Z
+K 7
+svn:log
+V 368
+Fix problems with 3rd-party parsers.
+
+Pass default settings to custom parser for included file.
+When the "include" directive is used with a custom parser,
+we must ensure the custom parser's default settings are present
+in `document.settings`.
+
+Fix error when determining the document metadata title from the
+source path and the internal `source` attribute is ``None``.
+END

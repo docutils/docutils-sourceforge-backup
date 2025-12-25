@@ -1,0 +1,25 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-08-15T17:37:57.598022Z
+K 7
+svn:log
+V 508
+Fixes for the section level determination.
+
+Simplify the fix in [r10200].
+  Don't add elements without valid parent to the list returned by
+  `nodes.Element.section_hierarchy()` instead of removing them later.
+
+  Remove the check/report for `new_parent is None` (we don't add
+  elements with .parent None to the `parent_sections` list any more).
+
+Don't add a new section title style to the list of established title styles
+if it is inconsistent.
+
+Annotate and document arguments of `RSTState.nested_parse()`.
+END

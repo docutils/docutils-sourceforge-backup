@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-04-09T14:26:09.192251Z
+K 7
+svn:log
+V 191
+Small rST parser fixes.
+
+Add source and line info to <enumerated-list> elements [feature-requests:#41].
+
+Fix line number of "start value not ordinal-1" INFO message
+(see also [patches:#213]).
+END

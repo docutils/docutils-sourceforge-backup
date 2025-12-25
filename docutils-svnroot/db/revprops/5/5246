@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+gbrandl
+K 8
+svn:date
+V 27
+2007-06-16T23:14:05.723442Z
+K 7
+svn:log
+V 159
+Refactor special file handling, part 2. Introduce a global context that's used even for completely dynamic pages,
+that helps with the "Python v Docs" problem.
+
+END

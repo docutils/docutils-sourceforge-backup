@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-01-26T22:08:13.635238Z
+K 7
+svn:log
+V 240
+VersionInfo fixes
+
+* Raise ValueError for invalid values.
+
+* Provide default values.
+
+* Fix comparison to ordinary tuples.
+  (Test for equality still fails, because __eg__() is not called
+   when comparing a namedtuple subclass to a tuple!)
+END

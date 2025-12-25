@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-08-21T11:46:58.317891Z
+K 7
+svn:log
+V 121
+Small documentation fix.
+
+Use literal quotes in example output as the docs may be transformed
+with "use-smartquotes" off.
+END

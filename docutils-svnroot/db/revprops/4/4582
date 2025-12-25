@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2006-05-31T14:17:08.487940Z
+K 7
+svn:log
+V 35
+Fixed clean and realclean targets.
+
+END

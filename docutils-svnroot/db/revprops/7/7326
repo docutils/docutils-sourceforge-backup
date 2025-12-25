@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-01-26T13:38:54.024510Z
+K 7
+svn:log
+V 115
+io.FileInput/io.FileOutput: No system-exit on IOError.
+
+Allows handling by core.Publisher or a calling application.
+END

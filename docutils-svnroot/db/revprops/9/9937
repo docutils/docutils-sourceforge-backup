@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-09-23T22:36:38.341463Z
+K 7
+svn:log
+V 414
+LaTeX writer: stop requiring "ifthen.sty", fix Babel warning.
+
+Replace use of ``\ifthenelse`` from "ifthen.sty" with the
+eTeX primitive ``\ifdefined``.
+
+Mark the main language when loading "babel" to prevent a warning
+about another language being processed last. This happens when there
+is more than one language in the document as we put the main language
+also in the document options (for other packages to see).
+END

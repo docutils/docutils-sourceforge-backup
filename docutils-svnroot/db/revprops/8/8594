@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-12-15T23:06:43.936570Z
+K 7
+svn:log
+V 183
+Merge adjoining <Text> nodes in recommonmark post-processing.
+
+Ensure similar XML and pseudoXML output for rst and markdown input
+while preserving whitespace in HTML and LaTeX output.
+END

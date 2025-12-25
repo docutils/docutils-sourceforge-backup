@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2003-01-11T22:41:24.000000Z
+K 7
+svn:log
+V 155
+The "stylesheet_path" setting is used in docutils/tools/docutils.conf, so the same setting has to be used here ("stylesheet_path" overrides "stylesheet").
+
+END

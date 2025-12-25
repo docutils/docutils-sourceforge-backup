@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-09-30T11:36:56.573267Z
+K 7
+svn:log
+V 164
+html5 writer: Add list of text-level tags to the functional test.
+
+Preparation for support of more text-level tags.
+
+Also some minor formatting/documentation fixes.
+END

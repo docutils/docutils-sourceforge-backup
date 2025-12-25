@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2015-03-26T13:38:51.809712Z
+K 7
+svn:log
+V 134
+HTML4 writer: Wrap literal blocks in a <span> to support sub- and superscript 
+
+(not allowed in <pre> but possible in parsed-literal).
+END

@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-08-26T12:12:32.718817Z
+K 7
+svn:log
+V 236
+py3: Add aliases for removed symbols
+
+Add aliases for symbols that have been removed in Python 3.x, namely
+basestring, unicode, unichr and StandardError.
+
+Signed-off-by: Stephen Finucane <stephen@that.guru>
+small fixes by Günter Milde.
+END

@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-04-09T15:56:12.470829Z
+K 7
+svn:log
+V 214
+Condense RELEASE_NOTES.
+
+The release notes are intended for people short on time
+that do not want to read the complete HISTORY.
+
+Keep details there and announce only important improvements
+and incompatible changes.
+END

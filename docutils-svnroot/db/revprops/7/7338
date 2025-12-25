@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-02-03T12:22:14.907335Z
+K 7
+svn:log
+V 58
+Fix relative_path() with source=None and `unicode` target.
+END

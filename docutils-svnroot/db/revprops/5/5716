@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 13
+matt_harrison
+K 8
+svn:date
+V 27
+2008-10-31T05:38:16.251213Z
+K 7
+svn:log
+V 73
+add basic color support and left/center/right align for paragraph for odp
+END

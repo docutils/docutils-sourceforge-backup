@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2007-12-06T03:54:04.328430Z
+K 7
+svn:log
+V 53
+rst.el: Some fixes due to code review from Emacs dev.
+END

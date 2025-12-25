@@ -1,0 +1,9 @@
+id: h-740.0.t9229-757
+type: file
+pred: h-740.0.r9141/28835
+count: 17
+text: -1 9654 388 4586 e6442e726132fc80cadeb696f5eb4019 5b7c4c100a4765847c43aaefb601ad6d0a1c611c 9229-757/_s
+props: 1236 12223 136 0 921bd9320f875dd6f8050e7ef12a5696
+cpath: /trunk/docutils/test/test_parsers/test_rst/test_directives/test_replace.py
+copyroot: 0 /
+

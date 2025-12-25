@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-01-22T20:10:18.139586Z
+K 7
+svn:log
+V 115
+* Made nbsp generation compatible with perl 5.8.0.
+* Made the reported encoding agree with the -e flag (if given).
+
+END

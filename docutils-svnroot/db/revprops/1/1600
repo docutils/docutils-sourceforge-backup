@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 4
+tibs
+K 8
+svn:date
+V 27
+2003-07-21T16:56:44.000000Z
+K 7
+svn:log
+V 286
+The start of a new version of pysource, which will (eventually) use the
+Docutils Python reader. At the moment, it is just some trivial code to
+work with packages - something useful is a way off. Of course, this is
+also my chance to play with test driven development for the first time.
+
+END

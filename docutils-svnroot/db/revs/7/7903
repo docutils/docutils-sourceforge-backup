@@ -1,0 +1,276 @@
+PLAIN
+K 11
+__init__.py
+V 24
+file 3x-18.0.r7901/15673
+K 15
+docutils_xml.py
+V 23
+file 4-244.0.r7497/1280
+K 9
+html4css1
+V 24
+dir n-4163.0.r7901/16529
+K 10
+html_plain
+V 24
+dir 4-7901.0.r7901/19625
+K 7
+latex2e
+V 23
+dir q-4163.0.r7851/1323
+K 10
+manpage.py
+V 27
+file 6-1719.1-6085.r7628/66
+K 7
+null.py
+V 26
+file 4-3246.0.r4564/115090
+K 7
+odf_odt
+V 24
+dir 9-5834.0.r7899/19353
+K 8
+pep_html
+V 23
+dir v-4163.0.r7630/4430
+K 12
+pseudoxml.py
+V 23
+file 4-84.0.r7320/32670
+K 7
+s5_html
+V 22
+dir y-4163.0.r7720/855
+K 5
+xetex
+V 23
+dir 8-6428.0.r7852/5159
+END
+ENDREP
+id: 3w-18.0.r7903/548
+type: dir
+pred: 3w-18.0.r7901/20690
+count: 875
+text: 7903 0 535 535 d8c18074ad19dbb82b6b5087ac429208
+props: 342 6175 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils/writers
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 1x-18.0.r7763/1269
+K 10
+_compat.py
+V 24
+file 3-5889.0.r7486/9681
+K 7
+core.py
+V 23
+file 20-18.0.r7466/8022
+K 13
+docutils.conf
+V 29
+file m-3472.0-3904.r3904/2799
+K 11
+examples.py
+V 25
+file 3-1928.0.r7320/35530
+K 11
+frontend.py
+V 23
+file 3-150.0.r7584/2918
+K 5
+io.py
+V 23
+file 3-217.0.r7864/1390
+K 9
+languages
+V 22
+dir 22-18.0.r7678/3464
+K 8
+nodes.py
+V 22
+file 28-18.0.r7788/913
+K 7
+parsers
+V 22
+dir 2a-18.0.r7898/2247
+K 7
+readers
+V 22
+dir 36-18.0.r7648/5597
+K 15
+statemachine.py
+V 24
+file 3e-18.0.r7464/14401
+K 10
+transforms
+V 22
+dir 3g-18.0.r7897/9369
+K 5
+utils
+V 23
+dir 6-7267.0.r7884/1652
+K 7
+writers
+V 21
+dir 3w-18.0.r7903/548
+END
+ENDREP
+id: 1w-18.0.r7903/1453
+type: dir
+pred: 1w-18.0.r7901/21603
+count: 2052
+text: 7903 780 660 660 ed93357aadb361d28c378cc1fc9e13cc
+props: 342 8363 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+BUGS.txt
+V 24
+file 2-2181.0.r7768/4467
+K 11
+COPYING.txt
+V 22
+file 2-18.0.r7889/5170
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r7677/912
+K 11
+HISTORY.txt
+V 23
+file 5-18.0.r7901/11678
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r7890/298
+K 10
+README.txt
+V 22
+file 9-18.0.r7768/4750
+K 17
+RELEASE-NOTES.txt
+V 25
+file 2-4204.0.r7901/11965
+K 10
+THANKS.txt
+V 24
+file 2-2182.0.r7784/1491
+K 4
+docs
+V 21
+dir 3-7.0.r7901/15505
+K 8
+docutils
+V 22
+dir 1w-18.0.r7903/1453
+K 13
+docutils.conf
+V 23
+file 2-7375.0.r7375/485
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 24
+dir 2-1465.0.r7058/32984
+K 9
+setup.cfg
+V 24
+file 4-6255.0.r7442/5812
+K 8
+setup.py
+V 24
+file 46-18.0.r7901/21834
+K 4
+test
+V 22
+dir 48-18.0.r7902/4302
+K 5
+tools
+V 23
+dir 6w-18.0.r7901/35860
+K 7
+tox.ini
+V 24
+file 2-7874.0.r7874/3433
+END
+ENDREP
+id: 1-7.0.r7903/2477
+type: dir
+pred: 1-7.0.r7902/5341
+count: 4543
+text: 7903 1681 783 783 6892e9a326e82ab0fa479fa0d0101bcb
+props: 7875 0 61 0 d0bbca8cc10d090ba573e2a359166ad6
+cpath: /trunk/docutils
+copyroot: 0 /
+minfo-cnt: 1
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r7903/2477
+K 5
+prest
+V 24
+dir 1-4326.0.r6498/50375
+K 7
+sandbox
+V 22
+dir 1-17.0.r7901/44992
+K 3
+web
+V 19
+dir 1-2.0.r7765/625
+END
+ENDREP
+id: 3-1.0.r7903/2872
+type: dir
+pred: 3-1.0.r7902/5737
+count: 7437
+text: 7903 2703 156 156 fb3837b8b8d1984b07bc2b0a1ab2bd97
+cpath: /trunk
+copyroot: 0 /
+minfo-cnt: 7
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r7803/595
+K 4
+tags
+V 20
+dir 2-1.0.r7759/1108
+K 5
+trunk
+V 20
+dir 3-1.0.r7903/2872
+END
+ENDREP
+id: 0.0.r7903/3163
+type: dir
+pred: 0.0.r7902/6029
+count: 7903
+text: 7903 3037 113 113 fb65143e7d6fc7859db2ae2e68852706
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+minfo-cnt: 16
+
+6-7815.0.r7901/16796 delete-dir false false /trunk/docutils/docutils/writers/html_base
+
+b-6196.0-7798.r7901/19810 delete-dir false false /trunk/docutils/docutils/writers/xhtml11
+
+
+3163 3371

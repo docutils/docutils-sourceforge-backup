@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-11T17:39:37.476965Z
+K 7
+svn:log
+V 156
+Use "with ... as" when opening resources.
+
+Also drop codecs wrapper
+and encoding of paths with "sys.getfilesystemencoding"
+(automatically done in Python 3).
+END

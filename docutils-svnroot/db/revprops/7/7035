@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-05-15T20:47:04.535894Z
+K 7
+svn:log
+V 108
+Fix IOError to unicode conversion and add a test case.
+
+Cf. https://bugs.gentoo.org/attachment.cgi?id=273231
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2007-08-20T11:07:11.408699Z
+K 7
+svn:log
+V 134
+added qualified references syntax;
+added references.QualifiedReferences transform to resolve them;
+to do: add documentation, find bugs
+END

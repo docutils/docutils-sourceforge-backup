@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2008-09-28T06:25:13.140544Z
+K 7
+svn:log
+V 50
+Apply [ 1878977 ] make_id(): deaccent characters.
+
+END

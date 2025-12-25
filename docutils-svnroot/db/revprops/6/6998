@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-04-01T11:47:29.786890Z
+K 7
+svn:log
+V 213
+Fix command line test.
+
+Decode output with "utf8" (Docutils standard output encoding).
+Compare only the first line of output, strip line ending
+(removes CR vs. LFCR issues).
+
+Thanks to Alan for testing on Windows.
+END

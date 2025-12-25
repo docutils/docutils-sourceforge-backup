@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2019-12-01T22:08:45.038408Z
+K 7
+svn:log
+V 45
+Note for BUG #287 comma after option is bold
+
+END

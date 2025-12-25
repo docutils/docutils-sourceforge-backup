@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2016-12-10T17:19:12.239288Z
+K 7
+svn:log
+V 45
+Fix smart quotes definition for swedish (sv).
+END

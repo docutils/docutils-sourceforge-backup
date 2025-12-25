@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2013-01-30T12:39:24.764227Z
+K 7
+svn:log
+V 70
+Fix [ 3602652 ] correct syntax-highlight default value in help string.
+END

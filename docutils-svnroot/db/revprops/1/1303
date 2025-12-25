@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 8
+gschwant
+K 8
+svn:date
+V 27
+2003-05-02T19:54:08.000000Z
+K 7
+svn:log
+V 89
+
+Replaced stylesheet for HTML-output with David Goodger's latest version
+of default.css.
+
+END

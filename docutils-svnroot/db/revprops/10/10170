@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-06-16T12:36:11.212355Z
+K 7
+svn:log
+V 420
+Update/fix handling of duplicate identifiers.
+
+Update the code in `nodes.document.set_duplicate_name_id()` to
+* simplify the logic,
+* don't insert INFO level `<system_message> at places where it is invalid,
+* don't insert backlinks from a system message to an invisible target element
+  (an external `<target>` is not visible in HMTL and LaTeX output).
+
+Highlight targeted system-message in "responsive.css" style sheet.
+END

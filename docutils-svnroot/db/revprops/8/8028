@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-02-09T22:24:50.428561Z
+K 7
+svn:log
+V 191
+Reword inline markup recognition rules.
+
+Make clear, that Unicode character categories apply to non-ASCII
+characters (Codepoints > 127). ASCII characters are explicitely listed in
+the rules.
+
+END

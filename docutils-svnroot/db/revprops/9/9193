@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-10-28T03:05:39.599540Z
+K 7
+svn:log
+V 120
+Normalise all test section names
+
+Ensure all names are lowercase, and replace all non-alpha characters
+with underscores.
+END

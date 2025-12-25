@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-09-04T06:16:29.576117Z
+K 7
+svn:log
+V 471
+Fixes for `nodes.Node` and `_html_base.SimpleListChecker`
+
+Ensure that all methods and attributes that are common to `nodes.Element`
+and `nodes.Text` are also defined in the abstract base class `nodes.Node`.
+
+Rename the node validation hook `check_position()` to `validate_position()`
+to indicate its relation to element validation.
+
+Define `_html_base.SimpleListChecker.default_departure`
+(as required per documentation in `nodes.GenericNodeVisitor`).
+
+Fixup for [r9901]
+END

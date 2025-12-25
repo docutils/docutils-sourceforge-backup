@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-01-03T21:05:13.718028Z
+K 7
+svn:log
+V 134
+Update pygments integration.
+
+Pygments no longer uses the pkg_resources.DistributionNotFound
+exception, so we don't need to import it.
+END

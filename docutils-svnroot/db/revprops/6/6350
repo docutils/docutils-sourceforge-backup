@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2010-07-03T11:26:54.795662Z
+K 7
+svn:log
+V 76
+Text and blocks are handled. All unit tests but the section test are
+green.
+
+END

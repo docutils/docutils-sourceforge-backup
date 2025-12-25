@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-08-26T12:10:59.607921Z
+K 7
+svn:log
+V 79
+py3: Use new style classes
+
+Signed-off-by: Stephen Finucane <stephen@that.guru>
+END

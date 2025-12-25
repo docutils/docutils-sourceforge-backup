@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-05-02T23:04:27.760789Z
+K 7
+svn:log
+V 198
+Revert addition of `io.OutString` and the "auto_encode" argument.
+
+We need a review of the "string output" interface and a consensus
+on the "clean" end-state before starting with the implementation.
+END

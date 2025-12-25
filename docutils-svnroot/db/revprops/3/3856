@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2005-09-07T22:27:20.533812Z
+K 7
+svn:log
+V 76
+Almost finished the emacs underline support, only need fix borderline cases.
+END

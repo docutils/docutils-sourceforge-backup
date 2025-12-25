@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-09-04T16:55:24.710242Z
+K 7
+svn:log
+V 228
+Change the `initial_header_level`_ setting's default to "2"
+
+Browsers use the `same style for <h1> and <h2> when it's
+nested in a section`.
+cf. https://stackoverflow.com/questions/39547412/same-font-size-for-h1-and-h2-in-article
+END

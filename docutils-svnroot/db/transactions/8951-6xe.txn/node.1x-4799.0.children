@@ -1,0 +1,85 @@
+K 8
+Dir.smak
+V 25
+file 20-5058.0.r6232/9909
+K 12
+mathml01.dom
+V 24
+file 21-4799.0.r6230/272
+K 12
+mathml01.rst
+V 26
+file 23-4799.0.r4799/43288
+K 12
+mathml02.dom
+V 24
+file 25-4799.0.r6230/518
+K 12
+mathml02.rst
+V 26
+file 27-4799.0.r4799/43513
+K 12
+mathml03.dom
+V 23
+file 5-5754.0.r6230/765
+K 12
+mathml03.rst
+V 23
+file 8-5754.0.r5754/669
+K 7
+skip.pl
+V 26
+file 29-4799.0.r4799/42398
+K 15
+subst_ref01.dom
+V 25
+file v-6232.0.r6232/10375
+K 15
+subst_ref01.rst
+V 24
+file x-6232.0.r6232/9457
+K 15
+subst_ref02.dom
+V 25
+file z-6232.0.r6232/10601
+K 15
+subst_ref02.rst
+V 25
+file 11-6232.0.r6232/9682
+K 12
+target01.dom
+V 23
+file 5-5287.0.r5287/754
+K 12
+target01.rst
+V 23
+file 8-5287.0.r5287/973
+END
+D 8
+Dir.smak
+D 12
+mathml01.dom
+D 12
+mathml01.rst
+D 12
+mathml02.dom
+D 12
+mathml02.rst
+D 12
+mathml03.dom
+D 12
+mathml03.rst
+D 7
+skip.pl
+D 15
+subst_ref01.dom
+D 15
+subst_ref01.rst
+D 15
+subst_ref02.dom
+D 15
+subst_ref02.rst
+D 12
+target01.dom
+D 12
+target01.rst

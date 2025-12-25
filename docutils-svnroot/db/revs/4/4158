@@ -1,0 +1,42 @@
+PLAIN
+K 7
+nesting
+V 27
+dir 3-1.0-1813.r2577/106277
+END
+ENDREP
+id: 0-1.0.r4158/62
+type: dir
+pred: 0-1.0.r4155/2473
+count: 225
+text: 4158 0 49 49 44345aa0c3957a2425d962385d7acf6a
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 18
+dir 0-1.0.r4158/62
+K 4
+tags
+V 19
+dir 2-1.0.r3816/482
+K 5
+trunk
+V 20
+dir 3-1.0.r4157/6388
+END
+ENDREP
+id: 0.0.r4158/333
+type: dir
+pred: 0.0.r4157/6667
+count: 4158
+text: 4158 209 111 111 ca0c26b69a22cb013fad3ec8d9856547
+cpath: /
+copyroot: 0 /
+
+1-7.0-4011.r4155/2138 delete-dir false false /branches/s5
+
+
+333 474

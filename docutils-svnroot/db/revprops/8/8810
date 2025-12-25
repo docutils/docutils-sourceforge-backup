@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-08-11T14:35:08.236066Z
+K 7
+svn:log
+V 121
+Update functional test for LaTeX corner cases.
+
+Test for more problems with tables.
+
+Cosmetic fixes, reword, restructure.
+END

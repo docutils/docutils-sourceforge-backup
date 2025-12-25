@@ -1,0 +1,104 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2007-01-11T14:28:06.019581Z
+K 7
+svn:log
+V 2955
+rst.el: change to accomodate tramp.el
+
+See email below.
+
+n 1/11/07, Hans Halvorson <hhalvors@princeton.edu> wrote:
+> I have been talking with the maintainers of Tramp (remote file editing
+> over ssh for Emacs) about how to get rst-compile (in rst.el) to work
+> with Tramp's remote compilation capabilities.  The results of this
+> discussion are pasted in below.  Might rst.el be modified to make it
+> compatible with Tramp?
+> 
+> Thanks,
+> Hans Halvorson
+> 
+> [From Michael Albinus:]
+> 
+> > [From Hans Halvorson:]
+> >
+> > I have pasted in below the definition of the "rst-compile" in rst.el.
+> > > The problem is with the call to "rst-compile-find-conf" in the first
+> > > let clause.  This function tries to search for a file called
+> > > "docutils.conf" in all directories above the directory of the current
+> > > buffer.  I do not know if that function is strictly incompatible with
+> > > Tramp, or whether it just takes a very long time to search on some
+> > > remote hosts.  But I have waited for up to two minutes after calling
+> > > rst-compile before pressing C-g to cancel.
+> 
+> > I've modified the code slightly:
+> 
+> >   (let ((file-name "docutils.conf")
+> >         (buffer-file "/ssh:localhost:~/.emacs"))
+> >     ;; Move up in the dir hierarchy till we find a change log file.
+> >     (let ((dir (file-name-directory buffer-file)))
+> >       (while (and (or (not (string= "/" dir)) (setq dir nil) nil)
+> >                   (not (file-exists-p (concat dir file-name))))
+> >       (message dir)
+> >         ;; Move up to the parent dir and try again.
+> >         (setq dir (expand-file-name (file-name-directory
+> >                                      (directory-file-name
+> >                                      (file-name-directory dir))))) )
+> >       (or (and dir (concat dir file-name)) nil)
+> >     ))
+> 
+> > If you evaluate the code, you'll see something like this in *Messages*:
+> 
+> > Mark set
+> > /ssh:albinus@localhost:~/
+> > /ssh:albinus@localhost:/home/albinus/
+> > /ssh:albinus@localhost:/home/
+> > /ssh:albinus@localhost:/ [340 times]
+> > Quit
+> 
+> > The point is that the iteration goes via upper directories, and an
+> > upper directory is computed as
+> 
+> > (file-name-directory
+> >  (directory-file-name
+> >   (file-name-directory dir)))
+> 
+> > That is correct, but for "/ssh:albinus@localhost:/" the upper directory
+> > is "/ssh:albinus@localhost:/" again. The stop condition (string= "/" dir)
+> > does not match in case of remote files.
+> 
+> > I fear, Tramp cannot solve the problem; rst.el must take remote files
+> > into account.
+
+Yes.
+
+
+> [From Kai Grossjohann]
+> 
+> > rst.el could stop when X and (directory-file-name (file-name-directory
+> > (directory-file-name X))) are equal.  That would work whether the
+> > "root" directory is "/" or "C:/" (say) or "/ssh:foo:/".
+> 
+> > What do people think?
+
+I think Kai is a genius, as always.
+Yes.
+I've made the change, see path below, can you test with tramp?
+thx
+
+
+
+
+
+
+
+
+
+
+
+END

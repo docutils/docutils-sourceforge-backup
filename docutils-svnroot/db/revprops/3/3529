@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-20T18:02:01.608509Z
+K 7
+svn:log
+V 105
+corrected syntax error in distributing.txt;
+mmmh... the spec should be changed, this error is unnecessary
+END

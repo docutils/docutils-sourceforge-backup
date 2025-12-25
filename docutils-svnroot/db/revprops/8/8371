@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-08-27T12:10:52.370138Z
+K 7
+svn:log
+V 201
+py3: Fix magic methods
+
+Python 3 uses '__bool__' and '__next__', where Python 2 used
+'__nonzero__' and 'next'. Use the new names but add aliases.
+
+Based on patch by Stephen Finucane <stephen@that.guru>
+END

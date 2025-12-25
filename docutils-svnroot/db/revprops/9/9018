@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-03-03T22:16:12.741512Z
+K 7
+svn:log
+V 116
+Fix missing whitespace after ',' or ':'.
+
+flake8 rule E231.
+
+Mostly trailing commas in list and dictionary literals.
+END

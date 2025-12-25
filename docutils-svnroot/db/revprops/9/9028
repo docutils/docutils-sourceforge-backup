@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-03-05T23:27:39.391075Z
+K 7
+svn:log
+V 258
+Code cleanup: StateMachine._stderr no longer required.
+
+The private attribute `_stderr` implemented encoding-safe
+error-reporting (setting `errors` to "backslashreplace").
+In Py3k, sys.stderr.errors defaults to "backslashreplace".
+
+Also avoid too long lines.
+END

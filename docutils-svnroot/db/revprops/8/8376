@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-08-27T19:49:29.018096Z
+K 7
+svn:log
+V 83
+trivial: Misc whitespace fixes
+
+Signed-off-by: Stephen Finucane <stephen@that.guru>
+END

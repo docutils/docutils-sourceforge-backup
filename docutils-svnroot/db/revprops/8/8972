@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-26T19:03:02.899593Z
+K 7
+svn:log
+V 67
+Update docstring for ``FileInput.__init__``.
+
+Patch by Adam Turner.
+END

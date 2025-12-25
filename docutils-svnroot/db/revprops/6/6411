@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+rkrauss
+K 8
+svn:date
+V 27
+2010-09-14T14:58:29.376934Z
+K 7
+svn:log
+V 105
+fixed docinfo problems; included Guenters patch; changed default for --use-latex-docinfo; added two tests
+END

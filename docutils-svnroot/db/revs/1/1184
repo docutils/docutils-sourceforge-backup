@@ -1,0 +1,152 @@
+PLAIN
+K 11
+__init__.py
+V 23
+file 9-1158.0.r1158/222
+END
+ENDREP
+id: 4-1158.0.r1184/63
+type: dir
+pred: 4-1158.0.r1158/1052
+count: 1
+text: 1184 0 50 50 586ae1597176ad150aa405bfcbe65279
+props: 1158 990 49 0 a8e0e6f5443bebbf7264ba14600411f2
+cpath: /trunk/sandbox/pobrien/dwArticle
+copyroot: 0 /
+
+PLAIN
+K 11
+LinuxFormat
+V 23
+dir 3-1183.0.r1183/1071
+K 10
+OpenOffice
+V 23
+dir 3-1162.0.r1182/5574
+K 9
+dwArticle
+V 21
+dir 4-1158.0.r1184/63
+END
+ENDREP
+id: 2-1158.0.r1184/440
+type: dir
+pred: 2-1158.0.r1183/1376
+count: 18
+text: 1184 291 136 136 84f7e079f91ee54f7a742518d0170455
+cpath: /trunk/sandbox/pobrien
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 21
+file 3-17.0.r115/8760
+K 4
+aahz
+V 22
+dir 2-820.0.r1174/2130
+K 4
+bbum
+V 23
+dir 2-1039.0.r1133/1962
+K 6
+davidg
+V 21
+dir 6-17.0.r1138/1150
+K 7
+grubert
+V 22
+dir 2-112.0.r1179/2807
+K 8
+gschwant
+V 24
+dir 2-675.0.r1178/138518
+K 4
+ianb
+V 22
+dir 2-881.0.r1150/3819
+K 3
+mwh
+V 21
+dir 2-857.0.r862/1023
+K 7
+oliverr
+V 22
+dir 2-202.0.r1161/2771
+K 7
+pobrien
+V 22
+dir 2-1158.0.r1184/440
+K 7
+richard
+V 22
+dir 2-526.0.r1089/2918
+K 6
+simonb
+V 21
+dir 2-252.0.r345/3718
+K 4
+tibs
+V 21
+dir 2-62.0.r1089/1615
+END
+ENDREP
+id: 1-17.0.r1184/1132
+type: dir
+pred: 1-17.0.r1183/2071
+count: 247
+text: 1184 610 509 509 65eb0fde315f2a3c8654db815703d38e
+cpath: /trunk/sandbox
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r1181/1558
+K 7
+sandbox
+V 21
+dir 1-17.0.r1184/1132
+K 3
+web
+V 19
+dir 1-2.0.r1144/755
+END
+ENDREP
+id: 3-1.0.r1184/1420
+type: dir
+pred: 3-1.0.r1183/2360
+count: 1176
+text: 1184 1292 115 115 8af142d10d03997b7fde509c94e033c1
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 17
+dir 0-1.0.r63/562
+K 4
+tags
+V 17
+dir 2-1.0.r65/217
+K 5
+trunk
+V 20
+dir 3-1.0.r1184/1420
+END
+ENDREP
+id: 0.0.r1184/1693
+type: dir
+pred: 0.0.r1183/2633
+count: 1184
+text: 1184 1572 108 108 c68a29d5277bfdab9b707cae26e539cb
+cpath: /
+copyroot: 0 /
+
+6-1158.0.r1158/614 delete-file false false /trunk/sandbox/pobrien/dwArticle/.cvsignore
+
+
+1693 1836

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2018-01-04T07:03:42.403275Z
+K 7
+svn:log
+V 103
+Fix error reporting in wrapper for external tex2mathml converters.
+
+Thanks to Alan Isaac for reporting.
+END

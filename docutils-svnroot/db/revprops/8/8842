@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-10-04T13:10:11.542138Z
+K 7
+svn:log
+V 140
+Add line, source, and rawsource attributes to blockquote nodes.
+
+Fix docstring for states.Body.split_attribution().
+
+Patch by Mickey Endito.
+END

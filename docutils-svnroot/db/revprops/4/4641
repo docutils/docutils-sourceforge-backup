@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2006-06-28T16:27:55.335535Z
+K 7
+svn:log
+V 196
+Added StopTraversal exception in nodes, to interrupt the traversal cleanly.
+
+I needed this for my Nabu presentation layer, in order to be able to render
+just the first portion of my blog entries.
+
+END

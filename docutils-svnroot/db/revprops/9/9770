@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-18T07:44:50.196975Z
+K 7
+svn:log
+V 335
+Unify arguments for component name and instance in core.py.
+
+Allow a string value (component name or alias) in the
+"reader", "parser", and "writer" arguments of `Publisher.__init__()`
+and the `publish_*()` convenience functions.
+
+Warn about the pending removal of the "reader_name",
+"parser_name", and "writer_name" function arguments.
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 8
+reuleaux
+K 8
+svn:date
+V 27
+2006-09-15T10:59:02.132316Z
+K 7
+svn:log
+V 60
+(require 'font-lock) added to the installation instructions
+
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-03-31T18:00:31.972571Z
+K 7
+svn:log
+V 51
+added error handling for missing distutils (tested)
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2002-05-08T16:32:59.000000Z
+K 7
+svn:log
+V 114
+pdftest_1.txt should contain more than one page.
+rltemplate.py uses SimpleDocTemplate instead of BaseDocTemplate.
+
+END

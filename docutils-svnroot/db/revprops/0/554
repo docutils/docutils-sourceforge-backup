@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-08-17T01:38:39.000000Z
+K 7
+svn:log
+V 115
+Made the element subsection entitled "Description" implicit, because it interfered with the "description" element.
+
+END

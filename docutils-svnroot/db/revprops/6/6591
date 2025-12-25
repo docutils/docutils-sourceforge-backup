@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 12
+paultremblay
+K 8
+svn:date
+V 27
+2011-01-17T06:09:52.157778Z
+K 7
+svn:log
+V 90
+Took toc away from bibliographic_fields.rst and put it with
+bibliographic_fields_toc.rst.
+
+END

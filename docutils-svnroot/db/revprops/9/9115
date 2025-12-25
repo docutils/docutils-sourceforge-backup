@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-07-28T17:06:24.879915Z
+K 7
+svn:log
+V 97
+Cleanup.
+
+Fix typo.
+Remove spurious whitespace.
+Bare "except" replaced with ``except Exception``.
+END

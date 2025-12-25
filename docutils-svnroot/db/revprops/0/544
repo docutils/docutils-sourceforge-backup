@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-08-16T00:43:24.000000Z
+K 7
+svn:log
+V 103
+Added support for "line_block" elements.  "font-size: 100%" for <tt> in <h[1-6]> seems to work better.
+
+END

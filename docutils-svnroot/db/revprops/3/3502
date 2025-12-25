@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-17T00:05:32.831181Z
+K 7
+svn:log
+V 113
+updated link to OpenOffice writer;
+Aahz says Patrick has a more recent version (a quick test shows that it works)
+END

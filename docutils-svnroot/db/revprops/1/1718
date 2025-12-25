@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 4
+cben
+K 8
+svn:date
+V 27
+2003-10-09T22:37:50.000000Z
+K 7
+svn:log
+V 135
+Propogate align attribute of a non-inline image to the surrounding <p> tag
+(otherwise the image's horizontal alignment has no effect).
+
+END

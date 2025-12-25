@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2023-09-07T08:05:56.559400Z
+K 7
+svn:log
+V 67
+Updated build stystem to use Flit (cf. patch #186 by Adam Turner).
+
+END

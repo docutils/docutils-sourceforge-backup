@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 4
+cben
+K 8
+svn:date
+V 27
+2004-06-19T23:33:39.000000Z
+K 7
+svn:log
+V 108
+Since the Documentation section became a single link, it was hard to notice.
+Moved it to a prominent place.
+
+END

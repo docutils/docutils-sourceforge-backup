@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 8
+gschwant
+K 8
+svn:date
+V 27
+2003-01-08T22:23:40.000000Z
+K 7
+svn:log
+V 103
+New release of DocFactory.
+Check HISTORY.txt for new features.
+Be sure to upgrade to wxPython 2.3.4.2.
+
+END

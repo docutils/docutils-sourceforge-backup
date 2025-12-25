@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-03-05T17:47:02.000000Z
+K 7
+svn:log
+V 218
+Reintroduced the changes from 1.13, plus allowance for py2.1, and no reliance on "from __future__ import" which I DO NOT want in production code.  Also lambdas are ugly, confusing, and avoidable -- keep those out too.
+
+END

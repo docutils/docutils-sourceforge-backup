@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-10-18T08:57:32.111149Z
+K 7
+svn:log
+V 49
+Document, that type hints use Python 3.10 syntax.
+END

@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2006-09-05T19:39:50.029992Z
+K 7
+svn:log
+V 180
+* Moved END and QuoteStart to be top-level subroutines.
+* Pass the a writer argument into QuoteStart.
+* Fixed processing of -W short-titles.
+* Added handler for interpreted roles.
+
+END

@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-09-11T11:18:27.060986Z
+K 7
+svn:log
+V 152
+LaTeXwriter: small fixes.
+
+Don't add ``\phantomsection`` to labels in math-blocks.
+
+New optional argument `newline` for LaTeXTranslator.ids_to_labels().
+END

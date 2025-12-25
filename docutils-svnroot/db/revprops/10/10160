@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-06-10T09:57:32.990533Z
+K 7
+svn:log
+V 451
+LaTeX writer: Don't merge paragraphs if there is a `<target>` between them.
+
+`visit_target()` must keep a blank line between block-level elements.
+
+Most targets with ID are inline elements, because the `PropagateTargets`
+transform transfers the ID of a most block-level targets to the next element.
+However, a target keeps its ID if the next element is invisible (e.g. a pending
+node from a "class" directive, a comment, or a substitution definition).
+END

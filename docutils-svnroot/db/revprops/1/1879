@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 6
+reggie
+K 8
+svn:date
+V 27
+2004-03-23T22:29:44.000000Z
+K 7
+svn:log
+V 216
+Added funtionality to keep track of individual parts of a document and store
+them in a dictionary as the "parts" attribute of the writer.
+Added publish_parts convenience function to allow easy access to these parts.
+
+END

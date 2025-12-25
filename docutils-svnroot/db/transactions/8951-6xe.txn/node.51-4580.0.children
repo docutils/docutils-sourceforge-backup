@@ -1,0 +1,169 @@
+K 16
+admonitions.init
+V 25
+dir 52-4580.0.r4580/64280
+K 13
+compound.init
+V 25
+dir 57-4580.0.r4580/64859
+K 13
+contents.init
+V 25
+dir 5b-4580.0.r4580/69712
+K 16
+decorations.init
+V 25
+dir 5f-4580.0.r4580/77676
+K 17
+default_role.init
+V 25
+dir 5j-4580.0.r4580/76515
+K 12
+figures.init
+V 25
+dir 5n-4580.0.r4580/73750
+K 11
+images.init
+V 25
+dir 5r-4580.0.r4580/75927
+K 12
+include.init
+V 23
+dir 63-4580.0.r6228/364
+K 8
+includes
+V 23
+dir 6h-4580.0.r5444/411
+K 16
+line_blocks.init
+V 25
+dir 6l-4580.0.r4580/65444
+K 9
+meta.init
+V 25
+dir 6p-4580.0.r4580/67460
+K 8
+raw.init
+V 25
+dir 6t-4580.0.r4580/68562
+K 12
+replace.init
+V 25
+dir 71-4580.0.r4580/80069
+K 9
+role.init
+V 25
+dir 75-4580.0.r4580/73180
+K 12
+rubrics.init
+V 25
+dir 79-4580.0.r4580/77092
+K 13
+sidebars.init
+V 25
+dir 7d-4580.0.r4580/69135
+K 11
+tables.init
+V 23
+dir 7h-4580.0.r6228/823
+K 20
+test_directives.init
+V 25
+dir 7t-4580.0.r4580/71174
+K 11
+topics.init
+V 25
+dir 7x-4580.0.r4580/72615
+K 12
+unicode.init
+V 25
+dir 87-4580.0.r4580/66894
+K 12
+unknown.init
+V 25
+dir 8h-4580.0.r4580/70576
+END
+K 16
+admonitions.init
+V 23
+dir 52-4580.0.t8951-6xe
+K 13
+compound.init
+V 23
+dir 57-4580.0.t8951-6xe
+K 13
+contents.init
+V 23
+dir 5b-4580.0.t8951-6xe
+K 16
+decorations.init
+V 23
+dir 5f-4580.0.t8951-6xe
+K 17
+default_role.init
+V 23
+dir 5j-4580.0.t8951-6xe
+K 12
+figures.init
+V 23
+dir 5n-4580.0.t8951-6xe
+K 11
+images.init
+V 23
+dir 5r-4580.0.t8951-6xe
+K 12
+include.init
+V 23
+dir 63-4580.0.t8951-6xe
+K 8
+includes
+V 23
+dir 6h-4580.0.t8951-6xe
+K 16
+line_blocks.init
+V 23
+dir 6l-4580.0.t8951-6xe
+K 9
+meta.init
+V 23
+dir 6p-4580.0.t8951-6xe
+K 8
+raw.init
+V 23
+dir 6t-4580.0.t8951-6xe
+K 12
+replace.init
+V 23
+dir 71-4580.0.t8951-6xe
+K 9
+role.init
+V 23
+dir 75-4580.0.t8951-6xe
+K 12
+rubrics.init
+V 23
+dir 79-4580.0.t8951-6xe
+K 13
+sidebars.init
+V 23
+dir 7d-4580.0.t8951-6xe
+K 11
+tables.init
+V 23
+dir 7h-4580.0.t8951-6xe
+K 20
+test_directives.init
+V 23
+dir 7t-4580.0.t8951-6xe
+K 11
+topics.init
+V 23
+dir 7x-4580.0.t8951-6xe
+K 12
+unicode.init
+V 23
+dir 87-4580.0.t8951-6xe
+K 12
+unknown.init
+V 23
+dir 8h-4580.0.t8951-6xe

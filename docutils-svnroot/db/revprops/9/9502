@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-12-14T22:39:08.223545Z
+K 7
+svn:log
+V 112
+Small fixes.
+
+Update comments.
+
+Clean up: detach "note_transform_message()" observer
+after finishing transforms.
+END

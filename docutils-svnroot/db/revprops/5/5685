@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 13
+matt_harrison
+K 8
+svn:date
+V 27
+2008-10-24T17:19:41.192327Z
+K 7
+svn:log
+V 39
+fix cwd decorator to accept current dir
+END

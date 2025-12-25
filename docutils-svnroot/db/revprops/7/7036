@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-05-16T07:40:28.967350Z
+K 7
+svn:log
+V 78
+in Python 3, the name for the exception instance is local to the except clause
+END

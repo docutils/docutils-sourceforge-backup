@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 8
+dkuhlman
+K 8
+svn:date
+V 27
+2007-01-05T23:28:03.026598Z
+K 7
+svn:log
+V 385
+Added support for "table" and "container" directives.
+
+Added support for the "table" directive.  Insert title into output
+with new rststyle-table-title style.
+
+Added limited support for "container" directive.  Limitations: (1)
+Only the first class in the list of classes (arguments) is used
+and (2) that class/style must be a paragraph style and not (for
+example) a character style.
+
+
+
+END

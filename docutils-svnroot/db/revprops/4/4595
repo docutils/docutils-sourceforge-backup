@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-06-05T00:25:40.068008Z
+K 7
+svn:log
+V 45
+added missing history entry (setup.py; r4458)
+END

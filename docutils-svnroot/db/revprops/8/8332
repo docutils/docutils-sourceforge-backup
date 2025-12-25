@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-08-21T11:55:48.825312Z
+K 7
+svn:log
+V 65
+Revert more of [r8197]. 
+
+Do not add "rawsource" to `Text` nodes.
+END

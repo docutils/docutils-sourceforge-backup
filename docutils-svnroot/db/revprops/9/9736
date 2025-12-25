@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-06T14:01:54.202502Z
+K 7
+svn:log
+V 408
+xml-parser: Use "XMLPullParser" to add source line number to elements.
+
+Use an "XMLPullParser" to register source line numbers in the parsed elements.
+Transfer them to the internal "line" attribute of the document-tree nodes.
+
+(An attempt to create doctree node based on "start"/"end" events became
+too complicated, because tailing text is not yet in `element.tail`
+when an element's "end" event is reported.
+END

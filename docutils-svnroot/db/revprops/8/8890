@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-11-16T22:20:43.247236Z
+K 7
+svn:log
+V 400
+Fix and document attribute definitions in nodes.Element.
+
+Reword documentation using the nomenclature from "expose_internals"
+in config.txt: External attributes correspond to the XML element
+attributes. Internal attributes are Python class attributes.
+
+Bugfix: Remove the "internal" attribute `rawsource` from
+`Element.known_attributes` (common external attributes).
+This was a leftover from [r8194].
+END

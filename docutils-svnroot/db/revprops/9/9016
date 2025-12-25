@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-03-03T22:15:16.696366Z
+K 7
+svn:log
+V 115
+Fix multiple spaces before/after operator
+
+E221 multiple spaces before operator
+E222 multiple spaces after operator
+END

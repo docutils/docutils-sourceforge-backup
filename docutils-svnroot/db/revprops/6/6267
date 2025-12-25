@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-03-18T11:10:44.048797Z
+K 7
+svn:log
+V 309
+Copy/convert test suite and tools with ``python3 setup.py build``.
+
+With Python 3, the "build" command copies test/ and tools/ to the
+build-dir and auto-converts Python sources with 2to3.
+These directories provied developer tools (like buildhtml.py) and the
+test suite. They are not installed with "install".
+
+END

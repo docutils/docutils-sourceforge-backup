@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-11-28T13:51:32.448375Z
+K 7
+svn:log
+V 367
+Future-proof the test for valid parents of topics or sidebars.
+
+Test a "whitelist" of categories before the "blacklist"
+to allow auxiliary elements belonging to several categories
+(e.g. `nodes.Root` and `nodes.BodyElements`) as parents
+of topics or sidebars.
+This still gives uncategorized nodes the "benefit of daubt"
+but supports properly categorized nodes as well.
+END

@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-02-21T19:13:14.670675Z
+K 7
+svn:log
+V 295
+* Added "-D image-exts" flag so that each writer doesn't have to
+  support the functionality separately.
+* Copy in the $opt hash reference in Text::Restructured::new so that
+  it doesn't modify external storage.
+* Initialize some of the opt variables to avoid warnings if not driven
+  by prest.
+
+END

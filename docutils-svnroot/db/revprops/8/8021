@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-02-03T14:44:16.442260Z
+K 7
+svn:log
+V 312
+Provide default title in metadata.
+
+In HTML5, <title> is a required child of the <head> element 
+and it must not be empty (found with https://validator.w3.org/check)
+
+If there is no given title, we use the source file name as default and
+fall back to "docutils document without title" if there is no source file.
+END

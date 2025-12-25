@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2018-11-26T21:50:13.615684Z
+K 7
+svn:log
+V 153
+Specify Python version requirements in setup.py.
+
+Also drop a version check for no-longer supported versions 3.1 and 3.2.
+
+Patch [ 145 ] by Hugo. Thanks.
+END

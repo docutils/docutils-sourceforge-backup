@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-05-20T15:07:28.607792Z
+K 7
+svn:log
+V 202
+Fixup for [r10134]. Test failure due to varying PIL error messages.
+
+Pillow versions vary in their error output (cf. bugs: #485 and #500)
+Use error output from a probe in constant "DUMMY_PNG_NOT_FOUND".
+END

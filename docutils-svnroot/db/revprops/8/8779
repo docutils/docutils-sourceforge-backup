@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-06-25T20:58:55.445451Z
+K 7
+svn:log
+V 253
+HTML5: ARIA roles for citations and citation-references.
+
+Use <div> with DPub ARIA role "doc-biblioentry" for citations.
+Wrapping citations in a list (required for elements with role
+"doc-biblioentry").
+
+Use role "doc-biblioref" for citation-references.
+END

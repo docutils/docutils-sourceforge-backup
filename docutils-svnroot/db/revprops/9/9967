@@ -1,0 +1,40 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-10-24T21:05:01.031612Z
+K 7
+svn:log
+V 1151
+Start reconciling "colwidth" attribute definition and use.
+
+First, backwards compatible changes get the handling of the
+`<colspec>` element's "colwidth" attribute in line with the
+definition in the Exchange Table Model.
+
+The "colwidth" attribute is defined in the "Exchange Table Model"
+as either a *proportional measure* or a *fixed measure*.
+Currently, Docutils supports only unitless values and interpets them
+as proportional measures while the Exchange Table Model interprets
+unitless values as fixed measures with default unit “pt”!
+
+The new optional argument "unit_pattern" for `nodes.parse_measure()`
+allows configuring what is recognized as a unit.
+
+The new validation function `nodes.validate_proportional()`
+for the "colwidth" attribute also accepts conformant values like
+"5.2*" (for 5.2 times the "unit proportion").
+For backwards compatibility reasons, the attribute is still stored
+as numerical value in Python doctree element instances.
+
+New auxiliary method `nodes.colspec.propwith()`:
+returns the "colwidth" attribute as number if it is a
+proportional measure.
+
+Announce future changes in the RELEASE_NOTES
+
+Add/modify test cases.
+END

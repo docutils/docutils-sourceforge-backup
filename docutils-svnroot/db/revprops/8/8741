@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-05-20T12:20:20.296153Z
+K 7
+svn:log
+V 312
+MathML: make delimiters "non-strechy" by default. Fixes bug #407.
+
+LaTeX lets delimiters grow to the size of the enclosed content
+only, when they are arguments to ``\left`` or `\right``.
+MathML streches delimiters inside ``mrow`` by default.
+
+Add ``stretchy="false"`` to keep LaTeX and MathML appearance in sync.
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 6
+strank
+K 8
+svn:date
+V 27
+2008-07-23T20:08:43.366936Z
+K 7
+svn:log
+V 68
+now really branch docutils trunk for removing userstring and has_key
+END

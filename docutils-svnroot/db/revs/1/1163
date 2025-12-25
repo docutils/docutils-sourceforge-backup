@@ -1,0 +1,187 @@
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 4-1163.0.r1163/123
+type: file
+count: 0
+text: 1158 0 36 24 b3941e981222ecc5b51ffa0bbbe68fca 71256dd2447bdf45f59f269a3d128adf33dda3ac 1162-wa/_6
+props: 1163 0 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/sandbox/pobrien/OpenOffice/.cvsignore
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 23
+file 4-1163.0.r1163/123
+K 9
+OOtext.py
+V 24
+file 5-1162.0.r1162/5488
+END
+ENDREP
+PLAIN
+K 10
+svn:ignore
+V 23
+*.pyc
+*.py~
+*.BAK
+*.$$$
+END
+ENDREP
+id: 3-1162.0.r1163/558
+type: dir
+pred: 3-1162.0.r1162/5824
+count: 1
+text: 1163 390 93 93 4f02c5ef2996d5b30841ea00156a28cd
+props: 1163 496 49 0 a8e0e6f5443bebbf7264ba14600411f2
+cpath: /trunk/sandbox/pobrien/OpenOffice
+copyroot: 0 /
+
+PLAIN
+K 10
+OpenOffice
+V 22
+dir 3-1162.0.r1163/558
+K 9
+dwArticle
+V 23
+dir 4-1158.0.r1158/1052
+END
+ENDREP
+id: 2-1158.0.r1163/894
+type: dir
+pred: 2-1158.0.r1162/6083
+count: 2
+text: 1163 790 91 91 5dbcf0081d5cadba1ac9c5222e708752
+cpath: /trunk/sandbox/pobrien
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 21
+file 3-17.0.r115/8760
+K 4
+aahz
+V 22
+dir 2-820.0.r1137/4895
+K 4
+bbum
+V 23
+dir 2-1039.0.r1133/1962
+K 6
+davidg
+V 21
+dir 6-17.0.r1138/1150
+K 7
+grubert
+V 22
+dir 2-112.0.r1075/1798
+K 8
+gschwant
+V 22
+dir 2-675.0.r1136/2920
+K 4
+ianb
+V 22
+dir 2-881.0.r1150/3819
+K 3
+mwh
+V 21
+dir 2-857.0.r862/1023
+K 7
+oliverr
+V 22
+dir 2-202.0.r1161/2771
+K 7
+pobrien
+V 22
+dir 2-1158.0.r1163/894
+K 7
+richard
+V 22
+dir 2-526.0.r1089/2918
+K 6
+simonb
+V 21
+dir 2-252.0.r345/3718
+K 4
+tibs
+V 21
+dir 2-62.0.r1089/1615
+END
+ENDREP
+id: 1-17.0.r1163/1581
+type: dir
+pred: 1-17.0.r1162/6773
+count: 228
+text: 1163 1061 507 507 7de49ee690495090317cd1751eee64ad
+cpath: /trunk/sandbox
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r1160/3525
+K 7
+sandbox
+V 21
+dir 1-17.0.r1163/1581
+K 3
+web
+V 19
+dir 1-2.0.r1144/755
+END
+ENDREP
+id: 3-1.0.r1163/1870
+type: dir
+pred: 3-1.0.r1162/7062
+count: 1155
+text: 1163 1742 115 115 d2e84b8c20a68bddc60d6f890c277d0e
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 17
+dir 0-1.0.r63/562
+K 4
+tags
+V 17
+dir 2-1.0.r65/217
+K 5
+trunk
+V 20
+dir 3-1.0.r1163/1870
+END
+ENDREP
+id: 0.0.r1163/2143
+type: dir
+pred: 0.0.r1162/7335
+count: 1163
+text: 1163 2022 108 108 e575129fba1fa8580103df9314444b8d
+cpath: /
+copyroot: 0 /
+
+_4.0.t1162-wa add-file true true /trunk/sandbox/pobrien/OpenOffice/.cvsignore
+
+3-1162.0.t1162-wa modify-dir false true /trunk/sandbox/pobrien/OpenOffice
+
+
+2143 2286

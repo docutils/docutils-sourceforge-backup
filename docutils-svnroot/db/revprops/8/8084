@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-05-27T13:42:36.330440Z
+K 7
+svn:log
+V 111
+Fix the "warn only once" mechanism of the smartquotes transform.
+
+Thanks to Jean François for test and report.
+END

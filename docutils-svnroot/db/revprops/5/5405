@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2007-08-17T03:41:58.863256Z
+K 7
+svn:log
+V 49
+avoid creation of duplicate ID's in sub-documents
+END

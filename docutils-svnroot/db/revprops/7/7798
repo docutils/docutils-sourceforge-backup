@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2015-02-21T16:59:18.077702Z
+K 7
+svn:log
+V 155
+New HTML writer generating `XHTML1.1`_ styled with CSS2.
+
+Moved to the docutils core from sandbox/html4strict.
+
+.. _XHTML1.1: http://www.w3.org/TR/xhtml11/
+END

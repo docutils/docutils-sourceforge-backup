@@ -1,0 +1,219 @@
+id: 3-3449.0-3490.r3490/0
+type: file
+pred: 3-3449.1-3488.r3488/2348
+count: 2
+text: 3488 266 202 904 05071d5bb3d15fb379fe159cbffeab53 4d14f56ee80f74930f7f08ceadd9bf4471fb9844 3487-2ov/_a
+props: 3488 2228 107 0 3c711300be3ea7503c3f4d9c1da3fa17
+cpath: /trunk/docutils/tools/dev/profile_docutils.py
+copyfrom: 3488 /trunk/docutils/tools/dev/profile.sh
+
+PLAIN
+K 10
+README.txt
+V 24
+file 7-3488.0.r3488/2785
+K 19
+profile_docutils.py
+V 26
+file 3-3449.0-3490.r3490/0
+END
+ENDREP
+id: 5-3488.0.r3490/468
+type: dir
+pred: 5-3488.0.r3488/3164
+count: 1
+text: 3490 348 107 107 fde1eafa0cb90240015438f15f4dcdaa
+cpath: /trunk/docutils/tools/dev
+copyroot: 0 /
+
+PLAIN
+K 12
+buildhtml.py
+V 22
+file 3-430.0.r2504/598
+K 3
+dev
+V 22
+dir 5-3488.0.r3490/468
+K 13
+docutils.conf
+V 21
+file 3-407.0.r3167/66
+K 7
+editors
+V 22
+dir 3-1157.0.r3360/977
+K 17
+pep-html-template
+V 21
+file 3-312.0.r943/265
+K 6
+pep.py
+V 23
+file 3-288.0.r1896/6536
+K 12
+quicktest.py
+V 22
+file 72-18.0.r3103/100
+K 11
+rst2html.py
+V 23
+file 5-1756.0.r2391/234
+K 12
+rst2latex.py
+V 25
+file b-1202.0.r2548/27720
+K 15
+rst2newlatex.py
+V 24
+file 3-3260.0.r3260/6983
+K 16
+rst2pseudoxml.py
+V 23
+file 3-2467.0.r2467/149
+K 10
+rst2xml.py
+V 23
+file 3-2468.0.r2468/149
+K 11
+stylesheets
+V 22
+dir 74-18.0.r3484/1397
+K 18
+unicode2rstsubs.py
+V 23
+file 3-1497.0.r3470/246
+END
+ENDREP
+id: 6w-18.0.r3490/1301
+type: dir
+pred: 6w-18.0.r3488/3974
+count: 264
+text: 3490 640 648 648 86110cfe29e704eccce5607d55df984b
+cpath: /trunk/docutils/tools
+copyroot: 0 /
+
+PLAIN
+K 8
+BUGS.txt
+V 24
+file 2-2181.0.r3406/1611
+K 11
+COPYING.txt
+V 21
+file 2-18.0.r3096/363
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r3452/109
+K 11
+HISTORY.txt
+V 23
+file 5-18.0.r3472/48061
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r2513/394
+K 10
+README.txt
+V 21
+file 9-18.0.r3407/847
+K 10
+THANKS.txt
+V 24
+file 2-2182.0.r3416/3502
+K 4
+docs
+V 20
+dir 3-7.0.r3486/2745
+K 8
+docutils
+V 22
+dir 1w-18.0.r3485/3344
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 24
+file 46-18.0.r3472/71471
+K 4
+test
+V 22
+dir 48-18.0.r3489/1381
+K 5
+tools
+V 22
+dir 6w-18.0.r3490/1301
+END
+ENDREP
+id: 1-7.0.r3490/2112
+type: dir
+pred: 1-7.0.r3489/2246
+count: 2648
+text: 3490 1470 629 629 61d7d45984a48a9cb42a328ae80d2d7a
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r3490/2112
+K 7
+sandbox
+V 21
+dir 1-17.0.r3488/6777
+K 3
+web
+V 20
+dir 1-2.0.r3487/1009
+END
+ENDREP
+id: 3-1.0.r3490/2455
+type: dir
+pred: 3-1.0.r3489/2589
+count: 3440
+text: 3490 2326 116 116 56acf24cd3197c7d829c4c05db839ebf
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r3171/7579
+K 4
+tags
+V 19
+dir 2-1.0.r3383/196
+K 5
+trunk
+V 20
+dir 3-1.0.r3490/2455
+END
+ENDREP
+id: 0.0.r3490/2733
+type: dir
+pred: 0.0.r3489/2867
+count: 3490
+text: 3490 2607 113 113 b040296b508626c4e5b81286fccf6bae
+cpath: /
+copyroot: 0 /
+
+3-3449.1-3488.r3488/2348 delete-file false false /trunk/docutils/tools/dev/profile.sh
+
+3-3449._0.t3489-2ox add-file false false /trunk/docutils/tools/dev/profile_docutils.py
+3488 /trunk/docutils/tools/dev/profile.sh
+
+2733 2876

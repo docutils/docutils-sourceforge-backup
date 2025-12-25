@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-02-17T10:37:23.812695Z
+K 7
+svn:log
+V 460
+Revert [r9410] "Prevent the 'theme' default overriding 'theme_url'."
+
+As documented in docutils/docs/user/config.html#override,
+"Client programs which specify defaults that override other settings must
+do the overriding explicitly". This affects not only "theme"/"theme_url",
+but also "stlesheet"/"stylesheet_path" (HTML and LaTeX), and
+"footnote_references"/"trim_footnote_reference_space".
+
+Exlicitly override "theme" in the S5 functional test setup instead.
+END

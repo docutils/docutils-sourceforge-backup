@@ -1,0 +1,25 @@
+K 15
+baddirective.pm
+V 27
+file 6e-4710.0.r4710/201642
+K 16
+baddirective2.pm
+V 27
+file 6h-4710.0.r4710/201902
+K 10
+badinit.pm
+V 24
+file 8-5760.0.r5760/3232
+K 10
+badrole.pm
+V 23
+file b-5760.0.r5788/438
+END
+D 15
+baddirective.pm
+D 16
+baddirective2.pm
+D 10
+badinit.pm
+D 10
+badrole.pm

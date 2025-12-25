@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2008-02-29T15:16:19.281844Z
+K 7
+svn:log
+V 53
+add usage documentation for "latex2e_listings" writer
+END

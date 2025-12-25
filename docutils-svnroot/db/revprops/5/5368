@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 7
+gbrandl
+K 8
+svn:date
+V 27
+2007-07-14T21:25:55.442727Z
+K 7
+svn:log
+V 141
+Fixup generated index subentries:
+
+func() (in module foo)
+func() (in module bar)
+
+is changed to
+
+func() 
+  (in module foo)
+  (in module bar)
+
+END

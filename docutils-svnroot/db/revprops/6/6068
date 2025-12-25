@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2009-07-28T19:46:57.446959Z
+K 7
+svn:log
+V 45
+Fix: attribution depart requires a new line.
+
+END

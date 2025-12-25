@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2008-05-22T06:41:55.856171Z
+K 7
+svn:log
+V 92
+embedded links to subdirs for more compact entries
+(edits/deletion can be done at one place)
+END

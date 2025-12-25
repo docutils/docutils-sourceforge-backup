@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-05T15:54:16.374119Z
+K 7
+svn:log
+V 366
+Doctree validation: fix check of `authors` content.
+
+The `authors` element has a complex content model that cannot be
+represented with the data-structure used in `Element.content_model`:
+
+    (author, organization?, address?, contact?)+
+
+Use specific method in `nodes.authors` to repeatedly test a
+simplified content model description until all children are handled.
+END

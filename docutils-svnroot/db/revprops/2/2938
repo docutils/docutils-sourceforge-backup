@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 4
+cben
+K 8
+svn:date
+V 27
+2005-01-15T22:03:25.000000Z
+K 7
+svn:log
+V 300
+Fixed use_latex_docinfo to always show the titlepage.
+
+Forced \date{} and \author{} to be emitted at all times, to avoid latex's
+default (the date latex processed the file, which is never interesting for us;
+perhaps using the date *docutils* processed the file would make sense if
+--date is given?).
+
+END

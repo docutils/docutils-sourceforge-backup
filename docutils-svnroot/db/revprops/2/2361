@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 14
+david_abrahams
+K 8
+svn:date
+V 27
+2004-06-23T02:17:11.000000Z
+K 7
+svn:log
+V 284
+Fix the line numbering of nodes produced by line_block directives.
+This is a total shot-in-the-dark, since it's unclear why lineno is 97
+and content_offset is the right line number.  Without some description
+of the protocol I can't really know, but it seems to be working... for
+now.
+
+END

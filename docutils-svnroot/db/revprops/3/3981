@@ -1,0 +1,45 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2005-10-30T15:13:46.070958Z
+K 7
+svn:log
+V 1478
+I have cleaned up all the emacs support code for restructured text.
+If you are using it, this will most certainly affect you, here are
+the list of changes:
+
+1. I moved the contents of restructuredtext.el, rst-mode.el and
+   rst-html.el into a single file, named rst.el, and removed the old
+   files.  You can remove the old files from your load-path and
+   replace them with rst.el, the old files are to be considered
+   OBSOLETE from now (2005-10-30).  All new contents will go to
+   rst.el.
+
+2. All the rest-* function names from restructuredtext.el have been
+   RENAMED to rst-* (to be consistent with the code that was in
+   rst-mode.el).  Almost all the contents of rst.el now start with
+   rst-.
+
+3. rst-text-mode-hook has been renamed to rst-text-mode-bindings.
+   Because it is not a hook, but rather a function to be bound to a
+   hook.  This was confusing and is now following the general emacs
+   conventions.  This will affect you if you were enabling the
+   adjusting and toc functions.
+
+4. I removed the rst-html-stylesheet and the simpler rst-html-compile
+   function.  It was replaced by the implementation of
+   rst-html-html-comple-with-conf, which is more generic, and which
+   now also uses the rst-html-options.
+
+In addition, I wrote a document that describes how to use all the
+features included in rst.el, because many emacs users I meet are not
+aware of them.  You will be able to find it under
+docs/user/emacs.txt.  I linked to it from the index page.
+
+
+END

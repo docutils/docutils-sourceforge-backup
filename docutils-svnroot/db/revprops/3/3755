@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-14T13:50:07.512405Z
+K 7
+svn:log
+V 336
+Moved rst2ht to link list; it's not a blog.
+Moved htmlnav to link list; it's not a blog either.
+Removed restblog; it's outdated and doesn't work.
+Removed ReSTWeb; the current URL is <http://wingware.com/pub/restweb/>
+and it doesn't look like it's maintained anymore.
+Removed redundant HT2HTML-integration link; it's the same as rst2ht.
+
+END

@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-08-28T09:50:37.628190Z
+K 7
+svn:log
+V 326
+setup.cfg: Mark wheels as universal
+
+We now have a source tree that's compatible with both Python 2 and
+Python 3. Time to indicate this. Huzzah!
+
+A now obsolete 'wheeling' document is removed. None of the caveats it
+describes are valid now. The release document is updated.
+
+Signed-off-by: Stephen Finucane <stephen@that.guru>
+END

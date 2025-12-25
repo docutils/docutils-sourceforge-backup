@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-02-01T13:01:43.122660Z
+K 7
+svn:log
+V 309
+Sort classes and methods in mathml_elements.py
+
+Sort base classes before conrete element classes.
+
+Sort element classes in order of appearance in the MathML core
+documentation https://www.w3.org/TR/mathml-core/.
+
+Move the GLOBAL ATTRIBUTES constant to module level.
+
+No change to implementation and behaviour.
+END

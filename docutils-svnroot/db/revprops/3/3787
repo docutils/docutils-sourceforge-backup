@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2005-08-07T07:44:03.586479Z
+K 7
+svn:log
+V 38
+Added missing generic filter function.
+END

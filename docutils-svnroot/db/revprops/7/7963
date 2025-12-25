@@ -1,0 +1,38 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2016-07-31T11:13:21.630233Z
+K 7
+svn:log
+V 638
+Major refactoring:
+
+* Introduce classes `rst-Ado', `rst-Hdr', `rst-Ttl' and `rst-Stn'
+  representing reStructuredText section header concepts.
+
+* Introduce use case approach for systematic testing of section header
+  adjustment (files `tests/adjust-uc.el` and
+  `tests/adjust-uc_doc.rst`).
+
+* Revise and refactor some old code.
+
+* Add lots of unit tests.
+
+* Replace `set (make-local-variable 'VAR)` by `setq-local VAR`.
+
+* Fix minor bugs.
+
+Minor feature changes and fixes:
+
+* Link final newline in a toc buffer so navigating at the end of the
+  line works.
+
+* Improve section header adjustment slightly.
+
+* Integrate and update tutorial.
+
+END

@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 11
+orutherfurd
+K 8
+svn:date
+V 27
+2002-07-04T19:09:04.000000Z
+K 7
+svn:log
+V 355
+- fixed doctype choices typo
+- handling docinfo elements (author, authors, contact, copyright, date,
+  organization, revision, status, and version)
+- using ``docutment.options.output_encoding``
+- re-worked footnote handling
+- semi-functional, with an emphasis on 'semi', citation support
+  (treating citations as footnotes until a real solution is found)
+
+END

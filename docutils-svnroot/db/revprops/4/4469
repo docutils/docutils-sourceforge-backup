@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-04-01T01:00:05.402791Z
+K 7
+svn:log
+V 213
+--- MERGE: merged r4323 to maintenance branch; original log message:
+    updated to reflect current reality (pep2html.py no longer distributed, tools/editors/emacs/rst-html.el and rst-mode.el combined into rst.el)
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-03-26T10:47:00.336561Z
+K 7
+svn:log
+V 50
+Streamline code after the dropping of 2.2 support.
+END

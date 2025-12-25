@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-03-12T17:03:15.123871Z
+K 7
+svn:log
+V 167
+Announce future changes.
+
+* drop support for legacy Python versions,
+* latex handling of admonitions,
+* store escape character in document tree, unescape when writing.
+END

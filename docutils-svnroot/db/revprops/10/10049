@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-03-09T11:23:28.278380Z
+K 7
+svn:log
+V 352
+Various small fixes.
+
+Markup "long description" in README as "abstract".
+
+Solve QA: ISC001 in LaTeX writer.
+
+Fix naming of auxiliary variables in _html_base.HTMLTranslator.prepare_svg().
+The "style" attribute (as one of the "image" node attributes ("atts"))
+contains a list of ";"-separated style declarations.
+Fixes r10024 and r10026.
+
+Fix cross-link.
+END

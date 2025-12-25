@@ -1,0 +1,127 @@
+K 8
+Dir.smak
+V 31
+file 1x-5058.q-4580.r5058/85715
+K 13
+keeptitle.dom
+V 29
+file pp-4327.q-4580.r4899/225
+K 13
+keeptitle.rst
+V 32
+file pr-4327.q-4580.r4710/248255
+K 14
+nestinline.dom
+V 27
+file pt-4327.0.r4327/869956
+K 14
+nestinline.rst
+V 27
+file pv-4327.0.r4327/868294
+K 9
+roman.dom
+V 30
+file k-6232.q-4580.r6232/12061
+K 9
+roman.rst
+V 30
+file n-6232.q-4580.r6232/11802
+K 15
+spaceinlink.dom
+V 28
+file 5-5755.q-4580.r5755/954
+K 15
+spaceinlink.rst
+V 28
+file 8-5755.q-4580.r5755/692
+K 12
+tables01.dom
+V 27
+file px-4327.0.r4327/870432
+K 12
+tables01.rst
+V 27
+file pz-4327.0.r4327/869004
+K 12
+tables02.dom
+V 32
+file q1-4327.q-4580.r4580/167159
+K 12
+tables02.rst
+V 30
+file q3-4327.q-4580.r5480/2018
+K 12
+tables03.dom
+V 32
+file q5-4327.q-4580.r4580/167454
+K 12
+tables03.rst
+V 29
+file q7-4327.q-4580.r6288/333
+K 12
+tables04.dom
+V 27
+file q9-4327.0.r4327/871384
+K 12
+tables04.rst
+V 27
+file qb-4327.0.r4327/869719
+K 9
+tabs1.dom
+V 27
+file qd-4327.0.r4327/870197
+K 9
+tabs1.rst
+V 31
+file qf-4327.q-4580.r4799/44201
+K 9
+tabs2.dom
+V 27
+file qh-4327.0.r4327/870671
+K 9
+tabs2.rst
+V 31
+file qj-4327.q-4580.r4799/44491
+END
+D 8
+Dir.smak
+D 13
+keeptitle.dom
+D 13
+keeptitle.rst
+D 14
+nestinline.dom
+D 14
+nestinline.rst
+D 9
+roman.dom
+D 9
+roman.rst
+D 15
+spaceinlink.dom
+D 15
+spaceinlink.rst
+D 12
+tables01.dom
+D 12
+tables01.rst
+D 12
+tables02.dom
+D 12
+tables02.rst
+D 12
+tables03.dom
+D 12
+tables03.rst
+D 12
+tables04.dom
+D 12
+tables04.rst
+D 9
+tabs1.dom
+D 9
+tabs1.rst
+D 9
+tabs2.dom
+D 9
+tabs2.rst

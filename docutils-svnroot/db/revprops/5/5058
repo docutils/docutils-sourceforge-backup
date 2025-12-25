@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-04-27T16:26:52.904689Z
+K 7
+svn:log
+V 91
+Completely reworked the regression test structure so as not to be
+dependent upon GNU make.
+
+END

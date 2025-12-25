@@ -1,0 +1,314 @@
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 7-2327.0.r2327/123
+type: file
+count: 0
+text: 2161 2120 185 168 a8369cafb6019765dc27bfa51e2b61e1 e3958abcbb767bc51d247931a85c35e583cee0ba 2326-1sm/_9
+props: 2327 0 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/sandbox/felixwiemann/test/functional/input/standalone_rst_html4css1.txt
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: a-2327.0.r2327/553
+type: file
+count: 0
+text: 2161 2318 109 96 8e34a0c9ef319c051ee43b30ea291753 e5b64b03c01fdaad7b31e345a53eec9c379f86e4 2326-1sm/_b
+props: 2327 430 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/sandbox/felixwiemann/test/functional/input/standalone_rst_latex.txt
+copyroot: 0 /
+
+PLAIN
+K 28
+standalone_rst_html4css1.txt
+V 23
+file 7-2327.0.r2327/123
+K 24
+standalone_rst_latex.txt
+V 23
+file a-2327.0.r2327/553
+END
+ENDREP
+id: 5-2327.0.r2327/996
+type: dir
+count: 0
+text: 2327 857 126 126 8f5d8cee0006374b6078a4c2c01c4af7
+cpath: /trunk/sandbox/felixwiemann/test/functional/input
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 24
+file 6-2325.0.r2325/1513
+K 5
+input
+V 22
+dir 5-2327.0.r2327/996
+K 5
+tests
+V 23
+dir 5-2326.0.r2326/2194
+END
+ENDREP
+id: 4-2325.0.r2327/1306
+type: dir
+pred: 4-2325.0.r2326/2468
+count: 2
+text: 2327 1166 127 127 b85da30314b338888a39b9b447c1778e
+cpath: /trunk/sandbox/felixwiemann/test/functional
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 23
+file 4-2324.0.r2324/282
+K 10
+functional
+V 23
+dir 4-2325.0.r2327/1306
+K 18
+test_functional.py
+V 24
+file 5-2323.0.r2323/1445
+END
+ENDREP
+id: 3-2323.0.r2327/1659
+type: dir
+pred: 3-2323.0.r2326/2819
+count: 4
+text: 2327 1498 148 148 e300332e7103d570f5ebe7b798f3ff11
+cpath: /trunk/sandbox/felixwiemann/test
+copyroot: 0 /
+
+PLAIN
+K 4
+test
+V 23
+dir 3-2323.0.r2327/1659
+K 7
+testing
+V 23
+dir 4-2161.0.r2161/5894
+END
+ENDREP
+id: 2-2161.0.r2327/1936
+type: dir
+pred: 2-2161.0.r2326/3096
+count: 5
+text: 2327 1840 83 83 a0616bd2b07709e0158c62ae643c84ed
+cpath: /trunk/sandbox/felixwiemann
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 21
+file 3-17.0.r2232/246
+K 4
+aahz
+V 22
+dir 2-820.0.r1918/1105
+K 9
+agurtovoy
+V 23
+dir 2-2034.0.r2034/7482
+K 3
+amk
+V 23
+dir 2-1891.0.r1892/1276
+K 3
+ax-
+V 25
+dir 2-1550.0.r1796/769230
+K 4
+bbum
+V 23
+dir 2-1039.0.r1742/2047
+K 5
+blais
+V 23
+dir 2-1316.0.r1673/1245
+K 4
+cben
+V 23
+dir 2-1693.0.r2257/1368
+K 6
+davidg
+V 21
+dir 6-17.0.r2170/1101
+K 5
+delza
+V 23
+dir 2-1723.0.r1723/3836
+K 8
+dkuhlman
+V 23
+dir 2-1555.0.r1716/4199
+K 7
+dpriest
+V 23
+dir 2-1730.0.r2304/1528
+K 12
+dreamcatcher
+V 22
+dir 2-1300.0.r1357/657
+K 7
+edloper
+V 23
+dir 2-1844.0.r1975/4509
+K 12
+felixwiemann
+V 23
+dir 2-2161.0.r2327/1936
+K 7
+grubert
+V 22
+dir 2-112.0.r2284/6908
+K 8
+gschwant
+V 22
+dir 2-675.0.r2081/2075
+K 9
+holdenweb
+V 23
+dir 2-1845.0.r1845/4805
+K 4
+ianb
+V 22
+dir 2-881.0.r1638/1101
+K 4
+lalo
+V 23
+dir 2-1749.0.r1762/2166
+K 3
+mly
+V 23
+dir 2-1431.0.r1432/2681
+K 7
+mmgilbe
+V 22
+dir 2-1841.0.r1899/795
+K 3
+mwh
+V 21
+dir 2-857.0.r862/1023
+K 7
+oliverr
+V 22
+dir 2-202.0.r1616/4279
+K 12
+paultremblay
+V 23
+dir 2-1323.0.r1489/1149
+K 7
+pobrien
+V 23
+dir 2-1158.0.r1777/4967
+K 7
+richard
+V 22
+dir 2-526.0.r1417/2696
+K 6
+simonb
+V 21
+dir 2-252.0.r1227/852
+K 4
+tibs
+V 21
+dir 2-62.0.r1727/8120
+K 4
+wilk
+V 23
+dir 2-1258.0.r1650/3830
+END
+ENDREP
+id: 1-17.0.r2327/3326
+type: dir
+pred: 1-17.0.r2326/4486
+count: 591
+text: 2327 2110 1203 1203 512647e5a2043387f8d5ffb3d365b1b3
+cpath: /trunk/sandbox
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r2322/2476
+K 7
+sandbox
+V 21
+dir 1-17.0.r2327/3326
+K 3
+web
+V 19
+dir 1-2.0.r2316/797
+END
+ENDREP
+id: 3-1.0.r2327/3617
+type: dir
+pred: 3-1.0.r2326/4777
+count: 2307
+text: 2327 3489 115 115 61478d82f339333c9ba2dff42f0792ee
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 21
+dir 0-1.0.r1822/10965
+K 4
+tags
+V 20
+dir 2-1.0.r1558/2271
+K 5
+trunk
+V 20
+dir 3-1.0.r2327/3617
+END
+ENDREP
+id: 0.0.r2327/3897
+type: dir
+pred: 0.0.r2326/5057
+count: 2327
+text: 2327 3769 115 115 57468a0a4d785d6261a4df9cd408ea3a
+cpath: /
+copyroot: 0 /
+
+_a.0.t2326-1sm add-file true true /trunk/sandbox/felixwiemann/test/functional/input/standalone_rst_latex.txt
+
+_5.0.t2326-1sm add-dir false false /trunk/sandbox/felixwiemann/test/functional/input
+
+_7.0.t2326-1sm add-file true true /trunk/sandbox/felixwiemann/test/functional/input/standalone_rst_html4css1.txt
+
+
+3897 4040

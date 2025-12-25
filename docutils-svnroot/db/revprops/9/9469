@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-11-10T08:45:53.163947Z
+K 7
+svn:log
+V 196
+Add CSS rules to align SVG objects.
+
+In HTML5, SVG images can be directly embedded with the "raw"
+directive.  Image alignment can be specified with the "align-left" and
+"align-right" class values.
+END

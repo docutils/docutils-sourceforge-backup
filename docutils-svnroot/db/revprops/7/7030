@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-05-10T10:02:54.638210Z
+K 7
+svn:log
+V 214
+fix and re-organize error printing to sys.stderr
+
+New class docutils.io.ErrorOutput:
+
+Wrapper class for file-like error streams with
+failsave de- and encoding of `str`, `bytes`, `unicode` and
+`Exception` instances.
+END

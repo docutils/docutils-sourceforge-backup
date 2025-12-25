@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2009-08-20T09:28:20.708608Z
+K 7
+svn:log
+V 66
+Do not print version at document end, this is done by the viewer.
+
+END

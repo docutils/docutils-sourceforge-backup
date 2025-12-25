@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 8
+cliechti
+K 8
+svn:date
+V 27
+2009-06-04T22:20:46.372562Z
+K 7
+svn:log
+V 83
+aafigure: Fix :format: option name in README.txt (SF-ID: 2799268)
+Thanks to llucax
+
+END

@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-05-27T06:15:14.137547Z
+K 7
+svn:log
+V 300
+LaTeX writer: Use a transform to resolve BibTeX references.
+
+The 'use_bibtex' setting indicates that citation entries are fetched
+from a BibTeX database by the backend (LaTeX).
+Use a transfrom instead of the deprecated "unknown_reference_resolvers"
+hook chain to mark citation_references as resolved.
+END

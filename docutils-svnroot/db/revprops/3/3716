@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T02:10:49.593381Z
+K 7
+svn:log
+V 135
+There is not much point in supporting grid tables inside XML comments.
+List tables should suffice for the few cases where it is needed.
+END

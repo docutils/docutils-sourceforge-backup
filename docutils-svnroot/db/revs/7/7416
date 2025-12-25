@@ -1,0 +1,235 @@
+id: 1x-18.0.r7416/0
+type: file
+pred: 1x-18.0.r7409/112
+count: 79
+text: 7267 3379 78 7380 c72def95c5155b6089e133c007d3718f 86a55ede6f4ecdce60a5144edb74a92df9939df8 7415-5q3/_4
+props: 2901 2556 111 0 77af0ec85c332e0d4fd7e7ef86a518fd
+cpath: /trunk/docutils/docutils/__init__.py
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 20
+file 1x-18.0.r7416/0
+K 10
+_compat.py
+V 24
+file 3-5889.0.r7316/8414
+K 26
+_string_template_compat.py
+V 24
+file 8-6105.0.r6105/9137
+K 7
+core.py
+V 24
+file 20-18.0.r7384/10134
+K 13
+docutils.conf
+V 29
+file m-3472.0-3904.r3904/2799
+K 18
+error_reporting.py
+V 24
+file 6-7037.0.r7316/8112
+K 11
+examples.py
+V 25
+file 3-1928.0.r7320/35530
+K 11
+frontend.py
+V 23
+file 3-150.0.r7339/4367
+K 5
+io.py
+V 24
+file 3-217.0.r7384/10427
+K 9
+languages
+V 22
+dir 22-18.0.r7126/1657
+K 4
+math
+V 24
+dir 6-6490.0.r7218/20908
+K 8
+nodes.py
+V 24
+file 28-18.0.r7320/34460
+K 7
+parsers
+V 22
+dir 2a-18.0.r7363/8167
+K 7
+readers
+V 23
+dir 36-18.0.r7320/29089
+K 15
+statemachine.py
+V 24
+file 3e-18.0.r7320/29325
+K 10
+transforms
+V 23
+dir 3g-18.0.r7320/30675
+K 13
+urischemes.py
+V 25
+file 3s-18.0.r4564/137250
+K 5
+utils
+V 22
+dir 6-7267.0.r7401/709
+K 7
+writers
+V 23
+dir 3w-18.0.r7389/14113
+END
+ENDREP
+id: 1w-18.0.r7416/1172
+type: dir
+pred: 1w-18.0.r7409/1287
+count: 1875
+text: 7416 290 869 869 6a788f72cb01acc7fb378db3d83bbc30
+props: 342 8363 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+BUGS.txt
+V 22
+file 2-2181.0.r7304/46
+K 11
+COPYING.txt
+V 21
+file 2-18.0.r7298/440
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r7361/342
+K 11
+HISTORY.txt
+V 22
+file 5-18.0.r7410/4422
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r6258/102
+K 10
+README.txt
+V 21
+file 9-18.0.r7373/335
+K 17
+RELEASE-NOTES.txt
+V 24
+file 2-4204.0.r7410/4705
+K 10
+THANKS.txt
+V 24
+file 2-2182.0.r5637/7316
+K 4
+docs
+V 20
+dir 3-7.0.r7406/1603
+K 8
+docutils
+V 22
+dir 1w-18.0.r7416/1172
+K 13
+docutils.conf
+V 23
+file 2-7375.0.r7375/485
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 24
+dir 2-1465.0.r7058/32984
+K 9
+setup.cfg
+V 22
+file 4-6255.0.r7077/73
+K 8
+setup.py
+V 22
+file 46-18.0.r7415/435
+K 4
+test
+V 22
+dir 48-18.0.r7404/2073
+K 5
+tools
+V 22
+dir 6w-18.0.r7399/2095
+END
+ENDREP
+id: 1-7.0.r7416/2141
+type: dir
+pred: 1-7.0.r7415/1456
+count: 4217
+text: 7416 1399 729 729 61a26a9df207b942b05da37134d9434d
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+minfo-cnt: 1
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r7416/2141
+K 5
+prest
+V 24
+dir 1-4326.0.r6498/50375
+K 7
+sandbox
+V 21
+dir 1-17.0.r7414/3951
+K 3
+web
+V 19
+dir 1-2.0.r7349/772
+END
+ENDREP
+id: 3-1.0.r7416/2536
+type: dir
+pred: 3-1.0.r7415/1850
+count: 6956
+text: 7416 2368 155 155 cc4a371b0ca14fc938c5fc7c851bb43f
+cpath: /trunk
+copyroot: 0 /
+minfo-cnt: 2
+
+PLAIN
+K 8
+branches
+V 21
+dir 0-1.0.r6260/33253
+K 4
+tags
+V 19
+dir 2-1.0.r7412/918
+K 5
+trunk
+V 20
+dir 3-1.0.r7416/2536
+END
+ENDREP
+id: 0.0.r7416/2828
+type: dir
+pred: 0.0.r7415/2142
+count: 7416
+text: 7416 2701 114 114 dd8165051bab72e34d99362f1c04a977
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+minfo-cnt: 7
+
+1x-18.0.t7415-5q3 modify-file true false /trunk/docutils/docutils/__init__.py
+
+
+2828 3035

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 8
+dkuhlman
+K 8
+svn:date
+V 27
+2017-05-16T21:07:07.263100Z
+K 7
+svn:log
+V 47
+Fixes to language/region and image size control
+END

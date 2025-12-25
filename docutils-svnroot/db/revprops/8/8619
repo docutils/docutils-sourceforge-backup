@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-02-13T11:59:50.830755Z
+K 7
+svn:log
+V 333
+Fix class value handling for footnotes and citations in HTML5.
+
+Set class values of the first of a sequence of footnotes or
+citations also on the wrapping list.
+
+Allows class-based CSS styling of the definition-list container
+of footnote text and citation entries that are given a class
+value with a with preceding "class" directive.
+END

@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-11-04T18:32:04.450673Z
+K 7
+svn:log
+V 264
+Revert use of ``open`` for "include", "raw" and "csv-table" directives.
+
+The `docutils.io` input classes handle the default encoding (None)
+different from the built-in `open`.
+Revert changes in [r9208], [r9209], and [r9211] to keep behaviour
+backwards compatibile.
+END

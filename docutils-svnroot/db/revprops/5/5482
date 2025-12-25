@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-12-18T19:03:14.036636Z
+K 7
+svn:log
+V 99
+* Added documentation on mathml-display and mathml-inline.
+* Added documentation on Plug-In Roles.
+
+END

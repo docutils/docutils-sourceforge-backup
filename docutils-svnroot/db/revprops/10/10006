@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-01-16T09:50:06.275825Z
+K 7
+svn:log
+V 289
+Clean up and update TODO list.
+
+Code modernization: check for and fix remaining cases from PEP 290
+
+Doctree validation is implemented in 0.22.
+
+Bug 241 is fixed long ago.
+
+The proposed "--include FILE" command line option is
+obsoleted by the upcoming changes to the command line interface.
+END

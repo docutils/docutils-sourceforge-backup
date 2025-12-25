@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2008-12-16T00:00:33.028979Z
+K 7
+svn:log
+V 248
+Stylesheet handling for html and latex2e writer: 
+accept multiple stylesheets,
+do not rewrite path if stylesheet is to be embedded,
+load latex packages with \\usepackage;
+fix custom role handling in latex2e: command definition was missing in output
+END

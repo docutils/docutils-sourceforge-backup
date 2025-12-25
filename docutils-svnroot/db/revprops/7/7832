@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+gitpull
+K 8
+svn:date
+V 27
+2015-03-13T22:08:18.321678Z
+K 7
+svn:log
+V 130
+Website: add template and basic stylesheet with menu. Update buildhtml.py (and therefore web) to Günter Milde's html_base writer.
+END

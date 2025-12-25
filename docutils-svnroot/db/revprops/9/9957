@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-10-21T07:20:00.314975Z
+K 7
+svn:log
+V 416
+Catch deliberate system messages when running the test suite.
+
+When we know a test case triggers a system message,
+make sure that it does not clutter the output.
+
+System messages that are only printed to the warning stream may
+be checked in an `assertRaisesRegex()` block after setting the "halt_level"
+configuration setting to a matching level (cf. e.g. "test_nodes.py"
+or the "test/*/test_*_misc.py" test modules).
+END

@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2010-03-23T18:50:05.018380Z
+K 7
+svn:log
+V 377
+* Added a new '-D code-block-states-flags' flag to specify
+  non-standard flags (such as defines) to the states program while
+  doing markup.
+
+* Added new options 'states-file' and 'states-flags' that perform the
+  same function (and, if specified, override the values of) the '-D
+  code-block-states-file' and '-D code-block-states-flags' options on
+  a per-code-block basis.
+
+END

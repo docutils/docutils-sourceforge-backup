@@ -1,0 +1,67 @@
+PLAIN
+K 17
+address-rendering
+V 26
+dir 1-7.0-4314.r4314/16372
+K 12
+docutils-0.4
+V 25
+dir 1-7.0-4266.r5500/7199
+K 9
+index-bug
+V 25
+dir 1-7.0-5587.r5594/4767
+K 19
+lossless-rst-writer
+V 25
+dir 1-7.0-5514.r5516/4944
+K 7
+nesting
+V 25
+dir 3-1.0-1813.r4356/3347
+K 7
+plugins
+V 25
+dir 1-7.0-4952.r4987/1225
+K 7
+subdocs
+V 25
+dir 1-7.0-5265.r5427/8605
+END
+ENDREP
+id: 0-1.0.r5624/351
+type: dir
+pred: 0-1.0.r5622/6674
+count: 441
+text: 5624 0 338 338 23695ef9f36399283d856051b5b7fe45
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r5624/351
+K 4
+tags
+V 19
+dir 2-1.0.r5579/673
+K 5
+trunk
+V 21
+dir 3-1.0.r5623/12585
+END
+ENDREP
+id: 0.0.r5624/627
+type: dir
+pred: 0.0.r5623/12866
+count: 5624
+text: 5624 501 113 113 8784cae078d3b5a9f6e9109e27a8e902
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+
+1-7.0-5043.r5622/6000 delete-dir false false /branches/adjacent-citations
+
+
+627 820

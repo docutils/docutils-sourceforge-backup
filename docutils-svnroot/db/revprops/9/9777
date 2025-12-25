@@ -1,0 +1,29 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-07-22T11:51:25.063583Z
+K 7
+svn:log
+V 415
+Documentation update.
+
+Review and edit "The Docutils Publisher":
+
+Document `core.publish_*()` arguments.
+(Replaces the "convenience functions" section in "Runtime Settings".)
+
+Refactor "parts" descriptions.
+
+Small section about "Entry Point Functions"
+
+Merge "Configuarion" section with "Docutils Runtime Settings" guide.
+
+Move "Encodings" to "Docutils Configuration" guide.
+
+Fix typos and omissions.
+Add/fix links.
+END

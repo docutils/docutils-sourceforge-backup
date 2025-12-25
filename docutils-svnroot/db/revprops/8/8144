@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-07-26T21:25:08.185717Z
+K 7
+svn:log
+V 111
+smartquotes transform: Keep "rawsource" when "educating" quotes.
+
+Thanks to Matthew Brett for report and patch.
+END

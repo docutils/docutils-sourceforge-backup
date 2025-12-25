@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T02:04:40.138010Z
+K 7
+svn:log
+V 88
+Do not add ^superscript^ markup.
+It would break existing documents and is barely needed.
+END

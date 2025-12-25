@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-10-23T13:30:26.000000Z
+K 7
+svn:log
+V 249
+Do not create empty href's in HTML.  Do not crash when encountering a
+reference node without any of refuri, refid or refname.
+
+Is this a valid fix for
+<http://docutils.sourceforge.net/BUGS.html#substitutions-and-references>?
+If yes, I'll add tests.
+
+END

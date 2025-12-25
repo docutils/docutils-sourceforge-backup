@@ -1,0 +1,343 @@
+PLAIN
+END
+ENDREP
+id: 7-5681.0.r5793/17
+type: dir
+pred: 7-5681.0.r5681/12207
+count: 1
+text: 5793 0 4 4 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /trunk/sandbox/rst2odp/bin
+copyroot: 0 /
+
+PLAIN
+K 13
+imagescale.py
+V 25
+file f-5681.0.r5681/12356
+END
+ENDREP
+id: b-5681.0.r5793/251
+type: dir
+pred: b-5681.0.r5681/13185
+count: 1
+text: 5793 184 54 54 ccf2ee66dcdef616b344e68dc14c43b1
+cpath: /trunk/sandbox/rst2odp/rst2odp
+copyroot: 0 /
+
+PLAIN
+K 3
+bin
+V 21
+dir 7-5681.0.r5793/17
+K 7
+rst2odp
+V 22
+dir b-5681.0.r5793/251
+END
+ENDREP
+id: 2-5681.0.r5793/519
+type: dir
+pred: 2-5681.0.r5681/13524
+count: 1
+text: 5793 427 79 79 a2d075696d6fd8911fd8305338415422
+cpath: /trunk/sandbox/rst2odp
+copyroot: 0 /
+
+PLAIN
+K 12
+OpenDocument
+V 28
+dir 3-4689.0-5034.r5737/3671
+K 10
+README.txt
+V 21
+file 3-17.0.r5704/424
+K 8
+aafigure
+V 28
+dir 5-4251.0-4994.r5650/1743
+K 4
+aahz
+V 23
+dir 2-820.0.r3892/10934
+K 9
+agurtovoy
+V 23
+dir 2-2034.0.r5571/5136
+K 3
+amk
+V 23
+dir 2-1891.0.r1892/1276
+K 3
+axk
+V 25
+dir 2-1550.0-3242.r3242/0
+K 4
+bbum
+V 23
+dir 2-1039.0.r1742/2047
+K 5
+blais
+V 23
+dir 2-1316.0.r5672/6545
+K 4
+cben
+V 24
+dir 2-1693.0.r3533/13838
+K 8
+cliechti
+V 23
+dir 2-3204.0.r5654/1150
+K 20
+code-block-directive
+V 23
+dir 4-5229.0.r5665/3379
+K 9
+codeintro
+V 23
+dir 2-4954.0.r4977/1117
+K 6
+davidg
+V 20
+dir 6-17.0.r4646/460
+K 5
+delza
+V 23
+dir 2-1723.0.r1723/3836
+K 8
+dkuhlman
+V 23
+dir 2-1555.0.r5034/1704
+K 12
+docpy-writer
+V 28
+dir 2-4521.0-4565.r4626/8182
+K 7
+dpriest
+V 21
+dir 2-1730.0.r4985/58
+K 12
+dreamcatcher
+V 22
+dir 2-1300.0.r1357/657
+K 5
+dugui
+V 23
+dir 2-4358.0.r4360/1485
+K 7
+edloper
+V 21
+dir 2-1844.0.r4984/97
+K 7
+grubert
+V 22
+dir 2-112.0.r5701/1397
+K 8
+gschwant
+V 23
+dir 2-675.0.r4442/16701
+K 9
+holdenweb
+V 23
+dir 2-1845.0.r1845/4805
+K 11
+html4strict
+V 22
+dir 2-5534.0.r5651/569
+K 10
+html4trans
+V 23
+dir 2-5235.0.r5533/1086
+K 4
+ianb
+V 23
+dir 2-881.0.r3892/12710
+K 14
+infrastructure
+V 27
+dir 3-189.0-3951.r5724/1008
+K 5
+jensj
+V 23
+dir 2-2942.0.r5544/4137
+K 4
+lalo
+V 23
+dir 2-1749.0.r1762/2166
+K 14
+latex-variants
+V 23
+dir 2-5238.0.r5736/4502
+K 15
+latex_directive
+V 22
+dir 2-4364.0.r4365/616
+K 14
+manpage-writer
+V 23
+dir 4-4773.0.r5690/1331
+K 3
+mly
+V 23
+dir 2-1431.0.r1432/2681
+K 7
+mmgilbe
+V 23
+dir 2-1841.0.r2945/2205
+K 3
+mwh
+V 21
+dir 2-857.0.r862/1023
+K 7
+oliverr
+V 22
+dir 2-202.0.r5074/1849
+K 11
+package-doc
+V 22
+dir 2-5172.0.r5417/744
+K 12
+paultremblay
+V 23
+dir 2-1323.0.r1489/1149
+K 7
+pobrien
+V 23
+dir 2-1158.0.r1777/4967
+K 13
+presentations
+V 24
+dir 2-4940.0.r5174/64253
+K 11
+py-rest-doc
+V 22
+dir 2-5075.0.r5469/711
+K 7
+richard
+V 23
+dir 2-526.0.r5174/65313
+K 11
+roff-writer
+V 22
+dir 2-5617.0.r5617/789
+K 10
+rst2beamer
+V 23
+dir 2-5731.0.r5743/2914
+K 15
+rst2chunkedhtml
+V 23
+dir 2-5513.0.r5519/1100
+K 7
+rst2odp
+V 22
+dir 2-5681.0.r5793/519
+K 7
+rst2pdf
+V 22
+dir 2-5560.0.r5638/438
+K 10
+rst2wordml
+V 24
+dir 2-5459.0.r5459/85880
+K 6
+simonb
+V 21
+dir 2-252.0.r1227/852
+K 11
+stylesheets
+V 23
+dir 2-3847.0.r5729/1736
+K 4
+tibs
+V 20
+dir 2-62.0.r4082/879
+K 12
+verse-writer
+V 23
+dir 2-4842.0.r4847/2800
+K 4
+wilk
+V 23
+dir 2-1258.0.r1650/3830
+K 10
+xhtml2rest
+V 29
+dir 3-3749.0-4373.r5174/66514
+K 7
+xml2rst
+V 22
+dir 6-5491.0.r5493/534
+END
+ENDREP
+id: 1-17.0.r5793/3104
+type: dir
+pred: 1-17.0.r5743/5505
+count: 1413
+text: 5793 687 2404 2404 aa4e53ae224d1f814df7fa1ac5b6b279
+cpath: /trunk/sandbox
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r5783/3434
+K 5
+prest
+V 22
+dir 1-4326.0.r5792/982
+K 7
+sandbox
+V 21
+dir 1-17.0.r5793/3104
+K 3
+web
+V 19
+dir 1-2.0.r5728/646
+END
+ENDREP
+id: 3-1.0.r5793/3433
+type: dir
+pred: 3-1.0.r5792/1365
+count: 5339
+text: 5793 3267 153 153 fe88784537de46322a193b886a34b241
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r5624/351
+K 4
+tags
+V 19
+dir 2-1.0.r5579/673
+K 5
+trunk
+V 20
+dir 3-1.0.r5793/3433
+END
+ENDREP
+id: 0.0.r5793/3710
+type: dir
+pred: 0.0.r5792/1642
+count: 5793
+text: 5793 3585 112 112 949d154e25dc820866d08e0a0938a45d
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+
+4-5681.0.r5681/11520 delete-file false false /trunk/sandbox/rst2odp/LICENSE
+
+c-5681.0.r5681/12800 delete-file false false /trunk/sandbox/rst2odp/rst2odp/__init__.py
+
+8-5681.0.r5681/11936 delete-file false false /trunk/sandbox/rst2odp/bin/rst2odp
+
+j-5681.0.r5681/11726 delete-file false false /trunk/sandbox/rst2odp/setup.py
+
+h-5681.0.r5681/12579 delete-file false false /trunk/sandbox/rst2odp/rst2odp/zipwrap.py
+
+
+3710 3904

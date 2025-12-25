@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-05T10:29:13.415684Z
+K 7
+svn:log
+V 117
+Doctree validation: Drop category class `nodes.SubRoot`.
+
+It was new in Docutils 0.22b.dev and is no longer required.
+END

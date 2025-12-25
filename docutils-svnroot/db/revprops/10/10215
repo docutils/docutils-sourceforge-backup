@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-08-20T12:04:19.882783Z
+K 7
+svn:log
+V 307
+LaTeX writer: set anchor for math-block with target/label.
+
+The "hyperref" LaTeX package sets an anchor for hyperlinks to math blocks,
+if they are numbered. The "math" directive generates unnumbered math blocks.
+Prepend a `\phantomsection` to manually set an anchor so that hyperlinks
+go to the right place.
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-11-27T16:28:38.413776Z
+K 7
+svn:log
+V 90
+Special-casing for Python 3.11: Null char valid in CSV.
+
+First part of a fix for bug #436.
+END

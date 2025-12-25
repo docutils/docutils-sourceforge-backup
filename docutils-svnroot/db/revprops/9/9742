@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-06T14:03:12.522168Z
+K 7
+svn:log
+V 208
+Make `FilterMessages` transform more robust.
+
+Remove dependency on correct entries in the `document.ids`
+dictionary when converting `<problematic>` elements pointing
+to removed system messages to simple text.
+END

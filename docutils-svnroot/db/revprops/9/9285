@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-11-29T11:48:52.908533Z
+K 7
+svn:log
+V 429
+Update the "future changes" documentation.
+
+Provide example for stable command line name
+(when dropping .py extension from rst2*).
+
+Rewrite suggestions for stable HTML writer.
+
+Styling: Docutils writer names in quotes ("")
+(use the default role when referencing the `docutils.writers.<name>` sub-module,
+but "<name>" when referencing a writer as, e.g., configuration settings value
+or attribute value to `get_writer_by_name()`.).
+END

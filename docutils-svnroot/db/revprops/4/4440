@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2006-03-19T21:05:38.820873Z
+K 7
+svn:log
+V 37
+generalized test for 64-bit platforms
+END

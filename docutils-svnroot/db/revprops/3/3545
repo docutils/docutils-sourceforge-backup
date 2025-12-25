@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2005-06-20T22:27:44.594415Z
+K 7
+svn:log
+V 49
+Fixed erroneous attribution in test file comment.
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2015-03-13T11:42:35.758032Z
+K 7
+svn:log
+V 117
+Let "html-base" and "xhtml11" writers wrap SVG images in <img> tags. 
+
+Edit of the SVG image functional test section.
+END

@@ -1,0 +1,65 @@
+K 11
+__init__.py
+V 23
+file 1x-18.0.r9863/5871
+K 11
+__main__.py
+V 27
+file 3-8586.0-9060.r9803/55
+K 7
+core.py
+V 23
+file 20-18.0.r9863/6168
+K 13
+docutils.conf
+V 29
+file m-3472.0-3904.r3904/2799
+K 11
+examples.py
+V 24
+file 3-1928.0.r9863/6461
+K 11
+frontend.py
+V 22
+file 3-150.0.r9869/106
+K 5
+io.py
+V 23
+file 3-217.0.r9881/2222
+K 9
+languages
+V 22
+dir 22-18.0.r9881/2866
+K 8
+nodes.py
+V 22
+file 28-18.0.r9905/520
+K 7
+parsers
+V 22
+dir 2a-18.0.r9907/1027
+K 7
+readers
+V 22
+dir 36-18.0.r9881/6195
+K 15
+statemachine.py
+V 23
+file 3e-18.0.r9881/6429
+K 10
+transforms
+V 23
+dir 3g-18.0.r9906/65174
+K 5
+utils
+V 23
+dir 6-7267.0.r9905/2848
+K 7
+writers
+V 23
+dir 3w-18.0.r9906/67825
+END
+K 7
+parsers
+V 21
+dir 2a-18.0.t9908-7ow

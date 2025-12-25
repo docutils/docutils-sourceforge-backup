@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-02-01T13:02:42.625179Z
+K 7
+svn:log
+V 355
+latex2mathml: better error reports.
+
+Keep a copy of the math input for error reporting.
+
+Don't merge runs of whitespace in the math input to a single space:
+enables reporting error spot.
+
+Raise MathError error when converting TeX to MathML leaves nodes with less
+than required child-elements.
+(This is usually a sign of a TeX command missing an argument.)
+END

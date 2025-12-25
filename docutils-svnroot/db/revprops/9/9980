@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-11-12T10:34:13.865633Z
+K 7
+svn:log
+V 256
+Announce upcoming change in "doctest block" handling.
+
+Parse doctest blocks as "code" with language "pycon" (pygment name for
+Python console).
+
++1 syntax highlight in line with other "code" elements.
++1 the `<doctest_block>` doctree element can be retired.
+END

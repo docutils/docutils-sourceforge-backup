@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-01-07T23:58:10.973461Z
+K 7
+svn:log
+V 95
+Py21/Py22 fix: install data_files to /usr/lib/python-2.x/site-packages instead of /usr/docutils
+END

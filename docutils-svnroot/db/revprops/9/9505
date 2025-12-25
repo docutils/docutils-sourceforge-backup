@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-01-07T10:21:01.959852Z
+K 7
+svn:log
+V 394
+Continue/fix "html" writer revision.
+
+More descriptive/correct variable names.
+
+Newlines around block-level `<a>` elements (images with hyperlink ref).
+Fix conditionals for newlines around `<img>` elements.
+
+Report writer errors from inline nodes after the containing paragraph.
+Test writer error reporting.
+
+Fix CSS rule for inline images.
+(Images with hyperlink are nested in `<a>` elements.)
+END

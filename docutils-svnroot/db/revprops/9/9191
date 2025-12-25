@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-10-28T02:43:19.706726Z
+K 7
+svn:log
+V 49
+Use f-strings in HTML 4 and HTML 5 template tests
+END

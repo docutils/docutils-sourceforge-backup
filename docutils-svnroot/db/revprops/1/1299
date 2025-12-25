@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2003-05-02T08:01:56.000000Z
+K 7
+svn:log
+V 48
+Added function to find docutils.conf in parent.
+
+END

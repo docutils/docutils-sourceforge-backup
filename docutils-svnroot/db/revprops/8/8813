@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2021-08-23T08:27:20.936145Z
+K 7
+svn:log
+V 101
+add utf8 and postscript outputs
+: postscript does not conform to my understanding of man 7 man of .B
+
+END

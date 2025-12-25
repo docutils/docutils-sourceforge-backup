@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-06-24T17:11:29.367204Z
+K 7
+svn:log
+V 54
+Apply [ 152 ] reset `default role` at end of document.
+END

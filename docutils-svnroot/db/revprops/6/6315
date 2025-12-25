@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-04-28T12:28:33.419235Z
+K 7
+svn:log
+V 143
+Let the html4css1 writer generate valid XHTML for centered images with targets
+and use CSS classes instead of "align" tags for image alignment.
+END

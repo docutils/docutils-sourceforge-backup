@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T01:08:15.244898Z
+K 7
+svn:log
+V 131
+removed prioritites section; mostly duplication with following
+"Minimum Requirements for Python Standard Library Candidacy" section
+END

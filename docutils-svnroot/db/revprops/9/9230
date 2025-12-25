@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-11-09T13:31:13.898915Z
+K 7
+svn:log
+V 149
+Inline ``ParserTestSuite``
+
+- Move all usages of ``ParserTestSuite.generateTests``
+  to using subtests, as part of the test suite refactoring project
+END

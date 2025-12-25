@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2024-08-01T14:03:04.335037Z
+K 7
+svn:log
+V 41
+Import ``Literal`` from the right module
+
+END

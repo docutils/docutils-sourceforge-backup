@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-06-22T09:54:13.096299Z
+K 7
+svn:log
+V 147
+Minor code cleanup in `docutils.io`.
+
+Fix/expand a docstring.
+Disambiguate local variable name "encodings".
+Use f-string instead of %-replacements.
+END

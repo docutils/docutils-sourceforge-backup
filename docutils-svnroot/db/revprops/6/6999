@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2011-04-02T10:43:08.192948Z
+K 7
+svn:log
+V 193
+New default option `--compare-sections-by-id` compares sections by
+their ids. New option `--compare-sections-normally` uses the old
+behavior.
+
+Changed documentation format to reStructuredText.
+
+END

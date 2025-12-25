@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-06-09T11:02:35.634096Z
+K 7
+svn:log
+V 438
+Remove dead links to the Gmane web interface.
+
+The mail to news interface and mail archive "Gmane" went down 2016 and is
+only partially restored. http://home.gmane.org/2016/08/29/next-steps-gmane/
+
+Remove dead links to the web interface and add links to the
+mail archives at Sourceforge.
+
+TODO: There are still dead links to specific messags in 
+      Bugs.txt, todo.txt and alternatives.txt
+
+Thanks to Luke Plant for reporting the issue.
+END

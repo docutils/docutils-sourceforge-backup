@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2002-11-01T10:44:54.000000Z
+K 7
+svn:log
+V 65
++ all authors, separated by author_separators[0] into pdfauthor.
+
+END

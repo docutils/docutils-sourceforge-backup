@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-10-12T11:42:40.378507Z
+K 7
+svn:log
+V 114
+Documentation clarification.
+
+Definition list terms starting with a hyphen need escaping.
+Report by Pierre Ossman.
+END

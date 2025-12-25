@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-11-13T03:41:08.250147Z
+K 7
+svn:log
+V 75
+removed notes about Py22 requirement (Docutils 0.5+ depends on Py22 anyway)
+END

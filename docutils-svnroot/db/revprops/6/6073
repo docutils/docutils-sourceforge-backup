@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-08-06T12:21:10.938677Z
+K 7
+svn:log
+V 218
+latex2e writer: improved native section numbering and ToC
+
++ Support for LaTeX generated ToC also with unnumbered sections.
++ If "sectnum_xform" is False, the "sectnum" directive triggers
+  section numbering by LaTeX.
+
+END

@@ -1,0 +1,80 @@
+id: 1-7.0-5587.r5587/0
+type: dir
+pred: 1-7.0.r5586/2772
+count: 3557
+text: 5586 2072 687 687 23aec689ec4d16715ef4b4b3775db6cd
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /branches/index-bug
+copyfrom: 5586 /trunk/docutils
+
+PLAIN
+K 17
+address-rendering
+V 26
+dir 1-7.0-4314.r4314/16372
+K 18
+adjacent-citations
+V 26
+dir 1-7.0-5043.r5050/19834
+K 12
+docutils-0.4
+V 25
+dir 1-7.0-4266.r5500/7199
+K 9
+index-bug
+V 22
+dir 1-7.0-5587.r5587/0
+K 19
+lossless-rst-writer
+V 25
+dir 1-7.0-5514.r5516/4944
+K 7
+nesting
+V 25
+dir 3-1.0-1813.r4356/3347
+K 7
+plugins
+V 25
+dir 1-7.0-4952.r4987/1225
+K 7
+subdocs
+V 25
+dir 1-7.0-5265.r5427/8605
+END
+ENDREP
+id: 0-1.0.r5587/641
+type: dir
+pred: 0-1.0.r5516/5576
+count: 421
+text: 5587 237 391 391 25c789a07901dbbe2d558c021fda4639
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r5587/641
+K 4
+tags
+V 19
+dir 2-1.0.r5579/673
+K 5
+trunk
+V 20
+dir 3-1.0.r5586/6626
+END
+ENDREP
+id: 0.0.r5587/918
+type: dir
+pred: 0.0.r5586/6904
+count: 5587
+text: 5587 793 112 112 eb1615fe8cdd7ef35f7e7f4032f78363
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+
+1-7._0.t5586-4b6 add-dir false false /branches/index-bug
+5586 /trunk/docutils
+
+918 1110

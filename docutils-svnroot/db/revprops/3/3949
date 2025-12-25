@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2005-10-25T23:33:40.630565Z
+K 7
+svn:log
+V 41
+Rollback new test that does not pass yet.
+END

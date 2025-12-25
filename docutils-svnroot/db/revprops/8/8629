@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-03-05T21:14:01.828897Z
+K 7
+svn:log
+V 57
+Let git ignore generated HTML also in the root directory.
+END

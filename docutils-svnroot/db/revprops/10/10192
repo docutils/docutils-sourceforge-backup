@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-07-30T08:22:51.960248Z
+K 7
+svn:log
+V 202
+Consolidate HISTORY and RELEASE NOTES for 0.22.
+
+Merge entries for the 0.22 release candidates 1 to 5 into a common section
+for relase 0.22.
+
+Fix 0.22 release date. Thanks to Jeff McKenna for reporting.
+END

@@ -1,0 +1,229 @@
+id: b-3204.0-4476.r4476/0
+type: file
+pred: b-3204.3-4156.r4227/377
+count: 35
+text: 4338 0 79 25208 9abb280d26560c0bd68fa535ed685ab7 7ad9264d91049f17009eb8ce59f021df67accd43 4475-3gb/_5
+props: 4156 47832 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /branches/docutils-0.4/docs/user/slide-shows.txt
+copyroot: 4156 /trunk/docutils/docs/user/slide-shows.txt
+
+PLAIN
+K 24
+Makefile.docutils-update
+V 27
+file 4-4165.0-4175.r4239/41
+K 10
+config.txt
+V 24
+file 4-1639.0.r4207/2802
+K 9
+emacs.txt
+V 23
+file 5-3981.0.r4070/164
+K 6
+images
+V 29
+dir 4-4012.1-4156.r4156/55646
+K 9
+latex.txt
+V 23
+file 4-1264.0.r3415/968
+K 9
+links.txt
+V 28
+file 4-3399.0-4266.r4474/228
+K 17
+mailing-lists.txt
+V 28
+file 4-3385.0-3393.r3980/386
+K 3
+rst
+V 26
+dir 1d-18.0-4266.r4468/582
+K 15
+slide-shows.txt
+V 26
+file b-3204.0-4476.r4476/0
+K 9
+tools.txt
+V 24
+file 4-365.0.r4163/27562
+END
+ENDREP
+id: 1c-18.0-4266.r4476/855
+type: dir
+pred: 1c-18.0-4266.r4474/1056
+count: 303
+text: 4476 355 487 487 d4700c5f64403b29285c316f88143eaf
+cpath: /branches/docutils-0.4/docs/user
+copyroot: 4266 /branches/docutils-0.4
+
+PLAIN
+K 3
+api
+V 22
+dir 3-2394.0.r3599/791
+K 3
+dev
+V 26
+dir 3-12.0-4266.r4470/1008
+K 5
+howto
+V 23
+dir 3-749.0.r4163/24026
+K 9
+index.txt
+V 23
+file 3-2171.0.r4215/186
+K 4
+peps
+V 21
+dir 5-7.0.r4163/24701
+K 3
+ref
+V 25
+dir w-18.0-4266.r4465/572
+K 4
+user
+V 26
+dir 1c-18.0-4266.r4476/855
+END
+ENDREP
+id: 3-7.0-4266.r4476/1359
+type: dir
+pred: 3-7.0-4266.r4474/1562
+count: 1110
+text: 4476 1068 278 278 0cd5a8b6cd880dc56301fc8d9af31bc5
+cpath: /branches/docutils-0.4/docs
+copyroot: 4266 /branches/docutils-0.4
+
+PLAIN
+K 8
+BUGS.txt
+V 24
+file 2-2181.0.r4233/8277
+K 11
+COPYING.txt
+V 24
+file 2-18.0-4266.r4472/0
+K 7
+FAQ.txt
+V 25
+file 2-788.0-4266.r4475/0
+K 11
+HISTORY.txt
+V 24
+file 5-18.0-4266.r4318/0
+K 11
+MANIFEST.in
+V 23
+file 7-18.0.r4156/57222
+K 10
+README.txt
+V 21
+file 9-18.0.r4216/546
+K 17
+RELEASE-NOTES.txt
+V 28
+file 2-4204.0-4266.r4278/314
+K 10
+THANKS.txt
+V 22
+file 2-2182.0.r4240/66
+K 4
+docs
+V 25
+dir 3-7.0-4266.r4476/1359
+K 8
+docutils
+V 27
+dir 1w-18.0-4266.r4318/6315
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 27
+file 46-18.0-4266.r4462/455
+K 4
+test
+V 27
+dir 48-18.0-4266.r4318/3987
+K 5
+tools
+V 27
+dir 6w-18.0-4266.r4472/1559
+END
+ENDREP
+id: 1-7.0-4266.r4476/2295
+type: dir
+pred: 1-7.0-4266.r4475/1044
+count: 3203
+text: 4476 1566 716 716 58193ac68cd4524edc855485b60139e7
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /branches/docutils-0.4
+copyroot: 4266 /branches/docutils-0.4
+
+PLAIN
+K 17
+address-rendering
+V 26
+dir 1-7.0-4314.r4314/16372
+K 10
+directives
+V 25
+dir 3-1.0-4375.r4449/4669
+K 12
+docutils-0.4
+V 25
+dir 1-7.0-4266.r4476/2295
+K 7
+nesting
+V 25
+dir 3-1.0-1813.r4356/3347
+END
+ENDREP
+id: 0-1.0.r4476/2761
+type: dir
+pred: 0-1.0.r4475/1509
+count: 307
+text: 4476 2550 198 198 526a25fbab155d2f824c74ad16648004
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r4476/2761
+K 4
+tags
+V 20
+dir 2-1.0.r4331/4487
+K 5
+trunk
+V 20
+dir 3-1.0.r4473/3295
+END
+ENDREP
+id: 0.0.r4476/3042
+type: dir
+pred: 0.0.r4475/1790
+count: 4476
+text: 4476 2915 114 114 1200f4c2cd7acef042e67412420bed84
+cpath: /
+copyroot: 0 /
+
+b-3204._0.t4475-3gb modify-file true false /branches/docutils-0.4/docs/user/slide-shows.txt
+
+
+3042 3185

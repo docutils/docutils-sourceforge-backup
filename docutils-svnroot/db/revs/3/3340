@@ -1,0 +1,811 @@
+id: 5-18.0.r3340/0
+type: file
+pred: 5-18.0.r3322/2663
+count: 323
+text: 3257 0 141 70096 6b26cf516a3decd8acb0df6b3b360536 fbd356f6eb5e48f230580cb388c4a760a82b2ba2 3339-2kr/_3
+props: 3071 4401 112 0 65fc8d0258b5c9fe68529b22bd8c9e94
+cpath: /trunk/docutils/HISTORY.txt
+copyroot: 0 /
+
+id: k-2357.0.r3340/280
+type: file
+pred: k-2357.0.r3322/2946
+count: 19
+text: 3261 194 72 15843 f3e40ef51898bd28462b9f2464308a8e d9d8131aae6467400ab6402fa4fa5fc8d2b0b0c9 3339-2kr/_o
+props: 3008 3480 111 0 28e613ef70fc8e4efe7ed7b15f74e6e7
+cpath: /trunk/docutils/test/functional/input/data/standard.txt
+copyroot: 0 /
+
+PLAIN
+K 10
+errors.txt
+V 24
+file h-2357.0.r2357/1374
+K 17
+header_footer.txt
+V 26
+file 1a-3184.0.r3184/11579
+K 9
+latex.txt
+V 23
+file 6-3271.0.r3330/115
+K 14
+list_table.txt
+V 24
+file m-3165.0.r3165/5101
+K 19
+nonalphanumeric.txt
+V 24
+file 8-2660.0.r2660/1703
+K 12
+standard.txt
+V 23
+file k-2357.0.r3340/280
+K 17
+table_colspan.txt
+V 23
+file m-2357.0.r2357/960
+K 17
+table_complex.txt
+V 24
+file o-2357.0.r2357/1782
+K 17
+table_rowspan.txt
+V 24
+file q-2357.0.r2357/2611
+K 11
+unicode.txt
+V 24
+file b-2660.0.r2660/2120
+END
+ENDREP
+id: f-2357.0.r3340/1112
+type: dir
+pred: f-2357.0.r3330/938
+count: 30
+text: 3340 594 505 505 762180ec93ac53439cad462df2fd4342
+cpath: /trunk/docutils/test/functional/input/data
+copyroot: 0 /
+
+PLAIN
+K 13
+dangerous.txt
+V 28
+file i-3071.1-3285.r3285/123
+K 4
+data
+V 23
+dir f-2357.0.r3340/1112
+K 14
+field_list.txt
+V 24
+file f-3164.0.r3164/3336
+K 17
+latex_docinfo.txt
+V 24
+file b-2937.0.r2938/2379
+K 12
+pep_html.txt
+V 24
+file 8-3040.0.r3243/3287
+K 10
+simple.txt
+V 23
+file 5-2991.0.r2991/903
+K 28
+standalone_rst_html4css1.txt
+V 25
+file s-2357.0.r3184/11157
+K 24
+standalone_rst_latex.txt
+V 24
+file u-2357.0.r2660/3091
+K 27
+standalone_rst_newlatex.txt
+V 23
+file 5-3272.0.r3272/374
+END
+ENDREP
+id: e-2357.0.r3340/1793
+type: dir
+pred: e-2357.0.r3330/1618
+count: 43
+text: 3340 1302 478 478 8feb85f8d6fc50831119d6f186289da1
+cpath: /trunk/docutils/test/functional/input
+copyroot: 0 /
+
+id: 9-2357.0.r3340/1980
+type: file
+pred: 9-2357.0.r3322/4647
+count: 50
+text: 3236 0 96 44696 ff918d082b1a25357b9580ebe5e4f6b8 f6cb60ae4673dff091bfc6c58021cd67ef23f2b9 3339-2kr/_k
+props: 3021 2415 111 0 4135f0dfb17a4d11b2424d95e27830f5
+cpath: /trunk/docutils/test/functional/expected/standalone_rst_html4css1.html
+copyroot: 0 /
+
+id: 5-3185.0.r3340/2308
+type: file
+pred: 5-3185.0.r3322/4977
+count: 5
+text: 3261 49 119 76490 811704b9a48b630866d7782d8ee32a0b 43b0f6e011d68e3dab38e7d387e3421b4323bdb1 3339-2kr/_l
+props: 3185 11598 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/docutils/test/functional/expected/standalone_rst_pseudoxml.txt
+copyroot: 0 /
+
+PLAIN
+K 14
+dangerous.html
+V 29
+file f-3071.0-3285.r3285/1285
+K 21
+field_name_limit.html
+V 22
+file c-3164.0.r3191/94
+K 17
+latex_docinfo.tex
+V 24
+file 8-2937.0.r2938/3234
+K 23
+misc_rst_html4css1.html
+V 23
+file 5-2993.0.r2993/366
+K 13
+pep_html.html
+V 24
+file 5-3040.0.r3243/4206
+K 29
+standalone_rst_html4css1.html
+V 24
+file 9-2357.0.r3340/1980
+K 24
+standalone_rst_latex.tex
+V 24
+file c-2357.0.r3236/4239
+K 28
+standalone_rst_pseudoxml.txt
+V 24
+file 5-3185.0.r3340/2308
+END
+ENDREP
+id: 8-2357.0.r3340/3112
+type: dir
+pred: 8-2357.0.r3322/5783
+count: 79
+text: 3340 2636 463 463 4a0a5ae3f8d1852b3ebb3123e6329314
+cpath: /trunk/docutils/test/functional/expected
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 24
+file 5-2357.0.r2369/2122
+K 8
+expected
+V 23
+dir 8-2357.0.r3340/3112
+K 5
+input
+V 23
+dir e-2357.0.r3340/1793
+K 6
+output
+V 21
+dir w-2357.0.r2993/63
+K 5
+tests
+V 24
+dir 10-2357.0.r3285/3333
+END
+ENDREP
+id: 3-2357.0.r3340/3524
+type: dir
+pred: 3-2357.0.r3330/2027
+count: 93
+text: 3340 3302 209 209 69ce4bb5083544755db9eef4d493588f
+cpath: /trunk/docutils/test/functional
+copyroot: 0 /
+
+PLAIN
+K 22
+DocutilsTestSupport.py
+V 23
+file 49-18.0.r3268/1479
+K 11
+alltests.py
+V 23
+file 4e-18.0.r3253/1732
+K 4
+data
+V 23
+dir 3-1662.0.r3039/6700
+K 13
+docutils.conf
+V 24
+file 6-1661.0.r2385/2146
+K 19
+docutils_difflib.py
+V 24
+file 6-2354.0.r2354/1272
+K 10
+functional
+V 23
+dir 3-2357.0.r3340/3524
+K 19
+package_unittest.py
+V 21
+file 3-44.0.r2454/856
+K 20
+test_dependencies.py
+V 24
+file 3-2679.0.r2683/4279
+K 18
+test_functional.py
+V 24
+file 18-2357.0.r3176/122
+K 10
+test_io.py
+V 23
+file 5-3138.0.r3139/243
+K 16
+test_language.py
+V 23
+file 3-940.0.r3085/8438
+K 13
+test_nodes.py
+V 23
+file 4i-18.0.r3129/8228
+K 12
+test_parsers
+V 22
+dir 4k-18.0.r3253/5925
+K 12
+test_readers
+V 21
+dir 3-89.0.r3129/2577
+K 16
+test_settings.py
+V 24
+file g-1662.0.r3039/4956
+K 20
+test_statemachine.py
+V 22
+file 6a-18.0.r917/6020
+K 15
+test_transforms
+V 22
+dir 6c-18.0.r3199/4612
+K 13
+test_utils.py
+V 21
+file 6u-18.0.r3171/53
+K 16
+test_viewlist.py
+V 23
+file 3-916.0.r3085/3892
+K 12
+test_writers
+V 23
+dir 5-1211.0.r3257/3198
+END
+ENDREP
+id: 48-18.0.r3340/4708
+type: dir
+pred: 48-18.0.r3330/3211
+count: 464
+text: 3340 3705 990 990 c818ddf0485eb66724fcdf389555856c
+props: 343 993 44 0 e8789a4081469b0bbc8d88dcdbd925ef
+cpath: /trunk/docutils/test
+copyroot: 0 /
+
+id: 2-2182.0.r3340/4930
+type: file
+pred: 2-2182.0.r3322/7601
+count: 11
+text: 3243 431 35 2699 08309a76e7bad2f48239f5f414ceae0c d8fbd20aeb0dd081845b603572c5d123ae7fb287 3339-2kr/_4
+props: 3056 7177 110 0 705660468cdcbf270377dea86b274451
+cpath: /trunk/docutils/THANKS.txt
+copyroot: 0 /
+
+id: 2s-18.0.r3340/5215
+type: file
+pred: 2s-18.0.r3322/7886
+count: 27
+text: 3231 3990 527 5855 693ff6afd0a825634821579d34d0f973 d111f5daa3068502cd852257066f2b9e4dca56e2 3339-2kr/_g
+props: 3046 11091 111 0 227f1557f5d66bc46d32e4db301b2671
+cpath: /trunk/docutils/docutils/parsers/rst/directives/images.py
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 24
+file 2j-18.0.r3184/20537
+K 14
+admonitions.py
+V 24
+file 2m-18.0.r3155/11644
+K 7
+body.py
+V 23
+file 6-463.0.r3206/6873
+K 7
+html.py
+V 23
+file 2q-18.0.r3038/6030
+K 9
+images.py
+V 23
+file 2s-18.0.r3340/5215
+K 7
+misc.py
+V 24
+file 2u-18.0.r3129/21866
+K 8
+parts.py
+V 23
+file 6-71.0.r3199/10497
+K 13
+references.py
+V 23
+file 6-518.0.r856/23522
+K 9
+tables.py
+V 25
+file 6-2309.0.r3165/13210
+END
+ENDREP
+id: 2i-18.0.r3340/5948
+type: dir
+pred: 2i-18.0.r3322/8620
+count: 130
+text: 3340 5532 403 403 7ddf8e2d69fb5df38c848787bbfdd73f
+props: 342 709 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils/parsers/rst/directives
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 2f-18.0.r3171/1856
+K 10
+directives
+V 22
+dir 2i-18.0.r3340/5948
+K 9
+languages
+V 22
+dir 2w-18.0.r3276/3257
+K 8
+roles.py
+V 25
+file 5-1943.0.r3155/12951
+K 9
+states.py
+V 23
+file 32-18.0.r3253/7384
+K 14
+tableparser.py
+V 23
+file 34-18.0.r1574/4440
+END
+ENDREP
+id: 2e-18.0.r3340/6482
+type: dir
+pred: 2e-18.0.r3322/9155
+count: 322
+text: 3340 6197 272 272 e50be1de6647866dd08187f26d21230e
+props: 342 2533 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils/parsers/rst
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 2b-18.0.r1645/6017
+K 3
+rst
+V 22
+dir 2e-18.0.r3340/6482
+END
+ENDREP
+id: 2a-18.0.r3340/6820
+type: dir
+pred: 2a-18.0.r3322/9493
+count: 323
+text: 3340 6721 86 86 b6dd4f387a8aad3d3117f1b7eb207f61
+props: 342 3339 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils/parsers
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 1x-18.0.r2901/2680
+K 7
+core.py
+V 22
+file 20-18.0.r2987/835
+K 11
+examples.py
+V 24
+file 3-1928.0.r3247/1299
+K 11
+frontend.py
+V 23
+file 3-150.0.r3164/8557
+K 5
+io.py
+V 23
+file 3-217.0.r3138/2127
+K 9
+languages
+V 22
+dir 22-18.0.r3276/5436
+K 8
+nodes.py
+V 21
+file 28-18.0.r3281/55
+K 7
+parsers
+V 22
+dir 2a-18.0.r3340/6820
+K 7
+readers
+V 23
+dir 36-18.0.r3129/26878
+K 15
+statemachine.py
+V 22
+file 3e-18.0.r2299/866
+K 10
+transforms
+V 23
+dir 3g-18.0.r3199/13337
+K 13
+urischemes.py
+V 22
+file 3s-18.0.r1829/714
+K 8
+utils.py
+V 23
+file 3u-18.0.r3253/8550
+K 7
+writers
+V 22
+dir 3w-18.0.r3336/1110
+END
+ENDREP
+id: 1w-18.0.r3340/7674
+type: dir
+pred: 1w-18.0.r3336/1965
+count: 1147
+text: 3340 7053 608 608 d7eb3e69cc4022f11ee17b78992dfec9
+props: 342 8363 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils
+copyroot: 0 /
+
+id: 10-18.0.r3340/7902
+type: file
+pred: 10-18.0.r3322/10576
+count: 47
+text: 3231 370 265 16413 d54253c69c7d67e461c67ff1b0f76f18 51c8c5b16a04afcec2bcee75def94afd8416e325 3339-2kr/_9
+props: 2872 674 111 0 fd48e7132065a890e4a210dc3646defe
+cpath: /trunk/docutils/docs/ref/docutils.dtd
+copyroot: 0 /
+
+id: 13-18.0.r3340/8198
+type: file
+pred: 13-18.0.r3322/10873
+count: 83
+text: 3238 0 383 48142 499c295eb631e7831cebaa4c80880cac ec552e5ddde7fb0a46f90f6735ac1f549655e7fb 3339-2kr/_b
+props: 3074 828 111 0 b4cfde065419379bdf3504580a67fa13
+cpath: /trunk/docutils/docs/ref/rst/directives.txt
+copyroot: 0 /
+
+PLAIN
+K 14
+directives.txt
+V 23
+file 13-18.0.r3340/8198
+K 16
+introduction.txt
+V 23
+file 16-18.0.r2199/1402
+K 20
+restructuredtext.txt
+V 23
+file 18-18.0.r3175/1373
+K 9
+roles.txt
+V 23
+file 5-1085.0.r2822/173
+END
+ENDREP
+id: 12-18.0.r3340/8713
+type: dir
+pred: 12-18.0.r3322/11391
+count: 166
+text: 3340 8498 202 202 f01adedd9760e222b51082a079e1bac5
+cpath: /trunk/docutils/docs/ref/rst
+copyroot: 0 /
+
+PLAIN
+K 11
+doctree.txt
+V 22
+file x-18.0.r3282/1498
+K 12
+docutils.dtd
+V 23
+file 10-18.0.r3340/7902
+K 3
+rst
+V 22
+dir 12-18.0.r3340/8713
+K 12
+soextblx.dtd
+V 23
+file 1a-18.0.r18/303406
+K 14
+transforms.txt
+V 24
+file 4-855.0.r3129/30411
+END
+ENDREP
+id: w-18.0.r3340/9133
+type: dir
+pred: w-18.0.r3322/11813
+count: 248
+text: 3340 8891 229 229 3522a8f4a8eea5d28603a84a3faf9b8b
+cpath: /trunk/docutils/docs/ref
+copyroot: 0 /
+
+id: n-18.0.r3340/9305
+type: file
+pred: n-18.0.r3322/11986
+count: 303
+text: 3254 0 328 73799 cfb489e84c0c25a1dbe8b2b6c4dc8825 4d7cdcd26e9006ec322f14231087e234b11ff15f 3339-2kr/_7
+props: 3073 88 112 0 ef4741f4d15831fc998d930a5e924a3e
+cpath: /trunk/docutils/docs/dev/todo.txt
+copyroot: 0 /
+
+PLAIN
+K 18
+enthought-plan.txt
+V 23
+file 4-2241.0.r3170/778
+K 17
+enthought-rfp.txt
+V 23
+file 7-2241.0.r2370/173
+K 12
+policies.txt
+V 23
+file 4-2183.0.r3183/568
+K 12
+pysource.dtd
+V 23
+file c-18.0.r2223/13206
+K 12
+pysource.txt
+V 23
+file f-18.0.r2223/13620
+K 11
+release.txt
+V 24
+file 7-2183.0.r3097/3561
+K 14
+repository.txt
+V 23
+file 4-3057.0.r3179/344
+K 3
+rst
+V 21
+dir h-18.0.r3214/2723
+K 13
+semantics.txt
+V 23
+file 5-12.0.r1409/24162
+K 11
+testing.txt
+V 23
+file 6-2369.0.r2606/304
+K 8
+todo.txt
+V 22
+file n-18.0.r3340/9305
+K 11
+website.txt
+V 23
+file 9-2183.0.r3212/417
+END
+ENDREP
+id: 3-12.0.r3340/10168
+type: dir
+pred: 3-12.0.r3322/12851
+count: 388
+text: 3340 9593 562 562 d093fa1cafa5d0c33aa751d2c2f85455
+cpath: /trunk/docutils/docs/dev
+copyroot: 0 /
+
+PLAIN
+K 3
+api
+V 22
+dir 3-2394.0.r3283/670
+K 3
+dev
+V 22
+dir 3-12.0.r3340/10168
+K 5
+howto
+V 22
+dir 3-749.0.r3045/5153
+K 9
+index.txt
+V 22
+file 3-2171.0.r3092/86
+K 4
+peps
+V 19
+dir 5-7.0.r3105/620
+K 3
+ref
+V 21
+dir w-18.0.r3340/9133
+K 4
+user
+V 21
+dir 1c-18.0.r3250/537
+END
+ENDREP
+id: 3-7.0.r3340/10615
+type: dir
+pred: 3-7.0.r3322/13299
+count: 859
+text: 3340 10341 261 261 fbb44d0b1680a65ff32c4bdc56698d9b
+cpath: /trunk/docutils/docs
+copyroot: 0 /
+
+PLAIN
+K 8
+BUGS.txt
+V 23
+file 2-2181.0.r3252/723
+K 11
+COPYING.txt
+V 21
+file 2-18.0.r3096/363
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r3230/215
+K 11
+HISTORY.txt
+V 19
+file 5-18.0.r3340/0
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r2513/394
+K 10
+README.txt
+V 19
+file 9-18.0.r3079/0
+K 10
+THANKS.txt
+V 24
+file 2-2182.0.r3340/4930
+K 4
+docs
+V 21
+dir 3-7.0.r3340/10615
+K 8
+docutils
+V 22
+dir 1w-18.0.r3340/7674
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 23
+file 46-18.0.r2901/3967
+K 4
+test
+V 22
+dir 48-18.0.r3340/4708
+K 5
+tools
+V 22
+dir 6w-18.0.r3339/1836
+END
+ENDREP
+id: 1-7.0.r3340/11418
+type: dir
+pred: 1-7.0.r3339/2644
+count: 2535
+text: 3340 10783 622 622 60c138f6184f74bc53def94766218d96
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 21
+dir 1-7.0.r3340/11418
+K 7
+sandbox
+V 21
+dir 1-17.0.r3321/4836
+K 3
+web
+V 20
+dir 1-2.0.r3137/1247
+END
+ENDREP
+id: 3-1.0.r3340/11764
+type: dir
+pred: 3-1.0.r3339/2987
+count: 3293
+text: 3340 11634 117 117 9f8cb83753835a7e23f889a7d5dc889f
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r3171/7579
+K 4
+tags
+V 20
+dir 2-1.0.r2576/3944
+K 5
+trunk
+V 21
+dir 3-1.0.r3340/11764
+END
+ENDREP
+id: 0.0.r3340/12046
+type: dir
+pred: 0.0.r3339/3266
+count: 3340
+text: 3340 11918 115 115 608587ca5175e0da81efd3b2d3d9e8c3
+cpath: /
+copyroot: 0 /
+
+9-2357.0.t3339-2kr modify-file true false /trunk/docutils/test/functional/expected/standalone_rst_html4css1.html
+
+k-2357.0.t3339-2kr modify-file true false /trunk/docutils/test/functional/input/data/standard.txt
+
+n-18.0.t3339-2kr modify-file true false /trunk/docutils/docs/dev/todo.txt
+
+2s-18.0.t3339-2kr modify-file true false /trunk/docutils/docutils/parsers/rst/directives/images.py
+
+13-18.0.t3339-2kr modify-file true false /trunk/docutils/docs/ref/rst/directives.txt
+
+5-18.0.t3339-2kr modify-file true false /trunk/docutils/HISTORY.txt
+
+5-3185.0.t3339-2kr modify-file true false /trunk/docutils/test/functional/expected/standalone_rst_pseudoxml.txt
+
+10-18.0.t3339-2kr modify-file true false /trunk/docutils/docs/ref/docutils.dtd
+
+2-2182.0.t3339-2kr modify-file true false /trunk/docutils/THANKS.txt
+
+
+12046 12191

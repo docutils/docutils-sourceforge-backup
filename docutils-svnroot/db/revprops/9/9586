@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2024-03-24T17:58:23.343421Z
+K 7
+svn:log
+V 85
+add tests for references to terminal (latin1, utf8)
+BUG man misses to print the urls
+
+END

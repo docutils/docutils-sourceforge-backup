@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2003-06-30T15:50:45.000000Z
+K 7
+svn:log
+V 104
+Catch exceptions during processing, report and exit without tracebacks, except when "--traceback" used.
+
+END

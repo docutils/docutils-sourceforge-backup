@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-10-27T09:37:48.363411Z
+K 7
+svn:log
+V 98
+Implement ``publish_doctree`` using ``publish_programmatically``
+
+Patch by ClÃ©ment Pit-Claudel.
+END

@@ -1,0 +1,28 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-03-08T23:41:22.484991Z
+K 7
+svn:log
+V 668
+Revise "reStructuredText Directives" plus small documentation updates.
+
+Update HISTORY.
+Small additions for "The Docutils Document Tree".
+Fix option name and link in "Docutils Configuration".
+Adapt link in "reStructuredText Interpreted Text Roles".
+
+"reStructuredText Directives":
+ * Sort option lists by name.
+ * Use ``literal`` for directive option names
+   (except when the name is also a hyperlink).
+ * Provide more cross-links.
+ * Repeat option name in introduction sentence to the option list.
+ * Use space (instead of hyphen) in ``_class option:`` hyperlink target
+   (no change to the generated id).
+ * Shorten descriptions if possible without loss of clarity.
+END

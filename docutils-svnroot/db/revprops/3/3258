@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-04-26T17:02:16.274562Z
+K 7
+svn:log
+V 130
+added "exit 1" to trap;
+moved trap in front of lock directory creation;
+the trap is now removed before deleting the lock directory
+END

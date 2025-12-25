@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-12-17T10:38:57.487460Z
+K 7
+svn:log
+V 110
+Finalise documentation of changes for 0.22.4.
+
+Clarify wording.
+Announce future change to "self-link" setting.
+END

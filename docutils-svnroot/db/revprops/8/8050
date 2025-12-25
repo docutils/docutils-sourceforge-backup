@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-03-19T23:04:50.392014Z
+K 7
+svn:log
+V 134
+Fix [ 313 ] differentiate apostrophe from single quote (if possible).
+
+Mind, that this is not possible for apostrophe at end of words.
+END

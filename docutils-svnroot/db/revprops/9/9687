@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-06T07:55:16.674999Z
+K 7
+svn:log
+V 211
+Fix recommonmark parser post-processing.
+
+Do not insert a `<system_message>` where it is invalid (paragraphs, …).
+Use a `<problematic>` node instead and place the `<system_message>`
+at the end of the document.
+END

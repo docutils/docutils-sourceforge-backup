@@ -1,0 +1,30 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-04-07T12:09:51.871903Z
+K 7
+svn:log
+V 615
+Provide fallbacks for parser config settings.
+
+Some 3rd party applications fail with AttributeError due to
+missing values in the document.settings object.
+
+a) because they don't follow the requirement documented in
+   utils.new_document:
+
+     If you will use the document object with any Docutils components,
+     you must provide their default settings as well.
+
+b) because they may provide a hard-coded set missing new settings.
+
+This should fix bug #415 and
+https://github.com/readthedocs/recommonmark/issues/220.
+
+See also the sphinx issue with Docutils 0.13.1
+https://github.com/sphinx-doc/sphinx/issues/3951.
+END

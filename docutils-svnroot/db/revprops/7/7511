@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-09-12T13:11:02.309030Z
+K 7
+svn:log
+V 96
+Use ``<code>`` tag for inline "code", do not drop nested inline nodes (syntax highlight tokens).
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2024-08-03T21:31:01.759674Z
+K 7
+svn:log
+V 41
+Add type hints to ``docutils.languages``
+
+END

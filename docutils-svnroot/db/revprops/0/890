@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 11
+chodorowski
+K 8
+svn:date
+V 27
+2002-11-05T15:52:35.000000Z
+K 7
+svn:log
+V 57
+Added 'adress' -> nodes.addres for bibliographic fields.
+
+END

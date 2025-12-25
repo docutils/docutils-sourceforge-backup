@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2018-11-20T23:55:14.351217Z
+K 7
+svn:log
+V 443
+DocInfo transform must not use "rawsource" attribute for escaping.
+
+Remove implementation of escaping author-separators in bibliographic fields
+that relies on the "rawsource" attribute.
+This is not safe (rawsource is only for information and debugging purposes).
+
+A proper fix can be done with null-escaped text in the doctree.
+C.f. https://sourceforge.net/p/docutils/bugs/_discuss/thread/c8f86be6/74ed/attachment/null-escape-in-doctree2.patch
+END

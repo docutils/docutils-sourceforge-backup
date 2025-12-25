@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-01-26T13:08:04.260820Z
+K 7
+svn:log
+V 135
+Do not use ``\\\\section*``-macros to suppress LaTeX section numbering.
+
+Use ``\\\\DUtitle`` for section levels not supported by LaTeX.
+END

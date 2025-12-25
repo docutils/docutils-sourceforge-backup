@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-27T02:44:40.585047Z
+K 7
+svn:log
+V 328
+replaced data argument to Transform constructor with **kwargs;
+Transform.data contains now the kwargs dictionary;
+added transform instance to Transformer.applied tuples again -- this
+shouldn't cause problems with pickling because the Transformer
+isn't pickled; if it does cause any problems, please follow up
+on Docutils-develop
+END

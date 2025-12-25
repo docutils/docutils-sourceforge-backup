@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-02-07T03:05:32.978988Z
+K 7
+svn:log
+V 421
+added link to Docutils sprint
+
+I added a News section, where I put the link (to make it well
+visible).  The Docutils home page can probably use such a news section
+anyway; many open source projects have it.  I didn't tag the sprint
+"news" with the current date because I think that would be confusing;
+but we can change that when we have (longer) news entries that justify
+having a date.  As always, feel free to improve.
+END

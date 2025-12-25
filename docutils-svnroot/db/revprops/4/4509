@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2006-04-19T23:21:21.058656Z
+K 7
+svn:log
+V 97
+Added new rst-straighten-decorations for emacs support, that redos all the decorations of a file.
+END

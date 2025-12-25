@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2014-07-04T09:13:14.709429Z
+K 7
+svn:log
+V 100
+FIX: link to sf bug tracker changed, point to BUGS.html
+change link to patch tracker for readabilty
+
+END

@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-10-21T14:18:05.130804Z
+K 7
+svn:log
+V 161
+Simplify ``CustomTestCase.compare_output``
+
+Ensure that the ``core.publish_string`` always returns a string,
+introduce ``core.publish_bytes`` for binary output.
+
+END

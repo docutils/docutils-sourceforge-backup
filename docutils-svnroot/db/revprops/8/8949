@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-14T11:32:45.074551Z
+K 7
+svn:log
+V 367
+Change removal warnings to "minor + 2" where appropriate.
+
+The version number of the next release(s) may be
+"1.0, 1.1, ...", "0.19, 1.0, ...", or "0.19, 0.20, ...".
+
+Lower announced removal version to "0.21 or later" for
+DeprecationWarnings that did not include a removal version in
+the last release and for DeprecationWarnings that
+were added after the last release.
+END

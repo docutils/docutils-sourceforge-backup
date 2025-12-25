@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-05-19T21:12:34.496529Z
+K 7
+svn:log
+V 235
+Fixes for the test suite.
+
+Move skipTest-clauses in a loop into sub-tests to avoid aborting the loop.
+Fixes [bugs:#500].
+
+Fix false positives due to version-dependent error messages from PIL and
+parsing output from pygments.
+
+Fix typo.
+END

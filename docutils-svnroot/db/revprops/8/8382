@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-09-01T19:39:23.889598Z
+K 7
+svn:log
+V 302
+trivial: Cleanup setup.py
+
+Make this file a little bit easier to parse, which will be helpful given
+that we're going to conduct some surgery on this going forward. This
+mostly involves using better wrapping and combining things where it
+makes sense.
+
+Signed-off-by: Stephen Finucane <stephen@that.guru>
+END

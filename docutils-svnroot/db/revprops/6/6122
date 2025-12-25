@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-09-11T09:48:13.977355Z
+K 7
+svn:log
+V 299
+Let "include" report missing files with path also in Python 2.6.
+
+Since Python 2.6, a string literal like ``"%s\\\\" % error`` returns a unicode
+object. IOError seems to miss a `__unicode__` method and the fallback
+`__repr__` does not report the file name. Explicitely converting to str
+fixes this.
+
+END

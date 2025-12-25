@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-04-23T15:54:44.224838Z
+K 7
+svn:log
+V 79
+New option "figname" for the "figure" directive.
+
+Fixes [feature-requests:#44].
+END

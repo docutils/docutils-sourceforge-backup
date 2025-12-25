@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-11-23T01:18:49.817854Z
+K 7
+svn:log
+V 102
+normalize_language_tag() now returns `BCP 47`_ conformant tags
+
+Subtags separated by ``-``, not ``_``.
+END

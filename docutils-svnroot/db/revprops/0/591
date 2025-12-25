@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-08-24T01:25:06.000000Z
+K 7
+svn:log
+V 106
+Added descriptions of bullet_list, enumerated_list, definition_list, and subelements.  29 down, 55 to go.
+
+END

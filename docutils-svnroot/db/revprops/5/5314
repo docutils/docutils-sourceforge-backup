@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2007-07-05T12:45:43.775740Z
+K 7
+svn:log
+V 75
+make sure invisible elements do not prevent paragraphs from being compacted
+END

@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-12-14T23:53:38.593823Z
+K 7
+svn:log
+V 313
+Clean up record_dependencies feature.
+
+Use utf8 encoding for the record file: simple, failsave and
+reproducible way for portable storage of non-ASCII filenames
+(cf. http://www.dwheeler.com/essays/fixing-unix-linux-filenames.html).
+
+Drop latex2e exception: Record only files required to generate the LaTeX
+source.
+
+END

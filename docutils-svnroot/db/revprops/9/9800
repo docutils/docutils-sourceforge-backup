@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2024-07-31T09:56:18.031253Z
+K 7
+svn:log
+V 30
+Add type hints to alltests.py
+
+END

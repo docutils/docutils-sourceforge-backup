@@ -1,0 +1,475 @@
+K 8
+Dir.smak
+V 24
+file 6-6231.0.r6300/1866
+K 17
+author-skip01.rst
+V 25
+file 9-6231.0.r6231/28035
+K 17
+author-skip01.tex
+V 25
+file b-6231.0.r6231/36405
+K 17
+author-skip02.rst
+V 25
+file d-6231.0.r6231/28489
+K 17
+author-skip02.tex
+V 25
+file f-6231.0.r6231/36857
+K 17
+author-skip03.rst
+V 25
+file h-6231.0.r6231/28717
+K 17
+author-skip03.tex
+V 25
+file j-6231.0.r6231/37310
+K 12
+bullet01.rst
+V 25
+file l-6231.0.r6231/39813
+K 12
+bullet01.tex
+V 25
+file n-6231.0.r6231/30305
+K 13
+caption01.rst
+V 25
+file p-6231.0.r6231/41825
+K 13
+caption01.tex
+V 25
+file r-6231.0.r6231/32103
+K 15
+citations01.rst
+V 25
+file t-6231.0.r6231/33226
+K 15
+citations01.tex
+V 25
+file v-6231.0.r6231/39361
+K 25
+cloak-email-addresses.rst
+V 25
+file x-6231.0.r6231/32554
+K 25
+cloak-email-addresses.tex
+V 25
+file z-6231.0.r6231/38451
+K 13
+comment01.rst
+V 26
+file 11-6231.0.r6231/33675
+K 13
+comment01.tex
+V 26
+file 13-6231.0.r6231/40928
+K 14
+compound01.rst
+V 26
+file 15-6231.0.r6231/35486
+K 14
+compound01.tex
+V 26
+file 17-6231.0.r6231/26211
+K 14
+compound02.rst
+V 26
+file 19-6231.0.r6231/35713
+K 14
+compound02.tex
+V 26
+file 1b-6231.0.r6231/26439
+K 18
+document-class.rst
+V 26
+file 1d-6231.0.r6231/35257
+K 18
+document-class.tex
+V 26
+file 1f-6231.0.r6231/25979
+K 10
+enum01.rst
+V 26
+file 1h-6231.0.r6231/42720
+K 10
+enum01.tex
+V 26
+file 1j-6231.0.r6231/33002
+K 12
+figure01.rst
+V 25
+file 1l-6231.0.r6300/1123
+K 16
+figure01.skip.pl
+V 23
+file 6-6252.0.r6272/372
+K 12
+figure01.tex
+V 24
+file 1n-6231.0.r6300/376
+K 12
+figure02.rst
+V 25
+file 1p-6231.0.r6300/1370
+K 12
+figure02.tex
+V 24
+file 1r-6231.0.r6300/625
+K 12
+figure03.rst
+V 25
+file 1t-6231.0.r6300/1618
+K 16
+figure03.skip.pl
+V 23
+file 9-6252.0.r6272/620
+K 12
+figure03.tex
+V 24
+file 1v-6231.0.r6300/874
+K 6
+foo.ps
+V 26
+file 1x-6231.0.r6231/32788
+K 12
+footer01.rst
+V 26
+file 1z-6231.0.r6231/36633
+K 12
+footer01.tex
+V 26
+file 21-6231.0.r6231/27344
+K 12
+footer02.rst
+V 26
+file 23-6231.0.r6231/37086
+K 12
+footer02.tex
+V 26
+file 25-6231.0.r6231/27571
+K 18
+footnote-links.rst
+V 26
+file 27-6231.0.r6231/29397
+K 18
+footnote-links.tex
+V 26
+file 29-6231.0.r6231/37539
+K 14
+footnote01.rst
+V 26
+file 2b-6231.0.r6231/36178
+K 14
+footnote01.tex
+V 26
+file 2d-6231.0.r6231/27115
+K 13
+image-ext.rst
+V 26
+file 2f-6231.0.r6231/35032
+K 13
+image-ext.tex
+V 26
+file 2h-6231.0.r6231/25751
+K 12
+inline01.rst
+V 26
+file 2j-6231.0.r6231/37998
+K 12
+inline01.tex
+V 26
+file 2l-6231.0.r6231/28262
+K 12
+mathml01.rst
+V 26
+file 2n-6231.0.r6231/26667
+K 12
+mathml01.tex
+V 26
+file 2p-6231.0.r6231/34578
+K 12
+mathml02.rst
+V 26
+file 2r-6231.0.r6231/26891
+K 12
+mathml02.tex
+V 26
+file 2t-6231.0.r6231/34805
+K 25
+max-unwrapped-colsize.rst
+V 26
+file 2v-6231.0.r6231/27798
+K 25
+max-unwrapped-colsize.tex
+V 26
+file 2x-6231.0.r6231/35938
+K 10
+note01.rst
+V 26
+file 2z-6231.0.r6231/33901
+K 10
+note01.tex
+V 26
+file 31-6231.0.r6231/41600
+K 9
+raw01.rst
+V 26
+file 33-6231.0.r6231/40261
+K 9
+raw01.tex
+V 26
+file 35-6231.0.r6231/30981
+K 9
+raw02.rst
+V 26
+file 37-6231.0.r6231/40707
+K 9
+raw02.tex
+V 26
+file 39-6231.0.r6231/31431
+K 9
+raw03.rst
+V 26
+file 3b-6231.0.r6231/41155
+K 9
+raw03.tex
+V 26
+file 3d-6231.0.r6231/31655
+K 9
+raw04.rst
+V 26
+file 3f-6231.0.r6231/41377
+K 9
+raw04.tex
+V 26
+file 3h-6231.0.r6231/31879
+K 12
+sections.rst
+V 26
+file 3j-6231.0.r6231/32328
+K 12
+sections.tex
+V 26
+file 3l-6231.0.r6231/38224
+K 13
+sidebar01.rst
+V 26
+file 3n-6231.0.r6231/34125
+K 13
+sidebar01.tex
+V 26
+file 3p-6231.0.r6231/42264
+K 13
+sidebar02.rst
+V 26
+file 3r-6231.0.r6231/34351
+K 13
+sidebar02.tex
+V 26
+file 3t-6231.0.r6231/42492
+K 11
+table01.rst
+V 26
+file 3v-6231.0.r6231/39588
+K 11
+table01.tex
+V 26
+file 3x-6231.0.r6231/30529
+K 11
+table02.rst
+V 26
+file 3z-6231.0.r6231/40036
+K 11
+table02.tex
+V 26
+file 41-6231.0.r6231/30755
+K 11
+table03.rst
+V 26
+file 43-6231.0.r6231/40484
+K 11
+table03.tex
+V 26
+file 45-6231.0.r6231/31205
+K 11
+topic01.rst
+V 26
+file 47-6231.0.r6231/30080
+K 14
+topic01.stderr
+V 26
+file 49-6231.0.r6231/28945
+K 11
+topic01.tex
+V 26
+file 4b-6231.0.r6231/37772
+K 8
+warn.rst
+V 26
+file 4d-6231.0.r6231/42943
+K 8
+warn.tex
+V 26
+file 4f-6231.0.r6231/33452
+END
+D 8
+Dir.smak
+D 17
+author-skip01.rst
+D 17
+author-skip01.tex
+D 17
+author-skip02.rst
+D 17
+author-skip02.tex
+D 17
+author-skip03.rst
+D 17
+author-skip03.tex
+D 12
+bullet01.rst
+D 12
+bullet01.tex
+D 13
+caption01.rst
+D 13
+caption01.tex
+D 15
+citations01.rst
+D 15
+citations01.tex
+D 25
+cloak-email-addresses.rst
+D 25
+cloak-email-addresses.tex
+D 13
+comment01.rst
+D 13
+comment01.tex
+D 14
+compound01.rst
+D 14
+compound01.tex
+D 14
+compound02.rst
+D 14
+compound02.tex
+D 18
+document-class.rst
+D 18
+document-class.tex
+D 10
+enum01.rst
+D 10
+enum01.tex
+D 12
+figure01.rst
+D 16
+figure01.skip.pl
+D 12
+figure01.tex
+D 12
+figure02.rst
+D 12
+figure02.tex
+D 12
+figure03.rst
+D 16
+figure03.skip.pl
+D 12
+figure03.tex
+D 6
+foo.ps
+D 12
+footer01.rst
+D 12
+footer01.tex
+D 12
+footer02.rst
+D 12
+footer02.tex
+D 18
+footnote-links.rst
+D 18
+footnote-links.tex
+D 14
+footnote01.rst
+D 14
+footnote01.tex
+D 13
+image-ext.rst
+D 13
+image-ext.tex
+D 12
+inline01.rst
+D 12
+inline01.tex
+D 12
+mathml01.rst
+D 12
+mathml01.tex
+D 12
+mathml02.rst
+D 12
+mathml02.tex
+D 25
+max-unwrapped-colsize.rst
+D 25
+max-unwrapped-colsize.tex
+D 10
+note01.rst
+D 10
+note01.tex
+D 9
+raw01.rst
+D 9
+raw01.tex
+D 9
+raw02.rst
+D 9
+raw02.tex
+D 9
+raw03.rst
+D 9
+raw03.tex
+D 9
+raw04.rst
+D 9
+raw04.tex
+D 12
+sections.rst
+D 12
+sections.tex
+D 13
+sidebar01.rst
+D 13
+sidebar01.tex
+D 13
+sidebar02.rst
+D 13
+sidebar02.tex
+D 11
+table01.rst
+D 11
+table01.tex
+D 11
+table02.rst
+D 11
+table02.tex
+D 11
+table03.rst
+D 11
+table03.tex
+D 11
+topic01.rst
+D 14
+topic01.stderr
+D 11
+topic01.tex
+D 8
+warn.rst
+D 8
+warn.tex

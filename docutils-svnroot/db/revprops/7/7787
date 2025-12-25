@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2015-02-16T21:53:20.946238Z
+K 7
+svn:log
+V 35
+Fix custom encoding under Python 3.
+END

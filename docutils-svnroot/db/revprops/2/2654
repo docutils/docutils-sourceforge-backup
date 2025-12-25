@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2004-09-27T15:28:33.000000Z
+K 7
+svn:log
+V 154
+Fixed bug where a "role" directive in a nested parse would crash the parser; the "language" attribute was not being copied over to the new state machine.
+
+END

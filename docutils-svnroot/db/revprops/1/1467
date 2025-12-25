@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2003-06-16T03:21:02.000000Z
+K 7
+svn:log
+V 85
+from http://optik.sf.net (merged from component modules); replaces docutils/optik.py
+
+END

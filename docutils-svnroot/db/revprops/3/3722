@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T02:17:47.791936Z
+K 7
+svn:log
+V 127
+Do not allow sections inside sidebars.
+That is really complicated, and the document model greatly
+benefits from its simplicity.
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2007-08-22T15:03:41.294732Z
+K 7
+svn:log
+V 122
+i only realized that my implemtation sucked when I was mostly done ;-)
+i' leave it for now, though, since it seems to work
+END

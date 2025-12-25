@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-03-05T15:53:45.000000Z
+K 7
+svn:log
+V 47
+added Node.has_children() and Node.next_node()
+
+END

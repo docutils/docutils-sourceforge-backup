@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-03-09T14:53:16.723703Z
+K 7
+svn:log
+V 74
+Install auxiliary scripts under docutils/tools instead of the binary path.
+END

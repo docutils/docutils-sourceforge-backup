@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2010-08-16T19:48:38.622788Z
+K 7
+svn:log
+V 216
+Debugging: Empty comment lines are treated correctly.
+
+Merged changes from Emacs 23.1 into main development line. However:
+
+* Kept code for `font-lock-support-mode`
+
+* Marked a few places with "EmacsMainDevelopment"
+
+END

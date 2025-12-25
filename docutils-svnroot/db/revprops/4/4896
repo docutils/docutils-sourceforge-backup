@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-01-22T20:14:43.748964Z
+K 7
+svn:log
+V 187
+* Added a -e option to specify output encoding.
+* Fixed a bug in listing the available writers that listed the
+  same writer more than once if it occurred in multiple @INC
+  directories.
+
+END

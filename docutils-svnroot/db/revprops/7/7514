@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-09-14T14:27:12.909380Z
+K 7
+svn:log
+V 109
+Change default of "syntax highlight" option to "long", 
+Add basic syntax highlight styles for LaTeX and HTML.
+END

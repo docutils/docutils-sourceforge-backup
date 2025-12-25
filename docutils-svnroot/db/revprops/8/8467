@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-01-26T21:23:42.957581Z
+K 7
+svn:log
+V 201
+Clean up LanguageImporter. Update documentation.
+
+* Fix caching.
+* Report missing/incomplete modules and
+  language-variant substitutions (info).
+* Move documentation from instance to class definition.
+END

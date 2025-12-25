@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2015-05-08T16:03:49.384950Z
+K 7
+svn:log
+V 209
+HTML writer: add class arguments from field node to field-name and field-body.
+
+Similar to the handling of registered docinfo fields.
+Allows, e.g., class-based styling of non-registered/generic docinfo fields.
+END

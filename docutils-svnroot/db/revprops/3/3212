@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-04-12T17:12:46.744356Z
+K 7
+svn:log
+V 79
+updated "Web Site" document to BerliOS and Subversion;
+cron job is set up again
+END

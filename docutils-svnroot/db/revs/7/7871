@@ -1,0 +1,2718 @@
+id: 5-18.0-7834.r7871/0
+type: file
+pred: 5-18.0.r7820/4331
+count: 717
+text: 7864 0 316 112427 401e45379a4fae2d26b491fd0f216a66 11762ec16edf95f30002b4677c6738ec7af76e9e 7870-62x/_i
+props: 3071 4401 112 0 65fc8d0258b5c9fe68529b22bd8c9e94
+cpath: /trunk/sandbox/gitpull/setuptools/HISTORY.txt
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+id: 2-4204.0-7834.r7871/339
+type: file
+pred: 2-4204.0.r7829/1269
+count: 99
+text: 7864 343 445 17093 b6090e0192d038e0ee57e3334a6e1960 1b3cbad748b9c2a3d76a51e8ca559e67c87a7579 7870-62x/_1e
+props: 4204 1738 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/gitpull/setuptools/RELEASE-NOTES.txt
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+id: n-18.0-7834.r7871/690
+type: file
+pred: n-18.0.r7545/5524
+count: 478
+text: 7861 0 6671 94019 08993fb16bff7bee687a7ab2f4d671f3 0ffd65bda59b61b6b0f6b0d0ed28f1a850398be0 7870-62x/_1l
+props: 3073 88 112 0 ef4741f4d15831fc998d930a5e924a3e
+cpath: /trunk/sandbox/gitpull/setuptools/docs/dev/todo.txt
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+id: 4-7862.0-7871.r7871/1036
+type: file
+pred: 4-7862.0.r7870/171
+count: 6
+text: 7870 0 147 2117 5be16bc26801466f1010359f9def5320 8f626520ab432e1c1b2552c3b47d5a77b889e66d 7869-62w/_5
+props: 7862 317 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/gitpull/setuptools/docs/dev/wheeling.txt
+copyfrom: 7870 /trunk/docutils/docs/dev/wheeling.txt
+
+PLAIN
+K 16
+distributing.txt
+V 24
+file 4-3527.0.r7800/9144
+K 18
+enthought-plan.txt
+V 25
+file 4-2241.0.r7302/40008
+K 17
+enthought-rfp.txt
+V 23
+file 7-2241.0.r3979/497
+K 11
+hacking.txt
+V 25
+file 4-3431.0.r7302/37020
+K 12
+policies.txt
+V 24
+file 4-2183.0.r7800/9446
+K 12
+pysource.dtd
+V 23
+file c-18.0.r7302/37316
+K 12
+pysource.txt
+V 23
+file f-18.0.r7302/38811
+K 11
+release.txt
+V 24
+file 7-2183.0.r7801/2191
+K 14
+repository.txt
+V 25
+file 4-3057.0.r7800/10039
+K 3
+rst
+V 21
+dir h-18.0.r7383/1713
+K 13
+semantics.txt
+V 23
+file 5-12.0.r7302/37908
+K 11
+testing.txt
+V 25
+file 6-2369.0.r7463/27243
+K 8
+todo.txt
+V 26
+file n-18.0-7834.r7871/690
+K 11
+website.txt
+V 25
+file 9-2183.0.r7302/36721
+K 12
+wheeling.txt
+V 29
+file 4-7862.0-7871.r7871/1036
+END
+ENDREP
+id: 3-12.0-7834.r7871/2130
+type: dir
+pred: 3-12.0.r7801/3169
+count: 669
+text: 7871 1389 728 728 5cff60a9ff813462c22f9b49392f461b
+cpath: /trunk/sandbox/gitpull/setuptools/docs/dev
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+id: 4-3836.0-7834.r7871/2359
+type: file
+pred: 4-3836.0.r7302/30765
+count: 10
+text: 7852 0 506 3460 19ffc6d0796a300c8bf31b9cf2537e7d 9c81d4eebc153136555e530811e318104642e4b2 7870-62x/_q
+props: 3836 1285 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/gitpull/setuptools/docs/howto/html-stylesheets.txt
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+PLAIN
+K 20
+html-stylesheets.txt
+V 29
+file 4-3836.0-7834.r7871/2359
+K 8
+i18n.txt
+V 22
+file 4-806.0.r7769/221
+K 18
+rst-directives.txt
+V 24
+file 5-749.0.r7302/29859
+K 13
+rst-roles.txt
+V 25
+file 4-1968.0.r7302/30464
+K 12
+security.txt
+V 25
+file 4-4803.0.r7302/30163
+END
+ENDREP
+id: 3-749.0-7834.r7871/2994
+type: dir
+pred: 3-749.0.r7769/778
+count: 52
+text: 7871 2722 259 259 b405929af4fb6beea45e494094f44f24
+cpath: /trunk/sandbox/gitpull/setuptools/docs/howto
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+id: 4-1639.0-7834.r7871/3225
+type: file
+pred: 4-1639.0.r7828/1480
+count: 123
+text: 7861 6697 830 53327 e5aa7f0585baa4d2d00a5317eedf0599 29b211e8935f00d35d0e57bf3dd331d5022f0c29 7870-62x/_s
+props: 3072 320 111 0 85fb436b243ad384649068d2f55bfd08
+cpath: /trunk/sandbox/gitpull/setuptools/docs/user/config.txt
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+id: 4-7857.1-7871.r7871/3581
+type: file
+pred: 4-7857.0.r7866/11624
+count: 4
+text: 7866 59 289 9308 d0a53fb219c5b622d5880f12e5b05770 a5afc094843245914a4094043005452ae9ba4179 7865-62s/_9
+props: 7857 7542 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/gitpull/setuptools/docs/user/html.txt
+copyfrom: 7870 /trunk/docutils/docs/user/html.txt
+
+id: 4-3399.0-7834.r7871/3932
+type: file
+pred: 4-3399.0.r7796/167
+count: 66
+text: 7844 0 22 14922 1f5aab799f533da6df1f0d53e3f050e9 34b1bad3c25695a9099222eb9a52c09bcdc723f6 7870-62x/_1s
+props: 3399 507 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/gitpull/setuptools/docs/user/links.txt
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+PLAIN
+K 28
+biohazard-bitmap-scaling.svg
+V 24
+file 6-7827.0.r7827/9242
+K 20
+biohazard-bitmap.svg
+V 25
+file 6-7809.0.r7809/15235
+K 21
+biohazard-scaling.svg
+V 25
+file 7-6253.0.r6253/21416
+K 13
+biohazard.png
+V 23
+file 1o-18.0.r3670/3634
+K 13
+biohazard.svg
+V 25
+file a-6253.0.r6254/16184
+K 13
+biohazard.swf
+V 24
+file 6-6261.0.r6261/1394
+K 17
+title-scaling.svg
+V 24
+file c-6253.0.r7827/9485
+K 9
+title.png
+V 24
+file 1q-18.0.r5940/13611
+K 9
+title.svg
+V 24
+file e-6253.0.r7827/9741
+END
+ENDREP
+id: 1f-18.0-7834.r7871/4765
+type: dir
+pred: 1f-18.0.r7827/10518
+count: 9
+text: 7871 4281 471 471 315737051fe0e9e33057f5159ac5fd0b
+cpath: /trunk/sandbox/gitpull/setuptools/docs/user/rst/images
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+PLAIN
+K 14
+cheatsheet.txt
+V 23
+file 5-2153.0.r7612/201
+K 8
+demo.txt
+V 25
+file 5-2490.0.r7302/43033
+K 6
+images
+V 27
+dir 1f-18.0-7834.r7871/4765
+K 13
+quickref.html
+V 21
+file 1s-18.0.r6021/51
+K 14
+quickstart.txt
+V 22
+file 1u-18.0.r5801/551
+END
+ENDREP
+id: 1d-18.0-7834.r7871/5255
+type: dir
+pred: 1d-18.0.r7827/10947
+count: 88
+text: 7871 5007 235 235 000cd116fb273c22809f2a377ee927e3
+cpath: /trunk/sandbox/gitpull/setuptools/docs/user/rst
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+id: 4-365.0-7834.r7871/5491
+type: file
+pred: 4-365.0.r7828/1778
+count: 63
+text: 7857 0 4618 14543 711ad6852d687006229ec223ceb9e3b6 405c6c3d836406c1fa6e18a27cad8c4de8527567 7870-62x/_1f
+props: 2497 543 111 0 d69121ee529fb8cb3643d711ec0f2158
+cpath: /trunk/sandbox/gitpull/setuptools/docs/user/tools.txt
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+PLAIN
+K 24
+Makefile.docutils-update
+V 27
+file 4-4165.0-4175.r4239/41
+K 10
+config.txt
+V 29
+file 4-1639.0-7834.r7871/3225
+K 26
+docutils-05-compat.sty.txt
+V 25
+file 5-5891.0.r7302/42372
+K 9
+emacs.txt
+V 24
+file 5-3981.0.r7712/8093
+K 8
+html.txt
+V 29
+file 4-7857.1-7871.r7871/3581
+K 6
+images
+V 29
+dir 4-4012.1-4156.r4156/55646
+K 9
+latex.txt
+V 23
+file 4-1264.0.r7667/423
+K 9
+links.txt
+V 29
+file 4-3399.0-7834.r7871/3932
+K 17
+mailing-lists.txt
+V 28
+file 4-3385.0-3393.r7644/581
+K 11
+manpage.txt
+V 30
+file 5-4773.0-6085.r7302/42686
+K 7
+odt.txt
+V 25
+file 5-5834.0.r7528/14749
+K 3
+rst
+V 27
+dir 1d-18.0-7834.r7871/5255
+K 15
+slide-shows.txt
+V 28
+file b-3204.3-4156.r4451/587
+K 9
+tools.txt
+V 28
+file 4-365.0-7834.r7871/5491
+END
+ENDREP
+id: 1c-18.0-7834.r7871/6563
+type: dir
+pred: 1c-18.0.r7828/2723
+count: 516
+text: 7871 5842 708 708 e4da90205136d11c549a61d5b93f2175
+cpath: /trunk/sandbox/gitpull/setuptools/docs/user
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+PLAIN
+K 3
+api
+V 24
+dir 3-2394.0.r7302/33185
+K 3
+dev
+V 26
+dir 3-12.0-7834.r7871/2130
+K 5
+howto
+V 27
+dir 3-749.0-7834.r7871/2994
+K 9
+index.txt
+V 25
+file 3-2171.0.r7302/31809
+K 4
+peps
+V 20
+dir 5-7.0.r6154/4063
+K 3
+ref
+V 21
+dir w-18.0.r7804/4331
+K 4
+user
+V 27
+dir 1c-18.0-7834.r7871/6563
+END
+ENDREP
+id: 3-7.0-7834.r7871/7090
+type: dir
+pred: 3-7.0.r7828/3177
+count: 1532
+text: 7871 6795 282 282 1df04548a1bd5484fe0ae0b4ad3073e8
+cpath: /trunk/sandbox/gitpull/setuptools/docs
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+id: 8-6490.2-7871.r7871/7314
+type: file
+pred: 8-6490.0.r7218/19961
+count: 6
+text: 7865 0 233 1709 7d9622a5d63ef3d9a63a06c7d88c09e1 306c98863e8257055b77c3bbbfd72ecc40d9179a 7870-62x/_12
+props: 6490 52877 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/gitpull/setuptools/docutils/utils/math/__init__.py
+copyroot: 7464 /trunk/docutils/docutils/utils/math
+
+id: 6-6451.b-7871.r7871/7680
+type: file
+pred: 6-6451.3-7464.r7668/12040
+count: 11
+text: 7865 3140 331 17469 202c99eb72066164073e99424f911b14 30615f985f5b1d09c6649109bfee02507d80e39a 7870-62x/_19
+props: 6451 31135 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/gitpull/setuptools/docutils/utils/math/latex2mathml.py
+copyroot: 6490 /trunk/docutils/docutils/math/latex2mathml.py
+
+id: 5-7861.3-7871.r7871/8070
+type: file
+pred: 5-7861.1-7464.r7861/12805
+count: 1
+text: 7861 8260 1675 5579 917fc717f172805df256f84d41f22c77 1cad767789b0c45bea0570f0969da309f058fa81 7860-62n/_f
+props: 7861 12711 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/gitpull/setuptools/docutils/utils/math/tex2mathml_extern.py
+copyfrom: 7870 /trunk/docutils/docutils/utils/math/tex2mathml_extern.py
+
+PLAIN
+K 11
+__init__.py
+V 29
+file 8-6490.2-7871.r7871/7314
+K 15
+latex2mathml.py
+V 29
+file 6-6451.b-7871.r7871/7680
+K 12
+math2html.py
+V 29
+file b-6490.0-7619.r7806/8310
+K 20
+tex2mathml_extern.py
+V 29
+file 5-7861.3-7871.r7871/8070
+K 14
+tex2unichar.py
+V 30
+file 7-7218.1-7464.r7668/12412
+K 14
+unichar2tex.py
+V 30
+file 4-7009.0-7218.r7218/19597
+END
+ENDREP
+id: 6-6490.2-7871.r7871/8825
+type: dir
+pred: 6-6490.1-7464.r7806/8962
+count: 19
+text: 7871 8474 338 338 d030eb799f287d43287ffd674c28de7b
+cpath: /trunk/sandbox/gitpull/setuptools/docutils/utils/math
+copyroot: 7464 /trunk/docutils/docutils/utils/math
+
+PLAIN
+K 11
+__init__.py
+V 29
+file 3u-18.0-7267.r7668/11315
+K 16
+code_analyzer.py
+V 30
+file e-7119.1-7267.r7267/16361
+K 18
+error_reporting.py
+V 30
+file 6-7037.0-7464.r7668/11670
+K 4
+math
+V 28
+dir 6-6490.2-7871.r7871/8825
+K 20
+punctuation_chars.py
+V 30
+file i-7243.2-7267.r7668/13289
+K 8
+roman.py
+V 29
+file 3-1469.0-7268.r7268/4832
+K 14
+smartquotes.py
+V 23
+file j-7530.0.r7716/127
+K 13
+urischemes.py
+V 29
+file 3s-18.2-7464.r7464/12884
+END
+ENDREP
+id: 6-7267.0-7834.r7871/9518
+type: dir
+pred: 6-7267.0.r7806/9638
+count: 30
+text: 7871 9075 430 430 75e7cb1e83034bfde8a1c38c3525e736
+cpath: /trunk/sandbox/gitpull/setuptools/docutils/utils
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+id: 3x-18.0-7834.r7871/9756
+type: file
+pred: 3x-18.0.r7817/753
+count: 36
+text: 7857 7103 413 4718 f33a0256360b38a6a3f3cd3779063f96 6bd8e2b36c17a32264fe55da6d2bfce5cbeac18b 7870-62x/_1a
+props: 2321 1028 111 0 df9f31216c5039327c376b7fe82756f5
+cpath: /trunk/sandbox/gitpull/setuptools/docutils/writers/__init__.py
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+id: 40-18.7-7871.r7871/10117
+type: file
+pred: 40-18.0-4163.r7817/1052
+count: 290
+text: 7856 2468 348 69639 46d0bc701eb5ee795f758cf9d60ad9a4 b8afd81d51dcb1e447dd6392d92cf40c645f6eac 7870-62x/_w
+props: 3070 87 112 0 cfcfb3fd20e71b66b19a2443bfd2751f
+cpath: /trunk/sandbox/gitpull/setuptools/docutils/writers/html4css1/__init__.py
+copyroot: 4163 /trunk/docutils/docutils/writers/html4css1/__init__.py
+
+id: 75-18.5-7871.r7871/10515
+type: file
+pred: 75-18.1-4163.r7614/342
+count: 80
+text: 7856 3031 766 6929 bcbf4783f6318c685fc85de535f266f1 8e19b9cd7f69fede7c37d577c96ed6bdbaac0770 7870-62x/_l
+props: 2958 154 111 0 d69121ee529fb8cb3643d711ec0f2158
+cpath: /trunk/sandbox/gitpull/setuptools/docutils/writers/html4css1/html4css1.css
+copyroot: 4163 /trunk/docutils/docutils/writers/html4css1/html4css1.css
+
+PLAIN
+K 11
+__init__.py
+V 29
+file 40-18.7-7871.r7871/10117
+K 13
+html4css1.css
+V 29
+file 75-18.5-7871.r7871/10515
+K 12
+template.txt
+V 25
+file e-4456.0.r4456/14616
+END
+ENDREP
+id: n-4163.0-7834.r7871/11087
+type: dir
+pred: n-4163.0.r7817/1600
+count: 105
+text: 7871 10915 159 159 2df00e005281d0397e6a6a13fe047236
+props: 4447 2293 31 0 b9ebe853b7baef2573e3487e43637c6a
+cpath: /trunk/sandbox/gitpull/setuptools/docutils/writers/html4css1
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+id: 7-7815.0-7834.r7871/11395
+type: file
+pred: 7-7815.0.r7829/1560
+count: 5
+text: 7866 569 356 66949 b38d4c17d369e9380d5d9545b54115d0 7dc840c65bf68972cce05c41cc6d2fa0fe47980c 7870-62x/_1w
+props: 7815 16926 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/gitpull/setuptools/docutils/writers/html_base/__init__.py
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+id: a-7809.e-7871.r7871/11769
+type: file
+pred: a-7809.0-7818.r7827/13017
+count: 4
+text: 7865 257 513 11126 1c01c1355bc490c25f0cddf37a8302fb e44b3b6aca7aeb721120c20e96ba2b971c9efd07 7870-62x/_1k
+props: 7809 19045 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/gitpull/setuptools/docutils/writers/html_base/html-base.css
+copyroot: 7818 /trunk/docutils/docutils/writers/html_base/html-base.css
+
+PLAIN
+K 11
+__init__.py
+V 30
+file 7-7815.0-7834.r7871/11395
+K 13
+html-base.css
+V 30
+file a-7809.e-7871.r7871/11769
+K 8
+math.css
+V 30
+file h-6490.0-7815.r7815/17309
+K 12
+template.txt
+V 25
+file 9-7815.0.r7815/17773
+END
+ENDREP
+id: 6-7815.0-7834.r7871/12397
+type: dir
+pred: 6-7815.0.r7829/2092
+count: 5
+text: 7871 12174 210 210 d706151736804bb913ea39eff15b4b75
+cpath: /trunk/sandbox/gitpull/setuptools/docutils/writers/html_base
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+id: 9-1202.c-7871.r7871/12648
+type: file
+pred: 9-1202.2-4163.r7795/5704
+count: 369
+text: 7851 270 89 123025 ce1124189e3b26b7fc6fb39d11f2306b f759bdbf2ed699c504aab4080590eb3c724d61f9 7870-62x/_1b
+props: 2938 5561 112 0 81ebb4df0324ce3dd916e8d5b0721f93
+cpath: /trunk/sandbox/gitpull/setuptools/docutils/writers/latex2e/__init__.py
+copyroot: 4163 /trunk/docutils/docutils/writers/latex2e/__init__.py
+
+id: 5-6445.0-7834.r7871/13046
+type: file
+pred: 5-6445.0.r7465/4505
+count: 2
+text: 7850 2502 57 481 077000195f7e34e46250e15a0f92422e 081f063384c943e8a7a2b8945f898025ea56a402 7870-62x/_11
+props: 6445 371 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/gitpull/setuptools/docutils/writers/latex2e/xelatex.tex
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+PLAIN
+K 11
+__init__.py
+V 30
+file 9-1202.c-7871.r7871/12648
+K 11
+default.tex
+V 30
+file e-6105.0-6111.r6427/19611
+K 22
+docutils-05-compat.sty
+V 24
+file b-5888.0.r7233/2645
+K 13
+titlepage.tex
+V 25
+file g-6111.0.r6416/11541
+K 11
+xelatex.tex
+V 30
+file 5-6445.0-7834.r7871/13046
+END
+ENDREP
+id: q-4163.0-7834.r7871/13698
+type: dir
+pred: q-4163.0.r7795/6362
+count: 198
+text: 7871 13414 271 271 06eea16157f1436407187adccfb9c1f0
+props: 4447 2583 31 0 b9ebe853b7baef2573e3487e43637c6a
+cpath: /trunk/sandbox/gitpull/setuptools/docutils/writers/latex2e
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+id: 9-6428.0-7834.r7871/14004
+type: file
+pred: 9-6428.0.r7668/15504
+count: 14
+text: 7852 1526 289 5194 e3244bff8353db9ed97c00c9702e73fb 3e3f1840e295b977c9322059af821e8ee1914d4e 7870-62x/_18
+props: 6428 42926 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/gitpull/setuptools/docutils/writers/xetex/__init__.py
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+PLAIN
+K 11
+__init__.py
+V 30
+file 9-6428.0-7834.r7871/14004
+END
+ENDREP
+id: 8-6428.0-7834.r7871/14446
+type: dir
+pred: 8-6428.0.r7668/15879
+count: 14
+text: 7871 14376 57 57 ab775d074eb8e3c46de5fb0528328c69
+cpath: /trunk/sandbox/gitpull/setuptools/docutils/writers/xetex
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+id: 13-5534.f-7871.r7871/14693
+type: file
+pred: 13-5534.5-7798.r7818/6064
+count: 21
+text: 7866 952 401 6255 12a56807e1b6c44ef69367e3f373ee04 029cad7155cf338c885bd22983e35e098cd41692 7870-62x/_1v
+props: 5534 22912 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/gitpull/setuptools/docutils/writers/xhtml11/__init__.py
+copyroot: 6196 /trunk/sandbox/html4strict/html4strict/__init__.py
+
+id: j-5534.a-7871.r7871/15089
+type: file
+pred: j-5534.1-7798.r7814/887
+count: 18
+text: 7865 3497 121 3692 3e1d05742a3cf9248bb45da2a760b877 e2d6044804bba085bc1174e612691417e5a58569 7870-62x/_16
+props: 5534 24964 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/gitpull/setuptools/docutils/writers/xhtml11/xhtml11.css
+copyroot: 7798 /trunk/docutils/docutils/writers/xhtml11/xhtml11.css
+
+PLAIN
+K 11
+__init__.py
+V 31
+file 13-5534.f-7871.r7871/14693
+K 11
+xhtml11.css
+V 30
+file j-5534.a-7871.r7871/15089
+END
+ENDREP
+id: b-6196.9-7871.r7871/15609
+type: dir
+pred: b-6196.0-7798.r7818/6562
+count: 25
+text: 7871 15485 111 111 84eb20623b0e61637d30077a92ae5590
+cpath: /trunk/sandbox/gitpull/setuptools/docutils/writers/xhtml11
+copyroot: 7798 /trunk/docutils/docutils/writers/xhtml11
+
+PLAIN
+K 11
+__init__.py
+V 28
+file 3x-18.0-7834.r7871/9756
+K 15
+docutils_xml.py
+V 23
+file 4-244.0.r7497/1280
+K 9
+html4css1
+V 29
+dir n-4163.0-7834.r7871/11087
+K 9
+html_base
+V 29
+dir 6-7815.0-7834.r7871/12397
+K 7
+latex2e
+V 29
+dir q-4163.0-7834.r7871/13698
+K 10
+manpage.py
+V 27
+file 6-1719.1-6085.r7628/66
+K 7
+null.py
+V 26
+file 4-3246.0.r4564/115090
+K 7
+odf_odt
+V 23
+dir 9-5834.0.r7786/1263
+K 8
+pep_html
+V 23
+dir v-4163.0.r7630/4430
+K 12
+pseudoxml.py
+V 23
+file 4-84.0.r7320/32670
+K 7
+s5_html
+V 22
+dir y-4163.0.r7720/855
+K 5
+xetex
+V 29
+dir 8-6428.0-7834.r7871/14446
+K 7
+xhtml11
+V 29
+dir b-6196.9-7871.r7871/15609
+END
+ENDREP
+id: 3w-18.0-7834.r7871/16489
+type: dir
+pred: 3w-18.0.r7829/2872
+count: 856
+text: 7871 15871 605 605 982e295c2c866a103f625611213ee8ef
+props: 342 6175 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/sandbox/gitpull/setuptools/docutils/writers
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 1x-18.0.r7763/1269
+K 10
+_compat.py
+V 24
+file 3-5889.0.r7486/9681
+K 7
+core.py
+V 23
+file 20-18.0.r7466/8022
+K 13
+docutils.conf
+V 29
+file m-3472.0-3904.r3904/2799
+K 11
+examples.py
+V 25
+file 3-1928.0.r7320/35530
+K 11
+frontend.py
+V 23
+file 3-150.0.r7584/2918
+K 5
+io.py
+V 22
+file 3-217.0.r7787/450
+K 9
+languages
+V 22
+dir 22-18.0.r7678/3464
+K 8
+nodes.py
+V 22
+file 28-18.0.r7788/913
+K 7
+parsers
+V 22
+dir 2a-18.0.r7828/4366
+K 7
+readers
+V 22
+dir 36-18.0.r7648/5597
+K 15
+statemachine.py
+V 24
+file 3e-18.0.r7464/14401
+K 10
+transforms
+V 22
+dir 3g-18.0.r7808/1723
+K 5
+utils
+V 28
+dir 6-7267.0-7834.r7871/9518
+K 7
+writers
+V 28
+dir 3w-18.0-7834.r7871/16489
+END
+ENDREP
+id: 1w-18.0-7834.r7871/17468
+type: dir
+pred: 1w-18.0.r7829/3781
+count: 2029
+text: 7871 16784 671 671 3523c58e0a8e8f9b21746fbf411bbe8b
+props: 342 8363 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/sandbox/gitpull/setuptools/docutils
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+id: a-6456.0-7834.r7871/17756
+type: file
+pred: a-6456.0.r7589/13511
+count: 7
+text: 7853 409 41 1827 4685a14a44a9a445c671b5d5904417fb 5e823a91d68dcbe1d1fe3476368dd42f295451d8 7870-62x/_t
+props: 6456 6820 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/gitpull/setuptools/test/functional/expected/cyrillic.tex
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+id: q-7589.0-7834.r7871/18126
+type: file
+pred: q-7589.0.r7589/12905
+count: 1
+text: 7853 205 41 2380 be9a670d0b8a3fc57ef2337480971fdd b65ac3b25dd270e9f8453e6f436dc6309bbfded7 7870-62x/_o
+props: 7589 12811 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/gitpull/setuptools/test/functional/expected/latex_babel.tex
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+id: 8-2937.0-7834.r7871/18500
+type: file
+pred: 8-2937.0.r6455/4932
+count: 23
+text: 7853 138 41 1035 0e656462f3da8ad913c0e66083e4b7e4 d0353c8c561d4016b52971bad65f54ab186dc686 7870-62x/_1r
+props: 2938 3111 110 0 2a94ed7a58fe1feebaea27ee0c48460d
+cpath: /trunk/sandbox/gitpull/setuptools/test/functional/expected/latex_docinfo.tex
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+id: m-7008.6-7871.r7871/18877
+type: file
+pred: m-7008.0-7012.r7818/8528
+count: 21
+text: 7866 375 167 10267 ee7f44c7362349c7445a166acfcd1655 692f4a53eb6100fa06fdfc8e0d25277ed71fafb3 7870-62x/_r
+cpath: /trunk/sandbox/gitpull/setuptools/test/functional/expected/math_output_mathml.xhtml
+copyroot: 7012 /trunk/docutils/test/functional/expected/math_output_mathml.xhtml
+
+id: 9-2357.0-7834.r7871/19243
+type: file
+pred: 9-2357.0.r7827/15543
+count: 143
+text: 7856 244 590 61681 4940e6e0d0dbf6776e2842930aff44e0 935899a97690c0aaae6a24833dd8a29881f1662c 7870-62x/_1u
+props: 3021 2415 111 0 4135f0dfb17a4d11b2424d95e27830f5
+cpath: /trunk/sandbox/gitpull/setuptools/test/functional/expected/standalone_rst_html4css1.html
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+id: 5-7816.0-7834.r7871/19636
+type: file
+pred: 5-7816.0.r7827/15878
+count: 4
+text: 7856 0 219 71320 92102c203fdb9d89b6973fb438c3d34b 2031b954a756727db283e1b00a77cb203127bddf 7870-62x/_1d
+props: 7816 18489 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/gitpull/setuptools/test/functional/expected/standalone_rst_html_base.html
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+id: c-2357.0-7834.r7871/20025
+type: file
+pred: c-2357.0.r7793/4941
+count: 152
+text: 7853 0 44 56988 5eb240c79df11ee0c770220b48b0e344 0848afb114a93f929f0cfd8392620d7a6ef0e025 7870-62x/_1q
+props: 3008 5403 111 0 b4233197920770c602c29330b7f7c623
+cpath: /trunk/sandbox/gitpull/setuptools/test/functional/expected/standalone_rst_latex.tex
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+id: 5-3185.0-7834.r7871/20409
+type: file
+pred: 5-3185.0.r7793/5267
+count: 50
+text: 7849 3909 384 95358 4469b6d2f431dba519a04b9706e714dd 33f9849f87a43404e1fe1e4472eac223fb14c9ab 7870-62x/_1c
+props: 3185 11598 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/gitpull/setuptools/test/functional/expected/standalone_rst_pseudoxml.txt
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+id: e-6428.0-7834.r7871/20800
+type: file
+pred: e-6428.0.r7793/5598
+count: 31
+text: 7853 70 44 52226 125a6f1d81b6ee73cb5e18475389b2d6 be059870eb098edd3551a4b112795ea8d9b47b11 7870-62x/_1z
+props: 6428 36696 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/gitpull/setuptools/test/functional/expected/standalone_rst_xetex.tex
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+id: 4-6337.g-7871.r7871/21184
+type: file
+pred: 4-6337.2-7798.r7827/16211
+count: 12
+text: 7866 1380 10218 73125 14e163045ea3c477e94fb4bba0f5d383 9c7ab0b425f158f0d1cc3de7522cf4d2df5073ff 7870-62x/_1x
+props: 6337 19561 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/gitpull/setuptools/test/functional/expected/standalone_rst_xhtml11.xhtml
+copyroot: 7798 /trunk/docutils/test/functional/expected/standalone_rst_xhtml11.xhtml
+
+id: d-6456.0-7834.r7871/21619
+type: file
+pred: d-6456.0.r7589/13196
+count: 8
+text: 7853 273 41 1891 5f235242eabb4cd42022108b406e982b 9a9b35e44285a35e5226d030e1cd35e23ba7d080 7870-62x/_1i
+props: 6456 6434 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/gitpull/setuptools/test/functional/expected/xetex-cyrillic.tex
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+PLAIN
+K 18
+compact_lists.html
+V 24
+file 9-4219.0.r7763/2741
+K 12
+cyrillic.tex
+V 30
+file a-6456.0-7834.r7871/17756
+K 14
+dangerous.html
+V 29
+file f-3071.0-3285.r7763/3059
+K 21
+field_name_limit.html
+V 24
+file c-3164.0.r7763/3441
+K 15
+latex_babel.tex
+V 30
+file q-7589.0-7834.r7871/18126
+K 17
+latex_docinfo.tex
+V 30
+file 8-2937.0-7834.r7871/18500
+K 21
+math_output_html.html
+V 30
+file i-7008.0-7010.r7806/10720
+K 22
+math_output_latex.html
+V 24
+file d-7010.0.r7763/4155
+K 24
+math_output_mathjax.html
+V 24
+file f-7010.0.r7763/4477
+K 24
+math_output_mathml.xhtml
+V 30
+file m-7008.6-7871.r7871/18877
+K 23
+misc_rst_html4css1.html
+V 24
+file 5-2993.0.r7763/5147
+K 13
+odt_basic.odt
+V 25
+file j-5834.0.r7499/30130
+K 23
+odt_custom_headfoot.odt
+V 25
+file a-6214.0.r7499/30444
+K 15
+odt_tables1.odt
+V 25
+file m-5834.0.r7499/29808
+K 13
+pep_html.html
+V 22
+file 5-3040.0.r7776/87
+K 29
+standalone_rst_html4css1.html
+V 30
+file 9-2357.0-7834.r7871/19243
+K 29
+standalone_rst_html_base.html
+V 30
+file 5-7816.0-7834.r7871/19636
+K 24
+standalone_rst_latex.tex
+V 30
+file c-2357.0-7834.r7871/20025
+K 26
+standalone_rst_manpage.man
+V 24
+file c-6085.0.r7626/2068
+K 28
+standalone_rst_pseudoxml.txt
+V 30
+file 5-3185.0-7834.r7871/20409
+K 29
+standalone_rst_s5_html_1.html
+V 29
+file 5-4124.7-4156.r7792/4252
+K 29
+standalone_rst_s5_html_2.html
+V 29
+file 8-4124.8-4156.r7792/4661
+K 24
+standalone_rst_xetex.tex
+V 30
+file e-6428.0-7834.r7871/20800
+K 28
+standalone_rst_xhtml11.xhtml
+V 30
+file 4-6337.g-7871.r7871/21184
+K 2
+ui
+V 28
+dir a-4124.9-4156.r4241/2580
+K 18
+xetex-cyrillic.tex
+V 30
+file d-6456.0-7834.r7871/21619
+END
+ENDREP
+id: 8-2357.0-7834.r7871/23581
+type: dir
+pred: 8-2357.0.r7827/18160
+count: 325
+text: 7871 21996 1572 1572 deee5c43e852ba2819f80e9f07ac6096
+cpath: /trunk/sandbox/gitpull/setuptools/test/functional/expected
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+id: l-5934.0-7834.r7871/23835
+type: file
+pred: l-5934.0.r7591/56
+count: 3
+text: 7849 367 72 1204 86e9e2d4738326734160720f549d0e0d 12392178341f44240f7e8cd93a698812f67d318f 7870-62x/_1o
+props: 5934 11033 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/gitpull/setuptools/test/functional/input/data/latex_encoding.txt
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+id: k-2357.0-7834.r7871/24212
+type: file
+pred: k-2357.0.r7514/10369
+count: 47
+text: 7849 198 142 21638 250676c4981a2335e27a58bc4fb4a809 7a8714526b7ed117b3107860747e24c0fe5f191c 7870-62x/_1t
+props: 3008 3480 111 0 28e613ef70fc8e4efe7ed7b15f74e6e7
+cpath: /trunk/sandbox/gitpull/setuptools/test/functional/input/data/standard.txt
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+id: q-6253.0-7834.r7871/24589
+type: file
+pred: q-6253.0.r7827/18355
+count: 5
+text: 7856 2405 35 4031 2ebb82ceb49cd060ddf00c9c9d595dd3 58badae5a1b7387a943a8d29e357de9f90123f91 7870-62x/_1p
+props: 6253 12254 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/gitpull/setuptools/test/functional/input/data/svg_images.txt
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+PLAIN
+K 16
+custom_roles.txt
+V 24
+file d-4236.0.r6475/7418
+K 22
+custom_roles_latex.txt
+V 25
+file f-5862.0.r6443/14185
+K 10
+errors.txt
+V 24
+file h-2357.0.r2357/1374
+K 17
+header_footer.txt
+V 26
+file 1a-3184.0.r3184/11579
+K 13
+html-base.css
+V 25
+file f-7809.0.r7818/11346
+K 13
+html4css1.css
+V 23
+file b-7818.0.r7819/174
+K 16
+hyperlinking.txt
+V 24
+file c-6145.0.r6225/1973
+K 9
+latex.txt
+V 25
+file 6-3271.0.r5934/11423
+K 18
+latex_encoding.txt
+V 30
+file l-5934.0-7834.r7871/23835
+K 14
+list_table.txt
+V 24
+file m-3165.0.r3165/5101
+K 8
+math.css
+V 25
+file 10-7437.0.r7619/2513
+K 8
+math.txt
+V 26
+file 1a-6451.0.r7129/15257
+K 19
+nonalphanumeric.txt
+V 24
+file 8-2660.0.r2660/1703
+K 16
+option_lists.txt
+V 29
+file 8-4830.0-5862.r5862/9671
+K 18
+section_titles.txt
+V 23
+file 6-7368.0.r7368/584
+K 12
+standard.txt
+V 30
+file k-2357.0-7834.r7871/24212
+K 14
+svg_images.txt
+V 30
+file q-6253.0-7834.r7871/24589
+K 14
+swf_images.txt
+V 22
+file n-6254.0.r7099/62
+K 17
+table_colspan.txt
+V 23
+file m-2357.0.r2357/960
+K 17
+table_complex.txt
+V 24
+file o-2357.0.r2357/1782
+K 17
+table_rowspan.txt
+V 24
+file q-2357.0.r3362/1180
+K 16
+tables_latex.txt
+V 23
+file e-6508.0.r7616/703
+K 11
+unicode.txt
+V 25
+file b-2660.0.r6319/14908
+K 8
+urls.txt
+V 24
+file k-6183.0.r7325/9824
+K 11
+xhtml11.css
+V 23
+file 7-7819.0.r7819/525
+END
+ENDREP
+id: f-2357.0-7834.r7871/26258
+type: dir
+pred: f-2357.0.r7827/19949
+count: 101
+text: 7871 24966 1279 1279 d380b2e9ab7e2aeb26429c109ad01200
+cpath: /trunk/sandbox/gitpull/setuptools/test/functional/input/data
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+minfo-cnt: 1
+
+PLAIN
+K 17
+compact_lists.txt
+V 24
+file c-4219.0.r4219/1978
+K 12
+cyrillic.txt
+V 25
+file 5-6474.0.r7589/10911
+K 13
+dangerous.txt
+V 28
+file i-3071.1-3285.r3285/123
+K 4
+data
+V 29
+dir f-2357.0-7834.r7871/26258
+K 14
+field_list.txt
+V 24
+file f-3164.0.r3164/3336
+K 15
+latex_babel.txt
+V 25
+file m-7589.0.r7589/10624
+K 17
+latex_docinfo.txt
+V 24
+file b-2937.0.r2938/2379
+K 24
+link_in_substitution.txt
+V 23
+file 5-6158.0.r6158/389
+K 13
+odt_basic.txt
+V 25
+file o-5834.0.r5834/51721
+K 23
+odt_custom_headfoot.txt
+V 25
+file d-6214.0.r6214/22895
+K 15
+odt_tables1.txt
+V 25
+file r-5834.0.r5834/51338
+K 12
+pep_html.txt
+V 24
+file 8-3040.0.r3243/3287
+K 10
+simple.txt
+V 23
+file 5-2991.0.r2991/903
+K 28
+standalone_rst_html4css1.txt
+V 24
+file s-2357.0.r6475/7092
+K 28
+standalone_rst_html_base.txt
+V 24
+file 7-7816.0.r7820/9824
+K 24
+standalone_rst_latex.txt
+V 24
+file u-2357.0.r7325/9502
+K 26
+standalone_rst_manpage.txt
+V 25
+file f-6085.0.r6471/11226
+K 28
+standalone_rst_pseudoxml.txt
+V 24
+file h-4236.0.r4236/4118
+K 26
+standalone_rst_s5_html.txt
+V 29
+file 5-4128.a-4156.r4160/1215
+K 24
+standalone_rst_xetex.txt
+V 25
+file h-6428.0.r7325/11382
+K 26
+standalone_rst_xhtml11.txt
+V 30
+file 7-6337.3-7798.r7818/13478
+END
+ENDREP
+id: e-2357.0-7834.r7871/27723
+type: dir
+pred: e-2357.0.r7827/21350
+count: 132
+text: 7871 26527 1183 1183 4c4dad01eb861d003b00f49170fa6919
+cpath: /trunk/sandbox/gitpull/setuptools/test/functional/input
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+minfo-cnt: 1
+
+id: u-7008.d-7871.r7871/27987
+type: file
+pred: u-7008.3-7010.r7818/15277
+count: 5
+text: 7866 0 32 467 a2caebf38100058824f9da738f8868e4 677b20ce77751d2fcb064668943e0a49cb021eea 7870-62x/_1h
+props: 7008 32367 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/gitpull/setuptools/test/functional/tests/math_output_mathml.py
+copyroot: 7010 /trunk/docutils/test/functional/tests/math_output_mathml.py
+
+PLAIN
+K 11
+_default.py
+V 26
+file 11-2357.0.r7320/20238
+K 27
+_standalone_rst_defaults.py
+V 25
+file 5-3366.0.r7120/10954
+K 16
+compact_lists.py
+V 25
+file f-4219.0.r7437/21637
+K 12
+dangerous.py
+V 30
+file l-3071.2-3285.r7437/23934
+K 19
+field_name_limit.py
+V 25
+file i-3164.0.r7437/22969
+K 14
+latex_babel.py
+V 25
+file c-7589.0.r7589/15844
+K 17
+latex_cyrillic.py
+V 25
+file f-6456.0.r7589/16130
+K 16
+latex_docinfo.py
+V 24
+file e-2937.0.r2937/3869
+K 19
+math_output_html.py
+V 30
+file t-6471.2-7010.r7437/21250
+K 20
+math_output_latex.py
+V 25
+file j-7010.0.r7437/21952
+K 22
+math_output_mathjax.py
+V 25
+file l-7010.0.r7437/23613
+K 21
+math_output_mathml.py
+V 30
+file u-7008.d-7871.r7871/27987
+K 21
+misc_rst_html4css1.py
+V 25
+file b-2991.0.r7320/20549
+K 11
+pep_html.py
+V 25
+file b-3040.0.r7437/22270
+K 27
+standalone_rst_html4css1.py
+V 26
+file 14-2357.0.r7623/18041
+K 23
+standalone_rst_latex.py
+V 25
+file 16-2357.0.r7586/9313
+K 25
+standalone_rst_manpage.py
+V 24
+file i-6085.0.r6085/8999
+K 27
+standalone_rst_pseudoxml.py
+V 24
+file 8-3185.0.r7363/3270
+K 27
+standalone_rst_s5_html_1.py
+V 31
+file 1k-4124.b-4156.r7437/20843
+K 27
+standalone_rst_s5_html_2.py
+V 30
+file 1n-4124.c-4156.r5618/2235
+K 23
+standalone_rst_xetex.py
+V 24
+file n-6428.0.r7586/8993
+K 25
+standalone_rst_xhtml11.py
+V 25
+file c-7798.0.r7818/15667
+K 17
+xetex_cyrillic.py
+V 25
+file i-6456.0.r7589/16444
+END
+ENDREP
+id: 10-2357.0-7834.r7871/29752
+type: dir
+pred: 10-2357.0.r7818/17349
+count: 61
+text: 7871 28393 1346 1346 2656d97c56955e34bd3716fd7e3d9ed0
+props: 4447 277 31 0 b9ebe853b7baef2573e3487e43637c6a
+cpath: /trunk/sandbox/gitpull/setuptools/test/functional/tests
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+PLAIN
+K 10
+README.txt
+V 24
+file 5-2357.0.r2369/2122
+K 8
+expected
+V 29
+dir 8-2357.0-7834.r7871/23581
+K 5
+input
+V 29
+dir e-2357.0-7834.r7871/27723
+K 6
+output
+V 23
+dir w-2357.0.r6448/3773
+K 5
+tests
+V 30
+dir 10-2357.0-7834.r7871/29752
+END
+ENDREP
+id: 3-2357.0-7834.r7871/30300
+type: dir
+pred: 3-2357.0.r7827/21783
+count: 368
+text: 7871 30058 229 229 c3adee3087f35fd47aca7a97b0cc536f
+cpath: /trunk/sandbox/gitpull/setuptools/test/functional
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+minfo-cnt: 1
+
+id: 7-7854.4-7871.r7871/30556
+type: file
+pred: 7-7854.0.r7854/972
+count: 1
+text: 7854 195 128 115 ce81b61adc7d62192b85b03b8a4d87ac 42092ce4bb272601715e284105beb47642693346 7853-62g/_a
+props: 7854 878 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/gitpull/setuptools/test/test_parsers/test_rst/test_directives/includes/include14.txt
+copyfrom: 7870 /trunk/docutils/test/test_parsers/test_rst/test_directives/includes/include14.txt
+
+id: 8-967.0-7834.r7871/30999
+type: file
+pred: 8-967.0.r967/1017
+count: 1
+text: 7854 0 173 156 df2c5e97fb4518be743547719a0e9331 3d2bdcc8952e0b7b8ad23a11c4471a9e4bd41c5b 7870-62x/_x
+props: 967 894 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/sandbox/gitpull/setuptools/test/test_parsers/test_rst/test_directives/includes/include4.txt
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+PLAIN
+K 13
+include14.txt
+V 30
+file 7-7854.4-7871.r7871/30556
+K 12
+include4.txt
+V 29
+file 8-967.0-7834.r7871/30999
+K 12
+include5.txt
+V 22
+file b-967.0.r967/1441
+K 4
+more
+V 23
+dir d-967.0.r1090/12214
+K 7
+sibling
+V 23
+dir d-1086.0.r1086/1162
+END
+ENDREP
+id: 6-967.0-7834.r7871/31639
+type: dir
+pred: 6-967.0.r1090/12619
+count: 3
+text: 7871 31389 237 237 1fbb0ff840d3595f2e687c39e2d49b77
+cpath: /trunk/sandbox/gitpull/setuptools/test/test_parsers/test_rst/test_directives/includes
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+id: d-740.0-7834.r7871/31914
+type: file
+pred: d-740.0.r7785/23661
+count: 49
+text: 7854 336 513 30824 ac59a79ea129501c0f1b4f1900ad865e 4f0337da86c66ae05912746e57c33817b2e5face 7870-62x/_1y
+props: 3046 4820 137 0 976e34fef28b87787fa073fe4d6aecb4
+cpath: /trunk/sandbox/gitpull/setuptools/test/test_parsers/test_rst/test_directives/test_include.py
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+PLAIN
+K 11
+__init__.py
+V 22
+file 8-41.0.r3509/5746
+K 9
+empty.txt
+V 23
+file 6-2979.0.r2979/123
+K 14
+include 11.txt
+V 24
+file j-3046.0.r3046/4516
+K 12
+include1.txt
+V 22
+file 6-740.0.r740/3588
+K 13
+include10.txt
+V 24
+file 6-1566.0.r6314/4858
+K 13
+include12.txt
+V 26
+file 6-5001.0-5015.r5015/0
+K 13
+include13.txt
+V 28
+file f-5003.1-5015.r5015/421
+K 12
+include2.txt
+V 23
+file 9-740.0.r1572/3869
+K 12
+include3.txt
+V 21
+file 6-968.0.r968/200
+K 12
+include8.txt
+V 23
+file a-1086.0.r1086/362
+K 19
+include_literal.txt
+V 24
+file j-6135.0.r6186/1580
+K 8
+includes
+V 28
+dir 6-967.0-7834.r7871/31639
+K 8
+raw1.txt
+V 22
+file b-740.0.r740/4422
+K 19
+test_admonitions.py
+V 23
+file 51-18.0.r7348/2126
+K 20
+test_block_quotes.py
+V 30
+file 7-4393.0-4667.r5174/30947
+K 13
+test_class.py
+V 30
+file 6-4162.1-4667.r5174/31378
+K 12
+test_code.py
+V 26
+file 1m-7119.0.r7514/16582
+K 17
+test_code_long.py
+V 25
+file 1p-7119.0.r7267/4646
+K 17
+test_code_none.py
+V 25
+file 1r-7119.0.r7221/2370
+K 16
+test_compound.py
+V 25
+file 6-2728.0.r7072/14611
+K 17
+test_container.py
+V 25
+file 6-4162.0.r7062/17247
+K 16
+test_contents.py
+V 24
+file 54-18.0.r5889/33879
+K 12
+test_date.py
+V 24
+file 10-4229.0.r7491/484
+K 19
+test_decorations.py
+V 26
+file 1g-3184.0.r4667/25923
+K 20
+test_default_role.py
+V 25
+file y-3427.0.r4564/85733
+K 15
+test_figures.py
+V 24
+file 56-18.0.r7785/23326
+K 14
+test_images.py
+V 23
+file 58-18.0.r7621/1931
+K 15
+test_include.py
+V 29
+file d-740.0-7834.r7871/31914
+K 19
+test_line_blocks.py
+V 25
+file 6-2696.0.r7062/18693
+K 12
+test_math.py
+V 26
+file 11-7056.0.r7062/15126
+K 12
+test_meta.py
+V 24
+file 5a-18.0.r4667/27477
+K 23
+test_parsed_literals.py
+V 30
+file 7-4389.2-4667.r7072/14174
+K 11
+test_raw.py
+V 23
+file f-740.0.r7384/2967
+K 15
+test_replace.py
+V 23
+file h-740.0.r7021/1566
+K 18
+test_replace_fr.py
+V 24
+file 6-7018.0.r7021/1288
+K 12
+test_role.py
+V 24
+file t-1959.0.r6424/2946
+K 15
+test_rubrics.py
+V 25
+file 6-1339.0.r7062/16472
+K 15
+test_sectnum.py
+V 30
+file 7-4422.3-4667.r5174/32649
+K 16
+test_sidebars.py
+V 25
+file b-3206.0.r7062/15462
+K 14
+test_tables.py
+V 25
+file 6-2164.0.r7785/23999
+K 20
+test_target_notes.py
+V 30
+file 6-4029.d-4156.r7062/17585
+K 23
+test_test_directives.py
+V 24
+file 5c-18.0.r4564/84723
+K 13
+test_title.py
+V 30
+file 7-4417.4-4667.r5174/32233
+K 14
+test_topics.py
+V 24
+file 6-470.0.r7062/18020
+K 15
+test_unicode.py
+V 25
+file 9-1339.0.r5889/34889
+K 15
+test_unknown.py
+V 24
+file 5e-18.0.r4564/84387
+K 10
+utf-16.csv
+V 23
+file 6-2595.0.r2595/539
+END
+ENDREP
+id: 50-18.0-7834.r7871/34754
+type: dir
+pred: 50-18.0.r7785/26771
+count: 174
+text: 7871 32308 2433 2433 ed3ce22ed07cc02458d073c05ec08f1b
+props: 339 3733 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/sandbox/gitpull/setuptools/test/test_parsers/test_rst/test_directives
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+PLAIN
+K 11
+__init__.py
+V 22
+file 5-41.0.r3509/5441
+K 8
+includes
+V 23
+dir 5-1086.0.r1086/3369
+K 25
+test_SimpleTableParser.py
+V 23
+file 5-309.0.r7313/2579
+K 19
+test_TableParser.py
+V 24
+file 4n-18.0.r7668/18613
+K 20
+test_block_quotes.py
+V 24
+file 4q-18.0.r4564/79498
+K 20
+test_bullet_lists.py
+V 23
+file 4s-18.0.r4593/3990
+K 17
+test_citations.py
+V 23
+file 4u-18.0.r5510/2212
+K 16
+test_comments.py
+V 24
+file 4w-18.0.r4564/95817
+K 24
+test_definition_lists.py
+V 24
+file 4y-18.0.r4564/82421
+K 15
+test_directives
+V 28
+dir 50-18.0-7834.r7871/34754
+K 22
+test_doctest_blocks.py
+V 24
+file 5g-18.0.r4564/81450
+K 23
+test_east_asian_text.py
+V 22
+file e-4152.0.r7812/50
+K 24
+test_enumerated_lists.py
+V 22
+file 5i-18.0.r5033/883
+K 19
+test_field_lists.py
+V 24
+file 5k-18.0.r4564/81125
+K 17
+test_footnotes.py
+V 24
+file 5m-18.0.r4564/94851
+K 17
+test_functions.py
+V 24
+file 5o-18.0.r7337/15465
+K 21
+test_inline_markup.py
+V 24
+file 5q-18.0.r7668/18934
+K 19
+test_interpreted.py
+V 24
+file 5-1087.0.r7793/7934
+K 22
+test_interpreted_fr.py
+V 23
+file 5-7017.0.r7017/691
+K 19
+test_line_blocks.py
+V 24
+file 5-2695.0.r7638/3768
+K 22
+test_literal_blocks.py
+V 24
+file 5s-18.0.r4564/79172
+K 20
+test_option_lists.py
+V 22
+file 5u-18.0.r7128/884
+K 18
+test_outdenting.py
+V 24
+file 5w-18.0.r4564/95172
+K 18
+test_paragraphs.py
+V 24
+file 5y-18.0.r4564/96785
+K 23
+test_section_headers.py
+V 23
+file 60-18.0.r6476/2669
+K 21
+test_substitutions.py
+V 24
+file 62-18.0.r4564/80469
+K 14
+test_tables.py
+V 24
+file 64-18.0.r7785/27365
+K 15
+test_targets.py
+V 24
+file 66-18.0.r7062/14804
+K 19
+test_transitions.py
+V 24
+file 68-18.0.r4564/94198
+END
+ENDREP
+id: 4l-18.0-7834.r7871/36676
+type: dir
+pred: 4l-18.0.r7812/1965
+count: 273
+text: 7871 35078 1585 1585 09a3c630216c4267a3aa70d703f6f5f1
+props: 339 5757 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/sandbox/gitpull/setuptools/test/test_parsers/test_rst
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 4-986.0.r3509/5147
+K 24
+test_get_parser_class.py
+V 24
+file 9-7504.0.r7504/5226
+K 14
+test_parser.py
+V 30
+file 5-5614.0-5618.r7463/15055
+K 8
+test_rst
+V 28
+dir 4l-18.0-7834.r7871/36676
+END
+ENDREP
+id: 4k-18.0-7834.r7871/37209
+type: dir
+pred: 4k-18.0.r7812/2431
+count: 276
+text: 7871 36983 213 213 c70744bdef290cca8261e5af1e4c4291
+props: 988 1328 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/sandbox/gitpull/setuptools/test/test_parsers
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+id: 9-1211.0-7834.r7871/37505
+type: file
+pred: 9-1211.0.r7745/7505
+count: 91
+text: 7853 341 41 12009 996d46a609898d5d400ca9921822f583 5cbc49a09cc1e649a739903bcee7d9112a3922a7 7870-62x/_14
+props: 3085 6914 137 0 bb7505e762055103f24e9dfa46d71d9c
+cpath: /trunk/sandbox/gitpull/setuptools/test/test_writers/test_latex2e.py
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+PLAIN
+K 11
+__init__.py
+V 24
+file 6-1211.0.r3509/4380
+K 20
+test_docutils_xml.py
+V 24
+file 4-2018.0.r7315/4430
+K 24
+test_get_writer_class.py
+V 22
+file 4-7500.0.r7660/46
+K 22
+test_html4css1_misc.py
+V 24
+file 6-3570.0.r7817/3857
+K 23
+test_html4css1_parts.py
+V 28
+file a-2055.0-4455.r6502/525
+K 26
+test_html4css1_template.py
+V 23
+file 4-4457.0.r7770/867
+K 15
+test_latex2e.py
+V 30
+file 9-1211.0-7834.r7871/37505
+K 15
+test_manpage.py
+V 23
+file l-6085.0.r7626/917
+K 12
+test_null.py
+V 25
+file 7-3518.0.r5174/28307
+K 11
+test_odt.py
+V 25
+file t-5834.0.r7337/10427
+K 17
+test_pseudoxml.py
+V 25
+file 5-1995.0.r5174/28929
+K 10
+test_s5.py
+V 24
+file 4-4498.0.r7770/1186
+END
+ENDREP
+id: 5-1211.0-7834.r7871/38538
+type: dir
+pred: 5-1211.0.r7817/4825
+count: 194
+text: 7871 37874 651 651 f75395c60cb1be6bbc734e07288162a1
+props: 4447 0 31 0 b9ebe853b7baef2573e3487e43637c6a
+cpath: /trunk/sandbox/gitpull/setuptools/test/test_writers
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+PLAIN
+K 22
+DocutilsTestSupport.py
+V 23
+file 49-18.0.r7539/4076
+K 11
+alltests.py
+V 23
+file 4e-18.0.r7433/3057
+K 11
+coverage.sh
+V 28
+file 6-3449.0-3489.r5539/255
+K 4
+data
+V 24
+dir 3-1662.0.r7317/10380
+K 13
+docutils.conf
+V 24
+file 6-1661.0.r2385/2146
+K 10
+functional
+V 29
+dir 3-2357.0-7834.r7871/30300
+K 15
+local-parser.py
+V 24
+file c-7504.0.r7504/4864
+K 15
+local-reader.py
+V 24
+file 7-7504.0.r7504/3359
+K 15
+local-writer.py
+V 24
+file 7-7500.0.r7500/1042
+K 19
+local_dummy_lang.py
+V 24
+file e-7504.0.r7504/4496
+K 19
+package_unittest.py
+V 23
+file 3-44.0.r7320/17875
+K 15
+test__init__.py
+V 25
+file 7-7007.0.r7668/17713
+K 20
+test_command_line.py
+V 25
+file 6-6487.0.r7668/18007
+K 20
+test_dependencies.py
+V 25
+file 3-2679.0.r7463/14452
+K 23
+test_error_reporting.py
+V 24
+file i-7037.0.r7723/1059
+K 18
+test_functional.py
+V 25
+file 18-2357.0.r7539/3482
+K 10
+test_io.py
+V 23
+file 5-3138.0.r7622/472
+K 16
+test_language.py
+V 23
+file 3-940.0.r7503/2848
+K 13
+test_nodes.py
+V 23
+file 4i-18.0.r7746/1050
+K 12
+test_parsers
+V 28
+dir 4k-18.0-7834.r7871/37209
+K 14
+test_pickle.py
+V 24
+file 9-4487.0.r7539/3782
+K 17
+test_publisher.py
+V 29
+file 6-3525.0-3602.r7539/2838
+K 12
+test_readers
+V 22
+dir 3-89.0.r7793/11459
+K 16
+test_settings.py
+V 24
+file g-1662.0.r7630/6313
+K 20
+test_statemachine.py
+V 24
+file 6a-18.0.r7463/11813
+K 15
+test_transforms
+V 23
+dir 6c-18.0.r7668/22978
+K 18
+test_traversals.py
+V 25
+file 5-4641.0.r7463/14755
+K 13
+test_utils.py
+V 22
+file 6u-18.0.r7771/319
+K 16
+test_viewlist.py
+V 24
+file 3-916.0.r7463/12113
+K 12
+test_writers
+V 29
+dir 5-1211.0-7834.r7871/38538
+END
+ENDREP
+id: 48-18.0-7834.r7871/40401
+type: dir
+pred: 48-18.0.r7827/23531
+count: 1069
+text: 7871 38834 1554 1554 250a6dfbdc98fc646f3febe269ad4397
+props: 343 993 44 0 e8789a4081469b0bbc8d88dcdbd925ef
+cpath: /trunk/sandbox/gitpull/setuptools/test
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+minfo-cnt: 1
+
+id: a-7815.0-7834.r7871/40700
+type: file
+pred: a-7815.0.r7818/19811
+count: 2
+text: 7847 649 202 1088 6a20de2fb45767ecb271759ebe905727 ee147cfd7cc19ab84629388c10f8cc9b3fe7b7e6 7870-62x/_v
+props: 7815 20123 107 0 3c711300be3ea7503c3f4d9c1da3fa17
+cpath: /trunk/sandbox/gitpull/setuptools/tools/rst2html5.py
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+id: h-6431.0-7834.r7871/41054
+type: file
+pred: h-6431.0.r7038/89
+count: 2
+text: 7847 1166 181 827 1fe56b82c9325c05966251699526a6f1 b60784de9d9817a04df36a4ac3af4e410dad350b 7870-62x/_y
+props: 6431 20127 107 0 3c711300be3ea7503c3f4d9c1da3fa17
+cpath: /trunk/sandbox/gitpull/setuptools/tools/rst2xetex.py
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+id: 16-5534.8-7871.r7871/41405
+type: file
+pred: 16-5534.4-7798.r7818/20107
+count: 7
+text: 7847 1375 23 1210 1eaa47b415cdc3d4b09fe0b3eeec78f2 22f2ac0632d2d30131e61de846cb3b8cd0810bd6 7870-62x/_z
+props: 5534 18895 107 0 3c711300be3ea7503c3f4d9c1da3fa17
+cpath: /trunk/sandbox/gitpull/setuptools/tools/rst2xhtml11.py
+copyroot: 7798 /trunk/docutils/tools/rst2xhtml11.py
+
+PLAIN
+K 12
+buildhtml.py
+V 21
+file 3-430.0.r7579/51
+K 3
+dev
+V 23
+dir 5-3488.0.r7442/8527
+K 13
+docutils.conf
+V 22
+file 3-407.0.r4181/328
+K 7
+editors
+V 23
+dir 3-1157.0.r7774/2302
+K 12
+quicktest.py
+V 28
+file 72-18.0-6262.r7442/6582
+K 11
+rst2html.py
+V 26
+file 5-1756.0.r4564/150660
+K 12
+rst2html5.py
+V 30
+file a-7815.0-7834.r7871/40700
+K 12
+rst2latex.py
+V 23
+file b-1202.0.r5905/302
+K 10
+rst2man.py
+V 30
+file b-1719.2-6085.r6085/16595
+K 10
+rst2odt.py
+V 25
+file w-5834.0.r5839/10916
+K 21
+rst2odt_prepstyles.py
+V 25
+file z-5834.0.r5839/10610
+K 16
+rst2pseudoxml.py
+V 26
+file 3-2467.0.r4564/149777
+K 9
+rst2s5.py
+V 31
+file d-3204.f-4156.r4564/151253
+K 12
+rst2xetex.py
+V 30
+file h-6431.0-7834.r7871/41054
+K 14
+rst2xhtml11.py
+V 31
+file 16-5534.8-7871.r7871/41405
+K 10
+rst2xml.py
+V 26
+file 3-2468.0.r4564/150073
+K 14
+rstpep2html.py
+V 30
+file 3-288.0-3533.r4564/151882
+K 4
+test
+V 23
+dir 4-6367.0.r7505/2129
+END
+ENDREP
+id: 6w-18.0-7834.r7871/42675
+type: dir
+pred: 6w-18.0.r7818/21346
+count: 437
+text: 7871 41771 891 891 2f9b5cd89e0693d466de41a67461fe2c
+cpath: /trunk/sandbox/gitpull/setuptools/tools
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+
+PLAIN
+K 8
+BUGS.txt
+V 24
+file 2-2181.0.r7768/4467
+K 11
+COPYING.txt
+V 23
+file 2-18.0.r7530/19019
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r7677/912
+K 11
+HISTORY.txt
+V 24
+file 5-18.0-7834.r7871/0
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r6258/102
+K 10
+README.rst
+V 28
+file 4-7835.0-7834.r7835/655
+K 10
+README.txt
+V 22
+file 9-18.0.r7768/4750
+K 17
+RELEASE-NOTES.txt
+V 28
+file 2-4204.0-7834.r7871/339
+K 10
+THANKS.txt
+V 24
+file 2-2182.0.r7784/1491
+K 4
+docs
+V 25
+dir 3-7.0-7834.r7871/7090
+K 8
+docutils
+V 28
+dir 1w-18.0-7834.r7871/17468
+K 13
+docutils.conf
+V 23
+file 2-7375.0.r7375/485
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 24
+dir 2-1465.0.r7058/32984
+K 9
+setup.cfg
+V 24
+file 4-6255.0.r7442/5812
+K 8
+setup.py
+V 23
+file 46-18.0.r7817/3576
+K 4
+test
+V 28
+dir 48-18.0-7834.r7871/40401
+K 5
+tools
+V 28
+dir 6w-18.0-7834.r7871/42675
+END
+ENDREP
+PLAIN
+K 10
+svn:ignore
+V 5
+build
+K 13
+svn:mergeinfo
+V 25
+/trunk/docutils:7834-7870
+END
+ENDREP
+id: 1-7.0-7834.r7871/43828
+type: dir
+pred: 1-7.0-7834.r7835/1715
+count: 4487
+text: 7871 42906 816 816 a2ec3ba246ed86c2ca38e478d1faae4c
+props: 7871 43735 80 0 39a80254e74d118ba2970bd3b0fe99cf
+cpath: /trunk/sandbox/gitpull/setuptools
+copyroot: 7834 /trunk/sandbox/gitpull/setuptools
+minfo-cnt: 2
+minfo-here: y
+
+PLAIN
+K 22
+docs-homepage-refactor
+V 25
+dir 1-7.0-7841.r7842/2186
+K 16
+docs-restructure
+V 25
+dir 1-7.0-7838.r7840/2236
+K 15
+faq-restructure
+V 24
+dir 4-7830.0.r7830/12471
+K 8
+list-faq
+V 25
+dir 2-7821.0-7831.r7831/0
+K 10
+setuptools
+V 26
+dir 1-7.0-7834.r7871/43828
+K 23
+web_stylesheet_and_menu
+V 25
+dir 1-7.0-7832.r7833/1279
+END
+ENDREP
+id: 2-7830.0.r7871/44469
+type: dir
+pred: 2-7830.0.r7842/2828
+count: 11
+text: 7871 44137 319 319 8a67b7b7c6b0ff77b7fc6c6f7045ab51
+cpath: /trunk/sandbox/gitpull
+copyroot: 0 /
+minfo-cnt: 5
+
+PLAIN
+K 12
+OpenDocument
+V 28
+dir 3-4689.0-5034.r5881/9477
+K 10
+README.txt
+V 22
+file 3-17.0.r7333/1154
+K 8
+aafigure
+V 28
+dir 5-4251.0-4994.r5980/2565
+K 4
+aahz
+V 23
+dir 2-820.0.r3892/10934
+K 9
+agurtovoy
+V 23
+dir 2-2034.0.r6097/2235
+K 3
+amk
+V 22
+dir 2-1891.0.r7293/879
+K 3
+axk
+V 25
+dir 2-1550.0-3242.r3242/0
+K 4
+bbum
+V 23
+dir 2-1039.0.r1742/2047
+K 5
+blais
+V 23
+dir 2-1316.0.r5672/6545
+K 4
+cben
+V 24
+dir 2-1693.0.r3533/13838
+K 10
+chm-writer
+V 25
+dir 3-4294.0-6177.r6177/0
+K 8
+cliechti
+V 22
+dir 2-3204.0.r5987/631
+K 20
+code-block-directive
+V 24
+dir 4-5229.0.r7573/60629
+K 9
+codeintro
+V 23
+dir 2-4954.0.r4977/1117
+K 6
+davidg
+V 22
+dir 6-17.0.r6495/10540
+K 5
+delza
+V 23
+dir 2-1723.0.r1723/3836
+K 8
+dkuhlman
+V 23
+dir 2-1555.0.r5034/1704
+K 7
+docbook
+V 23
+dir 2-7352.0.r7524/5465
+K 12
+docpy-writer
+V 28
+dir 2-4521.0-4565.r4626/8182
+K 12
+docutils_xml
+V 23
+dir 2-7726.0.r7738/8526
+K 7
+dpriest
+V 21
+dir 2-1730.0.r4985/58
+K 12
+dreamcatcher
+V 22
+dir 2-1300.0.r1357/657
+K 5
+dugui
+V 23
+dir 2-4358.0.r4360/1485
+K 7
+edloper
+V 21
+dir 2-1844.0.r4984/97
+K 7
+gitpull
+V 24
+dir 2-7830.0.r7871/44469
+K 7
+grubert
+V 22
+dir 2-112.0.r7783/8471
+K 8
+gschwant
+V 23
+dir 2-675.0.r4442/16701
+K 9
+holdenweb
+V 23
+dir 2-1845.0.r1845/4805
+K 11
+html4strict
+V 24
+dir 2-5534.0.r7798/28739
+K 10
+html4trans
+V 23
+dir 2-5235.0.r5533/1086
+K 4
+ianb
+V 23
+dir 2-881.0.r3892/12710
+K 14
+infrastructure
+V 27
+dir 3-189.0-3951.r7758/1564
+K 5
+jensj
+V 23
+dir 2-2942.0.r5544/4137
+K 4
+lalo
+V 23
+dir 2-1749.0.r1762/2166
+K 14
+latex-variants
+V 22
+dir 2-5238.0.r7789/585
+K 15
+latex_directive
+V 22
+dir 2-4364.0.r4365/616
+K 14
+manpage-writer
+V 23
+dir 4-4773.0.r7752/1278
+K 3
+mly
+V 23
+dir 2-1431.0.r1432/2681
+K 7
+mmgilbe
+V 23
+dir 2-1841.0.r2945/2205
+K 3
+mwh
+V 21
+dir 2-857.0.r862/1023
+K 8
+newlatex
+V 24
+dir c-6496.0.r6496/10635
+K 12
+odf2docutils
+V 23
+dir 2-7704.0.r7739/1804
+K 7
+oliverr
+V 22
+dir 2-202.0.r7192/1289
+K 11
+package-doc
+V 22
+dir 2-5172.0.r5417/744
+K 12
+paultremblay
+V 22
+dir 2-1323.0.r7354/266
+K 7
+pobrien
+V 23
+dir 2-1158.0.r1777/4967
+K 13
+presentations
+V 24
+dir 2-4940.0.r5174/64253
+K 11
+py-rest-doc
+V 22
+dir 2-5075.0.r5469/711
+K 7
+richard
+V 21
+dir 2-526.0.r7288/850
+K 11
+roff-writer
+V 22
+dir 2-5617.0.r7742/474
+K 10
+rst2beamer
+V 22
+dir 2-5731.0.r6468/932
+K 15
+rst2chunkedhtml
+V 23
+dir 2-5513.0.r5519/1100
+K 11
+rst2context
+V 22
+dir 2-7311.0.r7312/728
+K 9
+rst2graph
+V 28
+dir 2-6330.0-7672.r7676/6517
+K 7
+rst2odp
+V 23
+dir 2-5681.0.r6444/1847
+K 11
+rst2outline
+V 23
+dir 2-6396.0.r6463/1315
+K 7
+rst2pdf
+V 22
+dir 2-5560.0.r5638/438
+K 14
+rst2pdf-rubber
+V 27
+dir 2-5560.0-5857.r5857/754
+K 8
+rst2wiki
+V 23
+dir 2-7435.0.r7467/1420
+K 10
+rst2wordml
+V 24
+dir 2-5459.0.r5459/85880
+K 7
+rstdiff
+V 22
+dir 7-6304.0.r7309/859
+K 10
+rtf-writer
+V 23
+dir 2-7689.0.r7689/2560
+K 6
+simonb
+V 21
+dir 2-252.0.r1227/852
+K 12
+slides_tests
+V 23
+dir 2-6418.0.r6422/2176
+K 11
+stylesheets
+V 23
+dir 2-3847.0.r7642/2563
+K 14
+texinfo-writer
+V 23
+dir 2-6421.0.r6426/1643
+K 4
+tibs
+V 21
+dir 2-62.0.r7286/2851
+K 12
+uml-plantUml
+V 24
+dir 2-6326.0.r6326/67499
+K 12
+verse-writer
+V 23
+dir 2-4842.0.r4847/2800
+K 4
+wilk
+V 23
+dir 2-1258.0.r1650/3830
+K 10
+xhtml2rest
+V 29
+dir 3-3749.0-4373.r5174/66514
+K 7
+xml2rst
+V 24
+dir 6-5491.0.r7741/13695
+K 6
+xsl_fo
+V 24
+dir 2-7351.0.r7351/37884
+END
+ENDREP
+id: 1-17.0.r7871/47847
+type: dir
+pred: 1-17.0.r7842/6202
+count: 2503
+text: 7871 44656 3178 3178 3ab9c18147e409b53275852381a84a31
+cpath: /trunk/sandbox
+copyroot: 0 /
+minfo-cnt: 6
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r7870/2560
+K 5
+prest
+V 24
+dir 1-4326.0.r6498/50375
+K 7
+sandbox
+V 22
+dir 1-17.0.r7871/47847
+K 3
+web
+V 19
+dir 1-2.0.r7765/625
+END
+ENDREP
+id: 3-1.0.r7871/48195
+type: dir
+pred: 3-1.0.r7870/2955
+count: 7405
+text: 7871 48026 156 156 7cf9c05388e1452eb6c1a9b460461be0
+cpath: /trunk
+copyroot: 0 /
+minfo-cnt: 7
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r7803/595
+K 4
+tags
+V 20
+dir 2-1.0.r7759/1108
+K 5
+trunk
+V 21
+dir 3-1.0.r7871/48195
+END
+ENDREP
+id: 0.0.r7871/48489
+type: dir
+pred: 0.0.r7870/3246
+count: 7871
+text: 7871 48362 114 114 7e69c677897860007590fc36a26a0626
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+minfo-cnt: 16
+
+1-7.0-7834.t7870-62x modify-dir false true /trunk/sandbox/gitpull/setuptools
+
+5-18.0-7834.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/HISTORY.txt
+
+2-4204.0-7834.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/RELEASE-NOTES.txt
+
+n-18.0-7834.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/docs/dev/todo.txt
+
+4-7862._0.t7870-62x add-file false false /trunk/sandbox/gitpull/setuptools/docs/dev/wheeling.txt
+7870 /trunk/docutils/docs/dev/wheeling.txt
+4-3836.0-7834.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/docs/howto/html-stylesheets.txt
+
+4-1639.0-7834.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/docs/user/config.txt
+
+4-7857._1.t7870-62x add-file false false /trunk/sandbox/gitpull/setuptools/docs/user/html.txt
+7870 /trunk/docutils/docs/user/html.txt
+4-3399.0-7834.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/docs/user/links.txt
+
+1h-18.0.r3670/2875 delete-file false false /trunk/sandbox/gitpull/setuptools/docs/user/rst/images/ball1.gif
+
+4-365.0-7834.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/docs/user/tools.txt
+
+8-6490._2.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/docutils/utils/math/__init__.py
+
+6-6451._b.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/docutils/utils/math/latex2mathml.py
+
+5-7861._3.t7870-62x add-file false false /trunk/sandbox/gitpull/setuptools/docutils/utils/math/tex2mathml_extern.py
+7870 /trunk/docutils/docutils/utils/math/tex2mathml_extern.py
+3x-18.0-7834.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/docutils/writers/__init__.py
+
+40-18._7.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/docutils/writers/html4css1/__init__.py
+
+75-18._5.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/docutils/writers/html4css1/html4css1.css
+
+7-7815.0-7834.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/docutils/writers/html_base/__init__.py
+
+a-7809._e.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/docutils/writers/html_base/html-base.css
+
+9-1202._c.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/docutils/writers/latex2e/__init__.py
+
+5-6445.0-7834.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/docutils/writers/latex2e/xelatex.tex
+
+9-6428.0-7834.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/docutils/writers/xetex/__init__.py
+
+13-5534._f.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/docutils/writers/xhtml11/__init__.py
+
+j-5534._a.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/docutils/writers/xhtml11/xhtml11.css
+
+a-6456.0-7834.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/test/functional/expected/cyrillic.tex
+
+q-7589.0-7834.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/test/functional/expected/latex_babel.tex
+
+8-2937.0-7834.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/test/functional/expected/latex_docinfo.tex
+
+m-7008._6.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/test/functional/expected/math_output_mathml.xhtml
+
+9-2357.0-7834.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/test/functional/expected/standalone_rst_html4css1.html
+
+5-7816.0-7834.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/test/functional/expected/standalone_rst_html_base.html
+
+c-2357.0-7834.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/test/functional/expected/standalone_rst_latex.tex
+
+5-3185.0-7834.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/test/functional/expected/standalone_rst_pseudoxml.txt
+
+e-6428.0-7834.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/test/functional/expected/standalone_rst_xetex.tex
+
+4-6337._g.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/test/functional/expected/standalone_rst_xhtml11.xhtml
+
+d-6456.0-7834.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/test/functional/expected/xetex-cyrillic.tex
+
+l-5934.0-7834.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/test/functional/input/data/latex_encoding.txt
+
+k-2357.0-7834.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/test/functional/input/data/standard.txt
+
+q-6253.0-7834.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/test/functional/input/data/svg_images.txt
+
+u-7008._d.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/test/functional/tests/math_output_mathml.py
+
+7-7854._4.t7870-62x add-file false false /trunk/sandbox/gitpull/setuptools/test/test_parsers/test_rst/test_directives/includes/include14.txt
+7870 /trunk/docutils/test/test_parsers/test_rst/test_directives/includes/include14.txt
+8-967.0-7834.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/test/test_parsers/test_rst/test_directives/includes/include4.txt
+
+d-740.0-7834.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/test/test_parsers/test_rst/test_directives/test_include.py
+
+9-1211.0-7834.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/test/test_writers/test_latex2e.py
+
+a-7815.0-7834.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/tools/rst2html5.py
+
+h-6431.0-7834.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/tools/rst2xetex.py
+
+16-5534._8.t7870-62x modify-file true false /trunk/sandbox/gitpull/setuptools/tools/rst2xhtml11.py
+
+
+48489 48699

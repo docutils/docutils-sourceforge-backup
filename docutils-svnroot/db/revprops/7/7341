@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 12
+paultremblay
+K 8
+svn:date
+V 27
+2012-02-05T23:29:57.349115Z
+K 7
+svn:log
+V 90
+bibliographic fileds really can't have "authors" to be processed by a
+docbook stylesheet.
+
+END

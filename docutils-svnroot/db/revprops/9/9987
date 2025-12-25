@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2024-11-18T17:28:24.890367Z
+K 7
+svn:log
+V 52
+If macro references is active output refuri always.
+
+END

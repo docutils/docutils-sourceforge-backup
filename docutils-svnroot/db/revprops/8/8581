@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-11-27T09:22:49.664562Z
+K 7
+svn:log
+V 400
+Implement feature request #40 Option to embed images as data URI.
+
+If the new "embed_image" configuration setting is true, the image
+can be read from the local file system, and its MIME type can be
+determined, it is base64 encoded and included as a data URI.
+
+TODO:
+
+* Add an "embed" option to the "image" directive to allow embedding
+  of individual images?
+
+* Use direct inlinging for SVG in HTML5?
+END

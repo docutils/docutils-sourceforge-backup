@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-04-12T09:51:10.494444Z
+K 7
+svn:log
+V 278
+Prevent test failure due no Pillow or Pillow version above 10.3.
+
+Skip tests requiring PIL (Pillow) if it is unavailable.
+
+(Hopefully) fix expected output: Pillow versions above 10.3 seem to report the absolute path.
+
+Thanks to Michał Górny for report and analysis [bugs:485].
+END

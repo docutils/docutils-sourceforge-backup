@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2007-03-03T19:01:24.490604Z
+K 7
+svn:log
+V 232
+do not use a full trunk check-out for the snapshots, so we avoid having a checkout of prest; 
+we are currently hitting the quota of BerliOS, so if we want to create snapshots of prest, we will have to change the way this script runs
+END

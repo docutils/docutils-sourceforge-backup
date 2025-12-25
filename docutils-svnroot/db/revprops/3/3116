@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-03-25T10:31:13.783667Z
+K 7
+svn:log
+V 112
+removed Py22 compatibility klugdes which are not required anymore
+(probably since __metaclass__ = type has gone)
+END

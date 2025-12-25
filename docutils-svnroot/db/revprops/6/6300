@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2010-04-01T21:12:33.651228Z
+K 7
+svn:log
+V 73
+Fixed tests to work even with forgiving implementation of convert program
+END

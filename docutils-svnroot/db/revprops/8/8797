@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-07-12T21:23:19.308065Z
+K 7
+svn:log
+V 219
+math2html: make "math.css" valid CSS 2.1.
+
+Don't use inline-flex. Fix order of super/subscript in the
+conversion code, so that an inline-table can be used instead.
+
+Also go back to constructing big brackets from pieces.
+END

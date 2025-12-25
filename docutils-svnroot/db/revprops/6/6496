@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-12-07T11:11:53.591172Z
+K 7
+svn:log
+V 47
+Move orphaned "newlatex" writer to the sandbox.
+END

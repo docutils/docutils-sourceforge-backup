@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-04-04T17:05:37.861328Z
+K 7
+svn:log
+V 49
+added the "field_name_limit" setting, test & docs
+END

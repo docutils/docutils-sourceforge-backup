@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2016-01-13T21:05:46.590881Z
+K 7
+svn:log
+V 67
+Fix [ 130 ] support streams expectiong byte-strings in ErrorOutput.
+END

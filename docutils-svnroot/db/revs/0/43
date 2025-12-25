@@ -1,0 +1,144 @@
+PLAIN
+K 22
+DocutilsTestSupport.py
+V 20
+file 49-18.0.r38/459
+K 11
+alltests.py
+V 23
+file 4e-18.0.r18/261129
+K 10
+difflib.py
+V 23
+file 4g-18.0.r18/261513
+K 13
+test_nodes.py
+V 23
+file 4i-18.0.r18/267230
+K 12
+test_parsers
+V 20
+dir 4k-18.0.r41/4849
+K 20
+test_statemachine.py
+V 23
+file 6a-18.0.r18/262739
+K 15
+test_transforms
+V 19
+dir 6c-18.0.r42/376
+K 13
+test_utils.py
+V 23
+file 6u-18.0.r18/261926
+END
+ENDREP
+id: 48-18.0.r43/403
+type: dir
+pred: 48-18.0.r42/1004
+count: 6
+text: 43 0 390 390 e91fa28fe5cace6fe2680be764fbd66d
+cpath: /trunk/docutils/test
+copyroot: 0 /
+
+PLAIN
+K 11
+COPYING.txt
+V 22
+file 2-18.0.r18/285012
+K 11
+HISTORY.txt
+V 19
+file 5-18.0.r31/571
+K 11
+MANIFEST.in
+V 22
+file 7-18.0.r18/312592
+K 10
+README.txt
+V 19
+file 9-18.0.r31/960
+K 4
+docs
+V 18
+dir 3-7.0.r40/1842
+K 8
+docutils
+V 20
+dir 1w-18.0.r36/3797
+K 10
+install.py
+V 23
+file 44-18.0.r18/313369
+K 8
+setup.py
+V 21
+file 46-18.0.r30/1540
+K 4
+test
+V 19
+dir 48-18.0.r43/403
+K 5
+tools
+V 22
+dir 6w-18.0.r18/284746
+END
+ENDREP
+id: 1-7.0.r43/979
+type: dir
+pred: 1-7.0.r42/1584
+count: 23
+text: 43 560 406 406 43db334d5dcb3a22efc1f059f6fa0f6c
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 17
+dir 1-7.0.r43/979
+K 7
+sandbox
+V 18
+dir 1-17.0.r32/937
+K 3
+web
+V 17
+dir 1-2.0.r35/696
+END
+ENDREP
+id: 3-1.0.r43/1250
+type: dir
+pred: 3-1.0.r42/1858
+count: 38
+text: 43 1130 107 107 b24cbaa4a92be76fe9db86b145f1cf32
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r21/11221
+K 4
+tags
+V 16
+dir 2-1.0.r1/130
+K 5
+trunk
+V 18
+dir 3-1.0.r43/1250
+END
+ENDREP
+id: 0.0.r43/1514
+type: dir
+pred: 0.0.r42/2122
+count: 43
+text: 43 1394 107 107 0e3ed0009523658f0f8a9adb947d21b0
+cpath: /
+copyroot: 0 /
+
+4c-18.0.r18/260711 delete-file false false /trunk/docutils/test/UnitTestFolder.py
+
+
+1514 1649

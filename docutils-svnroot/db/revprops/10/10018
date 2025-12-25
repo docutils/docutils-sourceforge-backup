@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-03-06T16:19:15.266607Z
+K 7
+svn:log
+V 414
+HTML5 writer: docinfo styling tweaks
+
+"minimal.css":
+  make docinfo list compact (no top/bottom margin around fields).
+
+"responsive.css":
+  Use standard "wide" indentation (left margin) in "docinfo" fields
+  to get better alignment, especially of multiple authors in "authors" field.
+  Use a smaller indentation for narrow screens.
+
+  Remove spurious selector: option-lists don't use the "--field-indent" variable.
+END

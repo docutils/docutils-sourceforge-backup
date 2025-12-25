@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 13
+matt_harrison
+K 8
+svn:date
+V 27
+2008-10-24T23:41:00.303230Z
+K 7
+svn:log
+V 46
+initial support for 'handout' class in rst2odp
+END

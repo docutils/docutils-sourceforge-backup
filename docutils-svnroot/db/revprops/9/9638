@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-04-12T09:50:40.387139Z
+K 7
+svn:log
+V 128
+Fix test failure if tests are started from docutils/docutils.
+
+The logic to determine if dependencies are accessible was faulty.
+END

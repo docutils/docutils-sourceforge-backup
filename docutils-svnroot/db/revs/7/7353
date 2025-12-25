@@ -1,0 +1,711 @@
+PLAIN
+END
+ENDREP
+id: 3-6521.0-7133.r7353/17
+type: dir
+pred: 3-6521.0-7133.r7347/4332
+count: 84
+text: 7353 0 4 4 2d2977d1c96f487abe4a1e202dd03b4e
+props: 7147 3837 57 0 77484a865296853456823a0d6129064c
+cpath: /trunk/sandbox/paultremblay/test_files
+copyroot: 7133 /trunk/sandbox/paultremblay/test_files
+
+PLAIN
+END
+ENDREP
+id: 3-7340.0.r7353/318
+type: dir
+pred: 3-7340.0.r7346/8600
+count: 5
+text: 7353 301 4 4 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /trunk/sandbox/paultremblay/xsl_docbook
+copyroot: 0 /
+
+PLAIN
+K 11
+rsttoxml.py
+V 24
+file 4-7201.0.r7201/2006
+K 16
+rstxml2mathml.py
+V 24
+file 4-7170.0.r7194/1918
+K 20
+rstxml2mathml_sax.py
+V 24
+file 6-7191.0.r7200/3957
+END
+ENDREP
+id: 6-7133.0.r7353/672
+type: dir
+pred: 6-7133.0.r7344/2483
+count: 24
+text: 7353 500 159 159 5df609f419a7ef7b73033b4fb397752b
+cpath: /trunk/sandbox/paultremblay/scripts
+copyroot: 0 /
+
+PLAIN
+END
+ENDREP
+id: 5-7142.0.r7353/872
+type: dir
+pred: 5-7142.0.r7207/12448
+count: 12
+text: 7353 855 4 4 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /trunk/sandbox/paultremblay/docs/rst
+copyroot: 0 /
+
+PLAIN
+K 8
+TODO.txt
+V 22
+file 4-7148.0.r7295/65
+K 3
+rst
+V 22
+dir 5-7142.0.r7353/872
+END
+ENDREP
+id: 3-7142.0.r7353/1147
+type: dir
+pred: 3-7142.0.r7295/399
+count: 14
+text: 7353 1053 81 81 42316391afc90eada349cfda4a0fc018
+props: 7200 4887 36 0 da7e17186dc1aa3e9011787447a56d1a
+cpath: /trunk/sandbox/paultremblay/docs
+copyroot: 0 /
+
+PLAIN
+END
+ENDREP
+id: a-7133.0.r7353/1398
+type: dir
+pred: a-7133.0.r7207/14682
+count: 28
+text: 7353 1381 4 4 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /trunk/sandbox/paultremblay/xsl_fo
+copyroot: 0 /
+
+PLAIN
+K 4
+docs
+V 23
+dir 3-7142.0.r7353/1147
+K 3
+old
+V 23
+dir 6-6515.0.r6515/9009
+K 5
+other
+V 23
+dir 8-7187.0.r7335/3690
+K 16
+python_interface
+V 24
+dir 3-7131.0.r7133/10212
+K 7
+scripts
+V 22
+dir 6-7133.0.r7353/672
+K 7
+test.sh
+V 24
+file 3-7134.0.r7206/1503
+K 10
+test_files
+V 26
+dir 3-6521.0-7133.r7353/17
+K 5
+tools
+V 23
+dir 8-7200.0.r7206/1321
+K 11
+xsl_docbook
+V 22
+dir 3-7340.0.r7353/318
+K 6
+xsl_fo
+V 23
+dir a-7133.0.r7353/1398
+END
+ENDREP
+id: 2-1323.0.r7353/2016
+type: dir
+pred: 2-1323.0.r7347/5110
+count: 609
+text: 7353 1579 424 424 eb211a6b15bb601f6f44acabbf654e1b
+props: 7207 15311 158 0 b0d6d17f7ef680b770a53864520d5d0f
+cpath: /trunk/sandbox/paultremblay
+copyroot: 0 /
+
+PLAIN
+K 12
+OpenDocument
+V 28
+dir 3-4689.0-5034.r5881/9477
+K 10
+README.txt
+V 22
+file 3-17.0.r7333/1154
+K 8
+aafigure
+V 28
+dir 5-4251.0-4994.r5980/2565
+K 4
+aahz
+V 23
+dir 2-820.0.r3892/10934
+K 9
+agurtovoy
+V 23
+dir 2-2034.0.r6097/2235
+K 3
+amk
+V 22
+dir 2-1891.0.r7293/879
+K 3
+axk
+V 25
+dir 2-1550.0-3242.r3242/0
+K 4
+bbum
+V 23
+dir 2-1039.0.r1742/2047
+K 5
+blais
+V 23
+dir 2-1316.0.r5672/6545
+K 4
+cben
+V 24
+dir 2-1693.0.r3533/13838
+K 10
+chm-writer
+V 25
+dir 3-4294.0-6177.r6177/0
+K 8
+cliechti
+V 22
+dir 2-3204.0.r5987/631
+K 20
+code-block-directive
+V 24
+dir 4-5229.0.r7105/38630
+K 9
+codeintro
+V 23
+dir 2-4954.0.r4977/1117
+K 6
+davidg
+V 22
+dir 6-17.0.r6495/10540
+K 5
+delza
+V 23
+dir 2-1723.0.r1723/3836
+K 8
+dkuhlman
+V 23
+dir 2-1555.0.r5034/1704
+K 7
+docbook
+V 24
+dir 2-7352.0.r7352/34101
+K 12
+docpy-writer
+V 28
+dir 2-4521.0-4565.r4626/8182
+K 7
+dpriest
+V 21
+dir 2-1730.0.r4985/58
+K 12
+dreamcatcher
+V 22
+dir 2-1300.0.r1357/657
+K 5
+dugui
+V 23
+dir 2-4358.0.r4360/1485
+K 7
+edloper
+V 21
+dir 2-1844.0.r4984/97
+K 7
+grubert
+V 22
+dir 2-112.0.r6409/1245
+K 8
+gschwant
+V 23
+dir 2-675.0.r4442/16701
+K 9
+holdenweb
+V 23
+dir 2-1845.0.r1845/4805
+K 11
+html4strict
+V 23
+dir 2-5534.0.r7238/5105
+K 10
+html4trans
+V 23
+dir 2-5235.0.r5533/1086
+K 4
+ianb
+V 23
+dir 2-881.0.r3892/12710
+K 14
+infrastructure
+V 27
+dir 3-189.0-3951.r7300/1104
+K 5
+jensj
+V 23
+dir 2-2942.0.r5544/4137
+K 4
+lalo
+V 23
+dir 2-1749.0.r1762/2166
+K 14
+latex-variants
+V 23
+dir 2-5238.0.r6179/4019
+K 15
+latex_directive
+V 22
+dir 2-4364.0.r4365/616
+K 14
+manpage-writer
+V 24
+dir 4-4773.0.r7321/14712
+K 3
+mly
+V 23
+dir 2-1431.0.r1432/2681
+K 7
+mmgilbe
+V 23
+dir 2-1841.0.r2945/2205
+K 3
+mwh
+V 21
+dir 2-857.0.r862/1023
+K 8
+newlatex
+V 24
+dir c-6496.0.r6496/10635
+K 7
+oliverr
+V 22
+dir 2-202.0.r7192/1289
+K 11
+package-doc
+V 22
+dir 2-5172.0.r5417/744
+K 12
+paultremblay
+V 23
+dir 2-1323.0.r7353/2016
+K 7
+pobrien
+V 23
+dir 2-1158.0.r1777/4967
+K 13
+presentations
+V 24
+dir 2-4940.0.r5174/64253
+K 11
+py-rest-doc
+V 22
+dir 2-5075.0.r5469/711
+K 7
+richard
+V 21
+dir 2-526.0.r7288/850
+K 11
+roff-writer
+V 22
+dir 2-5617.0.r5617/789
+K 10
+rst2beamer
+V 22
+dir 2-5731.0.r6468/932
+K 15
+rst2chunkedhtml
+V 23
+dir 2-5513.0.r5519/1100
+K 11
+rst2context
+V 22
+dir 2-7311.0.r7312/728
+K 7
+rst2gxl
+V 23
+dir 2-6330.0.r6462/1825
+K 7
+rst2odp
+V 23
+dir 2-5681.0.r6444/1847
+K 11
+rst2outline
+V 23
+dir 2-6396.0.r6463/1315
+K 7
+rst2pdf
+V 22
+dir 2-5560.0.r5638/438
+K 14
+rst2pdf-rubber
+V 27
+dir 2-5560.0-5857.r5857/754
+K 10
+rst2wordml
+V 24
+dir 2-5459.0.r5459/85880
+K 7
+rstdiff
+V 22
+dir 7-6304.0.r7309/859
+K 6
+simonb
+V 21
+dir 2-252.0.r1227/852
+K 12
+slides_tests
+V 23
+dir 2-6418.0.r6422/2176
+K 11
+stylesheets
+V 23
+dir 2-3847.0.r6109/1394
+K 14
+texinfo-writer
+V 23
+dir 2-6421.0.r6426/1643
+K 4
+tibs
+V 21
+dir 2-62.0.r7286/2851
+K 12
+uml-plantUml
+V 24
+dir 2-6326.0.r6326/67499
+K 12
+verse-writer
+V 23
+dir 2-4842.0.r4847/2800
+K 4
+wilk
+V 23
+dir 2-1258.0.r1650/3830
+K 10
+xhtml2rest
+V 29
+dir 3-3749.0-4373.r5174/66514
+K 7
+xml2rst
+V 24
+dir 6-5491.0.r7249/64551
+K 6
+xsl_fo
+V 24
+dir 2-7351.0.r7351/37884
+END
+ENDREP
+id: 1-17.0.r7353/5215
+type: dir
+pred: 1-17.0.r7352/37212
+count: 2322
+text: 7353 2251 2951 2951 e9b4305c7f45db8247fc9f17fa1101c5
+cpath: /trunk/sandbox
+copyroot: 0 /
+minfo-cnt: 1
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r7350/3047
+K 5
+prest
+V 24
+dir 1-4326.0.r6498/50375
+K 7
+sandbox
+V 21
+dir 1-17.0.r7353/5215
+K 3
+web
+V 19
+dir 1-2.0.r7349/772
+END
+ENDREP
+id: 3-1.0.r7353/5561
+type: dir
+pred: 3-1.0.r7352/37561
+count: 6894
+text: 7353 5393 155 155 e23f14dd755975e85fe53af5e65cf9a0
+cpath: /trunk
+copyroot: 0 /
+minfo-cnt: 2
+
+PLAIN
+K 8
+branches
+V 21
+dir 0-1.0.r6260/33253
+K 4
+tags
+V 19
+dir 2-1.0.r7108/874
+K 5
+trunk
+V 20
+dir 3-1.0.r7353/5561
+END
+ENDREP
+id: 0.0.r7353/5854
+type: dir
+pred: 0.0.r7352/37857
+count: 7353
+text: 7353 5727 114 114 6d55f5348cd2de3adcc5461a9a81c35a
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+minfo-cnt: 6
+
+h-6719.0.r6719/3472 delete-file false false /trunk/sandbox/paultremblay/test_files/rubric.rst
+
+4-7183.0-7133.r7183/98 delete-file false false /trunk/sandbox/paultremblay/test_files/math_latex.rst
+
+d-6719.0.r6719/4222 delete-file false false /trunk/sandbox/paultremblay/test_files/parsed_literal.rst
+
+4-6548.0.r6548/1703 delete-file false false /trunk/sandbox/paultremblay/test_files/transition.rst
+
+7-7345.0.r7345/9510 delete-file false false /trunk/sandbox/paultremblay/xsl_docbook/table.xsl
+
+8-7143.0.r7161/11829 delete-file false false /trunk/sandbox/paultremblay/xsl_fo/front_matter.xsl
+
+9-6624.0.r6624/1392 delete-file false false /trunk/sandbox/paultremblay/test_files/table_grid.rst
+
+g-7346.0.r7346/6518 delete-file false false /trunk/sandbox/paultremblay/xsl_docbook/math.xsl
+
+4-6594.0.r6594/598 delete-file false false /trunk/sandbox/paultremblay/test_files/opt_list.rst
+
+d-6712.0.r6712/137525 delete-file false false /trunk/sandbox/paultremblay/test_files/waves.png
+
+e-7133.0.r7190/1611 delete-file false false /trunk/sandbox/paultremblay/xsl_fo/docutils_to_fo.xsl
+
+4-6571.0.r6571/224 delete-file false false /trunk/sandbox/paultremblay/test_files/section.rst
+
+9-7346.0.r7346/7092 delete-file false false /trunk/sandbox/paultremblay/xsl_docbook/line_block.xsl
+
+o-7133.0.r7133/11504 delete-file false false /trunk/sandbox/paultremblay/xsl_fo/util.xsl
+
+7-7175.0.r7189/9043 delete-file false false /trunk/sandbox/paultremblay/xsl_fo/body_directives.xsl
+
+8-6521.0-6837.r6837/0 delete-file false false /trunk/sandbox/paultremblay/test_files/header_footer.rst
+
+4-6719.0.r6719/4981 delete-file false false /trunk/sandbox/paultremblay/test_files/compound_paragraph.rst
+
+4-7162.0.r7200/5660 delete-file false false /trunk/sandbox/paultremblay/xsl_fo/bullet_list.xsl
+
+7-6712.0.r6712/137813 delete-file false false /trunk/sandbox/paultremblay/test_files/badaman_treasure_chest.svg
+
+4-7143.0.r7150/1002 delete-file false false /trunk/sandbox/paultremblay/xsl_fo/bibliographic_fields.xsl
+
+8-7189.0-7133.r7189/4083 delete-file false false /trunk/sandbox/paultremblay/test_files/substitution.rst
+
+b-7135.0.r7189/9802 delete-file false false /trunk/sandbox/paultremblay/xsl_fo/toc.xsl
+
+6-7342.0.r7342/4099 delete-file false false /trunk/sandbox/paultremblay/xsl_docbook/citation.xsl
+
+8-7342.0.r7342/4327 delete-file false false /trunk/sandbox/paultremblay/xsl_docbook/utilities.xsl
+
+c-7184.0.r7184/4058 delete-file false false /trunk/sandbox/paultremblay/xsl_fo/table.xsl
+
+4-6693.0.r6697/1896 delete-file false false /trunk/sandbox/paultremblay/test_files/footnotes.rst
+
+a-7342.0.r7346/5377 delete-file false false /trunk/sandbox/paultremblay/xsl_docbook/inline.xsl
+
+c-6711.0.r6711/19172 delete-file false false /trunk/sandbox/paultremblay/test_files/image.rst
+
+4-6581.0-7133.r7341/636 delete-file false false /trunk/sandbox/paultremblay/test_files/bibliographic_fields.rst
+
+4-6559.0.r6559/364 delete-file false false /trunk/sandbox/paultremblay/test_files/enumerated_list.rst
+
+4-7135.0.r7189/10554 delete-file false false /trunk/sandbox/paultremblay/xsl_fo/footnote.xsl
+
+h-7345.0.r7346/5631 delete-file false false /trunk/sandbox/paultremblay/xsl_docbook/image.xsl
+
+n-7340.0.r7340/9665 delete-file false false /trunk/sandbox/paultremblay/xsl_docbook/params.xsl
+
+a-7166.0.r7166/2059 delete-file false false /trunk/sandbox/paultremblay/xsl_fo/line_block.xsl
+
+4-6855.0.r6855/3948 delete-file false false /trunk/sandbox/paultremblay/test_files/simple.rst
+
+f-6719.0.r6719/5365 delete-file false false /trunk/sandbox/paultremblay/test_files/pull_quote.rst
+
+7-7171.0-7133.r7174/468 delete-file false false /trunk/sandbox/paultremblay/test_files/math.rst
+
+9-6712.0.r6712/138449 delete-file false false /trunk/sandbox/paultremblay/test_files/peak.png
+
+d-6968.0-7133.r7345/4167 delete-file false false /trunk/sandbox/paultremblay/test_files/header_footer_toc1.rst
+
+f-6968.0-7133.r7345/4533 delete-file false false /trunk/sandbox/paultremblay/test_files/header_footer_toc2.rst
+
+i-7133.0.r7158/5767 delete-file false false /trunk/sandbox/paultremblay/xsl_fo/header_footer.xsl
+
+h-6968.0-7133.r7345/4899 delete-file false false /trunk/sandbox/paultremblay/test_files/header_footer_toc3.rst
+
+j-6968.0.r6968/67845 delete-file false false /trunk/sandbox/paultremblay/test_files/header_footer_toc4.rst
+
+9-6719.0.r6719/5744 delete-file false false /trunk/sandbox/paultremblay/test_files/epigraph.rst
+
+4-7153.0-7133.r7204/923 delete-dir false false /trunk/sandbox/paultremblay/test_files/xsl
+
+b-6685.0.r6990/19470 delete-file false false /trunk/sandbox/paultremblay/test_files/table_simple.rst
+
+4-7145.0.r7158/6355 delete-dir false false /trunk/sandbox/paultremblay/xsl_fo/examples
+
+4-6711.0.r6711/19933 delete-file false false /trunk/sandbox/paultremblay/test_files/admonition.rst
+
+6-7184.0.r7184/3097 delete-file false false /trunk/sandbox/paultremblay/xsl_fo/citation.xsl
+
+7-6685.0.r6685/2365 delete-file false false /trunk/sandbox/paultremblay/test_files/doctest_blocks.rst
+
+4-7185.0-7133.r7199/627 delete-dir false false /trunk/sandbox/paultremblay/test_files/custom
+
+7-7133.0.r7340/12105 delete-file false false /trunk/sandbox/paultremblay/scripts/docutils_to_fo.sh
+
+7-7135.0.r7200/5411 delete-file false false /trunk/sandbox/paultremblay/xsl_fo/inline.xsl
+
+8-6922.0.r6933/394 delete-file false false /trunk/sandbox/paultremblay/test_files/long_table.rst
+
+4-7139.0.r7139/604 delete-file false false /trunk/sandbox/paultremblay/xsl_fo/docutils_to_fo_toc.xsl
+
+4-6624.0.r6711/18090 delete-file false false /trunk/sandbox/paultremblay/test_files/citation.rst
+
+6-7174.0-7133.r7340/5746 delete-file false false /trunk/sandbox/paultremblay/test_files/math_asciimath.rst
+
+6-7343.0.r7346/4870 delete-file false false /trunk/sandbox/paultremblay/xsl_docbook/code.xsl
+
+4-7344.0.r7344/1608 delete-file false false /trunk/sandbox/paultremblay/scripts/docutils_to_docbook.sh
+
+b-7133.0.r7189/10297 delete-file false false /trunk/sandbox/paultremblay/xsl_fo/body_elements.xsl
+
+8-6711.0.r6711/18796 delete-file false false /trunk/sandbox/paultremblay/test_files/figure.rst
+
+5-6521.0.r6521/31568 delete-file false false /trunk/sandbox/paultremblay/test_files/long_plain.rst
+
+4-6550.0.r6896/116 delete-file false false /trunk/sandbox/paultremblay/test_files/bullet_list.rst
+
+4-6533.0.r6570/85 delete-file false false /trunk/sandbox/paultremblay/test_files/toc.rst
+
+d-7346.0.r7346/5927 delete-file false false /trunk/sandbox/paultremblay/xsl_docbook/xlink.xsl
+
+6-6591.0-7133.r7341/272 delete-file false false /trunk/sandbox/paultremblay/test_files/bibliographic_fields_toc.rst
+
+b-6719.0.r6719/3845 delete-file false false /trunk/sandbox/paultremblay/test_files/highlights.rst
+
+4-6685.0.r6685/1612 delete-file false false /trunk/sandbox/paultremblay/test_files/block.rst
+
+i-7340.0.r7346/6798 delete-file false false /trunk/sandbox/paultremblay/xsl_docbook/block.xsl
+
+4-6712.0.r6712/137172 delete-file false false /trunk/sandbox/paultremblay/test_files/badaman_treasure_chest.png
+
+7-7142.0.r7207/12080 delete-file false false /trunk/sandbox/paultremblay/docs/rst/howto.rst
+
+4-7157.0.r7157/286 delete-file false false /trunk/sandbox/paultremblay/xsl_fo/variables.xsl
+
+4-6848.0.r6991/2622 delete-dir false false /trunk/sandbox/paultremblay/test_files/conf_files
+
+4-6575.0.r6644/119 delete-file false false /trunk/sandbox/paultremblay/test_files/field_lists.rst
+
+6-7202.0.r7344/1897 delete-file false false /trunk/sandbox/paultremblay/scripts/rstxml2xml.py
+
+7-7190.0.r7190/1379 delete-file false false /trunk/sandbox/paultremblay/xsl_fo/table_borderless.xsl
+
+4-6541.0.r6541/445 delete-file false false /trunk/sandbox/paultremblay/test_files/literal_block.rst
+
+b-7343.0.r7343/2709 delete-file false false /trunk/sandbox/paultremblay/xsl_docbook/glossary.xsl
+
+a-7340.0.r7346/7379 delete-file false false /trunk/sandbox/paultremblay/xsl_docbook/section.xsl
+
+j-6719.0.r6719/4604 delete-file false false /trunk/sandbox/paultremblay/test_files/sidebar.rst
+
+7-7162.0.r7162/4254 delete-file false false /trunk/sandbox/paultremblay/xsl_fo/definition_list.xsl
+
+4-6940.0-7199.r7199/0 delete-file false false /trunk/sandbox/paultremblay/test_files/table_borderless.rst
+
+7-6855.0.r6855/3571 delete-file false false /trunk/sandbox/paultremblay/test_files/simple2.rst
+
+3-7205.0.r7205/337 delete-file false false /trunk/sandbox/paultremblay/setup.py
+
+8-7343.0.r7346/5120 delete-file false false /trunk/sandbox/paultremblay/xsl_docbook/field_list.xsl
+
+b-6712.0.r6712/138112 delete-file false false /trunk/sandbox/paultremblay/test_files/tent.png
+
+6-7347.0-7133.r7347/893 delete-file false false /trunk/sandbox/paultremblay/test_files/chapter.rst
+
+p-7340.0.r7340/9892 delete-file false false /trunk/sandbox/paultremblay/xsl_docbook/root.xsl
+
+5-7340.0.r7340/10117 delete-file false false /trunk/sandbox/paultremblay/xsl_docbook/admonitions.xsl
+
+a-6711.0.r6711/19549 delete-file false false /trunk/sandbox/paultremblay/test_files/hyperlinks.rst
+
+6-6922.0.r6933/140 delete-file false false /trunk/sandbox/paultremblay/test_files/long_table.csv
+
+c-7164.0.r7164/3565 delete-file false false /trunk/sandbox/paultremblay/xsl_fo/option_list.xsl
+
+k-7133.0.r7184/4281 delete-file false false /trunk/sandbox/paultremblay/xsl_fo/parameters.xsl
+
+e-7340.0.r7346/6208 delete-file false false /trunk/sandbox/paultremblay/xsl_docbook/docutils_to_docbook.xsl
+
+9-7135.0.r7135/5454 delete-file false false /trunk/sandbox/paultremblay/xsl_fo/section.xsl
+
+7-6676.0.r6676/876 delete-file false false /trunk/sandbox/paultremblay/test_files/title_subtitle.rst
+
+g-7340.0.r7342/5543 delete-file false false /trunk/sandbox/paultremblay/xsl_docbook/error.xsl
+
+6-7146.0.r7168/1837 delete-dir false false /trunk/sandbox/paultremblay/xsl_fo/custom
+
+7-7148.0.r7187/18049 delete-file false false /trunk/sandbox/paultremblay/docs/rst/attribute_sets.rst
+
+4-6676.0-7133.r7169/282 delete-file false false /trunk/sandbox/paultremblay/test_files/line_block.rst
+
+9-6685.0.r6692/118 delete-file false false /trunk/sandbox/paultremblay/test_files/table_csv.rst
+
+4-6751.0-7133.r7345/5265 delete-file false false /trunk/sandbox/paultremblay/test_files/front_body.rst
+
+a-7164.0.r7164/3092 delete-file false false /trunk/sandbox/paultremblay/xsl_fo/field_list.xsl
+
+8-7340.0.r7345/10513 delete-file false false /trunk/sandbox/paultremblay/xsl_docbook/front_matter.xsl
+
+7-6624.0.r6624/1006 delete-file false false /trunk/sandbox/paultremblay/test_files/quoted_literal_blocks.rst
+
+9-7184.0.r7203/573 delete-file false false /trunk/sandbox/paultremblay/xsl_fo/image_figure.xsl
+
+m-7133.0.r7207/12972 delete-file false false /trunk/sandbox/paultremblay/xsl_fo/root.xsl
+
+4-7175.0.r7175/3682 delete-file false false /trunk/sandbox/paultremblay/xsl_fo/admonitions.xsl
+
+a-7162.0.r7162/4487 delete-file false false /trunk/sandbox/paultremblay/xsl_fo/enumerated_list.xsl
+
+4-6810.0.r6810/813 delete-file false false /trunk/sandbox/paultremblay/test_files/first_paragraph.rst
+
+l-6719.0.r6719/2721 delete-file false false /trunk/sandbox/paultremblay/test_files/topic.rst
+
+4-6545.0-7133.r7347/546 delete-file false false /trunk/sandbox/paultremblay/test_files/inline.rst
+
+g-7133.0.r7200/5914 delete-file false false /trunk/sandbox/paultremblay/xsl_fo/error.xsl
+
+7-6719.0.r6719/3095 delete-file false false /trunk/sandbox/paultremblay/test_files/container.rst
+
+4-6561.0.r6576/87 delete-file false false /trunk/sandbox/paultremblay/test_files/definition_list.rst
+
+c-7342.0.r7343/2452 delete-file false false /trunk/sandbox/paultremblay/xsl_docbook/bullet_list.xsl
+
+
+5854 6062

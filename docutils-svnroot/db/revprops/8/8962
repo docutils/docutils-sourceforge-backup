@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-24T16:07:06.334463Z
+K 7
+svn:log
+V 431
+Test config settings with "side-effects" (overwriting other settings).
+
+Add samples testing the handling of configuration file settings that
+affect other settings:
+
+* `input_encoding`, `output_encoding`, and `error_encoding` also set
+  the respective `*_encoding_error_handler` if the value has the form
+  `<encoding>:<handler>`.
+
+* `stylesheet` and `stylesheet_path` are mutually exclusive
+  and (re)set the other setting to None.
+END

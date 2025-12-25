@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-01-08T21:46:54.304042Z
+K 7
+svn:log
+V 367
+* Changed documentation for -W options to use hyphens ("-") instead of
+  underscores ("_") between words.
+* Implemented -W output-header and -W title-underline options.
+* Changed implementation to use a compound directive instead of a raw
+  directive to set the class for the generated contents.
+* Removed a potential undefined variable warning for indirect targets.
+
+END

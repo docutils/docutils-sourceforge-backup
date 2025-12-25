@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2024-10-20T17:47:14.252363Z
+K 7
+svn:log
+V 55
+move manpage image TODO into test_writers/test_manpage
+
+END

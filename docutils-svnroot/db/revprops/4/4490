@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-04-02T13:18:47.600477Z
+K 7
+svn:log
+V 67
+reverted r4485 and r4486 (backport of PEP changes to maint. branch)
+END

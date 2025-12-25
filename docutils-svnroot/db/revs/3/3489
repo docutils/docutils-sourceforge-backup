@@ -1,0 +1,229 @@
+id: 6-3449.0-3489.r3489/0
+type: file
+pred: 6-3449.0-3488.r3488/612
+count: 2
+text: 3488 0 193 1029 d95daf29e781395217013a6f98f6b64d e25aff0849cdbd56a280f6cad490acc762c6d63a 3487-2ov/_4
+props: 3488 492 107 0 3c711300be3ea7503c3f4d9c1da3fa17
+cpath: /trunk/docutils/test/coverage.sh
+copyfrom: 3488 /trunk/docutils/test/testcoverage.sh
+
+PLAIN
+K 22
+DocutilsTestSupport.py
+V 23
+file 49-18.0.r3268/1479
+K 11
+alltests.py
+V 21
+file 4e-18.0.r3425/54
+K 11
+coverage.sh
+V 26
+file 6-3449.0-3489.r3489/0
+K 4
+data
+V 23
+dir 3-1662.0.r3416/2104
+K 13
+docutils.conf
+V 24
+file 6-1661.0.r2385/2146
+K 19
+docutils_difflib.py
+V 24
+file 6-2354.0.r2354/1272
+K 10
+functional
+V 23
+dir 3-2357.0.r3443/2299
+K 19
+package_unittest.py
+V 21
+file 3-44.0.r2454/856
+K 20
+test_dependencies.py
+V 24
+file 3-2679.0.r2683/4279
+K 18
+test_functional.py
+V 24
+file 18-2357.0.r3176/122
+K 10
+test_io.py
+V 23
+file 5-3138.0.r3139/243
+K 16
+test_language.py
+V 23
+file 3-940.0.r3085/8438
+K 13
+test_nodes.py
+V 23
+file 4i-18.0.r3438/1540
+K 12
+test_parsers
+V 22
+dir 4k-18.0.r3477/4201
+K 12
+test_readers
+V 21
+dir 3-89.0.r3129/2577
+K 16
+test_settings.py
+V 23
+file g-1662.0.r3416/903
+K 20
+test_statemachine.py
+V 22
+file 6a-18.0.r917/6020
+K 15
+test_transforms
+V 22
+dir 6c-18.0.r3439/2930
+K 13
+test_utils.py
+V 21
+file 6u-18.0.r3171/53
+K 16
+test_viewlist.py
+V 23
+file 3-916.0.r3085/3892
+K 12
+test_writers
+V 23
+dir 5-1211.0.r3257/3198
+END
+ENDREP
+id: 48-18.0.r3489/1381
+type: dir
+pred: 48-18.0.r3488/2005
+count: 492
+text: 3489 332 1036 1036 812493e049fa7bcdb208ad0a06863af2
+props: 343 993 44 0 e8789a4081469b0bbc8d88dcdbd925ef
+cpath: /trunk/docutils/test
+copyroot: 0 /
+
+PLAIN
+K 8
+BUGS.txt
+V 24
+file 2-2181.0.r3406/1611
+K 11
+COPYING.txt
+V 21
+file 2-18.0.r3096/363
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r3452/109
+K 11
+HISTORY.txt
+V 23
+file 5-18.0.r3472/48061
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r2513/394
+K 10
+README.txt
+V 21
+file 9-18.0.r3407/847
+K 10
+THANKS.txt
+V 24
+file 2-2182.0.r3416/3502
+K 4
+docs
+V 20
+dir 3-7.0.r3486/2745
+K 8
+docutils
+V 22
+dir 1w-18.0.r3485/3344
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 24
+file 46-18.0.r3472/71471
+K 4
+test
+V 22
+dir 48-18.0.r3489/1381
+K 5
+tools
+V 22
+dir 6w-18.0.r3488/3974
+END
+ENDREP
+id: 1-7.0.r3489/2246
+type: dir
+pred: 1-7.0.r3488/4786
+count: 2647
+text: 3489 1604 629 629 cfcbb8fd169401e76054c4c51710c44e
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r3489/2246
+K 7
+sandbox
+V 21
+dir 1-17.0.r3488/6777
+K 3
+web
+V 20
+dir 1-2.0.r3487/1009
+END
+ENDREP
+id: 3-1.0.r3489/2589
+type: dir
+pred: 3-1.0.r3488/7069
+count: 3439
+text: 3489 2460 116 116 2c56ce38ac2b0c4393058725a359d9d6
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r3171/7579
+K 4
+tags
+V 19
+dir 2-1.0.r3383/196
+K 5
+trunk
+V 20
+dir 3-1.0.r3489/2589
+END
+ENDREP
+id: 0.0.r3489/2867
+type: dir
+pred: 0.0.r3488/7347
+count: 3489
+text: 3489 2741 113 113 daa0c41a95a20b96166cbef0e93df5eb
+cpath: /
+copyroot: 0 /
+
+6-3449._0.t3488-2ow add-file false false /trunk/docutils/test/coverage.sh
+3488 /trunk/docutils/test/testcoverage.sh
+6-3449.0-3488.r3488/612 delete-file false false /trunk/docutils/test/testcoverage.sh
+
+
+2867 3010

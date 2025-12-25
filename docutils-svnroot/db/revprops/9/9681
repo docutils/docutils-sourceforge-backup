@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-04T08:58:16.831219Z
+K 7
+svn:log
+V 109
+Small edits and docstrings for "nodes" module.
+
+Add/Update docstrings.
+
+Remove empty lines before docstrings.
+END

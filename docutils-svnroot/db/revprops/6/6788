@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 12
+paultremblay
+K 8
+svn:date
+V 27
+2011-02-09T06:02:29.592227Z
+K 7
+svn:log
+V 110
+Not needed in SVN, since document generated automatically. (Never
+should have been there in the first place.)
+
+END

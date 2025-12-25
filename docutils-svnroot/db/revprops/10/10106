@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-04-25T14:30:22.885364Z
+K 7
+svn:log
+V 105
+Remove `frontend.ConfigParser.get_section()`.
+
+Obsoleted by the configparser's "Mapping Protocol Access".
+END

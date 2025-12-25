@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2024-08-01T21:19:10.088996Z
+K 7
+svn:log
+V 39
+Enable the flake8-slots linter in Ruff
+
+END

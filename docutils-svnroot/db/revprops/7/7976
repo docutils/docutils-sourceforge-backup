@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2016-11-24T11:14:39.002575Z
+K 7
+svn:log
+V 116
+Correct copyright note in htm5 writer.
+
+The parts copied from the html4css1 writer are (c) David Goodger, of course.
+END

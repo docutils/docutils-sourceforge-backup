@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-06-22T15:34:37.059098Z
+K 7
+svn:log
+V 85
+Update roman.py to version 1.4.
+
+Fixes feature-requests:#95 (license is now ZPL 2.1).
+END

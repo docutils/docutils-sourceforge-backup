@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-05-04T03:21:59.000000Z
+K 7
+svn:log
+V 141
+  - Made XHTML-compatible (switched to lowercase element & attribute    names; empty tag format).  - Escape double-dashes in comment text.
+
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 12
+paultremblay
+K 8
+svn:date
+V 27
+2011-01-29T03:32:18.069822Z
+K 7
+svn:log
+V 50
+Added paramters to handle titles for admonitions.
+
+END

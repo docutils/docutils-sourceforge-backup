@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 6
+fdrake
+K 8
+svn:date
+V 27
+2003-02-04T16:58:40.000000Z
+K 7
+svn:log
+V 191
+Add a source encoding declaration for Python 2.3; this avoids a
+compile-time warning for this file.  I *think* Latin-1 is the right
+encoding; hopefully someone more knowledgable can confirm.
+
+END

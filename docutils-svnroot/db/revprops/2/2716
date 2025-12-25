@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-10-18T14:56:38.000000Z
+K 7
+svn:log
+V 119
+added "first" and "last" class attributes for footnotes to fix margins
+(cvs-up to rev. 1.11 to see the broken margins)
+
+END

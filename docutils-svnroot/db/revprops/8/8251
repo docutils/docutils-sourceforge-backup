@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-03-12T17:03:11.214225Z
+K 7
+svn:log
+V 73
+Apply patch #148: Remove handlers for deprecated nodes from LaTeX writer.
+END

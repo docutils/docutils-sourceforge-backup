@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-12-08T04:43:13.065032Z
+K 7
+svn:log
+V 57
+merged branches/s5 changes r4011:4155 into trunk/docutils
+END

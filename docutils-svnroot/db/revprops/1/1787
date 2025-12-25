@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 14
+david_abrahams
+K 8
+svn:date
+V 27
+2004-01-01T17:42:52.000000Z
+K 7
+svn:log
+V 105
+Implemented super/subscript handling.  Still problematic because it
+italicizes all letters, but not bad.
+
+END

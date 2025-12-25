@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-30T17:53:17.748475Z
+K 7
+svn:log
+V 55
+do not complain when the user specifies --stylesheet=""
+END

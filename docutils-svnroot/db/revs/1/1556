@@ -1,0 +1,126 @@
+PLAIN
+K 8
+dkuhlman
+V 23
+dir 2-1555.0.r1555/1635
+END
+ENDREP
+id: 1-17.0-1556.r1556/59
+type: dir
+pred: 1-17.0.r1555/2590
+count: 391
+text: 1556 0 46 46 7451399fce06f62c586b0f6578021fdd
+cpath: /branches/vendor/sandbox
+copyfrom: 1555 /trunk/sandbox
+
+PLAIN
+K 7
+sandbox
+V 24
+dir 1-17.0-1556.r1556/59
+K 3
+web
+V 17
+dir 1-2.0.r2/1795
+END
+ENDREP
+id: 3-1.0-3.r1556/334
+type: dir
+pred: 3-1.0-3.r3/0
+count: 3
+text: 1556 244 77 77 675d7f7e80dc779bf6c88aa1c14b318f
+cpath: /branches/vendor
+copyroot: 3 /branches/vendor
+
+PLAIN
+K 2
+ax
+V 24
+dir 3-1.0-1551.r1551/296
+K 7
+goodger
+V 22
+dir 3-1.0-19.r21/10951
+K 4
+tibs
+V 20
+dir 3-1.0-63.r63/279
+K 6
+vendor
+V 21
+dir 3-1.0-3.r1556/334
+END
+ENDREP
+id: 0-1.0.r1556/669
+type: dir
+pred: 0-1.0.r1551/627
+count: 7
+text: 1556 502 154 154 c8dcdcd20e3b54036afec6ea922da9a8
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r1556/669
+K 4
+tags
+V 17
+dir 2-1.0.r65/217
+K 5
+trunk
+V 20
+dir 3-1.0.r1555/2882
+END
+ENDREP
+id: 0.0.r1556/941
+type: dir
+pred: 0.0.r1555/3159
+count: 1556
+text: 1556 818 110 110 805d4bf89df3abd82ed927bf0ce43511
+cpath: /
+copyroot: 0 /
+
+2-1300.0.r1357/657 delete-dir false false /branches/vendor/sandbox/dreamcatcher
+
+2-202.0.r1269/11172 delete-dir false false /branches/vendor/sandbox/oliverr
+
+2-820.0.r1174/2130 delete-dir false false /branches/vendor/sandbox/aahz
+
+2-1550.0.r1554/493196 delete-dir false false /branches/vendor/sandbox/ax-
+
+2-1039.0.r1206/2133 delete-dir false false /branches/vendor/sandbox/bbum
+
+2-252.0.r1227/852 delete-dir false false /branches/vendor/sandbox/simonb
+
+2-1316.0.r1316/43864 delete-dir false false /branches/vendor/sandbox/blais
+
+2-857.0.r862/1023 delete-dir false false /branches/vendor/sandbox/mwh
+
+2-1158.0.r1292/1381 delete-dir false false /branches/vendor/sandbox/pobrien
+
+6-17.0.r1138/1150 delete-dir false false /branches/vendor/sandbox/davidg
+
+1-17._0.t1555-177 add-dir false false /branches/vendor/sandbox
+1555 /trunk/sandbox
+2-62.0.r1089/1615 delete-dir false false /branches/vendor/sandbox/tibs
+
+2-1431.0.r1432/2681 delete-dir false false /branches/vendor/sandbox/mly
+
+2-1323.0.r1489/1149 delete-dir false false /branches/vendor/sandbox/paultremblay
+
+2-1258.0.r1366/1267 delete-dir false false /branches/vendor/sandbox/wilk
+
+2-881.0.r1231/2818 delete-dir false false /branches/vendor/sandbox/ianb
+
+2-112.0.r1549/1446 delete-dir false false /branches/vendor/sandbox/grubert
+
+3-17.0.r1321/169 delete-file false false /branches/vendor/sandbox/README.txt
+
+2-526.0.r1417/2696 delete-dir false false /branches/vendor/sandbox/richard
+
+2-675.0.r1490/4515 delete-dir false false /branches/vendor/sandbox/gschwant
+
+
+941 1082

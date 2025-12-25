@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-06-27T20:04:25.412665Z
+K 7
+svn:log
+V 112
+Remove compatibility hacks `nodes.reprunicode` and `nodes.ensure_str()`.
+
+They are not required with Python 3.x.
+END

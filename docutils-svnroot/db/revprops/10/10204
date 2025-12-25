@@ -1,0 +1,27 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-08-15T22:28:45.540351Z
+K 7
+svn:log
+V 801
+rST parser: new title-style hierarchy for nested parsing with detached base node.
+
+Use a separate section title style hierarchy for nested parsing
+if the base node is not attached to the document.
+
+With a detached base, the parser can not move up in the section hierarchy, so it
+does not make sense to enforce the document-wide title style hierarchy.
+
+Separate title styles also fit better with directives that fetch their content
+from separate sources.
+Docutils does not switch on section support in nested parsing.
+Sphinx defines and uses a "_fresh_title_style_context" in nested parsing.
+Some contributed Sphinx extensions reported regeressions with the new
+section parsing algorightm because the old algorithm was forgiving in case
+of inconsistent title styles in nested parsing (cf. [bugs:#508]).
+END

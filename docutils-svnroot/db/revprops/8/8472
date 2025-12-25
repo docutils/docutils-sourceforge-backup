@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-01-30T00:44:15.266095Z
+K 7
+svn:log
+V 64
+html5: Use semantic tags <header>, <footer>, <section>, <aside>.
+END

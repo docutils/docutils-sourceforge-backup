@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-11-13T19:37:09.000000Z
+K 7
+svn:log
+V 98
+added class="docutils" to elements which need stylesheet tweaking and
+do not have their own class
+
+END

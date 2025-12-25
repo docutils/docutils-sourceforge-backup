@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-09-09T09:21:59.204247Z
+K 7
+svn:log
+V 166
+Prevent misleading error report with UnicodeDecodeError
+
+UnicodeEncodeError (new in Python 2.3) allows to use the 
+custom report_UnicodeError for relevant cases only.
+END

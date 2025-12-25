@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-08-08T18:23:50.076033Z
+K 7
+svn:log
+V 157
+Catch invalid node.parent when switching section levels.
+
+Better error report for problems with the new section parsing algorithm.
+See [bugs:#] and [bugs:#].
+END

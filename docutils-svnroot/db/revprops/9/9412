@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-06-27T20:03:52.480143Z
+K 7
+svn:log
+V 204
+Improve error message for functional tests.
+
+Use difflib to generate a concise yet comprehensive report about detected
+differences between actual output and the sample file in the ``expected/``
+directory.
+END

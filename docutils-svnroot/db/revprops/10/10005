@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-12-18T22:03:27.520784Z
+K 7
+svn:log
+V 100
+Small fixes.
+
+Link in "Docutils Configuration",
+class name and docstring in "html4css1" writer test.
+END

@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2005-10-22T17:57:34.854285Z
+K 7
+svn:log
+V 398
+- Added new funtion and binding to display the Table of Contents
+  and jump to any section title from it (press return);
+
+- Renamed a rest-display-secitons-hierarchy to 
+  rest-display-decorations-hierarchy which is more accurate.
+
+- Replaced C-x C-= binding by the new more useful TOC display
+  feature.  The display hierarchy feature is still available
+  by calling this with a prefix-argument.
+
+
+END

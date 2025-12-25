@@ -1,0 +1,219 @@
+K 8
+Dir.smak
+V 26
+file 1r-5058.0.r6498/36889
+K 4
+Text
+V 24
+dir s-4799.0.r4799/36213
+K 11
+class01.dom
+V 25
+file 5-6438.0.r6498/36635
+K 11
+class01.rst
+V 25
+file 8-6438.0.r6498/37141
+K 12
+mathml01.dom
+V 25
+file w-4799.0.r4799/38208
+K 12
+mathml01.rst
+V 25
+file y-4799.0.r4799/36601
+K 16
+mathml01.skip.pl
+V 26
+file 10-4799.0.r4799/38668
+K 12
+mathml02.dom
+V 26
+file 12-4799.0.r4799/38437
+K 12
+mathml02.rst
+V 26
+file 14-4799.0.r4799/36830
+K 16
+mathml02.skip.pl
+V 26
+file 16-4799.0.r4799/39132
+K 12
+mathml03.dom
+V 26
+file 18-4799.0.r4799/38901
+K 12
+mathml03.rst
+V 26
+file 1a-4799.0.r4799/37061
+K 16
+mathml03.skip.pl
+V 26
+file 1c-4799.0.r4799/39365
+K 12
+mathml04.dom
+V 26
+file 1e-4799.0.r4799/39598
+K 12
+mathml04.rst
+V 26
+file 1g-4799.0.r4799/37292
+K 12
+mathml05.dom
+V 26
+file 1i-4799.0.r4799/39829
+K 12
+mathml05.rst
+V 26
+file 1k-4799.0.r4799/37521
+K 12
+mathml06.dom
+V 26
+file 1m-4799.0.r4799/40060
+K 12
+mathml06.rst
+V 26
+file 1o-4799.0.r4799/37750
+K 12
+mathml07.dom
+V 26
+file 1q-4799.0.r4799/40291
+K 12
+mathml07.rst
+V 26
+file 1s-4799.0.r4799/37979
+K 12
+mathml08.dom
+V 24
+file 7-6232.0.r6232/5383
+K 12
+mathml08.rst
+V 24
+file 9-6232.0.r6232/4929
+K 10
+roles1.dom
+V 31
+file 1z-4710.0-4799.r4799/35597
+K 10
+roles1.rst
+V 31
+file 21-4710.1-4799.r4799/40520
+K 13
+sectnum01.dom
+V 24
+file b-6232.0.r6232/5155
+K 13
+sectnum01.rst
+V 24
+file d-6232.0.r6232/4702
+K 7
+tab.csv
+V 23
+file 5-5753.0.r5753/774
+K 12
+tables01.dom
+V 27
+file 1b-4710.0.r4710/244639
+K 12
+tables01.rst
+V 27
+file 1e-4710.0.r4710/243948
+K 12
+tables02.dom
+V 27
+file 1g-4710.0.r4710/244870
+K 12
+tables02.rst
+V 27
+file 1i-4710.0.r4710/244179
+K 12
+tables03.dom
+V 27
+file 1k-4710.0.r4710/245101
+K 12
+tables03.rst
+V 27
+file 1m-4710.0.r4710/244410
+K 12
+tables04.dom
+V 23
+file 8-5753.0.r5753/549
+K 12
+tables04.rst
+V 23
+file a-5753.0.r5753/326
+END
+D 8
+Dir.smak
+K 4
+Text
+V 22
+dir s-4799.0.t8951-6xe
+D 11
+class01.dom
+D 11
+class01.rst
+D 12
+mathml01.dom
+D 12
+mathml01.rst
+D 16
+mathml01.skip.pl
+D 12
+mathml02.dom
+D 12
+mathml02.rst
+D 16
+mathml02.skip.pl
+D 12
+mathml03.dom
+D 12
+mathml03.rst
+D 16
+mathml03.skip.pl
+D 12
+mathml04.dom
+D 12
+mathml04.rst
+D 12
+mathml05.dom
+D 12
+mathml05.rst
+D 12
+mathml06.dom
+D 12
+mathml06.rst
+D 12
+mathml07.dom
+D 12
+mathml07.rst
+D 12
+mathml08.dom
+D 12
+mathml08.rst
+D 10
+roles1.dom
+D 10
+roles1.rst
+D 13
+sectnum01.dom
+D 13
+sectnum01.rst
+D 7
+tab.csv
+D 12
+tables01.dom
+D 12
+tables01.rst
+D 12
+tables02.dom
+D 12
+tables02.rst
+D 12
+tables03.dom
+D 12
+tables03.rst
+D 12
+tables04.dom
+D 12
+tables04.rst

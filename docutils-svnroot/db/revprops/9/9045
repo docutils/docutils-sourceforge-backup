@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-03-13T18:04:05.092337Z
+K 7
+svn:log
+V 390
+Update PEP base URL and template.
+
+The canonical PEP base URL changed to "peps.python.org/".
+
+The PEP-writer template.txt added a "source" link that no longer
+works due to sources now only be stored on github and having
+two possible file extensions ("txt" or "rst").
+Adapt the header to resemble the header of official PEP documents
+(which are now produced using Sphinx).
+
+Fixes [bug:#445].
+END

@@ -1,0 +1,108 @@
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 4-15.0.r15/123
+type: file
+count: 0
+text: 13 0 434 720 45c85af3128c84189302039e05c78a8a 7c0480074aa05094f5a84a803eeed6e031647cff 14-e/_6
+props: 15 0 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/web/mirror/setext.txt
+copyroot: 0 /
+
+PLAIN
+K 10
+setext.txt
+V 19
+file 4-15.0.r15/123
+END
+ENDREP
+id: 2-15.0.r15/423
+type: dir
+count: 0
+text: 15 365 45 45 4a37546ea314f3518b394ee829718798
+cpath: /trunk/web/mirror
+copyroot: 0 /
+
+PLAIN
+K 15
+PyBanner016.png
+V 17
+file 2-5.0.r5/845
+K 9
+index.txt
+V 17
+file 2-4.0.r4/123
+K 6
+mirror
+V 18
+dir 2-15.0.r15/423
+END
+ENDREP
+id: 1-2.0.r15/686
+type: dir
+pred: 1-2.0.r14/98
+count: 6
+text: 15 553 120 120 e327895ed84192882dc5c9b37d6961bd
+cpath: /trunk/web
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 18
+dir 1-7.0.r12/1548
+K 3
+web
+V 17
+dir 1-2.0.r15/686
+END
+ENDREP
+id: 3-1.0.r15/914
+type: dir
+pred: 3-1.0.r14/321
+count: 13
+text: 15 829 72 72 90ec6b0cb1c30d99958e0d3f353de8a5
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 16
+dir 0-1.0.r3/202
+K 4
+tags
+V 16
+dir 2-1.0.r1/130
+K 5
+trunk
+V 17
+dir 3-1.0.r15/914
+END
+ENDREP
+id: 0.0.r15/1169
+type: dir
+pred: 0.0.r14/577
+count: 15
+text: 15 1053 103 103 17928f315b778de5649306546edf9515
+cpath: /
+copyroot: 0 /
+
+_4.0.t14-e add-file true true /trunk/web/mirror/setext.txt
+
+_2.0.t14-e add-dir false false /trunk/web/mirror
+
+
+1169 1303

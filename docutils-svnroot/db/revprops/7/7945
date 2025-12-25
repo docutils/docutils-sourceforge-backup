@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2016-05-26T16:24:15.947152Z
+K 7
+svn:log
+V 115
+Fix/Complete Setting for character-level-inline-markup.
+
+rename options following Davids suggestion,
+add test file.
+END

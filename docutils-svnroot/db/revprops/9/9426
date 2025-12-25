@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-07-03T12:38:54.716313Z
+K 7
+svn:log
+V 183
+Small documentation fixes/additions.
+
+Remove trailing whitespace, update links.
+Add comment to structure `parsers.rst.directives` source.
+Expand docstring for `utils.relative_path()`.
+END

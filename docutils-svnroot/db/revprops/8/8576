@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-11-25T23:06:30.575431Z
+K 7
+svn:log
+V 85
+Update the link to PIL (now unmaintained) and hint to the drop-in replacement Pillow.
+END

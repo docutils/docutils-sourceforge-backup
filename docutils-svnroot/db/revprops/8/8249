@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 8
+dkuhlman
+K 8
+svn:date
+V 27
+2019-02-12T23:44:53.649229Z
+K 7
+svn:log
+V 81
+Added Gilles fix -- missing clause for Python 3 mapping custom styles and formats
+END

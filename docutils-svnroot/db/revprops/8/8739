@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-05-20T12:19:35.610307Z
+K 7
+svn:log
+V 85
+MathML: pretty print XML.
+
+Add newlines and indentation around non-token MathML tags.
+END

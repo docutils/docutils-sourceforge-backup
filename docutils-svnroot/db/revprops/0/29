@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-04-20T16:36:24.000000Z
+K 7
+svn:log
+V 103
+  - Improved diagnostic system messages for missing blank lines.  - Fixed substitution_reference bug.
+
+END

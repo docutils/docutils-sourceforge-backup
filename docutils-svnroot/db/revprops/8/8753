@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-05-20T12:24:07.848057Z
+K 7
+svn:log
+V 150
+MathML: fix script/limt order when given as ^{super}_{sub}.
+
+Separate function to handle scripts or limits,
+
+Rename handle_keyword() and math.reverse.
+END

@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-07T20:12:00.245183Z
+K 7
+svn:log
+V 208
+Drop use of utils.error_reporting module and deprecate it.
+
+SafeString not required in Python 3
+
+ErrorString obsoleted by new function io.error_string().
+
+ErrorOutput and locale_encoding moved to docutils.io.
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2006-06-23T18:37:06.884138Z
+K 7
+svn:log
+V 43
+Added Makefile.old to svn:ignore property.
+
+END

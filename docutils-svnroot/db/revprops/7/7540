@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-11-26T14:06:19.708527Z
+K 7
+svn:log
+V 58
+SmartQuotes transform: language-depended quote characters.
+END

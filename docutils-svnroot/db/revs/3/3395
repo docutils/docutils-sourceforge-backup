@@ -1,0 +1,105 @@
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:mime-type
+V 9
+image/png
+END
+ENDREP
+id: e-17.0.r3395/79
+type: file
+pred: e-17.0.r17/4088
+count: 1
+text: 18 101819 1188 1171 9344a3bf88f1c75c725d14939af404cf 756dd8ae3f649b690dafe5277ec52e02b6ecb604 3394-2ma/_3
+props: 3395 0 66 0 c4a4dceae49030fb4f83d52ea663faef
+cpath: /trunk/web/rst.png
+copyroot: 0 /
+
+PLAIN
+K 9
+.htaccess
+V 23
+file 2-2167.0.r3099/157
+K 15
+PyBanner016.png
+V 17
+file 2-5.0.r5/845
+K 9
+index.txt
+V 21
+file 2-4.0.r3393/3032
+K 6
+mirror
+V 20
+dir 2-15.0.r134/5759
+K 7
+rst.png
+V 20
+file e-17.0.r3395/79
+K 7
+rst.txt
+V 21
+file h-17.0.r2431/245
+END
+ENDREP
+id: 1-2.0.r3395/605
+type: dir
+pred: 1-2.0.r3393/3564
+count: 113
+text: 3395 346 246 246 6ad119147ff0f56302af29593eb02d03
+cpath: /trunk/web
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r3394/2131
+K 7
+sandbox
+V 21
+dir 1-17.0.r3388/2795
+K 3
+web
+V 19
+dir 1-2.0.r3395/605
+END
+ENDREP
+id: 3-1.0.r3395/886
+type: dir
+pred: 3-1.0.r3394/2474
+count: 3345
+text: 3395 758 115 115 44f027e51dc7ec97c35428511265bd3e
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r3171/7579
+K 4
+tags
+V 19
+dir 2-1.0.r3383/196
+K 5
+trunk
+V 19
+dir 3-1.0.r3395/886
+END
+ENDREP
+id: 0.0.r3395/1161
+type: dir
+pred: 0.0.r3394/2752
+count: 3395
+text: 3395 1036 112 112 d4ae9269338296cb88b53de91695ccb6
+cpath: /
+copyroot: 0 /
+
+e-17.0.t3394-2ma modify-file true true /trunk/web/rst.png
+
+
+1161 1304

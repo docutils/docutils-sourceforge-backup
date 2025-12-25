@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-05-20T12:22:05.430727Z
+K 7
+svn:log
+V 226
+MathML update: math alphabets, tex_token(), add documentation.
+
+* math alphabets: Use token elements for single symbols or names.
+
+* tex_token: skip whitespace after command names.
+
+* comprehensive documentation/test document.
+END

@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-05-27T14:05:12.074226Z
+K 7
+svn:log
+V 189
+Update version number docstring.
+
+Make the docstring compliant to the Docutils Project Policies on version
+numbers.
+http://docutils.sourceforge.net/docs/dev/policies.html#version-numbering
+
+END

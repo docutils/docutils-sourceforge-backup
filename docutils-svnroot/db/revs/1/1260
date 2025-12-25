@@ -1,0 +1,172 @@
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 4-1260.0.r1260/123
+type: file
+count: 0
+text: 1259 0 473 10704 0421d89df8af730d4bf89c1e7d6a53e0 150329a92900ff443a94a4f306e8be4f6b4ef18b 1259-yz/_6
+props: 1260 0 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/sandbox/wilk/french/quickstart-fr.txt
+copyroot: 0 /
+
+PLAIN
+K 17
+quickstart-fr.txt
+V 23
+file 4-1260.0.r1260/123
+END
+ENDREP
+id: 4-1258.0.r1260/463
+type: dir
+pred: 4-1258.0.r1259/987
+count: 2
+text: 1260 394 56 56 150afc5cf44eb8853116ad0258f4def4
+cpath: /trunk/sandbox/wilk/french
+copyroot: 0 /
+
+PLAIN
+K 6
+french
+V 22
+dir 4-1258.0.r1260/463
+END
+ENDREP
+id: 2-1258.0.r1260/689
+type: dir
+pred: 2-1258.0.r1259/1214
+count: 2
+text: 1260 633 43 43 bb1b5411df304624c4b1b406f23ca8fd
+cpath: /trunk/sandbox/wilk
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 21
+file 3-17.0.r115/8760
+K 4
+aahz
+V 22
+dir 2-820.0.r1174/2130
+K 4
+bbum
+V 23
+dir 2-1039.0.r1206/2133
+K 6
+davidg
+V 21
+dir 6-17.0.r1138/1150
+K 7
+grubert
+V 22
+dir 2-112.0.r1250/9183
+K 8
+gschwant
+V 22
+dir 2-675.0.r1242/3664
+K 4
+ianb
+V 22
+dir 2-881.0.r1231/2818
+K 3
+mwh
+V 21
+dir 2-857.0.r862/1023
+K 7
+oliverr
+V 22
+dir 2-202.0.r1198/1025
+K 7
+pobrien
+V 23
+dir 2-1158.0.r1222/1716
+K 7
+richard
+V 22
+dir 2-526.0.r1089/2918
+K 6
+simonb
+V 21
+dir 2-252.0.r1227/852
+K 4
+tibs
+V 21
+dir 2-62.0.r1089/1615
+K 4
+wilk
+V 22
+dir 2-1258.0.r1260/689
+END
+ENDREP
+id: 1-17.0.r1260/1411
+type: dir
+pred: 1-17.0.r1259/1939
+count: 289
+text: 1260 853 545 545 69991b721cbb0c6532e75cb4aa1a6ead
+cpath: /trunk/sandbox
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r1257/4466
+K 7
+sandbox
+V 21
+dir 1-17.0.r1260/1411
+K 3
+web
+V 19
+dir 1-2.0.r1144/755
+END
+ENDREP
+id: 3-1.0.r1260/1699
+type: dir
+pred: 3-1.0.r1259/2228
+count: 1252
+text: 1260 1571 115 115 4e09f2dd41fc16ba171a17d787c8a026
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 17
+dir 0-1.0.r63/562
+K 4
+tags
+V 17
+dir 2-1.0.r65/217
+K 5
+trunk
+V 20
+dir 3-1.0.r1260/1699
+END
+ENDREP
+id: 0.0.r1260/1972
+type: dir
+pred: 0.0.r1259/2501
+count: 1260
+text: 1260 1851 108 108 cb7dc14de4bbe71c035d78577026dec3
+cpath: /
+copyroot: 0 /
+
+6-1258.0.r1259/621 delete-file false false /trunk/sandbox/wilk/french/quickstartfr.rst
+
+_4.0.t1259-yz add-file true true /trunk/sandbox/wilk/french/quickstart-fr.txt
+
+
+1972 2115

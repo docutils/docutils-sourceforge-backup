@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 3
+ax-
+K 8
+svn:date
+V 27
+2004-01-07T06:57:28.000000Z
+K 7
+svn:log
+V 110
+* updated to latest CVS
+* made the "Quick reStructuredText" user reference the default topic
+* made PEPs work
+
+END

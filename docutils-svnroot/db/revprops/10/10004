@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-12-18T22:03:18.838237Z
+K 7
+svn:log
+V 202
+Add "template" to the parts returned by the LaTeX writers.
+
+`writers.latex2e.Writer.assemble_parts()` now also returns the
+"template" that is used to generate the output document from the
+(other) parts.
+END

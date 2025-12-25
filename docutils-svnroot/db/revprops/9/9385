@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-05-13T14:39:18.521313Z
+K 7
+svn:log
+V 136
+Documentation fix.
+
+Fix internal links in "directives" doc.
+Add links to description of differences between html4css1 and html5 writers.
+END

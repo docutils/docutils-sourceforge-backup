@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2009-07-13T04:43:26.512729Z
+K 7
+svn:log
+V 130
+Add text output files (latin1) to verify print out layout,
+consecutive blank lines are megred by the viewer but not on printouts.
+
+END

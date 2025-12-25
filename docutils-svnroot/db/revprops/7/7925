@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2015-10-04T09:21:35.421553Z
+K 7
+svn:log
+V 222
+Update tutorial.
+
+Works with `electric-indent-mode` switched on globally in Emacs 24.4.
+
+Includes changes made in Emacs tree matching Emacs commit
+``db828f62f6f17414fbbc3206dac123dc73dd6055`` of 2015-09-21 16:51:20
+(GMT).
+
+END

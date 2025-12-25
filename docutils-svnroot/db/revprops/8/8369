@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-08-27T12:10:26.753023Z
+K 7
+svn:log
+V 199
+Remove auxiliary Python 2/3 compatibility definition module.
+
+No longer required since setting minimal supported version to 2.7.
+The remaining issues are now handled directly in the affected modules.
+END

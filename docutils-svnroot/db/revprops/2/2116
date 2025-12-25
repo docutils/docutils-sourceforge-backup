@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2004-05-16T20:31:53.000000Z
+K 7
+svn:log
+V 42
+Fix: multirow test should be without -gs.
+
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 8
+dkuhlman
+K 8
+svn:date
+V 27
+2007-01-11T18:47:14.812031Z
+K 7
+svn:log
+V 63
+Fixed error that occurs when there are no headers or footers.
+
+
+END

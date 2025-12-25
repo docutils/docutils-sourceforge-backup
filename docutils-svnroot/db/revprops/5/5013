@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 8
+dkuhlman
+K 8
+svn:date
+V 27
+2007-03-09T19:01:06.993941Z
+K 7
+svn:log
+V 49
+Fix for non-utf-8 character sets, e.g. Russian.
+
+
+END

@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-01-10T14:58:54.000000Z
+K 7
+svn:log
+V 175
+added inline target to "whitespace in include file path" item;
+moved entry "support for inclusion by URL" to the existing misc.include section;
+added link to Python's ID-test
+
+END

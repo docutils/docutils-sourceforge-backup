@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 4
+cben
+K 8
+svn:date
+V 27
+2004-05-27T18:47:37.000000Z
+K 7
+svn:log
+V 75
+Fixed make-variable-falvour bug tirggered when SRCEXT is explicitly given.
+
+END

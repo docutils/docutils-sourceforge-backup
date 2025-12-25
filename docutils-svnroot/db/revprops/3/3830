@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-08-24T21:33:21.299335Z
+K 7
+svn:log
+V 95
+made _stylesheet_required setting default to 0,
+activating it in the rst2html.py front-end tool
+END

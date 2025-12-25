@@ -1,0 +1,241 @@
+K 8
+Dir.smak
+V 30
+file 1n-5058.o-4580.r5350/8922
+K 11
+dupname.rst
+V 30
+file m-4710.o-4580.r4710/99463
+K 12
+idxtest1.rst
+V 28
+file z5-4327.o-4580.r5752/65
+K 12
+idxtest2.rst
+V 32
+file z7-4327.o-4580.r4710/102577
+K 12
+idxtest3.rst
+V 27
+file z9-4327.0.r4327/887345
+K 8
+idxtest4
+V 32
+file zb-4327.0-4710.r4710/100048
+K 11
+index01.idx
+V 30
+file zd-4327.1-4710.r4851/1270
+K 11
+index02.idx
+V 29
+file q-4710.o-4580.r4851/1580
+K 11
+index03.idx
+V 29
+file 7-5289.o-4580.r5289/1372
+K 11
+index04.idx
+V 27
+file d-5350.o-4580.r5452/93
+K 11
+index05.idx
+V 29
+file f-5350.o-4580.r5350/7519
+K 10
+smiley.gif
+V 27
+file zf-4327.0.r4327/883930
+K 8
+tests.pl
+V 32
+file be-4580.o-4580.r4710/101740
+K 9
+toc01.toc
+V 27
+file zh-4327.0.r4327/884710
+K 9
+toc02.toc
+V 27
+file zj-4327.0.r4327/885432
+K 9
+toc03.toc
+V 27
+file zl-4327.0.r4327/886152
+K 9
+toc04.toc
+V 27
+file zn-4327.0.r4327/886390
+K 9
+toc05.toc
+V 32
+file zp-4327.o-4580.r4710/103146
+K 9
+toc06.toc
+V 27
+file zr-4327.0.r4327/882676
+K 9
+toc07.toc
+V 27
+file zt-4327.0.r4327/882913
+K 9
+toc08.toc
+V 27
+file zv-4327.0.r4327/883151
+K 9
+toc09.toc
+V 27
+file zx-4327.0.r4327/883388
+K 9
+toc10.toc
+V 27
+file zz-4327.0.r4327/884471
+K 9
+toc11.toc
+V 28
+file 101-4327.0.r4327/885192
+K 9
+toc12.toc
+V 28
+file 103-4327.0.r4327/885670
+K 9
+toc13.toc
+V 31
+file u-4710.o-4580.r4710/102877
+K 9
+toc14.toc
+V 28
+file 7-4920.o-4580.r4920/760
+K 11
+xref01.xref
+V 32
+file 107-4327.2-4710.r4710/99730
+K 11
+xref02.xref
+V 31
+file w-4710.o-4580.r4710/100359
+K 11
+xref03.xref
+V 31
+file y-4710.o-4580.r4710/100628
+K 11
+xref04.xref
+V 32
+file 10-4710.o-4580.r4710/101199
+K 11
+xref05.xref
+V 32
+file 12-4710.o-4580.r4710/101470
+K 13
+xref06.stderr
+V 32
+file 14-4710.o-4580.r4710/102039
+K 11
+xref06.xref
+V 32
+file 16-4710.o-4580.r4710/102309
+K 11
+xref07.xref
+V 29
+file h-5350.o-4580.r5350/9485
+K 11
+xref08.xref
+V 29
+file j-5350.o-4580.r5350/8656
+K 11
+xref09.xref
+V 29
+file l-5350.o-4580.r5350/6985
+K 11
+xref10.xref
+V 29
+file n-5350.o-4580.r5350/7787
+K 11
+xref11.xref
+V 29
+file p-5350.o-4580.r5350/9218
+K 12
+xreftest.rst
+V 31
+file 105-4327.o-4580.r5350/8054
+END
+D 8
+Dir.smak
+D 11
+dupname.rst
+D 12
+idxtest1.rst
+D 12
+idxtest2.rst
+D 12
+idxtest3.rst
+D 8
+idxtest4
+D 11
+index01.idx
+D 11
+index02.idx
+D 11
+index03.idx
+D 11
+index04.idx
+D 11
+index05.idx
+D 10
+smiley.gif
+D 8
+tests.pl
+D 9
+toc01.toc
+D 9
+toc02.toc
+D 9
+toc03.toc
+D 9
+toc04.toc
+D 9
+toc05.toc
+D 9
+toc06.toc
+D 9
+toc07.toc
+D 9
+toc08.toc
+D 9
+toc09.toc
+D 9
+toc10.toc
+D 9
+toc11.toc
+D 9
+toc12.toc
+D 9
+toc13.toc
+D 9
+toc14.toc
+D 11
+xref01.xref
+D 11
+xref02.xref
+D 11
+xref03.xref
+D 11
+xref04.xref
+D 11
+xref05.xref
+D 13
+xref06.stderr
+D 11
+xref06.xref
+D 11
+xref07.xref
+D 11
+xref08.xref
+D 11
+xref09.xref
+D 11
+xref10.xref
+D 11
+xref11.xref
+D 12
+xreftest.rst

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-12-31T02:39:07.544886Z
+K 7
+svn:log
+V 211
+Fixed bug where values of list-valued attributes of elements originating from custom interpreted text roles (i.e., with custom classes) were being shared between element instances.  Reported by Shmuel Zeigerman.
+END

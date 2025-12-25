@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-05-09T15:49:37.841436Z
+K 7
+svn:log
+V 131
+Added "border" option to "image" directive (& attribute to doctree element); updated docs & tests.  Closes Feature Request 1193389.
+END

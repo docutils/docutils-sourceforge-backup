@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-04-17T12:22:39.254610Z
+K 7
+svn:log
+V 224
+Documentation update.
+
+Complete some missing element descriptions and apply small fixes
+in the Document Tree documentation.
+
+Small fixes and reordering in the Documentation Index, release notes,
+and "directives" description.
+END

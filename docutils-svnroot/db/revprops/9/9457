@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-10-02T16:25:50.836666Z
+K 7
+svn:log
+V 269
+Document that Docutils supports the Valentian varriety of Catalan.
+
+Actually, all translations used in "ca.py" work in both,
+"Catalan" and "Catalan (Valencian)" and with the tags
+"ca" as well as "ca-valencia".
+
+Currently, "Catalan (Valencian)" is no official trove tag.
+END

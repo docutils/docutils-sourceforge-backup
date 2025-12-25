@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-01-15T16:10:42.399643Z
+K 7
+svn:log
+V 192
+latex2mathml revision
+
+Simplify/clarify code.
+
+Raise MathError when pretty-printing a node with missing children
+(e.g. the conversion of `\frac{1}` or `x_`).
+
+Better rendering of math accents.
+END

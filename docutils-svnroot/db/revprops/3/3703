@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T01:50:53.854666Z
+K 7
+svn:log
+V 123
+Do not tighten up the spec (and break existing documents) unless
+it is really necessary.  Which probably not the case here.
+END

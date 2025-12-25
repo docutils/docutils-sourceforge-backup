@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-06-27T01:17:24.000000Z
+K 7
+svn:log
+V 139
+- Enabled "--encoding" option (but not implemented yet).- Added "--dump-internal-document-attributes".- Support for non-grouped options.
+
+END

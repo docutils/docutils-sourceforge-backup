@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-11-09T20:51:23.663612Z
+K 7
+svn:log
+V 250
+Inline ``DocutilsTestSupport.testroot``
+
+- Move all usages of ``testroot`` to defining and using a 
+  ``TEST_ROOT`` constant within the module, as part of the test
+  suite refactoring project
+- Avoid ``os.chdir`` calls within ``test_error_reporting``
+END

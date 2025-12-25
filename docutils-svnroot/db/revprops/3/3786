@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-08-04T03:00:27.168543Z
+K 7
+svn:log
+V 59
+add "new in Docutils 0.3.8" notice to auto-enumerated lists
+END

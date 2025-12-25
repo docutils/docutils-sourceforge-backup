@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-10-11T19:03:00.738454Z
+K 7
+svn:log
+V 192
+Fix previous_sibling() method.
+
+Move from nodes.Node to nodes.Element
+(requires features only present in the sub-class).
+
+Return `None` if called from first child (cf. [patches:#195]).
+
+Tests.
+END

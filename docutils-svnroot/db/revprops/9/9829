@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2024-08-01T20:47:11.675208Z
+K 7
+svn:log
+V 39
+Enable the pygrep-hooks linter in Ruff
+
+END

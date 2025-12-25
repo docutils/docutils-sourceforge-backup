@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-08-20T12:04:42.452207Z
+K 7
+svn:log
+V 125
+LaTeX writer: Simplify code for nested image.
+
+Simplify logic for the insertion of newlines around
+the image inclusion macro.
+END

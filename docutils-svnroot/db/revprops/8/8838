@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-10-02T09:36:50.430669Z
+K 7
+svn:log
+V 198
+Clean up sandbox
+
+Remove complete copies of the Docutils code with some changes,
+not worked on for more than 10 years that make up half of the
+space in the sandbox and interfere with locating files.
+END

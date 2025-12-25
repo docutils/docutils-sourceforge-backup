@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-12-23T14:54:26.632299Z
+K 7
+svn:log
+V 124
+Small documentation updates and fixes.
+
+Also change the priority of the SmartQuotes transform
+to a level not already in use.
+END

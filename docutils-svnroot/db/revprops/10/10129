@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-05-13T20:49:37.206442Z
+K 7
+svn:log
+V 459
+Improve backwards-compatibility of section parsing. Fixup for r10093.
+
+Determine the "section_parents" list by inspecting the current node's parents
+when required instead of keeping it in the `states.RSTStateMachine.memo`.
+
+The introduction of a stack of "section_parents" in `states.RSTStateMachine.memo`
+proved to be a "hard breaking change" for Sphinx and several Sphinx extensions.
+https://github.com/sphinx-doc/sphinx/issues/13539#issuecomment-2874341471
+END

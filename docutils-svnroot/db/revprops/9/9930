@@ -1,0 +1,28 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-09-13T08:13:03.474700Z
+K 7
+svn:log
+V 611
+Use "unknown_reference_resolver" for LaTeX writer option "use-bibtex".
+
+The "latex" writer provides the (provisional) setting "use_bibtex" to defer
+the resolution of citation references to the backend (LaTeX/BibTeX/LaTeX).
+
+Use the `unknown_reference_resolvers` hook of the `TransformSpec` to
+mark citation references as resolved if BibTeX is used.
+
+Advantages:
+
+* replaces hard-coded special-case in
+  `transforms.references.DanglingReferencesVisitor` introduced in [r9312],
+* provides a usage example,
+* tests the hook with the Docutils test suite without additional overhead.
+
+Update docstrings and comments.
+END

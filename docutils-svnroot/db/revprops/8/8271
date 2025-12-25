@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2019-07-21T07:17:16.901005Z
+K 7
+svn:log
+V 55
+add classifier 'Programming Language :: Python :: 3.7'
+
+END

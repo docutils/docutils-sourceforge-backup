@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-03-03T22:15:00.563839Z
+K 7
+svn:log
+V 282
+Fix whitespace before/after delimiters and colon.
+
+Flake rules
+
+E201 whitespace after '('
+E202 whitespace before '}'
+E203 whitespace before ':'
+E211 whitespace before '('
+
+Exception: : as binary operator in extended slices
+(cf. https://www.python.org/dev/peps/pep-0008/#pet-peeves).
+END

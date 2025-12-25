@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-03T23:49:39.690279Z
+K 7
+svn:log
+V 90
+Remove "coding:" slug
+
+Only required with Python 2.x. Encoding in Py3k is utf8 by default.
+END

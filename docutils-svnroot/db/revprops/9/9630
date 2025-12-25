@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2024-04-10T20:05:49.405852Z
+K 7
+svn:log
+V 55
+remove unrequired "python -m " for calling pip in venv
+
+END

@@ -1,0 +1,141 @@
+K 17
+compact_lists.txt
+V 24
+file c-4219.0.r4219/1978
+K 12
+cyrillic.txt
+V 25
+file 5-6474.0.r7589/10911
+K 13
+dangerous.txt
+V 28
+file i-3071.1-3285.r3285/123
+K 4
+data
+V 24
+dir f-2357.0.r8524/15333
+K 14
+field_list.txt
+V 24
+file f-3164.0.r3164/3336
+K 13
+footnotes.txt
+V 24
+file 7-7916.0.r7916/9312
+K 25
+html5-text-level-tags.txt
+V 24
+file 5-8399.0.r8402/4717
+K 15
+latex_babel.txt
+V 25
+file m-7589.0.r7589/10624
+K 21
+latex_cornercases.txt
+V 29
+file 6-3271.0-7950.r8577/9581
+K 17
+latex_docinfo.txt
+V 24
+file b-2937.0.r2938/2379
+K 23
+latex_literal_block.txt
+V 24
+file b-8180.0.r8391/9617
+K 24
+link_in_substitution.txt
+V 23
+file 5-6158.0.r6158/389
+K 13
+odt_basic.txt
+V 25
+file o-5834.0.r5834/51721
+K 18
+odt_classifier.txt
+V 25
+file 7-8316.0.r8316/11499
+K 16
+odt_contents.txt
+V 25
+file 7-8315.0.r8315/11478
+K 23
+odt_custom_headfoot.txt
+V 25
+file d-6214.0.r6214/22895
+K 17
+odt_footnotes.txt
+V 24
+file 7-8317.0.r8317/9648
+K 21
+odt_header_footer.txt
+V 25
+file 7-8319.0.r8319/10209
+K 21
+odt_literal_block.txt
+V 25
+file 7-8314.0.r8314/11023
+K 20
+odt_nested_class.txt
+V 25
+file 8-7899.0.r7899/23848
+K 16
+odt_no_class.txt
+V 25
+file a-7899.0.r7899/24084
+K 11
+odt_raw.txt
+V 24
+file 7-8322.0.r8322/9393
+K 15
+odt_tables1.txt
+V 25
+file r-5834.0.r5834/51338
+K 22
+odt_unnested_class.txt
+V 25
+file b-7899.0.r7899/24314
+K 12
+pep_html.txt
+V 24
+file 8-3040.0.r3243/3287
+K 10
+simple.txt
+V 23
+file 5-2991.0.r2991/903
+K 31
+standalone_rst_docutils_xml.txt
+V 30
+file h-4236.0-7966.r7966/21293
+K 28
+standalone_rst_html4css1.txt
+V 24
+file s-2357.0.r6475/7092
+K 24
+standalone_rst_html5.txt
+V 29
+file 7-7816.2-7970.r8515/5460
+K 24
+standalone_rst_latex.txt
+V 25
+file u-2357.0.r8187/15146
+K 26
+standalone_rst_manpage.txt
+V 25
+file f-6085.0.r6471/11226
+K 28
+standalone_rst_pseudoxml.txt
+V 24
+file h-4236.0.r4236/4118
+K 26
+standalone_rst_s5_html.txt
+V 29
+file 5-4128.a-4156.r4160/1215
+K 24
+standalone_rst_xetex.txt
+V 25
+file h-6428.0.r8187/15470
+END
+K 16
+embed_images.txt
+V 19
+file _8.0.t8580-6n0

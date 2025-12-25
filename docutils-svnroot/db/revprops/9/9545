@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-02-17T10:37:56.651459Z
+K 7
+svn:log
+V 102
+Increase padding after term in field lists and options lists.
+
+Use standard inter-word space (0.25em).
+END

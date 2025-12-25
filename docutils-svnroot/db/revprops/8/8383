@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-09-01T19:39:36.417551Z
+K 7
+svn:log
+V 108
+Update setup.py
+
+Python 3.4 no longer supported,
+more languages supported (and Lithuanian accepted by PyPi).
+END

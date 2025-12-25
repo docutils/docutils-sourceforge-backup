@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-07-05T19:25:34.575323Z
+K 7
+svn:log
+V 380
+HTML5: add self-link after section headings (feature request #28).
+
+The "section_self_link" setting triggers this behaviour. As it is
+currently only implemented for HTML5, the setting is defined for this
+writer only.
+
+The self-link "invisible" by default. The provided stylesheet
+"responsive.css" gives an example how it can be made visible when
+hovering over the section heading.
+END

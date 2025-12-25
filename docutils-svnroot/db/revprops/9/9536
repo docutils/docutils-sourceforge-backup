@@ -1,0 +1,26 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-02-01T13:04:22.701430Z
+K 7
+svn:log
+V 416
+MathML element classes cleanup.
+
+Fix "math-alphabets" for S and P.
+Add `\nabla`, `\partial`, and dotless i and j when defined in Unicode.
+Update documentation and tests.
+
+Fix filtering of error messages from external converter "latexml".
+
+Avoid double delimiter when transferring style rules
+with `transfer_attributes()`.
+
+Raise MathError when `__setitem__()` would make an element overfull.
+
+Log changes in HISTORY.
+END

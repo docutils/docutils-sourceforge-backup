@@ -1,0 +1,88 @@
+PLAIN
+K 4
+tibs
+V 20
+dir 2-62.0.r62/77867
+END
+ENDREP
+id: 1-17.0-63.r63/52
+type: dir
+pred: 1-17.0.r62/78132
+count: 3
+text: 63 0 39 39 17d9e201b883a024c3c9c6d3fe45c275
+cpath: /branches/tibs/sandbox
+copyroot: 63 /branches/tibs
+
+PLAIN
+K 7
+sandbox
+V 20
+dir 1-17.0-63.r63/52
+END
+ENDREP
+id: 3-1.0-63.r63/279
+type: dir
+pred: 3-1.0.r62/78409
+count: 58
+text: 63 224 42 42 2761b97f350f30dfb645db8fb6ff3454
+cpath: /branches/tibs
+copyfrom: 62 /trunk
+
+PLAIN
+K 7
+goodger
+V 22
+dir 3-1.0-19.r21/10951
+K 4
+tibs
+V 20
+dir 3-1.0-63.r63/279
+K 6
+vendor
+V 16
+dir 3-1.0-3.r3/0
+END
+ENDREP
+id: 0-1.0.r63/562
+type: dir
+pred: 0-1.0.r21/11221
+count: 5
+text: 63 437 112 112 e810e1d68ba541930d10df38ebfe89eb
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 17
+dir 0-1.0.r63/562
+K 4
+tags
+V 16
+dir 2-1.0.r1/130
+K 5
+trunk
+V 19
+dir 3-1.0.r62/78409
+END
+ENDREP
+id: 0.0.r63/826
+type: dir
+pred: 0.0.r62/78676
+count: 63
+text: 63 707 106 106 a5502ebe009941814dad0b993756029c
+cpath: /
+copyroot: 0 /
+
+6-17.0.r17/6133 delete-dir false false /branches/tibs/sandbox/davidg
+
+1-2.0.r60/639 delete-dir false false /branches/tibs/web
+
+3-1._0.t62-1q add-dir false false /branches/tibs
+62 /trunk
+1-7.0.r61/3656 delete-dir false false /branches/tibs/docutils
+
+3-17.0.r32/580 delete-file false false /branches/tibs/sandbox/README.txt
+
+
+826 960

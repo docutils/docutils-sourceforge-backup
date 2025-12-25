@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 12
+paultremblay
+K 8
+svn:date
+V 27
+2011-11-04T01:09:44.529467Z
+K 7
+svn:log
+V 109
+More support in math module. The utils changes include a simple way to
+copy a tree, if needed in XML writer.
+
+END

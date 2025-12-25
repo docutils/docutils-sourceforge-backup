@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-11-21T16:56:06.489169Z
+K 7
+svn:log
+V 136
+Fixup for [rr8892]
+
+Skip equality test for utils.decode_path() if the `bytes` test sample
+cannot be encoded in the file system encoding.
+END

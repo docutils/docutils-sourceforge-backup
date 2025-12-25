@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2013-03-22T13:25:46.759985Z
+K 7
+svn:log
+V 60
+Fix [ 157 ] Line block parsing does not like system message.
+END

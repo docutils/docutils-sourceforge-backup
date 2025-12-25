@@ -1,0 +1,432 @@
+PLAIN
+K 7
+pep.css
+V 21
+file 4-286.0.r932/174
+K 9
+style.tex
+V 24
+file 4-1656.0.r1713/1311
+END
+ENDREP
+id: 74-18.0-1813.r1813/100
+type: dir
+pred: 74-18.0.r1713/1757
+count: 47
+text: 1813 0 87 87 61efe66b9f9ff99a01e51ec52c680b57
+cpath: /branches/nesting/docutils/tools/stylesheets
+copyroot: 1813 /branches/nesting
+
+PLAIN
+K 12
+buildhtml.py
+V 23
+file 3-430.0.r1668/3591
+K 15
+docutils-xml.py
+V 23
+file 3-247.0.r825/33075
+K 13
+docutils.conf
+V 22
+file 3-407.0.r1660/284
+K 7
+editors
+V 23
+dir 3-1157.0.r1325/1357
+K 7
+html.py
+V 23
+file 6x-18.0.r825/33515
+K 17
+pep-html-template
+V 21
+file 3-312.0.r943/265
+K 6
+pep.py
+V 23
+file 3-288.0.r825/33947
+K 11
+pep2html.py
+V 22
+file 3-319.0.r1690/736
+K 10
+publish.py
+V 23
+file 70-18.0.r825/34379
+K 12
+quicktest.py
+V 22
+file 72-18.0.r1088/575
+K 11
+rst2html.py
+V 23
+file 5-1756.0.r1756/860
+K 12
+rst2latex.py
+V 23
+file b-1202.0.r1543/389
+K 11
+stylesheets
+V 26
+dir 74-18.0-1813.r1813/100
+K 18
+unicode2rstsubs.py
+V 24
+file 3-1497.0.r1497/2357
+END
+ENDREP
+id: 6w-18.0-1813.r1813/975
+type: dir
+pred: 6w-18.0.r1756/1784
+count: 144
+text: 1813 310 652 652 7523424ec198f0c1718202c7be0374d7
+cpath: /branches/nesting/docutils/tools
+copyroot: 1813 /branches/nesting
+
+id: 1a-18.1-1813.r1813/1178
+type: file
+pred: 1a-18.0.r18/303406
+count: 1
+text: 18 95958 3052 12744 5c8350b2534166f1402aca92ac0788c2 47b19d76866dda38836815c94cc856d92807011e 17-h/_1b
+props: 18 303283 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /branches/nesting/docutils/docs/ref/soextblx.dtd
+copyfrom: 1811 /branches/goodger/docutils/docs/ref/soextblx.dtd
+
+PLAIN
+K 11
+doctree.txt
+V 22
+file x-18.0.r1771/9043
+K 12
+docutils.dtd
+V 23
+file 10-18.0.r1792/2620
+K 3
+rst
+V 22
+dir 12-18.0.r1791/4922
+K 12
+soextblx.dtd
+V 28
+file 1a-18.1-1813.r1813/1178
+END
+ENDREP
+id: w-18.0-1813.r1813/1734
+type: dir
+pred: w-18.0.r1811/6082
+count: 151
+text: 1813 1537 184 184 31eda45958ba2820029fc158e21d5556
+cpath: /branches/nesting/docutils/docs/ref
+copyroot: 1813 /branches/nesting
+
+PLAIN
+K 12
+pysource.dtd
+V 21
+file c-18.0.r983/8202
+K 12
+pysource.txt
+V 23
+file f-18.0.r1409/24580
+K 3
+rst
+V 21
+dir h-18.0.r1610/3052
+K 13
+semantics.txt
+V 23
+file 5-12.0.r1409/24162
+END
+ENDREP
+id: 3-12.0-1813.r1813/2132
+type: dir
+pred: 3-12.0.r1809/1008
+count: 210
+text: 1813 1940 179 179 d76392cbfc6450115aea28d6bdbc0128
+cpath: /branches/nesting/docutils/docs/dev
+copyroot: 1813 /branches/nesting
+
+PLAIN
+K 9
+ball1.gif
+V 23
+file 1h-18.0.r18/308623
+K 13
+biohazard.png
+V 23
+file 1o-18.0.r18/309766
+K 9
+title.png
+V 23
+file 1q-18.0.r18/309395
+END
+ENDREP
+id: 1f-18.2-1813.r1813/2489
+type: dir
+pred: 1f-18.0.r18/310693
+count: 1
+text: 1813 2338 138 138 ca18ff6471885eb6faa708fd9ff41db8
+cpath: /branches/nesting/docutils/docs/user/rst/images
+copyroot: 1813 /branches/nesting/docutils/docs/user/rst
+
+id: 1u-18.4-1813.r1813/2730
+type: file
+pred: 1u-18.0.r1410/722
+count: 11
+text: 1410 0 574 10559 f072477a202579689c4629e11ea6262d 79a6fdc84d31d505b0e20b969f8c939e9f5ac8d6 1409-135/_6
+props: 1410 598 111 0 b491beec13ba952c0167e367d3cb48d2
+cpath: /branches/nesting/docutils/docs/user/rst/quickstart.txt
+copyfrom: 1811 /trunk/docutils/docs/user/rst/quickstart.txt
+
+id: 1s-18.3-1813.r1813/3091
+type: file
+pred: 1s-18.0.r1773/14919
+count: 18
+text: 1773 4420 413 48298 c3ee7d9e06f44a4c1c2d4984fad27c7e 11bfebfb1c0d7db4425bf046357e1eaa6fe326e8 1772-1d8/_c
+props: 1773 14795 111 0 4b4193808cb95e702a5e5065e4345324
+cpath: /branches/nesting/docutils/docs/user/rst/quickref.html
+copyfrom: 1811 /trunk/docutils/docs/user/rst/quickref.html
+
+PLAIN
+K 6
+images
+V 27
+dir 1f-18.2-1813.r1813/2489
+K 13
+quickref.html
+V 28
+file 1s-18.3-1813.r1813/3091
+K 14
+quickstart.txt
+V 28
+file 1u-18.4-1813.r1813/2730
+END
+ENDREP
+id: 1d-18.2-1813.r1813/3625
+type: dir
+pred: 1d-18.0.r18/311800
+count: 1
+text: 1813 3457 155 155 d5a47671f7503a81bf0de0ec33c1c13d
+cpath: /branches/nesting/docutils/docs/user/rst
+copyfrom: 1811 /branches/goodger/docutils/docs/user/rst
+
+PLAIN
+K 10
+config.txt
+V 24
+file 4-1639.0.r1768/2128
+K 9
+latex.txt
+V 23
+file 4-1264.0.r1737/238
+K 3
+rst
+V 27
+dir 1d-18.2-1813.r1813/3625
+K 9
+tools.txt
+V 22
+file 4-365.0.r1640/874
+END
+ENDREP
+id: 1c-18.0-1813.r1813/4048
+type: dir
+pred: 1c-18.0.r1773/15738
+count: 102
+text: 1813 3859 176 176 3de6441357e8c0bfcf911f1aa97f6fee
+cpath: /branches/nesting/docutils/docs/user
+copyroot: 1813 /branches/nesting
+
+PLAIN
+K 3
+dev
+V 26
+dir 3-12.0-1813.r1813/2132
+K 5
+howto
+V 23
+dir 3-749.0.r1578/10312
+K 4
+peps
+V 21
+dir 5-7.0.r1470/10095
+K 3
+ref
+V 26
+dir w-18.0-1813.r1813/1734
+K 4
+user
+V 27
+dir 1c-18.0-1813.r1813/4048
+END
+ENDREP
+id: 3-7.0-1813.r1813/4472
+type: dir
+pred: 3-7.0.r1811/6453
+count: 462
+text: 1813 4258 201 201 fdb3f8a4a4281aa885cad98535d928a5
+cpath: /branches/nesting/docutils/docs
+copyroot: 1813 /branches/nesting
+
+PLAIN
+K 10
+.cvsignore
+V 21
+file 2-340.0.r340/154
+K 11
+COPYING.txt
+V 22
+file 2-18.0.r1470/5361
+K 11
+HISTORY.txt
+V 22
+file 5-18.0.r1811/2871
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r1505/219
+K 10
+README.txt
+V 21
+file 9-18.0.r1589/691
+K 4
+docs
+V 25
+dir 3-7.0-1813.r1813/4472
+K 8
+docutils
+V 22
+dir 1w-18.0.r1811/5194
+K 6
+extras
+V 23
+dir 2-1467.0.r1686/1264
+K 10
+install.py
+V 24
+file 44-18.0.r1409/28098
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 23
+file 46-18.0.r1756/2104
+K 4
+test
+V 23
+dir 48-18.0.r1801/27676
+K 5
+tools
+V 26
+dir 6w-18.0-1813.r1813/975
+END
+ENDREP
+id: 1-7.0-1813.r1813/5240
+type: dir
+pred: 1-7.0.r1811/7217
+count: 1317
+text: 1813 4672 555 555 93ff68074baa41596c879113bb701325
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /branches/nesting/docutils
+copyroot: 1813 /branches/nesting
+
+PLAIN
+K 8
+docutils
+V 25
+dir 1-7.0-1813.r1813/5240
+END
+ENDREP
+id: 3-1.0-1813.r1813/5550
+type: dir
+pred: 3-1.0.r1811/7559
+count: 1799
+text: 1813 5489 48 48 dbfbe1014efa51b16500e5861eb68b80
+cpath: /branches/nesting
+copyfrom: 1811 /trunk
+
+PLAIN
+K 2
+ax
+V 24
+dir 3-1.0-1551.r1551/296
+K 7
+goodger
+V 22
+dir 3-1.0-19.r21/10951
+K 7
+nesting
+V 25
+dir 3-1.0-1813.r1813/5550
+K 4
+tibs
+V 20
+dir 3-1.0-63.r63/279
+K 6
+vendor
+V 21
+dir 3-1.0-3.r1556/334
+END
+ENDREP
+id: 0-1.0.r1813/5934
+type: dir
+pred: 0-1.0.r1556/669
+count: 8
+text: 1813 5724 197 197 c4f6339e1c55e185103236437ecef5d1
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r1813/5934
+K 4
+tags
+V 20
+dir 2-1.0.r1558/2271
+K 5
+trunk
+V 20
+dir 3-1.0.r1812/2170
+END
+ENDREP
+id: 0.0.r1813/6212
+type: dir
+pred: 0.0.r1812/2448
+count: 1813
+text: 1813 6085 114 114 c83d9e8a0da6f4899622321fbd74d448
+cpath: /
+copyroot: 0 /
+
+1d-18._2.t1812-1ec replace-dir false false /branches/nesting/docutils/docs/user/rst
+1811 /branches/goodger/docutils/docs/user/rst
+4-855.0.r1811/5544 delete-file false false /branches/nesting/docutils/docs/ref/transforms.txt
+
+1k-18.0.r18/309021 delete-file false false /branches/nesting/docutils/docs/user/rst/images/biohazard.bmp
+
+2-788.0.r1788/753 delete-file false false /branches/nesting/docutils/FAQ.txt
+
+1a-18._1.t1812-1ec replace-file false false /branches/nesting/docutils/docs/ref/soextblx.dtd
+1811 /branches/goodger/docutils/docs/ref/soextblx.dtd
+1u-18._4.t1812-1ec replace-file false false /branches/nesting/docutils/docs/user/rst/quickstart.txt
+1811 /trunk/docutils/docs/user/rst/quickstart.txt
+75-18.0.r1665/445 delete-file false false /branches/nesting/docutils/tools/stylesheets/default.css
+
+1-2.0.r1800/754 delete-dir false false /branches/nesting/web
+
+1-17.0.r1797/7395 delete-dir false false /branches/nesting/sandbox
+
+n-18.0.r1809/490 delete-file false false /branches/nesting/docutils/docs/dev/todo.txt
+
+3-1._0.t1812-1ec add-dir false false /branches/nesting
+1811 /trunk
+1m-18.0.r18/310167 delete-file false false /branches/nesting/docutils/docs/user/rst/images/biohazard.gif
+
+1s-18._3.t1812-1ec replace-file false false /branches/nesting/docutils/docs/user/rst/quickref.html
+1811 /trunk/docutils/docs/user/rst/quickref.html
+
+6212 6355

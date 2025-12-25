@@ -1,0 +1,659 @@
+id: 4-7147.0-7153.r7153/0
+type: file
+pred: 4-7147.0-7133.r7147/311
+count: 1
+text: 7147 0 298 281 fbfdd40e84a69875f06043d6f9b08468 6b27b4e38819c8b00f5ec07ee3763a52dcabae21 7146-5ii/_6
+cpath: /trunk/sandbox/paultremblay/test_files/xsl/endnotes.xsl
+copyfrom: 7147 /trunk/sandbox/paultremblay/test_files/endnotes.xsl
+
+PLAIN
+K 12
+endnotes.xsl
+V 26
+file 4-7147.0-7153.r7153/0
+END
+ENDREP
+id: 4-7153.0-7133.r7153/381
+type: dir
+count: 0
+text: 7153 314 54 54 2e23be526c008f0cec835fcb31ee6012
+cpath: /trunk/sandbox/paultremblay/test_files/xsl
+copyroot: 7133 /trunk/sandbox/paultremblay/test_files
+
+PLAIN
+K 14
+admonition.rst
+V 25
+file 4-6711.0.r6711/19933
+K 26
+badaman_treasure_chest.png
+V 26
+file 4-6712.0.r6712/137172
+K 26
+badaman_treasure_chest.svg
+V 26
+file 7-6712.0.r6712/137813
+K 24
+bibliographic_fields.rst
+V 22
+file 4-6581.0.r6872/59
+K 28
+bibliographic_fields_toc.rst
+V 23
+file 6-6591.0.r6736/179
+K 9
+block.rst
+V 24
+file 4-6685.0.r6685/1612
+K 15
+bullet_list.rst
+V 23
+file 4-6550.0.r6896/116
+K 12
+citation.rst
+V 25
+file 4-6624.0.r6711/18090
+K 22
+compound_paragraph.rst
+V 24
+file 4-6719.0.r6719/4981
+K 10
+conf_files
+V 23
+dir 4-6848.0.r6991/2622
+K 13
+container.rst
+V 24
+file 7-6719.0.r6719/3095
+K 19
+definition_list.rst
+V 22
+file 4-6561.0.r6576/87
+K 18
+doctest_blocks.rst
+V 24
+file 7-6685.0.r6685/2365
+K 12
+endnotes.rst
+V 24
+file 4-6697.0.r6697/1614
+K 19
+enumerated_list.rst
+V 23
+file 4-6559.0.r6559/364
+K 12
+epigraph.rst
+V 24
+file 9-6719.0.r6719/5744
+K 15
+field_lists.rst
+V 23
+file 4-6575.0.r6644/119
+K 10
+figure.rst
+V 25
+file 8-6711.0.r6711/18796
+K 19
+first_paragraph.rst
+V 23
+file 4-6810.0.r6810/813
+K 13
+footnotes.rst
+V 24
+file 4-6693.0.r6697/1896
+K 14
+front_body.rst
+V 23
+file 4-6751.0.r6751/650
+K 17
+header_footer.rst
+V 26
+file 8-6521.0-6837.r6837/0
+K 18
+header_footer2.rst
+V 25
+file 4-6968.0.r6968/65116
+K 18
+header_footer3.rst
+V 25
+file 7-6968.0.r6968/65502
+K 18
+header_footer4.rst
+V 25
+file 9-6968.0.r6968/65892
+K 18
+header_footer5.rst
+V 25
+file b-6968.0.r6968/66282
+K 22
+header_footer_toc1.rst
+V 25
+file d-6968.0.r6968/66672
+K 22
+header_footer_toc2.rst
+V 25
+file f-6968.0.r6968/67063
+K 22
+header_footer_toc3.rst
+V 25
+file h-6968.0.r6968/67454
+K 22
+header_footer_toc4.rst
+V 25
+file j-6968.0.r6968/67845
+K 14
+highlights.rst
+V 24
+file b-6719.0.r6719/3845
+K 14
+hyperlinks.rst
+V 25
+file a-6711.0.r6711/19549
+K 9
+image.rst
+V 25
+file c-6711.0.r6711/19172
+K 10
+inline.rst
+V 25
+file 4-6545.0.r6711/18396
+K 14
+line_block.rst
+V 25
+file 4-6676.0.r6922/15378
+K 17
+literal_block.rst
+V 23
+file 4-6541.0.r6541/445
+K 14
+long_plain.rst
+V 25
+file 5-6521.0.r6521/31568
+K 14
+long_table.csv
+V 23
+file 6-6922.0.r6933/140
+K 14
+long_table.rst
+V 23
+file 8-6922.0.r6933/394
+K 12
+opt_list.rst
+V 23
+file 4-6594.0.r6594/598
+K 18
+parsed_literal.rst
+V 24
+file d-6719.0.r6719/4222
+K 8
+peak.png
+V 26
+file 9-6712.0.r6712/138449
+K 14
+pull_quote.rst
+V 24
+file f-6719.0.r6719/5365
+K 25
+quoted_literal_blocks.rst
+V 24
+file 7-6624.0.r6624/1006
+K 10
+rubric.rst
+V 24
+file h-6719.0.r6719/3472
+K 11
+section.rst
+V 23
+file 4-6571.0.r6571/224
+K 11
+sidebar.rst
+V 24
+file j-6719.0.r6719/4604
+K 10
+simple.rst
+V 24
+file 4-6855.0.r6855/3948
+K 11
+simple2.rst
+V 24
+file 7-6855.0.r6855/3571
+K 20
+table_borderless.rst
+V 24
+file 4-6940.0.r6940/1102
+K 13
+table_csv.rst
+V 23
+file 9-6685.0.r6692/118
+K 14
+table_grid.rst
+V 24
+file 9-6624.0.r6624/1392
+K 20
+table_grid_class.rst
+V 23
+file 4-6962.0.r6962/370
+K 15
+table_long1.rst
+V 24
+file 7-6940.0.r6940/1484
+K 15
+table_long2.rst
+V 24
+file 9-6940.0.r6940/1863
+K 16
+table_simple.rst
+V 25
+file b-6685.0.r6990/19470
+K 8
+tent.png
+V 26
+file b-6712.0.r6712/138112
+K 18
+title_subtitle.rst
+V 23
+file 7-6676.0.r6676/876
+K 7
+toc.rst
+V 22
+file 4-6533.0.r6570/85
+K 9
+topic.rst
+V 24
+file l-6719.0.r6719/2721
+K 14
+transition.rst
+V 24
+file 4-6548.0.r6548/1703
+K 9
+waves.png
+V 26
+file d-6712.0.r6712/137525
+K 3
+xsl
+V 27
+dir 4-7153.0-7133.r7153/381
+END
+ENDREP
+id: 3-6521.0-7133.r7153/3833
+type: dir
+pred: 3-6521.0-7133.r7147/3907
+count: 66
+text: 7153 587 3233 3233 64d5546d4a7ff0bb329b1cecd81d539d
+props: 7147 3837 57 0 77484a865296853456823a0d6129064c
+cpath: /trunk/sandbox/paultremblay/test_files
+copyroot: 7133 /trunk/sandbox/paultremblay/test_files
+
+PLAIN
+K 4
+docs
+V 23
+dir 3-7142.0.r7148/3624
+K 3
+old
+V 23
+dir 6-6515.0.r6515/9009
+K 16
+python_interface
+V 24
+dir 3-7131.0.r7133/10212
+K 7
+scripts
+V 22
+dir 6-7133.0.r7151/959
+K 7
+test.sh
+V 24
+file 3-7134.0.r7151/1139
+K 10
+test_files
+V 28
+dir 3-6521.0-7133.r7153/3833
+K 6
+xsl_fo
+V 23
+dir a-7133.0.r7150/2802
+END
+ENDREP
+id: 2-1323.0.r7153/4443
+type: dir
+pred: 2-1323.0.r7151/1691
+count: 535
+text: 7153 4127 303 303 42052fc8b7ebf44b8cde6505e6cadd7e
+props: 7144 0 119 0 2402273533ed7cd6b9be82d1f9b53f46
+cpath: /trunk/sandbox/paultremblay
+copyroot: 0 /
+
+PLAIN
+K 12
+OpenDocument
+V 28
+dir 3-4689.0-5034.r5881/9477
+K 10
+README.txt
+V 22
+file 3-17.0.r6138/1061
+K 8
+aafigure
+V 28
+dir 5-4251.0-4994.r5980/2565
+K 4
+aahz
+V 23
+dir 2-820.0.r3892/10934
+K 9
+agurtovoy
+V 23
+dir 2-2034.0.r6097/2235
+K 3
+amk
+V 23
+dir 2-1891.0.r1892/1276
+K 3
+axk
+V 25
+dir 2-1550.0-3242.r3242/0
+K 4
+bbum
+V 23
+dir 2-1039.0.r1742/2047
+K 5
+blais
+V 23
+dir 2-1316.0.r5672/6545
+K 4
+cben
+V 24
+dir 2-1693.0.r3533/13838
+K 10
+chm-writer
+V 25
+dir 3-4294.0-6177.r6177/0
+K 8
+cliechti
+V 22
+dir 2-3204.0.r5987/631
+K 20
+code-block-directive
+V 24
+dir 4-5229.0.r7105/38630
+K 9
+codeintro
+V 23
+dir 2-4954.0.r4977/1117
+K 6
+davidg
+V 22
+dir 6-17.0.r6495/10540
+K 5
+delza
+V 23
+dir 2-1723.0.r1723/3836
+K 8
+dkuhlman
+V 23
+dir 2-1555.0.r5034/1704
+K 12
+docpy-writer
+V 28
+dir 2-4521.0-4565.r4626/8182
+K 7
+dpriest
+V 21
+dir 2-1730.0.r4985/58
+K 12
+dreamcatcher
+V 22
+dir 2-1300.0.r1357/657
+K 5
+dugui
+V 23
+dir 2-4358.0.r4360/1485
+K 7
+edloper
+V 21
+dir 2-1844.0.r4984/97
+K 7
+grubert
+V 22
+dir 2-112.0.r6409/1245
+K 8
+gschwant
+V 23
+dir 2-675.0.r4442/16701
+K 9
+holdenweb
+V 23
+dir 2-1845.0.r1845/4805
+K 11
+html4strict
+V 23
+dir 2-5534.0.r6557/2897
+K 10
+html4trans
+V 23
+dir 2-5235.0.r5533/1086
+K 4
+ianb
+V 23
+dir 2-881.0.r3892/12710
+K 14
+infrastructure
+V 27
+dir 3-189.0-3951.r7117/1249
+K 5
+jensj
+V 23
+dir 2-2942.0.r5544/4137
+K 4
+lalo
+V 23
+dir 2-1749.0.r1762/2166
+K 14
+latex-variants
+V 23
+dir 2-5238.0.r6179/4019
+K 15
+latex_directive
+V 22
+dir 2-4364.0.r4365/616
+K 14
+manpage-writer
+V 24
+dir 4-4773.0.r7048/14048
+K 3
+mly
+V 23
+dir 2-1431.0.r1432/2681
+K 7
+mmgilbe
+V 23
+dir 2-1841.0.r2945/2205
+K 3
+mwh
+V 21
+dir 2-857.0.r862/1023
+K 8
+newlatex
+V 24
+dir c-6496.0.r6496/10635
+K 7
+oliverr
+V 22
+dir 2-202.0.r5918/1407
+K 11
+package-doc
+V 22
+dir 2-5172.0.r5417/744
+K 12
+paultremblay
+V 23
+dir 2-1323.0.r7153/4443
+K 7
+pobrien
+V 23
+dir 2-1158.0.r1777/4967
+K 13
+presentations
+V 24
+dir 2-4940.0.r5174/64253
+K 11
+py-rest-doc
+V 22
+dir 2-5075.0.r5469/711
+K 7
+richard
+V 23
+dir 2-526.0.r5174/65313
+K 11
+roff-writer
+V 22
+dir 2-5617.0.r5617/789
+K 10
+rst2beamer
+V 22
+dir 2-5731.0.r6468/932
+K 15
+rst2chunkedhtml
+V 23
+dir 2-5513.0.r5519/1100
+K 7
+rst2gxl
+V 23
+dir 2-6330.0.r6462/1825
+K 7
+rst2odp
+V 23
+dir 2-5681.0.r6444/1847
+K 11
+rst2outline
+V 23
+dir 2-6396.0.r6463/1315
+K 7
+rst2pdf
+V 22
+dir 2-5560.0.r5638/438
+K 14
+rst2pdf-rubber
+V 27
+dir 2-5560.0-5857.r5857/754
+K 10
+rst2wordml
+V 24
+dir 2-5459.0.r5459/85880
+K 7
+rstdiff
+V 24
+dir 7-6304.0.r7004/11815
+K 6
+simonb
+V 21
+dir 2-252.0.r1227/852
+K 12
+slides_tests
+V 23
+dir 2-6418.0.r6422/2176
+K 11
+stylesheets
+V 23
+dir 2-3847.0.r6109/1394
+K 14
+texinfo-writer
+V 23
+dir 2-6421.0.r6426/1643
+K 4
+tibs
+V 20
+dir 2-62.0.r4082/879
+K 12
+uml-plantUml
+V 24
+dir 2-6326.0.r6326/67499
+K 12
+verse-writer
+V 23
+dir 2-4842.0.r4847/2800
+K 4
+wilk
+V 23
+dir 2-1258.0.r1650/3830
+K 10
+xhtml2rest
+V 29
+dir 3-3749.0-4373.r5174/66514
+K 7
+xml2rst
+V 23
+dir 6-5491.0.r6467/3217
+END
+ENDREP
+id: 1-17.0.r7153/7513
+type: dir
+pred: 1-17.0.r7151/4761
+count: 2192
+text: 7153 4674 2826 2826 9e55c97fcf337c6fb98fe843bbbb9890
+cpath: /trunk/sandbox
+copyroot: 0 /
+minfo-cnt: 1
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r7152/2875
+K 5
+prest
+V 24
+dir 1-4326.0.r6498/50375
+K 7
+sandbox
+V 21
+dir 1-17.0.r7153/7513
+K 3
+web
+V 19
+dir 1-2.0.r7112/713
+END
+ENDREP
+id: 3-1.0.r7153/7858
+type: dir
+pred: 3-1.0.r7152/3270
+count: 6694
+text: 7153 7690 155 155 cac161f18071793ccaa2d2f645b0badc
+cpath: /trunk
+copyroot: 0 /
+minfo-cnt: 2
+
+PLAIN
+K 8
+branches
+V 21
+dir 0-1.0.r6260/33253
+K 4
+tags
+V 19
+dir 2-1.0.r7108/874
+K 5
+trunk
+V 20
+dir 3-1.0.r7153/7858
+END
+ENDREP
+id: 0.0.r7153/8150
+type: dir
+pred: 0.0.r7152/3562
+count: 7153
+text: 7153 8023 114 114 c677b1a137583f1d17f23cbbb27f0d5b
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+minfo-cnt: 6
+
+4-7147.0-7133.r7147/311 delete-file false false /trunk/sandbox/paultremblay/test_files/endnotes.xsl
+
+_4.0-7133.t7152-5io add-dir false false /trunk/sandbox/paultremblay/test_files/xsl
+
+4-7147._0.t7152-5io add-file false false /trunk/sandbox/paultremblay/test_files/xsl/endnotes.xsl
+7147 /trunk/sandbox/paultremblay/test_files/endnotes.xsl
+
+8150 8357

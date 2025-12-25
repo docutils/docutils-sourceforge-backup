@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-08T07:10:43.049920Z
+K 7
+svn:log
+V 205
+Doctree validation: declare valid element children (part 1).
+
+New internal attributes
+`valid_children` (class or tuple of classes of valid child elements)
+and `valid_len`: (minimal length, maximal length).
+END

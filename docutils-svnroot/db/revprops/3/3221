@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-04-16T19:56:38.020877Z
+K 7
+svn:log
+V 28
+restored node.set_class call
+END

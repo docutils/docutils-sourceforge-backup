@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-09-14T14:11:22.513843Z
+K 7
+svn:log
+V 158
+html_strict writer update
+
+* section numbers in a <span>
+* protect "words" with non-word characters in inline literals from
+  breaking when lines are wrapped.
+END

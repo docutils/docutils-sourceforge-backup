@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-10-31T02:38:00.000000Z
+K 7
+svn:log
+V 124
+Now flagged as errors: transitions at the beginning or end of sections, empty sections (except title), and empty documents.
+
+END

@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-01-11T11:07:31.643576Z
+K 7
+svn:log
+V 181
+Support the "meta" directive in LaTeX.
+
+Set PDF document properties from "meta" directive content
+using "hyperref" options.
+
+Also set "pdflang" if the document language is not "en".
+END

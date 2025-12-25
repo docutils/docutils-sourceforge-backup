@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-06-21T22:10:15.873737Z
+K 7
+svn:log
+V 264
+Don't report an error for duplicate targets with identical refname.
+
+Widen the existing exception for external targets with duplicate names
+(no warning/error, if both refer to the same URI) to indirect targets
+(no warning/error, if both refer to the same refname).
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2023-08-04T11:04:21.321169Z
+K 7
+svn:log
+V 31
+Fix: assuming PWD:PWD is wrong
+
+END

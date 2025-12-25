@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 9
+agurtovoy
+K 8
+svn:date
+V 27
+2007-06-04T01:45:31.809043Z
+K 7
+svn:log
+V 55
+Merge in latest version, make it work with docutils 0.4
+END

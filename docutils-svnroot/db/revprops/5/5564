@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2008-05-22T06:42:52.962321Z
+K 7
+svn:log
+V 47
+Fix typos that led to errors in the html output
+END

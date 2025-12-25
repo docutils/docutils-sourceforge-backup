@@ -1,0 +1,51 @@
+PLAIN
+K 17
+address-rendering
+V 26
+dir 1-7.0-4314.r4314/16372
+K 12
+docutils-0.4
+V 25
+dir 1-7.0-4266.r4617/2459
+K 7
+nesting
+V 25
+dir 3-1.0-1813.r4356/3347
+END
+ENDREP
+id: 0-1.0.r4668/164
+type: dir
+pred: 0-1.0.r4665/10571
+count: 344
+text: 4668 0 151 151 6284e5e9cf8a44162d5e78ce8df75cdf
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r4668/164
+K 4
+tags
+V 19
+dir 2-1.0.r4584/629
+K 5
+trunk
+V 21
+dir 3-1.0.r4667/44435
+END
+ENDREP
+id: 0.0.r4668/441
+type: dir
+pred: 0.0.r4667/44717
+count: 4668
+text: 4668 315 113 113 9bb1a45030d7fcec668ffac4f2699be8
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+
+3-1.0-4375.r4665/10160 delete-dir false false /branches/directives
+
+
+441 634

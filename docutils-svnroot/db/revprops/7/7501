@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2012-08-22T20:17:54.337842Z
+K 7
+svn:log
+V 47
+Fix 3559988 get_writer_class for python 2.7 up
+
+END

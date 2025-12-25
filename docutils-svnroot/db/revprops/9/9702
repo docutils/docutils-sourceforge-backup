@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-14T12:28:18.827123Z
+K 7
+svn:log
+V 161
+Fix for `misc.Transitions`.
+
+Report an error if a <transition> element follows a <meta> or
+<decoration> element as this is invalid according to ``docutils.dtd``.
+END

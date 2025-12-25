@@ -1,0 +1,416 @@
+id: 2f-18.0-4266.r4485/0
+type: file
+pred: 2f-18.0.r3416/3787
+count: 19
+text: 4443 0 34 6283 f538885342c38c738a3bea6e694b6485 b5b5339354423feda7a76fde8c527f18b27537aa 4484-3gk/_6
+props: 3071 10447 111 0 433ca8234d38d2ba821c9aa09a03d731
+cpath: /branches/docutils-0.4/docutils/parsers/rst/__init__.py
+copyroot: 4266 /branches/docutils-0.4
+
+PLAIN
+K 11
+__init__.py
+V 25
+file 2f-18.0-4266.r4485/0
+K 10
+directives
+V 22
+dir 2i-18.0.r4234/2263
+K 7
+include
+V 23
+dir i-3472.0.r4184/2524
+K 9
+languages
+V 22
+dir 2w-18.0.r4237/2124
+K 8
+roles.py
+V 25
+file 5-1943.0.r3155/12951
+K 9
+states.py
+V 28
+file 32-18.0-4266.r4318/4252
+K 14
+tableparser.py
+V 24
+file 34-18.0.r4152/16269
+END
+ENDREP
+id: 2e-18.0-4266.r4485/671
+type: dir
+pred: 2e-18.0-4266.r4318/4928
+count: 373
+text: 4485 337 321 321 cabdda99bc1555a2070cdef88becaaad
+props: 342 2533 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /branches/docutils-0.4/docutils/parsers/rst
+copyroot: 4266 /branches/docutils-0.4
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 2b-18.0.r1645/6017
+K 7
+null.py
+V 26
+file 5-3594.0-3629.r3629/0
+K 3
+rst
+V 26
+dir 2e-18.0-4266.r4485/671
+END
+ENDREP
+id: 2a-18.0-4266.r4485/1096
+type: dir
+pred: 2a-18.0-4266.r4318/5351
+count: 377
+text: 4485 949 134 134 4a84f6406da8ec7773cffe3e54cac26f
+props: 342 3339 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /branches/docutils-0.4/docutils/parsers
+copyroot: 4266 /branches/docutils-0.4
+
+id: 4-281.0-4485.r4485/1371
+type: file
+pred: 4-281.7-4163.r4163/17797
+count: 35
+text: 4443 259 427 3909 92bb0f94e3407b455313de9b949cc505 0eb984e9c8dd52ab9bd72afbccfddb6744f409ad 4484-3gk/_b
+props: 3043 59 111 0 9b377c828b4ca1827963af8e19878787
+cpath: /branches/docutils-0.4/docutils/writers/pep_html/__init__.py
+copyroot: 4163 /trunk/docutils/docutils/writers/pep_html/__init__.py
+
+PLAIN
+K 11
+__init__.py
+V 28
+file 4-281.0-4485.r4485/1371
+K 7
+pep.css
+V 29
+file 4-286.8-4163.r4163/18543
+K 12
+template.txt
+V 29
+file 3-312.9-4163.r4163/18158
+END
+ENDREP
+id: v-4163.0-4266.r4485/1921
+type: dir
+pred: v-4163.0.r4163/19084
+count: 1
+text: 4485 1753 155 155 ce1a2808acc7afa11868abb2056705aa
+cpath: /branches/docutils-0.4/docutils/writers/pep_html
+copyroot: 4266 /branches/docutils-0.4
+
+PLAIN
+K 11
+__init__.py
+V 24
+file 3x-18.0.r4163/17493
+K 15
+docutils_xml.py
+V 23
+file 4-244.0.r3512/7689
+K 9
+html4css1
+V 22
+dir n-4163.0.r4224/879
+K 7
+latex2e
+V 28
+dir q-4163.0-4266.r4302/3667
+K 10
+newlatex2e
+V 23
+dir s-4163.0.r4242/3317
+K 7
+null.py
+V 24
+file 4-3246.0.r3892/2227
+K 8
+pep_html
+V 28
+dir v-4163.0-4266.r4485/1921
+K 12
+pseudoxml.py
+V 22
+file 4-84.0.r1645/8532
+K 7
+s5_html
+V 23
+dir y-4163.0.r4238/2091
+END
+ENDREP
+id: 3w-18.0-4266.r4485/2571
+type: dir
+pred: 3w-18.0-4266.r4302/4311
+count: 483
+text: 4485 2148 410 410 9e0e88bf7d7addffabac1722c5ebbb16
+props: 342 6175 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /branches/docutils-0.4/docutils/writers
+copyroot: 4266 /branches/docutils-0.4
+
+id: 4-78.0-4266.r4485/2847
+type: file
+pred: 4-78.0.r3909/5453
+count: 26
+text: 4443 60 172 11008 5a057727897759efe7f591c7ccba17a5 7b6d37912f517aa81806af03392e7023004389e3 4484-3gk/_8
+props: 2289 415 111 0 1912998302effd94f7d1c131050552ad
+cpath: /branches/docutils-0.4/docutils/transforms/peps.py
+copyroot: 4266 /branches/docutils-0.4
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 3h-18.0.r3892/6128
+K 13
+components.py
+V 22
+file 4-77.0.r3909/5150
+K 14
+frontmatter.py
+V 23
+file 3m-18.0.r4242/5294
+K 7
+misc.py
+V 24
+file 4-1004.0.r3909/4540
+K 8
+parts.py
+V 22
+file 4-76.0.r3909/3933
+K 7
+peps.py
+V 27
+file 4-78.0-4266.r4485/2847
+K 13
+references.py
+V 23
+file 3o-18.0.r4233/4782
+K 12
+universal.py
+V 24
+file 3q-18.0.r4183/12523
+K 13
+writer_aux.py
+V 24
+file 4-3872.0.r3909/4233
+END
+ENDREP
+id: 3g-18.0-4266.r4485/3613
+type: dir
+pred: 3g-18.0.r4242/6031
+count: 158
+text: 4485 3181 419 419 fe4c731f8d52c6a3697cd7a05b40a663
+props: 342 5224 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /branches/docutils-0.4/docutils/transforms
+copyroot: 4266 /branches/docutils-0.4
+
+PLAIN
+K 11
+__init__.py
+V 28
+file 1x-18.0-4266.r4269/6799
+K 7
+core.py
+V 22
+file 20-18.0.r4208/363
+K 13
+docutils.conf
+V 29
+file m-3472.0-3904.r3904/2799
+K 11
+examples.py
+V 23
+file 3-1928.0.r3598/207
+K 11
+frontend.py
+V 24
+file 3-150.0.r4183/12227
+K 5
+io.py
+V 22
+file 3-217.0.r3654/291
+K 9
+languages
+V 22
+dir 22-18.0.r4203/4865
+K 8
+nodes.py
+V 23
+file 28-18.0.r4242/1778
+K 7
+parsers
+V 27
+dir 2a-18.0-4266.r4485/1096
+K 7
+readers
+V 22
+dir 36-18.0.r4242/5059
+K 15
+statemachine.py
+V 24
+file 3e-18.0.r4152/17824
+K 10
+transforms
+V 27
+dir 3g-18.0-4266.r4485/3613
+K 13
+urischemes.py
+V 23
+file 3s-18.0.r4235/2122
+K 8
+utils.py
+V 24
+file 3u-18.0.r4152/17531
+K 7
+writers
+V 27
+dir 3w-18.0-4266.r4485/2571
+END
+ENDREP
+id: 1w-18.0-4266.r4485/4585
+type: dir
+pred: 1w-18.0-4266.r4318/6315
+count: 1388
+text: 4485 3887 685 685 468f82a417d121b84b9a8d7de7032a35
+props: 342 8363 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /branches/docutils-0.4/docutils
+copyroot: 4266 /branches/docutils-0.4
+
+PLAIN
+K 8
+BUGS.txt
+V 24
+file 2-2181.0.r4233/8277
+K 11
+COPYING.txt
+V 24
+file 2-18.0-4266.r4472/0
+K 7
+FAQ.txt
+V 25
+file 2-788.0-4266.r4482/0
+K 11
+HISTORY.txt
+V 24
+file 5-18.0-4266.r4318/0
+K 11
+MANIFEST.in
+V 23
+file 7-18.0.r4156/57222
+K 10
+README.txt
+V 21
+file 9-18.0.r4216/546
+K 17
+RELEASE-NOTES.txt
+V 28
+file 2-4204.0-4266.r4278/314
+K 10
+THANKS.txt
+V 22
+file 2-2182.0.r4240/66
+K 4
+docs
+V 25
+dir 3-7.0-4266.r4480/1508
+K 8
+docutils
+V 27
+dir 1w-18.0-4266.r4485/4585
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 27
+file 46-18.0-4266.r4462/455
+K 4
+test
+V 27
+dir 48-18.0-4266.r4484/5708
+K 5
+tools
+V 27
+dir 6w-18.0-4266.r4481/1678
+END
+ENDREP
+id: 1-7.0-4266.r4485/5583
+type: dir
+pred: 1-7.0-4266.r4484/6702
+count: 3212
+text: 4485 4854 716 716 a0c7646ef1d93d1efe107d7335c73a37
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /branches/docutils-0.4
+copyroot: 4266 /branches/docutils-0.4
+
+PLAIN
+K 17
+address-rendering
+V 26
+dir 1-7.0-4314.r4314/16372
+K 10
+directives
+V 25
+dir 3-1.0-4375.r4449/4669
+K 12
+docutils-0.4
+V 25
+dir 1-7.0-4266.r4485/5583
+K 7
+nesting
+V 25
+dir 3-1.0-1813.r4356/3347
+END
+ENDREP
+id: 0-1.0.r4485/6049
+type: dir
+pred: 0-1.0.r4484/7168
+count: 316
+text: 4485 5838 198 198 54844d43f9996c0b117c34bfa49131c4
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r4485/6049
+K 4
+tags
+V 20
+dir 2-1.0.r4331/4487
+K 5
+trunk
+V 20
+dir 3-1.0.r4473/3295
+END
+ENDREP
+id: 0.0.r4485/6330
+type: dir
+pred: 0.0.r4484/7449
+count: 4485
+text: 4485 6203 114 114 eea7ec6810b4e2b9f3d218ebd1daa6f7
+cpath: /
+copyroot: 0 /
+
+4-78.0-4266.t4484-3gk modify-file true false /branches/docutils-0.4/docutils/transforms/peps.py
+
+2f-18.0-4266.t4484-3gk modify-file true false /branches/docutils-0.4/docutils/parsers/rst/__init__.py
+
+4-281._0.t4484-3gk modify-file true false /branches/docutils-0.4/docutils/writers/pep_html/__init__.py
+
+
+6330 6473

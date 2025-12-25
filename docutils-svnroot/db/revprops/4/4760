@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2006-10-08T16:01:05.901433Z
+K 7
+svn:log
+V 92
+Fix: Do not escape underscores in citation reference labels if 
+use-latex-citations is set.
+
+END

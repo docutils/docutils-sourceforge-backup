@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2004-06-08T07:16:20.000000Z
+K 7
+svn:log
+V 80
+Add table with literal-block and text mixed.
+Add tests for use-LaTeX-citations.
+
+END

@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-06-04T10:09:57.238167Z
+K 7
+svn:log
+V 193
+latex2e writer bugfixes:
+Newlines around comments, targets and references prevent run-together
+paragraphs.
+Fixed missing and spurious internal links/targets.
+Verbose and linked system messages.
+END

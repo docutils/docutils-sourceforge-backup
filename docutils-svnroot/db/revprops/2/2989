@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-02-26T18:20:45.000000Z
+K 7
+svn:log
+V 36
+Fixed duplicate footnote label bug.
+
+END

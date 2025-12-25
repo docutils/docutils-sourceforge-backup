@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2005-09-15T17:06:26.393833Z
+K 7
+svn:log
+V 83
+Fixed minor bug with indented section titles being discovered when they should not.
+END

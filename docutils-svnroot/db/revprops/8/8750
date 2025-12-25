@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-05-20T12:23:06.512504Z
+K 7
+svn:log
+V 385
+MathML: simplify node class interface, fix accent handling.
+
+Instantiating functions for "math" class and descendents handle all
+positional arguments as children/data and named arguments as attributes.
+
+Set "accent" argument for <mover> according to LaTeX macro.
+Influences dropping of i-dot and size of top character, defaults to
+"automatic" (MathML 3) or "false" (MathML Core Draft).
+END

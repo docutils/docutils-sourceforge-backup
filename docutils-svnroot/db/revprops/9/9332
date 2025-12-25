@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2023-03-25T17:59:51.877539Z
+K 7
+svn:log
+V 53
+Add a ``.gitattributes`` file for syntax highlighting
+END

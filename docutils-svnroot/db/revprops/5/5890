@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+gbrandl
+K 8
+svn:date
+V 27
+2009-04-01T20:09:08.721905Z
+K 7
+svn:log
+V 107
+Add an optimization for Node.traverse() that speeds up typical builds of the docutils documentation by 20%.
+END

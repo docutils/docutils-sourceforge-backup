@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2010-10-01T21:38:39.135895Z
+K 7
+svn:log
+V 180
+* Fixed an issue in recognizing a Roman numeral list beginning VI.
+* Added :parent: option to class:: directive
+* Propagate classes on list items in list tables to the table cells
+
+END

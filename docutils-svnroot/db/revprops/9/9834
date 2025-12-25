@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2024-08-01T21:20:20.199698Z
+K 7
+svn:log
+V 42
+Enable the flake8-debugger linter in Ruff
+
+END

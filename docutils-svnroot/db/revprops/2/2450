@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 4
+cben
+K 8
+svn:date
+V 27
+2004-07-25T02:14:23.000000Z
+K 7
+svn:log
+V 264
+Replace version number sniffing with specific features sniffing.
+
+Also fix 2 bugs in `report_UnicodeError`:
+
+* Print the current encoding (was a ``%s``).
+
+* Don't crash before Python 2.3 where `UnicodeError` objects had no
+  ``object`` or ``encoding`` attributes.
+
+END

@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2013-11-23T11:05:59.951699Z
+K 7
+svn:log
+V 160
+Changed interface of `XsltParser` to accept a file-like object. Added
+test.
+
+Refactoring: Factored out `Uri2Prefixes` uncoupling `XmlVisitor` from
+`XmlParser`.
+
+END

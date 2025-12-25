@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-01-15T16:10:55.961602Z
+K 7
+svn:log
+V 190
+Add MathML support for "aligned" environment, fix "align*" in Chrome.
+
+Use CSS rules instead of the deprecated "columnalign" attribute
+to style <mtable> as "align*" or "aligned" environment.
+END

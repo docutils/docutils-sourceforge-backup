@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-06-27T20:04:54.747176Z
+K 7
+svn:log
+V 224
+Mark/Fix mistranslated localizations of the "admonition" directive name.
+
+In Docutils, "admonition" is used as a generic term for
+"advice"/"advisory"/"remark", not a reprimand.
+
+Misleading translations will be removed later.
+END

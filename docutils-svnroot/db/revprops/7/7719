@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2013-09-05T09:37:41.311401Z
+K 7
+svn:log
+V 81
+LaTeX writer: fix basic syntax highlight definitions for code role and directive.
+END

@@ -1,0 +1,37 @@
+K 8
+Dir.smak
+V 23
+file 6-5772.0.r5810/324
+K 11
+badfile.txt
+V 23
+file 9-5772.0.r5772/917
+K 11
+no_args.txt
+V 24
+file b-5772.0.r5772/1135
+K 10
+opt_e.html
+V 24
+file d-5772.0.r5772/1572
+K 9
+opt_e.rst
+V 24
+file f-5772.0.r5772/1792
+K 13
+opt_e.skip.pl
+V 24
+file c-5789.0.r5789/2489
+END
+D 8
+Dir.smak
+D 11
+badfile.txt
+D 11
+no_args.txt
+D 10
+opt_e.html
+D 9
+opt_e.rst
+D 13
+opt_e.skip.pl

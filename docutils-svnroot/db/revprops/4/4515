@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2006-04-24T09:15:38.669154Z
+K 7
+svn:log
+V 87
+Prevent latex writer from crashing on files with >256 lists (patch 1475247 by edloper)
+
+END

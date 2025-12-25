@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-12-28T23:48:48.824284Z
+K 7
+svn:log
+V 153
+Fixed bug with circular substitution definitions that put Docutils into an infinite loop.  Circular substitution definitions are now detected & reported.
+END

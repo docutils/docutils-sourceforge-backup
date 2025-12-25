@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-26T09:32:41.846842Z
+K 7
+svn:log
+V 177
+Fix [bug:#443].
+
+Add "html writers" to
+`docutils.writers._html_base.Writer.config_section_dependencies`.
+Now, it works "out of the box" for writers inheriting from `_html_base`.
+END

@@ -1,0 +1,1056 @@
+PLAIN
+K 11
+__init__.py
+V 23
+file 7-986.0.r3509/2495
+K 8
+test_pep
+V 22
+dir 5-89.0.r4564/60623
+END
+ENDREP
+id: 3-89.0.r6495/104
+type: dir
+pred: 3-89.0.r6320/1248
+count: 39
+text: 6495 0 91 91 7f89be29ba13bb3bec3a80aedd4bfa7b
+props: 988 528 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/test/test_readers
+copyroot: 0 /
+
+PLAIN
+K 22
+DocutilsTestSupport.py
+V 23
+file 49-18.0.r6380/1147
+K 11
+alltests.py
+V 22
+file 4e-18.0.r6334/200
+K 11
+coverage.sh
+V 28
+file 6-3449.0-3489.r5539/255
+K 4
+data
+V 24
+dir 3-1662.0.r5906/24390
+K 13
+docutils.conf
+V 24
+file 6-1661.0.r2385/2146
+K 10
+functional
+V 23
+dir 3-2357.0.r6492/8232
+K 19
+package_unittest.py
+V 21
+file 3-44.0.r6116/705
+K 20
+test_command_line.py
+V 24
+file 6-6487.0.r6487/1542
+K 20
+test_dependencies.py
+V 23
+file 3-2679.0.r5720/305
+K 18
+test_functional.py
+V 24
+file 18-2357.0.r6430/452
+K 10
+test_io.py
+V 25
+file 5-3138.0.r5889/29532
+K 16
+test_language.py
+V 23
+file 3-940.0.r6433/5770
+K 13
+test_nodes.py
+V 23
+file 4i-18.0.r6351/5207
+K 12
+test_parsers
+V 22
+dir 4k-18.0.r6476/4943
+K 14
+test_pickle.py
+V 25
+file 9-4487.0.r4564/69749
+K 17
+test_publisher.py
+V 30
+file 6-3525.0-3602.r5889/28583
+K 12
+test_readers
+V 20
+dir 3-89.0.r6495/104
+K 16
+test_settings.py
+V 24
+file g-1662.0.r6159/2072
+K 20
+test_statemachine.py
+V 24
+file 6a-18.0.r4564/62145
+K 15
+test_transforms
+V 22
+dir 6c-18.0.r6351/4967
+K 18
+test_traversals.py
+V 24
+file 5-4641.0.r4641/1557
+K 13
+test_utils.py
+V 23
+file 6u-18.0.r6476/2376
+K 16
+test_viewlist.py
+V 21
+file 3-916.0.r6340/57
+K 12
+test_writers
+V 23
+dir 5-1211.0.r6472/4765
+END
+ENDREP
+id: 48-18.0.r6495/1551
+type: dir
+pred: 48-18.0.r6492/9649
+count: 867
+text: 6495 330 1208 1208 05ebaebc911e03f54d0d7e0613075649
+props: 343 993 44 0 e8789a4081469b0bbc8d88dcdbd925ef
+cpath: /trunk/docutils/test
+copyroot: 0 /
+minfo-cnt: 1
+
+PLAIN
+K 11
+__init__.py
+V 24
+file 37-18.0.r5618/25018
+K 10
+doctree.py
+V 31
+file a-3594.0-3631.r4564/124620
+K 6
+pep.py
+V 24
+file 4-80.0.r4564/124320
+K 13
+standalone.py
+V 23
+file 3a-18.0.r4802/8400
+END
+ENDREP
+id: 36-18.0.r6495/1993
+type: dir
+pred: 36-18.0.r5738/18803
+count: 81
+text: 6495 1787 193 193 466e36dd6bd8346a907bcb16a60987de
+props: 342 4190 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils/readers
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 1x-18.0.r6364/7612
+K 10
+_compat.py
+V 22
+file 3-5889.0.r5908/47
+K 26
+_string_template_compat.py
+V 24
+file 8-6105.0.r6105/9137
+K 7
+core.py
+V 23
+file 20-18.0.r6487/3276
+K 13
+docutils.conf
+V 29
+file m-3472.0-3904.r3904/2799
+K 11
+examples.py
+V 23
+file 3-1928.0.r4800/235
+K 11
+frontend.py
+V 23
+file 3-150.0.r6423/8207
+K 5
+io.py
+V 23
+file 3-217.0.r6269/2774
+K 9
+languages
+V 22
+dir 22-18.0.r6459/6611
+K 4
+math
+V 24
+dir 6-6490.0.r6492/10419
+K 8
+nodes.py
+V 24
+file 28-18.0.r6451/34011
+K 7
+parsers
+V 23
+dir 2a-18.0.r6460/21118
+K 7
+readers
+V 22
+dir 36-18.0.r6495/1993
+K 15
+statemachine.py
+V 22
+file 3e-18.0.r6388/607
+K 10
+transforms
+V 23
+dir 3g-18.0.r6433/11037
+K 13
+urischemes.py
+V 25
+file 3s-18.0.r4564/137250
+K 8
+utils.py
+V 23
+file 3u-18.0.r6476/6584
+K 7
+writers
+V 23
+dir 3w-18.0.r6492/11998
+END
+ENDREP
+id: 1w-18.0.r6495/3055
+type: dir
+pred: 1w-18.0.r6492/13064
+count: 1754
+text: 6495 2228 814 814 e58fb51ad20eccf381d08cae5d0664e6
+props: 342 8363 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+BUGS.txt
+V 25
+file 2-2181.0.r6443/28859
+K 11
+COPYING.txt
+V 22
+file 2-18.0.r6159/4134
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r5495/336
+K 11
+HISTORY.txt
+V 22
+file 5-18.0.r6487/1165
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r6258/102
+K 10
+README.txt
+V 22
+file 9-18.0.r6449/1052
+K 17
+RELEASE-NOTES.txt
+V 25
+file 2-4204.0.r6471/19992
+K 10
+THANKS.txt
+V 24
+file 2-2182.0.r5637/7316
+K 4
+docs
+V 21
+dir 3-7.0.r6490/59713
+K 8
+docutils
+V 22
+dir 1w-18.0.r6495/3055
+K 6
+extras
+V 23
+dir 2-1467.0.r6154/6279
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r6159/8465
+K 9
+setup.cfg
+V 23
+file 4-6255.0.r6255/352
+K 8
+setup.py
+V 21
+file 46-18.0.r6494/55
+K 4
+test
+V 22
+dir 48-18.0.r6495/1551
+K 5
+tools
+V 22
+dir 6w-18.0.r6473/5486
+END
+ENDREP
+id: 1-7.0.r6495/4024
+type: dir
+pred: 1-7.0.r6494/1074
+count: 3983
+text: 6495 3284 727 727 d4b62706c996a4b45db0a8295154dc47
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+minfo-cnt: 1
+
+PLAIN
+K 13
+svn:eol-style
+V 6
+native
+K 14
+svn:executable
+V 1
+*
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 13-6495.0.r6495/4371
+type: file
+count: 0
+text: 4564 49790 97 19824 5a4c8fe9d506fcaf55a7e161061329ed 3107a8a9278991ec24e89b24febeeadc89716141 6494-50e/_14
+props: 6495 4251 107 0 3c711300be3ea7503c3f4d9c1da3fa17
+cpath: /trunk/sandbox/davidg/test/test_readers/test_python/test_parser.py
+copyroot: 0 /
+
+PLAIN
+K 13
+svn:eol-style
+V 6
+native
+K 14
+svn:executable
+V 1
+*
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 15-6495.0.r6495/4794
+type: file
+count: 0
+text: 4564 49915 94 782 c505fc00eda6b98972b3cbc8bd0bde9b f3884825916e005a4af69e4c77a04ecf0888c4db 6494-50e/_16
+props: 6495 4674 107 0 3c711300be3ea7503c3f4d9c1da3fa17
+cpath: /trunk/sandbox/davidg/test/test_readers/test_python/test_token_parser.py
+copyroot: 0 /
+
+PLAIN
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: q-6495.0.r6495/5195
+type: file
+count: 0
+text: 3509 552 43 306 65d7023555f80270eb7932a6e310d038 5a0ec98e07c4befcf9bc24c430806004dab2eb89 6494-50e/_s
+props: 6495 5101 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/davidg/test/test_readers/test_python/__init__.py
+copyroot: 0 /
+
+PLAIN
+K 14
+svn:executable
+V 1
+*
+END
+ENDREP
+id: v-6495.0.r6495/5531
+type: file
+count: 0
+text: 1031 0 475 940 5d9a945b126a4b5fd712d42b2a0e294c d6aad83a67513481221194b458080ff9564bc3f9 6494-50e/_w
+props: 6495 5488 30 0 4160c74de5f4e580dc15660c798ff9fc
+cpath: /trunk/sandbox/davidg/test/test_readers/test_python/showdoc
+copyroot: 0 /
+
+PLAIN
+K 14
+svn:executable
+V 1
+*
+END
+ENDREP
+id: t-6495.0.r6495/5862
+type: file
+count: 0
+text: 1001 0 362 1677 76fd9836bc312728abbd1eabac254c92 bdac56bd4fe47be768e4a214934257d986852655 6494-50e/_u
+props: 6495 5819 30 0 4160c74de5f4e580dc15660c798ff9fc
+cpath: /trunk/sandbox/davidg/test/test_readers/test_python/showast
+copyroot: 0 /
+
+PLAIN
+K 14
+svn:executable
+V 1
+*
+END
+ENDREP
+id: x-6495.0.r6495/6194
+type: file
+count: 0
+text: 5738 8017 426 1109 377b9a8dc4a97eb00e7c5bc127ff346f bf3469e8633001b19757f0a1bbf2f35988736287 6494-50e/_y
+props: 6495 6151 30 0 4160c74de5f4e580dc15660c798ff9fc
+cpath: /trunk/sandbox/davidg/test/test_readers/test_python/showparse
+copyroot: 0 /
+
+PLAIN
+K 14
+svn:executable
+V 1
+*
+END
+ENDREP
+id: z-6495.0.r6495/6531
+type: file
+count: 0
+text: 1016 0 370 982 4b88af24d38430447a349a17f652ad2a 7317f94045ebd17289b88e40760ea52dc9540a03 6494-50e/_10
+props: 6495 6488 30 0 4160c74de5f4e580dc15660c798ff9fc
+cpath: /trunk/sandbox/davidg/test/test_readers/test_python/showtok
+copyroot: 0 /
+
+PLAIN
+K 13
+svn:eol-style
+V 6
+native
+K 14
+svn:executable
+V 1
+*
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 11-6495.0.r6495/6940
+type: file
+count: 0
+text: 4564 49458 309 1171 d7ff1eab81292e750a9b14ea136851db 1858764610dbdfc56bd90a67d54779a0eb352df7 6494-50e/_12
+props: 6495 6820 107 0 3c711300be3ea7503c3f4d9c1da3fa17
+cpath: /trunk/sandbox/davidg/test/test_readers/test_python/test_functions.py
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 24
+file q-6495.0.r6495/5195
+K 7
+showast
+V 24
+file t-6495.0.r6495/5862
+K 7
+showdoc
+V 24
+file v-6495.0.r6495/5531
+K 9
+showparse
+V 24
+file x-6495.0.r6495/6194
+K 7
+showtok
+V 24
+file z-6495.0.r6495/6531
+K 17
+test_functions.py
+V 25
+file 11-6495.0.r6495/6940
+K 14
+test_parser.py
+V 25
+file 13-6495.0.r6495/4371
+K 20
+test_token_parser.py
+V 25
+file 15-6495.0.r6495/4794
+END
+ENDREP
+id: o-6495.0.r6495/7642
+type: dir
+count: 0
+text: 6495 7246 383 383 bab7c9c36a8ffd666e668dbe55ff6689
+cpath: /trunk/sandbox/davidg/test/test_readers/test_python
+copyroot: 0 /
+
+PLAIN
+K 11
+test_python
+V 23
+dir o-6495.0.r6495/7642
+END
+ENDREP
+id: m-6495.0.r6495/7879
+type: dir
+count: 0
+text: 6495 7816 50 50 218886e31c00322dd06e0b4d90973ff4
+cpath: /trunk/sandbox/davidg/test/test_readers
+copyroot: 0 /
+
+PLAIN
+K 12
+test_readers
+V 23
+dir m-6495.0.r6495/7879
+END
+ENDREP
+id: l-6495.0.r6495/8103
+type: dir
+count: 0
+text: 6495 8039 51 51 392f3467d3c0a2603b390a0a8d179f5e
+cpath: /trunk/sandbox/davidg/test
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.9
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: e-6495.0.r6495/8373
+type: file
+count: 0
+text: 5607 11283 54 4291 ba0187bfeb9a04a6dc34c67066944b87 0a8bae69ad1dd4095781db74e9a12e156b3313dc 6494-50e/_g
+props: 6495 8250 110 0 a3ee73c7ed0bd397f9f2fedc7793a5b7
+cpath: /trunk/sandbox/davidg/docutils/readers/python/__init__.py
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.3
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: j-6495.0.r6495/8787
+type: file
+count: 0
+text: 4564 22234 783 3083 8a159c635e20b98400ecf3ea703dce3d 849abab8ac85f6b082ccc97523f94df5a1a36770 6494-50e/_k
+props: 6495 8664 110 0 fd27c383f48a4fbbd90a59fbcfc8b3be
+cpath: /trunk/sandbox/davidg/docutils/readers/python/pynodes.py
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 4
+1.14
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: h-6495.0.r6495/9202
+type: file
+count: 0
+text: 5738 896 68 25731 9e55d1b21507016653eb845e5fb648b5 662a063de7ef3a6493a6088918a645d43079f20f 6494-50e/_i
+props: 6495 9078 111 0 28e613ef70fc8e4efe7ed7b15f74e6e7
+cpath: /trunk/sandbox/davidg/docutils/readers/python/moduleparser.py
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 24
+file e-6495.0.r6495/8373
+K 15
+moduleparser.py
+V 24
+file h-6495.0.r6495/9202
+K 10
+pynodes.py
+V 24
+file j-6495.0.r6495/8787
+END
+ENDREP
+PLAIN
+K 10
+svn:ignore
+V 6
+*.pyc
+
+END
+ENDREP
+id: c-6495.0.r6495/9701
+type: dir
+count: 0
+text: 6495 9496 148 148 df43c1f65ab8ad46b009d8a456618718
+props: 6495 9657 31 0 b9ebe853b7baef2573e3487e43637c6a
+cpath: /trunk/sandbox/davidg/docutils/readers/python
+copyroot: 0 /
+
+PLAIN
+K 6
+python
+V 23
+dir c-6495.0.r6495/9701
+END
+ENDREP
+id: a-6495.0.r6495/9981
+type: dir
+count: 0
+text: 6495 9924 44 44 cce83f1d8423b94b27eaa3bebff9ab9d
+cpath: /trunk/sandbox/davidg/docutils/readers
+copyroot: 0 /
+
+PLAIN
+K 7
+readers
+V 23
+dir a-6495.0.r6495/9981
+END
+ENDREP
+id: 8-6495.0.r6495/10198
+type: dir
+count: 0
+text: 6495 10140 45 45 988bbca1b343fb6beaa66ba4d7a745da
+cpath: /trunk/sandbox/davidg/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 24
+dir 8-6495.0.r6495/10198
+K 15
+pysource_reader
+V 19
+dir 7-17.0.r17/5918
+K 4
+test
+V 23
+dir l-6495.0.r6495/8103
+K 11
+unispace.py
+V 22
+file 3-4441.0.r4646/65
+END
+ENDREP
+id: 6-17.0.r6495/10540
+type: dir
+pred: 6-17.0.r4646/460
+count: 82
+text: 6495 10351 176 176 ffb56fbadff76b2470940fab416b2f9b
+cpath: /trunk/sandbox/davidg
+copyroot: 0 /
+
+PLAIN
+K 12
+OpenDocument
+V 28
+dir 3-4689.0-5034.r5881/9477
+K 10
+README.txt
+V 22
+file 3-17.0.r6138/1061
+K 8
+aafigure
+V 28
+dir 5-4251.0-4994.r5980/2565
+K 4
+aahz
+V 23
+dir 2-820.0.r3892/10934
+K 9
+agurtovoy
+V 23
+dir 2-2034.0.r6097/2235
+K 3
+amk
+V 23
+dir 2-1891.0.r1892/1276
+K 3
+axk
+V 25
+dir 2-1550.0-3242.r3242/0
+K 4
+bbum
+V 23
+dir 2-1039.0.r1742/2047
+K 5
+blais
+V 23
+dir 2-1316.0.r5672/6545
+K 4
+cben
+V 24
+dir 2-1693.0.r3533/13838
+K 10
+chm-writer
+V 25
+dir 3-4294.0-6177.r6177/0
+K 8
+cliechti
+V 22
+dir 2-3204.0.r5987/631
+K 20
+code-block-directive
+V 24
+dir 4-5229.0.r6488/34510
+K 9
+codeintro
+V 23
+dir 2-4954.0.r4977/1117
+K 6
+davidg
+V 22
+dir 6-17.0.r6495/10540
+K 5
+delza
+V 23
+dir 2-1723.0.r1723/3836
+K 8
+dkuhlman
+V 23
+dir 2-1555.0.r5034/1704
+K 12
+docpy-writer
+V 28
+dir 2-4521.0-4565.r4626/8182
+K 7
+dpriest
+V 21
+dir 2-1730.0.r4985/58
+K 12
+dreamcatcher
+V 22
+dir 2-1300.0.r1357/657
+K 5
+dugui
+V 23
+dir 2-4358.0.r4360/1485
+K 7
+edloper
+V 21
+dir 2-1844.0.r4984/97
+K 7
+grubert
+V 22
+dir 2-112.0.r6409/1245
+K 8
+gschwant
+V 23
+dir 2-675.0.r4442/16701
+K 9
+holdenweb
+V 23
+dir 2-1845.0.r1845/4805
+K 11
+html4strict
+V 24
+dir 2-5534.0.r6493/14993
+K 10
+html4trans
+V 23
+dir 2-5235.0.r5533/1086
+K 4
+ianb
+V 23
+dir 2-881.0.r3892/12710
+K 14
+infrastructure
+V 28
+dir 3-189.0-3951.r6425/12210
+K 5
+jensj
+V 23
+dir 2-2942.0.r5544/4137
+K 4
+lalo
+V 23
+dir 2-1749.0.r1762/2166
+K 14
+latex-variants
+V 23
+dir 2-5238.0.r6179/4019
+K 15
+latex_directive
+V 22
+dir 2-4364.0.r4365/616
+K 14
+manpage-writer
+V 23
+dir 4-4773.0.r6219/5375
+K 3
+mly
+V 23
+dir 2-1431.0.r1432/2681
+K 7
+mmgilbe
+V 23
+dir 2-1841.0.r2945/2205
+K 3
+mwh
+V 21
+dir 2-857.0.r862/1023
+K 7
+oliverr
+V 22
+dir 2-202.0.r5918/1407
+K 11
+package-doc
+V 22
+dir 2-5172.0.r5417/744
+K 12
+paultremblay
+V 23
+dir 2-1323.0.r1489/1149
+K 7
+pobrien
+V 23
+dir 2-1158.0.r1777/4967
+K 13
+presentations
+V 24
+dir 2-4940.0.r5174/64253
+K 11
+py-rest-doc
+V 22
+dir 2-5075.0.r5469/711
+K 7
+richard
+V 23
+dir 2-526.0.r5174/65313
+K 11
+roff-writer
+V 22
+dir 2-5617.0.r5617/789
+K 10
+rst2beamer
+V 22
+dir 2-5731.0.r6468/932
+K 15
+rst2chunkedhtml
+V 23
+dir 2-5513.0.r5519/1100
+K 7
+rst2gxl
+V 23
+dir 2-6330.0.r6462/1825
+K 7
+rst2odp
+V 23
+dir 2-5681.0.r6444/1847
+K 11
+rst2outline
+V 23
+dir 2-6396.0.r6463/1315
+K 7
+rst2pdf
+V 22
+dir 2-5560.0.r5638/438
+K 14
+rst2pdf-rubber
+V 27
+dir 2-5560.0-5857.r5857/754
+K 10
+rst2wordml
+V 24
+dir 2-5459.0.r5459/85880
+K 7
+rstdiff
+V 22
+dir 7-6304.0.r6483/849
+K 6
+simonb
+V 21
+dir 2-252.0.r1227/852
+K 12
+slides_tests
+V 23
+dir 2-6418.0.r6422/2176
+K 11
+stylesheets
+V 23
+dir 2-3847.0.r6109/1394
+K 14
+texinfo-writer
+V 23
+dir 2-6421.0.r6426/1643
+K 4
+tibs
+V 20
+dir 2-62.0.r4082/879
+K 12
+uml-plantUml
+V 24
+dir 2-6326.0.r6326/67499
+K 12
+verse-writer
+V 23
+dir 2-4842.0.r4847/2800
+K 4
+wilk
+V 23
+dir 2-1258.0.r1650/3830
+K 10
+xhtml2rest
+V 29
+dir 3-3749.0-4373.r5174/66514
+K 7
+xml2rst
+V 23
+dir 6-5491.0.r6467/3217
+END
+ENDREP
+id: 1-17.0.r6495/13503
+type: dir
+pred: 1-17.0.r6493/17964
+count: 1679
+text: 6495 10708 2782 2782 5ebafd9f10a4d0aa68bbf4d74837bfe1
+cpath: /trunk/sandbox
+copyroot: 0 /
+minfo-cnt: 1
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r6495/4024
+K 5
+prest
+V 23
+dir 1-4326.0.r6440/1801
+K 7
+sandbox
+V 22
+dir 1-17.0.r6495/13503
+K 3
+web
+V 20
+dir 1-2.0.r6395/3496
+END
+ENDREP
+id: 3-1.0.r6495/13852
+type: dir
+pred: 3-1.0.r6494/1470
+count: 6038
+text: 6495 13683 156 156 0ea26625710b17cb5477196b2622d39c
+cpath: /trunk
+copyroot: 0 /
+minfo-cnt: 2
+
+PLAIN
+K 8
+branches
+V 21
+dir 0-1.0.r6260/33253
+K 4
+tags
+V 19
+dir 2-1.0.r6358/778
+K 5
+trunk
+V 21
+dir 3-1.0.r6495/13852
+END
+ENDREP
+id: 0.0.r6495/14147
+type: dir
+pred: 0.0.r6494/1763
+count: 6495
+text: 6495 14019 115 115 4fcd56c367d603441a8c99c062e48667
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+minfo-cnt: 4
+
+_m.0.t6494-50e add-dir false false /trunk/sandbox/davidg/test/test_readers
+
+_j.0.t6494-50e add-file true true /trunk/sandbox/davidg/docutils/readers/python/pynodes.py
+
+_13.0.t6494-50e add-file true true /trunk/sandbox/davidg/test/test_readers/test_python/test_parser.py
+
+_15.0.t6494-50e add-file true true /trunk/sandbox/davidg/test/test_readers/test_python/test_token_parser.py
+
+_q.0.t6494-50e add-file true true /trunk/sandbox/davidg/test/test_readers/test_python/__init__.py
+
+_t.0.t6494-50e add-file true true /trunk/sandbox/davidg/test/test_readers/test_python/showast
+
+_a.0.t6494-50e add-dir false false /trunk/sandbox/davidg/docutils/readers
+
+4-991.0.r6320/855 delete-dir false false /trunk/docutils/test/test_readers/test_python
+
+_l.0.t6494-50e add-dir false false /trunk/sandbox/davidg/test
+
+_z.0.t6494-50e add-file true true /trunk/sandbox/davidg/test/test_readers/test_python/showtok
+
+_11.0.t6494-50e add-file true true /trunk/sandbox/davidg/test/test_readers/test_python/test_functions.py
+
+_e.0.t6494-50e add-file true true /trunk/sandbox/davidg/docutils/readers/python/__init__.py
+
+_o.0.t6494-50e add-dir false false /trunk/sandbox/davidg/test/test_readers/test_python
+
+_h.0.t6494-50e add-file true true /trunk/sandbox/davidg/docutils/readers/python/moduleparser.py
+
+_8.0.t6494-50e add-dir false false /trunk/sandbox/davidg/docutils
+
+4-989.0.r5738/18312 delete-dir false false /trunk/docutils/docutils/readers/python
+
+_v.0.t6494-50e add-file true true /trunk/sandbox/davidg/test/test_readers/test_python/showdoc
+
+_c.0.t6494-50e add-dir false true /trunk/sandbox/davidg/docutils/readers/python
+
+_x.0.t6494-50e add-file true true /trunk/sandbox/davidg/test/test_readers/test_python/showparse
+
+
+14147 14356

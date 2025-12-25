@@ -1,0 +1,206 @@
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 4
+1.30
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 3-150.0.r1354/124
+type: file
+pred: 3-150.0.r1352/3382
+count: 29
+text: 1047 0 231 13637 375d017aa003f209e9b780326a0ace0e fd2c91aab1478133512b86c954d4dbf0905f8263 1353-11l/_4
+props: 1354 0 111 0 9b377c828b4ca1827963af8e19878787
+cpath: /trunk/docutils/docutils/frontend.py
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 21
+file 1x-18.0.r908/504
+K 7
+core.py
+V 23
+file 20-18.0.r1243/2620
+K 11
+frontend.py
+V 22
+file 3-150.0.r1354/124
+K 5
+io.py
+V 22
+file 3-217.0.r1249/196
+K 9
+languages
+V 22
+dir 22-18.0.r1253/1167
+K 8
+nodes.py
+V 23
+file 28-18.0.r1326/1537
+K 8
+optik.py
+V 21
+file 3-181.0.r207/326
+K 7
+parsers
+V 22
+dir 2a-18.0.r1347/2035
+K 7
+readers
+V 22
+dir 36-18.0.r1352/3024
+K 8
+roman.py
+V 23
+file 3c-18.0.r18/293919
+K 15
+statemachine.py
+V 23
+file 3e-18.0.r1049/4204
+K 10
+transforms
+V 22
+dir 3g-18.0.r1352/4481
+K 13
+urischemes.py
+V 22
+file 3s-18.0.r131/1101
+K 8
+utils.py
+V 23
+file 3u-18.0.r1235/9162
+K 7
+writers
+V 22
+dir 3w-18.0.r1349/1099
+END
+ENDREP
+id: 1w-18.0.r1354/1067
+type: dir
+pred: 1w-18.0.r1352/5373
+count: 496
+text: 1354 413 641 641 01e1e765816eba7eb74fd96dfbffbb5c
+props: 342 8363 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 21
+file 2-340.0.r340/154
+K 11
+COPYING.txt
+V 21
+file 2-18.0.r763/7254
+K 7
+FAQ.txt
+V 23
+file 2-788.0.r1351/3559
+K 11
+HISTORY.txt
+V 21
+file 5-18.0.r1345/563
+K 11
+MANIFEST.in
+V 20
+file 7-18.0.r344/206
+K 10
+README.txt
+V 22
+file 9-18.0.r1058/2185
+K 4
+docs
+V 20
+dir 3-7.0.r1350/1480
+K 8
+docutils
+V 22
+dir 1w-18.0.r1354/1067
+K 10
+install.py
+V 23
+file 44-18.0.r18/313369
+K 8
+setup.py
+V 22
+file 46-18.0.r1014/632
+K 4
+test
+V 22
+dir 48-18.0.r1344/5343
+K 5
+tools
+V 23
+dir 6w-18.0.r1340/37596
+END
+ENDREP
+id: 1-7.0.r1354/1807
+type: dir
+pred: 1-7.0.r1352/6114
+count: 1010
+text: 1354 1293 501 501 f8bb507563345efea08f2d940961c518
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r1354/1807
+K 7
+sandbox
+V 21
+dir 1-17.0.r1353/2490
+K 3
+web
+V 20
+dir 1-2.0.r1346/1210
+END
+ENDREP
+id: 3-1.0.r1354/2150
+type: dir
+pred: 3-1.0.r1353/2780
+count: 1346
+text: 1354 2021 116 116 45e09570e1eb047ffe23eb7dd3635b57
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 17
+dir 0-1.0.r63/562
+K 4
+tags
+V 17
+dir 2-1.0.r65/217
+K 5
+trunk
+V 20
+dir 3-1.0.r1354/2150
+END
+ENDREP
+id: 0.0.r1354/2423
+type: dir
+pred: 0.0.r1353/3053
+count: 1354
+text: 1354 2302 108 108 e259f2a222c274c3ddc65561397ec229
+cpath: /
+copyroot: 0 /
+
+3-150.0.t1353-11l modify-file true true /trunk/docutils/docutils/frontend.py
+
+
+2423 2566

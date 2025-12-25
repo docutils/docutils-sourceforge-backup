@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-05-26T23:11:32.878714Z
+K 7
+svn:log
+V 138
+added tagging of released revision; removed references to $username;
+better conditional execution; simplified execution of docutils-update
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-12-12T02:44:44.000000Z
+K 7
+svn:log
+V 94
+fixed a bug with ellipsis etc. (<=3 char underline) on second line of a block quote paragraph
+
+END

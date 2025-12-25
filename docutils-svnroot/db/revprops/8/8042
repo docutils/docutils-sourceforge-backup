@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-03-03T14:28:20.351620Z
+K 7
+svn:log
+V 73
+Fix [ 312 ] HTML writer generates invalid HTML if the table has two tags.
+END

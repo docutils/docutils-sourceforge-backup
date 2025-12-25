@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 11
+orutherfurd
+K 8
+svn:date
+V 27
+2004-03-28T15:39:27.000000Z
+K 7
+svn:log
+V 63
+moved locale imports into try blocks, for Jython compatibility
+
+END

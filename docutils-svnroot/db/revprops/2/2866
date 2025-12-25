@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 7
+mmgilbe
+K 8
+svn:date
+V 27
+2004-11-23T05:07:40.000000Z
+K 7
+svn:log
+V 232
+Updated REQUIRED line to 0.3.3.
+
+Changed the copyright since this is now pretty much all my own code.
+
+Fixed a bug where I was picking out a few unicode characters to change. Now I scan every string and fix any character above 127.
+
+END

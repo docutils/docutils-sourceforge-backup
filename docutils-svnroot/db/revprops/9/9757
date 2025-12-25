@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-14T15:03:32.364952Z
+K 7
+svn:log
+V 87
+Remove tools/rst2odt_prepstyles.py
+
+Obsoleted by `docutils.writers.odf_odt.prepstyles`.
+END

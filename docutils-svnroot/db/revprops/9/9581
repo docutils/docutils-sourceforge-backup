@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-03-17T23:31:04.691069Z
+K 7
+svn:log
+V 363
+Fix "latex" writer broken in [r9541].
+
+Adding the "template" setting to the list of registered
+"relative paths" prevented finding the default template file
+in the LATEX_WRITER_DIR.
+
+Unfortunately, the test suite did not detect this breakage.
+It seems only to happen when using the "latex" writer from the command line
+(via rst2latex or docutils --writer="latex").
+END

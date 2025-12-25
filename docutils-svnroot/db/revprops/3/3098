@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-03-23T17:28:46.242857Z
+K 7
+svn:log
+V 108
+ensure we are in the correct directory;
+the working directory is changed during execution of the test suite!
+END

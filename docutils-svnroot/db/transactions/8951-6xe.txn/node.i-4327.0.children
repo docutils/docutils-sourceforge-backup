@@ -1,0 +1,93 @@
+K 8
+Makefile
+V 28
+file k-4327.0-4580.r5484/107
+K 16
+alternatives.rst
+V 27
+file n-4327.0.r4327/1035405
+K 17
+ascii-mathml.xrst
+V 25
+file 8-4799.0.r4799/47009
+K 14
+directives.rst
+V 25
+file p-4327.0.r6498/43823
+K 16
+introduction.rst
+V 27
+file r-4327.0.r4327/1035846
+K 6
+latest
+V 24
+dir t-4327.0.r4657/23593
+K 16
+prest_extend.rst
+V 24
+file 13-4327.0.r5483/466
+K 19
+prest_internals.rst
+V 27
+file 15-4327.0.r4580/170279
+K 15
+prest_intro.rst
+V 24
+file 17-4327.0.r4886/435
+K 18
+prest_releases.rst
+V 22
+file 7-4886.0.r5295/80
+K 15
+prest_usage.rst
+V 24
+file 19-4327.0.r4875/214
+K 13
+quickref.html
+V 28
+file 1b-4327.0.r4327/1038037
+K 14
+quickstart.rst
+V 28
+file 1d-4327.0.r4327/1034728
+K 20
+reStructuredText.rst
+V 26
+file 1f-4327.0.r4657/21805
+K 9
+roles.rst
+V 24
+file 1h-4327.0.r6249/541
+END
+D 8
+Makefile
+D 16
+alternatives.rst
+D 17
+ascii-mathml.xrst
+D 14
+directives.rst
+D 16
+introduction.rst
+K 6
+latest
+V 22
+dir t-4327.0.t8951-6xe
+D 16
+prest_extend.rst
+D 19
+prest_internals.rst
+D 15
+prest_intro.rst
+D 18
+prest_releases.rst
+D 15
+prest_usage.rst
+D 13
+quickref.html
+D 14
+quickstart.rst
+D 20
+reStructuredText.rst
+D 9
+roles.rst

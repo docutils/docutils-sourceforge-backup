@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-05-18T09:40:42.912236Z
+K 7
+svn:log
+V 81
+Better explain optional wrapping around images and figures 
+in the test document.
+END

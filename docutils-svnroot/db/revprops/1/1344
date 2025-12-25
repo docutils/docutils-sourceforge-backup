@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2003-05-25T14:59:30.000000Z
+K 7
+svn:log
+V 220
+Added a kludge to work-around a conflict between the bubble-up parser strategy and short titles (<= 3 char-long over- & underlines).  Fixes SF bug #738803 "infinite loop with multiple titles" submitted by Jason Diamond.
+
+END

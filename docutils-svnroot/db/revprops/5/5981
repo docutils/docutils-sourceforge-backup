@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-06-12T20:51:53.753961Z
+K 7
+svn:log
+V 109
+Internal links now take you to the correct place.
+
+Use \\\\label <- \\\\hyperref for links to section titles.
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-09-26T17:54:39.047255Z
+K 7
+svn:log
+V 92
+moved pruning docutils.conf up the tree so that template.txt isn't processed by buildhtml.py
+END

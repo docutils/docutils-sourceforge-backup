@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2008-12-02T20:50:47.794563Z
+K 7
+svn:log
+V 158
+* Turn off warnings after finishing so that Devel::Cover doesn't cause
+  tests to fail
+* Updated coverability comments for more recent Devel::Cover versions.
+
+END

@@ -1,0 +1,212 @@
+PLAIN
+K 11
+default.css
+V 22
+file 75-18.0.r3442/110
+K 9
+latex.tex
+V 24
+file 9-3260.0.r3637/6448
+K 7
+pep.css
+V 21
+file 4-286.0.r932/174
+K 9
+style.tex
+V 25
+file 4-1656.0.r2548/28138
+END
+ENDREP
+id: 74-18.0.r3757/190
+type: dir
+pred: 74-18.0.r3637/6992
+count: 125
+text: 3757 0 177 177 613ac18ebf0ea0701aeecd103f6ce921
+cpath: /trunk/docutils/tools/stylesheets
+copyroot: 0 /
+
+PLAIN
+K 12
+buildhtml.py
+V 22
+file 3-430.0.r2504/598
+K 3
+dev
+V 23
+dir 5-3488.0.r3535/1332
+K 13
+docutils.conf
+V 21
+file 3-407.0.r3551/64
+K 7
+editors
+V 22
+dir 3-1157.0.r3616/852
+K 17
+pep-html-template
+V 22
+file 3-312.0.r3526/342
+K 12
+quicktest.py
+V 22
+file 72-18.0.r3103/100
+K 11
+rst2html.py
+V 23
+file 5-1756.0.r2391/234
+K 12
+rst2latex.py
+V 25
+file b-1202.0.r2548/27720
+K 15
+rst2newlatex.py
+V 24
+file 3-3260.0.r3260/6983
+K 16
+rst2pseudoxml.py
+V 23
+file 3-2467.0.r2467/149
+K 10
+rst2xml.py
+V 23
+file 3-2468.0.r2468/149
+K 14
+rstpep2html.py
+V 28
+file 3-288.0-3533.r3533/9502
+K 11
+stylesheets
+V 21
+dir 74-18.0.r3757/190
+END
+ENDREP
+id: 6w-18.0.r3757/991
+type: dir
+pred: 6w-18.0.r3637/7798
+count: 277
+text: 3757 368 610 610 1b40fda5753099e3e1e4fa4b347a06a9
+cpath: /trunk/docutils/tools
+copyroot: 0 /
+
+PLAIN
+K 8
+BUGS.txt
+V 24
+file 2-2181.0.r3406/1611
+K 11
+COPYING.txt
+V 21
+file 2-18.0.r3096/363
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r3755/811
+K 11
+HISTORY.txt
+V 21
+file 5-18.0.r3666/511
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r2513/394
+K 10
+README.txt
+V 21
+file 9-18.0.r3407/847
+K 10
+THANKS.txt
+V 24
+file 2-2182.0.r3616/1820
+K 4
+docs
+V 20
+dir 3-7.0.r3756/1615
+K 8
+docutils
+V 22
+dir 1w-18.0.r3674/3041
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 22
+file 46-18.0.r3575/379
+K 4
+test
+V 22
+dir 48-18.0.r3675/1769
+K 5
+tools
+V 21
+dir 6w-18.0.r3757/991
+END
+ENDREP
+id: 1-7.0.r3757/1796
+type: dir
+pred: 1-7.0.r3756/2418
+count: 2808
+text: 3757 1159 624 624 8bb59e3512c0f3317c211c3598e3ed04
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r3757/1796
+K 7
+sandbox
+V 21
+dir 1-17.0.r3753/2556
+K 3
+web
+V 20
+dir 1-2.0.r3670/7096
+END
+ENDREP
+id: 3-1.0.r3757/2139
+type: dir
+pred: 3-1.0.r3756/2761
+count: 3618
+text: 3757 2010 116 116 abfc5d51e54b8c4a413bcc3a94d023ea
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r3748/2037
+K 4
+tags
+V 19
+dir 2-1.0.r3383/196
+K 5
+trunk
+V 20
+dir 3-1.0.r3757/2139
+END
+ENDREP
+id: 0.0.r3757/2417
+type: dir
+pred: 0.0.r3756/3039
+count: 3757
+text: 3757 2291 113 113 2a8a900ef0da195853a43fbbeec3452a
+cpath: /
+copyroot: 0 /
+
+6-3260.0.r3558/104 delete-file false false /trunk/docutils/tools/stylesheets/latex-notes.txt
+
+
+2417 2560

@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-01-26T21:23:28.276797Z
+K 7
+svn:log
+V 271
+Do not use assert statements when checking module content.
+
+David Goodger wrote on 05 Jan 2020 in docutils-develop:
+
+This is a problem "assert" statements can be disabled
+via the "python -O" optimization.
+This would remove the checks and defeat the purpose of the change.
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-06-30T22:14:29.702980Z
+K 7
+svn:log
+V 56
+New "name" directive option attaching a reference name.
+
+END

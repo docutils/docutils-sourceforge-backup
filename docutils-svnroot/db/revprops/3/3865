@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-09-11T20:29:10.287014Z
+K 7
+svn:log
+V 80
+renamed Element.attr_defaults to list_attributes;
+added Element.update() method
+
+END

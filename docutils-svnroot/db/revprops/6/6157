@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-10-08T09:52:42.888418Z
+K 7
+svn:log
+V 127
+Correct Python compatibility range.
+
+Using Docutils with Python 3.x requires running the code through the 
+autoconverter first.
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2010-07-19T16:07:19.420075Z
+K 7
+svn:log
+V 70
+updated version text dynamically (so we won't have to do this again\!)
+END

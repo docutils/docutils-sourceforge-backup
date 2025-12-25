@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-10-27T07:56:50.926107Z
+K 7
+svn:log
+V 104
+add new todo item, remove finished one
+
+Strip blank lines from begin and end of a literal included file.
+END

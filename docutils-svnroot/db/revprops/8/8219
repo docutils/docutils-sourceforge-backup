@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2018-06-05T14:03:36.586010Z
+K 7
+svn:log
+V 85
+Apply Patch [ 142 ] (source attribute for literal blocks).
+
+Thanks to Takeshi KOMIYA.
+END

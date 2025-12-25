@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-12-01T13:25:40.382033Z
+K 7
+svn:log
+V 391
+New image directive option "loading".
+
+The new option sets the `<image>` element's "loading" attribute
+to one of "embed", "link", "lazy" as an indication for the
+preferred handling of the image by the writer.
+
+Default and actual handling depend on the writer.
+Currently only observed by the HTML5 writer, where it overrides the
+"image_loading" configuration setting for the respective image.
+END

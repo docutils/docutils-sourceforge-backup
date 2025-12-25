@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-11-09T23:36:49.953807Z
+K 7
+svn:log
+V 86
+Remove `docutils/utils/roman.py`.
+
+Obsoleted by ``docutils/utils/_roman_numerals.py``.
+END

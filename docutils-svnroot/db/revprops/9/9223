@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-11-08T16:42:40.625487Z
+K 7
+svn:log
+V 171
+Inline ``SimpleTableParserTestSuite``
+
+- Move all usages of ``SimpleTableParserTestSuite.generateTests``
+  to using subtests, as part of the test suite refactoring project
+END

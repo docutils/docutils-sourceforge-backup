@@ -1,0 +1,13 @@
+K 15
+targets12.mydom
+V 27
+file 4s-4580.0.r4580/149304
+K 15
+test_targets.py
+V 27
+file 4v-4580.0.r4580/149009
+END
+D 15
+targets12.mydom
+D 15
+test_targets.py

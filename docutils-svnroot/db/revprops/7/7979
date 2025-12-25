@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2016-11-29T12:06:46.069577Z
+K 7
+svn:log
+V 196
+Adapt test to fixes in course of the HTML-writer code "outsourcing":
+
+* update mathjax URL
+* do not wrap attribution in <cite> 
+  (as the cite element should be used to name a work, not a person).
+END

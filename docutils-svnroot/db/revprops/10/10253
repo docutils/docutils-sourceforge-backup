@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-10-06T12:29:47.662103Z
+K 7
+svn:log
+V 260
+Documentation update/fixes.
+
+Describe intended behaviour and add cross-links to the related TODO list item
+for possible future "footnotes" and "citation" directives.
+
+Correct terms in "image" directive documentation.
+
+Simple example for auto-nubered footnotes.
+END

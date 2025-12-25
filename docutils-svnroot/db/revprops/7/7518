@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 12
+paultremblay
+K 8
+svn:date
+V 27
+2012-09-30T05:24:00.517413Z
+K 7
+svn:log
+V 127
+Adding tests for the new script. Also, what appeared to be a bug in
+root.xsl was not a bug, and so I am taking out that code. 
+
+END

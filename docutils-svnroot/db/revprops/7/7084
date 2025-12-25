@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2011-07-07T19:01:56.858654Z
+K 7
+svn:log
+V 39
+Add function reversed for python < 2.4
+
+END

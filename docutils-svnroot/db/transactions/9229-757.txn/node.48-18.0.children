@@ -1,0 +1,125 @@
+K 22
+DocutilsTestSupport.py
+V 24
+file 49-18.0.r9229/16109
+K 11
+__init__.py
+V 25
+file 3-9140.0.r9140/13192
+K 11
+alltests.py
+V 23
+file 4e-18.0.r9202/8942
+K 4
+data
+V 23
+dir 3-1662.0.r9101/2299
+K 13
+docutils.conf
+V 24
+file 6-1661.0.r2385/2146
+K 10
+functional
+V 23
+dir 3-2357.0.r9219/8739
+K 15
+local-parser.py
+V 25
+file c-7504.0.r9026/44847
+K 15
+local-reader.py
+V 25
+file 7-7504.0.r9037/43015
+K 15
+local-writer.py
+V 25
+file 7-7500.0.r9037/43312
+K 19
+local_dummy_lang.py
+V 25
+file e-7504.0.r9030/57132
+K 11
+test_CLI.py
+V 24
+file 3-9063.0.r9127/6672
+K 15
+test__init__.py
+V 25
+file 7-7007.0.r9037/43607
+K 20
+test_dependencies.py
+V 24
+file 3-2679.0.r9208/6363
+K 23
+test_error_reporting.py
+V 23
+file i-7037.0.r9144/602
+K 18
+test_functional.py
+V 25
+file 18-2357.0.r9182/2002
+K 10
+test_io.py
+V 22
+file 5-3138.0.r9110/48
+K 16
+test_language.py
+V 23
+file 3-940.0.r9183/1080
+K 13
+test_nodes.py
+V 23
+file 4i-18.0.r9146/1267
+K 12
+test_parsers
+V 23
+dir 4k-18.0.r9229/17114
+K 14
+test_pickle.py
+V 25
+file 9-4487.0.r9037/77505
+K 17
+test_publisher.py
+V 30
+file 6-3525.0-3602.r9202/11129
+K 12
+test_readers
+V 21
+dir 3-89.0.r9225/2895
+K 16
+test_settings.py
+V 23
+file g-1662.0.r9171/368
+K 20
+test_statemachine.py
+V 23
+file 6a-18.0.r9146/1560
+K 15
+test_transforms
+V 23
+dir 6c-18.0.r9229/24671
+K 18
+test_traversals.py
+V 25
+file 5-4641.0.r9038/12653
+K 13
+test_utils.py
+V 23
+file 6u-18.0.r9146/1858
+K 16
+test_viewlist.py
+V 23
+file 3-916.0.r9146/2149
+K 12
+test_writers
+V 23
+dir 5-1211.0.r9228/2174
+END
+K 12
+test_parsers
+V 21
+dir 4k-18.0.t9229-757
+K 22
+DocutilsTestSupport.py
+V 22
+file 49-18.0.t9229-757

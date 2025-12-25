@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2010-04-11T13:31:48.010019Z
+K 7
+svn:log
+V 66
+Added project to create a diff from two reStructuredText sources.
+
+END

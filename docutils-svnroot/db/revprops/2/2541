@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2004-08-24T01:12:24.000000Z
+K 7
+svn:log
+V 77
+added "suffix" option to "sectnum" directive; require separating punctuation
+
+END

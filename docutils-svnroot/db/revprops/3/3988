@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2005-10-30T22:58:09.303097Z
+K 7
+svn:log
+V 165
+Changed rst-html-compile to be generic and support
+multiple toolsets.  The group now starts with
+rst-compile and the function rst-compile replaces
+rst-html-compile.
+
+END

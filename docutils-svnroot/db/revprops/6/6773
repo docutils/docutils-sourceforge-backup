@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 12
+paultremblay
+K 8
+svn:date
+V 27
+2011-02-06T22:43:05.973749Z
+K 7
+svn:log
+V 85
+Changed templates in documentation stylesheets to reflect changes in
+fo stylesheets.
+
+END

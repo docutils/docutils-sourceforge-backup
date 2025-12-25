@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+gitpull
+K 8
+svn:date
+V 27
+2015-03-15T22:16:32.885351Z
+K 7
+svn:log
+V 110
+Move reST document to docs/reST. Keep tree hierachy for now. Use reST convention for directory instead of rst.
+END

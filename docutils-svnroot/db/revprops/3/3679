@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T01:10:44.539310Z
+K 7
+svn:log
+V 184
+File/URL access restriction: We do not need higher granularity unless
+someone shows a use case; until then we can remove the to do list entry.
+Never add functionality early, after all.
+END

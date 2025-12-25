@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-07-23T09:32:22.994988Z
+K 7
+svn:log
+V 46
+Update tox.ini to actually supported versions.
+END

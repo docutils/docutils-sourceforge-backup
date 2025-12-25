@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-27T14:22:42.516758Z
+K 7
+svn:log
+V 188
+Use generator expressions instead of lists.
+
+Based on a patch by Adam Turner.
+
+Avoid deeply nested statements as function argument.
+
+Improve readability of system message by line wrapping.
+END

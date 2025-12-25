@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-09-11T14:16:33.737556Z
+K 7
+svn:log
+V 90
+Small editorial changes.
+
+Add type info, shorten function call, merge repetitive commands.
+END

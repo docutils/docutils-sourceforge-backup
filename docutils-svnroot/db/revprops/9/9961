@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-10-21T21:47:17.334353Z
+K 7
+svn:log
+V 392
+Store attribute values with datatype "yesorno" as `bool` values.
+
+Use `bool` instead of `int` to store values of "yesorno" attributes in
+Python doctree element instances.
+This is the "natural" choice for "yesorno" and restores consistency
+with the validating function `nodes.validate_yesorno()`.
+
+In XML and pseudoxml output, the value is serialized as "0" or "1"
+for backwards compatibility.
+END

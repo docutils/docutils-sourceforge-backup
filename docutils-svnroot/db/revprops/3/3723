@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T02:18:42.589308Z
+K 7
+svn:log
+V 78
+Do not add imagemap directive.
+No requests, and after all it is HTML-specific.
+END

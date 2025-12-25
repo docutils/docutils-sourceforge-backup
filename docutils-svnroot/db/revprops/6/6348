@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-06-28T22:08:05.798022Z
+K 7
+svn:log
+V 176
+LaTeX writer fixes
+
+Fix numbering depth with LaTeX section numbering.
+Update Unicode -> LaTeX translations.
+Fix bug with topic directive (thanks to Alan G Isaac for reporting).
+END

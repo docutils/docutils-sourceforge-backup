@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-06-24T19:40:30.486221Z
+K 7
+svn:log
+V 215
+Last part of the input encoding changes announced for 0.21.
+
+Do not use the locale encoding as fallback if Python is started in `UTF-8 mode`_.
+Stop using "latin1" as second fallback.
+
+Update tests and documentation.
+END

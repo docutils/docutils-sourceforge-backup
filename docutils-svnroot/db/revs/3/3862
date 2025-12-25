@@ -1,0 +1,46 @@
+PLAIN
+K 7
+nesting
+V 27
+dir 3-1.0-1813.r2577/106277
+K 10
+transforms
+V 23
+dir 3-1.0-3822.r3826/43
+END
+ENDREP
+id: 0-1.0.r3862/107
+type: dir
+pred: 0-1.0.r3859/7176
+count: 148
+text: 3862 0 94 94 ce7a19c50374dc0ce9ecd7e00e8049c8
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r3862/107
+K 4
+tags
+V 19
+dir 2-1.0.r3816/482
+K 5
+trunk
+V 20
+dir 3-1.0.r3861/4240
+END
+ENDREP
+id: 0.0.r3862/380
+type: dir
+pred: 0.0.r3861/4518
+count: 3862
+text: 3862 255 112 112 e9f381f8de5ee718147e9d8cc88d46b4
+cpath: /
+copyroot: 0 /
+
+1-3849.0.r3859/6853 delete-dir false false /branches/better-emacs
+
+
+380 521

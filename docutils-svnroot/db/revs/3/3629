@@ -1,0 +1,225 @@
+id: 5-3594.0-3629.r3629/0
+type: file
+pred: 5-3594.0.r3628/225
+count: 2
+text: 3628 0 198 441 4105e14e16d642d09de58eb13eac5001 80f5abb64904f11063df40d16592b30816fe96d2 3627-2sr/_5
+props: 3594 7051 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/docutils/docutils/parsers/null.py
+copyfrom: 3628 /trunk/docutils/docutils/parsers/dummy.py
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 2b-18.0.r1645/6017
+K 7
+null.py
+V 26
+file 5-3594.0-3629.r3629/0
+K 3
+rst
+V 22
+dir 2e-18.0.r3621/8297
+END
+ENDREP
+id: 2a-18.0.r3629/482
+type: dir
+pred: 2a-18.0.r3628/661
+count: 340
+text: 3629 339 130 130 35d30776130ecee3fc5577c02f11a690
+props: 342 3339 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils/parsers
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 1x-18.0.r3627/1981
+K 7
+core.py
+V 22
+file 20-18.0.r3614/423
+K 11
+examples.py
+V 23
+file 3-1928.0.r3598/207
+K 11
+frontend.py
+V 23
+file 3-150.0.r3617/8092
+K 5
+io.py
+V 23
+file 3-217.0.r3626/1069
+K 9
+languages
+V 22
+dir 22-18.0.r3276/5436
+K 8
+nodes.py
+V 22
+file 28-18.0.r3611/711
+K 7
+parsers
+V 21
+dir 2a-18.0.r3629/482
+K 7
+readers
+V 21
+dir 36-18.0.r3624/761
+K 15
+statemachine.py
+V 22
+file 3e-18.0.r2299/866
+K 10
+transforms
+V 22
+dir 3g-18.0.r3627/2996
+K 13
+urischemes.py
+V 22
+file 3s-18.0.r1829/714
+K 8
+utils.py
+V 22
+file 3u-18.0.r3592/826
+K 7
+writers
+V 22
+dir 3w-18.0.r3621/9659
+END
+ENDREP
+id: 1w-18.0.r3629/1330
+type: dir
+pred: 1w-18.0.r3628/1510
+count: 1234
+text: 3629 714 603 603 fd401aa11718afdb5bc3f94e1f21d3a2
+props: 342 8363 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+BUGS.txt
+V 24
+file 2-2181.0.r3406/1611
+K 11
+COPYING.txt
+V 21
+file 2-18.0.r3096/363
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r3601/372
+K 11
+HISTORY.txt
+V 21
+file 5-18.0.r3620/807
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r2513/394
+K 10
+README.txt
+V 21
+file 9-18.0.r3407/847
+K 10
+THANKS.txt
+V 24
+file 2-2182.0.r3616/1820
+K 4
+docs
+V 20
+dir 3-7.0.r3622/3248
+K 8
+docutils
+V 22
+dir 1w-18.0.r3629/1330
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 22
+file 46-18.0.r3575/379
+K 4
+test
+V 22
+dir 48-18.0.r3625/1792
+K 5
+tools
+V 22
+dir 6w-18.0.r3616/1650
+END
+ENDREP
+id: 1-7.0.r3629/2195
+type: dir
+pred: 1-7.0.r3628/2375
+count: 2759
+text: 3629 1557 625 625 e597e8da5857cfe486434949893a43b0
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r3629/2195
+K 7
+sandbox
+V 21
+dir 1-17.0.r3595/2284
+K 3
+web
+V 19
+dir 1-2.0.r3524/773
+END
+ENDREP
+id: 3-1.0.r3629/2537
+type: dir
+pred: 3-1.0.r3628/2717
+count: 3562
+text: 3629 2409 115 115 1657d2a925958b788cc3e0ad5981c48b
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 18
+dir 0-1.0.r3584/62
+K 4
+tags
+V 19
+dir 2-1.0.r3383/196
+K 5
+trunk
+V 20
+dir 3-1.0.r3629/2537
+END
+ENDREP
+id: 0.0.r3629/2813
+type: dir
+pred: 0.0.r3628/2993
+count: 3629
+text: 3629 2689 111 111 8068be1097e12f70cb2502b0d54c0359
+cpath: /
+copyroot: 0 /
+
+5-3594.0.r3628/225 delete-file false false /trunk/docutils/docutils/parsers/dummy.py
+
+5-3594._0.t3628-2ss add-file false false /trunk/docutils/docutils/parsers/null.py
+3628 /trunk/docutils/docutils/parsers/dummy.py
+
+2813 2956

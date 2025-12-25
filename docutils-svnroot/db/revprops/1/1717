@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 4
+cben
+K 8
+svn:date
+V 27
+2003-10-09T22:04:56.000000Z
+K 7
+svn:log
+V 262
+The usage of an inline role to generate display math was misguided.  Added
+ability to preprocess simple directives and replaced the ``texdisplay`` role
+with a ``texmath::`` directive.
+
+Fixed some bugs with role parsing (the regexps now closely follow the spec).
+
+END

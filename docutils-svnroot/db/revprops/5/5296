@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-06-27T20:03:33.023494Z
+K 7
+svn:log
+V 51
+Make prest_releases.html depend upon the right file
+END

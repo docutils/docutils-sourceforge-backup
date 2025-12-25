@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-03-11T12:09:16.278139Z
+K 7
+svn:log
+V 411
+core.Publisher.publish(): Prompt when waiting for input from a terminal.
+
+When front-end tools are used without arguments,
+Docutils reads from stdin.
+
+Currently, when a user calls a front-end without arguments,
+there is no response until the user presses Ctrl-D (Ctrl-Z on Windows)
+or aborts with Ctrl-C.
+
+This commit changes the behaviour to tell the user what the front-end
+expects and where to get more help.
+END

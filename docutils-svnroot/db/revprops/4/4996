@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2007-03-05T01:30:39.953350Z
+K 7
+svn:log
+V 68
+deleted Makefile.docutils-update until aafigure works on the website
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2024-08-01T06:49:33.637363Z
+K 7
+svn:log
+V 25
+Add type hints to tools/
+
+END

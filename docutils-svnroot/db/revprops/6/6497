@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-12-07T11:46:44.132489Z
+K 7
+svn:log
+V 64
+Explicitely close stdin of the test sub-process to prevent lock.
+END

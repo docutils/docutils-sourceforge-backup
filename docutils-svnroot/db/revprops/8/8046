@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-03-11T12:09:36.524456Z
+K 7
+svn:log
+V 225
+Cleanup and documentation update for latex writer class handling.
+
+Replace the special casing for topic elements with the generic block-level
+element wrapper.
+
+Rework latex writer documentation.
+
+Minor fixes to latex writers.
+END

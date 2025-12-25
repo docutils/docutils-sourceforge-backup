@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 6
+reggie
+K 8
+svn:date
+V 27
+2004-03-22T01:08:19.000000Z
+K 7
+svn:log
+V 134
+The "contents" directive does more work up-front, creating the
+"topic" and "title", and leaving the "pending" node for the
+transform.
+
+END

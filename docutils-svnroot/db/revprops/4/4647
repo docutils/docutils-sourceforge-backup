@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-07-04T16:56:11.025231Z
+K 7
+svn:log
+V 104
+use integer division to make it more explicit, and for Python 3000 compatibility ;-)
+(works with Py2.2+)
+END

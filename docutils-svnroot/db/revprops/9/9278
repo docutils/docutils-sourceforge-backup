@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-11-28T23:55:04.165511Z
+K 7
+svn:log
+V 179
+Revert "Use literal syntax in HISTORY"
+
+Use the default role for names of functions, classes, modules, and packages.
+
+This reverts commit 36992b9f5b75c91b501c6c25eab10fc3d8723db8.
+END

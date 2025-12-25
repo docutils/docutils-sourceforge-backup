@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2017-10-30T20:44:19.854489Z
+K 7
+svn:log
+V 130
+set eol-style to LF (linefeed) because subversion replaces 0x0a by 0x0d 0x0a on windows if eol-style is native, and breaks utf-16
+
+END

@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-02-07T14:24:37.026199Z
+K 7
+svn:log
+V 167
+New general setting "output".
+
+This setting obsoletes the positional argument <destination>.
+Cf. the announcement of command line pattern changes in the
+RELEASE-NOTES.
+END

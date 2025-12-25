@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2006-07-11T21:10:14.656091Z
+K 7
+svn:log
+V 84
+Fixed problems when different locales use different text for system
+error messages.
+
+END

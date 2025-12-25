@@ -1,0 +1,80 @@
+PLAIN
+K 10
+svn:ignore
+V 65
+*.bak
+*.log
+*.tmp
+*.gz
+bin
+Makefile
+Makefile.old
+pm_to_blib
+blib
+
+END
+ENDREP
+id: 1-4326.0.r4637/104
+type: dir
+pred: 1-4326.0.r4636/1252
+count: 15
+text: 4636 609 630 630 2b7501d42d6c934de888929ed7999a2e
+props: 4637 0 91 0 65ecddde2db82a61df86d65d40320524
+cpath: /trunk/prest
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r4632/2350
+K 5
+prest
+V 22
+dir 1-4326.0.r4637/104
+K 7
+sandbox
+V 21
+dir 1-17.0.r4626/9988
+K 3
+web
+V 19
+dir 1-2.0.r4623/808
+END
+ENDREP
+id: 3-1.0.r4637/482
+type: dir
+pred: 3-1.0.r4636/1635
+count: 4283
+text: 4637 316 153 153 ad6b2546bd7d6423aabf83b0d49f2d14
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r4617/2926
+K 4
+tags
+V 19
+dir 2-1.0.r4584/629
+K 5
+trunk
+V 19
+dir 3-1.0.r4637/482
+END
+ENDREP
+id: 0.0.r4637/757
+type: dir
+pred: 0.0.r4636/1913
+count: 4637
+text: 4637 632 112 112 e1211cead002c1cdd09dbc207572cd09
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+
+1-4326.0.t4636-3ks modify-dir false true /trunk/prest
+
+
+757 949

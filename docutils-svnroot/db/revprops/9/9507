@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-01-07T10:21:21.699910Z
+K 7
+svn:log
+V 149
+New function `frontend.validate_math_output()`.
+
+Define/Use a dedicated validating function for the value of the "math_output"
+configuration setting.
+END

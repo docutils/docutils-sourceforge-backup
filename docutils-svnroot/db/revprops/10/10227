@@ -1,0 +1,29 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-09-05T14:07:30.977487Z
+K 7
+svn:log
+V 733
+Adjustments for nested_parse().
+
+* Ensure valid output and update the "current node", if the base node is
+  the "current node".
+
+  If the base node is the state machine's "current node", we can safely assume
+  that it is attached to the document and check if sections are valid. We can
+  also update the "current node" of the parent state machine(s) after parsing.
+  This prevents invalid or mixed up document trees.
+
+* Make the "current node" the default value for the "node" argument.
+  (This allows simple use for content included from external sources.)
+
+* Restore `memo.section_level` after nested parsing into a custom node.
+  The calling code must ensure that section_level and current node stay in sync.
+
+* Update unit tests.
+END

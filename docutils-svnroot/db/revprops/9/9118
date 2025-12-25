@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-07-29T11:56:58.033293Z
+K 7
+svn:log
+V 169
+Improve internationalisation documentation
+
+Add links to documentation of translated terms.
+
+Sort mappings to better match documentation
+and keep related terms together.
+END

@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-08-11T12:07:22.437617Z
+K 7
+svn:log
+V 465
+Fix error/crash whith Sphinx "autoprogram" [bugs:#509].
+
+Sphinx's "autoprogram" fails to parse docstrings containing a section header.
+
+"autoprogram" starts nested parsing with empty `memo.title_styles` and a
+`<section>` as root node.  In this context, the "root section" should be
+considered a "level 0" section.
+Remove the unattached "root section" from the list of `parent_sections` so that
+appending a new top-level section to `parent_sections[0].parent` works.
+END

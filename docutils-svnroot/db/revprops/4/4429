@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-03-12T18:21:19.106824Z
+K 7
+svn:log
+V 376
+Removed handler for failed import of urllib2.  It was added in r1775
+because it "was causing problems on SourceForge (``libssl.so.2``
+unavailable?)" [log], but it works now on both SF.net and BerliOS, so
+there's no reason to handle this case anymore, I think.  I didn't put
+the import at the top of the module though because we still want to
+degrade gracefully if it's broken.
+END

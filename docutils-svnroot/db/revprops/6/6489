@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-12-01T14:00:10.484623Z
+K 7
+svn:log
+V 171
+latex2e bugfix: avoid spurious ~ in output
+
+Exlclude the last line of a text typeset with "insert_newline == true" 
+from the adding of "~" (no break space) to blank lines.
+END

@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-06-18T18:55:08.559443Z
+K 7
+svn:log
+V 169
+Change default value for the "auto_id_prefix" setting to "%".
+
+Auto-generated IDs use the tag name as prefix.
+Set auto_id_prefix_ to "id" if you want unchanged auto-IDs.
+END

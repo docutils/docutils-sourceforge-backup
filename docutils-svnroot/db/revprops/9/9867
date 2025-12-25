@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-08-08T06:58:14.090813Z
+K 7
+svn:log
+V 158
+Fix links in DocTree documentation.
+
+The hyperreference ``class_`` refers to the "class" *directive*.
+Use "`class option`_" to refere to the "class" *option*.
+END

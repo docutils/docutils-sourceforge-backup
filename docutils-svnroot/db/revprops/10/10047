@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2025-03-09T02:07:23.646854Z
+K 7
+svn:log
+V 188
+Update ``_roman_numerals``
+
+* Remove runtime ``typing`` import
+* Add type annotations
+* Rephrase docstrings to the imperative mood and add missing docstrings
+* Use ``cls`` in classmethods
+
+END

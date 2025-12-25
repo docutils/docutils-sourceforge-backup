@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-01-09T15:01:15.530001Z
+K 7
+svn:log
+V 137
+Clean up system message (source, line) reporting.
+
+Do the abs_line_number -> (src, srcline) conversion in the reporter
+whenever possible.
+END

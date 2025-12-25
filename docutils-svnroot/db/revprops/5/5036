@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+jensj
+K 8
+svn:date
+V 27
+2007-03-26T08:47:38.938067Z
+K 7
+svn:log
+V 141
+Added a space between lines for equations split over several lines.
+Added a "'" character.
+Displayed equations are now centered on the page.
+
+END

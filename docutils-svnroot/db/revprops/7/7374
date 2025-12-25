@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2012-03-01T05:45:45.276615Z
+K 7
+svn:log
+V 116
+changed stylesheet to relative path, so it works on Windows systems too (which add a drive letter to absolute paths)
+END

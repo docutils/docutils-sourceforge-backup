@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-08-09T08:51:14.187143Z
+K 7
+svn:log
+V 435
+Fixups for nodes.py.
+
+Alias defs for the auxiliary `update_fun` function, and
+the Node subclasses (Element | Text). # TODO: replace this just using ``Node``?
+
+Simplify type hint for Element.findall() and similar:
+"condition" can be any "type" (although only Node subclasses make sense).
+
+Fix type hint for Node.asdom() and document.asdom():
+the "dom" argument may be module (`xml.dom.minidom` or compatible) or None.
+
+Adapt formatting.
+END

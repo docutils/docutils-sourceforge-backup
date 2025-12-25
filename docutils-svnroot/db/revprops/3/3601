@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-27T11:40:32.670444Z
+K 7
+svn:log
+V 222
+improved links;
+don't claim it's HTML 4.01 compatible -- it's not really compatible
+e.g. because of <empty /> <tags />; and people who care of "what kind
+of HTML" usually know of the partial compatibility of XHTML and HTML
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-05T15:54:07.723047Z
+K 7
+svn:log
+V 117
+Doctree validation: validate content (part 1, simple models)
+
+Check simple content models (without nested sequences).
+END

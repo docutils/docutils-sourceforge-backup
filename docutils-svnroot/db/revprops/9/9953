@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-10-20T17:44:36.666809Z
+K 7
+svn:log
+V 277
+ODT writer: Fix handling of `*.xml` stylesheets.
+
+According to the ODT writer documentation, the "stylesheet" setting
+should work with either "styles.odt" or "styles.xml" files.
+
+Fix errors with "*.xml" style files [bugs:#494].
+Thanks to Paul Kishimoto for report and analysis.
+END

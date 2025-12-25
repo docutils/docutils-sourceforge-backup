@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-04-22T23:57:18.928262Z
+K 7
+svn:log
+V 142
+Added "cloak_email_addresses" setting & support; updated test & docs.  Thanks to Barry Warsaw & Ned Batchelder for the idea and initial patch.
+END

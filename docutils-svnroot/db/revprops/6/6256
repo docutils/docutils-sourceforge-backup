@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-03-03T12:55:32.130229Z
+K 7
+svn:log
+V 56
+Apply [ 2961988 ] Load babel after inputenc and fontenc.
+END

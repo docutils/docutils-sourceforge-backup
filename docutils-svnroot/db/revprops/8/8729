@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-05-18T21:33:58.215459Z
+K 7
+svn:log
+V 128
+Remove IE 6 compatibility workaround for S5.
+
+Remove files ``iepngfix.htc`` and blank.gif, adapt code and docs.
+
+Fixes bug #169.
+END

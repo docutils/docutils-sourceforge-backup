@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-02-03T18:03:47.016291Z
+K 7
+svn:log
+V 356
+Fix FilterMessages transform [bug:#435].
+
+The "Messages" transform no longer tests for to-be-ignored messages
+but inserts all `system-messages` without parent into a
+"System Messages" section.
+This allows the "FilterMessages" transform to find and convert
+matching `problematic` nodes (but now it also has to remove the
+"System Messages" section if empty).
+END

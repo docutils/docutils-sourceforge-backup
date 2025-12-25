@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2010-08-08T12:29:52.282136Z
+K 7
+svn:log
+V 143
+Once only elements no longer propagate their changes up. Though this
+is correct this leads to sections not being replaced as a whole any
+more.
+
+END

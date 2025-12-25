@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2020-07-27T07:28:44.477647Z
+K 7
+svn:log
+V 75
+Run python3 test like python2 run against source not the build/-directory.
+
+END

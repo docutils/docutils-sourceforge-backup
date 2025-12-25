@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 8
+cliechti
+K 8
+svn:date
+V 27
+2006-01-12T02:08:02.016669Z
+K 7
+svn:log
+V 270
+- makefile only runs rst2html when the .txt file has changed
+- remove the generated images before rst2html
+- "point" helper function to convert different objects to Point instances, simplifies code for the shapes
+- update docs and fix typos
+- aspect ratio in PIL backend
+END

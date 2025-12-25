@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2002-11-03T22:27:07.000000Z
+K 7
+svn:log
+V 61
++ add comment to visit_field and remove some comment output.
+
+END

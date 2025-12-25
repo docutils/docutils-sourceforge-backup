@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2008-01-01T19:34:14.107563Z
+K 7
+svn:log
+V 35
+Added `xml2rst` in version 0.3.10.
+
+END

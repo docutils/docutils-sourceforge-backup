@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-08-25T11:57:29.704106Z
+K 7
+svn:log
+V 163
+More stable implementation of ``--use-titlepage-env``.
+
+Variable for output stream of the visitor methods allows to
+easily collect and process output of sub-nodes.
+END

@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-12-16T10:41:03.167683Z
+K 7
+svn:log
+V 398
+Don't drop "code" directive content if Warnings are silenced.
+
+Output the content without syntax highlight to prevent
+data loss.
+
+It is still recommended to solve the issue instead of just
+silencing the warning. (Languages that are unknown to the
+Pygments Lexer should be specified as :class: option value
+instead of directive argument.)
+
+Thanks to Jérôme Carretero for the report and suggestion.
+END

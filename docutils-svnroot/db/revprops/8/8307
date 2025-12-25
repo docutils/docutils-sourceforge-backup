@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2019-08-06T11:14:21.244477Z
+K 7
+svn:log
+V 33
+remove python 2.6 from supported
+
+END

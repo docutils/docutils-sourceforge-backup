@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+gbrandl
+K 8
+svn:date
+V 27
+2007-05-24T14:58:16.056829Z
+K 7
+svn:log
+V 113
+Don't format markup example, that looks to disruptive.
+Also, don't add the comments form in the offline version.
+
+END

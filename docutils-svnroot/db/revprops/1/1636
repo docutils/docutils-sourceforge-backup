@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 3
+ax-
+K 8
+svn:date
+V 27
+2003-08-24T02:27:36.000000Z
+K 7
+svn:log
+V 144
+used Ollie Rutherfurd's lovely rst2chm <http://www.rutherfurd.net/software/rst2chm/> for a complete chm doc. see README.{txt|html} for details.
+
+END

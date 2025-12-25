@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2015-02-16T23:47:49.473995Z
+K 7
+svn:log
+V 73
+Add "docutils" to class values for "container" object to address [ 267 ].
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2024-04-03T17:29:36.571351Z
+K 7
+svn:log
+V 37
+Put manual section in .TH in quotes.
+
+END

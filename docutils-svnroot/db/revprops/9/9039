@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-03-05T23:31:55.960861Z
+K 7
+svn:log
+V 89
+Finish round of code cleanup.
+
+Clean up and synchronise "tox.ini" (flake8 configuration).
+END

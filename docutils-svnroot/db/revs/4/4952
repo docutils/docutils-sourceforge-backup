@@ -1,0 +1,64 @@
+id: 1-7.0-4952.r4952/0
+type: dir
+pred: 1-7.0.r4951/3904
+count: 3444
+text: 4951 3204 687 687 c43936e7578e3d993e917095d7cec9cc
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /branches/plugins
+copyfrom: 4951 /trunk/docutils
+
+PLAIN
+K 17
+address-rendering
+V 26
+dir 1-7.0-4314.r4314/16372
+K 12
+docutils-0.4
+V 25
+dir 1-7.0-4266.r4816/8356
+K 7
+nesting
+V 25
+dir 3-1.0-1813.r4356/3347
+K 7
+plugins
+V 22
+dir 1-7.0-4952.r4952/0
+END
+ENDREP
+id: 0-1.0.r4952/439
+type: dir
+pred: 0-1.0.r4816/8776
+count: 350
+text: 4952 235 191 191 5c56f24cdb161fedbf5c4df553f68317
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r4952/439
+K 4
+tags
+V 19
+dir 2-1.0.r4584/629
+K 5
+trunk
+V 20
+dir 3-1.0.r4951/4288
+END
+ENDREP
+id: 0.0.r4952/716
+type: dir
+pred: 0.0.r4951/4566
+count: 4952
+text: 4952 591 112 112 3c5f0e7bffccaec5d5babfedc40dfabe
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+
+1-7._0.t4951-3tj add-dir false false /branches/plugins
+4951 /trunk/docutils
+
+716 908

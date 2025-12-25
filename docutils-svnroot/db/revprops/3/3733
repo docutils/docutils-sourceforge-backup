@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T02:33:50.952892Z
+K 7
+svn:log
+V 165
+Do not add "annotation" role.
+Not enough requests, and tool-tips are not universally supported, so
+it would be difficult/impossible to render in many output formats.
+END

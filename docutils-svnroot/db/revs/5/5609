@@ -1,0 +1,88 @@
+id: 1-7.0-5609.r5609/0
+type: dir
+pred: 1-7.0.r5608/6452
+count: 3568
+text: 5608 5753 686 686 56a24752cf11f592432be3438ce18fe6
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /branches/abolish-userstring-haskey
+copyfrom: 5608 /trunk/docutils
+
+PLAIN
+K 18
+abolish-userstring
+V 28
+dir 1w-18.0-5604.r5607/45198
+K 25
+abolish-userstring-haskey
+V 22
+dir 1-7.0-5609.r5609/0
+K 17
+address-rendering
+V 26
+dir 1-7.0-4314.r4314/16372
+K 18
+adjacent-citations
+V 25
+dir 1-7.0-5043.r5600/5654
+K 12
+docutils-0.4
+V 25
+dir 1-7.0-4266.r5500/7199
+K 9
+index-bug
+V 25
+dir 1-7.0-5587.r5594/4767
+K 19
+lossless-rst-writer
+V 25
+dir 1-7.0-5514.r5516/4944
+K 7
+nesting
+V 25
+dir 3-1.0-1813.r4356/3347
+K 7
+plugins
+V 25
+dir 1-7.0-4952.r4987/1225
+K 7
+subdocs
+V 25
+dir 1-7.0-5265.r5427/8605
+END
+ENDREP
+id: 0-1.0.r5609/776
+type: dir
+pred: 0-1.0.r5607/45936
+count: 430
+text: 5609 253 510 510 df9846ddaa96771f267d83a2aa809748
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r5609/776
+K 4
+tags
+V 19
+dir 2-1.0.r5579/673
+K 5
+trunk
+V 20
+dir 3-1.0.r5608/6836
+END
+ENDREP
+id: 0.0.r5609/1054
+type: dir
+pred: 0.0.r5608/7116
+count: 5609
+text: 5609 929 112 112 879f7ee6ecdef9a58d32d5825375d10c
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+
+1-7._0.t5608-4bs add-dir false false /branches/abolish-userstring-haskey
+5608 /trunk/docutils
+
+1054 1247

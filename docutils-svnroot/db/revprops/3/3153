@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2005-04-02T00:45:50.896168Z
+K 7
+svn:log
+V 154
+Fixed some cases when the cursor is on the underline
+line itself, and the line is short.
+I'm trying to make this function work in all
+reasonable cases.
+
+
+
+END

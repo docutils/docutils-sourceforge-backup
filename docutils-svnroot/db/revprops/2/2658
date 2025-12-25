@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-09-27T16:26:05.000000Z
+K 7
+svn:log
+V 162
+removed OptionParser.validator and OptionParser.overrides dictionaries;
+use get_option_by_dest() instead;
+made documentation of get_option_by_dest() more precise
+
+END

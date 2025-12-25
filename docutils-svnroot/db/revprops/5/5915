@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-04-22T15:32:06.127475Z
+K 7
+svn:log
+V 130
+latex2e writer: docstring cleanup, separate stylesheet part, 
+initialize body_prefix/suffix with \\begin{document}/\\end{document}
+END

@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-07-04T21:06:22.400475Z
+K 7
+svn:log
+V 244
+Test input file encoding auto-detection.
+
+Currently, one test fails due to invalid utf-16.
+
+Four tests fail if the locale encoding is a legacy 8-bit encoding due to
+character mix-up (mojibake) despite a correct encoding declaration in the
+file.
+END

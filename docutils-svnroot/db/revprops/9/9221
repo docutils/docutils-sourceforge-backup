@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-11-07T17:40:24.088882Z
+K 7
+svn:log
+V 284
+Update/clarify documentation/docstrings.
+
+After dropping support for Python2, we can use the datatype named `bytes` and
+`str` for encoded strings and Unicode strings respectively.
+
+Use the "summary line + optional explanations" style
+mandated in the "Docstring Conventions" (PEP 257).
+END

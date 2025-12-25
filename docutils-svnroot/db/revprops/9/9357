@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2023-04-19T11:23:17.449424Z
+K 7
+svn:log
+V 64
+tox.ini changedir to directory ``test`` to avoid path problems.
+
+END

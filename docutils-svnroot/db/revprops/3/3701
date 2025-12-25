@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T01:47:19.786427Z
+K 7
+svn:log
+V 234
+What does this mean:
+
+* Fix the parser's indentation handling to conform with the stricter
+  definition in the spec.  (Explicit markup blocks should be strict or
+  forgiving?)
+
+Where exactly does the handling not conform to the spec?
+
+END

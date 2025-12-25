@@ -1,0 +1,30 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-21T21:09:47.835350Z
+K 7
+svn:log
+V 761
+Stop generating invalid doctree if "use_latex_toc" setting is True.
+
+The "use_latex_toc" setting tells Docutils to leave the ToC generation
+LaTeX (to get a ToC with page numbers).
+
+The "contents" directive generates a `<topic>` node with a nested
+`<pending>` node. By default, the `parts.Contents` transform replaces
+the `<pending>` node with a generated ToC in a `<bullet_list>`.
+
+Keep the `<pending>` node if "use_latex_toc" is True to avoid an
+empty (and hence invalid) `<topic>`.
+
+Change the LaTeX writer to extract the value of the "content"
+directive's options from the `<pending>` node.
+
+This allows to drop "local" and "depth" from the attribute list of
+`<topic>`, the "attributes reference" section in doctree.txt, and
+the valid attributes in nodes.py.
+END

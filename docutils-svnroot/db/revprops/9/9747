@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-07T12:48:23.197452Z
+K 7
+svn:log
+V 421
+Allow multiple `<term>` elements in a `<definition_list_item>`.
+
+Fixes feature-request #60 where this is requested for a Sphinx extension.
+There is currently no corresponding rST syntax, definition list items with
+multiple terms can be generated programatically or by the XML parser.
+
+Add an XML test sample, validated with
+
+    xmllint --dtdvalid ../../docs/ref/docutils.dtd multiple-term-definition.xml
+
+and test cases.
+END

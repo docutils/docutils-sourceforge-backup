@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-04-17T21:44:18.044291Z
+K 7
+svn:log
+V 498
+Change section handling to not rely on exceptions and reparsing.
+
+Use an explicit stack of sections in the memo object instead of raising
+an EOFError to find the correct parent section.
+
+Based on [patches:#213] by Arne Skjærholt.
+Fixes [bugs:#346] (duplicate System Messages).
+
+`states.RSTStateMachine.memo.section_bubble_up_kludge`,
+`states.RSTStateMachine.memo.section_level`,
+states.RSTState.title_inconsistent()`, and `states.Line.eofcheck`
+are now ignored and will be removed in Docutils 2.0.
+END

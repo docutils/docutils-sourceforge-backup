@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-03-30T20:13:14.060508Z
+K 7
+svn:log
+V 166
+Fixup of recent changes to LaTeX writer docinfo handling.
+
+Insert a space after the author-separator in "pdfauthor" meta-data entry.
+
+Code formatting and structuring.
+END

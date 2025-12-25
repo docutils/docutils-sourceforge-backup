@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 4
+cben
+K 8
+svn:date
+V 27
+2004-05-16T00:05:33.000000Z
+K 7
+svn:log
+V 123
+Demoted "Document Title / Subtitle" to a subsection of "Sections" -- seems more
+appropriate for this quiet short document.
+
+END

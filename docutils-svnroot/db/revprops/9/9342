@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-04-12T15:11:26.620811Z
+K 7
+svn:log
+V 169
+Add "auto_encode" argument to `core.publish_from_doctree()`.
+
+publish_from_doctree() output is described as "string" and uses
+`io.StringOutput` just as publish_string().
+END

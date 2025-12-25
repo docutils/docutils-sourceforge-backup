@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-11-13T20:55:05.843254Z
+K 7
+svn:log
+V 64
+html4strict writer now generating valid XHTML 1.0 test document.
+END

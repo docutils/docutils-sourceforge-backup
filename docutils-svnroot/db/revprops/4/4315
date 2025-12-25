@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-01-22T17:22:29.435565Z
+K 7
+svn:log
+V 97
+fixed "target beginning with underscore" bug;
+added test for missing closing backquote in targets
+END

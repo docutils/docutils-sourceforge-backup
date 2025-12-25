@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 12
+paultremblay
+K 8
+svn:date
+V 27
+2011-01-24T05:58:01.429336Z
+K 7
+svn:log
+V 63
+Added templates to match document/title and document/subtitle.
+
+END

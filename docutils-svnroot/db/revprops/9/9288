@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-12-01T16:03:50.257519Z
+K 7
+svn:log
+V 212
+Fix [bugs:#461] "html files in egg-info".
+    
+Update [buildhtml] section in docutils/docutils.conf to prune
+the "docutils.egg-info" directory.
+
+Also:
+  Set the writer to "html5".
+  Use POSIX line ends ("\\\\n").
+END

@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-11-16T19:55:59.599367Z
+K 7
+svn:log
+V 704
+Fix ``punctuation_chars`` regeneration for tests
+
+Unicode version 7.0 introduced U+2E42, "DOUBLE LOW-REVERSED-9 QUOTATION
+MARK", in the Ps category. This codepoint doesn't have a pair
+corresponding to it in the Pe category, breaking the assumptions in 
+the ``openers`` and ``closers`` strings. The only usages I have been
+able to identify are in Old Hungarian, where the character does not
+seem to have been used as a quotation mark, so the concept of an
+opening character and corresponding closing character do not easily
+fit. As the simplest fix to allow tests to pass following
+regeneration of the ``punctuation_chars`` file without manual editing,
+we remove the U+2E42 character from the Ps category.
+END

@@ -1,0 +1,28 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-06T14:02:08.936897Z
+K 7
+svn:log
+V 625
+xml-parser: test and fix handling of invalid input
+
+Gracefully handle invalid attributes and text inserts:
+Just generate (invalid) nodes without complaining.
+
+With, e.g., `docutils --parser=xml myfile.xml`, the document tree
+is validated by the `universal.Validate` transform by default.
+
+Nodes returned from `parse_elememt()` can be easily validated
+via their `validate()` method.
+
++ Allows parsing XML documents with "extended" document model
+  for special applications.
++ Allows for cleanup operations between parsing and validation.
++ Simpler implementation (no duplicating of the reporting framework
+  of the validator).
+END

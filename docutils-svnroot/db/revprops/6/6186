@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-10-25T20:47:22.721545Z
+K 7
+svn:log
+V 121
+FileInput opens files as text files with universal newline support
+
+(Configurable with the new optional argument "mode".)
+END

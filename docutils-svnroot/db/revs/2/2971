@@ -1,0 +1,150 @@
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 4
+1.65
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 2-788.0.r2971/124
+type: file
+pred: 2-788.0.r2970/767
+count: 64
+text: 2962 0 227 36883 4d3312de3ae9d6809246091e3ceda89f 187a355a33d4899aae41a98c8dff2ae52e7e3f87 2970-2ai/_3
+props: 2971 0 111 0 ae073b1a8624f4e72ab3bef202bf2f05
+cpath: /trunk/docutils/FAQ.txt
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 21
+file 2-340.0.r340/154
+K 8
+BUGS.txt
+V 24
+file 2-2181.0.r2970/1170
+K 11
+COPYING.txt
+V 22
+file 2-18.0.r2354/3164
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r2971/124
+K 11
+HISTORY.txt
+V 23
+file 5-18.0.r2963/10200
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r2513/394
+K 10
+README.txt
+V 21
+file 9-18.0.r2754/676
+K 10
+THANKS.txt
+V 23
+file 2-2182.0.r2860/123
+K 4
+docs
+V 20
+dir 3-7.0.r2964/1675
+K 8
+docutils
+V 22
+dir 1w-18.0.r2969/1974
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 23
+file 46-18.0.r2901/3967
+K 4
+test
+V 22
+dir 48-18.0.r2968/4094
+K 5
+tools
+V 22
+dir 6w-18.0.r2958/1478
+END
+ENDREP
+id: 1-7.0.r2971/1083
+type: dir
+pred: 1-7.0.r2970/2135
+count: 2241
+text: 2971 399 671 671 c905e116b3528846b36ab9b12ec57ac7
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r2971/1083
+K 7
+sandbox
+V 21
+dir 1-17.0.r2966/2696
+K 3
+web
+V 20
+dir 1-2.0.r2905/1520
+END
+ENDREP
+id: 3-1.0.r2971/1425
+type: dir
+pred: 3-1.0.r2970/2478
+count: 2945
+text: 2971 1296 116 116 5412e2f3c0cc2662cf224114e573d1e8
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 22
+dir 0-1.0.r2577/106684
+K 4
+tags
+V 20
+dir 2-1.0.r2576/3944
+K 5
+trunk
+V 20
+dir 3-1.0.r2971/1425
+END
+ENDREP
+id: 0.0.r2971/1706
+type: dir
+pred: 0.0.r2970/2759
+count: 2971
+text: 2971 1577 116 116 8194b51652cb5f3da1e28f9ad82c83e5
+cpath: /
+copyroot: 0 /
+
+2-788.0.t2970-2ai modify-file true true /trunk/docutils/FAQ.txt
+
+
+1706 1849

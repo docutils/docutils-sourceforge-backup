@@ -1,0 +1,225 @@
+K 8
+Dir.smak
+V 26
+file 2k-5058.0.r5757/10024
+K 4
+Text
+V 22
+dir 5-4741.0.r4741/933
+K 10
+badopt.dom
+V 27
+file 57-4710.0.r4710/190707
+K 10
+badopt.rst
+V 27
+file 59-4710.0.r4710/189358
+K 12
+no_opt_w.rst
+V 24
+file 7-5757.0.r5757/6757
+K 12
+no_opt_w.txt
+V 24
+file 9-5757.0.r5757/9094
+K 10
+noargs.dom
+V 27
+file 5b-4710.0.r4710/192508
+K 10
+noargs.rst
+V 27
+file 5d-4710.0.r4710/192067
+K 12
+opt_V.dom.re
+V 31
+file 5f-4710.0-5058.r5058/47408
+K 9
+opt_V.rst
+V 27
+file 5h-4710.0.r4710/191616
+K 9
+opt_d.dom
+V 26
+file 5j-4710.0.r5058/46420
+K 9
+opt_d.rst
+V 27
+file 5n-4710.0.r4710/192734
+K 11
+opt_dx2.dom
+V 26
+file 5p-4710.0.r5058/46673
+K 11
+opt_dx2.rst
+V 27
+file 5t-4710.0.r4710/190253
+K 11
+opt_dx3.dom
+V 26
+file 5v-4710.0.r5058/46928
+K 11
+opt_dx3.rst
+V 27
+file 5z-4710.0.r4710/190933
+K 9
+opt_h.dom
+V 27
+file 61-4710.0.r4710/190480
+K 9
+opt_h.rst
+V 27
+file 63-4710.0.r4710/189137
+K 27
+opt_ignore_include_errs.dom
+V 24
+file b-5757.0.r5757/5808
+K 27
+opt_ignore_include_errs.rst
+V 24
+file d-5757.0.r5757/7924
+K 25
+opt_no_file_insertion.dom
+V 24
+file f-5757.0.r5757/9551
+K 25
+opt_no_file_insertion.rst
+V 24
+file h-5757.0.r5757/7212
+K 22
+opt_relax_citation.dom
+V 24
+file j-5757.0.r5757/9316
+K 22
+opt_relax_citation.rst
+V 24
+file l-5757.0.r5757/6979
+K 14
+opt_report.txt
+V 25
+file n-5757.0.r5757/10513
+K 20
+opt_report_error.dom
+V 25
+file p-5757.0.r6498/22588
+K 20
+opt_report_error.rst
+V 24
+file r-5757.0.r5757/8395
+K 23
+opt_report_error.stderr
+V 25
+file t-5757.0.r6498/23908
+K 19
+opt_report_info.dom
+V 25
+file v-5757.0.r6498/23647
+K 19
+opt_report_info.rst
+V 24
+file x-5757.0.r5757/5578
+K 22
+opt_report_info.stderr
+V 25
+file z-5757.0.r6498/23384
+K 21
+opt_report_severe.dom
+V 26
+file 11-5757.0.r6498/22323
+K 21
+opt_report_severe.rst
+V 25
+file 13-5757.0.r5757/8161
+K 24
+opt_report_severe.stderr
+V 26
+file 15-5757.0.r6498/24172
+K 22
+opt_report_warning.dom
+V 26
+file 17-5757.0.r6498/23118
+K 22
+opt_report_warning.rst
+V 25
+file 19-5757.0.r5757/8859
+K 25
+opt_report_warning.stderr
+V 26
+file 1b-5757.0.r6498/22850
+END
+D 8
+Dir.smak
+K 4
+Text
+V 22
+dir 5-4741.0.t8951-6xe
+D 10
+badopt.dom
+D 10
+badopt.rst
+D 12
+no_opt_w.rst
+D 12
+no_opt_w.txt
+D 10
+noargs.dom
+D 10
+noargs.rst
+D 12
+opt_V.dom.re
+D 9
+opt_V.rst
+D 9
+opt_d.dom
+D 9
+opt_d.rst
+D 11
+opt_dx2.dom
+D 11
+opt_dx2.rst
+D 11
+opt_dx3.dom
+D 11
+opt_dx3.rst
+D 9
+opt_h.dom
+D 9
+opt_h.rst
+D 27
+opt_ignore_include_errs.dom
+D 27
+opt_ignore_include_errs.rst
+D 25
+opt_no_file_insertion.dom
+D 25
+opt_no_file_insertion.rst
+D 22
+opt_relax_citation.dom
+D 22
+opt_relax_citation.rst
+D 14
+opt_report.txt
+D 20
+opt_report_error.dom
+D 20
+opt_report_error.rst
+D 23
+opt_report_error.stderr
+D 19
+opt_report_info.dom
+D 19
+opt_report_info.rst
+D 22
+opt_report_info.stderr
+D 21
+opt_report_severe.dom
+D 21
+opt_report_severe.rst
+D 24
+opt_report_severe.stderr
+D 22
+opt_report_warning.dom
+D 22
+opt_report_warning.rst
+D 25
+opt_report_warning.stderr

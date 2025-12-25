@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2008-03-05T13:26:45.845153Z
+K 7
+svn:log
+V 356
+add patch from Hartmut Goebel
+
+* Support formats for literal
+* references are not typeset in italics (or what ever the renderer uses as italic font)
+* corrected output for emphasis
+* corrected dedenting after (bullet-, enum-, definition-, option-) lists
+* leading whitespace is removed from document, thus eg the tool 'file' detects the correct file-type
+
+
+END

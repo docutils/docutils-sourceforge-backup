@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2015-02-23T21:40:49.210361Z
+K 7
+svn:log
+V 207
+Wrap SVG images in <img> tags not <object>.
+
+Addresses bug [ 247 ], but rendering problems remain 
+(see test output test/functional/expected/standalone_rst_xhtml11.xhtml), 
+so we might need a config setting.
+END

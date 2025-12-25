@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-03T20:25:58.261562Z
+K 7
+svn:log
+V 205
+Doctree documentation: sort out "Attribute Types" sub-sections.
+
+Add a local ToC.
+
+4 sub-sections for
+"Standard Attribute Types",
+"Custom Attribute Types",
+"Names and identifiers", and
+"Common Attributes".
+END

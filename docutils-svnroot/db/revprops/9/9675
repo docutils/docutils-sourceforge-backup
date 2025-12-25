@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-03T20:26:07.788382Z
+K 7
+svn:log
+V 249
+Doctree documentation: fixes in Bibliography
+
+Move external hyperlink targets into bibliography section.
+
+Move indirect targets inside citation and amend "responsive.css"
+so that the cited title can be highlighted as active target.
+
+Fix broken link.
+END

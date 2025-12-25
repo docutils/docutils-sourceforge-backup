@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2013-07-12T07:52:27.304828Z
+K 7
+svn:log
+V 148
+Second version of patch #108.
+
+Sphinx i18n feature needs "node.source" and "node.line" value 
+at the admonition title node, not the admonition node.
+END

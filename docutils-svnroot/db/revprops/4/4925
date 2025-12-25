@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-02-21T19:23:58.405035Z
+K 7
+svn:log
+V 82
+* Added "-W enum-list-prefixes" flag.
+* Documentation deprecates "-W image-exts".
+
+END

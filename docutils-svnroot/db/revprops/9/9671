@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-03T09:47:45.066270Z
+K 7
+svn:log
+V 166
+Doctree documentation: drop repeated lists of specific admonitons.
+
+List specific admonitions (caution, danger, ...) once and use hyperreferences
+at the other places.
+END

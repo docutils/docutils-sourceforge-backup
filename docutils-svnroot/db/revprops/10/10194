@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-08-01T10:58:54.296939Z
+K 7
+svn:log
+V 93
+Fix plural case of an error message.
+
+Don't add the plural "s" if there is only one footnote.
+END

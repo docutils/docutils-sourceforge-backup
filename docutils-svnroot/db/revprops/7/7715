@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2013-08-21T21:49:14.921466Z
+K 7
+svn:log
+V 27
+Simplify visit_inline code.
+END

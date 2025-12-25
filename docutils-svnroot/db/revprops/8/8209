@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2018-01-08T23:29:19.866701Z
+K 7
+svn:log
+V 88
+Fix #338: re.sub() flag argument at wrong position.
+
+Thanks to Jakub Wilk for reporting.
+END

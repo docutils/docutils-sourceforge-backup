@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T01:31:12.493077Z
+K 7
+svn:log
+V 174
+Do not support just iterating file-like objects.
+That's more of a hack, and multi-file document support will fix this
+in a proper way.  After all, you can use ".. include::".
+END

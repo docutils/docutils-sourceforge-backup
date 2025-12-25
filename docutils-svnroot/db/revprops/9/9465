@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-11-08T23:42:23.133398Z
+K 7
+svn:log
+V 55
+Update manpage writer test. Fix flake8 warnings/errors.
+END

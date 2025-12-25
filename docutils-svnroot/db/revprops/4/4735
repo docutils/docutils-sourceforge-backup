@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2006-09-05T20:16:38.046102Z
+K 7
+svn:log
+V 111
+* Print the prest version in the help.
+* Use parse_directive to check the option names.
+* Simplified the code.
+
+END

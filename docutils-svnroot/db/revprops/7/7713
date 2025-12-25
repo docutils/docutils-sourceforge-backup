@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2013-08-04T09:10:00.923334Z
+K 7
+svn:log
+V 95
+ODF headers `text:h` are converted.
+
+Error log from XSLT is output so messages become visible.
+
+END

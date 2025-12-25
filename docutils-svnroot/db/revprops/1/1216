@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 8
+gschwant
+K 8
+svn:date
+V 27
+2003-03-14T14:53:10.000000Z
+K 7
+svn:log
+V 71
+
+Fixed bug which caused an error on addition of first tool
+in toolbox.
+
+END

@@ -1,0 +1,133 @@
+K 22
+definition_list_01.dom
+V 27
+file my-4710.0.r4710/185359
+K 22
+definition_list_01.rst
+V 27
+file n1-4710.0.r4710/184652
+K 23
+enumerated_lists_01.dom
+V 27
+file n3-4710.0.r4710/183726
+K 23
+enumerated_lists_01.rst
+V 27
+file n5-4710.0.r4710/187241
+K 20
+inline_markup_01.dom
+V 27
+file n7-4710.0.r4710/186769
+K 20
+inline_markup_01.rst
+V 27
+file n9-4710.0.r4710/185597
+K 20
+inline_markup_02.dom
+V 27
+file nb-4710.0.r4710/187005
+K 20
+inline_markup_02.rst
+V 27
+file nd-4710.0.r4710/185831
+K 21
+literal_blocks_01.dom
+V 27
+file nf-4710.0.r4710/186065
+K 21
+literal_blocks_01.rst
+V 27
+file nh-4710.0.r4710/185124
+K 18
+option_list_01.dom
+V 27
+file nj-4710.0.r4710/182342
+K 18
+option_list_01.rst
+V 27
+file nl-4710.0.r4710/186302
+K 18
+option_list_02.dom
+V 27
+file nn-4710.0.r4710/183032
+K 18
+option_list_02.rst
+V 27
+file np-4710.0.r4710/186535
+K 13
+tables_01.dom
+V 27
+file nr-4710.0.r4710/183965
+K 13
+tables_01.rst
+V 27
+file nt-4710.0.r4710/182576
+K 13
+tables_02.dom
+V 27
+file nv-4710.0.r4710/184194
+K 13
+tables_02.rst
+V 27
+file nx-4710.0.r4710/182804
+K 13
+tables_03.dom
+V 27
+file nz-4710.0.r4710/184423
+K 13
+tables_03.rst
+V 27
+file o1-4710.0.r4710/183266
+K 18
+transitions_01.dom
+V 27
+file o3-4710.0.r4710/184890
+K 18
+transitions_01.rst
+V 27
+file o5-4710.0.r4710/183494
+END
+D 22
+definition_list_01.dom
+D 22
+definition_list_01.rst
+D 23
+enumerated_lists_01.dom
+D 23
+enumerated_lists_01.rst
+D 20
+inline_markup_01.dom
+D 20
+inline_markup_01.rst
+D 20
+inline_markup_02.dom
+D 20
+inline_markup_02.rst
+D 21
+literal_blocks_01.dom
+D 21
+literal_blocks_01.rst
+D 18
+option_list_01.dom
+D 18
+option_list_01.rst
+D 18
+option_list_02.dom
+D 18
+option_list_02.rst
+D 13
+tables_01.dom
+D 13
+tables_01.rst
+D 13
+tables_02.dom
+D 13
+tables_02.rst
+D 13
+tables_03.dom
+D 13
+tables_03.rst
+D 18
+transitions_01.dom
+D 18
+transitions_01.rst

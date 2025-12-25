@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2003-02-17T07:57:23.000000Z
+K 7
+svn:log
+V 59
++ include tweaking for footnote floats in the writer code.
+
+END

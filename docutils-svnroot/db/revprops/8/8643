@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-03-26T13:51:21.842678Z
+K 7
+svn:log
+V 233
+Rename buildhtml.py's "html-writer" option to "writer".
+
+This is shorter and brings it in line with the "writer" option
+of the docutils-cli.py generic front end.
+
+The obsolete "html-writer" option is kept for backwards compatibility.
+END

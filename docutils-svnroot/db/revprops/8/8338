@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-08-26T12:09:42.609873Z
+K 7
+svn:log
+V 253
+Drop support for Python 3.3
+
+This doesn't involve a whole lot of changes, but references to Python
+3.3 (plus some to the already removed Python 2.6) are removed and
+'setup.py' is updated as necessary.
+
+Signed-off-by: Stephen Finucane <stephen@that.guru>
+END

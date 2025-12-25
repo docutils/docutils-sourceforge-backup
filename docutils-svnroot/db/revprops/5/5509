@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2008-02-15T09:10:52.564975Z
+K 7
+svn:log
+V 41
+Add test for ``.-_`` in citation labels.
+
+END

@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-04-26T11:40:15.967462Z
+K 7
+svn:log
+V 295
+Make `io.FileOutput.write()` work with bytes also on Windows.
+
+Don't attempt to change line endings to the OS default,
+if the `data` to write is a `bytes` instance.
+This fixes an error with the `core.rst2odt()` "script entry point"
+function under Windows.
+
+Mark current behaviour as provisional.
+END

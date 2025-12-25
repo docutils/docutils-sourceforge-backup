@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-01-17T15:40:43.320241Z
+K 7
+svn:log
+V 472
+More user-friendly DocInfo transform.
+
+More detailled feedback when extracting data from a bibliographic field fails.
+
+In bibliographic fields expecting a single paragraph (e.g. "author"),
+restore enumerated lists originating in ambiguous markup like
+"A. Einstein" (name with initial): in the given context, an we know that this
+should not be an enumeration, so fixing is better than throwing an error.
+
+Fix some cases of "ersatz" Boolean values from pre Python 2.3 times.
+END

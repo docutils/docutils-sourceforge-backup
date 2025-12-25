@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T01:12:48.829589Z
+K 7
+svn:log
+V 159
+Name-to-id conversion and hyperlink resolution code is a bit of a mess indeed,
+but I do not see much possibilities to clean it up -- it is inherently complex.
+
+END

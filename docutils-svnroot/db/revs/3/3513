@@ -1,0 +1,71 @@
+id: 1-7.0-3513.r3513/0
+type: dir
+pred: 1-7.0.r3512/11693
+count: 2670
+text: 3512 11051 629 629 3d74ddf588ece3e643c0358e2af771c7
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /branches/blais_interruptus
+copyfrom: 3512 /trunk/docutils
+
+PLAIN
+K 2
+ax
+V 24
+dir 3-1.0-1551.r1551/296
+K 17
+blais_interruptus
+V 22
+dir 1-7.0-3513.r3513/0
+K 7
+goodger
+V 22
+dir 3-1.0-19.r21/10951
+K 7
+nesting
+V 27
+dir 3-1.0-1813.r2577/106277
+K 4
+tibs
+V 20
+dir 3-1.0-63.r63/279
+K 6
+vendor
+V 21
+dir 3-1.0-3.r1556/334
+END
+ENDREP
+id: 0-1.0.r3513/510
+type: dir
+pred: 0-1.0.r3171/7579
+count: 42
+text: 3513 247 250 250 f8e4ac4254438b28d9edb027d5aee35b
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r3513/510
+K 4
+tags
+V 19
+dir 2-1.0.r3383/196
+K 5
+trunk
+V 21
+dir 3-1.0.r3512/12040
+END
+ENDREP
+id: 0.0.r3513/787
+type: dir
+pred: 0.0.r3512/12321
+count: 3513
+text: 3513 661 113 113 e9208801a4e20e45908bd28884e1cae4
+cpath: /
+copyroot: 0 /
+
+1-7._0.t3512-2pk add-dir false false /branches/blais_interruptus
+3512 /trunk/docutils
+
+787 929

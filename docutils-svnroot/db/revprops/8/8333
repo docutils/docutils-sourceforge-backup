@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-08-21T12:38:01.341431Z
+K 7
+svn:log
+V 126
+Remove legacy ImportError exception handlers (patch by Stephen Finucane).
+
+See https://sourceforge.net/p/docutils/patches/150/
+END

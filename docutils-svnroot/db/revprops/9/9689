@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-06T08:32:22.690450Z
+K 7
+svn:log
+V 331
+Mask trailing whitespace in test sample.
+
+Use Python string-escapes (`` \n\``) to mask a trailing whitespace in a
+"manpage" writer output sample.
+
+-1 one cannot use raw strings and must escape all literal backslashs.
++1 allows removing all trailing whitespace with a simple script
+   to avoid spurious whitespace in the repository.
+END

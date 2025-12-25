@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2009-08-18T18:39:39.141092Z
+K 7
+svn:log
+V 36
+Move manpage writer out of sandbox.
+
+END

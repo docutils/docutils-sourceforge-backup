@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-06-29T16:24:09.497800Z
+K 7
+svn:log
+V 165
+math update
+latex2e writer: set label if node has a name attribute
+html4css1 writer: do not wrap inline <math>
+functional test: adapt expected output to last changes
+END

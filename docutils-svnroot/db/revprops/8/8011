@@ -1,0 +1,29 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2017-01-03T21:56:17.989871Z
+K 7
+svn:log
+V 612
+Lots of refactorings and a few minor improvements.
+
+User visible improvements and changes:
+* Improve and debug `rst-forward-section` and `rst-backward-section`.
+* Auto-enumeration may be used with all styles for list insertion.
+* Improve and debug `rst-toc-insert`.
+* Adapt change in Emacs to use customization group `text` instead of `wp`.
+* Bind `n` and `p` in `rst-toc-mode`.
+* `z` in `toc-mode` returns to the previous window configuration.
+* Require Emacs version >= 24.1.
+
+Lots of refactorings including:
+* Silence byte compiler.
+* Use lexical binding.
+* Use `cl-lib`.
+* Add tests and raise test coverage.
+
+END

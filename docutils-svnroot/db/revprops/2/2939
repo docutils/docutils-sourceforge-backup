@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 7
+mmgilbe
+K 8
+svn:date
+V 27
+2005-01-16T22:44:36.000000Z
+K 7
+svn:log
+V 625
+Fixed a security error where through the rst parser any file readable by the webserver could be accessed. This fix is pretty ugly but I don't know of a better way.
+
+The docutils classes FileInput and FileOutput are overwritten with dummy versions.
+
+All docutils imports are scanned and have a dummy open and urllib2 added. All docutils imports also get a custom __import__ function so that any dynmically imported modules also get dummy open and urllib2.
+
+Added feature that counts the number of imports for a document stops importing after 20. 20 seemed like a reasonable guess. I really have no idea how many to make this.
+
+END

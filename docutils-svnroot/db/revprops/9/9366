@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-04-26T21:00:10.859534Z
+K 7
+svn:log
+V 228
+Documentation fix/update.
+
+The return value of `io.FileOutput` (and hence of `core.publish_cmdline()`
+and `core.publish_file()`) is a `str` instance (except for
+binary output document formats) and has always been under Python 3.
+END

@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-11-02T17:51:21.701307Z
+K 7
+svn:log
+V 461
+Relax test for valid parents of topics or sidebars.
+
+Raise error if the parent element belongs to a not-allowed parent class
+instead of when the parent element is not in a supported parent class.
+The difference is with uncategorized parent classes (like `node.Element`
+or `sphinx.addnodes.only`). This allows for auxiliary wrappers during
+the parsing step and fixes issues with the Sphinx "only" directive.
+
+cf. https://github.com/sphinx-doc/sphinx/issues/14002
+END

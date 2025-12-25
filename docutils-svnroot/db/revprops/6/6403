@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-09-08T07:39:21.231177Z
+K 7
+svn:log
+V 34
+Fix author of rst2beamer front end
+END

@@ -1,0 +1,19 @@
+K 12
+include2.txt
+V 27
+file 4k-4580.0.r4580/150164
+K 14
+tables38.mydom
+V 27
+file 4n-4580.0.r4580/150392
+K 14
+test_tables.py
+V 27
+file 4p-4580.0.r4580/149871
+END
+D 12
+include2.txt
+D 14
+tables38.mydom
+D 14
+test_tables.py

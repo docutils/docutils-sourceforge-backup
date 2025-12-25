@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-08-22T15:57:38.000000Z
+K 7
+svn:log
+V 306
+Updated functional test for LaTeX writer.
+
+*Please* don't forget to update tests after checking in changes.
+Running alltests.py, verifying that the actual LaTeX output in
+test/functional/output/ is correct and copying the actual output file
+into the expected/ directory would already have been sufficient.
+
+END

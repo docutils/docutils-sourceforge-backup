@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2015-10-04T08:23:22.326793Z
+K 7
+svn:log
+V 39
+Update tutorial to V1.4.1 of `rst.el`.
+
+END

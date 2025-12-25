@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-09-24T02:10:48.000000Z
+K 7
+svn:log
+V 440
+  - Added support for improved diagnostics:    - Added "document", "source", and "line" internal attributes to      ``Node``, set by ``Node.setup_child()``.    - Converted variations on ``node.parent = self`` to      ``self.setup_child(node)``.    - Added ``document.current_source`` & ``.current_line``      attributes, and ``.note_state_machine_change`` &      ``.note_source`` observer methods.  - Fixed "xml:space" attribute.
+
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2004-05-26T16:19:16.000000Z
+K 7
+svn:log
+V 76
+Chg: use raggedright instead of flushleft for literal-blocks inside tables.
+
+END

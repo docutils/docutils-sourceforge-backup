@@ -1,0 +1,28 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-04-27T12:58:58.411822Z
+K 7
+svn:log
+V 634
+Fix/Clarify Doctree element categories documentation.
+
+Update the documentation to match actual behaviour in nodes.py.
+
+- Simplify the "simplified diagram of the hierarchy".
+  Write it as a table instead of a literal block.
+- Document the category "Root" (`nodes.Root`).
+- Remove `<document>` from "structural elements" category members.
+- Add `reference` to "body elements" category members
+  (may be used with `<image>` at body element level, see docutils.dtd).
+
+Move the description of section structure to the `<section>`
+element reference section.
+
+Move external hyperlink targets to the document bottom.
+Fix trailing whitespace.
+END

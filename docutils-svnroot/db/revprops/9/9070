@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-06-13T12:05:32.125175Z
+K 7
+svn:log
+V 159
+Fix some problems with HTML5 stylesheets. Add tests for "tuftig.css".
+
+Ignore footnote back-references, when copying from Firefox.
+Small tweaks for tuftig.css.
+END

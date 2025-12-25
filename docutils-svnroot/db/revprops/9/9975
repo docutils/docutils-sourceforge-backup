@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-10-28T22:19:10.283025Z
+K 7
+svn:log
+V 116
+Small fix for target-highlight in "responsive" stylesheet (HTML5).
+
+Highlight complete citation, not only the label.
+END

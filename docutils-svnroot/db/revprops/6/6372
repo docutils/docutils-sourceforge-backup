@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2010-07-10T07:04:34.782321Z
+K 7
+svn:log
+V 22
+use buildhtml --local
+
+END

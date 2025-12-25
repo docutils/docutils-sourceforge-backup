@@ -1,0 +1,31 @@
+K 24
+enumerated_lists04.mydom
+V 27
+file 2a-4580.0.r4580/147091
+K 24
+enumerated_lists05.mydom
+V 27
+file 2d-4580.0.r4580/147345
+K 24
+enumerated_lists11.mydom
+V 27
+file 2f-4580.0.r4580/147598
+K 24
+enumerated_lists20.mydom
+V 27
+file 2h-4580.0.r4580/147852
+K 24
+test_enumerated_lists.py
+V 27
+file 2j-4580.0.r4580/148148
+END
+D 24
+enumerated_lists04.mydom
+D 24
+enumerated_lists05.mydom
+D 24
+enumerated_lists11.mydom
+D 24
+enumerated_lists20.mydom
+D 24
+test_enumerated_lists.py

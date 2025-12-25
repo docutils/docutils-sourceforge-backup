@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-08-14T23:18:36.570571Z
+K 7
+svn:log
+V 58
+removed bug with indirect substitutions; seems to be fixed
+END

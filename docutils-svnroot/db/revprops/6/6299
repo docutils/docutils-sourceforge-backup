@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2010-04-01T21:11:42.416370Z
+K 7
+svn:log
+V 211
+* Extension to 'generic' state:
+
+  - Function string can now specify "variable", "reference" or a
+    custom face for formatting substrings
+  - The function regular expression can now contain up to 9 substrings
+
+END

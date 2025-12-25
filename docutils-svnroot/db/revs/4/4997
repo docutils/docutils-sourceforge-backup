@@ -1,0 +1,247 @@
+id: 1-7.0-4997.r4997/0
+type: dir
+pred: 1-7.0.r4993/3145
+count: 3454
+text: 4993 2445 687 687 18b57d15821f45a326d22c2e1fd63905
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/sandbox/include-before-after
+copyfrom: 4996 /trunk/docutils
+
+PLAIN
+K 10
+README.txt
+V 21
+file 3-17.0.r4786/154
+K 8
+aafigure
+V 27
+dir 5-4251.0-4994.r4996/210
+K 4
+aahz
+V 23
+dir 2-820.0.r3892/10934
+K 9
+agurtovoy
+V 23
+dir 2-2034.0.r2034/7482
+K 3
+amk
+V 23
+dir 2-1891.0.r1892/1276
+K 3
+axk
+V 25
+dir 2-1550.0-3242.r3242/0
+K 4
+bbum
+V 23
+dir 2-1039.0.r1742/2047
+K 5
+blais
+V 23
+dir 2-1316.0.r4654/4442
+K 4
+cben
+V 24
+dir 2-1693.0.r3533/13838
+K 8
+cliechti
+V 23
+dir 2-3204.0.r4585/2211
+K 9
+codeintro
+V 23
+dir 2-4954.0.r4977/1117
+K 6
+davidg
+V 20
+dir 6-17.0.r4646/460
+K 5
+delza
+V 23
+dir 2-1723.0.r1723/3836
+K 8
+dkuhlman
+V 23
+dir 2-1555.0.r4962/6824
+K 12
+docpy-writer
+V 28
+dir 2-4521.0-4565.r4626/8182
+K 7
+dpriest
+V 21
+dir 2-1730.0.r4985/58
+K 12
+dreamcatcher
+V 22
+dir 2-1300.0.r1357/657
+K 5
+dugui
+V 23
+dir 2-4358.0.r4360/1485
+K 7
+edloper
+V 21
+dir 2-1844.0.r4984/97
+K 7
+grubert
+V 22
+dir 2-112.0.r4928/5921
+K 8
+gschwant
+V 23
+dir 2-675.0.r4442/16701
+K 9
+holdenweb
+V 23
+dir 2-1845.0.r1845/4805
+K 4
+ianb
+V 23
+dir 2-881.0.r3892/12710
+K 20
+include-before-after
+V 22
+dir 1-7.0-4997.r4997/0
+K 14
+infrastructure
+V 26
+dir 3-189.0-3951.r4986/883
+K 5
+jensj
+V 23
+dir 2-2942.0.r4897/2235
+K 4
+lalo
+V 23
+dir 2-1749.0.r1762/2166
+K 15
+latex_directive
+V 22
+dir 2-4364.0.r4365/616
+K 14
+manpage-writer
+V 23
+dir 4-4773.0.r4831/5621
+K 3
+mly
+V 23
+dir 2-1431.0.r1432/2681
+K 7
+mmgilbe
+V 23
+dir 2-1841.0.r2945/2205
+K 3
+mwh
+V 21
+dir 2-857.0.r862/1023
+K 7
+oliverr
+V 22
+dir 2-202.0.r4701/1400
+K 12
+paultremblay
+V 23
+dir 2-1323.0.r1489/1149
+K 7
+pobrien
+V 23
+dir 2-1158.0.r1777/4967
+K 13
+presentations
+V 25
+dir 2-4940.0.r4941/808365
+K 7
+richard
+V 22
+dir 2-526.0.r4082/1725
+K 6
+simonb
+V 21
+dir 2-252.0.r1227/852
+K 11
+stylesheets
+V 22
+dir 2-3847.0.r3941/453
+K 4
+tibs
+V 20
+dir 2-62.0.r4082/879
+K 12
+verse-writer
+V 23
+dir 2-4842.0.r4847/2800
+K 4
+wilk
+V 23
+dir 2-1258.0.r1650/3830
+K 10
+xhtml2rest
+V 28
+dir 3-3749.0-4373.r4373/1861
+END
+ENDREP
+id: 1-17.0.r4997/2078
+type: dir
+pred: 1-17.0.r4996/2184
+count: 993
+text: 4997 253 1812 1812 ae37d4e263c0ef0b977057c73a4e256c
+cpath: /trunk/sandbox
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r4993/3145
+K 5
+prest
+V 23
+dir 1-4326.0.r4949/4538
+K 7
+sandbox
+V 21
+dir 1-17.0.r4997/2078
+K 3
+web
+V 20
+dir 1-2.0.r4806/2887
+END
+ENDREP
+id: 3-1.0.r4997/2408
+type: dir
+pred: 3-1.0.r4996/2514
+count: 4615
+text: 4997 2240 155 155 05053edafbf2591cf68dfc6694cc1ac2
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r4987/1677
+K 4
+tags
+V 19
+dir 2-1.0.r4584/629
+K 5
+trunk
+V 20
+dir 3-1.0.r4997/2408
+END
+ENDREP
+id: 0.0.r4997/2686
+type: dir
+pred: 0.0.r4996/2792
+count: 4997
+text: 4997 2560 113 113 6dc7008c616533c99be574fd38a4c417
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+
+1-7._0.t4996-3us add-dir false false /trunk/sandbox/include-before-after
+4996 /trunk/docutils
+
+2686 2880

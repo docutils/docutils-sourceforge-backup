@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-02-13T12:00:39.658275Z
+K 7
+svn:log
+V 40
+Fix/Update HTML5 writer functional test.
+END

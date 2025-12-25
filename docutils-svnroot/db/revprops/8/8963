@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-24T21:45:37.119350Z
+K 7
+svn:log
+V 332
+Test config settings in "non-native" config file sections.
+
+Config file sections may also contain settings from other components.
+
+They are used, if
+
+* they are defined in an active "SettingsSpec.settings_spec",
+
+* the containing section is the `confg_section` or in the
+  `config_section_overrides` of one of the active components.
+END

@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 8
+dkuhlman
+K 8
+svn:date
+V 27
+2006-08-28T22:17:16.321537Z
+K 7
+svn:log
+V 284
+Fixes so that rst2odt.py/odtwriter will work when it is installed
+under site-packages/docutils.
+
+Fixes so that odtwriter will find the default styles.odt file in the
+directory where odtwriter.py lives.
+
+Added visit_/depart_ methods in support of the source link and
+docutils footer.
+
+
+END

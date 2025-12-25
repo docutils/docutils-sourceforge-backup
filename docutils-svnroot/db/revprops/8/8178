@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-09-14T13:41:15.104813Z
+K 7
+svn:log
+V 42
+more compact comments for __version_info__
+END

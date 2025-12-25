@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-09-19T18:39:39.000000Z
+K 7
+svn:log
+V 152
+made stylesheet and stylesheet_path mutually exclusive;
+made get_stylesheet_reference of latex writer match the documented behavior for stylesheet_path
+
+END

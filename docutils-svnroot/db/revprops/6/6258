@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-03-05T09:34:44.134199Z
+K 7
+svn:log
+V 137
+include MANIFEST in source distribution
+
+see http://www.developertutorials.com/tutorials/python/advanced-python-topics-050706/page6.html
+
+END

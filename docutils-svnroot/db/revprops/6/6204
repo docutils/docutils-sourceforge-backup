@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-11-30T08:10:35.806875Z
+K 7
+svn:log
+V 134
+New ``latex_preamble`` setting, PDF standard fonts as default.
+
+Use Times/Helvetica/Courier (the PDF standard fonts) as default fonts.
+END

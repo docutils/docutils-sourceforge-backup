@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 3
+ax-
+K 8
+svn:date
+V 27
+2004-07-01T23:48:05.000000Z
+K 7
+svn:log
+V 130
+* updated chm to documentation in CVS as of today
+* renamed rst.chm to docutils.chm
+* removed contents (hhc)+ project (hhp) files
+
+END

@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-03-14T16:35:03.652573Z
+K 7
+svn:log
+V 310
+Link to the document top from the ToC heading.
+
+Add a "back"-link to "#top" (unless toc_backlinks_ is False).
+For the definition of "#top" see the HTML standard section
+"Scrolling to a fragment"
+https://html.spec.whatwg.org/multipage/browsing-the-web.html#scrolling-to-a-fragment
+(point 10 in the second list).
+END

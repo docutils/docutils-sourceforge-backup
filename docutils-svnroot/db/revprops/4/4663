@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2006-07-11T21:12:27.509323Z
+K 7
+svn:log
+V 101
+Updated common makefile Common.mk to add support for creating coverage
+databases using Devel::Cover.
+
+END

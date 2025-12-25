@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-12-05T21:14:01.929170Z
+K 7
+svn:log
+V 106
+Do not decode file content with sys.getfilesystemencoding().
+
+Thanks to Matin Bless for pointing this out.
+END

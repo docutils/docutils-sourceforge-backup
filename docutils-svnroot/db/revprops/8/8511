@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-04-03T16:57:47.049891Z
+K 7
+svn:log
+V 228
+html5 writer: classify image references also for inline images.
+
+Add "inmage-reference" to the class arguments for all references
+that contain only one image node.
+
+Allows CSS styling to underline text links but not image links.
+END

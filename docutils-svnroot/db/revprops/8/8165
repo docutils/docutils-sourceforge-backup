@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2017-08-14T22:23:30.835922Z
+K 7
+svn:log
+V 515
+* Consolidated version numbering documentation in docs/dev/policies.txt (moved text from docs/dev/release.txt).
+* Updated docutils.utils.version_identifier for Python 2.6 (docutils.VersionInfo).
+* Moved code from tests/test/test_utils.py::HelperFunctionsTests.test_version_identifier to tests/test__init__.py::VersionInfoTests.test_version_identifier; uncommented lines in tests/test__init__.py::VersionInfoTests.test_version_info.
+* Added new tests/test/test_utils.py::HelperFunctionsTests.test_version_identifier.
+END

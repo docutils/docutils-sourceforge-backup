@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-11-07T19:31:00.000000Z
+K 7
+svn:log
+V 153
+removed newline at end of raw text, because sometimes (when there are
+two consecutive newlines) the newline creates a new paragraph in LaTeX;
+added test
+
+END

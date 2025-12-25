@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-06-15T08:48:38.274359Z
+K 7
+svn:log
+V 342
+Experimental HTML5/CSS3 style-sheet inspired by Edward Tufte's layout design.
+
+Use media query to determine screen width and better use it.
+-> Better support for sidebars,
+-> Footnotes in the margin (if space permits).
+
+Work in progress.
+
+Block colouring is used as a development aide,
+the final version will have a uniform background colour.
+END

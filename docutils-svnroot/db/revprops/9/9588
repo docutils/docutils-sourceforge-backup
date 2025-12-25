@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2024-03-25T11:35:23.929007Z
+K 7
+svn:log
+V 49
+do not start UR and UE with eol if not necessary
+
+END

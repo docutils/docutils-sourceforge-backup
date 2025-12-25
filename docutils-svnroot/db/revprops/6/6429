@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-09-21T10:04:50.639744Z
+K 7
+svn:log
+V 222
+Prevent page breaks between block-quote and attribution.
+
+Use literal em-dash instead of "---" LaTeX input convention.
+(The EM DASH Unicode char is converted to the \\\\emdash macro if
+exporting to a non-Unicode encoding.)
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2010-09-12T09:49:02.523668Z
+K 7
+svn:log
+V 78
+Removed implementation by smerten to make room for alternative implementation.
+END

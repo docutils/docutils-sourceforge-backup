@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-08-24T01:18:09.000000Z
+K 7
+svn:log
+V 139
+  - Bumped version to 0.2.2 to reflect changes to stylesheet options.  - Factored ``OptionSpec`` out of ``Component``; separately useful.
+
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2019-08-19T19:14:24.536032Z
+K 7
+svn:log
+V 115
+Fix: xml.etree.ElementTree Element.getchildren deprecated warnings 
+    running tests with PYTHONWARNINGS=default 
+
+END

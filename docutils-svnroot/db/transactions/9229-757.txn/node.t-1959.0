@@ -1,0 +1,9 @@
+id: t-1959.0.t9229-757
+type: file
+pred: t-1959.0.r9141/29454
+count: 19
+text: -1 6589 514 7378 14bbaed4e21236fcedc3728e736d7788 58bfc3139be3af1c09a9b9527bed4fc3aeabb4df 9229-757/_l
+props: 2814 4760 136 0 890d43bec30e9ba6dd64df7e9c78dad3
+cpath: /trunk/docutils/test/test_parsers/test_rst/test_directives/test_role.py
+copyroot: 0 /
+

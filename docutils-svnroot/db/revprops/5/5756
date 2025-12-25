@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2008-12-02T20:20:03.514898Z
+K 7
+svn:log
+V 71
+Extended test to cover fatal error in perl block returned by perl block
+END

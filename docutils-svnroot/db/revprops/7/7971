@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2016-09-13T19:11:48.449854Z
+K 7
+svn:log
+V 88
+Terminate LaTeX replacement macros with {}.
+
+Thanks to Alan Isaac for pointing this out.
+END

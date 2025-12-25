@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+mmgilbe
+K 8
+svn:date
+V 27
+2004-12-09T06:12:42.000000Z
+K 7
+svn:log
+V 244
+Tested briefly with MoinMoin 1.3. Fixed a problem with the write ordering that was changed with 1.3 (see comment on function process_wiki_text).
+
+Still needs more 1.3 testing, but that means I have to figure out how to install the new version.
+
+END

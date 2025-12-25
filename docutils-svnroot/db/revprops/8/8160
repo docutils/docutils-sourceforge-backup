@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-08-08T20:26:12.898697Z
+K 7
+svn:log
+V 189
+Update documentation of the version identification.
+
+Document the consensus reached about version identifier and version info tuple
+in the discussion on docutils-devel in Mai and June 2017.
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-08-24T12:57:04.400344Z
+K 7
+svn:log
+V 65
+bugfix: prevent repeated Abstract title with --use-latex-abstract
+END

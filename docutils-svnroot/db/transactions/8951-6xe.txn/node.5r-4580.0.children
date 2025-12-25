@@ -1,0 +1,31 @@
+K 15
+ExtractTests.pm
+V 26
+file 5s-4580.0.r4580/74606
+K 14
+images14.mydom
+V 26
+file 5v-4580.0.r4580/75415
+K 14
+images24.mydom
+V 26
+file 5x-4580.0.r4580/74370
+K 14
+images30.mydom
+V 26
+file 5z-4580.0.r4580/75179
+K 14
+test_images.py
+V 26
+file 61-4580.0.r4580/74884
+END
+D 15
+ExtractTests.pm
+D 14
+images14.mydom
+D 14
+images24.mydom
+D 14
+images30.mydom
+D 14
+test_images.py

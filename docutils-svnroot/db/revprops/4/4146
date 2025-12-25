@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-12-06T01:05:17.261246Z
+K 7
+svn:log
+V 57
+Added trailing whitespace stripping to ``string2lines()``
+END

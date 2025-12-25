@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2006-09-05T20:13:16.786716Z
+K 7
+svn:log
+V 187
+* Use parse_directive to check option names.
+* Return a PCDATA DOM if in a substitution definition context (instead
+  of appending it).
+* Don't add a null paragraph if the text is empty.
+
+END

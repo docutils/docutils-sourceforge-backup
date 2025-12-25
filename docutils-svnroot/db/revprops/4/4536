@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2006-05-12T17:14:47.184731Z
+K 7
+svn:log
+V 250
+Significantly improved the rst-shift-region-* functions 
+to take into account the preceding lines in order to figure
+out what the appropriate indentation is, depending on 
+the presence of bulleted lists or enumerated list items or 
+rest directives.
+
+
+END

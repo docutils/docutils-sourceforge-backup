@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-12-09T15:52:16.891176Z
+K 7
+svn:log
+V 157
+Fix bug #410 The 'document' attribute is None for many nodes.
+
+Use a "property" function to recursively fetch the
+`Node.document` value from the parent node.
+END

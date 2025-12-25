@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2013-07-13T18:15:43.247211Z
+K 7
+svn:log
+V 90
+testing on ubuntu 10.04 installation broken because of different module directory: revert
+
+END

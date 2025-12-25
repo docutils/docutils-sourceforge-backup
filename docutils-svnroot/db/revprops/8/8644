@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-03-26T13:51:36.887916Z
+K 7
+svn:log
+V 139
+Documentation update.
+
+Fix or remove broken links.
+Adapt to changes in recent versions.
+Adapt to state of the art in HTML and web browsers.
+END

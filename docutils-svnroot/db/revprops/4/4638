@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2006-06-25T08:29:13.151479Z
+K 7
+svn:log
+V 59
+Added a kludge to allow publishing from within mod_python.
+
+END

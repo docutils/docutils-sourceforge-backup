@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2008-12-05T19:01:52.336197Z
+K 7
+svn:log
+V 110
+fixed attribute error when visiting unknown node types (node.document is not always set, but self.document is)
+END

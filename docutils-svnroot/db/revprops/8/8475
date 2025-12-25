@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-01-30T00:44:51.592828Z
+K 7
+svn:log
+V 109
+html5: use semantic text-level tags
+
+if matching class value found in "inline"
+and "inline-literal" emements.
+END

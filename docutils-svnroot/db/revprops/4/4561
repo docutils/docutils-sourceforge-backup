@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-05-19T00:19:00.658504Z
+K 7
+svn:log
+V 94
+removed to-do list item about already-implemented container element;
+thanks to Nicolas Girard!
+END

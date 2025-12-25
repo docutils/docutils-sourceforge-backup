@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-12-18T14:25:07.600245Z
+K 7
+svn:log
+V 168
+Add tagname to "illegal element" substitution definition error message.
+
+Be a bit more verbose when detecting nodes that are disallowed inside
+substitution definitions.
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-08-27T12:09:56.305444Z
+K 7
+svn:log
+V 63
+Formatting changes to facilitate integration of "py3" patchset.
+END

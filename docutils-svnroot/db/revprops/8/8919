@@ -1,0 +1,32 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-12-29T00:01:16.084299Z
+K 7
+svn:log
+V 810
+Avoid mutables as function argument defaults.
+
+Mutable default values for functions are considered an anti-pattern
+(cf. bug #430 and
+https://docs.python-guide.org/writing/gotchas/#mutable-default-arguments).
+
+Mutable default values (empty lists and dictionaries) were used
+in the "interpreted role function" API:
+Interpreted role functions must accept (optional)
+"options" and "content" arguments and must not modify passed values.
+
+OTOH, the actual default value is irrelevant for the API, so there is
+no need to use mutable defaults in the specification.
+As a precaution and example for robust coding, mutable defaults
+are replaced with None in the function definitions.
+
+The documentation is updated to the current implementation (including
+changes in [r8254] to apply feature request #63).
+
+Fixes bug #430.
+END

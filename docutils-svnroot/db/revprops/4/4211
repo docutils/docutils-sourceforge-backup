@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-12-14T14:50:54.096010Z
+K 7
+svn:log
+V 56
+added path for extra modules (roman, optparse, textwrap)
+END

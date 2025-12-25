@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-11-24T20:29:12.508754Z
+K 7
+svn:log
+V 151
+Update Docutils enhancement proposals.
+
+Use standard rST for the document title.
+
+Change encodings test script to place generated samples in a sub-dir.
+END

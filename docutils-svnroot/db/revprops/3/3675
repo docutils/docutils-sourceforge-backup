@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2005-07-08T04:28:24.760997Z
+K 7
+svn:log
+V 60
+Added simple use case test for publishing document as parts.
+END

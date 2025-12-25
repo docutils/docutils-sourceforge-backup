@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2008-06-22T08:46:24.481026Z
+K 7
+svn:log
+V 33
+add latex2e --litereal-block-env
+
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2018-11-21T19:09:09.631168Z
+K 7
+svn:log
+V 101
+Fix #352 The docstring of Transformer class is wrong.
+
+Thanks to Takeshi KOMIYA for report and patch.
+END

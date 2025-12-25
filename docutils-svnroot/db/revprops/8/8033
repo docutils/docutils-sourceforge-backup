@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-02-13T21:40:21.356999Z
+K 7
+svn:log
+V 134
+Apply [ 125 ] respect automatic table column sizing also in html4css1.
+
+Add a table with "auto"-width columns to the functional tests.
+END

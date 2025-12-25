@@ -1,0 +1,29 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-29T16:28:17.067594Z
+K 7
+svn:log
+V 630
+Fix code indentation
+
+Check conformance to our coding policies with flake8.
+
+Fix the following problems:
+
+E111 indentation is not a multiple of four
+E114 indentation is not a multiple of four (comment)
+E115 expected an indented block (comment)
+E116 unexpected indentation (comment)
+E117 over-indented
+E121 continuation line under-indented for hanging indent
+E122 continuation line missing indentation or outdented
+E124 closing bracked does not match visual indentaion
+E127 continuation line over-indented for visual indent
+E128 continuation line under-indented for visual indent
+E131 continuation line unaligned for hanging indent
+END

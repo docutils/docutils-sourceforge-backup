@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2010-03-01T20:46:18.350614Z
+K 7
+svn:log
+V 177
+* Added support for the label of a mathml equation
+* Do a better job of propagating class information for parsed_literal
+* Convert the -e encoding to the right format for HTML.
+
+END

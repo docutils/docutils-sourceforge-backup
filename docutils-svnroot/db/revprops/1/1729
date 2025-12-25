@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2003-10-29T08:51:13.000000Z
+K 7
+svn:log
+V 97
+Fix a typo in LaTeX.txt.
+Fix vertical bar: by using textbar
+Change <> by using textless/greater.
+
+END

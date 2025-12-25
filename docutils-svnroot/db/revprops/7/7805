@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2015-02-26T17:28:36.471676Z
+K 7
+svn:log
+V 73
+Register xhtml as alias for xhtml11 writer. Copy xhtml11.css in setup.py.
+END

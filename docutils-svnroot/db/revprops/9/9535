@@ -1,0 +1,39 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-02-01T13:04:04.746521Z
+K 7
+svn:log
+V 931
+Base MathML element classes on xml.etree.
+
+Use `xml.etree` for a more standard compatible implementation of
+MathML element classes.
+
+`xml.etree` comes with methods to represent XML elements,
+to convert to XML (since Python 3.9 also indented XML),
+search for elements, iterate over nodes etc.
+
+The new module adds an interface to the requirements of latex2mathml:
+
+* Simpler instantiation
+  - tag name taken from class name,
+  - attribute names are normalized to lowercase
+    (allows 'CLASS' for 'class'),
+  - attribute values may be specified as numbers, booleans, or strings
+    (converted to `str` before storing).
+
+* "internal" attributes to store a reference to the parent element
+  and the number of expected children.
+
+* "appending" to and "closing" an element returns the new "active node"
+  (insertion point).
+
+* Remove redundant `<mrow>` elements when closing.
+
+* toxml() by default returns a Unicode `str` (not `bytes`).
+END

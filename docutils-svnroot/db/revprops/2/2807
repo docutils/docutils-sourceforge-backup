@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-11-05T18:09:27.000000Z
+K 7
+svn:log
+V 115
+fixed label-printing function;
+behavior was incorrect on use-latex-footnotes/-citations.
+Hmm.  We need more tests.
+
+END

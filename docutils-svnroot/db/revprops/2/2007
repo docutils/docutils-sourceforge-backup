@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 4
+cben
+K 8
+svn:date
+V 27
+2004-04-27T21:37:21.000000Z
+K 7
+svn:log
+V 141
+Treat ``_`` as punctuation.  Solves problems with one-word ``links_`` and
+explicit ``.. _targets:`` (e.g. dabbrev-expand now works on them).
+
+END

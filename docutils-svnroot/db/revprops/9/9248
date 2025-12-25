@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-11-16T01:30:02.685351Z
+K 7
+svn:log
+V 68
+Revert [r9247] "Regenerate ``punctuation_chars``"
+
+Two tests failed.
+END

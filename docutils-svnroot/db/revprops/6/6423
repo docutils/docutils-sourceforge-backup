@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-09-17T21:38:29.114071Z
+K 7
+svn:log
+V 315
+Handle language codes according to BCP 47 
+(Best Current Praxis: Tags for Identifying Languages).
+
+Normalize language tags: downcase, - to _, optional subtags.
+
+E.g. Given "de-AT-1901", look for language modules
+     "de_at_1901", "de_at", "de_1901", and "de"
+     
+TODO: warn (instead of fail), if no module found.
+END

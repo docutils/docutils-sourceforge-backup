@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-04-19T23:31:13.149380Z
+K 7
+svn:log
+V 238
+Move import of "urllib" to the top of modules.
+
+The reasons for deferring the import of "urllib" to later in the code
+no longer merit deviating from coding style policy.
+(Loading time improved from 0.15s to 0.03s with the switch to Py3k.)
+END

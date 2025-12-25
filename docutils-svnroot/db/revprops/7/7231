@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-11-25T21:48:01.047916Z
+K 7
+svn:log
+V 98
+Fix [ 2926161 ] for simple tables.
+
+Combining chars in grid tables still contribute to cell width.
+END

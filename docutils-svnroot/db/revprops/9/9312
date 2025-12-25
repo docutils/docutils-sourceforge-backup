@@ -1,0 +1,28 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-12-19T20:43:08.018426Z
+K 7
+svn:log
+V 692
+Fix [bugs:#384]: allow omission of citations with "use_bibtex" setting.
+
+If the "use_bibtex" LaTeX writer setting is active (i.e. not empty),
+citations are added by LaTeX/BibTeX from a database for all citation references
+in the document.
+The reference resolver transform now skips `citation_reference` nodes instead of
+expecting matching `citation` nodes in this case.
+
+"use_bibtex" content is now transformed to a list by the
+`frontend.validate_comma_separated_list()` validator.
+As BibTeX works only with "LaTeX citations", the "use_latex_citations" setting
+is set to True whenever "use_bibtex" is not empty.
+
+Update documentation.
+
+The test function, added in the last commit, now passes.
+END

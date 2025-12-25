@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-25T16:39:07.304014Z
+K 7
+svn:log
+V 256
+docutils-cli: Use "SettingsSpec" interface for config file parsing.
+
+Use the high-level interface provided by docutils.core
+instead of the low-level classes/functions in docutils.frontend
+to get reader/parser/writer names from standard configuration files.
+END

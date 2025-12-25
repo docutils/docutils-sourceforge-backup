@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-03-05T23:28:32.657800Z
+K 7
+svn:log
+V 74
+Avoid too long lines.
+
+flake8 rule E501: line too long (N > 79 characters)
+END

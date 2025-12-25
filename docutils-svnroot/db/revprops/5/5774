@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2008-12-02T20:44:12.819050Z
+K 7
+svn:log
+V 69
+Updated to remove coverability stuff not needed with new Devel::Cover
+END

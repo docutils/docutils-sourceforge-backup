@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+jensj
+K 8
+svn:date
+V 27
+2007-03-08T15:49:56.471886Z
+K 7
+svn:log
+V 143
+Sums, integrals and products now have the limit below and above instead 
+of as subscripts and superscripts. Also, a few small bugs were fixed.
+
+END

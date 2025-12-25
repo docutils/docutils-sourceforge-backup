@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2006-01-26T18:28:52.724563Z
+K 7
+svn:log
+V 101
+updated description of sandbox directories to emphasize project directories over personal directories
+END

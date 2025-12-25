@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2014-02-28T14:28:07.108764Z
+K 7
+svn:log
+V 112
+Apply [ 115 ] mind for fixed 2to3 string literal conversion behavior.
+
+Thanks to Jakub Wilk and Michael Schutte.
+END

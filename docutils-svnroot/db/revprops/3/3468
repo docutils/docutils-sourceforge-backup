@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-11T23:03:19.930227Z
+K 7
+svn:log
+V 117
+moved \vspace out of image implementation so that
+when adding borders around images the \vspace is outside the border
+END

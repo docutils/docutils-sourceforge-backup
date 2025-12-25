@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 8
+dkuhlman
+K 8
+svn:date
+V 27
+2007-12-07T22:56:17.915178Z
+K 7
+svn:log
+V 62
+Fixes to (1) image substitution and (2) syntax highlighting.
+
+
+END

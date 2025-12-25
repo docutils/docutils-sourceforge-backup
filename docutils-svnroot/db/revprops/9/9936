@@ -1,0 +1,27 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-09-20T08:32:41.303672Z
+K 7
+svn:log
+V 592
+Use `nodes.parse_measure()` in rST directive option conversion.
+
+Simplify `parsers.rst.directives.get_measure()` by using
+`nodes.parse_measure()`.
+
+Sort the list of supported length units in the order used in the
+rST specification (based on the CSS specification).
+
+Update and extend the lenght value handling tests.
+Clarify and test behaviour:
+
+* case of length units is preserved (in contrast to CSS)
+* the restriction of supported units is a rST feature
+  while the Docutils Doctree allows any run of ASCII letters + µ
+  or a percent sign as units on attributes with value type "measure".
+END

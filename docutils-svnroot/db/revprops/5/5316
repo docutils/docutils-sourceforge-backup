@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2007-07-05T15:22:39.099984Z
+K 7
+svn:log
+V 47
+require only standard-latex packages by default
+END

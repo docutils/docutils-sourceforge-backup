@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-01-08T21:37:48.168849Z
+K 7
+svn:log
+V 72
+Run prest under the debugger if the DEBUG environment variable is true.
+
+END

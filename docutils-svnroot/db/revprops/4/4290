@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 8
+cliechti
+K 8
+svn:date
+V 27
+2006-01-11T00:23:17.553711Z
+K 7
+svn:log
+V 496
+- initial image scale changed
+- convert all the remaining characters to strings
+- don't handle '.' as dot, but do it with '*'
+- join '+'´es with line
+- rounded edges with '/' and '\'
+- updated diagrams and texts for the new/changed features
+- :foreground: and :fill: options to specify colors :background: is there too, but not supported by SVG
+- rectangular arrow head '--#' and big circle '--O'
+- update backends with the new color features
+- fix svg rectangles (got negative width if x1 > x2)
+END

@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-04-08T21:08:47.634444Z
+K 7
+svn:log
+V 174
+LaTeX to MathML: fix ``\mspace``.
+
+LaTeX width unit "mu" (mathematical unit) must be converted for MathML.
+Typo in the code resulted in wrong "width" argument for `<mspace>`.
+END

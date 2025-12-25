@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-02-06T12:46:53.316796Z
+K 7
+svn:log
+V 69
+Use default encoding (utf8) for documentation in tools/editors/emacs.
+END

@@ -1,0 +1,103 @@
+K 10
+Suite.smak
+V 25
+file f-5058.0.r5058/78772
+K 10
+class.init
+V 26
+dir 8r-4580.0.r4580/159376
+K 13
+contents.init
+V 25
+dir 8v-4580.0.r5058/76787
+K 12
+docinfo.init
+V 25
+dir 8z-4580.0.r6228/35529
+K 13
+doctitle.init
+V 25
+dir 97-4580.0.r5058/79323
+K 11
+filter.init
+V 26
+dir 9b-4580.0.r4580/159939
+K 17
+final_checks.init
+V 25
+dir 9f-4580.0.r5058/80985
+K 14
+footnotes.init
+V 25
+dir 9j-4580.0.r6228/35212
+K 15
+hyperlinks.init
+V 25
+dir 9t-4580.0.r6228/35838
+K 13
+messages.init
+V 25
+dir 9z-4580.0.r5058/79854
+K 12
+sectnum.init
+V 26
+dir a3-4580.0.r4580/154870
+K 18
+substitutions.init
+V 25
+dir a7-4580.0.r5058/77876
+K 16
+transitions.init
+V 25
+dir ab-4580.0.r5058/77328
+END
+D 10
+Suite.smak
+K 10
+class.init
+V 23
+dir 8r-4580.0.t8951-6xe
+K 13
+contents.init
+V 23
+dir 8v-4580.0.t8951-6xe
+K 12
+docinfo.init
+V 23
+dir 8z-4580.0.t8951-6xe
+K 13
+doctitle.init
+V 23
+dir 97-4580.0.t8951-6xe
+K 11
+filter.init
+V 23
+dir 9b-4580.0.t8951-6xe
+K 17
+final_checks.init
+V 23
+dir 9f-4580.0.t8951-6xe
+K 14
+footnotes.init
+V 23
+dir 9j-4580.0.t8951-6xe
+K 15
+hyperlinks.init
+V 23
+dir 9t-4580.0.t8951-6xe
+K 13
+messages.init
+V 23
+dir 9z-4580.0.t8951-6xe
+K 12
+sectnum.init
+V 23
+dir a3-4580.0.t8951-6xe
+K 18
+substitutions.init
+V 23
+dir a7-4580.0.t8951-6xe
+K 16
+transitions.init
+V 23
+dir ab-4580.0.t8951-6xe

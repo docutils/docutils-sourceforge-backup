@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-03T20:31:13.370190Z
+K 7
+svn:log
+V 187
+Doctree documentation: Move `<enumerated_list>` attribute detail...
+
+... descriptions from the `<enumerated_list>` section
+to the respective attribute sections in the attribute reference.
+END

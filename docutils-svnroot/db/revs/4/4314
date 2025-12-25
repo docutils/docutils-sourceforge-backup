@@ -1,0 +1,1061 @@
+id: 5-18.0.r4314/0
+type: file
+pred: 5-18.0.r4311/2326
+count: 404
+text: 4274 0 61 80868 950b2d4a1d0a96c8b07f092799a02345 44249f6a882c5fcdd878157a646804186717ec6f 4313-3bt/_i
+props: 3071 4401 112 0 65fc8d0258b5c9fe68529b22bd8c9e94
+cpath: /trunk/docutils/HISTORY.txt
+copyroot: 0 /
+
+id: 9-2357.0.r4314/279
+type: file
+pred: 9-2357.0.r4311/2608
+count: 85
+text: 4270 347 27 49738 1414e93774b4b4c9a7f777ffa5ea9452 53df63e4b6fb9a2f9e1189fe25a02a984248f455 4313-3bt/_u
+props: 3021 2415 111 0 4135f0dfb17a4d11b2424d95e27830f5
+cpath: /trunk/docutils/test/functional/expected/standalone_rst_html4css1.html
+copyroot: 0 /
+
+id: f-3071.0-3285.r4314/608
+type: file
+pred: f-3071.0-3285.r4311/2940
+count: 16
+text: 4270 147 24 2505 e9debc81b01800cc42d6b142b896f58f 679f551ab3dee4919d6d841911ddf6a19fef28cb 4313-3bt/_t
+props: 3285 1162 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/test/functional/expected/dangerous.html
+copyroot: 3285 /trunk/docutils/test/functional/expected/dangerous.html
+
+PLAIN
+K 18
+compact_lists.html
+V 24
+file 9-4219.0.r4270/1689
+K 14
+dangerous.html
+V 28
+file f-3071.0-3285.r4314/608
+K 21
+field_name_limit.html
+V 24
+file c-3164.0.r4270/1042
+K 17
+latex_docinfo.tex
+V 24
+file 8-2937.0.r2938/3234
+K 23
+misc_rst_html4css1.html
+V 24
+file 5-2993.0.r4270/2004
+K 13
+pep_html.html
+V 24
+file 5-3040.0.r4270/2705
+K 29
+standalone_rst_html4css1.html
+V 23
+file 9-2357.0.r4314/279
+K 24
+standalone_rst_latex.tex
+V 24
+file c-2357.0.r4287/2667
+K 28
+standalone_rst_pseudoxml.txt
+V 24
+file 5-3185.0.r4236/5610
+K 29
+standalone_rst_s5_html_1.html
+V 29
+file 5-4124.7-4156.r4270/3344
+K 29
+standalone_rst_s5_html_2.html
+V 28
+file 8-4124.8-4156.r4270/633
+K 2
+ui
+V 28
+dir a-4124.9-4156.r4241/2580
+END
+ENDREP
+id: 8-2357.0.r4314/1699
+type: dir
+pred: 8-2357.0.r4311/4036
+count: 135
+text: 4314 988 698 698 cde91cdb8a0dfbc3504631c3c4f2ca4d
+cpath: /trunk/docutils/test/functional/expected
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 24
+file 5-2357.0.r2369/2122
+K 8
+expected
+V 23
+dir 8-2357.0.r4314/1699
+K 5
+input
+V 23
+dir e-2357.0.r4236/5091
+K 6
+output
+V 21
+dir w-2357.0.r2993/63
+K 5
+tests
+V 24
+dir 10-2357.0.r4236/7936
+END
+ENDREP
+id: 3-2357.0.r4314/2111
+type: dir
+pred: 3-2357.0.r4311/4449
+count: 158
+text: 4314 1889 209 209 5454c645ef627be7a60e69def82c36b5
+cpath: /trunk/docutils/test/functional
+copyroot: 0 /
+
+PLAIN
+K 22
+DocutilsTestSupport.py
+V 22
+file 49-18.0.r4258/220
+K 11
+alltests.py
+V 22
+file 4e-18.0.r4217/332
+K 11
+coverage.sh
+V 28
+file 6-3449.0-3489.r3603/213
+K 4
+data
+V 23
+dir 3-1662.0.r3416/2104
+K 13
+docutils.conf
+V 24
+file 6-1661.0.r2385/2146
+K 19
+docutils_difflib.py
+V 24
+file 6-2354.0.r2354/1272
+K 10
+functional
+V 23
+dir 3-2357.0.r4314/2111
+K 19
+package_unittest.py
+V 21
+file 3-44.0.r2454/856
+K 20
+test_dependencies.py
+V 24
+file 3-2679.0.r4132/6968
+K 18
+test_functional.py
+V 24
+file 18-2357.0.r4254/348
+K 10
+test_io.py
+V 24
+file 5-3138.0.r4132/6093
+K 16
+test_language.py
+V 23
+file 3-940.0.r4132/6674
+K 13
+test_nodes.py
+V 23
+file 4i-18.0.r4132/6380
+K 12
+test_parsers
+V 22
+dir 4k-18.0.r4229/9926
+K 17
+test_publisher.py
+V 29
+file 6-3525.0-3602.r4132/2738
+K 12
+test_readers
+V 21
+dir 3-89.0.r3509/2937
+K 16
+test_settings.py
+V 22
+file g-1662.0.r4222/69
+K 20
+test_statemachine.py
+V 22
+file 6a-18.0.r917/6020
+K 15
+test_transforms
+V 22
+dir 6c-18.0.r4233/3209
+K 13
+test_utils.py
+V 21
+file 6u-18.0.r3171/53
+K 16
+test_viewlist.py
+V 23
+file 3-916.0.r3085/3892
+K 12
+test_writers
+V 23
+dir 5-1211.0.r3968/4099
+END
+ENDREP
+id: 48-18.0.r4314/3402
+type: dir
+pred: 48-18.0.r4311/5740
+count: 639
+text: 4314 2293 1096 1096 86d75b0e549cbb0c25e640981417fcba
+props: 343 993 44 0 e8789a4081469b0bbc8d88dcdbd925ef
+cpath: /trunk/docutils/test
+copyroot: 0 /
+
+id: 40-18.0-4163.r4314/3626
+type: file
+pred: 40-18.0-4163.r4311/5964
+count: 207
+text: 4219 0 402 60480 b20a94f127d651b2e6309b0a90598102 a915b3f391333066b94fb598547a937825fde7c1 4313-3bt/_m
+props: 3070 87 112 0 cfcfb3fd20e71b66b19a2443bfd2751f
+cpath: /trunk/docutils/docutils/writers/html4css1/__init__.py
+copyroot: 4163 /trunk/docutils/docutils/writers/html4css1/__init__.py
+
+id: 75-18.1-4163.r4314/4002
+type: file
+pred: 75-18.1-4163.r4311/6342
+count: 63
+text: 4224 0 358 5496 46f3ecb9f40d4d7a4761732b9e4bbf24 54a6bea5ad3ce504fa0147f68211c1b892fe266d 4313-3bt/_n
+props: 2958 154 111 0 d69121ee529fb8cb3643d711ec0f2158
+cpath: /trunk/docutils/docutils/writers/html4css1/html4css1.css
+copyroot: 4163 /trunk/docutils/docutils/writers/html4css1/html4css1.css
+
+PLAIN
+K 11
+__init__.py
+V 28
+file 40-18.0-4163.r4314/3626
+K 13
+html4css1.css
+V 28
+file 75-18.1-4163.r4314/4002
+END
+ENDREP
+id: n-4163.0.r4314/4502
+type: dir
+pred: n-4163.0.r4311/6843
+count: 7
+text: 4314 4381 108 108 8a8bf92d049a9bf5ca404e1126196b13
+cpath: /trunk/docutils/docutils/writers/html4css1
+copyroot: 0 /
+
+id: 4-286.8-4163.r4314/4693
+type: file
+pred: 4-286.8-4163.r4311/7033
+count: 31
+text: 4090 67 112 6399 0f9d13bb4e2ec45ef9b149bed86efe37 107eaf5edc20ef4b755ad44f5362944ba95aeea4 4313-3bt/_p
+props: 932 50 111 0 0b146d6d431c2ad00452618c43381276
+cpath: /trunk/docutils/docutils/writers/pep_html/pep.css
+copyroot: 4163 /trunk/docutils/docutils/writers/pep_html/pep.css
+
+PLAIN
+K 11
+__init__.py
+V 29
+file 4-281.7-4163.r4163/17797
+K 7
+pep.css
+V 28
+file 4-286.8-4163.r4314/4693
+K 12
+template.txt
+V 29
+file 3-312.9-4163.r4163/18158
+END
+ENDREP
+id: v-4163.0.r4314/5225
+type: dir
+pred: v-4163.0.r4311/7567
+count: 2
+text: 4314 5057 155 155 d3d2adec278a47fa78d8a2a9f1c03eb8
+cpath: /trunk/docutils/docutils/writers/pep_html
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 24
+file 3x-18.0.r4163/17493
+K 15
+docutils_xml.py
+V 23
+file 4-244.0.r3512/7689
+K 9
+html4css1
+V 23
+dir n-4163.0.r4314/4502
+K 7
+latex2e
+V 23
+dir q-4163.0.r4287/6130
+K 10
+newlatex2e
+V 23
+dir s-4163.0.r4242/3317
+K 7
+null.py
+V 24
+file 4-3246.0.r3892/2227
+K 8
+pep_html
+V 23
+dir v-4163.0.r4314/5225
+K 12
+pseudoxml.py
+V 22
+file 4-84.0.r1645/8532
+K 7
+s5_html
+V 23
+dir y-4163.0.r4238/2091
+END
+ENDREP
+id: 3w-18.0.r4314/5829
+type: dir
+pred: 3w-18.0.r4311/8172
+count: 484
+text: 4314 5415 401 401 3efa54845fea94ad326a1a2a98fca6a7
+props: 342 6175 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils/writers
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 1x-18.0.r4270/6396
+K 7
+core.py
+V 22
+file 20-18.0.r4208/363
+K 13
+docutils.conf
+V 29
+file m-3472.0-3904.r3904/2799
+K 11
+examples.py
+V 23
+file 3-1928.0.r3598/207
+K 11
+frontend.py
+V 24
+file 3-150.0.r4183/12227
+K 5
+io.py
+V 22
+file 3-217.0.r3654/291
+K 9
+languages
+V 22
+dir 22-18.0.r4203/4865
+K 8
+nodes.py
+V 23
+file 28-18.0.r4242/1778
+K 7
+parsers
+V 22
+dir 2a-18.0.r4258/2864
+K 7
+readers
+V 22
+dir 36-18.0.r4242/5059
+K 15
+statemachine.py
+V 24
+file 3e-18.0.r4152/17824
+K 10
+transforms
+V 22
+dir 3g-18.0.r4242/6031
+K 13
+urischemes.py
+V 23
+file 3s-18.0.r4235/2122
+K 8
+utils.py
+V 24
+file 3u-18.0.r4152/17531
+K 7
+writers
+V 22
+dir 3w-18.0.r4314/5829
+END
+ENDREP
+id: 1w-18.0.r4314/6742
+type: dir
+pred: 1w-18.0.r4311/9085
+count: 1388
+text: 4314 6064 665 665 ac918a73621a4b6ce2c3257ac9956115
+props: 342 8363 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+BUGS.txt
+V 23
+file 2-2181.0.r4309/281
+K 11
+COPYING.txt
+V 23
+file 2-18.0.r4163/15147
+K 7
+FAQ.txt
+V 24
+file 2-788.0.r4163/14866
+K 11
+HISTORY.txt
+V 19
+file 5-18.0.r4314/0
+K 11
+MANIFEST.in
+V 23
+file 7-18.0.r4156/57222
+K 10
+README.txt
+V 21
+file 9-18.0.r4216/546
+K 17
+RELEASE-NOTES.txt
+V 23
+file 2-4204.0.r4274/412
+K 10
+THANKS.txt
+V 22
+file 2-2182.0.r4240/66
+K 4
+docs
+V 20
+dir 3-7.0.r4313/1531
+K 8
+docutils
+V 22
+dir 1w-18.0.r4314/6742
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 23
+file 46-18.0.r4270/7591
+K 4
+test
+V 22
+dir 48-18.0.r4314/3402
+K 5
+tools
+V 23
+dir 6w-18.0.r4232/12108
+END
+ENDREP
+id: 1-7.0.r4314/7663
+type: dir
+pred: 1-7.0.r4313/2393
+count: 3198
+text: 4314 6970 680 680 ded55c2766681c89eb5c4963f88bc91c
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r4314/7663
+K 7
+sandbox
+V 21
+dir 1-17.0.r4312/2405
+K 3
+web
+V 20
+dir 1-2.0.r4297/1066
+END
+ENDREP
+id: 3-1.0.r4314/8006
+type: dir
+pred: 3-1.0.r4313/2737
+count: 4070
+text: 4314 7877 116 116 7871341f868ea7a38e66724277e71346
+cpath: /trunk
+copyroot: 0 /
+
+id: 5-18.0-4314.r4314/8158
+type: file
+pred: 5-18.0.r4274/132
+count: 403
+text: 4311 0 195 81035 a675286a4e8988c1fecd8efa27842a7b 0ebfafefdb085153c212922f8ffe02b456295596 4313-3bt/_3
+props: 3071 4401 112 0 65fc8d0258b5c9fe68529b22bd8c9e94
+cpath: /branches/address-rendering/HISTORY.txt
+copyroot: 4314 /branches/address-rendering
+
+id: 9-2357.0-4314.r4314/8486
+type: file
+pred: 9-2357.0.r4270/1359
+count: 84
+text: 4311 1448 850 49828 dc92bbd253887800f33f4f734343e1d4 a09334e47446ff2f0da23b284c57e8b8f6c9dc06 4313-3bt/_f
+props: 3021 2415 111 0 4135f0dfb17a4d11b2424d95e27830f5
+cpath: /branches/address-rendering/test/functional/expected/standalone_rst_html4css1.html
+copyroot: 4314 /branches/address-rendering
+
+id: f-3071.4-4314.r4314/8864
+type: file
+pred: f-3071.0-3285.r4270/2324
+count: 15
+text: 4311 1218 205 2570 cd09b2c1130570be9d0c558c49c13e88 3321454648de58cd2e4f7900b07118aa71d2b897 4313-3bt/_e
+props: 3285 1162 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /branches/address-rendering/test/functional/expected/dangerous.html
+copyroot: 3285 /trunk/docutils/test/functional/expected/dangerous.html
+
+PLAIN
+K 18
+compact_lists.html
+V 24
+file 9-4219.0.r4270/1689
+K 14
+dangerous.html
+V 29
+file f-3071.4-4314.r4314/8864
+K 21
+field_name_limit.html
+V 24
+file c-3164.0.r4270/1042
+K 17
+latex_docinfo.tex
+V 24
+file 8-2937.0.r2938/3234
+K 23
+misc_rst_html4css1.html
+V 24
+file 5-2993.0.r4270/2004
+K 13
+pep_html.html
+V 24
+file 5-3040.0.r4270/2705
+K 29
+standalone_rst_html4css1.html
+V 29
+file 9-2357.0-4314.r4314/8486
+K 24
+standalone_rst_latex.tex
+V 24
+file c-2357.0.r4287/2667
+K 28
+standalone_rst_pseudoxml.txt
+V 24
+file 5-3185.0.r4236/5610
+K 29
+standalone_rst_s5_html_1.html
+V 29
+file 5-4124.7-4156.r4270/3344
+K 29
+standalone_rst_s5_html_2.html
+V 28
+file 8-4124.8-4156.r4270/633
+K 2
+ui
+V 28
+dir a-4124.9-4156.r4241/2580
+END
+ENDREP
+id: 8-2357.0-4314.r4314/9977
+type: dir
+pred: 8-2357.0.r4287/3704
+count: 134
+text: 4314 9259 705 705 9a8b0507b2aeb5d65e1887371ee1f22a
+cpath: /branches/address-rendering/test/functional/expected
+copyroot: 4314 /branches/address-rendering
+
+PLAIN
+K 10
+README.txt
+V 24
+file 5-2357.0.r2369/2122
+K 8
+expected
+V 28
+dir 8-2357.0-4314.r4314/9977
+K 5
+input
+V 23
+dir e-2357.0.r4236/5091
+K 6
+output
+V 21
+dir w-2357.0.r2993/63
+K 5
+tests
+V 24
+dir 10-2357.0.r4236/7936
+END
+ENDREP
+id: 3-2357.0-4314.r4314/10441
+type: dir
+pred: 3-2357.0.r4287/4117
+count: 157
+text: 4314 10214 214 214 527fea67d6e42dab4c5c573c90d6b229
+cpath: /branches/address-rendering/test/functional
+copyroot: 4314 /branches/address-rendering
+
+PLAIN
+K 22
+DocutilsTestSupport.py
+V 22
+file 49-18.0.r4258/220
+K 11
+alltests.py
+V 22
+file 4e-18.0.r4217/332
+K 11
+coverage.sh
+V 28
+file 6-3449.0-3489.r3603/213
+K 4
+data
+V 23
+dir 3-1662.0.r3416/2104
+K 13
+docutils.conf
+V 24
+file 6-1661.0.r2385/2146
+K 19
+docutils_difflib.py
+V 24
+file 6-2354.0.r2354/1272
+K 10
+functional
+V 29
+dir 3-2357.0-4314.r4314/10441
+K 19
+package_unittest.py
+V 21
+file 3-44.0.r2454/856
+K 20
+test_dependencies.py
+V 24
+file 3-2679.0.r4132/6968
+K 18
+test_functional.py
+V 24
+file 18-2357.0.r4254/348
+K 10
+test_io.py
+V 24
+file 5-3138.0.r4132/6093
+K 16
+test_language.py
+V 23
+file 3-940.0.r4132/6674
+K 13
+test_nodes.py
+V 23
+file 4i-18.0.r4132/6380
+K 12
+test_parsers
+V 22
+dir 4k-18.0.r4229/9926
+K 17
+test_publisher.py
+V 29
+file 6-3525.0-3602.r4132/2738
+K 12
+test_readers
+V 21
+dir 3-89.0.r3509/2937
+K 16
+test_settings.py
+V 22
+file g-1662.0.r4222/69
+K 20
+test_statemachine.py
+V 22
+file 6a-18.0.r917/6020
+K 15
+test_transforms
+V 22
+dir 6c-18.0.r4233/3209
+K 13
+test_utils.py
+V 21
+file 6u-18.0.r3171/53
+K 16
+test_viewlist.py
+V 23
+file 3-916.0.r3085/3892
+K 12
+test_writers
+V 23
+dir 5-1211.0.r3968/4099
+END
+ENDREP
+id: 48-18.0-4314.r4314/11786
+type: dir
+pred: 48-18.0.r4287/5408
+count: 638
+text: 4314 10671 1102 1102 cd21d396babdd3d598f3d0b9ccf623a2
+props: 343 993 44 0 e8789a4081469b0bbc8d88dcdbd925ef
+cpath: /branches/address-rendering/test
+copyroot: 4314 /branches/address-rendering
+
+id: 40-18.1-4314.r4314/12058
+type: file
+pred: 40-18.0-4163.r4219/7426
+count: 206
+text: 4311 218 541 60731 25b69be3fc213dda8538cdae893f08e6 0a56b4cc57176b3d58daed377c379373970d2cdf 4313-3bt/_7
+props: 3070 87 112 0 cfcfb3fd20e71b66b19a2443bfd2751f
+cpath: /branches/address-rendering/docutils/writers/html4css1/__init__.py
+copyroot: 4163 /trunk/docutils/docutils/writers/html4css1/__init__.py
+
+id: 75-18.2-4314.r4314/12449
+type: file
+pred: 75-18.1-4163.r4224/382
+count: 62
+text: 4311 784 363 5399 275c92e410e77f5e549e4b686b226724 2dc2541185187bcb67b70b2bbcb59a638eca7d24 4313-3bt/_8
+props: 2958 154 111 0 d69121ee529fb8cb3643d711ec0f2158
+cpath: /branches/address-rendering/docutils/writers/html4css1/html4css1.css
+copyroot: 4163 /trunk/docutils/docutils/writers/html4css1/html4css1.css
+
+PLAIN
+K 11
+__init__.py
+V 29
+file 40-18.1-4314.r4314/12058
+K 13
+html4css1.css
+V 29
+file 75-18.2-4314.r4314/12449
+END
+ENDREP
+id: n-4163.0-4314.r4314/12965
+type: dir
+pred: n-4163.0.r4224/879
+count: 6
+text: 4314 12842 110 110 2c7a3189dd2f58c07ca032edc40157d1
+cpath: /branches/address-rendering/docutils/writers/html4css1
+copyroot: 4314 /branches/address-rendering
+
+id: 4-286.3-4314.r4314/13203
+type: file
+pred: 4-286.8-4163.r4163/18543
+count: 30
+text: 4311 1171 22 6302 69a685d2b1bd3ed32bfa562df7946ce8 3e0a39de6a4aeb4b8b3a91d3190d57c1fe939821 4313-3bt/_a
+props: 932 50 111 0 0b146d6d431c2ad00452618c43381276
+cpath: /branches/address-rendering/docutils/writers/pep_html/pep.css
+copyroot: 4163 /trunk/docutils/docutils/writers/pep_html/pep.css
+
+PLAIN
+K 11
+__init__.py
+V 29
+file 4-281.7-4163.r4163/17797
+K 7
+pep.css
+V 29
+file 4-286.3-4314.r4314/13203
+K 12
+template.txt
+V 29
+file 3-312.9-4163.r4163/18158
+END
+ENDREP
+id: v-4163.0-4314.r4314/13751
+type: dir
+pred: v-4163.0.r4163/19084
+count: 1
+text: 4314 13582 156 156 1349489d008c5dec20fa69aa686aa1cf
+cpath: /branches/address-rendering/docutils/writers/pep_html
+copyroot: 4314 /branches/address-rendering
+
+PLAIN
+K 11
+__init__.py
+V 24
+file 3x-18.0.r4163/17493
+K 15
+docutils_xml.py
+V 23
+file 4-244.0.r3512/7689
+K 9
+html4css1
+V 29
+dir n-4163.0-4314.r4314/12965
+K 7
+latex2e
+V 23
+dir q-4163.0.r4287/6130
+K 10
+newlatex2e
+V 23
+dir s-4163.0.r4242/3317
+K 7
+null.py
+V 24
+file 4-3246.0.r3892/2227
+K 8
+pep_html
+V 29
+dir v-4163.0-4314.r4314/13751
+K 12
+pseudoxml.py
+V 22
+file 4-84.0.r1645/8532
+K 7
+s5_html
+V 23
+dir y-4163.0.r4238/2091
+END
+ENDREP
+id: 3w-18.0-4314.r4314/14416
+type: dir
+pred: 3w-18.0.r4287/6733
+count: 483
+text: 4314 13990 413 413 2465b45a4ba9e0f7b8125068dc35ea52
+props: 342 6175 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /branches/address-rendering/docutils/writers
+copyroot: 4314 /branches/address-rendering
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 1x-18.0.r4270/6396
+K 7
+core.py
+V 22
+file 20-18.0.r4208/363
+K 13
+docutils.conf
+V 29
+file m-3472.0-3904.r3904/2799
+K 11
+examples.py
+V 23
+file 3-1928.0.r3598/207
+K 11
+frontend.py
+V 24
+file 3-150.0.r4183/12227
+K 5
+io.py
+V 22
+file 3-217.0.r3654/291
+K 9
+languages
+V 22
+dir 22-18.0.r4203/4865
+K 8
+nodes.py
+V 23
+file 28-18.0.r4242/1778
+K 7
+parsers
+V 22
+dir 2a-18.0.r4258/2864
+K 7
+readers
+V 22
+dir 36-18.0.r4242/5059
+K 15
+statemachine.py
+V 24
+file 3e-18.0.r4152/17824
+K 10
+transforms
+V 22
+dir 3g-18.0.r4242/6031
+K 13
+urischemes.py
+V 23
+file 3s-18.0.r4235/2122
+K 8
+utils.py
+V 24
+file 3u-18.0.r4152/17531
+K 7
+writers
+V 28
+dir 3w-18.0-4314.r4314/14416
+END
+ENDREP
+id: 1w-18.0-4314.r4314/15383
+type: dir
+pred: 1w-18.0.r4287/7646
+count: 1387
+text: 4314 14699 671 671 f83aaf35ae230c363e350c3b86e0ecac
+props: 342 8363 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /branches/address-rendering/docutils
+copyroot: 4314 /branches/address-rendering
+
+PLAIN
+K 8
+BUGS.txt
+V 23
+file 2-2181.0.r4309/281
+K 11
+COPYING.txt
+V 23
+file 2-18.0.r4163/15147
+K 7
+FAQ.txt
+V 24
+file 2-788.0.r4163/14866
+K 11
+HISTORY.txt
+V 27
+file 5-18.0-4314.r4314/8158
+K 11
+MANIFEST.in
+V 23
+file 7-18.0.r4156/57222
+K 10
+README.txt
+V 21
+file 9-18.0.r4216/546
+K 17
+RELEASE-NOTES.txt
+V 23
+file 2-4204.0.r4274/412
+K 10
+THANKS.txt
+V 22
+file 2-2182.0.r4240/66
+K 4
+docs
+V 20
+dir 3-7.0.r4307/1899
+K 8
+docutils
+V 28
+dir 1w-18.0-4314.r4314/15383
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 23
+file 46-18.0.r4270/7591
+K 4
+test
+V 28
+dir 48-18.0-4314.r4314/11786
+K 5
+tools
+V 23
+dir 6w-18.0.r4232/12108
+END
+ENDREP
+id: 1-7.0-4314.r4314/16372
+type: dir
+pred: 1-7.0.r4309/1257
+count: 3196
+text: 4314 15659 700 700 e7f7e441a3885361c8a739c41df5635f
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /branches/address-rendering
+copyfrom: 4309 /trunk/docutils
+
+PLAIN
+K 17
+address-rendering
+V 26
+dir 1-7.0-4314.r4314/16372
+K 12
+docutils-0.4
+V 25
+dir 1-7.0-4266.r4302/6258
+K 7
+nesting
+V 27
+dir 3-1.0-1813.r2577/106277
+END
+ENDREP
+id: 0-1.0.r4314/16788
+type: dir
+pred: 0-1.0.r4302/6624
+count: 231
+text: 4314 16622 153 153 6e70b4e68405b429e5522d800e319517
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 21
+dir 0-1.0.r4314/16788
+K 4
+tags
+V 19
+dir 2-1.0.r4268/526
+K 5
+trunk
+V 20
+dir 3-1.0.r4314/8006
+END
+ENDREP
+id: 0.0.r4314/17071
+type: dir
+pred: 0.0.r4313/3015
+count: 4314
+text: 4314 16944 114 114 a987050158d85dbc5c0c827f378fff0b
+cpath: /
+copyroot: 0 /
+
+9-2357.0.t4313-3bt modify-file true false /trunk/docutils/test/functional/expected/standalone_rst_html4css1.html
+
+f-3071._4.t4313-3bt modify-file true false /branches/address-rendering/test/functional/expected/dangerous.html
+
+4-286.8-4163.t4313-3bt modify-file true false /trunk/docutils/docutils/writers/pep_html/pep.css
+
+40-18._1.t4313-3bt modify-file true false /branches/address-rendering/docutils/writers/html4css1/__init__.py
+
+5-18._0.t4313-3bt modify-file true false /branches/address-rendering/HISTORY.txt
+
+1-7._0.t4313-3bt add-dir false false /branches/address-rendering
+4309 /trunk/docutils
+75-18._2.t4313-3bt modify-file true false /branches/address-rendering/docutils/writers/html4css1/html4css1.css
+
+f-3071.0-3285.t4313-3bt modify-file true false /trunk/docutils/test/functional/expected/dangerous.html
+
+40-18.0-4163.t4313-3bt modify-file true false /trunk/docutils/docutils/writers/html4css1/__init__.py
+
+5-18.0.t4313-3bt modify-file true false /trunk/docutils/HISTORY.txt
+
+75-18.1-4163.t4313-3bt modify-file true false /trunk/docutils/docutils/writers/html4css1/html4css1.css
+
+9-2357._0.t4313-3bt modify-file true false /branches/address-rendering/test/functional/expected/standalone_rst_html4css1.html
+
+4-286._3.t4313-3bt modify-file true false /branches/address-rendering/docutils/writers/pep_html/pep.css
+
+
+17071 17216

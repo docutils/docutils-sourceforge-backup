@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-08-26T16:41:48.554664Z
+K 7
+svn:log
+V 270
+tox: Integrate 'style' check
+
+I want to use this to catch basic syntax issues introduced as part of
+the Python 3 refactor. Most of its functionality is neutered as style
+clean ups are mostly orthogonal to this series.
+
+Signed-off-by: Stephen Finucane <stephen@that.guru>
+END

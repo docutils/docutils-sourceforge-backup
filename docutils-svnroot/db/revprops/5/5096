@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 9
+blackbird
+K 8
+svn:date
+V 27
+2007-05-22T21:36:30.304977Z
+K 7
+svn:log
+V 133
+new goto workflow :D /?q=blub goes to /q/blub/ which is basically /blub/ just that it does enforce a search. (/q/index/ vs /index/)
+
+
+END

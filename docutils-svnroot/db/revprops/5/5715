@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2008-10-31T04:02:42.480224Z
+K 7
+svn:log
+V 47
+allow line blocks in compact field lists (HTML)
+END

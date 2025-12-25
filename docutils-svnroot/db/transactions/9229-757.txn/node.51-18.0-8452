@@ -1,0 +1,9 @@
+id: 51-18.0-8452.t9229-757
+type: file
+pred: 51-18.0-8452.r9141/21378
+count: 21
+text: -1 3611 524 6269 ae956c1fa3847433f3520da24af324a5 020c02e3897915d8954d343ab29912976e677e05 9229-757/_e
+props: 8452 2713 16 110 7d181b70073f10d0c5a58c73a72d4f04
+cpath: /trunk/docutils/test/test_parsers/test_rst/test_directives/test_admonitions_de.py
+copyroot: 8452 /trunk/docutils/test/test_parsers/test_rst/test_directives/test_admonitions_de.py
+

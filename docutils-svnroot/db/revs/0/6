@@ -1,0 +1,61 @@
+PLAIN
+K 15
+PyBanner016.png
+V 17
+file 2-5.0.r5/845
+K 9
+index.txt
+V 17
+file 2-4.0.r4/123
+END
+ENDREP
+id: 1-2.0.r6/98
+type: dir
+pred: 1-2.0.r5/1221
+count: 3
+text: 6 0 85 85 e710f8df766f8fe820b464f6473f7094
+cpath: /trunk/web
+copyroot: 0 /
+
+PLAIN
+K 3
+web
+V 15
+dir 1-2.0.r6/98
+END
+ENDREP
+id: 3-1.0.r6/281
+type: dir
+pred: 3-1.0.r5/1412
+count: 4
+text: 6 235 33 33 c001aaabe1bda281d28392d954be03d2
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 16
+dir 0-1.0.r3/202
+K 4
+tags
+V 16
+dir 2-1.0.r1/130
+K 5
+trunk
+V 16
+dir 3-1.0.r6/281
+END
+ENDREP
+id: 0.0.r6/532
+type: dir
+pred: 0.0.r5/1665
+count: 6
+text: 6 417 102 102 18d02b3b9db4c2fbd2dcaa272b9f11ea
+cpath: /
+copyroot: 0 /
+
+3-2.0.r2/1498 delete-file false false /trunk/web/docutils.txt
+
+
+532 661

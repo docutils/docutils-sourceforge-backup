@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-06-04T10:32:14.227052Z
+K 7
+svn:log
+V 120
+fixed target name clash in the test file standard.txt
+(re-numbering of ids causes extensive changes in the test output).
+END

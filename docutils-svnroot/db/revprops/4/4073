@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-11-18T18:03:03.551781Z
+K 7
+svn:log
+V 70
+fixed rst-set-paragraph-separation, added rst-extra-paragraph-separate
+END

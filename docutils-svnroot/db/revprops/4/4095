@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-11-21T21:35:32.327942Z
+K 7
+svn:log
+V 119
+added to-do list entry for multiple stylesheets;
+re-added to-do list entry for separating PEP-specific stuff in pep.css
+END

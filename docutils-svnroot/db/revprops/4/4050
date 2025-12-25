@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2005-11-14T19:18:01.679812Z
+K 7
+svn:log
+V 140
+- Added default bindings for rst-compile
+- Added constants for paragraph-{start,separate}
+- Fixed bug with rst-toc when the file was empty.
+
+END

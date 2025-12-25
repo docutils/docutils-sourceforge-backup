@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-11-05T13:32:13.773253Z
+K 7
+svn:log
+V 140
+New configuration section "[latex writers]".
+
+Add "latex writers" to the `config_section_dependencies`
+in the "latex2e" and "xetex" writers.
+END

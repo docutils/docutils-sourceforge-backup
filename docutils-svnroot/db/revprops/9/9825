@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2024-08-01T20:38:06.215178Z
+K 7
+svn:log
+V 43
+Enable the flake8-no-pep420 linter in Ruff
+
+END

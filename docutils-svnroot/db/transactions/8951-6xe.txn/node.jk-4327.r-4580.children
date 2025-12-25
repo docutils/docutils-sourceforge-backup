@@ -1,0 +1,253 @@
+K 8
+Dir.smak
+V 30
+file 24-5058.r-4580.r6281/7596
+K 10
+code01.dom
+V 32
+file jm-4327.s-4580.r4580/107678
+K 10
+code01.rst
+V 27
+file jp-4327.0.r4327/944585
+K 10
+code02.dom
+V 32
+file jr-4327.t-4580.r4580/108014
+K 10
+code02.rst
+V 27
+file jt-4327.0.r4327/945082
+K 10
+code03.dom
+V 32
+file jv-4327.u-4580.r4710/223171
+K 10
+code03.rst
+V 32
+file jx-4327.r-4580.r4710/221420
+K 10
+code04.dom
+V 32
+file jz-4327.v-4580.r4580/108686
+K 10
+code04.rst
+V 27
+file k1-4327.0.r4327/946076
+K 10
+code05.dom
+V 32
+file k3-4327.w-4580.r4580/109022
+K 10
+code05.rst
+V 27
+file k5-4327.0.r4327/946571
+K 10
+code06.dom
+V 32
+file k7-4327.x-4580.r4580/109358
+K 10
+code06.rst
+V 27
+file k9-4327.0.r4327/946818
+K 10
+code07.dom
+V 32
+file kb-4327.y-4580.r4580/109694
+K 10
+code07.rst
+V 27
+file kd-4327.0.r4327/947065
+K 10
+code08.dom
+V 32
+file 28-4710.r-4580.r4710/223781
+K 10
+code08.rst
+V 32
+file 2a-4710.r-4580.r4710/222325
+K 10
+code09.dom
+V 32
+file 2c-4710.r-4580.r4710/224063
+K 10
+code09.rst
+V 32
+file 2e-4710.r-4580.r4710/222607
+K 10
+code10.dom
+V 32
+file 2g-4710.r-4580.r4710/222043
+K 10
+code10.rst
+V 32
+file 2i-4710.r-4580.r4710/220574
+K 10
+code11.dom
+V 32
+file 2k-4710.r-4580.r4710/222889
+K 10
+code11.rst
+V 32
+file 2m-4710.r-4580.r4710/220856
+K 10
+code12.dom
+V 32
+file 2o-4710.r-4580.r4710/223499
+K 10
+code12.rst
+V 32
+file 2q-4710.r-4580.r4710/221138
+K 10
+code13.dom
+V 30
+file 7-6233.r-4580.r6233/14938
+K 10
+code13.rst
+V 30
+file 9-6233.r-4580.r6233/14383
+K 10
+code14.dom
+V 30
+file b-6233.r-4580.r6233/15215
+K 10
+code14.rst
+V 30
+file d-6233.r-4580.r6233/14660
+K 10
+code15.dom
+V 29
+file 7-6281.r-4580.r6281/7043
+K 10
+code15.rst
+V 29
+file 9-6281.r-4580.r6281/7320
+K 6
+foo.sh
+V 27
+file kf-4327.0.r4327/947355
+K 13
+generic01.dom
+V 29
+file 5-6282.r-4580.r6282/4224
+K 13
+generic01.rst
+V 29
+file 8-6282.r-4580.r6282/3105
+K 13
+generic02.dom
+V 29
+file a-6282.r-4580.r6282/4501
+K 13
+generic02.rst
+V 29
+file c-6282.r-4580.r6282/3384
+K 13
+generic03.dom
+V 29
+file e-6282.r-4580.r6282/4780
+K 13
+generic03.rst
+V 29
+file g-6282.r-4580.r6282/3664
+K 13
+generic04.dom
+V 29
+file i-6282.r-4580.r6282/5061
+K 13
+generic04.rst
+V 29
+file k-6282.r-4580.r6282/3944
+K 9
+mkfile.st
+V 29
+file b-6281.r-4580.r6281/6764
+K 7
+skip.pl
+V 29
+file c5-4580.r-4580.r5451/249
+END
+D 8
+Dir.smak
+D 10
+code01.dom
+D 10
+code01.rst
+D 10
+code02.dom
+D 10
+code02.rst
+D 10
+code03.dom
+D 10
+code03.rst
+D 10
+code04.dom
+D 10
+code04.rst
+D 10
+code05.dom
+D 10
+code05.rst
+D 10
+code06.dom
+D 10
+code06.rst
+D 10
+code07.dom
+D 10
+code07.rst
+D 10
+code08.dom
+D 10
+code08.rst
+D 10
+code09.dom
+D 10
+code09.rst
+D 10
+code10.dom
+D 10
+code10.rst
+D 10
+code11.dom
+D 10
+code11.rst
+D 10
+code12.dom
+D 10
+code12.rst
+D 10
+code13.dom
+D 10
+code13.rst
+D 10
+code14.dom
+D 10
+code14.rst
+D 10
+code15.dom
+D 10
+code15.rst
+D 6
+foo.sh
+D 13
+generic01.dom
+D 13
+generic01.rst
+D 13
+generic02.dom
+D 13
+generic02.rst
+D 13
+generic03.dom
+D 13
+generic03.rst
+D 13
+generic04.dom
+D 13
+generic04.rst
+D 9
+mkfile.st
+D 7
+skip.pl

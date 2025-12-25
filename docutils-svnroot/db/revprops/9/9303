@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-12-02T23:07:33.518646Z
+K 7
+svn:log
+V 290
+Allow empty string as encoding value (to re-activate default).
+
+Value `None` cannot be specified on the command line.
+Use ``--input-encoding=""`` go back to Docutil's default behaviur
+(use encoding indicated in the file or fallbacks)
+if a config file sets "input_encoding" to another value.
+END

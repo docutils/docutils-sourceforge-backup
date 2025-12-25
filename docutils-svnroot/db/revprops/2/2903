@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-12-24T01:00:41.000000Z
+K 7
+svn:log
+V 61
+added the release script I used for releasing Docutils-0.3.7
+
+END

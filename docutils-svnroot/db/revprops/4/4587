@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2006-06-01T15:44:30.923048Z
+K 7
+svn:log
+V 136
+Declare the .html files that get turned into _diff.html files to be
+.PRECIOUS so they don't get deleted at the end of the make process.
+
+END

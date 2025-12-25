@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2008-10-14T20:25:06.041855Z
+K 7
+svn:log
+V 71
+``escape_data`` encodes 8bit characters.
+Sections start on right level
+
+END

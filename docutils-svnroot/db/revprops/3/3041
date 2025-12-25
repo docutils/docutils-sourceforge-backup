@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-03-14T17:11:18.000000Z
+K 7
+svn:log
+V 75
+removed trailing slash from python_home and pep_home;
+removed CVS keywords
+
+END

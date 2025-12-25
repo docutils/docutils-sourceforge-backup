@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-06-23T16:55:30.585926Z
+K 7
+svn:log
+V 122
+Simplify input encoding handling, part 1.
+
+Read binary data and decode with heuristics if input encoding is not specified.
+END

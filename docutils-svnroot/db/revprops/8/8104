@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-06-09T11:34:35.977194Z
+K 7
+svn:log
+V 192
+Add archive search box and link to oversight page for mail lists.
+
+Sourceforge provides a search facility for the mail-list archives.
+Use this instead of the no longer working Gmane interface.
+END

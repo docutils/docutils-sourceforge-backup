@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-09-12T20:16:04.806551Z
+K 7
+svn:log
+V 97
+Sort the dependent \usepackage modules so that there is a canonical
+order for regression testing
+
+END

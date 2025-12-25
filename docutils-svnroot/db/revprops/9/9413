@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-06-27T20:04:02.694526Z
+K 7
+svn:log
+V 143
+html5-writer: Don't add "footnote-reference" class for footnote references.
+
+Since 0.18, you can use the CSS selector ``[role="doc-noteref"]``.
+END

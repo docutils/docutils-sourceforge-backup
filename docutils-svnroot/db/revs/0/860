@@ -1,0 +1,138 @@
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.8
+K 13
+svn:eol-style
+V 6
+native
+K 14
+svn:executable
+V 1
+*
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 46-18.0.r860/149
+type: file
+pred: 46-18.0.r859/5491
+count: 7
+text: 441 1315 24 843 262f9484aa7778a2025620a40b712627 40d0bc60915b057b3ca252469565375f48b9405f 859-nv/_3
+props: 860 0 136 0 70d3027589bae3addb96f53371581054
+cpath: /trunk/docutils/setup.py
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 21
+file 2-340.0.r340/154
+K 11
+COPYING.txt
+V 21
+file 2-18.0.r763/7254
+K 7
+FAQ.txt
+V 23
+file 2-788.0.r811/10261
+K 11
+HISTORY.txt
+V 21
+file 5-18.0.r859/2719
+K 11
+MANIFEST.in
+V 20
+file 7-18.0.r344/206
+K 10
+README.txt
+V 22
+file 9-18.0.r811/15236
+K 4
+docs
+V 19
+dir 3-7.0.r859/9879
+K 8
+docutils
+V 21
+dir 1w-18.0.r859/5117
+K 10
+install.py
+V 23
+file 44-18.0.r18/313369
+K 8
+setup.py
+V 21
+file 46-18.0.r860/149
+K 4
+test
+V 22
+dir 48-18.0.r856/22748
+K 5
+tools
+V 21
+dir 6w-18.0.r840/1862
+END
+ENDREP
+id: 1-7.0.r860/928
+type: dir
+pred: 1-7.0.r859/10552
+count: 724
+text: 860 419 496 496 a29b868a66bbc11b5c6d32f058b6d74e
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 18
+dir 1-7.0.r860/928
+K 7
+sandbox
+V 20
+dir 1-17.0.r858/4481
+K 3
+web
+V 20
+dir 1-2.0.r856/31339
+END
+ENDREP
+id: 3-1.0.r860/1263
+type: dir
+pred: 3-1.0.r859/10893
+count: 852
+text: 860 1137 113 113 310446688ae68c850e1a286e091e6b9f
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 17
+dir 0-1.0.r63/562
+K 4
+tags
+V 17
+dir 2-1.0.r65/217
+K 5
+trunk
+V 19
+dir 3-1.0.r860/1263
+END
+ENDREP
+id: 0.0.r860/1532
+type: dir
+pred: 0.0.r859/11164
+count: 860
+text: 860 1412 107 107 a405753e9685a2ee6f6a83eaacbf423f
+cpath: /
+copyroot: 0 /
+
+46-18.0.t859-nv modify-file true true /trunk/docutils/setup.py
+
+
+1532 1672

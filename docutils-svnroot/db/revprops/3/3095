@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-03-23T15:59:06.641111Z
+K 7
+svn:log
+V 307
+Checked in current state of refactoring towards support of multiple IDs.
+The 'id' attribute is replaced by an 'ids' attribute (a list).
+The same will happen later for 'name' (-> 'names') and 'class' (-> 'classes').
+Py21-compatibility is currently lost, but it may come back when
+the refactoring is finished.
+END

@@ -1,0 +1,131 @@
+PLAIN
+K 8
+BUGS.txt
+V 23
+file 2-2181.0.r4628/817
+K 11
+COPYING.txt
+V 24
+file 2-18.0.r4564/100662
+K 7
+FAQ.txt
+V 23
+file 2-788.0.r4632/1366
+K 11
+HISTORY.txt
+V 21
+file 5-18.0.r4951/620
+K 10
+README.txt
+V 24
+file 9-18.0.r4564/154506
+K 17
+RELEASE-NOTES.txt
+V 24
+file 2-4204.0.r4672/1691
+K 10
+THANKS.txt
+V 24
+file 2-2182.0.r4825/7555
+K 4
+docs
+V 20
+dir 3-7.0.r4950/5642
+K 8
+docutils
+V 27
+dir 1w-18.0-4952.r4963/3864
+K 6
+extras
+V 28
+dir 2-1467.0-4952.r4963/4227
+K 11
+ez_setup.py
+V 29
+file 2-4953.0-4952.r4953/3287
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 27
+file 46-18.0-4952.r4965/992
+K 4
+test
+V 22
+dir 48-18.0.r4918/6334
+K 5
+tools
+V 22
+dir 6w-18.0.r4916/2925
+END
+ENDREP
+id: 1-7.0-4952.r4966/721
+type: dir
+pred: 1-7.0-4952.r4965/2063
+count: 3448
+text: 4966 0 708 708 1ec3038c93e9e1c2144001fc3d7df3ec
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /branches/plugins
+copyroot: 4952 /branches/plugins
+
+PLAIN
+K 17
+address-rendering
+V 26
+dir 1-7.0-4314.r4314/16372
+K 12
+docutils-0.4
+V 25
+dir 1-7.0-4266.r4816/8356
+K 7
+nesting
+V 25
+dir 3-1.0-1813.r4356/3347
+K 7
+plugins
+V 24
+dir 1-7.0-4952.r4966/721
+END
+ENDREP
+id: 0-1.0.r4966/1168
+type: dir
+pred: 0-1.0.r4965/2515
+count: 354
+text: 4966 962 193 193 6b4d5edbe9fbdc587674928949174e61
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r4966/1168
+K 4
+tags
+V 19
+dir 2-1.0.r4584/629
+K 5
+trunk
+V 20
+dir 3-1.0.r4964/3050
+END
+ENDREP
+id: 0.0.r4966/1447
+type: dir
+pred: 0.0.r4965/2795
+count: 4966
+text: 4966 1321 113 113 cb1163d6c369b6ce02994d34fc3c9d4e
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+
+7-18.0.r4156/57222 delete-file false false /branches/plugins/MANIFEST.in
+
+
+1447 1641

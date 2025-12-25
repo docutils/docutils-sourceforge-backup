@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-07-06T14:00:22.776319Z
+K 7
+svn:log
+V 207
+Test decoding result instead of "successful_encoding" variable value.
+
+In future, the removal of BOM marks will be handled by the codec,
+leading to different "successful_encoding" values but the same result.
+END

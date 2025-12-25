@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-06-11T10:31:18.949374Z
+K 7
+svn:log
+V 58
+use failUnless instead of assertTrue for 2.3 compatibility
+END

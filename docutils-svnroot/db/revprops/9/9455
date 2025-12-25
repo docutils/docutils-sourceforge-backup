@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2023-09-29T09:28:24.654563Z
+K 7
+svn:log
+V 54
+Add groff_man to manpage references
+remove TODO UR.UE
+
+END

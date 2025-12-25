@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-06-27T20:02:09.813580Z
+K 7
+svn:log
+V 71
+Added documentation on the new variables exported by the perl directive
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2008-10-26T18:33:28.408146Z
+K 7
+svn:log
+V 34
+try to transfer htdocs with rsync
+
+END

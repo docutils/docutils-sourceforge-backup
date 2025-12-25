@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-01-08T21:43:09.866835Z
+K 7
+svn:log
+V 291
+* Updated documentation to show -W options with hyphens ("-") instead of
+  underscores ("_") to separate words.
+* Restructured for simplicity.
+* Changed the way non-breaking spaces are removed from generated DOM
+  objects since the auto-numbering may have things other than numbers
+  in it.
+
+END

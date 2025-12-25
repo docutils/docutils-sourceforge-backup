@@ -1,0 +1,13 @@
+K 8
+Dir.smak
+V 26
+file 10-5058.0.r5058/77523
+K 21
+test_substitutions.py
+V 27
+file a9-4580.0.r4580/155407
+END
+D 8
+Dir.smak
+D 21
+test_substitutions.py

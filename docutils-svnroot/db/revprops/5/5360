@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-07-13T21:58:32.728434Z
+K 7
+svn:log
+V 142
+* The target role now keeps the case of the target in creating its
+  name.
+* Removed use of {tag} and {content} internal data of DOM objects.
+
+END

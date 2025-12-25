@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-12-17T12:17:32.677910Z
+K 7
+svn:log
+V 55
+Fix [bugs:#463]. Spurious comma in deprecation warning.
+END

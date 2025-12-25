@@ -1,0 +1,73 @@
+K 7
+.flake8
+V 24
+file 2-9130.0.r9863/4578
+K 10
+.ruff.toml
+V 22
+file n-9795.0.r9871/98
+K 8
+BUGS.rst
+V 30
+file 2-2181.0-9906.r9906/37993
+K 11
+COPYING.rst
+V 28
+file 2-18.1-9906.r9906/38312
+K 7
+FAQ.rst
+V 29
+file 2-788.2-9906.r9906/38632
+K 11
+HISTORY.rst
+V 28
+file 5-18.3-9906.r9906/38950
+K 10
+README.rst
+V 28
+file 9-18.4-9906.r9906/39274
+K 17
+RELEASE-NOTES.rst
+V 30
+file 2-4204.5-9906.r9906/39593
+K 10
+THANKS.rst
+V 30
+file 2-2182.6-9906.r9906/39932
+K 4
+docs
+V 21
+dir 3-7.0.r9906/64254
+K 8
+docutils
+V 22
+dir 1w-18.0.r9907/1317
+K 13
+docutils.conf
+V 25
+file 2-7375.0.r9906/68446
+K 8
+licenses
+V 24
+dir 2-1465.0.r9906/70325
+K 14
+pyproject.toml
+V 25
+file 3-9448.0.r9906/70499
+K 4
+test
+V 21
+dir 48-18.0.r9908/682
+K 5
+tools
+V 24
+dir 6w-18.0.r9906/151444
+K 7
+tox.ini
+V 23
+file 2-7874.0.r9793/261
+END
+K 8
+docutils
+V 21
+dir 1w-18.0.t9908-7ow

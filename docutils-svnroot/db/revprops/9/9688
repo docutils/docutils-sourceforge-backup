@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-06T07:55:24.804663Z
+K 7
+svn:log
+V 235
+Robustify `transforms.universal.FilterMessages`.
+
+Avoid `KeyError` if a `<problematic>` node does not have a
+"refid" attribute.
+
+This attribute is always used with the standard "rst" parser but,
+according to the Docutils DTD, optional.
+END

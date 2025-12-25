@@ -1,0 +1,26 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-01-13T11:10:47.804762Z
+K 7
+svn:log
+V 467
+Fixes in `utils.math`.
+
+Avoid side-effect of importing "latex2mathml" on "tex2unichar".
+(This led to the merge of `\hslash` and `\hbar` also with
+"--math-output=html".)
+
+Use MathML element <mi> (identifier) instead of <mo> (operator)
+for "mathord" symbols.
+
+Sort ℏ (`\hslash`) as "mathord", not mathalpha in "tex2unichar".
+(Avoids "double italisation" with "math2html".)
+
+Some simplifications in "math2html.py": sort ħ (`\hbar`) as mathalpha
+so it gets italicised.
+END

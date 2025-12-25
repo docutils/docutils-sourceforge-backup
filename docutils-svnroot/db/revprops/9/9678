@@ -1,0 +1,31 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-03T20:31:31.138538Z
+K 7
+svn:log
+V 627
+Doctree documentation: remove duplicate element listing.
+
+The `%inline.elements` parameter entity is only used in the
+`%text.model` parameter entity, not directly in elements.
+
+Remove the list of elements employing `%inline.elements` in their
+content model. (It should have been identical to the list of elements
+employing `%text.model` but was faulty.)
+
+Change the "parents" description of inline elements to
+"all elements employing `%text.model`_ in their content model".
+
++ smaller document
++ less room for errors/desynchronisation
+
+Additionally:
+
+* small edits to keept the line length belwow 80.
+* list all empty elements.
+END

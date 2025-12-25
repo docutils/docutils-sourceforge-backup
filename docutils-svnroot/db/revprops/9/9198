@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2022-11-02T16:04:50.803353Z
+K 7
+svn:log
+V 58
+add python 3.11 to setup.py and tox.ini. Patch by hugovk.
+
+END

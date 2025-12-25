@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-14T16:19:29.397172Z
+K 7
+svn:log
+V 49
+Remove `docutils.transforms.writer_aux.Compound`.
+END

@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-11-16T20:18:29.795124Z
+K 7
+svn:log
+V 405
+Use a simpler algorithm to generate char lists
+
+The current algorithm checks each codepoint at least once, and when
+``cp_max`` is ``None``, it checks all used characters twice. This
+combines the two loops and stores the results of the call to
+``unicodedata``.
+
+Also remove the text about "wide" builds of Python, since PEP 393
+and Python 3.3, all builds of Python carry support for the full
+Unicode space.
+END

@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-10-28T22:18:58.191713Z
+K 7
+svn:log
+V 447
+Wrap setting the default "locale" in try/except, report locale.Error as warning.
+
+Docutils command line tools use `locale.setlocale()` to set the locale to the user's
+default locale. This may lead to a `locale.Error` if there are problems in the
+systems locale setup. As locale settings are not critical for the working of
+Docutils (but may affect the output in certain instances), we now clear the
+exception and report a WARNING.
+
+Fixes bug #495.
+END

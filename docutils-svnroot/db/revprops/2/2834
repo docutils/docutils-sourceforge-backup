@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-11-08T18:11:54.000000Z
+K 7
+svn:log
+V 69
+really disregard invisible nodes when checking for compactable lists
+
+END

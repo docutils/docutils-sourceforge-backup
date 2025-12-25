@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-05-08T09:57:31.093774Z
+K 7
+svn:log
+V 114
+Some more tweaks to the HTML math stylesheet.
+
+Improve root rendering (problems with roots over fractions remain).
+END

@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-06-25T20:56:46.353196Z
+K 7
+svn:log
+V 397
+HTML5: Semantic markup for footnotes.
+
+Use "aside" instead of a description list for footnotes and citations.
+While providing decent standard rendering, footnote label and text
+are no instance of a "definition term" and "definition".
+
+Use "invisible" footnote label brackets instead of display="none"
+with superscript footnotes so that the brackets are kept with
+drag-and-drop.
+
+Adapt stylesheets.
+END

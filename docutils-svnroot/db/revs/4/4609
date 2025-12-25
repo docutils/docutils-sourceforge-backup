@@ -1,0 +1,246 @@
+id: 4-3057.0-4266.r4609/0
+type: file
+pred: 4-3057.0.r4002/570
+count: 12
+text: 4495 0 474 6702 908f6ff1a287a02db44d1a91fcbb691b 542e88b86d52b9f4e42efda388b9797f8df6b8a4 4608-3k0/_5
+props: 3057 1377 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /branches/docutils-0.4/docs/dev/repository.txt
+copyroot: 4266 /branches/docutils-0.4
+
+PLAIN
+K 16
+distributing.txt
+V 25
+file 4-3527.0.r4163/25457
+K 18
+enthought-plan.txt
+V 24
+file 4-2241.0.r3363/1004
+K 17
+enthought-rfp.txt
+V 23
+file 7-2241.0.r3979/497
+K 11
+hacking.txt
+V 25
+file 4-3431.0.r4163/24873
+K 12
+policies.txt
+V 26
+file 4-2183.0-4266.r4470/0
+K 12
+pysource.dtd
+V 24
+file c-18.0-4266.r4480/0
+K 12
+pysource.txt
+V 23
+file f-18.0.r2223/13620
+K 11
+release.txt
+V 24
+file 7-2183.0.r4020/1147
+K 14
+repository.txt
+V 26
+file 4-3057.0-4266.r4609/0
+K 3
+rst
+V 21
+dir h-18.0.r4120/3941
+K 13
+semantics.txt
+V 23
+file 5-12.0.r1409/24162
+K 11
+testing.txt
+V 25
+file 6-2369.0.r4163/25757
+K 8
+todo.txt
+V 23
+file n-18.0.r4229/21666
+K 11
+website.txt
+V 21
+file 9-2183.0.r4021/0
+END
+ENDREP
+id: 3-12.0-4266.r4609/1014
+type: dir
+pred: 3-12.0-4266.r4480/1006
+count: 493
+text: 4609 329 672 672 7e8dec760f52dd9accc5512f13b3abb1
+cpath: /branches/docutils-0.4/docs/dev
+copyroot: 4266 /branches/docutils-0.4
+
+PLAIN
+K 3
+api
+V 22
+dir 3-2394.0.r3599/791
+K 3
+dev
+V 26
+dir 3-12.0-4266.r4609/1014
+K 5
+howto
+V 23
+dir 3-749.0.r4163/24026
+K 9
+index.txt
+V 23
+file 3-2171.0.r4215/186
+K 4
+peps
+V 21
+dir 5-7.0.r4163/24701
+K 3
+ref
+V 25
+dir w-18.0-4266.r4465/572
+K 4
+user
+V 26
+dir 1c-18.0-4266.r4607/852
+END
+ENDREP
+id: 3-7.0-4266.r4609/1516
+type: dir
+pred: 3-7.0-4266.r4607/1355
+count: 1115
+text: 4609 1225 278 278 233f7f259ca44965d222ce3bce4d804f
+cpath: /branches/docutils-0.4/docs
+copyroot: 4266 /branches/docutils-0.4
+
+PLAIN
+K 8
+BUGS.txt
+V 24
+file 2-2181.0.r4233/8277
+K 11
+COPYING.txt
+V 24
+file 2-18.0-4266.r4472/0
+K 7
+FAQ.txt
+V 25
+file 2-788.0-4266.r4608/0
+K 11
+HISTORY.txt
+V 27
+file 5-18.0-4266.r4598/1590
+K 11
+MANIFEST.in
+V 23
+file 7-18.0.r4156/57222
+K 10
+README.txt
+V 21
+file 9-18.0.r4216/546
+K 17
+RELEASE-NOTES.txt
+V 28
+file 2-4204.0-4266.r4278/314
+K 10
+THANKS.txt
+V 22
+file 2-2182.0.r4240/66
+K 4
+docs
+V 25
+dir 3-7.0-4266.r4609/1516
+K 8
+docutils
+V 27
+dir 1w-18.0-4266.r4606/1181
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 27
+file 46-18.0-4266.r4462/455
+K 4
+test
+V 27
+dir 48-18.0-4266.r4490/7826
+K 5
+tools
+V 27
+dir 6w-18.0-4266.r4481/1678
+END
+ENDREP
+id: 1-7.0-4266.r4609/2455
+type: dir
+pred: 1-7.0-4266.r4608/1047
+count: 3222
+text: 4609 1723 719 719 bea87ad83ed47ac070bb4dff9cdd96b1
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /branches/docutils-0.4
+copyroot: 4266 /branches/docutils-0.4
+
+PLAIN
+K 17
+address-rendering
+V 26
+dir 1-7.0-4314.r4314/16372
+K 10
+directives
+V 26
+dir 3-1.0-4375.r4570/14345
+K 12
+docutils-0.4
+V 25
+dir 1-7.0-4266.r4609/2455
+K 7
+nesting
+V 25
+dir 3-1.0-1813.r4356/3347
+END
+ENDREP
+id: 0-1.0.r4609/2922
+type: dir
+pred: 0-1.0.r4608/1513
+count: 333
+text: 4609 2710 199 199 b91f8bf07306104ff2e78136f19fce3c
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r4609/2922
+K 4
+tags
+V 19
+dir 2-1.0.r4584/629
+K 5
+trunk
+V 20
+dir 3-1.0.r4604/1859
+END
+ENDREP
+id: 0.0.r4609/3202
+type: dir
+pred: 0.0.r4608/1793
+count: 4609
+text: 4609 3076 113 113 d3b0b530ec614857c2e6c90ffc690ea5
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+
+4-3057.0-4266.t4608-3k0 modify-file true false /branches/docutils-0.4/docs/dev/repository.txt
+
+
+3202 3396

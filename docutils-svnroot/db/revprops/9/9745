@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-06T14:03:45.608441Z
+K 7
+svn:log
+V 218
+xml-parser: register decoration element
+
+Update the internal attribute `document.decoration`
+after creating a `decoration` element.
+
+Prevents `transforms.universal.Decoration` from adding a second
+`decoration` element.
+END

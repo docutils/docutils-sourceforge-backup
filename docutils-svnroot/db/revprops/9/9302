@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-12-02T17:14:05.523368Z
+K 7
+svn:log
+V 197
+Simplify error message if recommonmark is missing.
+
+As we provide a mock Sphinx package, there is no need to emphasise
+recommonmark's dependency on Sphinx.
+
+Wrap error message. Adapt the test case.
+END

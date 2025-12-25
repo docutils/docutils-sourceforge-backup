@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-01-16T10:54:23.294264Z
+K 7
+svn:log
+V 58
+Document buildhtml.py options "html_writer" and "dry-run".
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2007-08-20T08:40:01.321030Z
+K 7
+svn:log
+V 113
+added misc.CheckDoctreeValidity transform to catch invalid doctrees caused by content after the subdocs directive
+END

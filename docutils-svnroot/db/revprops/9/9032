@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-03-05T23:29:06.731078Z
+K 7
+svn:log
+V 313
+Avoid multiple statements on one line. Fix redundant backslash
+
+Exceptions for sets of empty class definitions
+and other cases where it improves comprehension.
+
+flake8 rules
+E502: the backslash is redundant between brackets
+E701: multiple statements on one line (colon)
+E704: multiple statements on one line (def)
+END

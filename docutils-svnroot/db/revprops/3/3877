@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-09-15T14:16:04.229711Z
+K 7
+svn:log
+V 102
+fixed bug with expose_internals setting and Text nodes (exposed by the "rawsource" internal attribute)
+END

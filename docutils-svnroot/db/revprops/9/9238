@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-11-11T12:27:01.330283Z
+K 7
+svn:log
+V 190
+Remove "fixltx2e.sty" package call from "titlepage.tex" LaTeX template.
+
+This package is loaded by default since 2015.
+The package call was removed from the other templates in Docutils 0.14.
+END

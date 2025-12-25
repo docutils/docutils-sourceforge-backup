@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-11-25T13:48:58.428733Z
+K 7
+svn:log
+V 234
+Small documentation fixes.
+
+Fix typo and add explanation in HISTORY.
+
+Formatting in RELEASE NOTES.
+
+Mark "parser" option of the "include" directive as provisional.
+
+`frontend.OptionParser`: Add replacement hint to deprectaion warning.
+END

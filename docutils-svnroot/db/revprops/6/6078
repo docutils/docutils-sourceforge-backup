@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2009-08-12T05:49:51.335061Z
+K 7
+svn:log
+V 43
+Fix: man knows only ``utf8`` not ``utf-8``
+
+END

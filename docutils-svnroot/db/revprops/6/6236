@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2010-03-01T20:25:46.182510Z
+K 7
+svn:log
+V 127
+Define -W arguments without a value to be a reference to a null
+string, so we can distinguish between a 'default' value and 1.
+
+END

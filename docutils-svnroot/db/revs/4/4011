@@ -1,0 +1,55 @@
+id: 1-7.0-4011.r4011/0
+type: dir
+pred: 1-7.0.r4006/3010
+count: 3015
+text: 4006 2372 625 625 9dbe9f4abe1ae923668aa89cd3121cf0
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /branches/s5
+copyfrom: 4010 /trunk/docutils
+
+PLAIN
+K 7
+nesting
+V 27
+dir 3-1.0-1813.r2577/106277
+K 2
+s5
+V 22
+dir 1-7.0-4011.r4011/0
+END
+ENDREP
+id: 0-1.0.r4011/327
+type: dir
+pred: 0-1.0.r3892/14735
+count: 155
+text: 4011 230 84 84 a2bdd5d8968a5ee55dcbd39bca8ecc51
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r4011/327
+K 4
+tags
+V 19
+dir 2-1.0.r3816/482
+K 5
+trunk
+V 20
+dir 3-1.0.r4010/3378
+END
+ENDREP
+id: 0.0.r4011/603
+type: dir
+pred: 0.0.r4010/3657
+count: 4011
+text: 4011 478 112 112 904e83e4f1ec559357441dd60fa3f420
+cpath: /
+copyroot: 0 /
+
+1-7._0.t4010-33e add-dir false false /branches/s5
+4010 /trunk/docutils
+
+603 744

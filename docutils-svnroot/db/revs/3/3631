@@ -1,0 +1,233 @@
+id: a-3594.0-3631.r3631/0
+type: file
+pred: a-3594.0.r3630/579
+count: 3
+text: 3630 0 552 1424 01bcd35f27677bb7492243bab12979f8 f5befe8a55ca38b1d4c9b9405add6331fa295ba2 3629-2st/_5
+props: 3594 7797 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/docutils/docutils/readers/doctree.py
+copyfrom: 3630 /trunk/docutils/docutils/readers/dummy.py
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 37-18.0.r3594/8164
+K 10
+doctree.py
+V 26
+file a-3594.0-3631.r3631/0
+K 6
+pep.py
+V 23
+file 4-80.0.r3129/26389
+K 6
+python
+V 23
+dir 4-989.0.r3038/10278
+K 13
+standalone.py
+V 20
+file 3a-18.0.r3589/0
+END
+ENDREP
+id: 36-18.0.r3631/579
+type: dir
+pred: 36-18.0.r3630/1104
+count: 62
+text: 3631 343 223 223 02c9c22cf7c2a9031111a31e335227ca
+props: 342 4190 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils/readers
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 1x-18.0.r3627/1981
+K 7
+core.py
+V 22
+file 20-18.0.r3614/423
+K 11
+examples.py
+V 23
+file 3-1928.0.r3598/207
+K 11
+frontend.py
+V 23
+file 3-150.0.r3617/8092
+K 5
+io.py
+V 23
+file 3-217.0.r3626/1069
+K 9
+languages
+V 22
+dir 22-18.0.r3276/5436
+K 8
+nodes.py
+V 22
+file 28-18.0.r3611/711
+K 7
+parsers
+V 21
+dir 2a-18.0.r3629/482
+K 7
+readers
+V 21
+dir 36-18.0.r3631/579
+K 15
+statemachine.py
+V 22
+file 3e-18.0.r2299/866
+K 10
+transforms
+V 22
+dir 3g-18.0.r3627/2996
+K 13
+urischemes.py
+V 22
+file 3s-18.0.r1829/714
+K 8
+utils.py
+V 22
+file 3u-18.0.r3592/826
+K 7
+writers
+V 22
+dir 3w-18.0.r3621/9659
+END
+ENDREP
+id: 1w-18.0.r3631/1427
+type: dir
+pred: 1w-18.0.r3630/1953
+count: 1236
+text: 3631 811 603 603 88d781278d33951aa262b26bb667efd8
+props: 342 8363 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+BUGS.txt
+V 24
+file 2-2181.0.r3406/1611
+K 11
+COPYING.txt
+V 21
+file 2-18.0.r3096/363
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r3601/372
+K 11
+HISTORY.txt
+V 21
+file 5-18.0.r3620/807
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r2513/394
+K 10
+README.txt
+V 21
+file 9-18.0.r3407/847
+K 10
+THANKS.txt
+V 24
+file 2-2182.0.r3616/1820
+K 4
+docs
+V 20
+dir 3-7.0.r3622/3248
+K 8
+docutils
+V 22
+dir 1w-18.0.r3631/1427
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 22
+file 46-18.0.r3575/379
+K 4
+test
+V 22
+dir 48-18.0.r3625/1792
+K 5
+tools
+V 22
+dir 6w-18.0.r3616/1650
+END
+ENDREP
+id: 1-7.0.r3631/2292
+type: dir
+pred: 1-7.0.r3630/2819
+count: 2761
+text: 3631 1654 625 625 0a6e94491599d28e568b023855827285
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r3631/2292
+K 7
+sandbox
+V 21
+dir 1-17.0.r3595/2284
+K 3
+web
+V 19
+dir 1-2.0.r3524/773
+END
+ENDREP
+id: 3-1.0.r3631/2634
+type: dir
+pred: 3-1.0.r3630/3161
+count: 3564
+text: 3631 2506 115 115 9ff0abd25ae389471da4449d0baea81d
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 18
+dir 0-1.0.r3584/62
+K 4
+tags
+V 19
+dir 2-1.0.r3383/196
+K 5
+trunk
+V 20
+dir 3-1.0.r3631/2634
+END
+ENDREP
+id: 0.0.r3631/2910
+type: dir
+pred: 0.0.r3630/3437
+count: 3631
+text: 3631 2786 111 111 852d5174d1be51e25fa209c3476236b6
+cpath: /
+copyroot: 0 /
+
+a-3594._0.t3630-2su add-file false false /trunk/docutils/docutils/readers/doctree.py
+3630 /trunk/docutils/docutils/readers/dummy.py
+a-3594.0.r3630/579 delete-file false false /trunk/docutils/docutils/readers/dummy.py
+
+
+2910 3053

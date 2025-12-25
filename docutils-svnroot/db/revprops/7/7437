@@ -1,0 +1,25 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-06-04T20:14:08.315303Z
+K 7
+svn:log
+V 455
+Fix [ 3527842 ]. 
+
+Under Python 3, converted tests and tools are now
+stored in the ``test3/`` and ``tools3/`` sub-directories and not
+installed in the PYTHONPATH.
+
+In order to make this work:
+- Make tests independent from the location of the ``test/`` directory.
+- Use converted sources from the ``build/`` directory for tests under
+  Python 3.
+
+Remove functional/tests/stylesheet_path_html4css1.py made
+redunant by functional/tests/math_output_html.py.
+END

@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-03-31T10:30:02.782824Z
+K 7
+svn:log
+V 216
+HTML5: update inline tag writing.
+
+* simplify code
+* if there is more than one supported tag in `classes`,
+  use first in `supported_inline_tags`.
+* Sort `supported_inline_tags`:
+   - semantic tags
+   - "markup tags"
+END

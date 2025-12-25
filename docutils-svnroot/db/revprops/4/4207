@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-12-14T02:10:34.856909Z
+K 7
+svn:log
+V 57
+removed excess instructions from the option help, & tweak
+END

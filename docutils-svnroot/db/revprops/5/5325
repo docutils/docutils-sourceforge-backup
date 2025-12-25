@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+gbrandl
+K 8
+svn:date
+V 27
+2007-07-08T06:50:46.525501Z
+K 7
+svn:log
+V 76
+Fix the HTML help formatter.
+Disable highlighting if no Pygments installed.
+
+END

@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-09-11T12:25:59.511530Z
+K 7
+svn:log
+V 124
+Apply #184 Fix a typo in latex2e
+
+Also update comments and
+use a more descriptive name for the list of LaTeX default labels.
+END

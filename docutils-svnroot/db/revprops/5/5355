@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-07-13T21:53:24.938437Z
+K 7
+svn:log
+V 63
+Removed use of {tag} and {content} internal data of DOM objects
+END

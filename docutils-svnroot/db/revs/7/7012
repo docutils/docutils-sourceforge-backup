@@ -1,0 +1,408 @@
+id: m-7008.0-7012.r7012/0
+type: file
+pred: m-7008.0-7011.r7011/0
+count: 3
+text: 7008 22307 2182 9229 f0a5fd0b95da36b2d1563b5c6ba299cd 47c11bea24908ea7f5bdc0c5c48500cd43998078 7007-5en/_n
+cpath: /trunk/docutils/test/functional/expected/math_output_mathml.xhtml
+copyfrom: 7011 /trunk/docutils/test/functional/expected/math_output_mathml.html
+
+PLAIN
+K 18
+compact_lists.html
+V 24
+file 9-4219.0.r6364/3493
+K 12
+cyrillic.tex
+V 24
+file a-6456.0.r6472/7188
+K 14
+dangerous.html
+V 29
+file f-3071.0-3285.r6364/2291
+K 21
+field_name_limit.html
+V 23
+file c-3164.0.r6364/992
+K 17
+latex_docinfo.tex
+V 24
+file 8-2937.0.r6455/4932
+K 21
+math_output_html.html
+V 29
+file i-7008.0-7010.r7010/8536
+K 22
+math_output_latex.html
+V 24
+file d-7010.0.r7010/9355
+K 24
+math_output_mathjax.html
+V 24
+file f-7010.0.r7010/8237
+K 24
+math_output_mathml.xhtml
+V 26
+file m-7008.0-7012.r7012/0
+K 23
+misc_rst_html4css1.html
+V 24
+file 5-2993.0.r6364/1970
+K 40
+multistyle_path_embed_rst_html4css1.html
+V 23
+file 5-5802.0.r6364/656
+K 34
+multistyle_path_rst_html4css1.html
+V 24
+file 8-5802.0.r6364/1308
+K 29
+multistyle_rst_html4css1.html
+V 24
+file a-5802.0.r6364/3808
+K 13
+odt_basic.odt
+V 25
+file j-5834.0.r6939/38761
+K 23
+odt_custom_headfoot.odt
+V 25
+file a-6214.0.r6939/39079
+K 15
+odt_tables1.odt
+V 25
+file m-5834.0.r6988/13102
+K 13
+pep_html.html
+V 24
+file 5-3040.0.r6364/4134
+K 29
+standalone_rst_html4css1.html
+V 24
+file 9-2357.0.r6491/5866
+K 24
+standalone_rst_latex.tex
+V 25
+file c-2357.0.r7008/30378
+K 26
+standalone_rst_manpage.man
+V 25
+file c-6085.0.r6471/14229
+K 28
+standalone_rst_pseudoxml.txt
+V 24
+file 5-3185.0.r6491/6525
+K 29
+standalone_rst_s5_html_1.html
+V 29
+file 5-4124.7-4156.r6364/2672
+K 29
+standalone_rst_s5_html_2.html
+V 29
+file 8-4124.8-4156.r6364/3083
+K 24
+standalone_rst_xetex.tex
+V 24
+file e-6428.0.r6740/3802
+K 2
+ui
+V 28
+dir a-4124.9-4156.r4241/2580
+K 18
+xetex-cyrillic.tex
+V 24
+file d-6456.0.r6472/6871
+END
+ENDREP
+id: 8-2357.0.r7012/1894
+type: dir
+pred: 8-2357.0.r7011/1896
+count: 257
+text: 7012 341 1540 1540 4e9c6e66e211908327a6cc55ca42df21
+cpath: /trunk/docutils/test/functional/expected
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 24
+file 5-2357.0.r2369/2122
+K 8
+expected
+V 23
+dir 8-2357.0.r7012/1894
+K 5
+input
+V 24
+dir e-2357.0.r7008/29292
+K 6
+output
+V 23
+dir w-2357.0.r6448/3773
+K 5
+tests
+V 25
+dir 10-2357.0.r7010/14370
+END
+ENDREP
+id: 3-2357.0.r7012/2312
+type: dir
+pred: 3-2357.0.r7011/2315
+count: 294
+text: 7012 2086 213 213 419e814de8f75259d79cc76e97d34a8f
+cpath: /trunk/docutils/test/functional
+copyroot: 0 /
+minfo-cnt: 1
+
+PLAIN
+K 22
+DocutilsTestSupport.py
+V 23
+file 49-18.0.r6380/1147
+K 11
+alltests.py
+V 22
+file 4e-18.0.r6334/200
+K 11
+coverage.sh
+V 28
+file 6-3449.0-3489.r5539/255
+K 4
+data
+V 24
+dir 3-1662.0.r5906/24390
+K 13
+docutils.conf
+V 24
+file 6-1661.0.r2385/2146
+K 10
+functional
+V 23
+dir 3-2357.0.r7012/2312
+K 19
+package_unittest.py
+V 21
+file 3-44.0.r6116/705
+K 15
+test__init__.py
+V 24
+file 7-7007.0.r7007/4858
+K 20
+test_command_line.py
+V 23
+file 6-6487.0.r7006/469
+K 20
+test_dependencies.py
+V 23
+file 3-2679.0.r5720/305
+K 18
+test_functional.py
+V 24
+file 18-2357.0.r6430/452
+K 10
+test_io.py
+V 25
+file 5-3138.0.r5889/29532
+K 16
+test_language.py
+V 23
+file 3-940.0.r6433/5770
+K 13
+test_nodes.py
+V 23
+file 4i-18.0.r6351/5207
+K 12
+test_parsers
+V 22
+dir 4k-18.0.r6476/4943
+K 14
+test_pickle.py
+V 25
+file 9-4487.0.r4564/69749
+K 17
+test_publisher.py
+V 30
+file 6-3525.0-3602.r5889/28583
+K 12
+test_readers
+V 20
+dir 3-89.0.r6495/104
+K 16
+test_settings.py
+V 24
+file g-1662.0.r6159/2072
+K 20
+test_statemachine.py
+V 24
+file 6a-18.0.r4564/62145
+K 15
+test_transforms
+V 22
+dir 6c-18.0.r6351/4967
+K 18
+test_traversals.py
+V 24
+file 5-4641.0.r4641/1557
+K 13
+test_utils.py
+V 23
+file 6u-18.0.r7007/5126
+K 16
+test_viewlist.py
+V 21
+file 3-916.0.r6340/57
+K 12
+test_writers
+V 22
+dir 5-1211.0.r6989/903
+END
+ENDREP
+id: 48-18.0.r7012/3777
+type: dir
+pred: 48-18.0.r7011/3781
+count: 887
+text: 7012 2507 1257 1257 fead6d6ab9cf2e9a82b834b2e8c3c72d
+props: 343 993 44 0 e8789a4081469b0bbc8d88dcdbd925ef
+cpath: /trunk/docutils/test
+copyroot: 0 /
+minfo-cnt: 1
+
+PLAIN
+K 8
+BUGS.txt
+V 25
+file 2-2181.0.r6443/28859
+K 11
+COPYING.txt
+V 22
+file 2-18.0.r6159/4134
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r5495/336
+K 11
+HISTORY.txt
+V 22
+file 5-18.0.r7007/4480
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r6258/102
+K 10
+README.txt
+V 22
+file 9-18.0.r6449/1052
+K 17
+RELEASE-NOTES.txt
+V 24
+file 2-4204.0.r6496/4727
+K 10
+THANKS.txt
+V 24
+file 2-2182.0.r5637/7316
+K 4
+docs
+V 21
+dir 3-7.0.r7010/20627
+K 8
+docutils
+V 23
+dir 1w-18.0.r7010/18971
+K 6
+extras
+V 23
+dir 2-1467.0.r6154/6279
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r6159/8465
+K 9
+setup.cfg
+V 23
+file 4-6255.0.r6255/352
+K 8
+setup.py
+V 23
+file 46-18.0.r6496/6819
+K 4
+test
+V 22
+dir 48-18.0.r7012/3777
+K 5
+tools
+V 23
+dir 6w-18.0.r6993/19512
+END
+ENDREP
+id: 1-7.0.r7012/4757
+type: dir
+pred: 1-7.0.r7011/4762
+count: 4026
+text: 7012 4014 730 730 692d2c5f2efcb36789174a6636660834
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+minfo-cnt: 1
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r7012/4757
+K 5
+prest
+V 24
+dir 1-4326.0.r6498/50375
+K 7
+sandbox
+V 22
+dir 1-17.0.r7004/14885
+K 3
+web
+V 20
+dir 1-2.0.r6395/3496
+END
+ENDREP
+id: 3-1.0.r7012/5154
+type: dir
+pred: 3-1.0.r7011/5160
+count: 6555
+text: 7012 4984 157 157 984dd4f661ee31e8703248fd942310ad
+cpath: /trunk
+copyroot: 0 /
+minfo-cnt: 2
+
+PLAIN
+K 8
+branches
+V 21
+dir 0-1.0.r6260/33253
+K 4
+tags
+V 19
+dir 2-1.0.r6358/778
+K 5
+trunk
+V 20
+dir 3-1.0.r7012/5154
+END
+ENDREP
+id: 0.0.r7012/5446
+type: dir
+pred: 0.0.r7011/5453
+count: 7012
+text: 7012 5319 114 114 d5dab0651fee7bcc61989bbaaee92222
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+minfo-cnt: 4
+
+m-7008._0.t7011-5er add-file false false /trunk/docutils/test/functional/expected/math_output_mathml.xhtml
+7011 /trunk/docutils/test/functional/expected/math_output_mathml.html
+m-7008.0-7011.r7011/0 delete-file false false /trunk/docutils/test/functional/expected/math_output_mathml.html
+
+
+5446 5653

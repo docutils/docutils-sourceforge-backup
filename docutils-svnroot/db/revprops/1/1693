@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 4
+cben
+K 8
+svn:date
+V 27
+2003-09-18T18:02:42.000000Z
+K 7
+svn:log
+V 183
+Implemented module for prototyping interepretted text roles by
+preprocessing into directives.  Instantiated it for latex math.
+Requires correct processing of ``raw::`` substitutions.
+
+END

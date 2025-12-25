@@ -1,0 +1,29 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-05-27T06:14:22.321908Z
+K 7
+svn:log
+V 865
+Deprecate the `TransformSpec.unknown_reference_resolvers` hook chain.
+
+`unknown_reference_resolvers` were introduced to support component-specific
+resolving of unknown references. Ian Bicking's "Wiki.py" module in the sandbox
+shows that a simple transform can be used for that task.
+Removing the hook and its complex specification will simplify both,
+API and code base without loss of functionality.
+
+The only known use case is the MoinMoin wiki.¹
+Versions <= 1.9 register a "resolver" function for "Wiki references".
+MoinMoin 2.0 does not use the "unknown_reference_resolvers" hook;
+MoinMoin 1.9 requires Python 2, so a removal will not affect
+existing installations.
+
+¹ The LaTeX writer uses a "resolver function" for BibTeX citation_references
+  in Docutils 0.22 development and pre-release versions.
+  It will be changed to use a transform in the next commit.
+END

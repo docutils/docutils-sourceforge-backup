@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-12-12T13:25:03.072934Z
+K 7
+svn:log
+V 59
+Announce upcoming requirement of "setuptools" for setup.py.
+END

@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-08-21T13:45:18.927347Z
+K 7
+svn:log
+V 252
+HTML4 writer: catch/report errors when reading image file.
+
+The html writers read image files when
+embedding an image or scaling an image without size options.
+
+Catch errors from converting the image URI to a file system path.
+Report errors as warning.
+END

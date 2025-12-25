@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-06-23T06:41:27.962493Z
+K 7
+svn:log
+V 59
+Also delete empty directories in retired maintenance branch
+END

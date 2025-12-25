@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-10-20T19:26:40.000000Z
+K 7
+svn:log
+V 69
+extended line block test, moved from line_blocks.txt to standard.txt
+
+END

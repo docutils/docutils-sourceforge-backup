@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2004-05-09T14:10:11.000000Z
+K 7
+svn:log
+V 70
+Try to handle bold/emphasize spanning lines in parsed-literal blocks.
+
+END

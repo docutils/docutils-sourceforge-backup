@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-04-12T09:50:53.543654Z
+K 7
+svn:log
+V 65
+Do not exclude "test/functional/output/" from the source package.
+END

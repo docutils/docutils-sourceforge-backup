@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-07-28T10:50:12.526996Z
+K 7
+svn:log
+V 279
+Announce change to `<footnote>` Doctree element content definition.
+
+The first child, `<label>` will become mandatory to match the
+definition/documentation/implementation of footnotes in the
+reStructuredText parser and the definition of the `<citation>`
+element.
+
+Cf. [bugs:#489]
+END

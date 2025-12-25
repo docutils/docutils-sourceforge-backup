@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-09-10T16:10:31.274893Z
+K 7
+svn:log
+V 110
+Fixed a bug with hyperlink resolution when a chained target went to
+an indirect target to an internal target.
+
+END

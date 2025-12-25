@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-03-01T10:57:46.493523Z
+K 7
+svn:log
+V 34
+Document and use safe subclassing.
+END

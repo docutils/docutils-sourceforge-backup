@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-07-28T10:45:38.634901Z
+K 7
+svn:log
+V 215
+Update directives documentation
+
+* Clarify the admonitions documentation (fixes bug #453).
+
+* Provide hyperlink targets (anchors) for all directive names.
+  (Use anonymous targets for like-named "doctree" elements.)
+END

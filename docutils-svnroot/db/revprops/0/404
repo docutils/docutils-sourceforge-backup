@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-07-28T18:11:24.000000Z
+K 7
+svn:log
+V 78
+Docutils can determine relative URLs now, so no need to cd to each directory.
+
+END

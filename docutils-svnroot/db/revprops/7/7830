@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+gitpull
+K 8
+svn:date
+V 27
+2015-03-13T19:35:19.718719Z
+K 7
+svn:log
+V 262
+Refactor of FAQ to separate docutils from reStructuredText. Link bidirectionally via NOTE at the top, explaining what the user is viewing. Update reference links where necessary. Consolidate Docutils sections into About Docutils. See README.rst for full details.
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2009-07-05T15:28:09.032943Z
+K 7
+svn:log
+V 73
+make CSVTable.encode_for_csv/.decode_from_csv static methods, for API use
+END

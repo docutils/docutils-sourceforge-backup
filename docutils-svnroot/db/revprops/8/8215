@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2018-01-25T16:37:02.276880Z
+K 7
+svn:log
+V 92
+Fix #340 Call to class method without specifying class instance.
+
+Thanks to Alexey Ovcharov.
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-10-11T21:22:01.936299Z
+K 7
+svn:log
+V 66
+added a functional test for target footnotes for anonymous targets
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2025-03-07T23:05:06.274078Z
+K 7
+svn:log
+V 38
+fixup! Support Pygments 2.19 in tests
+
+END

@@ -1,0 +1,21 @@
+K 12
+include1.txt
+V 32
+file lz-4327.z-4580.r4580/120951
+K 12
+include2.txt
+V 33
+file m1-4327.10-4580.r4580/121266
+K 8
+includes
+V 32
+dir m3-4327.11-4580.r4580/121582
+END
+D 12
+include1.txt
+D 12
+include2.txt
+K 8
+includes
+V 29
+dir m3-4327.11-4580.t8951-6xe

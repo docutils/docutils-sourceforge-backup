@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2005-10-30T21:58:54.071969Z
+K 7
+svn:log
+V 64
+Minor changes to comments in rst.el for auto-gen of my web page.
+END

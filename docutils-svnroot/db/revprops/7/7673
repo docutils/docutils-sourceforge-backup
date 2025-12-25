@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2013-06-16T10:53:50.039736Z
+K 7
+svn:log
+V 184
+Output in the dot language is supported. New options `--dot`/`--gv`
+and `--gxl` determine the output format. Added tests and refactored.
+Renamed project from `rst2gxl` to `rst2graph`.
+
+END

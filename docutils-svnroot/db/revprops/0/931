@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-11-12T00:52:37.000000Z
+K 7
+svn:log
+V 94
+Added --local/-l option to make my life easier on creosote.  Removed bogus <body> attributes.
+
+END

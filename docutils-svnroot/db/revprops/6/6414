@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+rkrauss
+K 8
+svn:date
+V 27
+2010-09-15T01:39:56.134744Z
+K 7
+svn:log
+V 112
+added class options for slides for overlay and nooverlay to specify how bullet and enumerated lists are revealed
+END

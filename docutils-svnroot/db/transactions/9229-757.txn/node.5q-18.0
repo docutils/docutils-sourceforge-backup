@@ -1,0 +1,9 @@
+id: 5q-18.0.t9229-757
+type: file
+pred: 5q-18.0.r9193/6357
+count: 57
+text: -1 4990 391 51432 f7fd3d28846544e2ab8f61d6a7fc3e83 71a26dbb2cbee46155442c9f68376b2e8a4b8ad1 9229-757/_h
+props: 2936 258 137 0 7827d0f22f59993019be15d09b5c07b2
+cpath: /trunk/docutils/test/test_parsers/test_rst/test_inline_markup.py
+copyroot: 0 /
+

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-10-22T01:02:55.000000Z
+K 7
+svn:log
+V 35
+Fixed attribute typo in <colspec>.
+
+END

@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-06-28T22:29:06.151083Z
+K 7
+svn:log
+V 238
+Update set_version.sh. Don't set __version_details__.
+
+Standard version details (repository, prerelease, release)
+are now coded in the version identifier.
+The variable is kept for manually set additional details
+(revision, snapshot, ...).
+END

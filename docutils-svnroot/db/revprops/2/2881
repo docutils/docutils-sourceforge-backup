@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+mmgilbe
+K 8
+svn:date
+V 27
+2004-12-04T06:32:34.000000Z
+K 7
+svn:log
+V 158
+Added comment on why scale doesn't work without height or width attributes. This is because the html writer can't open the image to figure out how big it is.
+
+END

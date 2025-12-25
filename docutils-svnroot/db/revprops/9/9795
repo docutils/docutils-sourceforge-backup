@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2024-07-31T08:35:47.508456Z
+K 7
+svn:log
+V 289
+Add an initial configuration file for Ruff
+
+This reflects the current flake8 settings, save diagnostics
+that Ruff does not implement. Ruff's detection of unused variables
+seems to be greater than flake8's, so also fix several instances
+and add some more files to the per-file ignore list.
+
+END

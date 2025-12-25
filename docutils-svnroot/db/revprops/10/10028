@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2025-03-08T01:41:25.742633Z
+K 7
+svn:log
+V 115
+Ignore certain Ruff EXE lint codes (flake8-executable)
+
+SVN-Git conversions can sometimes drop the executable bit.
+
+END

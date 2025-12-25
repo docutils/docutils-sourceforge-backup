@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-09-12T20:17:41.374959Z
+K 7
+svn:log
+V 100
+Allow the 'states' executable to be found anywhere on the path, but
+check standard locations first.
+
+END

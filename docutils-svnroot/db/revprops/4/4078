@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-11-19T19:11:37.771642Z
+K 7
+svn:log
+V 97
+added 1px margin for footnotes so that the
+thin line on the left aligns with the rest of the text
+END

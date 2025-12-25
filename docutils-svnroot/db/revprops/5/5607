@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 6
+strank
+K 8
+svn:date
+V 27
+2008-07-23T19:18:19.843596Z
+K 7
+svn:log
+V 41
+Replace all has_key with the in operator.
+END

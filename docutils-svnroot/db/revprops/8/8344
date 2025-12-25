@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-08-26T12:10:43.886521Z
+K 7
+svn:log
+V 87
+Amend [ 152 ] to please static code checkers.
+
+Thanks to Dmitry Shachnev for the patch.
+END

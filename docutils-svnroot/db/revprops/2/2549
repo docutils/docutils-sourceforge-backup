@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-08-29T21:55:26.000000Z
+K 7
+svn:log
+V 77
+added some comments, did some cleanup; David Goodger, could you review this?
+
+END

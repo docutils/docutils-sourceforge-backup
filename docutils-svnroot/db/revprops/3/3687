@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T01:26:36.784489Z
+K 7
+svn:log
+V 245
+A name-to-id mapping file is a bad idea; we should rather implement proper
+multi-file document support.  The problem will probably go away automatically then, and
+a persistent name-to-id mapping file is much more (and unnecessarily) complicated.
+END

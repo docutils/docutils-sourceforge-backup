@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-09-04T19:33:30.792866Z
+K 7
+svn:log
+V 189
+Refactor `HTMLTranslator.image_size()`.
+
+Use `nodes.parse_measure()` instead of ad-hoc parsing
+when scaling size values.
+Split "spaghetti code" into auxiliary method `read_size_with_PIL()`.
+END

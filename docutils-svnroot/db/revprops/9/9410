@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-06-26T17:48:55.377232Z
+K 7
+svn:log
+V 312
+Prevent the 'theme' default overriding 'theme_url'.
+
+A non-empty default for a config setting which "overrides" another
+setting in its settings-spec prevents the other setting from beeing
+specified programatically in a "settings_overrides" function argument.
+
+Use case: functional tests for S5 (cf. next commit).
+END

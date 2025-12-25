@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-10-29T21:48:20.683283Z
+K 7
+svn:log
+V 43
+Fix typo  (patch 3098298 by Kirill Smelkov)
+END

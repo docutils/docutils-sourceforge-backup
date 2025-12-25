@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2004-05-03T21:34:23.000000Z
+K 7
+svn:log
+V 34
+Add --use-verbatim-when-possible.
+
+END

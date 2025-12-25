@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-21T09:58:00.269645Z
+K 7
+svn:log
+V 158
+Fix flake8 warnings.
+
+math2html.py: remove not required class
+latex2mathml.py: silence warning for now
+frontend.py: prefix variable that moved to "io" module.
+END

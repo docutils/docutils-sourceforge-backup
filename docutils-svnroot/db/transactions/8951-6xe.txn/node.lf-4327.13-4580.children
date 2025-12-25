@@ -1,0 +1,63 @@
+K 8
+Dir.smak
+V 32
+file 2a-5058.13-4580.r5058/59152
+K 13
+include01.dom
+V 27
+file lg-4327.0.r4327/941846
+K 13
+include01.rst
+V 27
+file lj-4327.0.r4327/942587
+K 13
+include02.dom
+V 27
+file ll-4327.0.r4327/942093
+K 13
+include02.rst
+V 27
+file ln-4327.0.r4327/942834
+K 13
+include03.dom
+V 27
+file lp-4327.0.r4327/942340
+K 13
+include03.rst
+V 27
+file lr-4327.0.r4327/943081
+K 12
+include1.txt
+V 33
+file lz-4327.14-4580.r4580/105139
+K 12
+include2.txt
+V 33
+file m1-4327.15-4580.r4580/105463
+K 8
+includes
+V 32
+dir m3-4327.16-4580.r4580/106061
+END
+D 8
+Dir.smak
+D 13
+include01.dom
+D 13
+include01.rst
+D 13
+include02.dom
+D 13
+include02.rst
+D 13
+include03.dom
+D 13
+include03.rst
+D 12
+include1.txt
+D 12
+include2.txt
+K 8
+includes
+V 29
+dir m3-4327.16-4580.t8951-6xe

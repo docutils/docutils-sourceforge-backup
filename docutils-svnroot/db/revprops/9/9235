@@ -1,0 +1,32 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-11-10T15:02:17.254938Z
+K 7
+svn:log
+V 604
+Fix/complement publisher documentation and tests.
+
+API documentation:
+
+- Spell out ampersand (&) as "and".
+- Finish description of part "pepnum".
+- Add links to LaTeX templates.
+- Remove trailing whitespace.
+
+Docstrings:
+
+- Clarify source and output data type for functions using
+  "string I/O" (with "string" in the general sense of "`str` or `bytes`").
+- Recommend using publish_parts() to get Docutils output as `str`.
+- Add "()" to functions so that pydoc HTML rendering generates auto-links.
+- Add links to the HTML documentation.
+
+Tests:
+
+- Add test for input/output data types of publish_string().
+END

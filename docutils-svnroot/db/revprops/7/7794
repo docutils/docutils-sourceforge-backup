@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2015-02-19T11:24:52.567568Z
+K 7
+svn:log
+V 66
+Add ``\\\\colon`` macro, fix spacing around colons. Fixes [ 246 ].
+END

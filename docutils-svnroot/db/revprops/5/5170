@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2007-05-28T14:19:03.601494Z
+K 7
+svn:log
+V 95
+Using leavevmode after terms option_list no longer needs to check parent for being a def.list.
+
+END

@@ -1,0 +1,44 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2012-04-29T14:50:25.456274Z
+K 7
+svn:log
+V 882
+User visible changes:
+
+* Symbols follow reStructuredText syntax more closely
+
+  This implies that role and directive names with internal
+  underscores, plus signs and colons are handled correctly. This is
+  particularly important for Sphinx users where embedded colons are
+  used frequently for this purpose.
+
+* `rst-compile-toolsets` is now customizable
+
+  In addition the default value first looks for a `rst2*.py` and uses
+  it if found or uses the `rst2*` command.
+
+  Thanks to Emacs developers for this.
+
+* Use faces not variables for font-lock customization
+
+  There are now customizable `rst-*` faces which are used. The old
+  `rst-*-face` variables are still there but deprecated.
+
+  Thanks to Emacs developers for this.
+
+* Font-locking revised again slightly
+
+Other changes:
+
+* Merge with the changes made in Emacs main line up to bazaar revision
+  106782
+
+* Minor cleanup
+
+END

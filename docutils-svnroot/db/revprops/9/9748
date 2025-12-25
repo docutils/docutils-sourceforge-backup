@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-08T08:08:37.557514Z
+K 7
+svn:log
+V 158
+Small adjustments to writer tests.
+
+Use `pathlib` for path operations.
+
+Make test scripts executable.
+
+Ensure the local `docutils` version is imported/tested.
+END

@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-08-27T12:10:14.135310Z
+K 7
+svn:log
+V 182
+py3: Handle 'StringIO' to 'io' transition.
+
+This isn't so much a rename as a migration, since things don't do the
+same thing.
+
+Based on patch by: Stephen Finucane <stephen@that.guru>
+END

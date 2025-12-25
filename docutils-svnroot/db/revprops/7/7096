@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-07-20T20:39:57.503245Z
+K 7
+svn:log
+V 70
+Fix [ 3364658 ] (Change last file with Apache license to BSD-2-Clause)
+END

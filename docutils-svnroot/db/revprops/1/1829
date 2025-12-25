@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 4
+bbum
+K 8
+svn:date
+V 27
+2004-02-19T07:38:50.000000Z
+K 7
+svn:log
+V 73
+Added a bunch of URI schemes found on OS X (including third party apps).
+
+END

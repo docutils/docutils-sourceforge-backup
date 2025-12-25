@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2011-01-23T12:38:49.356500Z
+K 7
+svn:log
+V 424
+Refactoring: Font-lock code and section title handling functions share
+functions. Also fixes problems with font-locking under `jit-lock-mode`.
+
+`jit-lock-mode` is kept as `font-lock-support-mode`. Support for
+`jit-lock-mode` has been debugged. For big blocks of comments and
+literal text using `jit-lock-mode` may result in slowing display down.
+Further work is needed here.
+
+Added, removed and adapted tests.
+
+Added ideas.
+
+END

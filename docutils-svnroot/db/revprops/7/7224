@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-11-22T14:48:14.088115Z
+K 7
+svn:log
+V 220
+Fix parsing of lists from config files.
+
+The "strip-classes" and "strip-elements-with-classes" settings expect
+a list but did not convert values given in a config file - making it
+impossible to use them in a config file.
+END

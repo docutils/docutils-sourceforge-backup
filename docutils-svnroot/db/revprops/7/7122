@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-09-12T08:01:29.725199Z
+K 7
+svn:log
+V 64
+Apply [ 3405410 ]: Use utf-8 encoded literal Cyrillic characters
+END

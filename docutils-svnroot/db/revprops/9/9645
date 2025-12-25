@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-04-16T13:00:22.985876Z
+K 7
+svn:log
+V 300
+Uncomment classifiers for Georgian and Catalan (Valencian) languages.
+
+Both classifiers were added to the "pypa/trove-classifiers" repository and
+should be available on https://pypi.org/classifiers/ in the next few days.
+
+cf. https://github.com/pypa/trove-classifiers/pull/176#issuecomment-2047518230
+END

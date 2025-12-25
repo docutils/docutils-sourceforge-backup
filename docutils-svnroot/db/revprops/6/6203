@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-11-22T20:25:39.418277Z
+K 7
+svn:log
+V 67
+rm html4strict test document (broken links to CSS style and images)
+END

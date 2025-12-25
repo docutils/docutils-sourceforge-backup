@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-06-05T20:25:53.608882Z
+K 7
+svn:log
+V 71
+added missing history entry for rst-toggle-line-block in rst.el (r4545)
+END

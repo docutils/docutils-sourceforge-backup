@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 8
+dkuhlman
+K 8
+svn:date
+V 27
+2007-02-20T21:36:39.851759Z
+K 7
+svn:log
+V 134
+Renamed directive "syntaxhighlight" to "sourcecode".  Also changed
+to a single argument, which can be "on" or "off" or <lexer-name>.
+
+
+END

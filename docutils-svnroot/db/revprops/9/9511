@@ -1,0 +1,30 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-01-13T09:50:07.530128Z
+K 7
+svn:log
+V 660
+Refactor/fix HTML math handling.
+
+Use custom exception `utils.math.MathSyntaxError` instead of
+abusing `SyntaxError` for LaTeX math syntax errors.
+
+Unify interface of LaTeX -> MathML conversion functions.
+
+Run external MathML converters with `subprocess.run()`.
+Revise pre- and post-processing.
+
+Improve error reporting.
+
+Use WARNING instead of ERROR for TeX to MathML conversion errors.
+(The source is included in the output as TeX code, so no data is lost.)
+
+Provisional test script for external TeX to MathML converters.
+(Placed in a separate directory not to be run by "alltests".
+It tests a rather arcane use case, requires optional helpers, and is slow.)
+END

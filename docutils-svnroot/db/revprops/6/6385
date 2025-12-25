@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-08-13T12:17:01.198182Z
+K 7
+svn:log
+V 164
+Fix warning for local toc at non-supported level with use-latex-toc:
+
+Fix [ 3043986 ] AttributeError using :local: with table of content.
+Report source-line number.
+END

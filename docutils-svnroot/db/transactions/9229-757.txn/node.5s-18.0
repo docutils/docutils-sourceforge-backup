@@ -1,0 +1,9 @@
+id: 5s-18.0.t9229-757
+type: file
+pred: 5s-18.0.r9141/37947
+count: 19
+text: -1 2368 388 7516 aa16a7a5448b8ff97be14f9e41277c7e e1117eff7ab0a1e065ecf097cd95155cbd36783b 9229-757/_b
+props: 1773 7156 137 0 c81da7e63514ae8a7d85174066b0f23f
+cpath: /trunk/docutils/test/test_parsers/test_rst/test_literal_blocks.py
+copyroot: 0 /
+

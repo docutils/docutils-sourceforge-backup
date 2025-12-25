@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-11-28T13:51:57.335481Z
+K 7
+svn:log
+V 177
+Simplify `ClassAttribute` transform.
+
+Use `node.findall()` instead of a re-implementation to find the
+right element to attach the class attribute to.
+No change to functionality.
+END

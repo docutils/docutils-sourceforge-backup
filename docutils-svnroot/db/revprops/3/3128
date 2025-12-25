@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-03-26T16:19:01.873664Z
+K 7
+svn:log
+V 59
+updated documentation, renaming id to ids and name to names
+END

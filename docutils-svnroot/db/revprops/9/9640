@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-04-12T09:51:02.920182Z
+K 7
+svn:log
+V 189
+Remove duplicate test case.
+
+Merge two dictionary items with the same name (`totest['no_system_messages']`).
+
+Test embedded broken SVG with both, 'system_messages' and 'no_system_messages'.
+END

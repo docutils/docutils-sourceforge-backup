@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-05-20T10:07:55.860706Z
+K 7
+svn:log
+V 179
+Write footnote brackets and field term colons to HTML.
+
+Makes them available also without CSS and when copying text.
+
+Hide brackets with CSS for "footnote-references=superscript".
+END

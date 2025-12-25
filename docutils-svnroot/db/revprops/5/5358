@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-07-13T21:57:02.880842Z
+K 7
+svn:log
+V 237
+* Added a "-W xref-role-target" option to specify which target role
+  (if any) should be used for cross references.
+* The "-W xref-role-targets" option has been removed.
+* Removed use of {tag} and {content} internal data of DOM objects.
+
+END

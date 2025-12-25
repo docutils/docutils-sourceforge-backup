@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-11-29T23:11:25.215652Z
+K 7
+svn:log
+V 66
+Decode command line arguments with the locales preferred encoding.
+END

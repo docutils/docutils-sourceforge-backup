@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T02:22:32.989045Z
+K 7
+svn:log
+V 184
+Do not add "encoding" directive.
+There have been no requests, the heuristics work well enough, and
+it is too complicated (and bad design) for the reason listed in the
+to-do list entry.
+END

@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-08-29T13:01:18.000000Z
+K 7
+svn:log
+V 228
+Fixed bug which causes LaTeX writer to crash when called with an empty
+document tree.
+
+This happens e.g. when processing a reST document which only consists
+of a directive which is not supported by the LaTeX writer (like meta).
+
+END

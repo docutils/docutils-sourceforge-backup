@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-11-05T10:55:22.422909Z
+K 7
+svn:log
+V 192
+latexe2 writer fixes:
+
+* move pdf-anchor (\\\\phantomsection) to the start of titles
+* load babel package after inputenc and fontenc
+* test xetex_cyrillic with hyperref-options="unicode=false"
+END

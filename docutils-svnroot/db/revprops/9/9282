@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-11-28T23:55:46.733050Z
+K 7
+svn:log
+V 194
+Wrap definition lists with "details" class argument in a <div>
+with the "id" and "class" values of the list node.
+
+Enables setting an "anchor" or a "class" value for "detail disclosure elments".
+END

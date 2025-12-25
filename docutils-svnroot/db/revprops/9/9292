@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-12-01T21:13:38.199934Z
+K 7
+svn:log
+V 115
+HTML5: Use dpub-ARIA role "doc-footnote" for footnotes
+
+(instead of ARIA role "note").
+
+No change with "html4css1".
+END

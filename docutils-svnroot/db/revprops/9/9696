@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-08T10:32:41.792194Z
+K 7
+svn:log
+V 155
+Fix recommonmark parser support. Announce removal in Docutils 1.0.
+
+Recommonmark is unmaintained since 2021 and deprecated in favour
+of the `MyST parser`_.
+END

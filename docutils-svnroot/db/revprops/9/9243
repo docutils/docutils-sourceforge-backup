@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2022-11-14T09:26:29.122470Z
+K 7
+svn:log
+V 71
+Fix: SetuptoolsDeprecationWarning: Installing '' as data is deprecated
+
+END

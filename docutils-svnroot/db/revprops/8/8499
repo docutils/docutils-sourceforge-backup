@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-03-03T20:53:29.243979Z
+K 7
+svn:log
+V 149
+test_buildhtml: Eliminate need for shell=True
+
+Also use sys.executable, to make it possible to test buildhtml.py
+with different interpreter versions.
+END

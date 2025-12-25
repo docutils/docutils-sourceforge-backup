@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-10-20T17:31:47.811434Z
+K 7
+svn:log
+V 309
+Move all flake8 configuration to ``.flake8`` files
+
+The ``.flake8`` file uses the same INI configuration format as
+``tox.ini``, but allows separating test and environment configuration
+from style and format configuration. It also makes it easier to
+synchronise the ``.flake8`` and ``docutils/.flake8`` files.
+
+END

@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-03-05T23:31:46.693243Z
+K 7
+svn:log
+V 163
+Remove unused local variables
+
+flake rule F841: local variable 'foo' is assigned to but never used
+
+In test_odt.py, a no-op class definition is removed completely.
+END

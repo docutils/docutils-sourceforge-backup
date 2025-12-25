@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-05-13T21:27:50.422275Z
+K 7
+svn:log
+V 245
+Robust error reporting: ErrorString
+
+A wrapper providing robust (bytes and unicode) string conversion.
+
+Prevents encoding errors with locales that have non-ASCII chars in
+their IOError messages, cf. https://bugs.gentoo.org/show_bug.cgi?id=349101
+END

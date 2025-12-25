@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2008-01-28T06:18:42.315853Z
+K 7
+svn:log
+V 96
+rst.el: Added rst-minor-mode, to be used along mail-mode and other modes derived from text-mode.
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 6
+aisaac
+K 8
+svn:date
+V 27
+2010-09-16T03:03:26.986493Z
+K 7
+svn:log
+V 55
+Add slides_tests directory for tests of slides writers.
+END

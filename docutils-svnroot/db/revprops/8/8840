@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-10-04T08:36:11.453610Z
+K 7
+svn:log
+V 139
+Fix by Mickey Endito for source location (line number) of attributions.
+
+New unittest case for the internal "source" and "line" attributes.
+END

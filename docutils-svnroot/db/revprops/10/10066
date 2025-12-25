@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2025-04-01T11:39:59.290056Z
+K 7
+svn:log
+V 50
+do not generate blank line after macro references
+
+END

@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-03-03T21:30:44.932159Z
+K 7
+svn:log
+V 219
+Update latex writer documentation.
+
+Add hints for configuring the indentation of a literal block with
+lstlisting.
+
+Replace the legacy pstricks+ucs workaround to get Unicode block characters
+with the advise to use XeTeX.
+END

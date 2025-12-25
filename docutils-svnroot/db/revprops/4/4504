@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-04-05T23:06:44.826694Z
+K 7
+svn:log
+V 317
+added a Directive.system_message convenience method
+(result from brainstorming with David);
+I think I like it; what do you think, David?
+Something that is bothering me is that we do not keep the actual
+(externally visible) directive interface and the convenience methods
+separated; I added a comment to separate them.
+END

@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+amohari
+K 8
+svn:date
+V 27
+2008-02-24T11:09:06.414683Z
+K 7
+svn:log
+V 184
+Got rid of string.Template dependency by changing the format of the basename
+template. Renamed --chunker-sect-filename to --chunk-basename. Changed a few
+things to support Python 2.2.
+
+END

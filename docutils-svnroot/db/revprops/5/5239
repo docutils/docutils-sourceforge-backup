@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2007-06-15T16:50:36.980487Z
+K 7
+svn:log
+V 127
+use Packages class for (almost) all \usepackage lines, code reorganisation, comments with rst section markup for document parts
+END

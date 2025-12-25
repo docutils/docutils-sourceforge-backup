@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-02-27T01:00:59.000000Z
+K 7
+svn:log
+V 162
+when relocating a target, it now acquires the children of its new parent;
+fixed bug in recording internal targets so that anonymous targets are relocated as well
+
+END

@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-11-09T23:54:42.636297Z
+K 7
+svn:log
+V 174
+Unify/simplify import of PIL.
+
+The Python Imaging Library is an optional 3rd party dependency.
+Re-use the conditional import in the rst-parser module
+in HTML and ODT writers.
+END

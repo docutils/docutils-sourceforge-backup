@@ -1,0 +1,26 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-12-17T23:21:33.207126Z
+K 7
+svn:log
+V 557
+* Added "-D relax-citation-characters" option.
+* Added roles "mathml-display" and "mathml-inline" to force
+  display/inline mode.
+* Role name is now passed in as fourth argument to role attribute
+  subroutines.
+* DefineRole now allows defining other info about the role than just
+  its options.
+* Plug-in directives can now have an init routine that gets called to
+  define and initialize them.
+* Plug-ins can now define roles as well as directives.
+* Roles can now define a reparse option which will cause the output to
+  be reparsed as reStructuredText.
+
+
+END

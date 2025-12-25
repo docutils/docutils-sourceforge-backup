@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2004-06-01T14:27:21.000000Z
+K 7
+svn:log
+V 65
+Change footnotes were taken as_text only, now with sructure too.
+
+END

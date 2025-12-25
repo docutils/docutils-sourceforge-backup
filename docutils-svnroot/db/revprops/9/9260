@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-11-21T20:51:37.519821Z
+K 7
+svn:log
+V 330
+Make component's "TransformSpec" interface optional.
+
+`Transformer.populate_from_components()` now ignores components
+not inheriting `docutils.TransformSpec`.
+This is a prerequisite to allow use of standard I/O classes in the Publisher.
+
+Document the handling of `unknown_reference_resolvers`.
+Use PEP 257 "Docstring Conventions".
+END

@@ -1,0 +1,215 @@
+id: b-3204.0-4035.r4035/0
+type: file
+pred: b-3204.0-4034.r4034/0
+count: 13
+text: 4033 0 3158 12143 d4bb5abc7c3ac6bed3e09e92da46a26d 95e69a60641f1a4d30da8db5fb606b9a8e4b4c04 4032-340/_5
+props: 3977 1089 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /branches/s5/docs/user/slide-shows.txt
+copyfrom: 4034 /branches/s5/docs/user/slide_shows.txt
+
+PLAIN
+K 10
+config.txt
+V 25
+file 4-1639.0.r3901/20801
+K 9
+emacs.txt
+V 24
+file 5-3981.0.r4004/6772
+K 6
+images
+V 28
+dir 4-4012.0-4011.r4012/4630
+K 9
+latex.txt
+V 23
+file 4-1264.0.r3415/968
+K 9
+links.txt
+V 22
+file 4-3399.0.r4001/53
+K 17
+mailing-lists.txt
+V 28
+file 4-3385.0-3393.r3980/386
+K 3
+rst
+V 23
+dir 1d-18.0.r3963/23903
+K 15
+slide-shows.txt
+V 26
+file b-3204.0-4035.r4035/0
+K 9
+tools.txt
+V 22
+file 4-365.0.r3943/269
+END
+ENDREP
+id: 1c-18.0-4011.r4035/768
+type: dir
+pred: 1c-18.0-4011.r4034/776
+count: 272
+text: 4035 341 414 414 6700c14dd8fe033a9724ef494214d06d
+cpath: /branches/s5/docs/user
+copyroot: 4011 /branches/s5
+
+PLAIN
+K 3
+api
+V 22
+dir 3-2394.0.r3599/791
+K 3
+dev
+V 21
+dir 3-12.0.r4003/2205
+K 5
+howto
+V 22
+dir 3-749.0.r3913/1024
+K 9
+index.txt
+V 25
+file 3-2171.0.r3981/36096
+K 4
+peps
+V 21
+dir 5-7.0.r3974/10637
+K 3
+ref
+V 21
+dir w-18.0.r3998/1345
+K 4
+user
+V 26
+dir 1c-18.0-4011.r4035/768
+END
+ENDREP
+id: 3-7.0-4011.r4035/1243
+type: dir
+pred: 3-7.0-4011.r4034/1252
+count: 1048
+text: 4035 960 270 270 6e919bff1db1dce7f60dda1c1816d91a
+cpath: /branches/s5/docs
+copyroot: 4011 /branches/s5
+
+PLAIN
+K 8
+BUGS.txt
+V 23
+file 2-2181.0.r3973/437
+K 11
+COPYING.txt
+V 21
+file 2-18.0.r3096/363
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r3953/422
+K 11
+HISTORY.txt
+V 21
+file 5-18.0.r3962/442
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r2513/394
+K 10
+README.txt
+V 21
+file 9-18.0.r3997/242
+K 10
+THANKS.txt
+V 23
+file 2-2182.0.r3900/404
+K 4
+docs
+V 25
+dir 3-7.0-4011.r4035/1243
+K 8
+docutils
+V 27
+dir 1w-18.0-4011.r4032/4343
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 24
+file 46-18.0.r3901/19134
+K 4
+test
+V 27
+dir 48-18.0-4011.r4029/8548
+K 5
+tools
+V 26
+dir 6w-18.0-4011.r4012/910
+END
+ENDREP
+id: 1-7.0-4011.r4035/2086
+type: dir
+pred: 1-7.0-4011.r4034/2095
+count: 3028
+text: 4035 1429 644 644 742722fbfcd220a8d4ba528072235008
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /branches/s5
+copyroot: 4011 /branches/s5
+
+PLAIN
+K 7
+nesting
+V 27
+dir 3-1.0-1813.r2577/106277
+K 2
+s5
+V 25
+dir 1-7.0-4011.r4035/2086
+END
+ENDREP
+id: 0-1.0.r4035/2421
+type: dir
+pred: 0-1.0.r4034/2430
+count: 168
+text: 4035 2321 87 87 d850c9701746bbca736d54243601de37
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r4035/2421
+K 4
+tags
+V 19
+dir 2-1.0.r3816/482
+K 5
+trunk
+V 20
+dir 3-1.0.r4024/3246
+END
+ENDREP
+id: 0.0.r4035/2699
+type: dir
+pred: 0.0.r4034/2708
+count: 4035
+text: 4035 2573 113 113 d1ce3c112b00c8284393145eff0926b3
+cpath: /
+copyroot: 0 /
+
+b-3204._0.t4034-342 add-file false false /branches/s5/docs/user/slide-shows.txt
+4034 /branches/s5/docs/user/slide_shows.txt
+b-3204.0-4034.r4034/0 delete-file false false /branches/s5/docs/user/slide_shows.txt
+
+
+2699 2842

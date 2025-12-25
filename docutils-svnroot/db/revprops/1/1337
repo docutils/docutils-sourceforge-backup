@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2003-05-24T20:49:39.000000Z
+K 7
+svn:log
+V 107
+Added "sidebar", "rubric", "attribution", "admonition", "superscript", "subscript", and "inline" elements.
+
+END

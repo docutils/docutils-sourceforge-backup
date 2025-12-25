@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-07-26T09:55:00.000000Z
+K 7
+svn:log
+V 118
+Using feature sniffing instead of hexversion.
+Speedup when xmlcharrefreplace is used on Python < 2.3 but isn't needed
+
+END

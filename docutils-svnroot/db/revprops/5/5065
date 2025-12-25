@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-05-03T21:33:36.158476Z
+K 7
+svn:log
+V 126
+* Fixed problem with installing blib/lib/Text/Restructured.pm
+* Call do_tests (in gress.pm) with the makefile as an argument.
+
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 6
+reggie
+K 8
+svn:date
+V 27
+2004-03-23T22:32:40.000000Z
+K 7
+svn:log
+V 80
+Uses new publish_parts convenience function to test creation of HTML fragments.
+
+END

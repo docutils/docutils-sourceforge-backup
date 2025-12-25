@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-05-24T22:59:28.237534Z
+K 7
+svn:log
+V 177
+Stop ignoring ``*.pyc`` files.
+
+After dropping Python 2 support, ``*.pyc`` files are no longer generated
+and stale files should be removed from the repository checkout by users.
+END

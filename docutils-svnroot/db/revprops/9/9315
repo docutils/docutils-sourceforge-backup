@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-01-15T19:27:55.714201Z
+K 7
+svn:log
+V 93
+Drop not required parentheses.
+
+Line continuation works also without parentheses inside `{}`.
+END

@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 11
+joshuagraff
+K 8
+svn:date
+V 27
+2012-06-29T02:14:36.232886Z
+K 7
+svn:log
+V 95
+- Explicitly check for strings in strip function.
+- In title anchors transform '-' -> '%5C'.
+
+
+
+END

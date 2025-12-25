@@ -1,0 +1,27 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-03-29T21:50:15.808791Z
+K 7
+svn:log
+V 609
+New wrapper module for "CommonMark" parsers.
+
+The parser names 'commonmark' and 'markdown' now
+select the first locally installed parser
+from a list of compatible 3rd-party parser packages
+(pycmark, myst, and recommonmark).
+
+The parsers return slightly different doctrees.
+This should not matter for HTML output but leads to false
+negatives with the "include" directive test. Therefore the test
+case now specifies "recommonmark".
+
+The "pycmark" parser defines transformations to comlete nested parsing
+and clean up non-standard nodes. These transformations must also
+be run when including a document fragment.
+END

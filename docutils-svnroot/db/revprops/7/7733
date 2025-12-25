@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2013-11-30T13:03:35.389236Z
+K 7
+svn:log
+V 123
+`XsltParser` supports parameters for XSLT program.
+
+Added support for non-ASCII characters and encodings in XML documents.
+
+END

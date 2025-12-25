@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2008-06-22T08:25:19.705521Z
+K 7
+svn:log
+V 71
+Fix: documentation to literal-block-env and use-verbatim-when-possible
+
+END

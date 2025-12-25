@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-04-07T17:03:41.986961Z
+K 7
+svn:log
+V 279
+Announce change to specification of image dimensions without units in HTML5.
+
+cf. [feature-requests:#102]
+
+Fix announcements for 0.21rc1: <video> is supported for HTML5 since Docutils 0.17
+(now also for HTML 4.1 but this is no important step so the HISTORY entry should suffice).
+END

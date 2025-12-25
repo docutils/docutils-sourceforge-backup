@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-11-28T13:52:09.478763Z
+K 7
+svn:log
+V 244
+Documentation update and fixes.
+
+Announce upcoming changes.
+
+The "raw" directive can be used in substitution definitions.
+
+Hide documentation for deprecated "line-block" directive in a
+details/disclosure list.
+
+Small edits for improved clarity.
+END

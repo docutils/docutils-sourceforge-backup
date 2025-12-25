@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2010-04-11T13:57:17.492000Z
+K 7
+svn:log
+V 49
+First studies for an implmentation of `rstdiff`.
+
+END

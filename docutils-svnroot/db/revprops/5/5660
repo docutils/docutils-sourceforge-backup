@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2008-10-03T18:28:06.587902Z
+K 7
+svn:log
+V 68
+Prototype version of rstlime, to extract DB entries from rest files.
+END

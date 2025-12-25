@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2025-03-08T19:05:40.258122Z
+K 7
+svn:log
+V 258
+Remove profile_docutils.py
+
+This script relied on the hotshot [1] module, which was removed in
+Python 3.0. It has not been substantively maintained or changed since
+2005, when the script was first added.
+
+[1] https://docs.python.org/2.7/library/hotshot.html
+
+END

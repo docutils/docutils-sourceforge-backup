@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-03-18T22:27:53.666432Z
+K 7
+svn:log
+V 439
+Fix input/output for py3k.
+
+In py3k, decoding/encoding of text files is done automatically during
+read/write operations and the write() method fails with encoded (i.e.
+binary) strings. For performance, and universal newline support, we
+use the built-in encoding mechanism instead of the "homegrown" one if
+py3k is detected; as a consequence, io.FileIO.write() returns a
+Unicode string (the correct argument type for file.write() in py3k).
+
+END

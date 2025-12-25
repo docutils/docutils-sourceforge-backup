@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2004-06-02T21:38:20.000000Z
+K 7
+svn:log
+V 51
+moved cvs commands together; added "exit on error"
+
+END

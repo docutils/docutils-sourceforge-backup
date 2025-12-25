@@ -1,0 +1,91 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2011-03-20T17:20:36.940982Z
+K 7
+svn:log
+V 2314
+* Package version
+
+  There is a package version in `rst-version`. For a release it's only
+  the official version number, for development version in addition it
+  contains the revision and timestamp.
+
+  The package version is used for customizable variables according to
+  Emacs standards.
+
+* Indentation and filling
+
+  Indentation and filling is completely revised / new. The general
+  idea is to determine tabs which make sense for reStructuredText and
+  use them for indentation and filling.
+
+  Like in other modes <tab> always indents the current line. If the
+  current indentation is irregular the most likely tab for continuing
+  the last block is used. If the indentation matches a tab already the
+  indentation for the next tab in the list of possible tabs is used.
+
+  The customization group `rst-indent` contains a couple of
+  customizable variables to match different styles.
+
+  Auto-fill uses these mechanism, too.
+
+  Filling also uses these mechanisms. For most types of
+  reStructuredText blocks <M-q> (`fill-paragraph`) does what you
+  expect including filling of regions.
+
+  These features should improve the experience of editing
+  reStructuredText in Emacs much. Feedback on these features is
+  welcome.
+
+* Improved paragraph recognition
+
+  Most reStructuredText blocks are now recognized as paragraphs. Thus
+  things like <C-down> (`forward-paragraph`) and friends work. This
+  also influences filling.
+
+* Comment handling
+
+  Comment handling is revised / new. <M-#> (`comment-region`) works
+  and comments are treated correctly in filling.
+
+  At the moment only one style for commenting regions is supported.
+  Feedback on this feature is welcome.
+
+* Deprecated commands
+
+  The following commands had never been bound to keys. It seems
+  unlikely that they are used and for this reason they are deprecated
+  starting with this release:
+
+  * `rst-replace-lines`
+
+  * `rst-join-paragraph`
+
+  * `rst-force-fill-paragraph`
+
+  * `rst-repeat-last-character`
+
+  Feedback whether they are really used by someone is welcome.
+  Otherwise they are removed at some point.
+
+* New customizable variables
+
+  A couple of variables defined by `defvar` so far are now
+  customizable:
+
+  * `rst-adjust-hook`
+
+  * `rst-new-adornment-down`
+
+  * `rst-preferred-bullets`
+
+* New tests
+
+  Lots of tests have been added.
+
+END

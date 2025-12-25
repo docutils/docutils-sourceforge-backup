@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-06-06T08:29:30.869573Z
+K 7
+svn:log
+V 251
+LaTeX writer: avoid LaTeX warnings about "empty anchors".
+
+Disable the "hyperref" package's footnote handling.
+
+(Docutils implements its own footnote handling to support multiple footnote
+marks to the same footnote text with hyperlinks and backlinks).
+END

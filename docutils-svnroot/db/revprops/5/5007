@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2007-03-08T08:34:12.207297Z
+K 7
+svn:log
+V 66
+removed "Workaround for Localized Dates" section; no longer needed
+END

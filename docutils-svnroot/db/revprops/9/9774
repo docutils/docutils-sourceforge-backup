@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2024-07-19T11:22:55.208115Z
+K 7
+svn:log
+V 49
+test for setting non printing breakpoints in URI
+
+END

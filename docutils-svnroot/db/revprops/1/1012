@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2002-12-11T00:12:25.000000Z
+K 7
+svn:log
+V 77
++ remove borders from option-lists
++ use multicolumn for long option-groups.
+
+END

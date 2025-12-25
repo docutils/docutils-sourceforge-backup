@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2006-03-31T03:36:28.200697Z
+K 7
+svn:log
+V 157
+Moved template functionality from the PEP/HTML writer to the HTML writer. Expanded the fragments available in the ``parts`` attribute (via publish_parts fn).
+END

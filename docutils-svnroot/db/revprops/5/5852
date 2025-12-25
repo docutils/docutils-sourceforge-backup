@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-01-19T09:26:01.272037Z
+K 7
+svn:log
+V 103
+latex.txt: Complete overhaul
+restructure, document new and hithero undocumented features, new examples.
+END

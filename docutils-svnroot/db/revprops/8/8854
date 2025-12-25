@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-10-15T16:03:31.424096Z
+K 7
+svn:log
+V 188
+Config setting image_loading: use value "link" instead of "eager".
+
+The name "eager" is too HTML5-centric. The distinction
+link/embed may be supported in future also by the ODF/ODT writer.
+END

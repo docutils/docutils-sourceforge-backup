@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 13
+matt_harrison
+K 8
+svn:date
+V 27
+2010-09-08T05:41:26.729894Z
+K 7
+svn:log
+V 106
+change rst2odp to rst2odp.py (much to my chagrin), but trying to be consistent with other rst2foo.py tools
+END

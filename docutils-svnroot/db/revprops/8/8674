@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-04-07T20:45:05.099595Z
+K 7
+svn:log
+V 159
+Fix bug #414: error with Py3k when locale encoding is "ascii".
+
+Open "docutils.sty" with encoding set to "utf8".
+(We know the encoding as we provide the file.)
+END

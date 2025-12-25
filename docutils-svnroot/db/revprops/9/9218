@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-11-06T21:23:35.338589Z
+K 7
+svn:log
+V 269
+Don't use pseudo-encoding "unicode" for test_publish().
+
+While setting "output-encoding" to "unicode" ensures that
+core.publish_string() returns a `str` instance,
+it has also effects an eventual encoding declaration (XML, HTML, LaTeX)
+and character conversions (LaTeX).
+END

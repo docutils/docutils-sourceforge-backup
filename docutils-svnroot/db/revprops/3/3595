@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-27T02:14:23.362326Z
+K 7
+svn:log
+V 106
+removed comment;
+reporter and transformer should be restored automatically when using
+publish_from_doctree
+END

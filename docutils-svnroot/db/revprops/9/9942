@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-09-29T09:31:17.545081Z
+K 7
+svn:log
+V 433
+LaTeX writers update.
+
+Deprecate `writers.latex2e.SortableDict`.
+
+Remove `writers.latex2e.Table.get_caption` (obsolete).
+
+Test and fix local ToC without global ToC.
+Package "minitoc" needs a ``\faketableofcontents`` in this case so that a
+".toc" file is generated.
+Move the conditional insertion code in `depart_document()` before the
+conversion of `self.requirements` from a dict to a list, so that the
+test works again as intended.
+END

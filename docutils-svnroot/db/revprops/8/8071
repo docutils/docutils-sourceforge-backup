@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-05-21T10:16:33.528504Z
+K 7
+svn:log
+V 97
+Improve smartquotes command line interface.
+
+use locale to set default language,
+sort style help.
+END

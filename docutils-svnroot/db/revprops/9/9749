@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-10T14:24:00.056007Z
+K 7
+svn:log
+V 328
+encoding settings: remove shortcuts `-i` and `-o`, default to UTF-8.
+
+Drop short options ``-i`` and ``-o``.
+Use the long equivalents ``--input-encoding`` and ``--output-encoding``.
+(See `command line interface`_ for the rationale.)
+
+Change the default input encoding from auto-detect to "utf-8".
+
+Update documentation and tests.
+END

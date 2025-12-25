@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2011-06-03T15:01:37.255066Z
+K 7
+svn:log
+V 53
+Fix: vertical space cleaning for option group ``.``.
+
+END

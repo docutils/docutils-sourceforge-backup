@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 8
+gschwant
+K 8
+svn:date
+V 27
+2003-01-08T23:10:57.000000Z
+K 7
+svn:log
+V 121
+This stylesheet is not needed anymore. The new DocFactory release
+does create its stylesheet via factory/stylesheets.py.
+
+END

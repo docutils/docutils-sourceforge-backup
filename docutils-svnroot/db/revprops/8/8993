@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-29T13:20:04.540719Z
+K 7
+svn:log
+V 120
+Fix trailing whitespace (flake warnings W293, W391).
+
+W293 blank line contains whitespace
+W391 blank line at end of file
+END

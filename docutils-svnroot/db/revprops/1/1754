@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 4
+lalo
+K 8
+svn:date
+V 27
+2003-12-02T03:23:49.000000Z
+K 7
+svn:log
+V 202
+added suport for tables, and changed the final join() from \'\n\' to \'\' for safer results.
+Table support is quite rudimentary - any multiple span will break it.  Supporting spans is next on the list.
+
+END

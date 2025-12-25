@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 8
+cliechti
+K 8
+svn:date
+V 27
+2009-06-15T22:26:30.025952Z
+K 7
+svn:log
+V 135
+- Remove old code. This was once moved to trunk/sandbox/aafigure and now to http://launchpad.net/aafigure
+- leave a note in the readme
+
+END

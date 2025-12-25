@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-06T14:01:46.131618Z
+K 7
+svn:log
+V 418
+xml-parser: new optional argument `document` for `parse_node()`.
+
+The default is a new "dummy" `nodes.document` instance.
+
+* Passed to the auxiliary `element2node()` function.
+* Fixes ``parse_node('<document></document>)`` (instantiating
+  `nodes.document` requires additional arguments).
+* Provides a "reporter" instance.
+* Provides a configuration settings instance.
+
+Use `parse_node()` to simplify `Parser.parse()`.
+END

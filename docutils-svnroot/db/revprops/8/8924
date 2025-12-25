@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-03T23:48:04.995942Z
+K 7
+svn:log
+V 202
+Docutils 0.19 requires Python 3.7 or later.
+
+Update documentation and setup.
+Removal of special-casing and 2.7 compatibility hacks following soon.
+
+Specify versions in deprecation/removal announcements.
+END

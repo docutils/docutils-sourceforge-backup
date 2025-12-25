@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2011-12-25T23:11:45.244735Z
+K 7
+svn:log
+V 77
+remove version_string patching and reverting for no longer existing snapshot
+
+END

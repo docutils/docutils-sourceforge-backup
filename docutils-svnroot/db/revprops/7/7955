@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2016-07-27T10:38:34.173058Z
+K 7
+svn:log
+V 132
+"use_source_date_epoch" config setting.
+
+Use SOURCE_DATE_EPOCH timestamp only if "use_source_date_epoch" config setting
+is enabled. 
+END

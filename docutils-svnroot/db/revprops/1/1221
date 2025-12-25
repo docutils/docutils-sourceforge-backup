@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 8
+gschwant
+K 8
+svn:date
+V 27
+2003-03-20T19:18:43.000000Z
+K 7
+svn:log
+V 68
+
+Project settings dialog has a choice item for "Language Code" now.
+
+END

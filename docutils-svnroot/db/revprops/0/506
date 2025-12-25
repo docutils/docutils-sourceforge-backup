@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-08-13T00:56:09.000000Z
+K 7
+svn:log
+V 968
+* Reworked the ``docutils.transforms.parts.SectNum`` transform's  ``update_section_numbers()`` method:  - Simplified calling the method (default parameter values).  - Removed the "autonum_origtitle" and "autonum_prefix" attributes    from "section" elements: unnecessarily redundant.  Instead, the    "title" elements get an "auto" attribute.  - The section number text is inserted into the title, wrapped in a    ``<generated class="sectnum">`` element.  We don't actually use    this yet, but it could be used this to remove the generated text    if we need to.* Reworked the ``docutils.transforms.parts.Contents`` transform's  ``build_contents()`` method:  - It turns out that we don't need to build enumerated lists; we    continue to build bullet lists as before.  - If an "auto" attribute is detected in a title, we add a    ``class="auto-toc"`` attribute to the bullet list.  - The generated text is left alone; there's no need to remove it.
+
+END

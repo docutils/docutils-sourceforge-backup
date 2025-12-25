@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-04-02T09:29:32.537958Z
+K 7
+svn:log
+V 72
+Adapt adornment style to Documentation Conventions, avoid non-ASCII char
+END

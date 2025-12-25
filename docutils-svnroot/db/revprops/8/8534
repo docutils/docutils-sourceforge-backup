@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2020-08-10T09:47:47.866123Z
+K 7
+svn:log
+V 68
+remove the helper function "walker" for os.path.walk from python2.2
+
+END

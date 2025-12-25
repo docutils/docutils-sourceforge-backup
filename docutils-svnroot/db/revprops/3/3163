@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-04-03T19:53:28.118141Z
+K 7
+svn:log
+V 128
+removed docutils.utils.Reporter.categories, docutils.utils.ConditionSet, and all references to them, to simplify error reporting
+END

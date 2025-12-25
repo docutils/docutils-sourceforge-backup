@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-02-05T14:16:25.101710Z
+K 7
+svn:log
+V 72
+Fix hyperlink targets (labels) for images, figures, and tables in LaTeX.
+END

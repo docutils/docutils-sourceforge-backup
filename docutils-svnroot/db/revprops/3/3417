@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-06-01T14:44:50.761039Z
+K 7
+svn:log
+V 61
+docutils.__version_details__ renamed from .__version_suffix__
+END

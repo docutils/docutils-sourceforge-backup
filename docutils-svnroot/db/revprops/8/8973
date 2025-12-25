@@ -1,0 +1,34 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-26T19:03:19.690631Z
+K 7
+svn:log
+V 521
+Small fixes and clean-ups by Adam Turner.
+
+Remove duplicate definitions in language modules.
+
+Import locale_encoding from `docutils.io`
+
+Use decorator for staticmethod
+
+Use True/False over 1/0.
+
+`collections.OrderedDict` no longer required,
+all dictionaries are ordered from Python 3.7
+
+Remove obsolete `__cmp__` method
+cf. https://docs.python.org/3/whatsnew/3.0.html#ordering-comparisons
+
+Use str instead of type('').
+
+Zero-argument ``super()``
+
+Simplify test support module as
+"u" prefix isn't used by repr in Python 3.
+END

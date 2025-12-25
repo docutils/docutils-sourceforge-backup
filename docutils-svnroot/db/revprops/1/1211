@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2003-03-03T10:59:31.000000Z
+K 7
+svn:log
+V 60
+Add LatexPublishTest classes.
+Add writer latex writer test.
+
+END

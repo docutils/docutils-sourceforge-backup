@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-12-15T23:06:26.467256Z
+K 7
+svn:log
+V 50
+New option "detailled" for the `pseudoxml` writer.
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-07-11T22:49:30.027383Z
+K 7
+svn:log
+V 77
+added "Error Handling" section;
+improved and extended directive documentation
+END

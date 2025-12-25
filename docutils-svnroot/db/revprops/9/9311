@@ -1,0 +1,25 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-12-19T20:42:55.617087Z
+K 7
+svn:log
+V 390
+Refactor latex writer tests.
+
+Define default test settings as class attribute.
+
+Use separate test functions for different settings instead of
+running all sub-test from one function.
+
+Simplify naming.
+
+Add test for "use_bibtex" setting (will be fixed in next commit).
+
+Add stub for testing `core.publish_parts()` with the "latex" writer.
+(Currently publish_parts does not work with "latex".)
+END

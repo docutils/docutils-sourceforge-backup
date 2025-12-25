@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2006-09-01T23:18:20.594247Z
+K 7
+svn:log
+V 110
+* Handle eval numbers with "[...]" after them.
+* Handle output that occurs when running with debug (-d) flag.
+
+END

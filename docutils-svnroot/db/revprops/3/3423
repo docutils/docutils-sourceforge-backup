@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-02T12:32:07.554258Z
+K 7
+svn:log
+V 55
+revert changed __init__.py before updating the web site
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2022-11-02T17:08:51.316800Z
+K 7
+svn:log
+V 40
+Do not output empty "manual" in ``.TH``
+
+END

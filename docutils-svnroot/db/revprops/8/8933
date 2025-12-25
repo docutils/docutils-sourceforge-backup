@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-06T00:26:19.712043Z
+K 7
+svn:log
+V 168
+Fix/silence DeprecationWarnings and RessourceWarnings.
+
+Found by Tomasz Kłoczko running "pytest" (cf. feature-request #81)
+and by running `python3 -W all alltests.py`.
+END

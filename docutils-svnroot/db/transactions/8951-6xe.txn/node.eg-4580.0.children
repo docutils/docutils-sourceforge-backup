@@ -1,0 +1,51 @@
+K 10
+Suite.smak
+V 26
+file 3i-5058.0.r5058/65654
+K 8
+dom.init
+V 22
+dir 4-5057.0.r5057/796
+K 9
+html.init
+V 31
+dir 8q-4327.19-4580.r5058/66961
+K 10
+latex.init
+V 23
+dir 4-5773.0.r5786/4085
+K 10
+parse.init
+V 30
+dir 9j-4327.1a-4580.r6436/6032
+K 10
+xform.init
+V 29
+dir 7-4345.1b-4580.r6274/1958
+K 8
+xml.init
+V 23
+dir b-5057.0.r5057/1473
+K 9
+xref.init
+V 31
+dir dl-4327.1c-4580.r5058/67626
+END
+D 10
+Suite.smak
+K 8
+dom.init
+V 22
+dir 4-5057.0.t8951-6xe
+K 9
+html.init
+V 29
+dir 8q-4327.19-4580.t8951-6xe
+K 10
+latex.init
+V 22
+dir 4-5773.0.t8951-6xe
+K 10
+parse.init
+V 29
+dir 9j-4327.1a-4580.t8951-6xe

@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2024-08-14T09:18:20.310346Z
+K 7
+svn:log
+V 149
+change command line option --use-macro-references to the pair
+--macro-references/--text-references to enable/disable usage 
+of *man* macros .UR/.UE.
+
+END

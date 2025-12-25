@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2010-01-12T15:33:20.409856Z
+K 7
+svn:log
+V 70
+Remove trailing blanks in code (keep in sync with mercurial version).
+
+END

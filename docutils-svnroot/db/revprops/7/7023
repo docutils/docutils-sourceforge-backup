@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-05-04T20:51:59.452271Z
+K 7
+svn:log
+V 198
+More robust guess of input/output encoding.
+
+The locale encoding is stored as `frontend.locale_encoding` and
+used in command line parsing and `default_error_encoding` before falling
+back to "ascii".
+END

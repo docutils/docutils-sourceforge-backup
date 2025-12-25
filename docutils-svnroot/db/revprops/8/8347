@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-08-26T12:12:02.163722Z
+K 7
+svn:log
+V 142
+py3: Switch to 'except foo as bar' syntax
+
+This is the only form supported in Python 3.x.
+
+Signed-off-by: Stephen Finucane <stephen@that.guru>
+END

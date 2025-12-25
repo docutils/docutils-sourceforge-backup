@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2015-02-27T16:18:34.557994Z
+K 7
+svn:log
+V 81
+Use the "admonition" class argument for all admonitions 
+(allows easier styling).
+END

@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-11-18T22:04:20.018100Z
+K 7
+svn:log
+V 164
+Various small documentation edits.
+
+Format hyperlink targets,
+more precise explanation of the "include" directive's `:tab-width:` option,
+comments and explanations.
+END

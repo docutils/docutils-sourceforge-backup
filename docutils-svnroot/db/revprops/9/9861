@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-08-07T14:05:25.789781Z
+K 7
+svn:log
+V 460
+Formatting, simplifications, and fixes for ``frontend.py``.
+
+Remove obsolete method `OptionParser.set_defaults_from_dict()`.
+
+The `pathdict` in `make_paths_absolute()` now works with
+values that are tuples of path names (``dict[str, tuple[_FsPath]``).
+
+Use an alias for "file system path" type (str or PathLike).
+
+Line up closing bracket with content (as usual in Docutils).
+Close sequences that are unlikely to be extended in another version
+on the same line.
+END

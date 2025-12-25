@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-12-20T11:41:13.760456Z
+K 7
+svn:log
+V 49
+Apply patch by Kirill Smelkov to fix [ 3139667 ].
+END

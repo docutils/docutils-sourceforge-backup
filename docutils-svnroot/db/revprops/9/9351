@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-04-17T20:26:33.323569Z
+K 7
+svn:log
+V 172
+Fix test failure introduced in [r9348].
+
+Reword and wrap warning message for incompatible content
+of the bibliographic field "author".
+
+Adapt "frontmatter" unit test cases.
+END

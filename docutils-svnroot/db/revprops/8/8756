@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-05-20T12:24:59.388197Z
+K 7
+svn:log
+V 334
+MathML: remove unrequired <mrow>s, support more commands.
+
+Support additional commands from the AMS math-guide.
+
+Remove <mrow>, if it is single child and the parent inferres an mrow
+or if it has only one child element.
+
+tex_number(): do not return trailing delimiter.
+
+Use class "mathscr" instead of hard-codes font name for \mathscr.
+END

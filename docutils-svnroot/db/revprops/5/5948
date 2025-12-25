@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-05-14T10:27:43.360107Z
+K 7
+svn:log
+V 95
+Local tocs with `minitoc` if "use-latex-toc" is True.
+
+Plus some more ideas/updates in todo.txt
+END

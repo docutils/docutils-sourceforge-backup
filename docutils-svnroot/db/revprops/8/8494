@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2020-02-17T11:55:38.771963Z
+K 7
+svn:log
+V 35
+Fix #126 manpage title with spaces
+
+END

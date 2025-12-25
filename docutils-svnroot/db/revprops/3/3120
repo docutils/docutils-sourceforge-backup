@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-03-26T09:10:57.828743Z
+K 7
+svn:log
+V 444
+transforms: replaced SectionTargets and ChainedTargets by PropagateTargets,
+which propagates internal empty targets to the next element;
+LaTeX writer loses one internal target, but I won't fix that now but
+wait until the next rewrite;
+added Element.note_referenced_by auxiliary function;
+added true support for multiple names and ids in target elements;
+added FinalChecks to transform list of totest['hyperlinks'];
+added auxiliary uniq function
+END

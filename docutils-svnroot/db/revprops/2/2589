@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2004-09-12T21:14:54.000000Z
+K 7
+svn:log
+V 55
+Added --input-encoding-error-handler option & setting.
+
+END

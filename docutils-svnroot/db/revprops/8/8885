@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-11-11T16:29:16.701539Z
+K 7
+svn:log
+V 419
+Node.traverse() returns a list again to restore backwards compatibility.
+
+Although the documented API only promised an "iterable" as return
+value, the implementation returned a list.
+Because Sphinx < 4.0.0 relies on this and Sphinx < 3.5.4 places no upper
+limit to the Docutils dependency, this led to many errors "in the wild".
+
+Fixes bug #431.
+
+New method Node.findall(): like Node.traverse() but returns an iterator.
+END

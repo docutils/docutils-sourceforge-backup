@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-06-17T10:50:48.198056Z
+K 7
+svn:log
+V 171
+Math directive and documentation update:
+
+Math content can also be given as directive argument.
+
+Multiple content block separated by blank lines are put in separate
+nodes.
+END

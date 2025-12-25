@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-06-16T22:44:36.990021Z
+K 7
+svn:log
+V 105
+Update hyperlink tests.
+
+Reword samples.
+Add test case with explicit/embedded external targets (same URI)
+END

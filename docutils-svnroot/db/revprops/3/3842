@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-08-29T22:34:31.769302Z
+K 7
+svn:log
+V 159
+HTML writer:
+- Added vertical space between fields of field lists.
+- Added ``--compact-field-lists`` option to remove vertical space in
+  simple field lists.
+
+
+END

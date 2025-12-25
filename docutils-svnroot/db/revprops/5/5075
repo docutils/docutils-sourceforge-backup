@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+gbrandl
+K 8
+svn:date
+V 27
+2007-05-20T08:17:03.171014Z
+K 7
+svn:log
+V 65
+Add a new directory for the reST Python documentation toolchain.
+
+END

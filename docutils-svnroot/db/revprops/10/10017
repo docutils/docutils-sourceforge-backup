@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-03-06T08:41:10.823774Z
+K 7
+svn:log
+V 388
+Fix LaTeX docinfo handling of affiliation fields preceding author field.
+
+With "use_latex_docinfo", the content of the bibliographic fields
+"address", "contact", and "organization" is attached to the author name.
+
+Reserve the first position for the author name instead of creating an
+"author info" list without author if any of these fields appeares before
+an "author" or "authors" field.
+END

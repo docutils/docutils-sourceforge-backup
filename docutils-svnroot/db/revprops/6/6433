@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-09-28T08:21:25.738899Z
+K 7
+svn:log
+V 101
+Do not fail, if the specified langauage is not supported by Docutils,
+warn and fall back to English.
+
+END

@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 8
+cliechti
+K 8
+svn:date
+V 27
+2009-06-04T22:11:13.191450Z
+K 7
+svn:log
+V 126
+- Add support for upper horizontal line using '~~~'. This is similar to lower horizontal lines using '___'.
+
+Thanks to llucax
+
+END

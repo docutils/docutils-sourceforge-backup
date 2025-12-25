@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-11T17:40:14.607895Z
+K 7
+svn:log
+V 103
+Update recommonmark wrapper and tests.
+
+Adapt to and test with "recommonmark" versions 0.6.0 and 0.7.1.
+END

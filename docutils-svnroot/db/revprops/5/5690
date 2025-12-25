@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2008-10-26T18:08:57.279339Z
+K 7
+svn:log
+V 38
+remove bashisms
+make check executable
+
+END

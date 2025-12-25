@@ -1,0 +1,9 @@
+id: 6-2164.0.t9229-757
+type: file
+pred: 6-2164.0.r9220/1477
+count: 58
+text: -1 9222 407 44712 3214d988193fca805198b2b4f6091c4f 4127ca21b17104dea6ad6715ebe6bc7e3ab792c5 9229-757/_r
+props: 2980 4169 136 0 9498f9acecba762a787db20de8ef6de1
+cpath: /trunk/docutils/test/test_parsers/test_rst/test_directives/test_tables.py
+copyroot: 0 /
+

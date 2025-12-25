@@ -1,0 +1,240 @@
+id: 3-2679.0-4266.r4617/0
+type: file
+pred: 3-2679.0-4266.r4616/0
+count: 8
+text: 4519 0 507 2892 47da970513f0c8f5f6b017be575a1867 f9945bf1a0418925eaac448617bb87a19c4b3a61 4616-3k8/_4
+props: 2683 4130 136 0 921bd9320f875dd6f8050e7ef12a5696
+cpath: /branches/docutils-0.4/test/test_dependencies.py
+copyroot: 4266 /branches/docutils-0.4
+
+PLAIN
+K 22
+DocutilsTestSupport.py
+V 22
+file 49-18.0.r4258/220
+K 11
+alltests.py
+V 22
+file 4e-18.0.r4217/332
+K 11
+coverage.sh
+V 28
+file 6-3449.0-3489.r3603/213
+K 4
+data
+V 23
+dir 3-1662.0.r3416/2104
+K 13
+docutils.conf
+V 24
+file 6-1661.0.r2385/2146
+K 19
+docutils_difflib.py
+V 24
+file 6-2354.0.r2354/1272
+K 10
+functional
+V 28
+dir 3-2357.0-4266.r4614/3267
+K 19
+package_unittest.py
+V 21
+file 3-44.0.r2454/856
+K 20
+test_dependencies.py
+V 26
+file 3-2679.0-4266.r4617/0
+K 18
+test_functional.py
+V 24
+file 18-2357.0.r4254/348
+K 10
+test_io.py
+V 24
+file 5-3138.0.r4132/6093
+K 16
+test_language.py
+V 23
+file 3-940.0.r4132/6674
+K 13
+test_nodes.py
+V 23
+file 4i-18.0.r4132/6380
+K 12
+test_parsers
+V 27
+dir 4k-18.0-4266.r4490/6428
+K 17
+test_publisher.py
+V 29
+file 6-3525.0-3602.r4132/2738
+K 12
+test_readers
+V 25
+dir 3-89.0-4266.r4490/956
+K 16
+test_settings.py
+V 22
+file g-1662.0.r4222/69
+K 20
+test_statemachine.py
+V 22
+file 6a-18.0.r917/6020
+K 15
+test_transforms
+V 22
+dir 6c-18.0.r4233/3209
+K 13
+test_utils.py
+V 21
+file 6u-18.0.r3171/53
+K 16
+test_viewlist.py
+V 23
+file 3-916.0.r3085/3892
+K 12
+test_writers
+V 28
+dir 5-1211.0-4266.r4614/1474
+END
+ENDREP
+id: 48-18.0-4266.r4617/1463
+type: dir
+pred: 48-18.0-4266.r4616/1462
+count: 646
+text: 4617 333 1117 1117 aae1ebfb6d0758b2261ab91aae3cf90d
+props: 343 993 44 0 e8789a4081469b0bbc8d88dcdbd925ef
+cpath: /branches/docutils-0.4/test
+copyroot: 4266 /branches/docutils-0.4
+
+PLAIN
+K 8
+BUGS.txt
+V 24
+file 2-2181.0.r4233/8277
+K 11
+COPYING.txt
+V 24
+file 2-18.0-4266.r4472/0
+K 7
+FAQ.txt
+V 25
+file 2-788.0-4266.r4608/0
+K 11
+HISTORY.txt
+V 27
+file 5-18.0-4266.r4598/1590
+K 11
+MANIFEST.in
+V 23
+file 7-18.0.r4156/57222
+K 10
+README.txt
+V 21
+file 9-18.0.r4216/546
+K 17
+RELEASE-NOTES.txt
+V 28
+file 2-4204.0-4266.r4278/314
+K 10
+THANKS.txt
+V 22
+file 2-2182.0.r4240/66
+K 4
+docs
+V 25
+dir 3-7.0-4266.r4611/1078
+K 8
+docutils
+V 27
+dir 1w-18.0-4266.r4614/7023
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 27
+file 46-18.0-4266.r4462/455
+K 4
+test
+V 27
+dir 48-18.0-4266.r4617/1463
+K 5
+tools
+V 27
+dir 6w-18.0-4266.r4481/1678
+END
+ENDREP
+id: 1-7.0-4266.r4617/2459
+type: dir
+pred: 1-7.0-4266.r4616/2458
+count: 3229
+text: 4617 1727 719 719 910b91d4ac2de2d1cae297b8c93539bc
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /branches/docutils-0.4
+copyroot: 4266 /branches/docutils-0.4
+
+PLAIN
+K 17
+address-rendering
+V 26
+dir 1-7.0-4314.r4314/16372
+K 10
+directives
+V 26
+dir 3-1.0-4375.r4570/14345
+K 12
+docutils-0.4
+V 25
+dir 1-7.0-4266.r4617/2459
+K 7
+nesting
+V 25
+dir 3-1.0-1813.r4356/3347
+END
+ENDREP
+id: 0-1.0.r4617/2926
+type: dir
+pred: 0-1.0.r4616/2925
+count: 340
+text: 4617 2714 199 199 23c4e4fac2dcdf8078b9e8e0a4c6adde
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r4617/2926
+K 4
+tags
+V 19
+dir 2-1.0.r4584/629
+K 5
+trunk
+V 20
+dir 3-1.0.r4612/1500
+END
+ENDREP
+id: 0.0.r4617/3206
+type: dir
+pred: 0.0.r4616/3205
+count: 4617
+text: 4617 3080 113 113 f141d03c95742558e91215be77578e24
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+
+3-2679.0-4266.t4616-3k8 modify-file true false /branches/docutils-0.4/test/test_dependencies.py
+
+
+3206 3400

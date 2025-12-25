@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2007-06-24T02:55:18.234777Z
+K 7
+svn:log
+V 99
+moved responsibility for applying transforms from publisher to
+Reader.read and Writer.write methods
+END

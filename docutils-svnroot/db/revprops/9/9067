@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-06-10T11:08:46.509870Z
+K 7
+svn:log
+V 367
+Fix `nodes.Node.findall()` for Text nodes.
+
+As `nodes.Text` inherits from `str`, Text nodes with the same content
+are considered equal and ``nodes.Element.index(Text('sample'))``
+may return a preceding Text node with content "sample".
+Therefore, Node.findall() must perform an additional test for identity
+with the start node.
+
+Fixes bug #448.
+
+Thanks to Adam Turner.
+END

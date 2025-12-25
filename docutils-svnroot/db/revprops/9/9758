@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-14T15:03:42.234484Z
+K 7
+svn:log
+V 63
+Remove `docutils.utils.error_reporting`.
+
+Obsolete in Python 3
+END

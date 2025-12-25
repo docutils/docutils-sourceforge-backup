@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-07-28T20:17:51.000000Z
+K 7
+svn:log
+V 137
+Runtime options moved to tools/docutils.conf.  Read a config file adjacent to source, if exists.  pep2html.py doesn't need to cd either.
+
+END

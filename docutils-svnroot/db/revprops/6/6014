@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2009-07-13T06:38:01.234414Z
+K 7
+svn:log
+V 50
+Patch from ben finney to reduce vertical spacing.
+
+END

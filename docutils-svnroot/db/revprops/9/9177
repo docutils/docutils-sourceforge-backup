@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-10-27T09:47:42.030727Z
+K 7
+svn:log
+V 185
+Remove ``bdist_rpm`` settings in ``setup.cfg``
+
+Docutils does not publish RPMs, and the command is no longer
+supported for the Python Package Index. See :pep:`527` for further
+details.
+
+END

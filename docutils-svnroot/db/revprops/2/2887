@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-12-22T19:08:26.000000Z
+K 7
+svn:log
+V 115
+commented out reduced vertical space in compound paragraphs,
+because it's usually unnecessary and looks unnatural.
+
+END

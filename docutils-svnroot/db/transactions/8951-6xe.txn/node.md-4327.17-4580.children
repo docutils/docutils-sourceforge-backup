@@ -1,0 +1,361 @@
+K 8
+Dir.smak
+V 32
+file 2d-5058.17-4580.r6498/31486
+K 10
+perl01.dom
+V 32
+file me-4327.17-4580.r4580/97487
+K 10
+perl01.rst
+V 33
+file mh-4327.17-4580.r4580/102134
+K 10
+perl02.dom
+V 32
+file mj-4327.17-4580.r4580/98083
+K 10
+perl02.rst
+V 33
+file ml-4327.17-4580.r4580/102734
+K 10
+perl03.dom
+V 32
+file mn-4327.17-4580.r4580/98381
+K 10
+perl03.rst
+V 33
+file mp-4327.17-4580.r4580/103033
+K 10
+perl04.dom
+V 32
+file mr-4327.17-4580.r6498/30610
+K 10
+perl04.rst
+V 30
+file mt-4327.17-4580.r5479/792
+K 10
+perl05.dom
+V 32
+file mv-4327.17-4580.r4580/99245
+K 10
+perl05.rst
+V 27
+file mx-4327.0.r4327/940223
+K 10
+perl06.dom
+V 32
+file mz-4327.17-4580.r6498/31185
+K 10
+perl06.rst
+V 30
+file n1-4327.17-4580.r5756/467
+K 10
+perl07.dom
+V 32
+file n3-4327.17-4580.r4580/99841
+K 10
+perl07.rst
+V 27
+file n5-4327.0.r4327/934910
+K 10
+perl08.dom
+V 33
+file n7-4327.17-4580.r4580/100139
+K 10
+perl08.rst
+V 33
+file n9-4327.17-4580.r4710/213919
+K 10
+perl09.dom
+V 33
+file nb-4327.17-4580.r4580/100438
+K 10
+perl09.rst
+V 27
+file nd-4327.0.r4327/935874
+K 10
+perl10.dom
+V 32
+file nf-4327.17-4580.r6498/29169
+K 10
+perl10.rst
+V 30
+file nh-4327.17-4580.r5479/499
+K 10
+perl11.dom
+V 33
+file 3l-4710.17-4580.r4710/214224
+K 10
+perl11.rst
+V 33
+file 3n-4710.17-4580.r4710/216420
+K 10
+perl12.dom
+V 33
+file 3r-4710.17-4580.r4710/214496
+K 10
+perl12.rst
+V 33
+file 3t-4710.17-4580.r4710/216691
+K 10
+perl13.dom
+V 33
+file 3v-4710.17-4580.r4710/214767
+K 10
+perl13.rst
+V 33
+file 3x-4710.17-4580.r4710/216962
+K 10
+perl14.dom
+V 33
+file 3z-4710.17-4580.r4710/215339
+K 10
+perl14.rst
+V 33
+file 41-4710.17-4580.r4710/217231
+K 10
+perl15.dom
+V 30
+file 5-5351.17-4580.r5351/1333
+K 10
+perl15.prl
+V 30
+file 8-5351.17-4580.r5351/2393
+K 10
+perl15.rst
+V 30
+file a-5351.17-4580.r5351/1862
+K 14
+perl15.skip.pl
+V 29
+file 6-5365.17-4580.r5365/145
+K 10
+perl16.dom
+V 30
+file c-5351.17-4580.r5351/1597
+K 10
+perl16.rst
+V 30
+file e-5351.17-4580.r5351/2127
+K 10
+perl17.dom
+V 30
+file h-6233.17-4580.r6233/9707
+K 10
+perl17.rst
+V 31
+file j-6233.17-4580.r6233/10510
+K 10
+perl18.dom
+V 30
+file l-6233.17-4580.r6233/9973
+K 10
+perl18.rst
+V 31
+file n-6233.17-4580.r6233/10777
+K 13
+perl18.stderr
+V 31
+file p-6233.17-4580.r6233/10239
+K 10
+perl19.dom
+V 29
+file 5-6280.17-4580.r6280/535
+K 10
+perl19.rst
+V 29
+file 8-6280.17-4580.r6280/797
+K 9
+perl4.dom
+V 33
+file 43-4710.17-4580.r4710/216150
+K 10
+role01.dom
+V 31
+file 5-5477.17-4580.r6498/29470
+K 10
+role01.rst
+V 30
+file 8-5477.17-4580.r5477/1110
+K 10
+role02.dom
+V 31
+file a-5477.17-4580.r6498/29769
+K 10
+role02.rst
+V 30
+file c-5477.17-4580.r5477/1373
+K 10
+role03.dom
+V 32
+file 16-6498.17-4580.r6498/30068
+K 10
+role03.rst
+V 32
+file 18-6498.17-4580.r6498/31788
+K 10
+role04.dom
+V 32
+file 1a-6498.17-4580.r6498/30339
+K 10
+role04.rst
+V 32
+file 1c-6498.17-4580.r6498/32059
+K 10
+role05.dom
+V 32
+file 1e-6498.17-4580.r6498/30914
+K 10
+role05.rst
+V 32
+file 1g-6498.17-4580.r6498/32330
+K 7
+skip.pl
+V 32
+file dg-4580.17-4580.r4580/96922
+K 13
+trusted01.dom
+V 33
+file nj-4327.17-4580.r4580/101831
+K 13
+trusted01.rst
+V 31
+file nl-4327.17-4580.r6286/3721
+K 13
+trusted02.dom
+V 33
+file nn-4327.17-4580.r4580/102432
+K 13
+trusted02.rst
+V 31
+file np-4327.17-4580.r6286/4018
+K 13
+trusted03.dom
+V 33
+file 45-4710.17-4580.r4710/217774
+K 13
+trusted03.rst
+V 33
+file 49-4710.17-4580.r4710/215876
+END
+D 8
+Dir.smak
+D 10
+perl01.dom
+D 10
+perl01.rst
+D 10
+perl02.dom
+D 10
+perl02.rst
+D 10
+perl03.dom
+D 10
+perl03.rst
+D 10
+perl04.dom
+D 10
+perl04.rst
+D 10
+perl05.dom
+D 10
+perl05.rst
+D 10
+perl06.dom
+D 10
+perl06.rst
+D 10
+perl07.dom
+D 10
+perl07.rst
+D 10
+perl08.dom
+D 10
+perl08.rst
+D 10
+perl09.dom
+D 10
+perl09.rst
+D 10
+perl10.dom
+D 10
+perl10.rst
+D 10
+perl11.dom
+D 10
+perl11.rst
+D 10
+perl12.dom
+D 10
+perl12.rst
+D 10
+perl13.dom
+D 10
+perl13.rst
+D 10
+perl14.dom
+D 10
+perl14.rst
+D 10
+perl15.dom
+D 10
+perl15.prl
+D 10
+perl15.rst
+D 14
+perl15.skip.pl
+D 10
+perl16.dom
+D 10
+perl16.rst
+D 10
+perl17.dom
+D 10
+perl17.rst
+D 10
+perl18.dom
+D 10
+perl18.rst
+D 13
+perl18.stderr
+D 10
+perl19.dom
+D 10
+perl19.rst
+D 9
+perl4.dom
+D 10
+role01.dom
+D 10
+role01.rst
+D 10
+role02.dom
+D 10
+role02.rst
+D 10
+role03.dom
+D 10
+role03.rst
+D 10
+role04.dom
+D 10
+role04.rst
+D 10
+role05.dom
+D 10
+role05.rst
+D 7
+skip.pl
+D 13
+trusted01.dom
+D 13
+trusted01.rst
+D 13
+trusted02.dom
+D 13
+trusted02.rst
+D 13
+trusted03.dom
+D 13
+trusted03.rst

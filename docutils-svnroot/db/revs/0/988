@@ -1,0 +1,288 @@
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 7-988.0.r988/123
+type: file
+count: 0
+text: 339 93 18 6 140a5c671ee97b3723686f6412818f0e b0acf915c54d2c6ef53be580ed2045225a3b02d8 987-rf/_9
+props: 988 0 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/test/test_readers/.cvsignore
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 21
+file 7-988.0.r988/123
+K 11
+__init__.py
+V 21
+file 7-986.0.r986/123
+K 8
+test_pep
+V 20
+dir 5-89.0.r917/5403
+END
+ENDREP
+PLAIN
+K 10
+svn:ignore
+V 5
+*.pyc
+END
+ENDREP
+id: 3-89.0.r988/571
+type: dir
+pred: 3-89.0.r986/490
+count: 10
+text: 988 385 130 130 5491e8a7850a050f34b37b802149dfc9
+props: 988 528 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/test/test_readers
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 4-988.0.r988/920
+type: file
+count: 0
+text: 339 93 18 6 140a5c671ee97b3723686f6412818f0e b0acf915c54d2c6ef53be580ed2045225a3b02d8 987-rf/_6
+props: 988 797 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/test/test_parsers/.cvsignore
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 21
+file 4-988.0.r988/920
+K 11
+__init__.py
+V 21
+file 4-986.0.r986/784
+K 8
+test_rst
+V 21
+dir 4l-18.0.r968/2963
+END
+ENDREP
+PLAIN
+K 10
+svn:ignore
+V 5
+*.pyc
+END
+ENDREP
+id: 4k-18.0.r988/1371
+type: dir
+pred: 4k-18.0.r986/1154
+count: 52
+text: 988 1184 131 131 b222eaefb2a3975f1033067c795ce026
+props: 988 1328 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/test/test_parsers
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 21
+file 3-339.0.r343/176
+K 22
+DocutilsTestSupport.py
+V 22
+file 49-18.0.r983/2561
+K 11
+alltests.py
+V 21
+file 4e-18.0.r959/547
+K 10
+difflib.py
+V 23
+file 4g-18.0.r18/261513
+K 19
+package_unittest.py
+V 22
+file 3-44.0.r778/16101
+K 16
+test_language.py
+V 22
+file 3-940.0.r949/6589
+K 13
+test_nodes.py
+V 23
+file 4i-18.0.r778/19395
+K 12
+test_parsers
+V 21
+dir 4k-18.0.r988/1371
+K 12
+test_readers
+V 19
+dir 3-89.0.r988/571
+K 20
+test_statemachine.py
+V 22
+file 6a-18.0.r917/6020
+K 15
+test_transforms
+V 21
+dir 6c-18.0.r960/3923
+K 13
+test_utils.py
+V 23
+file 6u-18.0.r778/18531
+K 16
+test_viewlist.py
+V 22
+file 3-916.0.r916/1258
+END
+ENDREP
+id: 48-18.0.r988/2247
+type: dir
+pred: 48-18.0.r986/1974
+count: 86
+text: 988 1603 631 631 57bb3066c52b5dccb4981017f97a039b
+props: 343 993 44 0 e8789a4081469b0bbc8d88dcdbd925ef
+cpath: /trunk/docutils/test
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 21
+file 2-340.0.r340/154
+K 11
+COPYING.txt
+V 21
+file 2-18.0.r763/7254
+K 7
+FAQ.txt
+V 21
+file 2-788.0.r981/951
+K 11
+HISTORY.txt
+V 20
+file 5-18.0.r985/274
+K 11
+MANIFEST.in
+V 20
+file 7-18.0.r344/206
+K 10
+README.txt
+V 22
+file 9-18.0.r811/15236
+K 4
+docs
+V 19
+dir 3-7.0.r984/1907
+K 8
+docutils
+V 21
+dir 1w-18.0.r983/7855
+K 10
+install.py
+V 23
+file 44-18.0.r18/313369
+K 8
+setup.py
+V 21
+file 46-18.0.r860/149
+K 4
+test
+V 21
+dir 48-18.0.r988/2247
+K 5
+tools
+V 21
+dir 6w-18.0.r983/4627
+END
+ENDREP
+id: 1-7.0.r988/2970
+type: dir
+pred: 1-7.0.r986/2697
+count: 807
+text: 988 2465 492 492 4bcb3499db9ba3bdebe48a428bbc67c6
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 19
+dir 1-7.0.r988/2970
+K 7
+sandbox
+V 20
+dir 1-17.0.r987/2410
+K 3
+web
+V 19
+dir 1-2.0.r864/1209
+END
+ENDREP
+id: 3-1.0.r988/3306
+type: dir
+pred: 3-1.0.r987/2695
+count: 980
+text: 988 3180 113 113 bdf7eb4f0a5d29fc420ca34522313c75
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 17
+dir 0-1.0.r63/562
+K 4
+tags
+V 17
+dir 2-1.0.r65/217
+K 5
+trunk
+V 19
+dir 3-1.0.r988/3306
+END
+ENDREP
+id: 0.0.r988/3574
+type: dir
+pred: 0.0.r987/2963
+count: 988
+text: 988 3454 107 107 bdadc1aa79b64331a0a1d0b59e87218a
+cpath: /
+copyroot: 0 /
+
+_4.0.t987-rf add-file true true /trunk/docutils/test/test_parsers/.cvsignore
+
+4k-18.0.t987-rf modify-dir false true /trunk/docutils/test/test_parsers
+
+_7.0.t987-rf add-file true true /trunk/docutils/test/test_readers/.cvsignore
+
+3-89.0.t987-rf modify-dir false true /trunk/docutils/test/test_readers
+
+
+3574 3713

@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-03-20T16:20:02.030975Z
+K 7
+svn:log
+V 154
+Update/supplement Document Tree documentation.
+
+Description of some more supported attributes.
+Add missing attributes to listings of supported attributes.
+END

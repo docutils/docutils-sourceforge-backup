@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2020-08-10T10:06:43.606878Z
+K 7
+svn:log
+V 39
+flake8 do not check 821 undefined name
+
+END

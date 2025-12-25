@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-05-18T18:03:10.862979Z
+K 7
+svn:log
+V 132
+Fix figure alignment.
+
+the align argument of a figure should align the figure object "en-bloc", 
+not the contents inside the figure.
+END

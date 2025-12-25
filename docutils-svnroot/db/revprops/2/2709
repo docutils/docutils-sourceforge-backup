@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-10-17T23:06:53.000000Z
+K 7
+svn:log
+V 92
+updated docs to match new footnote-reference and footnote-reference-space-trimming behavior
+
+END

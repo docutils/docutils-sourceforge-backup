@@ -1,0 +1,33 @@
+K 10
+README.txt
+V 24
+file 5-2357.0.r2369/2122
+K 8
+expected
+V 23
+dir 8-2357.0.r8577/9389
+K 5
+input
+V 24
+dir e-2357.0.r8577/10025
+K 6
+output
+V 24
+dir w-2357.0.r7899/26156
+K 5
+tests
+V 25
+dir 10-2357.0.r8545/18550
+END
+K 8
+expected
+V 22
+dir 8-2357.0.t8580-6n0
+K 5
+input
+V 22
+dir e-2357.0.t8580-6n0
+K 5
+tests
+V 23
+dir 10-2357.0.t8580-6n0

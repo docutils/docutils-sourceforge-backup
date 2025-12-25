@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-04-17T12:20:57.726510Z
+K 7
+svn:log
+V 325
+Announce provision for SOURCE_DATE_EPOCH in Docutils 1.0.
+
+If the environment variable `SOURCE_DATE_EPOCH`_ is set, the "date"
+directive and the timestamp inserted by the "datestamp"
+configuration setting will use its value instead of the current time to
+support "reproducible builds".
+
+See [patches:#132] for the discussion.
+END

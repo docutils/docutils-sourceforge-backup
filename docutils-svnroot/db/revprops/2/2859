@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 4
+cben
+K 8
+svn:date
+V 27
+2004-11-13T23:15:49.000000Z
+K 7
+svn:log
+V 91
+Made logical order of the availiable math hacks.
+Added link to Alan's raw->itex2mml HOWTO.
+
+END

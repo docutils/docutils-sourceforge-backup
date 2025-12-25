@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2006-07-11T21:21:21.694557Z
+K 7
+svn:log
+V 295
+* Fixed problem that caused bare subroutines in writers to be compiled
+  more than once.
+
+* Removed the path out of the subroutine names created when compiling
+  writer routines.
+
+* Fixed the #line directives for writer subroutines so that better
+  error messages/coverage results are obtained.
+
+END

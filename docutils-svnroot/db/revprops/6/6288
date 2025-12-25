@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2010-03-23T20:14:20.396898Z
+K 7
+svn:log
+V 72
+Used $PARSER to modify "-D" options since modifying $opt_D has no effect
+END

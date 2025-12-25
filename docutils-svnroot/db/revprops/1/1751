@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 4
+lalo
+K 8
+svn:date
+V 27
+2003-11-29T07:36:45.000000Z
+K 7
+svn:log
+V 129
+instead of html tags, painting unsupported functionality in "@CurveBox paint { red } { %s }" which actually looks kinda neat ;-)
+
+END

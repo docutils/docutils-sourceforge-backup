@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-11-24T15:08:32.285424Z
+K 7
+svn:log
+V 186
+Skip individual "recommonmark" tests if "recommonmark" is missing.
+
+Skipping the complete test directory does not work with "alltests.py".
+
+Also fix running the individual tests scripts.
+END

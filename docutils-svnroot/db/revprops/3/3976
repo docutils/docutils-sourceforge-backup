@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-10-29T15:56:28.016861Z
+K 7
+svn:log
+V 340
+removed coding guideline items which are contained in PEP 8;
+shortened warning about "svn import" -- it's not as dangerous as it
+used to be in CVS;
+removed reference to Python Check-in Policies because it's not of much
+use for us -- many items are not applicable and some even contradict
+what we're currently doing (e.g. bug/patch tracking)
+END

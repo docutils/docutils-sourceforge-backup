@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-07-20T22:12:25.407631Z
+K 7
+svn:log
+V 51
+Apply [ 3365041 ] to fix py3k unittest regressions.
+END

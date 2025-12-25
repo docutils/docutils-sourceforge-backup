@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-04-15T10:00:41.828908Z
+K 7
+svn:log
+V 68
+change file ending (browsers showed the *.xhtml file as XML source)
+
+END

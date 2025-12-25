@@ -1,0 +1,31 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-07T11:24:22.108802Z
+K 7
+svn:log
+V 704
+Doctree validation: new functions to validate Element attribute values.
+
+Attribute validate functions:
+
+* convert string representations to correct data type,
+* normalize values,
+* raise ValueError for invalid attribute names or values.
+
+The `nodes.Element.validate()` function reports a warning
+for validity problems if `self.document.reporter` is available
+and raises a ValueError if not.
+
+Testing revealed problems with the "recommonmark_wrapper" parser:
+
+* Validating should be done *after* the "clean up" operations.
+
+* One test case uses an invalid class argument (underscore not allowed
+  by Docutils). As this sample tests an "only Sphinx" feature,
+  we just drop it from the Docutils test suite.
+END

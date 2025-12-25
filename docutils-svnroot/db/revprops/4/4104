@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-11-25T05:57:21.963243Z
+K 7
+svn:log
+V 46
+renamed s5roles.txt include file to s5defs.txt
+END

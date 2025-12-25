@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 7
+mmgilbe
+K 8
+svn:date
+V 27
+2005-01-11T06:56:08.000000Z
+K 7
+svn:log
+V 257
+Sync up with changes made by Alexander Schremmer.
+
+Removed un-needed imports.
+Added ftp support for the image directive (so that an ftp image isn't tried to be converted into inline).
+
+Added first pass at adding include support and added a Macro directive.
+
+END

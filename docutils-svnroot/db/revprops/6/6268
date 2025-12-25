@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-03-18T22:12:22.081742Z
+K 7
+svn:log
+V 200
+Ensure test work as intended in all supported Python versions.
+
+Take care to prevent false positives caused by varying error messages or
+default behaviour. Extend test support to p3k.
+Fixes [2972615].
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2004-05-08T22:47:28.000000Z
+K 7
+svn:log
+V 198
+Fixed bug: the body_pre_docinfo segment depended on there being a docinfo; if no docinfo, the document title was incorporated into the body segment.  Adversely affected the publish_parts interface.
+
+END

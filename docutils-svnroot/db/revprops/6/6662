@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 12
+paultremblay
+K 8
+svn:date
+V 27
+2011-01-24T05:56:37.688102Z
+K 7
+svn:log
+V 67
+Added code to determine page types when document/title is present.
+
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2007-06-23T22:58:21.245315Z
+K 7
+svn:log
+V 111
+do not support transforms for source and destination; this is unused, and should be done by readers and writers
+END

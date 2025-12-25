@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-04-28T21:26:36.473973Z
+K 7
+svn:log
+V 384
+Add output encoding error handler to the parts provided by all writers.
+
+The new generic part "errors" returned by default
+contains the `output_encoding_error_handler` setting,
+which may make-or-break encoding ``parts['whole']``.
+
+Allows use of `core.publish_parts()` to get the document as `str`,
+post-process it and encode with user configurated encoding and
+encoding-error handler.
+END

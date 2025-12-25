@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-05-20T12:20:35.255478Z
+K 7
+svn:log
+V 141
+MathML: improve support for math alphabets.
+
+``\mathbb``, ``\mathscr``, and ``\mathcal`` now accept
+also more than one character as argument.
+END

@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-03-14T16:34:48.085267Z
+K 7
+svn:log
+V 276
+Documentation fixes. Prepare release 0.21.rc1
+
+Fix typos, links,
+
+Harmonise spacing and markup.
+
+Verify authorship of "literal block" patch for the manpage writer
+(forwarded from a Debian bug report discussion as patch #205).
+
+Use NBSP between program name and version number.
+END

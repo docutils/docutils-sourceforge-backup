@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-10-26T09:15:18.915793Z
+K 7
+svn:log
+V 291
+Fix recursion in `nodes.Element.get_language_code()`.
+
+Because of a typo, `Element.get_language_code()` did not find language
+tags in parent elements but just return the fallback value.
+
+Thanks to Marcello Perathoner for the report.
+http://permalink.gmane.org/gmane.text.docutils.devel/10544
+END

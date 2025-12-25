@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-10-10T13:19:55.429567Z
+K 7
+svn:log
+V 54
+html5 writer: prepare support of <ins> and <del> tags.
+END

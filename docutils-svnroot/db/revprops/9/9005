@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-02-10T09:10:03.225788Z
+K 7
+svn:log
+V 206
+Make docutils-cli.py importable. Better/simpler help output.
+
+Put action code in function main().
+
+Use CliSettingsSpec to provide both,
+defaults for Publisher.get_settings()
+and help with publish_cmdline().
+END

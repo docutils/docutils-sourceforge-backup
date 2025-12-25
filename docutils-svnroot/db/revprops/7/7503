@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2012-08-26T15:42:37.119402Z
+K 7
+svn:log
+V 102
+Fix [3559988] and [3560841] __import__ local writer, reader, languages and parsers for Python 2.7 up.
+
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2008-08-18T07:52:20.488440Z
+K 7
+svn:log
+V 71
+Fix: for spanish ``~n`` is ``n`` with tilde above, change to ``~{}n``.
+
+END

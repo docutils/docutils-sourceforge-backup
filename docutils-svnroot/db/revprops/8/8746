@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-05-20T12:21:48.677844Z
+K 7
+svn:log
+V 198
+MathML: Refactor tex_token(), handle_keyword(), doctests.
+
+tex_token(): strip brackets from token, return (token, remainder)
+
+handle_keyword(): sort clauses.
+
+Update/sort documentation and doctests.
+END

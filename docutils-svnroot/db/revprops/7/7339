@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-02-03T12:23:27.984889Z
+K 7
+svn:log
+V 58
+Fix [ 3481980 ] Use os.getcwdu() in make_paths_absolute().
+END

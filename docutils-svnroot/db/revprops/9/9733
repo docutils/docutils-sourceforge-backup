@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-06T14:01:22.362012Z
+K 7
+svn:log
+V 119
+Start development of a new "xml" parser for Docutils XML.
+
+First draft implementation, documentation update, and tests.
+END

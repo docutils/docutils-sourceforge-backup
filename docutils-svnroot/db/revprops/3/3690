@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T01:30:05.216923Z
+K 7
+svn:log
+V 137
+We cannot run the test suite on shell.berlios.de because it takes
+too much CPU time.  And it hasn't been a problem AFAICS, so why fix it.
+END

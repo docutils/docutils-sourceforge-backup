@@ -1,0 +1,218 @@
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 4
+1.76
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 28-18.0.r3006/124
+type: file
+pred: 28-18.0.r3005/419
+count: 75
+text: 3003 0 65 51469 5d5a93661b6396c9b3c105c00fa7d7d4 2b471826a01bf209a8ed59a0e38d199bce6fd68c 3005-2bh/_4
+props: 3006 0 111 0 46f44012327ddd079bdf394aad72d94a
+cpath: /trunk/docutils/docutils/nodes.py
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 1x-18.0.r2901/2680
+K 7
+core.py
+V 22
+file 20-18.0.r2987/835
+K 11
+examples.py
+V 23
+file 3-1928.0.r2028/395
+K 11
+frontend.py
+V 22
+file 3-150.0.r2911/185
+K 5
+io.py
+V 23
+file 3-217.0.r2981/8651
+K 9
+languages
+V 22
+dir 22-18.0.r2999/1314
+K 8
+nodes.py
+V 22
+file 28-18.0.r3006/124
+K 7
+parsers
+V 22
+dir 2a-18.0.r3004/4913
+K 7
+readers
+V 22
+dir 36-18.0.r2487/1033
+K 15
+statemachine.py
+V 22
+file 3e-18.0.r2299/866
+K 10
+transforms
+V 22
+dir 3g-18.0.r3004/6386
+K 13
+urischemes.py
+V 22
+file 3s-18.0.r1829/714
+K 8
+utils.py
+V 23
+file 3u-18.0.r2815/1641
+K 7
+writers
+V 22
+dir 3w-18.0.r2995/4131
+END
+ENDREP
+id: 1w-18.0.r3006/1026
+type: dir
+pred: 1w-18.0.r3005/1325
+count: 1045
+text: 3006 408 605 605 2b497b97d8ddb2cbcd5dd7bd05443f75
+props: 342 8363 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 21
+file 2-340.0.r340/154
+K 8
+BUGS.txt
+V 24
+file 2-2181.0.r2992/4677
+K 11
+COPYING.txt
+V 22
+file 2-18.0.r2354/3164
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r2971/124
+K 11
+HISTORY.txt
+V 21
+file 5-18.0.r2997/589
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r2513/394
+K 10
+README.txt
+V 21
+file 9-18.0.r2754/676
+K 10
+THANKS.txt
+V 23
+file 2-2182.0.r2860/123
+K 4
+docs
+V 20
+dir 3-7.0.r2982/1749
+K 8
+docutils
+V 22
+dir 1w-18.0.r3006/1026
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 23
+file 46-18.0.r2901/3967
+K 4
+test
+V 22
+dir 48-18.0.r3003/1842
+K 5
+tools
+V 22
+dir 6w-18.0.r3000/3263
+END
+ENDREP
+id: 1-7.0.r3006/1935
+type: dir
+pred: 1-7.0.r3005/2234
+count: 2273
+text: 3006 1253 669 669 ea00b4f2effc2f12dbfda0d0c10cd731
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r3006/1935
+K 7
+sandbox
+V 21
+dir 1-17.0.r3001/3350
+K 3
+web
+V 20
+dir 1-2.0.r2905/1520
+END
+ENDREP
+id: 3-1.0.r3006/2278
+type: dir
+pred: 3-1.0.r3005/2577
+count: 2980
+text: 3006 2149 116 116 bd5f00ff8dea3facfef5576e1642a0a2
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 22
+dir 0-1.0.r2577/106684
+K 4
+tags
+V 20
+dir 2-1.0.r2576/3944
+K 5
+trunk
+V 20
+dir 3-1.0.r3006/2278
+END
+ENDREP
+id: 0.0.r3006/2559
+type: dir
+pred: 0.0.r3005/2858
+count: 3006
+text: 3006 2430 116 116 932aee61a43eef0bf05eef3eb8654aef
+cpath: /
+copyroot: 0 /
+
+28-18.0.t3005-2bh modify-file true true /trunk/docutils/docutils/nodes.py
+
+
+2559 2702

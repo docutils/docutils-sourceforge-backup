@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 8
+dkuhlman
+K 8
+svn:date
+V 27
+2009-01-14T20:59:50.546523Z
+K 7
+svn:log
+V 52
+Added enumlist styles (loweralpha, lowerroman, etc).
+END

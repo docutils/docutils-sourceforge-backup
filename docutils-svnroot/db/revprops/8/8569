@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-10-27T22:42:35.676283Z
+K 7
+svn:log
+V 122
+Apply patch #173 by John Thorvald Wodder II.
+
+Make *TeX writers convert nonstandard table classes to DUclass environments.
+END

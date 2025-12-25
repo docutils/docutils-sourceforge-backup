@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2003-04-10T20:05:20.000000Z
+K 7
+svn:log
+V 146
+Added standard Emacs customization and a more modern use of
+`font-lock-defaults'. Rearranged code so it is clearer and can be
+reused more easily.
+
+END

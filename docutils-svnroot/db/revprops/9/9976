@@ -1,0 +1,38 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-10-30T23:34:50.007779Z
+K 7
+svn:log
+V 904
+One more Document Tree documentation review.
+
+Rephrase and reformat for more brevity and clarity.
+Fix typos, add crosslinks.
+
+Less gaudy colors in the element hierarchy diagram.
+
+Make the "Element Reference" introduction a sub-section,
+so it turns up in the local ToC.
+
+Update analogies to HTML (now referring to HTML5 rsp. the "living standard").
+Fix analogy to `<h1>` to `<h6>`: these mark titles (headings), not sections.
+
+Reduce redundancy: Only list including "Parameter Entities" if not
+implied by the element category).
+
+Update description of `<line-block>` (it used to be a
+sort of literal-block but is is now rather a plain list,
+cf. docs/dev/rst/alternatives.html#syntax-for-line-blocks).
+
+Small section for "placeholder" parameter entities.
+
+Move the description of "Pseudo-XML" and the "Names and identifiers"
+section content to a new "Glossary" section.
+
+Bibliography entry for docutils.dtd.
+END

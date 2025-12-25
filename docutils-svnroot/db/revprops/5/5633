@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2008-08-25T09:09:48.326329Z
+K 7
+svn:log
+V 64
+Added sub-headings to Export section, added "rst2pdf-reportlab".
+END

@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-10-19T16:21:27.822815Z
+K 7
+svn:log
+V 203
+Fix :width: option for the table directives.
+
+* add table width argument in docutils.dtd
+* support table width argument in html and latex writers
+* fix support in "csv-table" directive
+* add test cases.
+
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-03-27T15:35:26.480365Z
+K 7
+svn:log
+V 77
+forgot to check in HISTORY.txt with change to io.py; here's the history entry
+END

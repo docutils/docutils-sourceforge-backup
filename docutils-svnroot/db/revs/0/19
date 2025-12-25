@@ -1,0 +1,185 @@
+id: 7-7.1-19.r19/0
+type: file
+pred: 7-7.0.r7/9886
+count: 1
+text: 7 0 9750 27276 36ec9ecfadd6d4fe8ff056ab7990ef92 2f17595510c24610921dc40a8aa8a14342461d57 6-6/_9
+props: 7 9763 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /branches/goodger/docutils/docs/peps/pep-0287.txt
+copyfrom: 7 /trunk/docutils/docs/peps/pep-0287.txt
+
+PLAIN
+K 12
+pep-0256.txt
+V 22
+file p-18.0.r18/301484
+K 12
+pep-0257.txt
+V 22
+file s-18.0.r18/301873
+K 12
+pep-0258.txt
+V 22
+file u-18.0.r18/302262
+K 12
+pep-0287.txt
+V 19
+file 7-7.1-19.r19/0
+END
+ENDREP
+id: 5-7.0-19.r19/521
+type: dir
+pred: 5-7.0.r18/302726
+count: 7
+text: 19 323 185 185 053233f1ff9cffe76453c491dc949ea5
+cpath: /branches/goodger/docutils/docs/peps
+copyroot: 19 /branches/goodger
+
+PLAIN
+K 3
+dev
+V 21
+dir 3-12.0.r18/308361
+K 4
+peps
+V 20
+dir 5-7.0-19.r19/521
+K 3
+ref
+V 21
+dir w-18.0.r18/305775
+K 4
+user
+V 22
+dir 1c-18.0.r18/312004
+END
+ENDREP
+id: 3-7.0-19.r19/873
+type: dir
+pred: 3-7.0.r18/312308
+count: 8
+text: 19 714 146 146 04196bab0af67a22b7cf8261310584a0
+cpath: /branches/goodger/docutils/docs
+copyroot: 19 /branches/goodger
+
+PLAIN
+K 11
+COPYING.txt
+V 22
+file 2-18.0.r18/285012
+K 11
+HISTORY.txt
+V 22
+file 5-18.0.r18/260336
+K 11
+MANIFEST.in
+V 22
+file 7-18.0.r18/312592
+K 10
+README.txt
+V 22
+file 9-18.0.r18/312967
+K 4
+docs
+V 20
+dir 3-7.0-19.r19/873
+K 8
+docutils
+V 22
+dir 1w-18.0.r18/300813
+K 10
+install.py
+V 23
+file 44-18.0.r18/313369
+K 8
+setup.py
+V 23
+file 46-18.0.r18/301108
+K 4
+test
+V 22
+dir 48-18.0.r18/282564
+K 5
+tools
+V 22
+dir 6w-18.0.r18/284746
+END
+ENDREP
+id: 1-7.0-19.r19/1495
+type: dir
+pred: 1-7.0.r18/314058
+count: 8
+text: 19 1061 421 421 ed082fead3304562dfead582d06d5e91
+cpath: /branches/goodger/docutils
+copyroot: 19 /branches/goodger
+
+PLAIN
+K 8
+docutils
+V 21
+dir 1-7.0-19.r19/1495
+K 7
+sandbox
+V 19
+dir 1-17.0.r17/6364
+K 3
+web
+V 18
+dir 1-2.0.r17/4538
+END
+ENDREP
+id: 3-1.0-19.r19/1806
+type: dir
+pred: 3-1.0.r18/314339
+count: 17
+text: 19 1680 113 113 0460052234f7e51b5ca314f19e035bc1
+cpath: /branches/goodger
+copyfrom: 18 /trunk
+
+PLAIN
+K 7
+goodger
+V 21
+dir 3-1.0-19.r19/1806
+K 6
+vendor
+V 16
+dir 3-1.0-3.r3/0
+END
+ENDREP
+id: 0-1.0.r19/2061
+type: dir
+pred: 0-1.0.r3/202
+count: 2
+text: 19 1972 76 76 5d53cfc0c5b1e62941ed5098bc9ef7ed
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 18
+dir 0-1.0.r19/2061
+K 4
+tags
+V 16
+dir 2-1.0.r1/130
+K 5
+trunk
+V 20
+dir 3-1.0.r18/314339
+END
+ENDREP
+id: 0.0.r19/2324
+type: dir
+pred: 0.0.r18/314606
+count: 19
+text: 19 2203 108 108 da66595091aef1670b65ba5305cc3450
+cpath: /
+copyroot: 0 /
+
+7-7._1.t18-i replace-file false false /branches/goodger/docutils/docs/peps/pep-0287.txt
+7 /trunk/docutils/docs/peps/pep-0287.txt
+3-1._0.t18-i add-dir false false /branches/goodger
+18 /trunk
+
+2324 2461

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 8
+cliechti
+K 8
+svn:date
+V 27
+2009-06-07T15:58:05.739317Z
+K 7
+svn:log
+V 86
+[PATCH 3/3] aafigure: Fix --output command-line option (Sf-ID: 2802370)
+thanks llucax
+
+END

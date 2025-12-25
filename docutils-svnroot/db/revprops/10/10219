@@ -1,0 +1,28 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-08-21T15:18:05.910796Z
+K 7
+svn:log
+V 590
+LaTeX writer: write "label" commands for elements with "ids".
+
+Fix [bugs:#503].
+
+Currently, internal cross-references to most body elements (admonitions, lists,
+block_quotes, container, compound, ...) fail, because the "ids"
+attribute of these elements is ignored.
+
+Calls `ids_to_labels()` for (almost) all elements that may have one or more IDs.
+
+TODO:
+* test/revise citations and footnotes
+* class handling for image and list items
+  (use DUclass environment or DUrole function?)
+* Currently, there is no way to specify a target name or custom class for
+  the "docinfo" in the rST source.
+END

@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-05-20T12:24:25.188186Z
+K 7
+svn:log
+V 201
+MathML fix multi-digit number literals. Support optional arg for \sqrt.
+
+Place consecutive digits and comma/dot in a common <mn> element.
+
+Support the optinal argument to specify a degree of a radical.
+END

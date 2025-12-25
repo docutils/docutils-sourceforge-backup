@@ -1,0 +1,281 @@
+id: a-2055.0-4455.r4455/0
+type: file
+pred: a-2055.0-3135.r3968/3025
+count: 21
+text: 3968 1693 550 9766 a6dbdf5e736a72798a7360c536dd4826 f2e164a9dd372cf7010949eb24c72c8acb0c8b05 3967-327/_h
+props: 2850 386 136 0 4255abd13f9c9d58627b8bb1274d115a
+cpath: /trunk/docutils/test/test_writers/test_html4css1_parts.py
+copyfrom: 4449 /trunk/docutils/test/test_writers/test_html4css1.py
+
+PLAIN
+K 11
+__init__.py
+V 24
+file 6-1211.0.r3509/4380
+K 20
+test_docutils_xml.py
+V 24
+file 4-2018.0.r3968/3399
+K 22
+test_html4css1_misc.py
+V 24
+file 6-3570.0.r3968/2712
+K 23
+test_html4css1_parts.py
+V 26
+file a-2055.0-4455.r4455/0
+K 15
+test_latex2e.py
+V 23
+file 9-1211.0.r3840/261
+K 12
+test_null.py
+V 23
+file 7-3518.0.r3646/357
+K 17
+test_pseudoxml.py
+V 25
+file 5-1995.0.r3915/12331
+END
+ENDREP
+id: 5-1211.0.r4455/767
+type: dir
+pred: 5-1211.0.r4447/44
+count: 85
+text: 4455 377 377 377 091cd35f3d6108429f8c716e50ca8146
+props: 4447 0 31 0 b9ebe853b7baef2573e3487e43637c6a
+cpath: /trunk/docutils/test/test_writers
+copyroot: 0 /
+
+PLAIN
+K 22
+DocutilsTestSupport.py
+V 22
+file 49-18.0.r4258/220
+K 11
+alltests.py
+V 22
+file 4e-18.0.r4217/332
+K 11
+coverage.sh
+V 28
+file 6-3449.0-3489.r3603/213
+K 4
+data
+V 23
+dir 3-1662.0.r3416/2104
+K 13
+docutils.conf
+V 24
+file 6-1661.0.r2385/2146
+K 19
+docutils_difflib.py
+V 24
+file 6-2354.0.r2354/1272
+K 10
+functional
+V 22
+dir 3-2357.0.r4447/784
+K 19
+package_unittest.py
+V 21
+file 3-44.0.r2454/856
+K 20
+test_dependencies.py
+V 22
+file 3-2679.0.r4454/73
+K 18
+test_functional.py
+V 24
+file 18-2357.0.r4254/348
+K 10
+test_io.py
+V 24
+file 5-3138.0.r4132/6093
+K 16
+test_language.py
+V 23
+file 3-940.0.r4132/6674
+K 13
+test_nodes.py
+V 23
+file 4i-18.0.r4132/6380
+K 12
+test_parsers
+V 22
+dir 4k-18.0.r4445/7845
+K 17
+test_publisher.py
+V 29
+file 6-3525.0-3602.r4132/2738
+K 12
+test_readers
+V 21
+dir 3-89.0.r4445/3115
+K 16
+test_settings.py
+V 22
+file g-1662.0.r4222/69
+K 20
+test_statemachine.py
+V 22
+file 6a-18.0.r917/6020
+K 15
+test_transforms
+V 22
+dir 6c-18.0.r4233/3209
+K 13
+test_utils.py
+V 21
+file 6u-18.0.r3171/53
+K 16
+test_viewlist.py
+V 23
+file 3-916.0.r3085/3892
+K 12
+test_writers
+V 22
+dir 5-1211.0.r4455/767
+END
+ENDREP
+id: 48-18.0.r4455/2103
+type: dir
+pred: 48-18.0.r4454/1471
+count: 650
+text: 4455 998 1092 1092 90ba8f1d07d51c85cd06382d21ab5903
+props: 343 993 44 0 e8789a4081469b0bbc8d88dcdbd925ef
+cpath: /trunk/docutils/test
+copyroot: 0 /
+
+PLAIN
+K 8
+BUGS.txt
+V 24
+file 2-2181.0.r4315/6930
+K 11
+COPYING.txt
+V 21
+file 2-18.0.r4334/603
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r4452/428
+K 11
+HISTORY.txt
+V 21
+file 5-18.0.r4315/725
+K 11
+MANIFEST.in
+V 23
+file 7-18.0.r4156/57222
+K 10
+README.txt
+V 21
+file 9-18.0.r4216/546
+K 17
+RELEASE-NOTES.txt
+V 23
+file 2-4204.0.r4274/412
+K 10
+THANKS.txt
+V 22
+file 2-2182.0.r4240/66
+K 4
+docs
+V 20
+dir 3-7.0.r4451/1881
+K 8
+docutils
+V 22
+dir 1w-18.0.r4453/2082
+K 6
+extras
+V 23
+dir 2-1467.0.r4447/6104
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 23
+file 46-18.0.r4270/7591
+K 4
+test
+V 22
+dir 48-18.0.r4455/2103
+K 5
+tools
+V 22
+dir 6w-18.0.r4371/2326
+END
+ENDREP
+id: 1-7.0.r4455/3018
+type: dir
+pred: 1-7.0.r4454/2386
+count: 3254
+text: 4455 2326 679 679 ddfe1e1551cd2b12d7f1cd5dd0dcad11
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r4455/3018
+K 5
+prest
+V 23
+dir 1-4326.0.r4345/6199
+K 7
+sandbox
+V 22
+dir 1-17.0.r4442/18410
+K 3
+web
+V 19
+dir 1-2.0.r4373/913
+END
+ENDREP
+id: 3-1.0.r4455/3400
+type: dir
+pred: 3-1.0.r4454/2768
+count: 4144
+text: 4455 3232 155 155 93297fd663323bb6d86c36c8a97f3140
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r4449/5078
+K 4
+tags
+V 20
+dir 2-1.0.r4331/4487
+K 5
+trunk
+V 20
+dir 3-1.0.r4455/3400
+END
+ENDREP
+id: 0.0.r4455/3679
+type: dir
+pred: 0.0.r4454/3047
+count: 4455
+text: 4455 3552 114 114 1da31239c435a9804e1c0a9a015c480e
+cpath: /
+copyroot: 0 /
+
+a-2055._0.t4454-3fq add-file false false /trunk/docutils/test/test_writers/test_html4css1_parts.py
+4449 /trunk/docutils/test/test_writers/test_html4css1.py
+a-2055.0-3135.r3968/3025 delete-file false false /trunk/docutils/test/test_writers/test_html4css1.py
+
+
+3679 3822

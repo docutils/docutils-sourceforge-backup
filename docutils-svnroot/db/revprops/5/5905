@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-04-16T12:04:49.713492Z
+K 7
+svn:log
+V 51
+rst2latex.py: More specific web link in description
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-03-30T07:11:39.150212Z
+K 7
+svn:log
+V 59
+Apply [ 3512791 ] do not compare string literals with "is".
+END

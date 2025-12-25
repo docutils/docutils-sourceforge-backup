@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-10-21T13:50:56.011328Z
+K 7
+svn:log
+V 98
+Remove ``run_in_debugger``
+
+To debug a specific test, use the facilities provided by ``unittest``
+
+END

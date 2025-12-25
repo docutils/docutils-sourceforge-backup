@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 12
+dreamcatcher
+K 8
+svn:date
+V 27
+2003-05-05T02:23:49.000000Z
+K 7
+svn:log
+V 143
+Lots of improvements over the previous version. Its still missing tables, citation, images and better handling of ordered and unordered lists.
+
+END

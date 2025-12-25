@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-10-18T23:13:45.671763Z
+K 7
+svn:log
+V 114
+Customizable MathJax URL  (based on patch by Dmitry Shachnev).
+
+Also: No line break after opening inline math tag.
+END

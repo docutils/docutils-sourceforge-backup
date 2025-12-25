@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-02-06T21:34:19.421875Z
+K 7
+svn:log
+V 147
+Update documentation on planned changes.
+
+Announce target versions for imminent changes.
+
+Announce raise of required minimal Python version to 3.9.
+END

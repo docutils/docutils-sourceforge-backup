@@ -1,0 +1,30 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-07-04T21:06:30.252526Z
+K 7
+svn:log
+V 640
+Don't use on Pythons default encoding if "input_encoding" setting is None.
+
+If the "input_encoding" setting is None, the encoding of an
+input source should be auto-detected with a heuristic.
+
+Under Python 3, auto-detection was only used if reading a file
+with Python's default encoding failed.
+
+Resulting problems:
+
+* EncodingWarning (PEP 597) in Python >= 3.10.
+
+* Optional BOM not dropped from utf-8 encoded files.
+
+* If the usrers locale sets an 8-bit encoding,
+  files in other 8-bit encodings, UTF-8, and UTF-16 show
+  character mix-up (mojibake) (self-declared encoding ignored as
+  reading in 8-bit encoding does not lead to errors).
+END

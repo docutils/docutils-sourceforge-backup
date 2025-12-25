@@ -1,0 +1,25 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2011-01-13T08:22:28.740747Z
+K 7
+svn:log
+V 424
+Modified `rst-font-lock-extend-region` so it not crashes Emacs any
+more in some situations. Thanks to Stefan Monnier for analyzing the
+problem.
+
+Change of `rst-preferred-decorations` to `rst-preferred-adornments` is
+reflected by a `define-obsolete-variable-alias`. Thus older
+customizations should continue to work.
+
+Moved `rst-shift-region-left` to C-c C-r C-TAB which needs no
+translation to backtab.
+
+Minor refactorings.
+
+END

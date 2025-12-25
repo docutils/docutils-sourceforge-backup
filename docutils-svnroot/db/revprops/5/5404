@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2007-08-17T02:57:35.128743Z
+K 7
+svn:log
+V 118
+removed my duplicate implementation of utils.relative_path();
+utils.relative_path() now handles backslashes on Windows
+END

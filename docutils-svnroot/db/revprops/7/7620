@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2013-03-04T10:07:58.526767Z
+K 7
+svn:log
+V 71
+Test case for io.Input.decode with "unicode" data. Cf. bug [ 3606659 ].
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-06-18T18:54:14.826905Z
+K 7
+svn:log
+V 116
+nodes.document.make_id(): keep leading numbers and hyphens if possible.
+
+I.e. if the id_prefix setting is non-empty.
+END

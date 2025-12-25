@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+richard
+K 8
+svn:date
+V 27
+2002-07-17T00:49:09.000000Z
+K 7
+svn:log
+V 50
+Remove the 12 pixel cell spacing in option lists.
+
+END

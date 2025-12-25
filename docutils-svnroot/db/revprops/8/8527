@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-07-14T16:41:15.178973Z
+K 7
+svn:log
+V 161
+Fix #395.
+
+Use the empty string as document["source"] value, when there
+is no known source.
+
+Also ensure there is no error when a PEP is written
+not from a file.
+END

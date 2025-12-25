@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2004-09-12T21:13:54.000000Z
+K 7
+svn:log
+V 134
+Added "encoding" directive to "csv-table" directive. Added workaround for lack of Unicode support in csv.py, for non-ASCII CSV input.
+
+END

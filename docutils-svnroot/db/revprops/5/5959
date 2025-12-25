@@ -1,0 +1,29 @@
+K 10
+svn:author
+V 8
+cliechti
+K 8
+svn:date
+V 27
+2009-05-22T18:23:29.984703Z
+K 7
+svn:log
+V 755
+apply patch (SF 2794502): Allow stdin input interpretation and stdout output generation
+
+Comment from Leandro Lucarella who provided the patch:
+
+This patch changes the command-line interface to work in a one-file
+oriented way, to allow to process input via stdin and to write output to
+stdout. This allows piping in a more *nix way.
+
+A new command-line option is added to specify the name of the output
+file (-o/--output). When omitted, the output is written to stdout. Same
+goes to the input file, if none is specified, the input is taken from
+stdin.
+
+As a trade-off, multiple file processing is not supported anymore. This
+shouldn't be bad, as you can always use your favorite shell's looping
+capabilities to generate a bunch of files with one command.
+
+END

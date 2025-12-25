@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T02:32:35.355226Z
+K 7
+svn:log
+V 216
+Do not add acronym role.
+There have not been many requests, and tool-tips for displaying the
+full text of an acronym are not universally supported (in fact,
+HTML is probably the only format which supports tool-tips).
+END

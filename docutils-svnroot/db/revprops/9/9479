@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-11-19T09:44:04.504158Z
+K 7
+svn:log
+V 152
+smartquotes optimizations
+
+Pre-compile regexps once (at module import),
+not with every call of `educateQuotes()`.
+
+Patch by Chris Sewell [patches:#206].
+END

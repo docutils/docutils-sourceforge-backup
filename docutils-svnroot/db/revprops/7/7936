@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2016-05-14T21:15:00.832093Z
+K 7
+svn:log
+V 62
+Apply #131 (update pygments test to pygments 2.1) by cstratak.
+END

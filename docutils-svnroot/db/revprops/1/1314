@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2003-05-15T07:44:12.000000Z
+K 7
+svn:log
+V 163
+* add a LaTeX-nbsp (~) before a LaTeX-newline to avoid "LaTeX-Error no line to end here".
+* line_blocks without use of mbox, to allow markups span over line ends.
+
+END

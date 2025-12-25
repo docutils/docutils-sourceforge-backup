@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 8
+gschwant
+K 8
+svn:date
+V 27
+2004-02-13T00:33:12.000000Z
+K 7
+svn:log
+V 508
+
+1. Fixed potential bug with Python 2.3.2.. (With Python 2.3.2 DocFactory
+had a problem to read its configuration file. This problem was due to the
+ConfigParser, which now stores values of 0/1 as True/False. This caused
+DocFactory to crash, as int("0")/int("1") now became int("True")/int("False").
+Hmm, the more I think about this, I think that int("True") should be 1 and
+int("False") should be 0 ...)
+
+2. Python 2.3.2 / wxPython 2.4.2.4 / Docutils 0.3 now required.
+
+3. Increased version number to 0.2.5.
+
+END

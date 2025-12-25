@@ -1,0 +1,212 @@
+id: 1x-18.0.r5580/0
+type: file
+pred: 1x-18.0.r5577/52
+count: 60
+text: 4801 0 516 7038 909f99b44e9781c6769a026470564d6d fdea660a84a152bd1fe326a97008cfb566c013d2 5579-4az/_4
+props: 2901 2556 111 0 77af0ec85c332e0d4fd7e7ef86a518fd
+cpath: /trunk/docutils/docutils/__init__.py
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 20
+file 1x-18.0.r5580/0
+K 7
+core.py
+V 22
+file 20-18.0.r5538/481
+K 13
+docutils.conf
+V 29
+file m-3472.0-3904.r3904/2799
+K 11
+examples.py
+V 23
+file 3-1928.0.r4800/235
+K 11
+frontend.py
+V 22
+file 3-150.0.r5502/168
+K 5
+io.py
+V 23
+file 3-217.0.r4750/2405
+K 9
+languages
+V 22
+dir 22-18.0.r5567/1204
+K 8
+nodes.py
+V 23
+file 28-18.0.r5033/7786
+K 7
+parsers
+V 22
+dir 2a-18.0.r5510/7140
+K 7
+readers
+V 22
+dir 36-18.0.r5496/1586
+K 15
+statemachine.py
+V 25
+file 3e-18.0.r4564/133188
+K 10
+transforms
+V 23
+dir 3g-18.0.r5174/44412
+K 13
+urischemes.py
+V 25
+file 3s-18.0.r4564/137250
+K 8
+utils.py
+V 22
+file 3u-18.0.r5040/346
+K 7
+writers
+V 22
+dir 3w-18.0.r5574/1212
+END
+ENDREP
+id: 1w-18.0.r5580/963
+type: dir
+pred: 1w-18.0.r5577/1017
+count: 1518
+text: 5580 287 663 663 6ae966e5adb0b65e343dd2bbd4cb4b45
+props: 342 8363 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+BUGS.txt
+V 23
+file 2-2181.0.r4628/817
+K 11
+COPYING.txt
+V 24
+file 2-18.0.r4564/100662
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r5495/336
+K 11
+HISTORY.txt
+V 21
+file 5-18.0.r5578/620
+K 11
+MANIFEST.in
+V 23
+file 7-18.0.r4156/57222
+K 10
+README.txt
+V 24
+file 9-18.0.r4564/154506
+K 17
+RELEASE-NOTES.txt
+V 23
+file 2-4204.0.r5578/899
+K 10
+THANKS.txt
+V 25
+file 2-2182.0.r5174/53856
+K 4
+docs
+V 20
+dir 3-7.0.r5576/1516
+K 8
+docutils
+V 21
+dir 1w-18.0.r5580/963
+K 6
+extras
+V 23
+dir 2-1467.0.r4447/6104
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 22
+file 46-18.0.r5034/108
+K 4
+test
+V 22
+dir 48-18.0.r5539/1816
+K 5
+tools
+V 22
+dir 6w-18.0.r5556/8886
+END
+ENDREP
+id: 1-7.0.r5580/1887
+type: dir
+pred: 1-7.0.r5578/1886
+count: 3552
+text: 5580 1189 685 685 694d8d0bc42db5722a79ff59b355bf0f
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r5580/1887
+K 5
+prest
+V 23
+dir 1-4326.0.r5487/2835
+K 7
+sandbox
+V 21
+dir 1-17.0.r5571/7599
+K 3
+web
+V 19
+dir 1-2.0.r5566/639
+END
+ENDREP
+id: 3-1.0.r5580/2268
+type: dir
+pred: 3-1.0.r5578/2267
+count: 5146
+text: 5580 2101 154 154 115db7c478121e03b792a1fdde2e1f54
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r5516/5576
+K 4
+tags
+V 19
+dir 2-1.0.r5579/673
+K 5
+trunk
+V 20
+dir 3-1.0.r5580/2268
+END
+ENDREP
+id: 0.0.r5580/2546
+type: dir
+pred: 0.0.r5579/945
+count: 5580
+text: 5580 2420 113 113 6a994fc3976bdc144807971a09e85650
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+
+1x-18.0.t5579-4az modify-file true false /trunk/docutils/docutils/__init__.py
+
+
+2546 2739

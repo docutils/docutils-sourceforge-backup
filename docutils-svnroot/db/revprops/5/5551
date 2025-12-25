@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2008-05-14T14:21:24.313497Z
+K 7
+svn:log
+V 207
+smaller things in lists
+
+* arabic enums might start with other than "1".
+* indentation of arabic lists depends on number of entries
+  This should be with of largest number though.
+* indent alpha lists by 3.
+
+END

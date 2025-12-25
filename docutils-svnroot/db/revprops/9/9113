@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-07-28T10:45:48.638862Z
+K 7
+svn:log
+V 153
+Suggest rules for announcements in the backwards compatibility policy.
+
+We may follow the Docbook policy and specify a minimum time
+for advance warnings.
+END

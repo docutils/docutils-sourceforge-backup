@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-08-17T15:58:23.974070Z
+K 7
+svn:log
+V 159
+Small cleanup and formatting edits.
+
+* Use `True` instead of 1 in boolean arguments.
+* Deprecate `unique_combinations` (obsoleted by `itertools.combinations`).
+END

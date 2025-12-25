@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-08-25T08:33:52.868800Z
+K 7
+svn:log
+V 314
+Use a "property" for `parsers.rst.states.RSTState.parent`.
+
+Using a property attribute instead of runtime initialization ensures
+the "insertion point"/"current node" is synchronised across the
+statemachine and all state instances.
+
+This may allow support for nested parsing with document-wide section title styles.
+END

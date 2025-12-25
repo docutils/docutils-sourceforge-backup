@@ -1,0 +1,28 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-08-26T08:06:11.816051Z
+K 7
+svn:log
+V 779
+Element after a section from nested parsing may be invalid.
+
+`parsers.rst.RSTSTate.nested_parse()` with `match_titles=True`
+(i.e. support for sections) leads to an invalid document tree,
+if the nested block contains a section but the element following
+the nested block is not a section.
+
+The "structure model" ony allows a `<section>` as sibling after a `<section>`.
+https://docutils.sourceforge.io/docs/ref/doctree.html#structure-model
+
+An invalid doctree can be prevented if the following content
+is appended to the last nested section instead of its parent.
+The "nested" directive attempts this but fails if it is called from
+another nested state machine:
+In a nested state_machine we cannot access/change the `node` attribute
+("insertion point") of the calling state_machine.
+END

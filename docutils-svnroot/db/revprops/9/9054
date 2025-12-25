@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-04-29T16:24:18.853807Z
+K 7
+svn:log
+V 144
+Small fixes to HTML5 output.
+
+Stop writing an empty line before the "footer" closing tag.
+
+Add space before "charset" meta tag closing sequence.
+END

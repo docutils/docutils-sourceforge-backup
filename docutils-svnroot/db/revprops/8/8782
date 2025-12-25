@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-06-30T07:47:30.557599Z
+K 7
+svn:log
+V 205
+Do not use deprecated "rawsource" argument when creating node.Text instances.
+
+The "rawsource" argument of ``nodes.Text.__init__`` is ignored and deprecated.
+
+Fix the documentation of nodes.Text.__new__().
+END

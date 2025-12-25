@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 8
+dkuhlman
+K 8
+svn:date
+V 27
+2008-12-26T22:36:46.145771Z
+K 7
+svn:log
+V 43
+Added rst2odt/odtwriter to the main branch.
+END

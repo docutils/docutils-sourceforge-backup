@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-10-21T14:45:59.402264Z
+K 7
+svn:log
+V 108
+Simplify ``ConfigFileTests.compare_output``
+
+Compare dicts directly rather than through string indirection.
+
+END

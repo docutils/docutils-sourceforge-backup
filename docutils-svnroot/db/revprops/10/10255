@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-11-02T17:51:07.142427Z
+K 7
+svn:log
+V 208
+Documentation update/fixes.
+
+Correct description of refid: refers to another element by
+*one of its* identifiers. Add XPath example.
+
+Correct description of valid parents for "topic" and "content"
+directives.
+END

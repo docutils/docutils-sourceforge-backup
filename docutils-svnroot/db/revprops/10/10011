@@ -1,0 +1,27 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-02-20T10:07:20.567570Z
+K 7
+svn:log
+V 576
+Fixes for metadata in LaTeX and ODT.
+
+Just like the HTML writer, LaTeX and ODT writers now use
+the `<document>` element's "title" attribute (the "metadata title",
+https://docutils.sourceforge.io/docs/ref/doctree.html#title-1)
+instead of its `<title>` element in the document metadata.
+
+LaTeX writer:
+Encode special characters in the content of the "meta" directive.
+Fix "hyperef" keys for "creator" and "producer".
+
+TODO:
+Filter nodes with additional fields ("lang", "http-equiv", …)?
+They are HTML-specific and may override equally named keys.
+Only if name already present?
+END

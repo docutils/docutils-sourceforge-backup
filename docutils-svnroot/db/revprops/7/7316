@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-01-19T11:31:58.784233Z
+K 7
+svn:log
+V 71
+SafeString: normalize filename quoting for EnvironmentError exceptions.
+END

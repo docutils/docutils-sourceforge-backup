@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-12-25T21:24:19.000000Z
+K 7
+svn:log
+V 93
+added simple plugin as kind of an informal design proposal for
+Docutils' extension interface
+
+END

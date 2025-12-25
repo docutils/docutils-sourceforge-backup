@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 9
+blackbird
+K 8
+svn:date
+V 27
+2007-05-24T14:53:15.708671Z
+K 7
+svn:log
+V 105
+added comment preview and disable commenting if "comments_enabled" is set ot false in the page metadata
+
+
+END

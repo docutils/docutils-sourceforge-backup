@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-02-27T00:06:51.000000Z
+K 7
+svn:log
+V 110
+use "span" instead of "a" tags for targets,
+because otherwise we get invalid XHTML due to nested "a" elements
+
+END

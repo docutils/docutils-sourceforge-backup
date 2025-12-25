@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 8
+gschwant
+K 8
+svn:date
+V 27
+2004-04-03T00:04:58.000000Z
+K 7
+svn:log
+V 98
+
+fixed some bugs ... especially some for Linux ...
+thanks to jens koehler and bjoern pfeiffer ...
+
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2016-05-25T08:07:52.556808Z
+K 7
+svn:log
+V 103
+html-plain writer: fix for field-list
+
+Prevent misalignment of following content if the field is empty.
+END

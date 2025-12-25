@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-09-11T07:19:41.281389Z
+K 7
+svn:log
+V 275
+Fixes for "scale" attribute handling in ODT and LaTeX writer.
+
+Remove redundant code in the ODT writer:
+Scale is validated as "non-negative integer" by the parser.
+No need to validate again.
+
+Use the "generic" numeral format instead of "float"
+in the LaTeX writer (%f -> %g).
+END

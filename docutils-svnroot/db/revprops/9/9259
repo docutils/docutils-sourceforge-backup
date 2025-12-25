@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-11-21T20:51:23.764326Z
+K 7
+svn:log
+V 196
+Small documentation fixes.
+
+transforms.txt:
+  Update "added by" in "Transforms Listed in Priority Order".
+
+io.py:
+  reword docstrings and assertion messages,
+  use PEP 257 "Docstring Conventions".
+END

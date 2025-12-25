@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2010-03-01T20:09:56.805570Z
+K 7
+svn:log
+V 325
+Made the fault grading try a straight diff first, and automatically do
+a regular-expression diff if the straight diff fails.  This
+methodology no longer requires an empty ".r" file to indicate that a
+regular-expression diff is needed.  The rediff was only needed on some
+systems, so requiring the ".r" files was error-prone.
+
+END

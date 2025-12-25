@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-11-14T22:00:50.895089Z
+K 7
+svn:log
+V 274
+Update documentation and handling of (east-asian) wide characters.
+
+Explain the special casing for combinging and wide characters in
+section titles.
+
+cf. bug #433
+
+Simplify import (we don't need to care for missing
+`unicodedata.east_asian_width` in Python < 2.4 any longer).
+END

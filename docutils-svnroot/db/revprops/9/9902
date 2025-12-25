@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-08-15T07:30:31.633785Z
+K 7
+svn:log
+V 143
+Fix CSS for HTML5: right align code line numbers.
+
+It's a compromise: only numbers up to 99 are right aligned
+to keep the reserved space small.
+END

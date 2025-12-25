@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-08-07T23:35:42.203139Z
+K 7
+svn:log
+V 247
+Documentation update: clarify URI use.
+
+RFC 3986 introduces the term "URI-reference" for
+either a URI (with mandatory scheme part) or a "relative reference"
+(without scheme part) which may be, e.g., an absolute or relative path.
+
+Cf. [bugs: #493].
+END

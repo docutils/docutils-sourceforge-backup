@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-09-20T13:03:39.028499Z
+K 7
+svn:log
+V 158
+Skip system_messages when propagating targets. Fixes bug #425.
+
+Testing with "alltests.py" is currently impossible due to
+caching (see itest_hyperlinks_de.py)
+END

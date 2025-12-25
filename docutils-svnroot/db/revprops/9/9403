@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-06-24T19:40:12.264187Z
+K 7
+svn:log
+V 269
+Input decoding: After detecting a BOM, leave handling it to Python's codecs.
+
+Second part of the announced API changes:
+
+* Don't remove ZWNBSPs in the middle of the source.
+* Only remove BOM with `input_encoding`_ values None, '', 'utf-8-sig',
+  'utf-16', and 'utf-32'.
+END

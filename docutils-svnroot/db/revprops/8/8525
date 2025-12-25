@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2020-07-12T17:22:13.587306Z
+K 7
+svn:log
+V 47
+Fixed to work with newer versions of Docutils.
+
+END

@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-12-01T09:38:02.827531Z
+K 7
+svn:log
+V 155
+Do not write Docutils-generated ToC, when ``use_latex_toc`` is True.
+
+This did happen when publishing from a doctree.
+Thanks to Thomas Krug for the report.
+END

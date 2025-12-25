@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2002-11-01T22:41:54.000000Z
+K 7
+svn:log
+V 67
++ compare test.txt html version with pdflatex ones and write todo.
+
+END

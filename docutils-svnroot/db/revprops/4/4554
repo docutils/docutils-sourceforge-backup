@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2006-05-15T15:51:17.588070Z
+K 7
+svn:log
+V 46
+Committed fixes for rst.el from Felix comments
+END

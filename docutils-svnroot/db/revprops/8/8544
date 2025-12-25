@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-08-28T09:57:36.492607Z
+K 7
+svn:log
+V 51
+Fix cross-links / -targets in config documentation.
+END

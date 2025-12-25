@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-06-02T19:20:47.998621Z
+K 7
+svn:log
+V 139
+LaTeX writer: refactor visit_math() and visit_math_block().
+
+Make the methods independent:
++1 simpler logic
+-1 repeat some boilerplate code
+END

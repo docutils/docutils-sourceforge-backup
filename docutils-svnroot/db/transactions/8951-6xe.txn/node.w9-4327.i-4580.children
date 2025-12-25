@@ -1,0 +1,37 @@
+K 8
+Dir.smak
+V 28
+file 5-5751.i-4580.r5751/854
+K 12
+badchars.dom
+V 28
+file 8-5751.i-4580.r5751/591
+K 12
+badchars.rst
+V 29
+file a-5751.i-4580.r5751/1109
+K 14
+standalone.dom
+V 31
+file wd-4327.i-4580.r5058/23859
+K 14
+standalone.rst
+V 27
+file wf-4327.0.r4327/878726
+K 17
+standalone.stderr
+V 31
+file al-4580.i-4580.r4580/84334
+END
+D 8
+Dir.smak
+D 12
+badchars.dom
+D 12
+badchars.rst
+D 14
+standalone.dom
+D 14
+standalone.rst
+D 17
+standalone.stderr

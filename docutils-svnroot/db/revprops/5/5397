@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2007-08-15T21:39:08.233764Z
+K 7
+svn:log
+V 284
+added docset-root directive;
+finished implementation of subdocs directive, including all error handling and tests;
+changed directive parser so that if option_spec == {} (as opposed to None),
+space is still reserved for options, i.e. there must be a blank line before the content block
+END

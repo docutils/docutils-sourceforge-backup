@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-08-17T13:55:22.505956Z
+K 7
+svn:log
+V 57
+removed docutils-0.3.9 tag; will re-add without sandboxes
+END

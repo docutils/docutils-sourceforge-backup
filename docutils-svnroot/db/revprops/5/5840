@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 13
+matt_harrison
+K 8
+svn:date
+V 27
+2009-01-09T18:36:36.722452Z
+K 7
+svn:log
+V 110
+add --mono-font (to specify monospace font), complicate the write method (hopefully to make it more 'correct')
+END

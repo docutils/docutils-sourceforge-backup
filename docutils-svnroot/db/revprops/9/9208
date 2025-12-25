@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-11-03T16:11:41.029697Z
+K 7
+svn:log
+V 218
+Use the built-in ``open`` instead of ``FileInput``
+
+This simplifies logic to use the standard ``open`` function, and
+simultaneously refactors usages to the context manager protocol
+for more explicit resource management
+END

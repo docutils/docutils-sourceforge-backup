@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2013-09-28T09:17:07.923839Z
+K 7
+svn:log
+V 68
+Fix [ 223 ] by removing redundant tests we do not have control over.
+END

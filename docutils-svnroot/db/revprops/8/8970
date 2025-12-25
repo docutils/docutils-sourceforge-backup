@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-26T19:02:44.672051Z
+K 7
+svn:log
+V 95
+Use generator expressions with functions expecting a sequence.
+
+Based on patches by Adam Turner
+END

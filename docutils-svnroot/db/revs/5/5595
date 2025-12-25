@@ -1,0 +1,245 @@
+id: 9-1157.0-3981.r5595/0
+type: file
+pred: 9-1157.0-3981.r5591/394
+count: 82
+text: 5556 0 7246 116672 a4b502365ad19da8270a7fd82abef4e7 a64462a732882dfb027437c3df64185fb29cc978 5594-4be/_6
+props: 3044 937 110 0 705660468cdcbf270377dea86b274451
+cpath: /trunk/docutils/tools/editors/emacs/rst.el
+copyroot: 3981 /trunk/docutils/tools/editors/emacs/rst.el
+
+PLAIN
+K 10
+README.txt
+V 25
+file 5-2134.0.r5466/10144
+K 13
+docutils.conf
+V 23
+file 5-3047.0.r3047/182
+K 6
+rst.el
+V 26
+file 9-1157.0-3981.r5595/0
+K 5
+tests
+V 23
+dir 7-3161.0.r5467/6693
+END
+ENDREP
+id: 8-1157.0.r5595/546
+type: dir
+pred: 8-1157.0.r5591/944
+count: 107
+text: 5595 352 181 181 2b4367ec07e7fe51cac1f78caa8782d0
+cpath: /trunk/docutils/tools/editors/emacs
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 23
+file 5-1157.0.r4680/284
+K 5
+emacs
+V 22
+dir 8-1157.0.r5595/546
+END
+ENDREP
+id: 3-1157.0.r5595/829
+type: dir
+pred: 3-1157.0.r5591/1228
+count: 113
+text: 5595 729 87 87 4b29de4d900a3599b922f655a2552719
+cpath: /trunk/docutils/tools/editors
+copyroot: 0 /
+
+PLAIN
+K 12
+buildhtml.py
+V 23
+file 3-430.0.r5019/3075
+K 3
+dev
+V 24
+dir 5-3488.0.r5174/52906
+K 13
+docutils.conf
+V 22
+file 3-407.0.r4181/328
+K 7
+editors
+V 22
+dir 3-1157.0.r5595/829
+K 12
+quicktest.py
+V 22
+file 72-18.0.r5545/345
+K 11
+rst2html.py
+V 26
+file 5-1756.0.r4564/150660
+K 12
+rst2latex.py
+V 26
+file b-1202.0.r4564/149478
+K 15
+rst2newlatex.py
+V 26
+file 3-3260.0.r4564/150954
+K 16
+rst2pseudoxml.py
+V 26
+file 3-2467.0.r4564/149777
+K 9
+rst2s5.py
+V 31
+file d-3204.f-4156.r4564/151253
+K 10
+rst2xml.py
+V 26
+file 3-2468.0.r4564/150073
+K 14
+rstpep2html.py
+V 30
+file 3-288.0-3533.r4564/151882
+END
+ENDREP
+id: 6w-18.0.r5595/1601
+type: dir
+pred: 6w-18.0.r5591/2003
+count: 374
+text: 5595 1005 583 583 43a6180ffcca8e45e4b0c55d3637d7ac
+cpath: /trunk/docutils/tools
+copyroot: 0 /
+
+PLAIN
+K 8
+BUGS.txt
+V 23
+file 2-2181.0.r4628/817
+K 11
+COPYING.txt
+V 24
+file 2-18.0.r4564/100662
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r5495/336
+K 11
+HISTORY.txt
+V 21
+file 5-18.0.r5581/228
+K 11
+MANIFEST.in
+V 23
+file 7-18.0.r4156/57222
+K 10
+README.txt
+V 24
+file 9-18.0.r4564/154506
+K 17
+RELEASE-NOTES.txt
+V 23
+file 2-4204.0.r5581/509
+K 10
+THANKS.txt
+V 25
+file 2-2182.0.r5174/53856
+K 4
+docs
+V 20
+dir 3-7.0.r5586/1906
+K 8
+docutils
+V 22
+dir 1w-18.0.r5582/9072
+K 6
+extras
+V 23
+dir 2-1467.0.r4447/6104
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 23
+file 46-18.0.r5582/9299
+K 4
+test
+V 22
+dir 48-18.0.r5585/3092
+K 5
+tools
+V 22
+dir 6w-18.0.r5595/1601
+END
+ENDREP
+id: 1-7.0.r5595/2471
+type: dir
+pred: 1-7.0.r5591/2873
+count: 3558
+text: 5595 1771 687 687 690e7ab0b452447a46cad8b663b5e153
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r5595/2471
+K 5
+prest
+V 23
+dir 1-4326.0.r5487/2835
+K 7
+sandbox
+V 22
+dir 1-17.0.r5592/13683
+K 3
+web
+V 20
+dir 1-2.0.r5583/1079
+END
+ENDREP
+id: 3-1.0.r5595/2854
+type: dir
+pred: 3-1.0.r5592/14018
+count: 5157
+text: 5595 2685 156 156 97eab2bca42770197a6adffeff932e3f
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r5594/5423
+K 4
+tags
+V 19
+dir 2-1.0.r5579/673
+K 5
+trunk
+V 20
+dir 3-1.0.r5595/2854
+END
+ENDREP
+id: 0.0.r5595/3133
+type: dir
+pred: 0.0.r5594/5704
+count: 5595
+text: 5595 3007 113 113 c8b505841dbad23e3c3b039a7840ae19
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+
+9-1157.0-3981.t5594-4be modify-file true false /trunk/docutils/tools/editors/emacs/rst.el
+
+
+3133 3327

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 11
+mauriciocap
+K 8
+svn:date
+V 27
+2010-05-15T02:24:29.727193Z
+K 7
+svn:log
+V 64
+
+WORKS: generate and inline UML chart with rst2html and rst2pdf
+
+END

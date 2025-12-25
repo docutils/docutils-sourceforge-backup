@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+gbrandl
+K 8
+svn:date
+V 27
+2009-04-01T20:00:21.078120Z
+K 7
+svn:log
+V 72
+Convert docutils to Python 3 (at least so that it runs the test suite.)
+
+END

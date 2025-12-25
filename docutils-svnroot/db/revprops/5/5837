@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2009-01-01T18:12:07.414906Z
+K 7
+svn:log
+V 80
+rst.el: Applied patch from darklord@timehorse.com for parameterized TOC support.
+END

@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-09-22T21:00:13.167526Z
+K 7
+svn:log
+V 315
+rST parser: allow for combining characters in grid tables.
+
+Ignore combining characters when extracting a grid table block and
+when parsing the grid table structure.
+Allow for combining characters when extracting 2d-block with cell content.
+
+Missing part of the fixes in [r7231].
+
+Fixes [bugs:#128] and [bugs:#512].
+END

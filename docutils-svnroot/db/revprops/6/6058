@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2009-07-26T15:10:36.805237Z
+K 7
+svn:log
+V 35
+Use font ``C`` courier not ``CW``.
+
+END

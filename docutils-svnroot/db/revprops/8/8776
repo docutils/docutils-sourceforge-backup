@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-06-25T20:57:58.468249Z
+K 7
+svn:log
+V 175
+Complete visit_* / depart_* method pairs in html4css.HTMLTranslator.
+
+Always add both methods of a visit/depart pair,
+also if only one method is changed from the parent class.
+END

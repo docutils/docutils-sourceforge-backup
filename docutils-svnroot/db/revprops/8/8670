@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-04-07T12:04:36.543973Z
+K 7
+svn:log
+V 136
+Clean up parser code.
+
+Simplify conditional loading and mock definition for recommonmark.
+
+Do not repeat generic settings in rst parser.
+END

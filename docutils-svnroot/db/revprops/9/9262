@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-11-24T15:07:36.988919Z
+K 7
+svn:log
+V 328
+Put `first` and `second` arguments of `assertEqual` on the top line.
+
+When a test fails, only the first line of the failing statement is printed.
+Writing the statements that should be equal just behind the function name,
+we can see which argument is the actual "output" and which is
+the "expected" value if the assertment fails.
+END

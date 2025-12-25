@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2016-07-26T18:15:59.097586Z
+K 7
+svn:log
+V 117
+Implement feature request [ 48 ]
+
+Add :align: option to the table directives.
+Thanks to Takeshi KOMIYA for the patch.
+END

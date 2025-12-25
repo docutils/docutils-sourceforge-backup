@@ -1,0 +1,27 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-03-17T23:30:47.815596Z
+K 7
+svn:log
+V 324
+Fix "manpage" writers handling of `<raw>` elements.
+
+The "format" attribute is a `str` with space-separated format names.
+
+With the change, "manpage" will pass on, e.g.
+
+    .. raw:: html manpage
+
+       raw text for HTML and "man" pages
+
+but skip, e.g.
+
+    .. raw:: html odt
+
+       raw text for HTML and OpenDocument Text
+END

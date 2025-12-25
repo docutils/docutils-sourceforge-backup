@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2015-09-22T14:42:41.926027Z
+K 7
+svn:log
+V 56
+Fix [ 286 ] Empty column title cause invalid latex file.
+END

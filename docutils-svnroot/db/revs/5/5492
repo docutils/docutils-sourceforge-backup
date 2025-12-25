@@ -1,0 +1,210 @@
+id: x-18.0.r5492/0
+type: file
+pred: x-18.0.r5491/21404
+count: 59
+text: 4564 7401 63 115160 854ec235c4640b0188f5b829350916c5 c0eb8c9360bc41d2ed1cc4659bc53c4b3197ca9c 5491-48j/_5
+props: 2872 1092 111 0 d69121ee529fb8cb3643d711ec0f2158
+cpath: /trunk/docutils/docs/ref/doctree.txt
+copyroot: 0 /
+
+PLAIN
+K 11
+doctree.txt
+V 19
+file x-18.0.r5492/0
+K 12
+docutils.dtd
+V 25
+file 10-18.0.r4564/141684
+K 3
+rst
+V 23
+dir 12-18.0.r5015/10564
+K 12
+soextblx.dtd
+V 23
+file 1a-18.0.r18/303406
+K 14
+transforms.txt
+V 22
+file 4-855.0.r4914/114
+END
+ENDREP
+id: w-18.0.r5492/532
+type: dir
+pred: w-18.0.r5491/21942
+count: 308
+text: 5492 292 227 227 3bc01c2c35721903178aa3c7164aee0c
+cpath: /trunk/docutils/docs/ref
+copyroot: 0 /
+
+PLAIN
+K 3
+api
+V 23
+dir 3-2394.0.r5214/1400
+K 3
+dev
+V 21
+dir 3-12.0.r5312/1123
+K 5
+howto
+V 23
+dir 3-749.0.r5174/46439
+K 9
+index.txt
+V 24
+file 3-2171.0.r4803/5436
+K 4
+peps
+V 22
+dir 5-7.0.r4564/140856
+K 3
+ref
+V 20
+dir w-18.0.r5492/532
+K 4
+user
+V 22
+dir 1c-18.0.r5466/9164
+END
+ENDREP
+id: 3-7.0.r5492/982
+type: dir
+pred: 3-7.0.r5491/22398
+count: 1227
+text: 5492 702 267 267 f479869a5aa7661813a1c2291833fc67
+cpath: /trunk/docutils/docs
+copyroot: 0 /
+
+PLAIN
+K 8
+BUGS.txt
+V 23
+file 2-2181.0.r4628/817
+K 11
+COPYING.txt
+V 24
+file 2-18.0.r4564/100662
+K 7
+FAQ.txt
+V 23
+file 2-788.0.r4632/1366
+K 11
+HISTORY.txt
+V 22
+file 5-18.0.r5462/2649
+K 11
+MANIFEST.in
+V 23
+file 7-18.0.r4156/57222
+K 10
+README.txt
+V 24
+file 9-18.0.r4564/154506
+K 17
+RELEASE-NOTES.txt
+V 25
+file 2-4204.0.r5174/39048
+K 10
+THANKS.txt
+V 25
+file 2-2182.0.r5174/53856
+K 4
+docs
+V 19
+dir 3-7.0.r5492/982
+K 8
+docutils
+V 22
+dir 1w-18.0.r5462/9473
+K 6
+extras
+V 23
+dir 2-1467.0.r4447/6104
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 22
+file 46-18.0.r5034/108
+K 4
+test
+V 22
+dir 48-18.0.r5462/7169
+K 5
+tools
+V 22
+dir 6w-18.0.r5472/1714
+END
+ENDREP
+id: 1-7.0.r5492/1849
+type: dir
+pred: 1-7.0.r5491/23270
+count: 3513
+text: 5492 1147 689 689 e0fe126c2b641ea40a471e552b3a3cd5
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r5492/1849
+K 5
+prest
+V 23
+dir 1-4326.0.r5487/2835
+K 7
+sandbox
+V 22
+dir 1-17.0.r5491/26478
+K 3
+web
+V 21
+dir 1-2.0.r5174/55657
+END
+ENDREP
+id: 3-1.0.r5492/2234
+type: dir
+pred: 3-1.0.r5491/26815
+count: 5063
+text: 5492 2064 157 157 2f2cac878fd9b3d032efb59cbfde0b7e
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r5427/9156
+K 4
+tags
+V 19
+dir 2-1.0.r4584/629
+K 5
+trunk
+V 20
+dir 3-1.0.r5492/2234
+END
+ENDREP
+id: 0.0.r5492/2513
+type: dir
+pred: 0.0.r5491/27096
+count: 5492
+text: 5492 2387 113 113 ceabf30e1d4b88a864f9a7806a44432a
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+
+x-18.0.t5491-48j modify-file true false /trunk/docutils/docs/ref/doctree.txt
+
+
+2513 2708

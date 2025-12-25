@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-08-15T01:52:23.000000Z
+K 7
+svn:log
+V 172
+  - Increased the size of inline literals (<tt>) in titles.  Windows needs it; Mac could do without it.  Linux?  - Restored the light gray background for inline literals.
+
+END

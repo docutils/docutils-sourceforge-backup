@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2020-08-10T09:11:55.103098Z
+K 7
+svn:log
+V 28
+disable pygments by default
+
+END

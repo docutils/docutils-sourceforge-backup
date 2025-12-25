@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 4
+cben
+K 8
+svn:date
+V 27
+2004-07-25T01:45:27.000000Z
+K 7
+svn:log
+V 242
+Allow the test suite to survive unimportable test modules.
+
+Notably, this fixes a crash on importing `moduleparser` under Python 2.1 from
+``test/test_readers/test_python/test_functions.py``.  (This shouldn't happen
+anyway, added to BUGS.txt)
+
+END

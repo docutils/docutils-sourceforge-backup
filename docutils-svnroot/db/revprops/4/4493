@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2006-04-02T14:48:31.312141Z
+K 7
+svn:log
+V 96
+Add custom role test to functional latex.
+Apply custom role with class patch from Edward Loper.
+
+END

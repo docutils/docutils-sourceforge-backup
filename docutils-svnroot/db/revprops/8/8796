@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-07-12T21:23:07.822336Z
+K 7
+svn:log
+V 218
+math2html: Improve handling of big symbols.
+
+Scale variable sized operators with CSS instead of constructing from pieces.
+
+Fix Unicode translations for N-ary operators.
+
+Scale stretch big delimiters instead of scaling.
+END

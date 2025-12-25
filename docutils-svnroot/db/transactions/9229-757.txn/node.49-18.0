@@ -1,0 +1,9 @@
+id: 49-18.0.t9229-757
+type: file
+pred: 49-18.0.r9229/16109
+count: 176
+text: -1 5819 315 5870 19337d23838c703d9547e54b86b46105 310a260a8007e6aa8d0a34371a4a00a54d4c2ad0 9229-757/_j
+props: 2791 69 111 0 515f6afa6448327e59cdac91d637f582
+cpath: /trunk/docutils/test/DocutilsTestSupport.py
+copyroot: 0 /
+

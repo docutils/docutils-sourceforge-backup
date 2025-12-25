@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 8
+cliechti
+K 8
+svn:date
+V 27
+2006-01-09T02:52:50.746921Z
+K 7
+svn:log
+V 173
+- added scale option to directive
+- size calculation improved, enlarge image slightly due to cropping
+- escape strings that are embedded into SVG
+- more __doc__ and comments
+END

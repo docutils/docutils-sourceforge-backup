@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2005-11-21T02:43:33.459844Z
+K 7
+svn:log
+V 58
+Fixed bug with TOC update when it is at the end of a file.
+END

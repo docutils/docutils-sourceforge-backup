@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2011-12-31T15:53:30.600109Z
+K 7
+svn:log
+V 59
+revert to non verbose
+change plain echos to print feedback
+
+END

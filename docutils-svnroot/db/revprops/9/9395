@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-05-24T22:59:36.908464Z
+K 7
+svn:log
+V 59
+Review "reference-label" LaTeX writer setting. Update docs.
+END

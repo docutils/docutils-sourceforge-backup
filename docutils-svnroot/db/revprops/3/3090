@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-03-23T00:32:36.337592Z
+K 7
+svn:log
+V 171
+added redirection to snapshots on BerliOS;
+let's stick to the SF.net URLs for now (i.e. don't update the Docutils home page),
+because the BerliOS URLs may be changed later
+END

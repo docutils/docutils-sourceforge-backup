@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2024-04-26T06:38:26.880169Z
+K 7
+svn:log
+V 57
+Add tox.ini to pyproject.toml to be in sdist (bug #486).
+
+END

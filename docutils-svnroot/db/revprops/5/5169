@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2007-05-28T14:10:29.127273Z
+K 7
+svn:log
+V 122
+- Append ``\leavemode`` to definition list terms.
+- No longer write vist_/depart_definition_list_item comments to output.
+
+END

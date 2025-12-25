@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-09-14T12:32:44.572114Z
+K 7
+svn:log
+V 117
+Fix [ 339 ] don't use "alltt" in admonitions and footnotes.
+
+Includes some other minor cleanups for the LaTeX writer.
+END

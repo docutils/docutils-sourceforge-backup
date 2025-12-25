@@ -1,0 +1,91 @@
+K 8
+Dir.smak
+V 31
+file 1f-5058.k-4580.r5058/22880
+K 13
+biohazard.eps
+V 27
+file y7-4327.0.r4327/877419
+K 11
+docsize.tex
+V 27
+file y9-4327.0.r4327/876215
+K 10
+math.mytex
+V 29
+file 5-5435.k-4580.r5750/1042
+K 8
+math.rst
+V 29
+file 8-5435.k-4580.r5435/4577
+K 12
+math.skip.pl
+V 29
+file a-5435.k-4580.r5435/4844
+K 12
+simple.mytex
+V 30
+file yb-4327.l-4580.r5750/1336
+K 10
+simple.rst
+V 29
+file yd-4327.k-4580.r5446/437
+K 14
+tables01.mytex
+V 29
+file 5-5749.k-4580.r6229/1560
+K 12
+tables01.rst
+V 29
+file 8-5749.k-4580.r5749/1064
+K 10
+test.mytex
+V 30
+file yf-4327.m-4580.r6229/1858
+K 8
+test.rst
+V 27
+file yh-4327.0.r4327/876694
+K 12
+test.skip.pl
+V 28
+file 5-5789.k-4580.r5789/618
+K 11
+test.stderr
+V 31
+file b5-4580.k-4580.r4580/81441
+K 9
+title.eps
+V 27
+file yj-4327.0.r4327/876934
+END
+D 8
+Dir.smak
+D 13
+biohazard.eps
+D 11
+docsize.tex
+D 10
+math.mytex
+D 8
+math.rst
+D 12
+math.skip.pl
+D 12
+simple.mytex
+D 10
+simple.rst
+D 14
+tables01.mytex
+D 12
+tables01.rst
+D 10
+test.mytex
+D 8
+test.rst
+D 12
+test.skip.pl
+D 11
+test.stderr
+D 9
+title.eps

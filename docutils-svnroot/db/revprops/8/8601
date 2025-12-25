@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-01-03T21:58:06.238913Z
+K 7
+svn:log
+V 266
+Clean up Markdown support.
+
+Set 'docutils-cli.py' shebang to python3 (better chance of markdown support).
+
+Remove the 'md2*.py' wrappers. (Use 'docutils-cli.py --parser=markdown'.)
+
+Remove hard-coded print output from test suite when there is no recommonmark module.
+END

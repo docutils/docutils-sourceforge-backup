@@ -1,0 +1,30 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-10-11T10:09:53.307600Z
+K 7
+svn:log
+V 676
+More descriptive auto-IDs
+
+Generate unique ids adding a running number to
+prefixes based on
+
+a) the node "name" (if existing but not unique),
+b) the new optional argument "suggested_prefix" (used for toc entries),
+c) the tagname of the object (e.g. footnote, citation, footnote-reference,
+   system-message, ...)
+
+Advantages:
+
+* Meaningfully named links to ToC entries, footnotes, citations,
+  error messages, and sections with duplicate title.
+* More stable links (a new footnote does not change backlinks to the ToC, say).
+
+For backwards compatibility, this only applies if `settings.auto_id_prefix`
+ends with a percent sign ("%"). This may become the default in the future.
+END

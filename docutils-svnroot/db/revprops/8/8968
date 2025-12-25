@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-26T19:02:15.321995Z
+K 7
+svn:log
+V 147
+Modernise helper script generating `punctuation_chars.py`.
+
+Update/clean code after droping Python 2.7 support.
+
+Based on patch-set by Adam Turner.
+END

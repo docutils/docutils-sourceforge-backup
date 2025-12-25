@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-11-16T14:01:31.584893Z
+K 7
+svn:log
+V 196
+Fix "shebang on non-executable files".
+
+Based on patch in opensuse.org RPM package spec.
+- Change mode of files supporting use as command-line script.
+- Remove "shebang line" from library modules.
+END

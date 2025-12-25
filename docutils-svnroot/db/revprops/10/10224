@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-08-28T22:07:36.958218Z
+K 7
+svn:log
+V 376
+More distict variable name in parsers.rst.states.RSTState.nested_list_parse().
+
+The `RSTState.nested_parse()` method creates/uses a new state machine
+that differs from the class instance's `self.state_machine`
+(which may be the master state machine or another nested state machine).
+Rename the local variable holding the new machine from `state_machine`
+to `my_state_machine`.
+END

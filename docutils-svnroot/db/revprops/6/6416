@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-09-15T11:09:45.379687Z
+K 7
+svn:log
+V 58
+latex2e writer: Place title data in the document preamble.
+END

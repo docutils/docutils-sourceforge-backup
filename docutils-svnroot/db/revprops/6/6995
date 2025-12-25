@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2011-03-26T09:01:55.518061Z
+K 7
+svn:log
+V 374
+Using new options `--new`, `--old` and `--both` you may give options
+applying only to a certain input file. This can be used to compute
+difference with different `--strip-elements-with-class` options.
+
+Changing number of columns in tables are processed correctly.
+
+Adapted tests to latest Docutils snapshot.
+
+Added test `table` in `simpleNoSource` for yet unsolved problem.
+
+END

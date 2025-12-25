@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-04-25T13:13:48.280908Z
+K 7
+svn:log
+V 323
+Do not insert <system_message> elements if this results in an invalid doctree.
+
+Add a validity test to fix `nodes.document.set_duplicate_name_id`
+and revert addition of <system_message> elements for duplicate explicit targets
+if it fails.
+
+Adapt tests.
+
+Revert the no longer required workaround in [r7638].
+
+Cf. [bugs:#489]
+END

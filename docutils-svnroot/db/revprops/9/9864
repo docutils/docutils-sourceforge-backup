@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-08-07T15:56:42.797399Z
+K 7
+svn:log
+V 212
+Remove obsolete test for input encoding fallback.
+
+Define a (never used) fallback for `EncodingWarning`
+for Python 3.9 to keep flake8 happy.
+
+Solves the test failure on non-UTF8 Windows mentioned in [bugs: #490].
+END

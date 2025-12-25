@@ -1,0 +1,29 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-06-02T19:20:17.747160Z
+K 7
+svn:log
+V 766
+Announce deprecation of `<target>` elements with content. Prepare "latex" writer.
+
+The `<target>` element has 2 use cases:
+
+a) as empty "body element" to provide a "name" attribute for the next
+   body element (via the `references.PropagateTargets` transform)
+   or to map a reference name to a "refid" or "refuri".
+
+b) as "inline element" with text content to provide an anchor.
+
+For use case b), the generic `<inline>` element is equally well suited.
+Deprecation of the inline use simplifies the definition and validation
+of `<target>` elements (only valid as empty block-level element).
+
+Change `LaTeXTranslator.visit_inline()` to insert labels for the given node's IDs.
+(Preparation for the future use of `<inline>` for inline anchors and generally
+a good idea.)
+END

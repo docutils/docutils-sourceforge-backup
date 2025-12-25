@@ -1,0 +1,373 @@
+id: b-5634.0-5635.r5635/0
+type: file
+pred: b-5634.0.r5634/3468
+count: 1
+text: 5634 1883 1291 3391 db1c40f7f22696d44792db8d4e99869e 444fb85a27d522ea5ceb631c5c9bd46a4d715e44 5633-4ch/_d
+cpath: /trunk/docutils/docutils/parsers/rst/languages/gl.py
+copyfrom: 5634 /trunk/docutils/docutils/parsers/rst/languages/gl_rst.py
+
+PLAIN
+K 11
+__init__.py
+V 24
+file 2x-18.0.r5618/16816
+K 5
+af.py
+V 26
+file 9-1513.0.r4564/111782
+K 5
+ca.py
+V 26
+file 9-3276.0.r4564/111149
+K 5
+cs.py
+V 26
+file a-1767.0.r4564/108926
+K 5
+de.py
+V 24
+file 6-801.0.r5174/39338
+K 5
+en.py
+V 25
+file 30-18.0.r4564/108294
+K 5
+eo.py
+V 26
+file 9-1583.0.r4564/108610
+K 5
+es.py
+V 26
+file 9-1358.0.r4564/109565
+K 5
+fi.py
+V 26
+file 9-2570.0.r4564/107340
+K 5
+fr.py
+V 26
+file 6-1051.0.r4564/109882
+K 5
+gl.py
+V 26
+file b-5634.0-5635.r5635/0
+K 5
+he.py
+V 23
+file b-4825.0.r4837/185
+K 5
+it.py
+V 26
+file 9-1044.0.r4564/110516
+K 5
+ja.py
+V 26
+file a-4065.0.r4564/106701
+K 5
+nl.py
+V 26
+file b-3056.0.r4564/110201
+K 8
+pt_br.py
+V 26
+file 9-1954.0.r4564/109244
+K 5
+ru.py
+V 26
+file 9-1515.0.r4564/111464
+K 5
+sk.py
+V 25
+file 6-950.0.r4564/110832
+K 5
+sv.py
+V 25
+file 9-341.0.r4564/106068
+K 8
+zh_cn.py
+V 26
+file a-4062.0.r4564/107977
+K 8
+zh_tw.py
+V 26
+file 9-2607.0.r4564/107018
+END
+ENDREP
+id: 2w-18.0.r5635/1222
+type: dir
+pred: 2w-18.0.r5634/4610
+count: 117
+text: 5635 317 892 892 e485be571772022e613bf57c9265ca9b
+props: 342 1575 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils/parsers/rst/languages
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 2f-18.0.r4802/4943
+K 10
+directives
+V 23
+dir 2i-18.0.r5618/16565
+K 7
+include
+V 23
+dir i-3472.0.r4348/2216
+K 9
+languages
+V 22
+dir 2w-18.0.r5635/1222
+K 8
+roles.py
+V 25
+file 5-1943.0.r5618/18557
+K 9
+states.py
+V 24
+file 32-18.0.r5618/18250
+K 14
+tableparser.py
+V 25
+file 34-18.0.r4564/113803
+END
+ENDREP
+id: 2e-18.0.r5635/1800
+type: dir
+pred: 2e-18.0.r5634/5190
+count: 393
+text: 5635 1470 317 317 4724069fb78a80a2fd5d8eacbc7fbc4f
+props: 342 2533 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils/parsers/rst
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 24
+file 2b-18.0.r5618/13617
+K 7
+null.py
+V 31
+file 5-3594.0-3629.r4564/101535
+K 3
+rst
+V 22
+dir 2e-18.0.r5635/1800
+END
+ENDREP
+id: 2a-18.0.r5635/2188
+type: dir
+pred: 2a-18.0.r5634/5579
+count: 397
+text: 5635 2039 136 136 61b1ec2a7b83b2c8dc469287ffaaca62
+props: 342 3339 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils/parsers
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 1x-18.0.r5582/8105
+K 7
+core.py
+V 22
+file 20-18.0.r5538/481
+K 13
+docutils.conf
+V 29
+file m-3472.0-3904.r3904/2799
+K 11
+examples.py
+V 23
+file 3-1928.0.r4800/235
+K 11
+frontend.py
+V 24
+file 3-150.0.r5618/25805
+K 5
+io.py
+V 23
+file 3-217.0.r4750/2405
+K 9
+languages
+V 22
+dir 22-18.0.r5634/6928
+K 8
+nodes.py
+V 24
+file 28-18.0.r5618/13326
+K 7
+parsers
+V 22
+dir 2a-18.0.r5635/2188
+K 7
+readers
+V 23
+dir 36-18.0.r5618/25569
+K 15
+statemachine.py
+V 24
+file 3e-18.0.r5618/27786
+K 10
+transforms
+V 23
+dir 3g-18.0.r5618/29447
+K 13
+urischemes.py
+V 25
+file 3s-18.0.r4564/137250
+K 8
+utils.py
+V 24
+file 3u-18.0.r5618/27494
+K 7
+writers
+V 22
+dir 3w-18.0.r5631/1283
+END
+ENDREP
+id: 1w-18.0.r5635/3107
+type: dir
+pred: 1w-18.0.r5634/7849
+count: 1530
+text: 5635 2423 671 671 0fd278a0393ac5fd199dce0327ae09e2
+props: 342 8363 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+BUGS.txt
+V 23
+file 2-2181.0.r4628/817
+K 11
+COPYING.txt
+V 24
+file 2-18.0.r4564/100662
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r5495/336
+K 11
+HISTORY.txt
+V 22
+file 5-18.0.r5634/3187
+K 11
+MANIFEST.in
+V 23
+file 7-18.0.r4156/57222
+K 10
+README.txt
+V 22
+file 9-18.0.r5603/1632
+K 17
+RELEASE-NOTES.txt
+V 23
+file 2-4204.0.r5581/509
+K 10
+THANKS.txt
+V 24
+file 2-2182.0.r5634/8077
+K 4
+docs
+V 20
+dir 3-7.0.r5633/1950
+K 8
+docutils
+V 22
+dir 1w-18.0.r5635/3107
+K 6
+extras
+V 24
+dir 2-1467.0.r5618/33257
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 23
+file 46-18.0.r5582/9299
+K 4
+test
+V 22
+dir 48-18.0.r5628/4906
+K 5
+tools
+V 23
+dir 6w-18.0.r5618/32346
+END
+ENDREP
+id: 1-7.0.r5635/4035
+type: dir
+pred: 1-7.0.r5634/9063
+count: 3578
+text: 5635 3335 687 687 658fb44ba23405a44416112906e24585
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r5635/4035
+K 5
+prest
+V 23
+dir 1-4326.0.r5487/2835
+K 7
+sandbox
+V 21
+dir 1-17.0.r5632/3641
+K 3
+web
+V 20
+dir 1-2.0.r5583/1079
+END
+ENDREP
+id: 3-1.0.r5635/4417
+type: dir
+pred: 3-1.0.r5634/9445
+count: 5181
+text: 5635 4249 155 155 18b6b6b9616ff8370085a9411b2735ae
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r5624/351
+K 4
+tags
+V 19
+dir 2-1.0.r5579/673
+K 5
+trunk
+V 20
+dir 3-1.0.r5635/4417
+END
+ENDREP
+id: 0.0.r5635/4694
+type: dir
+pred: 0.0.r5634/9722
+count: 5635
+text: 5635 4569 112 112 e5a176de4c09d8a224ecda1cb99c890e
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+
+b-5634._0.t5634-4ci add-file false false /trunk/docutils/docutils/parsers/rst/languages/gl.py
+5634 /trunk/docutils/docutils/parsers/rst/languages/gl_rst.py
+b-5634.0.r5634/3468 delete-file false false /trunk/docutils/docutils/parsers/rst/languages/gl_rst.py
+
+
+4694 4888

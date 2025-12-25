@@ -1,0 +1,33 @@
+K 11
+__init__.py
+V 24
+file 2f-18.0.r9810/43347
+K 10
+directives
+V 22
+dir 2i-18.0.r9905/1190
+K 7
+include
+V 22
+dir i-3472.0.r9907/457
+K 9
+languages
+V 22
+dir 2w-18.0.r9881/4400
+K 8
+roles.py
+V 25
+file 5-1943.0.r9810/44652
+K 9
+states.py
+V 23
+file 32-18.0.r9881/4649
+K 14
+tableparser.py
+V 24
+file 34-18.0.r9810/45272
+END
+K 10
+directives
+V 21
+dir 2i-18.0.t9908-7ow

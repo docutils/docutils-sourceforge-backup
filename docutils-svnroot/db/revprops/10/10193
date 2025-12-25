@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-07-31T14:18:24.823462Z
+K 7
+svn:log
+V 214
+Update reStructuredText Cheat Sheet.
+
+Remove "new in 0.3.x" markers (this was before 2006).
+
+Add "code" role and directive and "math" role.
+
+Sort directives as in "directives.rst".
+TODO: rather sort alphabetically?
+END

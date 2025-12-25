@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2016-12-10T17:50:59.468472Z
+K 7
+svn:log
+V 118
+Apply patch by Neil Schemenauer to fix bad string escapes
+(http://permalink.gmane.org/gmane.text.docutils.devel/7521).
+END

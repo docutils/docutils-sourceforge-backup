@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+mmgilbe
+K 8
+svn:date
+V 27
+2004-09-19T04:38:15.000000Z
+K 7
+svn:log
+V 192
+Added the caching attribute to the Parser class so that moinmoin will cache the results. Not entirely sure of the implications of this modification but it seems to work in my limited testing.
+
+END

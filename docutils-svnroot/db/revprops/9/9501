@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-12-14T22:38:58.242878Z
+K 7
+svn:log
+V 274
+Refactor "_html_base" writer.
+
+Auxiliary method `HTMLTranslator.image_size()` to bring
+`HTMLTranslator.visit_image()` to a reasonable size.
+
+Improve/test error reporting when an image file cannot be read.
+
+Sort methods in `HTMLTranslator`.
+
+Small cleanups and optimizations.
+END

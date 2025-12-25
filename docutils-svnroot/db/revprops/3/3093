@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-03-23T09:09:15.443915Z
+K 7
+svn:log
+V 74
+do not extract mtimes on SF.net to avoid "time stamp in the future" errors
+END

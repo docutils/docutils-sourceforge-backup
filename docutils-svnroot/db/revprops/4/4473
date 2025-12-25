@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-04-01T01:07:46.733862Z
+K 7
+svn:log
+V 87
+only run the test suite when code has changed;
+but run it with all Python versions then
+END

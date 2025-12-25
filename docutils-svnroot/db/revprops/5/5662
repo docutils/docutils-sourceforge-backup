@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2008-10-07T12:04:04.881300Z
+K 7
+svn:log
+V 152
+Bring the syntax-highlight proposal up to date
+latex2e writer now supports listings, 
+alternative "high level" and "low level" implementation proposals.
+END

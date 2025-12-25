@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2008-05-19T14:23:35.428664Z
+K 7
+svn:log
+V 122
+Copy and modify the standard latex2e writer instead of subclassing it.
+This way changes could be easier included upstream.
+END

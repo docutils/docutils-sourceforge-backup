@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-14T11:04:53.689947Z
+K 7
+svn:log
+V 258
+xml-parser: Handle case that the input has no XML element.
+
+If there is no XML element in the input, the XMLPullParser does
+not yield "events".
+
+To handle this, ``element2node(None)`` now returns a
+`paragraph` with a `problematic` node reporting the problem.
+END

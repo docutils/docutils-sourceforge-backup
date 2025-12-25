@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2002-05-12T18:54:02.000000Z
+K 7
+svn:log
+V 81
+rltemplate: changed to OneColumn.
+rlpdf: removed some things i donot know about.
+
+END

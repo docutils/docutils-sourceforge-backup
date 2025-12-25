@@ -1,0 +1,490 @@
+id: d-3204.4-4012.r4012/0
+type: file
+pred: d-3204.0.r3964/3746
+count: 4
+text: 3964 2321 61 630 8aba3d284c2a6a36fb718090500d38bb cc5a747fa373b9f5cf941e937ce1946a61336878 3963-323/_6
+props: 3319 127 107 0 3c711300be3ea7503c3f4d9c1da3fa17
+cpath: /branches/s5/tools/rst2s5.py
+copyfrom: 4010 /trunk/sandbox/cliechti/slideshow/rst2s5.py
+
+PLAIN
+K 12
+buildhtml.py
+V 22
+file 3-430.0.r2504/598
+K 3
+dev
+V 23
+dir 5-3488.0.r3535/1332
+K 13
+docutils.conf
+V 22
+file 3-407.0.r3905/308
+K 7
+editors
+V 23
+dir 3-1157.0.r4004/5893
+K 12
+quicktest.py
+V 22
+file 72-18.0.r3103/100
+K 11
+rst2html.py
+V 25
+file 5-1756.0.r3901/10165
+K 12
+rst2latex.py
+V 25
+file b-1202.0.r2548/27720
+K 15
+rst2newlatex.py
+V 24
+file 3-3260.0.r3260/6983
+K 16
+rst2pseudoxml.py
+V 23
+file 3-2467.0.r2467/149
+K 9
+rst2s5.py
+V 26
+file d-3204.4-4012.r4012/0
+K 10
+rst2xml.py
+V 23
+file 3-2468.0.r2468/149
+K 14
+rstpep2html.py
+V 28
+file 3-288.0-3533.r3533/9502
+END
+ENDREP
+id: 6w-18.0-4011.r4012/910
+type: dir
+pred: 6w-18.0.r4004/6602
+count: 315
+text: 4012 332 565 565 ac38f463fcb2d8119f0cb4db98100c1f
+cpath: /branches/s5/tools
+copyroot: 4011 /branches/s5
+
+id: f-3204.2-4012.r4012/1094
+type: file
+pred: f-3204.0.r4007/1465
+count: 9
+text: 4007 0 1437 4845 c7cdb119bf47165b4d8f717d5abfe978 32952c483fec970d233c63972b3e0f9b59968b07 4006-33a/_5
+props: 3319 543 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /branches/s5/docutils/writers/s5_html.py
+copyfrom: 4010 /trunk/sandbox/cliechti/slideshow/s5.py
+
+id: 7-3965.3-4012.r4012/1436
+type: dir
+pred: 7-3965.0.r4010/720
+count: 4
+text: 4010 663 44 44 14bd261911f115f9d8354c240605611f
+cpath: /branches/s5/docutils/writers/support/s5_html
+copyfrom: 4010 /trunk/sandbox/cliechti/slideshow/ui
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 7-3878.0.r3878/797
+K 13
+html4css1.css
+V 29
+file 75-18.0-3901.r3901/14635
+K 11
+latex2e.tex
+V 30
+file 4-1656.1-3901.r3901/13254
+K 10
+newlatex2e
+V 24
+dir m-3901.0.r3901/16316
+K 8
+pep_html
+V 24
+dir q-3901.0.r3901/14461
+K 7
+s5_html
+V 28
+dir 7-3965.3-4012.r4012/1436
+END
+ENDREP
+id: 6-3878.0-4011.r4012/1974
+type: dir
+pred: 6-3878.0.r3901/16751
+count: 2
+text: 4012 1669 292 292 059734906bb5f92c8dddc7e11bdbb17f
+cpath: /branches/s5/docutils/writers/support
+copyroot: 4011 /branches/s5
+
+PLAIN
+K 11
+__init__.py
+V 24
+file 3x-18.0.r3901/12339
+K 15
+docutils_xml.py
+V 23
+file 4-244.0.r3512/7689
+K 12
+html4css1.py
+V 23
+file 40-18.0.r3971/3194
+K 10
+latex2e.py
+V 23
+file 9-1202.0.r3930/647
+K 13
+newlatex2e.py
+V 23
+file 5-3259.0.r3929/372
+K 7
+null.py
+V 24
+file 4-3246.0.r3892/2227
+K 11
+pep_html.py
+V 22
+file 4-281.0.r3908/227
+K 12
+pseudoxml.py
+V 22
+file 4-84.0.r1645/8532
+K 10
+s5_html.py
+V 29
+file f-3204.2-4012.r4012/1094
+K 7
+support
+V 28
+dir 6-3878.0-4011.r4012/1974
+END
+ENDREP
+id: 3w-18.0-4011.r4012/2664
+type: dir
+pred: 3w-18.0.r3971/3925
+count: 456
+text: 4012 2180 471 471 08a53e65c2b1fcc29013298789375f05
+props: 342 6175 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /branches/s5/docutils/writers
+copyroot: 4011 /branches/s5
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 1x-18.0.r3892/5836
+K 7
+core.py
+V 23
+file 20-18.0.r3892/1646
+K 13
+docutils.conf
+V 29
+file m-3472.0-3904.r3904/2799
+K 11
+examples.py
+V 23
+file 3-1928.0.r3598/207
+K 11
+frontend.py
+V 23
+file 3-150.0.r3879/4225
+K 5
+io.py
+V 22
+file 3-217.0.r3654/291
+K 9
+languages
+V 23
+dir 22-18.0.r3968/10922
+K 8
+nodes.py
+V 21
+file 28-18.0.r4005/54
+K 7
+parsers
+V 22
+dir 2a-18.0.r3968/9377
+K 7
+readers
+V 22
+dir 36-18.0.r4006/1239
+K 15
+statemachine.py
+V 22
+file 3e-18.0.r2299/866
+K 10
+transforms
+V 22
+dir 3g-18.0.r3939/6659
+K 13
+urischemes.py
+V 22
+file 3s-18.0.r1829/714
+K 8
+utils.py
+V 22
+file 3u-18.0.r3592/826
+K 7
+writers
+V 27
+dir 3w-18.0-4011.r4012/2664
+END
+ENDREP
+id: 1w-18.0-4011.r4012/3592
+type: dir
+pred: 1w-18.0.r4006/2144
+count: 1328
+text: 4012 2915 664 664 188d4133a5e535f579d1657226b7f2f2
+props: 342 8363 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /branches/s5/docutils
+copyroot: 4011 /branches/s5
+
+id: b-3204.1-4012.r4012/3836
+type: file
+pred: b-3204.0.r4008/1211
+count: 10
+text: 4008 0 1186 8245 7cca57b66bbc78ed1b1278b9003e0672 01e67557d7d5dc1dc21e130b82c6c5e6e8374c5d 4007-33b/_5
+props: 3977 1089 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /branches/s5/docs/user/s5_presentations.txt
+copyfrom: 4010 /trunk/sandbox/cliechti/slideshow/presentation.txt
+
+id: 4-3965.0-4012.r4012/4194
+type: file
+pred: 4-3965.0.r3965/24407
+count: 1
+text: 3965 0 5219 5202 a7242eb248bd941cdc650ff0266111a6 d0a8cda81a051dd5f17f9fdf1b83830f6f4ee199 3964-324/_6
+props: 3965 24357 37 0 d99d5193015a7bc1a7e3a4e8fc1e49ba
+cpath: /branches/s5/docs/user/images/happy_monkey.png
+copyfrom: 4010 /trunk/sandbox/cliechti/slideshow/happy_monkey.png
+
+PLAIN
+K 16
+happy_monkey.png
+V 29
+file 4-3965.0-4012.r4012/4194
+END
+ENDREP
+id: 4-4012.0-4011.r4012/4630
+type: dir
+count: 0
+text: 4012 4556 61 61 1c30977b17e7cc0d5a46951a70375858
+cpath: /branches/s5/docs/user/images
+copyroot: 4011 /branches/s5
+
+PLAIN
+K 10
+config.txt
+V 25
+file 4-1639.0.r3901/20801
+K 9
+emacs.txt
+V 24
+file 5-3981.0.r4004/6772
+K 6
+images
+V 28
+dir 4-4012.0-4011.r4012/4630
+K 9
+latex.txt
+V 23
+file 4-1264.0.r3415/968
+K 9
+links.txt
+V 22
+file 4-3399.0.r4001/53
+K 17
+mailing-lists.txt
+V 28
+file 4-3385.0-3393.r3980/386
+K 3
+rst
+V 23
+dir 1d-18.0.r3963/23903
+K 20
+s5_presentations.txt
+V 29
+file b-3204.1-4012.r4012/3836
+K 9
+tools.txt
+V 22
+file 4-365.0.r3943/269
+END
+ENDREP
+id: 1c-18.0-4011.r4012/5234
+type: dir
+pred: 1c-18.0.r4004/7393
+count: 269
+text: 4012 4799 422 422 222ddb317fd1e99f99bfc94a1257ac8a
+cpath: /branches/s5/docs/user
+copyroot: 4011 /branches/s5
+
+PLAIN
+K 3
+api
+V 22
+dir 3-2394.0.r3599/791
+K 3
+dev
+V 21
+dir 3-12.0.r4003/2205
+K 5
+howto
+V 22
+dir 3-749.0.r3913/1024
+K 9
+index.txt
+V 25
+file 3-2171.0.r3981/36096
+K 4
+peps
+V 21
+dir 5-7.0.r3974/10637
+K 3
+ref
+V 21
+dir w-18.0.r3998/1345
+K 4
+user
+V 27
+dir 1c-18.0-4011.r4012/5234
+END
+ENDREP
+id: 3-7.0-4011.r4012/5708
+type: dir
+pred: 3-7.0.r4004/7845
+count: 1045
+text: 4012 5424 271 271 176d7d3dad274c7c7ea57a465f7c382d
+cpath: /branches/s5/docs
+copyroot: 4011 /branches/s5
+
+PLAIN
+K 8
+BUGS.txt
+V 23
+file 2-2181.0.r3973/437
+K 11
+COPYING.txt
+V 21
+file 2-18.0.r3096/363
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r3953/422
+K 11
+HISTORY.txt
+V 21
+file 5-18.0.r3962/442
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r2513/394
+K 10
+README.txt
+V 21
+file 9-18.0.r3997/242
+K 10
+THANKS.txt
+V 23
+file 2-2182.0.r3900/404
+K 4
+docs
+V 25
+dir 3-7.0-4011.r4012/5708
+K 8
+docutils
+V 27
+dir 1w-18.0-4011.r4012/3592
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 24
+file 46-18.0.r3901/19134
+K 4
+test
+V 22
+dir 48-18.0.r3971/2970
+K 5
+tools
+V 26
+dir 6w-18.0-4011.r4012/910
+END
+ENDREP
+id: 1-7.0-4011.r4012/6542
+type: dir
+pred: 1-7.0-4011.r4011/0
+count: 3016
+text: 4012 5890 639 639 7b42626076fb6a75f5d2065a363a9e59
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /branches/s5
+copyroot: 4011 /branches/s5
+
+PLAIN
+K 7
+nesting
+V 27
+dir 3-1.0-1813.r2577/106277
+K 2
+s5
+V 25
+dir 1-7.0-4011.r4012/6542
+END
+ENDREP
+id: 0-1.0.r4012/6874
+type: dir
+pred: 0-1.0.r4011/327
+count: 156
+text: 4012 6774 87 87 d37c6f912b04e9ee8ffd476ac33d2df2
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r4012/6874
+K 4
+tags
+V 19
+dir 2-1.0.r3816/482
+K 5
+trunk
+V 20
+dir 3-1.0.r4010/3378
+END
+ENDREP
+id: 0.0.r4012/7151
+type: dir
+pred: 0.0.r4011/603
+count: 4012
+text: 4012 7025 113 113 b0ac81da80e473c93f5ae650df485f67
+cpath: /
+copyroot: 0 /
+
+f-3204._2.t4011-33f add-file false false /branches/s5/docutils/writers/s5_html.py
+4010 /trunk/sandbox/cliechti/slideshow/s5.py
+b-3204._1.t4011-33f add-file false false /branches/s5/docs/user/s5_presentations.txt
+4010 /trunk/sandbox/cliechti/slideshow/presentation.txt
+d-3204._4.t4011-33f add-file false false /branches/s5/tools/rst2s5.py
+4010 /trunk/sandbox/cliechti/slideshow/rst2s5.py
+_4.0-4011.t4011-33f add-dir false false /branches/s5/docs/user/images
+
+7-3965._3.t4011-33f add-dir false false /branches/s5/docutils/writers/support/s5_html
+4010 /trunk/sandbox/cliechti/slideshow/ui
+4-3965._0.t4011-33f add-file false false /branches/s5/docs/user/images/happy_monkey.png
+4010 /trunk/sandbox/cliechti/slideshow/happy_monkey.png
+
+7151 7293

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-14T15:03:12.763351Z
+K 7
+svn:log
+V 97
+Fix attribute names in transforms.references docstring examples.
+
+Fixup for [r3916] (2005-10-02).
+END

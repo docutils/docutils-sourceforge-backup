@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-03-30T20:13:30.346119Z
+K 7
+svn:log
+V 451
+LaTeX writer: Fix formatting of "authors" bibinfo field.
+
+Collect author names from "author" fields nested in "authors".
+
+With "--use-docutils-docinfo", use one "authors" entry instead of separate
+"author" entries for the individual author names.
+
+With "--use-latex-docinfo", print author names as one block
+to ensure a common author affiliation is centered under all
+author names, not just the last (cf. https://tex.stackexchange.com/a/11656/288060).
+END

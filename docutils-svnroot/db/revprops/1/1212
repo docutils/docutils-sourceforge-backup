@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2003-03-03T11:00:31.000000Z
+K 7
+svn:log
+V 45
+Always emit empty date and author for latex.
+
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2005-11-19T00:51:08.227789Z
+K 7
+svn:log
+V 70
+Fixed bug with incorrect comparison of decorations and added comments.
+END

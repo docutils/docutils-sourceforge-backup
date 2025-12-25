@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 4
+lalo
+K 8
+svn:date
+V 27
+2003-11-29T11:26:35.000000Z
+K 7
+svn:log
+V 259
+implemented a few more symbols, including field/definition lists, sidebars, and cross-references (internal and external);
+enabled (and tested) the feature of linking to a customized setupfile.
+The writer now produces an almost-acceptable output on my book...
+
+END

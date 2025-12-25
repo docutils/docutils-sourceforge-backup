@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-11-06T13:49:27.371960Z
+K 7
+svn:log
+V 68
+Fix opening binary files under Py3k (thanks to Dominic Fitzpatrick).
+END

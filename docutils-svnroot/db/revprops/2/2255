@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 4
+cben
+K 8
+svn:date
+V 27
+2004-06-11T15:35:15.000000Z
+K 7
+svn:log
+V 256
+Updated link to self.
+
+Fixed table attributes to not suggest any formatting difference between full
+and simple table syntaxes - synced both to the HTML writer's output.  Closed
+some tags and fixed indentation in the process to understand what I'm editing.
+
+END

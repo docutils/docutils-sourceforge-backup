@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-06-19T10:14:43.448872Z
+K 7
+svn:log
+V 38
+Fix rst syntax and spurious whitespace
+END

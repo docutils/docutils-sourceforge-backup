@@ -1,0 +1,46 @@
+PLAIN
+K 7
+nesting
+V 27
+dir 3-1.0-1813.r2577/106277
+K 4
+todo
+V 26
+dir 3-12.0-3676.r3743/1026
+END
+ENDREP
+id: 0-1.0.r3771/103
+type: dir
+pred: 0-1.0.r3769/5681
+count: 134
+text: 3771 0 90 90 ca0a39ff21e929333def50a5ddd302a6
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r3771/103
+K 4
+tags
+V 19
+dir 2-1.0.r3383/196
+K 5
+trunk
+V 20
+dir 3-1.0.r3770/3129
+END
+ENDREP
+id: 0.0.r3771/376
+type: dir
+pred: 0.0.r3770/3407
+count: 3771
+text: 3771 251 112 112 b46fe9db1e71103ca09b562e196b6db9
+cpath: /
+copyroot: 0 /
+
+3-12.0-3744.r3769/5347 delete-dir false false /branches/todo2
+
+
+376 517

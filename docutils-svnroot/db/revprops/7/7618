@@ -1,0 +1,25 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2013-03-02T16:27:22.920284Z
+K 7
+svn:log
+V 515
+New setting `stylesheet_dirs`.
+
+Comma-separated list of directories where stylesheets are found. Used by
+`stylesheet_path` when expanding relative path arguments.
+
+Now, it is easy to add a custom stylesheet to Docutils default
+stylesheet with, e.g., --stylesheet_path="html4css1.css, mystyle.css"
+    
+Changed behaviour of the default settings: 
+if there is a file "html4css1.css" in the working directory of the
+process at launch, it is used instead of the one provided by Docutils
+in the writer source directory.
+
+END

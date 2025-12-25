@@ -1,0 +1,9 @@
+id: 3m-18.0.t9350-78y
+type: file
+pred: 3m-18.0.r9348/256
+count: 56
+text: -1 0 285 21322 038c3253bf3b7da43d77f7038107f5be bef2b16f4b3fded7a0ccfb7f88549264f74b02fb 9350-78y/_5
+props: 3038 11753 111 0 433ca8234d38d2ba821c9aa09a03d731
+cpath: /trunk/docutils/docutils/transforms/frontmatter.py
+copyroot: 0 /
+

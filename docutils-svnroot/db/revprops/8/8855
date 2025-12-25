@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-10-15T16:03:38.940048Z
+K 7
+svn:log
+V 142
+Also drop Python 3.6 in Docutils 1.0.
+
+Python 3.6 will reach its "end of life" in December 2021,
+well before the planned Docutils 1.0-release.
+END

@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-04-10T12:01:48.476293Z
+K 7
+svn:log
+V 235
+Remove spurious selector in HTML5 CSS styles.
+
+While a topic is described as "like a block quote with a title",
+the document model does not support attributions nested in topics,
+so the selector ".topic p.attribution" does never match.
+END

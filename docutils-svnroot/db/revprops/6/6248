@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2010-03-01T20:59:57.974192Z
+K 7
+svn:log
+V 206
+* Added :lebel: option for ascii-mathml:: directive
+* Added :format: option for sectnum:: directive
+* Added ``$SUBSTITUTION`` variable for perl:: directive
+* Added :class: option for code-block:: directive
+
+END

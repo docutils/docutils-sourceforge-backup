@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-05-20T12:20:54.382177Z
+K 7
+svn:log
+V 128
+MathML: Use <mi> for captial Greek letters.
+
+Use ``<mi>`` (letters are identifiers) and set upright with
+'mathvariant="normal"'.
+END

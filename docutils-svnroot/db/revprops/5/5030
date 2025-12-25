@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2007-03-21T00:42:39.293012Z
+K 7
+svn:log
+V 111
+moved Element.__str__ to Node.__str__ so Text has it too;
+made all Element and Text node convertible to unicode
+END

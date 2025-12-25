@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-08-16T23:01:34.267660Z
+K 7
+svn:log
+V 196
+added writer_aux.Admonitions transform;
+use it in html4css1 and newlatex2e;
+changed priority of writer_aux.Compound transform from 810 to 910;
+added (basic) admonition support to newlatex2e writer
+END

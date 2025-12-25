@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-06-29T19:44:43.980152Z
+K 7
+svn:log
+V 66
+Added ``DocTreeInput`` class, for reprocessing existing documents.
+END

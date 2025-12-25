@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 12
+paultremblay
+K 8
+svn:date
+V 27
+2011-09-27T19:07:30.642878Z
+K 7
+svn:log
+V 73
+Stylesheets reflect simpler FO for pages with simple runs (the
+default).
+
+END

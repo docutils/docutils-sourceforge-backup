@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-06-30T07:47:46.949872Z
+K 7
+svn:log
+V 148
+HTML5: Support details disclosure elements
+
+Items of a definition list with class argument "details" are
+converted to `details disclosure elements`.
+END

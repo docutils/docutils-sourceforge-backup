@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-04-17T20:26:50.531233Z
+K 7
+svn:log
+V 354
+Raise ValueError if StringOutput.write() gets data of unsupported type
+
+... instead of returning/storing an "informal string representation".
+
+Replaces the test for the "odt" writers" with binary output in
+`core.publish_programmatically()` with a generic alternative
+(that also catches the case of the "null" writer instead of writing
+the string "None").
+END

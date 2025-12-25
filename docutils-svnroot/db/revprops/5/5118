@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+gbrandl
+K 8
+svn:date
+V 27
+2007-05-24T14:04:14.471403Z
+K 7
+svn:log
+V 118
+Reduce SmartyPants to what we need, and make some speedups
+(regexes should really be compiled outside of functions).
+
+
+END

@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2015-02-19T17:08:20.472493Z
+K 7
+svn:log
+V 124
+Apply patch [ 119 ] by Anatoly Techtonik
+
+use absolute paths for ``default_stylesheet_path`` 
+and ``default_template_path``.
+END

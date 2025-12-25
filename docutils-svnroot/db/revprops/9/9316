@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-01-16T09:19:08.413711Z
+K 7
+svn:log
+V 122
+Always use POSIX path in macros loading stylesheets.
+
+Thanks to Alan G. Isaac for reporting the bug and proposing a patch.
+END

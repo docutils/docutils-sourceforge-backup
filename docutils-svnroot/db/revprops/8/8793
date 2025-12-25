@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-07-12T21:22:04.750731Z
+K 7
+svn:log
+V 258
+Major rework of math2html converter.
+
+Fork from elyxer (https://github.com/alexfernandez/elyxer).
+
+Remove code that is not requried for math conversion.
+
+Fix/update LaTeX/Unicode character translation, use common codebase
+with MathML.
+
+Support more commands.
+END

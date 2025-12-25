@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-06-15T10:38:46.949445Z
+K 7
+svn:log
+V 78
+Default type area defined in the document class (not by the typearea package).
+END

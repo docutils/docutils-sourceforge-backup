@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-04-17T12:21:36.621737Z
+K 7
+svn:log
+V 385
+Fix "error_encoding" default in the interactive help output.
+
+While the "error_encoding" configuration setting allows specifying
+the error handler after a colon, the default value is just the encoding
+of the error stream determined by Python and the related error handler
+defaults to the "error_encoding_error_handler" setting's default.
+
+Also fix the output samples in the test suite.
+END

@@ -1,0 +1,29 @@
+K 7
+.flake8
+V 28
+file 4-9001.0-9130.r9214/513
+K 10
+.gitignore
+V 25
+file 1-8340.0.r9002/14193
+K 23
+.pre-commit-config.yaml
+V 23
+file 1-9001.0.r9101/249
+K 8
+docutils
+V 21
+dir 1-7.0.r9229/25654
+K 7
+sandbox
+V 21
+dir 1-17.0.r9200/7237
+K 3
+web
+V 21
+dir 1-2.0.r9051/27531
+END
+K 8
+docutils
+V 19
+dir 1-7.0.t9229-757

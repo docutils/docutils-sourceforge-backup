@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2013-01-21T15:19:18.891435Z
+K 7
+svn:log
+V 59
+Fix [ 3601607 ] node.__repr__() must return `str` instance.
+END

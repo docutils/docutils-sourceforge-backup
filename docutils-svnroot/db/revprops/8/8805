@@ -1,0 +1,29 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-08-10T14:13:35.552817Z
+K 7
+svn:log
+V 445
+MathML: fixes and additions.
+
+Math accent commands more similar to their LaTeX behaviour.
+
+Additions for HTML export.
+
+Use boolean values for boolean node arguments.
+
+Downcase node arguments before storing.
+
+Use class argument "boldsymbol" for \boldsymbol content.
+
+Alignment of multi line equations similar to AMS-LaTeX "align" environment.
+
+Add space after bracket in "cases" environment, left-align columns.
+
+Fix spacing before "unary" minus.
+END

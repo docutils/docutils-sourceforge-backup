@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-09-03T09:35:59.995377Z
+K 7
+svn:log
+V 165
+Update documentation of `uri2imagepath()` method.
+
+Update wording around `URI references`__. Cf. [r9883].
+
+__ https://www.rfc-editor.org/rfc/rfc3986.html#section-4.1
+END

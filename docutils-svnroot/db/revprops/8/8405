@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-10-29T22:48:16.708885Z
+K 7
+svn:log
+V 292
+Less invasive change-plan for `identifier key` generation.
+
+Do not use `identifier normalization` on the "id_prefix".
+
+This allows users to keep generating identifiers with a prefix
+containing capital letters or characters allowed in some output
+formats but not in Docutils `identifier keys`.
+END

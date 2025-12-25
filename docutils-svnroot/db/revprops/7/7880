@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2015-04-19T19:58:29.586117Z
+K 7
+svn:log
+V 176
+Refine documentation of Docutils table objects.
+
+Clarify why the Bug report
+#236 "table" node tree needs "colspec" node in "tgroup"
+is rejected (this is a feature, not a bug).
+
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2007-08-19T22:32:00.236493Z
+K 7
+svn:log
+V 127
+docset-root should be relative to current file, not current document (tested with standard.txt checked in in previous revision)
+END

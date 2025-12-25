@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-08-15T19:45:02.396850Z
+K 7
+svn:log
+V 114
+restored a bug (removed in r3807) which lingers; added a commented-out test case for said bug; removed a bogus bug
+END

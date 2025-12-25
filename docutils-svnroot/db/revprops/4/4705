@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 8
+dkuhlman
+K 8
+svn:date
+V 27
+2006-08-30T16:48:31.853395Z
+K 7
+svn:log
+V 115
+Added support for visit_authors and visit_title_reference.  Changed
+to use the rststyle-textbody for normal text.
+
+
+END

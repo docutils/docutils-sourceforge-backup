@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-02-02T23:47:33.746672Z
+K 7
+svn:log
+V 209
+latex writer fixes
+
+\\\\leavevmode before longtable only when needed (prevents spurious vspace),
+do not advance table counter for tables without caption,
+Unicode char conversions (thin space, check/cross mark)
+END

@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-10-13T12:40:46.100229Z
+K 7
+svn:log
+V 410
+Downgrade "duplicate ID" message from "serious" to "error".
+
+A duplicate ID is not a critical error where the output will
+inevitably contain severe errors but rather "a major issue that should
+adressed. If ignored, the output will contain unpredictable errors."
+(cf. :PEP:`0258` Error Handling).
+
+Re-use `nodes.document.set_id()` in the XML parser, but
+only for registering an existing ID, do not generate IDs.
+END

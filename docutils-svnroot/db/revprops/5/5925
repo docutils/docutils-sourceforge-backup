@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-04-27T10:50:38.266398Z
+K 7
+svn:log
+V 196
+test_functional.py failed printing diff containing non-ASCII chars
+
+Failsave version is to explicitely encode with replace error handler,
+encoding as unicode would be a (maybe better) alternative.
+END

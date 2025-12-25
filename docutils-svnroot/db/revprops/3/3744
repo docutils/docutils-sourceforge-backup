@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T18:52:52.528707Z
+K 7
+svn:log
+V 239
+created branch for accepted removal/change of to-do list entries;
+to be merged into trunk soon;
+svn cp svn+ssh://svn.berlios.de/svnroot/repos/docutils/trunk/docutils/docs/dev/ svn+ssh://svn.berlios.de/svnroot/repos/docutils/branches/todo2/
+END

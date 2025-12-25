@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-11-13T18:29:27.635559Z
+K 7
+svn:log
+V 84
+Fix option_marker parsing (bugs:#474).
+
+Don't split at `", "` inside angle brackets.
+END

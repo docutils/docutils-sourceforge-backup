@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+gbrandl
+K 8
+svn:date
+V 27
+2007-07-08T12:53:27.680627Z
+K 7
+svn:log
+V 68
+Save the parsed doctrees in the output directory.
+Misc other fixes.
+
+END

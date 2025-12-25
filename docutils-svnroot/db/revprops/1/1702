@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2003-09-21T17:26:55.000000Z
+K 7
+svn:log
+V 68
+Fix internal references in parsed literal (mbox does not like '#').
+
+END

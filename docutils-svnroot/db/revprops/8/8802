@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-07-13T21:52:22.794451Z
+K 7
+svn:log
+V 49
+Fix bug #421 Typo in r8766
+
+Also add a test case.
+END

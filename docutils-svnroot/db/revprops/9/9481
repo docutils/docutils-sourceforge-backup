@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-11-19T21:19:20.454173Z
+K 7
+svn:log
+V 310
+Smartquotes optimizations part 3.
+
+Skip regexp substitutions if there are no quotes to "educate".
+
+Together, the optimizations bring down the time spent on the smartquotes transformation from
+20% to 10% of the total rst2html5 conversion time.
+(Tested with py-spy on `builthtml` of the Docutils docs directory.)
+END

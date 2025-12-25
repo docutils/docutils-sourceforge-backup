@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 13
+matt_harrison
+K 8
+svn:date
+V 27
+2009-07-15T04:25:14.906362Z
+K 7
+svn:log
+V 69
+add --font command line to rst2odp for changing default font of Arial
+END

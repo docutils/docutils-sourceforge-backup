@@ -1,0 +1,183 @@
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.2
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 5-12.0.r23/123
+type: file
+pred: 5-12.0.r12/805
+count: 1
+text: 21 0 155 1317 fe2c863f42ced1f2d7bd28993a0129cd 76924db3293a34b5784b4c75d0d9276aa0dce434 22-m/_5
+props: 23 0 110 0 2a94ed7a58fe1feebaea27ee0c48460d
+cpath: /trunk/docutils/docs/dev/semantics.txt
+copyroot: 0 /
+
+PLAIN
+K 12
+pysource.dtd
+V 22
+file c-18.0.r18/306043
+K 12
+pysource.txt
+V 22
+file f-18.0.r18/306815
+K 3
+rst
+V 21
+dir h-18.0.r18/307983
+K 13
+semantics.txt
+V 19
+file 5-12.0.r23/123
+K 8
+todo.txt
+V 22
+file n-18.0.r18/306430
+END
+ENDREP
+id: 3-12.0.r23/626
+type: dir
+pred: 3-12.0.r18/308361
+count: 2
+text: 23 397 216 216 81150f4ca2827b79e4cffc1e7f837d74
+cpath: /trunk/docutils/docs/dev
+copyroot: 0 /
+
+PLAIN
+K 3
+dev
+V 18
+dir 3-12.0.r23/626
+K 4
+peps
+V 20
+dir 5-7.0.r18/302726
+K 3
+ref
+V 21
+dir w-18.0.r18/305775
+K 4
+user
+V 22
+dir 1c-18.0.r18/312004
+END
+ENDREP
+id: 3-7.0.r23/945
+type: dir
+pred: 3-7.0.r18/312308
+count: 8
+text: 23 789 143 143 b41ac7a5d953df2fab702a3a5a19016f
+cpath: /trunk/docutils/docs
+copyroot: 0 /
+
+PLAIN
+K 11
+COPYING.txt
+V 22
+file 2-18.0.r18/285012
+K 11
+HISTORY.txt
+V 22
+file 5-18.0.r18/260336
+K 11
+MANIFEST.in
+V 22
+file 7-18.0.r18/312592
+K 10
+README.txt
+V 22
+file 9-18.0.r18/312967
+K 4
+docs
+V 17
+dir 3-7.0.r23/945
+K 8
+docutils
+V 22
+dir 1w-18.0.r18/300813
+K 10
+install.py
+V 23
+file 44-18.0.r18/313369
+K 8
+setup.py
+V 23
+file 46-18.0.r18/301108
+K 4
+test
+V 22
+dir 48-18.0.r18/282564
+K 5
+tools
+V 22
+dir 6w-18.0.r18/284746
+END
+ENDREP
+id: 1-7.0.r23/1533
+type: dir
+pred: 1-7.0.r18/314058
+count: 8
+text: 23 1102 418 418 2a8afa2e78af3e04da4e4a37907809ab
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 18
+dir 1-7.0.r23/1533
+K 7
+sandbox
+V 19
+dir 1-17.0.r17/6364
+K 3
+web
+V 17
+dir 1-2.0.r22/587
+END
+ENDREP
+id: 3-1.0.r23/1809
+type: dir
+pred: 3-1.0.r22/856
+count: 18
+text: 23 1687 109 109 939039a8895370cefe4898acf3a0b80a
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r21/11221
+K 4
+tags
+V 16
+dir 2-1.0.r1/130
+K 5
+trunk
+V 18
+dir 3-1.0.r23/1809
+END
+ENDREP
+id: 0.0.r23/2072
+type: dir
+pred: 0.0.r22/1119
+count: 23
+text: 23 1952 107 107 4cf3779b2c7b092acb0c83ee7488013f
+cpath: /
+copyroot: 0 /
+
+5-12.0.t22-m modify-file true true /trunk/docutils/docs/dev/semantics.txt
+
+
+2072 2207

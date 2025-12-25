@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-08-07T14:05:34.715302Z
+K 7
+svn:log
+V 300
+Small fixes for developer tool to generate punctuation character fiel.
+
+Put flake8 exception directly in offending file.
+
+... after learning how to place a "noqa" comment for a long line
+in the middle of a multi-line string literal.
+
+Normalize formatting, use comprehension instead of repeating code.
+END

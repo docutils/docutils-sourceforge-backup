@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+amohari
+K 8
+svn:date
+V 27
+2008-02-25T13:21:51.751510Z
+K 7
+svn:log
+V 71
+Moved writer logic out of HTMLChunker.write_chunk to the writer class.
+
+END

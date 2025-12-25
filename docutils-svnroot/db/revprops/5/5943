@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-05-12T13:22:20.175171Z
+K 7
+svn:log
+V 76
+Note that local tables of content are ignored if not in a top-level section.
+END

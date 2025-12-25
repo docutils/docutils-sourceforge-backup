@@ -1,0 +1,62 @@
+PLAIN
+K 11
+branchpoint
+V 4
+3821
+END
+ENDREP
+id: 3-1.0-3822.r3826/43
+type: dir
+pred: 3-1.0-3822.r3825/23704
+count: 3672
+text: 3825 23564 127 127 fb1173055c6fe8c23fc884dfb0b4cc31
+props: 3826 0 30 0 8d677d3922bba0172a559139b9e35ead
+cpath: /branches/transforms
+copyroot: 3822 /branches/transforms
+
+PLAIN
+K 7
+nesting
+V 27
+dir 3-1.0-1813.r2577/106277
+K 10
+transforms
+V 23
+dir 3-1.0-3822.r3826/43
+END
+ENDREP
+id: 0-1.0.r3826/400
+type: dir
+pred: 0-1.0.r3825/24015
+count: 138
+text: 3826 293 94 94 ce7a19c50374dc0ce9ecd7e00e8049c8
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r3826/400
+K 4
+tags
+V 19
+dir 2-1.0.r3816/482
+K 5
+trunk
+V 20
+dir 3-1.0.r3824/2897
+END
+ENDREP
+id: 0.0.r3826/676
+type: dir
+pred: 0.0.r3825/24297
+count: 3826
+text: 3826 551 112 112 5c16d8cb5c7b02feb6ee17b6e60d9791
+cpath: /
+copyroot: 0 /
+
+3-1.0-3822.t3825-2y9 modify-dir false true /branches/transforms
+
+
+676 818

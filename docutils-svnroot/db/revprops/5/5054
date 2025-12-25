@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-04-27T15:38:02.524412Z
+K 7
+svn:log
+V 116
+Bless the new Text::Restructured::Writer objects into the passed
+class, so that people can created derived classes.
+
+END

@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-07-29T12:37:21.331851Z
+K 7
+svn:log
+V 226
+LaTeX writer: simplify handling of the "reference_label" customization setting.
+
+Don't wrap references with custom reference-label_ in a `\hyperref` command.
+because the "hyperref" LaTeX package creates a hyperlink by default.
+END

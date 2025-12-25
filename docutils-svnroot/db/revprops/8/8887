@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-11-15T17:55:50.407496Z
+K 7
+svn:log
+V 154
+Work around #434
+
+Avoid "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xfc
+in position 0: invalid start byte" by use of a valid UTF8 test b-string.
+END

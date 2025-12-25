@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 5
+jensj
+K 8
+svn:date
+V 27
+2005-01-28T15:07:24.000000Z
+K 7
+svn:log
+V 71
+Added the remaining symbols and a not command.  Updated documentation.
+
+END

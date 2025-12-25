@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-16T22:03:08.980302Z
+K 7
+svn:log
+V 171
+added support for units in image widths and heights;
+I called a number combined with a unit (e.g. 5em) a "measure"; I am not entirely
+sure if that's the right term, though
+END

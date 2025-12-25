@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-09-23T22:37:00.031560Z
+K 7
+svn:log
+V 340
+Update/fix "standard" functional test sample.
+
+Fix a factual error
+(footnotes must be indented at least 1 space, not 3).
+
+Reword HTML-centric descriptions -- we use the sample for several
+writer tests.
+
+Revert change of expected pseudo-xml sample extension from "txt" to "rst"
+(side-effect of the switch to "rst" extension for rst sources).
+END

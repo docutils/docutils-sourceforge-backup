@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-12-23T14:55:12.780041Z
+K 7
+svn:log
+V 272
+More detailled system-message for include directive with missing parser.
+
+The system-message issued when an "include" directive sets
+the "parser" option to "markdown", "commonmark" or "recommonmark"
+but the upstream parser module is not available
+has source/line info now.
+END

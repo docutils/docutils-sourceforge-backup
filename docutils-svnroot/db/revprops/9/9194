@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-10-28T03:13:51.098263Z
+K 7
+svn:log
+V 53
+Use f-strings in the ``PublishPartsTestCase`` classes
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-11-29T01:52:49.999253Z
+K 7
+svn:log
+V 78
+parameterized the moving of section IDs to titles (not wanted for slide shows)
+END

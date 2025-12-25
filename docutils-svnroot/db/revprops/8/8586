@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-12-02T17:34:59.178025Z
+K 7
+svn:log
+V 107
+New generic front end
+
+Allows the selection of reader, parser, and writer components
+from the command line.
+END

@@ -1,0 +1,9 @@
+id: 5u-18.0.t9229-757
+type: file
+pred: 5u-18.0.r9141/38273
+count: 16
+text: -1 829 1097 20960 57fb17df22740cad8be0ec04cee34926 567ee62c56cb6878c3e4ad29e12975d7f526330b 9229-757/_9
+props: 2975 1531 136 0 4255abd13f9c9d58627b8bb1274d115a
+cpath: /trunk/docutils/test/test_parsers/test_rst/test_option_lists.py
+copyroot: 0 /
+

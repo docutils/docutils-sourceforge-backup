@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-10-16T15:00:35.000000Z
+K 7
+svn:log
+V 69
+only strip <p>aragraphs in HTML if we don't lose relevant attributes
+
+END

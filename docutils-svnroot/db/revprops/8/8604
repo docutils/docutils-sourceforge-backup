@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-01-08T23:34:09.762359Z
+K 7
+svn:log
+V 264
+Fix/improve "odf" writer metadata handling.
+
+Fix "keyword" splitting,
+patch by Casper Meijn, https://github.com/caspermeijn/docutils/commit/af5c7718f68abfb15f5225524b42c9bd1179fce1
+
+Allow generic fields (stored as "Custom Properties"),
+based on patch #122 by pifi.
+END

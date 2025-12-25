@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-12-07T10:42:53.456305Z
+K 7
+svn:log
+V 293
+Move the orphaned python source reader to the sandbox.
+
+The "python" reader is no longer maintained and (in its current form)
+does not work with Python 3.
+
+Documentation from RST docstrings can be generated with the Sphinx
+"autodoc" extension (http://sphinx.pocoo.org/latest/ext/autodoc.html).
+END

@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-04-15T12:27:35.582673Z
+K 7
+svn:log
+V 317
+Avoid dependency of functional tests on PIL/Pillow.
+
+Don't use "scale" image directive option in functional test.
+
+The expected output for the "image" directive with "scale" option
+is tested in `test_writers/test_html5_polyglot_parts.py` and
+`test_writers/test_html4css1_parts.py` with special-casing
+for missing PIL.
+END

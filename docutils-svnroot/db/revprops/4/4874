@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-01-10T20:04:19.295280Z
+K 7
+svn:log
+V 133
+Made compatible with non-breaking spaces in Perl 5.8.0 implementation
+of Unicode.  (Unicode implementation was fixed in Perl 5.8.6.)
+
+END

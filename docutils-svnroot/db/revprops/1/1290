@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2003-04-24T04:30:19.000000Z
+K 7
+svn:log
+V 89
+Removed HTML stuff from rst-mode.el (i.e. restored as before) and split into rst-html.el
+
+END

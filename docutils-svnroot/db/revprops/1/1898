@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 6
+fdrake
+K 8
+svn:date
+V 27
+2004-03-30T22:17:25.000000Z
+K 7
+svn:log
+V 258
+- allow RCS/CVS $keywords$ to be handled even if there is other text in the
+  relevant docinfo fields
+  (closes SF bug #926198)
+- make the tests of the RCS/CVS $keyword$ handling less fragile in the face
+  of non-default -k options
+  (closes SF bug #921085)
+
+END

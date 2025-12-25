@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2018-01-16T13:30:57.766256Z
+K 7
+svn:log
+V 218
+Fix [ 251 ] system_message.copy() TypeError. Fix nodes.Element.copy()
+
+Avoid clash with multiple values for keyword argument "rawsource".
+
+Let nodes.Element.copy() also copy "document", "line",
+and "source" attributes.
+END

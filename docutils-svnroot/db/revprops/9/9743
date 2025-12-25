@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-06T14:03:21.933291Z
+K 7
+svn:log
+V 538
+xml-parser: Unindent continuation lines. Fixes xml round trip.
+
+The XML writer supports formatting XML with newlines and indentation
+(see the corresponding configuration settings).
+
+In most reStructuredText markup blocks, indentation has a semantic
+importance and is removed before passing the block for further parsing.
+As a result, only a limited set of elements may have text with
+spaces after a newline.
+
+Remove indentation of continuation lines unless the containing element
+is a `FixedTextElement`, `literal`, or `Unknown` instance.
+END

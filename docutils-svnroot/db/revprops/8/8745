@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-05-20T12:21:30.863306Z
+K 7
+svn:log
+V 60
+MathML: support space commands, fix math alphabets, cleanup.
+END

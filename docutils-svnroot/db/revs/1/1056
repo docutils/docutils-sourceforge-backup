@@ -1,0 +1,170 @@
+PLAIN
+K 10
+.cvsignore
+V 21
+file 3-339.0.r343/176
+K 22
+DocutilsTestSupport.py
+V 22
+file 49-18.0.r1021/980
+K 11
+alltests.py
+V 21
+file 4e-18.0.r959/547
+K 19
+package_unittest.py
+V 22
+file 3-44.0.r778/16101
+K 16
+test_language.py
+V 22
+file 3-940.0.r994/4121
+K 13
+test_nodes.py
+V 23
+file 4i-18.0.r1054/3258
+K 12
+test_parsers
+V 22
+dir 4k-18.0.r1048/5005
+K 12
+test_readers
+V 21
+dir 3-89.0.r1048/1172
+K 20
+test_statemachine.py
+V 22
+file 6a-18.0.r917/6020
+K 15
+test_transforms
+V 22
+dir 6c-18.0.r1048/2026
+K 13
+test_utils.py
+V 23
+file 6u-18.0.r778/18531
+K 16
+test_viewlist.py
+V 22
+file 3-916.0.r916/1258
+END
+ENDREP
+id: 48-18.0.r1056/603
+type: dir
+pred: 48-18.0.r1054/4197
+count: 108
+text: 1056 0 590 590 779285523e5b0763c6d572f0d09ffa15
+props: 343 993 44 0 e8789a4081469b0bbc8d88dcdbd925ef
+cpath: /trunk/docutils/test
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 21
+file 2-340.0.r340/154
+K 11
+COPYING.txt
+V 21
+file 2-18.0.r763/7254
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r996/1104
+K 11
+HISTORY.txt
+V 22
+file 5-18.0.r1054/2828
+K 11
+MANIFEST.in
+V 20
+file 7-18.0.r344/206
+K 10
+README.txt
+V 21
+file 9-18.0.r1055/908
+K 4
+docs
+V 20
+dir 3-7.0.r1054/5429
+K 8
+docutils
+V 22
+dir 1w-18.0.r1053/1977
+K 10
+install.py
+V 23
+file 44-18.0.r18/313369
+K 8
+setup.py
+V 22
+file 46-18.0.r1014/632
+K 4
+test
+V 21
+dir 48-18.0.r1056/603
+K 5
+tools
+V 21
+dir 6w-18.0.r983/4627
+END
+ENDREP
+id: 1-7.0.r1056/1331
+type: dir
+pred: 1-7.0.r1055/1696
+count: 854
+text: 1056 821 497 497 be25397cb66cc373d22082f366f35a97
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r1056/1331
+K 7
+sandbox
+V 21
+dir 1-17.0.r1043/4015
+K 3
+web
+V 20
+dir 1-2.0.r1055/2615
+END
+ENDREP
+id: 3-1.0.r1056/1672
+type: dir
+pred: 3-1.0.r1055/2898
+count: 1048
+text: 1056 1543 116 116 0acf287558466c927bad206f955a46c3
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 17
+dir 0-1.0.r63/562
+K 4
+tags
+V 17
+dir 2-1.0.r65/217
+K 5
+trunk
+V 20
+dir 3-1.0.r1056/1672
+END
+ENDREP
+id: 0.0.r1056/1945
+type: dir
+pred: 0.0.r1055/3171
+count: 1056
+text: 1056 1824 108 108 7a8ee5eb6b11cfbbc0519695a7945607
+cpath: /
+copyroot: 0 /
+
+4g-18.0.r18/261513 delete-file false false /trunk/docutils/test/difflib.py
+
+
+1945 2088

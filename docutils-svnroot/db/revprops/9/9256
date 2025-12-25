@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-11-18T14:08:03.308372Z
+K 7
+svn:log
+V 158
+Revert FutureWarnings.
+
+Wait with warnings until a consensus is found about the future
+"string/bytes" export API and stable usage patterns can be recommended.
+END

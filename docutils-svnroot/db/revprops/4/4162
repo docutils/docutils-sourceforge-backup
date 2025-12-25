@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-12-08T17:28:40.531830Z
+K 7
+svn:log
+V 67
+tests for the "container" directive (forgot to add it a while back)
+END

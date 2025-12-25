@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2007-06-18T16:17:28.684859Z
+K 7
+svn:log
+V 147
+renaming test_html4trans.py to check_html4trans.py;
+adding function to convert syntax-samples file 
+(rendering tools/test-syntax-samples obsolete)
+
+END

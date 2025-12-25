@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-05-25T15:33:01.327199Z
+K 7
+svn:log
+V 184
+use directive_error to throw errors;
+do not populate header/footer with a paragraph containing an
+error message if the header/footer directive is empty;
+removed HeaderFooter base class
+END

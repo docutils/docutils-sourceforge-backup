@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-02-11T14:47:51.428366Z
+K 7
+svn:log
+V 158
+Update documentation of the "table" directive's "widths" option.
+
+The default behaviour of the "html5" writer resembles
+``:widths: auto`` since Docutils 0.18.
+END

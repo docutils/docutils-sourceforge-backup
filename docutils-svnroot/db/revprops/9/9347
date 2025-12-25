@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-04-14T00:11:56.597387Z
+K 7
+svn:log
+V 256
+Announce change of "math-output" setting default for HTML5 to "MathML".
+
+MathML is supported by Chrome since January 2023.
+
+Use MathML in documentation pages generated with the HTML5 writer already now.
+
+Update "LaTeX syntax for mathematics" documentation.
+END

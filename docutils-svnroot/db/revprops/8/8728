@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-05-18T21:33:28.566778Z
+K 7
+svn:log
+V 198
+Default of "legacy_class_functions" setting changed to "False".
+
+- The setting `legacy_class_functions`_ now defaults to "False".
+
+- latex2e/docutils.sty: Fix excessive padding above sidebar titles.
+END

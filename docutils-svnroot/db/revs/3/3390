@@ -1,0 +1,91 @@
+PLAIN
+K 9
+.htaccess
+V 23
+file 2-2167.0.r3099/157
+K 15
+PyBanner016.png
+V 17
+file 2-5.0.r5/845
+K 9
+index.txt
+V 18
+file 2-4.0.r3386/0
+K 17
+mailing-lists.txt
+V 24
+file 4-3385.0.r3385/3405
+K 6
+mirror
+V 20
+dir 2-15.0.r134/5759
+K 7
+rst.png
+V 20
+file e-17.0.r17/4088
+K 7
+rst.txt
+V 21
+file h-17.0.r2431/245
+END
+ENDREP
+id: 1-2.0.r3390/309
+type: dir
+pred: 1-2.0.r3389/713
+count: 110
+text: 3390 0 296 296 c92acfa7e597c80184009306b5495241
+cpath: /trunk/web
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r3384/2947
+K 7
+sandbox
+V 21
+dir 1-17.0.r3388/2795
+K 3
+web
+V 19
+dir 1-2.0.r3390/309
+END
+ENDREP
+id: 3-1.0.r3390/587
+type: dir
+pred: 3-1.0.r3389/993
+count: 3340
+text: 3390 459 115 115 9bf65e48ac5226b28e65361857664a4e
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r3171/7579
+K 4
+tags
+V 19
+dir 2-1.0.r3383/196
+K 5
+trunk
+V 19
+dir 3-1.0.r3390/587
+END
+ENDREP
+id: 0.0.r3390/861
+type: dir
+pred: 0.0.r3389/1268
+count: 3390
+text: 3390 736 112 112 e4363d7d3022ff4dd2fee499331a9ba3
+cpath: /
+copyroot: 0 /
+
+2-409.0.r1649/178 delete-file false false /trunk/web/docutils.conf
+
+2-144.0.r3389/42 delete-file false false /trunk/web/default.css
+
+
+861 1002

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 12
+paultremblay
+K 8
+svn:date
+V 27
+2011-01-24T04:16:39.715885Z
+K 7
+svn:log
+V 98
+Cleaned up stylesheet so the names of the attributes followed the
+logic of the other stylesheets.
+
+END

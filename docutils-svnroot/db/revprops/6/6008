@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2009-07-04T12:04:09.818257Z
+K 7
+svn:log
+V 78
+Final adaptions to `latex2e` writer r5993. Some debugging and
+beautification.
+
+END

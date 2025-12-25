@@ -1,0 +1,27 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-06T14:02:54.247347Z
+K 7
+svn:log
+V 665
+Do not include INFO-level messages in XML writer functional test.
+
+The functional tests for "docutils_xml" and for "pseudoxml" also test
+the generation of INFO-level messages by setting `report_level: 1`.
+
+This prevents use of the test output for the XML parser round-trip test:
+
+* with `report_level: 1`, the original system_messages are preserved
+  and new messages are generated for unreferenced targets :(
+
+* with the default `report_level: 2`, the original system_messages are
+  filtered out by the FilterMessages transform :(
+
+-> Don't generate INFO-level messages in the XML writer test.
+   (INFO-level messages are still tested with the "pseudoxml" writer.)
+END

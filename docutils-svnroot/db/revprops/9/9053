@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-04-14T14:52:57.535666Z
+K 7
+svn:log
+V 455
+Explicitly import `docutils.readers.doctree` sub-module.
+
+Importing a sub-package (here docutils.readers) does not ensure
+all of its modules are imported as well.
+
+Therefore, test_publisher.py failed when run as stand-alone script
+(while the test suite for some reason still finished without failure).
+
+Flake8 complains about an unused import when accessing the sub-module
+via its parent (i.e. as `readers.doctree`).
+
+Thanks to Adam Turner for the report.
+END

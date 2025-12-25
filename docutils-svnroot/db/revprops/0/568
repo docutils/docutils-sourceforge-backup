@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-08-21T02:43:46.000000Z
+K 7
+svn:log
+V 84
+Added a ``source`` attribute to Reporter instances and ``system_message`` elements.
+
+END

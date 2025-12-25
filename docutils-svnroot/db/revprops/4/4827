@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 8
+dkuhlman
+K 8
+svn:date
+V 27
+2006-12-11T03:39:44.387313Z
+K 7
+svn:log
+V 67
+Fix to open output file in binary mode for MS Windows compatibility
+END

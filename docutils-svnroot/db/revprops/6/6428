@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-09-20T21:26:33.933560Z
+K 7
+svn:log
+V 198
+New writer generating LaTeX code for compiling with ``xelatex``.
+
+A separate writer (inheriting from latex2e) instead of a ``--xetex``
+   option allows separate config options for XeTeX vs. LaTeX2e.
+END

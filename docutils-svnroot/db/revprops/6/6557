@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-01-13T23:00:54.131450Z
+K 7
+svn:log
+V 91
+html4strict: no newline after <pre> tag in literal block
+
+(leads to blank line in XHTML1.1)
+END

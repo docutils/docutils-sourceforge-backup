@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-01-21T17:24:18.927855Z
+K 7
+svn:log
+V 62
+added missing properties; added executable flag for rst2chm.py
+END

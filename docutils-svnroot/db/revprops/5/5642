@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2008-09-05T18:18:28.267993Z
+K 7
+svn:log
+V 81
+added test & fix for matched openers & closers (inline markup recognition rule 5)
+END

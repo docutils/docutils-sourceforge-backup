@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-04-01T01:47:31.877786Z
+K 7
+svn:log
+V 110
+--- MERGE: merged r4440 to maintenance branch; original log message:
+    generalized test for 64-bit platforms
+END

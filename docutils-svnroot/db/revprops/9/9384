@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-05-11T15:50:42.193305Z
+K 7
+svn:log
+V 117
+Fix false alarm when testing with pypy 3.9.
+
+Work around non-standard error message from pypy 3.9.
+Fixes [bugs:#471].
+END

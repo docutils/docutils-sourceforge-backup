@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-11-08T21:51:31.584531Z
+K 7
+svn:log
+V 74
+partial revert -- the website cron job is still run by felixwiemann; sorry
+END

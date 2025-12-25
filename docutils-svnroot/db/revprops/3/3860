@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2005-09-09T15:17:31.438163Z
+K 7
+svn:log
+V 51
+New support for section title underlining in Emacs.
+END

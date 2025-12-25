@@ -1,0 +1,26 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-10-12T17:33:24.697760Z
+K 7
+svn:log
+V 528
+Fix bug #424 Wrong circular inclusion detection.
+
+The current heuristic for detection of circular includes
+fails with nested parsing. Line numbering differs in nested
+state-machines, inclusions don't show up in the parent, if
+a view is detached (e.g. for table cell content).
+
+The new heuristic uses a "magic" comment instead of line numbers
+to keep a log of recursive inclusions.
+
+Add a test case for a false positive and a case for
+too late detection in parsed includes.
+
+Adapt tests to (irrelevant) side effects of the patch.
+END

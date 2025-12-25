@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-08-06T08:02:23.391813Z
+K 7
+svn:log
+V 334
+Fix test script failure if run from a sub-dir of docutils/test/.
+
+Commit [r9785] utilizes `pathlib.Path.relative_to()` in
+file-path normalization.
+This method fails if there is no common part in the two paths,
+e.g., when running "test/test_writers/test_html5_polyglot_parts.py"
+stand-alone or the test suite from "test/test_writers/".
+END

@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2024-11-14T17:50:45.970024Z
+K 7
+svn:log
+V 108
+manpage writer: 
+
+- Use .MT/.ME macros for mailto.uris.
+- Do not output .UR/.UE macros if refuri is not set
+
+END

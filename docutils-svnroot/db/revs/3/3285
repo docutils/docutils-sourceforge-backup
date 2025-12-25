@@ -1,0 +1,464 @@
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: i-3071.1-3285.r3285/123
+type: file
+pred: i-3071.0.r3106/1911
+count: 3
+text: 3106 1464 137 351 9b294f460f7cf8d661aca9168877a944 60613efeccfce867df7181fae8e1eabfe86d80c7 3105-2e9/_e
+props: 3285 0 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/test/functional/input/dangerous.txt
+copyfrom: 3278 /trunk/docutils/test/functional/input/dangerous.txt
+
+PLAIN
+K 13
+dangerous.txt
+V 28
+file i-3071.1-3285.r3285/123
+K 4
+data
+V 22
+dir f-2357.0.r3278/876
+K 14
+field_list.txt
+V 24
+file f-3164.0.r3164/3336
+K 17
+latex_docinfo.txt
+V 24
+file b-2937.0.r2938/2379
+K 12
+pep_html.txt
+V 24
+file 8-3040.0.r3243/3287
+K 10
+simple.txt
+V 23
+file 5-2991.0.r2991/903
+K 28
+standalone_rst_html4css1.txt
+V 25
+file s-2357.0.r3184/11157
+K 24
+standalone_rst_latex.txt
+V 24
+file u-2357.0.r2660/3091
+K 27
+standalone_rst_newlatex.txt
+V 23
+file 5-3272.0.r3272/374
+END
+ENDREP
+id: e-2357.0.r3285/977
+type: dir
+pred: e-2357.0.r3279/1186
+count: 37
+text: 3285 487 477 477 57eed969f4159c64798236757229d770
+cpath: /trunk/docutils/test/functional/input
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: f-3071.0-3285.r3285/1285
+type: file
+pred: f-3071.0.r3106/2781
+count: 3
+text: 3106 1074 363 2428 73b8998a4d17acce8c4484f6eb0305d1 d0ba76c458f93e461df44da7f890d28820e6bc07 3105-2e9/_c
+props: 3285 1162 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/test/functional/expected/dangerous.html
+copyfrom: 3278 /trunk/docutils/test/functional/expected/dangerous.html
+
+PLAIN
+K 14
+dangerous.html
+V 29
+file f-3071.0-3285.r3285/1285
+K 21
+field_name_limit.html
+V 22
+file c-3164.0.r3191/94
+K 17
+latex_docinfo.tex
+V 24
+file 8-2937.0.r2938/3234
+K 23
+misc_rst_html4css1.html
+V 23
+file 5-2993.0.r2993/366
+K 13
+pep_html.html
+V 24
+file 5-3040.0.r3243/4206
+K 29
+standalone_rst_html4css1.html
+V 23
+file 9-2357.0.r3262/215
+K 24
+standalone_rst_latex.tex
+V 24
+file c-2357.0.r3236/4239
+K 28
+standalone_rst_pseudoxml.txt
+V 24
+file 5-3185.0.r3261/2213
+END
+ENDREP
+id: 8-2357.0.r3285/2137
+type: dir
+pred: 8-2357.0.r3279/2223
+count: 77
+text: 3285 1662 462 462 880a0bf4a78508cc7af2e7f1b4c3b122
+cpath: /trunk/docutils/test/functional/expected
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: l-3071.2-3285.r3285/2450
+type: file
+pred: l-3071.0.r3071/6853
+count: 1
+text: 3071 4055 333 316 0c5e3784fd311ff1325725a49aa47920 6118d37f7ffe7d3497c2649d9f9ef57745876935 3070-2da/_n
+props: 3285 2327 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/test/functional/tests/dangerous.py
+copyfrom: 3278 /trunk/docutils/test/functional/tests/dangerous.py
+
+PLAIN
+K 11
+_default.py
+V 25
+file 11-2357.0.r2660/4677
+K 12
+dangerous.py
+V 29
+file l-3071.2-3285.r3285/2450
+K 19
+field_name_limit.py
+V 24
+file i-3164.0.r3164/5163
+K 16
+latex_docinfo.py
+V 24
+file e-2937.0.r2937/3869
+K 21
+misc_rst_html4css1.py
+V 24
+file b-2991.0.r2991/2489
+K 11
+pep_html.py
+V 24
+file b-3040.0.r3243/5181
+K 27
+standalone_rst_html4css1.py
+V 25
+file 14-2357.0.r2639/2723
+K 23
+standalone_rst_latex.py
+V 25
+file 16-2357.0.r2357/5992
+K 27
+standalone_rst_pseudoxml.py
+V 25
+file 8-3185.0.r3185/12758
+END
+ENDREP
+id: 10-2357.0.r3285/3333
+type: dir
+pred: 10-2357.0.r3279/3297
+count: 15
+text: 3285 2816 504 504 eb7d9b5507357d51bc3a3692c6f6d1cc
+cpath: /trunk/docutils/test/functional/tests
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 24
+file 5-2357.0.r2369/2122
+K 8
+expected
+V 23
+dir 8-2357.0.r3285/2137
+K 5
+input
+V 22
+dir e-2357.0.r3285/977
+K 6
+output
+V 21
+dir w-2357.0.r2993/63
+K 5
+tests
+V 24
+dir 10-2357.0.r3285/3333
+END
+ENDREP
+id: 3-2357.0.r3285/3743
+type: dir
+pred: 3-2357.0.r3279/3708
+count: 87
+text: 3285 3522 208 208 105f53672cefebb8c97000ae8ff5cee6
+cpath: /trunk/docutils/test/functional
+copyroot: 0 /
+
+PLAIN
+K 22
+DocutilsTestSupport.py
+V 23
+file 49-18.0.r3268/1479
+K 11
+alltests.py
+V 23
+file 4e-18.0.r3253/1732
+K 4
+data
+V 23
+dir 3-1662.0.r3039/6700
+K 13
+docutils.conf
+V 24
+file 6-1661.0.r2385/2146
+K 19
+docutils_difflib.py
+V 24
+file 6-2354.0.r2354/1272
+K 10
+functional
+V 23
+dir 3-2357.0.r3285/3743
+K 19
+package_unittest.py
+V 21
+file 3-44.0.r2454/856
+K 20
+test_dependencies.py
+V 24
+file 3-2679.0.r2683/4279
+K 18
+test_functional.py
+V 24
+file 18-2357.0.r3176/122
+K 10
+test_io.py
+V 23
+file 5-3138.0.r3139/243
+K 16
+test_language.py
+V 23
+file 3-940.0.r3085/8438
+K 13
+test_nodes.py
+V 23
+file 4i-18.0.r3129/8228
+K 12
+test_parsers
+V 22
+dir 4k-18.0.r3253/5925
+K 12
+test_readers
+V 21
+dir 3-89.0.r3129/2577
+K 16
+test_settings.py
+V 24
+file g-1662.0.r3039/4956
+K 20
+test_statemachine.py
+V 22
+file 6a-18.0.r917/6020
+K 15
+test_transforms
+V 22
+dir 6c-18.0.r3199/4612
+K 13
+test_utils.py
+V 21
+file 6u-18.0.r3171/53
+K 16
+test_viewlist.py
+V 23
+file 3-916.0.r3085/3892
+K 12
+test_writers
+V 23
+dir 5-1211.0.r3257/3198
+END
+ENDREP
+id: 48-18.0.r3285/4927
+type: dir
+pred: 48-18.0.r3279/4892
+count: 458
+text: 3285 3924 990 990 01e33a283252dd2930ef092c2824d682
+props: 343 993 44 0 e8789a4081469b0bbc8d88dcdbd925ef
+cpath: /trunk/docutils/test
+copyroot: 0 /
+
+PLAIN
+K 8
+BUGS.txt
+V 23
+file 2-2181.0.r3252/723
+K 11
+COPYING.txt
+V 21
+file 2-18.0.r3096/363
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r3230/215
+K 11
+HISTORY.txt
+V 22
+file 5-18.0.r3257/2259
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r2513/394
+K 10
+README.txt
+V 19
+file 9-18.0.r3079/0
+K 10
+THANKS.txt
+V 24
+file 2-2182.0.r3243/7816
+K 4
+docs
+V 20
+dir 3-7.0.r3283/1115
+K 8
+docutils
+V 22
+dir 1w-18.0.r3284/2816
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 23
+file 46-18.0.r2901/3967
+K 4
+test
+V 22
+dir 48-18.0.r3285/4927
+K 5
+tools
+V 22
+dir 6w-18.0.r3280/1667
+END
+ENDREP
+id: 1-7.0.r3285/5786
+type: dir
+pred: 1-7.0.r3284/3680
+count: 2485
+text: 3285 5149 624 624 ef04d94ca461ede9f64579b636a82820
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r3285/5786
+K 7
+sandbox
+V 21
+dir 1-17.0.r3264/5200
+K 3
+web
+V 20
+dir 1-2.0.r3137/1247
+END
+ENDREP
+id: 3-1.0.r3285/6129
+type: dir
+pred: 3-1.0.r3284/4023
+count: 3238
+text: 3285 6000 116 116 2be64d301abc16a4944cbc70144846a6
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r3171/7579
+K 4
+tags
+V 20
+dir 2-1.0.r2576/3944
+K 5
+trunk
+V 20
+dir 3-1.0.r3285/6129
+END
+ENDREP
+id: 0.0.r3285/6408
+type: dir
+pred: 0.0.r3284/4302
+count: 3285
+text: 3285 6281 114 114 c593da89d5dd73f40dbbc8df6f11217b
+cpath: /
+copyroot: 0 /
+
+f-3071._0.t3284-2j8 add-file false true /trunk/docutils/test/functional/expected/dangerous.html
+3278 /trunk/docutils/test/functional/expected/dangerous.html
+f-3071.0-3279.r3279/1372 delete-file false false /trunk/docutils/test/functional/expected/restricted.html
+
+l-3071._2.t3284-2j8 add-file false true /trunk/docutils/test/functional/tests/dangerous.py
+3278 /trunk/docutils/test/functional/tests/dangerous.py
+l-3071.2-3279.r3279/2413 delete-file false false /trunk/docutils/test/functional/tests/restricted.py
+
+i-3071._1.t3284-2j8 add-file false true /trunk/docutils/test/functional/input/dangerous.txt
+3278 /trunk/docutils/test/functional/input/dangerous.txt
+i-3071.1-3279.r3279/327 delete-file false false /trunk/docutils/test/functional/input/restricted.txt
+
+
+6408 6551

@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-12-14T13:20:59.820073Z
+K 7
+svn:log
+V 339
+Documentation update
+
+Announce change to "ids" handling in case of a name conflict between
+explicit and implicit targets.
+
+Update security howto.
+
+Add hyperlink target for the description of the special syntax for
+Standard Definition Files in the "include" directive documentation.
+
+Small fixes and additions to documentation and comments.
+END

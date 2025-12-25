@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-09-12T12:57:48.039912Z
+K 7
+svn:log
+V 68
+Fix test_writers html4css when PIL is installed.
+
+Fixup for [r9924].
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 8
+dkuhlman
+K 8
+svn:date
+V 27
+2008-07-08T20:04:55.235909Z
+K 7
+svn:log
+V 92
+Added support for sub-script and super-script and for classifier on definition list terms.
+
+
+END

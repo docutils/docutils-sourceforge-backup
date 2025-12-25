@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-06-25T20:58:33.324411Z
+K 7
+svn:log
+V 90
+Doctree documentation fixes.
+
+Fix typos, add links.
+Reword/clarify "footnote" description.
+END

@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-11-13T19:42:17.000000Z
+K 7
+svn:log
+V 156
+updated expected HTML output of functional test
+because of newly added "docutils" class attributes;
+I visually verified that the appearance has not changed
+
+END

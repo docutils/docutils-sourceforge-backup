@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-05-14T00:26:50.914893Z
+K 7
+svn:log
+V 227
+added docutils.parsers.rst.SystemMessage, to be thrown from directive code;
+use it in some places;
+catch it in the reST parser;
+added Directive.assert_has_content, and use it
+added some assertions for directives' return values;
+END

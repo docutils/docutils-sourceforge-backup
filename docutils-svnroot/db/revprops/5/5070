@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-05-07T17:47:17.059577Z
+K 7
+svn:log
+V 53
+Fixed a problem with a Linuxism in the find command.
+
+END

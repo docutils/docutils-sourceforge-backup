@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-04T08:58:00.408355Z
+K 7
+svn:log
+V 334
+"nodes" unit tests update.
+
+Merge `nodes.Text` tests for str and unicode (leftover from Py2 times).
+Test string-related methods with non-ASCII letter.
+Test correct handling of escaping:
+    Access the raw (null-escaped) text with `str(<instance>)`
+    and unescaped text with `<instance>.astext()`.
+
+Test `whitespace_normalize_name()`
+END

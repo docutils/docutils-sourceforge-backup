@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2007-07-11T09:30:22.837892Z
+K 7
+svn:log
+V 43
+Added code for font-locking doctest blocks.
+END

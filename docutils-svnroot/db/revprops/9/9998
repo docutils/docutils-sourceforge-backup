@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-12-11T14:36:47.983300Z
+K 7
+svn:log
+V 455
+Test and fix `publish_parts()` with the LaTeX writer.
+
+New test module for the LaTeX writer "parts" interface.
+
+Make `writers.latex2e.Writer.assemble_parts()` idempotent
+The `assemble_parts()` method adds newlines to "head" parts for better formatting
+of the output file. However, is called in `translate()` and again by
+publish_parts(), leading to spurious double trailing newlines.
+
+Use super() when calling methods from the parent class.
+
+Use f-strings
+END

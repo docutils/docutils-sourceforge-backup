@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-01-19T11:55:26.348790Z
+K 7
+svn:log
+V 176
+Fix handling of missing stylesheets. Updated and simplied tests.
+
+Missing stylesheets are no reason to abort conversion:
+Report as error and insert a comment in the output doc.
+END

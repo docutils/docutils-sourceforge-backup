@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-03-27T14:22:09.093238Z
+K 7
+svn:log
+V 246
+moved comment away from the top, so that the document begins
+with its title (e.g. Google displays the first text of text files as title);
+clarified text referring to Gmane -- it's not only archives,
+but normal reading and writing is also possible
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-11-09T16:51:33.000000Z
+K 7
+svn:log
+V 96
+add <span class="..."> tags for inline-level raw nodes in HTML
+to get the class of the raw node
+
+END

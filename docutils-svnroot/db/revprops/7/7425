@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2012-05-03T16:30:55.918005Z
+K 7
+svn:log
+V 31
+roadmap: end python2.3 support
+
+END

@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 4
+cben
+K 8
+svn:date
+V 27
+2004-04-27T10:38:44.000000Z
+K 7
+svn:log
+V 132
+Added the auto-generated `Makefile.docutils.txt` to CVS so that the html
+version will appear on the web.
+Comment fix in `Makefile`.
+
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2024-03-26T23:14:35.067506Z
+K 7
+svn:log
+V 68
+Fix: docutils/__init__.py __version_info__ must be changed manually
+
+END

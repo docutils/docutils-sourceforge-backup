@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 8
+reuleaux
+K 8
+svn:date
+V 27
+2006-09-15T10:33:23.380007Z
+K 7
+svn:log
+V 149
+correction for multiline comments, especially for comments with an
+empty first line, like this one:
+
+..
+   multi line comment
+   (first line empty)
+
+
+END

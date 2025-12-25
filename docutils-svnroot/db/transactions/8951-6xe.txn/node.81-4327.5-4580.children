@@ -1,0 +1,43 @@
+K 7
+dom.wrt
+V 30
+file 82-4327.5-4580.r5748/3957
+K 8
+html.wrt
+V 31
+file 85-4327.5-4580.r6498/46351
+K 9
+index.wrt
+V 29
+file 87-4327.5-4580.r6242/529
+K 9
+latex.wrt
+V 28
+file 89-4327.5-4580.r6298/58
+K 7
+toc.wrt
+V 30
+file 8b-4327.5-4580.r5748/3229
+K 7
+xml.wrt
+V 30
+file 8d-4327.5-4580.r5355/7379
+K 8
+xref.wrt
+V 29
+file 8f-4327.5-4580.r6242/167
+END
+D 7
+dom.wrt
+D 8
+html.wrt
+D 9
+index.wrt
+D 9
+latex.wrt
+D 7
+toc.wrt
+D 7
+xml.wrt
+D 8
+xref.wrt

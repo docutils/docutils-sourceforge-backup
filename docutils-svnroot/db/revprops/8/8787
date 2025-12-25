@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-07-05T19:25:20.962729Z
+K 7
+svn:log
+V 341
+HTML5: small tweaks
+
+Move space character between section number and heading
+into "sectnum" span. Simplify code in _html_base.py.
+
+responsive.css: highlight target of current URL,
+show an arrow when hovering over section heading
+to hint at the target of toc-backlinks.
+
+Test setting `--toc_backlinks=top` and the "responsive.css" stylesheet.
+END

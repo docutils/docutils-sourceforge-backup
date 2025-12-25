@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-01-26T23:38:39.679355Z
+K 7
+svn:log
+V 154
+Revert "html5 writer: wrap image elements in <p> unless inline or in figure."
+
+This wrapper is not required as we can set the display to "block" with CSS.
+END

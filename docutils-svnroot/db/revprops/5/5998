@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-06-26T20:43:51.040001Z
+K 7
+svn:log
+V 67
+Better conformance to Docutils specifications with "use_latex_toc".
+END

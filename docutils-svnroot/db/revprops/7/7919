@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2015-09-15T11:24:42.809756Z
+K 7
+svn:log
+V 115
+test_odt: write output in binary mode.
+
+testing under under Py 3.4.3+ failed with
+TypeError: must be str, not bytes
+END

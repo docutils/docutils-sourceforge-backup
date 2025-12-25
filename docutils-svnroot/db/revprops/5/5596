@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2008-07-16T21:09:56.524582Z
+K 7
+svn:log
+V 195
+Improved font-lock code to use a better `PRE-MATCH-FORM`. As a result
+performance is no longer a problem. `rst-mode-lazy` is no longer
+needed. `font-lock-support-mode` is currently switched off.
+
+END

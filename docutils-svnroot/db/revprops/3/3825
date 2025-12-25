@@ -1,0 +1,44 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-08-20T19:34:59.630700Z
+K 7
+svn:log
+V 1299
+Turned components.Filter into components.WriterFilter.  When the
+Filter transform is run, the only type of component which has not yet
+been used *and* has the notion of a "format" is the writer.  I (Felix)
+cannot imagine a use case where components.Filter would filter, say,
+parser-specific nodes.  Thus, it's possible to make components.Filter
+specific to writers without loss of functionality.
+
+Added FormatSpecific node.  Made "meta" and "raw" subclasses of
+nodes.FormatSpecific.
+
+nodes.Node.traverse: When a class is passed as first argument, do not
+check if it is a subclass of nodes.Node.  This is necessary because
+some node classes (like nodes.FormatSpecific) aren't subclasses of
+nodes.Node.
+
+directives.meta: Do not insert pending nodes but rather the meta node
+directly.
+
+components.WriterFilter does no longer work on pending nodes but
+traverses the document tree looking for FormatSpecific nodes.
+
+Removed format-handling code for raw node from writers.  This is now
+done by the WriterFilter transform.
+
+Removed test/test_transforms/test_filter.py; that test isn't usable
+for testing the WriterFilter transform.  components.WriterFilter is
+automatically tested in the functional tests; that's enough for now.
+
+Updated docs/ref/transforms.txt.
+
+Partially updated docs/peps/pep-0258.txt.
+
+END

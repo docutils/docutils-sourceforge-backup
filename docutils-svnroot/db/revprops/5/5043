@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 6
+strank
+K 8
+svn:date
+V 27
+2007-04-09T17:20:32.298155Z
+K 7
+svn:log
+V 80
+Proposing a special case for inline markup in the rst parser: adjacent citations
+END

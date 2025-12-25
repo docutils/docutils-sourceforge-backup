@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2006-11-02T12:30:40.035418Z
+K 7
+svn:log
+V 155
+- Image width unit ``px`` is translated to ``pt``:
+- Add image height support.
+- Fix: image width ``70%`` is converted ``0.700\linewidth``.
+  bug #1457388
+
+END

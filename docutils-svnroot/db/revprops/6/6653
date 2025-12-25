@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 12
+paultremblay
+K 8
+svn:date
+V 27
+2011-01-24T01:03:36.336598Z
+K 7
+svn:log
+V 91
+Cleaned up document so that attribute set names are consistent with
+the other stylesheets.
+
+END

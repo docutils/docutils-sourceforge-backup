@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2012-05-01T16:07:54.092288Z
+K 7
+svn:log
+V 66
+python 2.3 keyword dict method update does not allow keyword args
+
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-05-25T14:04:55.501136Z
+K 7
+svn:log
+V 114
+Fix description of length specifications.
+
+The default unit (added to length without units) depends on the writer.
+END

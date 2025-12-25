@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2025-03-08T18:53:20.473708Z
+K 7
+svn:log
+V 61
+Enable the ISC (flake8-implicit-str-concat) category in Ruff
+
+END

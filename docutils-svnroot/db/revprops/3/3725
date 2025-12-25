@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T02:20:20.008170Z
+K 7
+svn:log
+V 118
+Do not add "system" or "eval" directive.
+There is agreement that we do not want such dangerous things
+inside the core.
+END

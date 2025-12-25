@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-03-04T15:54:22.519497Z
+K 7
+svn:log
+V 164
+Ensure at least two spaces before inline comment.
+
+flake 8 rule E261
+
+Exceptions for modules sheduled for removal or with
+3rd-party origin and for data collections.
+END

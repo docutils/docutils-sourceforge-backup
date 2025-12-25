@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2009-08-31T14:40:33.914052Z
+K 7
+svn:log
+V 55
+Fix: python2.3 needs ``[]`` around list comprehension.
+
+END

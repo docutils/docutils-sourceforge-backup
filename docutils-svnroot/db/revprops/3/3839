@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-08-26T18:07:38.993125Z
+K 7
+svn:log
+V 65
+added to-do list entry about :parent: option of "class" directive
+END

@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-11-16T14:01:43.903747Z
+K 7
+svn:log
+V 303
+Update `utils.punctuation_chars` (keeping backwards compatibility).
+
+Update/harmonize the formatting/layout in both, the generated file
+and the generating script.
+
+Remaining differences between the current module and a re-generation result
+are due to different versions of Python's `unicodedata` module.
+END

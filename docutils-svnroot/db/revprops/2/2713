@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-10-18T14:21:45.000000Z
+K 7
+svn:log
+V 97
+made footnote label style match footnote reference style
+(superscript/brackets) for LaTeX writer
+
+END

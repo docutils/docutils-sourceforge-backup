@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-03-10T00:30:15.547210Z
+K 7
+svn:log
+V 291
+factored out backward-compatiblity code to separate function;
+fix: convert roles to new-style interface before passing them to
+parse_directive_block (passing a role where a directive is expected
+was a hack and is a hack, but that's OK for now);
+made cosmetic improvement in GenericAdmonition
+END

@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-13T12:09:18.886468Z
+K 7
+svn:log
+V 426
+Fixup last commit.
+
+Changes to the DocutilsTestSupport in commit r8946 led to
+bug #442 "Tests fail on master when recommonmark isn't installed".
+
+Fix by making the tests more self-containded and robust.
+
+Use generic "markdown" parser (if available) for cross-parser inclusion
+in test_rst/test_directives/test_include.py.
+
+Test for correct resolution of directives.parser_name('recommonmark')
+in test_recommonmark/test_misc.py.
+END

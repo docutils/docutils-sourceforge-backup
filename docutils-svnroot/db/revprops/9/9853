@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-08-06T08:01:54.185312Z
+K 7
+svn:log
+V 286
+Use "root_prefix" only for path starting with “/”.
+
+... not for Windows-paths starting with a backslash.
+
+* This is the documented behaviour.
+* It should be consistent accross tables, images, ...
+  (In rST, the image location is specified as an URI, not as path.)
+
+Fixup for [r9785]
+END

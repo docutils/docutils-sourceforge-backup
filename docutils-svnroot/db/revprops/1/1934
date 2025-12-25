@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-04-15T15:19:41.000000Z
+K 7
+svn:log
+V 58
+Removed carriage returns for es.py to work with trace.py.
+
+END

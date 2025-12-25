@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2009-10-20T14:30:43.553155Z
+K 7
+svn:log
+V 84
+Fix: encoding ``'ascii'`` must be lowercase to prevent problems for turkish locale.
+
+END

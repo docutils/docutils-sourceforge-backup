@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-04-22T14:04:43.592356Z
+K 7
+svn:log
+V 86
+Set up enhancement proposals in developer documentation.
+
+Cf. [feature-requests:#111].
+END

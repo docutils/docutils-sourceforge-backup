@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-12-23T14:55:01.275421Z
+K 7
+svn:log
+V 197
+docutils-cli.py: allow drop-in components for reader and parser.
+
+Now also reader and parser may be 3rd party modules:
+specify the import name of the module containing the parser.
+
+Fix help output.
+END

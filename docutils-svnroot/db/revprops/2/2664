@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-09-28T11:56:01.000000Z
+K 7
+svn:log
+V 89
+use utils.get_stylesheet_reference();
+record name of embedded stylesheet in dependencies
+
+END

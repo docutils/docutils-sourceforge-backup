@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-05-27T23:26:21.556460Z
+K 7
+svn:log
+V 88
+moved mailing-lists.txt to docs/user so that it is included in the Docutils distribution
+END

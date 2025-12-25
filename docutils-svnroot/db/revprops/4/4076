@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-11-18T19:23:52.157789Z
+K 7
+svn:log
+V 97
+moved container test to the end of standard.txt test data file;
+implemented container for latex2e
+END

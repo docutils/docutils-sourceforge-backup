@@ -1,0 +1,13 @@
+K 15
+ExtractTests.pm
+V 27
+file 90-4580.0.r4580/158178
+K 15
+test_docinfo.py
+V 27
+file 95-4580.0.r4580/157884
+END
+D 15
+ExtractTests.pm
+D 15
+test_docinfo.py

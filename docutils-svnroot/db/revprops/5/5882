@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-03-02T13:21:21.758264Z
+K 7
+svn:log
+V 155
+sandbox/stylesheets/*-helvetica-courier.sty: update and fixes.
+Proper scaling of Helvetica for Times,
+osf/lf options for Palatino, 
+Package identification.
+END

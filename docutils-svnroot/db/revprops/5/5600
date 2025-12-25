@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 6
+strank
+K 8
+svn:date
+V 27
+2008-07-17T06:51:45.692227Z
+K 7
+svn:log
+V 62
+Use traverse instead of next_node to avoid Text index problem.
+END

@@ -1,0 +1,25 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-08T07:10:56.542966Z
+K 7
+svn:log
+V 531
+Doctree validation: declare valid element children (part 2).
+
+Declare valid children and valid number of children for all
+document tree elements.
+
+Requires some re-ordering (define sub-elements first so that
+the class can be used in the content declaration of the parent).
+
+New element category class `nodes.PureTextElement` for nodes that do
+not accept Inline elements, only text (was a TODO comment).
+
+Add declarations for valid attributes of table elements defined
+in the Exchange Table Model but not used/supported by Docutils.
+END

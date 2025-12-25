@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-16T01:08:33.973908Z
+K 7
+svn:log
+V 96
+removed link to PDF writer;
+Sidnei says it's probably not functional; he hasn't used it for ages
+END

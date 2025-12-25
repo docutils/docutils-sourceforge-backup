@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-11-13T20:51:59.000000Z
+K 7
+svn:log
+V 330
+Re-fixed rendering of admonitions in HTML to unify generated HTML of
+pre-defined and user-defined admonitions.
+
+This fix also avoids paragraph-compacting like this::
+
+    <div class="attention">
+    <p class="admonition-title first">Attention!</p>
+    Directives at large.</div>
+
+(Note that the second paragraph has no <p> tags.)
+
+END

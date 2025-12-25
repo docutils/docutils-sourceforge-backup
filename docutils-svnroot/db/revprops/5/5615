@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 6
+strank
+K 8
+svn:date
+V 27
+2008-07-24T17:20:41.567579Z
+K 7
+svn:log
+V 31
+Fixes for test errors in py2.2.
+END

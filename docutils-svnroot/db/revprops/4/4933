@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-02-22T20:29:21.293312Z
+K 7
+svn:log
+V 43
+Fixed the help to parse as reStructuredText
+END

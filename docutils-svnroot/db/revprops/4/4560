@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2006-05-17T17:25:12.212612Z
+K 7
+svn:log
+V 98
+Corrected funky behaviour of rst-shift-region when something like this appears before it: "Word:" 
+END

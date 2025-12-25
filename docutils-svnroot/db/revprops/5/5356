@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-07-13T21:55:18.715976Z
+K 7
+svn:log
+V 86
+* Added "first" method.
+* Added optional argument to "tag" method to replace the tag.
+
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2019-08-19T19:41:38.490858Z
+K 7
+svn:log
+V 103
+Add regression test for odt contents
+Fix: xml.etree.ElementTree Element.getchildren deprecated warning
+
+END

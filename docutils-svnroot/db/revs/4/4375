@@ -1,0 +1,62 @@
+id: 3-1.0-4375.r4375/0
+type: dir
+pred: 3-1.0.r4374/3156
+count: 4127
+text: 4374 2989 154 154 ecf93e77201f558788e84d097efe005d
+cpath: /branches/directives
+copyfrom: 4374 /trunk
+
+PLAIN
+K 17
+address-rendering
+V 26
+dir 1-7.0-4314.r4314/16372
+K 10
+directives
+V 22
+dir 3-1.0-4375.r4375/0
+K 12
+docutils-0.4
+V 25
+dir 1-7.0-4266.r4318/7303
+K 7
+nesting
+V 25
+dir 3-1.0-1813.r4356/3347
+END
+ENDREP
+id: 0-1.0.r4375/384
+type: dir
+pred: 0-1.0.r4356/3703
+count: 234
+text: 4375 176 195 195 02fa9b142c4bd757c4674a788e72d213
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r4375/384
+K 4
+tags
+V 20
+dir 2-1.0.r4331/4487
+K 5
+trunk
+V 20
+dir 3-1.0.r4374/3156
+END
+ENDREP
+id: 0.0.r4375/662
+type: dir
+pred: 0.0.r4374/3435
+count: 4375
+text: 4375 536 113 113 9d88481c4e32578150c644991f8b78b1
+cpath: /
+copyroot: 0 /
+
+3-1._0.t4374-3di add-dir false false /branches/directives
+4374 /trunk
+
+662 803

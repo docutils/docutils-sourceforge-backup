@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-05-20T12:22:52.637577Z
+K 7
+svn:log
+V 108
+Comprehensive Sample Document/Guide for LaTeX math input.
+
+Move documentation to the user documentation dir.
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2024-04-09T19:31:23.793598Z
+K 7
+svn:log
+V 60
+Fix: flit instead setup.py and egginfo is no longer present
+
+END

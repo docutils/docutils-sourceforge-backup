@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2005-10-27T15:47:03.039205Z
+K 7
+svn:log
+V 195
+- Added new function to insert the TOC inside the document;
+  (bound to C-x + by default).
+  See the many options.
+
+- Fixed quit command in TOC mode, to always go back to the original
+  buffer.
+
+
+END

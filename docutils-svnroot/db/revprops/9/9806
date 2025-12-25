@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2024-07-31T13:24:20.891342Z
+K 7
+svn:log
+V 51
+Add missing __future__ import to ``docutils.core``
+
+END

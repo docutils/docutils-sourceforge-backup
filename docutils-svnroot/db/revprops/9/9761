@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-14T15:04:19.090372Z
+K 7
+svn:log
+V 99
+Remove `parsers.rst.directives.tables.CSVTable.(en|de)code_from_csv()`
+
+Not required with Python 3.
+END

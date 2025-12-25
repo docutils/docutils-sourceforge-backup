@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2002-11-05T15:40:28.000000Z
+K 7
+svn:log
+V 150
++ add sk.py to docutils/languages.
++ added missing labels to docutils/languages/de.py and sv.py (none swedish).
++ changed de directives to lowercase.
+
+END

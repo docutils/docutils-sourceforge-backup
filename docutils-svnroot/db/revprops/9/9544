@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-02-17T10:37:45.651534Z
+K 7
+svn:log
+V 153
+Additions for config.txt
+
+Add preface and description of "rst_sources" setting
+to section [buildhtml application].
+
+Clarify glob-style pattern behaviour.
+END

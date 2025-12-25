@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2008-01-14T16:43:34.858256Z
+K 7
+svn:log
+V 34
+added warking on --strip-* options
+END

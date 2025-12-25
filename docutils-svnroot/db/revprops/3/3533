@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-20T19:12:33.446983Z
+K 7
+svn:log
+V 38
+renamed tools/pep.py to rstpep2html.py
+END

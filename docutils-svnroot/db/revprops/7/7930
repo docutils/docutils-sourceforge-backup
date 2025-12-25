@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2015-12-08T19:45:01.668437Z
+K 7
+svn:log
+V 57
+Fix documentation of Directive class (report Bram Geron).
+END

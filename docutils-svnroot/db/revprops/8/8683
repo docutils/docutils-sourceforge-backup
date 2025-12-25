@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-04-09T15:44:23.212439Z
+K 7
+svn:log
+V 137
+recommonmark tests currently fail with newer versions.
+
+Skip for now if recommonmark.__version__ != 0.4.0
+to allow a fast bugfix release.
+END

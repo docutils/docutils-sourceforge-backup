@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2011-11-07T20:28:34.134673Z
+K 7
+svn:log
+V 95
+Fixed bug chopping off newline when outputing to a file.
+
+Upgraded tests to filterunit V1.3.2.
+
+END

@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-01-15T16:11:08.628113Z
+K 7
+svn:log
+V 258
+Fix MathML rendering in Chrome/Chromium/Android.
+
+Crome and descendents support "MathML Core" since 1 year.
+
+Use Mathematical Alphanumeric Symbols instead of "mathvariant",
+as the "mathvariant" attribute is only applicable with value
+"normal" in MathML Core.
+END

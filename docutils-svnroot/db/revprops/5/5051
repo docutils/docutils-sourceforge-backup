@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-04-27T15:33:07.807273Z
+K 7
+svn:log
+V 39
+Handle line numbers in error messages.
+
+END

@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-08-26T16:46:50.908661Z
+K 7
+svn:log
+V 177
+py3: Replace 'foo.next()' with 'next(foo)'
+
+The former only works in Python 2, while the latter works in Python 2.7
+and 3.x.
+
+Signed-off-by: Stephen Finucane <stephen@that.guru>
+END

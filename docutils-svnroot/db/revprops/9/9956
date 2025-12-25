@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-10-20T19:45:21.254453Z
+K 7
+svn:log
+V 363
+Trim down overhead of type hints.
+
+get_(reader|parser|writer)class():
+  Don't use @overload for individual values of the same type that return
+  a class that is a subclass of a well defined abstract base class.
+
+docutils.nodes:
+  There is no need to add a TypeVar for the type of a default value when
+the alternative is any ``Any | _DefaultT``.
+
+Cf. patches #212.
+END

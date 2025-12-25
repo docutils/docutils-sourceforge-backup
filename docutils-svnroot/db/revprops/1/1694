@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 4
+cben
+K 8
+svn:date
+V 27
+2003-09-18T18:43:40.000000Z
+K 7
+svn:log
+V 251
+Trivially worked around a bug in parsing ``raw::`` substitution
+definitions (backslashes are turned into null chars) because I don't
+have the expertise for the right fix (and I need it work now).  When
+the proper fix is found this should be reverted.
+
+END

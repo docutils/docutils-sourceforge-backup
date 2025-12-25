@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-03-13T11:04:44.000000Z
+K 7
+svn:log
+V 263
+renamed SectionTargets.condition() to possible_relocation_target();
+added docs;
+if we add support for multiple ids and names, we might be able to merge
+ChainedTargets and SectionTargets;
+David, am I correct that the reST spec is missing chained external targets?
+
+END

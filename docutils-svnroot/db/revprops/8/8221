@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2018-07-10T08:54:06.066918Z
+K 7
+svn:log
+V 110
+FIX literal markup. no blank after opening allowed, and there should be a blank after the closing apostrophs.
+
+END

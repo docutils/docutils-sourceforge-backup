@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-06-27T11:38:56.523852Z
+K 7
+svn:log
+V 62
+Move from Apache 2 license to 2-Clause BSD. Solves [ 3304675 ]
+END

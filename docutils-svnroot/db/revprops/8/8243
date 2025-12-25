@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2018-11-29T08:21:05.369364Z
+K 7
+svn:log
+V 56
+Apply patch [ 111 ] setting the source encoding to utf8.
+END

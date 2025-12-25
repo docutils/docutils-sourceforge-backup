@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2013-11-16T13:19:53.003153Z
+K 7
+svn:log
+V 155
+Package for XML support for Docutils. Meant to be included in the main
+Docutils source tree.
+
+Code in this version is moved here from odf2docutils V1.0.1.
+
+END

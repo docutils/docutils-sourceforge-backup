@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2010-03-01T20:21:21.693236Z
+K 7
+svn:log
+V 570
+* Implemented a new built-in ``substitution-reference`` role
+* Custom roles based upon mathml-display will also appear in display style
+* Fixed a bug with parsing consecutive bulleted lists
+* Added ability to generate Roman numerals for enumeration lists
+* Keep class information on custom roles
+* Added ability to attach a label to a mathml equation that becomes
+  a substitution definition annotated with the equation number.
+* Added :format: option to the sectnum:: directive to allow Roman
+  numerals or letters as well as numbers at various levels of the numbering
+
+END

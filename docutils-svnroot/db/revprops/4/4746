@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 8
+reuleaux
+K 8
+svn:date
+V 27
+2006-09-15T15:49:16.926815Z
+K 7
+svn:log
+V 87
+(require 'font-lock) in emacs lisp code now, 
+not just as an installation instruction
+
+
+END

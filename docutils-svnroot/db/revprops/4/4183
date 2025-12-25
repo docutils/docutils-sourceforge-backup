@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-12-12T04:12:02.265944Z
+K 7
+svn:log
+V 125
+Added the universal.StripComments transform, the "strip_comments" setting, and the --strip-comments/--leave-comments options.
+END

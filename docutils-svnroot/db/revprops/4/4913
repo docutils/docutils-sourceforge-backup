@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2007-02-12T04:05:20.650907Z
+K 7
+svn:log
+V 175
+Added ``--strip-elements-with-class`` and ``--strip-class`` options (``strip_elements_with_classes`` and ``strip_classes`` settings) and ``StripClassesAndElements`` transform.
+END

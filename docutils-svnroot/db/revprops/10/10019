@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2025-03-07T22:49:46.818290Z
+K 7
+svn:log
+V 31
+Support Pygments 2.19 in tests
+
+END

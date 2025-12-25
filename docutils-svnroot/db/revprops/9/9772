@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-29T21:23:01.930370Z
+K 7
+svn:log
+V 230
+Change the default input encoding from ``None`` to "utf-8" in io.py.
+
+Fixup for [r9749]. See also [bugs:#490].
+
+Change the default encoding from ``None`` (auto-detect) to "utf-8"
+in `docutils.io.Input` and `docutils.io.FileInput`.
+END

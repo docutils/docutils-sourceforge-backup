@@ -1,0 +1,229 @@
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 5-1104.0.r1104/123
+type: file
+count: 0
+text: 1070 0 956 1978 f721cae85b3f8485ccbe75da6aecfc4d 71283cc545e2188cd532dcf4ff4026b20b9b692b 1103-un/_7
+props: 1104 0 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/sandbox/gschwant/docfactory/doc/FAQ.txt
+copyroot: 0 /
+
+PLAIN
+K 7
+FAQ.txt
+V 23
+file 5-1104.0.r1104/123
+K 12
+HISTORY.html
+V 24
+file 5-1103.0.r1103/1219
+K 11
+HISTORY.txt
+V 23
+file 5-1101.0.r1101/851
+K 13
+docutils.conf
+V 23
+file 6-1100.0.r1100/376
+END
+ENDREP
+id: 4-1100.0.r1104/595
+type: dir
+pred: 4-1100.0.r1103/1660
+count: 3
+text: 1104 395 187 187 db5cab5e2aaa9d09491f6dc86a16d6b8
+cpath: /trunk/sandbox/gschwant/docfactory/doc
+copyroot: 0 /
+
+PLAIN
+K 7
+FAQ.txt
+V 24
+file 4-1070.0.r1070/1092
+K 11
+LICENSE.txt
+V 23
+file 6-675.0.r675/19690
+K 9
+NOTES.txt
+V 21
+file 4-676.0.r676/841
+K 10
+README.txt
+V 22
+file 9-675.0.r1097/191
+K 3
+doc
+V 22
+dir 4-1100.0.r1104/595
+K 14
+docfactory.ico
+V 23
+file d-675.0.r675/20887
+K 13
+docfactory.py
+V 24
+file f-675.0.r1068/16539
+K 17
+docfactory2exe.py
+V 23
+file 4-1074.0.r1074/438
+K 13
+docutils.conf
+V 23
+file 4-1099.0.r1099/385
+K 7
+factory
+V 22
+dir h-675.0.r1096/4533
+K 8
+setup.py
+V 24
+file x-675.0.r1068/20258
+END
+ENDREP
+id: 4-675.0.r1104/1287
+type: dir
+pred: 4-675.0.r1103/2355
+count: 26
+text: 1104 780 494 494 9ad69c9eebe9b307593cd774df6b07b8
+cpath: /trunk/sandbox/gschwant/docfactory
+copyroot: 0 /
+
+PLAIN
+K 10
+docfactory
+V 22
+dir 4-675.0.r1104/1287
+END
+ENDREP
+id: 2-675.0.r1104/1529
+type: dir
+pred: 2-675.0.r1103/2597
+count: 26
+text: 1104 1468 48 48 c1734dbbf6d1238760d9a0eaf73e56f4
+cpath: /trunk/sandbox/gschwant
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 21
+file 3-17.0.r115/8760
+K 4
+aahz
+V 21
+dir 2-820.0.r838/4508
+K 4
+bbum
+V 24
+dir 2-1039.0.r1093/10960
+K 6
+davidg
+V 19
+dir 6-17.0.r977/925
+K 7
+grubert
+V 22
+dir 2-112.0.r1075/1798
+K 8
+gschwant
+V 22
+dir 2-675.0.r1104/1529
+K 4
+ianb
+V 21
+dir 2-881.0.r881/2335
+K 3
+mwh
+V 21
+dir 2-857.0.r862/1023
+K 7
+oliverr
+V 21
+dir 2-202.0.r925/1830
+K 7
+richard
+V 22
+dir 2-526.0.r1089/2918
+K 6
+simonb
+V 21
+dir 2-252.0.r345/3718
+K 4
+tibs
+V 21
+dir 2-62.0.r1089/1615
+END
+ENDREP
+id: 1-17.0.r1104/2174
+type: dir
+pred: 1-17.0.r1103/3241
+count: 186
+text: 1104 1698 463 463 38bf0c29514d1f3eeef72f6de8c093e0
+cpath: /trunk/sandbox
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r1098/1213
+K 7
+sandbox
+V 21
+dir 1-17.0.r1104/2174
+K 3
+web
+V 20
+dir 1-2.0.r1095/7224
+END
+ENDREP
+id: 3-1.0.r1104/2464
+type: dir
+pred: 3-1.0.r1103/3531
+count: 1096
+text: 1104 2335 116 116 fcbf6e99e9de11290d4ad4b6a49b74eb
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 17
+dir 0-1.0.r63/562
+K 4
+tags
+V 17
+dir 2-1.0.r65/217
+K 5
+trunk
+V 20
+dir 3-1.0.r1104/2464
+END
+ENDREP
+id: 0.0.r1104/2737
+type: dir
+pred: 0.0.r1103/3804
+count: 1104
+text: 1104 2616 108 108 bc968578e928912824b82cef73aea1e1
+cpath: /
+copyroot: 0 /
+
+_5.0.t1103-un add-file true true /trunk/sandbox/gschwant/docfactory/doc/FAQ.txt
+
+
+2737 2880

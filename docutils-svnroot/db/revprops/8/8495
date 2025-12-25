@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-03-03T20:32:40.713133Z
+K 7
+svn:log
+V 300
+Fix tests of syntax highlighting with Pygments >=2.5.
+
+Pygments changed the default Python lexer from "python2"
+to "python3" which results in classification of
+"print" as "name builtin" instead of "keyword".
+
+Specifying "python3" in the test samples ensures the same output
+with Pygments 2.4 and 2.5.
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-04-12T09:10:57.168963Z
+K 7
+svn:log
+V 73
+Workaround for unicode messages in Exception instances with Python < 2.6.
+END

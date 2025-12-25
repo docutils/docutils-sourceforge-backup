@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-01-17T15:40:15.612699Z
+K 7
+svn:log
+V 64
+Minor fixes: naming of internal variables, use False as boolean.
+END

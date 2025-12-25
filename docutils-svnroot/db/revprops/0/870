@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-10-31T02:38:54.000000Z
+K 7
+svn:log
+V 86
+Added default parameter values to ``Reader.__init__()`` to make instantiation easier.
+
+END

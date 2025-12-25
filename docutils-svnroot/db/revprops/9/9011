@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-02-21T13:53:31.825888Z
+K 7
+svn:log
+V 227
+Simplify/modernise tests for exceptions and warnings.
+
+Use unicode.assertWarnsRegex() instead of "hand written"
+warnings catching.
+
+Use unicode.assertRaises() as context manager
+(unless this would mean an additional code line).
+END

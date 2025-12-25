@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-12-23T14:54:51.561745Z
+K 7
+svn:log
+V 239
+Set version to 0.19b.dev.
+
+Leaving the 0.18 maintenance mode.
+
+Note: We may skip 0.19 if the next release is "1.0-ready"
+(depending on consensus on backwards compatibility policy and
+definition/documentation of the public part of the API).
+END

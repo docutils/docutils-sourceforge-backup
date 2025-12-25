@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2013-03-15T22:27:04.186037Z
+K 7
+svn:log
+V 215
+Bugfix: do not make "stylesheet-path"s absolute.
+
+The --stylesheet-path arguments are searched in the --stylesheet-dirs,
+therefore must not be made absolute before.
+Thanks to Martin Gignac for tracking down the bug.
+END

@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-11-09T14:08:57.395821Z
+K 7
+svn:log
+V 156
+Inline ``exception_data``
+
+- Move all usages of ``exception_data`` to using the ``try`` /
+  ``except`` pattern as part of the test suite refactoring project
+END

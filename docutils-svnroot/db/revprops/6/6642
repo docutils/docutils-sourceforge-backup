@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 12
+paultremblay
+K 8
+svn:date
+V 27
+2011-01-23T06:07:43.678717Z
+K 7
+svn:log
+V 66
+Changed formatting of bibligraphic fields from a table to a list.
+
+END

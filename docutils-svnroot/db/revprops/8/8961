@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-24T16:06:56.421315Z
+K 7
+svn:log
+V 343
+Cosmetic changes.
+
+* Place module level "dunders" before imports (as advised in PEP 8).
+
+* Add () after function names in module docstring so that pydoc can
+  crate links in HTML output.
+
+* Fix/clarify some docstrings.
+
+* Remove (outcommented) @functools.total_ordering from VersionInfo:
+  it did not work (tests fail without __le__() method).
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-03-05T23:29:31.591366Z
+K 7
+svn:log
+V 75
+Avoid ambiguous variable name l (may be mixed up with 1).
+
+flake8 rule E741
+END

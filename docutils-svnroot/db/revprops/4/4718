@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 8
+dkuhlman
+K 8
+svn:date
+V 27
+2006-09-04T20:34:26.766463Z
+K 7
+svn:log
+V 199
+Added horizontal line before abstract, before and after table of
+contents, and before decoration at end of file ("view source" etc).
+
+Added label for "Contents" and centered the "Abstract" heading.
+
+
+END

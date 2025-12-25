@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-08-28T16:15:22.044806Z
+K 7
+svn:log
+V 225
+New attribute to store the parent state machine of nested state machines.
+
+Allows, e.g., passing an updated "current node" to the parent state machine(s)
+to fix issues with nested parse with section support (cf. [bugs:#511]).
+END

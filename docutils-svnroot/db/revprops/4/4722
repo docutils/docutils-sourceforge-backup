@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2006-09-05T19:05:12.469448Z
+K 7
+svn:log
+V 299
+* Simplified code by removing branches whose conditions were
+  invariant.
+* Return a system message if evaluating transform code results in an
+  error.
+* Process "class" option for target-notes directive.
+* Allow decorations transform to put in link to prest documentation if
+  DOCURL is specified.
+
+END

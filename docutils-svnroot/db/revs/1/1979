@@ -1,0 +1,223 @@
+PLAIN
+K 20
+FOP Colour Names.txt
+V 25
+file 6-1730.0.r1730/21683
+K 13
+pdf_debug.xsl
+V 25
+file d-1730.0.r1978/13506
+END
+ENDREP
+id: 4-1730.0.r1979/124
+type: dir
+pred: 4-1730.0.r1978/14427
+count: 3
+text: 1979 0 111 111 78d1da7f3a68fd5c3e4521c6e265faf4
+cpath: /trunk/sandbox/dpriest/XSL-FO
+copyroot: 0 /
+
+PLAIN
+K 6
+XSL-FO
+V 22
+dir 4-1730.0.r1979/124
+END
+ENDREP
+id: 2-1730.0.r1979/355
+type: dir
+pred: 2-1730.0.r1978/14665
+count: 3
+text: 1979 299 43 43 a3221c0b097bf0a0b1ed0f89b82204d8
+cpath: /trunk/sandbox/dpriest
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 21
+file 3-17.0.r1321/169
+K 4
+aahz
+V 22
+dir 2-820.0.r1918/1105
+K 3
+amk
+V 23
+dir 2-1891.0.r1892/1276
+K 3
+ax-
+V 25
+dir 2-1550.0.r1796/769230
+K 4
+bbum
+V 23
+dir 2-1039.0.r1742/2047
+K 5
+blais
+V 23
+dir 2-1316.0.r1673/1245
+K 4
+cben
+V 23
+dir 2-1693.0.r1838/1427
+K 6
+davidg
+V 21
+dir 6-17.0.r1138/1150
+K 5
+delza
+V 23
+dir 2-1723.0.r1723/3836
+K 8
+dkuhlman
+V 23
+dir 2-1555.0.r1716/4199
+K 7
+dpriest
+V 22
+dir 2-1730.0.r1979/355
+K 12
+dreamcatcher
+V 22
+dir 2-1300.0.r1357/657
+K 7
+edloper
+V 23
+dir 2-1844.0.r1975/4509
+K 7
+grubert
+V 22
+dir 2-112.0.r1976/3328
+K 8
+gschwant
+V 22
+dir 2-675.0.r1914/2270
+K 9
+holdenweb
+V 23
+dir 2-1845.0.r1845/4805
+K 4
+ianb
+V 22
+dir 2-881.0.r1638/1101
+K 4
+lalo
+V 23
+dir 2-1749.0.r1762/2166
+K 3
+mly
+V 23
+dir 2-1431.0.r1432/2681
+K 7
+mmgilbe
+V 22
+dir 2-1841.0.r1899/795
+K 3
+mwh
+V 21
+dir 2-857.0.r862/1023
+K 7
+oliverr
+V 22
+dir 2-202.0.r1616/4279
+K 12
+paultremblay
+V 23
+dir 2-1323.0.r1489/1149
+K 7
+pobrien
+V 23
+dir 2-1158.0.r1777/4967
+K 7
+richard
+V 22
+dir 2-526.0.r1417/2696
+K 6
+simonb
+V 21
+dir 2-252.0.r1227/852
+K 4
+tibs
+V 21
+dir 2-62.0.r1727/8120
+K 4
+wilk
+V 23
+dir 2-1258.0.r1650/3830
+END
+ENDREP
+id: 1-17.0.r1979/1648
+type: dir
+pred: 1-17.0.r1978/15963
+count: 530
+text: 1979 523 1112 1112 a9785f6164ea63c328d11eeebc05295d
+cpath: /trunk/sandbox
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r1977/5133
+K 7
+sandbox
+V 21
+dir 1-17.0.r1979/1648
+K 3
+web
+V 19
+dir 1-2.0.r1971/994
+END
+ENDREP
+id: 3-1.0.r1979/1939
+type: dir
+pred: 3-1.0.r1978/16257
+count: 1959
+text: 1979 1811 115 115 d5c7aff7251c9f7cc5d5e1e427b9966b
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 21
+dir 0-1.0.r1822/10965
+K 4
+tags
+V 20
+dir 2-1.0.r1558/2271
+K 5
+trunk
+V 20
+dir 3-1.0.r1979/1939
+END
+ENDREP
+id: 0.0.r1979/2220
+type: dir
+pred: 0.0.r1978/16540
+count: 1979
+text: 1979 2092 115 115 9fc288fab02b47856caaa7dd932c8bd5
+cpath: /
+copyroot: 0 /
+
+9-1730.0.r1730/22497 delete-file false false /trunk/sandbox/dpriest/XSL-FO/pdf.xsl
+
+n-1730.0.r1730/18412 delete-file false false /trunk/sandbox/dpriest/XSL-FO/pdf_special_endmatter.xsl
+
+h-1730.0.r1730/18827 delete-file false false /trunk/sandbox/dpriest/XSL-FO/pdf_frontmatter.xsl
+
+p-1730.0.r1730/19236 delete-file false false /trunk/sandbox/dpriest/XSL-FO/pdf_special_frontmatter.xsl
+
+l-1730.0.r1730/20055 delete-file false false /trunk/sandbox/dpriest/XSL-FO/pdf_publish.xsl
+
+f-1730.0.r1730/20460 delete-file false false /trunk/sandbox/dpriest/XSL-FO/pdf_defaults.xsl
+
+b-1730.0.r1730/20867 delete-file false false /trunk/sandbox/dpriest/XSL-FO/pdf_chapters.xsl
+
+j-1730.0.r1731/233 delete-file false false /trunk/sandbox/dpriest/XSL-FO/pdf_pagemasters.xsl
+
+r-1730.0.r1730/22089 delete-file false false /trunk/sandbox/dpriest/XSL-FO/pdf_titlepage.xsl
+
+
+2220 2364

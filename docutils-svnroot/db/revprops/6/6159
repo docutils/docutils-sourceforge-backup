@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-10-09T07:17:59.528494Z
+K 7
+svn:log
+V 46
+One more cleanup as we require Python 2.3 now.
+END

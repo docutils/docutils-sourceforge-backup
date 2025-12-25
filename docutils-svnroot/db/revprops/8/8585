@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-12-01T11:38:25.906451Z
+K 7
+svn:log
+V 303
+Add support for Markdown.
+
+Provide a wrapper for the 3rd party `recommonmark`__ Markdown parser
+already in use in Sphinx.
+
+Add test cases for CommonMark parsing.
+
+Also: Correct copyright note and set executable bit on two tests.
+Fix small typo in test content.
+
+__ https://pypi.org/project/recommonmark/
+END

@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-12-01T21:13:54.640110Z
+K 7
+svn:log
+V 171
+The "xetex" writer now ignores settings in the [latex2e writer] config section.
+
+Move settings intended for both, `xetex` and `latex2e` writers
+to section [latex writers].
+END

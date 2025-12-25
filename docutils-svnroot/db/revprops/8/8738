@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-05-20T12:19:23.209858Z
+K 7
+svn:log
+V 379
+MathML: Use large operators and fix alignment in "math" blocks.
+
+Set displaystyle="true"  and class="align" for the outer ``<mtable>``¹
+in math blocks.
+
+¹ The "mtable"-wrapper is used to support multi-line formulas
+  similar to the "align" environment in the "amsmath" LaTeX package.
+
+Add CSS to left-align the table cells in "align"-emulating mtables.
+
+Fixes part of bug #407.
+END

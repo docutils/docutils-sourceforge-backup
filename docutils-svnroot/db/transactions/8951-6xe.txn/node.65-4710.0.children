@@ -1,0 +1,291 @@
+K 8
+Dir.smak
+V 23
+file 2q-5058.0.r5787/70
+K 4
+Text
+V 24
+dir 69-4710.0.r5788/1671
+K 13
+baddirect.dom
+V 27
+file 6x-4710.0.r4710/203989
+K 13
+baddirect.rst
+V 27
+file 71-4710.0.r4710/196494
+K 11
+badinit.dom
+V 24
+file d-5760.0.r5760/1946
+K 11
+badinit.rst
+V 24
+file f-5760.0.r5760/2618
+K 11
+badrole.dom
+V 23
+file h-5760.0.r5788/190
+K 11
+badrole.rst
+V 24
+file j-5760.0.r5760/2395
+K 11
+badwrt1.dom
+V 27
+file 73-4710.0.r4710/194683
+K 11
+badwrt1.rst
+V 27
+file 75-4710.0.r4710/198340
+K 14
+badwrt1.stderr
+V 27
+file 77-4710.0.r4710/204687
+K 11
+badwrt2.dom
+V 27
+file 79-4710.0.r4710/194907
+K 11
+badwrt2.rst
+V 27
+file 7b-4710.0.r4710/199038
+K 14
+badwrt2.stderr
+V 27
+file 7d-4710.0.r4710/197874
+K 11
+badwrt3.dom
+V 27
+file 7f-4710.0.r4710/195131
+K 11
+badwrt3.rst
+V 27
+file 7h-4710.0.r4710/199267
+K 14
+badwrt3.stderr
+V 27
+file 7j-4710.0.r4710/204920
+K 11
+badwrt4.dom
+V 27
+file 7l-4710.0.r4710/195581
+K 11
+badwrt4.rst
+V 27
+file 7n-4710.0.r4710/199496
+K 14
+badwrt4.stderr
+V 25
+file 7p-4710.0.r5378/6674
+K 7
+dom.dom
+V 31
+file 7r-4710.1-5058.r5058/50061
+K 7
+dom.rst
+V 24
+file 7t-4710.0.r5758/446
+K 11
+html.myhtml
+V 27
+file 7v-4710.0.r4710/205611
+K 8
+html.rst
+V 27
+file 7x-4710.0.r4710/205384
+K 11
+html.stderr
+V 27
+file 7z-4710.0.r4710/197646
+K 11
+image01.dom
+V 24
+file c-5352.0.r5352/3218
+K 11
+image01.rst
+V 24
+file e-5352.0.r5352/1585
+K 13
+indtarget.dom
+V 27
+file 81-4710.0.r4710/204222
+K 13
+indtarget.rst
+V 27
+file 83-4710.0.r4710/196264
+K 12
+mathml01.dom
+V 26
+file 2l-4799.0.r4799/32559
+K 12
+mathml01.rst
+V 26
+file 2n-4799.0.r4799/31780
+K 9
+nowrt.dom
+V 27
+file 85-4710.0.r4710/203309
+K 9
+nowrt.rst
+V 27
+file 87-4710.0.r4710/194004
+K 12
+nowrt.stderr
+V 27
+file 89-4710.0.r4710/205153
+K 9
+parse.dom
+V 27
+file 8b-4710.0.r4710/203531
+K 9
+parse.rst
+V 27
+file 8d-4710.0.r4710/194231
+K 11
+pending.dom
+V 27
+file 8f-4710.0.r4710/197181
+K 11
+pending.rst
+V 27
+file 8h-4710.0.r4710/203759
+K 14
+pending.stderr
+V 26
+file 8j-4710.0.r5058/48828
+K 16
+restructured.dom
+V 31
+file 8l-4710.2-5058.r5058/50812
+K 16
+restructured.rst
+V 27
+file 8n-4710.0.r4710/197411
+K 11
+title01.dom
+V 24
+file l-5760.0.r5760/4639
+K 11
+title01.rst
+V 24
+file n-5760.0.r5760/2170
+K 14
+transforms.dom
+V 27
+file 8p-4710.0.r4710/198569
+K 14
+transforms.rst
+V 27
+file 8r-4710.0.r4710/204454
+K 10
+writer.dom
+V 31
+file 8t-4710.3-5058.r5058/49088
+K 10
+writer.rst
+V 27
+file 8v-4710.0.r4710/199725
+K 17
+writer_direct.txt
+V 23
+file 7-5759.0.r5759/712
+END
+D 8
+Dir.smak
+K 4
+Text
+V 23
+dir 69-4710.0.t8951-6xe
+D 13
+baddirect.dom
+D 13
+baddirect.rst
+D 11
+badinit.dom
+D 11
+badinit.rst
+D 11
+badrole.dom
+D 11
+badrole.rst
+D 11
+badwrt1.dom
+D 11
+badwrt1.rst
+D 14
+badwrt1.stderr
+D 11
+badwrt2.dom
+D 11
+badwrt2.rst
+D 14
+badwrt2.stderr
+D 11
+badwrt3.dom
+D 11
+badwrt3.rst
+D 14
+badwrt3.stderr
+D 11
+badwrt4.dom
+D 11
+badwrt4.rst
+D 14
+badwrt4.stderr
+D 7
+dom.dom
+D 7
+dom.rst
+D 11
+html.myhtml
+D 8
+html.rst
+D 11
+html.stderr
+D 11
+image01.dom
+D 11
+image01.rst
+D 13
+indtarget.dom
+D 13
+indtarget.rst
+D 12
+mathml01.dom
+D 12
+mathml01.rst
+D 9
+nowrt.dom
+D 9
+nowrt.rst
+D 12
+nowrt.stderr
+D 9
+parse.dom
+D 9
+parse.rst
+D 11
+pending.dom
+D 11
+pending.rst
+D 14
+pending.stderr
+D 16
+restructured.dom
+D 16
+restructured.rst
+D 11
+title01.dom
+D 11
+title01.rst
+D 14
+transforms.dom
+D 14
+transforms.rst
+D 10
+writer.dom
+D 10
+writer.rst
+D 17
+writer_direct.txt

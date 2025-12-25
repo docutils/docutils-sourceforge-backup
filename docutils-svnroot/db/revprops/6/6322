@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-05-07T09:42:22.586599Z
+K 7
+svn:log
+V 65
+latex writer: Render inline markup in document title and subtitle
+END

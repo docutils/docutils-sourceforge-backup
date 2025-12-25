@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2006-07-12T18:07:42.565642Z
+K 7
+svn:log
+V 105
+Updated manifest to add files that will cause the regression to pass
+on machines with differing locales.
+
+END

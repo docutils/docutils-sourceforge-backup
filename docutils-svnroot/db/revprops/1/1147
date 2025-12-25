@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 10
+ianbicking
+K 8
+svn:date
+V 27
+2003-01-19T21:10:41.000000Z
+K 7
+svn:log
+V 50
+Deal with parameters: default values, *args, **kw
+
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+gbrandl
+K 8
+svn:date
+V 27
+2007-07-14T20:41:31.394108Z
+K 7
+svn:log
+V 86
+A way to map old HTML URLs to new URLs.
+Though not finished mapping for all old docs.
+
+END

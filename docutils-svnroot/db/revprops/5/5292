@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-06-27T20:00:37.795664Z
+K 7
+svn:log
+V 165
+Improved the behavior if the DEBUG environment variable is set:
+
+  * Use flag ``-D no_line_directives``
+  * Allow output to STDOUT instead of redirecting to a file.
+
+END

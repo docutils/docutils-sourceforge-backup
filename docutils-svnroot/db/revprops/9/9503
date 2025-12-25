@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-12-16T22:37:59.788868Z
+K 7
+svn:log
+V 313
+"html" writer revision.
+
+New list HTMLTranslator.messages to pass `<system_message>` nodes
+from `visit_*()` and auxiliary methods to the corresponding
+`depart_*()` method for adding to the generated HTML code.
+
+Simplify CSS (remove redundancy).
+
+Revise SVG samples.
+Use "scaling" SVG image (with viewBox) in test.
+END

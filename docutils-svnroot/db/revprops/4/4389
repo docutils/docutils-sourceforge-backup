@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-03-10T21:17:53.410214Z
+K 7
+svn:log
+V 40
+added tests for parsed-literal directive
+END

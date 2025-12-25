@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-06-17T11:31:17.442674Z
+K 7
+svn:log
+V 175
+Command line encoding is now handled by Python.
+
+Replacing the auto-decoding by Python 3 with a
+home-baked approach is not worth the effort,
+so I retract this TODO suggestion.
+END

@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-10-31T09:41:02.013133Z
+K 7
+svn:log
+V 115
+rST specification fix
+
+Small fix for the description of option list syntax.
+
+Thanks to Mickey Endito for reporting.
+END

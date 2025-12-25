@@ -1,0 +1,422 @@
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 9-1954.0.r1954/123
+type: file
+count: 0
+text: 1936 0 91 3054 f164cd5d99ca5e88f571c3903486ec19 ce3f21df935bccdf4be5b011a9f8edea7e5056f7 1953-1i9/_b
+props: 1954 0 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/docutils/parsers/rst/languages/pt_br.py
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 2x-18.0.r1510/7948
+K 5
+af.py
+V 25
+file 9-1513.0.r1799/10593
+K 5
+cs.py
+V 25
+file a-1767.0.r1799/10157
+K 5
+de.py
+V 23
+file 6-801.0.r1799/7115
+K 5
+en.py
+V 23
+file 30-18.0.r1799/8852
+K 5
+eo.py
+V 23
+file 9-1583.0.r1802/362
+K 5
+es.py
+V 23
+file 9-1358.0.r1802/792
+K 5
+fr.py
+V 25
+file 6-1051.0.r1799/11901
+K 5
+it.py
+V 23
+file 9-1044.0.r1808/787
+K 8
+pt_br.py
+V 23
+file 9-1954.0.r1954/123
+K 5
+ru.py
+V 25
+file 9-1515.0.r1799/11029
+K 5
+sk.py
+V 23
+file 6-950.0.r1799/8419
+K 5
+sv.py
+V 23
+file 9-341.0.r1799/7550
+END
+ENDREP
+id: 2w-18.0.r1954/946
+type: dir
+pred: 2w-18.0.r1936/1092
+count: 60
+text: 1954 404 529 529 3d922a58e62a2625fbff8869d35844a2
+props: 342 1575 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils/parsers/rst/languages
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 2f-18.0.r1663/2762
+K 10
+directives
+V 22
+dir 2i-18.0.r1948/1808
+K 9
+languages
+V 21
+dir 2w-18.0.r1954/946
+K 8
+roles.py
+V 23
+file 5-1943.0.r1951/279
+K 9
+states.py
+V 23
+file 32-18.0.r1946/2561
+K 14
+tableparser.py
+V 23
+file 34-18.0.r1574/4440
+END
+ENDREP
+id: 2e-18.0.r1954/1474
+type: dir
+pred: 2e-18.0.r1951/862
+count: 202
+text: 1954 1192 269 269 2b46873fa52239515a5ab6a79bfc0057
+props: 342 2533 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils/parsers/rst
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 2b-18.0.r1645/6017
+K 3
+rst
+V 22
+dir 2e-18.0.r1954/1474
+END
+ENDREP
+id: 2a-18.0.r1954/1811
+type: dir
+pred: 2a-18.0.r1951/1197
+count: 203
+text: 1954 1712 86 86 2b19ef34b9d8acf76d3f8cf2b446da8a
+props: 342 3339 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils/parsers
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 4-1954.0.r1954/2167
+type: file
+count: 0
+text: 1935 0 47 2159 1c4bc9d1fd8932f2e5863d85a4f62ac9 eacbdab8f865005a0659920b0231919f5e4dbafb 1953-1i9/_6
+props: 1954 2044 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/docutils/languages/pt_br.py
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 24
+file 23-18.0.r1510/12783
+K 5
+af.py
+V 24
+file 4-1513.0.r1513/3986
+K 5
+cs.py
+V 24
+file 5-1767.0.r1767/5517
+K 5
+de.py
+V 24
+file 4-363.0.r1510/11089
+K 5
+en.py
+V 24
+file 26-18.0.r1510/13208
+K 5
+eo.py
+V 24
+file 4-1583.0.r1583/4088
+K 5
+es.py
+V 23
+file 4-1358.0.r1934/123
+K 5
+fr.py
+V 22
+file 4-909.0.r1540/181
+K 5
+it.py
+V 25
+file 4-1044.0.r1510/11935
+K 8
+pt_br.py
+V 24
+file 4-1954.0.r1954/2167
+K 5
+ru.py
+V 24
+file 4-1515.0.r1515/4200
+K 5
+sk.py
+V 24
+file 6-887.0.r1510/12360
+K 5
+sv.py
+V 23
+file 4-341.0.r1516/7069
+END
+ENDREP
+id: 22-18.0.r1954/2984
+type: dir
+pred: 22-18.0.r1935/1033
+count: 34
+text: 1954 2440 531 531 f104a3a9731539347a6e8a7fef687b76
+props: 342 7022 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils/languages
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 22
+file 1x-18.0.r1944/172
+K 7
+core.py
+V 22
+file 20-18.0.r1911/549
+K 11
+examples.py
+V 24
+file 3-1928.0.r1928/1107
+K 11
+frontend.py
+V 22
+file 3-150.0.r1902/367
+K 5
+io.py
+V 23
+file 3-217.0.r1896/9417
+K 9
+languages
+V 22
+dir 22-18.0.r1954/2984
+K 8
+nodes.py
+V 22
+file 28-18.0.r1919/287
+K 7
+parsers
+V 22
+dir 2a-18.0.r1954/1811
+K 7
+readers
+V 22
+dir 36-18.0.r1896/9059
+K 15
+statemachine.py
+V 22
+file 3e-18.0.r1568/480
+K 10
+transforms
+V 22
+dir 3g-18.0.r1905/1097
+K 13
+urischemes.py
+V 22
+file 3s-18.0.r1829/714
+K 8
+utils.py
+V 23
+file 3u-18.0.r1898/3779
+K 7
+writers
+V 22
+dir 3w-18.0.r1929/1206
+END
+ENDREP
+id: 1w-18.0.r1954/3838
+type: dir
+pred: 1w-18.0.r1951/2048
+count: 704
+text: 1954 3220 605 605 72c591347a0f6ae7f89cd9d265831fdb
+props: 342 8363 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 21
+file 2-340.0.r340/154
+K 11
+COPYING.txt
+V 22
+file 2-18.0.r1470/5361
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r1933/431
+K 11
+HISTORY.txt
+V 22
+file 5-18.0.r1945/1234
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r1505/219
+K 10
+README.txt
+V 22
+file 9-18.0.r1942/2021
+K 4
+docs
+V 20
+dir 3-7.0.r1952/1345
+K 8
+docutils
+V 22
+dir 1w-18.0.r1954/3838
+K 6
+extras
+V 23
+dir 2-1467.0.r1686/1264
+K 10
+install.py
+V 24
+file 44-18.0.r1409/28098
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 23
+file 46-18.0.r1756/2104
+K 4
+test
+V 22
+dir 48-18.0.r1949/1318
+K 5
+tools
+V 22
+dir 6w-18.0.r1908/1833
+END
+ENDREP
+id: 1-7.0.r1954/4664
+type: dir
+pred: 1-7.0.r1952/2109
+count: 1399
+text: 1954 4065 586 586 4cf05b6be062ea077975180133883ed9
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r1954/4664
+K 7
+sandbox
+V 21
+dir 1-17.0.r1953/5153
+K 3
+web
+V 20
+dir 1-2.0.r1909/2613
+END
+ENDREP
+id: 3-1.0.r1954/5007
+type: dir
+pred: 3-1.0.r1953/5445
+count: 1934
+text: 1954 4878 116 116 d4baea58130d8df62af0130ccfe8afd1
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 21
+dir 0-1.0.r1822/10965
+K 4
+tags
+V 20
+dir 2-1.0.r1558/2271
+K 5
+trunk
+V 20
+dir 3-1.0.r1954/5007
+END
+ENDREP
+id: 0.0.r1954/5287
+type: dir
+pred: 0.0.r1953/5725
+count: 1954
+text: 1954 5159 115 115 c5277c0a2de560d804a79e71111201e7
+cpath: /
+copyroot: 0 /
+
+4-1753.0.r1935/194 delete-file false false /trunk/docutils/docutils/languages/pt-br.py
+
+_4.0.t1953-1i9 add-file true true /trunk/docutils/docutils/languages/pt_br.py
+
+9-1753.0.r1936/241 delete-file false false /trunk/docutils/docutils/parsers/rst/languages/pt-br.py
+
+_9.0.t1953-1i9 add-file true true /trunk/docutils/docutils/parsers/rst/languages/pt_br.py
+
+
+5287 5430

@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-01-16T09:19:32.584741Z
+K 7
+svn:log
+V 200
+Use self documenting name for `core.Publisher` instances.
+
+Use "publisher" instead of "pub" in publish_* functions for
+internal variables holding `core.Publisher` instances in `publish_*()`
+functions.
+END

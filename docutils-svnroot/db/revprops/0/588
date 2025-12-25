@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-08-24T01:20:30.000000Z
+K 7
+svn:log
+V 342
+  - Set non-command-line defaults in ``OptionParser.__init__()``:    ``_source`` & ``_destination``.  - Distributed ``relative_path_options`` to components; updated    ``OptionParser.populate_from_components()`` to combine it all.  - Require list of keys in ``make_paths_absolute`` (was implicit in    global ``relative_path_options``).
+
+END

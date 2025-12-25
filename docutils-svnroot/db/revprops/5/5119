@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 7
+gbrandl
+K 8
+svn:date
+V 27
+2007-05-24T14:14:08.497681Z
+K 7
+svn:log
+V 129
+Don't convert --- and -- to Unicode characters, let
+smartypants handle that.
+
+Also, replace latex-style quotes by ordinary ones.
+
+END

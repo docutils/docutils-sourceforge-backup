@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2014-11-10T16:03:33.038865Z
+K 7
+svn:log
+V 102
+Fix [ 262 ] 
+
+Use ``\\\\linewidth`` instead of ``\\\\textwidth`` for figures, admonitions and docinfo.
+END

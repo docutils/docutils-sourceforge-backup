@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-12-02T15:31:57.250653Z
+K 7
+svn:log
+V 336
+Only extempt sample *.txt files from "trailing whitespace" git pre-commit check.
+
+Mask trailing whitespace in test_latex2e.py.
+
+Replace the generic extemption for '*.txt' with '*pseudoxml.txt'.
+(Expected output from the "pseudoxml" writer which has trailing whitespace
+by design.)
+
+Also simplify rule after ``prest`` moved to the attic.
+END

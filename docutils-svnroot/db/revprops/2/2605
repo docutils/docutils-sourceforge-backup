@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-09-13T18:16:41.000000Z
+K 7
+svn:log
+V 87
+removed floating point comparison methods
+If we need them, they're in the history now.
+
+END

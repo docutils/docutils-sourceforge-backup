@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-04-08T21:08:59.033168Z
+K 7
+svn:log
+V 67
+Revert introduction of `core.publish_bytes()` and `io.BytesOutput`.
+END

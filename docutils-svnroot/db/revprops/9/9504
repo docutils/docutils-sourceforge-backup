@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-01-05T20:50:11.771844Z
+K 7
+svn:log
+V 79
+Code style normalization in HTML "parts" tests.
+
+No change to tested behaviour.
+END

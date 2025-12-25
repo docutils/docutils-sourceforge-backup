@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2006-05-14T15:41:45.970311Z
+K 7
+svn:log
+V 60
+Fix: sectionauthor assignment
+Add: release and shortversion
+
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-12T21:11:46.747002Z
+K 7
+svn:log
+V 121
+Skip "recommonmark" tests instead of silently ignoring.
+
+Skip "recommonmark" parser tests if parser not found or too old.
+END

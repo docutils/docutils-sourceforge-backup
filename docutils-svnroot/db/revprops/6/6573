@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+gbrandl
+K 8
+svn:date
+V 27
+2011-01-15T08:49:17.300233Z
+K 7
+svn:log
+V 144
+Fix obvious typo.  Note that no attribute access to either "srcline" or "scrline" is done in the docutils source, so this change should be safe.
+END

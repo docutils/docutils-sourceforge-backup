@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 6
+strank
+K 8
+svn:date
+V 27
+2008-07-23T13:51:56.167917Z
+K 7
+svn:log
+V 46
+Text subclassing unicode instead of UserString
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2017-06-15T22:38:30.301983Z
+K 7
+svn:log
+V 116
+Simplified docutils.__version_info__; documented dropping compatibility with Python 2.4 & 2.5 in release after 0.14.
+END

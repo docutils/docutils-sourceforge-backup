@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2007-08-19T22:35:42.463614Z
+K 7
+svn:log
+V 80
+do not transform sub-document titles into subtitles; slight clean-up in parts.py
+END

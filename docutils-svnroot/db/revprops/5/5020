@@ -1,0 +1,28 @@
+K 10
+svn:author
+V 8
+dkuhlman
+K 8
+svn:date
+V 27
+2007-03-12T22:53:31.961587Z
+K 7
+svn:log
+V 555
+Various additions and fixes, including:
+
+- Added support for epigraph and the associated attribution.  Added
+  and fixed styles for epigraph, attribution, and block-quote.
+
+- Added support for line-block.  Added style for line blocks.
+
+- Added support for substitution (replace directive).  Actually, the
+  substitution is done before odtwriter starts walking the tree.
+  But, I added the visit/depart methods so as to eliminate the error
+  messages.
+
+- Fixed visit_Text so that it can add *multiple* text nodes that are
+  all children of the same node.
+
+
+END

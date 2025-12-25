@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-26T22:10:06.521110Z
+K 7
+svn:log
+V 81
+New style classes no longer need to inherit from `object`.
+
+Patch by Adam Turner.
+END

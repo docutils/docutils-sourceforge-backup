@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+mmgilbe
+K 8
+svn:date
+V 27
+2004-03-24T16:53:29.000000Z
+K 7
+svn:log
+V 167
+Added "origuri" attribute to references which contain an embedded uri. Some
+writers (maybe other transforms) are interested in the original (non
+normalized) uri text.
+
+END

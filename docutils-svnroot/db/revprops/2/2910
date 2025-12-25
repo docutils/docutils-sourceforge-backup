@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-12-24T22:22:00.000000Z
+K 7
+svn:log
+V 70
+fixed bug in tests (paths were getting messed up); added another test
+
+END

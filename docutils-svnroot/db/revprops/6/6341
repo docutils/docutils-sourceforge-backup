@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-06-14T20:52:33.476541Z
+K 7
+svn:log
+V 117
+bugfix release
+
+properly close citation element,
+remove invalid CSS code
+fix compact lists in midori/konqueror/opera
+
+END

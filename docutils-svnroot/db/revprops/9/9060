@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-05-30T16:54:33.108014Z
+K 7
+svn:log
+V 127
+Command line "entry point" to the docutils package. Part 1/2.
+
+Move the generic command line interface to docutils/__main__.py.
+END

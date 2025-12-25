@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-03-31T12:13:54.102032Z
+K 7
+svn:log
+V 466
+Update smartquotes: 
+
+* use the rules of the `Imprimerie nationale` as french default 
+  (full NBSP inside guillemets).
+* do not invert “ and ’ in en-UK: expect British authors to use 
+  u0027	APOSTROPHE for primary quotes and " for secondary quotes in the source.
+  Set ``--smart-quotes=alt`` (or use en-UK-x-altquot) for inversion
+  by `smartquotes`.
+* do not call ``educate_backticks`` in the SmartQuotes transform: 
+  backticks have a special meaning in rST.
+END

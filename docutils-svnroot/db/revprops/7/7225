@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-11-23T22:01:02.321859Z
+K 7
+svn:log
+V 157
+fix encodings discrpancy in Windows
+
+test_command_line now determines the encoding of the standard input
+the same way as docutils.core.process_command_line()
+END

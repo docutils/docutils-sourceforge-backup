@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 4
+tibs
+K 8
+svn:date
+V 27
+2003-10-24T19:46:32.000000Z
+K 7
+svn:log
+V 64
+Started docstring detection, produced ad-hoc command line tool.
+
+END

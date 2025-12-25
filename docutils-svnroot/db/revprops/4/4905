@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-02-02T17:04:01.052251Z
+K 7
+svn:log
+V 267
+* Check to see if the parent of an image can contain body elements
+  before deciding to put a <div> around it.
+* Add the title class to sections that have it in their classes.
+* Refactored to remove all dependencies upon main::
+* Fixed an undefined variable warning.
+
+END

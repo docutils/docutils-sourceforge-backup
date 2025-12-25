@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2006-01-23T17:05:57.589403Z
+K 7
+svn:log
+V 140
+updated to reflect current reality (pep2html.py no longer distributed, tools/editors/emacs/rst-html.el and rst-mode.el combined into rst.el)
+END

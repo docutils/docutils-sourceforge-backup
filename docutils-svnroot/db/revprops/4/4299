@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 8
+cliechti
+K 8
+svn:date
+V 27
+2006-01-18T02:29:13.229683Z
+K 7
+svn:log
+V 280
+- added Group support (makes it easier to post process svg files)
+- renamed visitor entry function
+- group visitor
+- compact svg, indent for groups
+- generic support for character to fixed shape mapping
+- reverse arrow head now completely overlaps a forward arrow at the same spot
+END

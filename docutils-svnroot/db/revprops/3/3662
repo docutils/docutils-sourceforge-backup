@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-06T16:37:24.323472Z
+K 7
+svn:log
+V 47
+moved comparison methods up to StandardTestCase
+END

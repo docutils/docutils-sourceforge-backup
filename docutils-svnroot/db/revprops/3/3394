@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-05-27T23:30:32.848154Z
+K 7
+svn:log
+V 61
+updated rst-roles howto to match new "classes" list attribute
+END

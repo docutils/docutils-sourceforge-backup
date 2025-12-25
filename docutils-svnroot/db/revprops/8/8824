@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-09-11T11:18:15.629565Z
+K 7
+svn:log
+V 257
+LaTeX writer: code cleanup and small fixes.
+
+Fix newlines after/before ids_to_labels() (cf. patch #183).
+
+Refactor/revise ToC writing.
+Don't write `\phantomsection`, if a local ToC is skipped.
+
+Functional test for "--use-docutils-toc" in XeTeX writer test).
+END

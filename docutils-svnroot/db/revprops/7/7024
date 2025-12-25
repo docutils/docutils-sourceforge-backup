@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-05-04T22:57:28.343050Z
+K 7
+svn:log
+V 93
+Robust IOError-instance to unicode conversion
+
+(work around http://bugs.python.org/issue2517)
+END

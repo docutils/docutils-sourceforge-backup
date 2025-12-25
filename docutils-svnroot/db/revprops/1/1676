@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2003-09-11T22:40:49.000000Z
+K 7
+svn:log
+V 139
+Added docstring.  Reverted order of diff header to be consistent with the rest of the Docutils tests and with the output order of difflib.
+
+END

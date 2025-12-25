@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-06-26T17:48:28.341515Z
+K 7
+svn:log
+V 235
+Drop the ".py" extension in command line use examples.
+
+Update the documentation of front-end tools and usage examples
+to the name change due to defining "console-script" entry points
+instead of installing the "tools/rst2*.py" scripts.
+END

@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-12-07T19:50:27.996221Z
+K 7
+svn:log
+V 206
+Exclude documentation sources from "trailing-whitespace" git commit hook.
+
+The "trailing-whitespace" fixer removes vertical TABs (^L) that are
+used in documentation sources to set off emacs local variables.
+END

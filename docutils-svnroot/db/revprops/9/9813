@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2024-08-01T13:57:33.827409Z
+K 7
+svn:log
+V 516
+Add type hints to ``docutils.nodes``
+
+A significant number of parameters and attributes are typed as
+expecting or yielding ``Element | Text`` rather than ``Node``,
+which is the more obvious choice. This union type is used because
+``Node`` is de facto an abstract base class --- it should not
+be used or instantiated. Notably, ``Node.children`` is not defined,
+``Node.attributes`` does not exist, etc. The two direct subclasses
+fill in many of these missing pieces, making static typing both
+more precise and easier.
+
+END

@@ -1,0 +1,329 @@
+id: 9-1157.0.r3860/0
+type: file
+pred: 9-1157.0.r3788/510
+count: 20
+text: 3859 0 3317 37419 2cae3751ad5c8df495504183479adf13 3b65a36e856648f273760615739ff04cbece86d4 3859-2z7/_6
+props: 3044 937 110 0 705660468cdcbf270377dea86b274451
+cpath: /trunk/docutils/tools/editors/emacs/restructuredtext.el
+copyroot: 0 /
+
+id: b-3851.2-3860.r3860/310
+type: file
+pred: b-3851.0-3850.r3859/5158
+count: 7
+text: 3859 4515 268 12759 b05f21d365089d64599ccfe08c468fb8 c6ccd57293cfb972c90c8979f189362eda66a784 3858-2z6/_7
+cpath: /trunk/docutils/tools/editors/emacs/tests/tests-basic.el
+copyfrom: 3859 /branches/better-emacs/emacs/tests/tests-basic.el
+
+id: d-3851.3-3860.r3860/631
+type: file
+pred: d-3851.0-3850.r3855/3848
+count: 3
+text: 3855 2776 403 3642 b25364ccbba6e5cc98c30bebcfacaeaf a7055f6fe7f82788f6cdba29d9b06274d093c62d 3854-2z2/_8
+cpath: /trunk/docutils/tools/editors/emacs/tests/tests-runner.el
+copyfrom: 3859 /branches/better-emacs/emacs/tests/tests-runner.el
+
+id: 8-3161.0.r3860/953
+type: file
+pred: 8-3161.0.r3788/821
+count: 4
+text: 3859 3342 1147 9671 6f1bf68bb8123fdf9de8a5b1f4a7e961 9a80f492df7183ce9eb6cbf8e2dcb5fe9001392b 3859-2z7/_8
+cpath: /trunk/docutils/tools/editors/emacs/tests/tests-adjust-section.el
+copyroot: 0 /
+
+id: 5-3851.0-3860.r3860/1221
+type: file
+pred: 5-3851.0-3850.r3851/12001
+count: 1
+text: 3851 6616 95 82 58769d142852f49ffd28958396e2075e cccf83b4aa05a821c5cacfc74e4ce10b2194f3a6 3850-2yy/_7
+cpath: /trunk/docutils/tools/editors/emacs/tests/Makefile
+copyfrom: 3859 /branches/better-emacs/emacs/tests/Makefile
+
+id: 8-3851.1-3860.r3860/1528
+type: file
+pred: 8-3851.0-3850.r3851/12255
+count: 1
+text: 3851 6724 443 775 187e43cb118c3fe6af4d8a8ed444c4cc c94fc6ef719b8c80854921b0870f87a10bd46c1e 3850-2yy/_9
+cpath: /trunk/docutils/tools/editors/emacs/tests/README
+copyfrom: 3859 /branches/better-emacs/emacs/tests/README
+
+PLAIN
+K 8
+Makefile
+V 29
+file 5-3851.0-3860.r3860/1221
+K 6
+README
+V 29
+file 8-3851.1-3860.r3860/1528
+K 23
+tests-adjust-section.el
+V 23
+file 8-3161.0.r3860/953
+K 14
+tests-basic.el
+V 28
+file b-3851.2-3860.r3860/310
+K 15
+tests-runner.el
+V 28
+file d-3851.3-3860.r3860/631
+END
+ENDREP
+id: 7-3161.0.r3860/2111
+type: dir
+pred: 7-3161.0.r3788/1161
+count: 4
+text: 3860 1833 265 265 d542116a6ea18e523b26bd3f413fc8bd
+cpath: /trunk/docutils/tools/editors/emacs/tests
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 24
+file 5-2134.0.r3229/1606
+K 13
+docutils.conf
+V 23
+file 5-3047.0.r3047/182
+K 19
+restructuredtext.el
+V 21
+file 9-1157.0.r3860/0
+K 11
+rst-html.el
+V 24
+file 5-1290.0.r3581/1714
+K 11
+rst-mode.el
+V 22
+file 5-1252.0.r3360/95
+K 5
+tests
+V 23
+dir 7-3161.0.r3860/2111
+END
+ENDREP
+id: 8-1157.0.r3860/2595
+type: dir
+pred: 8-1157.0.r3788/1645
+count: 38
+text: 3860 2301 281 281 213310626c73bb39cab7055e16d4650d
+cpath: /trunk/docutils/tools/editors/emacs
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 23
+file 5-1157.0.r3616/455
+K 5
+emacs
+V 23
+dir 8-1157.0.r3860/2595
+END
+ENDREP
+id: 3-1157.0.r3860/2881
+type: dir
+pred: 3-1157.0.r3788/1930
+count: 42
+text: 3860 2780 88 88 ed56f6976d8abe2cd757a7ab49ddd96e
+cpath: /trunk/docutils/tools/editors
+copyroot: 0 /
+
+PLAIN
+K 12
+buildhtml.py
+V 22
+file 3-430.0.r2504/598
+K 3
+dev
+V 23
+dir 5-3488.0.r3535/1332
+K 13
+docutils.conf
+V 21
+file 3-407.0.r3551/64
+K 7
+editors
+V 23
+dir 3-1157.0.r3860/2881
+K 17
+pep-html-template
+V 22
+file 3-312.0.r3526/342
+K 12
+quicktest.py
+V 22
+file 72-18.0.r3103/100
+K 11
+rst2html.py
+V 24
+file 5-1756.0.r3830/5702
+K 12
+rst2latex.py
+V 25
+file b-1202.0.r2548/27720
+K 15
+rst2newlatex.py
+V 24
+file 3-3260.0.r3260/6983
+K 16
+rst2pseudoxml.py
+V 23
+file 3-2467.0.r2467/149
+K 10
+rst2xml.py
+V 23
+file 3-2468.0.r2468/149
+K 14
+rstpep2html.py
+V 28
+file 3-288.0-3533.r3533/9502
+K 11
+stylesheets
+V 21
+dir 74-18.0.r3838/838
+END
+ENDREP
+id: 6w-18.0.r3860/3683
+type: dir
+pred: 6w-18.0.r3838/1643
+count: 285
+text: 3860 3058 612 612 a86e32c53eaf79240931b253e5ee62e3
+cpath: /trunk/docutils/tools
+copyroot: 0 /
+
+PLAIN
+K 8
+BUGS.txt
+V 24
+file 2-2181.0.r3809/4016
+K 11
+COPYING.txt
+V 21
+file 2-18.0.r3096/363
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r3857/676
+K 11
+HISTORY.txt
+V 22
+file 5-18.0.r3842/1371
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r2513/394
+K 10
+README.txt
+V 21
+file 9-18.0.r3407/847
+K 10
+THANKS.txt
+V 24
+file 2-2182.0.r3835/1148
+K 4
+docs
+V 20
+dir 3-7.0.r3857/1980
+K 8
+docutils
+V 22
+dir 1w-18.0.r3845/4261
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 22
+file 46-18.0.r3575/379
+K 4
+test
+V 22
+dir 48-18.0.r3843/3311
+K 5
+tools
+V 22
+dir 6w-18.0.r3860/3683
+END
+ENDREP
+id: 1-7.0.r3860/4492
+type: dir
+pred: 1-7.0.r3857/2784
+count: 2887
+text: 3860 3853 626 626 3edcb39624a69c51a42ff041e9b678be
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r3860/4492
+K 7
+sandbox
+V 21
+dir 1-17.0.r3847/3841
+K 3
+web
+V 19
+dir 1-2.0.r3758/963
+END
+ENDREP
+id: 3-1.0.r3860/4834
+type: dir
+pred: 3-1.0.r3857/3126
+count: 3701
+text: 3860 4706 115 115 68d57bc9998f0b3a10c191e9a8049b87
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r3859/7176
+K 4
+tags
+V 19
+dir 2-1.0.r3816/482
+K 5
+trunk
+V 20
+dir 3-1.0.r3860/4834
+END
+ENDREP
+id: 0.0.r3860/5112
+type: dir
+pred: 0.0.r3859/7456
+count: 3860
+text: 3860 4986 113 113 bf51d6800b072b0a336aa3d28bbf6dd2
+cpath: /
+copyroot: 0 /
+
+d-3851._3.t3859-2z7 add-file false false /trunk/docutils/tools/editors/emacs/tests/tests-runner.el
+3859 /branches/better-emacs/emacs/tests/tests-runner.el
+8-3161.0.t3859-2z7 modify-file true false /trunk/docutils/tools/editors/emacs/tests/tests-adjust-section.el
+
+9-1157.0.t3859-2z7 modify-file true false /trunk/docutils/tools/editors/emacs/restructuredtext.el
+
+5-3851._0.t3859-2z7 add-file false false /trunk/docutils/tools/editors/emacs/tests/Makefile
+3859 /branches/better-emacs/emacs/tests/Makefile
+8-3851._1.t3859-2z7 add-file false false /trunk/docutils/tools/editors/emacs/tests/README
+3859 /branches/better-emacs/emacs/tests/README
+b-3851._2.t3859-2z7 add-file false false /trunk/docutils/tools/editors/emacs/tests/tests-basic.el
+3859 /branches/better-emacs/emacs/tests/tests-basic.el
+
+5112 5255

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-03-20T23:46:52.489368Z
+K 7
+svn:log
+V 46
+Fixup for r8636: use <small> for line numbers.
+END

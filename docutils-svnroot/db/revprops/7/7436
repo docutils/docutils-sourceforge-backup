@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 11
+joshuagraff
+K 8
+svn:date
+V 27
+2012-05-24T17:48:15.326054Z
+K 7
+svn:log
+V 260
+Added support for escaping linked words. i.e. words which are
+automatically linked in a Wiki. The option --escape-linked-words
+takes a file of words to be escaped.
+
+Updated Confluence translater to always escape '[]' and '{}' with
+exception to literal blocks.
+
+END

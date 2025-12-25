@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2005-09-04T18:06:48.153798Z
+K 7
+svn:log
+V 65
+Start of rework to be able to support sectioning in emacs better.
+END

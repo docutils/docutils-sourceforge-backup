@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2014-05-28T16:02:56.670184Z
+K 7
+svn:log
+V 112
+Do not add newline after inline math (produces unwanted whitespace).
+Thanks to Yury G. Kudryashov for the patch.
+END

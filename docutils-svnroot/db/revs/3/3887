@@ -1,0 +1,544 @@
+id: 9-2357.0-3822.r3887/0
+type: file
+pred: 9-2357.0-3822.r3886/1643
+count: 65
+text: 3659 3216 1257 46509 dc70596fd90c77c249506e6f73495134 b9ed90ce14e712151bb4e9d25cb60717afc3116a 3886-2zy/_d
+props: 3021 2415 111 0 4135f0dfb17a4d11b2424d95e27830f5
+cpath: /branches/transforms/docutils/test/functional/expected/standalone_rst_html4css1.html
+copyroot: 3822 /branches/transforms
+
+id: 5-3185.0-3822.r3887/376
+type: file
+pred: 5-3185.0-3822.r3886/2016
+count: 16
+text: 3659 4500 1173 78707 1915195f60cfbc9703a0599516e665f0 27449510bc95cd282cd39d26078b27460d19710a 3886-2zy/_e
+props: 3185 11598 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /branches/transforms/docutils/test/functional/expected/standalone_rst_pseudoxml.txt
+copyroot: 3822 /branches/transforms
+
+PLAIN
+K 14
+dangerous.html
+V 29
+file f-3071.0-3285.r3759/3264
+K 21
+field_name_limit.html
+V 24
+file c-3164.0.r3543/1071
+K 17
+latex_docinfo.tex
+V 24
+file 8-2937.0.r2938/3234
+K 23
+misc_rst_html4css1.html
+V 24
+file 5-2993.0.r3379/3373
+K 13
+pep_html.html
+V 23
+file 5-3040.0.r3644/928
+K 29
+standalone_rst_html4css1.html
+V 26
+file 9-2357.0-3822.r3887/0
+K 24
+standalone_rst_latex.tex
+V 24
+file c-2357.0.r3497/8058
+K 28
+standalone_rst_pseudoxml.txt
+V 28
+file 5-3185.0-3822.r3887/376
+END
+ENDREP
+id: 8-2357.0-3822.r3887/1237
+type: dir
+pred: 8-2357.0-3822.r3886/2874
+count: 98
+text: 3887 753 471 471 e41fbdc40db76abd10d8b70919103653
+cpath: /branches/transforms/docutils/test/functional/expected
+copyroot: 3822 /branches/transforms
+
+PLAIN
+K 10
+README.txt
+V 24
+file 5-2357.0.r2369/2122
+K 8
+expected
+V 28
+dir 8-2357.0-3822.r3887/1237
+K 5
+input
+V 23
+dir e-2357.0.r3635/3142
+K 6
+output
+V 21
+dir w-2357.0.r2993/63
+K 5
+tests
+V 24
+dir 10-2357.0.r3617/4586
+END
+ENDREP
+id: 3-2357.0-3822.r3887/1699
+type: dir
+pred: 3-2357.0-3822.r3886/3332
+count: 116
+text: 3887 1472 214 214 d64971fed78d447a88b4400878d6987c
+cpath: /branches/transforms/docutils/test/functional
+copyroot: 3822 /branches/transforms
+
+PLAIN
+K 22
+DocutilsTestSupport.py
+V 22
+file 49-18.0.r3662/403
+K 11
+alltests.py
+V 21
+file 4e-18.0.r3425/54
+K 11
+coverage.sh
+V 28
+file 6-3449.0-3489.r3603/213
+K 4
+data
+V 23
+dir 3-1662.0.r3416/2104
+K 13
+docutils.conf
+V 24
+file 6-1661.0.r2385/2146
+K 19
+docutils_difflib.py
+V 24
+file 6-2354.0.r2354/1272
+K 10
+functional
+V 28
+dir 3-2357.0-3822.r3887/1699
+K 19
+package_unittest.py
+V 21
+file 3-44.0.r2454/856
+K 20
+test_dependencies.py
+V 24
+file 3-2679.0.r3617/5480
+K 18
+test_functional.py
+V 24
+file 18-2357.0.r3176/122
+K 10
+test_io.py
+V 23
+file 5-3138.0.r3139/243
+K 16
+test_language.py
+V 23
+file 3-940.0.r3085/8438
+K 13
+test_nodes.py
+V 23
+file 4i-18.0.r3438/1540
+K 12
+test_parsers
+V 27
+dir 4k-18.0-3822.r3884/7068
+K 17
+test_publisher.py
+V 28
+file 6-3525.0-3602.r3760/145
+K 12
+test_readers
+V 21
+dir 3-89.0.r3509/2937
+K 16
+test_settings.py
+V 23
+file g-1662.0.r3416/903
+K 20
+test_statemachine.py
+V 22
+file 6a-18.0.r917/6020
+K 15
+test_transforms
+V 27
+dir 6c-18.0-3822.r3884/2672
+K 13
+test_utils.py
+V 21
+file 6u-18.0.r3171/53
+K 16
+test_viewlist.py
+V 23
+file 3-916.0.r3085/3892
+K 12
+test_writers
+V 22
+dir 5-1211.0.r3811/386
+END
+ENDREP
+id: 48-18.0-3822.r3887/3048
+type: dir
+pred: 48-18.0-3822.r3886/4676
+count: 554
+text: 3887 1927 1108 1108 eb661b6f3616852072a60d8250208efb
+props: 343 993 44 0 e8789a4081469b0bbc8d88dcdbd925ef
+cpath: /branches/transforms/docutils/test
+copyroot: 3822 /branches/transforms
+
+id: 3o-18.0-3822.r3887/3318
+type: file
+pred: 3o-18.0-3822.r3886/4946
+count: 43
+text: 3659 922 830 33651 76db899138add3596664ba60eb3a7909 10fee1b9bdd7be0c7a4b8315c03303a58636b5ca 3886-2zy/_9
+props: 3064 51 111 0 0a665f39d0e6b710aae173fcfb77dd8e
+cpath: /branches/transforms/docutils/docutils/transforms/references.py
+copyroot: 3822 /branches/transforms
+
+PLAIN
+K 11
+__init__.py
+V 28
+file 3h-18.0-3822.r3822/9870
+K 13
+components.py
+V 28
+file 4-77.0-3822.r3884/15329
+K 14
+frontmatter.py
+V 23
+file 3m-18.0.r3621/9894
+K 7
+html.py
+V 23
+file b-3617.0.r3643/131
+K 7
+misc.py
+V 24
+file 4-1004.0.r3658/5526
+K 8
+parts.py
+V 22
+file 4-76.0.r3454/5397
+K 7
+peps.py
+V 23
+file 4-78.0.r3129/28343
+K 13
+references.py
+V 28
+file 3o-18.0-3822.r3887/3318
+K 12
+universal.py
+V 22
+file 3q-18.0.r3665/181
+END
+ENDREP
+id: 3g-18.0-3822.r3887/4104
+type: dir
+pred: 3g-18.0-3822.r3886/5728
+count: 145
+text: 3887 3670 421 421 ef644d96e031addbf848f647d2a498b2
+props: 342 5224 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /branches/transforms/docutils/docutils/transforms
+copyroot: 3822 /branches/transforms
+
+PLAIN
+K 11
+__init__.py
+V 28
+file 1x-18.0-3822.r3822/9537
+K 7
+core.py
+V 28
+file 20-18.0-3822.r3822/4814
+K 11
+examples.py
+V 23
+file 3-1928.0.r3598/207
+K 11
+frontend.py
+V 23
+file 3-150.0.r3617/8092
+K 5
+io.py
+V 22
+file 3-217.0.r3654/291
+K 9
+languages
+V 22
+dir 22-18.0.r3802/1211
+K 8
+nodes.py
+V 28
+file 28-18.0-3822.r3885/1328
+K 7
+parsers
+V 28
+dir 2a-18.0-3822.r3884/10916
+K 7
+readers
+V 27
+dir 36-18.0-3822.r3885/2613
+K 15
+statemachine.py
+V 22
+file 3e-18.0.r2299/866
+K 10
+transforms
+V 27
+dir 3g-18.0-3822.r3887/4104
+K 13
+urischemes.py
+V 22
+file 3s-18.0.r1829/714
+K 8
+utils.py
+V 22
+file 3u-18.0.r3592/826
+K 7
+writers
+V 28
+dir 3w-18.0-3822.r3884/13784
+END
+ENDREP
+id: 1w-18.0-3822.r3887/5044
+type: dir
+pred: 1w-18.0-3822.r3886/6669
+count: 1285
+text: 3887 4388 643 643 04c78ce82f6ad2beaabc97145d001e94
+props: 342 8363 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /branches/transforms/docutils/docutils
+copyroot: 3822 /branches/transforms
+
+id: 4-855.0-3822.r3887/5318
+type: file
+pred: 4-855.0-3822.r3886/6943
+count: 17
+text: 3884 0 277 3468 280493a4d5b3026a9a43f573772e71cd 6d7bd9baf8f75f8f140ba30009d6e8649bc8915a 3886-2zy/_6
+props: 3008 11081 110 0 2297367bb62237eae251d6a189335c2c
+cpath: /branches/transforms/docutils/docs/ref/transforms.txt
+copyroot: 3822 /branches/transforms
+
+PLAIN
+K 11
+doctree.txt
+V 22
+file x-18.0.r3622/2263
+K 12
+docutils.dtd
+V 23
+file 10-18.0.r3622/1966
+K 3
+rst
+V 21
+dir 12-18.0.r3805/621
+K 12
+soextblx.dtd
+V 23
+file 1a-18.0.r18/303406
+K 14
+transforms.txt
+V 28
+file 4-855.0-3822.r3887/5318
+END
+ENDREP
+id: w-18.0-3822.r3887/5905
+type: dir
+pred: w-18.0-3822.r3886/7531
+count: 277
+text: 3887 5660 232 232 ffc9d482e8faf9ca466fc6a8e5448856
+cpath: /branches/transforms/docutils/docs/ref
+copyroot: 3822 /branches/transforms
+
+PLAIN
+K 3
+api
+V 22
+dir 3-2394.0.r3599/791
+K 3
+dev
+V 21
+dir 3-12.0.r3812/1210
+K 5
+howto
+V 23
+dir 3-749.0.r3398/14573
+K 9
+index.txt
+V 30
+file 3-2171.2-3822.r3822/11833
+K 4
+peps
+V 26
+dir 5-7.0-3822.r3884/17883
+K 3
+ref
+V 26
+dir w-18.0-3822.r3887/5905
+K 4
+user
+V 28
+dir 1c-18.0-3822.r3822/12811
+END
+ENDREP
+id: 3-7.0-3822.r3887/6423
+type: dir
+pred: 3-7.0-3822.r3886/8050
+count: 976
+text: 3887 6122 288 288 0287c210f7d444087ea5ba6158a043b1
+cpath: /branches/transforms/docutils/docs
+copyroot: 3822 /branches/transforms
+
+PLAIN
+K 8
+BUGS.txt
+V 24
+file 2-2181.0.r3809/4016
+K 11
+COPYING.txt
+V 21
+file 2-18.0.r3096/363
+K 7
+FAQ.txt
+V 28
+file 2-788.1-3822.r3822/4491
+K 11
+HISTORY.txt
+V 21
+file 5-18.0.r3666/511
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r2513/394
+K 10
+README.txt
+V 21
+file 9-18.0.r3407/847
+K 10
+THANKS.txt
+V 22
+file 2-2182.0.r3782/54
+K 4
+docs
+V 25
+dir 3-7.0-3822.r3887/6423
+K 8
+docutils
+V 27
+dir 1w-18.0-3822.r3887/5044
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 22
+file 46-18.0.r3575/379
+K 4
+test
+V 27
+dir 48-18.0-3822.r3887/3048
+K 5
+tools
+V 22
+dir 6w-18.0.r3791/2539
+END
+ENDREP
+id: 1-7.0-3822.r3887/7291
+type: dir
+pred: 1-7.0-3822.r3886/8919
+count: 2862
+text: 3887 6634 644 644 7f322b0d6658e0abc05016f462ae3003
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /branches/transforms/docutils
+copyroot: 3822 /branches/transforms
+
+PLAIN
+K 8
+docutils
+V 25
+dir 1-7.0-3822.r3887/7291
+K 7
+sandbox
+V 27
+dir 1-17.0-3822.r3822/19043
+K 3
+web
+V 19
+dir 1-2.0.r3758/963
+END
+ENDREP
+id: 3-1.0-3822.r3887/7690
+type: dir
+pred: 3-1.0-3822.r3886/9318
+count: 3676
+text: 3887 7551 126 126 983e569d764b16cc2f13da00a991dcb3
+props: 3826 0 30 0 8d677d3922bba0172a559139b9e35ead
+cpath: /branches/transforms
+copyroot: 3822 /branches/transforms
+
+PLAIN
+K 7
+nesting
+V 27
+dir 3-1.0-1813.r2577/106277
+K 10
+transforms
+V 25
+dir 3-1.0-3822.r3887/7690
+END
+ENDREP
+id: 0-1.0.r3887/8049
+type: dir
+pred: 0-1.0.r3886/9677
+count: 152
+text: 3887 7940 96 96 d9b6cf284a1a3e48aee681553894315a
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r3887/8049
+K 4
+tags
+V 19
+dir 2-1.0.r3816/482
+K 5
+trunk
+V 21
+dir 3-1.0.r3883/13590
+END
+ENDREP
+id: 0.0.r3887/8328
+type: dir
+pred: 0.0.r3886/9956
+count: 3887
+text: 3887 8201 114 114 e558e385123af0468665d82ccc09f52d
+cpath: /
+copyroot: 0 /
+
+9-2357.0-3822.t3886-2zy modify-file true false /branches/transforms/docutils/test/functional/expected/standalone_rst_html4css1.html
+
+3o-18.0-3822.t3886-2zy modify-file true false /branches/transforms/docutils/docutils/transforms/references.py
+
+4-855.0-3822.t3886-2zy modify-file true false /branches/transforms/docutils/docs/ref/transforms.txt
+
+5-3185.0-3822.t3886-2zy modify-file true false /branches/transforms/docutils/test/functional/expected/standalone_rst_pseudoxml.txt
+
+
+8328 8471

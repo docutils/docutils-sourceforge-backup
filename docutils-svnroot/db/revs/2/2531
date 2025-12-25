@@ -1,0 +1,1551 @@
+id: 6-2354.k-2531.r2531/0
+type: file
+pred: 6-2354.0.r2354/1272
+count: 1
+text: 18 198444 12037 40367 b82575bb24a14600cc74808577293c47 107a318d269f40d3c7e7e536ed9469664ecca0cb 2353-1td/_7
+props: 2354 1149 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /branches/nesting/docutils/test/docutils_difflib.py
+copyfrom: 2525 /trunk/docutils/test/docutils_difflib.py
+
+id: 5-2055.o-2531.r2531/358
+type: dir
+pred: 5-2055.0.r2060/1001
+count: 5
+text: 2060 889 99 99 b375f8c66c9ee45abcd8e109f62681cb
+cpath: /branches/nesting/docutils/test/test_writers/test_html4css1
+copyfrom: 2525 /trunk/docutils/test/test_writers/test_html4css1
+
+id: 5-1995.p-2531.r2531/617
+type: file
+pred: 5-1995.0.r1996/193
+count: 2
+text: 1996 0 44 1024 04b40617627d614e1b67674127cde2d1 248c0c5e5245df1fee7a38015eba3a31795442dd 1995-1jf/_5
+props: 1996 70 110 0 2a94ed7a58fe1feebaea27ee0c48460d
+cpath: /branches/nesting/docutils/test/test_writers/test_pseudoxml.py
+copyfrom: 2525 /trunk/docutils/test/test_writers/test_pseudoxml.py
+
+id: 4-2018.n-2531.r2531/989
+type: file
+pred: 4-2018.0.r2223/6279
+count: 5
+text: 2223 4647 259 3298 67392d92d0e378c4b2df982829f9402e 5cdfc0d68f7d8f95d33ee5acbb53d59245918a89 2222-1pq/_p
+props: 2223 6156 110 0 7d181b70073f10d0c5a58c73a72d4f04
+cpath: /branches/nesting/docutils/test/test_writers/test_docutils_xml.py
+copyfrom: 2525 /trunk/docutils/test/test_writers/test_docutils_xml.py
+
+PLAIN
+K 11
+__init__.py
+V 24
+file 6-1211.0.r1211/2382
+K 20
+test_docutils_xml.py
+V 28
+file 4-2018.n-2531.r2531/989
+K 14
+test_html4css1
+V 27
+dir 5-2055.o-2531.r2531/358
+K 15
+test_latex2e.py
+V 24
+file 9-1211.0.r1770/1095
+K 17
+test_pseudoxml.py
+V 28
+file 5-1995.p-2531.r2531/617
+END
+ENDREP
+id: 5-1211.0-1813.r2531/1659
+type: dir
+pred: 5-1211.0.r1770/1518
+count: 14
+text: 2531 1374 272 272 e92c4ec0551d9d3b2201fe4096a07f13
+cpath: /branches/nesting/docutils/test/test_writers
+copyroot: 1813 /branches/nesting
+
+PLAIN
+K 4
+data
+V 23
+dir f-2357.0.r2357/3173
+K 28
+standalone_rst_html4css1.txt
+V 23
+file s-2357.0.r2357/540
+END
+ENDREP
+id: e-2357.l-2531.r2531/1995
+type: dir
+pred: e-2357.0.r2357/3933
+count: 1
+text: 2531 1877 105 105 a2a7d313c80faaad963a83c60187c1f0
+cpath: /branches/nesting/docutils/test/functional/input
+copyroot: 2531 /branches/nesting/docutils/test/functional
+
+PLAIN
+K 29
+standalone_rst_html4css1.html
+V 23
+file 9-2357.0.r2522/173
+END
+ENDREP
+id: 8-2357.l-2531.r2531/2322
+type: dir
+pred: 8-2357.0.r2522/637
+count: 7
+text: 2531 2241 68 68 cf503297417b0bdcf4c2c6c259201b23
+cpath: /branches/nesting/docutils/test/functional/expected
+copyroot: 2531 /branches/nesting/docutils/test/functional
+
+PLAIN
+K 10
+README.txt
+V 24
+file 5-2357.0.r2369/2122
+K 8
+expected
+V 28
+dir 8-2357.l-2531.r2531/2322
+K 5
+input
+V 28
+dir e-2357.l-2531.r2531/1995
+K 6
+output
+V 23
+dir w-2357.0.r2357/4558
+K 5
+tests
+V 24
+dir 10-2357.0.r2457/3324
+END
+ENDREP
+id: 3-2357.l-2531.r2531/2802
+type: dir
+pred: 3-2357.0.r2522/1046
+count: 8
+text: 2531 2568 221 221 707ae7ead5fa1d9c434d6ba32adbc3c2
+cpath: /branches/nesting/docutils/test/functional
+copyfrom: 2525 /trunk/docutils/test/functional
+
+id: t-1959.m-2531.r2531/3031
+type: file
+pred: t-1959.0.r2002/6911
+count: 2
+text: 2002 5496 366 3780 6bb8e065e34e8273ae8721590135712d d5a984d294531e3e456f6a6f7a71a9aae9d086a2 2001-1jl/_k
+props: 2002 6762 136 0 921bd9320f875dd6f8050e7ef12a5696
+cpath: /branches/nesting/docutils/test/test_parsers/test_rst/test_directives/test_role.py
+copyfrom: 2525 /trunk/docutils/test/test_parsers/test_rst/test_directives/test_role.py
+
+PLAIN
+K 11
+__init__.py
+V 21
+file 8-41.0.r158/8599
+K 12
+include1.txt
+V 22
+file 6-740.0.r740/3588
+K 13
+include10.txt
+V 23
+file 6-1566.0.r1566/123
+K 12
+include2.txt
+V 23
+file 9-740.0.r1572/3869
+K 12
+include3.txt
+V 21
+file 6-968.0.r968/200
+K 12
+include8.txt
+V 23
+file a-1086.0.r1086/362
+K 8
+includes
+V 23
+dir 6-967.0.r1090/12619
+K 8
+raw1.txt
+V 22
+file b-740.0.r740/4422
+K 19
+test_admonitions.py
+V 24
+file 51-18.0.r1340/31813
+K 16
+test_contents.py
+V 23
+file 54-18.0.r856/18049
+K 15
+test_figures.py
+V 23
+file 56-18.0.r1280/2868
+K 14
+test_images.py
+V 23
+file 58-18.0.r1793/4586
+K 15
+test_include.py
+V 23
+file d-740.0.r1572/4347
+K 12
+test_meta.py
+V 23
+file 5a-18.0.r856/18528
+K 11
+test_raw.py
+V 23
+file f-740.0.r825/27155
+K 15
+test_replace.py
+V 24
+file h-740.0.r1236/12372
+K 12
+test_role.py
+V 29
+file t-1959.m-2531.r2531/3031
+K 15
+test_rubrics.py
+V 24
+file 6-1339.0.r1339/3765
+K 23
+test_test_directives.py
+V 23
+file 5c-18.0.r1697/2418
+K 14
+test_topics.py
+V 23
+file 6-470.0.r1196/4741
+K 15
+test_unicode.py
+V 24
+file 9-1339.0.r1696/2600
+K 15
+test_unknown.py
+V 23
+file 5e-18.0.r1774/2546
+END
+ENDREP
+id: 50-18.0-1813.r2531/4539
+type: dir
+pred: 50-18.0.r1793/5951
+count: 56
+text: 2531 3451 1075 1075 c579b7d4f306a8af1ea28aa6f81597ac
+props: 339 3733 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /branches/nesting/docutils/test/test_parsers/test_rst/test_directives
+copyroot: 1813 /branches/nesting
+
+PLAIN
+K 11
+__init__.py
+V 21
+file 5-41.0.r158/8175
+K 8
+includes
+V 23
+dir 5-1086.0.r1086/3369
+K 25
+test_SimpleTableParser.py
+V 23
+file 5-309.0.r1572/6564
+K 19
+test_TableParser.py
+V 23
+file 4n-18.0.r1572/3426
+K 20
+test_block_quotes.py
+V 23
+file 4q-18.0.r1588/1142
+K 20
+test_bullet_lists.py
+V 23
+file 4s-18.0.r778/23111
+K 17
+test_citations.py
+V 23
+file 4u-18.0.r778/20301
+K 16
+test_comments.py
+V 23
+file 4w-18.0.r778/26361
+K 24
+test_definition_lists.py
+V 24
+file 4y-18.0.r1801/24517
+K 15
+test_directives
+V 27
+dir 50-18.0-1813.r2531/4539
+K 22
+test_doctest_blocks.py
+V 23
+file 5g-18.0.r778/22176
+K 24
+test_enumerated_lists.py
+V 23
+file 5i-18.0.r778/23580
+K 19
+test_field_lists.py
+V 23
+file 5k-18.0.r1771/3096
+K 17
+test_footnotes.py
+V 23
+file 5m-18.0.r778/25428
+K 17
+test_functions.py
+V 23
+file 5o-18.0.r778/24054
+K 21
+test_inline_markup.py
+V 28
+file 5q-18.0-1813.r1822/3360
+K 19
+test_interpreted.py
+V 24
+file 5-1087.0.r1385/4726
+K 22
+test_literal_blocks.py
+V 23
+file 5s-18.0.r1773/7306
+K 28
+test_nested_inline_markup.py
+V 28
+file c-1822.0-1813.r2528/446
+K 20
+test_option_lists.py
+V 23
+file 5u-18.0.r1695/1552
+K 18
+test_outdenting.py
+V 23
+file 5w-18.0.r778/25894
+K 18
+test_paragraphs.py
+V 23
+file 5y-18.0.r778/27295
+K 23
+test_section_headers.py
+V 22
+file 60-18.0.r1527/685
+K 21
+test_substitutions.py
+V 23
+file 62-18.0.r1774/2075
+K 14
+test_tables.py
+V 23
+file 64-18.0.r1575/2699
+K 15
+test_targets.py
+V 23
+file 66-18.0.r1793/4119
+K 19
+test_transitions.py
+V 23
+file 68-18.0.r871/10161
+END
+ENDREP
+id: 4l-18.0-1813.r2531/6322
+type: dir
+pred: 4l-18.0-1813.r2528/2293
+count: 99
+text: 2531 4836 1473 1473 382527b8c621feb83c8566775b398f4b
+props: 339 5757 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /branches/nesting/docutils/test/test_parsers/test_rst
+copyroot: 1813 /branches/nesting
+
+PLAIN
+K 11
+__init__.py
+V 21
+file 4-986.0.r986/784
+K 8
+test_rst
+V 27
+dir 4l-18.0-1813.r2531/6322
+END
+ENDREP
+id: 4k-18.0-1813.r2531/6715
+type: dir
+pred: 4k-18.0-1813.r2528/2685
+count: 101
+text: 2531 6608 94 94 8da23974a3724bfbe97b36d5b3928415
+props: 988 1328 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /branches/nesting/docutils/test/test_parsers
+copyroot: 1813 /branches/nesting
+
+PLAIN
+K 10
+.cvsignore
+V 21
+file 3-339.0.r343/176
+K 22
+DocutilsTestSupport.py
+V 22
+file 49-18.0.r1622/480
+K 11
+alltests.py
+V 22
+file 4e-18.0.r1615/315
+K 4
+data
+V 23
+dir 3-1662.0.r1682/1865
+K 10
+difflib.py
+V 23
+file 3-1061.0.r1061/123
+K 13
+docutils.conf
+V 23
+file 6-1661.0.r1661/508
+K 19
+docutils_difflib.py
+V 26
+file 6-2354.k-2531.r2531/0
+K 10
+functional
+V 28
+dir 3-2357.l-2531.r2531/2802
+K 19
+package_unittest.py
+V 22
+file 3-44.0.r778/16101
+K 16
+test_language.py
+V 22
+file 3-940.0.r1517/813
+K 13
+test_nodes.py
+V 23
+file 4i-18.0.r1294/2001
+K 12
+test_parsers
+V 27
+dir 4k-18.0-1813.r2531/6715
+K 12
+test_readers
+V 22
+dir 3-89.0.r1090/10528
+K 16
+test_settings.py
+V 23
+file g-1662.0.r1682/849
+K 20
+test_statemachine.py
+V 22
+file 6a-18.0.r917/6020
+K 15
+test_transforms
+V 22
+dir 6c-18.0.r1793/3731
+K 13
+test_utils.py
+V 23
+file 6u-18.0.r1235/3274
+K 16
+test_viewlist.py
+V 23
+file 3-916.0.r1572/2984
+K 12
+test_writers
+V 28
+dir 5-1211.0-1813.r2531/1659
+END
+ENDREP
+id: 48-18.0-1813.r2531/7941
+type: dir
+pred: 48-18.0-1813.r2528/3799
+count: 182
+text: 2531 6989 939 939 d95c7f9aa5ea53d2b939b6638a49a4d9
+props: 343 993 44 0 e8789a4081469b0bbc8d88dcdbd925ef
+cpath: /branches/nesting/docutils/test
+copyroot: 1813 /branches/nesting
+
+id: 2-788.1-2531.r2531/8203
+type: file
+pred: 2-788.0.r1817/316
+count: 23
+text: 1817 0 167 23023 447fef769f58667d2ecdc503b58d8430 4d0bdaf9cf0f258c5d93a094b0514c3a58344c61 1816-1eg/_3
+props: 1817 192 111 0 1912998302effd94f7d1c131050552ad
+cpath: /branches/nesting/docutils/FAQ.txt
+copyfrom: 1817 /trunk/docutils/FAQ.txt
+
+id: 9-1954.h-2531.r2531/8522
+type: file
+pred: 9-1954.0.r2332/1216
+count: 5
+text: 2332 306 764 3366 645ab236a51eabecc768c4f40f9a75f4 08f14590f2d36db79b6ca8081725af45ed9a4120 2331-1sr/_9
+props: 2332 1093 110 0 7d181b70073f10d0c5a58c73a72d4f04
+cpath: /branches/nesting/docutils/docutils/parsers/rst/languages/pt_br.py
+copyfrom: 2525 /trunk/docutils/docutils/parsers/rst/languages/pt_br.py
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 2x-18.0.r1510/7948
+K 5
+af.py
+V 25
+file 9-1513.0.r1799/10593
+K 5
+cs.py
+V 25
+file a-1767.0.r1799/10157
+K 5
+de.py
+V 23
+file 6-801.0.r1799/7115
+K 5
+en.py
+V 23
+file 30-18.0.r1799/8852
+K 5
+eo.py
+V 23
+file 9-1583.0.r1802/362
+K 5
+es.py
+V 23
+file 9-1358.0.r1802/792
+K 5
+fr.py
+V 25
+file 6-1051.0.r1799/11901
+K 5
+it.py
+V 23
+file 9-1044.0.r1808/787
+K 8
+pt-br.py
+V 24
+file 9-1753.0.r1799/9720
+K 8
+pt_br.py
+V 29
+file 9-1954.h-2531.r2531/8522
+K 5
+ru.py
+V 25
+file 9-1515.0.r1799/11029
+K 5
+sk.py
+V 23
+file 6-950.0.r1799/8419
+K 5
+sv.py
+V 23
+file 9-341.0.r1799/7550
+END
+ENDREP
+id: 2w-18.0-1813.r2531/9500
+type: dir
+pred: 2w-18.0.r1808/1636
+count: 59
+text: 2531 8909 578 578 01e1d7cdbb0f5d33cb88acf5202a9277
+props: 342 1575 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /branches/nesting/docutils/docutils/parsers/rst/languages
+copyroot: 1813 /branches/nesting
+
+id: 5-1943.i-2531.r2531/9783
+type: file
+pred: 5-1943.0.r2287/7472
+count: 9
+text: 2287 1356 2415 11693 5fcc044a27f49b8f3ff200aa0e99f806 485a72b838ac77ef8474387e06abe1ac53fd2994 2286-1ri/_c
+props: 2287 7349 110 0 a3ee73c7ed0bd397f9f2fedc7793a5b7
+cpath: /branches/nesting/docutils/docutils/parsers/rst/roles.py
+copyfrom: 2525 /trunk/docutils/docutils/parsers/rst/roles.py
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 2f-18.0.r1663/2762
+K 10
+directives
+V 22
+dir 2i-18.0.r1799/6743
+K 9
+languages
+V 27
+dir 2w-18.0-1813.r2531/9500
+K 8
+roles.py
+V 29
+file 5-1943.i-2531.r2531/9783
+K 9
+states.py
+V 28
+file 32-18.0-1813.r1822/7578
+K 14
+tableparser.py
+V 23
+file 34-18.0.r1574/4440
+END
+ENDREP
+id: 2e-18.0-1813.r2531/10452
+type: dir
+pred: 2e-18.0-1813.r1822/8168
+count: 196
+text: 2531 10153 286 286 ef849db650f988b1e7f34b34c7ce0dc5
+props: 342 2533 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /branches/nesting/docutils/docutils/parsers/rst
+copyroot: 1813 /branches/nesting
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 2b-18.0.r1645/6017
+K 3
+rst
+V 28
+dir 2e-18.0-1813.r2531/10452
+END
+ENDREP
+id: 2a-18.0-1813.r2531/10838
+type: dir
+pred: 2a-18.0-1813.r1822/8551
+count: 197
+text: 2531 10733 92 92 d235931dce2255740da23d5782fc1cb3
+props: 342 3339 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /branches/nesting/docutils/docutils/parsers
+copyroot: 1813 /branches/nesting
+
+id: 5-1858.j-2531.r2531/11113
+type: file
+pred: 5-1858.0.r1881/3321
+count: 3
+text: 1881 2083 661 3139 6d330913a5aa0dbc73af93ed42acc6c7 caea9e6989a61a6d512f1e53a59dfe580b9a37f9 1880-1g8/_8
+props: 1881 3198 110 0 fd27c383f48a4fbbd90a59fbcfc8b3be
+cpath: /branches/nesting/docutils/docutils/readers/python/pynodes.py
+copyfrom: 2525 /trunk/docutils/docutils/readers/python/pynodes.py
+
+PLAIN
+K 11
+__init__.py
+V 24
+file 6-989.0.r1645/11201
+K 15
+moduleparser.py
+V 23
+file 5-990.0.r1060/5399
+K 10
+pynodes.py
+V 30
+file 5-1858.j-2531.r2531/11113
+END
+ENDREP
+id: 4-989.0-1813.r2531/11658
+type: dir
+pred: 4-989.0.r1645/11623
+count: 11
+text: 2531 11492 153 153 8774c51d8031bdb86d5c272dc74522aa
+cpath: /branches/nesting/docutils/docutils/readers/python
+copyroot: 1813 /branches/nesting
+
+PLAIN
+K 11
+__init__.py
+V 24
+file 37-18.0.r1645/11936
+K 6
+pep.py
+V 23
+file 4-80.0.r1645/12363
+K 6
+python
+V 28
+dir 4-989.0-1813.r2531/11658
+K 13
+standalone.py
+V 23
+file 3a-18.0.r1663/6249
+END
+ENDREP
+id: 36-18.0-1813.r2531/12080
+type: dir
+pred: 36-18.0.r1663/6745
+count: 40
+text: 2531 11883 184 184 e0330f677d452261996b981bea4b13ab
+props: 342 4190 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /branches/nesting/docutils/docutils/readers
+copyroot: 1813 /branches/nesting
+
+id: 3-1928.f-2531.r2531/12351
+type: file
+pred: 3-1928.0.r2028/395
+count: 4
+text: 2028 0 248 2994 6cd2c5768db1bd22b4bb3dac5bc24e23 6eb19f1461b366f184fb26bff78a14b46ce2cbd2 2027-1kb/_4
+props: 2028 272 110 0 dce24d5ac3f5e86568d59a55fa196991
+cpath: /branches/nesting/docutils/docutils/examples.py
+copyfrom: 2525 /trunk/docutils/docutils/examples.py
+
+id: 4-1954.g-2531.r2531/12697
+type: file
+pred: 4-1954.0.r2333/190
+count: 4
+text: 2333 0 43 1989 955201104e634ea6e30f510d6399b9a4 205e0bb89d17ad595ddbd42fa871b65d9a1fcdc5 2332-1ss/_5
+props: 2333 67 110 0 dce24d5ac3f5e86568d59a55fa196991
+cpath: /branches/nesting/docutils/docutils/languages/pt_br.py
+copyfrom: 2525 /trunk/docutils/docutils/languages/pt_br.py
+
+PLAIN
+K 11
+__init__.py
+V 24
+file 23-18.0.r1510/12783
+K 5
+af.py
+V 24
+file 4-1513.0.r1513/3986
+K 5
+cs.py
+V 24
+file 5-1767.0.r1767/5517
+K 5
+de.py
+V 24
+file 4-363.0.r1510/11089
+K 5
+en.py
+V 24
+file 26-18.0.r1510/13208
+K 5
+eo.py
+V 24
+file 4-1583.0.r1583/4088
+K 5
+es.py
+V 24
+file 4-1358.0.r1625/2474
+K 5
+fr.py
+V 22
+file 4-909.0.r1540/181
+K 5
+it.py
+V 25
+file 4-1044.0.r1510/11935
+K 8
+pt-br.py
+V 24
+file 4-1753.0.r1753/4164
+K 8
+pt_br.py
+V 30
+file 4-1954.g-2531.r2531/12697
+K 5
+ru.py
+V 24
+file 4-1515.0.r1515/4200
+K 5
+sk.py
+V 24
+file 6-887.0.r1510/12360
+K 5
+sv.py
+V 23
+file 4-341.0.r1516/7069
+END
+ENDREP
+id: 22-18.0-1813.r2531/13649
+type: dir
+pred: 22-18.0.r1767/6335
+count: 32
+text: 2531 13055 581 581 b0b1b775df17b692f8a16d1d2a650c34
+props: 342 7022 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /branches/nesting/docutils/docutils/languages
+copyroot: 1813 /branches/nesting
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 1x-18.0.r1663/7104
+K 7
+core.py
+V 22
+file 20-18.0.r1666/962
+K 11
+examples.py
+V 30
+file 3-1928.f-2531.r2531/12351
+K 11
+frontend.py
+V 22
+file 3-150.0.r1810/307
+K 5
+io.py
+V 22
+file 3-217.0.r1765/546
+K 9
+languages
+V 28
+dir 22-18.0-1813.r2531/13649
+K 8
+nodes.py
+V 23
+file 28-18.0.r1793/9381
+K 7
+parsers
+V 28
+dir 2a-18.0-1813.r2531/10838
+K 7
+readers
+V 28
+dir 36-18.0-1813.r2531/12080
+K 15
+statemachine.py
+V 22
+file 3e-18.0.r1568/480
+K 10
+transforms
+V 22
+dir 3g-18.0.r1811/4385
+K 13
+urischemes.py
+V 23
+file 3s-18.0.r1779/1742
+K 8
+utils.py
+V 22
+file 3u-18.0.r1525/732
+K 7
+writers
+V 22
+dir 3w-18.0.r1803/8512
+END
+ENDREP
+id: 1w-18.0-1813.r2531/14565
+type: dir
+pred: 1w-18.0-1813.r1822/9401
+count: 661
+text: 2531 13922 630 630 3e34505db65e604e9cd6e9adb83db67c
+props: 342 8363 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /branches/nesting/docutils/docutils
+copyroot: 1813 /branches/nesting
+
+id: 4-1968.a-2531.r2531/14834
+type: file
+pred: 4-1968.0.r2205/3411
+count: 5
+text: 2205 780 1703 8360 cf63ffd1901f8916eb634dcd1e98576f a09f2d1230cc95759bc811191c16a3255a7467aa 2204-1p8/_6
+props: 2205 3288 110 0 7d181b70073f10d0c5a58c73a72d4f04
+cpath: /branches/nesting/docutils/docs/howto/rst-roles.txt
+copyfrom: 2525 /trunk/docutils/docs/howto/rst-roles.txt
+
+PLAIN
+K 8
+i18n.txt
+V 23
+file 4-806.0.r1518/1151
+K 18
+rst-directives.txt
+V 23
+file 5-749.0.r1578/9898
+K 13
+rst-roles.txt
+V 30
+file 4-1968.a-2531.r2531/14834
+END
+ENDREP
+id: 3-749.0-1813.r2531/15360
+type: dir
+pred: 3-749.0.r1578/10312
+count: 14
+text: 2531 15193 154 154 078c71f404f0a1a30f34a7535b9cc274
+cpath: /branches/nesting/docutils/docs/howto
+copyroot: 1813 /branches/nesting
+
+id: 3-2171.b-2531.r2531/15572
+type: file
+pred: 3-2171.0.r2506/355
+count: 19
+text: 2506 0 207 7445 1527822fbeb8e084e847170e8a827686 20ed1e71523faaa1f4a49b8c80b0417e3a4a0b5b 2505-1xl/_4
+props: 2506 231 111 0 df9f31216c5039327c376b7fe82756f5
+cpath: /branches/nesting/docutils/docs/index.txt
+copyfrom: 2525 /trunk/docutils/docs/index.txt
+
+id: 3-2394.3-2531.r2531/15907
+type: dir
+pred: 3-2394.0.r2404/638
+count: 7
+text: 2404 466 159 159 ac32700c7d42ca624e1977d22d4862c5
+cpath: /branches/nesting/docutils/docs/api
+copyfrom: 2525 /trunk/docutils/docs/api
+
+id: 4-855.c-2531.r2531/16121
+type: file
+pred: 4-855.0.r1819/1945
+count: 6
+text: 1819 1758 38 3178 279acef4ef1cf892384871a60d376847 9b93337ab2f274249c8d6b1831eccfc9c6253c4d 1818-1ei/_7
+props: 1819 1822 110 0 fdfdab56f53d2388a66f6a5ce0985f95
+cpath: /branches/nesting/docutils/docs/ref/transforms.txt
+copyfrom: 1819 /trunk/docutils/docs/ref/transforms.txt
+
+PLAIN
+K 11
+doctree.txt
+V 22
+file x-18.0.r1771/9043
+K 12
+docutils.dtd
+V 23
+file 10-18.0.r1792/2620
+K 3
+rst
+V 22
+dir 12-18.0.r1791/4922
+K 12
+soextblx.dtd
+V 28
+file 1a-18.1-1813.r1813/1178
+K 14
+transforms.txt
+V 29
+file 4-855.c-2531.r2531/16121
+END
+ENDREP
+id: w-18.0-1813.r2531/16727
+type: dir
+pred: w-18.0-1813.r1813/1734
+count: 152
+text: 2531 16475 239 239 ad7466a0c0c9301813317e90e5a9433f
+cpath: /branches/nesting/docutils/docs/ref
+copyroot: 1813 /branches/nesting
+
+id: 9-2183.9-2531.r2531/16940
+type: file
+pred: 9-2183.0.r2183/9222
+count: 1
+text: 2183 8351 735 1358 b854da6d28d0eef8263ef3cfb2ebd250 14aadfa0a16fdbc7c9537bd21dcdaf2880c662c0 2182-1om/_a
+props: 2183 9099 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /branches/nesting/docutils/docs/dev/website.txt
+copyfrom: 2525 /trunk/docutils/docs/dev/website.txt
+
+id: n-18.8-2531.r2531/17291
+type: file
+pred: n-18.0.r1819/2778
+count: 185
+text: 1819 0 1733 79564 1407ec102ae900e4a820b21d5b95d0d9 1a5291b2b771a2f616556a1f0cc8eb1affdeba60 1818-1ei/_5
+props: 1819 2653 112 0 ba18f02b6a30648f51205f203cf4a2a8
+cpath: /branches/nesting/docutils/docs/dev/todo.txt
+copyfrom: 1819 /trunk/docutils/docs/dev/todo.txt
+
+id: 4-2183.6-2531.r2531/17633
+type: file
+pred: 4-2183.0.r2502/1051
+count: 9
+text: 2502 0 903 17479 1388e4dd73f916d3b299bad2e2cec43f a70d2fbdff9604b49159aeb069bee7c1e1e77b23 2501-1xh/_5
+props: 2502 928 110 0 a3ee73c7ed0bd397f9f2fedc7793a5b7
+cpath: /branches/nesting/docutils/docs/dev/policies.txt
+copyfrom: 2525 /trunk/docutils/docs/dev/policies.txt
+
+id: 7-2241.5-2531.r2531/17983
+type: file
+pred: 7-2241.0.r2370/173
+count: 2
+text: 2370 0 22 4529 8275581b96bbcebb676fe2bdb4997173 34e3a2a8eb2940c05671a4f0c7fca4a249e39f5d 2369-1tt/_5
+props: 2370 50 110 0 2a94ed7a58fe1feebaea27ee0c48460d
+cpath: /branches/nesting/docutils/docs/dev/enthought-rfp.txt
+copyfrom: 2525 /trunk/docutils/docs/dev/enthought-rfp.txt
+
+id: 4-2241.4-2531.r2531/18339
+type: file
+pred: 4-2241.0.r2251/325
+count: 4
+text: 2251 0 177 14283 3f3a10b15d8ce141ffff1649efd7d77e ba947a68f0fca34cc6349e634e471b7e7cd8aee3 2250-1qi/_5
+props: 2251 202 110 0 dce24d5ac3f5e86568d59a55fa196991
+cpath: /branches/nesting/docutils/docs/dev/enthought-plan.txt
+copyfrom: 2525 /trunk/docutils/docs/dev/enthought-plan.txt
+
+id: 7-2183.7-2531.r2531/18700
+type: file
+pred: 7-2183.0.r2525/2481
+count: 4
+text: 2525 682 375 4806 66fd4916598496c4edfab232d2645b84 5be5deb3147aa62d366d39e657f0f737a9d7c857 2524-1y4/_6
+props: 2525 2358 110 0 dce24d5ac3f5e86568d59a55fa196991
+cpath: /branches/nesting/docutils/docs/dev/release.txt
+copyfrom: 2525 /trunk/docutils/docs/dev/release.txt
+
+PLAIN
+K 18
+enthought-plan.txt
+V 30
+file 4-2241.4-2531.r2531/18339
+K 17
+enthought-rfp.txt
+V 30
+file 7-2241.5-2531.r2531/17983
+K 12
+policies.txt
+V 30
+file 4-2183.6-2531.r2531/17633
+K 12
+pysource.dtd
+V 21
+file c-18.0.r983/8202
+K 12
+pysource.txt
+V 23
+file f-18.0.r1409/24580
+K 11
+release.txt
+V 30
+file 7-2183.7-2531.r2531/18700
+K 3
+rst
+V 21
+dir h-18.0.r1610/3052
+K 13
+semantics.txt
+V 23
+file 5-12.0.r1409/24162
+K 8
+todo.txt
+V 28
+file n-18.8-2531.r2531/17291
+K 11
+website.txt
+V 30
+file 9-2183.9-2531.r2531/16940
+END
+ENDREP
+id: 3-12.0-1813.r2531/19568
+type: dir
+pred: 3-12.0-1813.r1813/2132
+count: 211
+text: 2531 19050 505 505 31205504929b2738e0b46cfcb94a9dc8
+cpath: /branches/nesting/docutils/docs/dev
+copyroot: 1813 /branches/nesting
+
+id: 5-2490.e-2531.r2531/19781
+type: file
+pred: 5-2490.0.r2505/615
+count: 3
+text: 2505 0 467 13575 3690e925434da5835506ed2ab3ad1068 d0f1912bab6e22bb78f6d9412b0b4bb6b3cd413b 2504-1xk/_6
+props: 2505 492 110 0 fd27c383f48a4fbbd90a59fbcfc8b3be
+cpath: /branches/nesting/docutils/docs/user/rst/demo.txt
+copyfrom: 2525 /trunk/docutils/docs/user/rst/demo.txt
+
+id: 5-2153.d-2531.r2531/20132
+type: file
+pred: 5-2153.0.r2426/201
+count: 8
+text: 2426 0 55 5883 a9b5bc10908a06a0878a9b9fc9beefbf 6573e95b29036351accd45323c3e741e034c382d 2425-1vd/_6
+props: 2426 78 110 0 2297367bb62237eae251d6a189335c2c
+cpath: /branches/nesting/docutils/docs/user/rst/cheatsheet.txt
+copyfrom: 2525 /trunk/docutils/docs/user/rst/cheatsheet.txt
+
+PLAIN
+K 14
+cheatsheet.txt
+V 30
+file 5-2153.d-2531.r2531/20132
+K 8
+demo.txt
+V 30
+file 5-2490.e-2531.r2531/19781
+K 6
+images
+V 27
+dir 1f-18.2-1813.r1813/2489
+K 13
+quickref.html
+V 28
+file 1s-18.3-1813.r1813/3091
+K 14
+quickstart.txt
+V 28
+file 1u-18.4-1813.r1813/2730
+END
+ENDREP
+id: 1d-18.2-1813.r2531/20765
+type: dir
+pred: 1d-18.2-1813.r1813/3625
+count: 2
+text: 2531 20492 260 260 199d40db8b6de412f4b14d9b6e772644
+cpath: /branches/nesting/docutils/docs/user/rst
+copyroot: 1813 /branches/nesting/docutils/docs/user/rst
+
+PLAIN
+K 10
+config.txt
+V 24
+file 4-1639.0.r1768/2128
+K 9
+latex.txt
+V 23
+file 4-1264.0.r1737/238
+K 3
+rst
+V 28
+dir 1d-18.2-1813.r2531/20765
+K 9
+tools.txt
+V 22
+file 4-365.0.r1640/874
+END
+ENDREP
+id: 1c-18.0-1813.r2531/21196
+type: dir
+pred: 1c-18.0-1813.r1813/4048
+count: 103
+text: 2531 21006 177 177 901989d804bfa181ef8cfc6555bc85a1
+cpath: /branches/nesting/docutils/docs/user
+copyroot: 1813 /branches/nesting
+
+PLAIN
+K 3
+api
+V 29
+dir 3-2394.3-2531.r2531/15907
+K 3
+dev
+V 27
+dir 3-12.0-1813.r2531/19568
+K 5
+howto
+V 28
+dir 3-749.0-1813.r2531/15360
+K 9
+index.txt
+V 30
+file 3-2171.b-2531.r2531/15572
+K 4
+peps
+V 21
+dir 5-7.0.r1470/10095
+K 3
+ref
+V 27
+dir w-18.0-1813.r2531/16727
+K 4
+user
+V 28
+dir 1c-18.0-1813.r2531/21196
+END
+ENDREP
+id: 3-7.0-1813.r2531/21727
+type: dir
+pred: 3-7.0-1813.r1813/4472
+count: 463
+text: 2531 21412 302 302 c7b0303e04a6d9c425b709b5fc202872
+cpath: /branches/nesting/docutils/docs
+copyroot: 1813 /branches/nesting
+
+id: 3-2467.r-2531.r2531/21934
+type: file
+pred: 3-2467.0.r2467/149
+count: 1
+text: 1896 2809 379 602 88ce1c4dd03112381fa3d48644cd5560 72e835f391d0a79ff51c27ec0b035db07bfcde84 2466-1wi/_5
+props: 2467 0 136 0 cd16f4c3541932a389cc4ebf2ace9d97
+cpath: /branches/nesting/docutils/tools/rst2pseudoxml.py
+copyfrom: 2525 /trunk/docutils/tools/rst2pseudoxml.py
+
+id: 3-2468.s-2531.r2531/22284
+type: file
+pred: 3-2468.0.r2468/149
+count: 1
+text: 1896 1551 385 609 60a500e719bec4d22742d5a5358f59ce 0d52800d17e09c7d7a9b8931e55bfcc6ef32684a 2467-1wj/_5
+props: 2468 0 136 0 cd16f4c3541932a389cc4ebf2ace9d97
+cpath: /branches/nesting/docutils/tools/rst2xml.py
+copyfrom: 2525 /trunk/docutils/tools/rst2xml.py
+
+id: 5-2134.q-2531.r2531/22622
+type: file
+pred: 5-2134.0.r2430/1060
+count: 5
+text: 2430 0 913 2322 ef76843e39883207fefb9e475490e8dc c93f021d00fa620cd3092c8ec43587fb72b957cc 2429-1vh/_6
+props: 2430 937 110 0 7d181b70073f10d0c5a58c73a72d4f04
+cpath: /branches/nesting/docutils/tools/editors/emacs/README.txt
+copyfrom: 2525 /trunk/docutils/tools/editors/emacs/README.txt
+
+PLAIN
+K 10
+README.txt
+V 30
+file 5-2134.q-2531.r2531/22622
+K 19
+restructuredtext.el
+V 23
+file 9-1157.0.r1325/597
+K 11
+rst-html.el
+V 23
+file 5-1290.0.r1299/788
+K 11
+rst-mode.el
+V 24
+file 5-1252.0.r1290/1879
+END
+ENDREP
+id: 8-1157.0-1813.r2531/23205
+type: dir
+pred: 8-1157.0.r1325/1071
+count: 12
+text: 2531 22989 203 203 c16100101d67395448506f7577b725da
+cpath: /branches/nesting/docutils/tools/editors/emacs
+copyroot: 1813 /branches/nesting
+
+PLAIN
+K 10
+README.txt
+V 24
+file 5-1157.0.r1157/1680
+K 5
+emacs
+V 29
+dir 8-1157.0-1813.r2531/23205
+END
+ENDREP
+id: 3-1157.0-1813.r2531/23535
+type: dir
+pred: 3-1157.0.r1325/1357
+count: 12
+text: 2531 23427 95 95 766fc945373794e44872ea17c57116cc
+cpath: /branches/nesting/docutils/tools/editors
+copyroot: 1813 /branches/nesting
+
+id: 75-18.t-2531.r2531/23749
+type: file
+pred: 75-18.0.r1820/212
+count: 36
+text: 1820 0 64 3933 bf0c6a9821cf2580c807182a7101e8c0 66acacebff2574f2960c470ce56c13da07a88924 1819-1ej/_5
+props: 1820 88 111 0 0a665f39d0e6b710aae173fcfb77dd8e
+cpath: /branches/nesting/docutils/tools/stylesheets/default.css
+copyfrom: 1820 /trunk/docutils/tools/stylesheets/default.css
+
+PLAIN
+K 11
+default.css
+V 29
+file 75-18.t-2531.r2531/23749
+K 7
+pep.css
+V 21
+file 4-286.0.r932/174
+K 9
+style.tex
+V 24
+file 4-1656.0.r1713/1311
+END
+ENDREP
+id: 74-18.0-1813.r2531/24262
+type: dir
+pred: 74-18.0-1813.r1813/100
+count: 48
+text: 2531 24110 139 139 3432d452352033564bd7243bb64f3f30
+cpath: /branches/nesting/docutils/tools/stylesheets
+copyroot: 1813 /branches/nesting
+
+PLAIN
+K 12
+buildhtml.py
+V 23
+file 3-430.0.r1668/3591
+K 15
+docutils-xml.py
+V 23
+file 3-247.0.r825/33075
+K 13
+docutils.conf
+V 22
+file 3-407.0.r1660/284
+K 7
+editors
+V 29
+dir 3-1157.0-1813.r2531/23535
+K 7
+html.py
+V 23
+file 6x-18.0.r825/33515
+K 17
+pep-html-template
+V 21
+file 3-312.0.r943/265
+K 6
+pep.py
+V 23
+file 3-288.0.r825/33947
+K 11
+pep2html.py
+V 22
+file 3-319.0.r1690/736
+K 10
+publish.py
+V 23
+file 70-18.0.r825/34379
+K 12
+quicktest.py
+V 22
+file 72-18.0.r1088/575
+K 11
+rst2html.py
+V 23
+file 5-1756.0.r1756/860
+K 12
+rst2latex.py
+V 23
+file b-1202.0.r1543/389
+K 16
+rst2pseudoxml.py
+V 30
+file 3-2467.r-2531.r2531/21934
+K 10
+rst2xml.py
+V 30
+file 3-2468.s-2531.r2531/22284
+K 11
+stylesheets
+V 28
+dir 74-18.0-1813.r2531/24262
+K 18
+unicode2rstsubs.py
+V 24
+file 3-1497.0.r1497/2357
+END
+ENDREP
+id: 6w-18.0-1813.r2531/25267
+type: dir
+pred: 6w-18.0-1813.r1813/975
+count: 145
+text: 2531 24484 770 770 cccf364bcce2af5c9ee890afcb68ceba
+cpath: /branches/nesting/docutils/tools
+copyroot: 1813 /branches/nesting
+
+id: 2-2182.2-2531.r2531/25478
+type: file
+pred: 2-2182.0.r2248/742
+count: 2
+text: 2248 559 35 2514 447765c7a65ae480546ad6deba3c8705 2192b4d8cfcda8d324ef449b02782e59db8fd671 2247-1qf/_4
+props: 2248 619 110 0 2a94ed7a58fe1feebaea27ee0c48460d
+cpath: /branches/nesting/docutils/THANKS.txt
+copyfrom: 2525 /trunk/docutils/THANKS.txt
+
+id: 2-2181.0-2531.r2531/25805
+type: file
+pred: 2-2181.0.r2464/452
+count: 16
+text: 2464 0 304 6653 554a527d66c7f717d0d51db17b321e8b 82fc6fb129ea09a68b5b7b49e8d5f4fb7c13fc56 2463-1wf/_3
+props: 2464 328 111 0 2a5912525b098cb46a1301ee940f7617
+cpath: /branches/nesting/docutils/BUGS.txt
+copyfrom: 2525 /trunk/docutils/BUGS.txt
+
+PLAIN
+K 10
+.cvsignore
+V 21
+file 2-340.0.r340/154
+K 8
+BUGS.txt
+V 30
+file 2-2181.0-2531.r2531/25805
+K 11
+COPYING.txt
+V 22
+file 2-18.0.r1470/5361
+K 7
+FAQ.txt
+V 28
+file 2-788.1-2531.r2531/8203
+K 11
+HISTORY.txt
+V 22
+file 5-18.0.r1811/2871
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r1505/219
+K 10
+README.txt
+V 21
+file 9-18.0.r1589/691
+K 10
+THANKS.txt
+V 30
+file 2-2182.2-2531.r2531/25478
+K 4
+docs
+V 26
+dir 3-7.0-1813.r2531/21727
+K 8
+docutils
+V 28
+dir 1w-18.0-1813.r2531/14565
+K 6
+extras
+V 23
+dir 2-1467.0.r1686/1264
+K 10
+install.py
+V 24
+file 44-18.0.r1409/28098
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 23
+file 46-18.0.r1756/2104
+K 4
+test
+V 27
+dir 48-18.0-1813.r2531/7941
+K 5
+tools
+V 28
+dir 6w-18.0-1813.r2531/25267
+END
+ENDREP
+id: 1-7.0-1813.r2531/26856
+type: dir
+pred: 1-7.0-1813.r2528/4638
+count: 1325
+text: 2531 26128 715 715 9115c30c551d3969f33ed8774b662c09
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /branches/nesting/docutils
+copyroot: 1813 /branches/nesting
+
+PLAIN
+K 8
+docutils
+V 26
+dir 1-7.0-1813.r2531/26856
+END
+ENDREP
+id: 3-1.0-1813.r2531/27174
+type: dir
+pred: 3-1.0-1813.r2528/4954
+count: 1807
+text: 2531 27112 49 49 99e7ed1880012f9707592a44a69f8e2e
+cpath: /branches/nesting
+copyroot: 1813 /branches/nesting
+
+PLAIN
+K 2
+ax
+V 24
+dir 3-1.0-1551.r1551/296
+K 7
+goodger
+V 22
+dir 3-1.0-19.r21/10951
+K 7
+nesting
+V 26
+dir 3-1.0-1813.r2531/27174
+K 4
+tibs
+V 20
+dir 3-1.0-63.r63/279
+K 6
+vendor
+V 21
+dir 3-1.0-3.r1556/334
+END
+ENDREP
+id: 0-1.0.r2531/27577
+type: dir
+pred: 0-1.0.r2528/5355
+count: 16
+text: 2531 27366 198 198 fe906be47c579aedb401fbd72f63528b
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 21
+dir 0-1.0.r2531/27577
+K 4
+tags
+V 20
+dir 2-1.0.r1558/2271
+K 5
+trunk
+V 20
+dir 3-1.0.r2530/2739
+END
+ENDREP
+id: 0.0.r2531/27860
+type: dir
+pred: 0.0.r2530/3018
+count: 2531
+text: 2531 27732 115 115 e05fdf7cc9954ed31ede93d0d7ba969c
+cpath: /
+copyroot: 0 /
+
+2-2181._0.t2530-1ya add-file false false /branches/nesting/docutils/BUGS.txt
+2525 /trunk/docutils/BUGS.txt
+7-2241._5.t2530-1ya add-file false false /branches/nesting/docutils/docs/dev/enthought-rfp.txt
+2525 /trunk/docutils/docs/dev/enthought-rfp.txt
+3-2357._l.t2530-1ya add-dir false false /branches/nesting/docutils/test/functional
+2525 /trunk/docutils/test/functional
+4-2241._4.t2530-1ya add-file false false /branches/nesting/docutils/docs/dev/enthought-plan.txt
+2525 /trunk/docutils/docs/dev/enthought-plan.txt
+2-788._1.t2530-1ya add-file false false /branches/nesting/docutils/FAQ.txt
+1817 /trunk/docutils/FAQ.txt
+n-18._8.t2530-1ya add-file false false /branches/nesting/docutils/docs/dev/todo.txt
+1819 /trunk/docutils/docs/dev/todo.txt
+t-1959._m.t2530-1ya add-file false false /branches/nesting/docutils/test/test_parsers/test_rst/test_directives/test_role.py
+2525 /trunk/docutils/test/test_parsers/test_rst/test_directives/test_role.py
+5-2055._o.t2530-1ya add-dir false false /branches/nesting/docutils/test/test_writers/test_html4css1
+2525 /trunk/docutils/test/test_writers/test_html4css1
+c-2357.0.r2423/2536 delete-file false false /branches/nesting/docutils/test/functional/expected/standalone_rst_latex.tex
+
+4-1968._a.t2530-1ya add-file false false /branches/nesting/docutils/docs/howto/rst-roles.txt
+2525 /trunk/docutils/docs/howto/rst-roles.txt
+4-2018._n.t2530-1ya add-file false false /branches/nesting/docutils/test/test_writers/test_docutils_xml.py
+2525 /trunk/docutils/test/test_writers/test_docutils_xml.py
+5-2153._d.t2530-1ya add-file false false /branches/nesting/docutils/docs/user/rst/cheatsheet.txt
+2525 /trunk/docutils/docs/user/rst/cheatsheet.txt
+u-2357.0.r2357/3461 delete-file false false /branches/nesting/docutils/test/functional/input/standalone_rst_latex.txt
+
+9-1954._h.t2530-1ya add-file false false /branches/nesting/docutils/docutils/parsers/rst/languages/pt_br.py
+2525 /trunk/docutils/docutils/parsers/rst/languages/pt_br.py
+4-855._c.t2530-1ya add-file false false /branches/nesting/docutils/docs/ref/transforms.txt
+1819 /trunk/docutils/docs/ref/transforms.txt
+5-2490._e.t2530-1ya add-file false false /branches/nesting/docutils/docs/user/rst/demo.txt
+2525 /trunk/docutils/docs/user/rst/demo.txt
+3-2467._r.t2530-1ya add-file false false /branches/nesting/docutils/tools/rst2pseudoxml.py
+2525 /trunk/docutils/tools/rst2pseudoxml.py
+5-1995._p.t2530-1ya add-file false false /branches/nesting/docutils/test/test_writers/test_pseudoxml.py
+2525 /trunk/docutils/test/test_writers/test_pseudoxml.py
+9-2183._9.t2530-1ya add-file false false /branches/nesting/docutils/docs/dev/website.txt
+2525 /trunk/docutils/docs/dev/website.txt
+75-18._t.t2530-1ya add-file false false /branches/nesting/docutils/tools/stylesheets/default.css
+1820 /trunk/docutils/tools/stylesheets/default.css
+5-1943._i.t2530-1ya add-file false false /branches/nesting/docutils/docutils/parsers/rst/roles.py
+2525 /trunk/docutils/docutils/parsers/rst/roles.py
+4-1954._g.t2530-1ya add-file false false /branches/nesting/docutils/docutils/languages/pt_br.py
+2525 /trunk/docutils/docutils/languages/pt_br.py
+4-2183._6.t2530-1ya add-file false false /branches/nesting/docutils/docs/dev/policies.txt
+2525 /trunk/docutils/docs/dev/policies.txt
+3-1928._f.t2530-1ya add-file false false /branches/nesting/docutils/docutils/examples.py
+2525 /trunk/docutils/docutils/examples.py
+3-2394._3.t2530-1ya add-dir false false /branches/nesting/docutils/docs/api
+2525 /trunk/docutils/docs/api
+3-2468._s.t2530-1ya add-file false false /branches/nesting/docutils/tools/rst2xml.py
+2525 /trunk/docutils/tools/rst2xml.py
+5-1858._j.t2530-1ya add-file false false /branches/nesting/docutils/docutils/readers/python/pynodes.py
+2525 /trunk/docutils/docutils/readers/python/pynodes.py
+7-2183._7.t2530-1ya add-file false false /branches/nesting/docutils/docs/dev/release.txt
+2525 /trunk/docutils/docs/dev/release.txt
+2-2182._2.t2530-1ya add-file false false /branches/nesting/docutils/THANKS.txt
+2525 /trunk/docutils/THANKS.txt
+6-2354._k.t2530-1ya add-file false false /branches/nesting/docutils/test/docutils_difflib.py
+2525 /trunk/docutils/test/docutils_difflib.py
+5-2134._q.t2530-1ya add-file false false /branches/nesting/docutils/tools/editors/emacs/README.txt
+2525 /trunk/docutils/tools/editors/emacs/README.txt
+3-2171._b.t2530-1ya add-file false false /branches/nesting/docutils/docs/index.txt
+2525 /trunk/docutils/docs/index.txt
+
+27860 28005

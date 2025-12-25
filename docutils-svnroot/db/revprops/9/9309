@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-12-13T21:45:32.684643Z
+K 7
+svn:log
+V 275
+Update Publisher API documentation.
+
+Use Python 3 terminology: "Unicode string" -> `str` instance.
+
+Document "string I/O" (input/output using `str` or `bytes` instances).
+
+Document input encoding auto-detection.
+
+Specify the behaviour and the "explicit encoding declaration".
+END

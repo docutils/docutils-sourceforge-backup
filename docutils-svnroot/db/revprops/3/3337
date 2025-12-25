@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-05-12T21:21:36.161182Z
+K 7
+svn:log
+V 64
+added \Ditemsep, changed nesting of section subtitle macro calls
+END

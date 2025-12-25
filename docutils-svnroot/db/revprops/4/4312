@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-01-22T16:30:42.826573Z
+K 7
+svn:log
+V 39
+added support for symbolic links in SVN
+END

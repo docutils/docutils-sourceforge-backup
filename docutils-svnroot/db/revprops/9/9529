@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-02-01T13:02:51.075017Z
+K 7
+svn:log
+V 281
+Next MathML elements revision.
+
+Include non-default `nchildren` attribute in `__repr__()`.
+Define `__str__()` for shorter error reports.
+
+Check type of `MathToken(text)` argument, convert numbers to `str` before storing.
+
+Revise wording of error messages, comments, and docstrings.
+END

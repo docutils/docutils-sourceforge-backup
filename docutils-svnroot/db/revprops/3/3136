@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-03-26T20:11:28.818280Z
+K 7
+svn:log
+V 274
+simplified creation of attributes;
+there is some redundancy now (the dictionary appears twice), and the backrefs
+attribute is set not only for BackLinkable nodes but for all Elements,
+but for simplicity that is OK, IMO;
+and after all, it provides quite a significant speedup
+END

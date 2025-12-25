@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-04-15T14:45:41.329994Z
+K 7
+svn:log
+V 268
+More fixes for reporting issues in included source files.
+
+The following problems now correctly report the source file name and 
+the line number in this file: 
+admonition without title, section underline too short, 
+no blank line after table, Unexpected section title.
+END

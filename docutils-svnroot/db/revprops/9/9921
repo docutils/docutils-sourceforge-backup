@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-09-04T19:33:39.616838Z
+K 7
+svn:log
+V 257
+Revise `HTMLTranslator.prepare_svg()`.
+
+Change oder of method arguments (sort by importance).
+
+Use a dictionary to update the `<svg style="..."> declarations keeping
+exisisting declarations intact.
+
+Simplify conversion of "align" attribute.
+
+Add test cases.
+END

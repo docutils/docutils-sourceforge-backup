@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-06-22T16:37:27.039228Z
+K 7
+svn:log
+V 87
+LaTeX writer: fix placement of hyperlink target (label) for tables.
+
+Fixes [bugs:#440].
+END

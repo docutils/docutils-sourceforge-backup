@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2008-12-09T14:42:31.264671Z
+K 7
+svn:log
+V 98
+moved explanation/instructions into templates (no expected output, & output differs from expected)
+END

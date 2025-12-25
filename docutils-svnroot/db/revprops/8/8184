@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-10-06T14:41:07.292789Z
+K 7
+svn:log
+V 102
+Apply [ 121 ] Add a :width: option for the table directives.
+
+Thanks to Brecht Machiels for the patch.
+END

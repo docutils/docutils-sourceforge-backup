@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-06-25T20:59:26.363339Z
+K 7
+svn:log
+V 88
+HTML5: update/simplify style files
+
+sidebar: float left only in plain/responsive/tuftig.
+END

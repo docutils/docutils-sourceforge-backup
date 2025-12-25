@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-04-30T15:16:04.851808Z
+K 7
+svn:log
+V 157
+Documentation update.
+
+Smaller formatting issues.
+
+config.rst
+Add [manpage writer] section.
+Document aliases for 3rd-party markdown parsers.
+Add cross-links.
+END

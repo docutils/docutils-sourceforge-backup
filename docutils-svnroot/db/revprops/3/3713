@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T02:05:14.614886Z
+K 7
+svn:log
+V 109
+Do not add math markup.
+There was agreement we probably do not want it in the core
+because it is too complex.
+END

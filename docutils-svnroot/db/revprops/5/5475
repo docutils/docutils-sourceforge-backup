@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-12-18T15:50:38.227621Z
+K 7
+svn:log
+V 245
+* Added "-W chapter" and "-W cloak-email-addresses" options.
+* Added a new '\styleliteralblock' style command.
+* Fixed a problem with inferring minus signs.
+* Fixed a problem with converting opening single quotes.
+* Fixed handling of raw latex.
+
+END

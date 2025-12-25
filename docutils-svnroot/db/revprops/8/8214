@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2018-01-19T13:45:35.934586Z
+K 7
+svn:log
+V 128
+Drop empty lines in Text.pformat() and revert [r8194].
+
+Keep "rawsource" attribute untouched in Text.rstrip() and
+Text.lstrip().
+END

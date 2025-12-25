@@ -1,0 +1,582 @@
+PLAIN
+K 10
+svn:ignore
+V 6
+*.pyc
+
+END
+ENDREP
+id: 5-1211.0.r4447/44
+type: dir
+pred: 5-1211.0.r3968/4099
+count: 84
+text: 3968 3712 374 374 b56106ec030e4f165e0494e5516e6edc
+props: 4447 0 31 0 b9ebe853b7baef2573e3487e43637c6a
+cpath: /trunk/docutils/test/test_writers
+copyroot: 0 /
+
+PLAIN
+K 10
+svn:ignore
+V 6
+*.pyc
+
+END
+ENDREP
+id: 10-2357.0.r4447/321
+type: dir
+pred: 10-2357.0.r4236/7936
+count: 28
+text: 4236 7171 752 752 8dfe7fe53b57d54bb402d1cd03bb7d3a
+props: 4447 277 31 0 b9ebe853b7baef2573e3487e43637c6a
+cpath: /trunk/docutils/test/functional/tests
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 24
+file 5-2357.0.r2369/2122
+K 8
+expected
+V 23
+dir 8-2357.0.r4446/1944
+K 5
+input
+V 23
+dir e-2357.0.r4236/5091
+K 6
+output
+V 21
+dir w-2357.0.r2993/63
+K 5
+tests
+V 23
+dir 10-2357.0.r4447/321
+END
+ENDREP
+id: 3-2357.0.r4447/784
+type: dir
+pred: 3-2357.0.r4446/2357
+count: 163
+text: 4447 563 208 208 528f2b4630340acaf4801379f74bd0ec
+cpath: /trunk/docutils/test/functional
+copyroot: 0 /
+
+PLAIN
+K 22
+DocutilsTestSupport.py
+V 22
+file 49-18.0.r4258/220
+K 11
+alltests.py
+V 22
+file 4e-18.0.r4217/332
+K 11
+coverage.sh
+V 28
+file 6-3449.0-3489.r3603/213
+K 4
+data
+V 23
+dir 3-1662.0.r3416/2104
+K 13
+docutils.conf
+V 24
+file 6-1661.0.r2385/2146
+K 19
+docutils_difflib.py
+V 24
+file 6-2354.0.r2354/1272
+K 10
+functional
+V 22
+dir 3-2357.0.r4447/784
+K 19
+package_unittest.py
+V 21
+file 3-44.0.r2454/856
+K 20
+test_dependencies.py
+V 24
+file 3-2679.0.r4132/6968
+K 18
+test_functional.py
+V 24
+file 18-2357.0.r4254/348
+K 10
+test_io.py
+V 24
+file 5-3138.0.r4132/6093
+K 16
+test_language.py
+V 23
+file 3-940.0.r4132/6674
+K 13
+test_nodes.py
+V 23
+file 4i-18.0.r4132/6380
+K 12
+test_parsers
+V 22
+dir 4k-18.0.r4445/7845
+K 17
+test_publisher.py
+V 29
+file 6-3525.0-3602.r4132/2738
+K 12
+test_readers
+V 21
+dir 3-89.0.r4445/3115
+K 16
+test_settings.py
+V 22
+file g-1662.0.r4222/69
+K 20
+test_statemachine.py
+V 22
+file 6a-18.0.r917/6020
+K 15
+test_transforms
+V 22
+dir 6c-18.0.r4233/3209
+K 13
+test_utils.py
+V 21
+file 6u-18.0.r3171/53
+K 16
+test_viewlist.py
+V 23
+file 3-916.0.r3085/3892
+K 12
+test_writers
+V 21
+dir 5-1211.0.r4447/44
+END
+ENDREP
+id: 48-18.0.r4447/2070
+type: dir
+pred: 48-18.0.r4446/3648
+count: 647
+text: 4447 964 1093 1093 311272a3586d2a17112e0204ac6b0a9c
+props: 343 993 44 0 e8789a4081469b0bbc8d88dcdbd925ef
+cpath: /trunk/docutils/test
+copyroot: 0 /
+
+PLAIN
+K 10
+svn:ignore
+V 6
+*.pyc
+
+END
+ENDREP
+id: n-4163.0.r4447/2337
+type: dir
+pred: n-4163.0.r4332/3366
+count: 9
+text: 4332 3245 108 108 35dbae0921dda8105d986599052cadcf
+props: 4447 2293 31 0 b9ebe853b7baef2573e3487e43637c6a
+cpath: /trunk/docutils/docutils/writers/html4css1
+copyroot: 0 /
+
+PLAIN
+K 10
+svn:ignore
+V 6
+*.pyc
+
+END
+ENDREP
+id: q-4163.0.r4447/2627
+type: dir
+pred: q-4163.0.r4287/6130
+count: 3
+text: 4287 6008 109 109 b2f201aba1477f25518c5acf056e7959
+props: 4447 2583 31 0 b9ebe853b7baef2573e3487e43637c6a
+cpath: /trunk/docutils/docutils/writers/latex2e
+copyroot: 0 /
+
+PLAIN
+K 10
+svn:ignore
+V 6
+*.pyc
+
+END
+ENDREP
+id: v-4163.0.r4447/2915
+type: dir
+pred: v-4163.0.r4445/11828
+count: 6
+text: 4445 11661 154 154 45196a37f001599e9f26ac5871b7ddaf
+props: 4447 2871 31 0 b9ebe853b7baef2573e3487e43637c6a
+cpath: /trunk/docutils/docutils/writers/pep_html
+copyroot: 0 /
+
+PLAIN
+K 10
+svn:ignore
+V 6
+*.pyc
+
+END
+ENDREP
+id: y-4163.0.r4447/3206
+type: dir
+pred: y-4163.0.r4238/2091
+count: 11
+text: 4238 1978 100 100 e76dbeaef023aa46e7f589bed5109693
+props: 4447 3162 31 0 b9ebe853b7baef2573e3487e43637c6a
+cpath: /trunk/docutils/docutils/writers/s5_html
+copyroot: 0 /
+
+PLAIN
+K 10
+svn:ignore
+V 6
+*.pyc
+
+END
+ENDREP
+id: s-4163.0.r4447/3495
+type: dir
+pred: s-4163.0.r4242/3317
+count: 2
+text: 4242 3143 161 161 b227c068997a5ab48232f03f7f3de329
+props: 4447 3451 31 0 b9ebe853b7baef2573e3487e43637c6a
+cpath: /trunk/docutils/docutils/writers/newlatex2e
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 24
+file 3x-18.0.r4163/17493
+K 15
+docutils_xml.py
+V 23
+file 4-244.0.r3512/7689
+K 9
+html4css1
+V 23
+dir n-4163.0.r4447/2337
+K 7
+latex2e
+V 23
+dir q-4163.0.r4447/2627
+K 10
+newlatex2e
+V 23
+dir s-4163.0.r4447/3495
+K 7
+null.py
+V 24
+file 4-3246.0.r3892/2227
+K 8
+pep_html
+V 23
+dir v-4163.0.r4447/2915
+K 12
+pseudoxml.py
+V 22
+file 4-84.0.r1645/8532
+K 7
+s5_html
+V 23
+dir y-4163.0.r4447/3206
+END
+ENDREP
+id: 3w-18.0.r4447/4156
+type: dir
+pred: 3w-18.0.r4445/12435
+count: 488
+text: 4447 3742 401 401 a7c9614c2aa5f49c4b1e61f034613252
+props: 342 6175 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils/writers
+copyroot: 0 /
+
+PLAIN
+K 10
+svn:ignore
+V 6
+*.pyc
+
+END
+ENDREP
+id: 4-989.0.r4447/4436
+type: dir
+pred: 4-989.0.r4242/4631
+count: 22
+text: 4242 4472 146 146 95e96966482d78ca86a8948f8d187205
+props: 4447 4392 31 0 b9ebe853b7baef2573e3487e43637c6a
+cpath: /trunk/docutils/docutils/readers/python
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 24
+file 37-18.0.r4183/11446
+K 10
+doctree.py
+V 28
+file a-3594.0-3631.r4006/646
+K 6
+pep.py
+V 22
+file 4-80.0.r3892/4709
+K 6
+python
+V 22
+dir 4-989.0.r4447/4436
+K 13
+standalone.py
+V 23
+file 3a-18.0.r3892/4101
+END
+ENDREP
+id: 36-18.0.r4447/4918
+type: dir
+pred: 36-18.0.r4242/5059
+count: 72
+text: 4447 4678 227 227 9e8013e8b038e92eb3de447cbe19dcf4
+props: 342 4190 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils/readers
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 1x-18.0.r4270/6396
+K 7
+core.py
+V 23
+file 20-18.0.r4361/2297
+K 13
+docutils.conf
+V 29
+file m-3472.0-3904.r3904/2799
+K 11
+examples.py
+V 23
+file 3-1928.0.r3598/207
+K 11
+frontend.py
+V 23
+file 3-150.0.r4361/2587
+K 5
+io.py
+V 22
+file 3-217.0.r3654/291
+K 9
+languages
+V 22
+dir 22-18.0.r4203/4865
+K 8
+nodes.py
+V 23
+file 28-18.0.r4242/1778
+K 7
+parsers
+V 23
+dir 2a-18.0.r4445/11046
+K 7
+readers
+V 22
+dir 36-18.0.r4447/4918
+K 15
+statemachine.py
+V 24
+file 3e-18.0.r4152/17824
+K 10
+transforms
+V 22
+dir 3g-18.0.r4443/4065
+K 13
+urischemes.py
+V 23
+file 3s-18.0.r4235/2122
+K 8
+utils.py
+V 24
+file 3u-18.0.r4152/17531
+K 7
+writers
+V 22
+dir 3w-18.0.r4447/4156
+END
+ENDREP
+id: 1w-18.0.r4447/5831
+type: dir
+pred: 1w-18.0.r4445/13352
+count: 1395
+text: 4447 5152 666 666 cc744ace0945a254fca01b8e409e3f9a
+props: 342 8363 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils
+copyroot: 0 /
+
+PLAIN
+K 10
+svn:ignore
+V 6
+*.pyc
+
+END
+ENDREP
+id: 2-1467.0.r4447/6104
+type: dir
+pred: 2-1467.0.r2848/614
+count: 7
+text: 2848 462 139 139 5fce2cc9448785954ef198ae4818203f
+props: 4447 6060 31 0 b9ebe853b7baef2573e3487e43637c6a
+cpath: /trunk/docutils/extras
+copyroot: 0 /
+
+PLAIN
+K 8
+BUGS.txt
+V 24
+file 2-2181.0.r4315/6930
+K 11
+COPYING.txt
+V 21
+file 2-18.0.r4334/603
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r4385/410
+K 11
+HISTORY.txt
+V 21
+file 5-18.0.r4315/725
+K 11
+MANIFEST.in
+V 23
+file 7-18.0.r4156/57222
+K 10
+README.txt
+V 21
+file 9-18.0.r4216/546
+K 17
+RELEASE-NOTES.txt
+V 23
+file 2-4204.0.r4274/412
+K 10
+THANKS.txt
+V 22
+file 2-2182.0.r4240/66
+K 4
+docs
+V 21
+dir 3-7.0.r4445/14823
+K 8
+docutils
+V 22
+dir 1w-18.0.r4447/5831
+K 6
+extras
+V 23
+dir 2-1467.0.r4447/6104
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 23
+file 46-18.0.r4270/7591
+K 4
+test
+V 22
+dir 48-18.0.r4447/2070
+K 5
+tools
+V 22
+dir 6w-18.0.r4371/2326
+END
+ENDREP
+id: 1-7.0.r4447/7021
+type: dir
+pred: 1-7.0.r4446/4565
+count: 3248
+text: 4447 6328 680 680 a81ffc5c3a2aed2ba06e31ca7b37a4c6
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r4447/7021
+K 5
+prest
+V 23
+dir 1-4326.0.r4345/6199
+K 7
+sandbox
+V 22
+dir 1-17.0.r4442/18410
+K 3
+web
+V 19
+dir 1-2.0.r4373/913
+END
+ENDREP
+id: 3-1.0.r4447/7403
+type: dir
+pred: 3-1.0.r4446/4948
+count: 4138
+text: 4447 7235 155 155 5ef919dc8feca75553d9f83c061d1083
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r4438/6296
+K 4
+tags
+V 20
+dir 2-1.0.r4331/4487
+K 5
+trunk
+V 20
+dir 3-1.0.r4447/7403
+END
+ENDREP
+id: 0.0.r4447/7682
+type: dir
+pred: 0.0.r4446/5228
+count: 4447
+text: 4447 7555 114 114 6d9cf85fc565af1e932ddd22ad22c5c4
+cpath: /
+copyroot: 0 /
+
+n-4163.0.t4446-3fi modify-dir false true /trunk/docutils/docutils/writers/html4css1
+
+q-4163.0.t4446-3fi modify-dir false true /trunk/docutils/docutils/writers/latex2e
+
+4-989.0.t4446-3fi modify-dir false true /trunk/docutils/docutils/readers/python
+
+v-4163.0.t4446-3fi modify-dir false true /trunk/docutils/docutils/writers/pep_html
+
+5-1211.0.t4446-3fi modify-dir false true /trunk/docutils/test/test_writers
+
+y-4163.0.t4446-3fi modify-dir false true /trunk/docutils/docutils/writers/s5_html
+
+s-4163.0.t4446-3fi modify-dir false true /trunk/docutils/docutils/writers/newlatex2e
+
+10-2357.0.t4446-3fi modify-dir false true /trunk/docutils/test/functional/tests
+
+2-1467.0.t4446-3fi modify-dir false true /trunk/docutils/extras
+
+
+7682 7825

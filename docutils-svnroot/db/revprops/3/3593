@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-27T01:20:00.841917Z
+K 7
+svn:log
+V 253
+in DummyReader.read: restore doctree.reporter if necessary;
+otherwise things get a bit more complicated for pickling applications
+because new_reporter requires a fully set-up settings object,
+which is most conveniently created by the publish_* functions
+END

@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 7
+richard
+K 8
+svn:date
+V 27
+2002-10-01T03:17:05.000000Z
+K 7
+svn:log
+V 467
+Made pysource compliant with current API changes
+Wrote "rjhack", my attempt to bring the pysource sandbox further into line
+with the current API. It works for one module, and extending it for
+packages looks reasonable with modifications to the Reader class. I think.
+Post-parse formatting of ReST docstrings (using '__docformat__ = "reST"')
+barfs in interesting ways ;)
+Had to tweak the existing pysource API in a couple of ways, but they seemed
+sane enough to me...
+
+END

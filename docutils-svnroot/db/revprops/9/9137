@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-10-20T23:32:55.192348Z
+K 7
+svn:log
+V 87
+Resolve flake8 ``E261`` errors in ``math2html``
+
+All ``E261`` errors are now resolved.
+
+END

@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-06-29T13:50:25.213554Z
+K 7
+svn:log
+V 185
+Fix image URI handling in ODT writer.
+
+Convert image URI to filesystem path if accessing a local file.
+
+This finally fixes the example in [bugs:#153] which is also added
+as a test case.
+END

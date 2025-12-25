@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-08-15T17:38:10.107440Z
+K 7
+svn:log
+V 380
+Look for valid parent before appending a section element.
+
+Don't append a `<section>` to an `<admonition>` or other body element,
+only to <section>` and `<document>`.
+Exception: the base node of a nested parser may become the
+new section's parent, if it has no parent (detached node).
+It is up to the users (or extension implementing a directive) to
+prevent or handle these cases.
+END

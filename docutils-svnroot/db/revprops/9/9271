@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-11-24T20:28:12.525935Z
+K 7
+svn:log
+V 109
+Fix terminal help message under Windows.
+
+Also on Windows, the "EOT Key" (^Z) must be input on an empty line.
+END

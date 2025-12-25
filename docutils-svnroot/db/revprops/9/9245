@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-11-15T22:15:01.531796Z
+K 7
+svn:log
+V 167
+Use literal syntax in HISTORY
+
+Switch emphasis syntax (italics) to literal syntax (monospaced) for code, 
+methods, classes, functions, programme names, and file paths.
+END

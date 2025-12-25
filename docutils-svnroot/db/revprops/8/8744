@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-05-20T12:21:11.080951Z
+K 7
+svn:log
+V 161
+MathML: auxiliary TeX parsing functions, cleanup.
+
+New functions that help parsing a (La)TeX string.
+
+Skip <mrow> inside <mstyle>.
+
+Fix repr() of token elements.
+END

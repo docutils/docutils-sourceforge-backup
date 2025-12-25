@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-05-24T12:33:32.109236Z
+K 7
+svn:log
+V 275
+Update the copyright/licensing info. Fixes [3304675]
+
+BSD license is not used in Docutils.
+Some new parts use the Apache License version 2.0.
+PSF contributing policy is that "contributors remain copyright holders
+of their contributions" (http://www.python.org/psf/contrib/).
+
+END

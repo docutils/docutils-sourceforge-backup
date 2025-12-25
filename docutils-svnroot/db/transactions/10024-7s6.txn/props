@@ -1,0 +1,26 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 15
+svn:check-locks
+V 4
+true
+K 8
+svn:date
+V 27
+2025-03-08T00:27:17.329512Z
+K 7
+svn:log
+V 28
+Fix invalid NoQA error code
+
+K 29
+svn:txn-client-compat-version
+V 6
+1.14.2
+K 18
+svn:txn-user-agent
+V 45
+SVN/1.14.2 (x64-microsoft-windows) serf/1.3.9
+END

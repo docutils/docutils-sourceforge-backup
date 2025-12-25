@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-12-06T20:48:52.980228Z
+K 7
+svn:log
+V 275
+New CSS stylesheet for italic field names in field-lists.
+
+The current default are bold field names.
+However, in many contexts bold names are too heavy.
+
+The additional stylesheet is a backwards-compatible way to
+get better looking documentation. See docutils.conf for usage.
+END

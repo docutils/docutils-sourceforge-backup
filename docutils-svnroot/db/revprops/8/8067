@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-05-04T20:10:03.898373Z
+K 7
+svn:log
+V 208
+unroll problematic refs to their origin in document when reporting errors
+
+Patch by Kirill Smelkov. This is part of the (partially outdated) suite of
+patches on https://sourceforge.net/p/docutils/patches/67/.
+END

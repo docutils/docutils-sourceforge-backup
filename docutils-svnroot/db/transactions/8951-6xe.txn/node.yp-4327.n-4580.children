@@ -1,0 +1,49 @@
+K 8
+Dir.smak
+V 31
+file 1j-5058.n-4580.r5058/24585
+K 13
+mathml_01.rst
+V 29
+file 5-5350.n-4580.r5350/6031
+K 13
+mathml_01.xml
+V 29
+file 8-5350.n-4580.r5350/5767
+K 15
+noattrvalue.rst
+V 30
+file g-4710.n-4580.r4710/96190
+K 15
+noattrvalue.xml
+V 30
+file i-4710.n-4580.r4710/95662
+K 16
+standalone.myxml
+V 31
+file yt-4327.n-4580.r5058/24847
+K 14
+standalone.rst
+V 27
+file yv-4327.0.r4327/881148
+K 17
+standalone.stderr
+V 31
+file b9-4580.n-4580.r4580/85080
+END
+D 8
+Dir.smak
+D 13
+mathml_01.rst
+D 13
+mathml_01.xml
+D 15
+noattrvalue.rst
+D 15
+noattrvalue.xml
+D 16
+standalone.myxml
+D 14
+standalone.rst
+D 17
+standalone.stderr

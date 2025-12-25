@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 8
+dkuhlman
+K 8
+svn:date
+V 27
+2019-02-12T22:22:18.004026Z
+K 7
+svn:log
+V 66
+Converted odf_odt for compatibility with both Python 2 and Python3
+END

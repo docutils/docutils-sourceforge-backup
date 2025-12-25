@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-03-26T13:51:14.153871Z
+K 7
+svn:log
+V 96
+Style ToC in HTML5 writer.
+
+Set custom list style for contents if there is no section numbering.
+END

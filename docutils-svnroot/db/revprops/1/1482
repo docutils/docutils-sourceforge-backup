@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 8
+gschwant
+K 8
+svn:date
+V 27
+2003-06-16T19:25:47.000000Z
+K 7
+svn:log
+V 81
+
+Updated stylesheet for HTML writer using David's latest version of
+default.css.
+
+END

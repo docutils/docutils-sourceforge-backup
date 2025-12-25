@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-08T07:11:05.091261Z
+K 7
+svn:log
+V 290
+Doctree validation: Validate number and types of element children.
+
+The "manpage" writer tests include a sample with invalid doctree
+(`<citation>` without content, generated from an "rST" source without warning)
+to ensure this case is handled gracefully -> ensure "validate" setting is off.
+END

@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-18T08:00:10.318082Z
+K 7
+svn:log
+V 320
+Update calls to the `core.publish_*()` convenience functions.
+
+Don't call the internal auxilliary function `publish_programmatically()`
+from the "example.py" usage example.
+
+Use "reader", "parser", "writer" instad of
+"reader_name", "parser_name", "writer_name".
+
+Simplifies code and avoids `PendingDeprecationsWarning`s.
+END

@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-11-25T21:09:05.414063Z
+K 7
+svn:log
+V 320
+Support `<video>` in "_html_base", use "style" attribute for size.
+
+Move the handling of "moving images" from "html5_polyglot" to
+"_html_base". Now all HTML writers support insertion of video content.
+
+The :width: and :height: image directive options are passed to HTML
+via the "style" attribute (supports length units).
+END

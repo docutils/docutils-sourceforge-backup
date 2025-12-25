@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2016-07-28T21:52:14.477024Z
+K 7
+svn:log
+V 482
+Clear up and document patch [ 120 ].
+
+The colwidths argument for <tgroup> violates the docutils.dtd.
+As the "auto"/"given" tags may be ignored by the writers, they may be
+stored as classes instead.
+
+The default case (grid for tables, equal widths for ListTable and CSVTable
+does not need/get a tag. This way, writers can decide whether to leave
+column width determination to the backend when the class "colwidths-auto" is
+set (opt-in) or by default (opt-out with "colwidths-given").
+END

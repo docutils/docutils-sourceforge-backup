@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2006-06-23T18:32:35.307008Z
+K 7
+svn:log
+V 57
+Fixed bug id 19863 (Automated defaults in endless loop).
+
+END

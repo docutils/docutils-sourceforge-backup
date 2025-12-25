@@ -1,0 +1,25 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-01-08T22:01:07.123562Z
+K 7
+svn:log
+V 714
+* Added hyphens to the following -D options: entry-attr, include-ext,
+  include-path, nest-inline, perl-path, row-attr, table-attr.
+* Added the following -D options: file-insertion-enabled,
+  ignore-include-errs, raw-enabled.
+* Fixed a bug where explicit targets were not permitted within an
+  embedded url (e.g., 'reference <#explicit-target>').
+* Don't consider targets defined on the same source/line number to be
+  duplicate targets (can happen with multiply-included files).
+* Fixed the checking for inconsistent title levels to be more robust.
+* Keep an @INCLUDES array to keep track of the include stack.
+* Added a :head: option for raw:: directive.
+* Added a :prefix-title: option for sectnum:: directive.
+
+END

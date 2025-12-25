@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-01-09T23:28:49.134491Z
+K 7
+svn:log
+V 237
+Don't insert system messages for HTML writer issues in table cells.
+
+Place system message elements after tables, because in a table they
+may severely affect the layout.
+
+Move the check for parent node into the `report_messages()` method.
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-12-01T12:48:12.026161Z
+K 7
+svn:log
+V 78
+Add anchors to future, ".py"-less front-end commands to "tools" documentation.
+END

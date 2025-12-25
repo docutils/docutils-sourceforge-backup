@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2010-03-23T20:13:27.944724Z
+K 7
+svn:log
+V 49
+Removed unnecessary "main::" from "$main::PARSER"
+END

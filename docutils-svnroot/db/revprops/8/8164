@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-08-14T11:28:48.740530Z
+K 7
+svn:log
+V 44
+Drop 2.4 and 2.5 compatibility code, part 2.
+END

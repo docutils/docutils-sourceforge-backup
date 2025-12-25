@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-05-02T21:23:37.768700Z
+K 7
+svn:log
+V 195
+HTML math output fixes.
+
+Fix bug #244 Wrong subscript/superscript order
+with ``math-output=HTML``.
+
+Don't use <tt> element (deprecated in HTML5).
+
+Support commands ``\Bbbk`` and ``operatorname``.
+END

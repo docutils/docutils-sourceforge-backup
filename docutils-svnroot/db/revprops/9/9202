@@ -1,0 +1,29 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-11-02T23:28:49.885100Z
+K 7
+svn:log
+V 829
+Partially revert r9167
+
+``docutils.core.publish_string`` uses Python 2 notion of a
+bytestring, such that in the general case it returns Python 3's
+``bytes`` type. Revision 9167 attempted to address this distinction
+by introducing ``publish_bytes`` and changing ``publish_string`` to
+always return unicode text data as Python's ``str`` type. This is a
+backwards compatibility break, so in this commit we restore the
+previous behaviour, whilst simultaneously deprecating support for
+returning binary data from the ``docutils.core.publish_string``
+function for at least two releases of Docutils.
+
+As part of this, we also deprecate returning binary data from the
+``docutils.io.StringOutput.encode`` method, docutils.io.BytesOutput``
+should be used in its stead.
+
+Finally, we update tests for the reversion to the previous behaviour.
+END

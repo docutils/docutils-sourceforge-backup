@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-11-18T12:55:33.507115Z
+K 7
+svn:log
+V 90
+Announce change to rst parser: warn for figure with no caption nor legend.
+
+Cf. bugs #489.
+END

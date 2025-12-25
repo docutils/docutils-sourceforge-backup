@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-07-19T02:35:11.000000Z
+K 7
+svn:log
+V 209
+  - Added percentage widths to "<col>" tags (from colspec).  - Option lists: "<code>" changed to "<kbd>", ``option_argument``    "<span>" changed to "<var>".  - Inline literals: "<code>" changed to "<tt>".
+
+END

@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-11-09T20:38:37.553950Z
+K 7
+svn:log
+V 276
+Make ``test_include`` independent of the CWD
+
+Tests in ``test_include`` previously only passed when the current
+working directory was equal to the test root. This change makes it
+possible to run the tests without changing the CWD, as part of the
+test suite refactoring project
+END

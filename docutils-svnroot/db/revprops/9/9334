@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2023-03-31T21:26:14.658799Z
+K 7
+svn:log
+V 469
+Prefer Unix style line endings
+
+I had inadvertently committed two files with Windows style 'CRLF'
+(``\r\n``) line endings. This commit changes 
+``docutils/test/conftest.py`` and ``.gitattributes`` to use Unix
+style 'LF' (``\n``) endings.
+
+We additionally specify that Unix style line endings are only
+enforced in the ``docutils`` directory, as there are around 20 files
+in the sandbox that use Windows style line endings, and I don't want
+to change these at the moment.
+END

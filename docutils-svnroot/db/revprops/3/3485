@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-15T23:30:17.019322Z
+K 7
+svn:log
+V 258
+added attribute propagation order; that might be over-engineering at the moment,
+but I think we will need it sooner or later because things work only
+coincidentally now, relying on alphabetic (= arbitrary) attribute ordering;
+
+do not add space around caption
+END

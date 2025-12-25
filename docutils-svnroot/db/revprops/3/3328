@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-05-09T22:41:22.398217Z
+K 7
+svn:log
+V 33
+added support for image base path
+END

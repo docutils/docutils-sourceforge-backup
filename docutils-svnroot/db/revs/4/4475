@@ -1,0 +1,139 @@
+id: 2-788.0-4266.r4475/0
+type: file
+pred: 2-788.0.r4163/14866
+count: 88
+text: 4336 0 1517 40456 918f96f625ea2ace1ee46b4c654078d8 59a5225371d98be41ea3ec51d137f3f522ce1446 4474-3ga/_3
+props: 3600 1047 111 0 64199e15c0a844b665af110a4b355788
+cpath: /branches/docutils-0.4/FAQ.txt
+copyroot: 4266 /branches/docutils-0.4
+
+PLAIN
+K 8
+BUGS.txt
+V 24
+file 2-2181.0.r4233/8277
+K 11
+COPYING.txt
+V 24
+file 2-18.0-4266.r4472/0
+K 7
+FAQ.txt
+V 25
+file 2-788.0-4266.r4475/0
+K 11
+HISTORY.txt
+V 24
+file 5-18.0-4266.r4318/0
+K 11
+MANIFEST.in
+V 23
+file 7-18.0.r4156/57222
+K 10
+README.txt
+V 21
+file 9-18.0.r4216/546
+K 17
+RELEASE-NOTES.txt
+V 28
+file 2-4204.0-4266.r4278/314
+K 10
+THANKS.txt
+V 22
+file 2-2182.0.r4240/66
+K 4
+docs
+V 25
+dir 3-7.0-4266.r4474/1562
+K 8
+docutils
+V 27
+dir 1w-18.0-4266.r4318/6315
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 27
+file 46-18.0-4266.r4462/455
+K 4
+test
+V 27
+dir 48-18.0-4266.r4318/3987
+K 5
+tools
+V 27
+dir 6w-18.0-4266.r4472/1559
+END
+ENDREP
+id: 1-7.0-4266.r4475/1044
+type: dir
+pred: 1-7.0-4266.r4474/2497
+count: 3202
+text: 4475 315 716 716 dacd18ae6a6c50dba8c4e238d781abbb
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /branches/docutils-0.4
+copyroot: 4266 /branches/docutils-0.4
+
+PLAIN
+K 17
+address-rendering
+V 26
+dir 1-7.0-4314.r4314/16372
+K 10
+directives
+V 25
+dir 3-1.0-4375.r4449/4669
+K 12
+docutils-0.4
+V 25
+dir 1-7.0-4266.r4475/1044
+K 7
+nesting
+V 25
+dir 3-1.0-1813.r4356/3347
+END
+ENDREP
+id: 0-1.0.r4475/1509
+type: dir
+pred: 0-1.0.r4474/2963
+count: 306
+text: 4475 1298 198 198 b6fd940a0ac55f2fd292bd99ad36866f
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r4475/1509
+K 4
+tags
+V 20
+dir 2-1.0.r4331/4487
+K 5
+trunk
+V 20
+dir 3-1.0.r4473/3295
+END
+ENDREP
+id: 0.0.r4475/1790
+type: dir
+pred: 0.0.r4474/3244
+count: 4475
+text: 4475 1663 114 114 99dfbae83ea2fc54fa98dbb207d568b3
+cpath: /
+copyroot: 0 /
+
+2-788.0-4266.t4474-3ga modify-file true false /branches/docutils-0.4/FAQ.txt
+
+
+1790 1933

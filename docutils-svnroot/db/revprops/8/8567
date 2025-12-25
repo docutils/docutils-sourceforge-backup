@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-09-30T11:57:21.299391Z
+K 7
+svn:log
+V 125
+Fix a docstring.
+
+The HTML5 writer output no longer conforms to XHTML1.1 transitional
+as it now uses HTML5-specific elements.
+END

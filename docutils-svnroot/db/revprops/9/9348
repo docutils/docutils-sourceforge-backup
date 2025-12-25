@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-04-14T00:12:07.155978Z
+K 7
+svn:log
+V 161
+Fix test for spurious enumerated lists in bibliographic fields.
+
+The test for "single line paragraphs" failed for bibliographic fields followed
+by an empty line.
+END

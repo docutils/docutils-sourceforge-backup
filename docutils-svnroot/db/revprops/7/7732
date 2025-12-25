@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2013-11-24T13:05:15.701961Z
+K 7
+svn:log
+V 39
+`XsltParser` accepts XPath extensions.
+
+END

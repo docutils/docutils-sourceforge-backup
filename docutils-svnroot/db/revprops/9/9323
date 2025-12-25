@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-01-17T17:20:12.311007Z
+K 7
+svn:log
+V 106
+Fix test case under Windows, add HISTORY entry for last commit.
+
+Thanks to Alan Isaac for test and report.
+END

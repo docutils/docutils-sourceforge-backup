@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 8
+gschwant
+K 8
+svn:date
+V 27
+2004-05-07T11:13:51.000000Z
+K 7
+svn:log
+V 517
+
+DocFactory 0.3 (2004/05/07)
+  * Changed the **Project Settings** dialog: The new version allows
+    you to edit docutils.conf-files in a more flexible way.  You can
+    add/edit/remove any kind of sections/options/values by yourself.
+    As more and more docutils settings become available, this seems
+    to be a much better solution than the former dialog.  To put it
+    into a nutshell:  DocFactory is prepared for the new Docutils
+    configuration file format now.  (I know, it's not that new
+    anymore ...)
+
+END

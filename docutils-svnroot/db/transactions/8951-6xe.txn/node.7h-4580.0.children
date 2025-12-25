@@ -1,0 +1,31 @@
+K 15
+ExtractTests.pm
+V 26
+file 7i-4580.0.r4580/78417
+K 9
+empty.txt
+V 26
+file 7l-4580.0.r4580/78652
+K 16
+tables24.skip.pl
+V 26
+file 7n-4580.0.r4580/77844
+K 14
+test_tables.py
+V 26
+file 7p-4580.0.r4580/78122
+K 10
+utf-16.csv
+V 26
+file 7r-4580.0.r4580/78942
+END
+D 15
+ExtractTests.pm
+D 9
+empty.txt
+D 16
+tables24.skip.pl
+D 14
+test_tables.py
+D 10
+utf-16.csv

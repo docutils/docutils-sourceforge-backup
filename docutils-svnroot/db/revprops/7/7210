@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 12
+paultremblay
+K 8
+svn:date
+V 27
+2011-10-30T19:42:28.943916Z
+K 7
+svn:log
+V 81
+Further work on module. Very simple expressions and simple parenthesis
+now work.
+
+END

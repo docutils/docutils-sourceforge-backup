@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2008-10-14T21:07:23.617144Z
+K 7
+svn:log
+V 60
+Added option ``--no-create-links`` and made it the default.
+
+END

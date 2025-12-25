@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-10-03T10:00:47.784239Z
+K 7
+svn:log
+V 103
+odf_odt: fix misprint in conversion from mm to cm
+
+Patch by Alexey Khoroshilov <khoroshilov\@ispras.ru>
+END

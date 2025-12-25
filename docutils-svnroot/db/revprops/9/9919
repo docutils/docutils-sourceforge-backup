@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-09-04T19:33:12.031428Z
+K 7
+svn:log
+V 273
+New function `nodes.parse_measure()`. Relax `validate_measure()`.
+
+Allow "arbitrary" units: Check for a run of ASCII-letters or a percent sign.
+(The definition of "measure" in docutils.dtd and its description in
+doctree.txt do not include a restriction of the valid units.)
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2003-07-09T17:59:37.000000Z
+K 7
+svn:log
+V 140
+Renamed ``unchanged()`` directive option conversion function to ``unchanged_required``, and added a new ``unchanged``.  Updated docstrings.
+
+END

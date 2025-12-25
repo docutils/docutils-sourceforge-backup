@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-05-19T09:12:02.732893Z
+K 7
+svn:log
+V 84
+Work around http://bugs.python.org/issue10419
+
+Use a surrogate spelling for my name.
+END

@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-06-07T15:05:58.313428Z
+K 7
+svn:log
+V 348
+Apply tuple_args_guard.patch [ 2993967 ] 
+
+When there are any attributes which have tuple attribute values DOM
+rendering fails because string interpolation receives a wrong number
+of arguments. It needs to be safeguarded against this case by
+carefully packing the values into a tuple beforehand.
+
+This problem might crop up in other places as well.
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2019-08-19T20:05:56.628129Z
+K 7
+svn:log
+V 90
+Add odt classifier test
+Fix: xml.etree.ElementTree Element.getchildren deprecated warning
+
+END

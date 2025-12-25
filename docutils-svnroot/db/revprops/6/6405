@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-09-11T23:02:28.529824Z
+K 7
+svn:log
+V 257
+html4_strict writer update
+
+* customizable pretty printing of docinfo
+* bugfix: footnote label style (no/brackets) matching reference style
+* html4css2.css: fixes to list layout, less margin for ToC, 
+  		 booktabs table style, pretty-print date and author
+
+END

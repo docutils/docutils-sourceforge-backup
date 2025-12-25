@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-02-08T14:14:47.705555Z
+K 7
+svn:log
+V 61
+Support pre-commit checks.
+
+Cf. https://pre-commit.com/#usage
+END

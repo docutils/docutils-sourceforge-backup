@@ -1,0 +1,27 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-01-26T21:23:12.447025Z
+K 7
+svn:log
+V 593
+Fix/update import of language modules (#385).
+
+Docutils loads language modules from its own set or the working
+directory. (The latter is an undocumented but tested feature.)
+However, a Python file or a directory that is named like an
+unsupported language (e.g. "tr") led to errors (#385).
+
+* Use importlib.import_module() instead of the low-level __import__().
+
+* Use a common class for docutils.languages.get_language() and
+  docutils.parsers.rst.get_language().
+
+* Report missing language support also for parsers.rst.get_language().
+
+cf. https://docutils.sourceforge.io/docs/howto/i18n.html
+END

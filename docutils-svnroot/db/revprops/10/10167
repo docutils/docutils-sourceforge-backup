@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-06-16T09:46:32.248902Z
+K 7
+svn:log
+V 63
+Announce removal of `nodes.Targetable.indirect_reference_name`.
+END

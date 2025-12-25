@@ -1,0 +1,26 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-08-21T13:44:48.368687Z
+K 7
+svn:log
+V 556
+Refactor HTML5 writer tests.
+
+New test script "test_html5_polyglot.py":
+Split basic output tests (which happen to use the "fragment" returned
+by `publish_parts()` to get the interesting part of the output)
+from other tests of `publish_parts()`
+
+Really test all returned parts in "test_html5_polyglot_parts.py".
+Fill in parts that are built out of other parts in a helper function
+instead of pruning parts.
+Add test cases for input that goes to special parts.
+
+Disable default style sheet ("stylesheet_path" setting) by for tests
+not requiring a stylesheet.
+END

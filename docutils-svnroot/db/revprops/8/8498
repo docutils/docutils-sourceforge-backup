@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-03-03T20:53:18.969354Z
+K 7
+svn:log
+V 196
+test_buildhtml: Drop obsolete NameError handling
+
+It was added in r7442 because the imports were optional, however since
+r8333 the imports are unconditional, so the NameError will never be
+raised.
+END

@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 10
+jonwaltman
+K 8
+svn:date
+V 27
+2010-09-20T07:55:21.335589Z
+K 7
+svn:log
+V 162
+Documentation update for Texinfo writer
+
+- add link to writer in the `Docutils Link List`_
+
+- add referenced html file to "sandbox/infrastructure/htmlfiles.lst"
+
+
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2004-04-13T20:24:04.000000Z
+K 7
+svn:log
+V 173
+Added options and support: ``--compound-enumerators``, ``--section-prefix-for-enumerators``, and ``--section-enumerator-separator``.  By John F Meinel Jr (SF patch 934322).
+
+END

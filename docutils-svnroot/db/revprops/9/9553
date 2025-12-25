@@ -1,0 +1,41 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-03-08T23:41:41.334225Z
+K 7
+svn:log
+V 892
+"reStructuredText Markup Specification" revision.
+
+Add cross links.
+Purge trailing spaces.
+"semantic wrapping"
+
+More consistent markup:
+ * "quote" directive and role names,
+ * wrap doctree elements in <angle brackets>,
+ * *emphasize* important terms,
+
+Use a field-list for data tables
+(doctree elements, see also, start/end strings, ...).
+
+Rework description of document title and
+bibliographic fields (`frontmatter` transforms).
+
+Drop "New in Docutils 0.x" for versions <0.11 (older than 10 years).
+
+Add list of implemented inline-compatible directives
+to "substitution definition" section.
+Move their description and examples to the "directives" document.
+Comment out the "styles" example.
+
+Shorten/correct "Standalone Hyperlinks" section. (Docutils
+recognizes relative URIs as long as there is a "scheme" part.)
+
+Sort references (hyperlink targets) by target document,
+then alphabetically.
+END

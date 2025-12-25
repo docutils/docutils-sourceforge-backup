@@ -1,0 +1,25 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-12-04T13:32:53.852371Z
+K 7
+svn:log
+V 417
+Update/fix URI reference to filesystem path conversion.
+
+Use "pathlib" instead of "os.path".
+Return a `pathlib.Path` instance instead of a `str`.
+
+Use Path.from_uri() for "file" URIs:
+
+* Provide a backport for Python < 3.13.
+* Don't apply "root_prefix" to "file:" URIs.
+* "file:" URIs with relative path are invalid and now raise an Error.
+
+Based on patch https://github.com/AA-Turner/docutils/pull/18
+by Adam Turner.
+END

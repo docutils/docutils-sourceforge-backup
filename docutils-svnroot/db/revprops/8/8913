@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-12-23T14:54:35.006775Z
+K 7
+svn:log
+V 128
+Deprecate transforms.writer_aux.Compound.
+
+This transform is not used since the retirement of the
+"newlatex" writer in Dec 2010.
+END

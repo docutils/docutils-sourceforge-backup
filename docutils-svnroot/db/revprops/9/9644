@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-04-15T18:34:05.260035Z
+K 7
+svn:log
+V 178
+Small test speedup/simplification.
+
+Directly instantiating the parser class brings down test time from 0.022 s to 0.005 s
+while `parsers.get_parser_class()` is tested separately.
+END

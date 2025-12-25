@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2013-11-11T12:41:58.973893Z
+K 7
+svn:log
+V 292
+Refactoring:
+
+* Introduced base classes `XmlParser` and `XmlVisitor` for generic
+  support for processing XML input.
+
+* Introduced `XsltParser` and `XsltWriter` for generic support for
+  XSLT based parsers.
+
+* Introduces `ZipFileInput` for generic support of reading input from
+  a ZIP file.
+
+END

@@ -1,0 +1,26 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-08-10T12:13:20.869221Z
+K 7
+svn:log
+V 387
+Relax "Unexpected section" system message from SEVERE to ERROR.
+
+The new section parsing algorithm [r10093] allows to continue parsing after
+problems with the section title markup.
+
+Better feedback to users in cases like::
+
+==  ===========  ===========
+1   Not a span   Not a span
+    -----------  -----------
+2
+==  ===========  ===========
+
+Also fix typo in last commit and log changes.
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2025-07-11T12:41:40.367492Z
+K 7
+svn:log
+V 78
+Fix: documentation #506 backslash is not needed for backticks in backtics :-)
+
+END

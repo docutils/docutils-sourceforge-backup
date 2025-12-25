@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-27T12:28:56.441916Z
+K 7
+svn:log
+V 75
+renamed test_publish_doctree.py to more generic test_publisher.py; polished
+END

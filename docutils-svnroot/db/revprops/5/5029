@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2007-03-19T23:57:58.071034Z
+K 7
+svn:log
+V 139
+do not encode embedded stylesheets, because HTML entities are
+not decoded by the browser before the style sheet is passed to the CSS parser
+END

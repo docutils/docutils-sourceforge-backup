@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2019-08-25T09:53:36.811776Z
+K 7
+svn:log
+V 59
+Apply fix for [ 289 ], line starting with ``.`` in a text.
+
+END

@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 10
+ianbicking
+K 8
+svn:date
+V 27
+2003-01-20T08:35:26.000000Z
+K 7
+svn:log
+V 166
+Changed extractor.py to include all methods and functions implicitly,
+and to use all top-level strings as commentary.
+
+Also changed Wiki.py to be documented in kind.
+
+END

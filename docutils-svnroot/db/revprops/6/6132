@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-09-16T21:33:17.416348Z
+K 7
+svn:log
+V 85
+Bugfix for combination of "footnote-references=brackets" 
+with "use-latex-footnotes".
+END

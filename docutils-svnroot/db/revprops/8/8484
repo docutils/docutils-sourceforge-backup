@@ -1,0 +1,56 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-02-06T12:47:00.735636Z
+K 7
+svn:log
+V 1541
+setup.py: Switch to setuptools
+
+This removes a lot of distutils overrides we were using in favour of
+good old-fashioned 'MANIFEST.in' entries. This appears to generate the
+almost the exact same artifacts with the exception of a single new file,
+'docutils/writers/latex2e/docutils-05-compat.sty'. However, this file is
+referenced from multiple documents, including the LaTeX writer user
+guide ('docs/user/latex.txt') and a document describing the file itself
+('docs/user/docutils-05-compat.sty.txt'), suggesting this was a mistake
+that we're correcting here.
+
+This comparison was made as follows.
+
+1. Create directories to backup artifacts.
+
+     $ mkdir -p /tmp/docutils/old
+     $ mkdir -p /tmp/docutils/new
+
+2. Using the code before this change, build a package and copy it to the
+   backup directory.
+
+     $ virtualenv .venv --python python3.6
+     $ source .venv/bin/activate
+     $ cd docutils
+     $ python setup.py build
+     $ mv build /tmp/docutils/old/
+     $ cd -
+     $ deactivate
+     $ rm -rf .venv
+
+3. Repeat step 2 but with this change applied, using '/tmp/docutils/new'
+   as the backup location.
+
+4. Compare the directories.
+
+     $ cd /tmp/docutils
+     $ diff -burq new/build/ old/build/
+     Only in new/build/lib/docutils/writers/latex2e: docutils-05-compat.sty
+
+5. Repeat steps 2-4 but using the 'python setup.py bdist_wheel' command,
+   copying the 'dist' directory (rather than the 'build' directory), and
+   extracting generated wheel using the 'unzip' command.
+
+Signed-off-by: Stephen Finucane <stephen@that.guru>
+END

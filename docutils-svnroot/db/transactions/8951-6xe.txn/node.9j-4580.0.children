@@ -1,0 +1,25 @@
+K 8
+Dir.smak
+V 25
+file r-5058.0.r5058/78073
+K 17
+footnotes05.mydom
+V 27
+file 9l-4580.0.r4580/156907
+K 17
+footnotes08.mydom
+V 27
+file 9n-4580.0.r4580/157147
+K 17
+test_footnotes.py
+V 27
+file 9r-4580.0.r4580/156608
+END
+D 8
+Dir.smak
+D 17
+footnotes05.mydom
+D 17
+footnotes08.mydom
+D 17
+test_footnotes.py

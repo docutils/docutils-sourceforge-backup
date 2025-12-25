@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-06-17T19:25:04.511547Z
+K 7
+svn:log
+V 98
+Apply patch #181 by John Thorvald Wodder II.
+
+LaTeX Writer: Fix tocdepth when chapter/part in use.
+END

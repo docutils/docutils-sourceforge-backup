@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-06T14:52:54.394776Z
+K 7
+svn:log
+V 91
+Remove lingering references to Python 2.
+
+Based on Patch 1/6 by Adam Turner (patches #188).
+END

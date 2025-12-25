@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-11-20T13:37:40.462215Z
+K 7
+svn:log
+V 229
+Deprecate --figure-footnotes and --use-latex-footnotes options
+
+Prepare for "real" latex-footnotes support.
+"figure-footnotes" are obsolete, "use-latex-footnotes" is now an alias to
+the less confusing "docutils-footnotes" option.
+END

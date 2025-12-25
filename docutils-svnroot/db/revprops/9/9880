@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-08-09T13:37:52.565500Z
+K 7
+svn:log
+V 246
+Next try to fix Windows test failure because of image URI -> path conversion.
+
+Do'nt use start "URI reference" with the absolute DATA_ROOT path, as on windows
+it will contain a drive letter which is interpreted as "scheme" part.
+
+See [bugs:#493].
+END

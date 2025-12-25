@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-06-27T20:44:09.633142Z
+K 7
+svn:log
+V 87
+Fix ecxeption with use_latex_toc and no section numbering
+
+Add tests for use_latex_toc.
+END

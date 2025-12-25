@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2003-07-05T19:34:37.000000Z
+K 7
+svn:log
+V 91
+Renamed ``StringList.strip_indent`` to ``.trim_left``.  Added ``StringList.get_2D_block``.
+
+END

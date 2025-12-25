@@ -1,0 +1,33 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-10-15T11:24:32.077075Z
+K 7
+svn:log
+V 898
+Allow transient elements `<target>` and `<pending>` before a figure `<caption>`.
+
+In rST, the "figure" directive's content must start with a paragraph (that
+becomes the caption) or an empty comment (to get a legend without caption).
+
+The change allows passing a "classes" or "names" attribute value to the
+figure caption via the "class" directive rsp. an internal hyperlink target.
+
+Change the `references.PropagateTargets` transform to remove a `<target>`
+element followed by a `<caption>` (after propagating ids and names)
+to keep the doctree valid.
+
+Fix the HTML5 writer, to apply the attributes to the `<figcaption>` element,
+(instead of the included `<p>`).
+
+Fix LaTeX writer to handle "classes" and "ids" attributes of a `<caption>`
+element.
+
+Add test cases.
+Remove misleading test case. Figures without caption are invalid and won't get
+a "Figure 1."-style caption with the Docutils writers.
+END

@@ -1,0 +1,177 @@
+PLAIN
+K 10
+README.txt
+V 21
+file 3-17.0.r2232/246
+K 4
+aahz
+V 22
+dir 2-820.0.r1918/1105
+K 9
+agurtovoy
+V 23
+dir 2-2034.0.r2034/7482
+K 3
+amk
+V 23
+dir 2-1891.0.r1892/1276
+K 3
+ax-
+V 23
+dir 2-1550.0.r2415/1011
+K 4
+bbum
+V 23
+dir 2-1039.0.r1742/2047
+K 5
+blais
+V 23
+dir 2-1316.0.r1673/1245
+K 4
+cben
+V 23
+dir 2-1693.0.r2424/1605
+K 6
+davidg
+V 21
+dir 6-17.0.r2611/1198
+K 5
+delza
+V 23
+dir 2-1723.0.r1723/3836
+K 8
+dkuhlman
+V 23
+dir 2-1555.0.r1716/4199
+K 7
+dpriest
+V 23
+dir 2-1730.0.r2304/1528
+K 12
+dreamcatcher
+V 22
+dir 2-1300.0.r1357/657
+K 7
+edloper
+V 23
+dir 2-1844.0.r1975/4509
+K 7
+grubert
+V 23
+dir 2-112.0.r2552/12356
+K 8
+gschwant
+V 22
+dir 2-675.0.r2081/2075
+K 9
+holdenweb
+V 23
+dir 2-1845.0.r1845/4805
+K 4
+ianb
+V 22
+dir 2-881.0.r1638/1101
+K 4
+lalo
+V 23
+dir 2-1749.0.r1762/2166
+K 3
+mly
+V 23
+dir 2-1431.0.r1432/2681
+K 7
+mmgilbe
+V 22
+dir 2-1841.0.r2636/630
+K 3
+mwh
+V 21
+dir 2-857.0.r862/1023
+K 7
+oliverr
+V 22
+dir 2-202.0.r2444/6428
+K 12
+paultremblay
+V 23
+dir 2-1323.0.r1489/1149
+K 7
+pobrien
+V 23
+dir 2-1158.0.r1777/4967
+K 7
+richard
+V 22
+dir 2-526.0.r1417/2696
+K 6
+simonb
+V 21
+dir 2-252.0.r1227/852
+K 4
+tibs
+V 21
+dir 2-62.0.r1727/8120
+K 4
+wilk
+V 23
+dir 2-1258.0.r1650/3830
+END
+ENDREP
+id: 1-17.0.r2718/1168
+type: dir
+pred: 1-17.0.r2636/2010
+count: 634
+text: 2718 0 1155 1155 0bd8e5b7cffed46cbe3071ee8815f91c
+cpath: /trunk/sandbox
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r2717/2732
+K 7
+sandbox
+V 21
+dir 1-17.0.r2718/1168
+K 3
+web
+V 19
+dir 1-2.0.r2682/828
+END
+ENDREP
+id: 3-1.0.r2718/1456
+type: dir
+pred: 3-1.0.r2717/3074
+count: 2692
+text: 2718 1328 115 115 7da7e4d86449511f59d20b24673ffd03
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 22
+dir 0-1.0.r2577/106684
+K 4
+tags
+V 20
+dir 2-1.0.r2576/3944
+K 5
+trunk
+V 20
+dir 3-1.0.r2718/1456
+END
+ENDREP
+id: 0.0.r2718/1737
+type: dir
+pred: 0.0.r2717/3355
+count: 2718
+text: 2718 1608 116 116 06081d91172cee31ef2bda80d2303f4f
+cpath: /
+copyroot: 0 /
+
+2-2161.0.r2358/58 delete-dir false false /trunk/sandbox/felixwiemann
+
+
+1737 1880

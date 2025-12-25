@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-03-13T21:49:17.441496Z
+K 7
+svn:log
+V 139
+Remove unneccessary empty lines from the latex output.
+
+This is a cosmetic change without influence on the result of the latex
+compilation.
+END

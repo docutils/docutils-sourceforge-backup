@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2008-11-30T09:46:40.448822Z
+K 7
+svn:log
+V 58
+Prepare for python 3.0: use os.walk instead os.path.walk.
+
+END

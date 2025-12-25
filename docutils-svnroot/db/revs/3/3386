@@ -1,0 +1,106 @@
+id: 2-4.0.r3386/0
+type: file
+pred: 2-4.0.r3385/3039
+count: 81
+text: 3381 0 485 13724 7d6fbffff49041d63341ed5a52b68774 43c68c6107f7ecd0ef9afff6e643d31dbc3c5888 3385-2m1/_3
+props: 2905 776 111 0 995497afc7013c9f20b8d3ebef449f37
+cpath: /trunk/web/index.txt
+copyroot: 0 /
+
+PLAIN
+K 9
+.htaccess
+V 23
+file 2-2167.0.r3099/157
+K 15
+PyBanner016.png
+V 17
+file 2-5.0.r5/845
+K 11
+default.css
+V 22
+file 2-144.0.r614/4047
+K 13
+docutils.conf
+V 22
+file 2-409.0.r1649/178
+K 9
+index.txt
+V 18
+file 2-4.0.r3386/0
+K 17
+mailing-lists.txt
+V 24
+file 4-3385.0.r3385/3405
+K 6
+mirror
+V 20
+dir 2-15.0.r134/5759
+K 7
+rst.png
+V 20
+file e-17.0.r17/4088
+K 7
+rst.txt
+V 21
+file h-17.0.r2431/245
+END
+ENDREP
+id: 1-2.0.r3386/670
+type: dir
+pred: 1-2.0.r3385/4071
+count: 108
+text: 3386 269 388 388 f5aab3d2d6e4a7e4994b4e264ff2ba6c
+cpath: /trunk/web
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r3384/2947
+K 7
+sandbox
+V 21
+dir 1-17.0.r3382/2767
+K 3
+web
+V 19
+dir 1-2.0.r3386/670
+END
+ENDREP
+id: 3-1.0.r3386/951
+type: dir
+pred: 3-1.0.r3385/4355
+count: 3336
+text: 3386 823 115 115 68057fb16938b42688d6fe7c74b08b65
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r3171/7579
+K 4
+tags
+V 19
+dir 2-1.0.r3383/196
+K 5
+trunk
+V 19
+dir 3-1.0.r3386/951
+END
+ENDREP
+id: 0.0.r3386/1226
+type: dir
+pred: 0.0.r3385/4633
+count: 3386
+text: 3386 1101 112 112 715c3fbbe580c0800ec634064ac3c137
+cpath: /
+copyroot: 0 /
+
+2-4.0.t3385-2m1 modify-file true false /trunk/web/index.txt
+
+
+1226 1369

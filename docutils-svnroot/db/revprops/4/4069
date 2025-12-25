@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-11-17T23:36:02.019851Z
+K 7
+svn:log
+V 192
+use rst-set-paragraph-separation function for setting paragraph-start;
+removed stuff for filling quoted text -- it breaks for trailing
+quote signs and after all that's what message-mode is for
+END

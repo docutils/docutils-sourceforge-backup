@@ -1,0 +1,25 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-06-30T07:48:44.779381Z
+K 7
+svn:log
+V 528
+HTML5: Improve accessibility of section headings.
+
+Mark the internal back-refences from section headings to the ToC
+with DPub-ARIA role "doc-backref".
+
+Use "aria-level" instead of a class argument value for section headings
+with nesting level > 6 (for level 1 to 6, the level is determined by
+the HTML tag).
+Mind that in HTML5, heading level 1 is reserved for the document title
+and section headings start with level 2.
+
+Add functional test sample for deeply nested sections.
+Merge functional tests for additonal HTML5 features.
+END

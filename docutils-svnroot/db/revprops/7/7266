@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-12-20T09:36:10.871705Z
+K 7
+svn:log
+V 102
+Allow new XML formatting also in version 2.7.2
+
+Some distributions backport the XML-whitespace patch.
+
+END

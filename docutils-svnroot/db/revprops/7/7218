@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-11-08T17:42:40.875852Z
+K 7
+svn:log
+V 90
+Use LaTeX math to Unicode character conversions 
+generated from "unimathsymbols" database.
+END

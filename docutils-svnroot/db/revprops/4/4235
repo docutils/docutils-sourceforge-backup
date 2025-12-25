@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-12-30T03:00:25.536324Z
+K 7
+svn:log
+V 101
+updated from http://www.iana.org/assignments/uri-schemes: added missing schemes; added RFC references
+END

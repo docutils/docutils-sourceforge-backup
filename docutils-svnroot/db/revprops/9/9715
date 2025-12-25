@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-18T08:45:24.089307Z
+K 7
+svn:log
+V 157
+Style document tree Element Hierarchy Diagram with colours.
+
+Use inline CSS styles to give all blocks belonging to the same
+element category a unique colour.
+END

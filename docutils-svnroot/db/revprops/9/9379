@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-05-10T10:12:20.211197Z
+K 7
+svn:log
+V 55
+Include "tox.ini" in sdist packages.
+
+Fixes [bugs:#467]
+END

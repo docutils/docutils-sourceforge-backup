@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 6
+fdrake
+K 8
+svn:date
+V 27
+2004-01-22T04:12:14.000000Z
+K 7
+svn:log
+V 113
+remove discrepency between example input and output (input comma not
+reflected in output; so removed from input)
+
+END

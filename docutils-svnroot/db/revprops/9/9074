@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-06-15T15:28:35.152004Z
+K 7
+svn:log
+V 149
+Ensure locale_encoding is lower case.
+
+Use `locale.getpreferredencoding(False)` since we dropped support
+for older Python versions with side-effects.
+END

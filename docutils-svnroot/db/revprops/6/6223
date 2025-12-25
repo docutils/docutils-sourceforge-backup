@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-01-25T10:43:18.772042Z
+K 7
+svn:log
+V 162
+Reorganised CSS stylesheet, do not tag citation references with <cite>
+(cite is commonly used for *titles* of citated works).
+
+tag citation references with <cite>
+END

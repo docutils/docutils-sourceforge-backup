@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-05-16T14:49:41.208756Z
+K 7
+svn:log
+V 189
+Add a small backwards compatibility script for rst2odt_prepstyles.py.
+
+This way, users can adapt to the new command before the
+"tools/*.py" scripts are no longer installed in Docutils 0.21.
+END

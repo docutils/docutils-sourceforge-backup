@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-12-06T20:49:08.440353Z
+K 7
+svn:log
+V 382
+Documentation revision.
+
+Use `<...>` notation for Document Tree elements
+(similar to the [MDN](https://developer.mozilla.org/docs/Web/HTML)).
+
+Format RELEASE NOTES for more consistency.
+
+Less section nesting in "config" doc.
+The `<h6>` section headings came out in smaller font size that the main text
+with the standard firefox and chromium style sheets.
+
+Small fixes and additions.
+END

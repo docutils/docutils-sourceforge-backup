@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-04-24T09:23:07.908520Z
+K 7
+svn:log
+V 58
+Fix [ 317 ] Extra space inserted with French smartquotes .
+END

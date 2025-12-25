@@ -1,0 +1,61 @@
+K 10
+errors.txt
+V 27
+file vo-4327.0.r4327/894398
+K 17
+header_footer.txt
+V 27
+file vr-4327.0.r4327/893693
+K 9
+latex.txt
+V 27
+file vt-4327.0.r4327/894628
+K 14
+list_table.txt
+V 27
+file vv-4327.0.r4327/893219
+K 19
+nonalphanumeric.txt
+V 27
+file vx-4327.0.r4327/893454
+K 12
+standard.txt
+V 27
+file vz-4327.0.r4327/895097
+K 17
+table_colspan.txt
+V 27
+file w1-4327.0.r4327/893929
+K 17
+table_complex.txt
+V 27
+file w3-4327.0.r4327/894858
+K 17
+table_rowspan.txt
+V 27
+file w5-4327.0.r4327/895332
+K 11
+unicode.txt
+V 27
+file w7-4327.0.r4327/894167
+END
+D 10
+errors.txt
+D 17
+header_footer.txt
+D 9
+latex.txt
+D 14
+list_table.txt
+D 19
+nonalphanumeric.txt
+D 12
+standard.txt
+D 17
+table_colspan.txt
+D 17
+table_complex.txt
+D 17
+table_rowspan.txt
+D 11
+unicode.txt

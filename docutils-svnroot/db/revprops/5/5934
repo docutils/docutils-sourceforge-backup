@@ -1,0 +1,27 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-05-06T11:32:43.601446Z
+K 7
+svn:log
+V 423
+simpler LaTeX encoding
+
+Remove redundant "double protection" from the encoding of the "special
+printing characters" and square brackets, e.g. ``\\%`` instead of ``{\\%}``.
+
+Use conventional style for "named" macros, e.g. ``\\dots{}`` instead of
+``{\\dots}``.
+
+Encode < | > in OT1 font encoding only.
+     
+encode method: clear comments, simpler logic
+
+Bugfix: \\reflectbox requires graphicx.
+
+Adapt tests and documentation.
+END

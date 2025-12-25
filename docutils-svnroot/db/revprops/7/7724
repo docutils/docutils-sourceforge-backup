@@ -1,0 +1,27 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2013-11-03T11:38:09.711657Z
+K 7
+svn:log
+V 435
+Complete refactoring:
+
+* Standard docutils infrastructure is used
+
+* There is a Python based approach besides the XSLT based approach
+
+* XSLT and Python based approach are implemented as standard Docutils
+  reader / parser / writer
+
+Python implementation has some failing tests because Python
+implementation is not yet as mature as XSLT implementation.
+
+XSLT implementation fails for one test which is beyond the
+capabilities of XSLT.
+
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-12-12T00:05:55.799378Z
+K 7
+svn:log
+V 57
+restored stylesheet-path setting; needed for the web site
+END

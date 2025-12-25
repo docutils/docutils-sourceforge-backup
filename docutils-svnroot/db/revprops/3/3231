@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-04-21T14:52:41.007542Z
+K 7
+svn:log
+V 269
+"image" directive: added checks for valid values of "align" option, depending on context.  "figure" directive: added specialized "align" option and attribute on "figure" element.  Added HTML support for ``align`` attribute on ``figure`` elements.  Updated docs & tests.
+END

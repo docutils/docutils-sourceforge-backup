@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2009-07-20T16:47:22.045699Z
+K 7
+svn:log
+V 90
+Remove commented code.
+Replace ``raise NotImplementedError,`` in ``depart_*`` procedures.
+
+END

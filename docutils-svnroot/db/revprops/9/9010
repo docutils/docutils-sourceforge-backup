@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-02-21T13:53:19.381733Z
+K 7
+svn:log
+V 195
+Test error reporting for config file syntax errors.
+
+Config file syntax errors should be reported with
+position (file and section) also for errors
+raised by validation with frontend.validate_*().
+END

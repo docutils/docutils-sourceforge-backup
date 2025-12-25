@@ -1,0 +1,280 @@
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 5
+1.119
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 40-18.0.r2640/125
+type: file
+pred: 40-18.0.r2638/2561
+count: 118
+text: 2635 0 499 48785 a25ac895cca958b23f5b878addc833ac a6fe4c9d7c1f1fc755a5407e7ec43045497934d4 2639-21b/_5
+props: 2640 0 112 0 cab4a1dc63e2434293b50fc318d01b8d
+cpath: /trunk/docutils/docutils/writers/html4css1.py
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 5
+1.141
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 9-1202.0.r2640/549
+type: file
+pred: 9-1202.0.r2638/2989
+count: 140
+text: 2637 0 289 74483 1347dac11d22b530457516208324f7f6 3e2be0a4dbaa95374c8f0f643d26c28df69181e7 2639-21b/_6
+props: 2640 424 112 0 318a3eb34ffe6447df1bcac1b59e1306
+cpath: /trunk/docutils/docutils/writers/latex2e.py
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 3x-18.0.r2321/1152
+K 15
+docutils_xml.py
+V 24
+file 4-244.0.r2223/10556
+K 12
+html4css1.py
+V 22
+file 40-18.0.r2640/125
+K 10
+latex2e.py
+V 23
+file 9-1202.0.r2640/549
+K 11
+pep_html.py
+V 22
+file 4-281.0.r1823/272
+K 12
+pseudoxml.py
+V 22
+file 4-84.0.r1645/8532
+END
+ENDREP
+id: 3w-18.0.r2640/1146
+type: dir
+pred: 3w-18.0.r2638/3588
+count: 294
+text: 2640 850 283 283 97c038f42e2bc75624a5f69d5c7943f8
+props: 342 6175 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils/writers
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 22
+file 1x-18.0.r2518/222
+K 7
+core.py
+V 22
+file 20-18.0.r2455/792
+K 11
+examples.py
+V 23
+file 3-1928.0.r2028/395
+K 11
+frontend.py
+V 23
+file 3-150.0.r2639/5119
+K 5
+io.py
+V 23
+file 3-217.0.r2622/6514
+K 9
+languages
+V 22
+dir 22-18.0.r2609/4414
+K 8
+nodes.py
+V 22
+file 28-18.0.r2597/628
+K 7
+parsers
+V 22
+dir 2a-18.0.r2622/5741
+K 7
+readers
+V 22
+dir 36-18.0.r2487/1033
+K 15
+statemachine.py
+V 22
+file 3e-18.0.r2299/866
+K 10
+transforms
+V 22
+dir 3g-18.0.r2561/4182
+K 13
+urischemes.py
+V 22
+file 3s-18.0.r1829/714
+K 8
+utils.py
+V 22
+file 3u-18.0.r2322/657
+K 7
+writers
+V 22
+dir 3w-18.0.r2640/1146
+END
+ENDREP
+id: 1w-18.0.r2640/1997
+type: dir
+pred: 1w-18.0.r2639/6030
+count: 904
+text: 2640 1380 604 604 c8c1ef6057ed679e7a72ec689e62b07d
+props: 342 8363 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 21
+file 2-340.0.r340/154
+K 8
+BUGS.txt
+V 23
+file 2-2181.0.r2621/362
+K 11
+COPYING.txt
+V 22
+file 2-18.0.r2354/3164
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r2569/255
+K 11
+HISTORY.txt
+V 21
+file 5-18.0.r2623/678
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r2513/394
+K 10
+README.txt
+V 21
+file 9-18.0.r2538/681
+K 10
+THANKS.txt
+V 23
+file 2-2182.0.r2248/742
+K 4
+docs
+V 20
+dir 3-7.0.r2639/7308
+K 8
+docutils
+V 22
+dir 1w-18.0.r2640/1997
+K 6
+extras
+V 23
+dir 2-1467.0.r1686/1264
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 23
+file 46-18.0.r2518/1499
+K 4
+test
+V 22
+dir 48-18.0.r2639/4773
+K 5
+tools
+V 23
+dir 6w-18.0.r2548/29352
+END
+ENDREP
+id: 1-7.0.r2640/2907
+type: dir
+pred: 1-7.0.r2639/8156
+count: 1957
+text: 2640 2224 670 670 6f16aa37b11c99d75b549734322e3d7d
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r2640/2907
+K 7
+sandbox
+V 21
+dir 1-17.0.r2636/2010
+K 3
+web
+V 19
+dir 1-2.0.r2520/824
+END
+ENDREP
+id: 3-1.0.r2640/3249
+type: dir
+pred: 3-1.0.r2639/8498
+count: 2614
+text: 2640 3121 115 115 e9e92926a7483f79d1108f85aeb7f80f
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 22
+dir 0-1.0.r2577/106684
+K 4
+tags
+V 20
+dir 2-1.0.r2576/3944
+K 5
+trunk
+V 20
+dir 3-1.0.r2640/3249
+END
+ENDREP
+id: 0.0.r2640/3530
+type: dir
+pred: 0.0.r2639/8779
+count: 2640
+text: 2640 3401 116 116 9dec76c4a9119c09a0f3bf875b64cb74
+cpath: /
+copyroot: 0 /
+
+40-18.0.t2639-21b modify-file true true /trunk/docutils/docutils/writers/html4css1.py
+
+9-1202.0.t2639-21b modify-file true true /trunk/docutils/docutils/writers/latex2e.py
+
+
+3530 3673

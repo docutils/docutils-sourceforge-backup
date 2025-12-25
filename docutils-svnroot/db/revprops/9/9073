@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-06-15T15:28:26.013585Z
+K 7
+svn:log
+V 48
+Remove test for already removed Python 2.x code.
+END

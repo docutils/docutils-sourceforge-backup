@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-04-03T16:57:36.438664Z
+K 7
+svn:log
+V 448
+html5 writer: wrap image elements in <p> unless inline or in figure.
+
+In HTML, <img> is by default an inline element.
+The rST "image" directive generates block-level elements
+(unless used in a "substitution" directive).
+
+Wrapping in a container enables more advanced CSS styling.
+A paragraph as wrapper fits well with Docutils wrapping
+inline content in paragraphs by default.
+
+No change for the "html4css1" writer (ensure backwards compatibility).
+END

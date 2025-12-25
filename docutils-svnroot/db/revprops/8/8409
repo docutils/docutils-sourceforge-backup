@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-10-30T15:35:28.667157Z
+K 7
+svn:log
+V 55
+Fix and add test for more use cases for nodes.set_id().
+END

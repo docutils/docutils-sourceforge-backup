@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-02-01T13:03:41.306583Z
+K 7
+svn:log
+V 359
+LaTeX to MathML: generate simpler MathML trees, fix `\cfrac`.
+
+MathML Core defines more global attributes as MathML 3.
+So we can now get rid of some `<mstyle>` wrappers and attach
+styling attributes directly to the to-be-styled elements.
+
+This also fixes
+
+* a misattachment of expressions following continued fractions,
+* styling of "smallmatrix" in Chromium,
+END

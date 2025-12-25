@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-07-29T12:37:02.755926Z
+K 7
+svn:log
+V 216
+Remove mistranslations of the "admonition" directive name.
+
+Some localizations used the translation of "admonition (reprimand)"
+(not applicable for the rST directive)
+instead of "admonition (advice/advisory/remark)".
+END

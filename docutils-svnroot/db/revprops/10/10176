@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-06-18T14:03:25.553530Z
+K 7
+svn:log
+V 450
+Make targets from hyperlink references with embedded URI or alias implicit.
+
+Embedding a URI or alias name in a hyperlink reference is no explicit request
+for a target (cf. bug #502). Downgrade the priority of the generated targets from
+explicit to implicit to avoid surprising warnings in case of name duplication.
+
+(Anonymous references can be used to avoid the warnings but, in case of a typo,
+the warnings/errors have no source/line information.)
+END

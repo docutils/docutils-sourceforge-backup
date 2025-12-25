@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 12
+paultremblay
+K 8
+svn:date
+V 27
+2011-02-22T01:57:58.266713Z
+K 7
+svn:log
+V 96
+Moved variable table-width to parameters; addede
+keep-together.within-page="always to table.xsl
+
+END

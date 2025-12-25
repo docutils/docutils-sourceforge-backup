@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2016-05-25T22:57:12.258835Z
+K 7
+svn:log
+V 124
+Fixes for html-plain writer: 
+
+use "html-plain writer" configuration section, 
+fix order of closing tags for footnote labels
+END

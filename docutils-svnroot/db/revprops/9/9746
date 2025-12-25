@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-06T14:03:57.092528Z
+K 7
+svn:log
+V 255
+Better error reporting when parsing included (sub)documents.
+
+Pass the included file's path to the parser when the "include"
+directive is used with :parser: option.
+Enables system messages with correct source/line indication.
+
+Test with Docutils-XML file.
+END

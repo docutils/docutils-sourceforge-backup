@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-07-10T07:50:39.771743Z
+K 7
+svn:log
+V 182
+Update test after the fix in [r9098].
+
+Remove exception for Py3k input encoding handling in 0.18.
+Input detection is now always used if the `input_encoding` setting
+is not specified.
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-01-22T22:53:32.043960Z
+K 7
+svn:log
+V 166
+--- MERGE: merged r4315 to maintenance branch; original log message:
+fixed "target beginning with underscore" bug;
+added test for missing closing backquote in targets
+END

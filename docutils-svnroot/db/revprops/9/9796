@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2024-07-31T09:17:26.565195Z
+K 7
+svn:log
+V 127
+Do not recommend using flit as a build frontend
+
+Instead, use the simpler ``build`` tool.
+Also update pyproject.toml metadata.
+
+END

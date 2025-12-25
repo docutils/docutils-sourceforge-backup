@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 9
+timehorse
+K 8
+svn:date
+V 27
+2015-06-03T22:04:47.769634Z
+K 7
+svn:log
+V 135
+Forgot to add one of the test files for bug number 276 ODT Writer strips classes from inline character markup when more than one class.
+END

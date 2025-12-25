@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-11-01T21:50:42.957895Z
+K 7
+svn:log
+V 93
+Documentation update/additions.
+
+Remove implemented TODO item.
+Add entry for rst2man.py tool.
+END

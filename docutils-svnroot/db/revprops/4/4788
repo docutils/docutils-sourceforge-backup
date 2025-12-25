@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2006-10-23T13:04:22.281160Z
+K 7
+svn:log
+V 55
+Fix bullets and numbers in lists were prefixed with 0.
+
+END

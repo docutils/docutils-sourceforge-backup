@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2016-07-26T00:01:42.511502Z
+K 7
+svn:log
+V 43
+Fix [ 224 ] Fix rowspan support for tables.
+END

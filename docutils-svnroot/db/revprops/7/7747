@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2014-03-20T10:51:10.453686Z
+K 7
+svn:log
+V 248
+Address [ 249 ] and [ 250 ]. CSV table fails on python 2 with unicode.
+
+While the problem of Unicode characters in the options under Python 2 
+cannot be solved with reasonable effort, the patch improves error reporting
+and documents the limitation.
+END

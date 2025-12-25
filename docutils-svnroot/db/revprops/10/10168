@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-06-16T09:58:04.179973Z
+K 7
+svn:log
+V 380
+Drop the (faulty) "name" option of the "target-notes" directive.
+
+Remove "name" from `TargetNotes.option_spec`.
+
+The "target-notes" directive generates one footnote element per external target,
+so it is unclear where a "name" attribute should go.
+
+Up to now, the name was dropped by the "TargetNodes" transform and led to
+an AssertionError in documents without external references
+END

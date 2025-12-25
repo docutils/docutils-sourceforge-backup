@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-08-26T12:10:23.833514Z
+K 7
+svn:log
+V 239
+trivial: Remove obsolete PyXML handling code
+
+PyXML is dead and doesn't support any of the Python versions we use. No
+need to keep worrying about it screwing with stdlib's XML libraries.
+
+Signed-off-by: Stephen Finucane <stephen@that.guru>
+END

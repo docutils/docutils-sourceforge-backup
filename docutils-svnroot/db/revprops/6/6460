@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-10-29T22:18:44.025670Z
+K 7
+svn:log
+V 263
+Rename the ``.. math-block::`` directive to ``.. math::``.
+
+Simplify the rst-syntax using just one name for math directive and
+role. This is also how it is done by Sphinx.
+
+The doctree node is still called math-block (analogous to
+literal-block, line-block, ...).
+END

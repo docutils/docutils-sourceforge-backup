@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2006-05-14T00:05:28.910867Z
+K 7
+svn:log
+V 78
+Changed docs a bit about rst-mode and obsolete note about document conversion.
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-09-26T17:17:33.830744Z
+K 7
+svn:log
+V 42
+updated expected output of functional test
+END

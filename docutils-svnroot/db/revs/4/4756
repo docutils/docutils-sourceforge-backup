@@ -1,0 +1,103 @@
+id: h-17.0.r4756/0
+type: file
+pred: h-17.0.r4755/241
+count: 15
+text: 4669 0 315 8378 633e32e16eecf9cd4d91e73ea7e75007 9ec510e57236d93181ab4deec23f9ebbd49b22f5 4755-3o3/_3
+props: 2431 121 111 0 5396249b3009eb64cd90e5da0b7a56fa
+cpath: /trunk/web/rst.txt
+copyroot: 0 /
+
+PLAIN
+K 9
+.htaccess
+V 23
+file 2-2167.0.r4623/225
+K 15
+PyBanner016.png
+V 21
+file 2-5.0.r3670/6525
+K 9
+index.txt
+V 20
+file 2-4.0.r4372/522
+K 6
+mirror
+V 20
+dir 2-15.0.r134/5759
+K 10
+python.png
+V 24
+file 4-3402.0.r3403/4903
+K 7
+rst.png
+V 20
+file e-17.0.r3395/79
+K 7
+rst.txt
+V 19
+file h-17.0.r4756/0
+END
+ENDREP
+id: 1-2.0.r4756/573
+type: dir
+pred: 1-2.0.r4755/818
+count: 136
+text: 4756 267 293 293 5f44c8dc17098d226342e6d8a9200493
+cpath: /trunk/web
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r4754/4138
+K 5
+prest
+V 23
+dir 1-4326.0.r4742/2046
+K 7
+sandbox
+V 21
+dir 1-17.0.r4740/3490
+K 3
+web
+V 19
+dir 1-2.0.r4756/573
+END
+ENDREP
+id: 3-1.0.r4756/892
+type: dir
+pred: 3-1.0.r4755/1137
+count: 4398
+text: 4756 725 154 154 4dfa0c702cdacb4fb2ae796643c18dd4
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r4668/164
+K 4
+tags
+V 19
+dir 2-1.0.r4584/629
+K 5
+trunk
+V 19
+dir 3-1.0.r4756/892
+END
+ENDREP
+id: 0.0.r4756/1166
+type: dir
+pred: 0.0.r4755/1413
+count: 4756
+text: 4756 1042 111 111 d0d3d86c5adcd3f225a6076ae9fea4eb
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+
+h-17.0.t4755-3o3 modify-file true false /trunk/web/rst.txt
+
+
+1166 1360

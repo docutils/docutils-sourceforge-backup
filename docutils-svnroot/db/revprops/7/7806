@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2015-02-27T16:12:21.604037Z
+K 7
+svn:log
+V 71
+New upstream version (additional macros, piecewise integrals and sums).
+END

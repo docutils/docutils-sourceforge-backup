@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2013-05-31T08:46:24.525190Z
+K 7
+svn:log
+V 122
+Exclude "wide" characters from the "delimiters" regexp in "narrow" builds.
+
+Fixes sre_constants.error: bad character range
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-08-11T21:40:06.229117Z
+K 7
+svn:log
+V 58
+added functional test for non-ASCII characters in comments
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-01-28T09:21:00.664193Z
+K 7
+svn:log
+V 83
+latex2e writer: Add ``bp`` to lengths without unit; do not convert ``px`` to ``pt``
+END

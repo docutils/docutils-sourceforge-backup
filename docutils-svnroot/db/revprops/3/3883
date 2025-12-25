@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-09-17T22:43:04.185759Z
+K 7
+svn:log
+V 169
+made cloaking of email addresses with ``--cloak-email-addresses`` less obtrusive;
+updated documentation; added warning about incorrectly decoded cloaked
+email addresses
+
+END

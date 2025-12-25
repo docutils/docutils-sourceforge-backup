@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2016-08-18T13:06:09.104738Z
+K 7
+svn:log
+V 275
+docutils-xml writer: Fix/improve output with "newlines and "indent".
+
+xmllint says empty elements must not have linebreaks inbetween
+(regards transition, image and cospec elements).
+
+Indent text, unless it is FixedText (literal etc.).
+
+Add a functional test for docutils-xml.
+END

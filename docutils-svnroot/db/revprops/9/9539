@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-02-17T10:36:51.142196Z
+K 7
+svn:log
+V 102
+Use True/False instead of 1/0.
+
+Fix some left-overs from the time Python did not have "real" booleans.
+END

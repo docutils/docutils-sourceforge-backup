@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2007-06-13T10:20:42.922232Z
+K 7
+svn:log
+V 168
+Added links to the README file.
+self-documenting feature: literal code with syntax highlight
+Moved the front-end to the base dir. This way it works without installing.
+
+END

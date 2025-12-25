@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-08-14T10:54:53.730602Z
+K 7
+svn:log
+V 50
+Fix [ 3556388 ] Mathjax does not work with rst2s5.
+END

@@ -1,0 +1,27 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-04T17:03:32.434912Z
+K 7
+svn:log
+V 504
+Documentation update.
+
+* Small clarification in the rST spec.
+
+* Move detailled description of alternative ways to install for
+  development from the "Docutils policies" to the "repository"
+  documentation.
+
+  We don't need to go into details in the "policies" document
+  and "edible installs" are also useful for casual contributors
+  or power-users.
+
+* Update links and optional dependencies in the README,
+  use terminology from PEP 621.
+  Move the sandbox snapshot download doc to the sandbox README.
+END

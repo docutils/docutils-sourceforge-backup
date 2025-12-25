@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T02:42:25.177113Z
+K 7
+svn:log
+V 100
+Do not make "class" attribute optional.
+There is just no need to; the "class" attributes don't hurt.
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-02-23T19:24:18.867319Z
+K 7
+svn:log
+V 68
+Fixed to work on systems whose 'find' command does not support ','.
+
+END

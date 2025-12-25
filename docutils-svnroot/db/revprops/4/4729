@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2006-09-05T19:40:43.908664Z
+K 7
+svn:log
+V 59
+Updated to use $writer argument to access ProcessDOMPhase.
+
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2002-09-30T15:11:22.000000Z
+K 7
+svn:log
+V 81
++ fix encoding backslashes.
++ switch to latex generated tocs (not yet finished).
+
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-05-29T12:51:35.063798Z
+K 7
+svn:log
+V 130
+added functional test for image with multiple IDs;
+somethings *really* broken there, both in the transforms and in the HTML writer
+END

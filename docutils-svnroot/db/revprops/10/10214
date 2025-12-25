@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-08-20T09:39:58.493938Z
+K 7
+svn:log
+V 192
+Documentation fixes.
+
+Fix docstring: `directives.misc.Include.insert_into_input_lines()`
+returns None. (The empty list is returned by `Include.run()`.)
+
+Small edits in the Document Tree Guide.
+END

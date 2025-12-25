@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-05-31T21:34:55.155360Z
+K 7
+svn:log
+V 136
+Fix [ 318 ] false positive in test_heuristics_no_utf8.
+
+The heuristics is skipped under Py3k unless decoding with locale encoding
+fails.
+END

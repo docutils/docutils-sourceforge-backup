@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-09-25T15:49:54.238588Z
+K 7
+svn:log
+V 215
+added docutils/writers/support/ directory and removed tools/stylesheets/; updated defaults; removed docutils/transforms/html.py (no longer needed); removed ``_stylesheet_required`` internal setting; updated setup.py
+END

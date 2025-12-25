@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2009-08-24T06:18:03.311889Z
+K 7
+svn:log
+V 119
+Do not print date at document end, this is done by the viewer.
+Fix storage of docinfo fields for none standard fields.
+
+END

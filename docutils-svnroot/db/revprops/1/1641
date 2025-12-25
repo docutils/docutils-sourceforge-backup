@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2003-08-27T20:42:29.000000Z
+K 7
+svn:log
+V 98
+Bumped version to 0.3.1: Reorganized config file format (multiple sections); see docs/config.txt.
+
+END

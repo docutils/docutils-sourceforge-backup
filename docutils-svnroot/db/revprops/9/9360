@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-04-19T23:31:31.831383Z
+K 7
+svn:log
+V 128
+Small fixes to odt_prepstyles module.
+
+Add link to the full documentation to "usage".
+
+Specify encoding when writing to zipfile.
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2012-12-14T09:27:49.725000Z
+K 7
+svn:log
+V 24
+use run from release.sh
+
+END

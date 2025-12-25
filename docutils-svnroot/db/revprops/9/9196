@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-11-01T00:06:37.096345Z
+K 7
+svn:log
+V 201
+Refine common part of the reposurgeon conversion procedure
+
+- Split ``common.lift`` to ``common_load`` and ``common_clean``
+- Move embedded shell commands to ``common_combine.sh``
+- Update the Makefile
+END

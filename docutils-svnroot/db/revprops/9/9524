@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-02-01T13:02:01.343607Z
+K 7
+svn:log
+V 398
+Move MathML tree simplification from `mrow.close()` to `parse_latex_math()`.
+
+Do not open a new `<mrow>` (only to remove it afterwards)
+for commands like ``\sqrt{3 +1}`` (LaTeX macro takes one argument
+but `<sqrt>` node accepts a group).
+
+Note: The replacement of `mrow` by a single child node remains
+in the `mrow.close()` method, because we don't know in forehand
+whether there is only one child.
+END

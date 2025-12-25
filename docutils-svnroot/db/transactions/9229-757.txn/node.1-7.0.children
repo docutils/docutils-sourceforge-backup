@@ -1,0 +1,81 @@
+K 7
+.flake8
+V 23
+file 2-9130.0.r9214/752
+K 8
+BUGS.txt
+V 25
+file 2-2181.0.r8959/24766
+K 11
+COPYING.txt
+V 22
+file 2-18.0.r9212/2698
+K 7
+FAQ.txt
+V 23
+file 2-788.0.r9077/1849
+K 11
+HISTORY.txt
+V 22
+file 5-18.0.r9219/2287
+K 11
+MANIFEST.in
+V 22
+file 7-18.0.r8995/4909
+K 10
+README.txt
+V 20
+file 9-18.0.r9139/81
+K 17
+RELEASE-NOTES.txt
+V 24
+file 2-4204.0.r9219/2572
+K 10
+THANKS.txt
+V 25
+file 2-2182.0.r8959/26485
+K 4
+docs
+V 20
+dir 3-7.0.r9221/1545
+K 8
+docutils
+V 22
+dir 1w-18.0.r9221/2360
+K 13
+docutils.conf
+V 25
+file 2-7375.0.r9051/26555
+K 10
+install.py
+V 24
+file 44-18.0.r8925/18413
+K 8
+licenses
+V 24
+dir 2-1465.0.r8959/44688
+K 9
+setup.cfg
+V 23
+file 4-6255.0.r9177/181
+K 8
+setup.py
+V 22
+file 46-18.0.r9198/820
+K 4
+test
+V 23
+dir 48-18.0.r9229/25338
+K 5
+tools
+V 22
+dir 6w-18.0.r9201/3099
+K 7
+tox.ini
+V 24
+file 2-7874.0.r9198/1101
+END
+K 4
+test
+V 21
+dir 48-18.0.t9229-757

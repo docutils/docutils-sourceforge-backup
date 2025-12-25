@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-20T21:52:53.431821Z
+K 7
+svn:log
+V 177
+ensure that always a stylesheet path/URL is given;
+I've seen to many poor-looking documents on the web due to the missing
+stylesheet -- people seem to miss that quite frequently
+END

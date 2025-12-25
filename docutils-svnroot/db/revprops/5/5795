@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 13
+matt_harrison
+K 8
+svn:date
+V 27
+2008-12-05T17:47:31.661609Z
+K 7
+svn:log
+V 51
+Removing deprecated odpwriter (use rst2odp instead)
+END

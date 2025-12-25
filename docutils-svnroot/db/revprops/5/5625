@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2008-08-18T07:45:55.545976Z
+K 7
+svn:log
+V 76
+in spanish ``~n`` is special, this requires special treatment
+add some test
+
+END

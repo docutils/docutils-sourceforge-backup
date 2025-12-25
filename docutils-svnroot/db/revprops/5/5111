@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+gbrandl
+K 8
+svn:date
+V 27
+2007-05-24T08:08:14.742014Z
+K 7
+svn:log
+V 121
+Move module targets to their nearest enclosing section title,
+so that you see the section title on jumping to that link.
+
+END

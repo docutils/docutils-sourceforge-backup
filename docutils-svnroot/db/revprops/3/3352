@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-05-18T22:31:15.780316Z
+K 7
+svn:log
+V 140
+removed test for ":figwidth: image" because it has different output
+depending on whether PIL is installed or not;
+need to write another test
+END

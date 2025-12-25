@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2015-03-10T15:11:37.924195Z
+K 7
+svn:log
+V 78
+Fix setup.py and tests after addition of writers/html_base and mv of math.css.
+END

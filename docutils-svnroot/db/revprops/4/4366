@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2006-03-02T03:39:18.715021Z
+K 7
+svn:log
+V 180
+Now loading the 'compile module in rst.el
+Some of the variables we depend on for rst-compile 
+are defined in it, and some people who did not
+require 'compile were having problems.
+
+END

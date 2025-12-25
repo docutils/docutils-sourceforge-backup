@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2008-12-09T14:23:21.537048Z
+K 7
+svn:log
+V 134
+utils.py: let DependencyList.add() accept multiple file arguments,
+html4css1/__init__.py: use this to register the list of stylesheets
+END

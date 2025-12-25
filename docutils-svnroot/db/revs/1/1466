@@ -1,0 +1,180 @@
+PLAIN
+K 11
+__init__.py
+V 22
+file 1x-18.0.r1398/317
+K 7
+core.py
+V 23
+file 20-18.0.r1401/2591
+K 11
+frontend.py
+V 23
+file 3-150.0.r1400/1012
+K 5
+io.py
+V 22
+file 3-217.0.r1464/647
+K 9
+languages
+V 22
+dir 22-18.0.r1358/4254
+K 8
+nodes.py
+V 23
+file 28-18.0.r1374/3514
+K 7
+parsers
+V 22
+dir 2a-18.0.r1446/2107
+K 7
+readers
+V 22
+dir 36-18.0.r1374/4410
+K 15
+statemachine.py
+V 23
+file 3e-18.0.r1049/4204
+K 10
+transforms
+V 22
+dir 3g-18.0.r1406/8416
+K 13
+urischemes.py
+V 22
+file 3s-18.0.r131/1101
+K 8
+utils.py
+V 23
+file 3u-18.0.r1401/3963
+K 7
+writers
+V 22
+dir 3w-18.0.r1449/3849
+END
+ENDREP
+id: 1w-18.0.r1466/574
+type: dir
+pred: 1w-18.0.r1464/1587
+count: 533
+text: 1466 0 561 561 c797ac3cc5ffdf5902e6f88416d2095b
+props: 342 8363 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 21
+file 2-340.0.r340/154
+K 11
+COPYING.txt
+V 23
+file 2-18.0.r1409/20371
+K 7
+FAQ.txt
+V 24
+file 2-788.0.r1409/19964
+K 11
+HISTORY.txt
+V 23
+file 5-18.0.r1409/18371
+K 11
+MANIFEST.in
+V 20
+file 7-18.0.r344/206
+K 10
+README.txt
+V 23
+file 9-18.0.r1409/27665
+K 4
+docs
+V 20
+dir 3-7.0.r1449/5897
+K 8
+docutils
+V 21
+dir 1w-18.0.r1466/574
+K 10
+install.py
+V 24
+file 44-18.0.r1409/28098
+K 8
+licenses
+V 24
+dir 2-1465.0.r1465/20322
+K 8
+setup.py
+V 23
+file 46-18.0.r1463/1546
+K 4
+test
+V 22
+dir 48-18.0.r1449/2904
+K 5
+tools
+V 23
+dir 6w-18.0.r1409/19668
+END
+ENDREP
+id: 1-7.0.r1466/1361
+type: dir
+pred: 1-7.0.r1465/21036
+count: 1064
+text: 1466 797 551 551 e9d1c3169c1cd5fe376092d79079cd72
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r1466/1361
+K 7
+sandbox
+V 21
+dir 1-17.0.r1462/3569
+K 3
+web
+V 20
+dir 1-2.0.r1346/1210
+END
+ENDREP
+id: 3-1.0.r1466/1704
+type: dir
+pred: 3-1.0.r1465/21382
+count: 1458
+text: 1466 1575 116 116 40abfbb4e002602b6a13462bbde60152
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 17
+dir 0-1.0.r63/562
+K 4
+tags
+V 17
+dir 2-1.0.r65/217
+K 5
+trunk
+V 20
+dir 3-1.0.r1466/1704
+END
+ENDREP
+id: 0.0.r1466/1978
+type: dir
+pred: 0.0.r1465/21658
+count: 1466
+text: 1466 1857 108 108 5070e2e588c4568f94528ca7407fc3e3
+cpath: /
+copyroot: 0 /
+
+3c-18.0.r18/293919 delete-file false false /trunk/docutils/docutils/roman.py
+
+3-181.0.r207/326 delete-file false false /trunk/docutils/docutils/optik.py
+
+
+1978 2122

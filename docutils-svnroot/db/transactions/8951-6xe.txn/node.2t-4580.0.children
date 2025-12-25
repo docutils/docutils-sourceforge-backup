@@ -1,0 +1,25 @@
+K 8
+Dir.smak
+V 25
+file 7-5058.0.r5058/74065
+K 21
+inline_markup35.mydom
+V 26
+file 2v-4580.0.r5058/74291
+K 21
+inline_markup52.mydom
+V 27
+file 2x-4580.0.r4580/140723
+K 21
+test_inline_markup.py
+V 27
+file 2z-4580.0.r4580/140088
+END
+D 8
+Dir.smak
+D 21
+inline_markup35.mydom
+D 21
+inline_markup52.mydom
+D 21
+test_inline_markup.py

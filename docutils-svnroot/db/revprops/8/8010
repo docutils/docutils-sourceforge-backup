@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-01-03T16:14:00.594356Z
+K 7
+svn:log
+V 240
+improve backwards compatibility of patch [ 120 ]
+
+Patch 120 (tables accept option widths: list of relative widths, auto or
+grid) changed the API in parsers.rst.directives.tables
+
+This patch lets get_column_widths() return one result again.
+
+END

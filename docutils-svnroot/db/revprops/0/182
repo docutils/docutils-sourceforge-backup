@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-06-13T03:30:45.000000Z
+K 7
+svn:log
+V 119
+Combined from the Optik package, with no modifications.  This module will probably eventually take over from optik.py.
+
+END

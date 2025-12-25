@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 8
+dkuhlman
+K 8
+svn:date
+V 27
+2008-10-27T17:41:31.454401Z
+K 7
+svn:log
+V 72
+A change for consistency with odpwriter, plus a minor fix for sections.
+
+END

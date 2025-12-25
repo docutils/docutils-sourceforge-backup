@@ -1,0 +1,35 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-05-13T20:49:24.784140Z
+K 7
+svn:log
+V 944
+Relax the transform handling transitions.
+
+Report a WARNING instead of raising an AssertionError, if a
+`<transition>` element's parent is neither `<document>` nor `<section>`.
+This prevents errors with 3rd-party parsers or some (invalid)
+Docutils-XML input.
+
+Downgrade the system message reporting a `<transition>` at an
+invalid position from ERROR to WARNING.
+
+Insert the `<system_message>` *after* the transition (instead of before)
+to prevent an infinite loop with `document.findall()`
+
+Insert `<system_message>` element only if valid at this position.¹
+Dangling `<system_messages>` are collected and moved to a
+system messages" section by the `universal.Messages` transform).
+
+¹This check can lead to overcautious behaviour if there are
+ other validity violations.
+ This is an implementation detail, we want to keep it simple.
+
+Adapt "transition" transform tests. Add a test for transitions at
+"strange" places (with Docutils-XML sample).
+END

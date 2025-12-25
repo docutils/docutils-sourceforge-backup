@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-04-11T23:03:24.647278Z
+K 7
+svn:log
+V 118
+Fix test failure with pygments >= 2.14.
+
+Pygments' output changed in version 2.14.
+Ignore for now.
+
+Fixes [bugs:#484].
+END

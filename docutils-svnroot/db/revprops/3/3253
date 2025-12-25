@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-04-25T15:08:01.113704Z
+K 7
+svn:log
+V 471
+str(Exception) doesn't work for anything but ASCII Exception texts, so
+'%s' % exception_instance is unsafe unless exception_instance.args
+contains only byte strings.
+
+The change in alltests.py is a first attempt to catch such cases where
+a str(Exception) is done with an Exception text which is not
+necessarily ASCII-only (i.e. with a unicode string in Exception.args),
+but since most input data (in the totest dicts) is passed in as byte
+strings, it doesn't catch much.
+
+END

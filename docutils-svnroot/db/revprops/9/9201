@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-11-02T22:39:16.430223Z
+K 7
+svn:log
+V 373
+Move ``quicktest`` to ``tools/dev``
+
+The quicktest tool has not been substantively modified since 2006.
+It may still be useful for generating test-cases, so move it to the
+developer tools section and do not advertise it as a front-end tool.
+Update documentation where relevant to remove mention of quicktest
+as a front-end tool, and remove obsolete "EasyDialogs" code path.
+END

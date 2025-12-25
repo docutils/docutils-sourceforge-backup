@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-04-16T19:30:42.406532Z
+K 7
+svn:log
+V 75
+removed unused imports and cleaned up; removed obsolete node.set_class call
+END

@@ -1,0 +1,75 @@
+PLAIN
+K 25
+abolish-userstring-haskey
+V 26
+dir 1-7.0-5609.r5610/27115
+K 17
+address-rendering
+V 26
+dir 1-7.0-4314.r4314/16372
+K 18
+adjacent-citations
+V 25
+dir 1-7.0-5043.r5600/5654
+K 12
+docutils-0.4
+V 25
+dir 1-7.0-4266.r5500/7199
+K 9
+index-bug
+V 25
+dir 1-7.0-5587.r5594/4767
+K 19
+lossless-rst-writer
+V 25
+dir 1-7.0-5514.r5516/4944
+K 7
+nesting
+V 25
+dir 3-1.0-1813.r4356/3347
+K 7
+plugins
+V 25
+dir 1-7.0-4952.r4987/1225
+K 7
+subdocs
+V 25
+dir 1-7.0-5265.r5427/8605
+END
+ENDREP
+id: 0-1.0.r5611/469
+type: dir
+pred: 0-1.0.r5610/27922
+count: 432
+text: 5611 0 456 456 43b672deb0a6fe63d86346fd2d716705
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r5611/469
+K 4
+tags
+V 19
+dir 2-1.0.r5579/673
+K 5
+trunk
+V 20
+dir 3-1.0.r5608/6836
+END
+ENDREP
+id: 0.0.r5611/745
+type: dir
+pred: 0.0.r5610/28204
+count: 5611
+text: 5611 620 112 112 41bb1ad4160c6186c825ed0a5f1a2eca
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+
+1w-18.0-5604.r5607/45198 delete-dir false false /branches/abolish-userstring
+
+
+745 938

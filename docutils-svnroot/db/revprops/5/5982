@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-06-15T09:29:02.834459Z
+K 7
+svn:log
+V 58
+bugfix: remove spurious quotes around system message title
+END

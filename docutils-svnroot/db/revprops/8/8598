@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-01-03T21:05:04.580975Z
+K 7
+svn:log
+V 159
+Fix tests for code directive warnings.
+
+The Docutils parser test suite sets report_level to 5.
+Test warnings for non-supported languages with publish_string().
+END

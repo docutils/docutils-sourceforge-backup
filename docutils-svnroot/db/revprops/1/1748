@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 4
+cben
+K 8
+svn:date
+V 27
+2003-11-26T23:10:12.000000Z
+K 7
+svn:log
+V 225
+- Mangling of all includes was a bad idea => made it trigerred by including
+  ``.mathhack`` in included file name.
+- Switched to simple suffix extensions for pre/postprocessing intermediate
+  files.
+- Added PDFLaTeX support.
+
+END

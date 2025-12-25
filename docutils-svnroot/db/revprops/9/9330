@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2023-03-25T17:23:16.893881Z
+K 7
+svn:log
+V 436
+Use absolute paths in ``test_CLI``
+
+When running tests in working directories other than ``docutils/test``,
+the tests fail as the expected files cannot be opened from the
+relative ``./data`` path. This change uses the defined ``DATA_ROOT``
+constant so that the tests pass regardless of working directory. We
+also take the opportunity to explicitly specify the encoding with
+which to open the file, avoiding platform-dependent behaviour.
+END

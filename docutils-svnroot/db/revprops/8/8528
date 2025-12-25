@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-07-18T14:43:06.616435Z
+K 7
+svn:log
+V 54
+Fix #398: properly close link tag to "schema.dcterms".
+END

@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2015-05-06T16:36:40.899383Z
+K 7
+svn:log
+V 172
+Update the "wheeling" documentation: generated wheels can be installed with pip
+
+Installing from wheel is fast for both Py 2 and 3.
+Basic functionality tested under Py 3.4.
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-10-27T09:19:58.001459Z
+K 7
+svn:log
+V 32
+Fix the french-babel workaround.
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-10-18T22:26:11.915445Z
+K 7
+svn:log
+V 52
+More cases where we do not want to "educate" quotes.
+END

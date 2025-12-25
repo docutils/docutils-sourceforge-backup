@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-09-11T10:18:31.067891Z
+K 7
+svn:log
+V 79
+Rename DirectiveError.message to prevent spurious DeprecatedError in Python 2.6
+END

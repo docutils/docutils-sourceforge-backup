@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-05-25T13:00:33.031426Z
+K 7
+svn:log
+V 98
+fixed docstring of publish_from_doctree;
+see http://thread.gmane.org/gmane.text.docutils.user/2852
+END

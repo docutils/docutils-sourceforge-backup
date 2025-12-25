@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 11
+orutherfurd
+K 8
+svn:date
+V 27
+2002-11-09T17:32:51.000000Z
+K 7
+svn:log
+V 110
+- defaulting to 'None' if no title in source doc
+- fix for getting title
+- fix for including footer in output
+
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2017-07-09T16:48:41.454311Z
+K 7
+svn:log
+V 70
+print hint to check __version_info__ (might be unecessary after 0.14)
+
+END

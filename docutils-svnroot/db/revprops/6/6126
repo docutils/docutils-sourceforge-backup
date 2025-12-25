@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-09-11T16:20:01.815860Z
+K 7
+svn:log
+V 187
+Fix [ 1757105 ] New ``table-style`` option. 
+
+Content is added to standard table classes to allow CSS styling that does
+not interfere with other table-using constructs (field lists, ...).
+END

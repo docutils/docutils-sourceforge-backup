@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2007-01-22T08:35:57.232558Z
+K 7
+svn:log
+V 144
+cleaned up build_contents code (not worth a test case or history entry though because it occurs for corner cases involving empty section titles)
+END

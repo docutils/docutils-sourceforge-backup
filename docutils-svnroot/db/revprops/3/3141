@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-03-27T15:37:17.652595Z
+K 7
+svn:log
+V 146
+surround \items in LaTeX with curly brackets;
+closing https://sourceforge.net/tracker/index.php?func=detail&aid=1114337&group_id=38414&atid=422030
+END

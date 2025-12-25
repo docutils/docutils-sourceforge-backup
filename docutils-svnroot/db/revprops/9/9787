@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2024-07-31T03:13:34.450776Z
+K 7
+svn:log
+V 178
+Fix test_buildhtml on Windows
+
+When the temporary path is on a different drive 
+to the current working directory, the test fails.
+Fix by using ``docutils.utils.relative_path()``
+
+END

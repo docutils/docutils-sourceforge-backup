@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-05-20T12:18:55.529698Z
+K 7
+svn:log
+V 131
+MathML: First part of fix to #407.
+
+Partially fix #407 "Inline MathML role and block MathML
+directive appear with reversed styles."
+END

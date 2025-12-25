@@ -1,0 +1,73 @@
+id: 8-1157.0-3850.r3850/0
+type: dir
+pred: 8-1157.0.r3788/1645
+count: 38
+text: 3788 1349 283 283 bd64d2bd731e665e5205b6a1e576eebb
+cpath: /branches/better-emacs/emacs
+copyfrom: 3849 /trunk/docutils/tools/editors/emacs
+
+PLAIN
+K 5
+emacs
+V 25
+dir 8-1157.0-3850.r3850/0
+END
+ENDREP
+id: 1-3849.0.r3850/275
+type: dir
+pred: 1-3849.0.r3849/0
+count: 1
+text: 3850 217 45 45 32fb3ee5d13c37fddb826fcd4646bca3
+cpath: /branches/better-emacs
+copyroot: 0 /
+
+PLAIN
+K 12
+better-emacs
+V 22
+dir 1-3849.0.r3850/275
+K 7
+nesting
+V 27
+dir 3-1.0-1813.r2577/106277
+K 10
+transforms
+V 23
+dir 3-1.0-3822.r3826/43
+END
+ENDREP
+id: 0-1.0.r3850/592
+type: dir
+pred: 0-1.0.r3849/236
+count: 140
+text: 3850 439 140 140 6441bfcf3aaa3323c25784436a55eafb
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r3850/592
+K 4
+tags
+V 19
+dir 2-1.0.r3816/482
+K 5
+trunk
+V 20
+dir 3-1.0.r3848/2235
+END
+ENDREP
+id: 0.0.r3850/868
+type: dir
+pred: 0.0.r3849/511
+count: 3850
+text: 3850 743 112 112 ae4ef869e17ed5b982ebe5ca48f472d6
+cpath: /
+copyroot: 0 /
+
+8-1157._0.t3849-2yx add-dir false false /branches/better-emacs/emacs
+3849 /trunk/docutils/tools/editors/emacs
+
+868 1008

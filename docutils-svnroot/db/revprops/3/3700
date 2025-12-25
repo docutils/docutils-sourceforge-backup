@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T01:44:30.246757Z
+K 7
+svn:log
+V 215
+Generic hyperlink references to targets in other documents are not
+really needed, because the file type of the referenced document
+is normally known for hyperlink references.  So HTML-centric
+references are OK.  :-)
+END

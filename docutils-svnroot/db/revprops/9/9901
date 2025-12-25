@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-08-15T07:30:22.920272Z
+K 7
+svn:log
+V 255
+Use base class "Node" instead of `Element | Node` in type hints.
+
+`nodes.Element` and `nodes.Node` are the only child classes of the abstract
+base class `nodes.Node`.
+
+Ensure `nodes.Node` has all attributes and methods that are defined in
+both subclasses.
+END

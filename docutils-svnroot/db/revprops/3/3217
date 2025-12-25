@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 8
+cliechti
+K 8
+svn:date
+V 27
+2005-04-15T02:16:31.449226Z
+K 7
+svn:log
+V 139
+- more docs
+- more control over title, don't make it apear three times on the handout (added substitution to set title)
+- simplified code
+
+
+END

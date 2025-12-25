@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2003-03-11T08:17:35.000000Z
+K 7
+svn:log
+V 62
+Change literal_block: no more verbatim to allow inline makup.
+
+END

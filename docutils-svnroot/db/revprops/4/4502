@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2006-04-05T13:29:10.915935Z
+K 7
+svn:log
+V 89
+added the HTML writer's default template to the list of data files; thanks to Stefan Rank
+END

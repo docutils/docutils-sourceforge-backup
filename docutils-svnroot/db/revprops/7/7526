@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-10-12T11:54:01.222770Z
+K 7
+svn:log
+V 95
+New setting validators, code cleanup.
+
+(validate_comma_separated_string_list, validate_ternary)
+END

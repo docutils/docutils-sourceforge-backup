@@ -1,0 +1,67 @@
+id: 1-7.0-3816.r3816/0
+type: dir
+pred: 1-7.0.r2900/2336
+count: 2204
+text: 2900 1654 669 669 d8ea20c4cdbe4b4b502440d4e4c49a73
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /tags/docutils-0.3.7
+copyfrom: 2900 /trunk/docutils
+
+PLAIN
+K 14
+docutils-0.3.7
+V 22
+dir 1-7.0-3816.r3816/0
+K 14
+docutils-0.3.9
+V 22
+dir 1-7.0-3815.r3815/0
+K 7
+initial
+V 18
+dir 3-1.0-65.r65/0
+K 17
+merged_to_nesting
+V 25
+dir 3-1.0-2576.r2576/3616
+K 5
+start
+V 25
+dir 3-1.0-1558.r1558/1998
+END
+ENDREP
+id: 2-1.0.r3816/482
+type: dir
+pred: 2-1.0.r3815/448
+count: 9
+text: 3816 238 231 231 88cd2478f3b58793e8cc80f14d136f1f
+cpath: /tags
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 18
+dir 0-1.0.r3773/62
+K 4
+tags
+V 19
+dir 2-1.0.r3816/482
+K 5
+trunk
+V 21
+dir 3-1.0.r3813/10473
+END
+ENDREP
+id: 0.0.r3816/752
+type: dir
+pred: 0.0.r3815/718
+count: 3816
+text: 3816 627 112 112 0a10a538cf7ecf30e2aa282f98e847d2
+cpath: /
+copyroot: 0 /
+
+1-7._0.t3815-2xz add-dir false false /tags/docutils-0.3.7
+2900 /trunk/docutils
+
+752 892

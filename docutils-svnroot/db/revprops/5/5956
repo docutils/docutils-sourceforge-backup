@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 8
+cliechti
+K 8
+svn:date
+V 27
+2009-05-22T18:13:03.282986Z
+K 7
+svn:log
+V 81
+apply patch (SF 2794495): Print the ASCII art figure only when --debug is passed
+
+END

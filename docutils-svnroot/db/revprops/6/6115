@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-09-03T15:09:54.310034Z
+K 7
+svn:log
+V 60
+Render doctest blocks as literal blocks (fixes [ 1586058 ]).
+END

@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-07-13T21:56:19.477987Z
+K 7
+svn:log
+V 274
+* Process the :class: option on images.
+* If the "-W image-exts" option is used (it's actually deprecated in
+  favor of "-D image-exts"), the default alt attribute now also uses
+  the substituted extension.
+* Removed use of {tag} and {content} internal data of DOM objects.
+
+END

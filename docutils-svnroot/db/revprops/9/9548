@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-02-26T11:51:40.586290Z
+K 7
+svn:log
+V 217
+Restructure documentation of custom roles.
+
+Move the description of base-role-dependent options for the "role" directive
+to the documentation of the "role" directive.
+Shorten and clarify descriptions, add cross-links.
+END

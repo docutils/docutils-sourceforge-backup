@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-08-06T16:42:09.402000Z
+K 7
+svn:log
+V 294
+Test behaviour and fix documentation of rST footnotes.
+
+All numbered footnotes are assigned a *reference name* with the same
+priority as *explicit hyperlink targets*.
+
+The sample document "footnote-targets.rst" was used to check the actual
+behaviour. It is currently not used in the test suite.
+END

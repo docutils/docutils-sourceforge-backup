@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 8
+dkuhlman
+K 8
+svn:date
+V 27
+2010-10-26T22:37:20.560813Z
+K 7
+svn:log
+V 69
+Removed compression arg from zipfile write/writestr for Python <= 2.6
+END

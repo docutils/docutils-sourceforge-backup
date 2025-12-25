@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-20T22:28:07.019957Z
+K 7
+svn:log
+V 117
+check for missing stylesheet also when --embed-stylesheet;
+do not try to embed stylesheet when --stylesheet(-path)=""
+END

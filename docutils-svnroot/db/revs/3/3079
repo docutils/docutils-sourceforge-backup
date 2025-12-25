@@ -1,0 +1,135 @@
+id: 9-18.0.r3079/0
+type: file
+pred: 9-18.0.r3078/1016
+count: 41
+text: 3077 0 175 11590 9a75b92466e8bae4c1cae5fadba92a02 57b5cd122aee2c5a197a248b9ee0baf45634d7b1 3078-2di/_3
+props: 2754 552 111 0 4135f0dfb17a4d11b2424d95e27830f5
+cpath: /trunk/docutils/README.txt
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 21
+file 2-340.0.r340/154
+K 8
+BUGS.txt
+V 24
+file 2-2181.0.r2992/4677
+K 11
+COPYING.txt
+V 22
+file 2-18.0.r2354/3164
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r2971/124
+K 11
+HISTORY.txt
+V 22
+file 5-18.0.r3071/4526
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r2513/394
+K 10
+README.txt
+V 19
+file 9-18.0.r3079/0
+K 10
+THANKS.txt
+V 24
+file 2-2182.0.r3056/7300
+K 4
+docs
+V 20
+dir 3-7.0.r3074/2333
+K 8
+docutils
+V 23
+dir 1w-18.0.r3071/12360
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 23
+file 46-18.0.r2901/3967
+K 4
+test
+V 22
+dir 48-18.0.r3076/2652
+K 5
+tools
+V 22
+dir 6w-18.0.r3047/1750
+END
+ENDREP
+id: 1-7.0.r3079/960
+type: dir
+pred: 1-7.0.r3078/1981
+count: 2328
+text: 3079 277 670 670 365e0fe0162ca49bf0130d20f29b6762
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 19
+dir 1-7.0.r3079/960
+K 7
+sandbox
+V 21
+dir 1-17.0.r3075/2235
+K 3
+web
+V 20
+dir 1-2.0.r2905/1520
+END
+ENDREP
+id: 3-1.0.r3079/1300
+type: dir
+pred: 3-1.0.r3078/2324
+count: 3053
+text: 3079 1172 115 115 7058182fde3b6b00aa06e9e662549b6f
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 22
+dir 0-1.0.r2577/106684
+K 4
+tags
+V 20
+dir 2-1.0.r2576/3944
+K 5
+trunk
+V 20
+dir 3-1.0.r3079/1300
+END
+ENDREP
+id: 0.0.r3079/1581
+type: dir
+pred: 0.0.r3078/2605
+count: 3079
+text: 3079 1452 116 116 9814568c92038086951fd19f77e525b0
+cpath: /
+copyroot: 0 /
+
+9-18.0.t3078-2di modify-file true false /trunk/docutils/README.txt
+
+
+1581 1724

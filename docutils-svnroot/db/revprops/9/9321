@@ -1,0 +1,32 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-01-17T15:40:27.631094Z
+K 7
+svn:log
+V 951
+Fix failures when running "transform" test modules as "__main__".
+
+Also restructure `test_docinfo` to reduce code duplication.
+
+Running "transform" test modules independently failed due to an additional
+INFO message:
+
+Loading a language module results in an INFO message. Import statements
+don't trigger the INFO message if the language module is already loaded.
+
+When running a test module as __main__, the INFO message is added to the
+first document using both, the language module and the `Messages` or
+`TestMessages` transform. When running the test suite, the language
+module may already be loaded by another test.
+For stable results, the optional message must be filtered.
+
+In "transform" tests, we do not load the default transforms, so
+INFO messages are only filtered if `FilterMessages` is explicitly added.
+As `FilterMessages` only acts on attached messages, it must run
+*after* `TestMessages`, therefore we load it with custom priority 890.
+END

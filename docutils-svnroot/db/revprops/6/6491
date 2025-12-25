@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-12-03T10:03:27.947297Z
+K 7
+svn:log
+V 136
+Document the section subtitle transform in the functional tests.
+
+(sectsubtitle-xform is 0 by default but set to 1 for standalone tests)
+END

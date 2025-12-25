@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2008-10-10T23:49:33.369267Z
+K 7
+svn:log
+V 64
+rst-fields: Added option to automatically add a 'section' field.
+END

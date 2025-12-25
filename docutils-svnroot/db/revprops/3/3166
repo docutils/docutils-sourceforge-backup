@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-04-05T03:22:18.211618Z
+K 7
+svn:log
+V 57
+improve docs/ref/rst/directives.html field list rendering
+END

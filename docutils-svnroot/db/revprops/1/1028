@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2002-12-18T18:22:56.000000Z
+K 7
+svn:log
+V 71
++ do not write subsubsubsection ore even more subs, use subsubsection.
+
+END

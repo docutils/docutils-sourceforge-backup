@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-08-13T23:30:52.370058Z
+K 7
+svn:log
+V 42
+Date encoding test failed with Python 2.4.
+END

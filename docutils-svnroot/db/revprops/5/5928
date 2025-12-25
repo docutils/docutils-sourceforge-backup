@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-04-29T07:05:39.508205Z
+K 7
+svn:log
+V 99
+Correctly describe the reason for the multirow-LaTeX problem 
+
+(from docutils-devel post by D. G.).
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-04-08T20:13:30.968736Z
+K 7
+svn:log
+V 95
+Replace str.format (new in 2.6) with % transformation.
+
+Thanks to Kirill Spitsin for reporting.
+END

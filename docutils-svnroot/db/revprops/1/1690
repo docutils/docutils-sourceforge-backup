@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 4
+cben
+K 8
+svn:date
+V 27
+2003-09-15T13:55:52.000000Z
+K 7
+svn:log
+V 131
+Fixed usage message to be correct reStructuredText.  Brought in line
+with other tools style.  Changed to use stdout on ``--help``.
+
+END

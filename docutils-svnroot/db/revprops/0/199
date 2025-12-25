@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-06-20T03:56:59.000000Z
+K 7
+svn:log
+V 127
+- Added new "choice" option type.- Re-enabled optimized help text positioning.- Renamed some methods related to help output.
+
+END

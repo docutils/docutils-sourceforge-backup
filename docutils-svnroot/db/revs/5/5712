@@ -1,0 +1,357 @@
+id: a-4692.0-5034.r5712/0
+type: file
+pred: a-4692.0-5034.r5710/8232
+count: 61
+text: 5709 0 87 105737 f7275acc2466ac419adc4d1d3345aca7 e079bec913c14871cfa45fccced845fd27ccdf64 5711-4en/_5
+props: 4692 16948 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/OpenDocument/odtwriter/__init__.py
+copyroot: 5034 /trunk/sandbox/OpenDocument
+
+PLAIN
+K 11
+__init__.py
+V 26
+file a-4692.0-5034.r5712/0
+K 10
+styles.odt
+V 30
+file 5-4694.0-5034.r5683/16877
+END
+ENDREP
+id: 9-4692.0-5034.r5712/462
+type: dir
+pred: 9-4692.0-5034.r5710/8703
+count: 65
+text: 5712 344 105 105 cf6834c66fd7cfc3d81ad0a44fa513cd
+cpath: /trunk/sandbox/OpenDocument/odtwriter
+copyroot: 5034 /trunk/sandbox/OpenDocument
+
+PLAIN
+K 7
+LICENSE
+V 25
+file 4-4841.0.r4841/16004
+K 8
+MANIFEST
+V 29
+file 7-4841.0-5034.r5592/9171
+K 10
+README.txt
+V 28
+file 4-4706.0-5395.r5696/305
+K 4
+docs
+V 28
+dir 4-4692.0-5034.r5695/9838
+K 9
+odpwriter
+V 27
+dir 3-5682.0-5034.r5711/572
+K 9
+odtwriter
+V 27
+dir 9-4692.0-5034.r5712/462
+K 8
+setup.py
+V 30
+file 4-4703.0-5034.r5683/17574
+K 5
+tools
+V 29
+dir d-4692.0-5034.r5682/19703
+END
+ENDREP
+id: 3-4689.0-5034.r5712/1075
+type: dir
+pred: 3-4689.0-5034.r5711/1185
+count: 90
+text: 5712 686 376 376 abb7412c264aee43a98ff20ab12fd2e8
+cpath: /trunk/sandbox/OpenDocument
+copyroot: 5034 /trunk/sandbox/OpenDocument
+
+PLAIN
+K 12
+OpenDocument
+V 28
+dir 3-4689.0-5034.r5712/1075
+K 10
+README.txt
+V 21
+file 3-17.0.r5704/424
+K 8
+aafigure
+V 28
+dir 5-4251.0-4994.r5650/1743
+K 4
+aahz
+V 23
+dir 2-820.0.r3892/10934
+K 9
+agurtovoy
+V 23
+dir 2-2034.0.r5571/5136
+K 3
+amk
+V 23
+dir 2-1891.0.r1892/1276
+K 3
+axk
+V 25
+dir 2-1550.0-3242.r3242/0
+K 4
+bbum
+V 23
+dir 2-1039.0.r1742/2047
+K 5
+blais
+V 23
+dir 2-1316.0.r5672/6545
+K 4
+cben
+V 24
+dir 2-1693.0.r3533/13838
+K 8
+cliechti
+V 23
+dir 2-3204.0.r5654/1150
+K 20
+code-block-directive
+V 23
+dir 4-5229.0.r5665/3379
+K 9
+codeintro
+V 23
+dir 2-4954.0.r4977/1117
+K 6
+davidg
+V 20
+dir 6-17.0.r4646/460
+K 5
+delza
+V 23
+dir 2-1723.0.r1723/3836
+K 8
+dkuhlman
+V 23
+dir 2-1555.0.r5034/1704
+K 12
+docpy-writer
+V 28
+dir 2-4521.0-4565.r4626/8182
+K 7
+dpriest
+V 21
+dir 2-1730.0.r4985/58
+K 12
+dreamcatcher
+V 22
+dir 2-1300.0.r1357/657
+K 5
+dugui
+V 23
+dir 2-4358.0.r4360/1485
+K 7
+edloper
+V 21
+dir 2-1844.0.r4984/97
+K 7
+grubert
+V 22
+dir 2-112.0.r5701/1397
+K 8
+gschwant
+V 23
+dir 2-675.0.r4442/16701
+K 9
+holdenweb
+V 23
+dir 2-1845.0.r1845/4805
+K 11
+html4strict
+V 22
+dir 2-5534.0.r5651/569
+K 10
+html4trans
+V 23
+dir 2-5235.0.r5533/1086
+K 4
+ianb
+V 23
+dir 2-881.0.r3892/12710
+K 14
+infrastructure
+V 27
+dir 3-189.0-3951.r5703/1806
+K 5
+jensj
+V 23
+dir 2-2942.0.r5544/4137
+K 4
+lalo
+V 23
+dir 2-1749.0.r1762/2166
+K 14
+latex-variants
+V 23
+dir 2-5238.0.r5559/1740
+K 15
+latex_directive
+V 22
+dir 2-4364.0.r4365/616
+K 14
+manpage-writer
+V 23
+dir 4-4773.0.r5690/1331
+K 3
+mly
+V 23
+dir 2-1431.0.r1432/2681
+K 7
+mmgilbe
+V 23
+dir 2-1841.0.r2945/2205
+K 3
+mwh
+V 21
+dir 2-857.0.r862/1023
+K 7
+oliverr
+V 22
+dir 2-202.0.r5074/1849
+K 11
+package-doc
+V 22
+dir 2-5172.0.r5417/744
+K 12
+paultremblay
+V 23
+dir 2-1323.0.r1489/1149
+K 7
+pobrien
+V 23
+dir 2-1158.0.r1777/4967
+K 13
+presentations
+V 24
+dir 2-4940.0.r5174/64253
+K 11
+py-rest-doc
+V 22
+dir 2-5075.0.r5469/711
+K 7
+richard
+V 23
+dir 2-526.0.r5174/65313
+K 11
+roff-writer
+V 22
+dir 2-5617.0.r5617/789
+K 15
+rst2chunkedhtml
+V 23
+dir 2-5513.0.r5519/1100
+K 7
+rst2odp
+V 24
+dir 2-5681.0.r5681/13524
+K 7
+rst2pdf
+V 22
+dir 2-5560.0.r5638/438
+K 10
+rst2wordml
+V 24
+dir 2-5459.0.r5459/85880
+K 6
+simonb
+V 21
+dir 2-252.0.r1227/852
+K 11
+stylesheets
+V 24
+dir 2-3847.0.r5174/65890
+K 4
+tibs
+V 20
+dir 2-62.0.r4082/879
+K 12
+verse-writer
+V 23
+dir 2-4842.0.r4847/2800
+K 4
+wilk
+V 23
+dir 2-1258.0.r1650/3830
+K 10
+xhtml2rest
+V 29
+dir 3-3749.0-4373.r5174/66514
+K 7
+xml2rst
+V 22
+dir 6-5491.0.r5493/534
+END
+ENDREP
+id: 1-17.0.r5712/3665
+type: dir
+pred: 1-17.0.r5711/3775
+count: 1391
+text: 5712 1290 2362 2362 7c14b5a25ab02d0525e8a404215b3271
+cpath: /trunk/sandbox
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r5702/2424
+K 5
+prest
+V 23
+dir 1-4326.0.r5487/2835
+K 7
+sandbox
+V 21
+dir 1-17.0.r5712/3665
+K 3
+web
+V 20
+dir 1-2.0.r5583/1079
+END
+ENDREP
+id: 3-1.0.r5712/3997
+type: dir
+pred: 3-1.0.r5711/4108
+count: 5258
+text: 5712 3829 155 155 7e421c3f280f7817edb3f4b4bf411f93
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r5624/351
+K 4
+tags
+V 19
+dir 2-1.0.r5579/673
+K 5
+trunk
+V 20
+dir 3-1.0.r5712/3997
+END
+ENDREP
+id: 0.0.r5712/4274
+type: dir
+pred: 0.0.r5711/4386
+count: 5712
+text: 5712 4149 112 112 ec7629ccbe3165e0e1c120bd7b0d1b57
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+
+a-4692.0-5034.t5711-4en modify-file true false /trunk/sandbox/OpenDocument/odtwriter/__init__.py
+
+
+4274 4468

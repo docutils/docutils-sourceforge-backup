@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-12-02T14:00:55.682353Z
+K 7
+svn:log
+V 121
+Use ``unittest.defaultTestLoader`` to load tests
+
+This allows raising the ``unittest.SkipTest`` error at the module level
+END

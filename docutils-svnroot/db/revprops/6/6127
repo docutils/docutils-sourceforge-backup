@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-09-13T21:19:23.761713Z
+K 7
+svn:log
+V 92
+Hyperlinked footnote marks and support for symbol footnotes 
+with ``--use-latex-footnotes``.
+END

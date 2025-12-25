@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2011-06-04T09:42:40.912230Z
+K 7
+svn:log
+V 62
+Add failing test for fieldlist with term containing emphasize
+
+END

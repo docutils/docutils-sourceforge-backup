@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2024-08-01T18:42:09.888378Z
+K 7
+svn:log
+V 207
+Improve how ``Tee`` pretends to be a file
+
+This also fixes ``test_publish_cmdline`` on Windows when using a
+non-character device (not a TTY or the console device) and on UNIX
+systems with non-UTF-8 locales.
+
+END

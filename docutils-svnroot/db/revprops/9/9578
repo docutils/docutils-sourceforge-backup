@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-03-17T23:30:40.286547Z
+K 7
+svn:log
+V 339
+Move/rename parser test testing only "rst" to the rst parser test dir.
+
+The test skript "parsers/test_parser.py" tests only what happens
+if the "rst" parser is fed `bytes` input (a TypeError).
+
+This is OK for "rst", but other parsers don't need to have this
+restriction.
+
+Move to the "test_rst/" sub-directory and rename to "test_misc.py".
+END

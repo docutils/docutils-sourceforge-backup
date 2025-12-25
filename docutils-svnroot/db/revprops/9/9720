@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-28T07:26:08.278549Z
+K 7
+svn:log
+V 476
+Doctree validation: new transform `universal.Validate`.
+
+Recursive validating is now done in a dedicated "transform".
+
+The new transform `transforms.universal.Validate` is added
+by the "parser" component.
+If the "validate" setting is True, it traverses the document tree
+validating all nodes. Problems are reported as "warning" type
+system messages.
+
+`nodes.Element.validate()` no longer recursively validates the element's
+children. It always raises a ValueError on problems.
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 8
+dkuhlman
+K 8
+svn:date
+V 27
+2009-01-19T21:02:02.422875Z
+K 7
+svn:log
+V 59
+Fixed exception that occurs when Pygments is not installed.
+END

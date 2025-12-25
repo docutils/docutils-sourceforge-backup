@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 8
+dkuhlman
+K 8
+svn:date
+V 27
+2008-03-20T22:15:27.817786Z
+K 7
+svn:log
+V 75
+Fix to footnotes (extra space remove) and added support for raw directive.
+
+END

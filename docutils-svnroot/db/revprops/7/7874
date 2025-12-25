@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+gitpull
+K 8
+svn:date
+V 27
+2015-04-16T04:13:50.926407Z
+K 7
+svn:log
+V 93
+Add tox.ini support for testing multiple versions. Update release notes and docs for testing.
+END

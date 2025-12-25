@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-05-30T16:54:46.963256Z
+K 7
+svn:log
+V 363
+Command line "entry point" to the docutils package. Part 2/2.
+
+Support ``python -m docutils`` with new module `docutils.__main__`.
+
+Support ``docutils`` CLI command via "entry point" in setup.py.
+
+Keep tools/docutils-cli.py for backwards compatibility
+and manual installation.
+Calls `docutils.__main__.main()`.
+
+Thanks to Adam Turner for contributions and review.
+END

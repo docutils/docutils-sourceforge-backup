@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-10-20T20:46:16.000000Z
+K 7
+svn:log
+V 125
+made line block indentation parametrizable;
+changed to 2.5em to avoid visual confusion with paragraph first-line indentation
+
+END

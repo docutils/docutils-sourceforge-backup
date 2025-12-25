@@ -1,0 +1,35 @@
+K 10
+svn:author
+V 5
+milde
+K 15
+svn:check-locks
+V 4
+true
+K 8
+svn:date
+V 27
+2022-11-30T18:01:07.463588Z
+K 7
+svn:log
+V 429
+Update the "future changes" documentation.
+
+Provide example for stable command line name
+(when dropping .py extension from rst2*).
+
+Rewrite suggestions for stable HTML writer.
+
+Styling: Docutils writer names in quotes ("")
+(use the default role when referencing the `docutils.writers.<name>` sub-module,
+but "<name>" when referencing a writer as, e.g., configuration settings value
+or attribute value to `get_writer_by_name()`.).
+K 29
+svn:txn-client-compat-version
+V 6
+1.14.1
+K 18
+svn:txn-user-agent
+V 43
+SVN/1.14.1 (x86_64-pc-linux-gnu) serf/1.3.9
+END

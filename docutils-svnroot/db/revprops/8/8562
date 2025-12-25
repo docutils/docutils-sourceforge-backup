@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-09-10T21:42:53.750263Z
+K 7
+svn:log
+V 397
+Prevent circular inclusion
+
+Check "include" directives for circular dependencies and raise
+a warning (similar to the one rised when file-insertion is disabled).
+
+To prevent endless loops, we
+rise a warning when a nested inclusion with the same "path",
+"first-line", "end-line", "start-after", and "end-before"
+options is detected.
+In order to achieve this, the current source's parents are logged.
+END

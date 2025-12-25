@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-06-16T10:05:35.138635Z
+K 7
+svn:log
+V 436
+Add alias "rst-class" for the "class" directive.
+
+Improves the compatibility with Sphinx which overwrites the "class" directive
+with "domain specific" directives (by default  "py:class").
+
+The alias is added to the English-language mappings for directive names
+(similar to "section-numbering") so that missing translations don't lead
+failures. As English names are used as fallback, the alias works independent
+of the document language.
+END

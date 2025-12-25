@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2007-12-03T20:04:09.897549Z
+K 7
+svn:log
+V 89
+Major revamp of all rst.el as a single major mode, for preparation for submitting to RMS.
+END

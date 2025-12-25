@@ -1,0 +1,56 @@
+id: 1-3849.0.r3849/0
+type: dir
+count: 0
+cpath: /branches/better-emacs
+copyroot: 0 /
+
+PLAIN
+K 12
+better-emacs
+V 20
+dir 1-3849.0.r3849/0
+K 7
+nesting
+V 27
+dir 3-1.0-1813.r2577/106277
+K 10
+transforms
+V 23
+dir 3-1.0-3822.r3826/43
+END
+ENDREP
+id: 0-1.0.r3849/236
+type: dir
+pred: 0-1.0.r3826/400
+count: 139
+text: 3849 85 138 138 cc29050e1b32220a0550d4d0906bf9b1
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r3849/236
+K 4
+tags
+V 19
+dir 2-1.0.r3816/482
+K 5
+trunk
+V 20
+dir 3-1.0.r3848/2235
+END
+ENDREP
+id: 0.0.r3849/511
+type: dir
+pred: 0.0.r3848/2512
+count: 3849
+text: 3849 386 112 112 e9be67fc879552fa0b30a7a6cdedbfd7
+cpath: /
+copyroot: 0 /
+
+_1.0.t3848-2yw add-dir false false /branches/better-emacs
+
+
+511 652

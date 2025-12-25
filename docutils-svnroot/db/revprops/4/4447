@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2006-03-27T14:11:06.301435Z
+K 7
+svn:log
+V 24
+added "svn:ignore *.pyc"
+END

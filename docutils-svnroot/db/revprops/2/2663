@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-09-28T11:53:41.000000Z
+K 7
+svn:log
+V 152
+added get_stylesheet_reference(); added documentation for DependencyList;
+made DependencyList.set_output() clear the list of already added dependencies
+
+END

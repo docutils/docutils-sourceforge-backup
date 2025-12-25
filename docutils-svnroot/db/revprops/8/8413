@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-11-13T13:45:43.971513Z
+K 7
+svn:log
+V 124
+Ignore classes for `rubric` elements
+
+Class wrapper interferes with LaTeX formatting of text following
+the "rubric" heading.
+END

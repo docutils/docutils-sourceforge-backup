@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 4
+lele
+K 8
+svn:date
+V 27
+2004-08-20T08:00:43.000000Z
+K 7
+svn:log
+V 205
+The directive  now accepts a prefix option, a string that
+will be prepended to the generated section enumeration, and a start
+value, an integer  used as the starting value for auto-numbering the sections.
+
+END

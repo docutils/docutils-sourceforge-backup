@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-26T19:02:54.868809Z
+K 7
+svn:log
+V 112
+Don't use `join()` to build string literals.
+
+Allows to pre-compile the strings.
+
+Based on patch by Adam Turner.
+END

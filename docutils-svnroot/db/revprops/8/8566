@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-09-30T11:57:13.761031Z
+K 7
+svn:log
+V 188
+Remove Test support classes for the orphaned Python Module Parser.
+
+The Python module parser is orphaned and was moved to the sanbox
+on 07.12.2010. So these classes are no longer required.
+END

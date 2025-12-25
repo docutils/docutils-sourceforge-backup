@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-05-26T21:33:24.221099Z
+K 7
+svn:log
+V 218
+added __future__ statement to avoid warnings about nested scopes with Python 2.1.
+Sorry David, there's just no other quick way I can avoid this.  ;-)
+And making named functions out of the lambdas would look terrible...
+END

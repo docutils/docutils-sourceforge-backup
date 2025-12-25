@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2006-03-11T00:19:08.183027Z
+K 7
+svn:log
+V 124
+moved docutils.parsers.rst.states.Body.convert_old_style_directive method to docutils.parsers.rst.convert_directive_function
+END

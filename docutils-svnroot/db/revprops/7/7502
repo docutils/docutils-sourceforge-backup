@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-08-24T09:50:46.692069Z
+K 7
+svn:log
+V 66
+SafeString._str__ must not return a binary string with Python 3.x.
+END

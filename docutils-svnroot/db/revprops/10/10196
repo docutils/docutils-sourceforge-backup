@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-08-07T06:35:37.604713Z
+K 7
+svn:log
+V 301
+More consistent and concise command line help.
+
+Document the short option "-e" as deprecated.
+
+Hide "--*-encoding-error-handler" options.
+On the command line, it is more convenient to append the error handler to the
+matching "--*-encoding" option.
+
+Use "metavar"s for all option arguments.
+
+Fix typos.
+END

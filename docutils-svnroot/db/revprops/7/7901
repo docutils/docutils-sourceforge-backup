@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2015-08-12T14:26:55.392928Z
+K 7
+svn:log
+V 75
+Rename html_base writer to html_plain, move xhtml11 writer back to sandbox.
+END

@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-05T10:22:36.250183Z
+K 7
+svn:log
+V 140
+Doctree validation: validate also the element's descendants.
+
+Recursive validation can be skipped setting the argument `recursive`
+to False.
+END

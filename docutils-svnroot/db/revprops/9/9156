@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-10-21T03:19:52.955564Z
+K 7
+svn:log
+V 151
+Change handling of ``suite_settings``
+
+In ``CustomTestCase``, pass ``suite_settings`` directly to
+``test_case_class`` rather than altering ``kwargs``.
+
+END

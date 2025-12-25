@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-06-30T13:59:40.552304Z
+K 7
+svn:log
+V 353
+Revise image reading in HTML writers.
+
+The HTML writers read image files for embedded images
+and to determine the size of images that should be scaled.
+
+* Use urllib to parse image URI (support for "file:" scheme).
+
+* Warn, if scaling fails because the image cannot be read.
+
+Adapt "record dependencies" test to suppress warning
+if PIL is not installed.
+END

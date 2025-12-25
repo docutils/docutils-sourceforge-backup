@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-02-27T11:15:38.121691Z
+K 7
+svn:log
+V 107
+Update TODO list
+
+math input formats (todo),
+move inline markup recognition alternatives to "alternatives".
+END

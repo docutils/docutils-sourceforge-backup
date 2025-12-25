@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-10-12T11:42:33.316861Z
+K 7
+svn:log
+V 115
+Fix a bug in nodes.document.set_name_id_map().
+
+Don't change a list while looping over it.
+Thanks to Mickey Endito.
+END

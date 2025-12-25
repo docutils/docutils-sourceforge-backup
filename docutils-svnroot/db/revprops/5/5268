@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2007-06-24T21:45:15.435246Z
+K 7
+svn:log
+V 195
+added reader as Parser.__init__ parameter, as RSTStateMachine.run parameter, as an attribute of the RST state machines' memos, as Directive.__init__ parameter, and as a Directive.reader attribute
+END

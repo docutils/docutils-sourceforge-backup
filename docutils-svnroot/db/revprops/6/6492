@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-12-06T13:02:19.687617Z
+K 7
+svn:log
+V 76
+Math2HTML: \\\\mathcal (or \\\\mathscr) for mathematical script, line breaks
+END

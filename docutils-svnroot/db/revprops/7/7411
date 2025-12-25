@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2012-05-02T18:25:58.014993Z
+K 7
+svn:log
+V 75
+fix docutils-test cleanup before installing new version
+some more warnings
+
+END

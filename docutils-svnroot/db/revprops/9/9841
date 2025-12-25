@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2024-08-01T22:27:19.233504Z
+K 7
+svn:log
+V 33
+Enable the refurb linter in Ruff
+
+END

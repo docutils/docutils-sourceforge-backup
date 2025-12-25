@@ -1,0 +1,30 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-08-15T16:35:34.572716Z
+K 7
+svn:log
+V 621
+Refactor "Include" directive class.
+
+Disentangle actions and simplify interface of auxiliary methods.
+
+`Include.run()` sets up instance attributes and calls helper functions
+to read the file content and process it according to the options.
+(Helper methods depend on setup in `run()`.)
+
+Input sanity checks (too long lines and circular inclusions) are only
+required when when inserting the file content into the "input_lines" of
+the calling parser (which did these checks on the other "input_lines"
+before starting to parsing it).
+
+Adapt formatting.
+
+Adapt tests.
+
+Use shorter URL to the "include" directive documentation.
+END

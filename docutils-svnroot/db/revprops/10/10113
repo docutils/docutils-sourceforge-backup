@@ -1,0 +1,30 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-04-29T20:36:06.522568Z
+K 7
+svn:log
+V 845
+Documentation fixes and update.
+
+alternatives.rst:
+  * "standard definition files" are now included as part of Docutils.
+  * the "dfn" role (defined in the "html-roles.txt" standard definition file
+    corresponds to the HTML `<dfn>` element for the defining term.
+    It can be used instead of a simple emphasis for a more semantic markup.
+
+todo.rst:
+  * tools/buildhtml.py has now an "--ignore" option for files,
+  * "container" directive now reports an error if the :class: option is used
+    (classes are passed as argument),
+  * definition list line numbers are fixed,
+  * `frontend.filter_settings_spec` is not suited to filter command line options
+    that don't apply,
+  * the `--section-numbering` command line option is implemented,
+  * front-end tools will accept more than one source document in Docutils 2.0
+    (see RELEASE-NOTES).
+END

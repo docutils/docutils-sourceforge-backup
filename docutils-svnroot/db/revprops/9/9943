@@ -1,0 +1,32 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-09-29T09:31:39.578419Z
+K 7
+svn:log
+V 628
+Support CSS3 `length units`_.
+
+Add "ch", "rem", "vw", "vh", "vmin", "vmax", and "Q" to the length units
+supported by reStructuredText.
+
+Note that some output formats don't support all units.
+
+HTML: CSS3 units are supported by all contemporary browsers.
+
+XML, pseudoxml: Docutils Document Tree elements validate
+"any run of letters or a percent sign" as a measure's unit.
+
+LaTeX: the writer emulates non-native units with custom length macros.
+
+ODT: the writer only supports fixed length units (by converting to "cm").
+Support for the unit "Q" is added.
+
+man: the writer ignores length specifications.
+
+Fixes feature-request #57.
+END

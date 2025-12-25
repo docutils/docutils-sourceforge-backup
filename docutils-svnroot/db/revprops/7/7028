@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-05-06T14:38:10.584212Z
+K 7
+svn:log
+V 65
+use error_encoding and ~_error_handler for printing to sys.stdout
+END

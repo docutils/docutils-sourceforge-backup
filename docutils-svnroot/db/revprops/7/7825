@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+gitpull
+K 8
+svn:date
+V 27
+2015-03-12T21:36:07.351907Z
+K 7
+svn:log
+V 115
+Use literal block for editor examples. Rewrite question/answer for adjacent characters when escaping inline blocks.
+END

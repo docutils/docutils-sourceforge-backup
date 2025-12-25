@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-08-22T11:14:54.680062Z
+K 7
+svn:log
+V 174
+Fix/Update tests for nested parsing with sections.
+
+Add error messages for invalid sections to the sample directives.
+
+Update the sample text to mirror the current behaviour.
+END

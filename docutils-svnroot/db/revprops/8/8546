@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-08-28T20:07:53.002140Z
+K 7
+svn:log
+V 40
+Fix links in LaTeX writer documentation.
+END

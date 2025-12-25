@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2007-06-28T08:17:06.396661Z
+K 7
+svn:log
+V 164
+Add documentation dir 'docs/' 
+Documentation about syntax highlight with the listings.sty LaTeX package
+Cosmetic changes to textsamples, stylesheet, and testscript
+
+END

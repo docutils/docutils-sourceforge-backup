@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2007-08-20T08:36:02.984991Z
+K 7
+svn:log
+V 46
+added prune_subdocs parameter to Node.traverse
+END

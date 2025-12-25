@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2005-10-25T23:32:20.592691Z
+K 7
+svn:log
+V 84
+Fixed minor bug with TOC feature when the cursor is in the last section of the file.
+END

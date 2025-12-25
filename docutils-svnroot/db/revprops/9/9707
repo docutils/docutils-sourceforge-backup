@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2024-05-16T14:46:59.578279Z
+K 7
+svn:log
+V 51
+Fix manpage standalone test for new header comment
+
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-01-18T10:16:20.749142Z
+K 7
+svn:log
+V 64
+XML writer overhaul (use visitor pattern, raw XML pass through).
+END

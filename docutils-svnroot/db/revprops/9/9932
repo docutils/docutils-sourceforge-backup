@@ -1,0 +1,30 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-09-19T10:20:44.017106Z
+K 7
+svn:log
+V 864
+Revise/fix handling of length specifications.
+
+Don't use the generic number-formatter "g" to drop trailing zeroes
+in `nodes.validate_measure()` to avoid writing large values in
+scientific format (which is not supported in reStructuredText).
+Instead, `nodes.parse_measure()` returns an `int` if possible so that
+converting to `str` does not add a trailing zero in the first place.
+
+Refactor `writers._html_base.HTMLTranslator.image_size()`.
+(Using the "g"-formatter in the HTML writer is no problem, as the
+scientific format is valid in CSS and "style" attribute values.)
+
+Simplify `writers.latex2e.LaTeXTranslator.to_latex_length()`:
+Use `nodes.parse_measure()`.
+Move XeTeX-specific code to the "XeTeX" writer.
+Drop trailing zeroes.
+(Using "g" with percentage values is considered safe, as a "width"
+value larger than 10 000 000 % leads to output problems anyway.)
+END

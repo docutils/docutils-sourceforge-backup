@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 8
+dkuhlman
+K 8
+svn:date
+V 27
+2010-09-09T15:53:38.846439Z
+K 7
+svn:log
+V 52
+Fix to custom-odt-header/footer, esp. for MS Windows
+END

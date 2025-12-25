@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-07-28T17:06:51.603033Z
+K 7
+svn:log
+V 362
+Document translation error for "admonition".
+
+The use in rST is not a light "reproof", "reprimand", or "exhortation".
+Rather something in the line with "advisory", "advise", "remark",
+"warning notice".
+
+We look for an umbrella term for the specific admonitions
+(attention, caution , danger, error, hint, important, note,
+tip, warning) and similar block elements.
+END

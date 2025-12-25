@@ -1,0 +1,107 @@
+id: 1-7.0-7412.r7412/0
+type: dir
+pred: 1-7.0.r7410/5741
+count: 4216
+text: 7410 4998 730 730 9b7884457c5970e2e85fff8d61c2dd78
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /tags/docutils-0.9
+copyfrom: 7411 /trunk/docutils
+minfo-cnt: 1
+
+PLAIN
+K 14
+docutils-0.3.7
+V 22
+dir 1-7.0-3816.r3816/0
+K 14
+docutils-0.3.9
+V 22
+dir 1-7.0-3815.r3815/0
+K 12
+docutils-0.4
+V 22
+dir 1-7.0-4268.r4268/0
+K 12
+docutils-0.5
+V 22
+dir 1-7.0-5579.r5579/0
+K 12
+docutils-0.6
+V 22
+dir 1-7.0-6168.r6168/0
+K 12
+docutils-0.7
+V 22
+dir 1-7.0-6358.r6358/0
+K 12
+docutils-0.8
+V 22
+dir 1-7.0-7088.r7088/0
+K 14
+docutils-0.8.1
+V 22
+dir 1-7.0-7108.r7108/0
+K 12
+docutils-0.9
+V 22
+dir 1-7.0-7412.r7412/0
+K 7
+initial
+V 18
+dir 3-1.0-65.r65/0
+K 17
+merged_to_nesting
+V 25
+dir 3-1.0-2576.r2576/3616
+K 12
+prest-0.3.10
+V 28
+dir 1-4326.0-4328.r4331/3951
+K 12
+prest-0.3.11
+V 25
+dir 1-4326.0-4584.r4584/0
+K 5
+start
+V 25
+dir 3-1.0-1558.r1558/1998
+END
+ENDREP
+id: 2-1.0.r7412/918
+type: dir
+pred: 2-1.0.r7108/874
+count: 21
+text: 7412 249 656 656 104bc7a997eb11dad999e8d2bf825194
+cpath: /tags
+copyroot: 0 /
+minfo-cnt: 5
+
+PLAIN
+K 8
+branches
+V 21
+dir 0-1.0.r6260/33253
+K 4
+tags
+V 19
+dir 2-1.0.r7412/918
+K 5
+trunk
+V 20
+dir 3-1.0.r7411/4737
+END
+ENDREP
+id: 0.0.r7412/1204
+type: dir
+pred: 0.0.r7411/5029
+count: 7412
+text: 7412 1077 114 114 0b24192752f8b65f021c2578615f33cb
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+minfo-cnt: 7
+
+1-7._0.t7411-5pz add-dir false false /tags/docutils-0.9
+7411 /trunk/docutils
+
+1204 1411

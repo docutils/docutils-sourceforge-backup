@@ -1,0 +1,26 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-04-22T12:31:28.949504Z
+K 7
+svn:log
+V 340
+code cleanup
+
+improve conformance to Docutils policies:
+
+ convert TABs to SPACEs,
+ break long lines (preferabely without using \),
+ prefer '' for string literals,
+ use list comprehensions,
+
+use self.language.startswith() instead of re.search('^...'),
+use new style classes,
+remove stale code' 'docutils-05-compat2.sty' '__init__.py' 2>&1.
+
+
+END

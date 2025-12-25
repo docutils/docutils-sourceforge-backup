@@ -1,0 +1,24 @@
+_5.0.t8580-6n0 add-file true false /trunk/docutils/test/functional/expected/embed_images_html5.html
+
+_5.0.t8580-6n0 modify-file true false /trunk/docutils/test/functional/expected/embed_images_html5.html
+
+_5.0.t8580-6n0 modify-file false true /trunk/docutils/test/functional/expected/embed_images_html5.html
+
+_5.0.t8580-6n0 modify-file false true /trunk/docutils/test/functional/expected/embed_images_html5.html
+
+_8.0.t8580-6n0 add-file true false /trunk/docutils/test/functional/input/embed_images.txt
+
+_8.0.t8580-6n0 modify-file true false /trunk/docutils/test/functional/input/embed_images.txt
+
+_8.0.t8580-6n0 modify-file false true /trunk/docutils/test/functional/input/embed_images.txt
+
+_8.0.t8580-6n0 modify-file false true /trunk/docutils/test/functional/input/embed_images.txt
+
+_b.0.t8580-6n0 add-file true false /trunk/docutils/test/functional/tests/embed_images_html5.py
+
+_b.0.t8580-6n0 modify-file true false /trunk/docutils/test/functional/tests/embed_images_html5.py
+
+_b.0.t8580-6n0 modify-file false true /trunk/docutils/test/functional/tests/embed_images_html5.py
+
+_b.0.t8580-6n0 modify-file false true /trunk/docutils/test/functional/tests/embed_images_html5.py
+

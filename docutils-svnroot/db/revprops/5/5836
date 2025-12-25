@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2009-01-01T05:08:58.025535Z
+K 7
+svn:log
+V 89
+Fixed batch tests for rst.el (thanks to Jeffrey C. Jacobs for notifying they were broken)
+END

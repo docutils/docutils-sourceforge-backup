@@ -1,0 +1,28 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 15
+svn:check-locks
+V 4
+true
+K 8
+svn:date
+V 27
+2022-11-08T16:50:30.064341Z
+K 7
+svn:log
+V 167
+Inline ``GridTableParserTestSuite``
+
+- Move all usages of ``GridTableParserTestSuite.generateTests``
+  to using subtests, as part of the test suite refactoring project
+K 29
+svn:txn-client-compat-version
+V 6
+1.14.2
+K 18
+svn:txn-user-agent
+V 45
+SVN/1.14.2 (x64-microsoft-windows) serf/1.3.9
+END

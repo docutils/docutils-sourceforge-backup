@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-08-27T12:11:15.032858Z
+K 7
+svn:log
+V 375
+py3: Wrap 'foo.keys()', 'zip(foo, bar') in 'list'
+
+In Python 3, 'dict.keys()', 'zip' and 'map' no longer return a list but
+rather types 'dict_keys', 'zip' and 'map', respectively. You can't
+append to these types nor can you delete from them while in a loop.  The
+simple solution to both issues is to wrap things in 'list'.
+
+Signed-off-by: Stephen Finucane <stephen@that.guru>
+END

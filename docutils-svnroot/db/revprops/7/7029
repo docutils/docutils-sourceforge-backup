@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-05-06T19:43:30.803418Z
+K 7
+svn:log
+V 38
+Fix 3149845 (patch by Toshio Kuratomi)
+END

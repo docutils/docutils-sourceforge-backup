@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2009-07-26T12:07:27.567683Z
+K 7
+svn:log
+V 46
+Use ``CW`` (constant width) font for literal.
+
+END

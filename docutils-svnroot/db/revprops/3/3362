@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-05-25T12:01:41.129258Z
+K 7
+svn:log
+V 55
+added test for rowspanning tables with the LaTeX writer
+END

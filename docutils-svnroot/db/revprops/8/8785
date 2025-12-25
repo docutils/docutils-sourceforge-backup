@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-06-30T07:48:24.715703Z
+K 7
+svn:log
+V 227
+Do not use invalid HMTL tags for deeply nested section headings.
+
+HTML header elements support levels <h1> to <h6>.
+Docutils sets no such limit to section nesting.
+
+If the section level exceeds 6, write ``<h6 class="h7">`` etc.
+END

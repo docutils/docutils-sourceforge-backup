@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-27T14:21:27.184806Z
+K 7
+svn:log
+V 120
+pass kwargs as single parameter to add_transform;
+to not pass on the kwargs to Transform.__init__ but to Transform.apply
+END

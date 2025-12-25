@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-26T22:54:57.984795Z
+K 7
+svn:log
+V 89
+removed duplicate publish_doctree method;
+renamed publish_from_doctree to publish_doctree
+END

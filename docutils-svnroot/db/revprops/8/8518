@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-06-15T08:48:46.219977Z
+K 7
+svn:log
+V 31
+Fix link in FAQ.txt (bug #389).
+END

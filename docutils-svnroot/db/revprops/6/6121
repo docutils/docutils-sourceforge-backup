@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-09-10T12:05:04.694920Z
+K 7
+svn:log
+V 59
+Apply [ 2845002 ] let ``--no-raw`` disable raw *roles* too.
+END

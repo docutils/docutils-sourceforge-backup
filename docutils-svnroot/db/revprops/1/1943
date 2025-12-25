@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2004-04-16T15:14:57.000000Z
+K 7
+svn:log
+V 262
+Reorganized interpreted text processing; moved code into the new roles.py module.  roles.py contains interpreted text role functions, a registry for interpreted text roles, and an API for adding to and retrieving from the registry.  Contributed by Edward Loper.
+
+END

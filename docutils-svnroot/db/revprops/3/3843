@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-08-29T22:42:16.159020Z
+K 7
+svn:log
+V 207
+allow field bodies of simple field lists to be empty;
+mmmh, the test source doesn't look particularly nice -- it contains redundancy;
+I think a lot of cleanup is required in both the test and the HTML writer
+END

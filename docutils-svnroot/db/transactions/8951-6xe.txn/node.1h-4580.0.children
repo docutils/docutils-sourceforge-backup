@@ -1,0 +1,73 @@
+K 8
+10_parse
+V 24
+dir 1i-4580.0.r5443/2415
+K 12
+20_directive
+V 24
+dir 51-4580.0.r6228/2058
+K 8
+30_xform
+V 25
+dir 8n-4580.0.r6228/36706
+K 10
+40_writers
+V 25
+dir af-4580.0.r6498/17045
+K 6
+60_new
+V 25
+dir bg-4580.0.r6498/42902
+K 10
+70_plugins
+V 25
+dir bt-4580.0.r6498/36400
+K 7
+80_misc
+V 25
+dir 51-4710.0.r6498/27037
+K 7
+90_bugs
+V 24
+dir eg-4580.0.r6436/6664
+K 11
+Common.smak
+V 26
+file 3v-5058.0.r6228/24952
+K 8
+Makefile
+V 24
+file pm-4710.0.r5774/122
+END
+K 8
+10_parse
+V 23
+dir 1i-4580.0.t8951-6xe
+K 12
+20_directive
+V 23
+dir 51-4580.0.t8951-6xe
+K 8
+30_xform
+V 23
+dir 8n-4580.0.t8951-6xe
+K 10
+40_writers
+V 23
+dir af-4580.0.t8951-6xe
+K 6
+60_new
+V 23
+dir bg-4580.0.t8951-6xe
+K 10
+70_plugins
+V 23
+dir bt-4580.0.t8951-6xe
+K 7
+80_misc
+V 23
+dir 51-4710.0.t8951-6xe
+K 7
+90_bugs
+V 23
+dir eg-4580.0.t8951-6xe

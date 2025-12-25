@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-04-27T17:52:53.143601Z
+K 7
+svn:log
+V 274
+Doctree documentation: fix `<topic>` details, reorder category lists.
+
+According to the DTD, the topic title is optional while at least
+one child (body) element is required (since at least 2002-04-20).
+
+Change order of element category "details" list to improve readability.
+END

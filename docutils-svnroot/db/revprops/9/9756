@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-14T15:03:22.520220Z
+K 7
+svn:log
+V 85
+Remove `nodes.Element.set_class()`.
+
+Obsolete. Append to Element['classes'] directly.
+END

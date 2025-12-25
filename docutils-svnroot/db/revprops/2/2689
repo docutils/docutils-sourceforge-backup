@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2004-10-05T01:21:47.000000Z
+K 7
+svn:log
+V 144
+Converted the line-block directive to use the new structure. Extracted the old line-block functionality to the ``block`` function (still used).
+
+END

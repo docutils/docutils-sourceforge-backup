@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2009-07-13T10:33:35.360543Z
+K 7
+svn:log
+V 110
+Fix: system_message output (no heading necessary).
+patch from ben finney, remove blank line before list_item.
+
+END

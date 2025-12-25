@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-17T21:02:26.034509Z
+K 7
+svn:log
+V 128
+fixed handling of scale image attribute,
+so that David doesn't claim I just want to remove it because
+I'm too lazy to fix it ;-)
+END

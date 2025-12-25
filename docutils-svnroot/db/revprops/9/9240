@@ -1,0 +1,26 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-11-13T16:15:23.824074Z
+K 7
+svn:log
+V 495
+Refactor HTMLTranslator initialization and parts setup.
+
+Use utils.xml_declaration().
+
+Don't write charset (encoding) declaration if the intended output encoding
+is not known.
+
+Copy "meta" part content into "head" in `depart_document()`
+(i.e. after collecting all items).
+Obsoletes auxiliary method `add_meta()`. Remove it.
+
+Changes to the HTML output (no space character before closing tag of XML
+declaration, order of metadata elements) don't affect the HTML semantics,
+styling, and rendering.
+END

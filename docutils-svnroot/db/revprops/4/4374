@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-03-06T19:02:31.622625Z
+K 7
+svn:log
+V 92
+added to-do list entry for getting fragment names;
+improved list-compacting to-do list entry
+END

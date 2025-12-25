@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2010-12-18T19:08:45.128223Z
+K 7
+svn:log
+V 230
+Adapted to `(elisp)Tips and Conventions`. This includes another
+remapping of key bindings to use `\C-c \C-LETTER` instead of `\C-c
+LETTER` which are reserved for users. All final keys are also control
+keys now to simplify typing.
+
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2012-12-16T18:27:42.609967Z
+K 7
+svn:log
+V 53
+Release 0.10: set __version_details__ to "repository"
+END

@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2010-03-23T18:42:14.400521Z
+K 7
+svn:log
+V 142
+Restored the ability (apparently lost in release 0.3.37) for the
+perl:: directive to influence future parsing through modifying -D
+variables.
+
+END

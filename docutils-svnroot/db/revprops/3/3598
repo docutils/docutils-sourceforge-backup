@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-27T11:19:35.185362Z
+K 7
+svn:log
+V 58
+changed html_fragment example to the more common html_body
+END

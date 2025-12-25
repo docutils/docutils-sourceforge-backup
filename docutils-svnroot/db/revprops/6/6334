@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-06-02T11:49:22.839229Z
+K 7
+svn:log
+V 74
+simplify returning of test result (by Arfrever Frehtes Taifersar Arahesis)
+END

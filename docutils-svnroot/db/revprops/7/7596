@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2013-01-25T13:42:17.458455Z
+K 7
+svn:log
+V 85
+Fix TypeError: Python 3 does no implicit conversion between bytes and unicode string.
+END

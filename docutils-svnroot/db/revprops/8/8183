@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-10-06T09:00:00.652219Z
+K 7
+svn:log
+V 344
+Add field name as class argument to generic docinfo fields unconditionally.
+
+Also add the field name, if the DocInfo tranform fails to
+converts a bibliographic field list into a docinfo element.
+
+This allows styling of, e.g., a "copyright" element that also contains
+a license as separate paragraph when suppressing the warning (cf. Bug [325]).
+END

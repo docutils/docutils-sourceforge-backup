@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-01-27T08:41:35.124880Z
+K 7
+svn:log
+V 107
+Revert "io.FileInput/io.FileOutput: No system-exit on IOError."
+
+This reverts commit  7326 on Davids order.
+END

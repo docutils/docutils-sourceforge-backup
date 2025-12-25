@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2008-12-09T14:20:11.423874Z
+K 7
+svn:log
+V 142
+test_functional.py: Less verbose but still helpful output.
+
+Do not show full output (but point to output file) if there is no expected
+output.
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-20T19:29:02.479316Z
+K 7
+svn:log
+V 46
+changed comment at the top of unicode_latex.py
+END

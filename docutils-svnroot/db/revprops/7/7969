@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2016-08-18T21:40:00.614575Z
+K 7
+svn:log
+V 44
+Rename html_plain writer to html5_polyglott.
+END

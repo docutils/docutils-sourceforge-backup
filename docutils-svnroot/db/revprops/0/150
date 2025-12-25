@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-05-30T02:12:05.000000Z
+K 7
+svn:log
+V 146
+Support for front-end scripts.Option specifications may be augmented by components.Requires Optik (http://optik.sf.net/) for option processing.
+
+END

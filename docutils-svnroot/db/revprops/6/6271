@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-03-22T14:57:16.467534Z
+K 7
+svn:log
+V 170
+Fix py3k problem: sys.stderr expects a unicode string.
+
+In Python 3, text output auto-encodes the given string and fails if
+given an already encoded (i.e. binary) string.
+END

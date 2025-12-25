@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-05T10:29:22.368504Z
+K 7
+svn:log
+V 339
+Fix/amend meta-data in ``nodes.py``. No change to code.
+
+Consistent markup for the "section heading comments".
+
+Move some miss-sorted class definitions in the correct sections.
+Merge sections "Mixins" and "Orthogonal Categories".
+
+Shorten `topic` and `sidebar` description duplicated in doctree.txt.
+Add link instead.
+
+Amend TODO comments.
+END

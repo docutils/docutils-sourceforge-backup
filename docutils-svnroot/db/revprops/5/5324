@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2007-07-08T01:08:38.788710Z
+K 7
+svn:log
+V 104
+first working implementation of sub-document directive; tests to be added later, probably some bugs left
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-17T19:59:35.557912Z
+K 7
+svn:log
+V 183
+removed note on Unicode support of csv-table directive;
+ASCII NUL limitation isn't worth being documented (there is an
+explanatory error message); encoding option has been implemented
+END

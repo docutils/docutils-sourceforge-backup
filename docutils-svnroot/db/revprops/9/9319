@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-01-16T09:20:01.998126Z
+K 7
+svn:log
+V 75
+"tuftig" style sheet: drop fonts that don't look good at small resolutions.
+END

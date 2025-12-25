@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-08-21T13:45:27.778370Z
+K 7
+svn:log
+V 336
+Refactor HTML4 writer tests.
+
+New test script "test_html4css1.py":
+Split basic output tests (which happen to use the "fragment" returned
+by `publish_parts()` to get the interesting part of the output)
+from other tests of `publish_parts()`
+
+Really test all returned parts in "test_html4css1_parts.py".
+
+Cf. "Refactor HTML5 writer tests".
+END

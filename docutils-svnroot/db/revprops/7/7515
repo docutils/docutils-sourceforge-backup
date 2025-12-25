@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2012-09-20T21:28:53.242505Z
+K 7
+svn:log
+V 273
+Add support for `imenu` and `which-func-mode`. Remember setting
+`which-func-modes` for this feature to work.
+
+Automated calculations of section title faces replaced by `defface`.
+
+Remove superfluous `rst-portable-mark-active-p`.
+
+Refactoring.
+
+Add support for `testcover`.
+
+END

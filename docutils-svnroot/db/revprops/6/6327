@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-05-21T23:10:05.620465Z
+K 7
+svn:log
+V 361
+html4-strict writer update
+
+* Definition list instead of tables for footnotes and citations,
+  option-list, docinfo.
+* Join adjacent footnotes and citation entries.
+* Include field lists (in addition to ordered and unordered lists)
+  in the test if a list is "simple"  (cf. the html4css1.HTMLTranslator).
+* Improve and complete the CSS rules.
+* Test documents.
+
+END

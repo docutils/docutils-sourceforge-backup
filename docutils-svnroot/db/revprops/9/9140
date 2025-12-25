@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-10-21T00:58:07.424320Z
+K 7
+svn:log
+V 396
+Import ``DocutilsTestSupport`` from ``test``
+
+This is the first step of moving to the standard ``unittest`` style.
+It involves making the ``test/`` directory a psuedo-package and
+importing the ``DocutilsTestSupport`` module from it, instead of the
+path manipulation previously carried out in ``__init__.py`` files.
+As of this, we also blank out all ``__init__.py`` files in the test
+directories.
+
+END

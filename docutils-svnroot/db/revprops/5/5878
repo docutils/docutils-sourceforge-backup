@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-02-24T15:42:29.036418Z
+K 7
+svn:log
+V 42
+test_latex2e.py: adapt to change in r5871.
+END

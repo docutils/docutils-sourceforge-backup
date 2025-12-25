@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-12-06T20:48:38.779095Z
+K 7
+svn:log
+V 274
+Validate and fix `docutils XML` output.
+
+Fix "xml" writer:
+The <meta> element must be empty (no whitespace allowed inside).
+
+Fix definition of <meta> in the DTD.
+<meta> does *not* take the basic attributes, instead a long list
+of custom ones similar to it's HTML role model.
+END

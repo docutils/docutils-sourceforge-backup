@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-08-11T17:33:16.383874Z
+K 7
+svn:log
+V 239
+latex2e writer bugfix and cleanup
+
+add sections to correct level of toc and pdfbookmarks
+with literal line breaks, add space only for blank lines
+no hardcoded \\\\bigskip after ToC
+update comments
+simplified literal double quote replacing
+
+END

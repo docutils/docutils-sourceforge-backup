@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-12-01T21:13:16.534731Z
+K 7
+svn:log
+V 112
+Raise version to 0.20b.dev.
+
+There are not only bugfix changes since 0.19, so a new "minor" release is required.
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 6
+strank
+K 8
+svn:date
+V 27
+2008-07-04T13:47:00.109746Z
+K 7
+svn:log
+V 49
+Temporary branch for tackling a bug in node.index
+END

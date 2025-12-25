@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 7
+mmgilbe
+K 8
+svn:date
+V 27
+2004-09-19T04:32:45.000000Z
+K 7
+svn:log
+V 803
+Switched to using publish_parts to get rid of all of the heading information that was getting added to the html using the old publish call.
+
+Updated the default heading level to comply with the moinmoin style. They expect document titles to be h2 and to increment from there. This is my interpretation anyway. Someday need to check to make sure I'm doing this the appropriate way by setting it in my classes constructor. I wasn't sure if this was something I could set in the "settings_overrides" variable passed to publish_parts (not sure what that does).
+
+Fixed a bug where a newline in a nodes astext method was returning a newline in the middle. This was making the moinmoin regexes break. So when calling astext on a node replacing all newlines with nothing. Seems like an appropriate thing to do.
+
+END

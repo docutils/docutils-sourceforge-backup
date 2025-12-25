@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-12-02T14:06:43.023548Z
+K 7
+svn:log
+V 30
+Use unicode literal for U+00E4
+END

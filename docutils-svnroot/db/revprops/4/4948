@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-02-26T23:06:27.568046Z
+K 7
+svn:log
+V 75
+Added a dependency to make sure that PrestConfig.pm is built before prest.
+
+END

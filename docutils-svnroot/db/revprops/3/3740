@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T02:43:30.266085Z
+K 7
+svn:log
+V 106
+Do not add cruft at the top of HTML files.
+The problem has not appeared frequently enough to justify that.
+END

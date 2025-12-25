@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-11-03T10:52:43.201773Z
+K 7
+svn:log
+V 193
+Resolve linting warnings from flake8
+
+- Rename ``_output_encoding()`` to ``_encoding()`` to shorten line
+  length below 80 characters
+- Normalise indentation on continuation lines in manpage.py
+END

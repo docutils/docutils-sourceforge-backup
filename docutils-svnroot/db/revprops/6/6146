@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-09-28T10:59:45.985003Z
+K 7
+svn:log
+V 152
+Beautify LaTeX test output (start ToC on a new page)
+
+As the test output is also a show-case for Docutils, we should make it 
+nice (if easily possible).
+END

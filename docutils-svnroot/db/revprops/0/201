@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+richard
+K 8
+svn:date
+V 27
+2002-06-24T04:32:42.000000Z
+K 7
+svn:log
+V 83
+Remove the extra whitespace from the top of the first paragraph of a <dd>
+or <li>.
+
+END

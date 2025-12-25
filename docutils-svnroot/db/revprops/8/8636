@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-03-19T00:23:33.021628Z
+K 7
+svn:log
+V 148
+HTML5: Place code-block line numbers in pseudo-elements.
+
+This way, they are skipped when copying text from code blocks.
+Solves feature request #32.
+END

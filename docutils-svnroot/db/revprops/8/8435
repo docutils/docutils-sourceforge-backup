@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-12-12T13:04:57.619281Z
+K 7
+svn:log
+V 82
+Document possible heavy ressource use when parsing untrusted input.
+
+See bug #381.
+END

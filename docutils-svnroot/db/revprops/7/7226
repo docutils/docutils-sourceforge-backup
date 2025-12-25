@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-11-24T08:59:47.624519Z
+K 7
+svn:log
+V 205
+Fix 3423983 DocutilsXMLTestCase with indent and newlines options
+
+Add sample strings with the new XML formatting introduced in versions 2.7.3
+and 3.2.3 on 2011-11-18 to fix http://bugs.python.org/issue4147
+END

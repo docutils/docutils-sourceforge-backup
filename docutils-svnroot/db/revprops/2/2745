@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-10-20T19:26:25.000000Z
+K 7
+svn:log
+V 64
+updated LaTeX writer test for newly added lineblock environment
+
+END

@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-14T16:19:20.546122Z
+K 7
+svn:log
+V 276
+Define/use auxiliary function `parsers.rst.roles.normalize_options()`.
+
+Renamed from `parsers.rst.roles.normalized_role_options()` (it is now also
+used for directive options).
+Replaces `parsers.rst.roles.set_classes()`
+
+The obsoleted functions will be removed in Docutils 1.0.
+END

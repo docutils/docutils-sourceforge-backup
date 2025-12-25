@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2013-05-16T20:49:55.254558Z
+K 7
+svn:log
+V 77
+Fix [ 235 ] Python 2.3.3 uses repr when printing unknown url type in urlopen.
+END

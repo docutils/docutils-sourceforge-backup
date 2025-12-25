@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 4
+lalo
+K 8
+svn:date
+V 27
+2003-11-29T05:13:44.000000Z
+K 7
+svn:log
+V 716
+checking in the initial version of my lout writer.
+Please beware, there is a reason this is in the sandbox.
+The code is *very* ugly (cleanup is scheduled right after functionality) and incomplete;
+lots of methods are still copied from the html writer (because this gives me a visual
+hint of what is missing, when I load the processed output).
+However, I can already reasonably process my largish target document, so if you want to
+experiment with it and have a rough idea of what it will look like, feel free.
+Of course, there is no distutils yet.  You have to copy or symlink it in your writers
+package if you want to play with it.  However, the front-end in tools/ is working
+(assuming you do install the module).
+
+END

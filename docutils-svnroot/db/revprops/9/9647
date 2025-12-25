@@ -1,0 +1,39 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-04-18T11:18:00.595824Z
+K 7
+svn:log
+V 954
+Reconcile Docutils DTD and Document Tree documentation.
+
+There are some cases where docutils.dtd and doctree.txt diverged.
+Change so, that the documentation is consistent and matches actual behaviour.
+
+Remove declaration of element `<info>`:
+
+* added to docutils.dtd and nodes.py but not doctree.txt 2004-03-21,
+* never used,
+* removed from nodes.py 2004-11-09.
+
+Remove `<decoration>` from content model of `<section>` elements:
+
+* added to docutils.dtd but not doctree.txt 2004-03-21,
+* never used because the Docutils rST parser inserts `<decoration>`
+  directly into `<document>` even if the "header" or "footer" directive
+  is nested in a section.
+
+Fix declaration of `<sidebar>` content:
+
+* no `<subtitle>` without `<title>`.
+
+Add `<subtitle>` to children of `<section>` elements in "doctree.txt":
+
+* present in docutils.dtd,
+* used in the functional test examples via SectSubTitle transform
+  (with "sectsubtitle_xform" configuration setting True).
+END

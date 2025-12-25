@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T02:40:06.859212Z
+K 7
+svn:log
+V 142
+We cannot add support for <link> elements in HTML because there
+is no framework support for document relationships like
+"parent", "next", etc.
+END

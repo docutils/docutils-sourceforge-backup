@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-05-19T08:45:27.887467Z
+K 7
+svn:log
+V 125
+Allow legth and percentage values in "figwidth" argument and percent sign in
+"scale" argument of figure and image directives.
+END

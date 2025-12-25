@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2008-10-09T12:33:51.516176Z
+K 7
+svn:log
+V 95
+syntax-highlight.txt: Remove again the wrong idea of "high-level" and "low-level" alternatives.
+END

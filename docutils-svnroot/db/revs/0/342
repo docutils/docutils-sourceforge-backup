@@ -1,0 +1,750 @@
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: f-342.0.r342/123
+type: file
+count: 0
+text: 339 93 18 6 140a5c671ee97b3723686f6412818f0e b0acf915c54d2c6ef53be580ed2045225a3b02d8 341-9h/_h
+props: 342 0 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/docutils/parsers/rst/directives/.cvsignore
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 21
+file f-342.0.r342/123
+K 11
+__init__.py
+V 21
+file 2j-18.0.r73/4841
+K 14
+admonitions.py
+V 21
+file 2m-18.0.r73/5272
+K 7
+html.py
+V 22
+file 2q-18.0.r109/4795
+K 9
+images.py
+V 21
+file 2s-18.0.r73/5706
+K 7
+misc.py
+V 21
+file 2u-18.0.r73/4414
+K 8
+parts.py
+V 20
+file 6-71.0.r71/1056
+END
+ENDREP
+PLAIN
+K 10
+svn:ignore
+V 5
+*.pyc
+END
+ENDREP
+id: 2i-18.0.r342/752
+type: dir
+pred: 2i-18.0.r109/5366
+count: 5
+text: 342 399 297 297 6c42ef787bf98ab522b6140836847c7c
+props: 342 709 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils/parsers/rst/directives
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: i-342.0.r342/1117
+type: file
+count: 0
+text: 339 93 18 6 140a5c671ee97b3723686f6412818f0e b0acf915c54d2c6ef53be580ed2045225a3b02d8 341-9h/_k
+props: 342 994 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/docutils/parsers/rst/languages/.cvsignore
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 22
+file i-342.0.r342/1117
+K 11
+__init__.py
+V 22
+file 2x-18.0.r109/5679
+K 5
+en.py
+V 20
+file 30-18.0.r79/495
+K 5
+sv.py
+V 22
+file 9-341.0.r341/1470
+END
+ENDREP
+PLAIN
+K 10
+svn:ignore
+V 5
+*.pyc
+END
+ENDREP
+id: 2w-18.0.r342/1618
+type: dir
+pred: 2w-18.0.r341/1885
+count: 5
+text: 342 1395 167 167 a6cfc6a3440004c75f33e0249122033a
+props: 342 1575 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils/parsers/rst/languages
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: c-342.0.r342/1985
+type: file
+count: 0
+text: 339 93 18 6 140a5c671ee97b3723686f6412818f0e b0acf915c54d2c6ef53be580ed2045225a3b02d8 341-9h/_e
+props: 342 1862 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/docutils/parsers/rst/.cvsignore
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 22
+file c-342.0.r342/1985
+K 11
+__init__.py
+V 22
+file 2f-18.0.r160/2257
+K 10
+directives
+V 20
+dir 2i-18.0.r342/752
+K 9
+languages
+V 21
+dir 2w-18.0.r342/1618
+K 9
+states.py
+V 22
+file 32-18.0.r300/2163
+K 14
+tableparser.py
+V 22
+file 34-18.0.r301/3139
+END
+ENDREP
+PLAIN
+K 10
+svn:ignore
+V 5
+*.pyc
+END
+ENDREP
+id: 2e-18.0.r342/2576
+type: dir
+pred: 2e-18.0.r341/2311
+count: 24
+text: 342 2254 266 266 3fea05084b1872b2f9acd845711afb81
+props: 342 2533 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils/parsers/rst
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 9-342.0.r342/2934
+type: file
+count: 0
+text: 339 93 18 6 140a5c671ee97b3723686f6412818f0e b0acf915c54d2c6ef53be580ed2045225a3b02d8 341-9h/_b
+props: 342 2811 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/docutils/parsers/.cvsignore
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 22
+file 9-342.0.r342/2934
+K 11
+__init__.py
+V 21
+file 2b-18.0.r73/3999
+K 3
+rst
+V 21
+dir 2e-18.0.r342/2576
+END
+ENDREP
+PLAIN
+K 10
+svn:ignore
+V 5
+*.pyc
+END
+ENDREP
+id: 2a-18.0.r342/3382
+type: dir
+pred: 2a-18.0.r341/2588
+count: 24
+text: 342 3199 127 127 d0b94feaf0432c53cd555df48a9b0d1b
+props: 342 3339 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils/parsers
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: l-342.0.r342/3736
+type: file
+count: 0
+text: 339 93 18 6 140a5c671ee97b3723686f6412818f0e b0acf915c54d2c6ef53be580ed2045225a3b02d8 341-9h/_n
+props: 342 3613 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/docutils/readers/.cvsignore
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 22
+file l-342.0.r342/3736
+K 11
+__init__.py
+V 21
+file 37-18.0.r241/794
+K 6
+pep.py
+V 20
+file 4-80.0.r279/605
+K 13
+standalone.py
+V 22
+file 3a-18.0.r218/3041
+END
+ENDREP
+PLAIN
+K 10
+svn:ignore
+V 5
+*.pyc
+END
+ENDREP
+id: 36-18.0.r342/4233
+type: dir
+pred: 36-18.0.r279/1033
+count: 9
+text: 342 4001 176 176 f87c8c726e8eadded8e53d45804ea91a
+props: 342 4190 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils/readers
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: o-342.0.r342/4586
+type: file
+count: 0
+text: 339 93 18 6 140a5c671ee97b3723686f6412818f0e b0acf915c54d2c6ef53be580ed2045225a3b02d8 341-9h/_q
+props: 342 4463 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/docutils/transforms/.cvsignore
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 22
+file o-342.0.r342/4586
+K 11
+__init__.py
+V 23
+file 3h-18.0.r158/13508
+K 13
+components.py
+V 21
+file 4-77.0.r160/4608
+K 14
+frontmatter.py
+V 21
+file 3m-18.0.r263/422
+K 8
+parts.py
+V 20
+file 4-76.0.r272/533
+K 7
+peps.py
+V 20
+file 4-78.0.r329/241
+K 13
+references.py
+V 22
+file 3o-18.0.r209/1336
+K 12
+universal.py
+V 22
+file 3q-18.0.r242/1472
+END
+ENDREP
+PLAIN
+K 10
+svn:ignore
+V 5
+*.pyc
+END
+ENDREP
+id: 3g-18.0.r342/5267
+type: dir
+pred: 3g-18.0.r329/854
+count: 25
+text: 342 4854 357 357 700b8ae05f427d6c6b1872cd23d4723d
+props: 342 5224 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils/transforms
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: r-342.0.r342/5623
+type: file
+count: 0
+text: 339 93 18 6 140a5c671ee97b3723686f6412818f0e b0acf915c54d2c6ef53be580ed2045225a3b02d8 341-9h/_t
+props: 342 5500 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/docutils/writers/.cvsignore
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 22
+file r-342.0.r342/5623
+K 11
+__init__.py
+V 21
+file 3x-18.0.r243/199
+K 15
+docutils_xml.py
+V 21
+file 4-244.0.r244/735
+K 12
+html4css1.py
+V 21
+file 40-18.0.r332/474
+K 11
+pep_html.py
+V 21
+file 4-281.0.r337/686
+K 12
+pseudoxml.py
+V 21
+file 4-84.0.r218/2297
+END
+ENDREP
+PLAIN
+K 10
+svn:ignore
+V 5
+*.pyc
+END
+ENDREP
+id: 3w-18.0.r342/6218
+type: dir
+pred: 3w-18.0.r337/1219
+count: 40
+text: 342 5888 274 274 491caecdc537c8ae21d606d8ba4dfeb9
+props: 342 6175 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils/writers
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 6-342.0.r342/6572
+type: file
+count: 0
+text: 339 93 18 6 140a5c671ee97b3723686f6412818f0e b0acf915c54d2c6ef53be580ed2045225a3b02d8 341-9h/_8
+props: 342 6449 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/docutils/languages/.cvsignore
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 22
+file 6-342.0.r342/6572
+K 11
+__init__.py
+V 22
+file 23-18.0.r109/7824
+K 5
+en.py
+V 23
+file 26-18.0.r18/296152
+K 5
+sv.py
+V 22
+file 4-341.0.r341/2886
+END
+ENDREP
+PLAIN
+K 10
+svn:ignore
+V 5
+*.pyc
+END
+ENDREP
+id: 22-18.0.r342/7065
+type: dir
+pred: 22-18.0.r341/3290
+count: 4
+text: 342 6839 170 170 99a6347d75d6ec5731a16fb2a67176e0
+props: 342 7022 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils/languages
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 3-342.0.r342/7420
+type: file
+count: 0
+text: 339 93 18 6 140a5c671ee97b3723686f6412818f0e b0acf915c54d2c6ef53be580ed2045225a3b02d8 341-9h/_5
+props: 342 7297 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/docutils/.cvsignore
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 22
+file 3-342.0.r342/7420
+K 11
+__init__.py
+V 21
+file 1x-18.0.r225/606
+K 7
+core.py
+V 22
+file 20-18.0.r335/1072
+K 11
+frontend.py
+V 21
+file 3-150.0.r336/695
+K 5
+io.py
+V 21
+file 3-217.0.r322/336
+K 9
+languages
+V 21
+dir 22-18.0.r342/7065
+K 8
+nodes.py
+V 21
+file 28-18.0.r299/421
+K 8
+optik.py
+V 21
+file 3-181.0.r207/326
+K 7
+parsers
+V 21
+dir 2a-18.0.r342/3382
+K 7
+readers
+V 21
+dir 36-18.0.r342/4233
+K 8
+roman.py
+V 23
+file 3c-18.0.r18/293919
+K 15
+statemachine.py
+V 22
+file 3e-18.0.r248/6417
+K 10
+transforms
+V 21
+dir 3g-18.0.r342/5267
+K 13
+urischemes.py
+V 22
+file 3s-18.0.r131/1101
+K 8
+utils.py
+V 22
+file 3u-18.0.r220/8684
+K 7
+writers
+V 21
+dir 3w-18.0.r342/6218
+END
+ENDREP
+PLAIN
+K 10
+svn:ignore
+V 5
+*.pyc
+END
+ENDREP
+id: 1w-18.0.r342/8406
+type: dir
+pred: 1w-18.0.r341/4109
+count: 137
+text: 342 7677 673 673 8ee6924c1fa37a2311a9be6ce78918c7
+props: 342 8363 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 21
+file 2-340.0.r340/154
+K 11
+COPYING.txt
+V 21
+file 2-18.0.r192/1959
+K 11
+HISTORY.txt
+V 20
+file 5-18.0.r338/589
+K 11
+MANIFEST.in
+V 22
+file 7-18.0.r18/312592
+K 10
+README.txt
+V 21
+file 9-18.0.r192/3469
+K 4
+docs
+V 19
+dir 3-7.0.r338/1810
+K 8
+docutils
+V 21
+dir 1w-18.0.r342/8406
+K 10
+install.py
+V 23
+file 44-18.0.r18/313369
+K 8
+setup.py
+V 22
+file 46-18.0.r185/4439
+K 4
+test
+V 21
+dir 48-18.0.r339/6863
+K 5
+tools
+V 21
+dir 6w-18.0.r328/5463
+END
+ENDREP
+id: 1-7.0.r342/9098
+type: dir
+pred: 1-7.0.r341/4747
+count: 277
+text: 342 8630 455 455 0ae120acaaae73550138710fb026a0cc
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 19
+dir 1-7.0.r342/9098
+K 7
+sandbox
+V 20
+dir 1-17.0.r333/1256
+K 3
+web
+V 18
+dir 1-2.0.r334/835
+END
+ENDREP
+id: 3-1.0.r342/9433
+type: dir
+pred: 3-1.0.r341/5081
+count: 334
+text: 342 9308 112 112 fd3ca5df276a98c231689d42944aa2b4
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 17
+dir 0-1.0.r63/562
+K 4
+tags
+V 17
+dir 2-1.0.r65/217
+K 5
+trunk
+V 19
+dir 3-1.0.r342/9433
+END
+ENDREP
+id: 0.0.r342/9701
+type: dir
+pred: 0.0.r341/5349
+count: 342
+text: 342 9581 107 107 68150d2ffa2b5bad0d5a516f5059eebc
+cpath: /
+copyroot: 0 /
+
+_6.0.t341-9h add-file true true /trunk/docutils/docutils/languages/.cvsignore
+
+36-18.0.t341-9h modify-dir false true /trunk/docutils/docutils/readers
+
+2e-18.0.t341-9h modify-dir false true /trunk/docutils/docutils/parsers/rst
+
+2i-18.0.t341-9h modify-dir false true /trunk/docutils/docutils/parsers/rst/directives
+
+_9.0.t341-9h add-file true true /trunk/docutils/docutils/parsers/.cvsignore
+
+2w-18.0.t341-9h modify-dir false true /trunk/docutils/docutils/parsers/rst/languages
+
+3g-18.0.t341-9h modify-dir false true /trunk/docutils/docutils/transforms
+
+3w-18.0.t341-9h modify-dir false true /trunk/docutils/docutils/writers
+
+1w-18.0.t341-9h modify-dir false true /trunk/docutils/docutils
+
+_l.0.t341-9h add-file true true /trunk/docutils/docutils/readers/.cvsignore
+
+_c.0.t341-9h add-file true true /trunk/docutils/docutils/parsers/rst/.cvsignore
+
+_f.0.t341-9h add-file true true /trunk/docutils/docutils/parsers/rst/directives/.cvsignore
+
+22-18.0.t341-9h modify-dir false true /trunk/docutils/docutils/languages
+
+_i.0.t341-9h add-file true true /trunk/docutils/docutils/parsers/rst/languages/.cvsignore
+
+_o.0.t341-9h add-file true true /trunk/docutils/docutils/transforms/.cvsignore
+
+_r.0.t341-9h add-file true true /trunk/docutils/docutils/writers/.cvsignore
+
+_3.0.t341-9h add-file true true /trunk/docutils/docutils/.cvsignore
+
+2a-18.0.t341-9h modify-dir false true /trunk/docutils/docutils/parsers
+
+
+9701 9840

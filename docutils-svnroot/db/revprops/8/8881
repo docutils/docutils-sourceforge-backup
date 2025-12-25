@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-11-09T23:54:33.950890Z
+K 7
+svn:log
+V 164
+Robust check for new html5 settings.
+
+Cf. bug #431 and Sphinx commit c97c488b
+(https://github.com/sphinx-doc/sphinx/commit/c97c488bb6baad2cd2e76615dbff448286052544)
+END

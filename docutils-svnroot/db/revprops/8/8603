@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-01-08T15:24:32.624029Z
+K 7
+svn:log
+V 255
+Make "meta" elements available for "latex" and "odt".
+
+Basic "odt" support exists, "latex" support is planned.
+
+In future, the `meta directive`__ may insert <meta> instead of
+pending nodes, `making transforms/components.Filter` obsolete
+(solves bug #241).
+END

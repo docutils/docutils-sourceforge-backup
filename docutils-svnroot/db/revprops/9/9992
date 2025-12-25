@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-12-03T13:12:26.880855Z
+K 7
+svn:log
+V 260
+Documentation fixes
+
+Add crosslinks from related directives to "root_prefix" setting.
+
+The "loading" directive option and "image_loading" setting work with figures, too.
+
+Update config file syntax quote.
+Move some hyperlink targets to the "references" section.
+END

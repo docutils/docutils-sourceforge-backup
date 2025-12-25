@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-05-24T12:28:18.925631Z
+K 7
+svn:log
+V 70
+Apply part of patch 3303733 to allow testing with Python 3 and LANG=C.
+END

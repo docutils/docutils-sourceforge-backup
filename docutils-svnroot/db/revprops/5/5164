@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+gbrandl
+K 8
+svn:date
+V 27
+2007-05-27T11:39:36.583779Z
+K 7
+svn:log
+V 60
+Adapted the build system a bit; it's now much more logical.
+
+END

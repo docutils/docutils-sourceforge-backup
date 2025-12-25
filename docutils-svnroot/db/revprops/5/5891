@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-04-02T08:53:39.380447Z
+K 7
+svn:log
+V 58
+docutils-05-compat: add real file instead of link, add toc
+END

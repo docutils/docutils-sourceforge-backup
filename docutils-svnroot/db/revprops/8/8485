@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-02-06T12:47:08.702427Z
+K 7
+svn:log
+V 268
+Update/Fix MANIFEST.in
+
+* Drop entries that are included by default.
+* Simplify exclusion of functional test output.
+* Exclude "__pycache__".
+* Do not exclude "docutils.conf" from the source package.
+  Exclude "docutils/docutils.conf" from binary packages in setup.py.
+END

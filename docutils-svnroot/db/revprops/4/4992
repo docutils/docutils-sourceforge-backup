@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2007-03-04T19:36:38.275145Z
+K 7
+svn:log
+V 59
+moved workaround for localized dates to general information
+END

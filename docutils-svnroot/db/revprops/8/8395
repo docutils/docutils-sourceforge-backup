@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-09-18T10:13:40.491499Z
+K 7
+svn:log
+V 294
+web: docutils is no longer experimental
+
+At least, it's no more experimental than any other piece of software.
+There may be large new features and rewrites, but tools like Sphinx
+depend on the docutils API and have done so for some time now.
+
+Signed-off-by: Stephen Finucane <stephen@that.guru>
+END

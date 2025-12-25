@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2025-03-08T03:31:44.227988Z
+K 7
+svn:log
+V 166
+Allow README.rst to be rendered on PyPI
+
+Include directives are prohibited in reStructuredText documents
+on the Python Pacakge Index, as reported by ``twine check``.
+
+END

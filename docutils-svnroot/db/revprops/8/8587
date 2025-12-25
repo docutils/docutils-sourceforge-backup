@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-12-09T15:33:58.096871Z
+K 7
+svn:log
+V 125
+Small fixes.
+
+Test node class with isinstance() instead of a node's `tagname`.
+
+Set "source" and "line" for transition nodes.
+END

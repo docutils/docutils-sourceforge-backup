@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-04-21T10:05:36.199276Z
+K 7
+svn:log
+V 123
+latex2e writer:  Shorter preamble and less dependencies;
+
+Load packages and define macros only if required in the document.
+END

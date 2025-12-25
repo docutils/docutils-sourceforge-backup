@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-01-10T08:58:28.933049Z
+K 7
+svn:log
+V 255
+Policy change: accept literal Unicode characters except for identifiers.
+
+With UTF-8 as default encoding for Python source code and widespread
+Unicode support in todays editors on all platforms,
+there is no need to be more restrictive than PEP 8 any more.
+END

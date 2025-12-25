@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-04-27T17:51:01.670210Z
+K 7
+svn:log
+V 277
+Yes, it works.
+So now check-in mails are no longer sent via a forwarder at GMX
+but they are sent directly from BerliOS to SF.net;
+thanks to the SF.net people; the original support request was at
+<https://sourceforge.net/tracker/?func=detail&atid=200001&aid=1168447&group_id=1>.
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2015-03-19T15:54:58.807039Z
+K 7
+svn:log
+V 146
+Fix the latest latex writer patch: no "alltt" in parsed literal blocks.
+
+More inline markup examples for functional test of parsed literal blocks.
+END

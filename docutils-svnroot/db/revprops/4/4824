@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2006-12-09T00:59:23.872054Z
+K 7
+svn:log
+V 80
+fixed bug with multi-line attributions in block quote directives (epigraph etc.)
+END

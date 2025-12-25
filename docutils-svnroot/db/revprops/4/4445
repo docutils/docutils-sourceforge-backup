@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2006-03-23T14:28:36.345065Z
+K 7
+svn:log
+V 112
+added pep_file_url_template setting; corrected PEP urls (removed .html); restored warning comment to HTML output
+END

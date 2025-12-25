@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-04-27T20:43:12.757378Z
+K 7
+svn:log
+V 421
+New "standard definition file" with additional role definition.
+
+The new file "html-roles.txt" provides role definitions for
+"semantic HTML inline markup elements" and
+"tags for representation of edits to the document".
+
+The additional roles "b", "bdi", "del", "dfn", "i", "ins",
+"kbd", "mark", "q", "samp", "small", "u", "s", and "var"
+work out of the box with the "html5" writer.
+LaTeX styling definitions are inlcuded.
+END

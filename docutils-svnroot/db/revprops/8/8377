@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-08-27T19:49:45.307663Z
+K 7
+svn:log
+V 245
+trivial: Set 'ListTable.check_list_content.num_cols' always
+
+Rather than having a TODO that tells users that this attribute is always
+set in a given loop, just set it at the top. Much simpler.
+
+Signed-off-by: Stephen Finucane <stephen@that.guru>
+END

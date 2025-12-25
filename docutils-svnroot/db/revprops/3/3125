@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-03-26T13:25:06.817884Z
+K 7
+svn:log
+V 104
+made footnote and citation Targetable;
+do not propagate targets into footnotes or citations;
+added tests
+END

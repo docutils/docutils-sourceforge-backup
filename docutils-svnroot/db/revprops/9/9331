@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2023-03-25T17:54:40.945647Z
+K 7
+svn:log
+V 260
+Update Flake8 version and resolve lint warnings
+
+Flake8 6.0.0 introduces a stricter format for parsing ``.flake8``
+files, which does not allow comments on the same line as the error
+code in ``ignore`` sections. For now, update to the last version
+before 6.0.0.
+END

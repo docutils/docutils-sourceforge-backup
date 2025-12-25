@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-02-01T13:02:33.147160Z
+K 7
+svn:log
+V 229
+Update naming of MathML element class methods and attributes.
+
+xml.etree compatible names:
+
+`subnodes()` -> `iter()`
+`data` -> `text`
+
+Correct names:
+
+`is_block()` -> `in_block()`
+
+Use more telling names in method implementation.
+END

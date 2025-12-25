@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2011-12-11T11:28:05.793696Z
+K 7
+svn:log
+V 303
+Starting with this version new functionality is mainly implemented in
+Python. Old functionality is moved to Python step by step.
+
+Plain text looking like inline markup to reStructuredText is quoted in
+output.
+
+Docinfo blocks are ended with a blank line.
+
+Targets containing colons are quoted correctly.
+
+END

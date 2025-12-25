@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-04-09T08:55:54.584716Z
+K 7
+svn:log
+V 398
+Use `PendingDeprecationWarning` and postpone removal when replacement is in 0.22.
+
+Adam Turner noted DeprecationWarnings for some features where the replacement
+functionality is introduced in Docutils 0.22.
+As backwards compatibility with 0.21 should not imply DeprecationWarnings,
+this commit postpones the removal to Docutils 2.0 and changes the
+DeprecationWarnings to PendingDeprecationWarnings.
+END

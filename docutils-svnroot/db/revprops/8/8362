@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-08-26T23:12:56.881911Z
+K 7
+svn:log
+V 102
+py3: Replace 'foo.has_key(bar)' with 'bar in foo'
+
+Signed-off-by: Stephen Finucane <stephen@that.guru>
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2006-04-01T00:22:37.894130Z
+K 7
+svn:log
+V 46
+allow sets of tests to have different settings
+END

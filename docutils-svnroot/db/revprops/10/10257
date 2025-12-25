@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-11-04T09:02:20.417535Z
+K 7
+svn:log
+V 130
+Small edits in description of recent changes.
+
+Rephrase and rearrange the description of changes in the HISTORY and RELEASE-NOTES.
+END

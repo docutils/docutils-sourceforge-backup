@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-01-09T10:50:44.013810Z
+K 7
+svn:log
+V 213
+Test localisation of admonition directives.
+
+New tests for languages "de" and "local-dummy-lang".
+
+test_admonitions.py: allow evaluation as standalone.
+local_dummy_lang.py: directive names must not contain spaces.
+END

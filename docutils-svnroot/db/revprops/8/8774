@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-06-25T20:57:05.824369Z
+K 7
+svn:log
+V 260
+Code simplification in writers.
+
+Use node[...] instead of node.get(...) for basic attributes.
+
+Remove HTMLTranslator.topic_classes auxiliary attribute.
+
+HTML5: Do not add "compound-first", "compound-middle",
+or "compound-last" to elements nested in a compound.
+END

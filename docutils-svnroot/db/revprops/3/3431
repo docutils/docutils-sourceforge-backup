@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-05T15:12:08.536878Z
+K 7
+svn:log
+V 78
+added a "Hacker's Guide" containing a first overview of Docutils' architecture
+END

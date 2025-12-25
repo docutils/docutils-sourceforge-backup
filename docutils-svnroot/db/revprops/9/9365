@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-04-26T12:57:44.849730Z
+K 7
+svn:log
+V 179
+Fixes for "rst2odf_prepstyles" module.
+
+Apply [patch:#427] by Dmitry Shachnev:
+
+Open output (zip)file in binary mode.
+
+Use standard `xml.etree` module instead of 3rd party `lxml`.
+END

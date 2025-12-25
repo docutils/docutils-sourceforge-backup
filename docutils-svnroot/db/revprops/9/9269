@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-11-24T15:10:48.767945Z
+K 7
+svn:log
+V 171
+Remove spurious "import unittest" from test scripts.
+
+There was a "late" import if __name__ == "__main__" which is no longer
+required when importing `unittest` at the top.
+END

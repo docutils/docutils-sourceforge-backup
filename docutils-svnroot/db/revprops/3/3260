@@ -1,0 +1,28 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-04-26T23:03:00.576248Z
+K 7
+svn:log
+V 601
+Added the rest of the new LaTeX writer (I accidentally committed
+newlatex.py together with nodes.py).
+
+To test the new LaTeX writer you must (currently) specify
+tools/latex.tex as a stylesheet.  You can use
+test/functional/input/standalone_rst_latex.txt as input document.
+
+Note that the writer is not yet complete; I'm checking it in to the
+trunk anyway because I don't want to have to merge changes from the
+trunk to a branch.  Things to do:
+
+* Implement support for missing elements.
+* Restructure.
+* Add tests for a lot of special cases.
+* Write documentation, esp. how to customize the behavior.
+
+END

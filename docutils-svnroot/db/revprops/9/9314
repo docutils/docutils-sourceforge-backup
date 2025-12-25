@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-01-10T13:13:17.357746Z
+K 7
+svn:log
+V 458
+`locale.getdefaultlocale()` is deprecated in Python 0.11
+
+Let `smartquotes.py` to use `locale.getlocale` instead.
+(Only used if this module is called as standalone application.)
+
+Suppress warning in `docutils.io`:
+* Don't change current behaviour without advance warning.
+* The deprecated function is called inside a try-block with catchall,
+  so this will not lead to errors once it is removed
+  (if we were to keep the code until then).
+
+Fixes [bugs:#464].
+END

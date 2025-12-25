@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-07-19T02:27:04.000000Z
+K 7
+svn:log
+V 71
+Updated ``Publisher.set_options()``; now returns option values object.
+
+END

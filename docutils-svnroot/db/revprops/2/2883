@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 7
+mmgilbe
+K 8
+svn:date
+V 27
+2004-12-07T10:16:45.000000Z
+K 7
+svn:log
+V 309
+Updated method for handling MoinMoin markup functions. Now create functors for each type of markup that should be handled by MoinMoin.
+
+Bug fixes for inline image handling. Handle case where the image doesn't exist as an attachment.
+
+Also updated to handle other types of inline (embedded python files, etc.)
+
+END

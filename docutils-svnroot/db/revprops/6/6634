@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-01-22T21:05:00.921748Z
+K 7
+svn:log
+V 193
+Escape brackets in citation references with ``--figure-citations``.
+
+Prevents interpretation as optional argument, e.g. if a citation is
+the first object in a list entry (report Alan G Isaac). 
+END

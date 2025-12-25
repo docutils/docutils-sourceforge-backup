@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-12-01T16:35:13.646276Z
+K 7
+svn:log
+V 202
+Documentation update
+
+Mark html5_polyglot/responsive.css as "provisional".
+
+Document removal of ``nodes.Text.rawsource`` attribute
+(fixes bug #437).
+
+Clarify language and structure of the release notes.
+END

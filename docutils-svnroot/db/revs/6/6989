@@ -1,0 +1,312 @@
+id: t-5834.0.r6989/0
+type: file
+pred: t-5834.0.r6988/11953
+count: 8
+text: 6939 36767 499 6395 a2c5fb66531ee84507d7a23b9959ea42 17a3897ed734499ad7c1cd8bef151a5dbf062ecf 6988-5e4/_5
+props: 5834 50051 107 0 3c711300be3ea7503c3f4d9c1da3fa17
+cpath: /trunk/docutils/test/test_writers/test_odt.py
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 24
+file 6-1211.0.r3509/4380
+K 20
+test_docutils_xml.py
+V 25
+file 4-2018.0.r5889/30456
+K 22
+test_html4css1_misc.py
+V 25
+file 6-3570.0.r5889/29825
+K 23
+test_html4css1_parts.py
+V 28
+file a-2055.0-4455.r6502/525
+K 26
+test_html4css1_template.py
+V 23
+file 4-4457.0.r6379/602
+K 15
+test_latex2e.py
+V 24
+file 9-1211.0.r6740/2653
+K 15
+test_manpage.py
+V 24
+file l-6085.0.r6212/1066
+K 12
+test_null.py
+V 25
+file 7-3518.0.r5174/28307
+K 11
+test_odt.py
+V 21
+file t-5834.0.r6989/0
+K 17
+test_pseudoxml.py
+V 25
+file 5-1995.0.r5174/28929
+K 10
+test_s5.py
+V 23
+file 4-4498.0.r6379/917
+END
+ENDREP
+id: 5-1211.0.r6989/903
+type: dir
+pred: 5-1211.0.r6988/12863
+count: 153
+text: 6989 305 585 585 c6e837a6f66a7ce523cd3f4fb28b1a92
+props: 4447 0 31 0 b9ebe853b7baef2573e3487e43637c6a
+cpath: /trunk/docutils/test/test_writers
+copyroot: 0 /
+
+PLAIN
+K 22
+DocutilsTestSupport.py
+V 23
+file 49-18.0.r6380/1147
+K 11
+alltests.py
+V 22
+file 4e-18.0.r6334/200
+K 11
+coverage.sh
+V 28
+file 6-3449.0-3489.r5539/255
+K 4
+data
+V 24
+dir 3-1662.0.r5906/24390
+K 13
+docutils.conf
+V 24
+file 6-1661.0.r2385/2146
+K 10
+functional
+V 24
+dir 3-2357.0.r6988/15201
+K 19
+package_unittest.py
+V 21
+file 3-44.0.r6116/705
+K 20
+test_command_line.py
+V 24
+file 6-6487.0.r6509/1019
+K 20
+test_dependencies.py
+V 23
+file 3-2679.0.r5720/305
+K 18
+test_functional.py
+V 24
+file 18-2357.0.r6430/452
+K 10
+test_io.py
+V 25
+file 5-3138.0.r5889/29532
+K 16
+test_language.py
+V 23
+file 3-940.0.r6433/5770
+K 13
+test_nodes.py
+V 23
+file 4i-18.0.r6351/5207
+K 12
+test_parsers
+V 22
+dir 4k-18.0.r6476/4943
+K 14
+test_pickle.py
+V 25
+file 9-4487.0.r4564/69749
+K 17
+test_publisher.py
+V 30
+file 6-3525.0-3602.r5889/28583
+K 12
+test_readers
+V 20
+dir 3-89.0.r6495/104
+K 16
+test_settings.py
+V 24
+file g-1662.0.r6159/2072
+K 20
+test_statemachine.py
+V 24
+file 6a-18.0.r4564/62145
+K 15
+test_transforms
+V 22
+dir 6c-18.0.r6351/4967
+K 18
+test_traversals.py
+V 24
+file 5-4641.0.r4641/1557
+K 13
+test_utils.py
+V 22
+file 6u-18.0.r6509/729
+K 16
+test_viewlist.py
+V 21
+file 3-916.0.r6340/57
+K 12
+test_writers
+V 22
+dir 5-1211.0.r6989/903
+END
+ENDREP
+id: 48-18.0.r6989/2358
+type: dir
+pred: 48-18.0.r6988/16621
+count: 877
+text: 6989 1138 1207 1207 3bc658582617a305f64b56cd5ea8bbab
+props: 343 993 44 0 e8789a4081469b0bbc8d88dcdbd925ef
+cpath: /trunk/docutils/test
+copyroot: 0 /
+minfo-cnt: 1
+
+PLAIN
+K 8
+BUGS.txt
+V 25
+file 2-2181.0.r6443/28859
+K 11
+COPYING.txt
+V 22
+file 2-18.0.r6159/4134
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r5495/336
+K 11
+HISTORY.txt
+V 22
+file 5-18.0.r6740/2370
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r6258/102
+K 10
+README.txt
+V 22
+file 9-18.0.r6449/1052
+K 17
+RELEASE-NOTES.txt
+V 24
+file 2-4204.0.r6496/4727
+K 10
+THANKS.txt
+V 24
+file 2-2182.0.r5637/7316
+K 4
+docs
+V 20
+dir 3-7.0.r6985/1738
+K 8
+docutils
+V 23
+dir 1w-18.0.r6988/19108
+K 6
+extras
+V 23
+dir 2-1467.0.r6154/6279
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r6159/8465
+K 9
+setup.cfg
+V 23
+file 4-6255.0.r6255/352
+K 8
+setup.py
+V 23
+file 46-18.0.r6496/6819
+K 4
+test
+V 22
+dir 48-18.0.r6989/2358
+K 5
+tools
+V 22
+dir 6w-18.0.r6713/7567
+END
+ENDREP
+id: 1-7.0.r6989/3337
+type: dir
+pred: 1-7.0.r6988/20081
+count: 4011
+text: 6989 2596 728 728 7a4b32873ba7fd0001c057add672bf97
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+minfo-cnt: 1
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r6989/3337
+K 5
+prest
+V 24
+dir 1-4326.0.r6498/50375
+K 7
+sandbox
+V 22
+dir 1-17.0.r6987/17961
+K 3
+web
+V 20
+dir 1-2.0.r6395/3496
+END
+ENDREP
+id: 3-1.0.r6989/3735
+type: dir
+pred: 3-1.0.r6988/20481
+count: 6532
+text: 6989 3565 157 157 0fe186aa6822f0418358cb168e10df30
+cpath: /trunk
+copyroot: 0 /
+minfo-cnt: 2
+
+PLAIN
+K 8
+branches
+V 21
+dir 0-1.0.r6260/33253
+K 4
+tags
+V 19
+dir 2-1.0.r6358/778
+K 5
+trunk
+V 20
+dir 3-1.0.r6989/3735
+END
+ENDREP
+id: 0.0.r6989/4028
+type: dir
+pred: 0.0.r6988/20777
+count: 6989
+text: 6989 3901 114 114 bda8ee0c41cc39c19d1dcf36ed939e9a
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+minfo-cnt: 4
+
+t-5834.0.t6988-5e4 modify-file true false /trunk/docutils/test/test_writers/test_odt.py
+
+
+4028 4236

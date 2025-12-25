@@ -1,0 +1,13 @@
+K 21
+substitutions11.mydom
+V 27
+file 4e-4580.0.r4580/141636
+K 21
+test_substitutions.py
+V 27
+file 4h-4580.0.r4580/141926
+END
+D 21
+substitutions11.mydom
+D 21
+test_substitutions.py

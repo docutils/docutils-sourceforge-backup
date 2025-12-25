@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-05-30T21:04:18.281135Z
+K 7
+svn:log
+V 291
+smart quotes: improve configurability of the transform, add more locales.
+
+The lists of "literal" inline and block-level nodes not requiring smartquote
+conversions are now attributes of the Smartquote transform class.
+
+Added Bulgarian, Macedonian, and Norwegian (Bokmaal and Nynorsk) quotes.
+END

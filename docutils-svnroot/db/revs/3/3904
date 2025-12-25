@@ -1,0 +1,411 @@
+PLAIN
+K 10
+README.txt
+V 22
+file j-3472.0.r3475/49
+K 11
+isoamsa.txt
+V 25
+file o-3472.0.r3472/60159
+K 11
+isoamsb.txt
+V 25
+file q-3472.0.r3472/60546
+K 11
+isoamsc.txt
+V 25
+file s-3472.0.r3472/60932
+K 11
+isoamsn.txt
+V 25
+file u-3472.0.r3472/63273
+K 11
+isoamso.txt
+V 25
+file w-3472.0.r3472/63659
+K 11
+isoamsr.txt
+V 25
+file y-3472.0.r3472/64434
+K 10
+isobox.txt
+V 26
+file 10-3472.0.r3472/55240
+K 11
+isocyr1.txt
+V 26
+file 12-3472.0.r3472/58755
+K 11
+isocyr2.txt
+V 26
+file 14-3472.0.r3472/59143
+K 10
+isodia.txt
+V 26
+file 16-3472.0.r3472/62887
+K 11
+isogrk1.txt
+V 26
+file 18-3472.0.r3472/65211
+K 11
+isogrk2.txt
+V 26
+file 1a-3472.0.r3472/65986
+K 11
+isogrk3.txt
+V 26
+file 1c-3472.0.r3472/66374
+K 16
+isogrk4-wide.txt
+V 26
+file 1e-3472.0.r3472/55627
+K 11
+isogrk4.txt
+V 26
+file 1g-3472.0.r3472/66762
+K 11
+isolat1.txt
+V 26
+file 1i-3472.0.r3472/64046
+K 11
+isolat2.txt
+V 26
+file 1k-3472.0.r3472/64822
+K 16
+isomfrk-wide.txt
+V 26
+file 1m-3472.0.r3472/61708
+K 11
+isomfrk.txt
+V 26
+file 1o-3472.0.r3472/56408
+K 16
+isomopf-wide.txt
+V 26
+file 1q-3472.0.r3472/62101
+K 11
+isomopf.txt
+V 26
+file 1s-3472.0.r3472/57188
+K 16
+isomscr-wide.txt
+V 26
+file 1u-3472.0.r3472/62494
+K 11
+isomscr.txt
+V 26
+file 1w-3472.0.r3472/65599
+K 10
+isonum.txt
+V 26
+file 1y-3472.0.r3472/56020
+K 10
+isopub.txt
+V 26
+file 20-3472.0.r3472/54852
+K 11
+isotech.txt
+V 26
+file 22-3472.0.r3472/67532
+K 12
+mmlalias.txt
+V 26
+file 24-3472.0.r3472/61317
+K 17
+mmlextra-wide.txt
+V 26
+file 26-3472.0.r3472/57575
+K 12
+mmlextra.txt
+V 26
+file 28-3472.0.r3472/58365
+K 15
+xhtml1-lat1.txt
+V 26
+file 2a-3472.0.r3472/56795
+K 18
+xhtml1-special.txt
+V 26
+file 2c-3472.0.r3472/59531
+K 17
+xhtml1-symbol.txt
+V 26
+file 2e-3472.0.r3472/57970
+END
+ENDREP
+id: i-3472.0.r3904/1664
+type: dir
+pred: i-3472.0.r3475/2072
+count: 2
+text: 3904 0 1651 1651 a13fb82204a6d60e7d92075780d6cf6b
+cpath: /trunk/docutils/docutils/parsers/rst/include
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 2f-18.0.r3416/3787
+K 10
+directives
+V 22
+dir 2i-18.0.r3900/1417
+K 7
+include
+V 23
+dir i-3472.0.r3904/1664
+K 9
+languages
+V 22
+dir 2w-18.0.r3803/1171
+K 8
+roles.py
+V 25
+file 5-1943.0.r3155/12951
+K 9
+states.py
+V 23
+file 32-18.0.r3834/4066
+K 14
+tableparser.py
+V 23
+file 34-18.0.r1574/4440
+END
+ENDREP
+id: 2e-18.0.r3904/2182
+type: dir
+pred: 2e-18.0.r3900/1992
+count: 349
+text: 3904 1856 313 313 c88f5f0aff02fa81b4bfcc7a601d3154
+props: 342 2533 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils/parsers/rst
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 2b-18.0.r1645/6017
+K 7
+null.py
+V 26
+file 5-3594.0-3629.r3629/0
+K 3
+rst
+V 22
+dir 2e-18.0.r3904/2182
+END
+ENDREP
+id: 2a-18.0.r3904/2564
+type: dir
+pred: 2a-18.0.r3900/2374
+count: 353
+text: 3904 2421 130 130 e18474630c383703e497ae99b08bb3f5
+props: 342 3339 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils/parsers
+copyroot: 0 /
+
+id: m-3472.0-3904.r3904/2799
+type: file
+pred: m-3472.0.r3472/59832
+count: 1
+text: 1661 0 168 151 7745f00fef974d0674daa82773efeb16 07e590fd8e64136f972edb1f7466a87ae5a2eb1d 3471-2of/_n
+cpath: /trunk/docutils/docutils/docutils.conf
+copyfrom: 3902 /trunk/docutils/docutils/parsers/rst/include/docutils.conf
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 1x-18.0.r3892/5836
+K 7
+core.py
+V 23
+file 20-18.0.r3892/1646
+K 13
+docutils.conf
+V 29
+file m-3472.0-3904.r3904/2799
+K 11
+examples.py
+V 23
+file 3-1928.0.r3598/207
+K 11
+frontend.py
+V 23
+file 3-150.0.r3879/4225
+K 5
+io.py
+V 22
+file 3-217.0.r3654/291
+K 9
+languages
+V 22
+dir 22-18.0.r3802/1211
+K 8
+nodes.py
+V 23
+file 28-18.0.r3892/1935
+K 7
+parsers
+V 22
+dir 2a-18.0.r3904/2564
+K 7
+readers
+V 22
+dir 36-18.0.r3892/5602
+K 15
+statemachine.py
+V 22
+file 3e-18.0.r2299/866
+K 10
+transforms
+V 23
+dir 3g-18.0.r3901/18043
+K 13
+urischemes.py
+V 22
+file 3s-18.0.r1829/714
+K 8
+utils.py
+V 22
+file 3u-18.0.r3592/826
+K 7
+writers
+V 23
+dir 3w-18.0.r3901/17378
+END
+ENDREP
+id: 1w-18.0.r3904/3778
+type: dir
+pred: 1w-18.0.r3901/18904
+count: 1308
+text: 3904 3103 662 662 0003b0c58b426740321c6bd7e9967e5c
+props: 342 8363 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+BUGS.txt
+V 23
+file 2-2181.0.r3899/538
+K 11
+COPYING.txt
+V 21
+file 2-18.0.r3096/363
+K 7
+FAQ.txt
+V 24
+file 2-788.0.r3901/11448
+K 11
+HISTORY.txt
+V 21
+file 5-18.0.r3902/696
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r2513/394
+K 10
+README.txt
+V 21
+file 9-18.0.r3407/847
+K 10
+THANKS.txt
+V 23
+file 2-2182.0.r3900/404
+K 4
+docs
+V 20
+dir 3-7.0.r3902/2388
+K 8
+docutils
+V 22
+dir 1w-18.0.r3904/3778
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 24
+file 46-18.0.r3901/19134
+K 4
+test
+V 22
+dir 48-18.0.r3903/2564
+K 5
+tools
+V 23
+dir 6w-18.0.r3901/11276
+END
+ENDREP
+id: 1-7.0.r3904/4648
+type: dir
+pred: 1-7.0.r3903/3430
+count: 2925
+text: 3904 4007 628 628 1bca965e5ef074c1e97a1299740f1c75
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r3904/4648
+K 7
+sandbox
+V 22
+dir 1-17.0.r3892/14225
+K 3
+web
+V 19
+dir 1-2.0.r3758/963
+END
+ENDREP
+id: 3-1.0.r3904/4991
+type: dir
+pred: 3-1.0.r3903/3773
+count: 3739
+text: 3904 4862 116 116 20a7edf4ac6398e286c57c3440659965
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 21
+dir 0-1.0.r3892/14735
+K 4
+tags
+V 19
+dir 2-1.0.r3816/482
+K 5
+trunk
+V 20
+dir 3-1.0.r3904/4991
+END
+ENDREP
+id: 0.0.r3904/5270
+type: dir
+pred: 0.0.r3903/4052
+count: 3904
+text: 3904 5143 114 114 be87627aba0ce8e73fabc875426099ce
+cpath: /
+copyroot: 0 /
+
+m-3472.0.r3472/59832 delete-file false false /trunk/docutils/docutils/parsers/rst/include/docutils.conf
+
+m-3472._0.t3903-30f add-file false false /trunk/docutils/docutils/docutils.conf
+3902 /trunk/docutils/docutils/parsers/rst/include/docutils.conf
+
+5270 5413

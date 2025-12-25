@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-05-12T14:47:32.832047Z
+K 7
+svn:log
+V 73
+Note that ignoring local contents directives in sub-sections is temporal.
+END

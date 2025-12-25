@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2024-08-01T20:36:43.901383Z
+K 7
+svn:log
+V 52
+Enable the flake8-import-conventions linter in Ruff
+
+END

@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-07-12T21:23:31.260515Z
+K 7
+svn:log
+V 416
+math2html: Prefer STIX fonts for formulas.
+
+STIX is free, widely supported, and comprehensive.
+(On the downside: it is considerably smaller than DejaVu:
+no problem with Chromium/Chrome but in Firefox a larger font-size
+might be advised.)
+
+Work around bugs/problems in STIX:
+"medium mathematical space" is too wide,
+"vertical line" glyphs leave gaps when stacked,
+upright integrals provide better alignment of limits.
+END

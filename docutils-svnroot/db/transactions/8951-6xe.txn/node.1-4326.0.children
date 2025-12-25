@@ -1,0 +1,89 @@
+K 11
+COPYING.txt
+V 26
+file 2-4327.0.r4580/172511
+K 9
+ChangeLog
+V 30
+file d-4327.0-5066.r6498/49477
+K 7
+GPL.txt
+V 26
+file 5-4327.0.r4327/840766
+K 8
+MANIFEST
+V 25
+file 4-4580.0.r6498/45401
+K 13
+MANIFEST.SKIP
+V 24
+file 6-4580.0.r5443/4349
+K 10
+MODIFY.txt
+V 23
+file 7-4327.0.r4330/211
+K 11
+Makefile.PL
+V 22
+file 8-4580.0.r5778/95
+K 6
+README
+V 23
+file b-4327.0.r4636/389
+K 3
+doc
+V 24
+dir h-4327.0.r6498/45183
+K 13
+insertperl.pl
+V 25
+file k-4580.0.r4580/61534
+K 3
+lib
+V 24
+dir m-4580.0.r6498/49310
+K 5
+prest
+V 30
+file 7z-4327.7-4580.r6245/1833
+K 1
+t
+V 25
+dir 1h-4580.0.r6498/43597
+K 4
+tbin
+V 31
+dir 139-4327.1d-4580.r6247/1076
+END
+D 11
+COPYING.txt
+D 9
+ChangeLog
+D 7
+GPL.txt
+D 8
+MANIFEST
+D 13
+MANIFEST.SKIP
+D 10
+MODIFY.txt
+D 11
+Makefile.PL
+D 6
+README
+K 3
+doc
+V 22
+dir h-4327.0.t8951-6xe
+D 13
+insertperl.pl
+K 3
+lib
+V 22
+dir m-4580.0.t8951-6xe
+D 5
+prest
+K 1
+t
+V 23
+dir 1h-4580.0.t8951-6xe

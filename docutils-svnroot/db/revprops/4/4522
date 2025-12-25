@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2006-05-01T02:31:07.359507Z
+K 7
+svn:log
+V 135
+Added support for multiple attributions in a physical block quote (indented text block), dividing it into multiple logical block quotes
+END

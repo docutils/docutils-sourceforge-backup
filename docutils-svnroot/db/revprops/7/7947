@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2016-07-22T08:49:52.059239Z
+K 7
+svn:log
+V 91
+Fix [ 298 ] Deal with LC_CTYPE=UTF-8
+
+Add workaround for http://bugs.python.org/issue18378.
+END

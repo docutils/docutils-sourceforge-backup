@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-12-20T16:39:10.217585Z
+K 7
+svn:log
+V 81
+Fix [ 2971827 ] and [ 3442827 ]
+
+extras/roman.py moved to docutils/utils/roman.py
+END

@@ -1,0 +1,25 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-03T09:48:07.633405Z
+K 7
+svn:log
+V 726
+Scan documentation for trailing whitespace with "pre-commit" hooks.
+
+Remove the exception of documentation sources from the "trailing whitespace"
+hook in ".pre-commit-config.yaml" so that commits to a local git-svn repository
+will prevent trailing whitespace from slipping into the repository.
+
+Change the Emacs "Local variables" block so that the FORM FEED (^L) character used
+to make emacs stop looking for local variables in unrelated text is no longer
+a trailing whitespace (and hence not removed by the pre-commit hook),
+cf. the docutils-develop thread starting 2024-04-24.
+Other trailing whitespace that crept into the repository is removed.
+
+Once at it, also add "mode: rst" (keeping "mode: indented-text" as fallback).
+END

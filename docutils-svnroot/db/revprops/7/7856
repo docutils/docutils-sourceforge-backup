@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2015-03-30T14:41:00.519144Z
+K 7
+svn:log
+V 330
+Do not use <sup> and <sub> tags inside <pre> (parsed-literal blocks).
+
+New approach: use <span class="subscript"> ... and CSS in literal blocks,
+as <sup> and <sub> are explicitely forbidden in XHTML 1
+http://www.w3.org/TR/xhtml1/#prohibitions
+(but the validator does not check this)
+
+Also: fix target in SVG image functional test.
+END

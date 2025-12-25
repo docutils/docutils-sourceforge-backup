@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-04-17T20:27:15.234009Z
+K 7
+svn:log
+V 148
+Test syntax highlight: Make pygments version parsing more robust.
+
+Do not fail for pre-release versions
+(c.f. https://pygments.org/docs/changelog/).
+END

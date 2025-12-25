@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-05-30T16:54:24.821908Z
+K 7
+svn:log
+V 191
+Documentation tweaks.
+
+Add link to manpage writer documentation in doc index.
+Add link to manpage writer references.
+More consistent formatting of function names in HISTORY.
+
+Small additions.
+END

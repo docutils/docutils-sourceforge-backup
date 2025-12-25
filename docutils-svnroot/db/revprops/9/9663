@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-04-27T20:58:58.548620Z
+K 7
+svn:log
+V 116
+Document the `<compound>` and `<container>` elements.
+
+Close two gaps in the "Docutils Document Tree" documentation.
+END

@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-07-28T20:10:46.824395Z
+K 7
+svn:log
+V 348
+Documentation additions and fixes.
+
+Announce future changes to the ID generation.
+Cf. Sphinx issue #1961 (https://github.com/sphinx-doc/sphinx/issues/1961).
+
+Glossary entry for "unit proportion" in doctree doc.
+
+TODO-comment: use imagesize.py to get dimensions from image files.
+Faster than PIL, also handles SVG. (cf. Sphinx)
+
+Various small fixes.
+END

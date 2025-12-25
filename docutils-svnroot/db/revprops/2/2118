@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2004-05-17T18:42:49.000000Z
+K 7
+svn:log
+V 92
+change to UnicodeError, which exists in Python 2.1 & 2.2 (UnicodeEncodeError is new in 2.3)
+
+END

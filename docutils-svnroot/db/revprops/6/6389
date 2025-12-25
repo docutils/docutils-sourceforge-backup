@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-08-13T12:46:37.125742Z
+K 7
+svn:log
+V 75
+Fix [ 3001100 ] does not handle spaces in filenames (thanks to Jakub Wilk)
+
+END

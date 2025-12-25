@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-02-25T23:36:43.000000Z
+K 7
+svn:log
+V 89
+Fixed mislocated internal targets bug, by relocating targets into the next text element.
+
+END

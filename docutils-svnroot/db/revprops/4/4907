@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-02-02T17:06:15.479183Z
+K 7
+svn:log
+V 62
+Fixed a bug that occurred if a document had no title section.
+
+END

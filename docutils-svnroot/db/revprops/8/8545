@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-08-28T20:07:40.246245Z
+K 7
+svn:log
+V 309
+LaTeX package/stylesheet for Docutils.
+
+New LaTeX style file with required Docutils-specific definitions.
+This file will also be published on CTAN.
+
+When "docutils.sty" is not found in the "stylesheet" setting(s),
+the LaTeX writer will insert required code into the
+document preamble (like up to this commit).
+END

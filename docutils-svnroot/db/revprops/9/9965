@@ -1,0 +1,27 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-10-22T21:41:16.396071Z
+K 7
+svn:log
+V 670
+Skip functional test that requires PIL if PIL is absent.
+
+For Docutils, PIL is a recommendation, no requirement.
+
+It is, however, required for the extraction of the image size
+from an image file and a warning is written if it it missing.
+This makes the output differ from the "expected" sample on
+a functional test where the "scale" option of the "image"
+directive is used.
+
+The "length_units_html5" functional test is intended to provide
+an example of the length unit support for visual inspection with
+a HTML browser.  There are additional unit tests for the
+"scale" option with and without PIL, so we can safely skip
+the functional test if PIL is missing on a system.
+END

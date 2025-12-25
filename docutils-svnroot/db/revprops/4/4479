@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-04-01T01:32:19.308468Z
+K 7
+svn:log
+V 87
+--- MERGE: merged r4352 to maintenance branch; original log message:
+    added ReSTedit
+END

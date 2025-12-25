@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 7
+gbrandl
+K 8
+svn:date
+V 27
+2007-07-16T17:37:01.667754Z
+K 7
+svn:log
+V 175
+- Add Jinja as an external.
+- Fix a reading bug.
+- Use .hasattr() instead of .has_key() for nodes.
+- Remove unused code in the modindex handler.
+- Always render comment form.
+
+END

@@ -1,0 +1,13 @@
+K 8
+Dir.smak
+V 25
+file i-5058.0.r5058/76448
+K 16
+test_contents.py
+V 27
+file 8x-4580.0.r4580/152375
+END
+D 8
+Dir.smak
+D 16
+test_contents.py

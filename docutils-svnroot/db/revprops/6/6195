@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-11-13T20:21:18.276773Z
+K 7
+svn:log
+V 71
+filter_settings_spec() now also allows to replace option specifications
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2017-08-17T22:28:42.097971Z
+K 7
+svn:log
+V 111
+Added a test case and updated docs/ref/rst/restructuredtext.txt for interpreted text in field list field names.
+END

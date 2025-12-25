@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-04-28T18:53:03.091509Z
+K 7
+svn:log
+V 49
+Avoid trailing whitespace in test sample strings.
+END

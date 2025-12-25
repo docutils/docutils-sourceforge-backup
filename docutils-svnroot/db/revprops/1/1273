@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 6
+fdrake
+K 8
+svn:date
+V 27
+2003-04-10T15:21:25.000000Z
+K 7
+svn:log
+V 91
+When formatting system messages, the node source information needs to
+be encoded for HTML.
+
+END

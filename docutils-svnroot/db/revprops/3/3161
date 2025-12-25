@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2005-04-02T23:43:57.034159Z
+K 7
+svn:log
+V 138
+A simple first stab at a series of regression
+tests for the section underlining function.
+I still have to write many of the other tests.
+
+
+END

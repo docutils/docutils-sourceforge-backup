@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-02-27T16:14:41.353267Z
+K 7
+svn:log
+V 508
+Refactor HTML writer functions for definition lists.
+
+In HTML, the optional "term classifier" is nested in the `<dt>` element.
+
+Up to now, the closing `<dt>` was added in `visit_definition()`.
+This is, however, problematic if we want to allow a "definition_list_item" with
+multiple "term"s (cf. [feature-requests:60]).
+Now, `</dt>` is appended in `depart_term()`, but only if no "classifier" node
+follows. `depart_classifier()` also calls `depart_term()` so that `</dt>` is
+added after the last "classifier".
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-05-03T11:26:37.102776Z
+K 7
+svn:log
+V 59
+math2html: Fix writing to sys.stdout/sys.stderr under Py3k.
+END

@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2015-05-06T14:51:07.906211Z
+K 7
+svn:log
+V 152
+Document generation of wheels with pip.
+
+With the "pip" utility, it is possible to generate wheels for Python 2 and 3
+without changes to the code base.
+
+END

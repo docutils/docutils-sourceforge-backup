@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-04-09T15:18:31.916098Z
+K 7
+svn:log
+V 499
+Announce change to "refname" doctree element handling.
+
+In Docutils 1.0, we will
+keep case information of in "refname" attributes the Document Tree
+and remove the "name" attribute of the `<reference>` element.
+
+* As before, resolving cross-references for hyperlinks, footnotes, and citations ignores case.
+
+* Custom "unknown_reference_resolvers" (added by 3rd party code, e.g., the MaoinMoin wiki)
+  have access to the original casing of the reference name without the need for a separate attribute.
+END

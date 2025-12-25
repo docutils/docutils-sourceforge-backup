@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-12-13T17:02:41.490222Z
+K 7
+svn:log
+V 154
+Call correct version of 'getcwd(u)'
+
+This appears to have been introduced when the patch was applied.
+
+Signed-off-by: Stephen Finucane <stephen@that.guru>
+END

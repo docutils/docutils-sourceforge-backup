@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-09-20T06:31:07.203524Z
+K 7
+svn:log
+V 168
+ODT writer: report warnings with source line.
+
+Add "base_node" argument to calls of `reporter.warning()` so
+that the warning is completed with the source line to blame.
+END

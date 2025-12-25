@@ -1,0 +1,31 @@
+K 8
+bad1.wrt
+V 27
+file 6m-4710.0.r4710/199952
+K 8
+bad2.wrt
+V 27
+file 6p-4710.0.r4710/200202
+K 8
+bad3.wrt
+V 27
+file 6r-4710.0.r4710/200452
+K 8
+bad4.wrt
+V 25
+file 6t-4710.0.r5378/6932
+K 9
+cover.wrt
+V 25
+file 6v-4710.0.r5352/1808
+END
+D 8
+bad1.wrt
+D 8
+bad2.wrt
+D 8
+bad3.wrt
+D 8
+bad4.wrt
+D 9
+cover.wrt

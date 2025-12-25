@@ -1,0 +1,25 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-11-24T15:09:01.989785Z
+K 7
+svn:log
+V 519
+Reset not only `_roles` but also `_directives` cache dictionary.
+
+Clean the global caches to ensure predictable test results.
+(There were additional warnings for undefined directive and
+role names under Windows. These were suppressed due to other
+tests adding canonical names to the cache under Linux.)
+
+Add additional warnings to the expected output samples.
+
+Registering directives at test module level no longer works.
+Move `register_directive()` call to the test function.
+
+Signed-off-by: milde <milde@users.sf.net>
+END

@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-02-02T17:00:50.435929Z
+K 7
+svn:log
+V 463
+* Parse now parses a string rather than reading from a file.
+* Refactored to remove all dependencies upon main::
+* Added tag method.
+* Added methods based on the docutils.dtd structure:
+  * takes_body_elts, takes_inline_elts: true if a DOM object can have
+    body/inline elements as children, respectively.
+  * is_body_elt, is_inline_elt: true if a DOM object can be a child of
+    one for which takes_body_elts/takes_inline_elts returns true,
+    respectively.
+
+END

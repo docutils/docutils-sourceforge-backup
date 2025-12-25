@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-10-30T14:17:02.000000Z
+K 7
+svn:log
+V 62
+updated test files to match new transition inserting behavior
+
+END

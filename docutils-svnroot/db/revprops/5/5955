@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 8
+cliechti
+K 8
+svn:date
+V 27
+2009-05-22T18:09:11.144586Z
+K 7
+svn:log
+V 62
+apply patch (SF 2794490): Honour "aspect" command line option
+
+END

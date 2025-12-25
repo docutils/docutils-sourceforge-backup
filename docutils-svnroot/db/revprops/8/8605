@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-01-11T11:07:17.284010Z
+K 7
+svn:log
+V 45
+ODF writer: support "subject" metadata field.
+END

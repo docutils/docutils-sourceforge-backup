@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-05-17T20:28:42.298990Z
+K 7
+svn:log
+V 107
+Review settings_spec.
+
+Common options for HTML writers.
+Minor changes for xetex writer and docutils-cli.py.
+END

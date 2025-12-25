@@ -1,0 +1,56 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2005-11-07T14:35:10.165360Z
+K 7
+svn:log
+V 1803
+- Changed the default bindings due to the explosion of new
+  feature: we now have a prefix-map, which is bound to 'C-c p',
+  so the 'C-x p XXXX' commands are all for the rst.el file
+  functions.  I left a few bindings:
+
+  * C-= is still there, because it is the single most useful
+    command and it should be invoked with one key (you can get to
+    it with 'C-c p a' too).
+
+  * I moved 'C-M-{' to 'C-c n' or 'C-c p n' and did the same for
+    the forward movement commands.
+
+  * 'C-c C-l' and 'C-c C-r' have been kept, since they have a
+    similar role than those bindings have in progmodes.
+
+- I removed all the bindings from 'C-x ...' prefix map, since we
+  should be using the mode-specific map, which is 'C-c ...'.  I'm
+  also now using the mode-prefix-map variable, so people who have
+  rebound theirs will get the benefits of their customization.
+
+- Started defining some abbrevs, e.g. 'con' for ''.. contents::'
+
+- Changed a lot of 'if's to 'when' and 'unless' clauses.
+
+- I added a function to find the node within the section subtree
+  where the cursor lives. This function is used to compute the
+  desired location of point in the toc table, which fixes a bug
+  with the cursor being off when there were missing nodes.
+
+- The toc insertion now uses the insertion point to determine
+  where to start rendering the TOC.  This fixes a problem with
+  guessing the titles and subtitles and heuristically removing
+  them, simplifies the rst-toc-insert function and this new
+  choices automatically supports local tocs.
+
+- Fixed the shifting functions to use markers, so that they can
+  be used repeatedly with my repeat-repeatable-command advice.
+  This just makes the functions more robust.
+
+- Added an option to automatically fill on shifting a region left
+  or right (this needs more work).
+
+
+
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2005-09-21T14:14:19.711963Z
+K 7
+svn:log
+V 54
+Minor fixes to emacs hook and documentation additions.
+END

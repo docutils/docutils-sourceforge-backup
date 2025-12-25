@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-03-03T22:15:34.665067Z
+K 7
+svn:log
+V 388
+Fix missing whitespace around operator.
+
+flake8 rules
+E225: missing whitespace around operator
+E226: missing whitespace around arithmetic operator
+E228: missing whitespace around modulo operator
+
+Keep ignoring the latter two rules:
+PEP8 limits the recommendation to "operators with lowest priority"
+"if operators with different priorities are used".
+flake8 also flags top level operators.
+END

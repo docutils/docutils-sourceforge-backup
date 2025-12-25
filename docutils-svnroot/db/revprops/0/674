@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+richard
+K 8
+svn:date
+V 27
+2002-09-12T03:42:31.000000Z
+K 7
+svn:log
+V 106
+Add a class to "normal" tables so we can play with them specifically in CSS,
+and not affect other tables.
+
+END

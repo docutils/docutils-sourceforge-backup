@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2003-09-22T13:19:57.000000Z
+K 7
+svn:log
+V 98
+Fix: use node['id'] for hypertarget and href.
+Fix: pdfbookmarks firstparameter needs "_" escaped.
+
+END

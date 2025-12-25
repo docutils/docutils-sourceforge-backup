@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-11-25T10:16:45.021146Z
+K 7
+svn:log
+V 284
+Update html4css1 writer, math, and functional tests.
+
+* prepare for math to HTML conversion,
+* provisions for XTHML 1.1. generation with the "strict" html writer:
+  configurable lang attribute name: "lang" in XHTML 1.0 but "xml:lang" in 1.1,
+  strip whitespace around class arguments,
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-09-29T13:10:07.384663Z
+K 7
+svn:log
+V 44
+Added support for "class" directive content.
+END

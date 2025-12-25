@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-12-03T09:51:44.469130Z
+K 7
+svn:log
+V 248
+Math update, fixes and latex2html converter.
+
+latex2html converter contributed by Alex Fernández,
+"--math-output" option to select between MathML or HTML/CSS math in HTML,
+better multiline formula detection in latex2e writer.
+TODO and test update.
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2007-02-27T17:42:11.145687Z
+K 7
+svn:log
+V 33
+added ez_setup.py from setuptools
+END

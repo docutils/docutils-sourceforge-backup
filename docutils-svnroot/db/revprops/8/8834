@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-09-24T13:35:26.331350Z
+K 7
+svn:log
+V 240
+Unify behaviour of "widths" option.
+
+Check that the lenght of an integer list equals the number of
+table columns also for the "table" directive.
+
+TODO: use the last value for additional columns
+and ignore values for missing columns instead?
+END

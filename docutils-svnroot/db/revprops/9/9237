@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-11-10T16:54:38.281504Z
+K 7
+svn:log
+V 304
+Add support for ``pytest``
+
+This is the minimal configuration required for the test suite to 
+pass using the pytest framework. This is part of the test suite
+refactoring project.
+
+- Ignore two classes that start with the word "Test"
+- Provide the standard test header to pytest
+- Update the documentation
+END

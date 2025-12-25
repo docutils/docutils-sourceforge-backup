@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-11-04T11:16:36.769178Z
+K 7
+svn:log
+V 94
+Support `pandoc` as an external LaTeX to MathML converter.
+
+Patch by Ximin Luo [patches:#197].
+END

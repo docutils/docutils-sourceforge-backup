@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2024-07-31T03:58:36.938512Z
+K 7
+svn:log
+V 55
+Fix ``make_paths_absolute()`` on Python 3.9 on Windows
+
+END

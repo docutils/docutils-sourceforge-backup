@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-11-24T20:28:40.521279Z
+K 7
+svn:log
+V 269
+Use "pathlib" to simplify path manipulations. No change to behaviour.
+
+Rely on `utils.relative_path()` to normalize paths. No need to use
+`os.normpath()` or `os.abspath()` separately.
+
+`utils.DependencyList.add()` accepts `pathlib.Path` instances.
+
+Small code cleanups.
+END

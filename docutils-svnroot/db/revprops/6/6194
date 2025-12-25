@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-11-11T12:05:10.428904Z
+K 7
+svn:log
+V 65
+Rule to center-align an image that works without enclosing <div>.
+END

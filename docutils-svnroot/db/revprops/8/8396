@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-09-19T13:59:09.132253Z
+K 7
+svn:log
+V 138
+HTML fixes and updates.
+
+Remove dead code.
+Remove unused class value "first" for topic-title.
+Fix/update CSS stylesheets for html5 writer.
+END

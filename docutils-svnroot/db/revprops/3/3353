@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-05-19T00:49:14.040301Z
+K 7
+svn:log
+V 96
+renamed command-line options for SectSubTitle transform (plural reads better); tweaked test text
+END

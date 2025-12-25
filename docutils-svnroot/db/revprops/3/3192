@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-04-08T15:19:09.213855Z
+K 7
+svn:log
+V 120
+moved the <hr> tags inside the header and footer <div>s; changed the classes of these <hr> to just "header" and "footer"
+END

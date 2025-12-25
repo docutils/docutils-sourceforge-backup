@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2025-03-09T01:02:23.703608Z
+K 7
+svn:log
+V 117
+Avoid importing the typing module for performance
+
+The ``typing.TYPE_CHECKING`` constant is always False at runtime.
+
+END

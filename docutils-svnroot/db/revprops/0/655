@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 11
+chodorowski
+K 8
+svn:date
+V 27
+2002-09-09T17:21:43.000000Z
+K 7
+svn:log
+V 122
+Make sure that the keyword passed to the 'align' option is one of
+'bottom', 'middle', 'top', 'left', 'center' or 'right'.
+
+END

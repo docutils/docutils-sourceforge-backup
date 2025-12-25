@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2006-05-27T20:26:29.511221Z
+K 7
+svn:log
+V 69
+Changed tests for definition lists for *informational units* markup.
+
+END

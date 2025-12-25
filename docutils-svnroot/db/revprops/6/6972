@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 12
+paultremblay
+K 8
+svn:date
+V 27
+2011-02-28T00:57:02.120855Z
+K 7
+svn:log
+V 55
+page-layout has to be set to '' for templates to work.
+
+END

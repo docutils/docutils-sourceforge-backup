@@ -1,0 +1,271 @@
+PLAIN
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: b-3204.0.r3972/64
+type: file
+pred: b-3204.0.r3970/2515
+count: 7
+text: 3970 0 2490 7442 924fbfef2925f4a8fcaa104974846ae5 63cddd31cebfed9ea73ac191f3e69f13588e071e 3969-329/_5
+props: 3972 0 51 0 1d3d25d280df56c43d82b873e8fd21f4
+cpath: /trunk/sandbox/cliechti/slideshow/presentation.txt
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 24
+file 8-3204.0.r3204/6239
+K 16
+happy_monkey.png
+V 25
+file 4-3965.0.r3965/24407
+K 16
+presentation.txt
+V 22
+file b-3204.0.r3972/64
+K 9
+rst2s5.py
+V 24
+file d-3204.0.r3964/3746
+K 5
+s5.py
+V 24
+file f-3204.0.r3964/4294
+K 2
+ui
+V 24
+dir 7-3965.0.r3965/28300
+END
+ENDREP
+id: 7-3204.0.r3972/653
+type: dir
+pred: 7-3204.0.r3970/3056
+count: 14
+text: 3972 366 274 274 840a3fd4244f73317939b965f966f9e1
+cpath: /trunk/sandbox/cliechti/slideshow
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 24
+file 4-3204.0.r3207/5691
+K 8
+html2rst
+V 23
+dir 5-3207.0.r3207/5538
+K 9
+slideshow
+V 22
+dir 7-3204.0.r3972/653
+END
+ENDREP
+id: 2-3204.0.r3972/981
+type: dir
+pred: 2-3204.0.r3970/3386
+count: 15
+text: 3972 834 134 134 fb085b4b0a4175718daf72615817912f
+cpath: /trunk/sandbox/cliechti
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 22
+file 3-17.0.r3486/3766
+K 4
+aahz
+V 23
+dir 2-820.0.r3892/10934
+K 9
+agurtovoy
+V 23
+dir 2-2034.0.r2034/7482
+K 3
+amk
+V 23
+dir 2-1891.0.r1892/1276
+K 3
+axk
+V 25
+dir 2-1550.0-3242.r3242/0
+K 4
+bbum
+V 23
+dir 2-1039.0.r1742/2047
+K 5
+blais
+V 23
+dir 2-1316.0.r3958/2544
+K 4
+cben
+V 24
+dir 2-1693.0.r3533/13838
+K 8
+cliechti
+V 22
+dir 2-3204.0.r3972/981
+K 6
+davidg
+V 20
+dir 6-17.0.r3951/278
+K 5
+delza
+V 23
+dir 2-1723.0.r1723/3836
+K 8
+dkuhlman
+V 23
+dir 2-1555.0.r1716/4199
+K 7
+dpriest
+V 23
+dir 2-1730.0.r2304/1528
+K 12
+dreamcatcher
+V 22
+dir 2-1300.0.r1357/657
+K 7
+edloper
+V 23
+dir 2-1844.0.r1975/4509
+K 12
+felixwiemann
+V 23
+dir 2-2903.0.r3753/1082
+K 7
+grubert
+V 22
+dir 2-112.0.r3361/6648
+K 8
+gschwant
+V 23
+dir 2-675.0.r3670/12248
+K 9
+holdenweb
+V 23
+dir 2-1845.0.r1845/4805
+K 4
+ianb
+V 23
+dir 2-881.0.r3892/12710
+K 14
+infrastructure
+V 24
+dir 3-189.0-3951.r3951/0
+K 5
+jensj
+V 23
+dir 2-2942.0.r2954/5560
+K 4
+lalo
+V 23
+dir 2-1749.0.r1762/2166
+K 3
+mly
+V 23
+dir 2-1431.0.r1432/2681
+K 7
+mmgilbe
+V 23
+dir 2-1841.0.r2945/2205
+K 3
+mwh
+V 21
+dir 2-857.0.r862/1023
+K 7
+oliverr
+V 22
+dir 2-202.0.r3911/1554
+K 12
+paultremblay
+V 23
+dir 2-1323.0.r1489/1149
+K 7
+pobrien
+V 23
+dir 2-1158.0.r1777/4967
+K 7
+richard
+V 21
+dir 2-526.0.r3565/968
+K 6
+simonb
+V 21
+dir 2-252.0.r1227/852
+K 11
+stylesheets
+V 22
+dir 2-3847.0.r3941/453
+K 4
+tibs
+V 21
+dir 2-62.0.r1727/8120
+K 4
+wilk
+V 23
+dir 2-1258.0.r1650/3830
+END
+ENDREP
+id: 1-17.0.r3972/2547
+type: dir
+pred: 1-17.0.r3970/4954
+count: 788
+text: 3972 1152 1382 1382 1d950689b4ec4340dd29de4d8af84359
+cpath: /trunk/sandbox
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r3971/5703
+K 7
+sandbox
+V 21
+dir 1-17.0.r3972/2547
+K 3
+web
+V 19
+dir 1-2.0.r3921/972
+END
+ENDREP
+id: 3-1.0.r3972/2838
+type: dir
+pred: 3-1.0.r3971/6046
+count: 3807
+text: 3972 2710 115 115 32daab2933e74626987bbc449c032c7c
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 21
+dir 0-1.0.r3892/14735
+K 4
+tags
+V 19
+dir 2-1.0.r3816/482
+K 5
+trunk
+V 20
+dir 3-1.0.r3972/2838
+END
+ENDREP
+id: 0.0.r3972/3117
+type: dir
+pred: 0.0.r3971/6325
+count: 3972
+text: 3972 2990 114 114 44043a145fa7396081e235c4f26069f8
+cpath: /
+copyroot: 0 /
+
+b-3204.0.t3971-32b modify-file false true /trunk/sandbox/cliechti/slideshow/presentation.txt
+
+
+3117 3260

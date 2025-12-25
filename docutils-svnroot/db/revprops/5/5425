@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2007-08-24T17:03:35.980030Z
+K 7
+svn:log
+V 327
+push system messages up to super-document so they do not get lost (tested);
+expand ~ in docset-root and subdocs (not tested);
+prune subdocs for a couple of target/reference transforms which are applied to every document anyway, so they do not need to descend into subdocs (not all tested);
+removed unnecessary import in latex2e
+END

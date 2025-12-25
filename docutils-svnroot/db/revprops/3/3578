@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2005-06-25T01:59:35.709082Z
+K 7
+svn:log
+V 40
+Removed access to the applied transform.
+END

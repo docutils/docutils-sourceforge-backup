@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-15T12:08:27.777339Z
+K 7
+svn:log
+V 261
+Deprecate `io.BinaryFileOutput` and `core.publish_cmdline_to_binary()`.
+
+Announce removal in Docutils 0.24 (2 releases after 0.22, which may also be
+1.0 or 2.0).
+
+Use `io.FileOutput` and `core.publish_cmdline()` instead
+(works with `bytes` since Docutils 0.20).
+END

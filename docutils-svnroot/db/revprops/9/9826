@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2024-08-01T20:39:44.235754Z
+K 7
+svn:log
+V 41
+Enable the flake8-gettext linter in Ruff
+
+END

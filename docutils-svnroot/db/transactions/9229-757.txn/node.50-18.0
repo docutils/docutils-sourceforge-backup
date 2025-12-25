@@ -1,0 +1,9 @@
+id: 50-18.0.t9229-757
+type: dir
+pred: 50-18.0.r9220/1928
+count: 260
+text: -1
+props: 339 3733 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/test/test_parsers/test_rst/test_directives
+copyroot: 0 /
+

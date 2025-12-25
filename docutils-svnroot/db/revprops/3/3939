@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-10-11T21:36:06.422250Z
+K 7
+svn:log
+V 89
+removed more internal state (`document.anonymous_refs` and
+`document.anonymous_targets`)
+
+END

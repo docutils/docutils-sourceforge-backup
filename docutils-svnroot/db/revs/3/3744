@@ -1,0 +1,58 @@
+id: 3-12.0-3744.r3744/0
+type: dir
+pred: 3-12.0.r3667/1059
+count: 422
+text: 3667 387 659 659 67af9e60b58de2a1f0701eb71708e60f
+cpath: /branches/todo2
+copyfrom: 3743 /trunk/docutils/docs/dev
+
+PLAIN
+K 7
+nesting
+V 27
+dir 3-1.0-1813.r2577/106277
+K 4
+todo
+V 26
+dir 3-12.0-3676.r3743/1026
+K 5
+todo2
+V 23
+dir 3-12.0-3744.r3744/0
+END
+ENDREP
+id: 0-1.0.r3744/331
+type: dir
+pred: 0-1.0.r3743/1315
+count: 126
+text: 3744 189 129 129 9538a47fbeca3092beb465c0719c850e
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r3744/331
+K 4
+tags
+V 19
+dir 2-1.0.r3383/196
+K 5
+trunk
+V 20
+dir 3-1.0.r3742/2454
+END
+ENDREP
+id: 0.0.r3744/608
+type: dir
+pred: 0.0.r3743/1593
+count: 3744
+text: 3744 483 112 112 1635b52d364c5ce196c2fb98f9f4fef8
+cpath: /
+copyroot: 0 /
+
+3-12._0.t3743-2vz add-dir false false /branches/todo2
+3743 /trunk/docutils/docs/dev
+
+608 749

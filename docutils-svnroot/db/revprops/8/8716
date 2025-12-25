@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-04-29T09:55:58.107141Z
+K 7
+svn:log
+V 129
+Fix "pseudoxml" writer option "detailled".
+
+str.splitlines() does not allow keyword arguments under Python 2.7.
+
+Add a test case.
+END

@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-10-15T16:03:47.372594Z
+K 7
+svn:log
+V 241
+HMTL5 responsive.css: default color for ToC entries.
+
+Leave default (link) colour for ToC entries unless the ToC
+moved to the sidebar.
+
+This helps to easier spot the difference between lists and
+(especially unnumbered and local) ToC entries.
+END

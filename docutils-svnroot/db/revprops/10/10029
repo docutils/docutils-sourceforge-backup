@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2025-03-08T01:56:44.937886Z
+K 7
+svn:log
+V 32
+Declare support for Python 3.14
+
+END

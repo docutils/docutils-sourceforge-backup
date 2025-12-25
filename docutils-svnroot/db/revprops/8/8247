@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-02-12T18:16:13.310435Z
+K 7
+svn:log
+V 84
+Fix spelling errors (patch #149).
+
+Originally submitted by You-Sheng Yang in Debian.
+END

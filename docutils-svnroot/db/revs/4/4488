@@ -1,0 +1,245 @@
+id: 6-2369.0.r4488/0
+type: file
+pred: 6-2369.0.r4487/4526
+count: 16
+text: 4163 1052 394 8005 f53b35640974b3aeb3607f8f3d083587 9f1dac402018d6407529816a067d1d4c9bc40e73 4487-3gn/_5
+props: 2606 181 110 0 705660468cdcbf270377dea86b274451
+cpath: /trunk/docutils/docs/dev/testing.txt
+copyroot: 0 /
+
+PLAIN
+K 16
+distributing.txt
+V 25
+file 4-3527.0.r4163/25457
+K 18
+enthought-plan.txt
+V 24
+file 4-2241.0.r3363/1004
+K 17
+enthought-rfp.txt
+V 23
+file 7-2241.0.r3979/497
+K 11
+hacking.txt
+V 25
+file 4-3431.0.r4163/24873
+K 12
+policies.txt
+V 23
+file 4-2183.0.r4324/578
+K 12
+pysource.dtd
+V 21
+file c-18.0.r4363/107
+K 12
+pysource.txt
+V 23
+file f-18.0.r2223/13620
+K 11
+release.txt
+V 23
+file 7-2183.0.r4319/271
+K 14
+repository.txt
+V 23
+file 4-3057.0.r4002/570
+K 3
+rst
+V 21
+dir h-18.0.r4120/3941
+K 13
+semantics.txt
+V 23
+file 5-12.0.r1409/24162
+K 11
+testing.txt
+V 21
+file 6-2369.0.r4488/0
+K 8
+todo.txt
+V 22
+file n-18.0.r4458/1968
+K 11
+website.txt
+V 24
+file 9-2183.0.r4304/1571
+END
+ENDREP
+id: 3-12.0.r4488/966
+type: dir
+pred: 3-12.0.r4487/5497
+count: 519
+text: 4488 293 660 660 5b1e4432a6487970093aa90ef57be0ca
+cpath: /trunk/docutils/docs/dev
+copyroot: 0 /
+
+PLAIN
+K 3
+api
+V 24
+dir 3-2394.0.r4456/19575
+K 3
+dev
+V 20
+dir 3-12.0.r4488/966
+K 5
+howto
+V 23
+dir 3-749.0.r4163/24026
+K 9
+index.txt
+V 22
+file 3-2171.0.r4362/46
+K 4
+peps
+V 21
+dir 5-7.0.r4163/24701
+K 3
+ref
+V 20
+dir w-18.0.r4320/918
+K 4
+user
+V 22
+dir 1c-18.0.r4461/4658
+END
+ENDREP
+id: 3-7.0.r4488/1412
+type: dir
+pred: 3-7.0.r4487/5946
+count: 1147
+text: 4488 1135 264 264 197ae2e608c556d1724078c9ed2a82f4
+cpath: /trunk/docutils/docs
+copyroot: 0 /
+
+PLAIN
+K 8
+BUGS.txt
+V 24
+file 2-2181.0.r4315/6930
+K 11
+COPYING.txt
+V 21
+file 2-18.0.r4334/603
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r4452/428
+K 11
+HISTORY.txt
+V 22
+file 5-18.0.r4487/1276
+K 11
+MANIFEST.in
+V 23
+file 7-18.0.r4156/57222
+K 10
+README.txt
+V 21
+file 9-18.0.r4216/546
+K 17
+RELEASE-NOTES.txt
+V 23
+file 2-4204.0.r4274/412
+K 10
+THANKS.txt
+V 24
+file 2-2182.0.r4461/5277
+K 4
+docs
+V 20
+dir 3-7.0.r4488/1412
+K 8
+docutils
+V 22
+dir 1w-18.0.r4487/4298
+K 6
+extras
+V 23
+dir 2-1467.0.r4447/6104
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 23
+file 46-18.0.r4458/1685
+K 4
+test
+V 22
+dir 48-18.0.r4487/3103
+K 5
+tools
+V 22
+dir 6w-18.0.r4371/2326
+END
+ENDREP
+id: 1-7.0.r4488/2273
+type: dir
+pred: 1-7.0.r4487/6807
+count: 3262
+text: 4488 1578 682 682 fa1b334a66e3008a1d9f160771f9c90a
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r4488/2273
+K 5
+prest
+V 23
+dir 1-4326.0.r4345/6199
+K 7
+sandbox
+V 21
+dir 1-17.0.r4473/2965
+K 3
+web
+V 19
+dir 1-2.0.r4373/913
+END
+ENDREP
+id: 3-1.0.r4488/2654
+type: dir
+pred: 3-1.0.r4487/7188
+count: 4156
+text: 4488 2487 154 154 e56e85301c853a79974752d5d5bf7622
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 21
+dir 0-1.0.r4486/10008
+K 4
+tags
+V 20
+dir 2-1.0.r4331/4487
+K 5
+trunk
+V 20
+dir 3-1.0.r4488/2654
+END
+ENDREP
+id: 0.0.r4488/2934
+type: dir
+pred: 0.0.r4487/7468
+count: 4488
+text: 4488 2806 115 115 a8b537f6a1e0c74143bfcc40c37ce75a
+cpath: /
+copyroot: 0 /
+
+6-2369.0.t4487-3gn modify-file true false /trunk/docutils/docs/dev/testing.txt
+
+
+2934 3077

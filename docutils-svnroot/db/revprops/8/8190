@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-10-25T13:57:27.754337Z
+K 7
+svn:log
+V 91
+smartquotes: Fix bug #332.
+
+Use open quote after whitespace, ZWSP, and ZWNJ.
+Code cleanup.
+
+END

@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-12-12T18:10:04.642712Z
+K 7
+svn:log
+V 409
+"reStructuredText Specification" tweaks (mainly formatting).
+
+Mainly formatting (line breaks, inline literals instead of double quotes
+for rST input syntax examples).
+
+Show footnote symbols as literal chars instead of HTML character entities.
+
+Use colons around role names (like in the "standard roles" documentation).
+
+Slightly more discernible background colour for literals in "responsive.css"
+style sheet.
+END

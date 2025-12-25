@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-03-29T19:47:37.409147Z
+K 7
+svn:log
+V 88
+removed module cache;
+there is no speed penalty (alltests.py) and it simplifies the code
+END

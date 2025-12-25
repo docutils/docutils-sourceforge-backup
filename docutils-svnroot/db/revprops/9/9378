@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-05-10T10:12:11.848571Z
+K 7
+svn:log
+V 75
+Fix some flake8 warnings in test scripts and remove flake8 exception rules.
+END

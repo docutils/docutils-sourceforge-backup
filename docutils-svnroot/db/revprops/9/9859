@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2024-08-07T11:07:48.009325Z
+K 7
+svn:log
+V 149
+Don't call ``super().__init__()`` in ``TextElement``
+
+This might be causing test failures in Sphinx.
+Revert for now as a not-strictly-needed change.
+
+END

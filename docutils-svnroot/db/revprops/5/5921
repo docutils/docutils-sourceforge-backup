@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-04-25T22:30:34.577945Z
+K 7
+svn:log
+V 237
+latex2e writer update
+
+style (trailing whitespace, comment formatting,
+shorter names for latex_requirements and latex_fallbacks),
+custom class for "sortable dictionary",
+disable "active tilde" in Spanish instead of workaround with \~{}',
+END

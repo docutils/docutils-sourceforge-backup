@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-03-24T03:14:33.225546Z
+K 7
+svn:log
+V 88
+applied file_insertion_enabled setting to "figure" directive (disable "figwidth" option)
+END

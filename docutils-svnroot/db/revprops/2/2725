@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2004-10-19T23:36:31.000000Z
+K 7
+svn:log
+V 97
+Fixed directive parsing bug: argument-less directives didn't notice that arguments were present.
+
+END

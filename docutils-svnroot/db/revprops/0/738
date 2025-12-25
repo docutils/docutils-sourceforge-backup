@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 7
+richard
+K 8
+svn:date
+V 27
+2002-10-01T04:53:08.000000Z
+K 7
+svn:log
+V 193
+More "fixes" to the pysource stuff:
+- parser options are now passed down to the docstring parsing (yay, can
+  turn off annoying warnings like *args and **kw ;)
+- rjhack can do packages now too
+
+END

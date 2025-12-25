@@ -1,0 +1,47 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2005-04-17T22:18:30.946477Z
+K 7
+svn:log
+V 1551
+Two things to the underlining function for emacs:
+
+1. when the underlining is invoked with a negative argument
+   on a line that has no decoration, we should not interpret
+   that as a style switch (box vs simple). This is reserved
+   for a positive prefix-arg only.  This is more consistent
+   with the behaviour when there already is some decoration
+   present on the current title.
+
+2. changed the default sectioning char to a list, and the
+   underlining function to suggest a new underlining char
+   (i.e. one that is not already present in the file),
+   choosing it from the list formed by the difference between
+   the preferred sectioning chars and the chars already in
+   the file, when rotating the section underlines.
+
+   This is really useful, because in practice, you often
+   start a new file, and need to underline a new section
+   which doesn't have other existing underlining. By using
+   the list in the rest-preferred-characters variables
+   you can specify your usual preferred order for sectioning
+   chars and the new suggested character is automatically
+   the one you're expecting. I set the default preferred
+   list to something reasonable, =, then -, then ~, then
+   other stuff.  Feel free to customize for your own needs.
+
+   Note that the order that is already present in the file
+   is used above the preferred chars list.  The preferred
+   list is only used to suggest new characters.
+
+This is getting pretty cool.  I feel like this is probably
+the end of feature enhancements for this function.  Very
+happy with it.
+ 
+
+END

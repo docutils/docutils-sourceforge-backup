@@ -1,0 +1,27 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-08-19T16:53:27.973171Z
+K 7
+svn:log
+V 770
+rST parser: ensure that nested parsing only appends to the provided base node.
+
+* Always start a new title style hierarchy for nested parsing.
+* Append sections to the base node also if it is not a `<document>`
+  or `<section>` (revert [r10203]).
+
+This change makes the behaviour of nested parsing more uniform and predictable
+(independent of type and possible parents of the base node).
+
+It prevents problems with silently dropped higher level sections
+in Docutils < 0.22 (because the legacy "raise error and retry" algorithm
+of section parsing fails with nested parsing).
+It also prevents a wrong node order for sections in Docutils 0.22
+(because the calling parser has no means to know the new "insertion point"
+and continues where it left before the nested parsing).
+END

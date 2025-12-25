@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-11-27T16:14:01.549738Z
+K 7
+svn:log
+V 181
+More documentation fixes and updates.
+
+Fix example in directives doc.
+
+Update footnote about narrow/wide Python builds.
+
+Use full URI for links to documentation from web index page.
+END

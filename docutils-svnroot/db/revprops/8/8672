@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-04-07T12:10:06.673945Z
+K 7
+svn:log
+V 59
+Update documentation
+
+rST parser is no longer the only one.
+END

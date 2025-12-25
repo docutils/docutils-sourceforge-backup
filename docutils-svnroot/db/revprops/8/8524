@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-07-10T10:08:14.769958Z
+K 7
+svn:log
+V 181
+Make the sidebar's "title" argument optional.
+
+Feature request #69.
+
+The analogous DocBook "sidebar" element's title is optional. too
+(https://tdg.docbook.org/tdg/5.2/sidebar.html).
+END

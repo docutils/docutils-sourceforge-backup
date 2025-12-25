@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-12-24T00:22:46.000000Z
+K 7
+svn:log
+V 141
+Gee; again an accidental checkin.
+(docs/dev/release.txt was also accidentally checked in, but that's OK.)
+I shouldn't work when I'm tired...
+
+END

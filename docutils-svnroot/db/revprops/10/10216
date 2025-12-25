@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-08-20T12:04:32.664922Z
+K 7
+svn:log
+V 388
+LaTeX writer: fix anchor placement for figures, images, literal blocks, tables.
+
+New attribute "pre_nl" for `ids_to_labels()`: prepend newline to label
+definitions if there are labels.
+
+Move anchor and label definition(s) for images, figures, literal blocks,
+and tables before class wrappers and element.
+Now, after activating a link to the element, it is fully visible
+in the PDF viewer.
+END

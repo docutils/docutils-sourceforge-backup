@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-11-13T16:15:49.979069Z
+K 7
+svn:log
+V 185
+HTML5 writer: use parent `depart_document()` method.
+
+Store the arguments to starttag() in a class property, to allow for
+different tags (HTML4 <div class="document"> and HTML5 <main>).
+END

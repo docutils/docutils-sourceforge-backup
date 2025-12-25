@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-10-13T12:36:14.435615Z
+K 7
+svn:log
+V 343
+"include" directive: handle duplicate names and IDs in sub-documents
+
+When the :parser: option is specified, the included file is parsed
+into a dummy `<document>` and children are appended.
+Let internal bookkeeping attributes reference the main document
+equivalents, so that element names and IDs share a namespace
+with the including document.
+END

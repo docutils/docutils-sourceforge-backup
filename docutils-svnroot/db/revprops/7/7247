@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-12-05T21:20:43.968772Z
+K 7
+svn:log
+V 85
+argv_encoding != sys.stdin.encoding
+
+Thanks to Martin Bless for the report and tests.
+END

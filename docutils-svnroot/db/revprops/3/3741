@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T02:50:58.970909Z
+K 7
+svn:log
+V 81
+Improved to-do list entry about adding command line option
+for sectnum directive.
+END

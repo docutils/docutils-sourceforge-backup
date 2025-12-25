@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-03-03T22:16:35.520260Z
+K 7
+svn:log
+V 83
+Fix unexpected spaces around equals indicating keyword arguments.
+
+flake8 rule E251
+END

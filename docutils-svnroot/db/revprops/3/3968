@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-10-29T12:28:44.791963Z
+K 7
+svn:log
+V 106
+converted latin1 files to utf8;
+removed unnecessary -*- coding -*- tags;
+made some source files ASCII only
+END

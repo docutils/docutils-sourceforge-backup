@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2002-09-23T11:50:13.000000Z
+K 7
+svn:log
+V 173
++ style.tex: is included everytime (should go into config).
++ latex2e: more encoding and "_" in hyperreferences (maybe a bug).
++ verbatim does not work with obeylines, etc.
+
+END

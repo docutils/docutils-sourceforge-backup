@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 13
+matt_harrison
+K 8
+svn:date
+V 27
+2009-03-23T17:30:45.799193Z
+K 7
+svn:log
+V 57
+don't reuse style nodes if node.tail exists, bump version
+END

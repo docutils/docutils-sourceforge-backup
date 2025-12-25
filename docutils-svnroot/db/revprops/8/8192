@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2017-11-01T22:31:41.281196Z
+K 7
+svn:log
+V 101
+remove properties svn:eol-style and svn:keywords
+set property svn:mime-type application/octet-stream
+
+END

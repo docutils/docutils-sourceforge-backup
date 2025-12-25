@@ -1,0 +1,230 @@
+id: b-3472.0-4154.r4154/0
+type: file
+pred: b-3472.0-4011.r4153/1333
+count: 5
+text: 4153 0 1305 7594 1f0a934fb627085b3e05894c4e237bb8 a584cc2966f6beac900db5750a27bc4bb5112e68 4152-37c/_6
+props: 3472 72348 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /branches/s5/docs/ref/rst/definitions.txt
+copyfrom: 4153 /branches/s5/docs/ref/rst/substitutions.txt
+
+PLAIN
+K 15
+definitions.txt
+V 26
+file b-3472.0-4154.r4154/0
+K 14
+directives.txt
+V 28
+file 13-18.0-4011.r4036/1036
+K 16
+introduction.txt
+V 24
+file 16-18.0.r3974/11111
+K 20
+restructuredtext.txt
+V 22
+file 18-18.0.r3966/486
+K 9
+roles.txt
+V 23
+file 5-1085.0.r3978/785
+END
+ENDREP
+id: 12-18.0-4011.r4154/624
+type: dir
+pred: 12-18.0-4011.r4153/1930
+count: 200
+text: 4154 351 260 260 08036db4ef28d1e533e751a14e96a661
+cpath: /branches/s5/docs/ref/rst
+copyroot: 4011 /branches/s5
+
+PLAIN
+K 11
+doctree.txt
+V 23
+file x-18.0.r3963/21893
+K 12
+docutils.dtd
+V 24
+file 10-18.0.r3963/21598
+K 3
+rst
+V 26
+dir 12-18.0-4011.r4154/624
+K 12
+soextblx.dtd
+V 23
+file 1a-18.0.r18/303406
+K 14
+transforms.txt
+V 24
+file 4-855.0.r3901/20087
+END
+ENDREP
+id: w-18.0-4011.r4154/1068
+type: dir
+pred: w-18.0-4011.r4153/2377
+count: 294
+text: 4154 820 235 235 7ae02395892f8bb914a39ef6b12aee27
+cpath: /branches/s5/docs/ref
+copyroot: 4011 /branches/s5
+
+PLAIN
+K 3
+api
+V 22
+dir 3-2394.0.r3599/791
+K 3
+dev
+V 25
+dir 3-12.0-4011.r4135/990
+K 5
+howto
+V 22
+dir 3-749.0.r3913/1024
+K 9
+index.txt
+V 25
+file 3-2171.0.r3981/36096
+K 4
+peps
+V 21
+dir 5-7.0.r3974/10637
+K 3
+ref
+V 26
+dir w-18.0-4011.r4154/1068
+K 4
+user
+V 27
+dir 1c-18.0-4011.r4141/9148
+END
+ENDREP
+id: 3-7.0-4011.r4154/1552
+type: dir
+pred: 3-7.0-4011.r4153/2862
+count: 1074
+text: 4154 1259 280 280 b2a24e73127a6223ac61606518f1fce3
+cpath: /branches/s5/docs
+copyroot: 4011 /branches/s5
+
+PLAIN
+K 8
+BUGS.txt
+V 23
+file 2-2181.0.r3973/437
+K 11
+COPYING.txt
+V 27
+file 2-18.0-4011.r4086/7668
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r3953/422
+K 11
+HISTORY.txt
+V 27
+file 5-18.0-4011.r4141/7436
+K 11
+MANIFEST.in
+V 25
+file 7-18.0-4011.r4138/53
+K 10
+README.txt
+V 21
+file 9-18.0.r3997/242
+K 10
+THANKS.txt
+V 29
+file 2-2182.0-4011.r4141/7739
+K 4
+docs
+V 25
+dir 3-7.0-4011.r4154/1552
+K 8
+docutils
+V 27
+dir 1w-18.0-4011.r4139/2295
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 27
+file 46-18.0-4011.r4137/181
+K 4
+test
+V 27
+dir 48-18.0-4011.r4140/5337
+K 5
+tools
+V 26
+dir 6w-18.0-4011.r4012/910
+END
+ENDREP
+id: 1-7.0-4011.r4154/2421
+type: dir
+pred: 1-7.0-4011.r4153/3731
+count: 3083
+text: 4154 1739 669 669 c8e7d2195623a8a92f828a79e3c95406
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /branches/s5
+copyroot: 4011 /branches/s5
+
+PLAIN
+K 7
+nesting
+V 27
+dir 3-1.0-1813.r2577/106277
+K 2
+s5
+V 25
+dir 1-7.0-4011.r4154/2421
+END
+ENDREP
+id: 0-1.0.r4154/2756
+type: dir
+pred: 0-1.0.r4153/4067
+count: 223
+text: 4154 2656 87 87 9c51c80a996a9765b1ee0525d2c8721a
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r4154/2756
+K 4
+tags
+V 19
+dir 2-1.0.r3816/482
+K 5
+trunk
+V 21
+dir 3-1.0.r4152/20020
+END
+ENDREP
+id: 0.0.r4154/3035
+type: dir
+pred: 0.0.r4153/4347
+count: 4154
+text: 4154 2908 114 114 bebc687daee902ead95aedf15b8e92e6
+cpath: /
+copyroot: 0 /
+
+b-3472._0.t4153-37d add-file false false /branches/s5/docs/ref/rst/definitions.txt
+4153 /branches/s5/docs/ref/rst/substitutions.txt
+b-3472.0-4011.r4153/1333 delete-file false false /branches/s5/docs/ref/rst/substitutions.txt
+
+
+3035 3178

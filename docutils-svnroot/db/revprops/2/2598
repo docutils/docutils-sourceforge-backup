@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2004-09-13T00:18:57.000000Z
+K 7
+svn:log
+V 100
+added input_encoding_error_handler to external file processing (include, raw, csv-table directives)
+
+END

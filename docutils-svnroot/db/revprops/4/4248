@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-01-08T00:17:30.043674Z
+K 7
+svn:log
+V 238
+added support for svk;
+added creation of maintenance branch;
+copy test/ to /usr/lib/python2.x/site-packages/ before testing;
+added support for RELEASE-NOTES.txt;
+some bits of this are untested; fixes will follow when I do the next release
+END

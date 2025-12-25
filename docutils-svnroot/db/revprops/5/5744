@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2008-12-02T19:36:30.244735Z
+K 7
+svn:log
+V 294
+* Delete spaces within URIs of targets and embedded URIs
+* Hopefully fixed a problem that was causing regression failures for
+  perl 5.9 and above
+* Fixed a problem that occurred if Encode module was not available
+* Added "tab" as a value for the :delim: option of the csv-table::
+  directive.
+
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 12
+paultremblay
+K 8
+svn:date
+V 27
+2011-02-09T15:36:59.469460Z
+K 7
+svn:log
+V 56
+Added template to match attribute for borderless cells.
+
+END

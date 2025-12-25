@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-06-22T08:56:28.700897Z
+K 7
+svn:log
+V 122
+Wheels are no longer "universal" after dropping Py2.7 support.
+
+Cf. https://wheel.readthedocs.io/en/stable/user_guide.html
+END

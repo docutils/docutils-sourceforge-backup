@@ -1,0 +1,220 @@
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 4
+1.32
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 10-18.0.r2722/124
+type: file
+pred: 10-18.0.r2721/124
+count: 31
+text: 2720 0 120 16034 bd6f740f7d68adf3598f10baa46f8351 ddb82c5c4c6dabd0c57aae7e184bd904d0be6883 2721-23l/_5
+props: 2722 0 111 0 18cdb9becb11c47631b7a093e907200c
+cpath: /trunk/docutils/docs/ref/docutils.dtd
+copyroot: 0 /
+
+PLAIN
+K 11
+doctree.txt
+V 22
+file x-18.0.r2562/7024
+K 12
+docutils.dtd
+V 22
+file 10-18.0.r2722/124
+K 3
+rst
+V 21
+dir 12-18.0.r2700/720
+K 12
+soextblx.dtd
+V 23
+file 1a-18.0.r18/303406
+K 14
+transforms.txt
+V 23
+file 4-855.0.r2203/1887
+END
+ENDREP
+id: w-18.0.r2722/652
+type: dir
+pred: w-18.0.r2721/652
+count: 199
+text: 2722 413 226 226 14f18593aee53d8f06771c1a6b6410d2
+cpath: /trunk/docutils/docs/ref
+copyroot: 0 /
+
+PLAIN
+K 3
+api
+V 22
+dir 3-2394.0.r2627/650
+K 3
+dev
+V 21
+dir 3-12.0.r2717/1439
+K 5
+howto
+V 21
+dir 3-749.0.r2610/920
+K 9
+index.txt
+V 23
+file 3-2171.0.r2506/355
+K 4
+peps
+V 20
+dir 5-7.0.r2219/6508
+K 3
+ref
+V 20
+dir w-18.0.r2722/652
+K 4
+user
+V 21
+dir 1c-18.0.r2709/968
+END
+ENDREP
+id: 3-7.0.r2722/1093
+type: dir
+pred: 3-7.0.r2721/1093
+count: 723
+text: 2722 820 260 260 2720501dfea402d452675e9161687ab1
+cpath: /trunk/docutils/docs
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 21
+file 2-340.0.r340/154
+K 8
+BUGS.txt
+V 24
+file 2-2181.0.r2654/8749
+K 11
+COPYING.txt
+V 22
+file 2-18.0.r2354/3164
+K 7
+FAQ.txt
+V 23
+file 2-788.0.r2708/1148
+K 11
+HISTORY.txt
+V 21
+file 5-18.0.r2714/279
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r2513/394
+K 10
+README.txt
+V 21
+file 9-18.0.r2538/681
+K 10
+THANKS.txt
+V 23
+file 2-2182.0.r2655/199
+K 4
+docs
+V 20
+dir 3-7.0.r2722/1093
+K 8
+docutils
+V 22
+dir 1w-18.0.r2716/4690
+K 6
+extras
+V 23
+dir 2-1467.0.r1686/1264
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 23
+file 46-18.0.r2518/1499
+K 4
+test
+V 22
+dir 48-18.0.r2716/2891
+K 5
+tools
+V 22
+dir 6w-18.0.r2692/3789
+END
+ENDREP
+id: 1-7.0.r2722/1941
+type: dir
+pred: 1-7.0.r2721/1941
+count: 2037
+text: 2722 1257 671 671 9448dca7d1d81290561f1855abbacf06
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r2722/1941
+K 7
+sandbox
+V 21
+dir 1-17.0.r2718/1168
+K 3
+web
+V 19
+dir 1-2.0.r2682/828
+END
+ENDREP
+id: 3-1.0.r2722/2283
+type: dir
+pred: 3-1.0.r2721/2283
+count: 2696
+text: 2722 2155 115 115 414a090080b8f0541cc8d2f315afc7f7
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 22
+dir 0-1.0.r2577/106684
+K 4
+tags
+V 20
+dir 2-1.0.r2576/3944
+K 5
+trunk
+V 20
+dir 3-1.0.r2722/2283
+END
+ENDREP
+id: 0.0.r2722/2564
+type: dir
+pred: 0.0.r2721/2564
+count: 2722
+text: 2722 2435 116 116 9c2c338cdf826c1fd1e251e56ad0e851
+cpath: /
+copyroot: 0 /
+
+10-18.0.t2721-23l modify-file true true /trunk/docutils/docs/ref/docutils.dtd
+
+
+2564 2707

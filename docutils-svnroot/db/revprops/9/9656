@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-04-25T07:20:57.996048Z
+K 7
+svn:log
+V 30
+Fix license issue [bugs:#487].
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-03-21T19:29:04.000000Z
+K 7
+svn:log
+V 107
+I don't think nodes.Text should have a children attribute at all, but if it does, it shouldn't be mutable.
+
+END

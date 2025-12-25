@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-03-31T10:29:53.021266Z
+K 7
+svn:log
+V 108
+HTML5: only minimal styling for admonitions in minimal.css.
+
+Move extended styling with frames to plain.css.
+END

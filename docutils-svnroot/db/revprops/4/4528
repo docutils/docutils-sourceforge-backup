@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2006-05-09T14:14:42.697762Z
+K 7
+svn:log
+V 80
+updated tests; inconsistent str/unicode due to initialization, to be fixed later
+END

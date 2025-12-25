@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-04-09T15:43:59.764115Z
+K 7
+svn:log
+V 67
+Revert r8667 "replace unicode copyright by ``(c)``" in the sandbox.
+END

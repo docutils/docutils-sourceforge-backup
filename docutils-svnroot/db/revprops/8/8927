@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-03T23:50:05.411969Z
+K 7
+svn:log
+V 149
+Drop special-casing for Python 2.x in tests and tools.
+
+Use "python3" in the shebang line
+(cf. PEP 394 -- The "python" Command on Unix-Like Systems).
+END

@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2005-03-30T05:56:57.441524Z
+K 7
+svn:log
+V 147
+Fixed an oops with join-paragraph, prefer
+new version.
+(sorry I had been working on a copy on
+my load-path rather than on the docutils checkout).
+
+
+END

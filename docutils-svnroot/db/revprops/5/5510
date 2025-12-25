@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2008-02-15T09:23:07.802412Z
+K 7
+svn:log
+V 42
+Allow ``+`` and ``:`` in reference names.
+
+END

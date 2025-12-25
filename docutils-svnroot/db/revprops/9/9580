@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-03-17T23:30:55.626540Z
+K 7
+svn:log
+V 124
+Update target highlight rule in "responsive" HTML5 stylesheet.
+
+Higlight target, if it is a description list term or a span.
+END

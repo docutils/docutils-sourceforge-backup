@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-09-09T09:54:18.529446Z
+K 7
+svn:log
+V 486
+rST parser: Use `section_level_offset` instead of `memo.section_level`.
+
+Keeping record of the current section level in the state machine's "memo"
+is cumbersome and error prone because it needs to be updated with every switch
+of the current node.
+
+Store the difference between the intended start level of nested parsing and the
+number of parents of the base node in the new attribute `section_level_offset`.
+Use it to correct the section level determined via `node.section_hierarchy()`.
+END

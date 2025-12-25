@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2016-12-31T13:55:06.940650Z
+K 7
+svn:log
+V 303
+Fix problems with DTD.
+
+* align is a new attribute for the table element (was attached to the table
+  entry)
+* measures may contain the percent sign (%), not allowed in NMTOKENS
+* documentation update
+
+Still errors with xmllint: IDREF cannot ref to "ids". An ID must be unique.
+There is no IDS datatype.
+END

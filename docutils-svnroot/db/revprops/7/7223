@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-11-21T16:43:06.684728Z
+K 7
+svn:log
+V 67
+translations de: pull-quote = Seitenansprache, use utf8 for umlauts
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-05-21T00:00:25.019795Z
+K 7
+svn:log
+V 46
+added --id-prefix and --auto-id-prefix options
+END

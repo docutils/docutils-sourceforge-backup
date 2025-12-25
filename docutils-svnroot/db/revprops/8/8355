@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-08-26T16:42:50.672108Z
+K 7
+svn:log
+V 311
+py3: Replace 'types.SliceType' with slice, remove 'types.ClassType'.
+
+These types have been removed in Python 3,
+`SliceType` is an alias for `slice` already in Python 2.7,
+`ClassType` is for user-defined old-style classes (we now use only new style classes).
+
+Signed-off-by: Stephen Finucane <stephen@that.guru>
+END

@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2008-10-29T22:07:27.807034Z
+K 7
+svn:log
+V 127
+Revived explicit citation handling. Improved citation markup.
+
+Brackets missing for ``-- citation [CIT]_`` after block quotes.
+
+END

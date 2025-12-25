@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-02-06T15:10:46.533133Z
+K 7
+svn:log
+V 147
+docs: Add a note about using tox to test multiple python
+
+If you've got it, you should use it.
+
+Signed-off-by: Stephen Finucane <stephen@that.guru>
+END

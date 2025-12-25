@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2003-07-05T19:38:11.000000Z
+K 7
+svn:log
+V 92
+updated ``RSTState.nested_parse`` for "include" in table cells, but not sure of correctness
+
+END

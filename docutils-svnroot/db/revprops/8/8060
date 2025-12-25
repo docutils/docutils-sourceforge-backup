@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-04-19T20:00:04.023216Z
+K 7
+svn:log
+V 113
+Partial cleanup of the "character-level inline markup" patch [103].
+
+Improve backwards compatibility of  [ 103 ].
+END

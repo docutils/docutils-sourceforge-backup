@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-04-16T20:49:11.367558Z
+K 7
+svn:log
+V 124
+added assert to make sure we aren't accidentally adding two classes
+in one string (because that wouldn't be noticed in HTML)
+END

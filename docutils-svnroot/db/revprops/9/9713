@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-18T08:45:06.994286Z
+K 7
+svn:log
+V 114
+Doctree validation: small fixes.
+
+Docstring for Element.validate().
+
+Indent secondary message lines with 2 spaces.
+END

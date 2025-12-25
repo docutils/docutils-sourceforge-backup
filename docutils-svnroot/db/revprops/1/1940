@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+edloper
+K 8
+svn:date
+V 27
+2004-04-15T20:19:07.000000Z
+K 7
+svn:log
+V 86
+- Added docstring for DEFAULT_INTERPRETED_ROLE
+- Added register_generic_role() helper
+
+END

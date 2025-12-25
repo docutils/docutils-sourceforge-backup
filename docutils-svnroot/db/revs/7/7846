@@ -1,0 +1,318 @@
+PLAIN
+K 28
+biohazard-bitmap-scaling.svg
+V 24
+file 6-7827.0.r7827/9242
+K 20
+biohazard-bitmap.svg
+V 25
+file 6-7809.0.r7809/15235
+K 21
+biohazard-scaling.svg
+V 25
+file 7-6253.0.r6253/21416
+K 13
+biohazard.png
+V 23
+file 1o-18.0.r3670/3634
+K 13
+biohazard.svg
+V 25
+file a-6253.0.r6254/16184
+K 13
+biohazard.swf
+V 24
+file 6-6261.0.r6261/1394
+K 17
+title-scaling.svg
+V 24
+file c-6253.0.r7827/9485
+K 9
+title.png
+V 24
+file 1q-18.0.r5940/13611
+K 9
+title.svg
+V 24
+file e-6253.0.r7827/9741
+END
+ENDREP
+id: 1f-18.0.r7846/484
+type: dir
+pred: 1f-18.0.r7827/10518
+count: 9
+text: 7846 0 471 471 315737051fe0e9e33057f5159ac5fd0b
+cpath: /trunk/docutils/docs/user/rst/images
+copyroot: 0 /
+
+PLAIN
+K 14
+cheatsheet.txt
+V 23
+file 5-2153.0.r7612/201
+K 8
+demo.txt
+V 25
+file 5-2490.0.r7302/43033
+K 6
+images
+V 21
+dir 1f-18.0.r7846/484
+K 13
+quickref.html
+V 21
+file 1s-18.0.r6021/51
+K 14
+quickstart.txt
+V 22
+file 1u-18.0.r5801/551
+END
+ENDREP
+id: 1d-18.0.r7846/906
+type: dir
+pred: 1d-18.0.r7827/10947
+count: 88
+text: 7846 664 229 229 fabc89464cf587ec0d74068800e758c8
+cpath: /trunk/docutils/docs/user/rst
+copyroot: 0 /
+
+PLAIN
+K 24
+Makefile.docutils-update
+V 27
+file 4-4165.0-4175.r4239/41
+K 10
+config.txt
+V 24
+file 4-1639.0.r7828/1480
+K 26
+docutils-05-compat.sty.txt
+V 25
+file 5-5891.0.r7302/42372
+K 9
+emacs.txt
+V 24
+file 5-3981.0.r7712/8093
+K 6
+images
+V 29
+dir 4-4012.1-4156.r4156/55646
+K 9
+latex.txt
+V 23
+file 4-1264.0.r7667/423
+K 9
+links.txt
+V 22
+file 4-3399.0.r7844/46
+K 17
+mailing-lists.txt
+V 28
+file 4-3385.0-3393.r7644/581
+K 11
+manpage.txt
+V 30
+file 5-4773.0-6085.r7302/42686
+K 7
+odt.txt
+V 25
+file 5-5834.0.r7528/14749
+K 3
+rst
+V 21
+dir 1d-18.0.r7846/906
+K 15
+slide-shows.txt
+V 28
+file b-3204.3-4156.r4451/587
+K 9
+tools.txt
+V 23
+file 4-365.0.r7828/1778
+END
+ENDREP
+id: 1c-18.0.r7846/1732
+type: dir
+pred: 1c-18.0.r7844/986
+count: 518
+text: 7846 1082 637 637 54479401dbf25981cc60061d6e194260
+cpath: /trunk/docutils/docs/user
+copyroot: 0 /
+
+PLAIN
+K 3
+api
+V 24
+dir 3-2394.0.r7302/33185
+K 3
+dev
+V 21
+dir 3-12.0.r7801/3169
+K 5
+howto
+V 21
+dir 3-749.0.r7769/778
+K 9
+index.txt
+V 25
+file 3-2171.0.r7302/31809
+K 4
+peps
+V 20
+dir 5-7.0.r6154/4063
+K 3
+ref
+V 21
+dir w-18.0.r7804/4331
+K 4
+user
+V 22
+dir 1c-18.0.r7846/1732
+END
+ENDREP
+id: 3-7.0.r7846/2184
+type: dir
+pred: 3-7.0.r7844/1436
+count: 1534
+text: 7846 1905 266 266 af96342839f28e2ec655b0a6f0015fee
+cpath: /trunk/docutils/docs
+copyroot: 0 /
+
+PLAIN
+K 8
+BUGS.txt
+V 24
+file 2-2181.0.r7768/4467
+K 11
+COPYING.txt
+V 23
+file 2-18.0.r7530/19019
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r7677/912
+K 11
+HISTORY.txt
+V 22
+file 5-18.0.r7845/3332
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r6258/102
+K 10
+README.txt
+V 22
+file 9-18.0.r7768/4750
+K 17
+RELEASE-NOTES.txt
+V 24
+file 2-4204.0.r7837/1518
+K 10
+THANKS.txt
+V 24
+file 2-2182.0.r7784/1491
+K 4
+docs
+V 20
+dir 3-7.0.r7846/2184
+K 8
+docutils
+V 22
+dir 1w-18.0.r7845/6020
+K 13
+docutils.conf
+V 23
+file 2-7375.0.r7375/485
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 24
+dir 2-1465.0.r7058/32984
+K 9
+setup.cfg
+V 24
+file 4-6255.0.r7442/5812
+K 8
+setup.py
+V 23
+file 46-18.0.r7817/3576
+K 4
+test
+V 23
+dir 48-18.0.r7845/11802
+K 5
+tools
+V 23
+dir 6w-18.0.r7818/21346
+END
+ENDREP
+id: 1-7.0.r7846/3102
+type: dir
+pred: 1-7.0.r7845/12794
+count: 4490
+text: 7846 2350 739 739 e12dea15bc7df6d05754a0ed185e8873
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+minfo-cnt: 1
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r7846/3102
+K 5
+prest
+V 24
+dir 1-4326.0.r6498/50375
+K 7
+sandbox
+V 21
+dir 1-17.0.r7842/6202
+K 3
+web
+V 19
+dir 1-2.0.r7765/625
+END
+ENDREP
+id: 3-1.0.r7846/3498
+type: dir
+pred: 3-1.0.r7845/13192
+count: 7380
+text: 7846 3330 155 155 34ecd31d5fb0e8cf270c04cc9f069fe0
+cpath: /trunk
+copyroot: 0 /
+minfo-cnt: 6
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r7803/595
+K 4
+tags
+V 20
+dir 2-1.0.r7759/1108
+K 5
+trunk
+V 20
+dir 3-1.0.r7846/3498
+END
+ENDREP
+id: 0.0.r7846/3790
+type: dir
+pred: 0.0.r7845/13486
+count: 7846
+text: 7846 3664 113 113 f82e1e5e23bff73f4b45d4476d37f7ec
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+minfo-cnt: 15
+
+1h-18.0.r3670/2875 delete-file false false /trunk/docutils/docs/user/rst/images/ball1.gif
+
+
+3790 3999

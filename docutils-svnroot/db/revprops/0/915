@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-11-08T01:32:08.000000Z
+K 7
+svn:log
+V 222
+Added ``ViewList`` & ``StringList`` classes, to allow synchronized updating of parent lists from slices (child lists).  ``extract_indented()`` becomes ``StringList.get_indented()``.  Added ``StateMachine.insert_input()``.
+
+END

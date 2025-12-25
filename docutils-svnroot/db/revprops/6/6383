@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2010-08-07T14:43:19.680306Z
+K 7
+svn:log
+V 187
+Inline markup is constrained to a length of 1000 characters to pacify
+regular expression matcher. Fixes "Stack overflow in regexp matcher"
+occuring occasionally in complicated documents.
+
+END

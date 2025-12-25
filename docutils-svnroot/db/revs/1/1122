@@ -1,0 +1,244 @@
+PLAIN
+K 7
+FAQ.txt
+V 23
+file 5-1104.0.r1104/123
+K 11
+HISTORY.txt
+V 23
+file 5-1101.0.r1101/851
+K 13
+docutils.conf
+V 23
+file 6-1100.0.r1100/376
+K 13
+downloads.txt
+V 24
+file 5-1109.0.r1109/1025
+K 9
+head.html
+V 23
+file 5-1112.0.r1112/431
+K 10
+index.html
+V 23
+file 5-1111.0.r1111/472
+K 17
+navigation_l.html
+V 23
+file 5-1113.0.r1113/549
+K 17
+navigation_r.html
+V 23
+file 5-1114.0.r1114/631
+K 4
+pics
+V 24
+dir 5-1118.0.r1120/47766
+K 15
+screenshots.txt
+V 24
+file 8-1109.0.r1109/1830
+K 9
+start.txt
+V 24
+file a-1109.0.r1109/1428
+K 11
+stylesheets
+V 22
+dir 5-1115.0.r1117/887
+END
+ENDREP
+id: 4-1100.0.r1122/572
+type: dir
+pred: 4-1100.0.r1120/48770
+count: 19
+text: 1122 0 559 559 c6aac9d0012caedbfa0884d8a272e5f5
+cpath: /trunk/sandbox/gschwant/docfactory/doc
+copyroot: 0 /
+
+PLAIN
+K 11
+LICENSE.txt
+V 23
+file 6-675.0.r675/19690
+K 9
+NOTES.txt
+V 21
+file 4-676.0.r676/841
+K 10
+README.txt
+V 22
+file 9-675.0.r1097/191
+K 3
+doc
+V 22
+dir 4-1100.0.r1122/572
+K 14
+docfactory.ico
+V 23
+file d-675.0.r675/20887
+K 13
+docfactory.py
+V 24
+file f-675.0.r1068/16539
+K 17
+docfactory2exe.py
+V 23
+file 4-1074.0.r1074/438
+K 13
+docutils.conf
+V 23
+file 4-1099.0.r1099/385
+K 7
+factory
+V 22
+dir h-675.0.r1096/4533
+K 8
+setup.py
+V 24
+file x-675.0.r1068/20258
+END
+ENDREP
+id: 4-675.0.r1122/1222
+type: dir
+pred: 4-675.0.r1121/6964
+count: 44
+text: 1122 757 452 452 d5ac59ac6ee8d1eda81b9816a8037f2f
+cpath: /trunk/sandbox/gschwant/docfactory
+copyroot: 0 /
+
+PLAIN
+K 10
+docfactory
+V 22
+dir 4-675.0.r1122/1222
+END
+ENDREP
+id: 2-675.0.r1122/1464
+type: dir
+pred: 2-675.0.r1121/7208
+count: 44
+text: 1122 1403 48 48 9ae41a484958b754918af171d487bae8
+cpath: /trunk/sandbox/gschwant
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 21
+file 3-17.0.r115/8760
+K 4
+aahz
+V 21
+dir 2-820.0.r838/4508
+K 4
+bbum
+V 24
+dir 2-1039.0.r1093/10960
+K 6
+davidg
+V 19
+dir 6-17.0.r977/925
+K 7
+grubert
+V 22
+dir 2-112.0.r1075/1798
+K 8
+gschwant
+V 22
+dir 2-675.0.r1122/1464
+K 4
+ianb
+V 21
+dir 2-881.0.r881/2335
+K 3
+mwh
+V 21
+dir 2-857.0.r862/1023
+K 7
+oliverr
+V 21
+dir 2-202.0.r925/1830
+K 7
+richard
+V 22
+dir 2-526.0.r1089/2918
+K 6
+simonb
+V 21
+dir 2-252.0.r345/3718
+K 4
+tibs
+V 21
+dir 2-62.0.r1089/1615
+END
+ENDREP
+id: 1-17.0.r1122/2109
+type: dir
+pred: 1-17.0.r1121/7854
+count: 204
+text: 1122 1633 463 463 afdc77776903186e138d574206f3ed27
+cpath: /trunk/sandbox
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r1098/1213
+K 7
+sandbox
+V 21
+dir 1-17.0.r1122/2109
+K 3
+web
+V 20
+dir 1-2.0.r1095/7224
+END
+ENDREP
+id: 3-1.0.r1122/2399
+type: dir
+pred: 3-1.0.r1121/8145
+count: 1114
+text: 1122 2270 116 116 7e37651fcc276780409960dc6f2ad44e
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 17
+dir 0-1.0.r63/562
+K 4
+tags
+V 17
+dir 2-1.0.r65/217
+K 5
+trunk
+V 20
+dir 3-1.0.r1122/2399
+END
+ENDREP
+id: 0.0.r1122/2672
+type: dir
+pred: 0.0.r1121/8419
+count: 1122
+text: 1122 2551 108 108 3c41d6f0dcf357d27f39bac0ffa56c70
+cpath: /
+copyroot: 0 /
+
+5-1107.0.r1107/788 delete-file false false /trunk/sandbox/gschwant/docfactory/doc/start.html
+
+5-1108.0.r1108/567 delete-file false false /trunk/sandbox/gschwant/docfactory/doc/screenshots.html
+
+5-1103.0.r1103/1219 delete-file false false /trunk/sandbox/gschwant/docfactory/doc/HISTORY.html
+
+5-1106.0.r1106/1603 delete-file false false /trunk/sandbox/gschwant/docfactory/doc/FAQ.html
+
+4-1121.0.r1121/6172 delete-file false false /trunk/sandbox/gschwant/docfactory/README.html
+
+5-1110.0.r1110/590 delete-file false false /trunk/sandbox/gschwant/docfactory/doc/downloads.html
+
+
+2672 2815

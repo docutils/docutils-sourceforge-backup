@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-03-14T17:03:52.391050Z
+K 7
+svn:log
+V 90
+Apply patch #165: Fix error when copying `system_message` node.
+
+Thanks to Takeshi KOMIYA.
+END

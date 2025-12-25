@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T02:29:47.320781Z
+K 7
+svn:log
+V 182
+Removed entry about default role. Already implemented,
+and there is agreement that we do not want a warning when no default
+role is given (:title-reference: as default role is fine).
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-01-22T18:41:58.872748Z
+K 7
+svn:log
+V 123
+updated release procedure: no check-in freeze,
+use release notes instead of CHANGES.txt; added note about
+branching/tagging
+END

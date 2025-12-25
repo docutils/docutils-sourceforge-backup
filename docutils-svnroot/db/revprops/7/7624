@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2013-03-07T14:10:26.437560Z
+K 7
+svn:log
+V 73
+Fix [ 3607029 ] traceback with embedded alias pointing to missing target.
+END

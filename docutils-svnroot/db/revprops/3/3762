@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-17T21:29:51.076160Z
+K 7
+svn:log
+V 181
+removed a lot of paragraph-handling code;
+some was unnecessary, some will be replaced by custom paragraph-indentation logic
+in the Python module;
+always add space around transitions
+END

@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-08-10T14:14:13.959170Z
+K 7
+svn:log
+V 141
+LaTeX writer: Refactor computation of table column widths.
+
+Prepare for fixes (cf. bug #422).
+Update documentation.
+
+No change to the output.
+END

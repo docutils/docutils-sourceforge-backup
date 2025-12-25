@@ -1,0 +1,80 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2010-12-12T18:32:18.020683Z
+K 7
+svn:log
+V 1612
+Functional changes
+==================
+
+* `rst-insert-list` inserts new list or continues existing lists
+
+  * Based on code by Wei-Wei Guo
+
+* Revised key bindings
+
+  * Rebound nearly all bindings to make room in the keymap for further
+    extensions and to bind them to the same keys as in other modes
+
+  * New key bindings use a two step approach
+
+  * Old bindings are still present but deprecated
+
+  * Bindings are described with ^H
+
+* Improvements in regular expressions
+
+  * `comment-start-skip` cares about indendation relative to explicit
+    markup tag so such comments are filled properly
+
+  * Shift region works with all kinds of valid item types
+
+  * Paragraph starts recognize list item types and no longer allows
+    ">" prefixes
+
+* Other improvements
+
+  * Bullets are no longer customizable and contain all bullets
+    supported by reST
+
+  * `rst-toc-update` sets point correctly
+
+  * `rst-bullet-list-region` uses `rst-preferred-bullets`
+
+Refactorings
+============
+
+* Regular expressions are handled by own infrastructure so they become
+  much more comprehensible
+
+* Revised tests
+
+  * Introduced `ert` as a test framework
+
+  * Added support for `ert` based tests
+
+  * Refactored existing tests to use `ert`
+
+  * Added tests for regular expression refactoring
+
+  * Added tests for inserting items
+
+  * Added tests for toc insertion
+
+* Improved structure of some functions
+
+* Replaced "decoration" and derivatives to "adornment" so the wording
+  is now the same everywhere
+
+* Made a couple of reST structures explicit in `defconst`\s
+
+* Removed Emacs backward compatibility code
+
+* Added `IDEAS.rst`
+
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-06-28T19:42:03.000000Z
+K 7
+svn:log
+V 85
+moved doctitle-should-be-target bug to 'reStructuredText Parser' section of todo.txt
+
+END

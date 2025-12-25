@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-03-04T15:54:56.131493Z
+K 7
+svn:log
+V 250
+Ensure comments start with '# '
+
+flake rules
+E262: inline comment should start with '# '
+E265: block comment should start with '# '
+E266: too many leading '#' for block comment
+
+Exception for latex2e (legacy convention to mark disabled code with ##).
+END

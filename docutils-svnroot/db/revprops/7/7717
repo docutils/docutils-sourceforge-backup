@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2013-08-21T22:01:21.574651Z
+K 7
+svn:log
+V 45
+Apply patch by Jakub Wilk to fix bug [ 100 ].
+END

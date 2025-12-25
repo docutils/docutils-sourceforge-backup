@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-09-11T14:24:35.504055Z
+K 7
+svn:log
+V 265
+Fix [ 2809965 ] Test suite failure on Windows (CR/LF incompatibility)
+
+FileOutput now open files in text mode again. As there is a BinaryFileOutput
+class too, I suppose the change to "wb" instead of "w" is a side-effect of
+the latest Python-3 compatibility change.
+
+END

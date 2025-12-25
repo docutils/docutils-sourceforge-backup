@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-09-21T21:28:48.249706Z
+K 7
+svn:log
+V 194
+Tab expansion in literal inclusions, ``tab-width`` option of for "include"
+
+Tab expansion in included files is now done generally and configurable 
+(a negative tab-width prevents tab expansion).
+END

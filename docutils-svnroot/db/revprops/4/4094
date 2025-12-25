@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-11-21T20:19:09.034672Z
+K 7
+svn:log
+V 119
+added history entries for recent additions and changes to Emacs support;
+added history entry for fix of centered images
+END

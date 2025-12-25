@@ -1,0 +1,103 @@
+K 8
+Dir.smak
+V 31
+file 1u-5058.p-4580.r5058/83880
+K 15
+bodyonly.myhtml
+V 28
+file 7-4945.p-4580.r4945/953
+K 12
+bodyonly.rst
+V 28
+file 9-4945.p-4580.r4945/698
+K 14
+class01.myhtml
+V 30
+file a-6438.p-4580.r6498/39385
+K 11
+class01.rst
+V 30
+file d-6438.p-4580.r6498/40279
+K 17
+dupsection.myhtml
+V 28
+file 5-6437.p-4580.r6437/974
+K 14
+dupsection.rst
+V 28
+file 8-6437.p-4580.r6437/715
+K 16
+entryattr.myhtml
+V 31
+file xn-4327.p-4580.r6498/39979
+K 13
+entryattr.rst
+V 29
+file xp-4327.p-4580.r6287/315
+K 17
+interptags.myhtml
+V 32
+file xr-4327.p-4580.r4580/165609
+K 14
+interptags.rst
+V 27
+file xt-4327.0.r4327/874419
+K 15
+mathml01.myhtml
+V 29
+file f-6232.p-4580.r6232/8008
+K 12
+mathml01.rst
+V 29
+file i-6232.p-4580.r6232/7749
+K 16
+systemmsg.myhtml
+V 32
+file 1r-4710.p-4580.r4710/246085
+K 13
+systemmsg.rst
+V 32
+file 1t-4710.p-4580.r4710/245820
+K 16
+tableattr.myhtml
+V 31
+file xv-4327.p-4580.r6498/39679
+K 13
+tableattr.rst
+V 29
+file xx-4327.p-4580.r6287/604
+END
+D 8
+Dir.smak
+D 15
+bodyonly.myhtml
+D 12
+bodyonly.rst
+D 14
+class01.myhtml
+D 11
+class01.rst
+D 17
+dupsection.myhtml
+D 14
+dupsection.rst
+D 16
+entryattr.myhtml
+D 13
+entryattr.rst
+D 17
+interptags.myhtml
+D 14
+interptags.rst
+D 15
+mathml01.myhtml
+D 12
+mathml01.rst
+D 16
+systemmsg.myhtml
+D 13
+systemmsg.rst
+D 16
+tableattr.myhtml
+D 13
+tableattr.rst

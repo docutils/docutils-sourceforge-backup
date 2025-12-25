@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2011-04-29T23:20:54.101609Z
+K 7
+svn:log
+V 136
+* docutils/parsers/rst/directives/misc.py:
+
+  - Fix [ 1830389 ] Replace not breaking on getting system_messages from 
+    nested_parse
+
+
+END

@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-02-03T14:13:03.568575Z
+K 7
+svn:log
+V 149
+Update the Runtime Settings API documentation.
+
+Update API documentation.
+
+Split implementation details into a separate document
+for core developers.
+END

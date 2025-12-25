@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T01:35:38.532988Z
+K 7
+svn:log
+V 159
+Changing the nodes.Element interface is a bad idea
+(has been discussed before on Docutils-develop).  It is fine as it is,
+and I haven't seen any real problems.
+END

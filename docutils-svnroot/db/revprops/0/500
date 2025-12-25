@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 4
+yole
+K 8
+svn:date
+V 27
+2002-08-11T19:41:37.000000Z
+K 7
+svn:log
+V 140
+Second version of the .. sectnum:: directive implementation. Also, the
+really working fix of the empty path problem in package_unittest.py.
+
+END

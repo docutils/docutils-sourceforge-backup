@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-07-24T10:52:23.434160Z
+K 7
+svn:log
+V 138
+Fix #332 and #342 (smartquotes problems).
+
+Standard backslash escape for smartquotes.
+No escape in roles descending from `inline literal`.
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 11
+icosahedron
+K 8
+svn:date
+V 27
+2007-10-20T18:45:00.436521Z
+K 7
+svn:log
+V 88
+0.5 of rst2wordml, including a very few unit tests.  See the readme.rst for information.
+END

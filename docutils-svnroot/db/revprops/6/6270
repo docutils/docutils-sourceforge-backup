@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-03-18T22:32:09.679575Z
+K 7
+svn:log
+V 147
+Remove spurious `types` import.
+
+The `types` module is deprecated and discarded from py3k.
+The imported ListType is not used in the manpage writer.
+END

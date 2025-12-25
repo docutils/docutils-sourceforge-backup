@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2008-09-30T16:37:44.305530Z
+K 7
+svn:log
+V 98
+A script to update stale or missing html files.
+And a list of html files in the docutils webarea.
+
+END

@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+mmgilbe
+K 8
+svn:date
+V 27
+2004-03-23T23:43:54.000000Z
+K 7
+svn:log
+V 200
+Verifying that external targets are truly targets and not indirect
+references. This is because we are now adding a "name" attribute to
+references in addition to targets. Note sure if this is correct!
+
+END

@@ -1,0 +1,470 @@
+id: 7-4053.5-4054.r4054/0
+type: file
+pred: 7-4053.3-4012.r4053/467
+count: 1
+text: 4053 0 454 853 a8a321923675f0d620b2807665b6d122 3e92c19fc3f97bbe3dc3ccdf7f78ba9dbc331fac 4052-34k/_9
+cpath: /branches/s5/docutils/writers/support/s5_html/big-white/framing.css
+copyfrom: 4053 /branches/s5/docutils/writers/support/s5_html/big/framing.css
+
+id: b-4037.6-4054.r4054/336
+type: file
+pred: b-4037.3-4012.r4052/2025
+count: 2
+text: 4052 0 367 3522 0d09eef44422abc64faa58b016ff30fd 0719b7e421c7ae1620c07c919b8d74b3ec633ae2 4051-34j/_8
+cpath: /branches/s5/docutils/writers/support/s5_html/big-white/pretty.css
+copyfrom: 4053 /branches/s5/docutils/writers/support/s5_html/big/pretty.css
+
+PLAIN
+K 11
+framing.css
+V 26
+file 7-4053.5-4054.r4054/0
+K 10
+pretty.css
+V 28
+file b-4037.6-4054.r4054/336
+END
+ENDREP
+id: 6-4037.4-4054.r4054/790
+type: dir
+pred: 6-4037.3-4012.r4037/2033
+count: 1
+text: 4054 674 103 103 0cddf3068eefec5a2d1af73617dc2cef
+cpath: /branches/s5/docutils/writers/support/s5_html/big-white
+copyfrom: 4047 /branches/s5/docutils/writers/support/s5_html/big
+
+id: g-4052.8-4054.r4054/1053
+type: file
+pred: g-4052.3-4012.r4052/4179
+count: 1
+text: 4052 1109 52 40 2075968ced1fcfab2a883de87e412526 245f7aa74165904ea6f289f2eacf7126ed55e9c5 4051-34j/_i
+cpath: /branches/s5/docutils/writers/support/s5_html/small-black/__base__
+copyfrom: 4053 /branches/s5/docutils/writers/support/s5_html/inverse/__base__
+
+id: 8-4013.9-4054.r4054/1394
+type: file
+pred: 8-4013.3-4012.r4052/4468
+count: 3
+text: 4052 1174 826 3953 c72cd85fe9c1deed25e4aa65444fe480 bb675c4595bd1fe35466bd228d5b69b5f718dc01 4051-34j/_j
+cpath: /branches/s5/docutils/writers/support/s5_html/small-black/pretty.css
+copyfrom: 4053 /branches/s5/docutils/writers/support/s5_html/inverse/pretty.css
+
+PLAIN
+K 8
+__base__
+V 29
+file g-4052.8-4054.r4054/1053
+K 10
+pretty.css
+V 29
+file 8-4013.9-4054.r4054/1394
+END
+ENDREP
+id: 6-4013.7-4054.r4054/1858
+type: dir
+pred: 6-4013.3-4012.r4026/5193
+count: 2
+text: 4054 1742 103 103 f6ebf9cf5f6f45ecee6d9d21e1ca2fa9
+cpath: /branches/s5/docutils/writers/support/s5_html/small-black
+copyfrom: 4047 /branches/s5/docutils/writers/support/s5_html/inverse
+
+id: 9-4052.1-4054.r4054/2129
+type: file
+pred: 9-4052.3-4012.r4052/5168
+count: 1
+text: 4052 392 44 32 144f21622e247b364a3ac454b951af4d 3653c8fdb8b78948d3fd4c6054ec67766ef85612 4051-34j/_b
+cpath: /branches/s5/docutils/writers/support/s5_html/big-black/__base__
+copyfrom: 4053 /branches/s5/docutils/writers/support/s5_html/big_inverse/__base__
+
+PLAIN
+K 11
+framing.css
+V 29
+file 8-4025.3-4012.r4025/1915
+END
+ENDREP
+id: 6-4025.2-4054.r4054/2540
+type: dir
+pred: 6-4025.3-4012.r4038/3012
+count: 2
+text: 4054 2471 56 56 df97283c18711fdd7ae8902f320f1eb3
+cpath: /branches/s5/docutils/writers/support/s5_html/big-black/big_inverse
+copyfrom: 4047 /branches/s5/docutils/writers/support/s5_html/big_inverse
+
+id: b-4025.3-4054.r4054/2823
+type: file
+pred: b-4025.3-4012.r4052/5460
+count: 3
+text: 4052 449 359 3604 77387322ee6676420068d390df068960 b6fccda546c749b05a810d761bfaccdf8754cfdc 4051-34j/_c
+cpath: /branches/s5/docutils/writers/support/s5_html/big-black/pretty.css
+copyfrom: 4053 /branches/s5/docutils/writers/support/s5_html/big_inverse/pretty.css
+
+PLAIN
+K 8
+__base__
+V 29
+file 9-4052.1-4054.r4054/2129
+K 11
+big_inverse
+V 28
+dir 6-4025.2-4054.r4054/2540
+K 11
+framing.css
+V 29
+file 8-4025.3-4012.r4025/1915
+K 10
+pretty.css
+V 29
+file b-4025.3-4054.r4054/2823
+END
+ENDREP
+id: 6-4025.0-4054.r4054/3391
+type: dir
+pred: 6-4025.3-4012.r4038/3012
+count: 2
+text: 4054 3172 206 206 ce744e92a82db288193d1e4b4c0be2d2
+cpath: /branches/s5/docutils/writers/support/s5_html/big-black
+copyfrom: 4047 /branches/s5/docutils/writers/support/s5_html/big_inverse
+
+PLAIN
+K 9
+big-black
+V 28
+dir 6-4025.0-4054.r4054/3391
+K 9
+big-white
+V 27
+dir 6-4037.4-4054.r4054/790
+K 7
+default
+V 28
+dir 8-3965.3-4012.r4052/3920
+K 12
+medium-black
+V 28
+dir 6-4051.3-4012.r4051/6918
+K 12
+medium-white
+V 28
+dir d-4051.3-4012.r4051/7870
+K 11
+small-black
+V 28
+dir 6-4013.7-4054.r4054/1858
+K 11
+small-white
+V 28
+dir j-4051.3-4012.r4051/5981
+END
+ENDREP
+id: 7-3965.3-4012.r4054/4028
+type: dir
+pred: 7-3965.3-4012.r4053/1481
+count: 13
+text: 4054 3664 351 351 24652e941f3cb5cf5e18ac1926d0f6d1
+cpath: /branches/s5/docutils/writers/support/s5_html
+copyroot: 4012 /branches/s5/docutils/writers/support/s5_html
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 7-3878.0.r3878/797
+K 13
+html4css1.css
+V 29
+file 75-18.0-3901.r3901/14635
+K 11
+latex2e.tex
+V 30
+file 4-1656.1-3901.r3901/13254
+K 10
+newlatex2e
+V 24
+dir m-3901.0.r3901/16316
+K 8
+pep_html
+V 24
+dir q-3901.0.r3901/14461
+K 7
+s5_html
+V 28
+dir 7-3965.3-4012.r4054/4028
+END
+ENDREP
+id: 6-3878.0-4011.r4054/4585
+type: dir
+pred: 6-3878.0-4011.r4053/2038
+count: 11
+text: 4054 4280 292 292 e5aac1d52529da02b1b2a4c55cf4bb01
+cpath: /branches/s5/docutils/writers/support
+copyroot: 4011 /branches/s5
+
+PLAIN
+K 11
+__init__.py
+V 27
+file 3x-18.0-4011.r4030/277
+K 15
+docutils_xml.py
+V 23
+file 4-244.0.r3512/7689
+K 12
+html4css1.py
+V 23
+file 40-18.0.r3971/3194
+K 10
+latex2e.py
+V 23
+file 9-1202.0.r3930/647
+K 13
+newlatex2e.py
+V 23
+file 5-3259.0.r3929/372
+K 7
+null.py
+V 24
+file 4-3246.0.r3892/2227
+K 11
+pep_html.py
+V 22
+file 4-281.0.r3908/227
+K 12
+pseudoxml.py
+V 22
+file 4-84.0.r1645/8532
+K 10
+s5_html.py
+V 28
+file f-3204.2-4012.r4031/463
+K 7
+support
+V 28
+dir 6-3878.0-4011.r4054/4585
+END
+ENDREP
+id: 3w-18.0-4011.r4054/5282
+type: dir
+pred: 3w-18.0-4011.r4053/2735
+count: 467
+text: 4054 4796 473 473 aecf3ae9544e0b698cb59b3ddabfeff0
+props: 342 6175 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /branches/s5/docutils/writers
+copyroot: 4011 /branches/s5
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 1x-18.0.r3892/5836
+K 7
+core.py
+V 23
+file 20-18.0.r3892/1646
+K 13
+docutils.conf
+V 29
+file m-3472.0-3904.r3904/2799
+K 11
+examples.py
+V 23
+file 3-1928.0.r3598/207
+K 11
+frontend.py
+V 23
+file 3-150.0.r3879/4225
+K 5
+io.py
+V 22
+file 3-217.0.r3654/291
+K 9
+languages
+V 23
+dir 22-18.0.r3968/10922
+K 8
+nodes.py
+V 21
+file 28-18.0.r4005/54
+K 7
+parsers
+V 27
+dir 2a-18.0-4011.r4032/3400
+K 7
+readers
+V 22
+dir 36-18.0.r4006/1239
+K 15
+statemachine.py
+V 22
+file 3e-18.0.r2299/866
+K 10
+transforms
+V 27
+dir 3g-18.0-4011.r4028/4414
+K 13
+urischemes.py
+V 22
+file 3s-18.0.r1829/714
+K 8
+utils.py
+V 22
+file 3u-18.0.r3592/826
+K 7
+writers
+V 27
+dir 3w-18.0-4011.r4054/5282
+END
+ENDREP
+id: 1w-18.0-4011.r4054/6225
+type: dir
+pred: 1w-18.0-4011.r4053/3678
+count: 1342
+text: 4054 5538 674 674 a4a9fc398ab5037243a881c90aa9f8c4
+props: 342 8363 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /branches/s5/docutils
+copyroot: 4011 /branches/s5
+
+PLAIN
+K 8
+BUGS.txt
+V 23
+file 2-2181.0.r3973/437
+K 11
+COPYING.txt
+V 21
+file 2-18.0.r3096/363
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r3953/422
+K 11
+HISTORY.txt
+V 26
+file 5-18.0-4011.r4040/657
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r2513/394
+K 10
+README.txt
+V 21
+file 9-18.0.r3997/242
+K 10
+THANKS.txt
+V 23
+file 2-2182.0.r3900/404
+K 4
+docs
+V 25
+dir 3-7.0-4011.r4039/1413
+K 8
+docutils
+V 27
+dir 1w-18.0-4011.r4054/6225
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 24
+file 46-18.0.r3901/19134
+K 4
+test
+V 27
+dir 48-18.0-4011.r4029/8548
+K 5
+tools
+V 26
+dir 6w-18.0-4011.r4012/910
+END
+ENDREP
+id: 1-7.0-4011.r4054/7136
+type: dir
+pred: 1-7.0-4011.r4053/4589
+count: 3037
+text: 4054 6474 649 649 76252b23df5088d13343d55f4b28d964
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /branches/s5
+copyroot: 4011 /branches/s5
+
+PLAIN
+K 7
+nesting
+V 27
+dir 3-1.0-1813.r2577/106277
+K 2
+s5
+V 25
+dir 1-7.0-4011.r4054/7136
+END
+ENDREP
+id: 0-1.0.r4054/7471
+type: dir
+pred: 0-1.0.r4053/4924
+count: 177
+text: 4054 7371 87 87 04f42f13a36c8ead75b17c027834e259
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r4054/7471
+K 4
+tags
+V 19
+dir 2-1.0.r3816/482
+K 5
+trunk
+V 21
+dir 3-1.0.r4050/12856
+END
+ENDREP
+id: 0.0.r4054/7750
+type: dir
+pred: 0.0.r4053/5203
+count: 4054
+text: 4054 7623 114 114 b4926add63a105ca2d52178d21a8ce33
+cpath: /
+copyroot: 0 /
+
+g-4052._8.t4053-34l add-file false false /branches/s5/docutils/writers/support/s5_html/small-black/__base__
+4053 /branches/s5/docutils/writers/support/s5_html/inverse/__base__
+b-4025._3.t4053-34l replace-file false false /branches/s5/docutils/writers/support/s5_html/big-black/pretty.css
+4053 /branches/s5/docutils/writers/support/s5_html/big_inverse/pretty.css
+7-4053._5.t4053-34l replace-file false false /branches/s5/docutils/writers/support/s5_html/big-white/framing.css
+4053 /branches/s5/docutils/writers/support/s5_html/big/framing.css
+6-4025._0.t4053-34l add-dir false false /branches/s5/docutils/writers/support/s5_html/big-black
+4047 /branches/s5/docutils/writers/support/s5_html/big_inverse
+6-4013.3-4012.r4052/4909 delete-dir false false /branches/s5/docutils/writers/support/s5_html/inverse
+
+6-4025.3-4012.r4052/5904 delete-dir false false /branches/s5/docutils/writers/support/s5_html/big_inverse
+
+b-4037._6.t4053-34l replace-file false false /branches/s5/docutils/writers/support/s5_html/big-white/pretty.css
+4053 /branches/s5/docutils/writers/support/s5_html/big/pretty.css
+6-4037._4.t4053-34l add-dir false false /branches/s5/docutils/writers/support/s5_html/big-white
+4047 /branches/s5/docutils/writers/support/s5_html/big
+8-4013._9.t4053-34l replace-file false false /branches/s5/docutils/writers/support/s5_html/small-black/pretty.css
+4053 /branches/s5/docutils/writers/support/s5_html/inverse/pretty.css
+9-4052._1.t4053-34l add-file false false /branches/s5/docutils/writers/support/s5_html/big-black/__base__
+4053 /branches/s5/docutils/writers/support/s5_html/big_inverse/__base__
+6-4037.3-4012.r4053/872 delete-dir false false /branches/s5/docutils/writers/support/s5_html/big
+
+6-4013._7.t4053-34l add-dir false false /branches/s5/docutils/writers/support/s5_html/small-black
+4047 /branches/s5/docutils/writers/support/s5_html/inverse
+b-4025.3-4012.r4038/2566 delete-file false false /branches/s5/docutils/writers/support/s5_html/big-black/big_inverse/pretty.css
+
+6-4025._2.t4053-34l add-dir false false /branches/s5/docutils/writers/support/s5_html/big-black/big_inverse
+4047 /branches/s5/docutils/writers/support/s5_html/big_inverse
+
+7750 7893

@@ -1,0 +1,446 @@
+id: g-1662.0.r5608/0
+type: file
+pred: g-1662.0.r5607/20838
+count: 22
+text: 4802 1529 492 6036 fd501c1d6555a0b4f9b060231d825ab1 446cfed9ebc5b27d96524fae361304af77558a55 5607-4br/_c
+props: 3039 4806 137 0 b1e8a6789a174e1fd336c0400a5d15de
+cpath: /trunk/docutils/test/test_settings.py
+copyroot: 0 /
+
+id: 18-2357.0.r5608/296
+type: file
+pred: 18-2357.0.r5607/21139
+count: 17
+text: 5174 19678 91 6438 2bf0ba1e8cdb9a2c7ba3c46485ae360f 25111e2579d0693598fb8957bce4add9585be26e 5607-4br/_9
+props: 2693 552 136 0 70d3027589bae3addb96f53371581054
+cpath: /trunk/docutils/test/test_functional.py
+copyroot: 0 /
+
+id: 6-2354.0.r5608/597
+type: file
+pred: 6-2354.0.r5607/21445
+count: 2
+text: 18 198444 12037 40367 b82575bb24a14600cc74808577293c47 107a318d269f40d3c7e7e536ed9469664ecca0cb 5607-4br/_7
+props: 2354 1149 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/test/docutils_difflib.py
+copyroot: 0 /
+
+id: 4i-18.0.r5608/900
+type: file
+pred: 4i-18.0.r5607/21749
+count: 39
+text: 5599 0 40 13738 08579d3f5a819624a5804895be10b961 85434d531b74a52f4578b5fed557c4ac921fa74e 5607-4br/_b
+props: 3048 1638 137 0 fd250119313e8fdee30f8311f2fcbc0f
+cpath: /trunk/docutils/test/test_nodes.py
+copyroot: 0 /
+
+id: 3-940.0.r5608/1190
+type: file
+pred: 3-940.0.r5607/22043
+count: 14
+text: 4564 33323 391 7487 8f958d81c51e5fbe756bf8578712d8b3 ec30796f26f614171b37d4bc808be8ebc78cf214 5607-4br/_a
+props: 3085 8289 136 0 70d3027589bae3addb96f53371581054
+cpath: /trunk/docutils/test/test_language.py
+copyroot: 0 /
+
+id: 49-18.0.r5608/1488
+type: file
+pred: 49-18.0.r5607/22341
+count: 86
+text: 4812 0 485 30796 33c5d1edfd14f8f91d58a1a23b78759d 73c90bb270db1a13baed25819d23a952f30a06e2 5607-4br/_6
+props: 2791 69 111 0 515f6afa6448327e59cdac91d637f582
+cpath: /trunk/docutils/test/DocutilsTestSupport.py
+copyroot: 0 /
+
+id: 3-2679.0.r5608/1787
+type: file
+pred: 3-2679.0.r5607/22643
+count: 12
+text: 5174 19561 93 2847 a17553973962ddd43cd15b82d7b07cb0 c7efb7d6266f3cc9c79ec180f5573fac10194e49 5607-4br/_8
+props: 2683 4130 136 0 921bd9320f875dd6f8050e7ef12a5696
+cpath: /trunk/docutils/test/test_dependencies.py
+copyroot: 0 /
+
+PLAIN
+K 22
+DocutilsTestSupport.py
+V 23
+file 49-18.0.r5608/1488
+K 11
+alltests.py
+V 22
+file 4e-18.0.r4629/142
+K 11
+coverage.sh
+V 28
+file 6-3449.0-3489.r5539/255
+K 4
+data
+V 23
+dir 3-1662.0.r4802/3308
+K 13
+docutils.conf
+V 24
+file 6-1661.0.r2385/2146
+K 19
+docutils_difflib.py
+V 23
+file 6-2354.0.r5608/597
+K 10
+functional
+V 23
+dir 3-2357.0.r5582/6470
+K 19
+package_unittest.py
+V 23
+file 3-44.0.r4564/57271
+K 20
+test_dependencies.py
+V 24
+file 3-2679.0.r5608/1787
+K 18
+test_functional.py
+V 24
+file 18-2357.0.r5608/296
+K 10
+test_io.py
+V 25
+file 5-3138.0.r5174/28014
+K 16
+test_language.py
+V 23
+file 3-940.0.r5608/1190
+K 13
+test_nodes.py
+V 22
+file 4i-18.0.r5608/900
+K 12
+test_parsers
+V 22
+dir 4k-18.0.r5510/4423
+K 14
+test_pickle.py
+V 25
+file 9-4487.0.r4564/69749
+K 17
+test_publisher.py
+V 30
+file 6-3525.0-3602.r4564/57860
+K 12
+test_readers
+V 22
+dir 3-89.0.r4564/61016
+K 16
+test_settings.py
+V 21
+file g-1662.0.r5608/0
+K 20
+test_statemachine.py
+V 24
+file 6a-18.0.r4564/62145
+K 15
+test_transforms
+V 23
+dir 6c-18.0.r5174/27774
+K 18
+test_traversals.py
+V 24
+file 5-4641.0.r4641/1557
+K 13
+test_utils.py
+V 24
+file 6u-18.0.r4564/61250
+K 16
+test_viewlist.py
+V 24
+file 3-916.0.r4564/62445
+K 12
+test_writers
+V 23
+dir 5-1211.0.r5585/1627
+END
+ENDREP
+id: 48-18.0.r5608/3314
+type: dir
+pred: 48-18.0.r5607/24185
+count: 714
+text: 5608 2090 1211 1211 493043b20fe522636e90df4c804ea26d
+props: 343 993 44 0 e8789a4081469b0bbc8d88dcdbd925ef
+cpath: /trunk/docutils/test
+copyroot: 0 /
+
+id: 3-1497.0-3532.r5608/3539
+type: file
+pred: 3-1497.0-3532.r5607/24411
+count: 7
+text: 4564 56131 94 6588 1ee897931968bba279a3f54f8f3d1dca 759d7e8e279e0ae339f3804aeeffb03a319f3107 5607-4br/_f
+props: 1497 2208 136 0 cd16f4c3541932a389cc4ebf2ace9d97
+cpath: /trunk/docutils/tools/dev/unicode2rstsubs.py
+copyroot: 3532 /trunk/docutils/tools/dev/unicode2rstsubs.py
+
+PLAIN
+K 10
+README.txt
+V 24
+file 7-3488.0.r3488/2785
+K 16
+create_unimap.py
+V 30
+file 3-3459.0-3534.r5174/51936
+K 19
+profile_docutils.py
+V 30
+file 3-3449.0-3490.r5174/52297
+K 18
+unicode2rstsubs.py
+V 29
+file 3-1497.0-3532.r5608/3539
+END
+ENDREP
+id: 5-3488.0.r5608/4141
+type: dir
+pred: 5-3488.0.r5607/25018
+count: 8
+text: 5608 3900 228 228 222f537ff7a39dfb07cd87c57c402f2a
+cpath: /trunk/docutils/tools/dev
+copyroot: 0 /
+
+PLAIN
+K 12
+buildhtml.py
+V 23
+file 3-430.0.r5019/3075
+K 3
+dev
+V 23
+dir 5-3488.0.r5608/4141
+K 13
+docutils.conf
+V 22
+file 3-407.0.r4181/328
+K 7
+editors
+V 23
+dir 3-1157.0.r5598/1051
+K 12
+quicktest.py
+V 22
+file 72-18.0.r5545/345
+K 11
+rst2html.py
+V 26
+file 5-1756.0.r4564/150660
+K 12
+rst2latex.py
+V 26
+file b-1202.0.r4564/149478
+K 15
+rst2newlatex.py
+V 26
+file 3-3260.0.r4564/150954
+K 16
+rst2pseudoxml.py
+V 26
+file 3-2467.0.r4564/149777
+K 9
+rst2s5.py
+V 31
+file d-3204.f-4156.r4564/151253
+K 10
+rst2xml.py
+V 26
+file 3-2468.0.r4564/150073
+K 14
+rstpep2html.py
+V 30
+file 3-288.0-3533.r4564/151882
+END
+ENDREP
+id: 6w-18.0.r5608/4912
+type: dir
+pred: 6w-18.0.r5607/25792
+count: 379
+text: 5608 4316 583 583 5b4e5f3908a89a78e89332caffb8bf83
+cpath: /trunk/docutils/tools
+copyroot: 0 /
+
+id: 4-1467.0.r5608/5083
+type: file
+pred: 4-1467.0.r5607/25964
+count: 5
+text: 2848 0 28 51584 a51515a4dc2950a79c127c2a52ab1063 c3ccc9badc6c23dc44d8dc33de0e559866f49e20 5607-4br/_4
+props: 2848 52 110 0 dce24d5ac3f5e86568d59a55fa196991
+cpath: /trunk/docutils/extras/optparse.py
+copyroot: 0 /
+
+PLAIN
+K 11
+optparse.py
+V 24
+file 4-1467.0.r5608/5083
+K 8
+roman.py
+V 24
+file 3-1469.0.r1469/1182
+K 11
+textwrap.py
+V 23
+file 3-1468.0.r2847/226
+END
+ENDREP
+id: 2-1467.0.r5608/5526
+type: dir
+pred: 2-1467.0.r5607/26413
+count: 9
+text: 5608 5373 140 140 68ba39826e4a7c28cabe3828844582eb
+props: 4447 6060 31 0 b9ebe853b7baef2573e3487e43637c6a
+cpath: /trunk/docutils/extras
+copyroot: 0 /
+
+PLAIN
+K 8
+BUGS.txt
+V 23
+file 2-2181.0.r4628/817
+K 11
+COPYING.txt
+V 24
+file 2-18.0.r4564/100662
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r5495/336
+K 11
+HISTORY.txt
+V 22
+file 5-18.0.r5602/4375
+K 11
+MANIFEST.in
+V 23
+file 7-18.0.r4156/57222
+K 10
+README.txt
+V 22
+file 9-18.0.r5603/1632
+K 17
+RELEASE-NOTES.txt
+V 23
+file 2-4204.0.r5581/509
+K 10
+THANKS.txt
+V 25
+file 2-2182.0.r5174/53856
+K 4
+docs
+V 20
+dir 3-7.0.r5586/1906
+K 8
+docutils
+V 22
+dir 1w-18.0.r5602/6734
+K 6
+extras
+V 23
+dir 2-1467.0.r5608/5526
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 23
+file 46-18.0.r5582/9299
+K 4
+test
+V 22
+dir 48-18.0.r5608/3314
+K 5
+tools
+V 22
+dir 6w-18.0.r5608/4912
+END
+ENDREP
+id: 1-7.0.r5608/6452
+type: dir
+pred: 1-7.0.r5607/27343
+count: 3567
+text: 5608 5753 686 686 56a24752cf11f592432be3438ce18fe6
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r5608/6452
+K 5
+prest
+V 23
+dir 1-4326.0.r5487/2835
+K 7
+sandbox
+V 22
+dir 1-17.0.r5592/13683
+K 3
+web
+V 20
+dir 1-2.0.r5583/1079
+END
+ENDREP
+id: 3-1.0.r5608/6836
+type: dir
+pred: 3-1.0.r5607/27729
+count: 5166
+text: 5608 6667 156 156 678e743af73a2736c8bfb89814682426
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 21
+dir 0-1.0.r5607/45936
+K 4
+tags
+V 19
+dir 2-1.0.r5579/673
+K 5
+trunk
+V 20
+dir 3-1.0.r5608/6836
+END
+ENDREP
+id: 0.0.r5608/7116
+type: dir
+pred: 0.0.r5607/46220
+count: 5608
+text: 5608 6989 114 114 86f3a5ea15908b76cab588e233e4f5bb
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+
+18-2357.0.t5607-4br modify-file true false /trunk/docutils/test/test_functional.py
+
+3-940.0.t5607-4br modify-file true false /trunk/docutils/test/test_language.py
+
+49-18.0.t5607-4br modify-file true false /trunk/docutils/test/DocutilsTestSupport.py
+
+4-1467.0.t5607-4br modify-file true false /trunk/docutils/extras/optparse.py
+
+6-2354.0.t5607-4br modify-file true false /trunk/docutils/test/docutils_difflib.py
+
+3-2679.0.t5607-4br modify-file true false /trunk/docutils/test/test_dependencies.py
+
+4i-18.0.t5607-4br modify-file true false /trunk/docutils/test/test_nodes.py
+
+3-1497.0-3532.t5607-4br modify-file true false /trunk/docutils/tools/dev/unicode2rstsubs.py
+
+g-1662.0.t5607-4br modify-file true false /trunk/docutils/test/test_settings.py
+
+
+7116 7311

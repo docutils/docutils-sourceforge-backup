@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 8
+cliechti
+K 8
+svn:date
+V 27
+2006-01-13T03:39:21.155664Z
+K 7
+svn:log
+V 159
+- areas of similar characters are used to 'fill' the area
+- with or without border
+- text is nor slightly broken as in "hello" where "ll" is recognized as fill
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2007-06-13T09:21:44.119284Z
+K 7
+svn:log
+V 143
+added mode-setting "magic" comment, added preference of project-specific subdirectories from the Project Policies, fixed broken anonymous link.
+END

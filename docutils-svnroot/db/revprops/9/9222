@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-11-08T14:34:18.514234Z
+K 7
+svn:log
+V 361
+Inline ``RecommonmarkParserTestSuite``
+
+- Move all usages of ``RecommonmarkParserTestSuite.generateTests``
+  to using subtests.
+- Move the conditional test skipping logic to ``__init__.py`` in
+  ``test_recommonmark``, and move the missing module test from 
+  ``test_recommonmark.test_misc`` to ``test_get_parser_class``, as
+  otherwise the test would never run.
+END

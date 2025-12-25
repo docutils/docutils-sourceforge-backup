@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 10
+ianbicking
+K 8
+svn:date
+V 27
+2004-03-23T19:57:14.000000Z
+K 7
+svn:log
+V 93
+* Bug fixes to python reader
+* Getting tests up-to-date
+* Trimming unused nodes from pynodes
+
+END

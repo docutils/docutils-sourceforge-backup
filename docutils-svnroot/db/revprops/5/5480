@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-12-18T16:01:20.452599Z
+K 7
+svn:log
+V 47
+Updated to have write access to opt_D variables
+END

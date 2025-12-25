@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-07-10T22:48:06.543905Z
+K 7
+svn:log
+V 80
+updated and restructured docstring and documentation for new directive interface
+END

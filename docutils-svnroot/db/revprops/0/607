@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-08-29T01:45:29.000000Z
+K 7
+svn:log
+V 45
+Eliminate duplicate URLs in ``TargetNotes``.
+
+END

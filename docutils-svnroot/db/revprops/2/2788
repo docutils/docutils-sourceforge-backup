@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-10-31T17:49:42.000000Z
+K 7
+svn:log
+V 68
+fixed error: name and dupname are CDATA, e.g. name="this is a test"
+
+END

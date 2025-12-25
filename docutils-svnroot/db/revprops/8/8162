@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-08-10T17:51:01.311014Z
+K 7
+svn:log
+V 169
+Documentation update: Dropped support for Python 2.4, 2.5, 3.1, and 3.2.
+
+No change to the code yet, but from now on constructs requiring 2.6 or later
+can be checked in.
+END

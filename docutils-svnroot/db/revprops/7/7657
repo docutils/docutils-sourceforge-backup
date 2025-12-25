@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2013-05-06T06:38:08.487049Z
+K 7
+svn:log
+V 195
+Add "babel" name for Serbian (cyrillic script).
+
+There is a contributed LaTeX package for Serbian with cyrillic script.
+Map the language codes "sr" and "sh-Cyrl" to the "babel" option "serbianc".
+END

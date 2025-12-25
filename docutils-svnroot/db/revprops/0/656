@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 11
+chodorowski
+K 8
+svn:date
+V 27
+2002-09-09T17:27:35.000000Z
+K 7
+svn:log
+V 69
+Updated with respect to the 'align' option of the 'image' directive.
+
+END

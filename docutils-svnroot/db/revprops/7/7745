@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2014-02-28T14:15:59.847035Z
+K 7
+svn:log
+V 69
+Apply [ 116 ] by Kirill Smelkov. No hardcode \\\\large for subtitle. 
+END

@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+gbrandl
+K 8
+svn:date
+V 27
+2007-07-15T21:16:25.114106Z
+K 7
+svn:log
+V 112
+- Do an update build per default.
+- Allow overriding conf.py values from the command line.
+- Fix a builder bug.
+
+END

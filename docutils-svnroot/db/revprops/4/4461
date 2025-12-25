@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2006-04-01T00:25:45.514153Z
+K 7
+svn:log
+V 164
+Added ``view_mode`` & ``hidden_controls`` settings (``--view-mode`` & ``--hidden-controls/--visible-controls`` options). Thanks to Stefan Rank for the idea & patch.
+END

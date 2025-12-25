@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-06-25T20:57:36.485001Z
+K 7
+svn:log
+V 216
+HTM5 Use semantic tags for topics, admontions, system-messages, and toc.
+
+<aside> for topics (except abstract and toc), admonitions,
+and system messages.
+
+<nav> and DPub Aria role="doc-toc" for the Table of Contents.
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-03-02T00:24:53.998483Z
+K 7
+svn:log
+V 42
+Support SVG images (patch by Stefan Rank).
+END

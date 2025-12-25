@@ -1,0 +1,21 @@
+K 12
+include1.txt
+V 27
+file m4-4327.0.r4327/932734
+K 12
+include5.txt
+V 27
+file m7-4327.0.r4327/933475
+K 4
+more
+V 26
+dir m9-4327.0.r4327/933293
+END
+D 12
+include1.txt
+D 12
+include5.txt
+K 4
+more
+V 29
+dir m9-4327.16-4580.t8951-6xe

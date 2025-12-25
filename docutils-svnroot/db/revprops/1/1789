@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2004-01-04T08:11:21.000000Z
+K 7
+svn:log
+V 93
+Add: test file with image scaling and aligning.
+Chg: split_test-txt.py writes to .new files.
+
+END

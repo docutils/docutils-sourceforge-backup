@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-09-17T13:50:43.408542Z
+K 7
+svn:log
+V 225
+Fix [ 2821266 ] --strict option works now like --halt=info.
+
+Use the level number (1) instead of the name ("info") as constant.
+The name -> level conversion is done by the validate_threshold validator
+not used in this option.
+END

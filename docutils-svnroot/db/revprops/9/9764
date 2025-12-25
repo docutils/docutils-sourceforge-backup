@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-14T16:19:42.325316Z
+K 7
+svn:log
+V 102
+Remove optional argument `pxunit` of `LaTeXTranslator.to_latex_length()`
+
+Ignored since at least 2012.
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2023-11-01T19:00:22.342371Z
+K 7
+svn:log
+V 62
+groff 1.23.0 uses ESC-sequences for bold instead of backspace
+
+END

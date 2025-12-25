@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2004-07-25T02:30:05.000000Z
+K 7
+svn:log
+V 86
+simple import isn't enough -- added another requirement (testing for 2.2 was easier!)
+
+END

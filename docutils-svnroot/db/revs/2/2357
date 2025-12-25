@@ -1,0 +1,739 @@
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 14
+svn:executable
+V 1
+*
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 18-2357.0.r2357/149
+type: file
+count: 0
+text: 2356 0 234 4648 a590f72ebd9b8c4dfeac08dd9191080d 4c3f4f3ea9a1189d095b8d3260735c1b7505172e 2356-1tg/_19
+props: 2357 0 136 0 cd16f4c3541932a389cc4ebf2ace9d97
+cpath: /trunk/docutils/test/test_functional.py
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: s-2357.0.r2357/540
+type: file
+count: 0
+text: 2161 2120 185 168 a8369cafb6019765dc27bfa51e2b61e1 e3958abcbb767bc51d247931a85c35e583cee0ba 2356-1tg/_t
+props: 2357 417 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/test/functional/input/standalone_rst_html4css1.txt
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: m-2357.0.r2357/960
+type: file
+count: 0
+text: 2161 1226 304 287 30b314a97940bf4b350644905c494662 f4e3bc15f6c9f0ec1f6cb902b7e538264544b63d 2356-1tg/_n
+props: 2357 837 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/test/functional/input/data/table_colspan.txt
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: h-2357.0.r2357/1374
+type: file
+count: 0
+text: 2161 943 270 253 f583c07f943f6a21aafd9b5763baad75 21c05a0da0fbcf8802ea316ada86574a6edfe6d7 2356-1tg/_j
+props: 2357 1251 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/test/functional/input/data/errors.txt
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: o-2357.0.r2357/1782
+type: file
+count: 0
+text: 2161 1543 317 1080 1858815146eabd708d7bd007fbe55612 ae8f62480a3786674e755b8e41faba64f199b5a7 2356-1tg/_p
+props: 2357 1659 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/test/functional/input/data/table_complex.txt
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: k-2357.0.r2357/2199
+type: file
+count: 0
+text: 2340 531 195 12123 06730272b5092c9b3211a3c76d54119f 6b8d56ea52aecc9b0dd61787f8b07c82f3d18d69 2356-1tg/_l
+props: 2357 2076 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/test/functional/input/data/standard.txt
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: q-2357.0.r2357/2611
+type: file
+count: 0
+text: 2161 1873 234 679 6c16718a28ac17f013acbf43bbbf04f2 9408ae785822f845b414a8b837042c1140da7e9c 2356-1tg/_r
+props: 2357 2488 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/test/functional/input/data/table_rowspan.txt
+copyroot: 0 /
+
+PLAIN
+K 10
+errors.txt
+V 24
+file h-2357.0.r2357/1374
+K 12
+standard.txt
+V 24
+file k-2357.0.r2357/2199
+K 17
+table_colspan.txt
+V 23
+file m-2357.0.r2357/960
+K 17
+table_complex.txt
+V 24
+file o-2357.0.r2357/1782
+K 17
+table_rowspan.txt
+V 24
+file q-2357.0.r2357/2611
+END
+ENDREP
+id: f-2357.0.r2357/3173
+type: dir
+count: 0
+text: 2357 2904 256 256 6b722d86bd2c8ec557c279f9ae37263a
+cpath: /trunk/docutils/test/functional/input/data
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: u-2357.0.r2357/3461
+type: file
+count: 0
+text: 2161 2318 109 96 8e34a0c9ef319c051ee43b30ea291753 e5b64b03c01fdaad7b31e345a53eec9c379f86e4 2356-1tg/_v
+props: 2357 3338 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/test/functional/input/standalone_rst_latex.txt
+copyroot: 0 /
+
+PLAIN
+K 4
+data
+V 23
+dir f-2357.0.r2357/3173
+K 28
+standalone_rst_html4css1.txt
+V 23
+file s-2357.0.r2357/540
+K 24
+standalone_rst_latex.txt
+V 24
+file u-2357.0.r2357/3461
+END
+ENDREP
+id: e-2357.0.r2357/3933
+type: dir
+count: 0
+text: 2357 3755 165 165 47c6bf24e779e7a823d02f287affa1ba
+cpath: /trunk/docutils/test/functional/input
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: x-2357.0.r2357/4216
+type: file
+count: 0
+text: 2329 0 147 130 0e8b034490f1360257209580d2b99cc8 e4cda2e7608ff423712c993ad366d9ef48ebe70a 2356-1tg/_z
+props: 2357 4093 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/test/functional/output/README.txt
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 24
+file x-2357.0.r2357/4216
+END
+ENDREP
+id: w-2357.0.r2357/4558
+type: dir
+count: 0
+text: 2357 4495 50 50 b472dedffef53e9b6163aab82d6e1ac5
+cpath: /trunk/docutils/test/functional/output
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 9-2357.0.r2357/4840
+type: file
+count: 0
+text: 2340 0 274 35870 3b7c74f6e8ba528b48f73bf2c2b9a24e 092b1e490155149efa3a3471ddaff41e26991107 2356-1tg/_b
+props: 2357 4717 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/test/functional/expected/standalone_rst_html4css1.html
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: c-2357.0.r2357/5265
+type: file
+count: 0
+text: 2340 299 207 27528 17598f5bdf1465c979c9f8aee84f45b2 fb842792e7f879de7cb2fe99b60711f2ac688d5c 2356-1tg/_d
+props: 2357 5142 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/test/functional/expected/standalone_rst_latex.tex
+copyroot: 0 /
+
+PLAIN
+K 29
+standalone_rst_html4css1.html
+V 24
+file 9-2357.0.r2357/4840
+K 24
+standalone_rst_latex.tex
+V 24
+file c-2357.0.r2357/5265
+END
+ENDREP
+id: 8-2357.0.r2357/5706
+type: dir
+count: 0
+text: 2357 5564 129 129 06e5c255aa257a0845519688c9e540c4
+cpath: /trunk/docutils/test/functional/expected
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 16-2357.0.r2357/5992
+type: file
+count: 0
+text: 2352 114 26 239 9e01656bb6d5a5ee042ca1a355166eb7 169db0d4acc11dece1956936d13c0f45aa553188 2356-1tg/_17
+props: 2357 5869 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/test/functional/tests/standalone_rst_latex.py
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 14-2357.0.r2357/6409
+type: file
+count: 0
+text: 2352 62 26 252 2856bc342e0d00b7f62883824d07df60 b6f8c148b6b600116be2a707dc99b6e7ad6ac06e 2356-1tg/_15
+props: 2357 6286 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/test/functional/tests/standalone_rst_html4css1.py
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 11-2357.0.r2357/6829
+type: file
+count: 0
+text: 2331 0 27 153 563bdf65564d8e4c42a4e8591ebe0acd 14b5006c2753622127af68a1c035ab02a8a33772 2356-1tg/_13
+props: 2357 6706 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/test/functional/tests/_default.py
+copyroot: 0 /
+
+PLAIN
+K 11
+_default.py
+V 25
+file 11-2357.0.r2357/6829
+K 27
+standalone_rst_html4css1.py
+V 25
+file 14-2357.0.r2357/6409
+K 23
+standalone_rst_latex.py
+V 25
+file 16-2357.0.r2357/5992
+END
+ENDREP
+id: 10-2357.0.r2357/7298
+type: dir
+count: 0
+text: 2357 7109 176 176 66f05175d8ef9ceaebcb6abdd713566c
+cpath: /trunk/docutils/test/functional/tests
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 5-2357.0.r2357/7582
+type: file
+count: 0
+text: 2352 0 37 3525 f87fec0fa022d4757df0c818de743b90 96ecabc502ed39b176c0531b66431f84a8b32e54 2356-1tg/_7
+props: 2357 7459 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/test/functional/README.txt
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 24
+file 5-2357.0.r2357/7582
+K 8
+expected
+V 23
+dir 8-2357.0.r2357/5706
+K 5
+input
+V 23
+dir e-2357.0.r2357/3933
+K 6
+output
+V 23
+dir w-2357.0.r2357/4558
+K 5
+tests
+V 24
+dir 10-2357.0.r2357/7298
+END
+ENDREP
+id: 3-2357.0.r2357/8078
+type: dir
+count: 0
+text: 2357 7854 211 211 c04eca2c14707a7deca24fb938dfef33
+cpath: /trunk/docutils/test/functional
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 21
+file 3-339.0.r343/176
+K 22
+DocutilsTestSupport.py
+V 23
+file 49-18.0.r2354/1673
+K 11
+alltests.py
+V 22
+file 4e-18.0.r1615/315
+K 4
+data
+V 23
+dir 3-1662.0.r1682/1865
+K 13
+docutils.conf
+V 23
+file 6-1661.0.r1661/508
+K 19
+docutils_difflib.py
+V 24
+file 6-2354.0.r2354/1272
+K 10
+functional
+V 23
+dir 3-2357.0.r2357/8078
+K 19
+package_unittest.py
+V 22
+file 3-44.0.r778/16101
+K 18
+test_functional.py
+V 24
+file 18-2357.0.r2357/149
+K 16
+test_language.py
+V 22
+file 3-940.0.r1949/196
+K 13
+test_nodes.py
+V 23
+file 4i-18.0.r1294/2001
+K 12
+test_parsers
+V 22
+dir 4k-18.0.r2317/4555
+K 12
+test_readers
+V 21
+dir 3-89.0.r2288/1502
+K 16
+test_settings.py
+V 23
+file g-1662.0.r2354/857
+K 20
+test_statemachine.py
+V 22
+file 6a-18.0.r917/6020
+K 15
+test_transforms
+V 22
+dir 6c-18.0.r2023/2467
+K 13
+test_utils.py
+V 23
+file 6u-18.0.r1235/3274
+K 16
+test_viewlist.py
+V 23
+file 3-916.0.r1572/2984
+K 12
+test_writers
+V 23
+dir 5-1211.0.r2338/1782
+END
+ENDREP
+id: 48-18.0.r2357/9176
+type: dir
+pred: 48-18.0.r2354/2819
+count: 235
+text: 2357 8232 931 931 b241ccd8f6ebe2549beaa725392118f9
+props: 343 993 44 0 e8789a4081469b0bbc8d88dcdbd925ef
+cpath: /trunk/docutils/test
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 21
+file 2-340.0.r340/154
+K 8
+BUGS.txt
+V 24
+file 2-2181.0.r2350/1345
+K 11
+COPYING.txt
+V 22
+file 2-18.0.r2354/3164
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r2351/227
+K 11
+HISTORY.txt
+V 21
+file 5-18.0.r2348/312
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r1505/219
+K 10
+README.txt
+V 22
+file 9-18.0.r2248/1148
+K 10
+THANKS.txt
+V 23
+file 2-2182.0.r2248/742
+K 4
+docs
+V 20
+dir 3-7.0.r2345/1921
+K 8
+docutils
+V 22
+dir 1w-18.0.r2347/1838
+K 6
+extras
+V 23
+dir 2-1467.0.r1686/1264
+K 10
+install.py
+V 24
+file 44-18.0.r1409/28098
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 22
+file 46-18.0.r2071/198
+K 4
+test
+V 22
+dir 48-18.0.r2357/9176
+K 5
+tools
+V 23
+dir 6w-18.0.r2274/10787
+END
+ENDREP
+id: 1-7.0.r2357/10084
+type: dir
+pred: 1-7.0.r2354/4130
+count: 1714
+text: 2357 9398 673 673 d50cdb95ca4d592cd01664e5679728b2
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 21
+dir 1-7.0.r2357/10084
+K 7
+sandbox
+V 21
+dir 1-17.0.r2356/2540
+K 3
+web
+V 19
+dir 1-2.0.r2316/797
+END
+ENDREP
+id: 3-1.0.r2357/10428
+type: dir
+pred: 3-1.0.r2356/2831
+count: 2337
+text: 2357 10299 116 116 e5bce5ee9546514b1236d045534f1a2b
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 21
+dir 0-1.0.r1822/10965
+K 4
+tags
+V 20
+dir 2-1.0.r1558/2271
+K 5
+trunk
+V 21
+dir 3-1.0.r2357/10428
+END
+ENDREP
+id: 0.0.r2357/10711
+type: dir
+pred: 0.0.r2356/3111
+count: 2357
+text: 2357 10582 116 116 4145e863e68db48c9b8aa0c08345bc9d
+cpath: /
+copyroot: 0 /
+
+_q.0.t2356-1tg add-file true true /trunk/docutils/test/functional/input/data/table_rowspan.txt
+
+_k.0.t2356-1tg add-file true true /trunk/docutils/test/functional/input/data/standard.txt
+
+_9.0.t2356-1tg add-file true true /trunk/docutils/test/functional/expected/standalone_rst_html4css1.html
+
+_18.0.t2356-1tg add-file true true /trunk/docutils/test/test_functional.py
+
+_u.0.t2356-1tg add-file true true /trunk/docutils/test/functional/input/standalone_rst_latex.txt
+
+_m.0.t2356-1tg add-file true true /trunk/docutils/test/functional/input/data/table_colspan.txt
+
+_s.0.t2356-1tg add-file true true /trunk/docutils/test/functional/input/standalone_rst_html4css1.txt
+
+_e.0.t2356-1tg add-dir false false /trunk/docutils/test/functional/input
+
+_w.0.t2356-1tg add-dir false false /trunk/docutils/test/functional/output
+
+_3.0.t2356-1tg add-dir false false /trunk/docutils/test/functional
+
+_8.0.t2356-1tg add-dir false false /trunk/docutils/test/functional/expected
+
+_h.0.t2356-1tg add-file true true /trunk/docutils/test/functional/input/data/errors.txt
+
+_10.0.t2356-1tg add-dir false false /trunk/docutils/test/functional/tests
+
+_o.0.t2356-1tg add-file true true /trunk/docutils/test/functional/input/data/table_complex.txt
+
+_16.0.t2356-1tg add-file true true /trunk/docutils/test/functional/tests/standalone_rst_latex.py
+
+_f.0.t2356-1tg add-dir false false /trunk/docutils/test/functional/input/data
+
+_x.0.t2356-1tg add-file true true /trunk/docutils/test/functional/output/README.txt
+
+_5.0.t2356-1tg add-file true true /trunk/docutils/test/functional/README.txt
+
+_14.0.t2356-1tg add-file true true /trunk/docutils/test/functional/tests/standalone_rst_html4css1.py
+
+_11.0.t2356-1tg add-file true true /trunk/docutils/test/functional/tests/_default.py
+
+_c.0.t2356-1tg add-file true true /trunk/docutils/test/functional/expected/standalone_rst_latex.tex
+
+
+10711 10856

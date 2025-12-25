@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-03-24T14:38:44.322379Z
+K 7
+svn:log
+V 27
+restored Py21 compatibility
+END

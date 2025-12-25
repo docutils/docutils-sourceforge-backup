@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-05-26T21:13:56.037162Z
+K 7
+svn:log
+V 80
+consider only files in test/functional/expected/ which are under version control
+END

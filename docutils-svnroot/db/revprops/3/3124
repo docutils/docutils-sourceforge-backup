@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-03-26T13:06:59.635085Z
+K 7
+svn:log
+V 64
+removed unnecessary Targetable.indirect_reference_name attribute
+END

@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-11-16T01:17:33.012977Z
+K 7
+svn:log
+V 242
+Update ``generate_punctuation_chars`` templates
+
+This changes the templates to match changes made to
+``punctuation_chars``, making updating the file easier. It also
+changes the string wrapping algorithm, leaving less space blank on
+each line.
+END

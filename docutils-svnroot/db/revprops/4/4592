@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-06-04T21:36:39.952604Z
+K 7
+svn:log
+V 143
+removed support for passing attribute values to handler command names:
+not needed, and crashes when attribute values contain unicode characters
+END

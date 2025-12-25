@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-07-22T11:59:10.061799Z
+K 7
+svn:log
+V 62
+Fix hashbang line in "smartquotes" script.
+
+Fixes [bugs:#491].
+END

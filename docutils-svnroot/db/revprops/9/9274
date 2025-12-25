@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-11-25T14:01:57.219732Z
+K 7
+svn:log
+V 248
+Fix import errors with ``python -m unittest``.
+
+Running standard unittest on the test suite resulted in 89 ImportErrors
+because ``import DocutilsTestSupport was used to set up sys.path()
+but the module could not be found on the original sys.path().
+END

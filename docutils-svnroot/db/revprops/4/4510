@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 6
+sfcben
+K 8
+svn:date
+V 27
+2006-04-23T03:49:46.149263Z
+K 7
+svn:log
+V 184
+Added answer about list markup (don't indent, blank lines).
+Added answer about lists in HTML writer (indented, compaction).
+Converted docs/ links to relative to allow offline reading.
+
+END

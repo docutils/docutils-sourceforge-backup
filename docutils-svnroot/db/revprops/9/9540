@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-02-17T10:36:59.765147Z
+K 7
+svn:log
+V 57
+Use "pathlib" and add deprecation warnings in frontend.py
+END

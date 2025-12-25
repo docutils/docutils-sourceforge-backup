@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-06-01T08:34:07.809499Z
+K 7
+svn:log
+V 349
+manpage writer: do not drop text content of inline targets.
+
+Inline targets are eponymous, they point to a text portion that is
+also the base of the target's name and id.
+
+Generated manpages do not implement internal hyperlinks but the
+document source may be used with different writers and contain
+cross references -> print the text as normal text.
+END

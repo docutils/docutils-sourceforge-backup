@@ -1,0 +1,37 @@
+K 8
+Dir.smak
+V 25
+file c-5058.0.r5058/20449
+K 15
+ExtractTests.pm
+V 26
+file 67-4580.0.r4580/61968
+K 15
+include11.mydom
+V 26
+file 69-4580.0.r4580/62206
+K 12
+includes.tar
+V 26
+file 6b-4580.0.r4580/62850
+K 15
+test_include.py
+V 26
+file 6d-4580.0.r4580/62487
+K 10
+utf-16.csv
+V 26
+file 6f-4580.0.r4580/63142
+END
+D 8
+Dir.smak
+D 15
+ExtractTests.pm
+D 15
+include11.mydom
+D 12
+includes.tar
+D 15
+test_include.py
+D 10
+utf-16.csv

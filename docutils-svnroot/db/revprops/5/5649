@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 8
+cliechti
+K 8
+svn:date
+V 27
+2008-09-23T00:21:23.870758Z
+K 7
+svn:log
+V 54
+complete PDF support for use in the aafigure directive
+END

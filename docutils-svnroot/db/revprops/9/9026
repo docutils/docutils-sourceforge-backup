@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-03-04T15:57:13.635600Z
+K 7
+svn:log
+V 176
+Ensure 2 blank lines around top-level functions and classes.
+
+flake8 rules
+E302: expected 2 blank lines, found 1
+E305: expected 2 blank lines after class or function definition
+END

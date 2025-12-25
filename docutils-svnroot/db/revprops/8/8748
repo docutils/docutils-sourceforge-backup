@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-05-20T12:22:27.142420Z
+K 7
+svn:log
+V 396
+MathML: support more functions and symbols.
+
+- Support emellished identifiers,
+- support more functions and symbols from "amsmath",
+- map HYPHEN-MINUS -> MINUS SIGN and COLON -> RATIO im math context,
+- simplify doctests with starred import,
+- dont wrap content in <mrow> when it is inferred by an element
+  (let these elements inherit from "mrow").
+
+- tex2unichar: Fix/extend character mappings.
+END

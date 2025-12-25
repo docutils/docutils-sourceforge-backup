@@ -1,0 +1,417 @@
+K 8
+Dir.smak
+V 32
+file 3o-5058.1a-4580.r6233/19294
+K 11
+analogy.dom
+V 27
+file 9n-4327.0.r4327/906655
+K 11
+analogy.rst
+V 27
+file 9p-4327.0.r4327/909780
+K 16
+autofootnote.dom
+V 27
+file 9r-4327.0.r4327/910490
+K 16
+autofootnote.rst
+V 27
+file 9t-4327.0.r4327/914343
+K 13
+badinline.dom
+V 27
+file 9v-4327.0.r4327/910251
+K 13
+badinline.rst
+V 27
+file 9x-4327.0.r4327/913872
+K 16
+badinline.stderr
+V 33
+file ey-4580.1a-4580.r4580/126075
+K 16
+bqinexplicit.dom
+V 27
+file 9z-4327.0.r4327/915550
+K 16
+bqinexplicit.rst
+V 27
+file a1-4327.0.r4327/917969
+K 19
+defafteroptlist.dom
+V 27
+file a3-4327.0.r4327/920632
+K 19
+defafteroptlist.rst
+V 27
+file a5-4327.0.r4327/906164
+K 16
+defotherlist.dom
+V 27
+file a7-4327.0.r4327/915792
+K 16
+defotherlist.rst
+V 27
+file a9-4327.0.r4327/918454
+K 12
+embeduri.dom
+V 29
+file 5-4849.1a-4580.r4849/463
+K 12
+embeduri.rst
+V 29
+file 8-4849.1a-4580.r4849/723
+K 14
+enumlist01.dom
+V 29
+file 5-5288.1a-4580.r5288/470
+K 14
+enumlist01.rst
+V 29
+file 8-5288.1a-4580.r5288/732
+K 16
+fakerefinref.dom
+V 27
+file ab-4327.0.r4327/919415
+K 16
+fakerefinref.rst
+V 27
+file ad-4327.0.r4327/904960
+K 16
+fakerefintrp.dom
+V 27
+file af-4327.0.r4327/909538
+K 16
+fakerefintrp.rst
+V 27
+file ah-4327.0.r4327/913151
+K 13
+fieldlist.dom
+V 27
+file aj-4327.0.r4327/904721
+K 13
+fieldlist.rst
+V 27
+file al-4327.0.r4327/908088
+K 14
+fieldparas.dom
+V 27
+file an-4327.0.r4327/913391
+K 14
+fieldparas.rst
+V 27
+file ap-4327.0.r4327/916766
+K 15
+footnotes07.dom
+V 27
+file ar-4327.0.r4327/910733
+K 15
+footnotes07.rst
+V 27
+file at-4327.0.r4327/914585
+K 15
+footnotes08.dom
+V 27
+file av-4327.0.r4327/910974
+K 15
+footnotes08.rst
+V 27
+file ax-4327.0.r4327/915068
+K 15
+footnotes10.dom
+V 27
+file az-4327.0.r4327/914826
+K 17
+footnotes10.mydom
+V 27
+file b1-4327.0.r4327/905920
+K 15
+footnotes10.rst
+V 27
+file b3-4327.0.r4327/917489
+K 18
+footnotes10.stderr
+V 33
+file f0-4580.1a-4580.r4580/126346
+K 15
+footnotes11.dom
+V 27
+file b5-4327.0.r4327/915309
+K 15
+footnotes11.rst
+V 27
+file b7-4327.0.r4327/917730
+K 18
+footnotesmixed.dom
+V 27
+file b9-4327.0.r4327/912661
+K 18
+footnotesmixed.rst
+V 27
+file bb-4327.0.r4327/916522
+K 16
+footnotesyms.dom
+V 27
+file bd-4327.0.r4327/908327
+K 16
+footnotesyms.rst
+V 27
+file bf-4327.0.r4327/911699
+K 15
+includenonl.dom
+V 27
+file bh-4327.0.r4327/908570
+K 15
+includenonl.rst
+V 27
+file bj-4327.0.r4327/911941
+K 19
+inline_markup01.dom
+V 33
+file pd-4710.1a-4580.r4710/235729
+K 19
+inline_markup01.rst
+V 33
+file pg-4710.1a-4580.r4710/236005
+K 13
+lineblock.dom
+V 33
+file pi-4710.1a-4580.r4710/236280
+K 13
+lineblock.rst
+V 33
+file pk-4710.1a-4580.r4710/236550
+K 8
+list.dom
+V 32
+file 19-6233.1a-4580.r6233/18765
+K 8
+list.rst
+V 32
+file 1b-6233.1a-4580.r6233/18240
+K 18
+listinexplicit.dom
+V 27
+file bl-4327.0.r4327/917006
+K 18
+listinexplicit.rst
+V 27
+file bn-4327.0.r4327/920142
+K 18
+litdotintarget.dom
+V 27
+file bp-4327.0.r4327/916035
+K 18
+litdotintarget.rst
+V 27
+file br-4327.0.r4327/918696
+K 12
+litinref.dom
+V 27
+file bt-4327.0.r4327/904242
+K 12
+litinref.rst
+V 27
+file bv-4327.0.r4327/907852
+K 10
+litref.dom
+V 27
+file bx-4327.0.r4327/910015
+K 10
+litref.rst
+V 27
+file bz-4327.0.r4327/914109
+K 17
+lostbeforeref.dom
+V 27
+file c1-4327.0.r4327/907367
+K 17
+lostbeforeref.rst
+V 27
+file c3-4327.0.r4327/911456
+K 15
+lostbracket.dom
+V 27
+file c5-4327.0.r4327/913631
+K 15
+lostbracket.rst
+V 27
+file c7-4327.0.r4327/917250
+K 16
+optlistspace.dom
+V 27
+file c9-4327.0.r4327/904000
+K 16
+optlistspace.rst
+V 27
+file cb-4327.0.r4327/907610
+K 15
+quoteinline.dom
+V 27
+file cd-4327.0.r4327/919901
+K 15
+quoteinline.rst
+V 27
+file cf-4327.0.r4327/905679
+K 17
+replaceinterp.dom
+V 27
+file ch-4327.0.r4327/916279
+K 17
+replaceinterp.rst
+V 27
+file cj-4327.0.r4327/918938
+K 14
+rom_6_list.dom
+V 29
+file 5-6436.1a-4580.r6436/563
+K 14
+rom_6_list.rst
+V 29
+file 8-6436.1a-4580.r6436/825
+K 12
+sections.dom
+V 29
+file 5-4848.1a-4580.r4848/612
+K 12
+sections.rst
+V 30
+file 8-4848.1a-4580.r4848/1135
+K 15
+sections.stderr
+V 29
+file a-4848.1a-4580.r4848/872
+K 18
+spaceonlylines.dom
+V 27
+file cl-4327.0.r4327/919657
+K 18
+spaceonlylines.rst
+V 27
+file cn-4327.0.r4327/905435
+K 19
+subrefinlineblk.dom
+V 27
+file cp-4327.0.r4327/909293
+K 19
+subrefinlineblk.rst
+V 27
+file cr-4327.0.r4327/912906
+K 14
+substinlit.dom
+V 27
+file ct-4327.0.r4327/907127
+K 14
+substinlit.rst
+V 27
+file cv-4327.0.r4327/911216
+K 20
+tabalignmultipar.dom
+V 27
+file cx-4327.0.r4327/920386
+K 20
+tabalignmultipar.rst
+V 27
+file cz-4327.0.r4327/906409
+K 9
+table.dom
+V 27
+file d1-4327.0.r4327/919179
+K 9
+table.rst
+V 27
+file d3-4327.0.r4327/905200
+K 12
+tables12.dom
+V 27
+file d5-4327.0.r4327/909054
+K 12
+tables12.rst
+V 27
+file d7-4327.0.r4327/912423
+K 17
+tgtwhitespace.dom
+V 27
+file d9-4327.0.r4327/908811
+K 17
+tgtwhitespace.rst
+V 27
+file db-4327.0.r4327/912182
+K 11
+title01.dom
+V 32
+file 1d-6233.1a-4580.r6233/19028
+K 11
+title01.rst
+V 32
+file 1f-6233.1a-4580.r6233/18501
+K 15
+title01.skip.pl
+V 28
+file c-6252.1a-4580.r6252/91
+K 17
+trailingspace.dom
+V 27
+file dd-4327.0.r4327/918211
+K 17
+trailingspace.rst
+V 27
+file df-4327.0.r4327/904480
+END
+D 8
+Dir.smak
+D 11
+analogy.dom
+D 11
+analogy.rst
+D 16
+autofootnote.dom
+D 16
+autofootnote.rst
+D 13
+badinline.dom
+D 13
+badinline.rst
+D 16
+badinline.stderr
+D 16
+bqinexplicit.dom
+D 16
+bqinexplicit.rst
+D 19
+defafteroptlist.dom
+D 19
+defafteroptlist.rst
+D 16
+defotherlist.dom
+D 16
+defotherlist.rst
+D 12
+embeduri.dom
+D 12
+embeduri.rst
+D 14
+enumlist01.dom
+D 14
+enumlist01.rst
+D 16
+fakerefinref.dom
+D 16
+fakerefinref.rst
+D 16
+fakerefintrp.dom
+D 16
+fakerefintrp.rst
+D 13
+fieldlist.dom
+D 13
+fieldlist.rst
+D 14
+fieldparas.dom
+D 14
+fieldparas.rst
+D 15
+footnotes07.dom
+D 15
+footnotes07.rst

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-20T22:32:21.629443Z
+K 7
+svn:log
+V 184
+enabled embed_stylesheet by default;
+people who don't care of getting their stylesheet uploaded wouldn't
+include the stylesheet otherwise, and people who do will find --link-stylesheet
+END

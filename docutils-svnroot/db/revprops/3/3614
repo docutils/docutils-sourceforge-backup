@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-27T22:25:11.424876Z
+K 7
+svn:log
+V 151
+do not double apply default transforms in publish_from_doctree;
+this does not look very clean... and there are still no tests which cover that behavior
+END

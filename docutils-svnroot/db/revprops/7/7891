@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2015-05-08T16:00:17.053286Z
+K 7
+svn:log
+V 62
+Add source and line info to bullet list and option list items.
+END

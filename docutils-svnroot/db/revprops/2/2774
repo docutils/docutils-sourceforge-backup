@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-10-30T14:00:20.000000Z
+K 7
+svn:log
+V 132
+use TransitionTestCase;
+updated existing tests to match new error reporting behavior;
+added new tests to test moving of transitions
+
+END

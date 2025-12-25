@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-04-24T23:21:48.704031Z
+K 7
+svn:log
+V 215
+Added ``html_body``, ``html_title``, & ``html_subtitle`` to HTML writer parts dictionary exposed by ``docutils.core.publish_parts``; updated tests.  Added "``publish_parts`` Details" section to docs/api/publish.txt.
+END

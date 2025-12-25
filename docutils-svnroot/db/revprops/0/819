@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2002-10-17T08:15:14.000000Z
+K 7
+svn:log
+V 110
++ style.tex: with more comments.
++ latex2e.py: admonition in parbaox (90% width).
+  and access labels direct.
+
+END

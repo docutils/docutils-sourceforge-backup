@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-10-14T16:42:15.347495Z
+K 7
+svn:log
+V 236
+updated tools.txt to match recent reorganisation;
+fixed some relicts;
+esp. the "pep2html.py" section has been deleted; the script is no
+longer included in the Docutils distribution (maybe you want to
+use the text somewhere else, David?)
+END

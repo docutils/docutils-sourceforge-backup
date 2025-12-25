@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 4
+cben
+K 8
+svn:date
+V 27
+2003-09-17T14:45:21.000000Z
+K 7
+svn:log
+V 220
+- Added some documentation about text-containing vs. compound elements.
+
+- Improved images in LaTeX writer:
+
+  - Fixed inline images (used to always break the paragraph).
+  - Implemented ``align`` and ``scale`` options.
+
+END

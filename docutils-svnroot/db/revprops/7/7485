@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2012-07-06T08:17:28.481123Z
+K 7
+svn:log
+V 72
+Apply [3527401] manpage writer addmonition's don't preserve indentation
+
+END

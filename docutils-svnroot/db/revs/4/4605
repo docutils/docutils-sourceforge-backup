@@ -1,0 +1,212 @@
+id: 3u-18.0-4266.r4605/0
+type: file
+pred: 3u-18.0.r4152/17531
+count: 51
+text: 4527 0 35 20898 d98d688677bc354b6b184a3c776f69f8 6229dbb02c7042b37ca6b53d22b5ebbfd5876bf0 4604-3jw/_4
+props: 2815 1517 111 0 14533b38c2d22fb145a05b253c8fb2e8
+cpath: /branches/docutils-0.4/docutils/utils.py
+copyroot: 4266 /branches/docutils-0.4
+
+PLAIN
+K 11
+__init__.py
+V 28
+file 1x-18.0-4266.r4269/6799
+K 7
+core.py
+V 22
+file 20-18.0.r4208/363
+K 13
+docutils.conf
+V 29
+file m-3472.0-3904.r3904/2799
+K 11
+examples.py
+V 23
+file 3-1928.0.r3598/207
+K 11
+frontend.py
+V 24
+file 3-150.0.r4183/12227
+K 5
+io.py
+V 22
+file 3-217.0.r3654/291
+K 9
+languages
+V 22
+dir 22-18.0.r4203/4865
+K 8
+nodes.py
+V 23
+file 28-18.0.r4242/1778
+K 7
+parsers
+V 27
+dir 2a-18.0-4266.r4490/9200
+K 7
+readers
+V 22
+dir 36-18.0.r4242/5059
+K 15
+statemachine.py
+V 24
+file 3e-18.0.r4152/17824
+K 10
+transforms
+V 28
+dir 3g-18.0-4266.r4490/11734
+K 13
+urischemes.py
+V 23
+file 3s-18.0.r4235/2122
+K 8
+utils.py
+V 25
+file 3u-18.0-4266.r4605/0
+K 7
+writers
+V 28
+dir 3w-18.0-4266.r4490/10682
+END
+ENDREP
+id: 1w-18.0-4266.r4605/1024
+type: dir
+pred: 1w-18.0-4266.r4490/12715
+count: 1390
+text: 4605 323 688 688 69d66058771775dad84091ee149f564d
+props: 342 8363 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /branches/docutils-0.4/docutils
+copyroot: 4266 /branches/docutils-0.4
+
+PLAIN
+K 8
+BUGS.txt
+V 24
+file 2-2181.0.r4233/8277
+K 11
+COPYING.txt
+V 24
+file 2-18.0-4266.r4472/0
+K 7
+FAQ.txt
+V 25
+file 2-788.0-4266.r4482/0
+K 11
+HISTORY.txt
+V 27
+file 5-18.0-4266.r4598/1590
+K 11
+MANIFEST.in
+V 23
+file 7-18.0.r4156/57222
+K 10
+README.txt
+V 21
+file 9-18.0.r4216/546
+K 17
+RELEASE-NOTES.txt
+V 28
+file 2-4204.0-4266.r4278/314
+K 10
+THANKS.txt
+V 22
+file 2-2182.0.r4240/66
+K 4
+docs
+V 25
+dir 3-7.0-4266.r4480/1508
+K 8
+docutils
+V 27
+dir 1w-18.0-4266.r4605/1024
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 27
+file 46-18.0-4266.r4462/455
+K 4
+test
+V 27
+dir 48-18.0-4266.r4490/7826
+K 5
+tools
+V 27
+dir 6w-18.0-4266.r4481/1678
+END
+ENDREP
+id: 1-7.0-4266.r4605/2025
+type: dir
+pred: 1-7.0-4266.r4598/2647
+count: 3218
+text: 4605 1293 719 719 599d4bb35c61e1e43a8bcce9cf4ade7f
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /branches/docutils-0.4
+copyroot: 4266 /branches/docutils-0.4
+
+PLAIN
+K 17
+address-rendering
+V 26
+dir 1-7.0-4314.r4314/16372
+K 10
+directives
+V 26
+dir 3-1.0-4375.r4570/14345
+K 12
+docutils-0.4
+V 25
+dir 1-7.0-4266.r4605/2025
+K 7
+nesting
+V 25
+dir 3-1.0-1813.r4356/3347
+END
+ENDREP
+id: 0-1.0.r4605/2492
+type: dir
+pred: 0-1.0.r4598/3114
+count: 329
+text: 4605 2280 199 199 592beef26b89ac4ca1ec3117979a9762
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r4605/2492
+K 4
+tags
+V 19
+dir 2-1.0.r4584/629
+K 5
+trunk
+V 20
+dir 3-1.0.r4604/1859
+END
+ENDREP
+id: 0.0.r4605/2772
+type: dir
+pred: 0.0.r4604/2137
+count: 4605
+text: 4605 2646 113 113 7f838d9e41cb5d79e3c45211dbccc1dc
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+
+3u-18.0-4266.t4604-3jw modify-file true false /branches/docutils-0.4/docutils/utils.py
+
+
+2772 2966

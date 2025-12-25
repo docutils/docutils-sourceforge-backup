@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-01-26T09:57:04.358044Z
+K 7
+svn:log
+V 105
+Add link to git mirror on http://repo.or.cz/w/docutils.git
+
+Thanks to Kirill Smelkov for setting this up.
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-09-03T09:17:15.886593Z
+K 7
+svn:log
+V 102
+Allow running test_buildhtml.py from anywhere, also with Python 3.
+
+Fixes [ 3521167 ] and [ 3521168 ].
+END

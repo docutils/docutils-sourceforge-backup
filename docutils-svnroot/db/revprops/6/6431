@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-09-21T12:51:29.767763Z
+K 7
+svn:log
+V 130
+XeTeX writer update/bugfix/completion
+
+rst2xetex.py front end,
+install xetex writer with setup.py,
+no hyphenation in literal text.
+END

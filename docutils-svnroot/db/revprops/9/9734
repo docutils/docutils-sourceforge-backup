@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-06T14:01:35.238596Z
+K 7
+svn:log
+V 340
+xml parser: new method `parse_element()`.
+
+The method `Parser.parse_element()` does not require/populate
+a <document> root node.
+It parses an XML representation of a "document tree" element
+(with possible sub-elements) and returns a `docutils.nodes.Element`
+instance (with possible child nodes).
+
+See the unittest script for usage examples.
+END

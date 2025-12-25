@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-12-14T11:03:06.313249Z
+K 7
+svn:log
+V 331
+Fix statement in rST Specification example.
+
+The rST specification states in one example that
+"A footnote contains body elements, consistently indented by at least 3 spaces."
+The minimal indentation in rST is one space.
+
+Fix the example.
+Add more examples.
+Sort.
+
+Cf. https://stackoverflow.com/a/48313531/12090995
+Fixes [bugs:#515]
+END

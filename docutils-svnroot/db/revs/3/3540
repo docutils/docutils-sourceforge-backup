@@ -1,0 +1,52 @@
+PLAIN
+K 22
+blais_interrupt_render
+V 23
+dir 1-3514.0.r3525/5287
+K 7
+nesting
+V 27
+dir 3-1.0-1813.r2577/106277
+END
+ENDREP
+id: 0-1.0.r3540/119
+type: dir
+pred: 0-1.0.r3525/5735
+count: 48
+text: 3540 0 106 106 02c8b10c848bdf278b0c101194130a92
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r3540/119
+K 4
+tags
+V 19
+dir 2-1.0.r3383/196
+K 5
+trunk
+V 20
+dir 3-1.0.r3539/2481
+END
+ENDREP
+id: 0.0.r3540/393
+type: dir
+pred: 0.0.r3539/2759
+count: 3540
+text: 3540 268 112 112 c7fc8198c82683b20ab31641ee1f8f28
+cpath: /
+copyroot: 0 /
+
+3-1.0-3.r1556/334 delete-dir false false /branches/vendor
+
+3-1.0-63.r63/279 delete-dir false false /branches/tibs
+
+3-1.0-19.r21/10951 delete-dir false false /branches/goodger
+
+3-1.0-1551.r1551/296 delete-dir false false /branches/ax
+
+
+393 534

@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-27T17:06:30.783004Z
+K 7
+svn:log
+V 251
+Update IO error handling.
+
+In Python3.3, IOError has been merged into OSError.
+https://docs.python.org/3/library/exceptions.html#OSError
+
+Move code for recording dependencies in an "else" clause
+after error handling.
+
+Remove duplicate code in core.py.
+END

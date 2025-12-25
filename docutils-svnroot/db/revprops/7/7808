@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2015-02-27T17:03:32.560211Z
+K 7
+svn:log
+V 82
+Make the insertion of "admonition" class in the HTML writer
+(keeps doctree clean).
+END

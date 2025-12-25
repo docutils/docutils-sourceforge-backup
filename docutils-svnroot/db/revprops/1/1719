@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2003-10-13T13:48:45.000000Z
+K 7
+svn:log
+V 52
+Modify check for use with man.
+First ManPageWriter.
+
+END

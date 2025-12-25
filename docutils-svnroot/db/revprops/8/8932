@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-05T14:59:31.533332Z
+K 7
+svn:log
+V 180
+Front-end documentation update and small fix.
+
+Revise/fix front-end tool documentation.
+
+Add support for -h and --help options to rst2odt_prepstyles.py
+in order to unify behaviour.
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-03-05T23:29:59.208567Z
+K 7
+svn:log
+V 48
+Fix invalid escape sequences.
+
+flake 8 rule W605
+END

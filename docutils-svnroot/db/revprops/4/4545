@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2006-05-13T23:50:18.611376Z
+K 7
+svn:log
+V 129
+Added an emacs function to easily create and remove line blocks.
+Updated documentation correspondingly.
+Try it with ``C-c p e``.
+
+END

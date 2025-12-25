@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T01:41:43.601509Z
+K 7
+svn:log
+V 139
+Do not allow titles spanning several lines.
+There is just no usable syntax for that, and it's not an
+important feature (not many requests).
+END

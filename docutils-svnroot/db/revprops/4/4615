@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-06-05T20:40:20.260532Z
+K 7
+svn:log
+V 194
+--- MERGE: merged r4450 to maintenance branch; original log message:
+    Removed os.chdir call (setUp method), since that can mess up other tests. Its removal revealed a bug (marked with "!!!").
+END

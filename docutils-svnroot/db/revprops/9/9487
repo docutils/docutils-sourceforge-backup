@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-11-25T21:09:29.786883Z
+K 7
+svn:log
+V 405
+Adapt path before reading image file.
+
+In order to work in the output document, relative image URIs relate
+to the output directory. To determine the image size from the image or
+embed the image, the writer must access the image file at build time.
+
+The change ensures that the same URI can be used for images referenced
+in the output document and embedded images also when CWD and output
+directory differ.
+END

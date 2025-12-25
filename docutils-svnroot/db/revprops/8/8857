@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-10-16T21:07:52.406120Z
+K 7
+svn:log
+V 205
+Test and update recommonmark_wrapper.py to work with recommonmark 0.6.0.
+
+Still experimental.
+
+Unfortunately, recommonmark_ is no longer maintained
+(https://github.com/readthedocs/recommonmark/issues/221).
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2008-06-23T09:16:39.175311Z
+K 7
+svn:log
+V 46
+Fix description to use-verbatim-when-possible
+
+END

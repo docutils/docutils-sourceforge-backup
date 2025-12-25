@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-04-14T15:14:13.509841Z
+K 7
+svn:log
+V 65
+Add sub-module to convert Unicode math symbols to LaTeX commands.
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-11-08T16:33:26.000000Z
+K 7
+svn:log
+V 80
+moved paragraph-compacting logic to a separate method (thanks to Jason Diamond)
+
+END

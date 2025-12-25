@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+mmgilbe
+K 8
+svn:date
+V 27
+2004-12-28T18:26:09.000000Z
+K 7
+svn:log
+V 304
+Added patch from Ollie Rutherfurd to assume inline if the uri doesn't start with file, http, or https. This allows regular docutils image syntax instead of having to add the MoinMoin extra "inline".
+
+Also changed to using newinstancemethod for the functors. I think this is the way it should be working.
+
+END

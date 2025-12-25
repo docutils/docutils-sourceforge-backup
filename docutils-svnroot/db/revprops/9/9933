@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-09-20T06:30:59.335396Z
+K 7
+svn:log
+V 440
+Revise/fix handling of length specification in the ODT writer.
+
+Use "px" as fallback unit for unitless image size attributes.
+
+Fix conversion factor of "pc" (pica) to "cm".
+
+Fix conversion of image width in "%" if the height is specified.
+
+Adjust fallback DPI value (currently not used) to match CSS units.
+
+Document that PIL/Pillow is always required if images are inserted
+without specifying width and height, also if "scale" is not used.
+END

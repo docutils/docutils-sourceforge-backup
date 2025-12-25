@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-04-30T16:51:33.041884Z
+K 7
+svn:log
+V 119
+renamed "dangerous" functional test to "restricted"
+so that it doesn't get in the way when tab-completing to input/data
+END

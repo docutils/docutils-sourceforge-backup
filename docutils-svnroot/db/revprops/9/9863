@@ -1,0 +1,25 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-08-07T14:05:58.580207Z
+K 7
+svn:log
+V 437
+Type-hinting fixups, mostly indentation.
+
+Normalize indentation,
+add explanation to NoQA number,
+add summary to multi-line docstring,
+shorten code.
+
+Ignore flake8 rule requiring whitespace around "bitwise or" operator
+(also used as Union operator in type annotations):
+
+PEP8 says: "If operators with different priorities are used,
+consider adding whitespace around the operators with the lowest
+priority(ies). Use your own judgment; …"
+END

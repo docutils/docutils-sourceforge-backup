@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2009-10-11T14:51:42.691602Z
+K 7
+svn:log
+V 87
+Hack around not existing refname attribute. Test with docs/dev/todo.txt, see. |donate|
+
+END

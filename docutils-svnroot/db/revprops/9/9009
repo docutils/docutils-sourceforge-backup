@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-02-19T23:32:41.879827Z
+K 7
+svn:log
+V 472
+Write table column widths with 3 digits precision. Fixes bug #444.
+
+Bug #444 reports visible effects of rounding errors with the current
+rounding to integer percentages (e.g. 7 columns 13% and one 9% for
+8 columns of equal width).
+
+Allow a fractional part (1 digit) when table column widths are
+written as percentages in the "colgroup".
+Use f-string literal to format coefficient as percentage.
+
+CSS allows decimal numbers (since CSS1) in the specification
+of percentages.
+END

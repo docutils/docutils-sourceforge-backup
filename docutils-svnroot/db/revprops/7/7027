@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-05-06T11:22:20.060426Z
+K 7
+svn:log
+V 70
+Fix: failsafe encoding of unicode strings before writing to sys.stderr
+END

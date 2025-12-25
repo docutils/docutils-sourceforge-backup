@@ -1,0 +1,9 @@
+id: 4w-18.0.t9229-757
+type: file
+pred: 4w-18.0.r9141/20055
+count: 17
+text: -1 0 388 7188 4081f916c9867baac785b62f5374ca82 8b74dfad900f9f74b6f826f09978c500ea495984 9229-757/_6
+props: 778 26212 136 0 9498f9acecba762a787db20de8ef6de1
+cpath: /trunk/docutils/test/test_parsers/test_rst/test_comments.py
+copyroot: 0 /
+

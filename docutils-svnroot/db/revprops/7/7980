@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2016-11-29T12:10:50.331347Z
+K 7
+svn:log
+V 80
+Make tests fit for newest python versions.
+Also apply a version of patch [ 136 ]
+END

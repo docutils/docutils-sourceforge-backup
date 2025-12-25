@@ -1,0 +1,371 @@
+id: 1o-18.0-3324.r3324/0
+type: file
+pred: 1o-18.0.r18/309766
+count: 1
+text: 18 101610 196 179 b92a9a6884b1a3c85628100e3207cdeb cd295504b17a67690115d2f1aef9333e5ae2e7a4 17-h/_1p
+props: 18 309671 82 0 f19ef9f32335f848dc405b72420fd391
+cpath: /trunk/docutils/test/functional/input/data/biohazard.png
+copyfrom: 3314 /trunk/docutils/docs/user/rst/images/biohazard.png
+
+id: 1q-18.1-3324.r3324/363
+type: file
+pred: 1q-18.0.r18/309395
+count: 1
+text: 18 101819 1188 1171 9344a3bf88f1c75c725d14939af404cf 756dd8ae3f649b690dafe5277ec52e02b6ecb604 17-h/_1r
+props: 18 309300 82 0 f19ef9f32335f848dc405b72420fd391
+cpath: /trunk/docutils/test/functional/input/data/rst.png
+copyfrom: 3314 /trunk/docutils/docs/user/rst/images/title.png
+
+PLAIN
+K 13
+biohazard.png
+V 25
+file 1o-18.0-3324.r3324/0
+K 10
+errors.txt
+V 24
+file h-2357.0.r2357/1374
+K 17
+header_footer.txt
+V 26
+file 1a-3184.0.r3184/11579
+K 9
+latex.txt
+V 22
+file 6-3271.0.r3278/56
+K 14
+list_table.txt
+V 24
+file m-3165.0.r3165/5101
+K 19
+nonalphanumeric.txt
+V 24
+file 8-2660.0.r2660/1703
+K 7
+rst.png
+V 27
+file 1q-18.1-3324.r3324/363
+K 12
+standard.txt
+V 24
+file k-2357.0.r3322/2946
+K 17
+table_colspan.txt
+V 23
+file m-2357.0.r2357/960
+K 17
+table_complex.txt
+V 24
+file o-2357.0.r2357/1782
+K 17
+table_rowspan.txt
+V 24
+file q-2357.0.r2357/2611
+K 11
+unicode.txt
+V 24
+file b-2660.0.r2660/2120
+END
+ENDREP
+id: f-2357.0.r3324/1333
+type: dir
+pred: f-2357.0.r3322/3779
+count: 26
+text: 3324 720 600 600 d001b0b5f73eee85fa5310d2e71a7278
+cpath: /trunk/docutils/test/functional/input/data
+copyroot: 0 /
+
+PLAIN
+K 13
+dangerous.txt
+V 28
+file i-3071.1-3285.r3285/123
+K 4
+data
+V 23
+dir f-2357.0.r3324/1333
+K 14
+field_list.txt
+V 24
+file f-3164.0.r3164/3336
+K 17
+latex_docinfo.txt
+V 24
+file b-2937.0.r2938/2379
+K 12
+pep_html.txt
+V 24
+file 8-3040.0.r3243/3287
+K 10
+simple.txt
+V 23
+file 5-2991.0.r2991/903
+K 28
+standalone_rst_html4css1.txt
+V 25
+file s-2357.0.r3184/11157
+K 24
+standalone_rst_latex.txt
+V 24
+file u-2357.0.r2660/3091
+K 27
+standalone_rst_newlatex.txt
+V 23
+file 5-3272.0.r3272/374
+END
+ENDREP
+id: e-2357.0.r3324/2015
+type: dir
+pred: e-2357.0.r3322/4461
+count: 39
+text: 3324 1524 478 478 e2775d3b58e72ff2c6f9aabe512ac9c2
+cpath: /trunk/docutils/test/functional/input
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 24
+file 5-2357.0.r2369/2122
+K 8
+expected
+V 23
+dir 8-2357.0.r3322/5783
+K 5
+input
+V 23
+dir e-2357.0.r3324/2015
+K 6
+output
+V 21
+dir w-2357.0.r2993/63
+K 5
+tests
+V 24
+dir 10-2357.0.r3285/3333
+END
+ENDREP
+id: 3-2357.0.r3324/2424
+type: dir
+pred: 3-2357.0.r3322/6195
+count: 89
+text: 3324 2202 209 209 823a4a867c8adb2c2a9e27287bfda0e8
+cpath: /trunk/docutils/test/functional
+copyroot: 0 /
+
+PLAIN
+K 22
+DocutilsTestSupport.py
+V 23
+file 49-18.0.r3268/1479
+K 11
+alltests.py
+V 23
+file 4e-18.0.r3253/1732
+K 4
+data
+V 23
+dir 3-1662.0.r3039/6700
+K 13
+docutils.conf
+V 24
+file 6-1661.0.r2385/2146
+K 19
+docutils_difflib.py
+V 24
+file 6-2354.0.r2354/1272
+K 10
+functional
+V 23
+dir 3-2357.0.r3324/2424
+K 19
+package_unittest.py
+V 21
+file 3-44.0.r2454/856
+K 20
+test_dependencies.py
+V 24
+file 3-2679.0.r2683/4279
+K 18
+test_functional.py
+V 24
+file 18-2357.0.r3176/122
+K 10
+test_io.py
+V 23
+file 5-3138.0.r3139/243
+K 16
+test_language.py
+V 23
+file 3-940.0.r3085/8438
+K 13
+test_nodes.py
+V 23
+file 4i-18.0.r3129/8228
+K 12
+test_parsers
+V 22
+dir 4k-18.0.r3253/5925
+K 12
+test_readers
+V 21
+dir 3-89.0.r3129/2577
+K 16
+test_settings.py
+V 24
+file g-1662.0.r3039/4956
+K 20
+test_statemachine.py
+V 22
+file 6a-18.0.r917/6020
+K 15
+test_transforms
+V 22
+dir 6c-18.0.r3199/4612
+K 13
+test_utils.py
+V 21
+file 6u-18.0.r3171/53
+K 16
+test_viewlist.py
+V 23
+file 3-916.0.r3085/3892
+K 12
+test_writers
+V 23
+dir 5-1211.0.r3257/3198
+END
+ENDREP
+id: 48-18.0.r3324/3608
+type: dir
+pred: 48-18.0.r3322/7379
+count: 460
+text: 3324 2605 990 990 182d8ba00313bc6b09a317d655b1f30d
+props: 343 993 44 0 e8789a4081469b0bbc8d88dcdbd925ef
+cpath: /trunk/docutils/test
+copyroot: 0 /
+
+PLAIN
+K 8
+BUGS.txt
+V 23
+file 2-2181.0.r3252/723
+K 11
+COPYING.txt
+V 21
+file 2-18.0.r3096/363
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r3230/215
+K 11
+HISTORY.txt
+V 22
+file 5-18.0.r3322/2663
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r2513/394
+K 10
+README.txt
+V 19
+file 9-18.0.r3079/0
+K 10
+THANKS.txt
+V 24
+file 2-2182.0.r3322/7601
+K 4
+docs
+V 21
+dir 3-7.0.r3322/13299
+K 8
+docutils
+V 23
+dir 1w-18.0.r3322/10347
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 23
+file 46-18.0.r2901/3967
+K 4
+test
+V 22
+dir 48-18.0.r3324/3608
+K 5
+tools
+V 22
+dir 6w-18.0.r3323/1790
+END
+ENDREP
+id: 1-7.0.r3324/4469
+type: dir
+pred: 1-7.0.r3323/2599
+count: 2519
+text: 3324 3830 626 626 a5cc11ee730883d2c379cb1bc4c21027
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r3324/4469
+K 7
+sandbox
+V 21
+dir 1-17.0.r3321/4836
+K 3
+web
+V 20
+dir 1-2.0.r3137/1247
+END
+ENDREP
+id: 3-1.0.r3324/4812
+type: dir
+pred: 3-1.0.r3323/2943
+count: 3277
+text: 3324 4683 116 116 4f8feab9e2db9064d16db68298dc76e0
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r3171/7579
+K 4
+tags
+V 20
+dir 2-1.0.r2576/3944
+K 5
+trunk
+V 20
+dir 3-1.0.r3324/4812
+END
+ENDREP
+id: 0.0.r3324/5091
+type: dir
+pred: 0.0.r3323/3223
+count: 3324
+text: 3324 4964 114 114 abbcf361f2c805bb4f4ccf99efca8de7
+cpath: /
+copyroot: 0 /
+
+1o-18._0.t3323-2kb add-file false false /trunk/docutils/test/functional/input/data/biohazard.png
+3314 /trunk/docutils/docs/user/rst/images/biohazard.png
+1q-18._1.t3323-2kb add-file false false /trunk/docutils/test/functional/input/data/rst.png
+3314 /trunk/docutils/docs/user/rst/images/title.png
+
+5091 5234

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-05-05T15:22:30.000000Z
+K 7
+svn:log
+V 449
+  - Added underscores to improve many awkward names.  - Extracted the inline parsing code from ``RSTState`` to a separate    class, ``Inliner``, which will allow easy subclassing.  - Made local bindings for ``memo`` container & often-used contents    (reduces code complexity a lot).  See ``RSTState.runtime_init()``.  - ``RSTState.parent`` replaces ``RSTState.statemachine.node``.  - Added ``MarkupMismatch`` exception; for late corrections.
+
+END

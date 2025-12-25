@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-02-02T17:12:10.663342Z
+K 7
+svn:log
+V 133
+* Refactored to remove all dependencies upon main::
+* Put the "title" class on sections that are kept but which represent
+  a title.
+
+END

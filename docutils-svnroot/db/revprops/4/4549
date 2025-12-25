@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2006-05-14T09:55:56.603108Z
+K 7
+svn:log
+V 94
+Restructure docinfo processing: dont output empty statements.
+Remove popen2 and glob imports.
+
+END

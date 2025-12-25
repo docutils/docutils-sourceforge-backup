@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-11-04T10:55:26.552888Z
+K 7
+svn:log
+V 134
+MathML: Small fixes for external latex -> MathML converters.
+
+latexml: support amsfonts commands (``\mathbb`` etc.)
+ttm: decode output
+END

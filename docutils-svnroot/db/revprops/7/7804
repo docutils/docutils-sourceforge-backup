@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2015-02-26T15:29:45.086445Z
+K 7
+svn:log
+V 221
+Fix [ 266 ] creating labels/class values in description list items.
+
+Also clarify the documentation of "class" directive and internal hyperlink
+targets applying to the next element also if at the end of an indented block.
+END

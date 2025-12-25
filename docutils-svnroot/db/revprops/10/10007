@@ -1,0 +1,26 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-01-31T10:15:44.131304Z
+K 7
+svn:log
+V 531
+LaTeX writer: Fixes for section numbering by LaTeX.
+
+Document the internal settings "sectnum_depth", "sectnum_start",
+"sectnum_prefix" and "sectnum_suffix".
+Silently ignore configuration file values for these settings
+(documented behaviour of internal settings) instead of raising
+a ValueError.
+
+Simplify logic and gather it in `Transformer.visit_section()`:
+Do not set LaTeX-specific default values for the internal settings.
+Do not (ab)use an empty requirement value to mark section number configuration
+as done.
+
+Add test cases.
+END

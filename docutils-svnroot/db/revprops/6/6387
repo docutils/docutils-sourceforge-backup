@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-08-13T12:23:41.317572Z
+K 7
+svn:log
+V 185
+Clip SVG and SWF images to the specified size.
+
+Added rule with "overflow: hidden;" to get uniform rendering across browsers.
+See also docutils/test/functional/input/data/svg_images.txt
+END

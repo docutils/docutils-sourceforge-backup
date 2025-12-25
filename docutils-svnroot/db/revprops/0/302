@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-07-18T00:57:31.000000Z
+K 7
+svn:log
+V 128
+- Added ``Contents`` to insert TOC.- Added ``PEPZero`` for PEP 0 special processing.- Masked email address of "Author" field.
+
+END

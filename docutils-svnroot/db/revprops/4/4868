@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-01-08T21:52:50.679292Z
+K 7
+svn:log
+V 460
+* Implementing processing pending transforms according to priority.
+  This simplifies the sectnum processing since it can assume the
+  contents directive has not been processed yet.
+* Added the -D docinfo-levels option.
+* Changed the documentation to show the -D options with hyphens ("-")
+  instead of underscores ("_") separting words.
+* The sectnum:: directive now processes starting from its containing
+  section, rather than from the top of the DOM tree.
+
+END

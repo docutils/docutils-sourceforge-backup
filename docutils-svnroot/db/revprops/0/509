@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-08-13T00:59:29.000000Z
+K 7
+svn:log
+V 77
+  - Added "generated" inline element.  - Added "auto" attribute to "title".
+
+END

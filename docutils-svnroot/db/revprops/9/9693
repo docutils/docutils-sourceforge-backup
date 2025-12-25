@@ -1,0 +1,27 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-08T07:10:49.366361Z
+K 7
+svn:log
+V 503
+Doctree validation: Refactor element category classes.
+
+Reconcile element category classes in `docutils.nodes` with descriptions
+in doctree.txt and make them fit for use in declarations of valid
+children.
+
+- Define and use new class `SubRoot` for elements that may only be used as
+  direct children of `document`.
+
+- Drop `Structural` from base classes of `document`.
+
+- Make `Invisible` a subclass of `Special`.
+  Use this to simplify class definitions of `Invisible` special elements.
+
+Sort categories
+END

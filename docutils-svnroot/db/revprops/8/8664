@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2021-04-04T18:48:10.595469Z
+K 7
+svn:log
+V 85
+Apply patch #160: move macro defs above .TH (thanks Willie and sorry for the delay).
+
+END

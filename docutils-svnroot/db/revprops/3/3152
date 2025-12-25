@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2005-04-01T01:15:46.228257Z
+K 7
+svn:log
+V 225
+Fixed another bug with emacs section titles, where
+using a regexp special character (e.g. +) as an
+underline wouldn't work.
+
+Also, I made the default boxing title indent
+to 1 space, as per bug report and dave's preference.
+
+
+
+END

@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-05-03T10:55:30.166046Z
+K 7
+svn:log
+V 312
+odtwriter: import the PIL Image module via ``import PIL``.
+
+* Unify the PIL.Image import (images.py and the HTML writer changed already
+  in Dec 2011, Pygments in May 2010). 
+
+* starting with PIL 1.2, "PIL lives in the PIL namespace only"
+  (http://mail.python.org/pipermail/image-sig/2011-January/006650.html)
+ 
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 8
+cliechti
+K 8
+svn:date
+V 27
+2009-06-04T22:19:30.958594Z
+K 7
+svn:log
+V 92
+aafigure: Add missing :proportional: option to README.txt (SF-ID: 2799267)
+Thanks to llucax
+
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 11
+chodorowski
+K 8
+svn:date
+V 27
+2002-07-23T03:04:00.000000Z
+K 7
+svn:log
+V 96
+Escaped all swedish characters and changed all strings to be unicode strings
+(for consistency).
+
+END

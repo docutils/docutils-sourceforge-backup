@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-09-11T15:00:38.117413Z
+K 7
+svn:log
+V 85
+Updated the clean target to delete the directories created by
+Slay::Makefile::Gress.
+
+END

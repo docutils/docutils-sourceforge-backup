@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-06-29T19:46:05.034425Z
+K 7
+svn:log
+V 99
+updated to support changes in revisions 3626-; revised ``publish_from_doctree`` API for consistency
+END

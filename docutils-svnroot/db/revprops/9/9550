@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-03-08T10:03:16.613556Z
+K 7
+svn:log
+V 140
+Small fix for target-highlight in "responsive" stylesheet (HTML5).
+
+Highlight heading of target section also with explicit hyperlink target.
+END

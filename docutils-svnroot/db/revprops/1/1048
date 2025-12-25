@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2003-01-01T02:41:16.000000Z
+K 7
+svn:log
+V 39
+redundant; CVSROOT/cvsignore is global
+
+END

@@ -1,0 +1,25 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-11-18T13:49:33.686660Z
+K 7
+svn:log
+V 319
+Documentation update
+
+dev/hacking:
+  Format example code as script rather than as console log
+  (enables easier use via drag-and-drop).
+  Hint to the "quicktest" development tool.
+  Add links.
+
+user/config:
+  Fix legacy-lass-functions default change warning.
+
+user/toos:
+  Simplify description of the generic front end.
+END

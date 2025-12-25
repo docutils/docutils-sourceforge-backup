@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2012-12-03T11:03:28.385357Z
+K 7
+svn:log
+V 75
+Renamed package `rst` to `xml2rst` to not interfer with docutils
+packages.
+
+END

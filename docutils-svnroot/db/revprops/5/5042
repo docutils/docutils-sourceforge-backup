@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 6
+strank
+K 8
+svn:date
+V 27
+2007-04-09T15:15:57.167271Z
+K 7
+svn:log
+V 84
+eol-style native properties were missing.
+A test on windows was failing as a result.
+END

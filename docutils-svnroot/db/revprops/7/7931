@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2015-12-28T22:49:45.508282Z
+K 7
+svn:log
+V 515
+Replaced macros `rst-iterate-leftmost-...` by new function
+`rst-apply-indented-blocks`. Refactored `rst-enumerate-region`,
+`rst-bullet-list-region` and `rst-line-block-region` to use
+`rst-apply-indented-blocks`.
+
+Improved `rst-enumerate-region` and `rst-bullet-list-region` to not
+indent empty lines and not indent lines before indented block.
+Debugged those commands to not run into endless loops on blocks at the
+end of a buffer missing a final newline.
+
+Improved `rst-line-block-region` to not kill indentation.
+
+END

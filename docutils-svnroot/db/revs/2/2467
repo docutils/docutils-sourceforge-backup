@@ -1,0 +1,220 @@
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 14
+svn:executable
+V 1
+*
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 3-2467.0.r2467/149
+type: file
+count: 0
+text: 1896 2809 379 602 88ce1c4dd03112381fa3d48644cd5560 72e835f391d0a79ff51c27ec0b035db07bfcde84 2466-1wi/_5
+props: 2467 0 136 0 cd16f4c3541932a389cc4ebf2ace9d97
+cpath: /trunk/docutils/tools/rst2pseudoxml.py
+copyroot: 0 /
+
+PLAIN
+K 12
+buildhtml.py
+V 22
+file 3-430.0.r2073/201
+K 15
+docutils-xml.py
+V 23
+file 3-247.0.r1896/5658
+K 13
+docutils.conf
+V 22
+file 3-407.0.r2231/588
+K 7
+editors
+V 23
+dir 3-1157.0.r2430/1859
+K 17
+pep-html-template
+V 21
+file 3-312.0.r943/265
+K 6
+pep.py
+V 23
+file 3-288.0.r1896/6536
+K 11
+pep2html.py
+V 22
+file 3-319.0.r2442/297
+K 12
+quicktest.py
+V 23
+file 72-18.0.r1896/4337
+K 11
+rst2html.py
+V 23
+file 5-1756.0.r2391/234
+K 12
+rst2latex.py
+V 24
+file b-1202.0.r1896/3895
+K 16
+rst2pseudoxml.py
+V 23
+file 3-2467.0.r2467/149
+K 11
+stylesheets
+V 22
+dir 74-18.0.r2368/1076
+K 18
+unicode2rstsubs.py
+V 24
+file 3-1497.0.r1497/2357
+END
+ENDREP
+id: 6w-18.0.r2467/1043
+type: dir
+pred: 6w-18.0.r2442/1246
+count: 163
+text: 2467 416 614 614 2f0d81f2db1ec84f9b60dfed8ef53554
+cpath: /trunk/docutils/tools
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 21
+file 2-340.0.r340/154
+K 8
+BUGS.txt
+V 23
+file 2-2181.0.r2464/452
+K 11
+COPYING.txt
+V 22
+file 2-18.0.r2354/3164
+K 7
+FAQ.txt
+V 23
+file 2-788.0.r2448/1269
+K 11
+HISTORY.txt
+V 21
+file 5-18.0.r2466/325
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r1505/219
+K 10
+README.txt
+V 22
+file 9-18.0.r2428/1002
+K 10
+THANKS.txt
+V 23
+file 2-2182.0.r2248/742
+K 4
+docs
+V 20
+dir 3-7.0.r2462/1877
+K 8
+docutils
+V 22
+dir 1w-18.0.r2460/2603
+K 6
+extras
+V 23
+dir 2-1467.0.r1686/1264
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 22
+file 46-18.0.r2465/224
+K 4
+test
+V 22
+dir 48-18.0.r2457/4860
+K 5
+tools
+V 22
+dir 6w-18.0.r2467/1043
+END
+ENDREP
+id: 1-7.0.r2467/1895
+type: dir
+pred: 1-7.0.r2466/1289
+count: 1813
+text: 2467 1212 670 670 70fb64f16d1fc8feaaca3b431ebdc762
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r2467/1895
+K 7
+sandbox
+V 21
+dir 1-17.0.r2444/7808
+K 3
+web
+V 19
+dir 1-2.0.r2435/788
+END
+ENDREP
+id: 3-1.0.r2467/2237
+type: dir
+pred: 3-1.0.r2466/1630
+count: 2447
+text: 2467 2109 115 115 0bd7297f49803c49e3f3b06d31248e20
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 21
+dir 0-1.0.r1822/10965
+K 4
+tags
+V 20
+dir 2-1.0.r1558/2271
+K 5
+trunk
+V 20
+dir 3-1.0.r2467/2237
+END
+ENDREP
+id: 0.0.r2467/2517
+type: dir
+pred: 0.0.r2466/1910
+count: 2467
+text: 2467 2389 115 115 fb7e575f9dc44e1cfa034de3dea84ba2
+cpath: /
+copyroot: 0 /
+
+6x-18.0.r1896/6101 delete-file false false /trunk/docutils/tools/html.py
+
+70-18.0.r1896/6970 delete-file false false /trunk/docutils/tools/publish.py
+
+_3.0.t2466-1wi add-file true true /trunk/docutils/tools/rst2pseudoxml.py
+
+
+2517 2660

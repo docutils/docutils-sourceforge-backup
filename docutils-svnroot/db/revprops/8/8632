@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-03-09T12:53:57.502395Z
+K 7
+svn:log
+V 229
+HTML5 writer: Add a `viewport` meta tag to fix rendering in mobile browsers.
+
+The default behaviour of many mobile browsers is to render for a
+virtual viewport size and scale.
+This breaks CSS styling with the default stylesheets.
+END

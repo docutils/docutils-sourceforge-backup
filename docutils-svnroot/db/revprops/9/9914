@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-08-21T13:45:08.699038Z
+K 7
+svn:log
+V 233
+Use writer instances instead of names in test scripts.
+
+Calling the publisher convenience functions with a component
+instance instead of its name gives a slight speedup.
+
+Also, don't specify a component argument if it is the default.
+END

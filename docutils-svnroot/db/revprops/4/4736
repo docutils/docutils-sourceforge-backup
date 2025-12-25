@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2006-09-05T20:22:59.569714Z
+K 7
+svn:log
+V 496
+* Updated to version 0.3.18.
+* Prompt for URL for documentatioin.
+* Updated Makefile to allow computing coverage using Devel::Cover.
+* Remove make error messages before comparing .stderr files.
+* Allow Dir.mak to specify POSTPROCESS_x commands when processing file
+  x.rst.
+* Allow Dir.mak to specify PERL_FLAG_x as flags to the perl
+  interpreter when processing file x.rst.
+* Allow DEBUG_FLAGS to specify special prest flags that get specified
+  when using a target to enter the perl debugger.
+
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 6
+strank
+K 8
+svn:date
+V 27
+2008-07-28T08:42:50.325967Z
+K 7
+svn:log
+V 76
+Update HISTORY.txt with userstring -> unicode and py2.6 deprecation changes.
+END

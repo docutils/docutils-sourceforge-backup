@@ -1,0 +1,446 @@
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 4
+1.13
+K 13
+svn:eol-style
+V 6
+native
+K 14
+svn:executable
+V 1
+*
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 4e-18.0.r2889/150
+type: file
+pred: 4e-18.0.r2888/4742
+count: 12
+text: 2390 0 819 2028 c2a79a669c4d5b04fd1b4736150dce61 b92a2c8da77b06bc97def65fd644eeb0e597bcbe 2888-288/_7
+props: 2889 0 137 0 8edb2a7342768a9ab510d94247188075
+cpath: /trunk/docutils/test/alltests.py
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 4
+1.28
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 9-2357.0.r2889/558
+type: file
+pred: 9-2357.0.r2888/5154
+count: 27
+text: 2874 0 852 42953 9905675b35e3c6c340838124bf3e15ca c33fc5cd5dd29ca4aa9c9bc1df5d45b23dfbb84f 2888-288/_a
+props: 2889 434 111 0 eaeaff8c6ba56cfe19b921c33649c016
+cpath: /trunk/docutils/test/functional/expected/standalone_rst_html4css1.html
+copyroot: 0 /
+
+PLAIN
+K 29
+standalone_rst_html4css1.html
+V 23
+file 9-2357.0.r2889/558
+K 24
+standalone_rst_latex.tex
+V 24
+file c-2357.0.r2874/3902
+END
+ENDREP
+id: 8-2357.0.r2889/1026
+type: dir
+pred: 8-2357.0.r2888/5628
+count: 41
+text: 2889 885 128 128 277d9ca12486359ab4c11bda0c4138e3
+cpath: /trunk/docutils/test/functional/expected
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 24
+file 5-2357.0.r2369/2122
+K 8
+expected
+V 23
+dir 8-2357.0.r2889/1026
+K 5
+input
+V 23
+dir e-2357.0.r2874/3138
+K 6
+output
+V 23
+dir w-2357.0.r2357/4558
+K 5
+tests
+V 24
+dir 10-2357.0.r2660/5175
+END
+ENDREP
+id: 3-2357.0.r2889/1439
+type: dir
+pred: 3-2357.0.r2888/6042
+count: 47
+text: 2889 1215 211 211 c0c451881cd66417d8dc863835456fe2
+cpath: /trunk/docutils/test/functional
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 21
+file 3-339.0.r343/176
+K 22
+DocutilsTestSupport.py
+V 22
+file 49-18.0.r2791/193
+K 11
+alltests.py
+V 22
+file 4e-18.0.r2889/150
+K 4
+data
+V 23
+dir 3-1662.0.r2868/2526
+K 13
+docutils.conf
+V 24
+file 6-1661.0.r2385/2146
+K 19
+docutils_difflib.py
+V 24
+file 6-2354.0.r2354/1272
+K 10
+functional
+V 23
+dir 3-2357.0.r2889/1439
+K 19
+package_unittest.py
+V 21
+file 3-44.0.r2454/856
+K 20
+test_dependencies.py
+V 24
+file 3-2679.0.r2683/4279
+K 18
+test_functional.py
+V 24
+file 18-2357.0.r2693/701
+K 16
+test_language.py
+V 22
+file 3-940.0.r1949/196
+K 13
+test_nodes.py
+V 23
+file 4i-18.0.r1294/2001
+K 12
+test_parsers
+V 22
+dir 4k-18.0.r2870/4019
+K 12
+test_readers
+V 21
+dir 3-89.0.r2288/1502
+K 16
+test_settings.py
+V 23
+file g-1662.0.r2868/783
+K 20
+test_statemachine.py
+V 22
+file 6a-18.0.r917/6020
+K 15
+test_transforms
+V 22
+dir 6c-18.0.r2808/4546
+K 13
+test_utils.py
+V 23
+file 6u-18.0.r1235/3274
+K 16
+test_viewlist.py
+V 23
+file 3-916.0.r1572/2984
+K 12
+test_writers
+V 23
+dir 5-1211.0.r2850/1425
+END
+ENDREP
+id: 48-18.0.r2889/2619
+type: dir
+pred: 48-18.0.r2888/7223
+count: 354
+text: 2889 1620 986 986 f6f044c1cca0744f93ebbaac5761e6b4
+props: 343 993 44 0 e8789a4081469b0bbc8d88dcdbd925ef
+cpath: /trunk/docutils/test
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 4
+1.42
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 1x-18.0.r2889/2965
+type: file
+pred: 1x-18.0.r2888/7974
+count: 41
+text: 2518 0 24 6066 4d5e1892fa1cb20855039093105f94cd cf08033cac0e095392a39b0c61ac3c02e78701c8 2888-288/_4
+props: 2889 2841 111 0 fd48e7132065a890e4a210dc3646defe
+cpath: /trunk/docutils/docutils/__init__.py
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 1x-18.0.r2889/2965
+K 7
+core.py
+V 22
+file 20-18.0.r2455/792
+K 11
+examples.py
+V 23
+file 3-1928.0.r2028/395
+K 11
+frontend.py
+V 23
+file 3-150.0.r2723/1392
+K 5
+io.py
+V 22
+file 3-217.0.r2646/124
+K 9
+languages
+V 22
+dir 22-18.0.r2609/4414
+K 8
+nodes.py
+V 22
+file 28-18.0.r2835/180
+K 7
+parsers
+V 22
+dir 2a-18.0.r2876/1865
+K 7
+readers
+V 22
+dir 36-18.0.r2487/1033
+K 15
+statemachine.py
+V 22
+file 3e-18.0.r2299/866
+K 10
+transforms
+V 22
+dir 3g-18.0.r2796/4021
+K 13
+urischemes.py
+V 22
+file 3s-18.0.r1829/714
+K 8
+utils.py
+V 23
+file 3u-18.0.r2815/1641
+K 7
+writers
+V 22
+dir 3w-18.0.r2873/1114
+END
+ENDREP
+id: 1w-18.0.r2889/3874
+type: dir
+pred: 1w-18.0.r2888/8887
+count: 1007
+text: 2889 3256 605 605 f238ff74406b9edc9320739b12331f92
+props: 342 8363 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 4
+1.28
+K 13
+svn:eol-style
+V 6
+native
+K 14
+svn:executable
+V 1
+*
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 46-18.0.r2889/4252
+type: file
+pred: 46-18.0.r2888/9265
+count: 27
+text: 2518 48 24 4305 d41a4ef7c4324209873b4abfd437e567 05fa91341ade1b76303f944c6a3001b01f9ee39d 2888-288/_5
+props: 2889 4102 137 0 316d35c9375ae472550d3a40facccb28
+cpath: /trunk/docutils/setup.py
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 21
+file 2-340.0.r340/154
+K 8
+BUGS.txt
+V 23
+file 2-2181.0.r2864/360
+K 11
+COPYING.txt
+V 22
+file 2-18.0.r2354/3164
+K 7
+FAQ.txt
+V 23
+file 2-788.0.r2888/7569
+K 11
+HISTORY.txt
+V 22
+file 5-18.0.r2888/4308
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r2513/394
+K 10
+README.txt
+V 21
+file 9-18.0.r2754/676
+K 10
+THANKS.txt
+V 23
+file 2-2182.0.r2860/123
+K 4
+docs
+V 20
+dir 3-7.0.r2872/2193
+K 8
+docutils
+V 22
+dir 1w-18.0.r2889/3874
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 23
+file 46-18.0.r2889/4252
+K 4
+test
+V 22
+dir 48-18.0.r2889/2619
+K 5
+tools
+V 22
+dir 6w-18.0.r2887/1473
+END
+ENDREP
+id: 1-7.0.r2889/5215
+type: dir
+pred: 1-7.0.r2888/10230
+count: 2192
+text: 2889 4532 670 670 2affacd2865908b7caca5dd391168af5
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r2889/5215
+K 7
+sandbox
+V 21
+dir 1-17.0.r2885/2314
+K 3
+web
+V 19
+dir 1-2.0.r2682/828
+END
+ENDREP
+id: 3-1.0.r2889/5558
+type: dir
+pred: 3-1.0.r2888/10574
+count: 2863
+text: 2889 5430 115 115 b2ff93a64347f9760f63edfc2d6b9efe
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 22
+dir 0-1.0.r2577/106684
+K 4
+tags
+V 20
+dir 2-1.0.r2576/3944
+K 5
+trunk
+V 20
+dir 3-1.0.r2889/5558
+END
+ENDREP
+id: 0.0.r2889/5840
+type: dir
+pred: 0.0.r2888/10858
+count: 2889
+text: 2889 5711 116 116 c51151b11f24ee8782a5c7cb8dd5176b
+cpath: /
+copyroot: 0 /
+
+46-18.0.t2888-288 modify-file true true /trunk/docutils/setup.py
+
+9-2357.0.t2888-288 modify-file true true /trunk/docutils/test/functional/expected/standalone_rst_html4css1.html
+
+1x-18.0.t2888-288 modify-file true true /trunk/docutils/docutils/__init__.py
+
+4e-18.0.t2888-288 modify-file true true /trunk/docutils/test/alltests.py
+
+
+5840 5984

@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-12-02T17:13:54.391473Z
+K 7
+svn:log
+V 407
+Skip test_recommonmark/ directory if recommonmark is missing.
+
+After basing "alltests.py" on the `unittest.defaultTestLoader`, we can (again)
+skip the complete directory from the __init__.py file.
+
+Simplify recommonmark test files (when running individually,
+failing with an ImportError when recommonmark is missing is no problem).
+Keep the `sys.path` setup, we still want test the local "docutils" package.
+END

@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-02-07T15:49:21.412086Z
+K 7
+svn:log
+V 320
+Add test for configuration file specification. Fix false positives.
+
+Test standard configuration files paths.
+Test handling of the DOCUTILSCONFIG environment variable.
+https://docutils.sourceforge.io/docs/user/config.html#configuration-files
+
+Avoid false positives when testing for Warnings
+(ignore additional warnings).
+END

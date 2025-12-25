@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T01:55:19.104456Z
+K 7
+svn:log
+V 108
+Do not remove leading numbers from titles for link names.
+We have sectnum, so this is usually not a problem.
+END

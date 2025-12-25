@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-20T17:42:33.441663Z
+K 7
+svn:log
+V 56
+changed default PEP python home to http://www.python.org
+END

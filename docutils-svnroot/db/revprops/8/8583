@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-12-01T10:53:27.968044Z
+K 7
+svn:log
+V 146
+Documentation update.
+
+Restructuring, New input, and fixed links for TODO list item
+"Adaptable file extensions".
+
+Update/fix some source comments.
+END

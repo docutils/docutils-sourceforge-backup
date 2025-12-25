@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-03-06T08:40:49.805068Z
+K 7
+svn:log
+V 93
+Improve formatting of LaTeX source for bibliographic fields.
+
+The generated PDF is unchanged.
+END

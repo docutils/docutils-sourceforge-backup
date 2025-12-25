@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-06-30T07:48:12.795812Z
+K 7
+svn:log
+V 283
+Reorganise functional tests.
+
+Move additional tests for special features or problems
+specific to the output format from the "standalone_..."
+generic test case to additional tests.
+
+Use unit test instead of functional test for the fix in
+r6155 (hyperlink references in substitutions).
+END

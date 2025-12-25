@@ -1,0 +1,91 @@
+K 8
+Dir.smak
+V 32
+file 3l-5058.19-4580.r5058/65868
+K 10
+alt.myhtml
+V 29
+file 5-4944.19-4580.r4944/709
+K 7
+alt.rst
+V 29
+file 8-4944.19-4580.r4944/456
+K 17
+hyphencell.myhtml
+V 33
+file 8v-4327.19-4580.r4710/233679
+K 14
+hyphencell.rst
+V 27
+file 8x-4327.0.r4327/899614
+K 17
+imagesubst.myhtml
+V 29
+file 5-4900.19-4580.r4900/982
+K 14
+imagesubst.rst
+V 29
+file 8-4900.19-4580.r4900/720
+K 16
+inlinelit.myhtml
+V 33
+file 8z-4327.19-4580.r4710/233080
+K 13
+inlinelit.rst
+V 27
+file 91-4327.0.r4327/901278
+K 13
+method.myhtml
+V 33
+file 93-4327.19-4580.r4710/234277
+K 10
+method.rst
+V 27
+file 95-4327.0.r4327/900330
+K 10
+raw.myhtml
+V 33
+file 97-4327.19-4580.r4710/233380
+K 7
+raw.rst
+V 27
+file 99-4327.0.r4327/899382
+K 18
+refininterp.myhtml
+V 33
+file 9b-4327.19-4580.r4710/234574
+K 15
+refininterp.rst
+V 27
+file 9d-4327.0.r4327/900804
+END
+D 8
+Dir.smak
+D 10
+alt.myhtml
+D 7
+alt.rst
+D 17
+hyphencell.myhtml
+D 14
+hyphencell.rst
+D 17
+imagesubst.myhtml
+D 14
+imagesubst.rst
+D 16
+inlinelit.myhtml
+D 13
+inlinelit.rst
+D 13
+method.myhtml
+D 10
+method.rst
+D 10
+raw.myhtml
+D 7
+raw.rst
+D 18
+refininterp.myhtml
+D 15
+refininterp.rst

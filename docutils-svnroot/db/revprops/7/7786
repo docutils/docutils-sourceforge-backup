@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2015-02-11T12:45:33.669922Z
+K 7
+svn:log
+V 85
+docutils/writers/odf_odt/__init__.py remove decode.encode of filename stored in zip.
+
+END

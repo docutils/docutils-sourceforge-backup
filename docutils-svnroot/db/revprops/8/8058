@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-04-19T16:45:32.855515Z
+K 7
+svn:log
+V 199
+LaTeX: Define required Unicode characters in the preamble.
+
+If the encoding is utf8, we can define missing characters once in the
+preamble instead of translating every occurence into a LaTeX command.
+END

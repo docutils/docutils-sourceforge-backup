@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-01-30T13:29:50.609339Z
+K 7
+svn:log
+V 234
+New class-argument handling in LaTeX writer.
+
+If the new "legacy_class_functions" setting is False,
+class values are handled with wrappers
+and admonitions use the ``DUadmonition`` environment.
+This will become the new default in 0.18.
+END

@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-11-27T11:07:28.088951Z
+K 7
+svn:log
+V 199
+Update documentation of length units.
+
+The "px" length unit is defined as an absolute length
+(with different conversion values) by CSS and (pdf)LaTeX.
+Thanks to Laurin McLaurin for pointing this out.
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2003-04-23T20:14:09.000000Z
+K 7
+svn:log
+V 104
+Integrated changes of Martin Blais into the code. There is a new
+option to invoke a conversion to HTML.
+
+END

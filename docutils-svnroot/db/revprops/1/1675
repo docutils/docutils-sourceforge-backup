@@ -1,0 +1,29 @@
+K 10
+svn:author
+V 4
+cben
+K 8
+svn:date
+V 27
+2003-09-11T14:58:04.000000Z
+K 7
+svn:log
+V 742
+- Fixed stupid bug that made last change a no-op.
+- Explicitly made 'DOCUTILSCONFIG' ignore empty path items.
+- Refactored `test_settings.ConfigFileTests`:
+
+  - Centralized reading of config files and combining of multiple
+    setting dicts.
+
+    - Subclassed with a class that runs the very same tests but sets
+      `os.environ['DOCUTILSCONFIG']` instead of reading files directly.
+
+  - Added test method that reads no files at all, for completeness.
+  - Improved diff display in `compare_output` (order & trailing
+    newlines).
+  - Fixed bug in `test_old_and_new`: it used 'old' expected settings
+    (which are surely the same as 'one') but read the 'one' config file.
+    Assuming it's a cut-and-paste typo, changed to read 'one' file.
+
+END

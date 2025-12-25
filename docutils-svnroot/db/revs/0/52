@@ -1,0 +1,191 @@
+PLAIN
+K 9
+ball1.gif
+V 23
+file 1h-18.0.r18/308623
+K 13
+biohazard.png
+V 23
+file 1o-18.0.r18/309766
+K 9
+title.png
+V 23
+file 1q-18.0.r18/309395
+END
+ENDREP
+id: 1f-18.0.r52/151
+type: dir
+pred: 1f-18.0.r18/310693
+count: 1
+text: 52 0 138 138 ca18ff6471885eb6faa708fd9ff41db8
+cpath: /trunk/docutils/docs/user/rst/images
+copyroot: 0 /
+
+PLAIN
+K 6
+images
+V 19
+dir 1f-18.0.r52/151
+K 13
+quickref.html
+V 23
+file 1s-18.0.r18/311372
+K 14
+quickstart.txt
+V 23
+file 1u-18.0.r18/310974
+END
+ENDREP
+id: 1d-18.0.r52/476
+type: dir
+pred: 1d-18.0.r18/311800
+count: 1
+text: 52 326 137 137 8c63b0523f355c74d41daf4a08f765c3
+cpath: /trunk/docutils/docs/user/rst
+copyroot: 0 /
+
+PLAIN
+K 3
+rst
+V 19
+dir 1d-18.0.r52/476
+END
+ENDREP
+id: 1c-18.0.r52/696
+type: dir
+pred: 1c-18.0.r18/312004
+count: 1
+text: 52 646 37 37 b1638437d751cddc61223ccd1c0a63fb
+cpath: /trunk/docutils/docs/user
+copyroot: 0 /
+
+PLAIN
+K 3
+dev
+V 19
+dir 3-12.0.r50/3419
+K 4
+peps
+V 17
+dir 5-7.0.r37/989
+K 3
+ref
+V 19
+dir w-18.0.r39/1453
+K 4
+user
+V 19
+dir 1c-18.0.r52/696
+END
+ENDREP
+id: 3-7.0.r52/1009
+type: dir
+pred: 3-7.0.r50/3734
+count: 15
+text: 52 860 136 136 2941c48faef922f1d43675ce7bf88d89
+cpath: /trunk/docutils/docs
+copyroot: 0 /
+
+PLAIN
+K 11
+COPYING.txt
+V 22
+file 2-18.0.r18/285012
+K 11
+HISTORY.txt
+V 19
+file 5-18.0.r51/851
+K 11
+MANIFEST.in
+V 22
+file 7-18.0.r18/312592
+K 10
+README.txt
+V 19
+file 9-18.0.r31/960
+K 4
+docs
+V 18
+dir 3-7.0.r52/1009
+K 8
+docutils
+V 20
+dir 1w-18.0.r36/3797
+K 10
+install.py
+V 23
+file 44-18.0.r18/313369
+K 8
+setup.py
+V 21
+file 46-18.0.r30/1540
+K 4
+test
+V 20
+dir 48-18.0.r50/2631
+K 5
+tools
+V 22
+dir 6w-18.0.r18/284746
+END
+ENDREP
+id: 1-7.0.r52/1586
+type: dir
+pred: 1-7.0.r51/1538
+count: 30
+text: 52 1166 407 407 68db62da0270754c56d9a8299d895252
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 18
+dir 1-7.0.r52/1586
+K 7
+sandbox
+V 18
+dir 1-17.0.r32/937
+K 3
+web
+V 18
+dir 1-2.0.r46/1580
+END
+ENDREP
+id: 3-1.0.r52/1861
+type: dir
+pred: 3-1.0.r51/1813
+count: 47
+text: 52 1739 109 109 cbfe998b57bbde7d3de053abbcb33bfe
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r21/11221
+K 4
+tags
+V 16
+dir 2-1.0.r1/130
+K 5
+trunk
+V 18
+dir 3-1.0.r52/1861
+END
+ENDREP
+id: 0.0.r52/2125
+type: dir
+pred: 0.0.r51/2077
+count: 52
+text: 52 2005 107 107 563a5aea7c94f55669c1ee993ee20a03
+cpath: /
+copyroot: 0 /
+
+1m-18.0.r18/310167 delete-file false false /trunk/docutils/docs/user/rst/images/biohazard.gif
+
+1k-18.0.r18/309021 delete-file false false /trunk/docutils/docs/user/rst/images/biohazard.bmp
+
+
+2125 2260

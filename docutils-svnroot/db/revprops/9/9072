@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-06-15T11:31:09.146930Z
+K 7
+svn:log
+V 288
+Add encoding arguments when opening files.
+
+Specify intended incoding, when possible.
+
+Avoids `EncodingWarning` in PEP 597 and nasty surprises
+if the default encoding is not what the user expects.
+
+Keep encoding unspecified where this may be an API change.
+
+Based on patch by Adam Turner.
+END

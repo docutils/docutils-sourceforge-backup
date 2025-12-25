@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-09-03T08:24:34.270365Z
+K 7
+svn:log
+V 37
+Apply [ 2834836 ] print info at halt.
+END

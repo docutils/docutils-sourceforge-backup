@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-06-11T21:02:39.999403Z
+K 7
+svn:log
+V 49
+Fix output of bytes to sys.stdout under Python 3.
+END

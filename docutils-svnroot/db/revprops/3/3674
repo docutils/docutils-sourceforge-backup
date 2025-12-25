@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-08T01:32:57.442034Z
+K 7
+svn:log
+V 117
+moved document refurbishing logic to doctree reader;
+added source_class argument to publish_parts;
+improved docstring
+END

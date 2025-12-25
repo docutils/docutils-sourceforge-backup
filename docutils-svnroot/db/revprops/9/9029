@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-03-05T23:27:50.821942Z
+K 7
+svn:log
+V 154
+Simplify code as dicts have fixed order since 3.6
+
+We no longer need to sort a dictionary from `**kwargs`
+in order to have a fixed order for stable tests.
+END

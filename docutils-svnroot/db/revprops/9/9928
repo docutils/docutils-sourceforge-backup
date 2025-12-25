@@ -1,0 +1,33 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-09-11T07:20:07.483953Z
+K 7
+svn:log
+V 804
+HTML5: use "width" and "height" for unitless image size values.
+
+Fixes [feature-requests:#102]
+
+The HTML `<img>` element supports "width" and "height" attributes to
+specify the size or ratio of an image. Values are restricted to
+integers (size in pixels).
+
+In Docutils, "width" and "hight" attributes also support a set of CSS
+compatible units. Therefore, all size values were passed to HTML via
+the common attribute "style".
+
+Using HTML "width" and "hight" attributes for values without unit
+provides a means to specify an image's *aspect ratio* without overriding
+a size declaration in a CSS style sheet.
+
+This change is not backported to the "html4css1" writer to keep
+the output backwards compatible.
+
+The provisional method `HTMLTranslator.image_size()` now returns a
+dictionary of attribute values.
+END

@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-02-17T10:37:34.740804Z
+K 7
+svn:log
+V 435
+New and fixed options for the "buildhtml.py" front end tool.
+
+New option "rst-sources": The default converts all files matching the
+patterns "*.txt" or "*.rst".
+
+Evaluate "prune" setting values as glob-style patterns,
+this is the behaviour documented in the online help.
+Matching uses `fnmatch.fnmatch()`
+(no special handling of "/", "\" and ".").
+
+The default prunes auxiliary directories for popular version
+control tools and Python.
+END

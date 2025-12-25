@@ -1,0 +1,77 @@
+PLAIN
+K 10
+svn:ignore
+V 30
+build
+.ropeproject
+*.egg-info
+
+END
+ENDREP
+id: 1-7.0.r7873/69
+type: dir
+pred: 1-7.0.r7870/2560
+count: 4515
+text: 7870 1809 738 738 c39b9855c8b641da7fab00d57f5f2754
+props: 7873 0 56 0 8c435a25851e4e095dc6b8c67c981707
+cpath: /trunk/docutils
+copyroot: 0 /
+minfo-cnt: 1
+
+PLAIN
+K 8
+docutils
+V 18
+dir 1-7.0.r7873/69
+K 5
+prest
+V 24
+dir 1-4326.0.r6498/50375
+K 7
+sandbox
+V 22
+dir 1-17.0.r7872/10390
+K 3
+web
+V 19
+dir 1-2.0.r7765/625
+END
+ENDREP
+id: 3-1.0.r7873/460
+type: dir
+pred: 3-1.0.r7872/10738
+count: 7407
+text: 7873 293 154 154 7fe19889d268696420a31ce170ad0f17
+cpath: /trunk
+copyroot: 0 /
+minfo-cnt: 7
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r7803/595
+K 4
+tags
+V 20
+dir 2-1.0.r7759/1108
+K 5
+trunk
+V 19
+dir 3-1.0.r7873/460
+END
+ENDREP
+id: 0.0.r7873/749
+type: dir
+pred: 0.0.r7872/11033
+count: 7873
+text: 7873 624 112 112 c1f1fb93e0170ba6a3c99b9e7f92dfb1
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+minfo-cnt: 16
+
+1-7.0.t7872-62z modify-dir false true /trunk/docutils
+
+
+749 956

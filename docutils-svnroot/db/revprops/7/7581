@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2012-12-31T11:57:12.879837Z
+K 7
+svn:log
+V 103
+Add tests for frontend.validate_comma_separated_list and frontend.validate_colon_separated_string_list
+
+END

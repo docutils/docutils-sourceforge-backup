@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-11-18T14:08:13.823186Z
+K 7
+svn:log
+V 117
+Use boolean values for boolean settings.
+
+This fixes a leftover from the times Python did not have a `bool` datatype.
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2006-11-13T06:08:01.062792Z
+K 7
+svn:log
+V 121
+--- MERGE: merged r4631 to maintenance branch; original log message:
+Python 2.5 compatibility: dynamic exception matching
+END

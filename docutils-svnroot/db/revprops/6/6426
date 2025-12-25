@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 10
+jonwaltman
+K 8
+svn:date
+V 27
+2010-09-20T08:28:59.006592Z
+K 7
+svn:log
+V 115
+More documentation updates for Texinfo writer
+
+- rm auto generated README.html
+
+- rename README.rst to README.txt
+
+
+END

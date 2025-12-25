@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2015-04-02T15:47:56.221977Z
+K 7
+svn:log
+V 58
+The new HTML writer solves some long-standing TODO issues.
+END

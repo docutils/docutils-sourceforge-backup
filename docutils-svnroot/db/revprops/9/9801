@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2024-07-31T10:01:41.519019Z
+K 7
+svn:log
+V 176
+Ignore global setup when reporting elapsed time
+
+This isn't really that useful given that tests run
+in around three seconds. To find elapsed time, use
+time python alltests.py.
+
+END

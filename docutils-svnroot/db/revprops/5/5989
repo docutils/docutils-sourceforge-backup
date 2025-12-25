@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-06-17T21:16:27.563043Z
+K 7
+svn:log
+V 192
+Support "depth" argument of "contents" directive also with "use-latex-toc"
+
+The docutils.transforms.parts.Contents transform is made aware of
+use_latex_toc, and does the right thing for LaTeX.
+END

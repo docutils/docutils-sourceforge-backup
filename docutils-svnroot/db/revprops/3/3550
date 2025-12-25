@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-21T00:16:59.137127Z
+K 7
+svn:log
+V 83
+again a broken test; I should really rerun the test suite before committing changes
+END

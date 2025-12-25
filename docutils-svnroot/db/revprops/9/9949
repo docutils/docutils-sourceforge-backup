@@ -1,0 +1,25 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-10-13T13:44:24.026299Z
+K 7
+svn:log
+V 532
+Add internal source and line attributes to more nodes.
+
+The rST parser now also adds internal source and line attributes to
+`<compound>`, `<container>`, `<sidebar>`, `<topic>`, `<line_block>`,
+and `<line>` nodes.
+
+Based on a pull request by Rob Taylor (on the github mirror) but adding
+source and line info instead of the "raw" line number to account for
+source parts included with the "include" directive,
+also fixing line blocks (both directive and via line-block syntax),
+and adding a test case.
+
+See also [feature-requests:#41].
+END

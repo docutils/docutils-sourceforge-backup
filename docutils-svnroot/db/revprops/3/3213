@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-04-13T18:18:41.644988Z
+K 7
+svn:log
+V 169
+use lock for whole execution of docutils-update, not only for transmitting the patch;
+transmit whole tarball instead of patch if there is no "current" tarball on BerliOS
+END

@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-08-27T12:09:19.235284Z
+K 7
+svn:log
+V 232
+py3: Replace 'ur' prefix
+
+While the 'u' prefix was backported to Python 3.3 or thereabouts, 'ur'
+remains invalid in Python 3. Just escape all backslashes and use plain
+old 'u'.
+
+Based on patch by Stephen Finucane <stephen@that.guru>
+END

@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-05-09T10:32:30.851727Z
+K 7
+svn:log
+V 195
+Update skript to convert Pygments styles from CSS to LaTeX.
+
+Bugfix: do not fail at lines without comment.
+Support for digits in role names.
+``\\\\providecommand`` instead of ``\\\\newcommand``.
+
+END

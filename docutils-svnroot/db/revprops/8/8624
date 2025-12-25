@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-02-13T12:01:10.170016Z
+K 7
+svn:log
+V 220
+HTML5 writer: use "figcaption" only for captions nested in a figure.
+
+Third-party applications may (ab)use the "caption" element
+for other purposes as a figure caption.
+
+See https://github.com/sphinx-doc/sphinx/pull/8870
+END

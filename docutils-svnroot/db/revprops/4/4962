@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+kippesp
+K 8
+svn:date
+V 27
+2007-02-28T22:37:55.620980Z
+K 7
+svn:log
+V 131
+Replace existing opendocument references with Dave Kuhlman's.  Changed bang PATH for sandbox/dkuhlman/OpenDocument/tools/rst2odt.py
+END

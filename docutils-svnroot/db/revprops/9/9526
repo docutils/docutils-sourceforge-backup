@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-02-01T13:02:23.922178Z
+K 7
+svn:log
+V 198
+Make MathML element children interface compatible to xml.etree.
+
+List access via `__setitem__()`, `__getitem__()`, `__delitem__()`,
+__pop__()`, `__iter__()`.
+
+Use the new interface for cleaner code.
+END

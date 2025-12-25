@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-02-01T13:03:02.557631Z
+K 7
+svn:log
+V 129
+MathML elements: `toprettyxml()`: close empty elements on the same line.
+
+Makes MathML output shorter and similar to `xml.etree`.
+END

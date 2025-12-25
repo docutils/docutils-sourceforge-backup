@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-12-05T19:35:32.271121Z
+K 7
+svn:log
+V 422
+Fix [ 3402314 ] non-ASCII whitespace and punctuation around inline markup.
+
+Revision of the rules for allowed characters around inline markup
+start-string and end-string: Keep the carefully crafted ASCII-character set
+but add Unicode categories to the sets of allowed characters. This keeps
+the number of "false positives" requiring escaping low while making the rules
+simpler and international.
+
+This is a feature change.
+END

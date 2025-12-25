@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2010-01-17T20:02:01.246465Z
+K 7
+svn:log
+V 48
+Fix: supported attribute (thanks to peter2108).
+
+END

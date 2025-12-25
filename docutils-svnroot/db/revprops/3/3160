@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-04-02T23:12:06.069992Z
+K 7
+svn:log
+V 434
+fixed some relative-path issues;
+since CustomTestCase.setUp now automatically changes to the test root directory,
+it is now necessary to provide paths relative to the testroot to allow
+running test_tables and test_include from working directories other than the
+test root;
+in test_settings.py, there is still such a line
+    mydir = os.path.dirname(fixpath.func_code.co_filename)
+but there it is correct (and cannot be easily changed)
+END

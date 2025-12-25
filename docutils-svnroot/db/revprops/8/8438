@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-12-12T16:31:22.617334Z
+K 7
+svn:log
+V 160
+Update/trim RELEASE-NOTES.
+
+RELEASE-NOTES concentrates on incompatible and important changes.
+
+For backwards compatible changes, fixes and details, see HISTORY.
+END

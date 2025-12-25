@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-07-28T10:50:05.468165Z
+K 7
+svn:log
+V 187
+Update shebang line for "profile_docutils.py" developer tool script.
+
+Use "env" instead of a hardcoded interpreter path.
+(Requires the -S option to parse the command line (cf. `man env`).
+END

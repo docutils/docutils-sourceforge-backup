@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-29T10:48:14.074324Z
+K 7
+svn:log
+V 133
+Various small fixes.
+
+Update comments
+
+One more generator expression instead of lists.
+
+Fix unbound variable.
+
+Drop duplicate import.
+END

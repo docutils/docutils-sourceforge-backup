@@ -1,0 +1,32 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2009-11-08T21:18:36.202216Z
+K 7
+svn:log
+V 308
+`xml2rst.xsl` supports docutils 0.6 format.
+
+Added support for:
+
+* ``.. contents:: :local:``
+
+* ``.. parsed-literal::``
+
+* ``.. container::``
+
+* ``align`` attribute of ``.. figure::``
+
+* Inline raw
+
+Improved:
+
+* Standard class for admonitions is taken into account
+
+* Class attribute works for raw directive
+
+END

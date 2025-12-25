@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-07T02:11:14.462073Z
+K 7
+svn:log
+V 429
+separated default (universal) transforms into two stages so that no
+transform is applied twice;
+do not delete document.transformer in publish_doctree (Martin, this may be
+important for the pickle writer -- you may need to delete document.transformer);
+regenerate reporter object unconditionally; do so in publish_from_doctree,
+not the doctree reader;
+added tests;
+I will post about all that on Docutils-develop in one or two days
+END

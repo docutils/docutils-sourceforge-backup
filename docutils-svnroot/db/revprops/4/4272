@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 8
+cliechti
+K 8
+svn:date
+V 27
+2006-01-09T21:08:10.721374Z
+K 7
+svn:log
+V 429
+- fix dots
+- generate arrow shapes in aafigure.py, not in the backend
+- arrow head detection for different types. the arrow drawing function has the ability to modify the lines end point
+- add Circle shape
+- Line and Circle accept complex number as coordinates and convert them to a Point on the fly
+- the shape recognition functions return a list of shapes, not just one
+
+directive:
+- add type to <embed> tag
+- line_width option
+END

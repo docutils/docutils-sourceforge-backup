@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2009-08-12T05:37:24.032900Z
+K 7
+svn:log
+V 79
+Make latin1 conversion optional.
+Add utf-8 and ascii conversion, optoinal too.
+
+END

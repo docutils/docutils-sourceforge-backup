@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-06-29T00:42:25.000000Z
+K 7
+svn:log
+V 139
+  - In ``string2lines()``, changed whitespace normalizing translation    table to regexp; restores Python 2.0 compatibility with Unicode.
+
+END

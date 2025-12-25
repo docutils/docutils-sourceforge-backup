@@ -1,0 +1,25 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-04-06T18:41:10.794293Z
+K 7
+svn:log
+V 635
+Add "auto_encode" argument to `publish_string()`
+
+Add "auto_encode" argument to publish_string() and
+publish_programmatically() to give the user an option to select the
+output type (`bytes` or `OutString`) in a way that does not interfere
+with the intended encoding of the output
+(the problem with the "dummy" output encoding name ``unicode``).
+The default will change from ``False`` to ``True`` in Docutils 0.22
+
+New class for `io.StringOutput`: `io.OutString` adds "encoding"
+and "errors" attributes to `str`.
+Allows storing the "output_encoding" and "output_encoding_error_handler"
+settings in a transparent and easy to process way.
+END

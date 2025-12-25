@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-11-29T16:58:13.795229Z
+K 7
+svn:log
+V 345
+Config setting "root-prefix": configurable root directory for included files.
+
+Cf. [feature-requests:#91]
+
+The "root_prefix" setting is also applied when a writer converts an image
+URI to a local filesystem path.
+(The image file may be red by the writer to get the image size (HTML
+writers) or to embed it in the output (HTML5 and ODT writers).)
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 4
+bbum
+K 8
+svn:date
+V 27
+2003-04-01T15:57:41.000000Z
+K 7
+svn:log
+V 125
+Added '--hyperlink-color' flag to latex2e.   It allows one to unify the color of links or to turn of link coloring entirely.
+
+END

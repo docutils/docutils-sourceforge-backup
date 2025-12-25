@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2005-09-21T14:22:33.959809Z
+K 7
+svn:log
+V 35
+Fixed bug with transient mark mode.
+END

@@ -1,0 +1,25 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-03T20:25:50.180317Z
+K 7
+svn:log
+V 458
+Doctree documentation: make documentation more concise.
+
+Don't put element "Details" into a separate subsection
+but just after a short element definition.
+
+Do not repeat descriptions from the "details" list
+in plain text description.
+
++ Less overhead and less scrolling in both, source and HTML.
+
++ A longer free-text description can move below the "details"
+  field-list making it more prominent and the overall structure of
+  element sections more uniform.
+END

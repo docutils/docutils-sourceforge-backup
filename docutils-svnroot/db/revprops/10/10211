@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-08-19T20:28:48.093262Z
+K 7
+svn:log
+V 152
+Better error reports for hyperlinks with embedded URI or alias.
+
+Check and report for common typos when an undefined referencname
+contains a `<` or `>`.
+END

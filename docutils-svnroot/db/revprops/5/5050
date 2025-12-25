@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 6
+strank
+K 8
+svn:date
+V 27
+2007-04-24T20:22:57.588312Z
+K 7
+svn:log
+V 84
+Removed the rst-syntax change, implemented citation groups only in the latex writer.
+END

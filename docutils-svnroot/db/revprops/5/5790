@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2008-12-04T15:49:45.419865Z
+K 7
+svn:log
+V 44
+Sanitize -e option in case running tainted.
+
+END

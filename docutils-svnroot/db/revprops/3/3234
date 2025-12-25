@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-04-21T16:17:00.966104Z
+K 7
+svn:log
+V 206
+removed reference to Element.attributes; let's access attributes consistently
+(and shorter) via Element.__getitem__  (David, if you disagree, please feel
+free to revert the change without prior discussion)
+
+END

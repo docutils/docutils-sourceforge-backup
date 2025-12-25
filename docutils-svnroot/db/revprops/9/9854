@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-08-06T08:02:06.484744Z
+K 7
+svn:log
+V 185
+Read to-be-embedded images as text, if the MIME type is SVG.
+
+Provides decoding and universal line endings for free.
+
+(SVG images are directly embedded while others are base64-encoded.)
+END

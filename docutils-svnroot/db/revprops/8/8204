@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-11-08T14:41:23.946746Z
+K 7
+svn:log
+V 69
+Add "rawsource" to reference text derived from embedded URI or alias.
+END

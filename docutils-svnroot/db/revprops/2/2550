@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-08-31T15:27:47.000000Z
+K 7
+svn:log
+V 66
+trying to fix the slash/backslash bug occuring on Windows systems
+
+END

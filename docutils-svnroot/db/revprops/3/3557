@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-22T20:55:52.913613Z
+K 7
+svn:log
+V 100
+fixed sitemap date format; Google's example with "date" on their
+web page doesn't work with GNU date
+END

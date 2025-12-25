@@ -1,0 +1,179 @@
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.7
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 7-7.0.r24/123
+type: file
+pred: 7-7.0.r16/792
+count: 6
+text: 21 177 7914 33588 0ceb187887f95df418e9857053643ca5 2449a3c1ad1c5f2eeca14ff26de4c3f1149c53d0 23-n/_5
+props: 24 0 110 0 705660468cdcbf270377dea86b274451
+cpath: /trunk/docutils/docs/peps/pep-0287.txt
+copyroot: 0 /
+
+PLAIN
+K 12
+pep-0256.txt
+V 22
+file p-18.0.r18/301484
+K 12
+pep-0257.txt
+V 22
+file s-18.0.r18/301873
+K 12
+pep-0258.txt
+V 22
+file u-18.0.r18/302262
+K 12
+pep-0287.txt
+V 18
+file 7-7.0.r24/123
+END
+ENDREP
+id: 5-7.0.r24/596
+type: dir
+pred: 5-7.0.r18/302726
+count: 7
+text: 24 399 184 184 050dce9a3bda2d523bbdc9a72e2cca4e
+cpath: /trunk/docutils/docs/peps
+copyroot: 0 /
+
+PLAIN
+K 3
+dev
+V 18
+dir 3-12.0.r23/626
+K 4
+peps
+V 17
+dir 5-7.0.r24/596
+K 3
+ref
+V 21
+dir w-18.0.r18/305775
+K 4
+user
+V 22
+dir 1c-18.0.r18/312004
+END
+ENDREP
+id: 3-7.0.r24/911
+type: dir
+pred: 3-7.0.r23/945
+count: 9
+text: 24 758 140 140 fb4e79b1b837a89c04cc5aa913de6dd3
+cpath: /trunk/docutils/docs
+copyroot: 0 /
+
+PLAIN
+K 11
+COPYING.txt
+V 22
+file 2-18.0.r18/285012
+K 11
+HISTORY.txt
+V 22
+file 5-18.0.r18/260336
+K 11
+MANIFEST.in
+V 22
+file 7-18.0.r18/312592
+K 10
+README.txt
+V 22
+file 9-18.0.r18/312967
+K 4
+docs
+V 17
+dir 3-7.0.r24/911
+K 8
+docutils
+V 22
+dir 1w-18.0.r18/300813
+K 10
+install.py
+V 23
+file 44-18.0.r18/313369
+K 8
+setup.py
+V 23
+file 46-18.0.r18/301108
+K 4
+test
+V 22
+dir 48-18.0.r18/282564
+K 5
+tools
+V 22
+dir 6w-18.0.r18/284746
+END
+ENDREP
+id: 1-7.0.r24/1496
+type: dir
+pred: 1-7.0.r23/1533
+count: 9
+text: 24 1065 418 418 aa6534697cbaa72a148bfb53fb45fb9f
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 18
+dir 1-7.0.r24/1496
+K 7
+sandbox
+V 19
+dir 1-17.0.r17/6364
+K 3
+web
+V 17
+dir 1-2.0.r22/587
+END
+ENDREP
+id: 3-1.0.r24/1770
+type: dir
+pred: 3-1.0.r23/1809
+count: 19
+text: 24 1648 109 109 043f2fc7680847e452888198bfd36bcc
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r21/11221
+K 4
+tags
+V 16
+dir 2-1.0.r1/130
+K 5
+trunk
+V 18
+dir 3-1.0.r24/1770
+END
+ENDREP
+id: 0.0.r24/2034
+type: dir
+pred: 0.0.r23/2072
+count: 24
+text: 24 1914 107 107 a2a4858985a863634e6ff1ec88e58fe6
+cpath: /
+copyroot: 0 /
+
+7-7.0.t23-n modify-file true true /trunk/docutils/docs/peps/pep-0287.txt
+
+
+2034 2169

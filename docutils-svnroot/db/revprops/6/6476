@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-11-10T13:43:50.620130Z
+K 7
+svn:log
+V 72
+exclude combining chars from column_width (partial fix for [ 2926161 ])
+
+END

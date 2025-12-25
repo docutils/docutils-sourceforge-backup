@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-11-13T22:30:00.298712Z
+K 7
+svn:log
+V 113
+Add source and line info to `<admonition>` and `<definition_list>` nodes.
+
+Based on [patch:#202] by Hood Chatham.
+END

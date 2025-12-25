@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-16T00:27:26.254566Z
+K 7
+svn:log
+V 55
+fixed bug with escaped colons introducing literal block
+END

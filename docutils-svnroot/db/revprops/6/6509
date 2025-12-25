@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-01-03T13:13:30.237273Z
+K 7
+svn:log
+V 26
+Minor fixes for Python 3.1
+END

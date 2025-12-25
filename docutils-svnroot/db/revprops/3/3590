@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-27T00:42:40.881788Z
+K 7
+svn:log
+V 196
+make sure the Writer transforms get applied when calling publish_from_doctree;
+keep correct source_path;
+set correct doctree.settings object;
+I implemented all this blindly, without proper testing
+END

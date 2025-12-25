@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-14T11:05:04.856139Z
+K 7
+svn:log
+V 203
+More precise error message for ODT writer with wrong encoding.
+
+The ODT writer returns a document in binary format.
+Therefore, it cannot be used with `output_encoding` set to
+the special value "unicode".
+END

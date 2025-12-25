@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-08-21T02:46:33.000000Z
+K 7
+svn:log
+V 131
+  - Added support for "address" element.  - Improved backlinks (footnotes & system_messages).  - Improved system_message output.
+
+END

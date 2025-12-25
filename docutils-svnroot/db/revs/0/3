@@ -1,0 +1,50 @@
+id: 3-1.0-3.r3/0
+type: dir
+pred: 3-1.0.r2/1965
+count: 2
+text: 2 1917 35 35 bf872276e338fefe2568ab3933f3f71c
+cpath: /branches/vendor
+copyfrom: 2 /trunk
+
+PLAIN
+K 6
+vendor
+V 16
+dir 3-1.0-3.r3/0
+END
+ENDREP
+id: 0-1.0.r3/202
+type: dir
+pred: 0-1.0.r1/63
+count: 1
+text: 3 152 37 37 33b387d643c5ee2820e090673a67b67b
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 16
+dir 0-1.0.r3/202
+K 4
+tags
+V 16
+dir 2-1.0.r1/130
+K 5
+trunk
+V 17
+dir 3-1.0.r2/1965
+END
+ENDREP
+id: 0.0.r3/455
+type: dir
+pred: 0.0.r2/2215
+count: 3
+text: 3 339 103 103 9de3e00fe09b1f9e8404d6159fa3f684
+cpath: /
+copyroot: 0 /
+
+3-1._0.t2-2 add-dir false false /branches/vendor
+2 /trunk
+
+455 584

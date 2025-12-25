@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 13
+matt_harrison
+K 8
+svn:date
+V 27
+2009-01-24T06:35:06.441890Z
+K 7
+svn:log
+V 52
+add image scaling support and "pending node" support
+END

@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-09-13T10:24:30.996173Z
+K 7
+svn:log
+V 133
+Improve internationalisation documentation, part 2.
+
+Clarifying comments.
+Use literal Unicode characters and sort french translation.
+END

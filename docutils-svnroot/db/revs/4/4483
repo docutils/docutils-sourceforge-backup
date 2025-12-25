@@ -1,0 +1,531 @@
+id: 9-1339.0-4266.r4483/0
+type: file
+pred: 9-1339.0.r3915/16583
+count: 11
+text: 4439 0 257 5426 e4b5c13259ca406c14df16e2cf869fe8 d9dfe7bb95c03a338095d9e54ad1ea3bf968c9ad 4482-3gi/_7
+props: 2317 925 136 0 9498f9acecba762a787db20de8ef6de1
+cpath: /branches/docutils-0.4/test/test_parsers/test_rst/test_directives/test_unicode.py
+copyroot: 4266 /branches/docutils-0.4
+
+PLAIN
+K 11
+__init__.py
+V 22
+file 8-41.0.r3509/5746
+K 9
+empty.txt
+V 23
+file 6-2979.0.r2979/123
+K 14
+include 11.txt
+V 24
+file j-3046.0.r3046/4516
+K 12
+include1.txt
+V 22
+file 6-740.0.r740/3588
+K 13
+include10.txt
+V 23
+file 6-1566.0.r1566/123
+K 12
+include2.txt
+V 23
+file 9-740.0.r1572/3869
+K 12
+include3.txt
+V 21
+file 6-968.0.r968/200
+K 12
+include8.txt
+V 23
+file a-1086.0.r1086/362
+K 8
+includes
+V 23
+dir 6-967.0.r1090/12619
+K 8
+raw1.txt
+V 22
+file b-740.0.r740/4422
+K 19
+test_admonitions.py
+V 24
+file 51-18.0.r3129/14069
+K 16
+test_compound.py
+V 24
+file 6-2728.0.r2728/1051
+K 17
+test_container.py
+V 23
+file 6-4162.0.r4162/715
+K 16
+test_contents.py
+V 24
+file 54-18.0.r3915/15915
+K 12
+test_date.py
+V 25
+file 10-4229.0.r4229/5768
+K 19
+test_decorations.py
+V 26
+file 1g-3184.0.r3184/14619
+K 20
+test_default_role.py
+V 24
+file y-3427.0.r3427/5588
+K 15
+test_figures.py
+V 20
+file 56-18.0.r3352/0
+K 14
+test_images.py
+V 22
+file 58-18.0.r3828/897
+K 15
+test_include.py
+V 22
+file d-740.0.r4212/126
+K 19
+test_line_blocks.py
+V 25
+file 6-2696.0.r3129/14408
+K 12
+test_meta.py
+V 22
+file 5a-18.0.r2495/907
+K 11
+test_raw.py
+V 23
+file f-740.0.r4213/1071
+K 15
+test_replace.py
+V 24
+file h-740.0.r3129/13399
+K 12
+test_role.py
+V 25
+file t-1959.0.r3129/12731
+K 15
+test_rubrics.py
+V 24
+file 6-1339.0.r1339/3765
+K 16
+test_sidebars.py
+V 24
+file b-3206.0.r3206/1535
+K 14
+test_tables.py
+V 24
+file 6-2164.0.r3165/7946
+K 20
+test_target_notes.py
+V 30
+file 6-4029.d-4156.r4156/21489
+K 23
+test_test_directives.py
+V 23
+file 5c-18.0.r1697/2418
+K 14
+test_topics.py
+V 23
+file 6-470.0.r3199/5185
+K 15
+test_unicode.py
+V 26
+file 9-1339.0-4266.r4483/0
+K 15
+test_unknown.py
+V 23
+file 5e-18.0.r3813/1200
+K 10
+utf-16.csv
+V 23
+file 6-2595.0.r2595/539
+END
+ENDREP
+id: 50-18.0-4266.r4483/2071
+type: dir
+pred: 50-18.0.r4229/7779
+count: 120
+text: 4483 365 1693 1693 14b82d1d3804a209d566a041ab4280dc
+props: 339 3733 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /branches/docutils-0.4/test/test_parsers/test_rst/test_directives
+copyroot: 4266 /branches/docutils-0.4
+
+PLAIN
+K 11
+__init__.py
+V 22
+file 5-41.0.r3509/5441
+K 8
+includes
+V 23
+dir 5-1086.0.r1086/3369
+K 25
+test_SimpleTableParser.py
+V 23
+file 5-309.0.r3918/2543
+K 19
+test_TableParser.py
+V 23
+file 4n-18.0.r1572/3426
+K 20
+test_block_quotes.py
+V 23
+file 4q-18.0.r4147/1410
+K 20
+test_bullet_lists.py
+V 23
+file 4s-18.0.r778/23111
+K 17
+test_citations.py
+V 24
+file 4u-18.0.r3129/10127
+K 16
+test_comments.py
+V 23
+file 4w-18.0.r778/26361
+K 24
+test_definition_lists.py
+V 24
+file 4y-18.0.r3129/11748
+K 15
+test_directives
+V 27
+dir 50-18.0-4266.r4483/2071
+K 22
+test_doctest_blocks.py
+V 23
+file 5g-18.0.r778/22176
+K 23
+test_east_asian_text.py
+V 25
+file e-4152.0.r4152/11903
+K 24
+test_enumerated_lists.py
+V 23
+file 5i-18.0.r4147/1728
+K 19
+test_field_lists.py
+V 23
+file 5k-18.0.r4083/1087
+K 17
+test_footnotes.py
+V 24
+file 5m-18.0.r3129/17050
+K 17
+test_functions.py
+V 23
+file 5o-18.0.r778/24054
+K 21
+test_inline_markup.py
+V 24
+file 5q-18.0.r3915/14620
+K 19
+test_interpreted.py
+V 25
+file 5-1087.0.r3129/17691
+K 19
+test_line_blocks.py
+V 25
+file 5-2695.0.r3129/17369
+K 22
+test_literal_blocks.py
+V 23
+file 5s-18.0.r3491/1062
+K 20
+test_option_lists.py
+V 23
+file 5u-18.0.r2975/1680
+K 18
+test_outdenting.py
+V 23
+file 5w-18.0.r778/25894
+K 18
+test_paragraphs.py
+V 23
+file 5y-18.0.r778/27295
+K 23
+test_section_headers.py
+V 24
+file 60-18.0.r3915/15269
+K 21
+test_substitutions.py
+V 23
+file 62-18.0.r3937/5395
+K 14
+test_tables.py
+V 23
+file 64-18.0.r3160/3221
+K 15
+test_targets.py
+V 27
+file 66-18.0-4266.r4318/318
+K 19
+test_transitions.py
+V 24
+file 68-18.0.r3915/18728
+END
+ENDREP
+id: 4l-18.0-4266.r4483/3910
+type: dir
+pred: 4l-18.0-4266.r4318/2207
+count: 191
+text: 4483 2369 1528 1528 6eedd82a51daf108395ca1a7678b4e4a
+props: 339 5757 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /branches/docutils-0.4/test/test_parsers/test_rst
+copyroot: 4266 /branches/docutils-0.4
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 4-986.0.r3509/5147
+K 8
+test_rst
+V 27
+dir 4l-18.0-4266.r4483/3910
+END
+ENDREP
+id: 4k-18.0-4266.r4483/4307
+type: dir
+pred: 4k-18.0-4266.r4318/2598
+count: 193
+text: 4483 4198 96 96 2c8cfd82154314341ef9b1e41abc96d1
+props: 988 1328 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /branches/docutils-0.4/test/test_parsers
+copyroot: 4266 /branches/docutils-0.4
+
+PLAIN
+K 22
+DocutilsTestSupport.py
+V 22
+file 49-18.0.r4258/220
+K 11
+alltests.py
+V 22
+file 4e-18.0.r4217/332
+K 11
+coverage.sh
+V 28
+file 6-3449.0-3489.r3603/213
+K 4
+data
+V 23
+dir 3-1662.0.r3416/2104
+K 13
+docutils.conf
+V 24
+file 6-1661.0.r2385/2146
+K 19
+docutils_difflib.py
+V 24
+file 6-2354.0.r2354/1272
+K 10
+functional
+V 28
+dir 3-2357.0-4266.r4302/1560
+K 19
+package_unittest.py
+V 21
+file 3-44.0.r2454/856
+K 20
+test_dependencies.py
+V 24
+file 3-2679.0.r4132/6968
+K 18
+test_functional.py
+V 24
+file 18-2357.0.r4254/348
+K 10
+test_io.py
+V 24
+file 5-3138.0.r4132/6093
+K 16
+test_language.py
+V 23
+file 3-940.0.r4132/6674
+K 13
+test_nodes.py
+V 23
+file 4i-18.0.r4132/6380
+K 12
+test_parsers
+V 27
+dir 4k-18.0-4266.r4483/4307
+K 17
+test_publisher.py
+V 29
+file 6-3525.0-3602.r4132/2738
+K 12
+test_readers
+V 21
+dir 3-89.0.r3509/2937
+K 16
+test_settings.py
+V 22
+file g-1662.0.r4222/69
+K 20
+test_statemachine.py
+V 22
+file 6a-18.0.r917/6020
+K 15
+test_transforms
+V 22
+dir 6c-18.0.r4233/3209
+K 13
+test_utils.py
+V 21
+file 6u-18.0.r3171/53
+K 16
+test_viewlist.py
+V 23
+file 3-916.0.r3085/3892
+K 12
+test_writers
+V 23
+dir 5-1211.0.r3968/4099
+END
+ENDREP
+id: 48-18.0-4266.r4483/5701
+type: dir
+pred: 48-18.0-4266.r4318/3987
+count: 639
+text: 4483 4582 1106 1106 7549dc8c9ae6a6b7c5ba0ac3763c7b8a
+props: 343 993 44 0 e8789a4081469b0bbc8d88dcdbd925ef
+cpath: /branches/docutils-0.4/test
+copyroot: 4266 /branches/docutils-0.4
+
+PLAIN
+K 8
+BUGS.txt
+V 24
+file 2-2181.0.r4233/8277
+K 11
+COPYING.txt
+V 24
+file 2-18.0-4266.r4472/0
+K 7
+FAQ.txt
+V 25
+file 2-788.0-4266.r4482/0
+K 11
+HISTORY.txt
+V 24
+file 5-18.0-4266.r4318/0
+K 11
+MANIFEST.in
+V 23
+file 7-18.0.r4156/57222
+K 10
+README.txt
+V 21
+file 9-18.0.r4216/546
+K 17
+RELEASE-NOTES.txt
+V 28
+file 2-4204.0-4266.r4278/314
+K 10
+THANKS.txt
+V 22
+file 2-2182.0.r4240/66
+K 4
+docs
+V 25
+dir 3-7.0-4266.r4480/1508
+K 8
+docutils
+V 27
+dir 1w-18.0-4266.r4318/6315
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 27
+file 46-18.0-4266.r4462/455
+K 4
+test
+V 27
+dir 48-18.0-4266.r4483/5701
+K 5
+tools
+V 27
+dir 6w-18.0-4266.r4481/1678
+END
+ENDREP
+id: 1-7.0-4266.r4483/6695
+type: dir
+pred: 1-7.0-4266.r4482/1044
+count: 3210
+text: 4483 5966 716 716 61f44f62365a9fa0ec4e6de4ffe1ac3c
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /branches/docutils-0.4
+copyroot: 4266 /branches/docutils-0.4
+
+PLAIN
+K 17
+address-rendering
+V 26
+dir 1-7.0-4314.r4314/16372
+K 10
+directives
+V 25
+dir 3-1.0-4375.r4449/4669
+K 12
+docutils-0.4
+V 25
+dir 1-7.0-4266.r4483/6695
+K 7
+nesting
+V 25
+dir 3-1.0-1813.r4356/3347
+END
+ENDREP
+id: 0-1.0.r4483/7161
+type: dir
+pred: 0-1.0.r4482/1509
+count: 314
+text: 4483 6950 198 198 3dacd7ac0ad683c1d48d3d7c88a22615
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r4483/7161
+K 4
+tags
+V 20
+dir 2-1.0.r4331/4487
+K 5
+trunk
+V 20
+dir 3-1.0.r4473/3295
+END
+ENDREP
+id: 0.0.r4483/7442
+type: dir
+pred: 0.0.r4482/1790
+count: 4483
+text: 4483 7315 114 114 68513d294d2ac0e6db9705eec4f7e2dd
+cpath: /
+copyroot: 0 /
+
+9-1339.0-4266.t4482-3gi modify-file true false /branches/docutils-0.4/test/test_parsers/test_rst/test_directives/test_unicode.py
+
+
+7442 7585

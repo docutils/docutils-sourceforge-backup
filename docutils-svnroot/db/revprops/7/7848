@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2015-03-19T09:22:15.603786Z
+K 7
+svn:log
+V 64
+Cleaner LaTeX code for literal blocks (use "alltt" environment).
+END

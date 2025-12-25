@@ -1,0 +1,83 @@
+PLAIN
+K 8
+docutils
+V 25
+dir 1-7.0-1813.r4356/3030
+END
+ENDREP
+id: 3-1.0-1813.r7803/61
+type: dir
+pred: 3-1.0-1813.r7802/338
+count: 1813
+text: 7803 0 48 48 4c42b0c36558855945b6d8b4558cc7d0
+cpath: /branches/nesting
+copyroot: 1813 /branches/nesting
+
+PLAIN
+K 17
+address-rendering
+V 26
+dir 1-7.0-4314.r4314/16372
+K 12
+docutils-0.4
+V 25
+dir 1-7.0-4266.r5500/7199
+K 9
+index-bug
+V 25
+dir 1-7.0-5587.r5594/4767
+K 19
+lossless-rst-writer
+V 26
+dir 1-7.0-5514.r6260/32630
+K 7
+nesting
+V 23
+dir 3-1.0-1813.r7803/61
+K 7
+plugins
+V 25
+dir 1-7.0-4952.r4987/1225
+K 7
+subdocs
+V 25
+dir 1-7.0-5265.r5427/8605
+END
+ENDREP
+id: 0-1.0.r7803/595
+type: dir
+pred: 0-1.0.r7802/879
+count: 444
+text: 7803 245 337 337 bf5851fb29b6f428c3ac855e3b615919
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r7803/595
+K 4
+tags
+V 20
+dir 2-1.0.r7759/1108
+K 5
+trunk
+V 21
+dir 3-1.0.r7801/10144
+END
+ENDREP
+id: 0.0.r7803/873
+type: dir
+pred: 0.0.r7802/1159
+count: 7803
+text: 7803 746 114 114 eda9154de82b035cef013c997564a2da
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+minfo-cnt: 11
+
+2-7802.0-1813.r7802/0 delete-file false false /branches/nesting/timehorse.test
+
+
+873 1079

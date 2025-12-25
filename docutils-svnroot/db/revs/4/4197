@@ -1,0 +1,327 @@
+PLAIN
+K 8
+__base__
+V 27
+file 9-4052.1-4054.r4058/75
+K 11
+framing.css
+V 29
+file 8-4025.3-4012.r4025/1915
+K 10
+pretty.css
+V 29
+file b-4025.1-4188.r4188/5174
+END
+ENDREP
+id: 6-4025.0-4188.r4197/166
+type: dir
+pred: 6-4025.0-4188.r4188/5737
+count: 8
+text: 4197 0 153 153 e31fad00adb2274599614206b704d2e7
+cpath: /trunk/docutils/docutils/writers/s5_html/themes/big-black
+copyroot: 4054 /branches/s5/docutils/writers/support/s5_html/big-black
+
+PLAIN
+K 10
+README.txt
+V 30
+file 6-4084.6-4156.r4156/40053
+K 9
+big-black
+V 27
+dir 6-4025.0-4188.r4197/166
+K 9
+big-white
+V 28
+dir 6-4037.2-4188.r4188/1542
+K 7
+default
+V 28
+dir 8-3965.b-4163.r4192/1374
+K 12
+medium-black
+V 28
+dir 6-4051.b-4163.r4188/4906
+K 12
+medium-white
+V 28
+dir d-4051.b-4163.r4188/6463
+K 11
+small-black
+V 28
+dir 6-4013.4-4188.r4188/2284
+K 11
+small-white
+V 28
+dir j-4051.b-4163.r4188/4191
+END
+ENDREP
+id: 7-3965.b-4163.r4197/851
+type: dir
+pred: 7-3965.b-4163.r4192/2054
+count: 28
+text: 4197 435 403 403 c0bd2afe04e286ac44c8ebce6f6a7445
+cpath: /trunk/docutils/docutils/writers/s5_html/themes
+copyroot: 4163 /trunk/docutils/docutils/writers/s5_html/themes
+
+PLAIN
+K 11
+__init__.py
+V 30
+file f-3204.a-4163.r4163/19510
+K 6
+themes
+V 27
+dir 7-3965.b-4163.r4197/851
+END
+ENDREP
+id: y-4163.0.r4197/1219
+type: dir
+pred: y-4163.0.r4192/2425
+count: 6
+text: 4197 1105 101 101 c801144fb66b52db6796b13260b5af95
+cpath: /trunk/docutils/docutils/writers/s5_html
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 24
+file 3x-18.0.r4163/17493
+K 15
+docutils_xml.py
+V 23
+file 4-244.0.r3512/7689
+K 9
+html4css1
+V 22
+dir n-4163.0.r4185/667
+K 7
+latex2e
+V 24
+dir q-4163.0.r4163/17328
+K 10
+newlatex2e
+V 24
+dir s-4163.0.r4163/21484
+K 7
+null.py
+V 24
+file 4-3246.0.r3892/2227
+K 8
+pep_html
+V 24
+dir v-4163.0.r4163/19084
+K 12
+pseudoxml.py
+V 22
+file 4-84.0.r1645/8532
+K 7
+s5_html
+V 23
+dir y-4163.0.r4197/1219
+END
+ENDREP
+id: 3w-18.0.r4197/1824
+type: dir
+pred: 3w-18.0.r4192/3030
+count: 473
+text: 4197 1408 403 403 0b47b238217374be72b416f9876b1ddd
+props: 342 6175 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils/writers
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 1x-18.0.r3892/5836
+K 7
+core.py
+V 23
+file 20-18.0.r4150/1322
+K 13
+docutils.conf
+V 29
+file m-3472.0-3904.r3904/2799
+K 11
+examples.py
+V 23
+file 3-1928.0.r3598/207
+K 11
+frontend.py
+V 24
+file 3-150.0.r4183/12227
+K 5
+io.py
+V 22
+file 3-217.0.r3654/291
+K 9
+languages
+V 22
+dir 22-18.0.r4167/5444
+K 8
+nodes.py
+V 21
+file 28-18.0.r4005/54
+K 7
+parsers
+V 22
+dir 2a-18.0.r4184/3430
+K 7
+readers
+V 23
+dir 36-18.0.r4183/11991
+K 15
+statemachine.py
+V 24
+file 3e-18.0.r4152/17824
+K 10
+transforms
+V 23
+dir 3g-18.0.r4183/13258
+K 13
+urischemes.py
+V 22
+file 3s-18.0.r1829/714
+K 8
+utils.py
+V 24
+file 3u-18.0.r4152/17531
+K 7
+writers
+V 22
+dir 3w-18.0.r4197/1824
+END
+ENDREP
+id: 1w-18.0.r4197/2737
+type: dir
+pred: 1w-18.0.r4192/3943
+count: 1361
+text: 4197 2059 665 665 6ec6d403ad4ed9ff58d675ed9e84c36e
+props: 342 8363 30 0 7a87207e5b8d45146de46f3c746c1e9a
+cpath: /trunk/docutils/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+BUGS.txt
+V 23
+file 2-2181.0.r4149/630
+K 11
+COPYING.txt
+V 23
+file 2-18.0.r4163/15147
+K 7
+FAQ.txt
+V 24
+file 2-788.0.r4163/14866
+K 11
+HISTORY.txt
+V 22
+file 5-18.0.r4183/8207
+K 11
+MANIFEST.in
+V 23
+file 7-18.0.r4156/57222
+K 10
+README.txt
+V 21
+file 9-18.0.r3997/242
+K 10
+THANKS.txt
+V 24
+file 2-2182.0.r4172/1310
+K 4
+docs
+V 21
+dir 3-7.0.r4193/10423
+K 8
+docutils
+V 22
+dir 1w-18.0.r4197/2737
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 22
+file 46-18.0.r4164/241
+K 4
+test
+V 22
+dir 48-18.0.r4196/5798
+K 5
+tools
+V 22
+dir 6w-18.0.r4181/1194
+END
+ENDREP
+id: 1-7.0.r4197/3610
+type: dir
+pred: 1-7.0.r4196/6667
+count: 3126
+text: 4197 2965 632 632 7c1eecf50cec24dd95ca42f66181685c
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r4197/3610
+K 7
+sandbox
+V 21
+dir 1-17.0.r4182/4763
+K 3
+web
+V 19
+dir 1-2.0.r4019/747
+END
+ENDREP
+id: 3-1.0.r4197/3952
+type: dir
+pred: 3-1.0.r4196/7009
+count: 3961
+text: 4197 3824 115 115 17cba16e8354608522d33e348b3fd821
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 18
+dir 0-1.0.r4158/62
+K 4
+tags
+V 19
+dir 2-1.0.r3816/482
+K 5
+trunk
+V 20
+dir 3-1.0.r4197/3952
+END
+ENDREP
+id: 0.0.r4197/4228
+type: dir
+pred: 0.0.r4196/7285
+count: 4197
+text: 4197 4104 111 111 672a7c68c61acb5fe6ad11bcbd76242e
+cpath: /
+copyroot: 0 /
+
+6-4025.2-4054.r4054/2540 delete-dir false false /trunk/docutils/docutils/writers/s5_html/themes/big-black/big_inverse
+
+
+4228 4371

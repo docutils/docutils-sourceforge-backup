@@ -1,0 +1,419 @@
+id: c-2357.0.r7766/0
+type: file
+pred: c-2357.0.r7763/6112
+count: 149
+text: 7745 0 131 57622 bb446eac026ad6e12175f13710c62cc7 f081ce8d31305ab21c220e67c3449b9ee6574f7c 7765-600/_6
+props: 3008 5403 111 0 b4233197920770c602c29330b7f7c623
+cpath: /trunk/docutils/test/functional/expected/standalone_rst_latex.tex
+copyroot: 0 /
+
+PLAIN
+K 18
+compact_lists.html
+V 24
+file 9-4219.0.r7763/2741
+K 12
+cyrillic.tex
+V 25
+file a-6456.0.r7589/13511
+K 14
+dangerous.html
+V 29
+file f-3071.0-3285.r7763/3059
+K 21
+field_name_limit.html
+V 24
+file c-3164.0.r7763/3441
+K 15
+latex_babel.tex
+V 25
+file q-7589.0.r7589/12905
+K 17
+latex_docinfo.tex
+V 24
+file 8-2937.0.r6455/4932
+K 21
+math_output_html.html
+V 29
+file i-7008.0-7010.r7763/3759
+K 22
+math_output_latex.html
+V 24
+file d-7010.0.r7763/4155
+K 24
+math_output_mathjax.html
+V 24
+file f-7010.0.r7763/4477
+K 24
+math_output_mathml.xhtml
+V 29
+file m-7008.0-7012.r7763/4801
+K 23
+misc_rst_html4css1.html
+V 24
+file 5-2993.0.r7763/5147
+K 13
+odt_basic.odt
+V 25
+file j-5834.0.r7499/30130
+K 23
+odt_custom_headfoot.odt
+V 25
+file a-6214.0.r7499/30444
+K 15
+odt_tables1.odt
+V 25
+file m-5834.0.r7499/29808
+K 13
+pep_html.html
+V 24
+file 5-3040.0.r7763/5470
+K 29
+standalone_rst_html4css1.html
+V 24
+file 9-2357.0.r7763/5781
+K 24
+standalone_rst_latex.tex
+V 21
+file c-2357.0.r7766/0
+K 26
+standalone_rst_manpage.man
+V 24
+file c-6085.0.r7626/2068
+K 28
+standalone_rst_pseudoxml.txt
+V 25
+file 5-3185.0.r7514/13956
+K 29
+standalone_rst_s5_html_1.html
+V 29
+file 5-4124.7-4156.r7763/6438
+K 29
+standalone_rst_s5_html_2.html
+V 29
+file 8-4124.8-4156.r7763/6849
+K 24
+standalone_rst_xetex.tex
+V 24
+file e-6428.0.r7745/5166
+K 2
+ui
+V 28
+dir a-4124.9-4156.r4241/2580
+K 18
+xetex-cyrillic.tex
+V 25
+file d-6456.0.r7589/13196
+END
+ENDREP
+id: 8-2357.0.r7766/1719
+type: dir
+pred: 8-2357.0.r7763/8659
+count: 307
+text: 7766 322 1384 1384 fe0a15fd0e0a1d4a17ad24a60ecf35e9
+cpath: /trunk/docutils/test/functional/expected
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 24
+file 5-2357.0.r2369/2122
+K 8
+expected
+V 23
+dir 8-2357.0.r7766/1719
+K 5
+input
+V 23
+dir e-2357.0.r7619/5271
+K 6
+output
+V 23
+dir w-2357.0.r6448/3773
+K 5
+tests
+V 25
+dir 10-2357.0.r7623/19668
+END
+ENDREP
+id: 3-2357.0.r7766/2136
+type: dir
+pred: 3-2357.0.r7763/9078
+count: 349
+text: 7766 1911 212 212 5a14250bc7363fda156af6cfd4031611
+cpath: /trunk/docutils/test/functional
+copyroot: 0 /
+minfo-cnt: 1
+
+PLAIN
+K 22
+DocutilsTestSupport.py
+V 23
+file 49-18.0.r7539/4076
+K 11
+alltests.py
+V 23
+file 4e-18.0.r7433/3057
+K 11
+coverage.sh
+V 28
+file 6-3449.0-3489.r5539/255
+K 4
+data
+V 24
+dir 3-1662.0.r7317/10380
+K 13
+docutils.conf
+V 24
+file 6-1661.0.r2385/2146
+K 10
+functional
+V 23
+dir 3-2357.0.r7766/2136
+K 15
+local-parser.py
+V 24
+file c-7504.0.r7504/4864
+K 15
+local-reader.py
+V 24
+file 7-7504.0.r7504/3359
+K 15
+local-writer.py
+V 24
+file 7-7500.0.r7500/1042
+K 19
+local_dummy_lang.py
+V 24
+file e-7504.0.r7504/4496
+K 19
+package_unittest.py
+V 23
+file 3-44.0.r7320/17875
+K 15
+test__init__.py
+V 25
+file 7-7007.0.r7668/17713
+K 20
+test_command_line.py
+V 25
+file 6-6487.0.r7668/18007
+K 20
+test_dependencies.py
+V 25
+file 3-2679.0.r7463/14452
+K 23
+test_error_reporting.py
+V 24
+file i-7037.0.r7723/1059
+K 18
+test_functional.py
+V 25
+file 18-2357.0.r7539/3482
+K 10
+test_io.py
+V 23
+file 5-3138.0.r7622/472
+K 16
+test_language.py
+V 23
+file 3-940.0.r7503/2848
+K 13
+test_nodes.py
+V 23
+file 4i-18.0.r7746/1050
+K 12
+test_parsers
+V 23
+dir 4k-18.0.r7668/21320
+K 14
+test_pickle.py
+V 24
+file 9-4487.0.r7539/3782
+K 17
+test_publisher.py
+V 29
+file 6-3525.0-3602.r7539/2838
+K 12
+test_readers
+V 21
+dir 3-89.0.r7504/4171
+K 16
+test_settings.py
+V 24
+file g-1662.0.r7630/6313
+K 20
+test_statemachine.py
+V 24
+file 6a-18.0.r7463/11813
+K 15
+test_transforms
+V 23
+dir 6c-18.0.r7668/22978
+K 18
+test_traversals.py
+V 25
+file 5-4641.0.r7463/14755
+K 13
+test_utils.py
+V 23
+file 6u-18.0.r7618/6463
+K 16
+test_viewlist.py
+V 24
+file 3-916.0.r7463/12113
+K 12
+test_writers
+V 23
+dir 5-1211.0.r7745/8477
+END
+ENDREP
+id: 48-18.0.r7766/3881
+type: dir
+pred: 48-18.0.r7763/10824
+count: 1043
+text: 7766 2331 1537 1537 e09fe3ebd9bf180307b0915e3cec59e2
+props: 343 993 44 0 e8789a4081469b0bbc8d88dcdbd925ef
+cpath: /trunk/docutils/test
+copyroot: 0 /
+minfo-cnt: 1
+
+PLAIN
+K 8
+BUGS.txt
+V 23
+file 2-2181.0.r7670/507
+K 11
+COPYING.txt
+V 23
+file 2-18.0.r7530/19019
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r7677/912
+K 11
+HISTORY.txt
+V 21
+file 5-18.0.r7762/333
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r6258/102
+K 10
+README.txt
+V 21
+file 9-18.0.r7700/179
+K 17
+RELEASE-NOTES.txt
+V 23
+file 2-4204.0.r7762/618
+K 10
+THANKS.txt
+V 25
+file 2-2182.0.r7503/10719
+K 4
+docs
+V 20
+dir 3-7.0.r7755/1889
+K 8
+docutils
+V 22
+dir 1w-18.0.r7763/2233
+K 13
+docutils.conf
+V 23
+file 2-7375.0.r7375/485
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 24
+dir 2-1465.0.r7058/32984
+K 9
+setup.cfg
+V 24
+file 4-6255.0.r7442/5812
+K 8
+setup.py
+V 23
+file 46-18.0.r7763/2460
+K 4
+test
+V 22
+dir 48-18.0.r7766/3881
+K 5
+tools
+V 22
+dir 6w-18.0.r7579/1124
+END
+ENDREP
+id: 1-7.0.r7766/4867
+type: dir
+pred: 1-7.0.r7763/11812
+count: 4433
+text: 7766 4120 734 734 57af06972ed0545a0e881caef5e6ebc5
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+minfo-cnt: 1
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r7766/4867
+K 5
+prest
+V 24
+dir 1-4326.0.r6498/50375
+K 7
+sandbox
+V 21
+dir 1-17.0.r7758/4930
+K 3
+web
+V 19
+dir 1-2.0.r7765/625
+END
+ENDREP
+id: 3-1.0.r7766/5263
+type: dir
+pred: 3-1.0.r7765/947
+count: 7302
+text: 7766 5095 155 155 ae89c24ec569bfa048c3b15e6b4dfcac
+cpath: /trunk
+copyroot: 0 /
+minfo-cnt: 2
+
+PLAIN
+K 8
+branches
+V 21
+dir 0-1.0.r6260/33253
+K 4
+tags
+V 20
+dir 2-1.0.r7759/1108
+K 5
+trunk
+V 20
+dir 3-1.0.r7766/5263
+END
+ENDREP
+id: 0.0.r7766/5555
+type: dir
+pred: 0.0.r7765/1237
+count: 7766
+text: 7766 5427 115 115 e9d8529a4b5e028962e6f2632b3ec469
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+minfo-cnt: 11
+
+c-2357.0.t7765-600 modify-file true false /trunk/docutils/test/functional/expected/standalone_rst_latex.tex
+
+
+5555 5763

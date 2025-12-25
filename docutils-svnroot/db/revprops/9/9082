@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-06-20T10:06:31.728591Z
+K 7
+svn:log
+V 122
+Documentation update.
+
+Add a warning about use of Python's default encoding by "quicktest.py".
+
+Add cross-links, condense.
+END

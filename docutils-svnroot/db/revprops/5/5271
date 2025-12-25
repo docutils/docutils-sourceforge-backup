@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2007-06-25T15:04:33.222430Z
+K 7
+svn:log
+V 143
+remove no longer needed command line options, add generic option --preamble-attachment for latex code to append to the documents latex preamble
+END

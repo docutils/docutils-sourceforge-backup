@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-04-14T08:54:01.084746Z
+K 7
+svn:log
+V 489
+Test "clickable" image in a figure and fix LaTeX writer.
+
+Add a "target" option to a "figure" directive in the standard.rst
+functional test file to test handling and validation of an `<image>` wrapped
+in a `<reference>` in a `<figure>`.
+
+Fix the LaTeX writer's handling of images nested in a `<reference>`:
+
+* Default to center-aligned images in a figure also if it is "clickable".
+* Fix newlines in output of visit_image() and visit_reference().
+* Add test cases to the LaTeX writer test.
+END

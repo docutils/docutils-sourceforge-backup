@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-07-20T03:20:21.000000Z
+K 7
+svn:log
+V 103
+Tweaked option names; PEP/HTML options are now in addition to HTML options, instead of replacing them.
+
+END

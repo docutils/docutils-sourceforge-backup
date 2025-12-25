@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2020-01-16T19:57:06.378060Z
+K 7
+svn:log
+V 95
+Explicit include test subdirectory contents in MANIFEST.in to avoid inclusion of test outputs.
+
+END

@@ -1,0 +1,248 @@
+PLAIN
+K 17
+badsubtitle.mydom
+V 24
+file c-4345.0.r4345/1441
+K 15
+badsubtitle.rst
+V 24
+file e-4345.0.r4345/1677
+K 16
+hyperlinks01.dom
+V 29
+file 5-5433.1b-4580.r5433/693
+K 16
+hyperlinks01.rst
+V 29
+file 8-5433.1b-4580.r5433/428
+END
+ENDREP
+id: 7-4345.1b-4580.r6273/235
+type: dir
+pred: 7-4345.1b-4580.r5433/1243
+count: 5
+text: 6273 0 222 222 650cbd42b1eb332c7a43af68ac93d57c
+cpath: /trunk/prest/t/90_bugs/xform.init
+copyroot: 4580 /trunk/prest/t/90_bugs/xform.init
+
+PLAIN
+K 10
+Suite.smak
+V 26
+file 3i-5058.0.r5058/65654
+K 8
+dom.init
+V 22
+dir 4-5057.0.r5057/796
+K 9
+html.init
+V 31
+dir 8q-4327.19-4580.r5058/66961
+K 10
+latex.init
+V 23
+dir 4-5773.0.r5786/4085
+K 10
+parse.init
+V 30
+dir 9j-4327.1a-4580.r6252/5191
+K 10
+xform.init
+V 28
+dir 7-4345.1b-4580.r6273/235
+K 8
+xml.init
+V 23
+dir b-5057.0.r5057/1473
+K 9
+xref.init
+V 31
+dir dl-4327.1c-4580.r5058/67626
+END
+ENDREP
+id: eg-4580.0.r6273/857
+type: dir
+pred: eg-4580.0.r6252/5822
+count: 18
+text: 6273 460 384 384 d5aae59d9173c2e712dc74a6ec5caffd
+props: 5443 2076 42 0 ac512268f19c1e30ed98bfef91dd17b3
+cpath: /trunk/prest/t/90_bugs
+copyroot: 0 /
+
+PLAIN
+K 8
+10_parse
+V 24
+dir 1i-4580.0.r5443/2415
+K 12
+20_directive
+V 24
+dir 51-4580.0.r6228/2058
+K 8
+30_xform
+V 25
+dir 8n-4580.0.r6228/36706
+K 10
+40_writers
+V 24
+dir af-4580.0.r6229/3546
+K 6
+60_new
+V 24
+dir bg-4580.0.r6272/5334
+K 10
+70_plugins
+V 25
+dir bt-4580.0.r6233/18005
+K 7
+80_misc
+V 24
+dir 51-4710.0.r6233/9477
+K 7
+90_bugs
+V 23
+dir eg-4580.0.r6273/857
+K 11
+Common.smak
+V 26
+file 3v-5058.0.r6228/24952
+K 8
+Makefile
+V 24
+file pm-4710.0.r5774/122
+END
+ENDREP
+id: 1h-4580.0.r6273/1545
+type: dir
+pred: 1h-4580.0.r6272/6025
+count: 101
+text: 6273 1084 448 448 fe322c7f2ca4e67b7bcad35656325f6a
+props: 4710 251175 58 0 9d0c34ad7c52cc65efc3c8f16853cff3
+cpath: /trunk/prest/t
+copyroot: 0 /
+
+PLAIN
+K 11
+COPYING.txt
+V 26
+file 2-4327.0.r4580/172511
+K 9
+ChangeLog
+V 29
+file d-4327.0-5066.r6251/1164
+K 7
+GPL.txt
+V 26
+file 5-4327.0.r4327/840766
+K 8
+MANIFEST
+V 25
+file 4-4580.0.r6252/11895
+K 13
+MANIFEST.SKIP
+V 24
+file 6-4580.0.r5443/4349
+K 10
+MODIFY.txt
+V 23
+file 7-4327.0.r4330/211
+K 11
+Makefile.PL
+V 22
+file 8-4580.0.r5778/95
+K 6
+README
+V 23
+file b-4327.0.r4636/389
+K 3
+doc
+V 23
+dir h-4327.0.r6249/1885
+K 13
+insertperl.pl
+V 25
+file k-4580.0.r4580/61534
+K 3
+lib
+V 23
+dir m-4580.0.r6244/2378
+K 5
+prest
+V 30
+file 7z-4327.7-4580.r6245/1833
+K 1
+t
+V 24
+dir 1h-4580.0.r6273/1545
+K 4
+tbin
+V 31
+dir 139-4327.1d-4580.r6247/1076
+END
+ENDREP
+id: 1-4326.0.r6273/2403
+type: dir
+pred: 1-4326.0.r6272/6884
+count: 311
+text: 6273 1769 621 621 ec7a81360b60113f49a8117bbe437b69
+props: 5058 89593 92 0 00a35365982621a9a87cab65cf8f340f
+cpath: /trunk/prest
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r6271/4630
+K 5
+prest
+V 23
+dir 1-4326.0.r6273/2403
+K 7
+sandbox
+V 21
+dir 1-17.0.r6265/4206
+K 3
+web
+V 19
+dir 1-2.0.r6173/935
+END
+ENDREP
+id: 3-1.0.r6273/2789
+type: dir
+pred: 3-1.0.r6272/7271
+count: 5817
+text: 6273 2622 154 154 d3b0355851f56142f749a54c639254e4
+cpath: /trunk
+copyroot: 0 /
+minfo-cnt: 2
+
+PLAIN
+K 8
+branches
+V 21
+dir 0-1.0.r6260/33253
+K 4
+tags
+V 19
+dir 2-1.0.r6168/732
+K 5
+trunk
+V 20
+dir 3-1.0.r6273/2789
+END
+ENDREP
+id: 0.0.r6273/3081
+type: dir
+pred: 0.0.r6272/7563
+count: 6273
+text: 6273 2954 114 114 3d34cce3f1cdfca0955dda83ca0de870
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+minfo-cnt: 3
+
+3r-5058.1b-4580.r5058/72813 delete-file false false /trunk/prest/t/90_bugs/xform.init/Dir.smak
+
+
+3081 3288

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-05-08T01:14:51.691077Z
+K 7
+svn:log
+V 127
+The "handout" directive cannot use "section" as a base node; "block_quote" works though.  Also, 3rd spec entry must be a tuple.
+END

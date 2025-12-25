@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T01:14:48.130238Z
+K 7
+svn:log
+V 112
+I think it's OK in general. If there are specific modules which need
+cleanup, rather add a more specific entry.
+
+END

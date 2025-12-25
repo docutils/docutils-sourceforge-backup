@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-07-30T08:22:32.680093Z
+K 7
+svn:log
+V 158
+Document table width determination by the LaTeX writer.
+
+See also the discussion in the related Sphinx issue
+https://github.com/sphinx-doc/sphinx/issues/3411.
+END

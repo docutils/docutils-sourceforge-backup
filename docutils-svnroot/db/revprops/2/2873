@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-11-26T16:49:56.000000Z
+K 7
+svn:log
+V 71
+do not surround block-level `raw`s with <span> tags; use <div> instead
+
+END

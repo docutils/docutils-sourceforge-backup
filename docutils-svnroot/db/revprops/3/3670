@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-07T23:47:11.319400Z
+K 7
+svn:log
+V 200
+restored sandbox/blais/css_tricks/boxed_titles/castro.png and clinton.png
+(were lost due to CVS to SVN conversion) -- Martin, you checked copyright, I presume?
+fixed svn:mime-type properties of images
+END

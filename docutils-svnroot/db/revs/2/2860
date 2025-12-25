@@ -1,0 +1,150 @@
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.6
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 2-2182.0.r2860/123
+type: file
+pred: 2-2182.0.r2858/1777
+count: 5
+text: 2857 609 120 2570 c6eccac26c5d7bba36edda5e1ab26ac6 7c77e9d13263165ee1547678b1b318f971e74231 2859-27f/_3
+props: 2860 0 110 0 fdfdab56f53d2388a66f6a5ce0985f95
+cpath: /trunk/docutils/THANKS.txt
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 21
+file 2-340.0.r340/154
+K 8
+BUGS.txt
+V 23
+file 2-2181.0.r2763/177
+K 11
+COPYING.txt
+V 22
+file 2-18.0.r2354/3164
+K 7
+FAQ.txt
+V 23
+file 2-788.0.r2859/1413
+K 11
+HISTORY.txt
+V 21
+file 5-18.0.r2857/940
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r2513/394
+K 10
+README.txt
+V 21
+file 9-18.0.r2754/676
+K 10
+THANKS.txt
+V 23
+file 2-2182.0.r2860/123
+K 4
+docs
+V 20
+dir 3-7.0.r2844/1666
+K 8
+docutils
+V 22
+dir 1w-18.0.r2856/4147
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 23
+file 46-18.0.r2518/1499
+K 4
+test
+V 22
+dir 48-18.0.r2858/1433
+K 5
+tools
+V 22
+dir 6w-18.0.r2855/1371
+END
+ENDREP
+id: 1-7.0.r2860/1086
+type: dir
+pred: 1-7.0.r2859/2376
+count: 2173
+text: 2860 404 669 669 b2a095167959dd7b7be87c57cf5dfdc7
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r2860/1086
+K 7
+sandbox
+V 21
+dir 1-17.0.r2846/2630
+K 3
+web
+V 19
+dir 1-2.0.r2682/828
+END
+ENDREP
+id: 3-1.0.r2860/1427
+type: dir
+pred: 3-1.0.r2859/2718
+count: 2834
+text: 2860 1299 115 115 ac396c29924eef423fdb64376bdb0f73
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 22
+dir 0-1.0.r2577/106684
+K 4
+tags
+V 20
+dir 2-1.0.r2576/3944
+K 5
+trunk
+V 20
+dir 3-1.0.r2860/1427
+END
+ENDREP
+id: 0.0.r2860/1708
+type: dir
+pred: 0.0.r2859/2999
+count: 2860
+text: 2860 1579 116 116 7f82b8cc44a6d2b1ef23bfaf3f98d3a8
+cpath: /
+copyroot: 0 /
+
+2-2182.0.t2859-27f modify-file true true /trunk/docutils/THANKS.txt
+
+
+1708 1851

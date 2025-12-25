@@ -1,0 +1,28 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-18T08:45:16.159745Z
+K 7
+svn:log
+V 514
+Document Tree documentation fixes.
+
+Copy `topic` description text from the element docstring into the element
+reference.
+
+Describe a simplified "structure model" (that works with
+`nodes.Element.check_content_model()`).
+
+Simplify description of "%section.elements" parameter entity
+(similar to the other "….elements" entities).
+
+Remove an erroneous comment in the description of `transition`:
+the additional placement constraints are indeed enforced in the
+`misc.Transitions` transform.
+
+Fix typos. Add/Fix links.
+END

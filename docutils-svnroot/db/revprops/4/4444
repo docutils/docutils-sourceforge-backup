@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2006-03-23T03:53:57.292584Z
+K 7
+svn:log
+V 79
+updated tests for revision 4443 (support for new python.org and pep2pyramid.py)
+END

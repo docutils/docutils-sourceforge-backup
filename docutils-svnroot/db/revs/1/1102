@@ -1,0 +1,179 @@
+PLAIN
+K 7
+FAQ.txt
+V 24
+file 4-1070.0.r1070/1092
+K 11
+LICENSE.txt
+V 23
+file 6-675.0.r675/19690
+K 9
+NOTES.txt
+V 21
+file 4-676.0.r676/841
+K 10
+README.txt
+V 22
+file 9-675.0.r1097/191
+K 3
+doc
+V 23
+dir 4-1100.0.r1101/1240
+K 14
+docfactory.ico
+V 23
+file d-675.0.r675/20887
+K 13
+docfactory.py
+V 24
+file f-675.0.r1068/16539
+K 17
+docfactory2exe.py
+V 23
+file 4-1074.0.r1074/438
+K 13
+docutils.conf
+V 23
+file 4-1099.0.r1099/385
+K 7
+factory
+V 22
+dir h-675.0.r1096/4533
+K 8
+setup.py
+V 24
+file x-675.0.r1068/20258
+END
+ENDREP
+id: 4-675.0.r1102/508
+type: dir
+pred: 4-675.0.r1101/1978
+count: 24
+text: 1102 0 495 495 e20b69a7182fadaeae97fdfeb4cf02be
+cpath: /trunk/sandbox/gschwant/docfactory
+copyroot: 0 /
+
+PLAIN
+K 10
+docfactory
+V 21
+dir 4-675.0.r1102/508
+END
+ENDREP
+id: 2-675.0.r1102/746
+type: dir
+pred: 2-675.0.r1101/2221
+count: 24
+text: 1102 686 47 47 0ecbe3bbd90d10313b658fd8c5f50997
+cpath: /trunk/sandbox/gschwant
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 21
+file 3-17.0.r115/8760
+K 4
+aahz
+V 21
+dir 2-820.0.r838/4508
+K 4
+bbum
+V 24
+dir 2-1039.0.r1093/10960
+K 6
+davidg
+V 19
+dir 6-17.0.r977/925
+K 7
+grubert
+V 22
+dir 2-112.0.r1075/1798
+K 8
+gschwant
+V 21
+dir 2-675.0.r1102/746
+K 4
+ianb
+V 21
+dir 2-881.0.r881/2335
+K 3
+mwh
+V 21
+dir 2-857.0.r862/1023
+K 7
+oliverr
+V 21
+dir 2-202.0.r925/1830
+K 7
+richard
+V 22
+dir 2-526.0.r1089/2918
+K 6
+simonb
+V 21
+dir 2-252.0.r345/3718
+K 4
+tibs
+V 21
+dir 2-62.0.r1089/1615
+END
+ENDREP
+id: 1-17.0.r1102/1388
+type: dir
+pred: 1-17.0.r1101/2866
+count: 184
+text: 1102 913 462 462 b22b8f1abe1b0cad815a69db0ff20cd7
+cpath: /trunk/sandbox
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r1098/1213
+K 7
+sandbox
+V 21
+dir 1-17.0.r1102/1388
+K 3
+web
+V 20
+dir 1-2.0.r1095/7224
+END
+ENDREP
+id: 3-1.0.r1102/1677
+type: dir
+pred: 3-1.0.r1101/3156
+count: 1094
+text: 1102 1548 116 116 44f186fcca26402946ac0111b8c4365a
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 17
+dir 0-1.0.r63/562
+K 4
+tags
+V 17
+dir 2-1.0.r65/217
+K 5
+trunk
+V 20
+dir 3-1.0.r1102/1677
+END
+ENDREP
+id: 0.0.r1102/1950
+type: dir
+pred: 0.0.r1101/3429
+count: 1102
+text: 1102 1829 108 108 9f63cfcee1bd40a19c12c4acf9b34b17
+cpath: /
+copyroot: 0 /
+
+4-1069.0.r1069/830 delete-file false false /trunk/sandbox/gschwant/docfactory/HISTORY.txt
+
+
+1950 2093

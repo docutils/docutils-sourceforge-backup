@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 12
+dreamcatcher
+K 8
+svn:date
+V 27
+2003-05-03T12:03:01.000000Z
+K 7
+svn:log
+V 165
+Added some options to the Writer. Added
+        footnotes, backrefs, topic. Works with docutils/tools/test.txt,
+        but the output needs work on the stylesheet.
+
+END

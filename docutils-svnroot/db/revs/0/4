@@ -1,0 +1,84 @@
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 2-4.0.r4/123
+type: file
+count: 0
+text: 2 0 1362 3217 0fbd9e10d0433293b006f3934d0a0131 e3e8884ec246f7cbfa15ee5af338399bac69b25a 3-3/_4
+props: 4 0 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/web/index.txt
+copyroot: 0 /
+
+PLAIN
+K 12
+docutils.txt
+V 18
+file 3-2.0.r2/1498
+K 9
+index.txt
+V 17
+file 2-4.0.r4/123
+END
+ENDREP
+id: 1-2.0.r4/450
+type: dir
+pred: 1-2.0.r2/1795
+count: 1
+text: 4 354 83 83 139e152e5731da6d82b511c253572834
+cpath: /trunk/web
+copyroot: 0 /
+
+PLAIN
+K 3
+web
+V 16
+dir 1-2.0.r4/450
+END
+ENDREP
+id: 3-1.0.r4/637
+type: dir
+pred: 3-1.0.r2/1965
+count: 2
+text: 4 590 34 34 7c666dc8890934bb375008c2a2aac744
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 16
+dir 0-1.0.r3/202
+K 4
+tags
+V 16
+dir 2-1.0.r1/130
+K 5
+trunk
+V 16
+dir 3-1.0.r4/637
+END
+ENDREP
+id: 0.0.r4/888
+type: dir
+pred: 0.0.r3/455
+count: 4
+text: 4 773 102 102 b20699b61c97b502eb359ec3aca9b6d3
+cpath: /
+copyroot: 0 /
+
+_2.0.t3-3 add-file true true /trunk/web/index.txt
+
+
+888 1016

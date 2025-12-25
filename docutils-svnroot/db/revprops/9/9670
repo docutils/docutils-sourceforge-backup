@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-02T15:55:39.842279Z
+K 7
+svn:log
+V 200
+Doctree documentation: Document `<table>` and its subelements.
+
+Includes documentation for the attributes defined in the exchange-table-model
+and the paramter entities customizing/extending the model.
+END

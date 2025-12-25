@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2024-09-10T18:17:15.311054Z
+K 7
+svn:log
+V 52
+FIX test_writers html4css when PIL is not installed
+
+END

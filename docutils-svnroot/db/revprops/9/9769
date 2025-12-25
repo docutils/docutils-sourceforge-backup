@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-18T07:44:41.615552Z
+K 7
+svn:log
+V 215
+Deprecate "parser_name" argument of `readers.Reader.__init__()`.
+
+Instead, the "parser" argument accepts now a parser name as well as
+a `parsers.Parser` instance.
+
+Also change some boolean values from `1` to `True`.
+END

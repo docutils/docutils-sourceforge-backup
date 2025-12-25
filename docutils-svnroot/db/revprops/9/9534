@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-02-01T13:03:52.279121Z
+K 7
+svn:log
+V 479
+LaTeX to MathML: Fix "mathvariant" handling for numbers.
+
+Conversion of \mathtt{0.12} did not use monospaced digits.
+
+Do a per-character lookup/replacement with
+"alphanumical mathematical chars" for the "text" of `<mn>`.
+
+While identifiers are usually put in separate `<mi>` elements
+and more than one letter in a `<mi>` indicates a function name
+that should not change fonts,
+numbers in `<mn>` consisting of several digits should be
+changed according to the given "mathvariant".
+END

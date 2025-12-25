@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2004-06-13T18:18:25.000000Z
+K 7
+svn:log
+V 110
+Remove "HACK" from comments.
+In literal and literal_block replace "--" by "-{}-", in case fontenc T1 is used.
+
+END

@@ -1,0 +1,44 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-02-05T14:12:49.950305Z
+K 7
+svn:log
+V 836
+Clean up docutils.frontend before the switch to arparse.
+
+Mark as provisional.
+
+Import the configparser module, not its objects.
+
+Use super()
+
+Add deprecation notices and documentation.
+
+OptionParser.get_standard_config_files()
+  decorate as class function
+  simplify
+
+OptionParser.get_config_file_settings():
+  rename the ConfigParser instance to avoid ambiguity
+  adapt to changes in ConfigParser.read()
+
+ConfigParser
+  Use mapping interface.
+
+ConfigParser.read()
+  * simplify:
+    - configparser.ConfigParser.read() supports an `encoding` parameter
+      since Python 3.2.
+    - use isinstance()
+  * make upstream-compatible:
+    - make the `option_parser` parameter optional
+    - return list of actually parsed files (instead of saving as attribute)
+
+ConfigParser.get_section()
+  It is Easier to Ask for Forgiveness than Permission
+END

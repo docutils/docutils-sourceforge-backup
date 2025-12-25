@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-04-01T00:48:09.627968Z
+K 7
+svn:log
+V 84
+only run Python 2.1 and 2.4 when backporting stuff;
+otherwise it just takes too long
+END

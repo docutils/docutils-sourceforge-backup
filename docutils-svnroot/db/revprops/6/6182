@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-10-23T18:58:32.341581Z
+K 7
+svn:log
+V 190
+Review of latex writer tests.
+
+Move stylesheet tests from functional to test_latex2e.py.
+Use a template for the document head in  test_latex2e.py
+(facilitates adapting to new features/code).
+END

@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-08-07T23:35:56.840123Z
+K 7
+svn:log
+V 333
+Use `unquote()` instead of `url2pathname()` to unquote image URIs.
+
+Simplify the unquoting of the path segment of an image URI.
+
+`url2pathname` also converts the path delimiters to the system default
+and does some additional replacements under Windows which is not required
+for the Docutils HTML or LaTeX writers.
+
+Fixes [bugs: #493]
+END

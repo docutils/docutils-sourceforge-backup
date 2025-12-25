@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2014-06-24T14:52:59.233014Z
+K 7
+svn:log
+V 58
+Fix [258] figwidth="image" generates unitless width value.
+END

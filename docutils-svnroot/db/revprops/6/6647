@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2011-01-23T19:58:46.187521Z
+K 7
+svn:log
+V 73
+Compilation commands use and remove temporary files. Fixes bug
+#2912890.
+
+END

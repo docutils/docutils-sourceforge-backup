@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2006-11-07T19:07:13.575279Z
+K 7
+svn:log
+V 150
+Added support for ascii-mathml role and directive to produce mathml
+markup.  The mathml markup is only supported in the dom and html
+writers for now.
+
+END

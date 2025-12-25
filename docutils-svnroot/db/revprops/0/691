@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-09-19T00:44:29.000000Z
+K 7
+svn:log
+V 790
+  - Factored out ``State.add_initial_transitions()`` so it can be    extended.  - Converted whitespace-specific "blank" and "indent" transitions    from special-case code to ordinary transitions: removed    ``StateMachineWS.check_line()`` & ``.check_whitespace()``, added    ``StateWS.add_initial_transitions()`` method, ``ws_patterns`` &    ``ws_initial_transitions`` attributes.  - Removed ``State.match_transition()`` after merging it into    ``.check_line()``.  - Added ``StateCorrection`` exception.  - Added support for ``StateCorrection`` in ``StateMachine.run()``    (moved ``TransitionCorrection`` support there too.)  - Changed ``StateMachine.next_line()`` and ``.goto_line()`` to raise    ``EOFError`` instead of ``IndexError``.  - Added ``State.no_match`` method.
+
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2006-04-04T15:58:44.582657Z
+K 7
+svn:log
+V 83
+Add custom role with two classes.
+Change latex2e visit/depart_inline to handle it.
+
+END

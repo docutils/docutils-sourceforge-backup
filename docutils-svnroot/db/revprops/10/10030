@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2025-03-08T02:01:32.736009Z
+K 7
+svn:log
+V 78
+Remove PSF licence classifier
+
+This was missed when ``roman.py`` was removed.
+
+END

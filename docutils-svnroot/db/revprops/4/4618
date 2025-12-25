@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2006-06-07T07:33:13.284773Z
+K 7
+svn:log
+V 77
+rename mkpydoc.py to rst2docpy.py and
+remove informational units via topics.
+
+END

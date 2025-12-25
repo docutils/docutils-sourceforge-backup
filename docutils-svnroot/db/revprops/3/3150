@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2005-03-31T15:32:12.599843Z
+K 7
+svn:log
+V 144
+Bugfix for emacs rest support,
+it was using kill-whole-line function,
+which is only in emacs-cvs.
+The checked in code should work in emacs-21.
+
+
+END

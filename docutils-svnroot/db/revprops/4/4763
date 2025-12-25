@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-10-09T03:25:54.417193Z
+K 7
+svn:log
+V 49
+fixed behavior for newlines followed by asterisks
+END

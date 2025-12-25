@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-20T19:31:18.673404Z
+K 7
+svn:log
+V 135
+removed createdocutilssvn; probably not needed anymore,
+and I want Google to return repository.html when searching for
+»docutils svn«
+END

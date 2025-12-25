@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-11-25T21:08:33.275755Z
+K 7
+svn:log
+V 186
+Support moving images (video) in the "html4" writer.
+
+Include image files in the formats "mp4", "ogg", and "webm"
+as `<object>` nodes to get image support on par with the "html5" writer.
+END

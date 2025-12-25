@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+gbrandl
+K 8
+svn:date
+V 27
+2007-07-08T16:17:46.589718Z
+K 7
+svn:log
+V 80
+Some fixes and module index improvements: list all synopses,
+collapse packages.
+
+END

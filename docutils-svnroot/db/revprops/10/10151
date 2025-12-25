@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-06-01T15:39:34.314912Z
+K 7
+svn:log
+V 297
+Warn about duplicate name in references with embedded internal targets.
+
+Named references with embedded internal targets like
+```this <that_>`_`` did not check for duplicate names when generating
+the target `<target ids="this" names="this" refid="that">`.
+(References with embedded URI did check.)
+END

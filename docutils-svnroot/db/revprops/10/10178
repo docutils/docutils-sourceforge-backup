@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-06-23T15:42:44.649344Z
+K 7
+svn:log
+V 162
+Revise documentation.
+
+Clarify description of the handling of duplicate reference names in the
+reStructuredText Specification and the docstring in docutils.nodes.
+END

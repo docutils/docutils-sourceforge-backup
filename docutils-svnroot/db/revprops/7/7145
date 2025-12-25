@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 12
+paultremblay
+K 8
+svn:date
+V 27
+2011-09-28T01:03:19.548909Z
+K 7
+svn:log
+V 244
+The examples directory will contain examples of customizing the
+stylesheet. THe abs_ded_toc1.xsl is one such example. It will
+illustrate how to put the abstract, dedication, toc, and body on
+different pages, with different headers and footers.
+
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+gbrandl
+K 8
+svn:date
+V 27
+2009-07-09T10:00:07.951044Z
+K 7
+svn:log
+V 139
+Fix bug introduced in porting to Py3k: for "in" test to work for attributes and nodes (like "getitem"), a custom __contains__ is necessary.
+END

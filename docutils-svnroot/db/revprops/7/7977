@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2016-11-29T12:00:39.452513Z
+K 7
+svn:log
+V 58
+HTML writers: Outsourcing of common code to _html_base.py.
+END

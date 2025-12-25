@@ -1,0 +1,25 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-05-27T15:06:37.104925Z
+K 7
+svn:log
+V 364
+MathML: refactor and extend.
+
+New method math.extend(), dictionary-like access to attributes.
+
+Update/Correct list of operators/functions with limits above/below in display formulas.
+
+Add support for:
+- more matrix environments,
+- more fraction commands,
+- delimiter-size commands,
+- limits/nolimits commands,
+- phantom and boxed commands,
+- layout style commands.
+END

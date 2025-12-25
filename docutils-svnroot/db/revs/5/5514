@@ -1,0 +1,76 @@
+id: 1-7.0-5514.r5514/0
+type: dir
+pred: 1-7.0.r5512/6997
+count: 3529
+text: 5512 6295 689 689 d8cc8ce9515fddf0ac1bbd141b973dcb
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /branches/lossless-rst-writer
+copyfrom: 5513 /trunk/docutils
+
+PLAIN
+K 17
+address-rendering
+V 26
+dir 1-7.0-4314.r4314/16372
+K 18
+adjacent-citations
+V 26
+dir 1-7.0-5043.r5050/19834
+K 12
+docutils-0.4
+V 25
+dir 1-7.0-4266.r5500/7199
+K 19
+lossless-rst-writer
+V 22
+dir 1-7.0-5514.r5514/0
+K 7
+nesting
+V 25
+dir 3-1.0-1813.r4356/3347
+K 7
+plugins
+V 25
+dir 1-7.0-4952.r4987/1225
+K 7
+subdocs
+V 25
+dir 1-7.0-5265.r5427/8605
+END
+ENDREP
+id: 0-1.0.r5514/606
+type: dir
+pred: 0-1.0.r5500/7760
+count: 418
+text: 5514 247 346 346 9c514c5572bcf4ffd784dae810a3d553
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r5514/606
+K 4
+tags
+V 19
+dir 2-1.0.r4584/629
+K 5
+trunk
+V 21
+dir 3-1.0.r5513/17121
+END
+ENDREP
+id: 0.0.r5514/884
+type: dir
+pred: 0.0.r5513/17402
+count: 5514
+text: 5514 758 113 113 fde54b84fda6cbc7f121c37550a8b1c8
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+
+1-7._0.t5513-495 add-dir false false /branches/lossless-rst-writer
+5513 /trunk/docutils
+
+884 1077

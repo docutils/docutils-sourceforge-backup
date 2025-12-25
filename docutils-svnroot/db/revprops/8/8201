@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-11-08T11:24:23.388642Z
+K 7
+svn:log
+V 40
+Cleanup: remove <2.6 compatibility code.
+END

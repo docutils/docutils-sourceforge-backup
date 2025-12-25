@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 8
+dkuhlman
+K 8
+svn:date
+V 27
+2010-12-07T04:42:02.211090Z
+K 7
+svn:log
+V 39
+Add docutils.math to installed packages
+END

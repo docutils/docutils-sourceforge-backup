@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T02:02:46.999689Z
+K 7
+svn:log
+V 215
+Do not recognize ^L in the middle of lines.
+Recognizing control characters is a bad idea for a language which 
+should be well-readable and well-writable.
+And after all, we have the line block syntax for line breaks.
+END

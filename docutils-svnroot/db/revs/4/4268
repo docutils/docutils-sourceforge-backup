@@ -1,0 +1,71 @@
+id: 1-7.0-4268.r4268/0
+type: dir
+pred: 1-7.0.r4262/2346
+count: 3185
+text: 4262 1649 684 684 2eecc28eeb84f545effc448cd9db326e
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /tags/docutils-0.4
+copyfrom: 4263 /trunk/docutils
+
+PLAIN
+K 14
+docutils-0.3.7
+V 22
+dir 1-7.0-3816.r3816/0
+K 14
+docutils-0.3.9
+V 22
+dir 1-7.0-3815.r3815/0
+K 12
+docutils-0.4
+V 22
+dir 1-7.0-4268.r4268/0
+K 7
+initial
+V 18
+dir 3-1.0-65.r65/0
+K 17
+merged_to_nesting
+V 25
+dir 3-1.0-2576.r2576/3616
+K 5
+start
+V 25
+dir 3-1.0-1558.r1558/1998
+END
+ENDREP
+id: 2-1.0.r4268/526
+type: dir
+pred: 2-1.0.r4267/244
+count: 12
+text: 4268 236 277 277 f30c6679db19af2ce4b7af07e5aede08
+cpath: /tags
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r4266/347
+K 4
+tags
+V 19
+dir 2-1.0.r4268/526
+K 5
+trunk
+V 20
+dir 3-1.0.r4265/1799
+END
+ENDREP
+id: 0.0.r4268/797
+type: dir
+pred: 0.0.r4267/513
+count: 4268
+text: 4268 672 112 112 39c9112409180384a29ffbfa2e5fb795
+cpath: /
+copyroot: 0 /
+
+1-7._0.t4267-3aj add-dir false false /tags/docutils-0.4
+4263 /trunk/docutils
+
+797 937

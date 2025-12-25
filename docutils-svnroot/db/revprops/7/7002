@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-04-08T19:57:44.058476Z
+K 7
+svn:log
+V 54
+Let command line test work without installing Docutils
+END

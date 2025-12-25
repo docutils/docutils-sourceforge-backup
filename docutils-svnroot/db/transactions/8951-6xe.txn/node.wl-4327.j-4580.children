@@ -1,0 +1,91 @@
+K 8
+Dir.smak
+V 31
+file 1b-5058.j-4580.r5058/26269
+K 17
+alternatives.html
+V 31
+file wp-4327.j-4580.r4660/17898
+K 19
+alternatives.myhtml
+V 31
+file wr-4327.j-4580.r4660/18505
+K 16
+alternatives.rst
+V 27
+file wt-4327.0.r4327/890532
+K 15
+directives.html
+V 31
+file wv-4327.j-4580.r4660/18201
+K 14
+directives.rst
+V 27
+file wx-4327.0.r4327/890780
+K 17
+introduction.html
+V 31
+file wz-4327.j-4580.r4660/16357
+K 19
+introduction.myhtml
+V 31
+file x1-4327.j-4580.r4660/16662
+K 16
+introduction.rst
+V 27
+file x3-4327.0.r4327/891025
+K 21
+reStructuredText.html
+V 31
+file x5-4327.j-4580.r4660/17587
+K 20
+reStructuredText.rst
+V 27
+file x7-4327.0.r4327/890280
+K 15
+standalone.html
+V 31
+file x9-4327.j-4580.r4660/16973
+K 17
+standalone.myhtml
+V 31
+file xb-4327.j-4580.r6498/15261
+K 14
+standalone.rst
+V 27
+file xd-4327.0.r4327/888793
+K 17
+standalone.stderr
+V 31
+file ax-4580.j-4580.r4580/86397
+END
+D 8
+Dir.smak
+D 17
+alternatives.html
+D 19
+alternatives.myhtml
+D 16
+alternatives.rst
+D 15
+directives.html
+D 14
+directives.rst
+D 17
+introduction.html
+D 19
+introduction.myhtml
+D 16
+introduction.rst
+D 21
+reStructuredText.html
+D 20
+reStructuredText.rst
+D 15
+standalone.html
+D 17
+standalone.myhtml
+D 14
+standalone.rst
+D 17
+standalone.stderr

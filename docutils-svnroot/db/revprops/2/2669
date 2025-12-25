@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-09-29T17:56:10.000000Z
+K 7
+svn:log
+V 33
+added close() method for DevNull
+
+END

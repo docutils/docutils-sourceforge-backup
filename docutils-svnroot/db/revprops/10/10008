@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-02-03T09:19:29.260541Z
+K 7
+svn:log
+V 126
+LaTeX writer: fix image path on Windows
+
+Fixup for r9996: LaTeX expects a POSIX path.
+
+Thanks to Alan G. Isaac for the report.
+END

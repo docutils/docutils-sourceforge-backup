@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2013-04-28T22:26:53.192896Z
+K 7
+svn:log
+V 65
+More test for inline markup recognition (no change to the rules).
+END

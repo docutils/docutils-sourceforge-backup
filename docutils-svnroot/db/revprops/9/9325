@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-02-06T21:04:00.388989Z
+K 7
+svn:log
+V 469
+New functions for use as `rst2*` "console_scripts entry points".
+
+The new functions allow the installation of `rst2*` command line scripts
+via standard `entry points`__ instead of the current "scripts" list in
+``setup.py`` after a transition period (cf. [feature-requests:#88]).
+
++ Works also for Windows.
++ Allows shorter command names (drop the extension), already in use
+  in Debian and Ubuntu.
+
+__ https://packaging.python.org/en/latest/specifications/entry-points/
+END

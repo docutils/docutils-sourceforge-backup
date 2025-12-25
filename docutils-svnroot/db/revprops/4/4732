@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2006-09-05T20:09:42.721382Z
+K 7
+svn:log
+V 150
+* Added "-D code-block-states-file" option.
+* Do error checking for option names.
+* Do line numbering whether or not states can be run if :numbered:.
+
+END

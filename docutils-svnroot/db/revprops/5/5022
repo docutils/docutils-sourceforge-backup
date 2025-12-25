@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 8
+dkuhlman
+K 8
+svn:date
+V 27
+2007-03-14T19:40:19.139333Z
+K 7
+svn:log
+V 176
+Added support for highlights directive. Fixed styles in highlights,
+epigraphs, and blockquotes.  Bullet and enum lists now have their
+own styles in each of these block types.
+
+
+END

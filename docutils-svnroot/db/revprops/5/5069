@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-05-07T14:39:59.852657Z
+K 7
+svn:log
+V 45
+Make $VERSION return the svn version number.
+
+END

@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2013-01-01T20:00:21.950981Z
+K 7
+svn:log
+V 143
+Unify/simplify type testing in "validate_*_list".
+
+Circumvent the problem that the value may be "unicode" or "str" by testing
+for "not a list".
+END

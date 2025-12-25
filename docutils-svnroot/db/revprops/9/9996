@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-12-04T13:33:06.426550Z
+K 7
+svn:log
+V 410
+Provide a generic Translator base class for writers.
+
+Move the `uri2path()` method there.
+Use it in LaTeX and HTML writers to reduce code duplication and
+unify the handling of image URI references.
+
+Using `uri2path()` in the ODT writer would be a backwards-incompatible
+change: The ODT writer expects relative image paths to be relative to
+the **source** directory. Announce upcoming change for the ODT writer.
+END

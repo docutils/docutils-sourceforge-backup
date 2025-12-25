@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-12-07T23:46:30.608100Z
+K 7
+svn:log
+V 136
+added East Asian double-width character support; thanks to Frank Bennett for inspiration on ``docutils.utils.east_asian_column_width()``
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2024-04-23T19:36:39.923738Z
+K 7
+svn:log
+V 19
+remove tox_pil.ini
+
+END

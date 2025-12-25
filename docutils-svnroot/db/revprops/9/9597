@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2024-03-26T15:08:54.247434Z
+K 7
+svn:log
+V 59
+manpage: render references in writer not in man/mandoc/...
+
+END

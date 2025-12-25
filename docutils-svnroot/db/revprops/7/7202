@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 12
+paultremblay
+K 8
+svn:date
+V 27
+2011-10-25T02:17:28.407926Z
+K 7
+svn:log
+V 306
+rstxml2xml.py is a script that uses sax to add some functionality to
+an resulting docutils XML file that is not there (such as rawxml, and
+converting ASCIIMathML to MathMl). Docutils got some fixes so it will
+work on other systems, such as using variables rather than hard-coded
+paths to find the scripts.
+
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-05-24T03:08:09.000000Z
+K 7
+svn:log
+V 102
+  - Changed names of Reporter's thresholds: warning_level -> report_level; error_level -> halt_level.
+
+END

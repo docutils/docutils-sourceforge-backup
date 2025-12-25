@@ -1,0 +1,41 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-08-19T15:07:47.138563Z
+K 7
+svn:log
+V 1229
+Test nested parsing in a directive.
+
+Define/use sample directives to test nested parsing with section support.
+Advantages:
+
+* The tests are simpler and easier to comprehend.
+* Emulate possible use cases. Provide template for extension developers.
+* More comprehensive testing.
+* Allows test/comparision with the legacy section parsing algorithm
+  (used up to 0.22).
+
+Tests revealed problems with section styles matching existing styles:
+
+legacy section parsing:
+  DATA LOSS:
+  Sections with a level outside the nested parsing are silently dropped!
+  This happens also with a base node attached to the document.
+
+new section parsing:
+  After nested parsing, the "insertion point" is restored to what it was
+  before. If sibling sections or parent sections are attached according to
+  their level, the insertion point after parsing is before these sections
+  (the order of the nodes is mixed up).
+
+  In a block-quote or other body element the current node is not attached to
+  the document because the content is parsed with nested_parse into node that
+  is appended after parsing.
+  If the current node is used as base node, the section style hierarchy may be
+  document-wide or local, depending on the placement of the directive.
+END

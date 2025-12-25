@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-03-10T00:04:24.592790Z
+K 7
+svn:log
+V 158
+renamed Directive.contents attribute to has_contents in order to avoid
+conflicts with self.content parameter; fixed/improved backward-compatibility code; typo
+END

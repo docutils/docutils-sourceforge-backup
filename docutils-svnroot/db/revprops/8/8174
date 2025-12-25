@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-09-07T07:39:18.450683Z
+K 7
+svn:log
+V 64
+Fix [ 324 ] Invalid LaTeX for table with empty multicolumn cell.
+END

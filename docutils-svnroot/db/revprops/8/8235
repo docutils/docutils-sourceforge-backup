@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2018-11-21T13:58:51.843345Z
+K 7
+svn:log
+V 186
+Revert the fix for backslash escaping in transforms.
+
+Still waiting for review.
+
+Reverts last three commits from a local "feature branch"
+unintentionally applied to trunk with `git svn`.
+END

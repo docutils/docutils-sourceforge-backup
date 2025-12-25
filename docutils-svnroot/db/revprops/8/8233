@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2018-11-20T23:55:23.187888Z
+K 7
+svn:log
+V 166
+Do not unescape text when generating Text nodes.
+
+Store the null-escaped text in the doctree and unescape on export.
+Enables transforms to account for escaped markup.
+END

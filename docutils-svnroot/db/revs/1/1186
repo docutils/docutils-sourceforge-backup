@@ -1,0 +1,163 @@
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 3-1186.0.r1186/123
+type: file
+count: 0
+text: 1185 0 6047 38104 87abe90cbad0e25f671264c2161d0e3c a492cbde66f67ad51340ad982ac0ab34c612f6f2 1185-wx/_5
+props: 1186 0 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/sandbox/pobrien/WriterTemplate.py
+copyroot: 0 /
+
+PLAIN
+K 11
+LinuxFormat
+V 23
+dir 3-1183.0.r1185/6609
+K 10
+OpenOffice
+V 23
+dir 3-1162.0.r1182/5574
+K 17
+WriterTemplate.py
+V 23
+file 3-1186.0.r1186/123
+K 9
+dwArticle
+V 21
+dir 4-1158.0.r1184/63
+END
+ENDREP
+id: 2-1158.0.r1186/592
+type: dir
+pred: 2-1158.0.r1185/6939
+count: 20
+text: 1186 391 188 188 95a2907ee5c5c8534781bcbbc992b9ac
+cpath: /trunk/sandbox/pobrien
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 21
+file 3-17.0.r115/8760
+K 4
+aahz
+V 22
+dir 2-820.0.r1174/2130
+K 4
+bbum
+V 23
+dir 2-1039.0.r1133/1962
+K 6
+davidg
+V 21
+dir 6-17.0.r1138/1150
+K 7
+grubert
+V 22
+dir 2-112.0.r1179/2807
+K 8
+gschwant
+V 24
+dir 2-675.0.r1178/138518
+K 4
+ianb
+V 22
+dir 2-881.0.r1150/3819
+K 3
+mwh
+V 21
+dir 2-857.0.r862/1023
+K 7
+oliverr
+V 22
+dir 2-202.0.r1161/2771
+K 7
+pobrien
+V 22
+dir 2-1158.0.r1186/592
+K 7
+richard
+V 22
+dir 2-526.0.r1089/2918
+K 6
+simonb
+V 21
+dir 2-252.0.r345/3718
+K 4
+tibs
+V 21
+dir 2-62.0.r1089/1615
+END
+ENDREP
+id: 1-17.0.r1186/1284
+type: dir
+pred: 1-17.0.r1185/7633
+count: 249
+text: 1186 762 509 509 16e1f53a3fd60598202cfbe8f2729ba2
+cpath: /trunk/sandbox
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r1181/1558
+K 7
+sandbox
+V 21
+dir 1-17.0.r1186/1284
+K 3
+web
+V 19
+dir 1-2.0.r1144/755
+END
+ENDREP
+id: 3-1.0.r1186/1572
+type: dir
+pred: 3-1.0.r1185/7922
+count: 1178
+text: 1186 1444 115 115 5e93b317d42e823493d12a3ed1a70257
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 17
+dir 0-1.0.r63/562
+K 4
+tags
+V 17
+dir 2-1.0.r65/217
+K 5
+trunk
+V 20
+dir 3-1.0.r1186/1572
+END
+ENDREP
+id: 0.0.r1186/1845
+type: dir
+pred: 0.0.r1185/8195
+count: 1186
+text: 1186 1724 108 108 d492f6e645672543a7c593c3297fa734
+cpath: /
+copyroot: 0 /
+
+_3.0.t1185-wx add-file true true /trunk/sandbox/pobrien/WriterTemplate.py
+
+
+1845 1988

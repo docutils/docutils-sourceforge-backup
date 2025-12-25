@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-12-14T22:38:49.169260Z
+K 7
+svn:log
+V 279
+Add/fix source and line attributes for doctree elements.
+
+Add "source" and "line" attributes to `<image>`, `<figure>`,
+`<list_item>`, <math_block>, and `<definition>` nodes.
+
+Fix "line" attribute for `<definition_list>`, `<definition_list_item>`,
+and `<term>` nodes, cf. [r9475].
+END

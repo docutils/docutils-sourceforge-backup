@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-09-23T22:36:47.825491Z
+K 7
+svn:log
+V 278
+Revert [r9902] (right align code line numbers with CSS).
+
+The change in [r9902] has the side-effect of a spurious space
+before the first line of a code block without line nubers.
+
+Right-aligning via CSS is not required, as line numbers are already
+padded by the parser.
+
+Revert.
+END

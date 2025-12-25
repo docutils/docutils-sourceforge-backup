@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2013-07-31T16:39:33.556417Z
+K 7
+svn:log
+V 135
+Wrongly nested lists are treated in a sane way. By this wrongly nested
+lists as they occur in ODF for instance are converted properly.
+
+END

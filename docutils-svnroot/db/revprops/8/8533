@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2020-08-10T09:44:37.343699Z
+K 7
+svn:log
+V 53
+remove try-except catching python2.2 missing os.walk
+
+END

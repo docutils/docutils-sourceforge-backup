@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2007-02-21T09:17:36.451224Z
+K 7
+svn:log
+V 183
+- New option ``--reference-label`` to allow usage of LaTeX ref for 
+  labels in section references.
+- Add a label after every section to support sectionnumbers as reference
+  labels.
+
+END

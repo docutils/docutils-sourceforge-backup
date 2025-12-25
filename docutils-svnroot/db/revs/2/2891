@@ -1,0 +1,150 @@
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 5
+1.281
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 5-18.0.r2891/125
+type: file
+pred: 5-18.0.r2888/4308
+count: 280
+text: 2875 0 209 64285 046261d7af4a1ed7e13c767ebfebbc1d b7ffe07af2d3a68c0fbbfeb0476e18dd52192a27 2890-28a/_3
+props: 2891 0 112 0 1a3b7a1843b36186925c4672be46e7c8
+cpath: /trunk/docutils/HISTORY.txt
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 21
+file 2-340.0.r340/154
+K 8
+BUGS.txt
+V 23
+file 2-2181.0.r2864/360
+K 11
+COPYING.txt
+V 22
+file 2-18.0.r2354/3164
+K 7
+FAQ.txt
+V 23
+file 2-788.0.r2888/7569
+K 11
+HISTORY.txt
+V 21
+file 5-18.0.r2891/125
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r2513/394
+K 10
+README.txt
+V 21
+file 9-18.0.r2754/676
+K 10
+THANKS.txt
+V 23
+file 2-2182.0.r2860/123
+K 4
+docs
+V 20
+dir 3-7.0.r2872/2193
+K 8
+docutils
+V 22
+dir 1w-18.0.r2890/1316
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 23
+file 46-18.0.r2889/4252
+K 4
+test
+V 22
+dir 48-18.0.r2889/2619
+K 5
+tools
+V 22
+dir 6w-18.0.r2887/1473
+END
+ENDREP
+id: 1-7.0.r2891/1086
+type: dir
+pred: 1-7.0.r2890/2226
+count: 2194
+text: 2891 404 669 669 3715ad7311b6d2efc050eb9395932c97
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r2891/1086
+K 7
+sandbox
+V 21
+dir 1-17.0.r2885/2314
+K 3
+web
+V 19
+dir 1-2.0.r2682/828
+END
+ENDREP
+id: 3-1.0.r2891/1427
+type: dir
+pred: 3-1.0.r2890/2568
+count: 2865
+text: 2891 1299 115 115 3654a0a39905fa0295c360959e44d51e
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 22
+dir 0-1.0.r2577/106684
+K 4
+tags
+V 20
+dir 2-1.0.r2576/3944
+K 5
+trunk
+V 20
+dir 3-1.0.r2891/1427
+END
+ENDREP
+id: 0.0.r2891/1708
+type: dir
+pred: 0.0.r2890/2849
+count: 2891
+text: 2891 1579 116 116 e0a3aa4798ecb5e04fe5abaca78ed43e
+cpath: /
+copyroot: 0 /
+
+5-18.0.t2890-28a modify-file true true /trunk/docutils/HISTORY.txt
+
+
+1708 1851

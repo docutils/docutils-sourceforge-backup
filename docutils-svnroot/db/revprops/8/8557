@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-09-04T16:58:24.985322Z
+K 7
+svn:log
+V 304
+LaTeX writer update
+
+Fix workaround for section title of unsupported levels
+with the new-style class handling (class wrapper instead of
+class-argument for \DUtitle).
+
+Require minimal version of "docutils.sty" to get a warning
+in the LaTeX-log for obsolete files with the same name.
+
+Update documentation.
+END

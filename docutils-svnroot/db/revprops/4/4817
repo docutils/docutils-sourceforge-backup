@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2006-11-17T19:29:00.242388Z
+K 7
+svn:log
+V 33
+Add option --use-latex-abstract.
+
+END

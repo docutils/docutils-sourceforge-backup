@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2007-02-22T10:44:35.394717Z
+K 7
+svn:log
+V 43
+New option ``--use-bibtex=style,db1,db2``.
+
+END

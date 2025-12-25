@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2006-12-11T09:02:47.678448Z
+K 7
+svn:log
+V 104
+Remove inactive code for use_optionlist_for_option_list.
+Remove latex comments from option_list output.
+
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2021-02-10T19:50:10.959091Z
+K 7
+svn:log
+V 72
+FIX r8608 moved attribute-optional in html5 test: but not in expected  
+
+END

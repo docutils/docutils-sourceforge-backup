@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-08-11T07:18:41.471999Z
+K 7
+svn:log
+V 176
+Fixup [r9880]. Use `to_uri()` to get image URI in test sample.
+
+Suggested by Adam Turner in [bugs.#493].
+This should produce a correct "file:" URI under both, Unix and Windows.
+END

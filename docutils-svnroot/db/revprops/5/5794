@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 13
+matt_harrison
+K 8
+svn:date
+V 27
+2008-12-05T17:42:53.624186Z
+K 7
+svn:log
+V 96
+Initial version of 3rd version of rst2odp.  This one appears to work and is built off of odplib.
+END

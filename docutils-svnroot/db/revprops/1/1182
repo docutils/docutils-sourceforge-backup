@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+pobrien
+K 8
+svn:date
+V 27
+2003-02-17T22:01:18.000000Z
+K 7
+svn:log
+V 114
+- images now size using PIL
+- enum and bullet list format correctly
+- uses .body1 style for first para in section
+
+END

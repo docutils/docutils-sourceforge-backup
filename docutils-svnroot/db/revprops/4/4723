@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2006-09-05T19:11:48.022118Z
+K 7
+svn:log
+V 479
+* Relocated all the code for parsing and interpreting writer schemas
+  to Text::Restructured::Writer.
+* Fixed the version number not to end with a period.
+* Don't use FindBin to append the directory in which the script is
+  found to its @INC path.
+* Don't convert digits in -W options to underscores.
+* Removed code for parsing DOM files to Text::Restructured::DOM::Parse.
+* Insert blank line in usage before "Descriptions of Plug-in
+  Directives" and "Descriptions of Writers".
+
+END

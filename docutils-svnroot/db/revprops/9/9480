@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-11-19T09:44:17.833411Z
+K 7
+svn:log
+V 145
+More smartquotes optimizations.
+
+Simplify regexps (we don't need to consider HTML character entities
+when transforming a Docutils document tree).
+END

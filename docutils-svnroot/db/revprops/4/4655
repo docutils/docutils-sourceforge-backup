@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2006-07-11T16:28:13.590125Z
+K 7
+svn:log
+V 67
+Added several features to rst.el and started to checkdoc the source
+END

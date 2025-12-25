@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2023-03-25T19:39:33.951497Z
+K 7
+svn:log
+V 406
+Specify more file attributes in ``.gitattributes``
+
+* Mark images, videos, and binary document formats (ODT, PDF) as binary
+  files. 
+* Mark all text files as using Unix-style (LF) line endings.
+* Use built-in ``git diff`` headers for specific languages.
+* Specify files that are not ASCII or UTF-8, and the encoding that such files
+  should be viewed in.
+
+Reference: https://git-scm.com/docs/gitattributes
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-07-28T19:26:00.170649Z
+K 7
+svn:log
+V 71
+Announce end of support for Python 3.1, and 3.2 after the 0.14 release.
+END

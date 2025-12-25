@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+mmgilbe
+K 8
+svn:date
+V 27
+2004-12-28T18:53:33.000000Z
+K 7
+svn:log
+V 80
+Another patch from Ollie Rutherfurd. Added docinfo elements from publish_parts.
+
+END

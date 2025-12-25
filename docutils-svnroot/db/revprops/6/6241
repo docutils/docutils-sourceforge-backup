@@ -1,0 +1,28 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2010-03-01T20:47:30.784167Z
+K 7
+svn:log
+V 846
+* Allow a stylesheet mechanism for styling classes of inline
+  elements.  For example, if you define a custom role ``myrole``, then
+  text using that role will appear with ``\styleinlinemyrole(...)``
+  around it.  There will be a null definition for the style which can
+  be overridden using ``\renewcommand{\styleinlinemyrole}{1}{#1}``.
+* Fixed parsed literals to be more literal than they were (e.g., don't
+  convert ``<=`` to a less-than-or-equal sign.)
+* Handle blank lines within parsed literals
+* Fixed the newlines around ``\item`` and ``\end{description}``
+* Fixed a bug where a comment could cause some actual text to
+  disappear because it didn't end with a newline
+* Added support for superscript and custom roles
+* Added support for a figure's class to be used as the name of the
+  latex environment
+* Added support for mathml labels
+
+END

@@ -1,0 +1,50 @@
+id: 3-1.0-65.r65/0
+type: dir
+pred: 3-1.0-63.r63/279
+count: 59
+text: 63 224 42 42 2761b97f350f30dfb645db8fb6ff3454
+cpath: /tags/initial
+copyfrom: 64 /branches/tibs
+
+PLAIN
+K 7
+initial
+V 18
+dir 3-1.0-65.r65/0
+END
+ENDREP
+id: 2-1.0.r65/217
+type: dir
+pred: 2-1.0.r1/130
+count: 1
+text: 65 164 40 40 e3b5a80475cb46d9bdd97a5fed745795
+cpath: /tags
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 17
+dir 0-1.0.r63/562
+K 4
+tags
+V 17
+dir 2-1.0.r65/217
+K 5
+trunk
+V 19
+dir 3-1.0.r62/78409
+END
+ENDREP
+id: 0.0.r65/473
+type: dir
+pred: 0.0.r64/0
+count: 65
+text: 65 353 107 107 ca4019db0a8c12cac29ebe86c934d2b9
+cpath: /
+copyroot: 0 /
+
+3-1._0.t64-1s add-dir false false /tags/initial
+64 /branches/tibs
+
+473 603

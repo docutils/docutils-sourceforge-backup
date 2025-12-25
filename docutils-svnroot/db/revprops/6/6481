@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2010-11-13T15:26:09.349905Z
+K 7
+svn:log
+V 411
+Some elements which may not be doubled by a replacement because they
+must be single by definition propagate a replacement up if their
+siblings also could propagate a replacement up. This way for instance
+sections which are complete replacements are recognized and marked up
+properly.
+
+Added README and man page `rstdiff.pod`.
+
+Upgraded tests to filterunit V0.7.1.
+
+Adapted expected test output to Docutils 0.8.
+
+END

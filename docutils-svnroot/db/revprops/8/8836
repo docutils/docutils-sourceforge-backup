@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-10-01T13:39:33.344449Z
+K 7
+svn:log
+V 218
+HTML5: New default for table column widths (fixes bug #426).
+
+Only specify table column widths, if the "widths" option is set
+and is not "auto".
+The `table_style`_ setting "colwidths-grid" restores the
+current default.
+END

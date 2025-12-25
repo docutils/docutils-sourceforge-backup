@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-11-06T12:59:32.341254Z
+K 7
+svn:log
+V 96
+Move tests for (un)escaping functions to test_utils.
+
+The functions moved in 0.3.7 (2004-12-24).
+END

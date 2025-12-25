@@ -1,0 +1,55 @@
+id: 1-7.0-4266.r4266/0
+type: dir
+pred: 1-7.0.r4265/1458
+count: 3187
+text: 4265 762 683 683 aed9bc01918011cbc6473bc53db3de72
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /branches/docutils-0.4
+copyfrom: 4265 /trunk/docutils
+
+PLAIN
+K 12
+docutils-0.4
+V 22
+dir 1-7.0-4266.r4266/0
+K 7
+nesting
+V 27
+dir 3-1.0-1813.r2577/106277
+END
+ENDREP
+id: 0-1.0.r4266/347
+type: dir
+pred: 0-1.0.r4158/62
+count: 226
+text: 4266 239 95 95 3b5a0a2d0a6d3c26282e7744fdaf87d6
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r4266/347
+K 4
+tags
+V 19
+dir 2-1.0.r4263/464
+K 5
+trunk
+V 20
+dir 3-1.0.r4265/1799
+END
+ENDREP
+id: 0.0.r4266/620
+type: dir
+pred: 0.0.r4265/2075
+count: 4266
+text: 4266 495 112 112 a72261b68ad95eb51b388922356ed79b
+cpath: /
+copyroot: 0 /
+
+1-7._0.t4265-3ah add-dir false false /branches/docutils-0.4
+4265 /trunk/docutils
+
+620 761

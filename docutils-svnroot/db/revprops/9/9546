@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-02-17T10:38:06.162348Z
+K 7
+svn:log
+V 412
+Fix mismatch between Docutils DTD and actual behaviour.
+
+The rST parser sets the "xml:space" attribute on the `<math_block>`
+doctree element since support this element in Docutils 0.8.
+The documentation of the new element in the DTD missed this fact.
+Add "xml:space" to the !ATTLIST so that "Docutils XML" documents
+containing math blocks validate.
+
+The `<raw>` element may only contain text, no inline elements.
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-08-16T00:41:08.000000Z
+K 7
+svn:log
+V 71
+Don't need to encode output any more; DocutilsTestSupport does it now.
+
+END

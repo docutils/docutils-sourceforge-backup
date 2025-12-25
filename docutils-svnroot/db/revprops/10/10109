@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2025-04-25T16:21:29.898841Z
+K 7
+svn:log
+V 156
+manpage writer
+- macro-references: insert breakpoints and hyphenation-off.
+- iskip reference content if content is equal, or only differs
+    by "mailto:".
+
+END

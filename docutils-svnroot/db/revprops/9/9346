@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2023-04-13T18:48:20.846776Z
+K 7
+svn:log
+V 65
+Fix regex to match multiline message "requires ... recommonmark"
+
+END

@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-06-22T11:25:42.149053Z
+K 7
+svn:log
+V 142
+Update template in version identifier conversion script.
+
+The template did not match after flake8 cleanups.
+
+Also improve diagnostical output.
+END

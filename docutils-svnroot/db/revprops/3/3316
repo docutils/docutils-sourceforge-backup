@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-05-07T21:55:21.289292Z
+K 7
+svn:log
+V 96
+added support for image alignment; this currently breaks figure
+alignment -- I'll fix that later
+END

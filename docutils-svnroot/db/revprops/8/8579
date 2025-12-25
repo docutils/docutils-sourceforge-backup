@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2020-11-26T22:16:54.858694Z
+K 7
+svn:log
+V 18
+Fix: escape \*Tex
+
+END

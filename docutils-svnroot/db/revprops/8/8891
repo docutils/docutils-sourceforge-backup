@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-11-17T19:04:15.510286Z
+K 7
+svn:log
+V 111
+Fix behaviour of get_stylesheet_list()
+
+Do not look up stylesheets given as "stylesheet" setting.
+Cf. bug #434.
+END

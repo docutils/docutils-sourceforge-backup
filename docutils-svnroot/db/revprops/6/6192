@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-11-11T11:58:33.260755Z
+K 7
+svn:log
+V 204
+New function filte_settings_spec 
+Return a copy of `setting_spec` excluding the specified settings.
+
+Remove test ``if hasattr(codecs, "backslashreplace_errors")``
+as this is always True for Python >= 2.3.
+END

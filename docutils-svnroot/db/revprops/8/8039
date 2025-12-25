@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-02-28T12:19:20.686848Z
+K 7
+svn:log
+V 122
+Apply [ 137 ] Fix no source and lineno was set to caption of table.
+
+This info is required by Sphinx for the l18n feature.
+END

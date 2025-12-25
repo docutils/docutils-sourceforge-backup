@@ -1,0 +1,55 @@
+K 10
+Suite.smak
+V 26
+file 16-5058.0.r5058/25742
+K 4
+data
+V 30
+dir vm-4327.h-4580.r4580/91309
+K 8
+dom.init
+V 29
+dir w9-4327.i-4580.r5751/1712
+K 9
+html.init
+V 30
+dir wl-4327.j-4580.r6498/16454
+K 10
+latex.init
+V 29
+dir y3-4327.k-4580.r6229/2955
+K 8
+xml.init
+V 29
+dir yp-4327.n-4580.r5350/6753
+K 9
+xref.init
+V 29
+dir z1-4327.o-4580.r5752/2417
+END
+D 10
+Suite.smak
+K 4
+data
+V 28
+dir vm-4327.h-4580.t8951-6xe
+K 8
+dom.init
+V 28
+dir w9-4327.i-4580.t8951-6xe
+K 9
+html.init
+V 28
+dir wl-4327.j-4580.t8951-6xe
+K 10
+latex.init
+V 28
+dir y3-4327.k-4580.t8951-6xe
+K 8
+xml.init
+V 28
+dir yp-4327.n-4580.t8951-6xe
+K 9
+xref.init
+V 28
+dir z1-4327.o-4580.t8951-6xe

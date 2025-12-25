@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 8
+cliechti
+K 8
+svn:date
+V 27
+2006-01-09T03:16:54.996061Z
+K 7
+svn:log
+V 61
+remove S5 files as these are now merged in the main code base
+END

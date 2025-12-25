@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-03-22T14:29:01.507613Z
+K 7
+svn:log
+V 159
+Improve and test "compound" handling in LaTeX.
+
+Test samples added to standard.txt allow inspection of the outcome of
+compound handling for all output formats.
+END

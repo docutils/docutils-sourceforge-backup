@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+rkrauss
+K 8
+svn:date
+V 27
+2010-09-16T11:52:07.221109Z
+K 7
+svn:log
+V 81
+fixed visit_image by having it set some defaults and then call the latex2e method
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-03-27T13:11:19.674424Z
+K 7
+svn:log
+V 66
+exit test suite with zero if no problems found (fixes bug 2976941)
+END

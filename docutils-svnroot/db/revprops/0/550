@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-08-17T01:25:36.000000Z
+K 7
+svn:log
+V 174
+Lots of progress.  Wrote descriptions of all common attributes and parameter entities.  Filled in introductory material.  Started on element descriptions (3 down, 80 to go).
+
+END

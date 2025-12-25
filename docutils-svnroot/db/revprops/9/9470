@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-11-10T13:12:16.904130Z
+K 7
+svn:log
+V 56
+Simplify "HTML5 parts test", add test case for bug #476.
+END

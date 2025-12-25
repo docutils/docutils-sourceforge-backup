@@ -1,0 +1,34 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2011-01-30T18:22:46.271980Z
+K 7
+svn:log
+V 723
+`rst-shift-region` now works like `indent-rigidly`. I.e. you can give
+a positive or negative argument to control direction and amount of
+reStructuredText indendation points you want to change indendation by.
+There is only one key binding on C-c C-r TAB.
+
+`rst-shift-region` does not fill any more - this should be left to the
+user. Variable `rst-shift-fill-region` is removed therefore.
+
+Debugging: `rst-compute-tabs` operates more consistently.
+`rst-shift-region` doesn't drop the region.
+
+`rst-indent-width` has been renamed from `rst-shift-basic-offset` and
+is customizable.
+
+`rst-preferred-adornments` has a proper customization type.
+
+General refactorings.
+
+Revised and added ideas.
+
+Added and improved lots of tests.
+
+END

@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-04-13T14:27:23.012170Z
+K 7
+svn:log
+V 360
+Do not decode OpenDocument zip packages with `publish_string()`.
+
+The ODF writer produces output in binary format.
+Raise an exception if `publish_string()` is called with
+this writer and ``auto_encode=False``.
+
+Update documentation, add cross-links.
+
+TODO:
+In future, the ODF writer may return a "flat XML" version of the
+"OpenDocument Text" document as `str`.
+END

@@ -1,0 +1,26 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2010-11-06T11:23:03.363992Z
+K 7
+svn:log
+V 383
+Improvements in fontification:
+
+* Comments are always fontified correctly
+* Line blocks are supported
+* `jit-lock-mode` is still not usable
+* `rst-font-lock-extend-region` is used as suggested by main Emacs
+  developers but needs compilation
+
+Refactorings:
+
+* Replaced some occurences of `current-prefix-arg'
+* Removed dead code
+* Modified `tests-runner.el` to work as a filter, too
+
+END

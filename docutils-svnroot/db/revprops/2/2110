@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2004-05-16T16:30:26.000000Z
+K 7
+svn:log
+V 56
+Add test for table styles and a the multirow test file.
+
+END

@@ -1,0 +1,26 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-04T08:58:27.429029Z
+K 7
+svn:log
+V 508
+Fix node categories.
+
+`rubric` is a Simple Body Element: add `General` to base classes.
+
+`field` is also used for non-registered docinfo items:
+add `Bibliographic` to  base classes.
+
+`decoration` is no category member of "Decorative Elements".
+Change base class `Decoration` to `PreBibliographic`.
+
+Adapt the `frontmatter.DocInfo` transform: skip `decoration`
+(not `Decorative`) when looking for the insertion point of the
+bibliographic fields.
+This fixes a test failure with wrong position of header/footer.
+END

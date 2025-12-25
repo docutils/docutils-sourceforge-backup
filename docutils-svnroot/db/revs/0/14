@@ -1,0 +1,65 @@
+PLAIN
+K 15
+PyBanner016.png
+V 17
+file 2-5.0.r5/845
+K 9
+index.txt
+V 17
+file 2-4.0.r4/123
+END
+ENDREP
+id: 1-2.0.r14/98
+type: dir
+pred: 1-2.0.r13/946
+count: 5
+text: 14 0 85 85 e710f8df766f8fe820b464f6473f7094
+cpath: /trunk/web
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 18
+dir 1-7.0.r12/1548
+K 3
+web
+V 16
+dir 1-2.0.r14/98
+END
+ENDREP
+id: 3-1.0.r14/321
+type: dir
+pred: 3-1.0.r13/1173
+count: 12
+text: 14 237 71 71 4ba37368f3b27cae887e3f80e55b773a
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 16
+dir 0-1.0.r3/202
+K 4
+tags
+V 16
+dir 2-1.0.r1/130
+K 5
+trunk
+V 17
+dir 3-1.0.r14/321
+END
+ENDREP
+id: 0.0.r14/577
+type: dir
+pred: 0.0.r13/1432
+count: 14
+text: 14 461 103 103 36ca6061166c90244a672bc6854da97d
+cpath: /
+copyroot: 0 /
+
+2-13.0.r13/570 delete-file false false /trunk/web/setext.txt
+
+
+577 710

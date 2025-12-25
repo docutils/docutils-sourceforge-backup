@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-10-11T12:32:33.515225Z
+K 7
+svn:log
+V 271
+Support language specification for document objects.
+
+Class arguments in the form "language-<language tag>", e.g. 
+``.. class:: language-el-polyton`` for a quote in polytonic Greek
+are handled by the html and latex writers to set the language of the
+"classified" object.
+
+END

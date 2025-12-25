@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-01-04T01:27:12.000000Z
+K 7
+svn:log
+V 137
+rename `name` attribute to `role_name` to avoid collision with
+possible future use of the `name` attribute as a way to name an extension
+
+END

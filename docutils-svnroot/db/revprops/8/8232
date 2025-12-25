@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2018-11-20T23:55:18.763259Z
+K 7
+svn:log
+V 175
+Unescape null-escaped content in nodes.Text.astext().
+
+Enables the use of null-escaped source in Text nodes.
+The escaping can then be used in transforms acting on the doctree.
+END

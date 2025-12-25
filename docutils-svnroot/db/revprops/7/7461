@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2012-06-18T20:05:14.760217Z
+K 7
+svn:log
+V 65
+pypi download urls must be set, for older releases to be useable
+
+END

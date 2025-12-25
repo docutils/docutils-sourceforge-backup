@@ -1,0 +1,25 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-09-20T20:04:53.073800Z
+K 7
+svn:log
+V 538
+Merged "transforms" branch into trunk.
+
+- Replaced ``default_transforms`` attribute of TransformSpec with
+  ``get_transforms()`` method.
+- Added universal.Decorations and universal.ExposeInternals
+  transforms as default transforms for all readers.
+- Added universal.Messages and universal.FilterMessages transforms
+  as default transforms for all writers.
+- Added ``ReReader`` base class for readers that reread an existing
+  document tree.
+- Added ``UnfilteredWriter`` base class for writers that pass the
+  document tree on unchanged.
+
+END

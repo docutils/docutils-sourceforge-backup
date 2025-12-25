@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-09-22T20:59:57.287178Z
+K 7
+svn:log
+V 34
+Simplify `utils.column_indices()`.
+END

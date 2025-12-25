@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-03-05T23:28:42.703731Z
+K 7
+svn:log
+V 128
+xetex writer: support Korean language.
+
+'korean' is supported by Polyglossia.
+(but requires a font that supports Korean script).
+END

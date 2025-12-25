@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-02T15:55:16.693444Z
+K 7
+svn:log
+V 373
+Sanitize Docutils DTD
+
+Fixup for r8008 (2016-12-31).
+
+Use the "%bodyatts" parameter entity  provided by the
+"exchange table model" to customize the `<table>` element's
+attribute list instead of defining a new "ATTLIST".
+
+Announce the switch from the legacy "%bodyatts" to the
+self-explaining "%tbl.table.atts" parameter entity
+(also provided by the "exchange table model").
+END

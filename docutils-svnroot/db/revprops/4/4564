@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2006-05-21T20:44:42.044711Z
+K 7
+svn:log
+V 157
+use $Id$ instead of $Date$ and $Revision$;
+collapsed Author and Contact fields;
+use canonical email addresses for David and Felix;
+(I have reviewed the diff)
+END

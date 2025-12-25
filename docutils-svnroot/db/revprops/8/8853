@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-10-13T15:42:30.772915Z
+K 7
+svn:log
+V 127
+New option "image_loading" for HTML5.
+
+With values "embed", "eager", "lazy", cf, feature-request #78.
+
+Obsoletes "embed_image".
+END

@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-12-13T21:45:23.704619Z
+K 7
+svn:log
+V 283
+Update test documentation. Set executable bit on test scripts.
+
+Don't mention the "nose" test framework.
+(It is unmaintained, deprecated, and fails to find all test cases.)
+
+Hint to a possible future dependency on "pytest".
+
+Two recently added test scripts missed the executable bit.
+END

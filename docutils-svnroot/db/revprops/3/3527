@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-20T17:57:40.054101Z
+K 7
+svn:log
+V 123
+added Distributor's Guide;
+if there is agreement on this installation procedure, I'll send email to
+the package maintainers
+END

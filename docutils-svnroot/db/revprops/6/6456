@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-10-27T10:38:24.608457Z
+K 7
+svn:log
+V 113
+Fix [ 3095603 ] wrong quotes output for russian and other languages.
+
+Also add test for latex/texex with lang=ru.
+END

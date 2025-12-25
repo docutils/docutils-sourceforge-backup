@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-02-18T23:09:44.535826Z
+K 7
+svn:log
+V 116
+latex-writer: add \\leavevmode after term or field name if required.
+
+Based on patch #176 by John Thorvald Wodder II
+END

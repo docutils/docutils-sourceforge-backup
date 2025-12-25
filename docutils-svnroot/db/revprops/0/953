@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 8
+gschwant
+K 8
+svn:date
+V 27
+2002-11-15T22:04:58.000000Z
+K 7
+svn:log
+V 72
+Some minor adjustments in order to work with docutils 0.2.5 and higher.
+
+END

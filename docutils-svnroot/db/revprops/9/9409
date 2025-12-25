@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-06-26T17:48:39.831973Z
+K 7
+svn:log
+V 223
+Warn the user if the S5 writer cannot copy the theme files.
+
+Print a warning if the S5 theme files cannot be copied to the
+destination dir because the output destination path is unknown to the writer.
+
+Update documentation.
+END

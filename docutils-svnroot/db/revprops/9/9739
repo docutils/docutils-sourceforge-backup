@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-06T14:02:27.710372Z
+K 7
+svn:log
+V 200
+xml-parser: Add functional test (round-trip)
+
+Test the XML parser with the output of the XML writer.
+Goal is a round-trip without changes (under reasonable conditions).
+
+Work in progress, still fails.
+END

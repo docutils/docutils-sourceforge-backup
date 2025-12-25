@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2010-03-01T20:53:35.813655Z
+K 7
+svn:log
+V 120
+* Define a $SUBSTITUTION variable giving the name of any substitution
+  definition being defined by the perl directive.
+
+END

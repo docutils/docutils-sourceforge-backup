@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-11-08T16:50:35.414701Z
+K 7
+svn:log
+V 167
+Inline ``GridTableParserTestSuite``
+
+- Move all usages of ``GridTableParserTestSuite.generateTests``
+  to using subtests, as part of the test suite refactoring project
+END

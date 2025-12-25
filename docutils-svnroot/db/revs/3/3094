@@ -1,0 +1,70 @@
+id: 3-1.0-3094.r3094/0
+type: dir
+pred: 3-1.0.r3093/4176
+count: 3068
+text: 3093 4048 115 115 f3434f7a4abcb6c6a7017b94f2f5f90b
+cpath: /branches/multiple-ids
+copyfrom: 3093 /trunk
+
+PLAIN
+K 2
+ax
+V 24
+dir 3-1.0-1551.r1551/296
+K 7
+goodger
+V 22
+dir 3-1.0-19.r21/10951
+K 12
+multiple-ids
+V 22
+dir 3-1.0-3094.r3094/0
+K 7
+nesting
+V 27
+dir 3-1.0-1813.r2577/106277
+K 4
+tibs
+V 20
+dir 3-1.0-63.r63/279
+K 6
+vendor
+V 21
+dir 3-1.0-3.r1556/334
+END
+ENDREP
+id: 0-1.0.r3094/436
+type: dir
+pred: 0-1.0.r2577/106684
+count: 20
+text: 3094 178 245 245 a12576e0166a154b7fe1ead829f0be71
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r3094/436
+K 4
+tags
+V 20
+dir 2-1.0.r2576/3944
+K 5
+trunk
+V 20
+dir 3-1.0.r3093/4176
+END
+ENDREP
+id: 0.0.r3094/715
+type: dir
+pred: 0.0.r3093/4457
+count: 3094
+text: 3094 589 113 113 e991757672f02be55541a27e2576c551
+cpath: /
+copyroot: 0 /
+
+3-1._0.t3093-2dx add-dir false false /branches/multiple-ids
+3093 /trunk
+
+715 856

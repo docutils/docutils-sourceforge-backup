@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-12-13T00:29:56.043758Z
+K 7
+svn:log
+V 65
+removed unused title adornment; updated conditional display style
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-04-26T03:57:00.326786Z
+K 7
+svn:log
+V 170
+Added ``html_prolog`` & ``html_head`` to HTML writer parts dictionary exposed by ``docutils.core.publish_parts``; updated tests & docs.  At the request of Marcelo Huerta.
+END

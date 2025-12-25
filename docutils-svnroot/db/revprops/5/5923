@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-04-27T07:18:51.141044Z
+K 7
+svn:log
+V 51
+fix cmd-option description string in latex2e writer
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-08-19T17:03:49.861126Z
+K 7
+svn:log
+V 81
+Simplify the determination of table opening LaTeX code.
+
+No change to the output.
+END

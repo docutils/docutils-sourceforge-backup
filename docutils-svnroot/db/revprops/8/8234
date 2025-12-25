@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2018-11-20T23:55:40.078606Z
+K 7
+svn:log
+V 175
+smartquotes: Use single backslashes for escaping.
+
+Let the smartquote transform take advantage of the
+representation of escaping backslashes in the doctree
+as null characters.
+END

@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-06-27T19:36:47.201446Z
+K 7
+svn:log
+V 462
+* Added a "target" role that allows separation of inline target tags
+  from the text that is displayed.
+* Fixed a bug where, if two items in an enumerated list occurred with
+  no blank line between them and a third item was separated by a blank
+  line, the third item was put into a separate list.
+* Fixed the handling of DOM items that were in a subclass of DOM.
+* Added an argument to the role attribute and role text routines which
+  is the name of the role.
+
+END

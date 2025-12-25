@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-12-02T14:08:52.572859Z
+K 7
+svn:log
+V 80
+Ignore ``frontend.OptionParser`` deprecation warnings in ``HelperFunctionTests``
+END

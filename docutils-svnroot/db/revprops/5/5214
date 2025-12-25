@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2007-06-04T22:20:31.240225Z
+K 7
+svn:log
+V 69
+fixed documentation for publish_from_doctree to match actual behavior
+END

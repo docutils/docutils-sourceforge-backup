@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-07T20:11:35.725188Z
+K 7
+svn:log
+V 168
+Clean up in nodes.py
+
+Drop special-casing for Python 2
+(based on patch 6/6 by Adam Turner [patches:#188]).
+
+Move deprecation warning from Text.__init__ to Text.__new__.
+END

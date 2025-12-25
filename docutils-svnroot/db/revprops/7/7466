@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-06-25T14:56:51.929102Z
+K 7
+svn:log
+V 137
+io.FileInput/io.FileOutput: no system-exit on IOError.
+
+The `handle_io_errors` option is ignored
+and will be removed in a future release.
+END

@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-11-24T20:28:03.594037Z
+K 7
+svn:log
+V 351
+Simplify/update utils.punctuation_chars and generating script.
+
+Since Python 3.3 (PEP 393), all Python builds have support for the full range
+of Unicode, and hence there are no longer "wide" and "narrow" builds.
+Patch by Adam Turner.
+
+Review/refactoring of ``generate_punctuation_chars.py`` including
+fixup for r9253: add quote pair for Old Hungarian.
+END

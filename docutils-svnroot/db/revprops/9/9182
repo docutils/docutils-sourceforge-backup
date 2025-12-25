@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-10-27T22:12:35.670735Z
+K 7
+svn:log
+V 164
+Remove ``_test_more`` support
+
+This was only used in one test and complicated the functional testing
+logic. Testing extra items should be done in independent tests.
+END

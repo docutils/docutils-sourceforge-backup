@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2015-04-20T10:57:46.473710Z
+K 7
+svn:log
+V 74
+Move development plan (single 2/3 source) from RELEASE-NOTES to todo list.
+END

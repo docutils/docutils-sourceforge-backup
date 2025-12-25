@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2025-04-06T16:49:55.442997Z
+K 7
+svn:log
+V 116
+macro-references: remove "mailto:" from refuris in the .MT line.
+    man/groff adds one ... but mandoc does not :-/
+
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 13
+matt_harrison
+K 8
+svn:date
+V 27
+2008-10-23T22:49:48.914762Z
+K 7
+svn:log
+V 67
+initial version of rst2odp building off of same codebase as rst2odt
+END

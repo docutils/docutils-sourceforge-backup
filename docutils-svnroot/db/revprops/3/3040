@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-03-14T17:06:53.000000Z
+K 7
+svn:log
+V 116
+added functional test for PEPs;
+the resulting pep_html.html is not valid XHTML; could you have a look at it, David?
+
+END

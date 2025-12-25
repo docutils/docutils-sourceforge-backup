@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2010-10-01T21:41:54.465259Z
+K 7
+svn:log
+V 93
+* Force HTML ids to be unique
+* Process attributes (such as class) on list items and literal
+
+END

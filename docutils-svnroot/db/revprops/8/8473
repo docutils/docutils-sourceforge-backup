@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-01-30T00:44:27.158804Z
+K 7
+svn:log
+V 51
+html5: Use semantic tags <figure> and <figcaption>.
+END

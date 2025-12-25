@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2005-03-03T22:50:52.000000Z
+K 7
+svn:log
+V 57
+Updated repeat-last-character, which now does overlines.
+
+END

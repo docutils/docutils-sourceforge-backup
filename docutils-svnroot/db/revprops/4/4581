@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2006-05-30T22:11:48.474560Z
+K 7
+svn:log
+V 86
+Removed bogus files in test area and redefined MANIFEST.SKIP to skip  
+MANIFEST.SKIP.
+
+END

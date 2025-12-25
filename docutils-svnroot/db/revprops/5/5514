@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 6
+strank
+K 8
+svn:date
+V 27
+2008-02-23T11:54:42.280222Z
+K 7
+svn:log
+V 132
+Towards a lossless rst -> doctree -> rst transformation,
+first create a passable rst writer, then subclass rst parser as losslessrst
+END

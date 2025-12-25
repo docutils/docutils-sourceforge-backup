@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 10
+ianbicking
+K 8
+svn:date
+V 27
+2004-03-23T23:21:11.000000Z
+K 7
+svn:log
+V 288
+Reader parses docstrings (according to __docformat__) and produces full
+output.  The reader should thus be "done".  Run readers/python/__init__.py
+with a filename argument to get output in the DOM format.
+
+A transformer will be necessary to translate this into the standard
+docutils DOM.
+
+END

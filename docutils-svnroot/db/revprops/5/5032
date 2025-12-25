@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2007-03-21T02:43:26.654894Z
+K 7
+svn:log
+V 93
+replaced 'raw_unicode_escape' with 'ascii', 'backslashreplace' so we don't get latin1 strings
+END

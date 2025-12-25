@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-12-02T19:48:42.290716Z
+K 7
+svn:log
+V 401
+More detailled description of the restrictions on transition placement.
+
+The formulation of the restrictions
+"a transition may not begin a section or document" and
+"a transition may not be at the end of a section or document"
+is vague and inconsistent.
+
+Add description of "invisible" elements that are ignored when determining
+whether a transition is at the begin or end of a section or the document.
+END

@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-10-04T12:21:52.912073Z
+K 7
+svn:log
+V 317
+Use custom TypeAlias `StrPath` for `str`-based file system path vars.
+
+Define TypeAlias for "str or os.PathLike" in docutils.nodes
+(as this module does not depend on other docutils modules).
+Import and use in all places where ``str | os.PathLike`` is expected.
+
+Align formatting, use f-strings where it helps clarity.
+END

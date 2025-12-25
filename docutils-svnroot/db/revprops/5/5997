@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2009-06-26T20:32:24.836409Z
+K 7
+svn:log
+V 37
+Patch from jarda to fix visit_strong
+
+END

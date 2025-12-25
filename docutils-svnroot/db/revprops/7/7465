@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-06-25T14:32:15.513005Z
+K 7
+svn:log
+V 251
+Deaktivate defaultfontfeatures command to prevent error in new TeXLive.
+
+The command leads to an error due to a bug in either fontspec or
+polyglossia in TeXLive 2012 when the document language is Russian (or some
+other language with non-Latin script).
+END

@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-10-29T22:48:24.428118Z
+K 7
+svn:log
+V 406
+Additional "custom attribute types" in the Docutils DTD.
+
+Improve the documentational value of the Docutils DTD by
+defining "parameter entities" for `class names` and
+`reference keys`.
+
+Cf. the `docutils-devel thread`__ on the topic from
+2017-01-01.
+
+__ https://sourceforge.net/p/docutils/mailman/docutils-develop/thread/CABiJP%3DJ4fUMQ9aORqmcy0jTHXf1vdvrHEuVSJf%2Be6Q3W0YihEg%40mail.gmail.com/#msg35634089
+END

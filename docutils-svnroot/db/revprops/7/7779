@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2014-12-17T22:02:00.171357Z
+K 7
+svn:log
+V 47
+Fix #269 Broken link (leo editor in link list).
+END

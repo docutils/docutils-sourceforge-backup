@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2007-03-02T06:57:20.065128Z
+K 7
+svn:log
+V 170
+use setuptools/pkg_resources to get readers, parsers, writers, roles, directives;
+added docs/howto/extensions.txt about to write extension packages;
+updated documentation
+END

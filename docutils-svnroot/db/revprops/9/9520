@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-01-26T22:46:54.760592Z
+K 7
+svn:log
+V 275
+Fix/Update CSS rules for MathML styling.
+
+Boxed maths with class 'boxed' as `<menclose>` is not part of the
+MathML Core and not supported by Chromium.
+
+Select font providing script characters in the "mathscr" style
+for `<mi>` nested in element or self having class "mathscr".
+END

@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-27T14:22:31.706001Z
+K 7
+svn:log
+V 170
+Do not use combining Unicode characters without base in literal strings.
+
+Add an example for LaTeX accent functions in mathematical text
+to the mathematics documentation.
+END

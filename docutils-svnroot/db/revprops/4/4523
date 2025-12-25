@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 6
+sfcben
+K 8
+svn:date
+V 27
+2006-05-01T07:18:33.521494Z
+K 7
+svn:log
+V 167
+Document the localized dates problem and workaround.
+The placement is perhaps awkward but I wanted non-developers 
+to be able to stop reading before Developer Access.
+
+END

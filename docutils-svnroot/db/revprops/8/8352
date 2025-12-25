@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-08-26T16:42:06.916237Z
+K 7
+svn:log
+V 118
+py3: Resolve some additional undefined symbols
+
+Found with flake8
+
+Signed-off-by: Stephen Finucane <stephen@that.guru>
+END

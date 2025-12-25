@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-04T08:58:36.249659Z
+K 7
+svn:log
+V 184
+New SubStructural element category class.
+
+Fix categories: (cf. docs/ref/doctree.txt)
+
+`<docinfo>` is SubStructural, not Bibliographic.
+`<transition>` is SubStructural, not Structural.
+END

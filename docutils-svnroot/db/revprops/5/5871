@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-02-23T16:03:50.493423Z
+K 7
+svn:log
+V 137
+latex2e writer: Do not use "fontenc", nor the obsolete "ae" and "aeguill" packages
+if font-encoding is set to the empty string (default).
+END

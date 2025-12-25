@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2023-11-20T18:13:55.316999Z
+K 7
+svn:log
+V 52
+FIX dont repeat manpage tbl hint for multiple table
+
+END

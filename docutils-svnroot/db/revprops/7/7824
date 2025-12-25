@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+gitpull
+K 8
+svn:date
+V 27
+2015-03-12T20:14:09.298304Z
+K 7
+svn:log
+V 123
+reST docs: add TODO note for QA'ing FAQ.  FAQ for reST-friendly editors, syntax highlighting / filetype support in editors.
+END

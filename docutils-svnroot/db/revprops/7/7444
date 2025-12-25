@@ -1,0 +1,55 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2012-06-16T09:41:40.594282Z
+K 7
+svn:log
+V 1059
+Major merge with Emacs source tree. Docutils SVN version and Emacs
+trunk are kept in sync from now on. New version is supposed to appear
+in Emacs 24.2.
+
+User visible changes:
+
+* Switch meaning of keybindings ``C-M-a`` and ``C-M-e``
+
+  They were wrong in the first place :-( . Sorry for changing bindings
+  again.
+
+* Added faces `rst-transition` and `rst-adornment`
+
+  New faces are used instead of directly using
+  `font-lock-keyword-face`.
+
+* Improved customization of `rst-adornment-faces-alist`
+
+  Hopefully this will not break existing customization.
+
+* Character syntax adopted to match plain text again
+
+Other code improvements suggested by Emacs developers:
+
+* Replaced use of `defun`\s from `cl.el` by own definitions
+
+* Improved lots and lots of comments and documentation strings
+  including spelling fixes
+
+* Fixed version stuff
+
+* Improved some functions
+
+* Byte-compiling emits no warnings and works
+
+* Added tests
+
+Other improvements:
+
+* Default for customizing `rst-adornment-faces-alist` is now safe
+
+  Thanks to Samuel Bronson for the patch.
+
+END

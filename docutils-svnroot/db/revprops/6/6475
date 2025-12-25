@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-11-09T22:53:56.531740Z
+K 7
+svn:log
+V 382
+Generate valid XHTML.
+
+* Wrap the custom-role HTML styling in the example a literal block:
+  While in-document styling with raw HTML works in most browsers, a
+  <style> tag in the body is no valid HTML.
+
+* The "lang" attribute name is no longer valid in XHTML 1.1.
+  Make it configurable to enable writers inheriting from the
+  html4css1 writer to generate valid XHTML 1.1. output.
+
+END

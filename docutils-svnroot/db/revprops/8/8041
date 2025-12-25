@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-03-01T11:02:33.619023Z
+K 7
+svn:log
+V 72
+Fix config section for html5 writer. (Thanks to M. Cepl for the report.)
+END

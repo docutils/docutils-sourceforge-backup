@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2007-03-09T17:06:24.773765Z
+K 7
+svn:log
+V 86
+Add options --field-name-limit and --no-compact-field-lists
+add admonition transform.
+
+END

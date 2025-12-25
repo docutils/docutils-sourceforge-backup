@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2017-05-30T11:24:47.806265Z
+K 7
+svn:log
+V 50
+change version number from 0.14rc2 to 0.14rc2.dev
+
+END

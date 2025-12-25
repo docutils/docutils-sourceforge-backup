@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2006-07-05T15:47:45.071628Z
+K 7
+svn:log
+V 109
+Modified version number to remove internal underscores so that the
+modules will be properly indexed by CPAN.
+
+END

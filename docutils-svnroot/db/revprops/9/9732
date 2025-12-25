@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-05T15:54:27.106670Z
+K 7
+svn:log
+V 245
+Doctree validation: additional checks for `subtitle` and `transition` position.
+
+A `subtitle` must not be used without preceding `title`.
+
+A `transition` must not be used at the start or end of a section or document,
+or after another transition.
+END

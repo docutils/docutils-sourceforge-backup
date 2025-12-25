@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-04-12T13:59:31.109027Z
+K 7
+svn:log
+V 214
+added comments; changed chmod command to make
+sure the directory storing the key is un-readable for world;
+I don't think there was a security hole because the key
+isn't world-readable anyway, but just to be sure...
+END

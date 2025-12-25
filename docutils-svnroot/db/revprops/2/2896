@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-12-23T23:29:16.000000Z
+K 7
+svn:log
+V 91
+applied David Goodger's patch from
+http://article.gmane.org/gmane.text.docutils.devel/2487
+
+END

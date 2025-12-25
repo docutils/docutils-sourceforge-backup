@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-10-21T13:34:45.738936Z
+K 7
+svn:log
+V 132
+Fix latex2e language handling.
+
+Deactivate some active chars in spanish (also as second language),
+work around a bug in frenchb.ldf.
+END

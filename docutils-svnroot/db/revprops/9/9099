@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-07-04T21:06:38.702318Z
+K 7
+svn:log
+V 365
+Fix handling of UTF-16 encoded source without trailing newline.
+
+Decoding a UTF-16 encoded source with BOM after auto-detection of the
+encoding failed.
+The newline normalization in `docutils.FileInput.read()`
+produced invalid UTF-16 because it added one byte
+(binary ASCII newline).
+
+Postponing the newline normalization after the decoding step solves
+this problem.
+END

@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-04-13T22:13:55.152394Z
+K 7
+svn:log
+V 240
+Math support update
+
+* new version of math2html (elyxer) by Alex Fernandez
+  (bugfixes, improved rendering)
+* small fixes to latex2mathml
+* accept Unicode characters in the input
+* updated test file, new test cases html_math and mathml_math
+END

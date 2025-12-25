@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T02:27:15.984078Z
+K 7
+svn:log
+V 146
+Do not add "faq" directive. It is a too specific use-case to
+justify a directive on it's own, and using section titles for FAQ entries
+works fine.
+END

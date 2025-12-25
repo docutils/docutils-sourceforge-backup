@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-05-14T09:18:09.965178Z
+K 7
+svn:log
+V 193
+Log entries for [r10129]. Deprecate `parsers.rst.states.Struct`.
+
+Replace local definition of `parsers.rst.states.Struct` with
+an import of `types.SimpleNamespace` (available since Python 3.3).
+END

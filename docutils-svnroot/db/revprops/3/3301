@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-05-05T05:46:52.827416Z
+K 7
+svn:log
+V 225
+made S5 writer work better with reST: instead of |s5 title|, use the document title; instead of |s5 location|, use the document footer ("footer" directive); instead of |s5 theme|, use a runtime setting or command-line option.
+END

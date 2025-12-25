@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-04-17T20:27:05.322753Z
+K 7
+svn:log
+V 220
+Support Pygments 2.14 and newer in tests
+
+Pygments 2.14 contains changes in the Python lexer which break
+``test_code``​​, ``test_code_long``, and ``test_include``.
+
+https://pygments.org/docs/changelog/#version-2-14-0
+END

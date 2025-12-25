@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2006-09-05T19:26:50.535899Z
+K 7
+svn:log
+V 499
+* Changed the semantics of "-W embed-stylesheet" and "-W stylesheet".
+* Added "-W stylesheet2" option to specify a secondary embedded stylesheet.
+* Changed default of -W field-limit to 14 from 15.
+* Reworked so all the writer's annotations are in DOM's {_html} member.
+* Reworked so that DOM's {attr} member is read-only; HTML attributes
+  are all copied to {_html}{attr} member.
+* Factored out much of the attribute handling into a GetAttr routine.
+* Fixed output of literals embedded in literals.
+
+END

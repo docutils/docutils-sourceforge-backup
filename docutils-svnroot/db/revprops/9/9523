@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-02-01T13:01:51.490321Z
+K 7
+svn:log
+V 184
+Restructure MathML element classes, add/update comments and docstrings.
+
+Rename base class to `MathElement`.
+
+Rename `MathRowSchema` to `MathRow`.
+
+Make `math` a subclass of `MathRow`.
+END

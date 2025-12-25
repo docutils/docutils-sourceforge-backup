@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2019-07-22T01:42:46.029128Z
+K 7
+svn:log
+V 46
+revert Python2.6 work around sys.version_info
+
+END

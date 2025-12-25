@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-31T14:42:06.003321Z
+K 7
+svn:log
+V 169
+xml-writer: improve formatting with "indents" setting.
+
+Do not increase indentation of follow-up lines inside inline elements.
+when formatting XML output with "indents".
+END

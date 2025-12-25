@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-09-06T13:16:34.153795Z
+K 7
+svn:log
+V 191
+Do not rely on `nodes.Node.traverse()` returning a "list" instance.
+
+While the current implementation actually returns a list of nodes,
+the docstring specifies only: "Return an iterable ...".
+END

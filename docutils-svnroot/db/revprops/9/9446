@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-09-05T23:03:38.624388Z
+K 7
+svn:log
+V 160
+Documentation update.
+
+Sort HISTORY entries alphabetically.
+Patch number for Georgian language support.
+
+Add Georgian to the list of supported natural laguages.
+END

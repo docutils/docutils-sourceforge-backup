@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2017-07-08T16:31:03.448038Z
+K 7
+svn:log
+V 42
+corrected __version_info__ for 0.14rc3.dev
+END

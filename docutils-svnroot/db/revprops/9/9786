@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2024-07-31T02:27:55.627405Z
+K 7
+svn:log
+V 195
+Suppress ``EncodingWarning`` where appropriate in tests
+
+If the opt-in encoding warning is enabled and tests are run
+with warnings causing test failures, the test suite fails
+without this patch.
+
+END

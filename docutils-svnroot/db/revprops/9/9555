@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-03-11T14:55:04.619030Z
+K 7
+svn:log
+V 90
+LaTeX writers: more compact description list.
+
+Drop empty line before `\end{description}`.
+END

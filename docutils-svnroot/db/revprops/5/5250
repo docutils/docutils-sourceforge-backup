@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2007-06-18T16:22:36.860446Z
+K 7
+svn:log
+V 135
+Further work on structuring latex output; latex-headings as multi-line string literals to improve readability of the writer source code
+END

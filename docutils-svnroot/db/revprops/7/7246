@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-12-05T21:16:40.169548Z
+K 7
+svn:log
+V 61
+The record file (test/data/dependencies.txt) is utf8-encoded.
+END

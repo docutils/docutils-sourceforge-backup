@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2013-01-21T16:14:10.375287Z
+K 7
+svn:log
+V 68
+Fix [ 3600051 ] for tables in a list, table cells are not compacted.
+END

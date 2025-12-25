@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-06-19T14:01:03.571684Z
+K 7
+svn:log
+V 124
+Announce use of dpub-ARIA role "doc-footnote"
+
+instead of ARIA role "note" for footnotes in Docutils 0.20.
+
+Cf. [bugs:#450].
+END

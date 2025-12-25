@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-04T08:58:09.108313Z
+K 7
+svn:log
+V 345
+Sort "nodes" and "test_nodes".
+
+Sort definitions in "nodes.py" to get a clearer structure.
+
+Move `TextElement` to the end of "Element Categories", so that
+the Inline Element Category class can be declared as valid child
+element (for use with the to-be-defined `Element.validate()` method.
+
+Sort tests to better match the structure of "nodes.py".
+END

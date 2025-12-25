@@ -1,0 +1,101 @@
+PLAIN
+K 10
+README.txt
+V 21
+file 3-17.0.r115/8760
+K 4
+aahz
+V 21
+dir 2-820.0.r838/4508
+K 6
+davidg
+V 19
+dir 6-17.0.r752/920
+K 7
+grubert
+V 21
+dir 2-112.0.r861/1177
+K 8
+gschwant
+V 22
+dir 2-675.0.r826/18099
+K 3
+mwh
+V 21
+dir 2-857.0.r862/1023
+K 7
+oliverr
+V 21
+dir 2-202.0.r858/3881
+K 7
+richard
+V 22
+dir 2-526.0.r826/16358
+K 6
+simonb
+V 21
+dir 2-252.0.r345/3718
+K 4
+tibs
+V 20
+dir 2-62.0.r826/8377
+END
+ENDREP
+id: 1-17.0.r863/399
+type: dir
+pred: 1-17.0.r862/1618
+count: 99
+text: 863 0 386 386 6cc2bd4cf03544cc485f3a8ef2751767
+cpath: /trunk/sandbox
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 18
+dir 1-7.0.r860/928
+K 7
+sandbox
+V 19
+dir 1-17.0.r863/399
+K 3
+web
+V 20
+dir 1-2.0.r856/31339
+END
+ENDREP
+id: 3-1.0.r863/677
+type: dir
+pred: 3-1.0.r862/1901
+count: 855
+text: 863 552 112 112 9dde4e5e1f630bf60c6e79c3eab87f9c
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 17
+dir 0-1.0.r63/562
+K 4
+tags
+V 17
+dir 2-1.0.r65/217
+K 5
+trunk
+V 18
+dir 3-1.0.r863/677
+END
+ENDREP
+id: 0.0.r863/942
+type: dir
+pred: 0.0.r862/2169
+count: 863
+text: 863 823 106 106 7ff69c0aa618cc733262bc9d87d747ed
+cpath: /
+copyroot: 0 /
+
+2-696.0.r721/1900 delete-dir false false /trunk/sandbox/delza
+
+
+942 1079

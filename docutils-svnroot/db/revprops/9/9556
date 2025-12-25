@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-03-11T17:48:33.256260Z
+K 7
+svn:log
+V 273
+More compact option-lists with "latex" writers. Fix "leavevmode" test.
+
+Drop the empty line between option list items in LaTeX output.
+
+Fix examples for enumerated list nested in option list
+and description term with classifier in "latex_leavevmode" functional
+test sample.
+END

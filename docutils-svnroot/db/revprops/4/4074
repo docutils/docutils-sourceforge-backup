@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2005-11-18T18:20:52.096325Z
+K 7
+svn:log
+V 57
+Add width option to includegraphics and align to figure.
+
+END

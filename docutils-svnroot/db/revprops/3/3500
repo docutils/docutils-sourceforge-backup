@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-16T23:07:19.683743Z
+K 7
+svn:log
+V 69
+made unicode_latex.py look nicer and changed license to Public Domain
+END

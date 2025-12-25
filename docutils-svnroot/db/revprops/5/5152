@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+gbrandl
+K 8
+svn:date
+V 27
+2007-05-25T17:13:35.915484Z
+K 7
+svn:log
+V 39
+Move admin stuff to a separate module.
+
+END

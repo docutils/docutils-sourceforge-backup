@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2025-03-09T00:42:54.179246Z
+K 7
+svn:log
+V 286
+Remove Node type hints.
+
+Further investigation is needed on how to balance accurate static
+type annotations with the increased verbosity that they bring.
+This commit removes all type annotations using the ``Node`` class
+and reverts selected changes made in support of type annotations.
+
+END

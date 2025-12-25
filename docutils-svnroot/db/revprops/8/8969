@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-26T19:02:28.075367Z
+K 7
+svn:log
+V 70
+Code modernisation. Use literals.
+
+Merger of 2 patches by Adam Turner.
+END

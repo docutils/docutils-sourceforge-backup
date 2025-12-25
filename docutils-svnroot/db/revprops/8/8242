@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2018-11-29T08:11:18.443877Z
+K 7
+svn:log
+V 95
+Fix ticket [ patches/147 ] code duplication.
+
+Thanks to Takeshi KOMIYA for reporting the issue.
+END

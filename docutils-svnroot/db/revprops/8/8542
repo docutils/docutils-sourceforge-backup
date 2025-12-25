@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-08-22T22:24:45.079389Z
+K 7
+svn:log
+V 56
+Fix #400 Wrong default for math-output in documentation.
+END

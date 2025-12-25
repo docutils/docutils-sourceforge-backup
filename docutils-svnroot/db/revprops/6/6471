@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-11-05T22:09:32.439381Z
+K 7
+svn:log
+V 74
+Math support: 
+
+documentation, tests, and stubs for manpage and odt writer
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-05-27T22:50:24.242487Z
+K 7
+svn:log
+V 109
+added borderless class for images;
+removed angle brackets which cause problems when embedding the style sheet
+END

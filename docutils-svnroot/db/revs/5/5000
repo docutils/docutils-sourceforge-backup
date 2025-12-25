@@ -1,0 +1,68 @@
+id: 1-7.0-5000.r5000/0
+type: dir
+pred: 1-7.0.r4993/3145
+count: 3454
+text: 4993 2445 687 687 18b57d15821f45a326d22c2e1fd63905
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /branches/include-after-until
+copyfrom: 4999 /trunk/docutils
+
+PLAIN
+K 17
+address-rendering
+V 26
+dir 1-7.0-4314.r4314/16372
+K 12
+docutils-0.4
+V 25
+dir 1-7.0-4266.r4816/8356
+K 19
+include-after-until
+V 22
+dir 1-7.0-5000.r5000/0
+K 7
+nesting
+V 25
+dir 3-1.0-1813.r4356/3347
+K 7
+plugins
+V 25
+dir 1-7.0-4952.r4987/1225
+END
+ENDREP
+id: 0-1.0.r5000/507
+type: dir
+pred: 0-1.0.r4987/1677
+count: 369
+text: 5000 247 247 247 3ced06ad7996f64c62c2de85d9598e1a
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r5000/507
+K 4
+tags
+V 19
+dir 2-1.0.r4584/629
+K 5
+trunk
+V 20
+dir 3-1.0.r4999/2100
+END
+ENDREP
+id: 0.0.r5000/784
+type: dir
+pred: 0.0.r4999/2379
+count: 5000
+text: 5000 659 112 112 9bb266c478dfeb3e4142d782f4a2d8e7
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+
+1-7._0.t4999-3uv add-dir false false /branches/include-after-until
+4999 /trunk/docutils
+
+784 976

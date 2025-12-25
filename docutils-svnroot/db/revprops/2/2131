@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 4
+cben
+K 8
+svn:date
+V 27
+2004-05-27T19:39:58.000000Z
+K 7
+svn:log
+V 123
+Commiting updated Makefile.docutils.txt (for the online documentation).
+I keep forgetting to update it before commiting...
+
+END

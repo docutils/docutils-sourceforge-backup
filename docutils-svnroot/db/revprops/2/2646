@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-09-25T23:38:27.000000Z
+K 7
+svn:log
+V 102
+removed dependency magic in FileInput,
+ removed add_dependency function (now in utils.DependencyList)
+
+END

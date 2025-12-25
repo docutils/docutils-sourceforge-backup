@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-08-26T16:44:51.131244Z
+K 7
+svn:log
+V 164
+py3: Use 'sorted(foo)' instead of 'foo.sort()'
+
+This works with iterators also (like 'dict.keys()' in Python 3)
+
+Signed-off-by: Stephen Finucane <stephen@that.guru>
+END

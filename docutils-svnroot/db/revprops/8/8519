@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2020-06-30T20:34:14.989860Z
+K 7
+svn:log
+V 51
+Apply Patch 168 manpage crashing on empty citation
+
+END

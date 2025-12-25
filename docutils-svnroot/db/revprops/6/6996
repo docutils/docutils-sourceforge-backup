@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-03-28T19:31:45.934268Z
+K 7
+svn:log
+V 125
+latex2e: Ensure forward slashes in graphic file paths. 
+
+Document URI->path conversion and workaround for "modern" filenames.
+END

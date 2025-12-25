@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2024-08-07T01:41:55.777382Z
+K 7
+svn:log
+V 235
+Major improvement to the reposurgeon conversion procedure
+
+- Update to reposurgeon 4.38
+- Incorporate more history (pre-CVS release archives)
+- Preserve SVN branches and convert to git merges
+- Add attribution for contributed patches
+
+
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2024-03-16T16:45:21.597155Z
+K 7
+svn:log
+V 65
+Skip footer to avoid the link to document source in the manpage.
+
+END

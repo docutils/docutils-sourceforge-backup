@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2011-06-04T08:37:10.936037Z
+K 7
+svn:log
+V 34
+disable encoidng tests on macosx.
+
+END

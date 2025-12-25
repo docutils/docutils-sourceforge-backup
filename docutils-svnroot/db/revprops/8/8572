@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-10-28T11:51:24.151674Z
+K 7
+svn:log
+V 118
+Fix bug #408 Incorrect assert in latex writer for multiple citation references.
+
+Thanks to Erik Hansen for the report.
+END

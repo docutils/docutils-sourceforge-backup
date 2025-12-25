@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-09-11T11:17:44.295831Z
+K 7
+svn:log
+V 187
+Add "class" option to "raw" directive.
+
+Classe values may already be specified via a preceding
+"class" directive. This commit provides the concise alternative
+known from other directives.
+END

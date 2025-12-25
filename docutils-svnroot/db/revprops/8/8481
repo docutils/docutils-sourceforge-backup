@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-01-31T08:17:24.511140Z
+K 7
+svn:log
+V 273
+Restore support for running tests stand-alone.
+
+After the switch to absolute imports, individual test could no
+longer be run in from their directory (import error).
+This patch makes the `pythonpath` expansion in the test
+subdirectories' ``__init__`` files functional again.
+END

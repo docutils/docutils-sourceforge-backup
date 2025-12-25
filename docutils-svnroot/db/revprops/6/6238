@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2010-03-01T20:44:15.329316Z
+K 7
+svn:log
+V 89
+Added support for rst markup to generate custom faces (styles) beyond
+the standard ones.
+
+END

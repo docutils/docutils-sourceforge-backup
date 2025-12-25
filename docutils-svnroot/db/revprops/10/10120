@@ -1,0 +1,27 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-05-05T13:51:57.334916Z
+K 7
+svn:log
+V 528
+Documentation and formatting fixes (includes renaming of a config setting).
+
+Rename settings variable "macro_references" to the match the (future)
+non-standard behaviour "text_references". Command line options remain as-is.
+
+Announce change of "text_references" to False in Docutils 1.0.
+
+Add `writers.manpage.Writer.config_section_dependencies` so that
+entries in section [manpage writer] override entries in section [writer].
+
+Fix flake8 issues in manpage.py
+
+Adapt tests.
+
+Fix links and typos. Small edits for easier reading.
+END

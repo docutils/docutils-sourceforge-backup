@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-11T08:55:31.751373Z
+K 7
+svn:log
+V 117
+Make MathML the default math_output_ for the "html5" writer.
+
+Update tests, docs and TODO list and remove dead links.
+END

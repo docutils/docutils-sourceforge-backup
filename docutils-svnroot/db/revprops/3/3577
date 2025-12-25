@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2005-06-24T21:15:14.486616Z
+K 7
+svn:log
+V 124
+Added a transform_data parameter for the transform instances creation.
+publish_from_doctree now returns the parts as well.
+
+
+END

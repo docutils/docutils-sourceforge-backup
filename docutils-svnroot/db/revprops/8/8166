@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-08-15T07:24:42.950035Z
+K 7
+svn:log
+V 157
+Test __version_info__.releaselevel values.
+
+Also rename the test functions according to the scheme and replace
+a comment in the docstring with explicit code.
+END

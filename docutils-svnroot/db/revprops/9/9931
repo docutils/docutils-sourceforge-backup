@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-09-15T11:13:43.160360Z
+K 7
+svn:log
+V 276
+HTML writers: Add "px" to unitless table "width" values.
+
+The table "width" attribute is of type "length", with optional unit.
+The writers must ensure there is a unit when converting a length to
+a HTML "style" attribute rule.
+For HTML writers, the default length unit is "px".
+END

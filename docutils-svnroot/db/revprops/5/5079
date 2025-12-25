@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 9
+blackbird
+K 8
+svn:date
+V 27
+2007-05-22T10:20:26.294748Z
+K 7
+svn:log
+V 152
+added basic WSGI application for the documentation (and ported too many werkzeug features over, after the app is finished we should remove the unused)
+
+
+END

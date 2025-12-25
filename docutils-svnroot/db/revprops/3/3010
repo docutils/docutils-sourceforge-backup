@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-03-05T17:11:05.000000Z
+K 7
+svn:log
+V 348
+reverted test_nodes.py from 1.14 to 1.13; the nested scopes are
+necessary because of the lambda expression in line 146::
+
+        self.assertEquals(getlist(e, cond=lambda x: x not in e[0:2]),
+                          [e[0][0], e[0][1], e[0][1][0], e[2]])
+
+otherwise it doesn't work with Python 2.1 because we can't reference
+the local e variable.
+
+END

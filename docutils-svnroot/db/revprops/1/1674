@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 4
+cben
+K 8
+svn:date
+V 27
+2003-09-11T09:52:06.000000Z
+K 7
+svn:log
+V 156
+Added support for ``DOCUTILSCONFIG`` environment variable.  Added
+method `OptionParser.get_config_files()` to allow overriding this
+behavior in a subclass.
+
+END

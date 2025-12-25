@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2022-10-20T23:31:11.327030Z
+K 7
+svn:log
+V 51
+Resolve flake8 ``E261`` errors in ``latex2mathml``
+
+END

@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 8
+gschwant
+K 8
+svn:date
+V 27
+2003-03-29T00:07:19.000000Z
+K 7
+svn:log
+V 88
+
+List for autocompletion of bibliographic fields depends on language_code
+settings now.
+
+END

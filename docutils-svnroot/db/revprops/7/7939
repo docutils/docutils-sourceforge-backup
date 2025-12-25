@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2016-05-24T19:28:01.672874Z
+K 7
+svn:log
+V 55
+Use https in default MathJax URL (report Alan G Isaac).
+END

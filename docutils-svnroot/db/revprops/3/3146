@@ -1,0 +1,45 @@
+K 10
+svn:author
+V 5
+blais
+K 8
+svn:date
+V 27
+2005-03-29T23:33:48.939768Z
+K 7
+svn:log
+V 1083
+I restructured (pun intended) the emacs support
+for restructuredtext.   Basically, I replaced
+the function that can create a box title (it was
+recent) by a generic function that does everything
+that you would want to do around a section title.
+I tried to make the ultimate underlining function
+on a single binding. (This code was started on 
+the way back from PyCon with Mr. docutils himself
+sitting next to me driving while I was coding.)
+
+Invocation of this function multiple times will do 
+more of what you like.  It's a bit hard to explain,
+full details are in the LISP code, but really, the best
+thing is to bind it and try it out in your documents.
+
+This makes it much easier to create/update
+section titles.  Let me know of any ideas 
+on how this could be improved.
+
+
+;; You should bind the versatile sectioning command to some key in the text-mode
+;; hook. Something like this::
+;;
+;;   (defun user-rst-mode-hook ()
+;;     (local-set-key [(control ?=)] 'rest-adjust-section-title)
+;;     )
+;;   (add-hook 'text-mode-hook 'user-rst-mode-hook)
+;;
+
+
+Enjoy! (I think you will.)
+
+
+END

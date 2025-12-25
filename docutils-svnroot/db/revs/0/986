@@ -1,0 +1,260 @@
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 7-986.0.r986/123
+type: file
+count: 0
+text: 158 2032 49 290 eb5d29f2f66a05d047e60499caf16f11 d3ddfe5fac6447c0faa8864aef008288ff1aa497 985-rd/_9
+props: 986 0 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/test/test_readers/__init__.py
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 21
+file 7-986.0.r986/123
+K 8
+test_pep
+V 20
+dir 5-89.0.r917/5403
+END
+ENDREP
+id: 3-89.0.r986/490
+type: dir
+pred: 3-89.0.r917/5697
+count: 9
+text: 986 390 87 87 2b8739e38adb833323dd04e04f435991
+cpath: /trunk/docutils/test/test_readers
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 4-986.0.r986/784
+type: file
+count: 0
+text: 158 2032 49 290 eb5d29f2f66a05d047e60499caf16f11 d3ddfe5fac6447c0faa8864aef008288ff1aa497 985-rd/_6
+props: 986 661 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/docutils/test/test_parsers/__init__.py
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 21
+file 4-986.0.r986/784
+K 8
+test_rst
+V 21
+dir 4l-18.0.r968/2963
+END
+ENDREP
+id: 4k-18.0.r986/1154
+type: dir
+pred: 4k-18.0.r968/3263
+count: 51
+text: 986 1053 88 88 a3b80f9fd1c708f15a55a813a9c25451
+cpath: /trunk/docutils/test/test_parsers
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 21
+file 3-339.0.r343/176
+K 22
+DocutilsTestSupport.py
+V 22
+file 49-18.0.r983/2561
+K 11
+alltests.py
+V 21
+file 4e-18.0.r959/547
+K 10
+difflib.py
+V 23
+file 4g-18.0.r18/261513
+K 19
+package_unittest.py
+V 22
+file 3-44.0.r778/16101
+K 16
+test_language.py
+V 22
+file 3-940.0.r949/6589
+K 13
+test_nodes.py
+V 23
+file 4i-18.0.r778/19395
+K 12
+test_parsers
+V 21
+dir 4k-18.0.r986/1154
+K 12
+test_readers
+V 19
+dir 3-89.0.r986/490
+K 20
+test_statemachine.py
+V 22
+file 6a-18.0.r917/6020
+K 15
+test_transforms
+V 21
+dir 6c-18.0.r960/3923
+K 13
+test_utils.py
+V 23
+file 6u-18.0.r778/18531
+K 16
+test_viewlist.py
+V 22
+file 3-916.0.r916/1258
+END
+ENDREP
+id: 48-18.0.r986/1974
+type: dir
+pred: 48-18.0.r983/3502
+count: 85
+text: 986 1330 631 631 f71adf4b663efd95e3b0b2230448097f
+props: 343 993 44 0 e8789a4081469b0bbc8d88dcdbd925ef
+cpath: /trunk/docutils/test
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 21
+file 2-340.0.r340/154
+K 11
+COPYING.txt
+V 21
+file 2-18.0.r763/7254
+K 7
+FAQ.txt
+V 21
+file 2-788.0.r981/951
+K 11
+HISTORY.txt
+V 20
+file 5-18.0.r985/274
+K 11
+MANIFEST.in
+V 20
+file 7-18.0.r344/206
+K 10
+README.txt
+V 22
+file 9-18.0.r811/15236
+K 4
+docs
+V 19
+dir 3-7.0.r984/1907
+K 8
+docutils
+V 21
+dir 1w-18.0.r983/7855
+K 10
+install.py
+V 23
+file 44-18.0.r18/313369
+K 8
+setup.py
+V 21
+file 46-18.0.r860/149
+K 4
+test
+V 21
+dir 48-18.0.r986/1974
+K 5
+tools
+V 21
+dir 6w-18.0.r983/4627
+END
+ENDREP
+id: 1-7.0.r986/2697
+type: dir
+pred: 1-7.0.r985/1054
+count: 806
+text: 986 2192 492 492 73f1bca5441945605427652a238124aa
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 19
+dir 1-7.0.r986/2697
+K 7
+sandbox
+V 21
+dir 1-17.0.r983/13588
+K 3
+web
+V 19
+dir 1-2.0.r864/1209
+END
+ENDREP
+id: 3-1.0.r986/3034
+type: dir
+pred: 3-1.0.r985/1390
+count: 978
+text: 986 2907 114 114 03f92a4b242e0805ed99c226cb62cf24
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 17
+dir 0-1.0.r63/562
+K 4
+tags
+V 17
+dir 2-1.0.r65/217
+K 5
+trunk
+V 19
+dir 3-1.0.r986/3034
+END
+ENDREP
+id: 0.0.r986/3302
+type: dir
+pred: 0.0.r985/1658
+count: 986
+text: 986 3182 107 107 087b290f2b563dafab82fa09608464c7
+cpath: /
+copyroot: 0 /
+
+_7.0.t985-rd add-file true true /trunk/docutils/test/test_readers/__init__.py
+
+_4.0.t985-rd add-file true true /trunk/docutils/test/test_parsers/__init__.py
+
+
+3302 3441

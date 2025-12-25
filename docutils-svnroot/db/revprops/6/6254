@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-03-02T11:51:33.636069Z
+K 7
+svn:log
+V 59
+support SWF images,
+improve formatting of HTML test output.
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-04-11T22:22:50.615290Z
+K 7
+svn:log
+V 61
+Set "auto_encode=False" to skip en-/decoding output in tests.
+END

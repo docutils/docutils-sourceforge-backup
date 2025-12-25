@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2013-03-04T13:20:49.251870Z
+K 7
+svn:log
+V 151
+Fix [ 3606028 ] ``assert`` is skipped with ``python -O``.
+
+Also, raise ValueError with list of valid units if
+length_or_percentage_or_unitless() fails.
+END

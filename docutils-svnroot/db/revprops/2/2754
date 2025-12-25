@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-10-21T09:50:56.000000Z
+K 7
+svn:log
+V 108
+Uh.  I didn't know that the colon is stripped if there is a space in front.
+Re-changed an ancient typo-fix.
+
+END

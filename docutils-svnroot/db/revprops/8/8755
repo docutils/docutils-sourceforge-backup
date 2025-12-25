@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-05-20T12:24:40.692258Z
+K 7
+svn:log
+V 65
+MathML: support \circledR, \circledS, functions that take limits.
+END

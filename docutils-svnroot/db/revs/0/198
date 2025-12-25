@@ -1,0 +1,168 @@
+PLAIN
+K 11
+__init__.py
+V 21
+file 1x-18.0.r179/612
+K 7
+core.py
+V 22
+file 20-18.0.r180/1755
+K 11
+frontend.py
+V 21
+file 3-150.0.r187/230
+K 9
+languages
+V 21
+dir 22-18.0.r109/8219
+K 8
+nodes.py
+V 22
+file 28-18.0.r168/1473
+K 8
+optik.py
+V 21
+file 3-181.0.r191/617
+K 7
+parsers
+V 21
+dir 2a-18.0.r160/3061
+K 7
+readers
+V 20
+dir 36-18.0.r159/657
+K 8
+roman.py
+V 23
+file 3c-18.0.r18/293919
+K 15
+statemachine.py
+V 22
+file 3e-18.0.r160/3359
+K 10
+transforms
+V 21
+dir 3g-18.0.r169/1466
+K 13
+urischemes.py
+V 22
+file 3s-18.0.r131/1101
+K 8
+utils.py
+V 21
+file 3u-18.0.r172/271
+K 7
+writers
+V 21
+dir 3w-18.0.r197/2346
+END
+ENDREP
+id: 1w-18.0.r198/604
+type: dir
+pred: 1w-18.0.r197/3176
+count: 68
+text: 198 0 591 591 608aa3a8c9c74825ba05d7030c7542cc
+cpath: /trunk/docutils/docutils
+copyroot: 0 /
+
+PLAIN
+K 11
+COPYING.txt
+V 21
+file 2-18.0.r192/1959
+K 11
+HISTORY.txt
+V 21
+file 5-18.0.r185/4014
+K 11
+MANIFEST.in
+V 22
+file 7-18.0.r18/312592
+K 10
+README.txt
+V 21
+file 9-18.0.r192/3469
+K 4
+docs
+V 19
+dir 3-7.0.r197/4295
+K 8
+docutils
+V 20
+dir 1w-18.0.r198/604
+K 10
+install.py
+V 23
+file 44-18.0.r18/313369
+K 8
+setup.py
+V 22
+file 46-18.0.r185/4439
+K 4
+test
+V 21
+dir 48-18.0.r160/1968
+K 5
+tools
+V 21
+dir 6w-18.0.r184/1551
+END
+ENDREP
+id: 1-7.0.r198/1194
+type: dir
+pred: 1-7.0.r197/4882
+count: 149
+text: 198 769 412 412 43e2c80ea14abe4f66a84caaeeaa8f6f
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 19
+dir 1-7.0.r198/1194
+K 7
+sandbox
+V 20
+dir 1-17.0.r190/1305
+K 3
+web
+V 19
+dir 1-2.0.r195/1129
+END
+ENDREP
+id: 3-1.0.r198/1476
+type: dir
+pred: 3-1.0.r197/5165
+count: 190
+text: 198 1350 113 113 adc670784ee11e883651d31a71db50a4
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 17
+dir 0-1.0.r63/562
+K 4
+tags
+V 17
+dir 2-1.0.r65/217
+K 5
+trunk
+V 19
+dir 3-1.0.r198/1476
+END
+ENDREP
+id: 0.0.r198/1744
+type: dir
+pred: 0.0.r197/5433
+count: 198
+text: 198 1624 107 107 83a45b0ebdffae3e959685d86a477845
+cpath: /
+copyroot: 0 /
+
+3-182.0.r182/10802 delete-file false false /trunk/docutils/docutils/OptionParser.py
+
+
+1744 1883

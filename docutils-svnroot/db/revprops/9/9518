@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-01-26T22:46:31.301319Z
+K 7
+svn:log
+V 480
+Organize unit tests for ``docutils/utils/*`` in a separate directory.
+
+Create new directory ``test/test_utils/`` and move the test scripts
+for modules under ``docutils/utils/`` there.
+
+Also move the provisional "extra" test script for external TeX to
+MathML converters. Add SkipTest statements so that it only runs
+standalone. (The test script takes > 27 seconds, i.e. 5x more time
+than the remainder of the test suite).
+
+Name all ``__init__.py`` test scripts ``test__init__.py``.
+END

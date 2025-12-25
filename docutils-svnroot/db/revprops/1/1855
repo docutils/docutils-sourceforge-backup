@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+mmgilbe
+K 8
+svn:date
+V 27
+2004-03-22T01:08:37.000000Z
+K 7
+svn:log
+V 151
+Added hook (via docutils.TransformSpec.unknown_reference_resolvers)
+to FinalCheckVisitor for application-specific handling of unresolvable
+references.
+
+END

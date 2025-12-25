@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-04-21T17:41:17.600375Z
+K 7
+svn:log
+V 160
+Last documentation edits for 0.20 release.
+
+Review and small corrections to HISTORY and RELEASE-NOTES.
+
+Add comment with rationale for future cvs-table changes.
+END

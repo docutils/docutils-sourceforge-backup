@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2007-03-01T00:52:14.648389Z
+K 7
+svn:log
+V 134
+stripped setup.py down to work with setuptools;
+I have checked that it creates the same files in the distribution tarball as distutils
+END

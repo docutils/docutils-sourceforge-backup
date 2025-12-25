@@ -1,0 +1,26 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2008-12-01T07:31:53.070836Z
+K 7
+svn:log
+V 541
+failsave implementation of custom roles in latex2e
+
+The latex2e writer currently translates <inline> nodes with a class
+argument (e.g. produced by a custom role or the upcoming
+syntax-highlighting souce-code directive) to specific LaTeX macros,
+which allows a style sheet to define this macro but leaves the document
+uncompilable without a special style sheet.
+
+The patch below lets the latex2ewriter produce code that
+
+1.  compiles without error ignoring the unknown classes
+
+2.  allows styling of the marked-up code in a custom stylesheet
+
+END

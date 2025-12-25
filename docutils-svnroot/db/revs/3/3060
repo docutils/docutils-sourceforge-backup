@@ -1,0 +1,254 @@
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 14
+svn:executable
+V 1
+*
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 4-3060.0.r3060/149
+type: file
+count: 0
+text: 2986 0 25 3816 eebf665d61476e2526d0e4a61a9b9285 4d7cbd048a3636dc17a801685e9b404d886d1af3 3059-2cz/_6
+props: 3060 0 136 0 cd16f4c3541932a389cc4ebf2ace9d97
+cpath: /trunk/sandbox/davidg/infrastructure/docutils-update-svn
+copyroot: 0 /
+
+PLAIN
+K 12
+cvs-reorg.sh
+V 23
+file 4-2126.0.r2170/392
+K 15
+docutils-update
+V 22
+file 5-189.0.r2986/199
+K 19
+docutils-update-svn
+V 23
+file 4-3060.0.r3060/149
+END
+ENDREP
+id: 3-189.0.r3060/598
+type: dir
+pred: 3-189.0.r2986/615
+count: 46
+text: 3060 431 154 154 7c24f7220298ad73037829c5f130d8da
+cpath: /trunk/sandbox/davidg/infrastructure
+copyroot: 0 /
+
+PLAIN
+K 14
+infrastructure
+V 21
+dir 3-189.0.r3060/598
+K 15
+pysource_reader
+V 19
+dir 7-17.0.r17/5918
+END
+ENDREP
+id: 6-17.0.r3060/889
+type: dir
+pred: 6-17.0.r2986/907
+count: 47
+text: 3060 779 97 97 2fae627a06b52f03adcc2da4dc1550a4
+cpath: /trunk/sandbox/davidg
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 21
+file 3-17.0.r2232/246
+K 4
+aahz
+V 22
+dir 2-820.0.r1918/1105
+K 9
+agurtovoy
+V 23
+dir 2-2034.0.r2034/7482
+K 3
+amk
+V 23
+dir 2-1891.0.r1892/1276
+K 3
+ax-
+V 23
+dir 2-1550.0.r2415/1011
+K 4
+bbum
+V 23
+dir 2-1039.0.r1742/2047
+K 5
+blais
+V 23
+dir 2-1316.0.r3001/1928
+K 4
+cben
+V 23
+dir 2-1693.0.r2845/1441
+K 6
+davidg
+V 20
+dir 6-17.0.r3060/889
+K 5
+delza
+V 23
+dir 2-1723.0.r1723/3836
+K 8
+dkuhlman
+V 23
+dir 2-1555.0.r1716/4199
+K 7
+dpriest
+V 23
+dir 2-1730.0.r2304/1528
+K 12
+dreamcatcher
+V 22
+dir 2-1300.0.r1357/657
+K 7
+edloper
+V 23
+dir 2-1844.0.r1975/4509
+K 12
+felixwiemann
+V 23
+dir 2-2903.0.r3059/1074
+K 7
+grubert
+V 23
+dir 2-112.0.r2552/12356
+K 8
+gschwant
+V 22
+dir 2-675.0.r2081/2075
+K 9
+holdenweb
+V 23
+dir 2-1845.0.r1845/4805
+K 4
+ianb
+V 22
+dir 2-881.0.r1638/1101
+K 5
+jensj
+V 23
+dir 2-2942.0.r2954/5560
+K 4
+lalo
+V 23
+dir 2-1749.0.r1762/2166
+K 3
+mly
+V 23
+dir 2-1431.0.r1432/2681
+K 7
+mmgilbe
+V 23
+dir 2-1841.0.r2945/2205
+K 3
+mwh
+V 21
+dir 2-857.0.r862/1023
+K 7
+oliverr
+V 22
+dir 2-202.0.r2884/1625
+K 12
+paultremblay
+V 23
+dir 2-1323.0.r1489/1149
+K 7
+pobrien
+V 23
+dir 2-1158.0.r1777/4967
+K 7
+richard
+V 22
+dir 2-526.0.r1417/2696
+K 6
+simonb
+V 21
+dir 2-252.0.r1227/852
+K 4
+tibs
+V 21
+dir 2-62.0.r1727/8120
+K 4
+wilk
+V 23
+dir 2-1258.0.r1650/3830
+END
+ENDREP
+id: 1-17.0.r3060/2305
+type: dir
+pred: 1-17.0.r3059/2504
+count: 693
+text: 3060 1051 1241 1241 963d997abfb866145fbde8a199deeda8
+cpath: /trunk/sandbox
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r3058/5224
+K 7
+sandbox
+V 21
+dir 1-17.0.r3060/2305
+K 3
+web
+V 20
+dir 1-2.0.r2905/1520
+END
+ENDREP
+id: 3-1.0.r3060/2597
+type: dir
+pred: 3-1.0.r3059/2796
+count: 3034
+text: 3060 2468 116 116 5bb9ff6fc9ce18c8c115d953f4da92f6
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 22
+dir 0-1.0.r2577/106684
+K 4
+tags
+V 20
+dir 2-1.0.r2576/3944
+K 5
+trunk
+V 20
+dir 3-1.0.r3060/2597
+END
+ENDREP
+id: 0.0.r3060/2878
+type: dir
+pred: 0.0.r3059/3077
+count: 3060
+text: 3060 2749 116 116 d597d36bee7f2557e48f93d1bc0b71bb
+cpath: /
+copyroot: 0 /
+
+_4.0.t3059-2cz add-file true true /trunk/sandbox/davidg/infrastructure/docutils-update-svn
+
+
+2878 3021

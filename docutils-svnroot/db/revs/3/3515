@@ -1,0 +1,88 @@
+id: 1-7.0-3515.r3515/0
+type: dir
+pred: 1-7.0-3513.r3513/0
+count: 2671
+text: 3512 11051 629 629 3d74ddf588ece3e643c0358e2af771c7
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /branches/blais_interrupt_render/docutils
+copyfrom: 3514 /branches/blais_interruptus
+
+PLAIN
+K 8
+docutils
+V 22
+dir 1-7.0-3515.r3515/0
+END
+ENDREP
+id: 1-3514.0.r3515/332
+type: dir
+pred: 1-3514.0.r3514/0
+count: 1
+text: 3515 274 45 45 9577452ca28d7a2f78d2ce62fe04a14a
+cpath: /branches/blais_interrupt_render
+copyroot: 0 /
+
+PLAIN
+K 2
+ax
+V 24
+dir 3-1.0-1551.r1551/296
+K 22
+blais_interrupt_render
+V 22
+dir 1-3514.0.r3515/332
+K 7
+goodger
+V 22
+dir 3-1.0-19.r21/10951
+K 7
+nesting
+V 27
+dir 3-1.0-1813.r2577/106277
+K 4
+tibs
+V 20
+dir 3-1.0-63.r63/279
+K 6
+vendor
+V 21
+dir 3-1.0-3.r1556/334
+END
+ENDREP
+id: 0-1.0.r3515/774
+type: dir
+pred: 0-1.0.r3514/412
+count: 44
+text: 3515 506 255 255 c4b6bc023607ec039b680c65bad0fba5
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 19
+dir 0-1.0.r3515/774
+K 4
+tags
+V 19
+dir 2-1.0.r3383/196
+K 5
+trunk
+V 21
+dir 3-1.0.r3512/12040
+END
+ENDREP
+id: 0.0.r3515/1050
+type: dir
+pred: 0.0.r3514/687
+count: 3515
+text: 3515 924 113 113 af0a28caf758066c0fcd9717dbb15de5
+cpath: /
+copyroot: 0 /
+
+1-7._0.t3514-2pm add-dir false false /branches/blais_interrupt_render/docutils
+3514 /branches/blais_interruptus
+1-7.0-3513.r3513/0 delete-dir false false /branches/blais_interruptus
+
+
+1050 1191

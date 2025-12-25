@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-03-30T18:21:02.414529Z
+K 7
+svn:log
+V 314
+Documentation update and fixes.
+
+Fix/update links.
+
+The <author> element's DocBook analogon is not <author> but <personname>.
+
+Clarify description of bibliographic fields (docinfo) in the rST specification.
+
+Use the term "settings" instead of "options" for configuration settings in the
+LaTeX writer documentation.
+END

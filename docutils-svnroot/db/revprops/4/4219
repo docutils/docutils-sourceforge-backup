@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2005-12-15T14:32:01.496708Z
+K 7
+svn:log
+V 70
+fixed "compact" & "open" classes on lists, and added a functional test
+END

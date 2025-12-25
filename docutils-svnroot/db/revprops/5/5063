@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-05-03T18:19:53.367189Z
+K 7
+svn:log
+V 216
+* Create lib/Text/Restructured.pm from lib/Text/Restructured.pm.PL so
+  we can insert the versio number in to allow CPAN to index it
+  correctly.
+* Fixed a problem with creating regular-expression expects for tests.
+
+END

@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-03-17T13:40:11.538084Z
+K 7
+svn:log
+V 340
+Prepare switch from optparse to argparse.
+
+New interface function: frontend.get_default_settings()
+easy access to default settings for programmatic use.
+
+Add deprecation warnings.
+Catch them when accessing the deprecated functions from Docutils.
+
+Make docstrings conform to the Documentation Policies
+(first line: summary, next line empty).
+END

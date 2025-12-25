@@ -1,0 +1,44 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2006-09-05T18:22:25.323789Z
+K 7
+svn:log
+V 1430
+* Initialize ANONYMOUS_TARGETS in init.
+
+* Renamed $class to $classifiers in DefinitionList to eliminate
+  confusion.
+* Fixed the handling of inline literals in definition lists.
+* Put a system message in the document rather than dying if a plug-in
+  directive fails to compile.
+* Simplified the code by removing tests whose conditions were
+  invariant.
+* Introduced a RemoveMinIndent method.
+* Fixed an infinite loop that could come up in processing nested
+  inline markup.
+* Fixed an infinite loop that could come up if a line block started
+  with two or more blank lines.
+* Fixed the removal of inline markup characters from normalized names.
+* Changed the calling sequence of
+  Text::Restructured::Directive::arg_check to be able to check for
+  either exact number of argumments or minimum number.
+* Changed the calling sequence of
+  Text::Restructured::Directive::parse_directive to be able to call
+  arg_check and check_option_names.
+* Removed Text::Restructured::Directive::no_args.
+* Have include directive do nothing if the file is empty, as opposed
+  to returning an empty paragraph.
+* Added checks for the prefix and suffix options to the role directive
+  to be sure they're formatted correctly.
+* Return a system message if the title in a table-type directive is
+  not a single paragraph.
+* Merged the code for csv-table and list-table directives to the
+  extent possible.
+* Fixed the "class" option for target-notes.
+
+END

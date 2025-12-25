@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-06-18T19:09:40.526233Z
+K 7
+svn:log
+V 97
+Apply [ 141 ] Handling inline in manpage writer.
+
+Thanks to Masatake YAMATO for report and patch.
+END

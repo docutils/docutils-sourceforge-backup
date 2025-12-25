@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2012-05-11T21:06:27.212403Z
+K 7
+svn:log
+V 67
+Basic CSS rules for (source)code (margin, background, linenumbers).
+END

@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-03-05T17:06:53.845792Z
+K 7
+svn:log
+V 249
+Documentation updates/fixes
+
+Fix links (outdated, http -> https).
+
+Add details and links to "use_latex_docinfo" setting's description.
+
+Don't use "LaTeX" vs. "XeTeX": LaTeX is the macro package used by, e.g.
+the pdfTeX, XeTeX and LuaTeX TeX-engines.
+END

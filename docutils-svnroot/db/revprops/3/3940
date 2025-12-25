@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-10-11T23:00:39.249427Z
+K 7
+svn:log
+V 101
+removed references to default.css;
+to-do: update PEP writer (-> pep.css) and then docs/user/tools.txt
+END

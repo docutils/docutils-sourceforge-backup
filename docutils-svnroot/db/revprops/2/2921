@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-01-02T19:24:01.000000Z
+K 7
+svn:log
+V 153
+removed entry about testing of ``raw`` role, leaving note
+about testing of other roles;
+added entry about inclusion by URL, as suggested by Alan G Isaac
+
+END

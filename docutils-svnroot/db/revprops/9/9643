@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-04-15T12:27:49.655345Z
+K 7
+svn:log
+V 446
+Make effect of centre-aligning figures visible in functional HTML text.
+
+Horizontal figure alignment is irrelevant if the figure is full-width.
+The figure content is left-aligned with the default styles.
+
+Change the functional test input by specifying 40% figure width to the
+example of a centre-aligned figure.
+
+Note: figure alignment is ignored with LaTeX output, figures are
+centre-aligned by default (depends on LaTeX packages/documentclass).
+END

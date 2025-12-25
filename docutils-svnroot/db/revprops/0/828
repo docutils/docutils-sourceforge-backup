@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-10-18T23:40:19.000000Z
+K 7
+svn:log
+V 215
+Rearranged the parameters of ``publish_cmdline()`` and improved its docstring.  Added ``publish_file()`` and ``publish_string()``.  Factored ``Publisher.set_source()`` and ``.set_destination()`` out of ``.set_io``.
+
+END

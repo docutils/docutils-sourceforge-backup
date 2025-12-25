@@ -1,0 +1,157 @@
+K 8
+Dir.smak
+V 32
+file 27-5058.12-4580.r5058/54341
+K 8
+if01.dom
+V 32
+file kk-4327.12-4580.r4580/95118
+K 8
+if01.rst
+V 27
+file kn-4327.0.r4327/929032
+K 8
+if02.dom
+V 30
+file kp-4327.12-4580.r4730/608
+K 8
+if02.rst
+V 30
+file kr-4327.12-4580.r4730/321
+K 8
+if03.dom
+V 32
+file kt-4327.12-4580.r4580/92050
+K 8
+if03.rst
+V 27
+file kv-4327.0.r4327/929506
+K 8
+if04.dom
+V 32
+file kx-4327.12-4580.r4580/92605
+K 8
+if04.rst
+V 27
+file kz-4327.0.r4327/929743
+K 8
+if05.dom
+V 32
+file l1-4327.12-4580.r6498/27268
+K 8
+if05.rst
+V 27
+file l3-4327.0.r4327/930223
+K 8
+if06.dom
+V 33
+file 2u-4710.12-4580.r4710/208552
+K 8
+if06.rst
+V 33
+file 2w-4710.12-4580.r4710/210713
+K 8
+if07.dom
+V 33
+file 30-4710.12-4580.r4710/208818
+K 8
+if07.rst
+V 33
+file 32-4710.12-4580.r4710/211248
+K 8
+if08.dom
+V 33
+file 34-4710.12-4580.r4710/209083
+K 8
+if08.rst
+V 33
+file 36-4710.12-4580.r4710/211783
+K 7
+skip.pl
+V 32
+file cl-4580.12-4580.r4580/92342
+K 13
+trusted01.dom
+V 31
+file l5-4327.12-4580.r6286/1819
+K 13
+trusted01.rst
+V 30
+file l7-4327.12-4580.r6286/929
+K 13
+trusted02.dom
+V 32
+file l9-4327.12-4580.r4580/94820
+K 13
+trusted02.rst
+V 31
+file lb-4327.12-4580.r6286/1221
+K 13
+trusted03.dom
+V 33
+file 38-4710.12-4580.r4710/210978
+K 13
+trusted03.rst
+V 33
+file 3c-4710.12-4580.r4710/209907
+K 13
+trusted04.dom
+V 33
+file 3e-4710.12-4580.r4710/211513
+K 13
+trusted04.rst
+V 31
+file 3g-4710.12-4580.r6286/1520
+END
+D 8
+Dir.smak
+D 8
+if01.dom
+D 8
+if01.rst
+D 8
+if02.dom
+D 8
+if02.rst
+D 8
+if03.dom
+D 8
+if03.rst
+D 8
+if04.dom
+D 8
+if04.rst
+D 8
+if05.dom
+D 8
+if05.rst
+D 8
+if06.dom
+D 8
+if06.rst
+D 8
+if07.dom
+D 8
+if07.rst
+D 8
+if08.dom
+D 8
+if08.rst
+D 7
+skip.pl
+D 13
+trusted01.dom
+D 13
+trusted01.rst
+D 13
+trusted02.dom
+D 13
+trusted02.rst
+D 13
+trusted03.dom
+D 13
+trusted03.rst
+D 13
+trusted04.dom
+D 13
+trusted04.rst

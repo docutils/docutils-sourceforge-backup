@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-05-18T18:17:33.241594Z
+K 7
+svn:log
+V 142
+Fixed bug with uppercase image targets.  Closing
+https://sourceforge.net/tracker/index.php?func=detail&aid=1202510&group_id=38414&atid=422030
+
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 6
+strank
+K 8
+svn:date
+V 27
+2008-07-16T08:06:51.894419Z
+K 7
+svn:log
+V 66
+Moved the fix into Node.traverse and documented behaviour in test.
+END

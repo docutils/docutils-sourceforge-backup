@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-20T10:11:44.491434Z
+K 7
+svn:log
+V 96
+Change http://docutils.sourceforge.net -> https://docutils.sourceforge.io
+
+Patch by Adam Turner.
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-01-04T23:33:59.963304Z
+K 7
+svn:log
+V 125
+Deprecate `nodes.reprunicode` and `nodes.ensure_str()`.
+
+Drop uses of the deprecated constructs (not required with Python 3).
+END

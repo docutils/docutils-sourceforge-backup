@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2015-02-16T22:10:52.123131Z
+K 7
+svn:log
+V 59
+Fix [ 253 ] Attribute key without value not allowed in XML.
+END

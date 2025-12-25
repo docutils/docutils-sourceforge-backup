@@ -1,0 +1,214 @@
+PLAIN
+K 22
+DocutilsTestSupport.py
+V 23
+file 49-18.0.r3257/3381
+K 11
+alltests.py
+V 23
+file 4e-18.0.r3253/1732
+K 4
+data
+V 23
+dir 3-1662.0.r3039/6700
+K 13
+docutils.conf
+V 24
+file 6-1661.0.r2385/2146
+K 19
+docutils_difflib.py
+V 24
+file 6-2354.0.r2354/1272
+K 10
+functional
+V 23
+dir 3-2357.0.r3262/1423
+K 19
+package_unittest.py
+V 21
+file 3-44.0.r2454/856
+K 20
+test_dependencies.py
+V 24
+file 3-2679.0.r2683/4279
+K 18
+test_functional.py
+V 24
+file 18-2357.0.r3176/122
+K 10
+test_io.py
+V 23
+file 5-3138.0.r3139/243
+K 16
+test_language.py
+V 23
+file 3-940.0.r3085/8438
+K 13
+test_nodes.py
+V 23
+file 4i-18.0.r3129/8228
+K 12
+test_parsers
+V 22
+dir 4k-18.0.r3253/5925
+K 12
+test_readers
+V 21
+dir 3-89.0.r3129/2577
+K 16
+test_settings.py
+V 24
+file g-1662.0.r3039/4956
+K 20
+test_statemachine.py
+V 22
+file 6a-18.0.r917/6020
+K 15
+test_transforms
+V 22
+dir 6c-18.0.r3199/4612
+K 13
+test_utils.py
+V 21
+file 6u-18.0.r3171/53
+K 16
+test_viewlist.py
+V 23
+file 3-916.0.r3085/3892
+K 12
+test_writers
+V 23
+dir 5-1211.0.r3257/3198
+END
+ENDREP
+id: 48-18.0.r3267/1003
+type: dir
+pred: 48-18.0.r3266/1330
+count: 452
+text: 3267 0 990 990 ca916cc5980023f9535e658a9420ee9d
+props: 343 993 44 0 e8789a4081469b0bbc8d88dcdbd925ef
+cpath: /trunk/docutils/test
+copyroot: 0 /
+
+PLAIN
+K 8
+BUGS.txt
+V 23
+file 2-2181.0.r3252/723
+K 11
+COPYING.txt
+V 21
+file 2-18.0.r3096/363
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r3230/215
+K 11
+HISTORY.txt
+V 22
+file 5-18.0.r3257/2259
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r2513/394
+K 10
+README.txt
+V 19
+file 9-18.0.r3079/0
+K 10
+THANKS.txt
+V 24
+file 2-2182.0.r3243/7816
+K 4
+docs
+V 20
+dir 3-7.0.r3257/7553
+K 8
+docutils
+V 22
+dir 1w-18.0.r3265/4258
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 23
+file 46-18.0.r2901/3967
+K 4
+test
+V 22
+dir 48-18.0.r3267/1003
+K 5
+tools
+V 22
+dir 6w-18.0.r3265/2538
+END
+ENDREP
+id: 1-7.0.r3267/1859
+type: dir
+pred: 1-7.0.r3266/2190
+count: 2467
+text: 3267 1222 624 624 e192c5d2a66997f25b2453580d4ce681
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r3267/1859
+K 7
+sandbox
+V 21
+dir 1-17.0.r3264/5200
+K 3
+web
+V 20
+dir 1-2.0.r3137/1247
+END
+ENDREP
+id: 3-1.0.r3267/2202
+type: dir
+pred: 3-1.0.r3266/2533
+count: 3220
+text: 3267 2073 116 116 aa015a18ceeb1812b3f491d56e851485
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r3171/7579
+K 4
+tags
+V 20
+dir 2-1.0.r2576/3944
+K 5
+trunk
+V 20
+dir 3-1.0.r3267/2202
+END
+ENDREP
+id: 0.0.r3267/2481
+type: dir
+pred: 0.0.r3266/2812
+count: 3267
+text: 3267 2354 114 114 47346a33faf54871fb9c28fd8262a742
+cpath: /
+copyroot: 0 /
+
+3-3266.0.r3266/97 delete-file false false /trunk/docutils/test/svn
+
+
+2481 2624

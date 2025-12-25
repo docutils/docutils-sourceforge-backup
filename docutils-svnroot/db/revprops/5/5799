@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2008-12-06T16:03:07.681927Z
+K 7
+svn:log
+V 60
+Fixed a test that failed because it was not site-independent
+END

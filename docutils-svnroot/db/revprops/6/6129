@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-09-14T18:44:10.909219Z
+K 7
+svn:log
+V 68
+Replace `all` (new in Python 2.5) with `if` in a list comprehension.
+END

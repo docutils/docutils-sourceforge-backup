@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-04-17T20:26:41.557879Z
+K 7
+svn:log
+V 333
+The "null" writer will generate an empty string in Docutils 0.22.
+
+Update writer documentation to Python 3 terminology.
+Format multi-line docstrings according to policies.
+
+Writers generate `str` or `bytes` output.
+In future, the "null" writer will also generate `str` output
+for consistency with other writers and the documentation.
+END

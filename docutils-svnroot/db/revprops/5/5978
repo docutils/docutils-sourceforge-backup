@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 8
+cliechti
+K 8
+svn:date
+V 27
+2009-06-07T16:01:19.290398Z
+K 7
+svn:log
+V 104
+[PATCH] aafigure: Don't interpret "/" and "\" as lines in quoted strings (SF-ID: 2802367)
+thanks llucax
+
+END

@@ -1,0 +1,381 @@
+PLAIN
+K 10
+svn:ignore
+V 10
+*.t
+*.dir
+
+END
+ENDREP
+id: 51-4580.0.r4634/49
+type: dir
+pred: 51-4580.0.r4580/81286
+count: 1
+text: 4580 80233 1040 1040 ccd627329ee1873de8ffea702f78981b
+props: 4634 0 36 0 5b032e91a1f4d7d1d82f1ad65dafc4f1
+cpath: /trunk/prest/t/20_directive
+copyroot: 0 /
+
+PLAIN
+K 10
+svn:ignore
+V 10
+*.t
+*.dir
+
+END
+ENDREP
+id: af-4580.0.r4634/330
+type: dir
+pred: af-4580.0.r4581/5012
+count: 2
+text: 4581 4659 340 340 4606e89292461815ffbd31735c8450e5
+props: 4634 281 36 0 5b032e91a1f4d7d1d82f1ad65dafc4f1
+cpath: /trunk/prest/t/40_writers
+copyroot: 0 /
+
+PLAIN
+K 10
+svn:ignore
+V 10
+*.t
+*.dir
+
+END
+ENDREP
+id: bt-4580.0.r4634/608
+type: dir
+pred: bt-4580.0.r4581/6644
+count: 2
+text: 4581 6318 313 313 f7aff5da23122ae098a17e03131c93b7
+props: 4634 559 36 0 5b032e91a1f4d7d1d82f1ad65dafc4f1
+cpath: /trunk/prest/t/70_plugins
+copyroot: 0 /
+
+PLAIN
+K 10
+svn:ignore
+V 10
+*.t
+*.dir
+
+END
+ENDREP
+id: eg-4580.0.r4634/886
+type: dir
+pred: eg-4580.0.r4581/13125
+count: 2
+text: 4581 12903 209 209 adf749fc88682c45d925842fe5b6b9d2
+props: 4634 837 36 0 5b032e91a1f4d7d1d82f1ad65dafc4f1
+cpath: /trunk/prest/t/90_bugs
+copyroot: 0 /
+
+PLAIN
+K 10
+svn:ignore
+V 10
+*.t
+*.dir
+
+END
+ENDREP
+id: 1i-4580.0.r4634/1163
+type: dir
+pred: 1i-4580.0.r4580/152179
+count: 1
+text: 4580 150963 1203 1203 bdea9792964f0a4f15dfb95a23e4893d
+props: 4634 1114 36 0 5b032e91a1f4d7d1d82f1ad65dafc4f1
+cpath: /trunk/prest/t/10_parse
+copyroot: 0 /
+
+PLAIN
+K 10
+svn:ignore
+V 10
+*.t
+*.dir
+
+END
+ENDREP
+id: 8n-4580.0.r4634/1447
+type: dir
+pred: 8n-4580.0.r4580/164902
+count: 1
+text: 4580 164218 671 671 42b57ed0e67d67118cc09a6b430caecb
+props: 4634 1398 36 0 5b032e91a1f4d7d1d82f1ad65dafc4f1
+cpath: /trunk/prest/t/30_xform
+copyroot: 0 /
+
+PLAIN
+K 10
+svn:ignore
+V 10
+*.t
+*.dir
+
+END
+ENDREP
+id: bg-4580.0.r4634/1729
+type: dir
+pred: bg-4580.0.r4581/15169
+count: 2
+text: 4581 15050 106 106 2d55f1d0d1eab979d436e6a7fdd7109a
+props: 4634 1680 36 0 5b032e91a1f4d7d1d82f1ad65dafc4f1
+cpath: /trunk/prest/t/60_new
+copyroot: 0 /
+
+PLAIN
+K 8
+10_parse
+V 24
+dir 1i-4580.0.r4634/1163
+K 12
+20_directive
+V 22
+dir 51-4580.0.r4634/49
+K 8
+30_xform
+V 24
+dir 8n-4580.0.r4634/1447
+K 10
+40_writers
+V 23
+dir af-4580.0.r4634/330
+K 6
+60_new
+V 24
+dir bg-4580.0.r4634/1729
+K 10
+70_plugins
+V 23
+dir bt-4580.0.r4634/608
+K 7
+90_bugs
+V 23
+dir eg-4580.0.r4634/886
+END
+ENDREP
+PLAIN
+K 10
+svn:ignore
+V 10
+Common.mk
+
+END
+ENDREP
+id: 1h-4580.0.r4634/2328
+type: dir
+pred: 1h-4580.0.r4581/15678
+count: 2
+text: 4634 1958 308 308 a35c455828195b9d3f6b43304554357f
+props: 4634 2279 36 0 50eef90463e498c4efdc715416e7346a
+cpath: /trunk/prest/t
+copyroot: 0 /
+
+PLAIN
+K 10
+svn:ignore
+V 15
+PrestConfig.pm
+
+END
+ENDREP
+id: p-4580.0.r4634/2603
+type: dir
+pred: p-4580.0.r4580/180389
+count: 1
+text: 4580 179965 411 411 7300e52f6adec8de33aea49a099d8dfb
+props: 4634 2549 41 0 bfde65a2e4e8d36290d732a623fe6459
+cpath: /trunk/prest/lib/Text/Restructured
+copyroot: 0 /
+
+PLAIN
+K 12
+Restructured
+V 23
+dir p-4580.0.r4634/2603
+K 15
+Restructured.pm
+V 32
+file 7f-4327.6-4580.r4580/172943
+END
+ENDREP
+id: n-4580.0.r4634/2968
+type: dir
+pred: n-4580.0.r4580/180675
+count: 1
+text: 4634 2845 110 110 244fa695d4e14642c6ce6d5dd25256e1
+cpath: /trunk/prest/lib/Text
+copyroot: 0 /
+
+PLAIN
+K 4
+Text
+V 23
+dir n-4580.0.r4634/2968
+END
+ENDREP
+id: m-4580.0.r4634/3195
+type: dir
+pred: m-4580.0.r4580/180880
+count: 1
+text: 4634 3140 42 42 8ca29610fef912b5bf9f65605818b760
+cpath: /trunk/prest/lib
+copyroot: 0 /
+
+PLAIN
+K 11
+COPYING.txt
+V 26
+file 2-4327.0.r4580/172511
+K 7
+GPL.txt
+V 26
+file 5-4327.0.r4327/840766
+K 8
+MANIFEST
+V 25
+file 4-4580.0.r4581/15847
+K 13
+MANIFEST.SKIP
+V 25
+file 6-4580.0.r4581/16073
+K 10
+MODIFY.txt
+V 23
+file 7-4327.0.r4330/211
+K 11
+Makefile.PL
+V 23
+file 8-4580.0.r4633/235
+K 6
+README
+V 26
+file b-4327.0.r4580/182515
+K 16
+ReleaseNotes.txt
+V 26
+file d-4327.0.r4580/181227
+K 3
+doc
+V 23
+dir h-4327.0.r4587/1949
+K 13
+insertperl.pl
+V 25
+file k-4580.0.r4580/61534
+K 3
+lib
+V 23
+dir m-4580.0.r4634/3195
+K 5
+prest
+V 32
+file 7z-4327.7-4580.r4580/182742
+K 1
+t
+V 24
+dir 1h-4580.0.r4634/2328
+K 4
+tbin
+V 31
+dir 139-4327.1d-4580.r4633/1073
+END
+ENDREP
+PLAIN
+K 10
+svn:ignore
+V 52
+*.bak
+*.log
+*.tmp
+*.gz
+bin
+Makefile
+pm_to_blib
+blib
+
+END
+ENDREP
+id: 1-4326.0.r4634/4097
+type: dir
+pred: 1-4326.0.r4633/1921
+count: 12
+text: 4634 3360 633 633 cad36c4e38253e8ffc3c881149e845ad
+props: 4634 4006 78 0 7b122823d8a0f54515f77ea83aff2a62
+cpath: /trunk/prest
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r4632/2350
+K 5
+prest
+V 23
+dir 1-4326.0.r4634/4097
+K 7
+sandbox
+V 21
+dir 1-17.0.r4626/9988
+K 3
+web
+V 19
+dir 1-2.0.r4623/808
+END
+ENDREP
+id: 3-1.0.r4634/4481
+type: dir
+pred: 3-1.0.r4633/2305
+count: 4280
+text: 4634 4314 154 154 47c9a3fbf4e3c09790163ae819cdebc5
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r4617/2926
+K 4
+tags
+V 19
+dir 2-1.0.r4584/629
+K 5
+trunk
+V 20
+dir 3-1.0.r4634/4481
+END
+ENDREP
+id: 0.0.r4634/4759
+type: dir
+pred: 0.0.r4633/2583
+count: 4634
+text: 4634 4633 113 113 8d8f81f94fc59631b22f6c328a1e9cae
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+
+1-4326.0.t4633-3kp modify-dir false true /trunk/prest
+
+8n-4580.0.t4633-3kp modify-dir false true /trunk/prest/t/30_xform
+
+bg-4580.0.t4633-3kp modify-dir false true /trunk/prest/t/60_new
+
+51-4580.0.t4633-3kp modify-dir false true /trunk/prest/t/20_directive
+
+1h-4580.0.t4633-3kp modify-dir false true /trunk/prest/t
+
+p-4580.0.t4633-3kp modify-dir false true /trunk/prest/lib/Text/Restructured
+
+af-4580.0.t4633-3kp modify-dir false true /trunk/prest/t/40_writers
+
+bt-4580.0.t4633-3kp modify-dir false true /trunk/prest/t/70_plugins
+
+eg-4580.0.t4633-3kp modify-dir false true /trunk/prest/t/90_bugs
+
+1i-4580.0.t4633-3kp modify-dir false true /trunk/prest/t/10_parse
+
+
+4759 4953

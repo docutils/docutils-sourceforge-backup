@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-11-29T08:22:57.030482Z
+K 7
+svn:log
+V 180
+Allow also non-ASCII whitespace characters around inline markup.
+
+First part of fix for [ 3402314 ]
+Only editorial changes to the specification, 
+it already speaks of "whitespace".
+END

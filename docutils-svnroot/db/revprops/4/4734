@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2006-09-05T20:14:11.279340Z
+K 7
+svn:log
+V 71
+Use parse_directive to check the option names and number of arguments.
+
+END

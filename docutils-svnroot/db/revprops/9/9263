@@ -1,0 +1,27 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-11-24T15:08:12.429113Z
+K 7
+svn:log
+V 506
+Fix running of individual test (first batch).
+
+After test refactoring, test scripts failed with ImportError
+unless started from the "test root" ``docutils/test/``.
+
+Prepend the "docutils root" to the Python library path
+so we import the local `docutils` and `test` packages,
+ignoring an eventually installed Docutils package.
+
+Set executable bit where this was missing.
+
+Also:
+  Use "pathlib" instead of "os.path" for self-documenting path manipulations.
+
+  Remove duplicate ``import unittest`` statements.
+END

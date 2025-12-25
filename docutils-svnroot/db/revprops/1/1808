@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 4
+lele
+K 8
+svn:date
+V 27
+2004-01-21T11:28:26.000000Z
+K 7
+svn:log
+V 45
+Removed a double Date header that slipped in
+
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2012-12-13T10:05:42.413599Z
+K 7
+svn:log
+V 66
+add extracted release-test script
+note problems with dependencies
+
+END

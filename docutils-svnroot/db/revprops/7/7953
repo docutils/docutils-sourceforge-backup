@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2016-07-26T18:41:29.993794Z
+K 7
+svn:log
+V 62
+Apply [ 132 ] Add SOURCE_DATE_EPOCH support to date directive.
+END

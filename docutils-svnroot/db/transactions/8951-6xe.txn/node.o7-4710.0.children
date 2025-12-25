@@ -1,0 +1,119 @@
+K 8
+Dir.smak
+V 25
+file 3f-5058.0.r6233/7406
+K 18
+decorations_01.dom
+V 27
+file ob-4710.0.r4710/156689
+K 18
+decorations_01.rst
+V 27
+file of-4710.0.r4710/154753
+K 18
+decorations_02.dom
+V 27
+file oh-4710.0.r4710/157919
+K 18
+decorations_02.rst
+V 27
+file oj-4710.0.r4710/154990
+K 18
+decorations_03.dom
+V 24
+file u-6233.0.r6233/6708
+K 18
+decorations_03.rst
+V 24
+file w-6233.0.r6233/6243
+K 14
+docinfo_01.dom
+V 24
+file 9-5353.0.r5353/1178
+K 14
+docinfo_01.rst
+V 24
+file b-5353.0.r5353/1888
+K 6
+docurl
+V 26
+dir ol-4710.0.r4710/157748
+K 14
+emptytopic.dom
+V 24
+file y-6233.0.r6233/7658
+K 14
+emptytopic.rst
+V 25
+file 10-6233.0.r6233/7174
+K 8
+nodocurl
+V 26
+dir ot-4710.0.r4710/156281
+K 14
+sectnum_01.dom
+V 22
+file d-5353.0.r5441/65
+K 14
+sectnum_01.rst
+V 24
+file f-5353.0.r5353/1407
+K 14
+sectnum_02.dom
+V 25
+file 12-6233.0.r6233/6942
+K 14
+sectnum_02.rst
+V 25
+file 14-6233.0.r6233/6476
+K 14
+targets_01.dom
+V 27
+file p1-4710.0.r4710/156454
+K 14
+targets_01.rst
+V 27
+file p3-4710.0.r4710/154520
+END
+D 8
+Dir.smak
+D 18
+decorations_01.dom
+D 18
+decorations_01.rst
+D 18
+decorations_02.dom
+D 18
+decorations_02.rst
+D 18
+decorations_03.dom
+D 18
+decorations_03.rst
+D 14
+docinfo_01.dom
+D 14
+docinfo_01.rst
+K 6
+docurl
+V 23
+dir ol-4710.0.t8951-6xe
+D 14
+emptytopic.dom
+D 14
+emptytopic.rst
+K 8
+nodocurl
+V 23
+dir ot-4710.0.t8951-6xe
+D 14
+sectnum_01.dom
+D 14
+sectnum_01.rst
+D 14
+sectnum_02.dom
+D 14
+sectnum_02.rst
+D 14
+targets_01.dom
+D 14
+targets_01.rst

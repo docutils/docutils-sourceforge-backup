@@ -1,0 +1,27 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-12-16T22:33:24.500138Z
+K 7
+svn:log
+V 621
+Fix LaTeX section numbering
+
+Translate section level 0 to LaTeX section level when suppressing automatic
+section numbering by LaTeX. (LaTeX section levels may start at -1, 0, or 1.)
+
+Don't modify the "PreambleCmds" class attribute.
+This may lead to wrong output when several documents are converted in one
+Python run. Fix the test cases where this wrong output slipped attention and
+was quoted as expected output!
+
+Augment the list of LaTeX documentclasses that provide "chapter"
+sections.
+
+Move section numbering configuration to `visit_section()`.
+(It is only required if there is at least one section in the document.)
+END

@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2022-06-19T20:23:12.183892Z
+K 7
+svn:log
+V 117
+Add wrapper around groups of footnotes to facilitate styling as a list.
+
+Adapt style sheets and tests.
+
+Cf. bug #450.
+END

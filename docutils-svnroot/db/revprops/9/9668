@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-05-02T15:55:23.432995Z
+K 7
+svn:log
+V 345
+Doctree documentation: further fixes and small edits.
+
+`<colspec>` is an empty elment.
+
+`<title>` belongs to the two categories
+"structural subelements" (document, section, sidebar, and topic title)
+and "body subelements" (used in `<admontion>` and `<table>`)
+
+Append section with bibliographic references
+for the main reference document models.
+END

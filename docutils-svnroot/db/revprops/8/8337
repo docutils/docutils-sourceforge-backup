@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-08-26T12:09:23.839936Z
+K 7
+svn:log
+V 322
+Remove unused lxml import blocks
+
+These have been commented out for over 10 years [1] and aren't coming
+back.  Remove them along with checks for the 'xml' library, which is
+present in all versions of Python we support.
+
+[1] https://sourceforge.net/p/docutils/code/5846/
+
+Signed-off-by: Stephen Finucane <stephen@that.guru>
+END

@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 12
+paultremblay
+K 8
+svn:date
+V 27
+2011-09-26T19:27:15.279998Z
+K 7
+svn:log
+V 185
+Creating a branch. The new branch will reflect the way to use the xsl
+stylesheets with the pyton interface. I am now going to put a simpler
+version of the XSL stylesheets in the trunk.
+
+END

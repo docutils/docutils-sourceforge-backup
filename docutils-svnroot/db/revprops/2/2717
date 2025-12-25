@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-10-18T23:39:41.000000Z
+K 7
+svn:log
+V 123
+updated description of compound paragraphs to what is really planned;
+we don't want to mix inline and block level elements
+
+END

@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-01-30T21:35:05.220689Z
+K 7
+svn:log
+V 189
+latex writer: announced changes.
+
+Remove backwards compatibility code for the deprecated
+`styling command`__ prefix ``\docutilsrole``.
+
+Log entries for new setting "legacy_class_functions".
+END

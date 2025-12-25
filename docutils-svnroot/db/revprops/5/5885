@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2009-03-09T14:00:35.564736Z
+K 7
+svn:log
+V 186
+multistyle_path_rst_html4css1.py: removed test for absolute path
+as this fails under Windows under certain conditions 
+(a drive letter might be added if source and target drives differ).
+END

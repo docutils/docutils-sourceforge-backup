@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2008-07-17T06:13:34.505764Z
+K 7
+svn:log
+V 69
+Change MiscTests.test_node_class_names to make it pass for python2.6
+
+END

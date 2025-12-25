@@ -1,0 +1,524 @@
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 8-1437.0.r1437/123
+type: file
+count: 0
+text: 1394 0 40 28 e2980bd00265fa9a0540e51fdf6832f9 f07f6422ca0d528cf94f57e74f8fcf24c8f02cbf 1436-13w/_a
+props: 1437 0 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/sandbox/paultremblay/docutils_nest/docutils_nest/__init__.py
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: d-1437.0.r1437/537
+type: file
+count: 0
+text: 1411 51 125 4029 3b825976f126ea97cd5a5530610da85d 65d4faac7f109f0fd7dc841062b97f3e489e12bd 1436-13w/_e
+props: 1437 414 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/sandbox/paultremblay/docutils_nest/docutils_nest/nest_docutils.py
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: n-1437.0.r1437/962
+type: file
+count: 0
+text: 1394 33175 699 1720 225ed61a925c534f33bd08fd1070c7c1 772bdd46fee62b8f70716489bab065b613726919 1436-13w/_o
+props: 1437 839 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/sandbox/paultremblay/docutils_nest/docutils_nest/well_formed_xml.py
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: b-1437.0.r1437/1392
+type: file
+count: 0
+text: 1394 2436 3216 12780 71d2e9416304ac789f560fac9acdcf76 aed2109d55e9f96497cd7a2330d9aebbe0372a9a 1436-13w/_c
+props: 1437 1269 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/sandbox/paultremblay/docutils_nest/docutils_nest/inline_to_xml.py
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: f-1437.0.r1437/1823
+type: file
+count: 0
+text: 1394 17412 2874 10416 cbe7f618a65185e839eaaeda2926bd3d b7738ccb88bd41929d85530c0582cf25b276cb1b 1436-13w/_g
+props: 1437 1700 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/sandbox/paultremblay/docutils_nest/docutils_nest/nested_inline.py
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: j-1437.0.r1437/2255
+type: file
+count: 0
+text: 1394 27529 952 2586 81503c6da5969d3c29778dd07b7f2856 60b55b8ce6bece806c94fc0d086f4f14c79e60b7 1436-13w/_k
+props: 1437 2132 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/sandbox/paultremblay/docutils_nest/docutils_nest/read_config.py
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: h-1437.0.r1437/2683
+type: file
+count: 0
+text: 1393 565 2298 10203 b0e9df0c6a3adeaa21eb94af01f3c918 845bb13d48eb8cba45da70b5b4fc79f7887250bb 1436-13w/_i
+props: 1437 2560 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/sandbox/paultremblay/docutils_nest/docutils_nest/options_trem.py
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: l-1437.0.r1437/3112
+type: file
+count: 0
+text: 1394 30094 1005 3612 503546b3746e103c85f50094b9ef0050 6eb9c803c3abb2d4acfef0a76873d561b5c01cbd 1436-13w/_m
+props: 1437 2989 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/sandbox/paultremblay/docutils_nest/docutils_nest/rst_options.py
+copyroot: 0 /
+
+PLAIN
+K 11
+__init__.py
+V 23
+file 8-1437.0.r1437/123
+K 16
+inline_to_xml.py
+V 24
+file b-1437.0.r1437/1392
+K 16
+nest_docutils.py
+V 23
+file d-1437.0.r1437/537
+K 16
+nested_inline.py
+V 24
+file f-1437.0.r1437/1823
+K 15
+options_trem.py
+V 24
+file h-1437.0.r1437/2683
+K 14
+read_config.py
+V 24
+file j-1437.0.r1437/2255
+K 14
+rst_options.py
+V 24
+file l-1437.0.r1437/3112
+K 18
+well_formed_xml.py
+V 23
+file n-1437.0.r1437/962
+END
+ENDREP
+id: 7-1437.0.r1437/3840
+type: dir
+count: 0
+text: 1437 3418 409 409 33bd4df6301efe951821f34e140dea5b
+cpath: /trunk/sandbox/paultremblay/docutils_nest/docutils_nest
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: r-1437.0.r1437/4141
+type: file
+count: 0
+text: 1420 1086 54 541 1efa86eeae211c0e6364c2c2358aea79 f13d820202207b55ef3f0d001f1d1fffefbd5226 1436-13w/_s
+props: 1437 4018 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/sandbox/paultremblay/docutils_nest/setup.py
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.1
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 4-1437.0.r1437/4546
+type: file
+count: 0
+text: 1420 543 388 2425 5f832a113b222b9d46d635ee38d0526f f243366c91fab8e4af8ea604fab7777e0106296e 1436-13w/_6
+props: 1437 4423 110 0 94a2a96823d3c54fff31bdd51de17982
+cpath: /trunk/sandbox/paultremblay/docutils_nest/configure.py
+copyroot: 0 /
+
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.3
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: p-1437.0.r1437/4956
+type: file
+count: 0
+text: 1393 565 2298 10203 b0e9df0c6a3adeaa21eb94af01f3c918 845bb13d48eb8cba45da70b5b4fc79f7887250bb 1436-13w/_q
+props: 1437 4833 110 0 fd27c383f48a4fbbd90a59fbcfc8b3be
+cpath: /trunk/sandbox/paultremblay/docutils_nest/options_trem.py
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 24
+file 4-1396.0.r1421/2633
+K 12
+__init__.pyc
+V 25
+file 8-1394.0.r1394/37155
+K 12
+configure.py
+V 24
+file 4-1437.0.r1437/4546
+K 3
+doc
+V 23
+dir a-1394.0.r1421/2318
+K 13
+docutils_nest
+V 23
+dir 7-1437.0.r1437/3840
+K 15
+options_trem.py
+V 24
+file p-1437.0.r1437/4956
+K 14
+read_config.py
+V 25
+file y-1394.0.r1394/36739
+K 8
+setup.py
+V 24
+file r-1437.0.r1437/4141
+K 10
+test_files
+V 25
+dir 16-1394.0.r1394/38766
+END
+ENDREP
+id: 3-1394.0.r1437/5685
+type: dir
+pred: 3-1394.0.r1435/247
+count: 6
+text: 1437 5248 424 424 c75d5354eaf4e7dc75795f5a62e7dc67
+cpath: /trunk/sandbox/paultremblay/docutils_nest
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 24
+file 4-1323.0.r1420/2761
+K 13
+docutils_nest
+V 23
+dir 3-1394.0.r1437/5685
+K 14
+rst_to_docbook
+V 23
+dir 6-1420.0.r1430/4465
+K 7
+scripts
+V 23
+dir 3-1402.0.r1402/1469
+END
+ENDREP
+id: 2-1323.0.r1437/6075
+type: dir
+pred: 2-1323.0.r1436/200
+count: 24
+text: 1437 5874 188 188 438f6b546bf2c56ae75476bd8008d721
+cpath: /trunk/sandbox/paultremblay
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 21
+file 3-17.0.r1321/169
+K 4
+aahz
+V 22
+dir 2-820.0.r1174/2130
+K 4
+bbum
+V 23
+dir 2-1039.0.r1206/2133
+K 5
+blais
+V 24
+dir 2-1316.0.r1316/43864
+K 6
+davidg
+V 21
+dir 6-17.0.r1138/1150
+K 12
+dreamcatcher
+V 22
+dir 2-1300.0.r1357/657
+K 7
+grubert
+V 22
+dir 2-112.0.r1428/1593
+K 8
+gschwant
+V 22
+dir 2-675.0.r1424/1714
+K 4
+ianb
+V 22
+dir 2-881.0.r1231/2818
+K 3
+mly
+V 23
+dir 2-1431.0.r1432/2681
+K 3
+mwh
+V 21
+dir 2-857.0.r862/1023
+K 7
+oliverr
+V 23
+dir 2-202.0.r1269/11172
+K 12
+paultremblay
+V 23
+dir 2-1323.0.r1437/6075
+K 7
+pobrien
+V 23
+dir 2-1158.0.r1292/1381
+K 7
+richard
+V 22
+dir 2-526.0.r1417/2696
+K 6
+simonb
+V 21
+dir 2-252.0.r1227/852
+K 4
+tibs
+V 21
+dir 2-62.0.r1089/1615
+K 4
+wilk
+V 23
+dir 2-1258.0.r1366/1267
+END
+ENDREP
+id: 1-17.0.r1437/6981
+type: dir
+pred: 1-17.0.r1436/1101
+count: 357
+text: 1437 6251 717 717 3f5fda154bd4767cdba6d6a5d0fdfb09
+cpath: /trunk/sandbox
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r1434/7452
+K 7
+sandbox
+V 21
+dir 1-17.0.r1437/6981
+K 3
+web
+V 20
+dir 1-2.0.r1346/1210
+END
+ENDREP
+id: 3-1.0.r1437/7271
+type: dir
+pred: 3-1.0.r1436/1390
+count: 1429
+text: 1437 7142 116 116 1b4196364700fc5a356614e666ad0a00
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 17
+dir 0-1.0.r63/562
+K 4
+tags
+V 17
+dir 2-1.0.r65/217
+K 5
+trunk
+V 20
+dir 3-1.0.r1437/7271
+END
+ENDREP
+id: 0.0.r1437/7544
+type: dir
+pred: 0.0.r1436/1663
+count: 1437
+text: 1437 7423 108 108 ff98aa10d2f08072d8d99bcdb261cece
+cpath: /
+copyroot: 0 /
+
+_7.0.t1436-13w add-dir false false /trunk/sandbox/paultremblay/docutils_nest/docutils_nest
+
+_8.0.t1436-13w add-file true true /trunk/sandbox/paultremblay/docutils_nest/docutils_nest/__init__.py
+
+_d.0.t1436-13w add-file true true /trunk/sandbox/paultremblay/docutils_nest/docutils_nest/nest_docutils.py
+
+_n.0.t1436-13w add-file true true /trunk/sandbox/paultremblay/docutils_nest/docutils_nest/well_formed_xml.py
+
+_b.0.t1436-13w add-file true true /trunk/sandbox/paultremblay/docutils_nest/docutils_nest/inline_to_xml.py
+
+_f.0.t1436-13w add-file true true /trunk/sandbox/paultremblay/docutils_nest/docutils_nest/nested_inline.py
+
+_j.0.t1436-13w add-file true true /trunk/sandbox/paultremblay/docutils_nest/docutils_nest/read_config.py
+
+_r.0.t1436-13w add-file true true /trunk/sandbox/paultremblay/docutils_nest/setup.py
+
+_4.0.t1436-13w add-file true true /trunk/sandbox/paultremblay/docutils_nest/configure.py
+
+_h.0.t1436-13w add-file true true /trunk/sandbox/paultremblay/docutils_nest/docutils_nest/options_trem.py
+
+_l.0.t1436-13w add-file true true /trunk/sandbox/paultremblay/docutils_nest/docutils_nest/rst_options.py
+
+_p.0.t1436-13w add-file true true /trunk/sandbox/paultremblay/docutils_nest/options_trem.py
+
+
+7544 7687

@@ -1,0 +1,26 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2019-08-26T16:42:38.683423Z
+K 7
+svn:log
+V 580
+py3: Replace 'sys.maxint' with 'sys.maxsize'
+
+From the Python 3 release docs [1]:
+
+  The sys.maxint constant was removed, since there is no longer a limit
+  to the value of integers. However, sys.maxsize can be used as an
+  integer larger than any practical list or string index. It conforms to
+  the implementation’s “natural” integer size and is typically the
+  same as sys.maxint in previous releases on the same platform (assuming
+  the same build options).
+
+[1] https://docs.python.org/3.1/whatsnew/3.0.html#integers
+
+Signed-off-by: Stephen Finucane <stephen@that.guru>
+END

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-04-25T03:40:52.000000Z
+K 7
+svn:log
+V 162
+  - Renamed from UnitTestFolder.py.  - Now supports true packages containing test modules    (``__init__.py`` files required); fixes duplicate module name bug.
+
+END

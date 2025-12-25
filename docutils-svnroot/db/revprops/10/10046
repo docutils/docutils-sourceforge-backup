@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2025-03-09T01:45:28.721413Z
+K 7
+svn:log
+V 195
+Introduce a private typing utility module
+
+This eliminates all first-party runtime imports of the typing module,
+and centralises version checks for new features (such as TypeAlias)
+in one place.
+
+END

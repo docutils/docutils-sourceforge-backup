@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2010-07-09T19:00:18.432355Z
+K 7
+svn:log
+V 41
+add option --dry-run for testing purpose
+
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-06-14T16:19:49.961454Z
+K 7
+svn:log
+V 63
+Use a description list for the RELEASE NOTES change categories.
+END

@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-09-10T16:18:59.172077Z
+K 7
+svn:log
+V 362
+* Fixed bugs in line blocks
+* Fixed bugs in parsed literals
+* Fixed a bug where a paragraph ending in an interpreted text item did
+  not result in a new paragraph
+* Fixed a bug with processing quotes around marked up text
+* Fixed a bug with special characters in options
+* Added support for outputting mathml to latex (requires
+  Text::ASCIIMathML 0.4 or later)
+
+END

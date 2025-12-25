@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-05-13T20:49:10.602121Z
+K 7
+svn:log
+V 116
+Document more doctree elements + documentation fixes.
+
+Document `<pending>` and `<reference>`.
+
+Various small fixes.
+END

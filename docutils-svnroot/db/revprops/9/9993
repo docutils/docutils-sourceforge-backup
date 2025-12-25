@@ -1,0 +1,33 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-12-04T13:32:20.787648Z
+K 7
+svn:log
+V 1006
+Revise output file path configuration setting.
+
+The command-line usage pattern will change in Docutils 1.0 (cf. RELASE-NOTES).
+In preparation, the "output" setting was introduced in Docutils 0.20.
+As command line option, "--output" is a suitable name, however,
+in a wider context, "output" is ambiguous and rather associated with the
+actual output than the path to the output file.
+
+Provide `settings.output_path` as "canonical" setting and
+`--output` and `--output-path` as command line options.
+
+Let `core.Publisher.set_destination()` synchronize `settings.output_path` with
+the legacy settings `settings.output`, and `settings._destination`.
+If the `destination_path` argument is specified, it overrides all three
+settings and conflicting settings no longer raise an Error.
+
+Use "settings.output_path" instead of the legacy settings in utils, transforms,
+and writers.
+
+Fix type hint for "destination" function argument in `Publisher.set_destination()`
+(cf. the docstring of `publish_programatically()`).
+END

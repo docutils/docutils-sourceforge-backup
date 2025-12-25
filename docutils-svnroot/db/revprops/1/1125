@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 8
+gschwant
+K 8
+svn:date
+V 27
+2003-01-11T14:28:27.000000Z
+K 7
+svn:log
+V 117
+
+Converts all ``.txt``-files of the tarball to ``.html``-files and opens
+``doc/index.html`` with default webbrowser.
+
+END

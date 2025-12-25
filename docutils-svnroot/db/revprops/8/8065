@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2017-05-04T13:06:23.918422Z
+K 7
+svn:log
+V 72
+Fix a regression in [r8062] (extra space with French smartquotes again).
+END

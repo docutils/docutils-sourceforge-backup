@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-12-01T22:43:32.698190Z
+K 7
+svn:log
+V 141
+docutils.io.FileInput: ensure read() returns a `str`.
+
+Decode data read from a file-like object, if it is a `bytes` instance.
+
+Fixes bug #514
+END

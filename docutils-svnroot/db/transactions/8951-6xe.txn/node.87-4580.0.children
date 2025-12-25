@@ -1,0 +1,25 @@
+K 15
+ExtractTests.pm
+V 26
+file 88-4580.0.r4580/65612
+K 15
+test_unicode.py
+V 26
+file 8b-4580.0.r4580/66131
+K 15
+unicode01.mydom
+V 26
+file 8d-4580.0.r4580/65850
+K 15
+unicode03.mydom
+V 26
+file 8f-4580.0.r4580/66427
+END
+D 15
+ExtractTests.pm
+D 15
+test_unicode.py
+D 15
+unicode01.mydom
+D 15
+unicode03.mydom

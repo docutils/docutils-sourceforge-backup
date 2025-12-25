@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2023-06-27T20:04:16.146438Z
+K 7
+svn:log
+V 259
+Use the same format for :header: option and main data in "csv-table" directive.
+
+The separate HeaderDialect was introduced 2004-06-17 (in the sandbox)
+for unknown reasons while the documentation always said
+"Must use the same CSV format as the main CSV data."
+END

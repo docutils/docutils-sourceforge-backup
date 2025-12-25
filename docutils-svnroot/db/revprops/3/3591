@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-06-27T00:59:00.257318Z
+K 7
+svn:log
+V 112
+do not set reporter=None -- pickling is not the only use case;
+added documentation about doctree.settings object
+END

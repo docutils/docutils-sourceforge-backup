@@ -1,0 +1,219 @@
+id: 3-1497.0-3532.r3532/0
+type: file
+pred: 3-1497.0.r3470/246
+count: 4
+text: 3470 0 222 6628 9278a8d1e28d32b5ac08d8afe5ff107c c644759db8677c11a32a65a19a116f78964049ec 3469-2od/_4
+props: 1497 2208 136 0 cd16f4c3541932a389cc4ebf2ace9d97
+cpath: /trunk/docutils/tools/dev/unicode2rstsubs.py
+copyfrom: 3530 /trunk/docutils/tools/unicode2rstsubs.py
+
+PLAIN
+K 10
+README.txt
+V 24
+file 7-3488.0.r3488/2785
+K 19
+profile_docutils.py
+V 26
+file 3-3449.0-3490.r3490/0
+K 18
+unicode2rstsubs.py
+V 26
+file 3-1497.0-3532.r3532/0
+END
+ENDREP
+id: 5-3488.0.r3532/520
+type: dir
+pred: 5-3488.0.r3490/468
+count: 2
+text: 3532 344 163 163 91550ad9f73c0bec7c76ca76bbe7bbf6
+cpath: /trunk/docutils/tools/dev
+copyroot: 0 /
+
+PLAIN
+K 12
+buildhtml.py
+V 22
+file 3-430.0.r2504/598
+K 3
+dev
+V 22
+dir 5-3488.0.r3532/520
+K 13
+docutils.conf
+V 22
+file 3-407.0.r3526/634
+K 7
+editors
+V 23
+dir 3-1157.0.r3494/1106
+K 17
+pep-html-template
+V 22
+file 3-312.0.r3526/342
+K 6
+pep.py
+V 23
+file 3-288.0.r1896/6536
+K 12
+quicktest.py
+V 22
+file 72-18.0.r3103/100
+K 11
+rst2html.py
+V 23
+file 5-1756.0.r2391/234
+K 12
+rst2latex.py
+V 25
+file b-1202.0.r2548/27720
+K 15
+rst2newlatex.py
+V 24
+file 3-3260.0.r3260/6983
+K 16
+rst2pseudoxml.py
+V 23
+file 3-2467.0.r2467/149
+K 10
+rst2xml.py
+V 23
+file 3-2468.0.r2468/149
+K 11
+stylesheets
+V 22
+dir 74-18.0.r3484/1397
+END
+ENDREP
+id: 6w-18.0.r3532/1302
+type: dir
+pred: 6w-18.0.r3526/1584
+count: 267
+text: 3532 691 598 598 6f98280699cb657e904c7b6cecda343a
+cpath: /trunk/docutils/tools
+copyroot: 0 /
+
+PLAIN
+K 8
+BUGS.txt
+V 24
+file 2-2181.0.r3406/1611
+K 11
+COPYING.txt
+V 21
+file 2-18.0.r3096/363
+K 7
+FAQ.txt
+V 22
+file 2-788.0.r3531/486
+K 11
+HISTORY.txt
+V 21
+file 5-18.0.r3528/213
+K 11
+MANIFEST.in
+V 21
+file 7-18.0.r2513/394
+K 10
+README.txt
+V 21
+file 9-18.0.r3407/847
+K 10
+THANKS.txt
+V 24
+file 2-2182.0.r3416/3502
+K 4
+docs
+V 20
+dir 3-7.0.r3529/1467
+K 8
+docutils
+V 22
+dir 1w-18.0.r3526/3350
+K 6
+extras
+V 22
+dir 2-1467.0.r2848/614
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 23
+dir 2-1465.0.r1661/2394
+K 8
+setup.py
+V 24
+file 46-18.0.r3472/71471
+K 4
+test
+V 22
+dir 48-18.0.r3518/2379
+K 5
+tools
+V 22
+dir 6w-18.0.r3532/1302
+END
+ENDREP
+id: 1-7.0.r3532/2111
+type: dir
+pred: 1-7.0.r3531/1401
+count: 2680
+text: 3532 1471 627 627 8fcdace581172fa48819c72066ce0d6d
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r3532/2111
+K 7
+sandbox
+V 21
+dir 1-17.0.r3530/2609
+K 3
+web
+V 19
+dir 1-2.0.r3524/773
+END
+ENDREP
+id: 3-1.0.r3532/2453
+type: dir
+pred: 3-1.0.r3531/1742
+count: 3476
+text: 3532 2325 115 115 ec302d1b92bdae269c435276ea45509b
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r3525/5735
+K 4
+tags
+V 19
+dir 2-1.0.r3383/196
+K 5
+trunk
+V 20
+dir 3-1.0.r3532/2453
+END
+ENDREP
+id: 0.0.r3532/2731
+type: dir
+pred: 0.0.r3531/2020
+count: 3532
+text: 3532 2605 113 113 f31a3f908a8edb416a5723e3e3f1415d
+cpath: /
+copyroot: 0 /
+
+3-1497._0.t3531-2q3 add-file false false /trunk/docutils/tools/dev/unicode2rstsubs.py
+3530 /trunk/docutils/tools/unicode2rstsubs.py
+3-1497.0.r3470/246 delete-file false false /trunk/docutils/tools/unicode2rstsubs.py
+
+
+2731 2874

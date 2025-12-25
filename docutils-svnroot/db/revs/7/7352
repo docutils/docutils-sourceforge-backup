@@ -1,0 +1,1628 @@
+id: 4-6624.b-7352.r7352/0
+type: file
+pred: 4-6624.b-7351.r7351/0
+count: 3
+text: 6711 324 101 87 a53c969dc92df54c34bb7cb9da526346 32f35308de8224747511003fba0f4c327e0e75c2 6710-56e/_7
+props: 6624 540 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/citation.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/citation.rst
+
+id: 7-6624.1a-7352.r7352/352
+type: file
+pred: 7-6624.1a-7351.r7351/356
+count: 2
+text: 6624 169 98 85 b46458f4d083d83e86713d233dda985c 0d91d66451527d6e89ffc0fefd3cae3d8dfd9481 6623-53z/_8
+props: 6624 912 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/quoted_literal_blocks.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/quoted_literal_blocks.rst
+
+id: 6-7174.14-7352.r7352/735
+type: file
+pred: 6-7174.14-7351.r7351/739
+count: 4
+text: 7340 1228 988 1953 4629af65b4fa52e153de8c431052f15f 7bc05c463d1955b96463aec0b1e82bab68875094 7339-5ny/_d
+cpath: /trunk/sandbox/docbook/test_files/math_asciimath.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/math_asciimath.rst
+
+id: 4-6810.m-7352.r7352/1054
+type: file
+pred: 4-6810.m-7351.r7351/1063
+count: 2
+text: 6810 0 706 1614 6a72b0d0dfe969b66bb0d20bc141f001 57e731e8634d133ca20ef93c53070152a728b3fe 6809-595/_6
+props: 6810 719 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/first_paragraph.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/first_paragraph.rst
+
+id: 4-6545.x-7352.r7352/1426
+type: file
+pred: 4-6545.x-7351.r7351/1434
+count: 4
+text: 7347 0 339 322 e0e1a8689739008765bd340d0eee03b8 25b4e6793e474d4b8df3fa29c097a983e9258c0e 7346-5o5/_5
+props: 6545 86 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/inline.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/inline.rst
+
+id: l-6719.1o-7352.r7352/1778
+type: file
+pred: l-6719.1o-7351.r7351/1790
+count: 2
+text: 6719 2449 165 148 c9022ccf671ffbada8bf4b58282c8504 c9030625ea9d1689836a095838452458eb58f552 6718-56m/_m
+props: 6719 2627 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/topic.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/topic.rst
+
+id: 8-6711.l-7352.r7352/2135
+type: file
+pred: 8-6711.l-7351.r7351/2146
+count: 2
+text: 6711 449 308 787 aef56ade50c0ff0e8925d7bfa71e4ef8 85219f0f959ae6efbd7ccaab14007edc091471cb 6710-56e/_9
+props: 6711 18702 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/figure.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/figure.rst
+
+id: 4-6550.9-7352.r7352/2492
+type: file
+pred: 4-6550.9-7351.r7351/2504
+count: 4
+text: 6896 0 92 786 c78cc2627652b008d12f59198ad09bbf 3bde2a3c59579d8e60b35a465b3d4d517776d8aa 6895-5bj/_5
+props: 6550 326 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/bullet_list.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/bullet_list.rst
+
+id: 7-6719.e-7352.r7352/2854
+type: file
+pred: 7-6719.e-7351.r7351/2865
+count: 2
+text: 6719 255 141 127 e498d22188f5dec4589aba0d76e5b5c8 6c896a85baf5572d0690577562c40735f5c6b270 6718-56m/_8
+props: 6719 3001 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/container.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/container.rst
+
+id: 5-6521.10-7352.r7352/3216
+type: file
+pred: 5-6521.10-7351.r7351/3227
+count: 2
+text: 6521 0 15606 36186 89059d95ed4e99cb5097a1df90198076 45c6db167ecf0e1b190ca11da2fafb602799d48d 6520-514/_7
+cpath: /trunk/sandbox/docbook/test_files/long_plain.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/long_plain.rst
+
+id: 4-6561.g-7352.r7352/3529
+type: file
+pred: 4-6561.g-7351.r7351/3540
+count: 3
+text: 6576 0 63 242 aced625287472ce7dfecd9921a25d87e 502c89778319338a61a515a355dcf90b5103378b 6575-52n/_5
+props: 6561 235 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/definition_list.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/definition_list.rst
+
+id: 4-6533.1n-7352.r7352/3899
+type: file
+pred: 4-6533.1n-7351.r7351/3908
+count: 5
+text: 6570 0 61 490 5e348670126e071f60b949b7090bd6c8 e08c36a0a930c135c14d009fcb8015be440ef6de 6569-52h/_5
+cpath: /trunk/sandbox/docbook/test_files/toc.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/toc.rst
+
+id: 4-7183.15-7352.r7352/4193
+type: file
+pred: 4-7183.15-7351.r7351/4199
+count: 2
+text: 7183 0 85 72 33da35c0e66350263204a0f9f849c729 2b21b20a4ce3fb3d7a3984e841391f98c5793753 7182-5ji/_6
+cpath: /trunk/sandbox/docbook/test_files/math_latex.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/math_latex.rst
+
+id: h-6719.1b-7352.r7352/4500
+type: file
+pred: h-6719.1b-7351.r7351/4508
+count: 2
+text: 6719 1555 70 58 4a9b94c39c89151a13e1bf77497b88d1 0941046d67189fc246c616c55995dddc9d533ae9 6718-56m/_i
+props: 6719 3378 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/rubric.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/rubric.rst
+
+id: 6-6591.7-7352.r7352/4857
+type: file
+pred: 6-6591.7-7351.r7351/4864
+count: 4
+text: 7341 0 176 666 26d287b447f9371d2893d324cbebb74a d286c48ba1d1e8a6e0b5477acd64e5f402e55830 7340-5nz/_5
+props: 6591 436 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/bibliographic_fields_toc.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/bibliographic_fields_toc.rst
+
+id: 4-6548.1p-7352.r7352/5246
+type: file
+pred: 4-6548.1p-7351.r7351/5257
+count: 2
+text: 6548 0 1596 3230 11ebef14f81e4142f4287449ad890b64 f97a429ec4c797d464499b01bedc476084fd2a0f 6547-51v/_6
+props: 6548 1609 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/transition.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/transition.rst
+
+id: d-6719.17-7352.r7352/5612
+type: file
+pred: d-6719.17-7351.r7351/5622
+count: 2
+text: 6719 977 124 111 3ba7f2801c65949082e06c5cd9f65489 0f413bf7be49cb4cee94f5fcda399b336e928eff 6718-56m/_e
+props: 6719 4128 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/parsed_literal.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/parsed_literal.rst
+
+id: 4-6685.8-7352.r7352/5986
+type: file
+pred: 4-6685.8-7351.r7351/5995
+count: 2
+text: 6685 0 615 1550 2d748c03d819cf55f98d78fa65966321 b7287205f00895f7506dce19e2588f298f92b592 6684-55o/_6
+props: 6685 1518 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/block.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/block.rst
+
+id: b-6719.u-7352.r7352/6339
+type: file
+pred: b-6719.u-7351.r7351/6348
+count: 2
+text: 6719 853 111 98 52f5ee8c43a89807015350c0d762524c 98747b41c2b1a94c2fbd57cc65f9b33a2fc0a844 6718-56m/_c
+props: 6719 3751 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/highlights.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/highlights.rst
+
+id: 9-6624.1j-7352.r7352/6702
+type: file
+pred: 9-6624.1j-7351.r7351/6711
+count: 2
+text: 6624 280 247 797 040d5a8d669aaa8cfbc585b5183d85ae 41de66129bcd5b1edd57d58cd666d176166ce89e 6623-53z/_a
+props: 6624 1298 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/table_grid.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/table_grid.rst
+
+id: 4-6594.16-7352.r7352/7068
+type: file
+pred: 4-6594.16-7351.r7351/7076
+count: 2
+text: 6594 0 491 947 539c06eb131adc95755ca7ffc9fbab47 0483c156afe1c09b7d00980bc9d53d8dd848e97b 6593-535/_6
+props: 6594 504 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/opt_list.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/opt_list.rst
+
+id: 4-6712.4-7352.r7352/7427
+type: file
+pred: 4-6712.4-7351.r7351/7433
+count: 2
+text: 6712 0 99716 101477 ee9adacc8840c1f4f8aea4e765e6c5f9 9afff42935d856164304b1e8706fff5741721352 6711-56f/_6
+props: 6712 137122 37 0 d99d5193015a7bc1a7e3a4e8fc1e49ba
+cpath: /trunk/sandbox/docbook/test_files/badaman_treasure_chest.png
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/badaman_treasure_chest.png
+
+id: 4-6848.d-7352.r7352/7820
+type: dir
+pred: 4-6848.d-7351.r7351/7828
+count: 20
+text: 6991 596 2013 2013 8a21a6b61fd21a99f253fde3170a0247
+cpath: /trunk/sandbox/docbook/test_files/conf_files
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/conf_files
+
+id: d-6712.1q-7352.r7352/8070
+type: file
+pred: d-6712.1q-7351.r7351/8078
+count: 2
+text: 6712 129655 7454 7437 e87b48e77dbbaf75a34bf511135cc01e bba0f4e981e61ecd2ed856e2eed6d4a77ef7641a 6711-56f/_e
+props: 6712 137475 37 0 d99d5193015a7bc1a7e3a4e8fc1e49ba
+cpath: /trunk/sandbox/docbook/test_files/waves.png
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/waves.png
+
+id: 4-6575.k-7352.r7352/8433
+type: file
+pred: 4-6575.k-7351.r7351/8442
+count: 3
+text: 6644 0 95 419 99ab7e12672af63eed3631216b2587bc 41d97a2d6e936d26b73800f561dd40479dbf6110 6643-54j/_5
+props: 6575 431 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/field_lists.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/field_lists.rst
+
+id: 4-6571.1c-7352.r7352/8795
+type: file
+pred: 4-6571.1c-7351.r7351/8803
+count: 2
+text: 6571 0 117 537 7d43dde5c473fb836589b6c236bd111f 9a7af3f72becd954b1a7a1f1469c3a9e71928c91 6570-52i/_6
+props: 6571 130 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/section.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/section.rst
+
+id: 4-6541.z-7352.r7352/9152
+type: file
+pred: 4-6541.z-7351.r7351/9158
+count: 2
+text: 6541 0 338 693 10b595b11f37530d6e2e4b187528ce36 388b2175d3c9aeeff35d87b25875fb2bed5f6aff 6540-51o/_6
+props: 6541 351 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/literal_block.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/literal_block.rst
+
+id: 8-6521.p-7352.r7352/9519
+type: file
+pred: 8-6521.p-7351.r7351/9524
+count: 4
+text: 6549 0 31 36349 4c48de893b5ea47d260f2d8590566ef4 b04ddf7e2535eb2c05c705a79fbb68f7c1383ff1 6548-51w/_5
+cpath: /trunk/sandbox/docbook/test_files/header_footer.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/header_footer.rst
+
+id: j-6719.1d-7352.r7352/9833
+type: file
+pred: j-6719.1d-7351.r7351/9840
+count: 2
+text: 6719 1638 798 2625 c50e1a5946506c40928e2355a390744c 0b9687514ba63cdcc7f9987db365df52cae7deb0 6718-56m/_k
+props: 6719 4510 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/sidebar.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/sidebar.rst
+
+id: 4-6719.c-7352.r7352/10195
+type: file
+pred: 4-6719.c-7351.r7351/10201
+count: 2
+text: 6719 0 242 225 3e0c82d024ba43ff800fc6da9e8ea243 099d60a0a48e2e1ee17c2edc617246d84e89629a 6718-56m/_6
+props: 6719 4887 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/compound_paragraph.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/compound_paragraph.rst
+
+id: 7-6712.5-7352.r7352/10575
+type: file
+pred: 7-6712.5-7351.r7351/10580
+count: 2
+text: 6712 99729 11449 87447 47ae98f056aab1868251b0f8020557a5 745049248c3edd7ad3eb9ef74d0c7c1156aa3109 6711-56f/_8
+cpath: /trunk/sandbox/docbook/test_files/badaman_treasure_chest.svg
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/badaman_treasure_chest.svg
+
+id: 7-6855.1f-7352.r7352/10916
+type: file
+pred: 7-6855.1f-7351.r7351/10922
+count: 2
+text: 6855 999 2465 4900 5bfa8520cbbea7ccf18788a5490aff88 ecbbe8edcfc7333e73e2c933ae241bea1c3a6115 6854-5ae/_8
+props: 6855 3477 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/simple2.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/simple2.rst
+
+id: 4-6940.1h-7352.r7352/11280
+type: file
+pred: 4-6940.1h-7351.r7351/11284
+count: 4
+text: 6940 0 258 812 ee6cbc2a92e3c176b016d32dab1931d4 fcc00d5c30b0281454596d28bd7b8895d88b34df 6939-5cr/_6
+props: 6940 1008 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/table_borderless.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/table_borderless.rst
+
+id: 8-7189.1g-7352.r7352/11658
+type: file
+pred: 8-7189.1g-7351.r7351/11662
+count: 2
+text: 7189 1886 126 113 4cc3472e94432828429b586ea539dfac 4b4101071ffd9f1a42785f41d583af87abcc3a90 7188-5jo/_a
+cpath: /trunk/sandbox/docbook/test_files/substitution.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/substitution.rst
+
+id: 4-6693.n-7352.r7352/11976
+type: file
+pred: 4-6693.n-7351.r7351/11983
+count: 3
+text: 6697 1420 75 2677 43c8593994bf30706fbbd499c5eee320 125eb5fb66615ce1b9fbc3f593734ed97a6f9bca 6696-560/_7
+props: 6693 1377 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/footnotes.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/footnotes.rst
+
+id: c-6711.w-7352.r7352/12341
+type: file
+pred: c-6711.w-7351.r7351/12347
+count: 2
+text: 6711 17512 305 288 e5826117de1b330646dcedd406e4216f 24f09bcb3bb462228e9e1fa15f0a960e06fd137e 6710-56e/_d
+props: 6711 19078 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/image.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/image.rst
+
+id: 4-6581.6-7352.r7352/12700
+type: file
+pred: 4-6581.6-7351.r7351/12706
+count: 5
+text: 7341 201 48 499 4f353eb0bf2dc128e19f52f623cea704 fcad9303f74a00c48f79458c0669bb77f2b7f920 7340-5nz/_6
+props: 6581 372 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/bibliographic_fields.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/bibliographic_fields.rst
+
+id: 4-6559.i-7352.r7352/13084
+type: file
+pred: 4-6559.i-7351.r7351/13093
+count: 2
+text: 6559 0 257 809 1324682561cb77c2547346750b7b9787 ed3420c14551f24c35f6c12bf0004174673e3c22 6558-526/_6
+props: 6559 270 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/enumerated_list.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/enumerated_list.rst
+
+id: 6-7347.a-7352.r7352/13457
+type: file
+pred: 6-7347.a-7351.r7351/13464
+count: 2
+text: 7347 362 171 654 7afaac97539cdfd9cdbe58d0a90ad4f9 132bdd9688e504486d38af8793932a1db8731bf1 7346-5o5/_7
+cpath: /trunk/sandbox/docbook/test_files/chapter.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/chapter.rst
+
+id: b-6712.1l-7352.r7352/13762
+type: file
+pred: b-6712.1l-7351.r7351/13772
+count: 2
+text: 6712 123017 6625 6608 c41c0874e1f63c53a3926d3a2f51e0b5 f13e52212f6de91ba98adaeaabe3ed000cc37ffd 6711-56f/_c
+props: 6712 138062 37 0 d99d5193015a7bc1a7e3a4e8fc1e49ba
+cpath: /trunk/sandbox/docbook/test_files/tent.png
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/tent.png
+
+id: a-6711.v-7352.r7352/14125
+type: file
+pred: a-6711.v-7351.r7351/14135
+count: 2
+text: 6711 770 16729 38942 32c6bd8fead44b4b710e79c83d8b9c97 0df94866b0ba79d7cd8a5e9a1bbbdeec6a28ae00 6710-56e/_b
+props: 6711 19455 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/hyperlinks.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/hyperlinks.rst
+
+id: 6-6922.11-7352.r7352/14496
+type: file
+pred: 6-6922.11-7351.r7351/14506
+count: 3
+text: 6933 0 32 47237 29fdd3083ce6b482abe43bee9a1eda91 390c32bb7d941ec514eb49282d62b08ed43ea471 6932-5ck/_5
+cpath: /trunk/sandbox/docbook/test_files/long_table.csv
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/long_table.csv
+
+id: 7-7171.13-7352.r7352/14808
+type: file
+pred: 7-7171.13-7351.r7351/14815
+count: 3
+text: 7174 0 44 85 693a61ddbd7bfa23e5b11748073c69a4 d6671285361b43fd9dfa52f79fc535d0e60d2525 7173-5j9/_5
+cpath: /trunk/sandbox/docbook/test_files/math.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/math.rst
+
+id: f-6719.19-7352.r7352/15105
+type: file
+pred: f-6719.19-7351.r7351/15114
+count: 2
+text: 6719 1114 428 411 ac2a1a93b70f2bcf6d146fb131ec1e1e 68b4df990cfbad46ee68ead11ab2e56b1d962ec9 6718-56m/_g
+props: 6719 5271 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/pull_quote.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/pull_quote.rst
+
+id: 4-6855.1e-7352.r7352/15474
+type: file
+pred: 4-6855.1e-7351.r7351/15481
+count: 2
+text: 6855 0 986 1821 16eab41727153b3084e1dfac7b5042f4 4dc5d772d41ae331de589bfd87b9498b422da13a 6854-5ae/_6
+props: 6855 3854 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/simple.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/simple.rst
+
+id: d-6968.q-7352.r7352/15833
+type: file
+pred: d-6968.q-7351.r7351/15838
+count: 3
+text: 7345 2699 21 3505 c611bc1f40c4df16fc15993cf8f37237 9ac247894139e7b8ee9c43556b6ad0fdb463b5ae 7344-5o3/_b
+props: 6968 66578 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/header_footer_toc1.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/header_footer_toc1.rst
+
+id: 9-6712.18-7352.r7352/16217
+type: file
+pred: 9-6712.18-7351.r7351/16226
+count: 2
+text: 6712 111191 11813 11835 46dd1432858493250ccd68345d470ec9 c0360a61ed3502d86b75d90c44ccd03aed762d14 6711-56f/_a
+props: 6712 138399 37 0 d99d5193015a7bc1a7e3a4e8fc1e49ba
+cpath: /trunk/sandbox/docbook/test_files/peak.png
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/peak.png
+
+id: 7-6676.1m-7352.r7352/16582
+type: file
+pred: 7-6676.1m-7351.r7351/16591
+count: 2
+text: 6676 539 230 213 04c539ab87e9a9e0bdfaf927151819e6 2a16747fe621a21dc5ace8f2087a5dac04a695d1 6675-55f/_8
+props: 6676 782 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/title_subtitle.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/title_subtitle.rst
+
+id: f-6968.r-7352.r7352/16957
+type: file
+pred: f-6968.r-7351.r7351/16963
+count: 3
+text: 7345 2748 22 3367 887ed35ea9c179014c65b783a17b420d 3b4c9076a24e93ee634be7131c3568aa71469b6b 7344-5o3/_c
+props: 6968 66969 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/header_footer_toc2.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/header_footer_toc2.rst
+
+id: h-6968.s-7352.r7352/17341
+type: file
+pred: h-6968.s-7351.r7351/17351
+count: 3
+text: 7345 3201 22 3673 14016aeb984a8014159c411a04248355 efaae80f2d09ec909f3fc7154453ea8cf6654f9f 7344-5o3/_e
+props: 6968 67360 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/header_footer_toc3.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/header_footer_toc3.rst
+
+id: j-6968.t-7352.r7352/17725
+type: file
+pred: j-6968.t-7351.r7351/17739
+count: 2
+text: 6968 64476 533 3551 b1fdd7b87bb7994fe6546998b102603f 410fbfd2e621f844b52804ff970c9ac82e219780 6967-5dj/_k
+props: 6968 67751 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/header_footer_toc4.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/header_footer_toc4.rst
+
+id: 9-6719.j-7352.r7352/18111
+type: file
+pred: 9-6719.j-7351.r7351/18125
+count: 2
+text: 6719 409 431 414 69f19d458e8692a868480f0e04caac54 8dcee02ab2c534c1a4c75c3ae0a81573d2b69b8f 6718-56m/_a
+props: 6719 5650 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/epigraph.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/epigraph.rst
+
+id: 4-7153.1r-7352.r7352/18473
+type: dir
+pred: 4-7153.1r-7351.r7351/18486
+count: 5
+text: 7204 671 239 239 20f5ffe5e76566b213735b6824f99aaa
+cpath: /trunk/sandbox/docbook/test_files/xsl
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/xsl
+
+id: b-6685.1k-7352.r7352/18710
+type: file
+pred: b-6685.1k-7351.r7351/18725
+count: 3
+text: 6990 15323 58 323 ec2cd412ded59503d47e79cb3d56209b 0b0ff3761b547c454685a84218cc6e3c48b6682e 6989-5e5/_p
+props: 6685 1890 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/table_simple.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/table_simple.rst
+
+id: 4-6676.y-7352.r7352/19083
+type: file
+pred: 4-6676.y-7351.r7351/19097
+count: 4
+text: 7169 61 197 1464 6897a7c512f57936997cb27f155a31d7 e02d3c42810f5c04d602c1bb16da4b9a036728c1 7168-5j4/_7
+props: 6676 1162 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/line_block.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/line_block.rst
+
+id: 4-6711.3-7352.r7352/19449
+type: file
+pred: 4-6711.3-7351.r7351/19466
+count: 2
+text: 6711 0 311 850 23f078ed907889599df67021db71b38c 62391d95cc4541f6b48ca682d8cb97376ee2a991 6710-56e/_6
+props: 6711 19839 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/admonition.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/admonition.rst
+
+id: 7-6685.h-7352.r7352/19814
+type: file
+pred: 7-6685.h-7351.r7351/19831
+count: 2
+text: 6685 628 282 265 a0822d8813e9eff79eab95a6d3e8477f f7781985efc7dbc7a25f4d9a12475cac1e966c64 6684-55o/_8
+props: 6685 2271 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/doctest_blocks.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/doctest_blocks.rst
+
+id: 9-6685.1i-7352.r7352/20188
+type: file
+pred: 9-6685.1i-7351.r7351/20204
+count: 3
+text: 6692 0 92 321 b08b763faad43e12eafe0cadc122bff2 ef311659c6f5d2aafe0328ced05a1e588d685bb2 6691-55v/_5
+props: 6685 2653 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/table_csv.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/table_csv.rst
+
+id: 4-7185.f-7352.r7352/20551
+type: dir
+pred: 4-7185.f-7351.r7351/20564
+count: 4
+text: 7199 388 226 226 9084c2e14fb8d39db11c450f3314a1f4
+props: 7188 0 40 0 f0d1688f046e56c3b6858f5cb74ed51b
+cpath: /trunk/sandbox/docbook/test_files/custom
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/custom
+
+id: 4-6751.o-7352.r7352/20844
+type: file
+pred: 4-6751.o-7351.r7351/20860
+count: 3
+text: 7345 3576 22 1109 d7927dc397fc7512951f0754e4a35c34 96dcb38730dba017d2c5aee6356a58e22fe9a90c 7344-5o3/_g
+props: 6751 556 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/front_body.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/front_body.rst
+
+id: 8-6922.12-7352.r7352/21210
+type: file
+pred: 8-6922.12-7351.r7351/21230
+count: 3
+text: 6933 60 52 191 341e739d5abf103a8f62b4d440668176 2ac62c39501e3ff5bdaab05c189bc3ec21ae0a40 6932-5ck/_6
+props: 6922 15688 81 0 685faf6a4230ea531a31a12e4b3cb565
+cpath: /trunk/sandbox/docbook/test_files/long_table.rst
+copyfrom: 7351 /trunk/sandbox/xsl_fo/test_files/long_table.rst
+
+PLAIN
+K 14
+admonition.rst
+V 30
+file 4-6711.3-7352.r7352/19449
+K 26
+badaman_treasure_chest.png
+V 29
+file 4-6712.4-7352.r7352/7427
+K 26
+badaman_treasure_chest.svg
+V 30
+file 7-6712.5-7352.r7352/10575
+K 24
+bibliographic_fields.rst
+V 30
+file 4-6581.6-7352.r7352/12700
+K 28
+bibliographic_fields_toc.rst
+V 29
+file 6-6591.7-7352.r7352/4857
+K 9
+block.rst
+V 29
+file 4-6685.8-7352.r7352/5986
+K 15
+bullet_list.rst
+V 29
+file 4-6550.9-7352.r7352/2492
+K 11
+chapter.rst
+V 30
+file 6-7347.a-7352.r7352/13457
+K 12
+citation.rst
+V 26
+file 4-6624.b-7352.r7352/0
+K 22
+compound_paragraph.rst
+V 30
+file 4-6719.c-7352.r7352/10195
+K 10
+conf_files
+V 28
+dir 4-6848.d-7352.r7352/7820
+K 13
+container.rst
+V 29
+file 7-6719.e-7352.r7352/2854
+K 6
+custom
+V 29
+dir 4-7185.f-7352.r7352/20551
+K 19
+definition_list.rst
+V 29
+file 4-6561.g-7352.r7352/3529
+K 18
+doctest_blocks.rst
+V 30
+file 7-6685.h-7352.r7352/19814
+K 19
+enumerated_list.rst
+V 30
+file 4-6559.i-7352.r7352/13084
+K 12
+epigraph.rst
+V 30
+file 9-6719.j-7352.r7352/18111
+K 15
+field_lists.rst
+V 29
+file 4-6575.k-7352.r7352/8433
+K 10
+figure.rst
+V 29
+file 8-6711.l-7352.r7352/2135
+K 19
+first_paragraph.rst
+V 29
+file 4-6810.m-7352.r7352/1054
+K 13
+footnotes.rst
+V 30
+file 4-6693.n-7352.r7352/11976
+K 14
+front_body.rst
+V 30
+file 4-6751.o-7352.r7352/20844
+K 17
+header_footer.rst
+V 29
+file 8-6521.p-7352.r7352/9519
+K 22
+header_footer_toc1.rst
+V 30
+file d-6968.q-7352.r7352/15833
+K 22
+header_footer_toc2.rst
+V 30
+file f-6968.r-7352.r7352/16957
+K 22
+header_footer_toc3.rst
+V 30
+file h-6968.s-7352.r7352/17341
+K 22
+header_footer_toc4.rst
+V 30
+file j-6968.t-7352.r7352/17725
+K 14
+highlights.rst
+V 29
+file b-6719.u-7352.r7352/6339
+K 14
+hyperlinks.rst
+V 30
+file a-6711.v-7352.r7352/14125
+K 9
+image.rst
+V 30
+file c-6711.w-7352.r7352/12341
+K 10
+inline.rst
+V 29
+file 4-6545.x-7352.r7352/1426
+K 14
+line_block.rst
+V 30
+file 4-6676.y-7352.r7352/19083
+K 17
+literal_block.rst
+V 29
+file 4-6541.z-7352.r7352/9152
+K 14
+long_plain.rst
+V 30
+file 5-6521.10-7352.r7352/3216
+K 14
+long_table.csv
+V 31
+file 6-6922.11-7352.r7352/14496
+K 14
+long_table.rst
+V 31
+file 8-6922.12-7352.r7352/21210
+K 8
+math.rst
+V 31
+file 7-7171.13-7352.r7352/14808
+K 18
+math_asciimath.rst
+V 29
+file 6-7174.14-7352.r7352/735
+K 14
+math_latex.rst
+V 30
+file 4-7183.15-7352.r7352/4193
+K 12
+opt_list.rst
+V 30
+file 4-6594.16-7352.r7352/7068
+K 18
+parsed_literal.rst
+V 30
+file d-6719.17-7352.r7352/5612
+K 8
+peak.png
+V 31
+file 9-6712.18-7352.r7352/16217
+K 14
+pull_quote.rst
+V 31
+file f-6719.19-7352.r7352/15105
+K 25
+quoted_literal_blocks.rst
+V 29
+file 7-6624.1a-7352.r7352/352
+K 10
+rubric.rst
+V 30
+file h-6719.1b-7352.r7352/4500
+K 11
+section.rst
+V 30
+file 4-6571.1c-7352.r7352/8795
+K 11
+sidebar.rst
+V 30
+file j-6719.1d-7352.r7352/9833
+K 10
+simple.rst
+V 31
+file 4-6855.1e-7352.r7352/15474
+K 11
+simple2.rst
+V 31
+file 7-6855.1f-7352.r7352/10916
+K 16
+substitution.rst
+V 31
+file 8-7189.1g-7352.r7352/11658
+K 20
+table_borderless.rst
+V 31
+file 4-6940.1h-7352.r7352/11280
+K 13
+table_csv.rst
+V 31
+file 9-6685.1i-7352.r7352/20188
+K 14
+table_grid.rst
+V 30
+file 9-6624.1j-7352.r7352/6702
+K 16
+table_simple.rst
+V 31
+file b-6685.1k-7352.r7352/18710
+K 8
+tent.png
+V 31
+file b-6712.1l-7352.r7352/13762
+K 18
+title_subtitle.rst
+V 31
+file 7-6676.1m-7352.r7352/16582
+K 7
+toc.rst
+V 30
+file 4-6533.1n-7352.r7352/3899
+K 9
+topic.rst
+V 30
+file l-6719.1o-7352.r7352/1778
+K 14
+transition.rst
+V 30
+file 4-6548.1p-7352.r7352/5246
+K 9
+waves.png
+V 30
+file d-6712.1q-7352.r7352/8070
+K 3
+xsl
+V 30
+dir 4-7153.1r-7352.r7352/18473
+END
+ENDREP
+id: 7-7352.0.r7352/25034
+type: dir
+count: 0
+text: 7352 21577 3444 3444 62ddd8d9fadd9e10c665478e86f05b6d
+cpath: /trunk/sandbox/docbook/test_files
+copyroot: 0 /
+
+id: 6-7342.1v-7352.r7352/25194
+type: file
+pred: 6-7342.0.r7342/4099
+count: 1
+text: 7342 284 321 655 b0a6779697150c64bfaa42ef770d109f db57de974f4a069964cc64ffb73b6ff6b7a5500e 7341-5o0/_7
+cpath: /trunk/sandbox/docbook/xsl/citation.xsl
+copyfrom: 7350 /trunk/sandbox/paultremblay/xsl_docbook/citation.xsl
+
+id: 6-7343.1w-7352.r7352/25496
+type: file
+pred: 6-7343.0.r7346/4870
+count: 2
+text: 7346 770 144 485 8b94a937f6d0ea0bea4dc74a5116b501 ddf785050640c0336cda3389bc4ec3f67322b800 7345-5o4/_6
+cpath: /trunk/sandbox/docbook/xsl/code.xsl
+copyfrom: 7350 /trunk/sandbox/paultremblay/xsl_docbook/code.xsl
+
+id: 8-7342.2a-7352.r7352/25790
+type: file
+pred: 8-7342.0.r7342/4327
+count: 1
+text: 7342 618 330 795 f100d27ddb36548e7ae12a1faae3c5ff a9b4fea8d43e7a5de2e6a31fb58b109c684d0809 7341-5o0/_9
+cpath: /trunk/sandbox/docbook/xsl/utilities.xsl
+copyfrom: 7350 /trunk/sandbox/paultremblay/xsl_docbook/utilities.xsl
+
+id: 8-7343.1z-7352.r7352/26094
+type: file
+pred: 8-7343.0.r7346/5120
+count: 2
+text: 7346 940 446 1245 34383b9c66cb616de54062f24459a8b0 53a5dfccd7b3ed25d404b8216489c30bfeb425fd 7345-5o4/_7
+cpath: /trunk/sandbox/docbook/xsl/field_list.xsl
+copyfrom: 7350 /trunk/sandbox/paultremblay/xsl_docbook/field_list.xsl
+
+id: a-7342.23-7352.r7352/26401
+type: file
+pred: a-7342.0.r7346/5377
+count: 3
+text: 7346 1412 400 1862 3e5124898a5d14a3990c5d8cbdf67f1f fffad332988b6a022ab7c85d185c782c5e543597 7345-5o4/_8
+cpath: /trunk/sandbox/docbook/xsl/inline.xsl
+copyfrom: 7350 /trunk/sandbox/paultremblay/xsl_docbook/inline.xsl
+
+id: c-7342.1u-7352.r7352/26701
+type: file
+pred: c-7342.0.r7343/2452
+count: 2
+text: 7343 981 143 612 c317942e8018021f30988b174a874a95 6b65bc8d1d2bc038cf56f85465ce9c9745096cb3 7342-5o1/_a
+cpath: /trunk/sandbox/docbook/xsl/bullet_list.xsl
+copyfrom: 7350 /trunk/sandbox/paultremblay/xsl_docbook/bullet_list.xsl
+
+id: h-7345.22-7352.r7352/27009
+type: file
+pred: h-7345.0.r7346/5631
+count: 2
+text: 7346 2721 439 1866 609dc5ac2bf8102877b2d2f0edb5e010 def17ac0b6d445ee5f0627eeabab0efcf664422b 7345-5o4/_b
+cpath: /trunk/sandbox/docbook/xsl/image.xsl
+copyfrom: 7350 /trunk/sandbox/paultremblay/xsl_docbook/image.xsl
+
+id: n-7340.26-7352.r7352/27307
+type: file
+pred: n-7340.0.r7340/9665
+count: 1
+text: 7340 5080 359 342 6e6fcce77937393c538af914ef540628 49ca05765a5227e3ef3909aa1fdfb3c5f4e30a27 7339-5ny/_o
+cpath: /trunk/sandbox/docbook/xsl/params.xsl
+copyfrom: 7350 /trunk/sandbox/paultremblay/xsl_docbook/params.xsl
+
+id: p-7340.27-7352.r7352/27606
+type: file
+pred: p-7340.0.r7340/9892
+count: 1
+text: 7340 5452 281 724 32edf62120955035d629914836b85131 d0f78d24b1cc109185e6e740ea22d0db9c8d3b2e 7339-5ny/_q
+cpath: /trunk/sandbox/docbook/xsl/root.xsl
+copyfrom: 7350 /trunk/sandbox/paultremblay/xsl_docbook/root.xsl
+
+id: 5-7340.1s-7352.r7352/27901
+type: file
+pred: 5-7340.0.r7340/10117
+count: 1
+text: 7340 0 469 2045 b7f45083273252f785cc3a002f56cbec 7e301777c2c27b86ed6642495033b93dc4ebccbc 7339-5ny/_7
+cpath: /trunk/sandbox/docbook/xsl/admonitions.xsl
+copyfrom: 7350 /trunk/sandbox/paultremblay/xsl_docbook/admonitions.xsl
+
+id: d-7346.2b-7352.r7352/28209
+type: file
+pred: d-7346.0.r7346/5927
+count: 1
+text: 7346 3633 397 380 0141d594fa270b4d1ab90130a0b89d27 d54c12c4e2f859208bde3a92f1efaf7e6e6e5ad3 7345-5o4/_e
+props: 7346 5884 30 0 4160c74de5f4e580dc15660c798ff9fc
+cpath: /trunk/sandbox/docbook/xsl/xlink.xsl
+copyfrom: 7350 /trunk/sandbox/paultremblay/xsl_docbook/xlink.xsl
+
+id: 7-7345.29-7352.r7352/28561
+type: file
+pred: 7-7345.0.r7345/9510
+count: 1
+text: 7345 1956 624 2796 56358c01869cdf7598ca1a4b1f798b44 a6814e1d01ccdbbad592a410c1f939cc605dd583 7344-5o3/_8
+cpath: /trunk/sandbox/docbook/xsl/table.xsl
+copyfrom: 7350 /trunk/sandbox/paultremblay/xsl_docbook/table.xsl
+
+id: e-7340.1x-7352.r7352/28859
+type: file
+pred: e-7340.0.r7346/6208
+count: 5
+text: 7346 4043 482 1033 3bd77ac9a9d74fcfb961f79081f547f6 bac9f0845ea454949a63b0394c570d16c184a8ad 7345-5o4/_f
+cpath: /trunk/sandbox/docbook/xsl/docutils_to_docbook.xsl
+copyfrom: 7350 /trunk/sandbox/paultremblay/xsl_docbook/docutils_to_docbook.xsl
+
+id: g-7340.1y-7352.r7352/29185
+type: file
+pred: g-7340.0.r7342/5543
+count: 2
+text: 7342 3438 383 6010 273251bdc95f999741b3be78e778ba03 2f9d00d2fdfc05a6ba8ae85897c5d85d7287c0be 7341-5o0/_g
+cpath: /trunk/sandbox/docbook/xsl/error.xsl
+copyfrom: 7350 /trunk/sandbox/paultremblay/xsl_docbook/error.xsl
+
+id: g-7346.25-7352.r7352/29483
+type: file
+pred: g-7346.0.r7346/6518
+count: 1
+text: 7346 4552 305 778 a42a8866246a7870dfa7400f29e3f647 3ae62cac4d1b99fca9477e29c2d228370c3c3d23 7345-5o4/_h
+props: 7346 6475 30 0 4160c74de5f4e580dc15660c798ff9fc
+cpath: /trunk/sandbox/docbook/xsl/math.xsl
+copyfrom: 7350 /trunk/sandbox/paultremblay/xsl_docbook/math.xsl
+
+id: i-7340.1t-7352.r7352/29833
+type: file
+pred: i-7340.0.r7346/6798
+count: 5
+text: 7346 0 743 3913 be83c1afd5bc46bfb854d7f937864503 8fb2de0bc5373cf5d1d388fc1522fac2ce72780d 7345-5o4/_5
+cpath: /trunk/sandbox/docbook/xsl/block.xsl
+copyfrom: 7350 /trunk/sandbox/paultremblay/xsl_docbook/block.xsl
+
+id: 9-7346.24-7352.r7352/30128
+type: file
+pred: 9-7346.0.r7346/7092
+count: 1
+text: 7346 1838 870 4394 50f29f52d2a6f8eeaec4ee059a9fddaa e69bebaa37394457f94a0de23d354346069dab42 7345-5o4/_a
+props: 7346 7049 30 0 4160c74de5f4e580dc15660c798ff9fc
+cpath: /trunk/sandbox/docbook/xsl/line_block.xsl
+copyfrom: 7350 /trunk/sandbox/paultremblay/xsl_docbook/line_block.xsl
+
+id: b-7343.21-7352.r7352/30491
+type: file
+pred: b-7343.0.r7343/2709
+count: 1
+text: 7343 1151 314 1100 57caa28ab2306449391ff49aa62e0f72 abbb8667bec577a831560ac427c8ee10b70681cd 7342-5o1/_c
+cpath: /trunk/sandbox/docbook/xsl/glossary.xsl
+copyfrom: 7350 /trunk/sandbox/paultremblay/xsl_docbook/glossary.xsl
+
+id: 8-7340.20-7352.r7352/30795
+type: file
+pred: 8-7340.0.r7345/10513
+count: 3
+text: 7345 0 1374 9751 876aa975f7ef6013882432eca868199c bb54364661d7aa8d71f4d6eb97e9914ef0b439a6 7344-5o3/_5
+cpath: /trunk/sandbox/docbook/xsl/front_matter.xsl
+copyfrom: 7350 /trunk/sandbox/paultremblay/xsl_docbook/front_matter.xsl
+
+id: a-7340.28-7352.r7352/31106
+type: file
+pred: a-7340.0.r7346/7379
+count: 3
+text: 7346 3187 420 2769 0f6d8ecc15370f6f1753081a5ba0089e e9b08f123c1cd59dc028d0f996b8e4c676936f6f 7345-5o4/_c
+cpath: /trunk/sandbox/docbook/xsl/section.xsl
+copyfrom: 7350 /trunk/sandbox/paultremblay/xsl_docbook/section.xsl
+
+PLAIN
+K 15
+admonitions.xsl
+V 31
+file 5-7340.1s-7352.r7352/27901
+K 9
+block.xsl
+V 31
+file i-7340.1t-7352.r7352/29833
+K 15
+bullet_list.xsl
+V 31
+file c-7342.1u-7352.r7352/26701
+K 12
+citation.xsl
+V 31
+file 6-7342.1v-7352.r7352/25194
+K 8
+code.xsl
+V 31
+file 6-7343.1w-7352.r7352/25496
+K 23
+docutils_to_docbook.xsl
+V 31
+file e-7340.1x-7352.r7352/28859
+K 9
+error.xsl
+V 31
+file g-7340.1y-7352.r7352/29185
+K 14
+field_list.xsl
+V 31
+file 8-7343.1z-7352.r7352/26094
+K 16
+front_matter.xsl
+V 31
+file 8-7340.20-7352.r7352/30795
+K 12
+glossary.xsl
+V 31
+file b-7343.21-7352.r7352/30491
+K 9
+image.xsl
+V 31
+file h-7345.22-7352.r7352/27009
+K 10
+inline.xsl
+V 31
+file a-7342.23-7352.r7352/26401
+K 14
+line_block.xsl
+V 31
+file 9-7346.24-7352.r7352/30128
+K 8
+math.xsl
+V 31
+file g-7346.25-7352.r7352/29483
+K 10
+params.xsl
+V 31
+file n-7340.26-7352.r7352/27307
+K 8
+root.xsl
+V 31
+file p-7340.27-7352.r7352/27606
+K 11
+section.xsl
+V 31
+file a-7340.28-7352.r7352/31106
+K 9
+table.xsl
+V 31
+file 7-7345.29-7352.r7352/28561
+K 13
+utilities.xsl
+V 31
+file 8-7342.2a-7352.r7352/25790
+K 9
+xlink.xsl
+V 31
+file d-7346.2b-7352.r7352/28209
+END
+ENDREP
+id: 9-7352.0.r7352/32511
+type: dir
+count: 0
+text: 7352 31408 1090 1090 49adeac12bb9e0fc830404d9f96bc514
+cpath: /trunk/sandbox/docbook/xsl
+copyroot: 0 /
+
+id: 4-7344.0-7352.r7352/32664
+type: file
+pred: 4-7344.0.r7344/1608
+count: 1
+text: 7344 0 1503 3946 730e3e42a74fe347a186734930b791b7 b917de9f66752c01db37be3e8adec0e18a10b95d 7343-5o2/_6
+props: 7344 1565 30 0 4160c74de5f4e580dc15660c798ff9fc
+cpath: /trunk/sandbox/docbook/scripts/docutils_to_docbook.sh
+copyfrom: 7350 /trunk/sandbox/paultremblay/scripts/docutils_to_docbook.sh
+
+id: 6-7202.1-7352.r7352/33040
+type: file
+pred: 6-7202.0.r7344/1897
+count: 4
+text: 7344 1516 22 5415 9246ad7283393d30aaa503bee121856d 31940372726ee5022f88d53aa4611d5f86d3ea04 7343-5o2/_7
+cpath: /trunk/sandbox/docbook/scripts/rstxml2xml.py
+copyfrom: 7350 /trunk/sandbox/paultremblay/scripts/rstxml2xml.py
+
+PLAIN
+K 22
+docutils_to_docbook.sh
+V 30
+file 4-7344.0-7352.r7352/32664
+K 13
+rstxml2xml.py
+V 30
+file 6-7202.1-7352.r7352/33040
+END
+ENDREP
+id: 4-7352.0.r7352/33480
+type: dir
+count: 0
+text: 7352 33344 123 123 65c3286fc5f4d88fba0de3b328eaef4e
+cpath: /trunk/sandbox/docbook/scripts
+copyroot: 0 /
+
+id: 3-7205.2-7352.r7352/33635
+type: file
+pred: 3-7205.0.r7205/337
+count: 1
+text: 7205 0 324 562 0f526d8ac41c9b7d838c45ed3b46728c 8ca23250d142cf57440d3b7b6143aadfadef7d43 7204-5k4/_5
+cpath: /trunk/sandbox/docbook/setup.py
+copyfrom: 7350 /trunk/sandbox/paultremblay/setup.py
+
+PLAIN
+K 7
+scripts
+V 24
+dir 4-7352.0.r7352/33480
+K 8
+setup.py
+V 30
+file 3-7205.2-7352.r7352/33635
+K 10
+test_files
+V 24
+dir 7-7352.0.r7352/25034
+K 3
+xsl
+V 24
+dir 9-7352.0.r7352/32511
+END
+ENDREP
+id: 2-7352.0.r7352/34101
+type: dir
+count: 0
+text: 7352 33909 179 179 4da504a5e9a0e460958cb767201a8faf
+cpath: /trunk/sandbox/docbook
+copyroot: 0 /
+
+PLAIN
+K 12
+OpenDocument
+V 28
+dir 3-4689.0-5034.r5881/9477
+K 10
+README.txt
+V 22
+file 3-17.0.r7333/1154
+K 8
+aafigure
+V 28
+dir 5-4251.0-4994.r5980/2565
+K 4
+aahz
+V 23
+dir 2-820.0.r3892/10934
+K 9
+agurtovoy
+V 23
+dir 2-2034.0.r6097/2235
+K 3
+amk
+V 22
+dir 2-1891.0.r7293/879
+K 3
+axk
+V 25
+dir 2-1550.0-3242.r3242/0
+K 4
+bbum
+V 23
+dir 2-1039.0.r1742/2047
+K 5
+blais
+V 23
+dir 2-1316.0.r5672/6545
+K 4
+cben
+V 24
+dir 2-1693.0.r3533/13838
+K 10
+chm-writer
+V 25
+dir 3-4294.0-6177.r6177/0
+K 8
+cliechti
+V 22
+dir 2-3204.0.r5987/631
+K 20
+code-block-directive
+V 24
+dir 4-5229.0.r7105/38630
+K 9
+codeintro
+V 23
+dir 2-4954.0.r4977/1117
+K 6
+davidg
+V 22
+dir 6-17.0.r6495/10540
+K 5
+delza
+V 23
+dir 2-1723.0.r1723/3836
+K 8
+dkuhlman
+V 23
+dir 2-1555.0.r5034/1704
+K 7
+docbook
+V 24
+dir 2-7352.0.r7352/34101
+K 12
+docpy-writer
+V 28
+dir 2-4521.0-4565.r4626/8182
+K 7
+dpriest
+V 21
+dir 2-1730.0.r4985/58
+K 12
+dreamcatcher
+V 22
+dir 2-1300.0.r1357/657
+K 5
+dugui
+V 23
+dir 2-4358.0.r4360/1485
+K 7
+edloper
+V 21
+dir 2-1844.0.r4984/97
+K 7
+grubert
+V 22
+dir 2-112.0.r6409/1245
+K 8
+gschwant
+V 23
+dir 2-675.0.r4442/16701
+K 9
+holdenweb
+V 23
+dir 2-1845.0.r1845/4805
+K 11
+html4strict
+V 23
+dir 2-5534.0.r7238/5105
+K 10
+html4trans
+V 23
+dir 2-5235.0.r5533/1086
+K 4
+ianb
+V 23
+dir 2-881.0.r3892/12710
+K 14
+infrastructure
+V 27
+dir 3-189.0-3951.r7300/1104
+K 5
+jensj
+V 23
+dir 2-2942.0.r5544/4137
+K 4
+lalo
+V 23
+dir 2-1749.0.r1762/2166
+K 14
+latex-variants
+V 23
+dir 2-5238.0.r6179/4019
+K 15
+latex_directive
+V 22
+dir 2-4364.0.r4365/616
+K 14
+manpage-writer
+V 24
+dir 4-4773.0.r7321/14712
+K 3
+mly
+V 23
+dir 2-1431.0.r1432/2681
+K 7
+mmgilbe
+V 23
+dir 2-1841.0.r2945/2205
+K 3
+mwh
+V 21
+dir 2-857.0.r862/1023
+K 8
+newlatex
+V 24
+dir c-6496.0.r6496/10635
+K 7
+oliverr
+V 22
+dir 2-202.0.r7192/1289
+K 11
+package-doc
+V 22
+dir 2-5172.0.r5417/744
+K 12
+paultremblay
+V 23
+dir 2-1323.0.r7347/5110
+K 7
+pobrien
+V 23
+dir 2-1158.0.r1777/4967
+K 13
+presentations
+V 24
+dir 2-4940.0.r5174/64253
+K 11
+py-rest-doc
+V 22
+dir 2-5075.0.r5469/711
+K 7
+richard
+V 21
+dir 2-526.0.r7288/850
+K 11
+roff-writer
+V 22
+dir 2-5617.0.r5617/789
+K 10
+rst2beamer
+V 22
+dir 2-5731.0.r6468/932
+K 15
+rst2chunkedhtml
+V 23
+dir 2-5513.0.r5519/1100
+K 11
+rst2context
+V 22
+dir 2-7311.0.r7312/728
+K 7
+rst2gxl
+V 23
+dir 2-6330.0.r6462/1825
+K 7
+rst2odp
+V 23
+dir 2-5681.0.r6444/1847
+K 11
+rst2outline
+V 23
+dir 2-6396.0.r6463/1315
+K 7
+rst2pdf
+V 22
+dir 2-5560.0.r5638/438
+K 14
+rst2pdf-rubber
+V 27
+dir 2-5560.0-5857.r5857/754
+K 10
+rst2wordml
+V 24
+dir 2-5459.0.r5459/85880
+K 7
+rstdiff
+V 22
+dir 7-6304.0.r7309/859
+K 6
+simonb
+V 21
+dir 2-252.0.r1227/852
+K 12
+slides_tests
+V 23
+dir 2-6418.0.r6422/2176
+K 11
+stylesheets
+V 23
+dir 2-3847.0.r6109/1394
+K 14
+texinfo-writer
+V 23
+dir 2-6421.0.r6426/1643
+K 4
+tibs
+V 21
+dir 2-62.0.r7286/2851
+K 12
+uml-plantUml
+V 24
+dir 2-6326.0.r6326/67499
+K 12
+verse-writer
+V 23
+dir 2-4842.0.r4847/2800
+K 4
+wilk
+V 23
+dir 2-1258.0.r1650/3830
+K 10
+xhtml2rest
+V 29
+dir 3-3749.0-4373.r5174/66514
+K 7
+xml2rst
+V 24
+dir 6-5491.0.r7249/64551
+K 6
+xsl_fo
+V 24
+dir 2-7351.0.r7351/37884
+END
+ENDREP
+id: 1-17.0.r7352/37212
+type: dir
+pred: 1-17.0.r7351/40952
+count: 2321
+text: 7352 34248 2951 2951 85c3ccc01841fd96f3510200df983dbf
+cpath: /trunk/sandbox
+copyroot: 0 /
+minfo-cnt: 1
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r7350/3047
+K 5
+prest
+V 24
+dir 1-4326.0.r6498/50375
+K 7
+sandbox
+V 22
+dir 1-17.0.r7352/37212
+K 3
+web
+V 19
+dir 1-2.0.r7349/772
+END
+ENDREP
+id: 3-1.0.r7352/37561
+type: dir
+pred: 3-1.0.r7351/41300
+count: 6893
+text: 7352 37392 156 156 af3acd84781e389ec28c89399b1b8dfa
+cpath: /trunk
+copyroot: 0 /
+minfo-cnt: 2
+
+PLAIN
+K 8
+branches
+V 21
+dir 0-1.0.r6260/33253
+K 4
+tags
+V 19
+dir 2-1.0.r7108/874
+K 5
+trunk
+V 21
+dir 3-1.0.r7352/37561
+END
+ENDREP
+id: 0.0.r7352/37857
+type: dir
+pred: 0.0.r7351/41595
+count: 7352
+text: 7352 37729 115 115 65075af8ad43a5d2ca14f65b0196ac9b
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+minfo-cnt: 6
+
+4-6719._c.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/compound_paragraph.rst
+7351 /trunk/sandbox/xsl_fo/test_files/compound_paragraph.rst
+7-6624._1a.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/quoted_literal_blocks.rst
+7351 /trunk/sandbox/xsl_fo/test_files/quoted_literal_blocks.rst
+7-6712._5.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/badaman_treasure_chest.svg
+7351 /trunk/sandbox/xsl_fo/test_files/badaman_treasure_chest.svg
+4-6940._1h.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/table_borderless.rst
+7351 /trunk/sandbox/xsl_fo/test_files/table_borderless.rst
+6-7342._1v.t7351-5oa add-file false false /trunk/sandbox/docbook/xsl/citation.xsl
+7350 /trunk/sandbox/paultremblay/xsl_docbook/citation.xsl
+l-6719._1o.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/topic.rst
+7351 /trunk/sandbox/xsl_fo/test_files/topic.rst
+4-7344._0.t7351-5oa add-file false false /trunk/sandbox/docbook/scripts/docutils_to_docbook.sh
+7350 /trunk/sandbox/paultremblay/scripts/docutils_to_docbook.sh
+8-7343._1z.t7351-5oa add-file false false /trunk/sandbox/docbook/xsl/field_list.xsl
+7350 /trunk/sandbox/paultremblay/xsl_docbook/field_list.xsl
+4-6550._9.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/bullet_list.rst
+7351 /trunk/sandbox/xsl_fo/test_files/bullet_list.rst
+7-6719._e.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/container.rst
+7351 /trunk/sandbox/xsl_fo/test_files/container.rst
+4-6533._1n.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/toc.rst
+7351 /trunk/sandbox/xsl_fo/test_files/toc.rst
+c-7342._1u.t7351-5oa add-file false false /trunk/sandbox/docbook/xsl/bullet_list.xsl
+7350 /trunk/sandbox/paultremblay/xsl_docbook/bullet_list.xsl
+b-6712._1l.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/tent.png
+7351 /trunk/sandbox/xsl_fo/test_files/tent.png
+d-7346._2b.t7351-5oa add-file false false /trunk/sandbox/docbook/xsl/xlink.xsl
+7350 /trunk/sandbox/paultremblay/xsl_docbook/xlink.xsl
+4-6855._1e.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/simple.rst
+7351 /trunk/sandbox/xsl_fo/test_files/simple.rst
+f-6719._19.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/pull_quote.rst
+7351 /trunk/sandbox/xsl_fo/test_files/pull_quote.rst
+d-6968._q.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/header_footer_toc1.rst
+7351 /trunk/sandbox/xsl_fo/test_files/header_footer_toc1.rst
+f-6968._r.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/header_footer_toc2.rst
+7351 /trunk/sandbox/xsl_fo/test_files/header_footer_toc2.rst
+i-7340._1t.t7351-5oa add-file false false /trunk/sandbox/docbook/xsl/block.xsl
+7350 /trunk/sandbox/paultremblay/xsl_docbook/block.xsl
+h-6968._s.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/header_footer_toc3.rst
+7351 /trunk/sandbox/xsl_fo/test_files/header_footer_toc3.rst
+j-6968._t.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/header_footer_toc4.rst
+7351 /trunk/sandbox/xsl_fo/test_files/header_footer_toc4.rst
+4-6711._3.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/admonition.rst
+7351 /trunk/sandbox/xsl_fo/test_files/admonition.rst
+4-6575._k.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/field_lists.rst
+7351 /trunk/sandbox/xsl_fo/test_files/field_lists.rst
+d-6712._1q.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/waves.png
+7351 /trunk/sandbox/xsl_fo/test_files/waves.png
+7-6685._h.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/doctest_blocks.rst
+7351 /trunk/sandbox/xsl_fo/test_files/doctest_blocks.rst
+4-7185._f.t7351-5oa add-dir false false /trunk/sandbox/docbook/test_files/custom
+7351 /trunk/sandbox/xsl_fo/test_files/custom
+8-6922._12.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/long_table.rst
+7351 /trunk/sandbox/xsl_fo/test_files/long_table.rst
+8-6521._p.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/header_footer.rst
+7351 /trunk/sandbox/xsl_fo/test_files/header_footer.rst
+j-6719._1d.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/sidebar.rst
+7351 /trunk/sandbox/xsl_fo/test_files/sidebar.rst
+7-6855._1f.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/simple2.rst
+7351 /trunk/sandbox/xsl_fo/test_files/simple2.rst
+6-7174._14.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/math_asciimath.rst
+7351 /trunk/sandbox/xsl_fo/test_files/math_asciimath.rst
+6-7343._1w.t7351-5oa add-file false false /trunk/sandbox/docbook/xsl/code.xsl
+7350 /trunk/sandbox/paultremblay/xsl_docbook/code.xsl
+4-6693._n.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/footnotes.rst
+7351 /trunk/sandbox/xsl_fo/test_files/footnotes.rst
+8-6711._l.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/figure.rst
+7351 /trunk/sandbox/xsl_fo/test_files/figure.rst
+5-6521._10.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/long_plain.rst
+7351 /trunk/sandbox/xsl_fo/test_files/long_plain.rst
+c-6711._w.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/image.rst
+7351 /trunk/sandbox/xsl_fo/test_files/image.rst
+6-7347._a.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/chapter.rst
+7351 /trunk/sandbox/xsl_fo/test_files/chapter.rst
+b-6719._u.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/highlights.rst
+7351 /trunk/sandbox/xsl_fo/test_files/highlights.rst
+g-7340._1y.t7351-5oa add-file false false /trunk/sandbox/docbook/xsl/error.xsl
+7350 /trunk/sandbox/paultremblay/xsl_docbook/error.xsl
+4-6594._16.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/opt_list.rst
+7351 /trunk/sandbox/xsl_fo/test_files/opt_list.rst
+4-6712._4.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/badaman_treasure_chest.png
+7351 /trunk/sandbox/xsl_fo/test_files/badaman_treasure_chest.png
+4-6848._d.t7351-5oa add-dir false false /trunk/sandbox/docbook/test_files/conf_files
+7351 /trunk/sandbox/xsl_fo/test_files/conf_files
+6-7202._1.t7351-5oa add-file false false /trunk/sandbox/docbook/scripts/rstxml2xml.py
+7350 /trunk/sandbox/paultremblay/scripts/rstxml2xml.py
+9-7346._24.t7351-5oa add-file false false /trunk/sandbox/docbook/xsl/line_block.xsl
+7350 /trunk/sandbox/paultremblay/xsl_docbook/line_block.xsl
+b-7343._21.t7351-5oa add-file false false /trunk/sandbox/docbook/xsl/glossary.xsl
+7350 /trunk/sandbox/paultremblay/xsl_docbook/glossary.xsl
+8-7189._1g.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/substitution.rst
+7351 /trunk/sandbox/xsl_fo/test_files/substitution.rst
+4-6810._m.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/first_paragraph.rst
+7351 /trunk/sandbox/xsl_fo/test_files/first_paragraph.rst
+_4.0.t7351-5oa add-dir false false /trunk/sandbox/docbook/scripts
+
+a-7342._23.t7351-5oa add-file false false /trunk/sandbox/docbook/xsl/inline.xsl
+7350 /trunk/sandbox/paultremblay/xsl_docbook/inline.xsl
+4-6561._g.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/definition_list.rst
+7351 /trunk/sandbox/xsl_fo/test_files/definition_list.rst
+4-6581._6.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/bibliographic_fields.rst
+7351 /trunk/sandbox/xsl_fo/test_files/bibliographic_fields.rst
+n-7340._26.t7351-5oa add-file false false /trunk/sandbox/docbook/xsl/params.xsl
+7350 /trunk/sandbox/paultremblay/xsl_docbook/params.xsl
+p-7340._27.t7351-5oa add-file false false /trunk/sandbox/docbook/xsl/root.xsl
+7350 /trunk/sandbox/paultremblay/xsl_docbook/root.xsl
+a-6711._v.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/hyperlinks.rst
+7351 /trunk/sandbox/xsl_fo/test_files/hyperlinks.rst
+7-7171._13.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/math.rst
+7351 /trunk/sandbox/xsl_fo/test_files/math.rst
+6-6922._11.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/long_table.csv
+7351 /trunk/sandbox/xsl_fo/test_files/long_table.csv
+4-6685._8.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/block.rst
+7351 /trunk/sandbox/xsl_fo/test_files/block.rst
+7-7345._29.t7351-5oa add-file false false /trunk/sandbox/docbook/xsl/table.xsl
+7350 /trunk/sandbox/paultremblay/xsl_docbook/table.xsl
+7-6676._1m.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/title_subtitle.rst
+7351 /trunk/sandbox/xsl_fo/test_files/title_subtitle.rst
+9-6712._18.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/peak.png
+7351 /trunk/sandbox/xsl_fo/test_files/peak.png
+9-6719._j.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/epigraph.rst
+7351 /trunk/sandbox/xsl_fo/test_files/epigraph.rst
+b-6685._1k.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/table_simple.rst
+7351 /trunk/sandbox/xsl_fo/test_files/table_simple.rst
+4-6676._y.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/line_block.rst
+7351 /trunk/sandbox/xsl_fo/test_files/line_block.rst
+4-6571._1c.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/section.rst
+7351 /trunk/sandbox/xsl_fo/test_files/section.rst
+4-6751._o.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/front_body.rst
+7351 /trunk/sandbox/xsl_fo/test_files/front_body.rst
+4-6541._z.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/literal_block.rst
+7351 /trunk/sandbox/xsl_fo/test_files/literal_block.rst
+8-7340._20.t7351-5oa add-file false false /trunk/sandbox/docbook/xsl/front_matter.xsl
+7350 /trunk/sandbox/paultremblay/xsl_docbook/front_matter.xsl
+a-7340._28.t7351-5oa add-file false false /trunk/sandbox/docbook/xsl/section.xsl
+7350 /trunk/sandbox/paultremblay/xsl_docbook/section.xsl
+4-6624._b.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/citation.rst
+7351 /trunk/sandbox/xsl_fo/test_files/citation.rst
+4-6545._x.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/inline.rst
+7351 /trunk/sandbox/xsl_fo/test_files/inline.rst
+8-7342._2a.t7351-5oa add-file false false /trunk/sandbox/docbook/xsl/utilities.xsl
+7350 /trunk/sandbox/paultremblay/xsl_docbook/utilities.xsl
+3-7205._2.t7351-5oa add-file false false /trunk/sandbox/docbook/setup.py
+7350 /trunk/sandbox/paultremblay/setup.py
+4-6559._i.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/enumerated_list.rst
+7351 /trunk/sandbox/xsl_fo/test_files/enumerated_list.rst
+h-7345._22.t7351-5oa add-file false false /trunk/sandbox/docbook/xsl/image.xsl
+7350 /trunk/sandbox/paultremblay/xsl_docbook/image.xsl
+h-6719._1b.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/rubric.rst
+7351 /trunk/sandbox/xsl_fo/test_files/rubric.rst
+4-7183._15.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/math_latex.rst
+7351 /trunk/sandbox/xsl_fo/test_files/math_latex.rst
+5-7340._1s.t7351-5oa add-file false false /trunk/sandbox/docbook/xsl/admonitions.xsl
+7350 /trunk/sandbox/paultremblay/xsl_docbook/admonitions.xsl
+_2.0.t7351-5oa add-dir false false /trunk/sandbox/docbook
+
+6-6591._7.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/bibliographic_fields_toc.rst
+7351 /trunk/sandbox/xsl_fo/test_files/bibliographic_fields_toc.rst
+_7.0.t7351-5oa add-dir false false /trunk/sandbox/docbook/test_files
+
+d-6719._17.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/parsed_literal.rst
+7351 /trunk/sandbox/xsl_fo/test_files/parsed_literal.rst
+4-6548._1p.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/transition.rst
+7351 /trunk/sandbox/xsl_fo/test_files/transition.rst
+e-7340._1x.t7351-5oa add-file false false /trunk/sandbox/docbook/xsl/docutils_to_docbook.xsl
+7350 /trunk/sandbox/paultremblay/xsl_docbook/docutils_to_docbook.xsl
+9-6624._1j.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/table_grid.rst
+7351 /trunk/sandbox/xsl_fo/test_files/table_grid.rst
+g-7346._25.t7351-5oa add-file false false /trunk/sandbox/docbook/xsl/math.xsl
+7350 /trunk/sandbox/paultremblay/xsl_docbook/math.xsl
+_9.0.t7351-5oa add-dir false false /trunk/sandbox/docbook/xsl
+
+4-7153._1r.t7351-5oa add-dir false false /trunk/sandbox/docbook/test_files/xsl
+7351 /trunk/sandbox/xsl_fo/test_files/xsl
+9-6685._1i.t7351-5oa add-file false false /trunk/sandbox/docbook/test_files/table_csv.rst
+7351 /trunk/sandbox/xsl_fo/test_files/table_csv.rst
+
+37857 38067

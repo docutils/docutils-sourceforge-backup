@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 8
+gschwant
+K 8
+svn:date
+V 27
+2003-06-09T19:30:46.000000Z
+K 7
+svn:log
+V 190
+
+An HTML writer for docutils which supports navigation-bars. I use it
+to create my hompage (http://schwant.gmxhome.de). Maybe other folks
+like to use it as well. See README.txt for details.
+
+END

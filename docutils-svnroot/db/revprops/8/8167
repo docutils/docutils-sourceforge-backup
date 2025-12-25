@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2017-08-15T21:20:36.734271Z
+K 7
+svn:log
+V 380
+* Consolidated version identifier documentation, moving text from docutils/__init__.py to docs/dev/policies.txt.
+* Cleaned up version-related code in docutils/__init__.py.
+* Reworked the Version Numbering section in docs/dev/policies.txt.
+* Added test/test_utils.HelperFunctionTests.test_implicit_version_identifier to test the implicit use of docutils.utils.version_identifier().
+END

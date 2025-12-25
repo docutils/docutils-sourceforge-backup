@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+gitpull
+K 8
+svn:date
+V 27
+2015-04-16T03:11:35.150462Z
+K 7
+svn:log
+V 131
+setuptools: Add ez_setup.py for python 2.4 and 2.5 setuptools support. Remove legacy distutils code from setup.py and use setup.py.
+END

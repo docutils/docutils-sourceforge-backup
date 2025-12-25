@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-05-27T22:45:42.487304Z
+K 7
+svn:log
+V 89
+removed docutils.conf and default.css;
+this weird background color is drivin' me nuts ;-)
+END

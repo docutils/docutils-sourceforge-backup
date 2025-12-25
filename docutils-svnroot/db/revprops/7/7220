@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-11-11T10:31:48.617517Z
+K 7
+svn:log
+V 101
+DependencyList uses io.FileOutput
+
+Prevents errors recording non-ASCII filenames (fixes [ 3434355 ]).
+END

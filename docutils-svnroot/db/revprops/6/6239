@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2010-03-01T20:45:15.743469Z
+K 7
+svn:log
+V 66
+Removed the left bar from being the default for citation entries.
+
+END

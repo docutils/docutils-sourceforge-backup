@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 13
+matt_harrison
+K 8
+svn:date
+V 27
+2009-02-04T23:04:11.610596Z
+K 7
+svn:log
+V 50
+add newlines after paragraph (unless in list_item)
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 8
+dkuhlman
+K 8
+svn:date
+V 27
+2010-10-25T21:46:13.251514Z
+K 7
+svn:log
+V 69
+Added code to copy images from stylesheet (styles.odt) to target doc.
+END

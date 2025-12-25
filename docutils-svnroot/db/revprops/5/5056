@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-04-27T15:42:37.774040Z
+K 7
+svn:log
+V 62
+Fixed a bug with attribute strings that contain double quotes.
+END

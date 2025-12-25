@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 12
+paultremblay
+K 8
+svn:date
+V 27
+2012-02-15T18:56:28.632819Z
+K 7
+svn:log
+V 83
+Used for breaking up long tables, since FOP doesn't yet put in a "continue" label. 
+END

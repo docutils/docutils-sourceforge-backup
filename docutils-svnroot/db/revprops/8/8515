@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2020-04-03T16:58:53.894895Z
+K 7
+svn:log
+V 71
+html5: support numbered figures (with CSS styling, analogue to tables).
+END

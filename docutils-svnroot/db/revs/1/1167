@@ -1,0 +1,168 @@
+PLAIN
+K 15
+OOdirectives.py
+V 23
+file 4-1165.0.r1166/212
+K 9
+OOtext.py
+V 24
+file 5-1162.0.r1162/5488
+K 11
+OOwriter.py
+V 24
+file 7-1165.0.r1165/5912
+K 11
+__init__.py
+V 24
+file 9-1165.0.r1165/7147
+K 10
+rest2oo.py
+V 23
+file 4-1164.0.r1164/741
+K 16
+rest2oopseudo.py
+V 24
+file b-1165.0.r1165/6340
+END
+ENDREP
+id: 3-1162.0.r1167/302
+type: dir
+pred: 3-1162.0.r1166/860
+count: 5
+text: 1167 0 289 289 28deec4da0ab569bab0914888dc9fccd
+props: 1163 496 49 0 a8e0e6f5443bebbf7264ba14600411f2
+cpath: /trunk/sandbox/pobrien/OpenOffice
+copyroot: 0 /
+
+PLAIN
+K 10
+OpenOffice
+V 22
+dir 3-1162.0.r1167/302
+K 9
+dwArticle
+V 23
+dir 4-1158.0.r1158/1052
+END
+ENDREP
+id: 2-1158.0.r1167/637
+type: dir
+pred: 2-1158.0.r1166/1198
+count: 6
+text: 1167 533 91 91 4418bc08504c5798a52216f3080a56e9
+cpath: /trunk/sandbox/pobrien
+copyroot: 0 /
+
+PLAIN
+K 10
+README.txt
+V 21
+file 3-17.0.r115/8760
+K 4
+aahz
+V 22
+dir 2-820.0.r1137/4895
+K 4
+bbum
+V 23
+dir 2-1039.0.r1133/1962
+K 6
+davidg
+V 21
+dir 6-17.0.r1138/1150
+K 7
+grubert
+V 22
+dir 2-112.0.r1075/1798
+K 8
+gschwant
+V 22
+dir 2-675.0.r1136/2920
+K 4
+ianb
+V 22
+dir 2-881.0.r1150/3819
+K 3
+mwh
+V 21
+dir 2-857.0.r862/1023
+K 7
+oliverr
+V 22
+dir 2-202.0.r1161/2771
+K 7
+pobrien
+V 22
+dir 2-1158.0.r1167/637
+K 7
+richard
+V 22
+dir 2-526.0.r1089/2918
+K 6
+simonb
+V 21
+dir 2-252.0.r345/3718
+K 4
+tibs
+V 21
+dir 2-62.0.r1089/1615
+END
+ENDREP
+id: 1-17.0.r1167/1324
+type: dir
+pred: 1-17.0.r1166/1888
+count: 232
+text: 1167 804 507 507 4f9d4914925998e06a11866d24b4ae6f
+cpath: /trunk/sandbox
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 20
+dir 1-7.0.r1160/3525
+K 7
+sandbox
+V 21
+dir 1-17.0.r1167/1324
+K 3
+web
+V 19
+dir 1-2.0.r1144/755
+END
+ENDREP
+id: 3-1.0.r1167/1612
+type: dir
+pred: 3-1.0.r1166/2177
+count: 1159
+text: 1167 1484 115 115 ba8a9c78cafafd8d13845b9f7c5106fb
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 17
+dir 0-1.0.r63/562
+K 4
+tags
+V 17
+dir 2-1.0.r65/217
+K 5
+trunk
+V 20
+dir 3-1.0.r1167/1612
+END
+ENDREP
+id: 0.0.r1167/1885
+type: dir
+pred: 0.0.r1166/2450
+count: 1167
+text: 1167 1764 108 108 b2a062d5246ec03e35abf911cf0c9174
+cpath: /
+copyroot: 0 /
+
+4-1163.0.r1163/123 delete-file false false /trunk/sandbox/pobrien/OpenOffice/.cvsignore
+
+
+1885 2028

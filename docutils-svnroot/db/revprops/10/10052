@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2025-03-21T02:16:12.606904Z
+K 7
+svn:log
+V 111
+text-references: no additional spaces.
+Skip references only if content is equal, or only differs by "mailto:".
+
+END

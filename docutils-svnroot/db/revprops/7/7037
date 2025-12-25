@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2011-05-19T08:56:27.310708Z
+K 7
+svn:log
+V 236
+New sub-module and test suite for error reporting.
+
+* Code to handle encoding/decoding errors when reporting exceptions.
+* Test and fix error reporting with problematic locale settings.
+  (https://bugs.gentoo.org/show_bug.cgi?id=349101)
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2017-04-26T21:23:36.891576Z
+K 7
+svn:log
+V 55
+Add platform identification info to alltests.py output.
+END

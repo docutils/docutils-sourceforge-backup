@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-01-17T21:40:38.869741Z
+K 7
+svn:log
+V 180
+* Bumped to version 0.3.21.
+* Remove only the elements of the PERL5LIB that do not include blib
+  rather than just deleting the entire environment variable before
+  running tests.
+
+END

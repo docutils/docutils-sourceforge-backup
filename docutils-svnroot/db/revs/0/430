@@ -1,0 +1,184 @@
+PLAIN
+K 15
+cvs2svn:cvs-rev
+V 3
+1.6
+K 13
+svn:eol-style
+V 6
+native
+K 14
+svn:executable
+V 1
+*
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+END
+ENDREP
+id: 3-430.0.r430/149
+type: file
+count: 0
+text: 426 0 1810 5651 dcb234eb26bf75694ed0aaa19b72cbe6 8fb0382f64a1fb1132043ec3e82e81c300716ceb 429-bx/_5
+props: 430 0 136 0 02b7fd2ecf5f546ae71b8b74479d84bb
+cpath: /trunk/docutils/tools/buildhtml.py
+copyroot: 0 /
+
+PLAIN
+K 12
+buildhtml.py
+V 21
+file 3-430.0.r430/149
+K 15
+docutils-xml.py
+V 22
+file 3-247.0.r371/7432
+K 13
+docutils.conf
+V 21
+file 3-407.0.r423/432
+K 7
+html.py
+V 22
+file 6x-18.0.r371/7868
+K 17
+pep-html-template
+V 21
+file 3-312.0.r312/123
+K 6
+pep.py
+V 22
+file 3-288.0.r371/8297
+K 11
+pep2html.py
+V 21
+file 3-319.0.r424/496
+K 10
+publish.py
+V 22
+file 70-18.0.r371/8724
+K 12
+quicktest.py
+V 21
+file 72-18.0.r380/739
+K 11
+stylesheets
+V 20
+dir 74-18.0.r392/576
+END
+ENDREP
+id: 6w-18.0.r430/867
+type: dir
+pred: 6w-18.0.r429/417
+count: 41
+text: 430 405 449 449 5f9f601ce7e83787a2f8ea212c15b187
+cpath: /trunk/docutils/tools
+copyroot: 0 /
+
+PLAIN
+K 10
+.cvsignore
+V 21
+file 2-340.0.r340/154
+K 11
+COPYING.txt
+V 21
+file 2-18.0.r425/3804
+K 11
+HISTORY.txt
+V 21
+file 5-18.0.r425/3404
+K 11
+MANIFEST.in
+V 20
+file 7-18.0.r344/206
+K 10
+README.txt
+V 21
+file 9-18.0.r425/9387
+K 4
+docs
+V 19
+dir 3-7.0.r425/9102
+K 8
+docutils
+V 21
+dir 1w-18.0.r428/1140
+K 10
+install.py
+V 23
+file 44-18.0.r18/313369
+K 8
+setup.py
+V 22
+file 46-18.0.r185/4439
+K 4
+test
+V 21
+dir 48-18.0.r384/2018
+K 5
+tools
+V 20
+dir 6w-18.0.r430/867
+END
+ENDREP
+id: 1-7.0.r430/1496
+type: dir
+pred: 1-7.0.r429/1044
+count: 359
+text: 430 1030 453 453 82c50013a7504350ead8d42e86a89a41
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /trunk/docutils
+copyroot: 0 /
+
+PLAIN
+K 8
+docutils
+V 19
+dir 1-7.0.r430/1496
+K 7
+sandbox
+V 20
+dir 1-17.0.r414/1565
+K 3
+web
+V 20
+dir 1-2.0.r425/11045
+END
+ENDREP
+id: 3-1.0.r430/1833
+type: dir
+pred: 3-1.0.r429/1380
+count: 422
+text: 430 1706 114 114 9cfac821bfa60bd9034add0c29da897f
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 17
+dir 0-1.0.r63/562
+K 4
+tags
+V 17
+dir 2-1.0.r65/217
+K 5
+trunk
+V 19
+dir 3-1.0.r430/1833
+END
+ENDREP
+id: 0.0.r430/2101
+type: dir
+pred: 0.0.r429/1648
+count: 430
+text: 430 1981 107 107 14e450ca9005a258c1cb1e374daf8b9d
+cpath: /
+copyroot: 0 /
+
+_3.0.t429-bx add-file true true /trunk/docutils/tools/buildhtml.py
+
+
+2101 2240

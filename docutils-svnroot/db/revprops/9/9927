@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-09-11T07:19:52.357464Z
+K 7
+svn:log
+V 208
+Fix test samples containing installation-specific path.
+
+Use a relative path in the tests for external MathML converters
+to make tests independent of the installation-specific
+Docutils project root directory.
+END

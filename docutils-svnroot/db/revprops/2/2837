@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2004-11-09T17:13:02.000000Z
+K 7
+svn:log
+V 121
+removed error-handling comment for block-level raw
+nodes with class attribute; this case should be handled by the parser
+
+END

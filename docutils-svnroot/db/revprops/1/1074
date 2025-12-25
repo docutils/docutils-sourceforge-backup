@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 8
+gschwant
+K 8
+svn:date
+V 27
+2003-01-09T00:47:18.000000Z
+K 7
+svn:log
+V 220
+
+If py2exe is installed on your machine you can use this script to convert
+docfactory.py into a into an executable Windows program, which is able
+to run without requiring a Python installation. (see FAQ.txt for details)
+
+END

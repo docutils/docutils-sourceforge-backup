@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 9
+aa-turner
+K 8
+svn:date
+V 27
+2024-08-02T02:41:47.493159Z
+K 7
+svn:log
+V 142
+This secondary goal was achieved in 2007!
+
+https://docs.python.org/3/whatsnew/2.6.html#new-documentation-format-restructuredtext-using-sphinx
+
+END

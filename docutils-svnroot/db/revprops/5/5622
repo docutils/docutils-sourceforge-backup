@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 6
+strank
+K 8
+svn:date
+V 27
+2008-07-28T15:51:39.776224Z
+K 7
+svn:log
+V 53
+Adapt to Text nodes being unicode and thus immutable.
+END

@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+rkrauss
+K 8
+svn:date
+V 27
+2010-09-15T02:17:55.390767Z
+K 7
+svn:log
+V 119
+added class options for slides for the fragile option along with a commadline option for the document default fragility
+END

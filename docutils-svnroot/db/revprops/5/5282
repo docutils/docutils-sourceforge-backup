@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-06-27T19:42:15.442564Z
+K 7
+svn:log
+V 268
+* Mark a single paragraph in a compound as both class "compound-first"
+  and "compound-last".
+* Fixed a bug where a class attribute on a field list did not
+  propagate to the output.
+* Fixed a bug where an align attribute on a table did not propagate to
+  the output.
+
+END

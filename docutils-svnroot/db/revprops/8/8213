@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2018-01-16T20:43:16.808377Z
+K 7
+svn:log
+V 168
+Fix code_analyzer problem under Python 3.3.
+
+Handle pkg_resources.DistributionNotFound error raised by pygments if
+no lexer can be found for a "code" role or directive.
+END

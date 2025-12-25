@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2024-08-13T11:08:12.775934Z
+K 7
+svn:log
+V 48
+move release.sh into attic
+cleanup README a bit
+
+END

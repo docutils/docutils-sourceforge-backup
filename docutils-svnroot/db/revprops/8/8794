@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2021-07-12T21:22:20.562715Z
+K 7
+svn:log
+V 370
+math2html: support small symbols, refactor math accent handling.
+
+math accents/combining characters:
+
+- insert combining character after first character of argument
+  (mimic LaTeX behaviour).
+
+- support non alphabetical base-character (\not{\in} and similar).
+
+- use precomposed characters if possible (normalization)
+
+Cleanup: update comments, remove not required code.
+END

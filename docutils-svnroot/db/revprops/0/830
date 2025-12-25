@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2002-10-18T23:44:47.000000Z
+K 7
+svn:log
+V 47
+Renamed ``Stuff`` to ``Struct``.  Fixed a bug.
+
+END

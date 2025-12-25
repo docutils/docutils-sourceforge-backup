@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-12-18T19:09:05.508317Z
+K 7
+svn:log
+V 76
+* Use "-W xref-sections" for XREF_FLAGS.
+* Added dependency for roles.html.
+
+END

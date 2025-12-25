@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-02-26T23:04:30.239515Z
+K 7
+svn:log
+V 86
+* Fixed a problem with quote markes in "alt" image text.
+* Added "-W body-only" flag.
+
+END

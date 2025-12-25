@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2015-04-12T09:57:05.257378Z
+K 7
+svn:log
+V 72
+Revert removal of obsolete `handle_io_errors` arg. Still used by Sphinx.
+END

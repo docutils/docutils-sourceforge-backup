@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2017-10-20T20:53:47.811066Z
+K 7
+svn:log
+V 66
+Fix bug #331: fixed the "trim" options of the "unicode" directive.
+END

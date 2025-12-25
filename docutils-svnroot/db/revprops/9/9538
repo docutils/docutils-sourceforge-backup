@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-02-14T17:42:58.402909Z
+K 7
+svn:log
+V 201
+Documentation update.
+
+Harmonize wording and markup in "Docutils Configuration" doc.
+Use field-list for "Default" and "Option(s)" when they don't fit
+on one line.
+Fix broken links.
+
+Small fixes in FAQ.
+END

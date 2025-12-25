@@ -1,0 +1,2120 @@
+2-4327.0.r4580/172511 delete-file false false /trunk/prest/COPYING.txt
+
+d-4327.0-5066.r6498/49477 delete-file false false /trunk/prest/ChangeLog
+
+5-4327.0.r4327/840766 delete-file false false /trunk/prest/GPL.txt
+
+4-4580.0.r6498/45401 delete-file false false /trunk/prest/MANIFEST
+
+6-4580.0.r5443/4349 delete-file false false /trunk/prest/MANIFEST.SKIP
+
+7-4327.0.r4330/211 delete-file false false /trunk/prest/MODIFY.txt
+
+8-4580.0.r5778/95 delete-file false false /trunk/prest/Makefile.PL
+
+b-4327.0.r4636/389 delete-file false false /trunk/prest/README
+
+k-4327.0-4580.r5484/107 delete-file false false /trunk/prest/doc/src/Makefile
+
+n-4327.0.r4327/1035405 delete-file false false /trunk/prest/doc/src/alternatives.rst
+
+8-4799.0.r4799/47009 delete-file false false /trunk/prest/doc/src/ascii-mathml.xrst
+
+p-4327.0.r6498/43823 delete-file false false /trunk/prest/doc/src/directives.rst
+
+r-4327.0.r4327/1035846 delete-file false false /trunk/prest/doc/src/introduction.rst
+
+u-4327.0.r4657/22560 delete-file false false /trunk/prest/doc/src/latest/directives.html
+
+x-4327.0.r4657/22812 delete-file false false /trunk/prest/doc/src/latest/introduction.html
+
+z-4327.0.r4657/22300 delete-file false false /trunk/prest/doc/src/latest/reStructuredText.html
+
+11-4327.0.r4657/23067 delete-file false false /trunk/prest/doc/src/latest/roles.html
+
+13-4327.0.r5483/466 delete-file false false /trunk/prest/doc/src/prest_extend.rst
+
+15-4327.0.r4580/170279 delete-file false false /trunk/prest/doc/src/prest_internals.rst
+
+17-4327.0.r4886/435 delete-file false false /trunk/prest/doc/src/prest_intro.rst
+
+7-4886.0.r5295/80 delete-file false false /trunk/prest/doc/src/prest_releases.rst
+
+19-4327.0.r4875/214 delete-file false false /trunk/prest/doc/src/prest_usage.rst
+
+1b-4327.0.r4327/1038037 delete-file false false /trunk/prest/doc/src/quickref.html
+
+1d-4327.0.r4327/1034728 delete-file false false /trunk/prest/doc/src/quickstart.rst
+
+1f-4327.0.r4657/21805 delete-file false false /trunk/prest/doc/src/reStructuredText.rst
+
+1h-4327.0.r6249/541 delete-file false false /trunk/prest/doc/src/roles.rst
+
+1k-4327.0.r4327/1033735 delete-file false false /trunk/prest/doc/tools/htmldiff.prl
+
+1n-4327.0.r4580/169666 delete-file false false /trunk/prest/doc/tools/perlsynopsis.prl
+
+k-4580.0.r4580/61534 delete-file false false /trunk/prest/insertperl.pl
+
+7f-4327.0-5067.r6498/45628 delete-file false false /trunk/prest/lib/Text/Restructured.pm
+
+76-4327.1-4580.r6235/461 delete-file false false /trunk/prest/lib/Text/Restructured/DOM.pm
+
+7m-4327.2-4580.r6278/328 delete-file false false /trunk/prest/lib/Text/Restructured/Directive/code_block.pm
+
+7p-4327.2-4580.r6284/116 delete-file false false /trunk/prest/lib/Text/Restructured/Directive/if.pm
+
+7r-4327.2-4580.r6498/47321 delete-file false false /trunk/prest/lib/Text/Restructured/Directive/perl.pm
+
+7t-4327.2-4580.r6299/1069 delete-file false false /trunk/prest/lib/Text/Restructured/Directive/rst.st
+
+7v-4327.2-4580.r5476/3174 delete-file false false /trunk/prest/lib/Text/Restructured/Directive/system.pm
+
+z-4580.0.r5071/3815 delete-file false false /trunk/prest/lib/Text/Restructured/Graph.pm
+
+11-4580.0.r5376/198 delete-file false false /trunk/prest/lib/Text/Restructured/PrestConfig.pm.PL
+
+7h-4327.3-4580.r6498/45979 delete-file false false /trunk/prest/lib/Text/Restructured/Transforms.pm
+
+7j-4327.4-4580.r5071/2784 delete-file false false /trunk/prest/lib/Text/Restructured/URIre.pm
+
+5-4724.0.r6236/323 delete-file false false /trunk/prest/lib/Text/Restructured/Writer.pm
+
+82-4327.5-4580.r5748/3957 delete-file false false /trunk/prest/lib/Text/Restructured/Writer/dom.wrt
+
+85-4327.5-4580.r6498/46351 delete-file false false /trunk/prest/lib/Text/Restructured/Writer/html.wrt
+
+87-4327.5-4580.r6242/529 delete-file false false /trunk/prest/lib/Text/Restructured/Writer/index.wrt
+
+89-4327.5-4580.r6298/58 delete-file false false /trunk/prest/lib/Text/Restructured/Writer/latex.wrt
+
+8b-4327.5-4580.r5748/3229 delete-file false false /trunk/prest/lib/Text/Restructured/Writer/toc.wrt
+
+8d-4327.5-4580.r5355/7379 delete-file false false /trunk/prest/lib/Text/Restructured/Writer/xml.wrt
+
+8f-4327.5-4580.r6242/167 delete-file false false /trunk/prest/lib/Text/Restructured/Writer/xref.wrt
+
+1d-4580.0.r6239/208 delete-file false false /trunk/prest/lib/Text/Restructured/default.css
+
+7z-4327.7-4580.r6245/1833 delete-file false false /trunk/prest/prest
+
+1m-4580.0.r4580/138921 delete-file false false /trunk/prest/t/10_parse/block_quotes.init/test_block_quotes.py
+
+1q-4580.0.r4580/145938 delete-file false false /trunk/prest/t/10_parse/bullet_lists.init/test_bullet_lists.py
+
+1u-4580.0.r4580/139511 delete-file false false /trunk/prest/t/10_parse/citations.init/test_citations.py
+
+1y-4580.0.r4580/135688 delete-file false false /trunk/prest/t/10_parse/comments.init/test_comments.py
+
+5-4710.0.r4710/241701 delete-file false false /trunk/prest/t/10_parse/definition_lists.init/definition_lists13.mydom
+
+22-4580.0.r4580/146527 delete-file false false /trunk/prest/t/10_parse/definition_lists.init/test_definition_lists.py
+
+26-4580.0.r4580/145341 delete-file false false /trunk/prest/t/10_parse/doctest_blocks.init/test_doctest_blocks.py
+
+2a-4580.0.r4580/147091 delete-file false false /trunk/prest/t/10_parse/enumerated_lists.init/enumerated_lists04.mydom
+
+2d-4580.0.r4580/147345 delete-file false false /trunk/prest/t/10_parse/enumerated_lists.init/enumerated_lists05.mydom
+
+2f-4580.0.r4580/147598 delete-file false false /trunk/prest/t/10_parse/enumerated_lists.init/enumerated_lists11.mydom
+
+2h-4580.0.r4580/147852 delete-file false false /trunk/prest/t/10_parse/enumerated_lists.init/enumerated_lists20.mydom
+
+2j-4580.0.r4580/148148 delete-file false false /trunk/prest/t/10_parse/enumerated_lists.init/test_enumerated_lists.py
+
+2m-4580.0.r4580/144754 delete-file false false /trunk/prest/t/10_parse/field_lists.init/test_field_lists.py
+
+2q-4580.0.r4580/132837 delete-file false false /trunk/prest/t/10_parse/footnotes.init/test_footnotes.py
+
+7-5058.0.r5058/74065 delete-file false false /trunk/prest/t/10_parse/inline_markup.init/Dir.smak
+
+2v-4580.0.r5058/74291 delete-file false false /trunk/prest/t/10_parse/inline_markup.init/inline_markup35.mydom
+
+2x-4580.0.r4580/140723 delete-file false false /trunk/prest/t/10_parse/inline_markup.init/inline_markup52.mydom
+
+2z-4580.0.r4580/140088 delete-file false false /trunk/prest/t/10_parse/inline_markup.init/test_inline_markup.py
+
+32-4580.0.r4580/136564 delete-file false false /trunk/prest/t/10_parse/interpreted.init/interpreted21.mydom
+
+35-4580.0.r4580/136262 delete-file false false /trunk/prest/t/10_parse/interpreted.init/test_interpreted.py
+
+38-4580.0.r4580/135100 delete-file false false /trunk/prest/t/10_parse/line_blocks.init/line_blocks14.mydom
+
+3b-4580.0.r4580/134798 delete-file false false /trunk/prest/t/10_parse/line_blocks.init/test_line_blocks.py
+
+3e-4580.0.r4580/138323 delete-file false false /trunk/prest/t/10_parse/literal_blocks.init/test_literal_blocks.py
+
+3i-4580.0.r4580/133620 delete-file false false /trunk/prest/t/10_parse/nested_inline.init/nested_inline03.mydom
+
+3l-4580.0.r4580/133372 delete-file false false /trunk/prest/t/10_parse/nested_inline.init/test_nested_inline.py
+
+3o-4580.0.r4580/137151 delete-file false false /trunk/prest/t/10_parse/option_lists.init/test_option_lists.py
+
+3s-4580.0.r4580/134217 delete-file false false /trunk/prest/t/10_parse/outdenting.init/test_outdenting.py
+
+3w-4580.0.r4580/137742 delete-file false false /trunk/prest/t/10_parse/paragraphs.init/test_paragraphs.py
+
+40-4580.0.r4580/142893 delete-file false false /trunk/prest/t/10_parse/section_headers.init/section_headers04.mydom
+
+43-4580.0.r4580/143144 delete-file false false /trunk/prest/t/10_parse/section_headers.init/section_headers22.mydom
+
+45-4580.0.r4580/143898 delete-file false false /trunk/prest/t/10_parse/section_headers.init/section_headers29.mydom
+
+47-4580.0.r4580/143395 delete-file false false /trunk/prest/t/10_parse/section_headers.init/section_headers32.mydom
+
+49-4580.0.r4580/143647 delete-file false false /trunk/prest/t/10_parse/section_headers.init/section_headers33.mydom
+
+4b-4580.0.r4580/142582 delete-file false false /trunk/prest/t/10_parse/section_headers.init/test_section_headers.py
+
+4e-4580.0.r4580/141636 delete-file false false /trunk/prest/t/10_parse/substitutions.init/substitutions11.mydom
+
+4h-4580.0.r4580/141926 delete-file false false /trunk/prest/t/10_parse/substitutions.init/test_substitutions.py
+
+4k-4580.0.r4580/150164 delete-file false false /trunk/prest/t/10_parse/tables.init/include2.txt
+
+4n-4580.0.r4580/150392 delete-file false false /trunk/prest/t/10_parse/tables.init/tables38.mydom
+
+4p-4580.0.r4580/149871 delete-file false false /trunk/prest/t/10_parse/tables.init/test_tables.py
+
+4s-4580.0.r4580/149304 delete-file false false /trunk/prest/t/10_parse/targets.init/targets12.mydom
+
+4v-4580.0.r4580/149009 delete-file false false /trunk/prest/t/10_parse/targets.init/test_targets.py
+
+4y-4580.0.r4580/132251 delete-file false false /trunk/prest/t/10_parse/transitions.init/test_transitions.py
+
+54-4580.0.r4580/63902 delete-file false false /trunk/prest/t/20_directive/admonitions.init/test_admonitions.py
+
+58-4580.0.r4580/64491 delete-file false false /trunk/prest/t/20_directive/compound.init/test_compound.py
+
+5c-4580.0.r4580/69343 delete-file false false /trunk/prest/t/20_directive/contents.init/test_contents.py
+
+5g-4580.0.r4580/77299 delete-file false false /trunk/prest/t/20_directive/decorations.init/test_decorations.py
+
+5k-4580.0.r4580/76135 delete-file false false /trunk/prest/t/20_directive/default_role.init/test_default_role.py
+
+5o-4580.0.r4580/73384 delete-file false false /trunk/prest/t/20_directive/figures.init/test_figures.py
+
+5s-4580.0.r4580/74606 delete-file false false /trunk/prest/t/20_directive/images.init/ExtractTests.pm
+
+5v-4580.0.r4580/75415 delete-file false false /trunk/prest/t/20_directive/images.init/images14.mydom
+
+5x-4580.0.r4580/74370 delete-file false false /trunk/prest/t/20_directive/images.init/images24.mydom
+
+5z-4580.0.r4580/75179 delete-file false false /trunk/prest/t/20_directive/images.init/images30.mydom
+
+61-4580.0.r4580/74884 delete-file false false /trunk/prest/t/20_directive/images.init/test_images.py
+
+c-5058.0.r5058/20449 delete-file false false /trunk/prest/t/20_directive/include.init/Dir.smak
+
+67-4580.0.r4580/61968 delete-file false false /trunk/prest/t/20_directive/include.init/ExtractTests.pm
+
+69-4580.0.r4580/62206 delete-file false false /trunk/prest/t/20_directive/include.init/include11.mydom
+
+6b-4580.0.r4580/62850 delete-file false false /trunk/prest/t/20_directive/include.init/includes.tar
+
+6d-4580.0.r4580/62487 delete-file false false /trunk/prest/t/20_directive/include.init/test_include.py
+
+6f-4580.0.r4580/63142 delete-file false false /trunk/prest/t/20_directive/include.init/utf-16.csv
+
+6i-4580.0.r5444/99 delete-file false false /trunk/prest/t/20_directive/includes/include9.txt
+
+6m-4580.0.r4580/65067 delete-file false false /trunk/prest/t/20_directive/line_blocks.init/test_line_blocks.py
+
+6q-4580.0.r4580/67103 delete-file false false /trunk/prest/t/20_directive/meta.init/test_meta.py
+
+6u-4580.0.r4580/67621 delete-file false false /trunk/prest/t/20_directive/raw.init/raw02.mydom
+
+6x-4580.0.r4580/68181 delete-file false false /trunk/prest/t/20_directive/raw.init/raw1.txt
+
+6z-4580.0.r4580/67894 delete-file false false /trunk/prest/t/20_directive/raw.init/test_raw.py
+
+72-4580.0.r4580/79703 delete-file false false /trunk/prest/t/20_directive/replace.init/test_replace.py
+
+76-4580.0.r4580/72823 delete-file false false /trunk/prest/t/20_directive/role.init/test_role.py
+
+7a-4580.0.r4580/76727 delete-file false false /trunk/prest/t/20_directive/rubrics.init/test_rubrics.py
+
+7e-4580.0.r4580/68767 delete-file false false /trunk/prest/t/20_directive/sidebars.init/test_sidebars.py
+
+7i-4580.0.r4580/78417 delete-file false false /trunk/prest/t/20_directive/tables.init/ExtractTests.pm
+
+7l-4580.0.r4580/78652 delete-file false false /trunk/prest/t/20_directive/tables.init/empty.txt
+
+7n-4580.0.r4580/77844 delete-file false false /trunk/prest/t/20_directive/tables.init/tables24.skip.pl
+
+7p-4580.0.r4580/78122 delete-file false false /trunk/prest/t/20_directive/tables.init/test_tables.py
+
+7r-4580.0.r4580/78942 delete-file false false /trunk/prest/t/20_directive/tables.init/utf-16.csv
+
+7u-4580.0.r4580/70785 delete-file false false /trunk/prest/t/20_directive/test_directives.init/test_test_directives.py
+
+7y-4580.0.r4580/71389 delete-file false false /trunk/prest/t/20_directive/topics.init/test_topics.py
+
+81-4580.0.r4580/71682 delete-file false false /trunk/prest/t/20_directive/topics.init/topics07.mydom
+
+83-4580.0.r4580/71918 delete-file false false /trunk/prest/t/20_directive/topics.init/topics08.mydom
+
+85-4580.0.r4580/72154 delete-file false false /trunk/prest/t/20_directive/topics.init/topics09.mydom
+
+88-4580.0.r4580/65612 delete-file false false /trunk/prest/t/20_directive/unicode.init/ExtractTests.pm
+
+8b-4580.0.r4580/66131 delete-file false false /trunk/prest/t/20_directive/unicode.init/test_unicode.py
+
+8d-4580.0.r4580/65850 delete-file false false /trunk/prest/t/20_directive/unicode.init/unicode01.mydom
+
+8f-4580.0.r4580/66427 delete-file false false /trunk/prest/t/20_directive/unicode.init/unicode03.mydom
+
+8i-4580.0.r4580/70158 delete-file false false /trunk/prest/t/20_directive/unknown.init/test_unknown.py
+
+8l-4580.0.r4580/69877 delete-file false false /trunk/prest/t/20_directive/unknown.init/unknown01.mydom
+
+f-5058.0.r5058/78772 delete-file false false /trunk/prest/t/30_xform/Suite.smak
+
+8s-4580.0.r4580/159017 delete-file false false /trunk/prest/t/30_xform/class.init/test_class.py
+
+i-5058.0.r5058/76448 delete-file false false /trunk/prest/t/30_xform/contents.init/Dir.smak
+
+8x-4580.0.r4580/152375 delete-file false false /trunk/prest/t/30_xform/contents.init/test_contents.py
+
+90-4580.0.r4580/158178 delete-file false false /trunk/prest/t/30_xform/docinfo.init/ExtractTests.pm
+
+95-4580.0.r4580/157884 delete-file false false /trunk/prest/t/30_xform/docinfo.init/test_docinfo.py
+
+l-5058.0.r5058/78983 delete-file false false /trunk/prest/t/30_xform/doctitle.init/Dir.smak
+
+99-4580.0.r4580/160467 delete-file false false /trunk/prest/t/30_xform/doctitle.init/test_doctitle.py
+
+9c-4580.0.r4580/159579 delete-file false false /trunk/prest/t/30_xform/filter.init/test_filter.py
+
+o-5058.0.r5058/80637 delete-file false false /trunk/prest/t/30_xform/final_checks.init/Dir.smak
+
+9h-4580.0.r4580/163289 delete-file false false /trunk/prest/t/30_xform/final_checks.init/test_final_checks.py
+
+r-5058.0.r5058/78073 delete-file false false /trunk/prest/t/30_xform/footnotes.init/Dir.smak
+
+9l-4580.0.r4580/156907 delete-file false false /trunk/prest/t/30_xform/footnotes.init/footnotes05.mydom
+
+9n-4580.0.r4580/157147 delete-file false false /trunk/prest/t/30_xform/footnotes.init/footnotes08.mydom
+
+9r-4580.0.r4580/156608 delete-file false false /trunk/prest/t/30_xform/footnotes.init/test_footnotes.py
+
+u-5058.0.r5058/80046 delete-file false false /trunk/prest/t/30_xform/hyperlinks.init/Dir.smak
+
+9x-4580.0.r4580/162600 delete-file false false /trunk/prest/t/30_xform/hyperlinks.init/test_hyperlinks.py
+
+x-5058.0.r5058/79515 delete-file false false /trunk/prest/t/30_xform/messages.init/Dir.smak
+
+a1-4580.0.r4580/161416 delete-file false false /trunk/prest/t/30_xform/messages.init/test_messages.py
+
+a4-4580.0.r4580/154505 delete-file false false /trunk/prest/t/30_xform/sectnum.init/test_sectnum.py
+
+10-5058.0.r5058/77523 delete-file false false /trunk/prest/t/30_xform/substitutions.init/Dir.smak
+
+a9-4580.0.r4580/155407 delete-file false false /trunk/prest/t/30_xform/substitutions.init/test_substitutions.py
+
+13-5058.0.r5058/76979 delete-file false false /trunk/prest/t/30_xform/transitions.init/Dir.smak
+
+ad-4580.0.r4580/153325 delete-file false false /trunk/prest/t/30_xform/transitions.init/test_transitions.py
+
+16-5058.0.r5058/25742 delete-file false false /trunk/prest/t/40_writers/Suite.smak
+
+vo-4327.0.r4327/894398 delete-file false false /trunk/prest/t/40_writers/data/errors.txt
+
+vr-4327.0.r4327/893693 delete-file false false /trunk/prest/t/40_writers/data/header_footer.txt
+
+vt-4327.0.r4327/894628 delete-file false false /trunk/prest/t/40_writers/data/latex.txt
+
+vv-4327.0.r4327/893219 delete-file false false /trunk/prest/t/40_writers/data/list_table.txt
+
+vx-4327.0.r4327/893454 delete-file false false /trunk/prest/t/40_writers/data/nonalphanumeric.txt
+
+vz-4327.0.r4327/895097 delete-file false false /trunk/prest/t/40_writers/data/standard.txt
+
+w1-4327.0.r4327/893929 delete-file false false /trunk/prest/t/40_writers/data/table_colspan.txt
+
+w3-4327.0.r4327/894858 delete-file false false /trunk/prest/t/40_writers/data/table_complex.txt
+
+w5-4327.0.r4327/895332 delete-file false false /trunk/prest/t/40_writers/data/table_rowspan.txt
+
+w7-4327.0.r4327/894167 delete-file false false /trunk/prest/t/40_writers/data/unicode.txt
+
+5-5751.i-4580.r5751/854 delete-file false false /trunk/prest/t/40_writers/dom.init/Dir.smak
+
+8-5751.i-4580.r5751/591 delete-file false false /trunk/prest/t/40_writers/dom.init/badchars.dom
+
+a-5751.i-4580.r5751/1109 delete-file false false /trunk/prest/t/40_writers/dom.init/badchars.rst
+
+wd-4327.i-4580.r5058/23859 delete-file false false /trunk/prest/t/40_writers/dom.init/standalone.dom
+
+wf-4327.0.r4327/878726 delete-file false false /trunk/prest/t/40_writers/dom.init/standalone.rst
+
+al-4580.i-4580.r4580/84334 delete-file false false /trunk/prest/t/40_writers/dom.init/standalone.stderr
+
+1b-5058.j-4580.r5058/26269 delete-file false false /trunk/prest/t/40_writers/html.init/Dir.smak
+
+wp-4327.j-4580.r4660/17898 delete-file false false /trunk/prest/t/40_writers/html.init/alternatives.html
+
+wr-4327.j-4580.r4660/18505 delete-file false false /trunk/prest/t/40_writers/html.init/alternatives.myhtml
+
+wt-4327.0.r4327/890532 delete-file false false /trunk/prest/t/40_writers/html.init/alternatives.rst
+
+wv-4327.j-4580.r4660/18201 delete-file false false /trunk/prest/t/40_writers/html.init/directives.html
+
+wx-4327.0.r4327/890780 delete-file false false /trunk/prest/t/40_writers/html.init/directives.rst
+
+wz-4327.j-4580.r4660/16357 delete-file false false /trunk/prest/t/40_writers/html.init/introduction.html
+
+x1-4327.j-4580.r4660/16662 delete-file false false /trunk/prest/t/40_writers/html.init/introduction.myhtml
+
+x3-4327.0.r4327/891025 delete-file false false /trunk/prest/t/40_writers/html.init/introduction.rst
+
+x5-4327.j-4580.r4660/17587 delete-file false false /trunk/prest/t/40_writers/html.init/reStructuredText.html
+
+x7-4327.0.r4327/890280 delete-file false false /trunk/prest/t/40_writers/html.init/reStructuredText.rst
+
+x9-4327.j-4580.r4660/16973 delete-file false false /trunk/prest/t/40_writers/html.init/standalone.html
+
+xb-4327.j-4580.r6498/15261 delete-file false false /trunk/prest/t/40_writers/html.init/standalone.myhtml
+
+xd-4327.0.r4327/888793 delete-file false false /trunk/prest/t/40_writers/html.init/standalone.rst
+
+ax-4580.j-4580.r4580/86397 delete-file false false /trunk/prest/t/40_writers/html.init/standalone.stderr
+
+1f-5058.k-4580.r5058/22880 delete-file false false /trunk/prest/t/40_writers/latex.init/Dir.smak
+
+y7-4327.0.r4327/877419 delete-file false false /trunk/prest/t/40_writers/latex.init/biohazard.eps
+
+y9-4327.0.r4327/876215 delete-file false false /trunk/prest/t/40_writers/latex.init/docsize.tex
+
+5-5435.k-4580.r5750/1042 delete-file false false /trunk/prest/t/40_writers/latex.init/math.mytex
+
+8-5435.k-4580.r5435/4577 delete-file false false /trunk/prest/t/40_writers/latex.init/math.rst
+
+a-5435.k-4580.r5435/4844 delete-file false false /trunk/prest/t/40_writers/latex.init/math.skip.pl
+
+yb-4327.l-4580.r5750/1336 delete-file false false /trunk/prest/t/40_writers/latex.init/simple.mytex
+
+yd-4327.k-4580.r5446/437 delete-file false false /trunk/prest/t/40_writers/latex.init/simple.rst
+
+5-5749.k-4580.r6229/1560 delete-file false false /trunk/prest/t/40_writers/latex.init/tables01.mytex
+
+8-5749.k-4580.r5749/1064 delete-file false false /trunk/prest/t/40_writers/latex.init/tables01.rst
+
+yf-4327.m-4580.r6229/1858 delete-file false false /trunk/prest/t/40_writers/latex.init/test.mytex
+
+yh-4327.0.r4327/876694 delete-file false false /trunk/prest/t/40_writers/latex.init/test.rst
+
+5-5789.k-4580.r5789/618 delete-file false false /trunk/prest/t/40_writers/latex.init/test.skip.pl
+
+b5-4580.k-4580.r4580/81441 delete-file false false /trunk/prest/t/40_writers/latex.init/test.stderr
+
+yj-4327.0.r4327/876934 delete-file false false /trunk/prest/t/40_writers/latex.init/title.eps
+
+1j-5058.n-4580.r5058/24585 delete-file false false /trunk/prest/t/40_writers/xml.init/Dir.smak
+
+5-5350.n-4580.r5350/6031 delete-file false false /trunk/prest/t/40_writers/xml.init/mathml_01.rst
+
+8-5350.n-4580.r5350/5767 delete-file false false /trunk/prest/t/40_writers/xml.init/mathml_01.xml
+
+g-4710.n-4580.r4710/96190 delete-file false false /trunk/prest/t/40_writers/xml.init/noattrvalue.rst
+
+i-4710.n-4580.r4710/95662 delete-file false false /trunk/prest/t/40_writers/xml.init/noattrvalue.xml
+
+yt-4327.n-4580.r5058/24847 delete-file false false /trunk/prest/t/40_writers/xml.init/standalone.myxml
+
+yv-4327.0.r4327/881148 delete-file false false /trunk/prest/t/40_writers/xml.init/standalone.rst
+
+b9-4580.n-4580.r4580/85080 delete-file false false /trunk/prest/t/40_writers/xml.init/standalone.stderr
+
+1n-5058.o-4580.r5350/8922 delete-file false false /trunk/prest/t/40_writers/xref.init/Dir.smak
+
+m-4710.o-4580.r4710/99463 delete-file false false /trunk/prest/t/40_writers/xref.init/dupname.rst
+
+z5-4327.o-4580.r5752/65 delete-file false false /trunk/prest/t/40_writers/xref.init/idxtest1.rst
+
+z7-4327.o-4580.r4710/102577 delete-file false false /trunk/prest/t/40_writers/xref.init/idxtest2.rst
+
+z9-4327.0.r4327/887345 delete-file false false /trunk/prest/t/40_writers/xref.init/idxtest3.rst
+
+zb-4327.0-4710.r4710/100048 delete-file false false /trunk/prest/t/40_writers/xref.init/idxtest4
+
+zd-4327.1-4710.r4851/1270 delete-file false false /trunk/prest/t/40_writers/xref.init/index01.idx
+
+q-4710.o-4580.r4851/1580 delete-file false false /trunk/prest/t/40_writers/xref.init/index02.idx
+
+7-5289.o-4580.r5289/1372 delete-file false false /trunk/prest/t/40_writers/xref.init/index03.idx
+
+d-5350.o-4580.r5452/93 delete-file false false /trunk/prest/t/40_writers/xref.init/index04.idx
+
+f-5350.o-4580.r5350/7519 delete-file false false /trunk/prest/t/40_writers/xref.init/index05.idx
+
+zf-4327.0.r4327/883930 delete-file false false /trunk/prest/t/40_writers/xref.init/smiley.gif
+
+be-4580.o-4580.r4710/101740 delete-file false false /trunk/prest/t/40_writers/xref.init/tests.pl
+
+zh-4327.0.r4327/884710 delete-file false false /trunk/prest/t/40_writers/xref.init/toc01.toc
+
+zj-4327.0.r4327/885432 delete-file false false /trunk/prest/t/40_writers/xref.init/toc02.toc
+
+zl-4327.0.r4327/886152 delete-file false false /trunk/prest/t/40_writers/xref.init/toc03.toc
+
+zn-4327.0.r4327/886390 delete-file false false /trunk/prest/t/40_writers/xref.init/toc04.toc
+
+zp-4327.o-4580.r4710/103146 delete-file false false /trunk/prest/t/40_writers/xref.init/toc05.toc
+
+zr-4327.0.r4327/882676 delete-file false false /trunk/prest/t/40_writers/xref.init/toc06.toc
+
+zt-4327.0.r4327/882913 delete-file false false /trunk/prest/t/40_writers/xref.init/toc07.toc
+
+zv-4327.0.r4327/883151 delete-file false false /trunk/prest/t/40_writers/xref.init/toc08.toc
+
+zx-4327.0.r4327/883388 delete-file false false /trunk/prest/t/40_writers/xref.init/toc09.toc
+
+zz-4327.0.r4327/884471 delete-file false false /trunk/prest/t/40_writers/xref.init/toc10.toc
+
+101-4327.0.r4327/885192 delete-file false false /trunk/prest/t/40_writers/xref.init/toc11.toc
+
+103-4327.0.r4327/885670 delete-file false false /trunk/prest/t/40_writers/xref.init/toc12.toc
+
+u-4710.o-4580.r4710/102877 delete-file false false /trunk/prest/t/40_writers/xref.init/toc13.toc
+
+7-4920.o-4580.r4920/760 delete-file false false /trunk/prest/t/40_writers/xref.init/toc14.toc
+
+107-4327.2-4710.r4710/99730 delete-file false false /trunk/prest/t/40_writers/xref.init/xref01.xref
+
+w-4710.o-4580.r4710/100359 delete-file false false /trunk/prest/t/40_writers/xref.init/xref02.xref
+
+y-4710.o-4580.r4710/100628 delete-file false false /trunk/prest/t/40_writers/xref.init/xref03.xref
+
+10-4710.o-4580.r4710/101199 delete-file false false /trunk/prest/t/40_writers/xref.init/xref04.xref
+
+12-4710.o-4580.r4710/101470 delete-file false false /trunk/prest/t/40_writers/xref.init/xref05.xref
+
+14-4710.o-4580.r4710/102039 delete-file false false /trunk/prest/t/40_writers/xref.init/xref06.stderr
+
+16-4710.o-4580.r4710/102309 delete-file false false /trunk/prest/t/40_writers/xref.init/xref06.xref
+
+h-5350.o-4580.r5350/9485 delete-file false false /trunk/prest/t/40_writers/xref.init/xref07.xref
+
+j-5350.o-4580.r5350/8656 delete-file false false /trunk/prest/t/40_writers/xref.init/xref08.xref
+
+l-5350.o-4580.r5350/6985 delete-file false false /trunk/prest/t/40_writers/xref.init/xref09.xref
+
+n-5350.o-4580.r5350/7787 delete-file false false /trunk/prest/t/40_writers/xref.init/xref10.xref
+
+p-5350.o-4580.r5350/9218 delete-file false false /trunk/prest/t/40_writers/xref.init/xref11.xref
+
+105-4327.o-4580.r5350/8054 delete-file false false /trunk/prest/t/40_writers/xref.init/xreftest.rst
+
+1r-5058.0.r6498/36889 delete-file false false /trunk/prest/t/60_new/directives.init/Dir.smak
+
+t-4799.0.r4799/35911 delete-file false false /trunk/prest/t/60_new/directives.init/Text/ASCIIMathML.pm
+
+5-6438.0.r6498/36635 delete-file false false /trunk/prest/t/60_new/directives.init/class01.dom
+
+8-6438.0.r6498/37141 delete-file false false /trunk/prest/t/60_new/directives.init/class01.rst
+
+w-4799.0.r4799/38208 delete-file false false /trunk/prest/t/60_new/directives.init/mathml01.dom
+
+y-4799.0.r4799/36601 delete-file false false /trunk/prest/t/60_new/directives.init/mathml01.rst
+
+10-4799.0.r4799/38668 delete-file false false /trunk/prest/t/60_new/directives.init/mathml01.skip.pl
+
+12-4799.0.r4799/38437 delete-file false false /trunk/prest/t/60_new/directives.init/mathml02.dom
+
+14-4799.0.r4799/36830 delete-file false false /trunk/prest/t/60_new/directives.init/mathml02.rst
+
+16-4799.0.r4799/39132 delete-file false false /trunk/prest/t/60_new/directives.init/mathml02.skip.pl
+
+18-4799.0.r4799/38901 delete-file false false /trunk/prest/t/60_new/directives.init/mathml03.dom
+
+1a-4799.0.r4799/37061 delete-file false false /trunk/prest/t/60_new/directives.init/mathml03.rst
+
+1c-4799.0.r4799/39365 delete-file false false /trunk/prest/t/60_new/directives.init/mathml03.skip.pl
+
+1e-4799.0.r4799/39598 delete-file false false /trunk/prest/t/60_new/directives.init/mathml04.dom
+
+1g-4799.0.r4799/37292 delete-file false false /trunk/prest/t/60_new/directives.init/mathml04.rst
+
+1i-4799.0.r4799/39829 delete-file false false /trunk/prest/t/60_new/directives.init/mathml05.dom
+
+1k-4799.0.r4799/37521 delete-file false false /trunk/prest/t/60_new/directives.init/mathml05.rst
+
+1m-4799.0.r4799/40060 delete-file false false /trunk/prest/t/60_new/directives.init/mathml06.dom
+
+1o-4799.0.r4799/37750 delete-file false false /trunk/prest/t/60_new/directives.init/mathml06.rst
+
+1q-4799.0.r4799/40291 delete-file false false /trunk/prest/t/60_new/directives.init/mathml07.dom
+
+1s-4799.0.r4799/37979 delete-file false false /trunk/prest/t/60_new/directives.init/mathml07.rst
+
+7-6232.0.r6232/5383 delete-file false false /trunk/prest/t/60_new/directives.init/mathml08.dom
+
+9-6232.0.r6232/4929 delete-file false false /trunk/prest/t/60_new/directives.init/mathml08.rst
+
+1z-4710.0-4799.r4799/35597 delete-file false false /trunk/prest/t/60_new/directives.init/roles1.dom
+
+21-4710.1-4799.r4799/40520 delete-file false false /trunk/prest/t/60_new/directives.init/roles1.rst
+
+b-6232.0.r6232/5155 delete-file false false /trunk/prest/t/60_new/directives.init/sectnum01.dom
+
+d-6232.0.r6232/4702 delete-file false false /trunk/prest/t/60_new/directives.init/sectnum01.rst
+
+5-5753.0.r5753/774 delete-file false false /trunk/prest/t/60_new/directives.init/tab.csv
+
+1b-4710.0.r4710/244639 delete-file false false /trunk/prest/t/60_new/directives.init/tables01.dom
+
+1e-4710.0.r4710/243948 delete-file false false /trunk/prest/t/60_new/directives.init/tables01.rst
+
+1g-4710.0.r4710/244870 delete-file false false /trunk/prest/t/60_new/directives.init/tables02.dom
+
+1i-4710.0.r4710/244179 delete-file false false /trunk/prest/t/60_new/directives.init/tables02.rst
+
+1k-4710.0.r4710/245101 delete-file false false /trunk/prest/t/60_new/directives.init/tables03.dom
+
+1m-4710.0.r4710/244410 delete-file false false /trunk/prest/t/60_new/directives.init/tables03.rst
+
+8-5753.0.r5753/549 delete-file false false /trunk/prest/t/60_new/directives.init/tables04.dom
+
+a-5753.0.r5753/326 delete-file false false /trunk/prest/t/60_new/directives.init/tables04.rst
+
+1u-5058.p-4580.r5058/83880 delete-file false false /trunk/prest/t/60_new/html.init/Dir.smak
+
+7-4945.p-4580.r4945/953 delete-file false false /trunk/prest/t/60_new/html.init/bodyonly.myhtml
+
+9-4945.p-4580.r4945/698 delete-file false false /trunk/prest/t/60_new/html.init/bodyonly.rst
+
+a-6438.p-4580.r6498/39385 delete-file false false /trunk/prest/t/60_new/html.init/class01.myhtml
+
+d-6438.p-4580.r6498/40279 delete-file false false /trunk/prest/t/60_new/html.init/class01.rst
+
+5-6437.p-4580.r6437/974 delete-file false false /trunk/prest/t/60_new/html.init/dupsection.myhtml
+
+8-6437.p-4580.r6437/715 delete-file false false /trunk/prest/t/60_new/html.init/dupsection.rst
+
+xn-4327.p-4580.r6498/39979 delete-file false false /trunk/prest/t/60_new/html.init/entryattr.myhtml
+
+xp-4327.p-4580.r6287/315 delete-file false false /trunk/prest/t/60_new/html.init/entryattr.rst
+
+xr-4327.p-4580.r4580/165609 delete-file false false /trunk/prest/t/60_new/html.init/interptags.myhtml
+
+xt-4327.0.r4327/874419 delete-file false false /trunk/prest/t/60_new/html.init/interptags.rst
+
+f-6232.p-4580.r6232/8008 delete-file false false /trunk/prest/t/60_new/html.init/mathml01.myhtml
+
+i-6232.p-4580.r6232/7749 delete-file false false /trunk/prest/t/60_new/html.init/mathml01.rst
+
+1r-4710.p-4580.r4710/246085 delete-file false false /trunk/prest/t/60_new/html.init/systemmsg.myhtml
+
+1t-4710.p-4580.r4710/245820 delete-file false false /trunk/prest/t/60_new/html.init/systemmsg.rst
+
+xv-4327.p-4580.r6498/39679 delete-file false false /trunk/prest/t/60_new/html.init/tableattr.myhtml
+
+xx-4327.p-4580.r6287/604 delete-file false false /trunk/prest/t/60_new/html.init/tableattr.rst
+
+6-6231.0.r6300/1866 delete-file false false /trunk/prest/t/60_new/latex.init/Dir.smak
+
+9-6231.0.r6231/28035 delete-file false false /trunk/prest/t/60_new/latex.init/author-skip01.rst
+
+b-6231.0.r6231/36405 delete-file false false /trunk/prest/t/60_new/latex.init/author-skip01.tex
+
+d-6231.0.r6231/28489 delete-file false false /trunk/prest/t/60_new/latex.init/author-skip02.rst
+
+f-6231.0.r6231/36857 delete-file false false /trunk/prest/t/60_new/latex.init/author-skip02.tex
+
+h-6231.0.r6231/28717 delete-file false false /trunk/prest/t/60_new/latex.init/author-skip03.rst
+
+j-6231.0.r6231/37310 delete-file false false /trunk/prest/t/60_new/latex.init/author-skip03.tex
+
+l-6231.0.r6231/39813 delete-file false false /trunk/prest/t/60_new/latex.init/bullet01.rst
+
+n-6231.0.r6231/30305 delete-file false false /trunk/prest/t/60_new/latex.init/bullet01.tex
+
+p-6231.0.r6231/41825 delete-file false false /trunk/prest/t/60_new/latex.init/caption01.rst
+
+r-6231.0.r6231/32103 delete-file false false /trunk/prest/t/60_new/latex.init/caption01.tex
+
+t-6231.0.r6231/33226 delete-file false false /trunk/prest/t/60_new/latex.init/citations01.rst
+
+v-6231.0.r6231/39361 delete-file false false /trunk/prest/t/60_new/latex.init/citations01.tex
+
+x-6231.0.r6231/32554 delete-file false false /trunk/prest/t/60_new/latex.init/cloak-email-addresses.rst
+
+z-6231.0.r6231/38451 delete-file false false /trunk/prest/t/60_new/latex.init/cloak-email-addresses.tex
+
+11-6231.0.r6231/33675 delete-file false false /trunk/prest/t/60_new/latex.init/comment01.rst
+
+13-6231.0.r6231/40928 delete-file false false /trunk/prest/t/60_new/latex.init/comment01.tex
+
+15-6231.0.r6231/35486 delete-file false false /trunk/prest/t/60_new/latex.init/compound01.rst
+
+17-6231.0.r6231/26211 delete-file false false /trunk/prest/t/60_new/latex.init/compound01.tex
+
+19-6231.0.r6231/35713 delete-file false false /trunk/prest/t/60_new/latex.init/compound02.rst
+
+1b-6231.0.r6231/26439 delete-file false false /trunk/prest/t/60_new/latex.init/compound02.tex
+
+1d-6231.0.r6231/35257 delete-file false false /trunk/prest/t/60_new/latex.init/document-class.rst
+
+1f-6231.0.r6231/25979 delete-file false false /trunk/prest/t/60_new/latex.init/document-class.tex
+
+1h-6231.0.r6231/42720 delete-file false false /trunk/prest/t/60_new/latex.init/enum01.rst
+
+1j-6231.0.r6231/33002 delete-file false false /trunk/prest/t/60_new/latex.init/enum01.tex
+
+1l-6231.0.r6300/1123 delete-file false false /trunk/prest/t/60_new/latex.init/figure01.rst
+
+6-6252.0.r6272/372 delete-file false false /trunk/prest/t/60_new/latex.init/figure01.skip.pl
+
+1n-6231.0.r6300/376 delete-file false false /trunk/prest/t/60_new/latex.init/figure01.tex
+
+1p-6231.0.r6300/1370 delete-file false false /trunk/prest/t/60_new/latex.init/figure02.rst
+
+1r-6231.0.r6300/625 delete-file false false /trunk/prest/t/60_new/latex.init/figure02.tex
+
+1t-6231.0.r6300/1618 delete-file false false /trunk/prest/t/60_new/latex.init/figure03.rst
+
+9-6252.0.r6272/620 delete-file false false /trunk/prest/t/60_new/latex.init/figure03.skip.pl
+
+1v-6231.0.r6300/874 delete-file false false /trunk/prest/t/60_new/latex.init/figure03.tex
+
+1x-6231.0.r6231/32788 delete-file false false /trunk/prest/t/60_new/latex.init/foo.ps
+
+1z-6231.0.r6231/36633 delete-file false false /trunk/prest/t/60_new/latex.init/footer01.rst
+
+21-6231.0.r6231/27344 delete-file false false /trunk/prest/t/60_new/latex.init/footer01.tex
+
+23-6231.0.r6231/37086 delete-file false false /trunk/prest/t/60_new/latex.init/footer02.rst
+
+25-6231.0.r6231/27571 delete-file false false /trunk/prest/t/60_new/latex.init/footer02.tex
+
+27-6231.0.r6231/29397 delete-file false false /trunk/prest/t/60_new/latex.init/footnote-links.rst
+
+29-6231.0.r6231/37539 delete-file false false /trunk/prest/t/60_new/latex.init/footnote-links.tex
+
+2b-6231.0.r6231/36178 delete-file false false /trunk/prest/t/60_new/latex.init/footnote01.rst
+
+2d-6231.0.r6231/27115 delete-file false false /trunk/prest/t/60_new/latex.init/footnote01.tex
+
+2f-6231.0.r6231/35032 delete-file false false /trunk/prest/t/60_new/latex.init/image-ext.rst
+
+2h-6231.0.r6231/25751 delete-file false false /trunk/prest/t/60_new/latex.init/image-ext.tex
+
+2j-6231.0.r6231/37998 delete-file false false /trunk/prest/t/60_new/latex.init/inline01.rst
+
+2l-6231.0.r6231/28262 delete-file false false /trunk/prest/t/60_new/latex.init/inline01.tex
+
+2n-6231.0.r6231/26667 delete-file false false /trunk/prest/t/60_new/latex.init/mathml01.rst
+
+2p-6231.0.r6231/34578 delete-file false false /trunk/prest/t/60_new/latex.init/mathml01.tex
+
+2r-6231.0.r6231/26891 delete-file false false /trunk/prest/t/60_new/latex.init/mathml02.rst
+
+2t-6231.0.r6231/34805 delete-file false false /trunk/prest/t/60_new/latex.init/mathml02.tex
+
+2v-6231.0.r6231/27798 delete-file false false /trunk/prest/t/60_new/latex.init/max-unwrapped-colsize.rst
+
+2x-6231.0.r6231/35938 delete-file false false /trunk/prest/t/60_new/latex.init/max-unwrapped-colsize.tex
+
+2z-6231.0.r6231/33901 delete-file false false /trunk/prest/t/60_new/latex.init/note01.rst
+
+31-6231.0.r6231/41600 delete-file false false /trunk/prest/t/60_new/latex.init/note01.tex
+
+33-6231.0.r6231/40261 delete-file false false /trunk/prest/t/60_new/latex.init/raw01.rst
+
+35-6231.0.r6231/30981 delete-file false false /trunk/prest/t/60_new/latex.init/raw01.tex
+
+37-6231.0.r6231/40707 delete-file false false /trunk/prest/t/60_new/latex.init/raw02.rst
+
+39-6231.0.r6231/31431 delete-file false false /trunk/prest/t/60_new/latex.init/raw02.tex
+
+3b-6231.0.r6231/41155 delete-file false false /trunk/prest/t/60_new/latex.init/raw03.rst
+
+3d-6231.0.r6231/31655 delete-file false false /trunk/prest/t/60_new/latex.init/raw03.tex
+
+3f-6231.0.r6231/41377 delete-file false false /trunk/prest/t/60_new/latex.init/raw04.rst
+
+3h-6231.0.r6231/31879 delete-file false false /trunk/prest/t/60_new/latex.init/raw04.tex
+
+3j-6231.0.r6231/32328 delete-file false false /trunk/prest/t/60_new/latex.init/sections.rst
+
+3l-6231.0.r6231/38224 delete-file false false /trunk/prest/t/60_new/latex.init/sections.tex
+
+3n-6231.0.r6231/34125 delete-file false false /trunk/prest/t/60_new/latex.init/sidebar01.rst
+
+3p-6231.0.r6231/42264 delete-file false false /trunk/prest/t/60_new/latex.init/sidebar01.tex
+
+3r-6231.0.r6231/34351 delete-file false false /trunk/prest/t/60_new/latex.init/sidebar02.rst
+
+3t-6231.0.r6231/42492 delete-file false false /trunk/prest/t/60_new/latex.init/sidebar02.tex
+
+3v-6231.0.r6231/39588 delete-file false false /trunk/prest/t/60_new/latex.init/table01.rst
+
+3x-6231.0.r6231/30529 delete-file false false /trunk/prest/t/60_new/latex.init/table01.tex
+
+3z-6231.0.r6231/40036 delete-file false false /trunk/prest/t/60_new/latex.init/table02.rst
+
+41-6231.0.r6231/30755 delete-file false false /trunk/prest/t/60_new/latex.init/table02.tex
+
+43-6231.0.r6231/40484 delete-file false false /trunk/prest/t/60_new/latex.init/table03.rst
+
+45-6231.0.r6231/31205 delete-file false false /trunk/prest/t/60_new/latex.init/table03.tex
+
+47-6231.0.r6231/30080 delete-file false false /trunk/prest/t/60_new/latex.init/topic01.rst
+
+49-6231.0.r6231/28945 delete-file false false /trunk/prest/t/60_new/latex.init/topic01.stderr
+
+4b-6231.0.r6231/37772 delete-file false false /trunk/prest/t/60_new/latex.init/topic01.tex
+
+4d-6231.0.r6231/42943 delete-file false false /trunk/prest/t/60_new/latex.init/warn.rst
+
+4f-6231.0.r6231/33452 delete-file false false /trunk/prest/t/60_new/latex.init/warn.tex
+
+1x-5058.q-4580.r5058/85715 delete-file false false /trunk/prest/t/60_new/parse.init/Dir.smak
+
+pp-4327.q-4580.r4899/225 delete-file false false /trunk/prest/t/60_new/parse.init/keeptitle.dom
+
+pr-4327.q-4580.r4710/248255 delete-file false false /trunk/prest/t/60_new/parse.init/keeptitle.rst
+
+pt-4327.0.r4327/869956 delete-file false false /trunk/prest/t/60_new/parse.init/nestinline.dom
+
+pv-4327.0.r4327/868294 delete-file false false /trunk/prest/t/60_new/parse.init/nestinline.rst
+
+k-6232.q-4580.r6232/12061 delete-file false false /trunk/prest/t/60_new/parse.init/roman.dom
+
+n-6232.q-4580.r6232/11802 delete-file false false /trunk/prest/t/60_new/parse.init/roman.rst
+
+5-5755.q-4580.r5755/954 delete-file false false /trunk/prest/t/60_new/parse.init/spaceinlink.dom
+
+8-5755.q-4580.r5755/692 delete-file false false /trunk/prest/t/60_new/parse.init/spaceinlink.rst
+
+px-4327.0.r4327/870432 delete-file false false /trunk/prest/t/60_new/parse.init/tables01.dom
+
+pz-4327.0.r4327/869004 delete-file false false /trunk/prest/t/60_new/parse.init/tables01.rst
+
+q1-4327.q-4580.r4580/167159 delete-file false false /trunk/prest/t/60_new/parse.init/tables02.dom
+
+q3-4327.q-4580.r5480/2018 delete-file false false /trunk/prest/t/60_new/parse.init/tables02.rst
+
+q5-4327.q-4580.r4580/167454 delete-file false false /trunk/prest/t/60_new/parse.init/tables03.dom
+
+q7-4327.q-4580.r6288/333 delete-file false false /trunk/prest/t/60_new/parse.init/tables03.rst
+
+q9-4327.0.r4327/871384 delete-file false false /trunk/prest/t/60_new/parse.init/tables04.dom
+
+qb-4327.0.r4327/869719 delete-file false false /trunk/prest/t/60_new/parse.init/tables04.rst
+
+qd-4327.0.r4327/870197 delete-file false false /trunk/prest/t/60_new/parse.init/tabs1.dom
+
+qf-4327.q-4580.r4799/44201 delete-file false false /trunk/prest/t/60_new/parse.init/tabs1.rst
+
+qh-4327.0.r4327/870671 delete-file false false /trunk/prest/t/60_new/parse.init/tabs2.dom
+
+qj-4327.q-4580.r4799/44491 delete-file false false /trunk/prest/t/60_new/parse.init/tabs2.rst
+
+20-5058.0.r6232/9909 delete-file false false /trunk/prest/t/60_new/roles.init/Dir.smak
+
+21-4799.0.r6230/272 delete-file false false /trunk/prest/t/60_new/roles.init/mathml01.dom
+
+23-4799.0.r4799/43288 delete-file false false /trunk/prest/t/60_new/roles.init/mathml01.rst
+
+25-4799.0.r6230/518 delete-file false false /trunk/prest/t/60_new/roles.init/mathml02.dom
+
+27-4799.0.r4799/43513 delete-file false false /trunk/prest/t/60_new/roles.init/mathml02.rst
+
+5-5754.0.r6230/765 delete-file false false /trunk/prest/t/60_new/roles.init/mathml03.dom
+
+8-5754.0.r5754/669 delete-file false false /trunk/prest/t/60_new/roles.init/mathml03.rst
+
+29-4799.0.r4799/42398 delete-file false false /trunk/prest/t/60_new/roles.init/skip.pl
+
+v-6232.0.r6232/10375 delete-file false false /trunk/prest/t/60_new/roles.init/subst_ref01.dom
+
+x-6232.0.r6232/9457 delete-file false false /trunk/prest/t/60_new/roles.init/subst_ref01.rst
+
+z-6232.0.r6232/10601 delete-file false false /trunk/prest/t/60_new/roles.init/subst_ref02.dom
+
+11-6232.0.r6232/9682 delete-file false false /trunk/prest/t/60_new/roles.init/subst_ref02.rst
+
+5-5287.0.r5287/754 delete-file false false /trunk/prest/t/60_new/roles.init/target01.dom
+
+8-5287.0.r5287/973 delete-file false false /trunk/prest/t/60_new/roles.init/target01.rst
+
+24-5058.r-4580.r6281/7596 delete-file false false /trunk/prest/t/70_plugins/code_block.init/Dir.smak
+
+jm-4327.s-4580.r4580/107678 delete-file false false /trunk/prest/t/70_plugins/code_block.init/code01.dom
+
+jp-4327.0.r4327/944585 delete-file false false /trunk/prest/t/70_plugins/code_block.init/code01.rst
+
+jr-4327.t-4580.r4580/108014 delete-file false false /trunk/prest/t/70_plugins/code_block.init/code02.dom
+
+jt-4327.0.r4327/945082 delete-file false false /trunk/prest/t/70_plugins/code_block.init/code02.rst
+
+jv-4327.u-4580.r4710/223171 delete-file false false /trunk/prest/t/70_plugins/code_block.init/code03.dom
+
+jx-4327.r-4580.r4710/221420 delete-file false false /trunk/prest/t/70_plugins/code_block.init/code03.rst
+
+jz-4327.v-4580.r4580/108686 delete-file false false /trunk/prest/t/70_plugins/code_block.init/code04.dom
+
+k1-4327.0.r4327/946076 delete-file false false /trunk/prest/t/70_plugins/code_block.init/code04.rst
+
+k3-4327.w-4580.r4580/109022 delete-file false false /trunk/prest/t/70_plugins/code_block.init/code05.dom
+
+k5-4327.0.r4327/946571 delete-file false false /trunk/prest/t/70_plugins/code_block.init/code05.rst
+
+k7-4327.x-4580.r4580/109358 delete-file false false /trunk/prest/t/70_plugins/code_block.init/code06.dom
+
+k9-4327.0.r4327/946818 delete-file false false /trunk/prest/t/70_plugins/code_block.init/code06.rst
+
+kb-4327.y-4580.r4580/109694 delete-file false false /trunk/prest/t/70_plugins/code_block.init/code07.dom
+
+kd-4327.0.r4327/947065 delete-file false false /trunk/prest/t/70_plugins/code_block.init/code07.rst
+
+28-4710.r-4580.r4710/223781 delete-file false false /trunk/prest/t/70_plugins/code_block.init/code08.dom
+
+2a-4710.r-4580.r4710/222325 delete-file false false /trunk/prest/t/70_plugins/code_block.init/code08.rst
+
+2c-4710.r-4580.r4710/224063 delete-file false false /trunk/prest/t/70_plugins/code_block.init/code09.dom
+
+2e-4710.r-4580.r4710/222607 delete-file false false /trunk/prest/t/70_plugins/code_block.init/code09.rst
+
+2g-4710.r-4580.r4710/222043 delete-file false false /trunk/prest/t/70_plugins/code_block.init/code10.dom
+
+2i-4710.r-4580.r4710/220574 delete-file false false /trunk/prest/t/70_plugins/code_block.init/code10.rst
+
+2k-4710.r-4580.r4710/222889 delete-file false false /trunk/prest/t/70_plugins/code_block.init/code11.dom
+
+2m-4710.r-4580.r4710/220856 delete-file false false /trunk/prest/t/70_plugins/code_block.init/code11.rst
+
+2o-4710.r-4580.r4710/223499 delete-file false false /trunk/prest/t/70_plugins/code_block.init/code12.dom
+
+2q-4710.r-4580.r4710/221138 delete-file false false /trunk/prest/t/70_plugins/code_block.init/code12.rst
+
+7-6233.r-4580.r6233/14938 delete-file false false /trunk/prest/t/70_plugins/code_block.init/code13.dom
+
+9-6233.r-4580.r6233/14383 delete-file false false /trunk/prest/t/70_plugins/code_block.init/code13.rst
+
+b-6233.r-4580.r6233/15215 delete-file false false /trunk/prest/t/70_plugins/code_block.init/code14.dom
+
+d-6233.r-4580.r6233/14660 delete-file false false /trunk/prest/t/70_plugins/code_block.init/code14.rst
+
+7-6281.r-4580.r6281/7043 delete-file false false /trunk/prest/t/70_plugins/code_block.init/code15.dom
+
+9-6281.r-4580.r6281/7320 delete-file false false /trunk/prest/t/70_plugins/code_block.init/code15.rst
+
+kf-4327.0.r4327/947355 delete-file false false /trunk/prest/t/70_plugins/code_block.init/foo.sh
+
+5-6282.r-4580.r6282/4224 delete-file false false /trunk/prest/t/70_plugins/code_block.init/generic01.dom
+
+8-6282.r-4580.r6282/3105 delete-file false false /trunk/prest/t/70_plugins/code_block.init/generic01.rst
+
+a-6282.r-4580.r6282/4501 delete-file false false /trunk/prest/t/70_plugins/code_block.init/generic02.dom
+
+c-6282.r-4580.r6282/3384 delete-file false false /trunk/prest/t/70_plugins/code_block.init/generic02.rst
+
+e-6282.r-4580.r6282/4780 delete-file false false /trunk/prest/t/70_plugins/code_block.init/generic03.dom
+
+g-6282.r-4580.r6282/3664 delete-file false false /trunk/prest/t/70_plugins/code_block.init/generic03.rst
+
+i-6282.r-4580.r6282/5061 delete-file false false /trunk/prest/t/70_plugins/code_block.init/generic04.dom
+
+k-6282.r-4580.r6282/3944 delete-file false false /trunk/prest/t/70_plugins/code_block.init/generic04.rst
+
+b-6281.r-4580.r6281/6764 delete-file false false /trunk/prest/t/70_plugins/code_block.init/mkfile.st
+
+c5-4580.r-4580.r5451/249 delete-file false false /trunk/prest/t/70_plugins/code_block.init/skip.pl
+
+lz-4327.z-4580.r4580/120951 delete-file false false /trunk/prest/t/70_plugins/data/include1.txt
+
+m1-4327.10-4580.r4580/121266 delete-file false false /trunk/prest/t/70_plugins/data/include2.txt
+
+m4-4327.0.r4327/932734 delete-file false false /trunk/prest/t/70_plugins/data/includes/include1.txt
+
+m7-4327.0.r4327/933475 delete-file false false /trunk/prest/t/70_plugins/data/includes/include5.txt
+
+ma-4327.0.r4327/932979 delete-file false false /trunk/prest/t/70_plugins/data/includes/more/include6.txt
+
+27-5058.12-4580.r5058/54341 delete-file false false /trunk/prest/t/70_plugins/if.init/Dir.smak
+
+kk-4327.12-4580.r4580/95118 delete-file false false /trunk/prest/t/70_plugins/if.init/if01.dom
+
+kn-4327.0.r4327/929032 delete-file false false /trunk/prest/t/70_plugins/if.init/if01.rst
+
+kp-4327.12-4580.r4730/608 delete-file false false /trunk/prest/t/70_plugins/if.init/if02.dom
+
+kr-4327.12-4580.r4730/321 delete-file false false /trunk/prest/t/70_plugins/if.init/if02.rst
+
+kt-4327.12-4580.r4580/92050 delete-file false false /trunk/prest/t/70_plugins/if.init/if03.dom
+
+kv-4327.0.r4327/929506 delete-file false false /trunk/prest/t/70_plugins/if.init/if03.rst
+
+kx-4327.12-4580.r4580/92605 delete-file false false /trunk/prest/t/70_plugins/if.init/if04.dom
+
+kz-4327.0.r4327/929743 delete-file false false /trunk/prest/t/70_plugins/if.init/if04.rst
+
+l1-4327.12-4580.r6498/27268 delete-file false false /trunk/prest/t/70_plugins/if.init/if05.dom
+
+l3-4327.0.r4327/930223 delete-file false false /trunk/prest/t/70_plugins/if.init/if05.rst
+
+2u-4710.12-4580.r4710/208552 delete-file false false /trunk/prest/t/70_plugins/if.init/if06.dom
+
+2w-4710.12-4580.r4710/210713 delete-file false false /trunk/prest/t/70_plugins/if.init/if06.rst
+
+30-4710.12-4580.r4710/208818 delete-file false false /trunk/prest/t/70_plugins/if.init/if07.dom
+
+32-4710.12-4580.r4710/211248 delete-file false false /trunk/prest/t/70_plugins/if.init/if07.rst
+
+34-4710.12-4580.r4710/209083 delete-file false false /trunk/prest/t/70_plugins/if.init/if08.dom
+
+36-4710.12-4580.r4710/211783 delete-file false false /trunk/prest/t/70_plugins/if.init/if08.rst
+
+cl-4580.12-4580.r4580/92342 delete-file false false /trunk/prest/t/70_plugins/if.init/skip.pl
+
+l5-4327.12-4580.r6286/1819 delete-file false false /trunk/prest/t/70_plugins/if.init/trusted01.dom
+
+l7-4327.12-4580.r6286/929 delete-file false false /trunk/prest/t/70_plugins/if.init/trusted01.rst
+
+l9-4327.12-4580.r4580/94820 delete-file false false /trunk/prest/t/70_plugins/if.init/trusted02.dom
+
+lb-4327.12-4580.r6286/1221 delete-file false false /trunk/prest/t/70_plugins/if.init/trusted02.rst
+
+38-4710.12-4580.r4710/210978 delete-file false false /trunk/prest/t/70_plugins/if.init/trusted03.dom
+
+3c-4710.12-4580.r4710/209907 delete-file false false /trunk/prest/t/70_plugins/if.init/trusted03.rst
+
+3e-4710.12-4580.r4710/211513 delete-file false false /trunk/prest/t/70_plugins/if.init/trusted04.dom
+
+3g-4710.12-4580.r6286/1520 delete-file false false /trunk/prest/t/70_plugins/if.init/trusted04.rst
+
+2a-5058.13-4580.r5058/59152 delete-file false false /trunk/prest/t/70_plugins/include.init/Dir.smak
+
+lg-4327.0.r4327/941846 delete-file false false /trunk/prest/t/70_plugins/include.init/include01.dom
+
+lj-4327.0.r4327/942587 delete-file false false /trunk/prest/t/70_plugins/include.init/include01.rst
+
+ll-4327.0.r4327/942093 delete-file false false /trunk/prest/t/70_plugins/include.init/include02.dom
+
+ln-4327.0.r4327/942834 delete-file false false /trunk/prest/t/70_plugins/include.init/include02.rst
+
+lp-4327.0.r4327/942340 delete-file false false /trunk/prest/t/70_plugins/include.init/include03.dom
+
+lr-4327.0.r4327/943081 delete-file false false /trunk/prest/t/70_plugins/include.init/include03.rst
+
+lz-4327.14-4580.r4580/105139 delete-file false false /trunk/prest/t/70_plugins/include.init/include1.txt
+
+m1-4327.15-4580.r4580/105463 delete-file false false /trunk/prest/t/70_plugins/include.init/include2.txt
+
+m4-4327.0.r4327/932734 delete-file false false /trunk/prest/t/70_plugins/include.init/includes/include1.txt
+
+m7-4327.0.r4327/933475 delete-file false false /trunk/prest/t/70_plugins/include.init/includes/include5.txt
+
+ma-4327.0.r4327/932979 delete-file false false /trunk/prest/t/70_plugins/include.init/includes/more/include6.txt
+
+2d-5058.17-4580.r6498/31486 delete-file false false /trunk/prest/t/70_plugins/perl.init/Dir.smak
+
+me-4327.17-4580.r4580/97487 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl01.dom
+
+mh-4327.17-4580.r4580/102134 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl01.rst
+
+mj-4327.17-4580.r4580/98083 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl02.dom
+
+ml-4327.17-4580.r4580/102734 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl02.rst
+
+mn-4327.17-4580.r4580/98381 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl03.dom
+
+mp-4327.17-4580.r4580/103033 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl03.rst
+
+mr-4327.17-4580.r6498/30610 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl04.dom
+
+mt-4327.17-4580.r5479/792 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl04.rst
+
+mv-4327.17-4580.r4580/99245 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl05.dom
+
+mx-4327.0.r4327/940223 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl05.rst
+
+mz-4327.17-4580.r6498/31185 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl06.dom
+
+n1-4327.17-4580.r5756/467 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl06.rst
+
+n3-4327.17-4580.r4580/99841 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl07.dom
+
+n5-4327.0.r4327/934910 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl07.rst
+
+n7-4327.17-4580.r4580/100139 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl08.dom
+
+n9-4327.17-4580.r4710/213919 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl08.rst
+
+nb-4327.17-4580.r4580/100438 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl09.dom
+
+nd-4327.0.r4327/935874 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl09.rst
+
+nf-4327.17-4580.r6498/29169 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl10.dom
+
+nh-4327.17-4580.r5479/499 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl10.rst
+
+3l-4710.17-4580.r4710/214224 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl11.dom
+
+3n-4710.17-4580.r4710/216420 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl11.rst
+
+3r-4710.17-4580.r4710/214496 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl12.dom
+
+3t-4710.17-4580.r4710/216691 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl12.rst
+
+3v-4710.17-4580.r4710/214767 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl13.dom
+
+3x-4710.17-4580.r4710/216962 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl13.rst
+
+3z-4710.17-4580.r4710/215339 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl14.dom
+
+41-4710.17-4580.r4710/217231 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl14.rst
+
+5-5351.17-4580.r5351/1333 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl15.dom
+
+8-5351.17-4580.r5351/2393 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl15.prl
+
+a-5351.17-4580.r5351/1862 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl15.rst
+
+6-5365.17-4580.r5365/145 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl15.skip.pl
+
+c-5351.17-4580.r5351/1597 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl16.dom
+
+e-5351.17-4580.r5351/2127 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl16.rst
+
+h-6233.17-4580.r6233/9707 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl17.dom
+
+j-6233.17-4580.r6233/10510 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl17.rst
+
+l-6233.17-4580.r6233/9973 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl18.dom
+
+n-6233.17-4580.r6233/10777 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl18.rst
+
+p-6233.17-4580.r6233/10239 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl18.stderr
+
+5-6280.17-4580.r6280/535 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl19.dom
+
+8-6280.17-4580.r6280/797 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl19.rst
+
+43-4710.17-4580.r4710/216150 delete-file false false /trunk/prest/t/70_plugins/perl.init/perl4.dom
+
+5-5477.17-4580.r6498/29470 delete-file false false /trunk/prest/t/70_plugins/perl.init/role01.dom
+
+8-5477.17-4580.r5477/1110 delete-file false false /trunk/prest/t/70_plugins/perl.init/role01.rst
+
+a-5477.17-4580.r6498/29769 delete-file false false /trunk/prest/t/70_plugins/perl.init/role02.dom
+
+c-5477.17-4580.r5477/1373 delete-file false false /trunk/prest/t/70_plugins/perl.init/role02.rst
+
+16-6498.17-4580.r6498/30068 delete-file false false /trunk/prest/t/70_plugins/perl.init/role03.dom
+
+18-6498.17-4580.r6498/31788 delete-file false false /trunk/prest/t/70_plugins/perl.init/role03.rst
+
+1a-6498.17-4580.r6498/30339 delete-file false false /trunk/prest/t/70_plugins/perl.init/role04.dom
+
+1c-6498.17-4580.r6498/32059 delete-file false false /trunk/prest/t/70_plugins/perl.init/role04.rst
+
+1e-6498.17-4580.r6498/30914 delete-file false false /trunk/prest/t/70_plugins/perl.init/role05.dom
+
+1g-6498.17-4580.r6498/32330 delete-file false false /trunk/prest/t/70_plugins/perl.init/role05.rst
+
+dg-4580.17-4580.r4580/96922 delete-file false false /trunk/prest/t/70_plugins/perl.init/skip.pl
+
+nj-4327.17-4580.r4580/101831 delete-file false false /trunk/prest/t/70_plugins/perl.init/trusted01.dom
+
+nl-4327.17-4580.r6286/3721 delete-file false false /trunk/prest/t/70_plugins/perl.init/trusted01.rst
+
+nn-4327.17-4580.r4580/102432 delete-file false false /trunk/prest/t/70_plugins/perl.init/trusted02.dom
+
+np-4327.17-4580.r6286/4018 delete-file false false /trunk/prest/t/70_plugins/perl.init/trusted02.rst
+
+45-4710.17-4580.r4710/217774 delete-file false false /trunk/prest/t/70_plugins/perl.init/trusted03.dom
+
+49-4710.17-4580.r4710/215876 delete-file false false /trunk/prest/t/70_plugins/perl.init/trusted03.rst
+
+2g-5058.18-4580.r5058/62314 delete-file false false /trunk/prest/t/70_plugins/system.init/Dir.smak
+
+dq-4580.18-4580.r4580/111529 delete-file false false /trunk/prest/t/70_plugins/system.init/skip.pl
+
+nu-4327.18-4580.r4580/114480 delete-file false false /trunk/prest/t/70_plugins/system.init/system01.dom
+
+nx-4327.18-4580.r4580/112648 delete-file false false /trunk/prest/t/70_plugins/system.init/system01.rst
+
+nz-4327.18-4580.r4580/115396 delete-file false false /trunk/prest/t/70_plugins/system.init/system02.dom
+
+o1-4327.18-4580.r4580/113259 delete-file false false /trunk/prest/t/70_plugins/system.init/system02.rst
+
+o3-4327.18-4580.r4937/2024 delete-file false false /trunk/prest/t/70_plugins/system.init/system03.dom
+
+o5-4327.18-4580.r4937/1102 delete-file false false /trunk/prest/t/70_plugins/system.init/system03.rst
+
+o7-4327.18-4580.r4580/116617 delete-file false false /trunk/prest/t/70_plugins/system.init/system04.dom
+
+o9-4327.0.r4327/949822 delete-file false false /trunk/prest/t/70_plugins/system.init/system04.rst
+
+ob-4327.18-4580.r4580/116922 delete-file false false /trunk/prest/t/70_plugins/system.init/system05.dom
+
+od-4327.0.r4327/950067 delete-file false false /trunk/prest/t/70_plugins/system.init/system05.rst
+
+of-4327.18-4580.r4710/229119 delete-file false false /trunk/prest/t/70_plugins/system.init/system06.dom
+
+oh-4327.18-4580.r4710/226600 delete-file false false /trunk/prest/t/70_plugins/system.init/system06.rst
+
+oj-4327.18-4580.r4580/117532 delete-file false false /trunk/prest/t/70_plugins/system.init/system07.dom
+
+ol-4327.18-4580.r4580/113870 delete-file false false /trunk/prest/t/70_plugins/system.init/system07.rst
+
+on-4327.18-4580.r4580/118144 delete-file false false /trunk/prest/t/70_plugins/system.init/system08.dom
+
+op-4327.18-4580.r4580/114785 delete-file false false /trunk/prest/t/70_plugins/system.init/system08.rst
+
+or-4327.18-4580.r4580/118756 delete-file false false /trunk/prest/t/70_plugins/system.init/system09.dom
+
+ot-4327.18-4580.r4580/115701 delete-file false false /trunk/prest/t/70_plugins/system.init/system09.rst
+
+ov-4327.18-4580.r4580/114175 delete-file false false /trunk/prest/t/70_plugins/system.init/system10.dom
+
+ox-4327.18-4580.r4580/112343 delete-file false false /trunk/prest/t/70_plugins/system.init/system10.rst
+
+oz-4327.18-4580.r4937/1409 delete-file false false /trunk/prest/t/70_plugins/system.init/system11.dom
+
+p1-4327.18-4580.r4937/1717 delete-file false false /trunk/prest/t/70_plugins/system.init/system11.rst
+
+4f-4710.18-4580.r4710/227180 delete-file false false /trunk/prest/t/70_plugins/system.init/system12.dom
+
+4h-4710.18-4580.r4710/228292 delete-file false false /trunk/prest/t/70_plugins/system.init/system12.rst
+
+4j-4710.18-4580.r4710/227734 delete-file false false /trunk/prest/t/70_plugins/system.init/system12.skip.pl
+
+4l-4710.18-4580.r4710/227457 delete-file false false /trunk/prest/t/70_plugins/system.init/system13.dom
+
+4n-4710.18-4580.r4710/228567 delete-file false false /trunk/prest/t/70_plugins/system.init/system13.rst
+
+4p-4710.18-4580.r4935/8110 delete-file false false /trunk/prest/t/70_plugins/system.init/system14.dom
+
+4r-4710.18-4580.r4935/8418 delete-file false false /trunk/prest/t/70_plugins/system.init/system14.rst
+
+p3-4327.18-4580.r4580/117837 delete-file false false /trunk/prest/t/70_plugins/system.init/trusted01.dom
+
+p5-4327.18-4580.r6286/7464 delete-file false false /trunk/prest/t/70_plugins/system.init/trusted01.rst
+
+p7-4327.18-4580.r4580/118449 delete-file false false /trunk/prest/t/70_plugins/system.init/trusted02.dom
+
+p9-4327.18-4580.r6286/7765 delete-file false false /trunk/prest/t/70_plugins/system.init/trusted02.rst
+
+4t-4710.18-4580.r4710/229432 delete-file false false /trunk/prest/t/70_plugins/system.init/trusted03.dom
+
+4x-4710.18-4580.r4710/226904 delete-file false false /trunk/prest/t/70_plugins/system.init/trusted03.rst
+
+4z-4710.18-4580.r4710/229710 delete-file false false /trunk/prest/t/70_plugins/system.init/trusted03.skip.pl
+
+2k-5058.0.r5757/10024 delete-file false false /trunk/prest/t/80_misc/cmdline.init/Dir.smak
+
+b-4741.0.r4741/164 delete-file false false /trunk/prest/t/80_misc/cmdline.init/Text/Restructured/Writer/dom.wrt
+
+57-4710.0.r4710/190707 delete-file false false /trunk/prest/t/80_misc/cmdline.init/badopt.dom
+
+59-4710.0.r4710/189358 delete-file false false /trunk/prest/t/80_misc/cmdline.init/badopt.rst
+
+7-5757.0.r5757/6757 delete-file false false /trunk/prest/t/80_misc/cmdline.init/no_opt_w.rst
+
+9-5757.0.r5757/9094 delete-file false false /trunk/prest/t/80_misc/cmdline.init/no_opt_w.txt
+
+5b-4710.0.r4710/192508 delete-file false false /trunk/prest/t/80_misc/cmdline.init/noargs.dom
+
+5d-4710.0.r4710/192067 delete-file false false /trunk/prest/t/80_misc/cmdline.init/noargs.rst
+
+5f-4710.0-5058.r5058/47408 delete-file false false /trunk/prest/t/80_misc/cmdline.init/opt_V.dom.re
+
+5h-4710.0.r4710/191616 delete-file false false /trunk/prest/t/80_misc/cmdline.init/opt_V.rst
+
+5j-4710.0.r5058/46420 delete-file false false /trunk/prest/t/80_misc/cmdline.init/opt_d.dom
+
+5n-4710.0.r4710/192734 delete-file false false /trunk/prest/t/80_misc/cmdline.init/opt_d.rst
+
+5p-4710.0.r5058/46673 delete-file false false /trunk/prest/t/80_misc/cmdline.init/opt_dx2.dom
+
+5t-4710.0.r4710/190253 delete-file false false /trunk/prest/t/80_misc/cmdline.init/opt_dx2.rst
+
+5v-4710.0.r5058/46928 delete-file false false /trunk/prest/t/80_misc/cmdline.init/opt_dx3.dom
+
+5z-4710.0.r4710/190933 delete-file false false /trunk/prest/t/80_misc/cmdline.init/opt_dx3.rst
+
+61-4710.0.r4710/190480 delete-file false false /trunk/prest/t/80_misc/cmdline.init/opt_h.dom
+
+63-4710.0.r4710/189137 delete-file false false /trunk/prest/t/80_misc/cmdline.init/opt_h.rst
+
+b-5757.0.r5757/5808 delete-file false false /trunk/prest/t/80_misc/cmdline.init/opt_ignore_include_errs.dom
+
+d-5757.0.r5757/7924 delete-file false false /trunk/prest/t/80_misc/cmdline.init/opt_ignore_include_errs.rst
+
+f-5757.0.r5757/9551 delete-file false false /trunk/prest/t/80_misc/cmdline.init/opt_no_file_insertion.dom
+
+h-5757.0.r5757/7212 delete-file false false /trunk/prest/t/80_misc/cmdline.init/opt_no_file_insertion.rst
+
+j-5757.0.r5757/9316 delete-file false false /trunk/prest/t/80_misc/cmdline.init/opt_relax_citation.dom
+
+l-5757.0.r5757/6979 delete-file false false /trunk/prest/t/80_misc/cmdline.init/opt_relax_citation.rst
+
+n-5757.0.r5757/10513 delete-file false false /trunk/prest/t/80_misc/cmdline.init/opt_report.txt
+
+p-5757.0.r6498/22588 delete-file false false /trunk/prest/t/80_misc/cmdline.init/opt_report_error.dom
+
+r-5757.0.r5757/8395 delete-file false false /trunk/prest/t/80_misc/cmdline.init/opt_report_error.rst
+
+t-5757.0.r6498/23908 delete-file false false /trunk/prest/t/80_misc/cmdline.init/opt_report_error.stderr
+
+v-5757.0.r6498/23647 delete-file false false /trunk/prest/t/80_misc/cmdline.init/opt_report_info.dom
+
+x-5757.0.r5757/5578 delete-file false false /trunk/prest/t/80_misc/cmdline.init/opt_report_info.rst
+
+z-5757.0.r6498/23384 delete-file false false /trunk/prest/t/80_misc/cmdline.init/opt_report_info.stderr
+
+11-5757.0.r6498/22323 delete-file false false /trunk/prest/t/80_misc/cmdline.init/opt_report_severe.dom
+
+13-5757.0.r5757/8161 delete-file false false /trunk/prest/t/80_misc/cmdline.init/opt_report_severe.rst
+
+15-5757.0.r6498/24172 delete-file false false /trunk/prest/t/80_misc/cmdline.init/opt_report_severe.stderr
+
+17-5757.0.r6498/23118 delete-file false false /trunk/prest/t/80_misc/cmdline.init/opt_report_warning.dom
+
+19-5757.0.r5757/8859 delete-file false false /trunk/prest/t/80_misc/cmdline.init/opt_report_warning.rst
+
+1b-5757.0.r6498/22850 delete-file false false /trunk/prest/t/80_misc/cmdline.init/opt_report_warning.stderr
+
+2q-5058.0.r5787/70 delete-file false false /trunk/prest/t/80_misc/coverage.init/Dir.smak
+
+2i-4799.0.r4799/32009 delete-file false false /trunk/prest/t/80_misc/coverage.init/Text/ASCIIMathML.pm
+
+6e-4710.0.r4710/201642 delete-file false false /trunk/prest/t/80_misc/coverage.init/Text/Restructured/Directive/baddirective.pm
+
+6h-4710.0.r4710/201902 delete-file false false /trunk/prest/t/80_misc/coverage.init/Text/Restructured/Directive/baddirective2.pm
+
+8-5760.0.r5760/3232 delete-file false false /trunk/prest/t/80_misc/coverage.init/Text/Restructured/Directive/badinit.pm
+
+b-5760.0.r5788/438 delete-file false false /trunk/prest/t/80_misc/coverage.init/Text/Restructured/Directive/badrole.pm
+
+6j-4710.0.r4710/202483 delete-file false false /trunk/prest/t/80_misc/coverage.init/Text/Restructured/PrestConfig.pm
+
+6m-4710.0.r4710/199952 delete-file false false /trunk/prest/t/80_misc/coverage.init/Text/Restructured/Writer/bad1.wrt
+
+6p-4710.0.r4710/200202 delete-file false false /trunk/prest/t/80_misc/coverage.init/Text/Restructured/Writer/bad2.wrt
+
+6r-4710.0.r4710/200452 delete-file false false /trunk/prest/t/80_misc/coverage.init/Text/Restructured/Writer/bad3.wrt
+
+6t-4710.0.r5378/6932 delete-file false false /trunk/prest/t/80_misc/coverage.init/Text/Restructured/Writer/bad4.wrt
+
+6v-4710.0.r5352/1808 delete-file false false /trunk/prest/t/80_misc/coverage.init/Text/Restructured/Writer/cover.wrt
+
+6x-4710.0.r4710/203989 delete-file false false /trunk/prest/t/80_misc/coverage.init/baddirect.dom
+
+71-4710.0.r4710/196494 delete-file false false /trunk/prest/t/80_misc/coverage.init/baddirect.rst
+
+d-5760.0.r5760/1946 delete-file false false /trunk/prest/t/80_misc/coverage.init/badinit.dom
+
+f-5760.0.r5760/2618 delete-file false false /trunk/prest/t/80_misc/coverage.init/badinit.rst
+
+h-5760.0.r5788/190 delete-file false false /trunk/prest/t/80_misc/coverage.init/badrole.dom
+
+j-5760.0.r5760/2395 delete-file false false /trunk/prest/t/80_misc/coverage.init/badrole.rst
+
+73-4710.0.r4710/194683 delete-file false false /trunk/prest/t/80_misc/coverage.init/badwrt1.dom
+
+75-4710.0.r4710/198340 delete-file false false /trunk/prest/t/80_misc/coverage.init/badwrt1.rst
+
+77-4710.0.r4710/204687 delete-file false false /trunk/prest/t/80_misc/coverage.init/badwrt1.stderr
+
+79-4710.0.r4710/194907 delete-file false false /trunk/prest/t/80_misc/coverage.init/badwrt2.dom
+
+7b-4710.0.r4710/199038 delete-file false false /trunk/prest/t/80_misc/coverage.init/badwrt2.rst
+
+7d-4710.0.r4710/197874 delete-file false false /trunk/prest/t/80_misc/coverage.init/badwrt2.stderr
+
+7f-4710.0.r4710/195131 delete-file false false /trunk/prest/t/80_misc/coverage.init/badwrt3.dom
+
+7h-4710.0.r4710/199267 delete-file false false /trunk/prest/t/80_misc/coverage.init/badwrt3.rst
+
+7j-4710.0.r4710/204920 delete-file false false /trunk/prest/t/80_misc/coverage.init/badwrt3.stderr
+
+7l-4710.0.r4710/195581 delete-file false false /trunk/prest/t/80_misc/coverage.init/badwrt4.dom
+
+7n-4710.0.r4710/199496 delete-file false false /trunk/prest/t/80_misc/coverage.init/badwrt4.rst
+
+7p-4710.0.r5378/6674 delete-file false false /trunk/prest/t/80_misc/coverage.init/badwrt4.stderr
+
+7r-4710.1-5058.r5058/50061 delete-file false false /trunk/prest/t/80_misc/coverage.init/dom.dom
+
+7t-4710.0.r5758/446 delete-file false false /trunk/prest/t/80_misc/coverage.init/dom.rst
+
+7v-4710.0.r4710/205611 delete-file false false /trunk/prest/t/80_misc/coverage.init/html.myhtml
+
+7x-4710.0.r4710/205384 delete-file false false /trunk/prest/t/80_misc/coverage.init/html.rst
+
+7z-4710.0.r4710/197646 delete-file false false /trunk/prest/t/80_misc/coverage.init/html.stderr
+
+c-5352.0.r5352/3218 delete-file false false /trunk/prest/t/80_misc/coverage.init/image01.dom
+
+e-5352.0.r5352/1585 delete-file false false /trunk/prest/t/80_misc/coverage.init/image01.rst
+
+81-4710.0.r4710/204222 delete-file false false /trunk/prest/t/80_misc/coverage.init/indtarget.dom
+
+83-4710.0.r4710/196264 delete-file false false /trunk/prest/t/80_misc/coverage.init/indtarget.rst
+
+2l-4799.0.r4799/32559 delete-file false false /trunk/prest/t/80_misc/coverage.init/mathml01.dom
+
+2n-4799.0.r4799/31780 delete-file false false /trunk/prest/t/80_misc/coverage.init/mathml01.rst
+
+85-4710.0.r4710/203309 delete-file false false /trunk/prest/t/80_misc/coverage.init/nowrt.dom
+
+87-4710.0.r4710/194004 delete-file false false /trunk/prest/t/80_misc/coverage.init/nowrt.rst
+
+89-4710.0.r4710/205153 delete-file false false /trunk/prest/t/80_misc/coverage.init/nowrt.stderr
+
+8b-4710.0.r4710/203531 delete-file false false /trunk/prest/t/80_misc/coverage.init/parse.dom
+
+8d-4710.0.r4710/194231 delete-file false false /trunk/prest/t/80_misc/coverage.init/parse.rst
+
+8f-4710.0.r4710/197181 delete-file false false /trunk/prest/t/80_misc/coverage.init/pending.dom
+
+8h-4710.0.r4710/203759 delete-file false false /trunk/prest/t/80_misc/coverage.init/pending.rst
+
+8j-4710.0.r5058/48828 delete-file false false /trunk/prest/t/80_misc/coverage.init/pending.stderr
+
+8l-4710.2-5058.r5058/50812 delete-file false false /trunk/prest/t/80_misc/coverage.init/restructured.dom
+
+8n-4710.0.r4710/197411 delete-file false false /trunk/prest/t/80_misc/coverage.init/restructured.rst
+
+l-5760.0.r5760/4639 delete-file false false /trunk/prest/t/80_misc/coverage.init/title01.dom
+
+n-5760.0.r5760/2170 delete-file false false /trunk/prest/t/80_misc/coverage.init/title01.rst
+
+8p-4710.0.r4710/198569 delete-file false false /trunk/prest/t/80_misc/coverage.init/transforms.dom
+
+8r-4710.0.r4710/204454 delete-file false false /trunk/prest/t/80_misc/coverage.init/transforms.rst
+
+8t-4710.3-5058.r5058/49088 delete-file false false /trunk/prest/t/80_misc/coverage.init/writer.dom
+
+8v-4710.0.r4710/199725 delete-file false false /trunk/prest/t/80_misc/coverage.init/writer.rst
+
+7-5759.0.r5759/712 delete-file false false /trunk/prest/t/80_misc/coverage.init/writer_direct.txt
+
+32-5058.0.r5058/31004 delete-file false false /trunk/prest/t/80_misc/directive.init/Dir.smak
+
+91-4710.0.r4710/142960 delete-file false false /trunk/prest/t/80_misc/directive.init/admonitions_01.dom
+
+93-4710.0.r4710/107747 delete-file false false /trunk/prest/t/80_misc/directive.init/admonitions_01.rst
+
+95-4710.0.r4710/123145 delete-file false false /trunk/prest/t/80_misc/directive.init/admonitions_02.dom
+
+97-4710.0.r4710/127106 delete-file false false /trunk/prest/t/80_misc/directive.init/admonitions_02.rst
+
+99-4710.0.r4710/106339 delete-file false false /trunk/prest/t/80_misc/directive.init/class_01.dom
+
+9b-4710.0.r4710/110760 delete-file false false /trunk/prest/t/80_misc/directive.init/class_01.rst
+
+9d-4710.0.r4710/126169 delete-file false false /trunk/prest/t/80_misc/directive.init/class_02.dom
+
+9f-4710.0.r4710/130576 delete-file false false /trunk/prest/t/80_misc/directive.init/class_02.rst
+
+9h-4710.0.r4710/106571 delete-file false false /trunk/prest/t/80_misc/directive.init/class_03.dom
+
+9j-4710.0.r4710/110990 delete-file false false /trunk/prest/t/80_misc/directive.init/class_03.rst
+
+9l-4710.0.r4710/122671 delete-file false false /trunk/prest/t/80_misc/directive.init/compound_01.dom
+
+9n-4710.0.r4710/126873 delete-file false false /trunk/prest/t/80_misc/directive.init/compound_01.rst
+
+9p-4710.0.r4710/143437 delete-file false false /trunk/prest/t/80_misc/directive.init/compound_02.dom
+
+9r-4710.0.r4710/107983 delete-file false false /trunk/prest/t/80_misc/directive.init/compound_02.rst
+
+9t-4710.0.r4710/123617 delete-file false false /trunk/prest/t/80_misc/directive.init/compound_03.dom
+
+9v-4710.0.r4710/127806 delete-file false false /trunk/prest/t/80_misc/directive.init/compound_03.rst
+
+9x-4710.0.r4710/143910 delete-file false false /trunk/prest/t/80_misc/directive.init/compound_04.dom
+
+9z-4710.0.r4710/108448 delete-file false false /trunk/prest/t/80_misc/directive.init/compound_04.rst
+
+a1-4710.0.r4710/115420 delete-file false false /trunk/prest/t/80_misc/directive.init/contents_01.dom
+
+a3-4710.0.r4710/119618 delete-file false false /trunk/prest/t/80_misc/directive.init/contents_01.rst
+
+a5-4710.0.r4710/135251 delete-file false false /trunk/prest/t/80_misc/directive.init/contents_02.dom
+
+a7-4710.0.r4710/140147 delete-file false false /trunk/prest/t/80_misc/directive.init/contents_02.rst
+
+a9-4710.0.r4710/107037 delete-file false false /trunk/prest/t/80_misc/directive.init/decorations_01.dom
+
+ab-4710.0.r4710/111452 delete-file false false /trunk/prest/t/80_misc/directive.init/decorations_01.rst
+
+ad-4710.0.r4710/126635 delete-file false false /trunk/prest/t/80_misc/directive.init/decorations_02.dom
+
+af-4710.0.r4710/131038 delete-file false false /trunk/prest/t/80_misc/directive.init/decorations_02.rst
+
+ah-4710.0.r4710/107509 delete-file false false /trunk/prest/t/80_misc/directive.init/decorations_03.dom
+
+aj-4710.0.r4710/111920 delete-file false false /trunk/prest/t/80_misc/directive.init/decorations_03.rst
+
+al-4710.0.r4710/112156 delete-file false false /trunk/prest/t/80_misc/directive.init/default_role_01.dom
+
+an-4710.0.r4710/115655 delete-file false false /trunk/prest/t/80_misc/directive.init/default_role_01.rst
+
+ap-4710.0.r4710/131274 delete-file false false /trunk/prest/t/80_misc/directive.init/default_role_02.dom
+
+ar-4710.0.r4710/135719 delete-file false false /trunk/prest/t/80_misc/directive.init/default_role_02.rst
+
+at-4710.0.r4710/125014 delete-file false false /trunk/prest/t/80_misc/directive.init/emptyfile.txt
+
+av-4710.0.r4710/106105 delete-file false false /trunk/prest/t/80_misc/directive.init/figures_01.dom
+
+ax-4710.0.r4710/110528 delete-file false false /trunk/prest/t/80_misc/directive.init/figures_01.rst
+
+az-4710.0.r4710/125935 delete-file false false /trunk/prest/t/80_misc/directive.init/figures_02.dom
+
+b1-4710.0.r4710/130344 delete-file false false /trunk/prest/t/80_misc/directive.init/figures_02.rst
+
+b3-4710.0.r4710/114020 delete-file false false /trunk/prest/t/80_misc/directive.init/image_01.dom
+
+b5-4710.0.r4710/117764 delete-file false false /trunk/prest/t/80_misc/directive.init/image_01.rst
+
+b7-4710.0.r4710/142731 delete-file false false /trunk/prest/t/80_misc/directive.init/include.txt
+
+b9-4710.0.r4710/133617 delete-file false false /trunk/prest/t/80_misc/directive.init/include_01.dom
+
+bb-4710.0.r4710/137828 delete-file false false /trunk/prest/t/80_misc/directive.init/include_01.rst
+
+bd-4710.0.r4710/114252 delete-file false false /trunk/prest/t/80_misc/directive.init/include_02.dom
+
+bf-4710.0.r4710/117994 delete-file false false /trunk/prest/t/80_misc/directive.init/include_02.rst
+
+bh-4710.0.r5058/30515 delete-file false false /trunk/prest/t/80_misc/directive.init/include_02.stderr
+
+bj-4710.0.r4710/134089 delete-file false false /trunk/prest/t/80_misc/directive.init/include_03.dom
+
+bl-4710.0.r4710/138296 delete-file false false /trunk/prest/t/80_misc/directive.init/include_03.rst
+
+bn-4710.0.r4710/133851 delete-file false false /trunk/prest/t/80_misc/directive.init/line_blocks_01.dom
+
+bp-4710.0.r4710/138060 delete-file false false /trunk/prest/t/80_misc/directive.init/line_blocks_01.rst
+
+br-4710.0.r4710/114484 delete-file false false /trunk/prest/t/80_misc/directive.init/line_blocks_02.dom
+
+bt-4710.0.r4710/118226 delete-file false false /trunk/prest/t/80_misc/directive.init/line_blocks_02.rst
+
+bv-4710.0.r4710/134323 delete-file false false /trunk/prest/t/80_misc/directive.init/line_blocks_03.dom
+
+bx-4710.0.r4710/138530 delete-file false false /trunk/prest/t/80_misc/directive.init/line_blocks_03.rst
+
+bz-4710.0.r4710/114722 delete-file false false /trunk/prest/t/80_misc/directive.init/line_blocks_04.dom
+
+c1-4710.0.r4710/118462 delete-file false false /trunk/prest/t/80_misc/directive.init/line_blocks_04.rst
+
+c3-4710.0.r4710/120791 delete-file false false /trunk/prest/t/80_misc/directive.init/parsed_literal_01.dom
+
+c5-4710.0.r4710/122432 delete-file false false /trunk/prest/t/80_misc/directive.init/parsed_literal_01.rst
+
+c7-4710.0.r4710/141087 delete-file false false /trunk/prest/t/80_misc/directive.init/parsed_literal_02.dom
+
+c9-4710.0.r4710/143198 delete-file false false /trunk/prest/t/80_misc/directive.init/parsed_literal_02.rst
+
+cb-4710.0.r4710/121269 delete-file false false /trunk/prest/t/80_misc/directive.init/parsed_literal_03.dom
+
+cd-4710.0.r4710/122906 delete-file false false /trunk/prest/t/80_misc/directive.init/parsed_literal_03.rst
+
+cf-4710.0.r4710/141328 delete-file false false /trunk/prest/t/80_misc/directive.init/parsed_literal_04.dom
+
+ch-4710.0.r4710/143671 delete-file false false /trunk/prest/t/80_misc/directive.init/parsed_literal_04.rst
+
+cj-4710.0.r4710/134561 delete-file false false /trunk/prest/t/80_misc/directive.init/raw_01.dom
+
+cl-4710.0.r4710/138998 delete-file false false /trunk/prest/t/80_misc/directive.init/raw_01.rst
+
+cn-4710.0.r4710/114960 delete-file false false /trunk/prest/t/80_misc/directive.init/raw_02.dom
+
+cp-4710.0.r4710/118930 delete-file false false /trunk/prest/t/80_misc/directive.init/raw_02.rst
+
+cr-4710.0.r4710/134791 delete-file false false /trunk/prest/t/80_misc/directive.init/raw_03.dom
+
+ct-4710.0.r4710/139458 delete-file false false /trunk/prest/t/80_misc/directive.init/raw_03.rst
+
+cv-4710.0.r4710/115190 delete-file false false /trunk/prest/t/80_misc/directive.init/raw_04.dom
+
+cx-4710.0.r4710/119390 delete-file false false /trunk/prest/t/80_misc/directive.init/raw_04.rst
+
+cz-4710.0.r4710/135021 delete-file false false /trunk/prest/t/80_misc/directive.init/raw_05.dom
+
+d1-4710.0.r4710/139919 delete-file false false /trunk/prest/t/80_misc/directive.init/raw_05.rst
+
+d3-4710.0.r4710/112855 delete-file false false /trunk/prest/t/80_misc/directive.init/replace_01.dom
+
+d5-4710.0.r4710/116836 delete-file false false /trunk/prest/t/80_misc/directive.init/replace_01.rst
+
+d7-4710.0.r4710/131980 delete-file false false /trunk/prest/t/80_misc/directive.init/replace_02.dom
+
+d9-4710.0.r4710/136434 delete-file false false /trunk/prest/t/80_misc/directive.init/replace_02.rst
+
+db-4710.0.r4710/113089 delete-file false false /trunk/prest/t/80_misc/directive.init/replace_03.dom
+
+dd-4710.0.r4710/117068 delete-file false false /trunk/prest/t/80_misc/directive.init/replace_03.rst
+
+df-4710.0.r4710/125473 delete-file false false /trunk/prest/t/80_misc/directive.init/role_01.dom
+
+dh-4710.0.r4710/129886 delete-file false false /trunk/prest/t/80_misc/directive.init/role_01.rst
+
+dj-4710.0.r4710/105874 delete-file false false /trunk/prest/t/80_misc/directive.init/role_02.dom
+
+dl-4710.0.r4710/110299 delete-file false false /trunk/prest/t/80_misc/directive.init/role_02.rst
+
+dn-4710.0.r4710/125704 delete-file false false /trunk/prest/t/80_misc/directive.init/role_03.dom
+
+dp-4710.0.r4710/130115 delete-file false false /trunk/prest/t/80_misc/directive.init/role_03.rst
+
+dr-4710.0.r4710/139686 delete-file false false /trunk/prest/t/80_misc/directive.init/rubric_01.dom
+
+dt-4710.0.r4710/142269 delete-file false false /trunk/prest/t/80_misc/directive.init/rubric_01.rst
+
+dv-4710.0.r4710/119851 delete-file false false /trunk/prest/t/80_misc/directive.init/rubric_02.dom
+
+dx-4710.0.r4710/121970 delete-file false false /trunk/prest/t/80_misc/directive.init/rubric_02.rst
+
+dz-4710.0.r4710/140380 delete-file false false /trunk/prest/t/80_misc/directive.init/rubric_03.dom
+
+e1-4710.0.r4710/142500 delete-file false false /trunk/prest/t/80_misc/directive.init/rubric_03.rst
+
+e3-4710.0.r4710/120321 delete-file false false /trunk/prest/t/80_misc/directive.init/rubric_04.dom
+
+e5-4710.0.r4710/122201 delete-file false false /trunk/prest/t/80_misc/directive.init/rubric_04.rst
+
+e7-4710.0.r4710/132455 delete-file false false /trunk/prest/t/80_misc/directive.init/sectnum_01.dom
+
+e9-4710.0.r4710/136905 delete-file false false /trunk/prest/t/80_misc/directive.init/sectnum_01.rst
+
+eb-4710.0.r4710/113322 delete-file false false /trunk/prest/t/80_misc/directive.init/sectnum_02.dom
+
+ed-4710.0.r4710/117300 delete-file false false /trunk/prest/t/80_misc/directive.init/sectnum_02.rst
+
+ef-4710.0.r4710/132919 delete-file false false /trunk/prest/t/80_misc/directive.init/sectnum_03.dom
+
+eh-4710.0.r4710/137364 delete-file false false /trunk/prest/t/80_misc/directive.init/sectnum_03.rst
+
+ej-4710.0.r4710/113556 delete-file false false /trunk/prest/t/80_misc/directive.init/sectnum_04.dom
+
+el-4710.0.r4710/117532 delete-file false false /trunk/prest/t/80_misc/directive.init/sectnum_04.rst
+
+en-4710.0.r4710/133383 delete-file false false /trunk/prest/t/80_misc/directive.init/sectnum_05.dom
+
+ep-4710.0.r4710/137596 delete-file false false /trunk/prest/t/80_misc/directive.init/sectnum_05.rst
+
+er-4710.0.r4710/106803 delete-file false false /trunk/prest/t/80_misc/directive.init/sidebar_01.dom
+
+et-4710.0.r4710/111220 delete-file false false /trunk/prest/t/80_misc/directive.init/sidebar_01.rst
+
+ev-4710.0.r4710/126401 delete-file false false /trunk/prest/t/80_misc/directive.init/sidebar_02.dom
+
+ex-4710.0.r4710/130806 delete-file false false /trunk/prest/t/80_misc/directive.init/sidebar_02.rst
+
+ez-4710.0.r4710/107275 delete-file false false /trunk/prest/t/80_misc/directive.init/sidebar_03.dom
+
+f1-4710.0.r4710/111688 delete-file false false /trunk/prest/t/80_misc/directive.init/sidebar_03.rst
+
+f3-4710.0.r4710/141569 delete-file false false /trunk/prest/t/80_misc/directive.init/substitutions_01.dom
+
+f5-4710.0.r4710/144611 delete-file false false /trunk/prest/t/80_misc/directive.init/substitutions_01.rst
+
+f7-4710.0.r4710/116609 delete-file false false /trunk/prest/t/80_misc/directive.init/table.csv
+
+f9-4710.0.r4710/123852 delete-file false false /trunk/prest/t/80_misc/directive.init/table_01.dom
+
+fb-4710.0.r4710/128039 delete-file false false /trunk/prest/t/80_misc/directive.init/table_01.rst
+
+fd-4710.0.r4710/144379 delete-file false false /trunk/prest/t/80_misc/directive.init/table_02.dom
+
+ff-4710.0.r4710/109145 delete-file false false /trunk/prest/t/80_misc/directive.init/table_02.rst
+
+fh-4710.0.r4710/124318 delete-file false false /trunk/prest/t/80_misc/directive.init/table_03.dom
+
+fj-4710.0.r4710/128501 delete-file false false /trunk/prest/t/80_misc/directive.init/table_03.rst
+
+fl-4710.0.r4710/144851 delete-file false false /trunk/prest/t/80_misc/directive.init/table_04.dom
+
+fn-4710.0.r4710/109375 delete-file false false /trunk/prest/t/80_misc/directive.init/table_04.rst
+
+fp-4710.0.r5761/114 delete-file false false /trunk/prest/t/80_misc/directive.init/table_05.dom
+
+fr-4710.0.r5761/366 delete-file false false /trunk/prest/t/80_misc/directive.init/table_05.rst
+
+ft-4710.4-5058.r5058/31231 delete-file false false /trunk/prest/t/80_misc/directive.init/table_06.dom
+
+fv-4710.0.r4710/109605 delete-file false false /trunk/prest/t/80_misc/directive.init/table_06.rst
+
+fx-4710.0.r4710/124782 delete-file false false /trunk/prest/t/80_misc/directive.init/table_07.dom
+
+fz-4710.0.r4710/128962 delete-file false false /trunk/prest/t/80_misc/directive.init/table_07.rst
+
+g1-4710.0.r4710/145083 delete-file false false /trunk/prest/t/80_misc/directive.init/table_08.dom
+
+g3-4710.0.r4710/109837 delete-file false false /trunk/prest/t/80_misc/directive.init/table_08.rst
+
+g5-4710.0.r4710/125241 delete-file false false /trunk/prest/t/80_misc/directive.init/table_09.dom
+
+g7-4710.0.r4710/129424 delete-file false false /trunk/prest/t/80_misc/directive.init/table_09.rst
+
+g9-4710.0.r4710/129192 delete-file false false /trunk/prest/t/80_misc/directive.init/table_10.dom
+
+gb-4710.0.r4710/132689 delete-file false false /trunk/prest/t/80_misc/directive.init/table_10.rst
+
+gd-4710.0.r4710/110067 delete-file false false /trunk/prest/t/80_misc/directive.init/table_11.dom
+
+gf-4710.0.r4710/113790 delete-file false false /trunk/prest/t/80_misc/directive.init/table_11.rst
+
+gh-4710.0.r4710/129654 delete-file false false /trunk/prest/t/80_misc/directive.init/table_12.dom
+
+gj-4710.0.r4710/133153 delete-file false false /trunk/prest/t/80_misc/directive.init/table_12.rst
+
+5-5762.0.r5762/404 delete-file false false /trunk/prest/t/80_misc/directive.init/table_13.dom
+
+8-5762.0.r5762/627 delete-file false false /trunk/prest/t/80_misc/directive.init/table_13.rst
+
+9-5789.0.r5789/3186 delete-file false false /trunk/prest/t/80_misc/directive.init/table_13.skip.pl
+
+a-5762.0.r5762/851 delete-file false false /trunk/prest/t/80_misc/directive.init/table_utf8.csv
+
+gl-4710.0.r4710/115892 delete-file false false /trunk/prest/t/80_misc/directive.init/target_notes_01.dom
+
+gn-4710.0.r4710/120084 delete-file false false /trunk/prest/t/80_misc/directive.init/target_notes_01.rst
+
+gp-4710.0.r4710/135956 delete-file false false /trunk/prest/t/80_misc/directive.init/target_notes_02.dom
+
+gr-4710.0.r4710/140613 delete-file false false /trunk/prest/t/80_misc/directive.init/target_notes_02.rst
+
+gt-4710.0.r4710/116131 delete-file false false /trunk/prest/t/80_misc/directive.init/target_notes_03.dom
+
+gv-4710.0.r4710/120554 delete-file false false /trunk/prest/t/80_misc/directive.init/target_notes_03.rst
+
+gx-4710.0.r4710/136195 delete-file false false /trunk/prest/t/80_misc/directive.init/target_notes_04.dom
+
+gz-4710.0.r4710/140850 delete-file false false /trunk/prest/t/80_misc/directive.init/target_notes_04.rst
+
+h1-4710.0.r4710/116370 delete-file false false /trunk/prest/t/80_misc/directive.init/target_notes_05.dom
+
+h3-4710.0.r4710/121032 delete-file false false /trunk/prest/t/80_misc/directive.init/target_notes_05.rst
+
+h5-4710.0.r4710/132214 delete-file false false /trunk/prest/t/80_misc/directive.init/test_directive_01.dom
+
+h7-4710.0.r4710/136666 delete-file false false /trunk/prest/t/80_misc/directive.init/test_directive_01.rst
+
+h9-4710.0.r4710/138766 delete-file false false /trunk/prest/t/80_misc/directive.init/title_01.dom
+
+hb-4710.0.r4710/141809 delete-file false false /trunk/prest/t/80_misc/directive.init/title_01.rst
+
+hd-4710.0.r4710/118698 delete-file false false /trunk/prest/t/80_misc/directive.init/title_02.dom
+
+hf-4710.0.r4710/121510 delete-file false false /trunk/prest/t/80_misc/directive.init/title_02.rst
+
+hh-4710.0.r4710/139226 delete-file false false /trunk/prest/t/80_misc/directive.init/title_03.dom
+
+hj-4710.0.r4710/142039 delete-file false false /trunk/prest/t/80_misc/directive.init/title_03.rst
+
+hl-4710.0.r4710/119158 delete-file false false /trunk/prest/t/80_misc/directive.init/title_04.dom
+
+hn-4710.0.r4710/121740 delete-file false false /trunk/prest/t/80_misc/directive.init/title_04.rst
+
+hp-4710.0.r4710/108216 delete-file false false /trunk/prest/t/80_misc/directive.init/topic_01.dom
+
+hr-4710.0.r4710/112395 delete-file false false /trunk/prest/t/80_misc/directive.init/topic_01.rst
+
+ht-4710.0.r4710/127574 delete-file false false /trunk/prest/t/80_misc/directive.init/topic_02.dom
+
+hv-4710.0.r4710/131513 delete-file false false /trunk/prest/t/80_misc/directive.init/topic_02.rst
+
+hx-4710.0.r4710/108681 delete-file false false /trunk/prest/t/80_misc/directive.init/topic_03.dom
+
+hz-4710.0.r4710/112625 delete-file false false /trunk/prest/t/80_misc/directive.init/topic_03.rst
+
+i1-4710.0.r4710/123383 delete-file false false /trunk/prest/t/80_misc/directive.init/unicode_01.dom
+
+i3-4710.0.r4710/127342 delete-file false false /trunk/prest/t/80_misc/directive.init/unicode_01.rst
+
+i5-4710.0.r4710/144145 delete-file false false /trunk/prest/t/80_misc/directive.init/unicode_02.dom
+
+i7-4710.0.r4710/108913 delete-file false false /trunk/prest/t/80_misc/directive.init/unicode_02.rst
+
+i9-4710.0.r4710/124084 delete-file false false /trunk/prest/t/80_misc/directive.init/unicode_03.dom
+
+ib-4710.0.r4710/128269 delete-file false false /trunk/prest/t/80_misc/directive.init/unicode_03.rst
+
+ie-4710.0.r4710/159787 delete-file false false /trunk/prest/t/80_misc/dom_reader.init/block_quotes.dom
+
+ih-4710.0.r4710/159322 delete-file false false /trunk/prest/t/80_misc/dom_reader.init/block_quotes.rst
+
+ij-4710.0.r4710/160024 delete-file false false /trunk/prest/t/80_misc/dom_reader.init/meta.rst.old
+
+il-4710.0.r4710/159559 delete-file false false /trunk/prest/t/80_misc/dom_reader.init/raw.dom
+
+in-4710.0.r4710/159094 delete-file false false /trunk/prest/t/80_misc/dom_reader.init/raw.rst
+
+38-5058.0.r5765/1276 delete-file false false /trunk/prest/t/80_misc/html.init/Dir.smak
+
+it-4710.0.r4710/174826 delete-file false false /trunk/prest/t/80_misc/html.init/attribution1.myhtml
+
+iv-4710.0.r4710/165228 delete-file false false /trunk/prest/t/80_misc/html.init/attribution1.rst
+
+ix-4710.0.r4710/167237 delete-file false false /trunk/prest/t/80_misc/html.init/attribution2.myhtml
+
+iz-4710.0.r4710/165457 delete-file false false /trunk/prest/t/80_misc/html.init/attribution2.rst
+
+j1-4710.0.r4710/169570 delete-file false false /trunk/prest/t/80_misc/html.init/bad-link-target.myhtml
+
+j3-4710.0.r4710/178333 delete-file false false /trunk/prest/t/80_misc/html.init/bad-link-target.rst
+
+j5-4710.0.r5378/1847 delete-file false false /trunk/prest/t/80_misc/html.init/bad-link-target.stderr
+
+5-5769.0.r5769/707 delete-file false false /trunk/prest/t/80_misc/html.init/badtag.html
+
+8-5769.0.r5769/924 delete-file false false /trunk/prest/t/80_misc/html.init/badtag.rst
+
+a-5769.0.r5769/486 delete-file false false /trunk/prest/t/80_misc/html.init/badtag.stderr
+
+j7-4710.0.r4710/171642 delete-file false false /trunk/prest/t/80_misc/html.init/cloak-email.myhtml
+
+j9-4710.0.r4710/171181 delete-file false false /trunk/prest/t/80_misc/html.init/cloak-email.rst
+
+jb-4710.0.r4710/170951 delete-file false false /trunk/prest/t/80_misc/html.init/colspecs.myhtml
+
+jd-4710.0.r4710/161398 delete-file false false /trunk/prest/t/80_misc/html.init/colspecs.rst
+
+5-5771.0.r5771/414 delete-file false false /trunk/prest/t/80_misc/html.init/compound1.html
+
+5-5770.0.r5770/181 delete-file false false /trunk/prest/t/80_misc/html.init/compound1.rst
+
+jf-4710.0.r4710/173041 delete-file false false /trunk/prest/t/80_misc/html.init/embed-stylesheet1.myhtml
+
+jh-4710.0.r4710/172339 delete-file false false /trunk/prest/t/80_misc/html.init/embed-stylesheet1.rst
+
+jj-4710.0.r4710/166998 delete-file false false /trunk/prest/t/80_misc/html.init/embed-stylesheet2.myhtml
+
+jl-4710.0.r4710/172573 delete-file false false /trunk/prest/t/80_misc/html.init/embed-stylesheet2.rst
+
+jn-4710.0.r4710/175294 delete-file false false /trunk/prest/t/80_misc/html.init/embed-stylesheet3.myhtml
+
+jp-4710.0.r4710/172807 delete-file false false /trunk/prest/t/80_misc/html.init/embed-stylesheet3.rst
+
+jr-4710.0.r4710/167471 delete-file false false /trunk/prest/t/80_misc/html.init/embed-stylesheet4.myhtml
+
+jt-4710.0.r4710/174592 delete-file false false /trunk/prest/t/80_misc/html.init/embed-stylesheet4.rst
+
+jv-4710.0.r4710/176001 delete-file false false /trunk/prest/t/80_misc/html.init/embed-stylesheet5.myhtml
+
+jx-4710.0.r4710/175060 delete-file false false /trunk/prest/t/80_misc/html.init/embed-stylesheet5.rst
+
+jz-4710.0.r4710/167940 delete-file false false /trunk/prest/t/80_misc/html.init/embed-stylesheet6.myhtml
+
+k1-4710.0.r4710/175533 delete-file false false /trunk/prest/t/80_misc/html.init/embed-stylesheet6.rst
+
+k3-4710.0.r4710/176466 delete-file false false /trunk/prest/t/80_misc/html.init/embed-stylesheet7.myhtml
+
+k5-4710.0.r4710/175767 delete-file false false /trunk/prest/t/80_misc/html.init/embed-stylesheet7.rst
+
+k7-4710.0.r4898/183 delete-file false false /trunk/prest/t/80_misc/html.init/embed-stylesheet7.stderr
+
+k9-4710.0.r6498/17279 delete-file false false /trunk/prest/t/80_misc/html.init/entryattr.myhtml
+
+kb-4710.0.r5765/1025 delete-file false false /trunk/prest/t/80_misc/html.init/entryattr.rst
+
+5-5354.0.r5764/604 delete-file false false /trunk/prest/t/80_misc/html.init/enumeration_list_01.myhtml
+
+8-5354.0.r5764/347 delete-file false false /trunk/prest/t/80_misc/html.init/enumeration_list_01.rst
+
+5-5766.0.r5766/593 delete-file false false /trunk/prest/t/80_misc/html.init/field-colon1.html
+
+8-5766.0.r5766/816 delete-file false false /trunk/prest/t/80_misc/html.init/field-colon1.rst
+
+ki-4710.0.r4710/165945 delete-file false false /trunk/prest/t/80_misc/html.init/filedefaultcss/Text/Restructured/PrestConfig.pm
+
+kl-4710.0.r4710/165686 delete-file false false /trunk/prest/t/80_misc/html.init/filedefaultcss/Text/Restructured/mydefault.css
+
+kn-4710.0.r4710/163222 delete-file false false /trunk/prest/t/80_misc/html.init/footnotes_01.myhtml
+
+kp-4710.0.r4710/162764 delete-file false false /trunk/prest/t/80_misc/html.init/footnotes_01.rst
+
+kr-4710.0.r4710/172105 delete-file false false /trunk/prest/t/80_misc/html.init/footnotes_02.myhtml
+
+kt-4710.0.r4710/162993 delete-file false false /trunk/prest/t/80_misc/html.init/footnotes_02.rst
+
+l0-4710.0.r4710/173539 delete-file false false /trunk/prest/t/80_misc/html.init/httpdefaultcss/Text/Restructured/PrestConfig.pm
+
+l3-4710.0.r4710/173280 delete-file false false /trunk/prest/t/80_misc/html.init/httpdefaultcss/Text/Restructured/mydefault.css
+
+a-5354.0.r5354/3362 delete-file false false /trunk/prest/t/80_misc/html.init/image_01.myhtml
+
+c-5354.0.r5354/2909 delete-file false false /trunk/prest/t/80_misc/html.init/image_01.rst
+
+l5-4710.0.r4710/178104 delete-file false false /trunk/prest/t/80_misc/html.init/limits.myhtml
+
+l7-4710.0.r4710/168644 delete-file false false /trunk/prest/t/80_misc/html.init/limits.rst
+
+l9-4710.0.r4710/169100 delete-file false false /trunk/prest/t/80_misc/html.init/line_block_01.myhtml
+
+lb-4710.0.r4710/177636 delete-file false false /trunk/prest/t/80_misc/html.init/line_block_01.rst
+
+ld-4710.0.r4710/169335 delete-file false false /trunk/prest/t/80_misc/html.init/link-target1.myhtml
+
+lf-4710.0.r4710/168869 delete-file false false /trunk/prest/t/80_misc/html.init/link-target1.rst
+
+lh-4710.0.r4710/177866 delete-file false false /trunk/prest/t/80_misc/html.init/literalinliteral.myhtml
+
+lj-4710.0.r4710/177402 delete-file false false /trunk/prest/t/80_misc/html.init/literalinliteral.rst
+
+ll-4710.0.r4710/170029 delete-file false false /trunk/prest/t/80_misc/html.init/local.css
+
+e-5354.0.r5763/781 delete-file false false /trunk/prest/t/80_misc/html.init/mathml_01.myhtml
+
+g-5354.0.r5763/534 delete-file false false /trunk/prest/t/80_misc/html.init/mathml_01.rst
+
+5-5768.0.r5768/1688 delete-file false false /trunk/prest/t/80_misc/html.init/mathml_02.html
+
+8-5768.0.r5768/686 delete-file false false /trunk/prest/t/80_misc/html.init/mathml_02.rst
+
+ls-4710.0.r4710/163711 delete-file false false /trunk/prest/t/80_misc/html.init/nodefaultcss/Text/Restructured/PrestConfig.pm
+
+lv-4710.0.r4710/163456 delete-file false false /trunk/prest/t/80_misc/html.init/nodefaultcss/Text/Restructured/default.css
+
+d-5768.0.r5768/951 delete-file false false /trunk/prest/t/80_misc/html.init/nomathml/Text/ASCIIMathML.pm
+
+lx-4710.0.r4710/161159 delete-file false false /trunk/prest/t/80_misc/html.init/parsed-literal_01.myhtml
+
+lz-4710.0.r4710/160691 delete-file false false /trunk/prest/t/80_misc/html.init/parsed-literal_01.rst
+
+i-5354.0.r5354/3806 delete-file false false /trunk/prest/t/80_misc/html.init/raw_01.myhtml
+
+k-5354.0.r5354/3586 delete-file false false /trunk/prest/t/80_misc/html.init/raw_01.rst
+
+m1-4710.0.r4710/164754 delete-file false false /trunk/prest/t/80_misc/html.init/references_01.myhtml
+
+m3-4710.0.r4710/171875 delete-file false false /trunk/prest/t/80_misc/html.init/references_01.rst
+
+m5-4710.0.r4710/170718 delete-file false false /trunk/prest/t/80_misc/html.init/stylesheet1.myhtml
+
+m7-4710.0.r4710/169801 delete-file false false /trunk/prest/t/80_misc/html.init/stylesheet1.rst
+
+m9-4710.0.r4710/161851 delete-file false false /trunk/prest/t/80_misc/html.init/stylesheet2.myhtml
+
+mb-4710.0.r4710/170253 delete-file false false /trunk/prest/t/80_misc/html.init/stylesheet2.rst
+
+md-4710.0.r4710/176699 delete-file false false /trunk/prest/t/80_misc/html.init/stylesheet2_1.myhtml
+
+mf-4710.0.r4710/167710 delete-file false false /trunk/prest/t/80_misc/html.init/stylesheet2_1.rst
+
+mh-4710.0.r4710/168409 delete-file false false /trunk/prest/t/80_misc/html.init/stylesheet2_2.myhtml
+
+mj-4710.0.r4710/168179 delete-file false false /trunk/prest/t/80_misc/html.init/stylesheet2_2.rst
+
+ml-4710.0.r4710/162533 delete-file false false /trunk/prest/t/80_misc/html.init/subtitle1.myhtml
+
+mn-4710.0.r4710/161623 delete-file false false /trunk/prest/t/80_misc/html.init/subtitle1.rst
+
+mp-4710.0.r4710/171411 delete-file false false /trunk/prest/t/80_misc/html.init/subtitle2.myhtml
+
+mr-4710.0.r4710/162084 delete-file false false /trunk/prest/t/80_misc/html.init/subtitle2.rst
+
+mt-4710.0.r4710/170481 delete-file false false /trunk/prest/t/80_misc/html.init/system_message1.myhtml
+
+mv-4710.0.r4710/160927 delete-file false false /trunk/prest/t/80_misc/html.init/system_message1.rst
+
+5-5767.0.r5767/521 delete-file false false /trunk/prest/t/80_misc/html.init/table_align.html
+
+8-5767.0.r5767/743 delete-file false false /trunk/prest/t/80_misc/html.init/table_align.rst
+
+my-4710.0.r4710/185359 delete-file false false /trunk/prest/t/80_misc/parse.init/definition_list_01.dom
+
+n1-4710.0.r4710/184652 delete-file false false /trunk/prest/t/80_misc/parse.init/definition_list_01.rst
+
+n3-4710.0.r4710/183726 delete-file false false /trunk/prest/t/80_misc/parse.init/enumerated_lists_01.dom
+
+n5-4710.0.r4710/187241 delete-file false false /trunk/prest/t/80_misc/parse.init/enumerated_lists_01.rst
+
+n7-4710.0.r4710/186769 delete-file false false /trunk/prest/t/80_misc/parse.init/inline_markup_01.dom
+
+n9-4710.0.r4710/185597 delete-file false false /trunk/prest/t/80_misc/parse.init/inline_markup_01.rst
+
+nb-4710.0.r4710/187005 delete-file false false /trunk/prest/t/80_misc/parse.init/inline_markup_02.dom
+
+nd-4710.0.r4710/185831 delete-file false false /trunk/prest/t/80_misc/parse.init/inline_markup_02.rst
+
+nf-4710.0.r4710/186065 delete-file false false /trunk/prest/t/80_misc/parse.init/literal_blocks_01.dom
+
+nh-4710.0.r4710/185124 delete-file false false /trunk/prest/t/80_misc/parse.init/literal_blocks_01.rst
+
+nj-4710.0.r4710/182342 delete-file false false /trunk/prest/t/80_misc/parse.init/option_list_01.dom
+
+nl-4710.0.r4710/186302 delete-file false false /trunk/prest/t/80_misc/parse.init/option_list_01.rst
+
+nn-4710.0.r4710/183032 delete-file false false /trunk/prest/t/80_misc/parse.init/option_list_02.dom
+
+np-4710.0.r4710/186535 delete-file false false /trunk/prest/t/80_misc/parse.init/option_list_02.rst
+
+nr-4710.0.r4710/183965 delete-file false false /trunk/prest/t/80_misc/parse.init/tables_01.dom
+
+nt-4710.0.r4710/182576 delete-file false false /trunk/prest/t/80_misc/parse.init/tables_01.rst
+
+nv-4710.0.r4710/184194 delete-file false false /trunk/prest/t/80_misc/parse.init/tables_02.dom
+
+nx-4710.0.r4710/182804 delete-file false false /trunk/prest/t/80_misc/parse.init/tables_02.rst
+
+nz-4710.0.r4710/184423 delete-file false false /trunk/prest/t/80_misc/parse.init/tables_03.dom
+
+o1-4710.0.r4710/183266 delete-file false false /trunk/prest/t/80_misc/parse.init/tables_03.rst
+
+o3-4710.0.r4710/184890 delete-file false false /trunk/prest/t/80_misc/parse.init/transitions_01.dom
+
+o5-4710.0.r4710/183494 delete-file false false /trunk/prest/t/80_misc/parse.init/transitions_01.rst
+
+6-5772.0.r5810/324 delete-file false false /trunk/prest/t/80_misc/prest.init/Dir.smak
+
+9-5772.0.r5772/917 delete-file false false /trunk/prest/t/80_misc/prest.init/badfile.txt
+
+b-5772.0.r5772/1135 delete-file false false /trunk/prest/t/80_misc/prest.init/no_args.txt
+
+d-5772.0.r5772/1572 delete-file false false /trunk/prest/t/80_misc/prest.init/opt_e.html
+
+f-5772.0.r5772/1792 delete-file false false /trunk/prest/t/80_misc/prest.init/opt_e.rst
+
+c-5789.0.r5789/2489 delete-file false false /trunk/prest/t/80_misc/prest.init/opt_e.skip.pl
+
+3f-5058.0.r6233/7406 delete-file false false /trunk/prest/t/80_misc/transforms.init/Dir.smak
+
+ob-4710.0.r4710/156689 delete-file false false /trunk/prest/t/80_misc/transforms.init/decorations_01.dom
+
+of-4710.0.r4710/154753 delete-file false false /trunk/prest/t/80_misc/transforms.init/decorations_01.rst
+
+oh-4710.0.r4710/157919 delete-file false false /trunk/prest/t/80_misc/transforms.init/decorations_02.dom
+
+oj-4710.0.r4710/154990 delete-file false false /trunk/prest/t/80_misc/transforms.init/decorations_02.rst
+
+u-6233.0.r6233/6708 delete-file false false /trunk/prest/t/80_misc/transforms.init/decorations_03.dom
+
+w-6233.0.r6233/6243 delete-file false false /trunk/prest/t/80_misc/transforms.init/decorations_03.rst
+
+9-5353.0.r5353/1178 delete-file false false /trunk/prest/t/80_misc/transforms.init/docinfo_01.dom
+
+b-5353.0.r5353/1888 delete-file false false /trunk/prest/t/80_misc/transforms.init/docinfo_01.rst
+
+oq-4710.0.r4710/156928 delete-file false false /trunk/prest/t/80_misc/transforms.init/docurl/Text/Restructured/PrestConfig.pm
+
+y-6233.0.r6233/7658 delete-file false false /trunk/prest/t/80_misc/transforms.init/emptytopic.dom
+
+10-6233.0.r6233/7174 delete-file false false /trunk/prest/t/80_misc/transforms.init/emptytopic.rst
+
+oy-4710.0.r4710/155455 delete-file false false /trunk/prest/t/80_misc/transforms.init/nodocurl/Text/Restructured/PrestConfig.pm
+
+d-5353.0.r5441/65 delete-file false false /trunk/prest/t/80_misc/transforms.init/sectnum_01.dom
+
+f-5353.0.r5353/1407 delete-file false false /trunk/prest/t/80_misc/transforms.init/sectnum_01.rst
+
+12-6233.0.r6233/6942 delete-file false false /trunk/prest/t/80_misc/transforms.init/sectnum_02.dom
+
+14-6233.0.r6233/6476 delete-file false false /trunk/prest/t/80_misc/transforms.init/sectnum_02.rst
+
+p1-4710.0.r4710/156454 delete-file false false /trunk/prest/t/80_misc/transforms.init/targets_01.dom
+
+p3-4710.0.r4710/154520 delete-file false false /trunk/prest/t/80_misc/transforms.init/targets_01.rst
+
+3i-5058.0.r5058/65654 delete-file false false /trunk/prest/t/90_bugs/Suite.smak
+
+6-5057.0.r5057/269 delete-file false false /trunk/prest/t/90_bugs/dom.init/alt.mydom
+
+9-5057.0.r5057/483 delete-file false false /trunk/prest/t/90_bugs/dom.init/alt.rst
+
+3l-5058.19-4580.r5058/65868 delete-file false false /trunk/prest/t/90_bugs/html.init/Dir.smak
+
+5-4944.19-4580.r4944/709 delete-file false false /trunk/prest/t/90_bugs/html.init/alt.myhtml
+
+8-4944.19-4580.r4944/456 delete-file false false /trunk/prest/t/90_bugs/html.init/alt.rst
+
+8v-4327.19-4580.r4710/233679 delete-file false false /trunk/prest/t/90_bugs/html.init/hyphencell.myhtml
+
+8x-4327.0.r4327/899614 delete-file false false /trunk/prest/t/90_bugs/html.init/hyphencell.rst
+
+5-4900.19-4580.r4900/982 delete-file false false /trunk/prest/t/90_bugs/html.init/imagesubst.myhtml
+
+8-4900.19-4580.r4900/720 delete-file false false /trunk/prest/t/90_bugs/html.init/imagesubst.rst
+
+8z-4327.19-4580.r4710/233080 delete-file false false /trunk/prest/t/90_bugs/html.init/inlinelit.myhtml
+
+91-4327.0.r4327/901278 delete-file false false /trunk/prest/t/90_bugs/html.init/inlinelit.rst
+
+93-4327.19-4580.r4710/234277 delete-file false false /trunk/prest/t/90_bugs/html.init/method.myhtml
+
+95-4327.0.r4327/900330 delete-file false false /trunk/prest/t/90_bugs/html.init/method.rst
+
+97-4327.19-4580.r4710/233380 delete-file false false /trunk/prest/t/90_bugs/html.init/raw.myhtml
+
+99-4327.0.r4327/899382 delete-file false false /trunk/prest/t/90_bugs/html.init/raw.rst
+
+9b-4327.19-4580.r4710/234574 delete-file false false /trunk/prest/t/90_bugs/html.init/refininterp.myhtml
+
+9d-4327.0.r4327/900804 delete-file false false /trunk/prest/t/90_bugs/html.init/refininterp.rst
+
+8-5786.0.r5786/3422 delete-file false false /trunk/prest/t/90_bugs/latex.init/footnotes1.mytex
+
+b-5786.0.r5786/3649 delete-file false false /trunk/prest/t/90_bugs/latex.init/footnotes1.rst
+
+6-5773.0.r5773/771 delete-file false false /trunk/prest/t/90_bugs/latex.init/titles.mytex
+
+9-5773.0.r5773/991 delete-file false false /trunk/prest/t/90_bugs/latex.init/titles.rst
+
+3o-5058.1a-4580.r6233/19294 delete-file false false /trunk/prest/t/90_bugs/parse.init/Dir.smak
+
+9n-4327.0.r4327/906655 delete-file false false /trunk/prest/t/90_bugs/parse.init/analogy.dom
+
+9p-4327.0.r4327/909780 delete-file false false /trunk/prest/t/90_bugs/parse.init/analogy.rst
+
+9r-4327.0.r4327/910490 delete-file false false /trunk/prest/t/90_bugs/parse.init/autofootnote.dom
+
+9t-4327.0.r4327/914343 delete-file false false /trunk/prest/t/90_bugs/parse.init/autofootnote.rst
+
+9v-4327.0.r4327/910251 delete-file false false /trunk/prest/t/90_bugs/parse.init/badinline.dom
+
+9x-4327.0.r4327/913872 delete-file false false /trunk/prest/t/90_bugs/parse.init/badinline.rst
+
+ey-4580.1a-4580.r4580/126075 delete-file false false /trunk/prest/t/90_bugs/parse.init/badinline.stderr
+
+9z-4327.0.r4327/915550 delete-file false false /trunk/prest/t/90_bugs/parse.init/bqinexplicit.dom
+
+a1-4327.0.r4327/917969 delete-file false false /trunk/prest/t/90_bugs/parse.init/bqinexplicit.rst
+
+a3-4327.0.r4327/920632 delete-file false false /trunk/prest/t/90_bugs/parse.init/defafteroptlist.dom
+
+a5-4327.0.r4327/906164 delete-file false false /trunk/prest/t/90_bugs/parse.init/defafteroptlist.rst
+
+a7-4327.0.r4327/915792 delete-file false false /trunk/prest/t/90_bugs/parse.init/defotherlist.dom
+
+a9-4327.0.r4327/918454 delete-file false false /trunk/prest/t/90_bugs/parse.init/defotherlist.rst
+
+5-4849.1a-4580.r4849/463 delete-file false false /trunk/prest/t/90_bugs/parse.init/embeduri.dom
+
+8-4849.1a-4580.r4849/723 delete-file false false /trunk/prest/t/90_bugs/parse.init/embeduri.rst
+
+5-5288.1a-4580.r5288/470 delete-file false false /trunk/prest/t/90_bugs/parse.init/enumlist01.dom
+
+8-5288.1a-4580.r5288/732 delete-file false false /trunk/prest/t/90_bugs/parse.init/enumlist01.rst
+
+ab-4327.0.r4327/919415 delete-file false false /trunk/prest/t/90_bugs/parse.init/fakerefinref.dom
+
+ad-4327.0.r4327/904960 delete-file false false /trunk/prest/t/90_bugs/parse.init/fakerefinref.rst
+
+af-4327.0.r4327/909538 delete-file false false /trunk/prest/t/90_bugs/parse.init/fakerefintrp.dom
+
+ah-4327.0.r4327/913151 delete-file false false /trunk/prest/t/90_bugs/parse.init/fakerefintrp.rst
+
+aj-4327.0.r4327/904721 delete-file false false /trunk/prest/t/90_bugs/parse.init/fieldlist.dom
+
+al-4327.0.r4327/908088 delete-file false false /trunk/prest/t/90_bugs/parse.init/fieldlist.rst
+
+an-4327.0.r4327/913391 delete-file false false /trunk/prest/t/90_bugs/parse.init/fieldparas.dom
+
+ap-4327.0.r4327/916766 delete-file false false /trunk/prest/t/90_bugs/parse.init/fieldparas.rst
+
+ar-4327.0.r4327/910733 delete-file false false /trunk/prest/t/90_bugs/parse.init/footnotes07.dom
+
+at-4327.0.r4327/914585 delete-file false false /trunk/prest/t/90_bugs/parse.init/footnotes07.rst
+

@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2019-07-20T19:21:07.435012Z
+K 7
+svn:log
+V 61
+extract "some" info on changes from history to release-notes
+
+END

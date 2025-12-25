@@ -1,0 +1,25 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-04-27T17:52:41.800987Z
+K 7
+svn:log
+V 541
+Doctree Documentation: Remove trailing semi-colon from parameter entity names.
+
+When using parameter entity names in running text, the trailing semi-colon
+clashes with the usual interpretation of this interpunctation.
+
+While the semicolon is required when referencing a parameter entity,
+it is not used in the entity definition.
+
+The leading percent sign is kept as a marker for a parameter entity.
+
+This nomenclature follows the example of the
+"XML Exchange Table Model Document Type Definition"
+https://www.oasis-open.org/specs/tm9901.html
+END

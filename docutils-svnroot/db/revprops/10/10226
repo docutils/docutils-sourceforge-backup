@@ -1,0 +1,27 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-09-05T09:10:58.159633Z
+K 7
+svn:log
+V 642
+rST parser: restore backwards compatibility of nested parsing.
+
+* Keep document-wide title style hierarchy in nested parsing.
+
+* Revert to using `document.memo.section_level` (required for nested parsing
+  into a detached base node with document-wide title styles).
+
++ simpler logic
++ backwards compatible
+- more bookkeeping effort
+- mandating a document-wide section title style hierarchy is ill-suited for
+  inclusion of rST blocks from external sources (e.g. extracted docstrings).
+  See `sphinx.util.parsing.nested_parse_to_nodes()` for an alternative.
+
+This should restore compatibility with Sphinx's "only" directive broken by [r10204].
+END

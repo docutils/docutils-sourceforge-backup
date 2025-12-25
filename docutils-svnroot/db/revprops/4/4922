@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 7
+mnodine
+K 8
+svn:date
+V 27
+2007-02-21T19:14:57.164692Z
+K 7
+svn:log
+V 198
+* Copy in the $opt hash reference in Text::Restructured::Writer::new so that
+  it doesn't modify external storage.
+* Initialize some of the opt variables to avoid warnings if not driven
+  by prest.
+
+END

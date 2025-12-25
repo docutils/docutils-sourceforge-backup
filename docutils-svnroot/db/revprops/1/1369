@@ -1,0 +1,14 @@
+K 10
+svn:author
+V 7
+goodger
+K 8
+svn:date
+V 27
+2003-06-03T02:13:27.000000Z
+K 7
+svn:log
+V 260
+Added validation functionality for config files.  Added "--error-encoding" option/setting, "_disable_config" internal setting.  Added encoding validation; updated "--input-encoding" and "--output-encoding".  Moved config file processing from docutils/core.py.
+
+END

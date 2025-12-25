@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2010-03-26T08:37:17.982349Z
+K 7
+svn:log
+V 204
+Fix [ 2975987 ] repr(Text) failed with long string (Jeffrey C. Jacobs).
+
+The py3k compatibility code introduced a type error that went
+unnoticed because there was no test for the trimming of long strings.
+END

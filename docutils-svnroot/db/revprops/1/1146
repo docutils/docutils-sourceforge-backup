@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 10
+ianbicking
+K 8
+svn:date
+V 27
+2003-01-19T20:02:47.000000Z
+K 7
+svn:log
+V 101
+New ``extractor`` module -- see docstring for more information.
+
+Extracts documentation from module.
+
+END

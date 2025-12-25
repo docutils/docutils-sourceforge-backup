@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 7
+smerten
+K 8
+svn:date
+V 27
+2003-04-02T19:30:22.000000Z
+K 7
+svn:log
+V 115
+Added `rst-mode.el'. Until now it is able to font lock most reST
+constructs including comments and literal blocks.
+
+END

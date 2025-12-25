@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 7
+wiemann
+K 8
+svn:date
+V 27
+2005-07-12T02:08:23.624834Z
+K 7
+svn:log
+V 239
+Do not add an option to allow arbitrary URI schemes.
+It does not seem to be needed very much, and the existing linking syntax
+should suffice.  No point in adding an extra option, at least as long
+as nobody requests it and shows a use case.
+END

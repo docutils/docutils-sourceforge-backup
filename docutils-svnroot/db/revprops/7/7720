@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2013-09-05T12:54:56.952239Z
+K 7
+svn:log
+V 68
+Fix math header writing for S5 (thanks to Jose Rojas for reporting).
+END

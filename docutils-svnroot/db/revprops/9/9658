@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2024-04-26T22:17:03.121736Z
+K 7
+svn:log
+V 156
+Sort category members in the definition of Element Categories.
+
+Makes it easier to search for a specific element
+in the element category parameter entities.
+END

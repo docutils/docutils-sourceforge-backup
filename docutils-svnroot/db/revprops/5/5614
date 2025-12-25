@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 6
+strank
+K 8
+svn:date
+V 27
+2008-07-24T09:07:07.627474Z
+K 7
+svn:log
+V 60
+All tests pass on py2.5, added tests for UnicodeDecodeError.
+END

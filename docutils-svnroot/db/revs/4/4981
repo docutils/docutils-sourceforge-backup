@@ -1,0 +1,154 @@
+id: 4-4981.0-4952.r4981/0
+type: file
+count: 0
+text: 1661 0 168 151 7745f00fef974d0674daa82773efeb16 07e590fd8e64136f972edb1f7466a87ae5a2eb1d 4980-3uc/_6
+cpath: /branches/plugins/docutils.egg-info/docutils.conf
+copyroot: 4952 /branches/plugins
+
+PLAIN
+K 13
+docutils.conf
+V 26
+file 4-4981.0-4952.r4981/0
+END
+ENDREP
+id: 2-4981.0-4952.r4981/312
+type: dir
+count: 0
+text: 4981 244 55 55 dd9f2fb29ae057f0a687b7b584d5ea0e
+cpath: /branches/plugins/docutils.egg-info
+copyroot: 4952 /branches/plugins
+
+PLAIN
+K 8
+BUGS.txt
+V 23
+file 2-2181.0.r4628/817
+K 11
+COPYING.txt
+V 26
+file 2-18.0-4952.r4978/422
+K 7
+FAQ.txt
+V 23
+file 2-788.0.r4632/1366
+K 11
+HISTORY.txt
+V 27
+file 5-18.0-4952.r4973/4461
+K 10
+README.txt
+V 24
+file 9-18.0.r4564/154506
+K 17
+RELEASE-NOTES.txt
+V 24
+file 2-4204.0.r4672/1691
+K 10
+THANKS.txt
+V 24
+file 2-2182.0.r4825/7555
+K 4
+docs
+V 25
+dir 3-7.0-4952.r4980/1705
+K 8
+docutils
+V 27
+dir 1w-18.0-4952.r4973/7176
+K 17
+docutils.egg-info
+V 27
+dir 2-4981.0-4952.r4981/312
+K 11
+ez_setup.py
+V 29
+file 2-4953.0-4952.r4953/3287
+K 10
+install.py
+V 22
+file 44-18.0.r2428/597
+K 8
+licenses
+V 27
+dir 2-1465.0-4952.r4978/226
+K 8
+setup.py
+V 27
+file 46-18.0-4952.r4972/453
+K 4
+test
+V 27
+dir 48-18.0-4952.r4979/1957
+K 5
+tools
+V 22
+dir 6w-18.0.r4916/2925
+END
+ENDREP
+id: 1-7.0-4952.r4981/1244
+type: dir
+pred: 1-7.0-4952.r4980/2595
+count: 3459
+text: 4981 490 741 741 88fa4c71e36de9f567c2e675e6f4fe42
+props: 340 866 30 0 7ff6208d3abbb09e823001daa4f3c0eb
+cpath: /branches/plugins
+copyroot: 4952 /branches/plugins
+
+PLAIN
+K 17
+address-rendering
+V 26
+dir 1-7.0-4314.r4314/16372
+K 12
+docutils-0.4
+V 25
+dir 1-7.0-4266.r4816/8356
+K 7
+nesting
+V 25
+dir 3-1.0-1813.r4356/3347
+K 7
+plugins
+V 25
+dir 1-7.0-4952.r4981/1244
+END
+ENDREP
+id: 0-1.0.r4981/1695
+type: dir
+pred: 0-1.0.r4980/3047
+count: 365
+text: 4981 1488 194 194 2526528fe81076b993d334445ba573be
+cpath: /branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 20
+dir 0-1.0.r4981/1695
+K 4
+tags
+V 19
+dir 2-1.0.r4584/629
+K 5
+trunk
+V 20
+dir 3-1.0.r4977/3395
+END
+ENDREP
+id: 0.0.r4981/1975
+type: dir
+pred: 0.0.r4980/3327
+count: 4981
+text: 4981 1849 113 113 7c1cbbf0edf9ee37b8e41f51ebb0e980
+props: 4548 0 4 0 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+
+_4.0-4952.t4980-3uc add-file true false /branches/plugins/docutils.egg-info/docutils.conf
+
+_2.0-4952.t4980-3uc add-dir false false /branches/plugins/docutils.egg-info
+
+
+1975 2169

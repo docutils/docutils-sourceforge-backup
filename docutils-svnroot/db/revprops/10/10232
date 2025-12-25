@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2025-09-13T16:01:09.261969Z
+K 7
+svn:log
+V 369
+Documentation amendments.
+
+Announce removement of `memo.section_level` in Docutils 2.0.
+
+Add some missing element descriptions to The Docutils Document Tree.
+
+Revert section level changes in restructuredtext.rst doc. Move section
+"Implicite Hyperlink Targets" to the end.
+
+Mention Roles Defined in Standard Definition Files in
+"reStructuredText Interpreted Text Roles".
+END
