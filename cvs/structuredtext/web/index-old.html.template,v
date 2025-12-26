@@ -1,0 +1,239 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2002.04.21.15.42.41;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@project retirement
+@
+text
+@<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- $Id: index.html.template,v 1.5 2002/04/13 16:57:37 goodger Exp $ -->
+#  latest_rst_release = 'restructuredtext-0.4.tar.gz'
+#  latest_dps_release = 'dps-0.4.tar.gz'
+<HTML>
+<HEAD>
+   <TITLE>reStructuredText</TITLE>
+</HEAD>
+<BODY bgcolor="#F0FFF0">
+
+<P><A HREF="http://sourceforge.net/projects/structuredtext/" 
+><IMG SRC="title.png" ALT="reStructuredText" BORDER=0 ALIGN=bottom></A></P>
+
+<P><FONT color="red">This project is now <B>inactive</B>.  All
+development has been taken over by the <A
+HREF="http://docutils.sourceforge.het/">Docutils</A>
+project.</FONT></P>
+
+<P><I>last updated: `date`</I></P>
+
+<P>reStructuredText is an easy-to-read, what-you-see-is-what-you-get plaintext
+markup syntax and parser system. It is useful for in-line program
+documentation (such as Python docstrings), for quickly creating simple web
+pages, and for standalone documents. reStructuredText is designed for
+extensibility for specific application domains. It is a candidate markup
+syntax for the <A HREF="http://docstring.sourceforge.net/">Python Docstring
+Processing System</A>. reStructuredText is a revision and reinterpretation of
+the <A HREF="http://dev.zope.org/Members/jim/StructuredTextWiki/FrontPage/"
+>StructuredText</A> and <A HREF="http://docutils.sourceforge.net/mirror/setext.html"
+>Setext</A> lightweight markup systems.</P>
+
+<P>The primary goal of the reStructuredText project is to define and implement
+a markup syntax for use in Python docstrings and other documentation domains,
+that is readable and simple, yet powerful enough for non-trivial use. The
+intended purpose of the markup is the conversion of reStructuredText documents
+into useful structured data formats.</P>
+
+<P>See <A HREF="http://docstring.sourceforge.net/dps/statemachine.py"
+><TT>statemachine.py</TT></A> for an example of a Python module fully
+documented using reStructuredText.</P>
+
+<H2>Project Status</H2>
+
+<P>This project is now <B>inactive</B>.  All development has been
+taken over by the <A
+HREF="http://docutils.sourceforge.het/">Docutils</A> project.</P>
+
+<P>This project consists of a Python package,
+&ldquo;<TT>dps.parsers.restructuredtext</TT>&rdquo;, a component of the <A
+HREF="http://docstring.sourceforge.net/">Python Docstring Processing System
+(DPS)</A>. The reStructuredText parser is functionally complete.</P>
+
+<H3><A NAME="snapshots">CVS Snapshots</A></H3>
+
+<P>The final CVS snapshots are available below:</P>
+
+<UL>
+
+ <LI><P><A
+     HREF="http://structuredtext.sourceforge.net/rst-snapshot.tgz"
+     >reStructuredText code, tests, documentation, and specifications</A>.
+     Except for a few typos, this is equivalent to the final release
+     package.</P></LI>
+
+ <LI><P><A
+     HREF="http://docstring.sourceforge.net/dps-snapshot.tgz"
+     >DPS code, tests, and specifications (no user docs yet)</A>
+     Except for a few typos, this is equivalent to the final release
+     package.</P></LI>
+
+ <LI><P><A
+     HREF="http://structuredtext.sourceforge.net/rst-web-snapshot.tgz"
+     >reStructuredText homepage files</A>
+     </P></LI>
+
+ <LI><P><A
+     HREF="http://structuredtext.sourceforge.net/rst-sandbox-snapshot.tgz"
+     >reStructuredText Sandbox files</A>
+     </P></LI>
+
+</UL>
+
+<H3><A NAME="releases">Project Releases</A></H3>
+
+<P>Development has been suspended at this site.  All new development is
+taking place at the <A HREF="http://docutils.sourceforge.net">Docutils</A>
+project.</P>
+
+<P>The <A
+HREF="http://prdownloads.sourceforge.net/structuredtext/`latest_rst_release`"
+>final project release package (`latest_rst_release`)</A> and past project
+releases can be downloaded from the <A
+HREF="http://sourceforge.net/project/showfiles.php?group_id=7050">project
+files page</A>. The <A
+HREF="http://prdownloads.sourceforge.net/docstring/`latest_dps_release`"
+>final DPS package (`latest_dps_release`)</A> is also required. <A
+HREF="http://sourceforge.net/cvs/?group_id=7050">Anonymous CVS access is
+available.</A> You can also <A
+HREF="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/~checkout~/structuredtext/restructuredtext/"
+>browse the latest reStructuredText source files (CVS) individually</A>, and
+read the final <A HREF="README.html">README</A> and <A
+HREF="HISTORY.html">HISTORY</A> files.</P>
+
+<H2>User Documentation</H2>
+
+<P>The user documentation files are located in the <TT>docs</TT> directory of the <A
+HREF="http://prdownloads.sourceforge.net/structuredtext/`latest_rst_release`"
+>latest project release package</A> (which may not be up to date). The
+up-to-date working documents (from CVS) may be accessed individually below,
+or from the <A HREF="#snapshots">snapshots</A> above. You can also <A
+HREF="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/~checkout~/structuredtext/restructuredtext/docs/"
+>browse the CVS repository</A> directly.</P>
+
+<UL>
+
+ <LI><P><A HREF="docs/quickstart.html">A ReStructuredText Primer</A> (HTML file),
+        and <A HREF="docs/quickstart.txt">A ReStructuredText Primer</A> (text source).
+     </P></LI>
+
+ <LI><P><A
+     HREF="docs/quickref.html"
+     >Quick reStructuredText</A> (user reference)
+     </P></LI>
+</UL>
+
+<H2>Specification</H2>
+
+<P>All of the specification files are located in the <TT>spec</TT> directory of the <A
+HREF="http://prdownloads.sourceforge.net/structuredtext/`latest_rst_release`"
+>latest project release package</A> (which may not be up to date). The
+up-to-date working documents (from CVS) may be accessed individually below,
+or from the <A HREF="#snapshots">snapshots</A> above. You can also <A
+HREF="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/~checkout~/structuredtext/restructuredtext/spec/"
+>browse the CVS repository</A> directly.</P>
+
+<UL>
+ <LI><P><A
+     HREF="spec/introduction.txt"
+     >An Introduction to reStructuredText</A>
+     </P></LI>
+
+ <LI><P><A
+     HREF="spec/reStructuredText.txt"
+     >reStructuredText Markup Specification</A>
+     </P></LI>
+
+ <LI><P><A
+     HREF="spec/alternatives.txt"
+     >A Record of reStructuredText Syntax Alternatives</A>
+     </P></LI>
+
+ <LI><P><A
+     HREF="spec/problems.txt"
+     >Problems With StructuredText</A>
+     </P></LI>
+
+ <LI><P><A
+     HREF="spec/rst-notes.txt"
+     >Notes</A>
+     </P></LI>
+</UL>
+
+<H2>You Can Help!</H2>
+
+<P>If you can test, administrate, or contribute code, ideas, bug
+reports, yummy treats, computer equipment, and/or large sums of money,
+please <A HREF="mailto:goodger@@users.sourceforge.net">contact the
+project administrator</A>.</P>
+
+<H2>Project Info</H2>
+
+<UL>
+
+ <LI><P><A
+     HREF="http://sourceforge.net/projects/structuredtext/"
+     >Project Summary page</A>: <A
+     HREF="http://sourceforge.net/tracker/?atid=107050&group_id=7050" 
+     >Bug reports</A>, <A
+     HREF="http://sourceforge.net/tracker/?atid=307050&group_id=7050"
+     >patches</A>, <A
+     HREF="http://sourceforge.net/tracker/?atid=357050&group_id=7050"
+     >feature requests</A>, <A
+     HREF="http://sourceforge.net/mail/?group_id=7050"
+     >mailing lists</A>, <A
+     HREF="http://sourceforge.net/news/?group_id=7050"
+     >news</A></P></LI>
+
+ <LI><P><A
+     HREF="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/~checkout~/structuredtext/restructuredtext/"
+     >reStructuredText CVS repository</A></P></LI>
+
+ <LI><P>Project administrator:
+     <A HREF="mailto:goodger@@users.sourceforge.net">David Goodger</A></P></LI>
+
+ <LI><P>Please direct discussions to the
+     <A HREF="http://www.python.org/sigs/doc-sig/">Python Documentation
+     Special Interest Group (Doc-SIG)</A>:
+     <A HREF="mailto:doc-sig@@python.org">doc-sig@@python.org</A></P></LI>
+
+ <LI><P>Page generated using Alex Martelli's
+     <A HREF="http://aspn.activestate.com/ASPN/Python/Cookbook/Recipe/52305">
+     YAPTU</A> (Yet Another Python Templating Utility)</P></LI>
+
+ <LI><P>Powered by <A href="http://www.python.org/">
+     <IMG src="PyBanner016.png" ALIGN="top" ALT="Python" BORDER="0"></A>
+     </P></LI>
+
+ <LI><P>Hosted by <A href="http://sourceforge.net">
+     <IMG src="http://sourceforge.net/sflogo.php?group_id=7050" width="88"
+          height="31" border="0" alt="SourceForge Logo" ALIGN="top"></A>
+     </P></LI>
+
+</UL>
+
+</BODY>
+</HTML>
+@

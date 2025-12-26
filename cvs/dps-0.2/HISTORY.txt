@@ -1,0 +1,57 @@
+====================================================
+ Python Docstring Processing System Project History
+====================================================
+
+Author: David Goodger
+Contact: dgoodger@bigfoot.com
+Date: 2001-06-14
+Website: http://docstring.sf.net/
+
+
+Release 0.2 (2001-06-18)
+========================
+
+PEP numbers assigned 2001-06-06. PEPs first posted to comp.lang.python
+2001-06-13.
+
+* spec/pep-0256.txt:
+
+  - File renamed from dps-framework-pep.txt.
+
+* spec/pep-0257.txt:
+
+  - File renamed from docstring-conventions-pep.txt.
+  - Added "Rationale" section.
+  - Resolved additions ([+]) and deletions ([-]).
+  - Added a description of "What is a Docstring?".
+  - Added descriptions of attribute and additional docstrings.
+
+* spec/pep-0258.txt:
+
+  - File renamed from dps-genericspec-pep.txt.
+  - Optional override of what docstrings to examine.
+
+* dps/statemachine.py:
+
+  - Catch `EOFError` to end statemachine processing.
+
+  - Relaxed State.initialtransitions contents: entries can be strings as well
+    as tuples. (Also argument to State.maketransitions().)
+
+* dps/test_statemachine.py: Modified tests for statemachine.py changes.
+
+* HISTORY.txt: Added to project.
+
+
+Release 0.1 (2001-06-02)
+========================
+
+The project web site and the first project release were rolled out.
+Candidate PEPs posted to Doc-SIG 2001-06-03.
+
+
+Local Variables:
+mode: indented-text
+indent-tabs-mode: nil
+fill-column: 70
+End:

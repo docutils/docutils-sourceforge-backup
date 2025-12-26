@@ -1,0 +1,34 @@
+#! /usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@users.sourceforge.net
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2002/06/28 04:13:29 $
+:Copyright: This module has been placed in the public domain.
+
+Standalone file Reader for the reStructuredText markup syntax.
+"""
+
+__docformat__ = 'reStructuredText'
+
+
+import sys
+from docutils import readers
+from docutils.transforms import frontmatter, references
+from docutils.parsers.rst import Parser
+
+
+class Reader(readers.Reader):
+
+    supported = ('standalone',)
+    """Contexts this reader supports."""
+
+    document = None
+    """A single document tree."""
+
+    transforms = (references.Substitutions,
+                  frontmatter.DocTitle,
+                  frontmatter.DocInfo,
+                  references.Footnotes,
+                  references.Hyperlinks,)

@@ -1,0 +1,944 @@
+head	1.9;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.9
+date	2002.04.13.16.59.07;	author goodger;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2002.03.28.04.32.22;	author goodger;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2002.03.16.05.48.11;	author goodger;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2002.03.11.03.25.54;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2002.02.20.04.30.03;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2002.02.15.22.45.58;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2002.02.06.03.11.14;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2002.01.30.04.43.12;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2002.01.26.00.08.39;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.9
+log
+@updated
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.8 $
+:Date: $Date: 2002/03/28 04:32:22 $
+:Copyright: This module has been placed in the public domain.
+
+Tests for dps.transforms.references.Hyperlinks.
+"""
+
+import DPSTestSupport
+from dps.transforms.references import Hyperlinks
+import UnitTestFolder
+try:
+    from restructuredtext import Parser
+except ImportError:
+    from dps.parsers.restructuredtext import Parser
+
+
+def suite():
+    parser = Parser()
+    s = DPSTestSupport.TransformTestSuite(parser)
+    s.generateTests(totest)
+    return s
+
+totest = {}
+
+# Exhaustive listing of hyperlink variations: every combination of
+# target/reference, direct/indirect, internal/external, and named/anonymous.
+totest['exhaustive_hyperlinks'] = ((Hyperlinks,), [
+["""\
+direct_ external
+
+.. _direct: http://direct
+""",
+"""\
+<document>
+    <paragraph>
+        <reference refuri="http://direct">
+            direct
+         external
+    <target id="direct" name="direct" refuri="http://direct">
+"""],
+["""\
+indirect_ external
+
+.. _indirect: xtarget_
+.. _xtarget: http://indirect
+""",
+"""\
+<document>
+    <paragraph>
+        <reference refuri="http://indirect">
+            indirect
+         external
+    <target id="indirect" name="indirect" refuri="http://indirect">
+    <target id="xtarget" name="xtarget" refuri="http://indirect">
+"""],
+["""\
+.. _direct:
+
+direct_ internal
+""",
+"""\
+<document>
+    <target id="direct" name="direct">
+    <paragraph>
+        <reference refid="direct">
+            direct
+         internal
+"""],
+["""\
+.. _ztarget:
+
+indirect_ internal
+
+.. _indirect2: ztarget_
+.. _indirect: indirect2_
+""",
+"""\
+<document>
+    <target id="ztarget" name="ztarget">
+    <paragraph>
+        <reference refid="ztarget">
+            indirect
+         internal
+    <target id="indirect2" name="indirect2" refid="ztarget">
+    <target id="indirect" name="indirect" refid="ztarget">
+"""],
+["""\
+Implicit
+--------
+
+indirect_ internal
+
+.. _indirect: implicit_
+""",
+"""\
+<document>
+    <section id="implicit" name="implicit">
+        <title>
+            Implicit
+        <paragraph>
+            <reference refid="implicit">
+                indirect
+             internal
+        <target id="indirect" name="indirect" refid="implicit">
+"""],
+["""\
+Implicit
+--------
+
+Duplicate implicit targets.
+
+Implicit
+--------
+
+indirect_ internal
+
+.. _indirect: implicit_
+""",
+"""\
+<document>
+    <section dupname="implicit" id="implicit">
+        <title>
+            Implicit
+        <paragraph>
+            Duplicate implicit targets.
+    <section dupname="implicit" id="id1">
+        <title>
+            Implicit
+        <system_message backrefs="id1" level="1" type="INFO">
+            <paragraph>
+                Duplicate implicit target name: "implicit".
+        <paragraph>
+            <problematic id="id3" refid="id2">
+                indirect_
+             internal
+        <target id="indirect" name="indirect" refname="implicit">
+    <system_message backrefs="id3" id="id2" level="2" type="WARNING">
+        <paragraph>
+            Indirect hyperlink target "indirect" (id="indirect") refers to target "implicit", which does not exist.
+"""],
+["""\
+`direct external`__
+
+__ http://direct
+""",
+"""\
+<document>
+    <paragraph>
+        <reference anonymous="1" refuri="http://direct">
+            direct external
+    <target anonymous="1" id="id1" refuri="http://direct">
+"""],
+["""\
+`indirect external`__
+
+__ xtarget_
+.. _xtarget: http://indirect
+""",
+"""\
+<document>
+    <paragraph>
+        <reference anonymous="1" refuri="http://indirect">
+            indirect external
+    <target anonymous="1" id="id1" refuri="http://indirect">
+    <target id="xtarget" name="xtarget" refuri="http://indirect">
+"""],
+["""\
+__
+
+`direct internal`__
+""",
+"""\
+<document>
+    <target anonymous="1" id="id1">
+    <paragraph>
+        <reference anonymous="1" refid="id1">
+            direct internal
+"""],
+["""\
+.. _ztarget:
+
+`indirect internal`__
+
+__ ztarget_
+""",
+"""\
+<document>
+    <target id="ztarget" name="ztarget">
+    <paragraph>
+        <reference anonymous="1" refid="ztarget">
+            indirect internal
+    <target anonymous="1" id="id1" refid="ztarget">
+"""],
+["""\
+.. _ztarget:
+
+First
+
+.. _ztarget:
+
+Second
+
+`indirect internal`__
+
+__ ztarget_
+""",
+"""\
+<document>
+    <target dupname="ztarget" id="ztarget">
+    <paragraph>
+        First
+    <system_message backrefs="id1" level="2" type="WARNING">
+        <paragraph>
+            Duplicate explicit target name: "ztarget".
+    <target dupname="ztarget" id="id1">
+    <paragraph>
+        Second
+    <paragraph>
+        <reference anonymous="1" refid="id1">
+            indirect internal
+    <target anonymous="1" id="id2" refid="id1">
+"""],
+])
+
+totest['hyperlinks'] = ((Hyperlinks,), [
+["""\
+.. _internal hyperlink:
+
+This paragraph referenced.
+
+By this `internal hyperlink`_ referemce.
+""",
+"""\
+<document>
+    <target id="internal-hyperlink" name="internal hyperlink">
+    <paragraph>
+        This paragraph referenced.
+    <paragraph>
+        By this \n\
+        <reference refid="internal-hyperlink">
+            internal hyperlink
+         referemce.
+"""],
+["""\
+.. _chained:
+.. _internal hyperlink:
+
+This paragraph referenced.
+
+By this `internal hyperlink`_ referemce
+as well as by this chained_ reference.
+
+The results of the transform are not visible at the XML level.
+""",
+"""\
+<document>
+    <target id="chained" name="chained">
+    <target id="internal-hyperlink" name="internal hyperlink">
+    <paragraph>
+        This paragraph referenced.
+    <paragraph>
+        By this \n\
+        <reference refid="internal-hyperlink">
+            internal hyperlink
+         referemce
+        as well as by this \n\
+        <reference refid="chained">
+            chained
+         reference.
+    <paragraph>
+        The results of the transform are not visible at the XML level.
+"""],
+["""\
+.. _external hyperlink: http://uri
+
+`External hyperlink`_ reference.
+""",
+"""\
+<document>
+    <target id="external-hyperlink" name="external hyperlink" refuri="http://uri">
+    <paragraph>
+        <reference refuri="http://uri">
+            External hyperlink
+         reference.
+"""],
+["""\
+.. _external hyperlink: http://uri
+.. _indirect target: `external hyperlink`_
+""",
+"""\
+<document>
+    <target id="external-hyperlink" name="external hyperlink" refuri="http://uri">
+    <target id="indirect-target" name="indirect target" refuri="http://uri">
+    <system_message level="1" type="INFO">
+        <paragraph>
+            Indirect hyperlink target "indirect target" is not referenced.
+"""],
+["""\
+.. _chained:
+.. _external hyperlink: http://uri
+
+`External hyperlink`_ reference
+and a chained_ reference too.
+""",
+"""\
+<document>
+    <target id="chained" name="chained" refuri="http://uri">
+    <target id="external-hyperlink" name="external hyperlink" refuri="http://uri">
+    <paragraph>
+        <reference refuri="http://uri">
+            External hyperlink
+         reference
+        and a \n\
+        <reference refuri="http://uri">
+            chained
+         reference too.
+"""],
+["""\
+.. _external hyperlink: http://uri
+.. _indirect hyperlink: `external hyperlink`_
+
+`Indirect hyperlink`_ reference.
+""",
+"""\
+<document>
+    <target id="external-hyperlink" name="external hyperlink" refuri="http://uri">
+    <target id="indirect-hyperlink" name="indirect hyperlink" refuri="http://uri">
+    <paragraph>
+        <reference refuri="http://uri">
+            Indirect hyperlink
+         reference.
+"""],
+["""\
+.. _external hyperlink: http://uri
+.. _chained:
+.. _indirect hyperlink: `external hyperlink`_
+
+Chained_ `indirect hyperlink`_ reference.
+""",
+"""\
+<document>
+    <target id="external-hyperlink" name="external hyperlink" refuri="http://uri">
+    <target id="chained" name="chained" refuri="http://uri">
+    <target id="indirect-hyperlink" name="indirect hyperlink" refuri="http://uri">
+    <paragraph>
+        <reference refuri="http://uri">
+            Chained
+         \n\
+        <reference refuri="http://uri">
+            indirect hyperlink
+         reference.
+"""],
+["""\
+.. __: http://full
+__
+__ http://simplified
+.. _external: http://indirect.external
+__ external_
+__
+
+`Full syntax anonymous external hyperlink reference`__,
+`chained anonymous external reference`__,
+`simplified syntax anonymous external hyperlink reference`__,
+`indirect anonymous hyperlink reference`__,
+`internal anonymous hyperlink reference`__.
+""",
+"""\
+<document>
+    <target anonymous="1" id="id1" refuri="http://full">
+    <target anonymous="1" id="id2" refuri="http://simplified">
+    <target anonymous="1" id="id3" refuri="http://simplified">
+    <target id="external" name="external" refuri="http://indirect.external">
+    <target anonymous="1" id="id4" refuri="http://indirect.external">
+    <target anonymous="1" id="id5">
+    <paragraph>
+        <reference anonymous="1" refuri="http://full">
+            Full syntax anonymous external hyperlink reference
+        ,
+        <reference anonymous="1" refuri="http://simplified">
+            chained anonymous external reference
+        ,
+        <reference anonymous="1" refuri="http://simplified">
+            simplified syntax anonymous external hyperlink reference
+        ,
+        <reference anonymous="1" refuri="http://indirect.external">
+            indirect anonymous hyperlink reference
+        ,
+        <reference anonymous="1" refid="id5">
+            internal anonymous hyperlink reference
+        .
+"""],
+["""\
+Duplicate external target_'s (different URIs):
+
+.. _target: first
+
+.. _target: second
+""",
+"""\
+<document>
+    <paragraph>
+        Duplicate external \n\
+        <reference refname="target">
+            target
+        's (different URIs):
+    <target dupname="target" id="target" refuri="first">
+    <system_message backrefs="id1" level="2" type="WARNING">
+        <paragraph>
+            Duplicate explicit target name: "target".
+    <target dupname="target" id="id1" refuri="second">
+"""],
+["""\
+Several__ anonymous__ hyperlinks__, but not enough targets.
+
+__ http://example.org
+""",
+"""\
+<document>
+    <paragraph>
+        <problematic id="id3" refid="id2">
+            Several__
+         \n\
+        <problematic id="id4" refid="id2">
+            anonymous__
+         \n\
+        <problematic id="id5" refid="id2">
+            hyperlinks__
+        , but not enough targets.
+    <target anonymous="1" id="id1" refuri="http://example.org">
+    <system_message backrefs="id3 id4 id5" id="id2" level="3" type="ERROR">
+        <paragraph>
+            Anonymous hyperlink mismatch: 3 references but 1 targets.
+"""],
+])
+
+
+if __name__ == '__main__':
+    import unittest
+    unittest.main(defaultTest='suite')
+@
+
+
+1.8
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.7 $
+:Date: $Date: 2002/03/16 05:48:11 $
+d70 1
+a70 1
+        <reference refname="direct">
+d86 1
+a86 1
+        <reference refname="ztarget">
+d89 2
+a90 2
+    <target id="indirect2" name="indirect2" refname="ztarget">
+    <target id="indirect" name="indirect" refname="ztarget">
+d106 1
+a106 1
+            <reference refname="implicit">
+d109 1
+a109 1
+        <target id="indirect" name="indirect" refname="implicit">
+d134 1
+a134 1
+        <system_message level="1" refid="id1" type="INFO">
+d138 2
+a139 2
+            <reference refname="implicit">
+                indirect
+d142 1
+a142 1
+    <system_message level="2" type="WARNING">
+d144 1
+a144 1
+            Indirect hyperlink target "indirect" refers to target "implicit", which does not exist.
+d156 1
+a156 1
+    <target anonymous="1" id="id1" name="_:1:_" refuri="http://direct">
+d169 1
+a169 1
+    <target anonymous="1" id="id1" name="_:1:_" refuri="http://indirect">
+d179 1
+a179 1
+    <target anonymous="1" id="id1" name="_:1:_">
+d181 1
+a181 1
+        <reference anonymous="1" refname="_:1:_">
+d195 1
+a195 1
+        <reference anonymous="1" refname="ztarget">
+d197 1
+a197 1
+    <target anonymous="1" id="id1" name="_:1:_" refname="ztarget">
+d217 1
+a217 1
+    <system_message level="2" refid="id1" type="WARNING">
+d224 1
+a224 1
+        <reference anonymous="1" refname="ztarget">
+d226 1
+a226 1
+    <target anonymous="1" id="id2" name="_:1:_" refname="ztarget">
+d245 1
+a245 1
+        <reference refname="internal hyperlink">
+d268 1
+a268 1
+        <reference refname="internal hyperlink">
+d272 1
+a272 1
+        <reference refname="chained">
+d301 1
+a301 1
+            External hyperlink target "indirect target" is not referenced.
+d374 3
+a376 3
+    <target anonymous="1" id="id1" name="_:1:_" refuri="http://full">
+    <target anonymous="1" id="id2" name="_:2:_" refuri="http://simplified">
+    <target anonymous="1" id="id3" name="_:3:_" refuri="http://simplified">
+d378 2
+a379 2
+    <target anonymous="1" id="id4" name="_:4:_" refuri="http://indirect.external">
+    <target anonymous="1" id="id5" name="_:5:_">
+d393 1
+a393 1
+        <reference anonymous="1" refname="_:5:_">
+d412 1
+a412 1
+    <system_message level="2" refid="id1" type="WARNING">
+d416 22
+@
+
+
+1.7
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.6 $
+:Date: $Date: 2002/03/11 03:25:54 $
+d136 1
+a136 1
+                Duplicate implicit target name: "implicit"
+d219 1
+a219 1
+            Duplicate explicit target name: "ztarget"
+d414 1
+a414 1
+            Duplicate explicit target name: "target"
+@
+
+
+1.6
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.5 $
+:Date: $Date: 2002/02/20 04:30:03 $
+d44 1
+a44 1
+    <target id="id1" name="direct" refuri="http://direct">
+d58 2
+a59 2
+    <target id="id1" name="indirect" refuri="http://indirect">
+    <target id="id2" name="xtarget" refuri="http://indirect">
+d68 1
+a68 1
+    <target id="id1" name="direct">
+d84 1
+a84 1
+    <target id="id1" name="ztarget">
+d89 2
+a90 2
+    <target id="id2" name="indirect2" refname="ztarget">
+    <target id="id3" name="indirect" refname="ztarget">
+d102 1
+a102 1
+    <section id="id1" name="implicit">
+d109 1
+a109 1
+        <target id="id2" name="indirect" refname="implicit">
+d126 1
+a126 1
+    <section dupname="implicit" id="id1">
+d131 1
+a131 1
+    <section dupname="implicit" id="id2">
+d134 1
+a134 1
+        <system_message level="1" refid="id2" type="INFO">
+d141 1
+a141 1
+        <target id="id3" name="indirect" refname="implicit">
+d169 2
+a170 2
+    <target anonymous="1" id="id2" name="_:1:_" refuri="http://indirect">
+    <target id="id1" name="xtarget" refuri="http://indirect">
+d193 1
+a193 1
+    <target id="id1" name="ztarget">
+d197 1
+a197 1
+    <target anonymous="1" id="id2" name="_:1:_" refname="ztarget">
+d214 1
+a214 1
+    <target dupname="ztarget" id="id1">
+d217 1
+a217 1
+    <system_message level="2" refid="id2" type="WARNING">
+d220 1
+a220 1
+    <target dupname="ztarget" id="id2">
+d226 1
+a226 1
+    <target anonymous="1" id="id3" name="_:1:_" refname="ztarget">
+d240 1
+a240 1
+    <target id="id1" name="internal hyperlink">
+d262 2
+a263 2
+    <target id="id1" name="chained">
+    <target id="id2" name="internal hyperlink">
+d285 1
+a285 1
+    <target id="id1" name="external hyperlink" refuri="http://uri">
+d297 2
+a298 2
+    <target id="id1" name="external hyperlink" refuri="http://uri">
+    <target id="id2" name="indirect target" refuri="http://uri">
+d312 2
+a313 2
+    <target id="id1" name="chained" refuri="http://uri">
+    <target id="id2" name="external hyperlink" refuri="http://uri">
+d331 2
+a332 2
+    <target id="id1" name="external hyperlink" refuri="http://uri">
+    <target id="id2" name="indirect hyperlink" refuri="http://uri">
+d347 3
+a349 3
+    <target id="id1" name="external hyperlink" refuri="http://uri">
+    <target id="id2" name="chained" refuri="http://uri">
+    <target id="id3" name="indirect hyperlink" refuri="http://uri">
+d374 6
+a379 6
+    <target anonymous="1" id="id2" name="_:1:_" refuri="http://full">
+    <target anonymous="1" id="id3" name="_:2:_" refuri="http://simplified">
+    <target anonymous="1" id="id4" name="_:3:_" refuri="http://simplified">
+    <target id="id1" name="external" refuri="http://indirect.external">
+    <target anonymous="1" id="id5" name="_:4:_" refuri="http://indirect.external">
+    <target anonymous="1" id="id6" name="_:5:_">
+d411 2
+a412 2
+    <target dupname="target" id="id1" refuri="first">
+    <system_message level="2" refid="id2" type="WARNING">
+d415 1
+a415 1
+    <target dupname="target" id="id2" refuri="second">
+@
+
+
+1.5
+log
+@updated (ids)
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2002/02/15 22:45:58 $
+d32 1
+a32 1
+totest['enumerated_hyperlinks'] = ((Hyperlinks,), [
+d93 54
+d154 1
+a154 1
+        <reference refuri="http://direct">
+d156 1
+a156 1
+    <target id="id1" name="_:1:_" refuri="http://direct">
+d167 1
+a167 1
+        <reference refuri="http://indirect">
+d169 1
+a169 1
+    <target id="id2" name="_:1:_" refuri="http://indirect">
+d179 1
+a179 1
+    <target id="id1" name="_:1:_">
+d181 1
+a181 1
+        <reference refname="_:1:_">
+d195 30
+a224 1
+        <reference refname="ztarget">
+d226 1
+a226 1
+    <target id="id2" name="_:1:_" refname="ztarget">
+d374 3
+a376 3
+    <target id="id2" name="_:1:_" refuri="http://full">
+    <target id="id3" name="_:2:_" refuri="http://simplified">
+    <target id="id4" name="_:3:_" refuri="http://simplified">
+d378 2
+a379 2
+    <target id="id5" name="_:4:_" refuri="http://indirect.external">
+    <target id="id6" name="_:5:_">
+d381 1
+a381 1
+        <reference refuri="http://full">
+d384 1
+a384 1
+        <reference refuri="http://simplified">
+d387 1
+a387 1
+        <reference refuri="http://simplified">
+d390 1
+a390 1
+        <reference refuri="http://indirect.external">
+d393 1
+a393 1
+        <reference refname="_:5:_">
+d412 1
+a412 1
+    <system_message level="2" type="WARNING">
+@
+
+
+1.4
+log
+@  - Changed "system_warning" to "system_message".
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2002/02/06 03:11:14 $
+d44 1
+a44 1
+    <target name="direct" refuri="http://direct">
+d58 2
+a59 2
+    <target name="indirect" refuri="http://indirect">
+    <target name="xtarget" refuri="http://indirect">
+d68 1
+a68 1
+    <target name="direct">
+d84 1
+a84 1
+    <target name="ztarget">
+d89 2
+a90 2
+    <target name="indirect2" refname="ztarget">
+    <target name="indirect" refname="ztarget">
+d102 1
+a102 1
+    <target name="_:1:_" refuri="http://direct">
+d115 2
+a116 2
+    <target name="_:1:_" refuri="http://indirect">
+    <target name="xtarget" refuri="http://indirect">
+d125 1
+a125 1
+    <target name="_:1:_">
+d139 1
+a139 1
+    <target name="ztarget">
+d143 1
+a143 1
+    <target name="_:1:_" refname="ztarget">
+d157 1
+a157 1
+    <target name="internal hyperlink">
+d179 2
+a180 2
+    <target name="chained">
+    <target name="internal hyperlink">
+d202 1
+a202 1
+    <target name="external hyperlink" refuri="http://uri">
+d214 2
+a215 2
+    <target name="external hyperlink" refuri="http://uri">
+    <target name="indirect target" refuri="http://uri">
+d229 2
+a230 2
+    <target name="chained" refuri="http://uri">
+    <target name="external hyperlink" refuri="http://uri">
+d248 2
+a249 2
+    <target name="external hyperlink" refuri="http://uri">
+    <target name="indirect hyperlink" refuri="http://uri">
+d264 3
+a266 3
+    <target name="external hyperlink" refuri="http://uri">
+    <target name="chained" refuri="http://uri">
+    <target name="indirect hyperlink" refuri="http://uri">
+d291 6
+a296 6
+    <target name="_:1:_" refuri="http://full">
+    <target name="_:2:_" refuri="http://simplified">
+    <target name="_:3:_" refuri="http://simplified">
+    <target name="external" refuri="http://indirect.external">
+    <target name="_:4:_" refuri="http://indirect.external">
+    <target name="_:5:_">
+d328 1
+a328 1
+    <target dupname="target" refuri="first">
+d332 1
+a332 1
+    <target dupname="target" refuri="second">
+@
+
+
+1.3
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.2 $
+:Date: $Date: 2002/01/30 04:43:12 $
+d216 1
+a216 1
+    <system_warning level="1" type="INFO">
+d329 1
+a329 1
+    <system_warning level="2" type="WARNING">
+@
+
+
+1.2
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.1 $
+:Date: $Date: 2002/01/26 00:08:39 $
+d23 1
+a23 1
+    parser = Parser(debug=UnitTestFolder.debug)
+d216 1
+a216 1
+    <system_warning level="0">
+d329 1
+a329 1
+    <system_warning level="1">
+@
+
+
+1.1
+log
+@tests for hyperlink transforms
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision$
+:Date: $Date$
+d23 1
+a23 2
+    parser = Parser(warninglevel=4, errorlevel=4, languagecode='en',
+                    debug=UnitTestFolder.debug)
+@
+

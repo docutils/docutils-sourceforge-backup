@@ -1,0 +1,784 @@
+head	1.12;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.12
+date	2002.04.04.05.42.35;	author goodger;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2002.03.16.05.34.19;	author goodger;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2002.03.07.03.40.15;	author goodger;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2002.03.04.04.38.41;	author goodger;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2002.02.20.04.26.41;	author goodger;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2002.02.13.02.22.00;	author goodger;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2002.02.12.02.26.03;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2001.11.15.03.01.41;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.11.06.00.55.43;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.11.01.04.11.44;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.09.18.04.39.25;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.09.13.03.42.19;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.12
+log
+@clarifications & refinements
+@
+text
+@=============================
+ reStructuredText Directives
+=============================
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.11 $
+:Date: $Date: 2002/03/16 05:34:19 $
+
+This document describes the directives implemented in the reference
+reStructuredText parser.
+
+
+.. contents::
+
+
+-------------
+ Admonitions
+-------------
+
+DTD elements: attention, caution, danger, error, hint, important,
+note, tip, warning.
+
+Directive block: directive data and all following indented text
+are interpreted as body elements.
+
+Admonitions are specially marked "topics" that can appear anywhere an
+ordinary body element can.  They contain arbitrary body elements.
+Typically, an admonition is rendered as an offset block in a document,
+sometimes outlined or shaded, with a title matching the admonition
+type.  For example::
+
+    .. DANGER::
+       Beware killer rabbits!
+
+This directive might be rendered something like this::
+
+    +------------------------+
+    |        !DANGER!        |
+    |                        |
+    | Beware killer rabbits! |
+    +------------------------+
+
+The following admonition directives have been implemented:
+
+- attention
+- caution
+- danger
+- error
+- hint
+- important
+- note
+- tip
+- warning
+
+Any text immediately following the directive indicator (on the same
+line and/or indented on following lines) is interpreted as a directive
+block and is parsed for normal body elements.  For example, the
+following "note" admonition directive contains one paragraph and a
+bullet list consisting of two list items::
+
+    .. note:: This is a note admonition.
+       This is the second line of the first paragraph.
+
+       - The note contains all indented body elements
+         following.
+       - It includes this bullet list.
+
+
+--------
+ Images
+--------
+
+There are two image directives: "image" and "figure".
+
+
+Image
+=====
+
+DTD element: image.
+
+Directive block: directive data and following indented lines (up to
+the first blank line) are interpreted as image URI and optional
+attributes.
+
+An "image" is a simple picture::
+
+    .. image:: picture.png
+
+The URI for the image source file is specified in the directive data.
+As with hyperlink targets, the image URI may begin on the same line as
+the explicit markup start and target name, or it may begin in an
+indented text block immediately following, with no intervening blank
+lines.  If there are multiple lines in the link block, they are
+stripped of leading and trailing whitespace and joined together.
+
+Optionally, the image link block may end with a flat field list, the
+_`image attributes`.  For example::
+
+    .. image:: picture.png
+       :height: 100
+       :width: 200
+       :scale: 50
+       :alt: alternate text
+
+The following attributes are recognized:
+
+``alt`` : text
+    Alternate text: a short description of the image, displayed by
+    applications that cannot display images, or spoken by applications
+    for visually impaired users.
+``height`` : integer
+    The height of the image in pixels, used to reserve space or scale
+    the image vertically.
+``width`` : integer
+    The width of the image in pixels, used to reserve space or scale
+    the image horizontally.
+``scale`` : integer
+    The uniform scaling factor of the image, a percentage (but no "%"
+    symbol is required or allowed).  "100" means full-size.
+
+
+Figure
+======
+
+DTD elements: figure, image, caption, legend.
+
+Directive block: directive data and all following indented text are
+interpreted as an image URI, optional attributes, a caption, and an
+optional legend.
+
+A "figure" consists of image_ data (optionally including `image
+attributes`_), an optional caption (a single paragraph), and an
+optional legend (arbitrary body elements)::
+
+    .. figure:: picture.png
+       :scale: 50
+       :alt: map to buried treasure
+
+       This is the caption of the figure (a simple paragraph).
+
+       The legend consists of all elements after the caption.  In this
+       case, the legend consists of this paragraph and the following
+       table:
+
+       +-----------------------+-----------------------+
+       | Symbol                | Meaning               |
+       +=======================+=======================+
+       | .. image:: tent.png   | Campground            |
+       +-----------------------+-----------------------+
+       | .. image:: waves.png  | Lake                  |
+       +-----------------------+-----------------------+
+       | .. image:: peak.png   | Mountain              |
+       +-----------------------+-----------------------+
+
+There must be a blank line before the caption paragraph and before the
+legend.  To specify a legend without a caption, use an empty comment
+("..") in place of the caption.
+
+
+---------------------
+ Document Components
+---------------------
+
+Table of Contents
+=================
+
+DTD elements: pending, topic.
+
+Directive block: directive data and following indented lines (up to
+the first blank line) are interpreted as the topic title and optional
+attributes.
+
+The "contents" directive inserts a table of contents (TOC) in two
+passes: initial parse and transform.  During the initial parse, a
+"pending" element is generated which acts as a placeholder, storing
+the TOC title and any attributes internally.  At a later stage in the
+processing, the "pending" element is replaced by a "topic" element, a
+title and the table of contents proper.
+
+The directive in its simplest form::
+
+    .. contents::
+
+Language-dependent boilerplate text will be used for the title.  The
+English default title text is "Contents".
+
+An explicit title, may be specified::
+
+    .. contents:: Table of Contents
+
+The title may span lines, although it is not recommended::
+
+    .. contents:: Here's a very long Table of
+       Contents title
+
+Attributes may be specified for the directive, using a field list::
+
+    .. contents:: Table of Contents
+       :depth: 2
+
+If the default title is to be used, the attribute field list may begin
+on the same line as the directive marker::
+
+    .. contents:: :depth: 2
+
+The following attributes are recognized:
+
+``depth`` : integer
+    The number of section levels that are collected in the table of
+    contents.
+``local`` : empty
+    Generate a local table of contents.  Entries will only include
+    subsections of the section in which the directive is given.  If no
+    explicit title is given, the table of contents will not be titled.
+
+
+Footnotes
+=========
+
+DTD elements: pending, topic.
+
+@@@@@@
+
+
+Citations
+=========
+
+DTD elements: pending, topic.
+
+@@@@@@
+
+
+Topic
+=====
+
+DTD element: topic.
+
+@@@@@@
+
+
+---------------
+ HTML-Specific
+---------------
+
+Meta
+====
+
+Non-standard element: meta.
+
+Directive block: directive data and following indented lines (up to
+the first blank line) are parsed for a flat field list.
+
+The "meta" directive is used to specify HTML metadata stored in HTML
+META tags.  "Metadata" is data about data, in this case data about web
+pages.  Metadata is used to describe and classify web pages in the
+World Wide Web, in a form that is easy for search engines to extract
+and collate.
+
+Within the directive block, a flat field list provides the syntax for
+metadata.  The field name becomes the contents of the "name" attribute
+of the META tag, and the field body (interpreted as a single string
+without inline markup) becomes the contents of the "content"
+attribute.  For example::
+
+    .. meta::
+       :description: The reStructuredText plaintext markup language
+       :keywords: plaintext, markup language
+
+This would be converted to the following HTML::
+
+    <meta name="description"
+        content="The reStructuredText plaintext markup language">
+    <meta name="keywords" content="plaintext, markup language">
+
+Support for other META attributes ("http-equiv", "scheme", "lang",
+"dir") are provided through field arguments, which must be of the form
+"attr=value"::
+
+    .. meta::
+       :description lang=en: An amusing story
+       :description lang=fr: Un histoire amusant
+
+And their HTML equivalents::
+
+    <meta name="description" lang="en" content="An amusing story">
+    <meta name="description" lang="fr" content="Un histoire amusant">
+
+Some META tags use an "http-equiv" attribute instead of the "name"
+attribute.  To specify "http-equiv" META tags, simply omit the name::
+
+    .. meta::
+       :http-equiv=Content-Type: text/html; charset=ISO-8859-1
+
+HTML equivalent::
+
+    <meta http-equiv="Content-Type"
+         content="text/html; charset=ISO-8859-1">
+
+
+Imagemap
+========
+
+Non-standard element: imagemap.
+
+
+---------------
+ Miscellaneous
+---------------
+
+Raw Data Pass-Through
+=====================
+
+DTD element: pending.
+
+Directive block: the directive data is interpreted as an output format
+type, and all following indented text is stored verbatim,
+uninterpreted.
+
+The "raw" directive indicates non-reStructuredText data that is to be
+passed untouched to the Writer.  The name of the output format is
+given in the directive data.  During the initial parse, a "pending"
+element is generated which acts as a placeholder, storing the format
+and raw data internally.  The interpretation of the code is up to the
+Writer.  A Writer may ignore any raw output not matching its format.
+
+For example, the following input would be passed untouched by an HTML
+Writer::
+
+    .. raw:: html
+       <hr width=50 size=10>
+
+A LaTeX Writer could insert the following raw content into its
+output stream::
+
+    .. raw:: latex
+       \documentclass[twocolumn]{article}
+
+
+Restructuredtext-Test-Directive
+===============================
+
+DTD element: system_warning.
+
+Directive block: directive data is stored, and all following indented
+text is interpreted as a literal block.
+
+This directive is provided for test purposes only.  (Nobody is
+expected to type in a name *that* long!)  It is converted into a
+level-1 (info) system message showing the directive data, possibly
+followed by a literal block containing the rest of the directive
+block.
+
+
+..
+   Local Variables:
+   mode: indented-text
+   indent-tabs-mode: nil
+   sentence-end-double-space: t
+   fill-column: 70
+   End:
+@
+
+
+1.11
+log
+@  - Added "local" attribute to "contents".
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.10 $
+:Date: $Date: 2002/03/07 03:40:15 $
+d176 3
+a178 3
+the TOC title and any attributes in a field list.  At a later stage in
+the processing, the "pending" element is replaced by a "topic"
+element, a title and the table of contents proper.
+d313 1
+a313 1
+DTD element: raw.
+d321 4
+a324 3
+given in the directive data.  The interpretation of the code is up to
+the Writer.  A Writer may ignore any raw output not matching its
+format.
+d326 8
+a333 1
+For example, given the following input::
+a336 8
+
+The following XML would be generated::
+
+    <raw format="latex">
+    \documentclass[twocolumn]{article}
+    </raw>
+
+A LaTeX Writer could insert the raw content into its output.
+@
+
+
+1.10
+log
+@  - Reworked image attributes.  - Added "raw", beginnings of others.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.9 $
+:Date: $Date: 2002/03/04 04:38:41 $
+d12 2
+a13 1
+.. contents:: :depth: 2
+d190 1
+a190 1
+    
+d211 4
+@
+
+
+1.9
+log
+@  - Added "Table of Contents" description.  - Edits.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.8 $
+:Date: $Date: 2002/02/20 04:26:41 $
+d96 1
+a96 1
+_`image attribute specifications`.  For example::
+d104 15
+a118 6
+None, some, or all of the "alt", "height", "width", and "scale"
+attributes may be present.  The "alt" attribute contains arbitrary
+text; its field body may be a single paragraph.  The other attributes
+are all simple integers; "height" and "width" values are in pixels,
+and "scale" is a percentage (but no "%" symbol is required or
+allowed).
+d131 2
+a132 2
+attribute specifications`_), an optional caption (a single paragraph),
+and an optional legend (arbitrary body elements)::
+d166 1
+a166 1
+DTD element: pending, topic.
+d212 24
+d304 29
+@
+
+
+1.8
+log
+@minor
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.7 $
+:Date: $Date: 2002/02/13 02:22:00 $
+d12 2
+d22 2
+a23 1
+Directive block: directive data and all following indented text.
+d25 1
+a25 1
+Admonitions are specially marked 'topics' that can appear anywhere an
+d57 1
+a57 1
+following 'note' admonition directive contains one paragraph and a
+d68 3
+a70 3
+------------------
+ Image Directives
+------------------
+d72 1
+a72 1
+There are two image directives: 'image' and 'figure'.
+d81 2
+a82 1
+the first blank line).
+d84 1
+a84 1
+An 'image' is a simple picture::
+d95 2
+a96 6
+Optionally, the image link block may end with one or more lines in
+square brackets, the _`image attribute specifications`.  These two
+image directives are equivalent::
+
+    .. image:: picture.png
+       [height=100 width=200 scale=50 alt="alternate text"]
+d99 11
+a109 11
+       [height=100]
+       [width=200 scale=50]
+       [alt="alternate text"]
+
+The attribute specifications must begin on new lines and those lines
+may not contain any other text except whitespace.  None, some, or all
+of the 'alt', 'height', 'width', and 'scale' attributes may be
+present.  The 'alt' attribute contains text and must be enclosed with
+quotation marks (either " or ').  The other attributes are all simple
+integers (no quotes); 'height' and 'width' values are in pixels, and
+'scale' is a percentage.
+d117 7
+a123 5
+Directive block: directive data and all following indented text.
+
+A 'figure' consists of image_ data (optionally including `image attribute
+specifications`_), an optional caption (a single paragraph), and an
+optional legend (arbitrary body elements)::
+d126 2
+a127 1
+       [scale=50 alt="map to buried treasure"]
+d147 24
+a170 1
+('..') in place of the caption.
+d172 1
+d174 32
+a205 3
+--------------------------
+ HTML-Specific Directives
+--------------------------
+d213 1
+a213 1
+the first blank line).
+d215 1
+a215 1
+The 'meta' directive is used to specify HTML metadata stored in HTML
+d268 3
+a270 3
+--------------------------
+ Miscellaneous Directives
+--------------------------
+d272 2
+a273 2
+Test Directive
+==============
+d277 8
+a284 2
+'Restructuredtext-test-directive' is provided for test purposes
+(nobody is expected to type in a name *that* long!).
+@
+
+
+1.7
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.5 $
+:Date: $Date: 2001/11/15 03:01:41 $
+d173 1
+a173 1
+       :keywords: plaintext,markup language
+d179 1
+a179 1
+    <meta name="keywords" content="plaintext,markup language">
+@
+
+
+1.6
+log
+@  - Added "directive block" descriptions.  - Added "meta" directive.
+@
+text
+@d160 1
+a160 1
+META tags.  Metadata is data about data, in this case data about web
+@
+
+
+1.5
+log
+@  - Updated image attribute description, added 'alt' attribute.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2001/11/06 00:55:43 $
+d17 4
+a20 2
+DTD elements: attention, caution, danger, error, important, note, tip,
+warning.
+d45 1
+a48 1
+- hint
+d77 3
+d117 2
+d148 65
+d219 1
+a219 1
+DTD element: directive.
+@
+
+
+1.4
+log
+@  - Added 'hint' admonition.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2001/11/01 04:11:44 $
+d86 3
+a88 2
+Optionally, the last line of the link block may contain an _`image
+attribute specification`, in square brackets, as follows::
+d91 1
+a91 1
+               [height=100 width=200 scale=50]
+d93 12
+a104 4
+The attribute specification must be the only text on that line.  None,
+some, or all of the 'height', 'width', and 'scale' attributes may be
+present.  The values are all integers; 'height' and 'width' values are
+in pixels, and 'scale' is a percentage.
+d112 3
+a114 3
+A 'figure' consists of an image (optionally including the the `image
+attribute specification`_), an optional caption (a single paragraph),
+and an optional legend (arbitrary body elements)::
+d117 1
+d120 4
+@
+
+
+1.3
+log
+@small improvements
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.2 $
+:Date: $Date: 2001/09/18 04:39:25 $
+d46 1
+@
+
+
+1.2
+log
+@  - Expanded 'image' and 'figure' definitions.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.1 $
+:Date: $Date: 2001/09/13 03:42:19 $
+d85 2
+a86 2
+Optionally, the last line of the link block may contain an image
+attribute specification, in square brackets, as follows::
+d102 3
+a104 2
+A 'figure' consists of an image, an optional caption (a single
+paragraph), and an optional legend (arbitrary body elements)::
+d120 3
+a122 3
+There must be a blank line before the caption paragraph.  To specify a
+legend without a caption, use an empty comment ('..') in place of the
+caption.
+@
+
+
+1.1
+log
+@Definitions of implemented directives.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision$
+:Date: $Date$
+d21 1
+a21 1
+ordinary body element can. They contain arbitrary body elements.
+d24 1
+a24 1
+type. For example::
+d50 1
+a50 1
+block and is parsed for normal body elements. For example, the
+d66 1
+a66 1
+DTD elements: image, figure, caption, legend.
+d68 7
+a74 2
+There are two image directives: 'image' and 'figure'. An 'image' is a
+simple picture::
+d79 22
+d106 1
+d118 4
+a121 3
+                             
+To specify a legend without a caption, use an empty comment ('..') in
+place of the caption.
+d133 2
+a134 1
+'Restructuredtext-test-directive' is provided for test purposes.
+@
+

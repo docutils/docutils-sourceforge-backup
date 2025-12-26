@@ -1,0 +1,106 @@
+head	1.3;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.3
+date	2002.02.12.02.13.51;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2002.02.07.01.58.44;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2002.02.06.02.56.47;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@rearranged & improved
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Authors: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.2 $
+:Date: $Date: 2002/02/07 01:58:44 $
+:Copyright: This module has been placed in the public domain.
+
+Simple internal document tree Writer, writes indented pseudo-XML.
+"""
+
+__docformat__ = 'reStructuredText'
+
+__all__ = ['Writer']
+
+
+from dps import writers
+
+
+class Writer(writers.Writer):
+
+    output = None
+    """Final translated form of `document`."""
+
+    def translate(self):
+        self.output = self.document.pformat()
+
+    def record(self):
+        self.recordfile(self.output, self.destination)
+@
+
+
+1.2
+log
+@progress
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.1 $
+:Date: $Date: 2002/02/06 02:56:47 $
+d23 2
+a24 2
+    def transform(self):
+        pass
+d26 5
+a30 3
+    def record(self, document, destination):
+        output = document.pformat()
+        self.recordfile(output, destination)
+@
+
+
+1.1
+log
+@Minimal writer.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision:$
+:Date: $Date:$
+d23 4
+a26 1
+    def write(self, document, destination):
+d28 1
+a28 4
+        if destination:
+            open(destination, 'w').write(output)
+        else:
+            print output
+@
+

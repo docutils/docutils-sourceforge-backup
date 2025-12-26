@@ -1,0 +1,46 @@
+#! /usr/bin/env python3
+
+# $Id: test_admonitions_dummy_lang.py 9037 2022-03-05 23:31:10Z milde $
+# Author: David Goodger <goodger@python.org>
+# Copyright: This module has been placed in the public domain.
+
+"""
+Tests for admonition directives with local language module.
+"""
+
+if __name__ == '__main__':
+    import __init__  # noqa: F401
+from test_parsers import DocutilsTestSupport
+
+
+def suite():
+    settings = {'language_code': 'local-dummy-lang',
+                'report_level': 2}  # TODO: ignored when run as __main__
+    s = DocutilsTestSupport.ParserTestSuite(suite_settings=settings)
+    s.generateTests(totest)
+    return s
+
+
+totest = {}
+
+totest['admonitions'] = [
+["""\
+.. Dummy-Attention:: directive with silly localised name.
+
+.. Attention:: English fallback (an INFO is written).
+""",
+"""\
+<document source="test data">
+    <attention>
+        <paragraph>
+            directive with silly localised name.
+    <attention>
+        <paragraph>
+            English fallback (an INFO is written).
+"""],
+]
+
+
+if __name__ == '__main__':
+    import unittest
+    unittest.main(defaultTest='suite')

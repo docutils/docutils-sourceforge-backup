@@ -1,0 +1,361 @@
+head	1.2;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2001.07.26.03.33.29;	author gtk;	state dead;
+branches;
+next	1.1;
+
+1.1
+date	2001.07.25.13.29.30;	author gtk;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@Okay, let's reel this budding megalomaniac in, shall we? :)
+@
+text
+@=================================================
+ CVS: reStructuredText CVS Repository Management
+=================================================
+
+Author: Garth Kidd
+Contact: gtk@@users.sf.net
+Version: 0.0
+Date: $Date: 2001/07/25 13:29:30 $
+Web-site: http://structuredtext.sf.net/
+
+This document describes the code line management standards for
+reStructuredText and, potentially, the docstring processing system.
+
+**Contents:**
+  * `Release Life Cycle`_ 
+  * `Background`_
+
+Instructions for accessing the reStructuredText repository can be
+found on Sourceforge:
+
+  http://sourceforge.net/cvs/?group_id=7050
+  
+------------------
+Release Life Cycle
+------------------
+
+Major Releases
+~~~~~~~~~~~~~~
+
+* New major releases begin life as *named project branches* branched
+  off HEAD::
+
+    cvs rtag -r HEAD -b Rprojectname modulename
+    
+  We use ``rtag`` because it works direct from the repository,
+  ignoring whatever you're currently up to in your working directory.
+
+* *Numbered release branches* are made from the named project branch
+  when the project resembles a finished product and an intended
+  version number is decided::
+
+    cvs rtag -r Rprojectname -b rel-2-0 modulename
+    cvs update -r Rrel-2-0
+    
+  This is when to change the version numbers in various text files and
+  in the ``__version__`` string in ``__init__.py``. Don't forget to
+  commit the changes and propagate them back! 
+  
+* A minimum of changes -- traditionally, bug fixes only -- is made to
+  the numbered release branch. All changes should be merged back into
+  the named project branch.
+
+* When the release is ready, the tag
+  ``rel-<major>-<minor>-<patchnumber>-RELEASE`` is applied to the files
+  in the numbered release branch::
+
+    cvs rtag -r rel-2-0 rel-2-0-RELEASE modulename
+
+* The appropriate release CURRENT tag is also applied:
+
+    cvs rtag -r rel-2-0-RELEASE rel-2-0-CURRENT modulename
+
+* After a quick final check, the release archive should be built from
+  the RELEASE tag::
+
+    cvs update -r rel-2-0-RELEASE
+    <execute commands to build archive>
+
+* Finally, any changes made in the release that haven't already been
+  merged into HEAD should be so merged. 
+
+Minor Releases
+~~~~~~~~~~~~~~
+
+* New minor releases should begin life as named project branches off
+  the *project branch* for the associated major release::
+
+    cvs rtag -r Rprojectname -b Rprojectname.1 modulename
+
+  Using the project branch as a basis permits starting new minor
+  releases well before the major release branch is created, necessary
+  when a middling sized feature has to be bumped from the major. To be
+  consistent, therefore, we should only ever do it this way. 
+
+* The naming convention shall begin at 
+  ``Rmajorbranchprojectname.1`` and increment by one for each
+  subsequent minor release *regardless of the eventual minor release
+  version number used*.
+  
+  Yes, I'm expecting debate on that one. :) 
+  
+* Otherwise, the minor release process is essentially identical to
+  that of major releases:
+
+  * Incorporate all of the changes you intend to make.
+  * Decide on your minor version number.
+  * Edit various files to insert the new formal release version number. 
+  * Create the minor release branch::
+  
+      cvs rtag -r Rprojectname.1 -b rel-2-1 modulename
+      cvs update -r Rrel-2-0
+
+  * Code freeze.
+  * Regression test.
+  * Give beta users a shot at it. 
+  * Apply CURRENT and RELEASE tags::
+
+      cvs rtag -r rel-2-1 rel-2-1-RELEASE modulename
+      cvs rtag -r rel-2-1-RELEASE rel-2-1-CURRENT modulename
+      
+  * Generate the final archive from RELEASE and post for download.
+  * Merge changes back to HEAD. 
+  
+Open for discussion: I'm not sure whether the major release CURRENT
+tag should be moved to the minor release, or a separate CURRENT
+maintained for all major and minor releases. I have described the
+latter.
+
+Bug Fixes
+~~~~~~~~~
+
+* Bug fixes can be made directly to the CURRENT version of the
+  concerned release branch:: 
+
+    cvs update -r rel-2-0-CURRENT
+    vi buggy.py
+    cvs commit buggy.py
+
+  The alternative, spawning branches for individual bug fixes, makes
+  perfect sense for large projects like Python but is gross overkill
+  for a project of this size. 
+
+* Regression tests should then be performed with the test suite. 
+
+* Once you're happy with the fix, update the release CURRENT on a file
+  by file basis to ensure that you don't collide with anyone else who
+  is fixing bugs::
+
+    cvs tag -F -r rel-2-0-CURRENT buggy.py
+    
+  .. When we start getting collisions, we change the process. I
+     frankly doubt that'll ever happen, given the size of the project.
+     --gtk
+
+* To apply the fix, users should download the new CURRENT version of
+  the affected files either using anonymous cvs access or the web
+  based access to the CVS repository at Sourceforge.
+
+  *Downloadable archives should only be created for formal bug fix
+  releases.*
+
+Bug Fix Releases
+~~~~~~~~~~~~~~~~
+
+* A new bug fix release should be branched from its release via the
+  release CURRENT tag, thus incorporating all current bug fixes at
+  that time::
+
+    cvs rtag -r rel-2-0-CURRENT -b rel-2-0-1 projectname
+
+  Comprehensive regression testing should then be conducted, any
+  mistakes corrected, the changes propagated back to the release
+  CURRENT and to HEAD, and the archive created and posted for
+  download.
+
+  Subsequent bug fix releases should be spawned off the release
+  CURRENT, *never* a previous bug fix release. 
+
+
+----------
+Background
+----------
+
+This section exists mainly to document my thinking that led to the
+`General Principles`_ below and `Release Life Cycle`_ above. Once
+we've nailed everything down, we probably remove it. 
+
+My exposure to branch management (as opposed to the small-scale change
+control I've used on my own projects in the past) has been as an
+eavesdropper to a team of professional developer who use Perforce.
+Their project is large and commercial, requiring a code line
+management strategy appropriate to its scale and complexity.
+
+I'm trying to cut this full-scale branch management strategy down to
+size to suit the reStructuredText proposal, and at the same time
+convert it to suit CVS rather than Perforce.
+
+My notes, in no particular order: 
+
+* As far as I can tell, MAIN is completely bloody useless. I can't tag
+  it, I can't check it out... what does it *do*?
+
+* If someone just checks out the repository, they get HEAD, so it
+  better always be working. That generates the principle
+  `Don't Break Your HEAD`_. 
+
+* As far as I can tell, HEAD is the *anti-branch*. If it's not on a
+  branch, it's on HEAD.
+
+* If someone is making major surgery somewhere, that needs to be done
+  on a separate branch so that it doesn't interfere with HEAD.
+
+* Releases should also have a branch of their own so that patches or
+  point releases can be based off in-use but old releases despite HEAD
+  having substantially progressed in the mean time. Hence,
+  `All Releases Have Branches`_
+
+* The question, then, is how to deal with releases incorporating the
+  result of the aforementioned major surgery. The two more obvious
+  options:
+
+  * Branch the release off the major surgery branch. That's how my
+    company does it -- Rsurgeryproject is spawned off the Perforce
+    idea of main (HEAD, to us), and 4.0 (or whatever its version
+    number is) is spawned off Rsurgeryproject.
+
+    Hard work:
+    
+    * Once you've finished the major surgery, you have to merge in all
+      of the changes made to HEAD in the mean time.
+      
+    * Once you finally generate the release (or at least get things
+      stable enough that the code can be inflicted upon everyone
+      working on HEAD), you need to merge all of the changes back to
+      HEAD.
+      
+    The other option:
+    
+  * Branch new releases off HEAD. If you need to incorporate major
+    surgery, merge the changes back into HEAD before you branch the
+    new release.
+
+    Hopeful advantage:
+
+    * It looks at first like you save a merge or two. 
+
+    Hard work:
+
+    * It turns out that to be able to safely merge the surgery into
+      HEAD, you need to merge changes to HEAD into the surgery branch
+      first. Then you merge the surgery branch back into HEAD.
+      Finally, you branch the release off HEAD.
+      
+  My gut feel is that the seemingly simpler latter option is just as
+  complex as the former, but lacks structural cues to let people know
+  what's going on. Accordingly, I'm selecting for the latter, which
+  I'll jokingly call the `Major Releases Are Not Hats`_ principle.
+
+* Until we reach the first major release, I'm comfortable with people
+  performing major surgery in named branches and merging their changes
+  back into HEAD. 
+
+* Until we reach the first major release, ``rel-1-0``, I'm entirely
+  comfortable with branching new releases off HEAD.
+
+* Release branches connote... well, that something's ready to release.
+  As a code consumer, I'd find it wierd if functionality kept
+  appearing and disappearing from what I thought was going to become a
+  release. Therefore, `Minimise Changes in Release Branches`_, from
+  which comes `Give Upcoming Releases Code Names`_.
+
+  Another reason is that intended release numbers change, something
+  else you don't necessarily want to inflict on your users. 
+                                  
+Having thought things through at least that much, I'm able to derive
+the following principles:
+
+General Principles
+~~~~~~~~~~~~~~~~~~
+
+.. _All Releases Have Branches: 
+   
+**All Releases Have Branches**
+  If you don't have branches, you easily can't go back, fix something,
+  and re-release.
+
+.. _Don't Break Your HEAD: 
+
+**Don't Break Your HEAD**
+  HEAD is what you get if you don't specify a branch when you check
+  out the code for the first time. HEAD is what you get when you
+  ``update -A``. HEAD should work. If you're working on HEAD, get in
+  the habit of running regression tests *before* you commit.
+  
+  Come to think of it, get in the habit of running tests before
+  committing nomatter what branch you're working on.
+  
+.. _Major Releases Are Not Hats:
+
+**Major Releases Are Not Hats**
+  Major releases should always be made from a project branch. They
+  should never come off the HEAD.
+
+  Exception: Until we reach the first major release, ``rel-1-0``,
+  there's no real reason not to branch new releases off HEAD unless
+  we're about to make changes big enough to break HEAD. That's true of
+  refactoring the test suite, so I've created the ``Rrefactor-test``
+  branch.
+
+.. _Minimise Changes in Release Branches:
+
+**Minimise Changes in Release Branches**
+  Corollary: only create release branches when you're 99% sure you're
+  finished.
+  
+.. _Give Upcoming Releases Code Names: 
+
+**Give Upcoming Releases Code Names**
+  Revealing intended revision numbers is a Bad Idea. You'll get bogged
+  down in your work, or some other chunk of work will become more
+  important, and before you know it something *else* should be your
+  pet version number. That's why we spawn numbered releases only when
+  99% ready to release. In the mean time, give your project some
+  memorable name. 
+
+
+Local Variables:
+mode: indented-text
+indent-tabs-mode: nil
+fill-column: 72
+End:
+@
+
+
+1.1
+log
+@First version of document on CVS repository management.
+@
+text
+@d8 1
+a8 1
+Date: $Date: 2001/07/21 22:14:04 $
+@
+

@@ -1,0 +1,120 @@
+====================================================
+ Python Docstring Processing System Project History
+====================================================
+
+Author: David Goodger
+Contact: dgoodger@bigfoot.com
+Date: $Date: 2001/07/22 22:36:34 $
+Website: http://docstring.sourceforge.net/
+
+
+Release 0.3 (2001-07-19)
+========================
+
+* dps/nodes.py: Added to project.
+
+* dps/test_nodes.py: Added to project.
+
+* dps/utils.py: Added to project.
+
+* dps/test_utils.py: Added to project.
+
+* dps/statemachine.py (1.2):
+
+  - Added exceptions: UnknownTransitionError,
+    DuplicateTransitionError, TransitionPatternNotFound,
+    TransitionMethodNotFound, UnexpectedIndentationError.
+  - Changed StateMachine.lineno to lineoffset.
+  - Added methods to StateMachine: unlink(), gotoline(),
+    gettextblock(), getunindented(), abslineoffset(), abslineno().
+  - Changed StateMachine method signatures: addtransitions(),
+    addtransition().
+  - Changed function extractindented(), and StateMachineWS methods
+    getindented(), getknownindented(), and getfirstknownindented():
+    added a 'blankfinish' boolean return value to each.
+  - Fixed a bug in StateMachineWS methods getindented(),
+    getknownindented(), and getfirstknownindented(), where an empty
+    block caused an infinite loop.
+  - Changed State's transition storage (instance attributes
+    transitions & transitionorder).
+  - Added methods to State: unlink(), removetransition().
+  - Relaxed State.patterns contents: values can be strings or compiled
+    patterns; strings will be compiled by State.maketransition().
+
+* dps/test_statemachine.py: Modified per statemachine.py changes.
+
+* dps/parsers/model.py: Progress on the API.
+
+* spec/gpdi.dtd: Added 'level' attribute to 'system_warning'.
+
+* spec/pep-0258.txt: Added 'Error Handling' section.
+
+
+Release 0.2 (2001-06-18)
+========================
+
+PEP numbers assigned 2001-06-06. PEPs first posted to comp.lang.python
+2001-06-13.
+
+* spec/pep-0256.txt:
+
+  - File renamed from dps-framework-pep.txt.
+
+* spec/pep-0257.txt:
+
+  - File renamed from docstring-conventions-pep.txt.
+  - Added "Rationale" section.
+  - Resolved additions ([+]) and deletions ([-]).
+  - Added a description of "What is a Docstring?".
+  - Added descriptions of attribute and additional docstrings.
+
+* spec/pep-0258.txt:
+
+  - File renamed from dps-genericspec-pep.txt.
+  - Optional override of what docstrings to examine.
+
+* dps/statemachine.py:
+
+  - Catch `EOFError` to end statemachine processing.
+  - Relaxed State.initialtransitions contents: entries can be strings
+    as well as tuples. (Also argument to State.maketransitions().)
+
+* dps/test_statemachine.py: Modified tests for statemachine.py
+  changes.
+
+* HISTORY.txt: Added to project.
+
+
+Release 0.1 (2001-06-02)
+========================
+
+The project web site and the first project release were rolled out.
+Candidate PEPs posted to Doc-SIG 2001-06-03.
+
+
+Acknowledgements
+================
+
+I would like to acknowledge the people who have made a direct impact
+on the Python Docstring Processing System project, knowingly or not,
+in terms of encouragement, suggestions, criticism, bug reports, code
+contributions, and related projects:
+
+    David Ascher, Fred Drake, Jim Fulton, Peter Funk, Doug Hellmann,
+    Juergen Hermann, Tony Ibbs, Daniel Larsson, Marc-Andre Lemburg,
+    Wolfgang Lipp, Edward Loper, Ken Manheimer, Michel Pelletier, Sam
+    Penrose, Tim Peters, Tavis Rudd, Bob Tolbert, Laurence Tratt,
+    Guido van Rossum, Barry Warsaw, Edward Welbourne, Ka-Ping Yee,
+    Moshe Zadka
+
+(I'm still waiting for contributions of tasty snacks, computer
+equipment, and cold hard cash. :-) Hopefully I haven't forgotten
+anyone or misspelled any names; apologies (and please let me know!) if
+I have.
+
+
+Local Variables:
+mode: indented-text
+indent-tabs-mode: nil
+fill-column: 70
+End:

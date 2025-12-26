@@ -1,0 +1,136 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2002.02.21.06.05.50;	author richard;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Anglicised the example from the rtxt2html dir and started passing it
+against the htmlifier as a test. Must implement the rest of the
+functionality :)
+@
+text
+@==========
+Page Title
+==========
+:Author: - Rémi BERTHOLET
+         - Richard Jones, ekit.com, rjones@@ekit-inc.com
+:Version: 1.1 21/02/02
+
+Sub-Title
+=========
+
+*italics* **bold** `interpreted text` ``literal`` http://www.python.org
+
+Heading
+=======
+
+Sub Heading
+___________
+
+blah
+
+Second Sub Heading
+__________________
+
+
+.. _indirect_reference: http://www.python.org
+
+Here is an internal_reference_
+
+Reference to a footnote [5]_
+
+Reference to a Heading_
+
+Example of code ::
+
+	main ()
+	{
+		printf ("hello world\n");
+		{
+			printf ("hello world\n");
+			printf ("hello world\n");
+		}
+	}
+
+	<html>
+	<body>
+		<p>
+		&nbsp;
+			Hello World!
+		</p>
+	</body>
+	</html>
+
+Automaically numbered references [#]_ and [#]_
+
+Bulleted list:
+
+- element 1
+- element 2
+
+List of definitions:
+
+Nom
+  Voici un nom
+  
+Prénom
+  Voici un prénom
+  
+
+Some graphics :
+
+.. graphics:: images/ball1.gif
+
+.. image:: images/ball1.gif
+
+.. invisible internal comment
+
+Indentation:
+
+  One indentation level,
+  
+    And two indentation levels.
+
+
+Numbered list:
+
+1. element 1
+2. element 2
+
+
+.. [#] first auto-numbered footnote
+.. [#] second auto-numbered footnote
+
+.. _internal_reference:
+
+Voici mon reference interne
+
+.. [5] A hard-coded footnote
+
+
+Table:
+
+       +------------+------------+------------+--------------+
+       |  Header 1  |  Header 2  |  Header 3  |  Header 4    |
+       +============+============+============+==============+
+       |  Column 1  |  Column 2  | Column 3 & 4 span (Row 1) |
+       +------------+------------+------------+--------------+
+       |    Column 1 & 2 span    |  Column 3  | - Column 4   |
+       +------------+------------+------------+ - Row 2 & 3  |
+       |      1     |      2     |      3     | - span       |
+       +------------+------------+------------+--------------+
+
+@

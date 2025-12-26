@@ -1,0 +1,148 @@
+==================================
+ reStructuredText Project History
+==================================
+
+Author: David Goodger
+Contact: dgoodger@bigfoot.com
+Date: $Date: 2001/07/21 22:14:04 $
+Website: http://structuredtext.sf.net/
+
+
+Release 0.3 (2001-07-19)
+========================
+
+Removed all explicit hyperlink targets matching section titles in spec
+documents; they are now declared implicitly (see
+spec/reStructuredText.txt).
+
+* restructuredtext/states.py: Added to project.
+
+* restructuredtext/test_states.py: Added to project.
+
+* restructuredtext/ndiff.py: Added to project. This is a modified
+  version of Python's Tools/scripts/ndiff.py, and is used by 
+  test_states.py. I have committed to adding its functionality to
+  Python's Lib/difflib.py.
+
+* spec/reStructuredText.txt:
+
+  - Introduced implicit hyperlink targets for section titles.
+  - Changed 'comment block' to 'explicit markup block'. Rearranged &
+    edited the text of footnotes, hyperlink targets, directives, &
+    comments.
+  - Clarified the syntax of interpreted text roles.
+  - Clarified the case-insensitivity and character set of hyperlink
+    names, footnote labels, and directives.
+  - Changed the definition for simple link names and footnote labels
+    (underlines and dashes allowed internally only, not at begin/end).
+  - Added 'Error Handling' section.
+
+
+Release 0.2 (2001-06-18)
+========================
+
+* spec/introduction.txt: Minor changes.
+
+* spec/reStructuredText.txt:
+
+  - Added workable indented section syntax, then removed it. See
+    spec/indentedsections.txt (included in this release only).
+  - Added details of whitespace preservation in inline literals.
+
+* spec/problems.txt:
+
+  - Revised analysis of indented sections.
+
+* HISTORY.txt: Added to project.
+
+
+Release 0.1 (2001-06-02)
+========================
+
+The project web site and the first project release were rolled out.
+Posted all but dps-notes.txt to the Doc-SIG 2001-06-03.
+
+* spec/introduction.txt:
+
+  - Title changed from "A Plan for Structured Text".
+  - Expanded and revised the "Goals" section.
+  - Brought the "History" section up to date.
+  - Added the "Parser Implementation Plan" section.
+  - Added internal cross-references (in anticipation of the far-off
+    day when we can actually *process* these files :-).
+
+* spec/reStructuredText.txt:
+
+  - Title changed from "reStructuredText: Revised Structured Text
+    Specification".
+  - Added "Quick Syntax Overview".
+  - Moved syntax diagrams from their own section to be adjacent to
+    their construct.
+  - Tightened up syntax specifications.
+  - Changed "descriptive lists" to "definition lists", changed syntax.
+  - Added field lists. Syntax not settled yet.
+  - Added header row separator ('=') to tables.
+  - Allowed comment blocks (comments, directives, hyperlink targets,
+    footnotes) to occur in nested blocks.
+  - Changed phrase-link delimiters from square brackets to backquotes.
+  - Added a set of inline markup delimiter recognition rules.
+  - Added interpreted text using backquotes ('`').
+  - Changed inline literals to use double-backquotes ('``').
+  - Added internal cross-references (to the doc, not the spec).
+  - General reorganization, editing, & cleanup.
+
+* spec/pyextensions.txt: Added to project (option lists, doctest
+  blocks, and interpreted text interpretations).
+
+* spec/problems.txt:
+
+  - Added sections: "Blank Lines in Lists", "Definition List Markup",
+    "Underlining".
+  - General editing & cleanup. Tightened up analyses, added
+    alternatives.
+
+* spec/rst-notes.txt: Added to project.
+
+
+First Draft of Specification (2000-11-24)
+=========================================
+
+First posted to the Python Documentation Special Interests Group
+(Doc-SIG) in three parts:
+
+* A Plan for Structured Text
+  http://mail.python.org/pipermail/doc-sig/2000-November/001239.html
+
+* Problems With StructuredText
+  http://mail.python.org/pipermail/doc-sig/2000-November/001240.html
+
+* reStructuredText: Revised Structured Text Specification
+  http://mail.python.org/pipermail/doc-sig/2000-November/001241.html
+
+
+Acknowledgements
+================
+
+I would like to acknowledge the people who have made a direct impact
+on the reStructuredText project, knowingly or not, in terms of
+encouragement, suggestions, criticism, bug reports, code
+contributions, and ideas borrowed from related projects:
+
+    David Ascher, Fred Drake, Jim Fulton, Peter Funk, Doug Hellmann,
+    Juergen Hermann, Tony Ibbs, Daniel Larsson, Marc-Andre Lemburg,
+    Wolfgang Lipp, Edward Loper, Ken Manheimer, Alex Martelli, Michel
+    Pelletier, Sam Penrose, Tim Peters, Tavis Rudd, Bob Tolbert,
+    Laurence Tratt, Guido van Rossum, Barry Warsaw, Edward Welbourne,
+    Ka-Ping Yee, Moshe Zadka
+
+(I'm still waiting for contributions of yummy treats, computer
+equipment, and cold hard cash. :-) Hopefully I haven't forgotten
+anyone or misspelled any names; apologies (and please let me know!) if
+I have.
+
+
+Local Variables:
+mode: indented-text
+indent-tabs-mode: nil
+fill-column: 70
+End:

@@ -1,0 +1,198 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2001.09.21.03.47.30;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@style sheets by Remi Bertholet
+@
+text
+@BODY{
+	font-family:Arial,HelveticaVerdana;
+	font-size:10pt;
+	color:#000000;
+	background:#FFFFFF;
+	margin-right: 8.5em;
+	margin-left:6%;
+}
+
+H1,H2,H3,H4,H5,H6,HR{
+	color:#006699;
+}
+
+H1{
+	font-size:20pt;
+	font-weight:bolder;
+	background:#006699;
+	color:#EFEFEF;
+	text-align:center;
+	margin-left:-6%;
+	}
+
+H2{
+	font-size:18pt;
+	font-weight:bold;
+	background:#EFEFEF;
+	margin-left:-5%;
+	}
+
+H3{
+	font-size:16pt;
+	font-weight:bold;
+	margin-left:-4%;
+	}
+
+H4{
+	font-size:12pt;
+	font-weight:normal;
+	text-decoration:underline;
+	margin-left:-3%;
+	}
+
+H5{
+	font-size:12pt;
+	font-weight:normal;
+	margin-left:-2%;
+	}
+
+H6{
+	font-size:10pt;
+	font-style:italic;
+	font-weight:normal;
+	text-transform=lowercase;
+	margin-left:-1%;
+	}
+
+A{
+	color:#0033cc;
+	text-decoration:underline
+	}
+
+A:visited{
+	color:#660099;
+	text-decoration:underline
+	}
+
+A:active{
+	color:#660099;
+	text-decoration:underline
+	}
+
+A:hover{
+	text-decoration:underline;
+	color:#FF0000
+	}
+
+UL,OL,LI{
+	font-size:10pt;
+	color:#000000
+	}
+
+TABLE.tableau{
+	background:#333333;
+	}
+
+TD{
+	font-size:10pt;
+	color:#000000
+	}
+
+TH{
+	font-size:10pt;
+	font-weight:bold;
+	color:#000000
+	}
+
+TH.tableau{
+	font-size:10pt;
+	color:#FFFFFF;
+	text-align:center;
+	background:#9999CC;
+	}
+
+TD.tableau{
+	background:#FFFFE6;
+	font-size:10pt;
+	text-align:center;
+	color:#000000
+	}
+
+TD.tableau2{
+	background:#E6E6E6;
+	font-size:10pt;
+	text-align:center;
+	color:#000000
+	}
+
+
+select{
+	font-size:8pt;
+	color:#000000
+	}
+
+PRE{
+	font-family:courrier,Courrier,Courrier new;
+	color: #333333;
+	margin-left: 2%;
+	}
+
+
+DIV.leftnav{
+	font-size:10pt;
+	font-weight:bold;
+	line-height:120%;
+	color:#363636;
+	text-decoration:none
+	}
+
+DIV.leftnavit{
+	font-size:10pt;
+	font-weight:bold;
+	font-style:italic;
+	line-height:120%;
+	text-decoration:none
+	}
+
+DIV.footer{
+	font-size:7pt;
+	color:#000000
+	}
+
+DIV.headlinecap{
+	font-size:11pt;
+	font-weight:bold;
+	color:#006699
+	}
+
+DIV.highlight{
+	font-size:9pt;
+	font-style:italic;
+	color:#006699
+	}
+
+DIV.titleright{
+	font-size:10pt;
+	color:#006699;
+	font-weight:bold
+	}
+
+DIV.error{
+	font-size:10pt;
+	color:#ff0000;
+	font-weight:bold
+	}
+
+@

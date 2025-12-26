@@ -1,0 +1,1433 @@
+head	1.16;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.16
+date	2002.03.16.05.29.30;	author goodger;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2002.03.12.03.28.35;	author goodger;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2002.02.20.04.25.16;	author goodger;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2002.02.15.22.58.17;	author goodger;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2002.02.06.02.18.42;	author goodger;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2002.01.25.23.43.41;	author goodger;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2001.10.31.05.48.12;	author goodger;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2001.10.30.05.29.19;	author goodger;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2001.10.27.05.22.09;	author goodger;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2001.10.20.02.49.41;	author goodger;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2001.09.26.03.44.25;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2001.09.18.04.43.19;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.09.13.02.41.22;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.09.07.01.53.13;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.09.02.14.06.55;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.09.01.17.01.40;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.16
+log
+@updated
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.15 $
+:Date: $Date: 2002/03/12 03:28:35 $
+:Copyright: This module has been placed in the public domain.
+
+Tests for states.py.
+"""
+
+import RSTTestSupport
+
+def suite():
+    s = RSTTestSupport.ParserTestSuite()
+    s.generateTests(totest)
+    return s
+
+totest = {}
+
+totest['section_headers'] = [
+["""\
+Title
+=====
+
+Paragraph.
+""",
+"""\
+<document>
+    <section id="title" name="title">
+        <title>
+            Title
+        <paragraph>
+            Paragraph.
+"""],
+["""\
+Title
+=====
+Paragraph (no blank line).
+""",
+"""\
+<document>
+    <section id="title" name="title">
+        <title>
+            Title
+        <paragraph>
+            Paragraph (no blank line).
+"""],
+["""\
+Paragraph.
+
+Title
+=====
+
+Paragraph.
+""",
+"""\
+<document>
+    <paragraph>
+        Paragraph.
+    <section id="title" name="title">
+        <title>
+            Title
+        <paragraph>
+            Paragraph.
+"""],
+["""\
+Test unexpected section titles.
+
+    Title
+    =====
+    Paragraph.
+
+    -----
+    Title
+    -----
+    Paragraph.
+""",
+"""\
+<document>
+    <paragraph>
+        Test unexpected section titles.
+    <block_quote>
+        <system_message level="4" type="SEVERE">
+            <paragraph>
+                Unexpected section title at line 4.
+            <literal_block>
+                Title
+                =====
+        <paragraph>
+            Paragraph.
+        <system_message level="4" type="SEVERE">
+            <paragraph>
+                Unexpected section title or transition at line 7.
+            <literal_block>
+                -----
+        <system_message level="4" type="SEVERE">
+            <paragraph>
+                Unexpected section title at line 9.
+            <literal_block>
+                Title
+                -----
+        <paragraph>
+            Paragraph.
+"""],
+["""\
+Title
+====
+
+Test short underline.
+""",
+"""\
+<document>
+    <system_message level="1" type="INFO">
+        <paragraph>
+            Title underline too short at line 2.
+        <literal_block>
+            Title
+            ====
+    <section id="title" name="title">
+        <title>
+            Title
+        <paragraph>
+            Test short underline.
+"""],
+["""\
+=====
+Title
+=====
+
+Test overline title.
+""",
+"""\
+<document>
+    <section id="title" name="title">
+        <title>
+            Title
+        <paragraph>
+            Test overline title.
+"""],
+["""\
+=======
+ Title
+=======
+
+Test overline title with inset.
+""",
+"""\
+<document>
+    <section id="title" name="title">
+        <title>
+            Title
+        <paragraph>
+            Test overline title with inset.
+"""],
+["""\
+========================
+ Test Missing Underline
+""",
+"""\
+<document>
+    <system_message level="4" type="SEVERE">
+        <paragraph>
+            Incomplete section title at line 1.
+        <literal_block>
+            ========================
+             Test Missing Underline
+"""],
+["""\
+========================
+ Test Missing Underline
+
+""",
+"""\
+<document>
+    <system_message level="4" type="SEVERE">
+        <paragraph>
+            Missing underline for overline at line 1.
+        <literal_block>
+            ========================
+             Test Missing Underline
+"""],
+["""\
+=======
+ Title
+
+Test missing underline, with paragraph.
+""",
+"""\
+<document>
+    <system_message level="4" type="SEVERE">
+        <paragraph>
+            Missing underline for overline at line 1.
+        <literal_block>
+            =======
+             Title
+    <paragraph>
+        Test missing underline, with paragraph.
+"""],
+["""\
+=======
+ Long    Title
+=======
+
+Test long title and space normalization.
+""",
+"""\
+<document>
+    <system_message level="1" type="INFO">
+        <paragraph>
+            Title overline too short at line 1.
+        <literal_block>
+            =======
+             Long    Title
+            =======
+    <section id="long-title" name="long title">
+        <title>
+            Long    Title
+        <paragraph>
+            Test long title and space normalization.
+"""],
+["""\
+=======
+ Title
+-------
+
+Paragraph.
+""",
+"""\
+<document>
+    <system_message level="4" type="SEVERE">
+        <paragraph>
+            Title overline & underline mismatch at line 1.
+        <literal_block>
+            =======
+             Title
+            -------
+    <paragraph>
+        Paragraph.
+"""],
+["""\
+========================
+
+========================
+
+Test missing titles; blank line in-between.
+
+========================
+
+========================
+""",
+"""\
+<document>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Document or section may not begin with a transition (line 1).
+    <transition>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            At least one body element must separate transitions; adjacent transitions at line 3.
+    <transition>
+    <paragraph>
+        Test missing titles; blank line in-between.
+    <transition>
+    <transition>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Document or section may not end with a transition (line 9).
+"""],
+["""\
+========================
+========================
+
+Test missing titles; nothing in-between.
+
+========================
+========================
+""",
+"""\
+<document>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Invalid section title or transition marker at line 1.
+        <literal_block>
+            ========================
+            ========================
+    <paragraph>
+        Test missing titles; nothing in-between.
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Invalid section title or transition marker at line 6.
+        <literal_block>
+            ========================
+            ========================
+"""],
+["""\
+.. Test return to existing, highest-level section (Title 3).
+
+Title 1
+=======
+Paragraph 1.
+
+Title 2
+-------
+Paragraph 2.
+
+Title 3
+=======
+Paragraph 3.
+
+Title 4
+-------
+Paragraph 4.
+""",
+"""\
+<document>
+    <comment>
+        Test return to existing, highest-level section (Title 3).
+    <section id="title-1" name="title 1">
+        <title>
+            Title 1
+        <paragraph>
+            Paragraph 1.
+        <section id="title-2" name="title 2">
+            <title>
+                Title 2
+            <paragraph>
+                Paragraph 2.
+    <section id="title-3" name="title 3">
+        <title>
+            Title 3
+        <paragraph>
+            Paragraph 3.
+        <section id="title-4" name="title 4">
+            <title>
+                Title 4
+            <paragraph>
+                Paragraph 4.
+"""],
+["""\
+Test return to existing, highest-level section (Title 3, with overlines).
+
+=======
+Title 1
+=======
+Paragraph 1.
+
+-------
+Title 2
+-------
+Paragraph 2.
+
+=======
+Title 3
+=======
+Paragraph 3.
+
+-------
+Title 4
+-------
+Paragraph 4.
+""",
+"""\
+<document>
+    <paragraph>
+        Test return to existing, highest-level section (Title 3, with overlines).
+    <section id="title-1" name="title 1">
+        <title>
+            Title 1
+        <paragraph>
+            Paragraph 1.
+        <section id="title-2" name="title 2">
+            <title>
+                Title 2
+            <paragraph>
+                Paragraph 2.
+    <section id="title-3" name="title 3">
+        <title>
+            Title 3
+        <paragraph>
+            Paragraph 3.
+        <section id="title-4" name="title 4">
+            <title>
+                Title 4
+            <paragraph>
+                Paragraph 4.
+"""],
+["""\
+Test return to existing, higher-level section (Title 4).
+
+Title 1
+=======
+Paragraph 1.
+
+Title 2
+-------
+Paragraph 2.
+
+Title 3
+```````
+Paragraph 3.
+
+Title 4
+-------
+Paragraph 4.
+""",
+"""\
+<document>
+    <paragraph>
+        Test return to existing, higher-level section (Title 4).
+    <section id="title-1" name="title 1">
+        <title>
+            Title 1
+        <paragraph>
+            Paragraph 1.
+        <section id="title-2" name="title 2">
+            <title>
+                Title 2
+            <paragraph>
+                Paragraph 2.
+            <section id="title-3" name="title 3">
+                <title>
+                    Title 3
+                <paragraph>
+                    Paragraph 3.
+        <section id="title-4" name="title 4">
+            <title>
+                Title 4
+            <paragraph>
+                Paragraph 4.
+"""],
+["""\
+Test bad subsection order (Title 4).
+
+Title 1
+=======
+Paragraph 1.
+
+Title 2
+-------
+Paragraph 2.
+
+Title 3
+=======
+Paragraph 3.
+
+Title 4
+```````
+Paragraph 4.
+""",
+"""\
+<document>
+    <paragraph>
+        Test bad subsection order (Title 4).
+    <section id="title-1" name="title 1">
+        <title>
+            Title 1
+        <paragraph>
+            Paragraph 1.
+        <section id="title-2" name="title 2">
+            <title>
+                Title 2
+            <paragraph>
+                Paragraph 2.
+    <section id="title-3" name="title 3">
+        <title>
+            Title 3
+        <paragraph>
+            Paragraph 3.
+        <system_message level="4" type="SEVERE">
+            <paragraph>
+                Title level inconsistent at line 15:
+            <literal_block>
+                Title 4
+                ```````
+        <paragraph>
+            Paragraph 4.
+"""],
+["""\
+Test bad subsection order (Title 4, with overlines).
+
+=======
+Title 1
+=======
+Paragraph 1.
+
+-------
+Title 2
+-------
+Paragraph 2.
+
+=======
+Title 3
+=======
+Paragraph 3.
+
+```````
+Title 4
+```````
+Paragraph 4.
+""",
+"""\
+<document>
+    <paragraph>
+        Test bad subsection order (Title 4, with overlines).
+    <section id="title-1" name="title 1">
+        <title>
+            Title 1
+        <paragraph>
+            Paragraph 1.
+        <section id="title-2" name="title 2">
+            <title>
+                Title 2
+            <paragraph>
+                Paragraph 2.
+    <section id="title-3" name="title 3">
+        <title>
+            Title 3
+        <paragraph>
+            Paragraph 3.
+        <system_message level="4" type="SEVERE">
+            <paragraph>
+                Title level inconsistent at line 19:
+            <literal_block>
+                ```````
+                Title 4
+                ```````
+        <paragraph>
+            Paragraph 4.
+"""],
+["""\
+Title containing *inline* ``markup``
+====================================
+
+Paragraph.
+""",
+"""\
+<document>
+    <section id="title-containing-inline-markup" name="title containing inline markup">
+        <title>
+            Title containing \n\
+            <emphasis>
+                inline
+             \n\
+            <literal>
+                markup
+        <paragraph>
+            Paragraph.
+"""],
+]
+
+if __name__ == '__main__':
+    import unittest
+    unittest.main(defaultTest='suite')
+@
+
+
+1.15
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.14 $
+:Date: $Date: 2002/02/20 04:25:16 $
+d31 1
+a31 1
+    <section id="id1" name="title">
+d44 1
+a44 1
+    <section id="id1" name="title">
+d62 1
+a62 1
+    <section id="id1" name="title">
+d121 1
+a121 1
+    <section id="id1" name="title">
+d136 1
+a136 1
+    <section id="id1" name="title">
+d151 1
+a151 1
+    <section id="id1" name="title">
+d217 1
+a217 1
+    <section id="id1" name="long title">
+d320 1
+a320 1
+    <section id="id1" name="title 1">
+d325 1
+a325 1
+        <section id="id2" name="title 2">
+d330 1
+a330 1
+    <section id="id3" name="title 3">
+d335 1
+a335 1
+        <section id="id4" name="title 4">
+d368 1
+a368 1
+    <section id="id1" name="title 1">
+d373 1
+a373 1
+        <section id="id2" name="title 2">
+d378 1
+a378 1
+    <section id="id3" name="title 3">
+d383 1
+a383 1
+        <section id="id4" name="title 4">
+d412 1
+a412 1
+    <section id="id1" name="title 1">
+d417 1
+a417 1
+        <section id="id2" name="title 2">
+d422 1
+a422 1
+            <section id="id3" name="title 3">
+d427 1
+a427 1
+        <section id="id4" name="title 4">
+d456 1
+a456 1
+    <section id="id1" name="title 1">
+d461 1
+a461 1
+        <section id="id2" name="title 2">
+d466 1
+a466 1
+    <section id="id3" name="title 3">
+d507 1
+a507 1
+    <section id="id1" name="title 1">
+d512 1
+a512 1
+        <section id="id2" name="title 2">
+d517 1
+a517 1
+    <section id="id3" name="title 3">
+d540 1
+a540 1
+    <section id="id1" name="title containing inline markup">
+@
+
+
+1.14
+log
+@updated (ids)
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.13 $
+:Date: $Date: 2002/02/15 22:58:17 $
+d69 1
+a69 1
+Test unexpected section title.
+d74 5
+d83 1
+a83 1
+        Test unexpected section title.
+d88 16
+d118 3
+d166 3
+d180 3
+d195 3
+d213 4
+d235 4
+d259 4
+d266 1
+d285 3
+d293 3
+@
+
+
+1.13
+log
+@  - Changed "system_warning" to "system_message".
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.12 $
+:Date: $Date: 2002/02/06 02:18:42 $
+d31 1
+a31 1
+    <section name="title">
+d44 1
+a44 1
+    <section name="title">
+d62 1
+a62 1
+    <section name="title">
+d97 1
+a97 1
+    <section name="title">
+d112 1
+a112 1
+    <section name="title">
+d127 1
+a127 1
+    <section name="title">
+d180 1
+a180 1
+    <section name="long title">
+d268 1
+a268 1
+    <section name="title 1">
+d273 1
+a273 1
+        <section name="title 2">
+d278 1
+a278 1
+    <section name="title 3">
+d283 1
+a283 1
+        <section name="title 4">
+d316 1
+a316 1
+    <section name="title 1">
+d321 1
+a321 1
+        <section name="title 2">
+d326 1
+a326 1
+    <section name="title 3">
+d331 1
+a331 1
+        <section name="title 4">
+d360 1
+a360 1
+    <section name="title 1">
+d365 1
+a365 1
+        <section name="title 2">
+d370 1
+a370 1
+            <section name="title 3">
+d375 1
+a375 1
+        <section name="title 4">
+d404 1
+a404 1
+    <section name="title 1">
+d409 1
+a409 1
+        <section name="title 2">
+d414 1
+a414 1
+    <section name="title 3">
+d455 1
+a455 1
+    <section name="title 1">
+d460 1
+a460 1
+        <section name="title 2">
+d465 1
+a465 1
+    <section name="title 3">
+d488 1
+a488 1
+    <section name="title containing inline markup">
+@
+
+
+1.12
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.11 $
+:Date: $Date: 2002/01/25 23:43:41 $
+d80 1
+a80 1
+        <system_warning level="4" type="SEVERE">
+d94 1
+a94 1
+    <system_warning level="1" type="INFO">
+d139 1
+a139 1
+    <system_warning level="4" type="SEVERE">
+d150 1
+a150 1
+    <system_warning level="4" type="SEVERE">
+d162 1
+a162 1
+    <system_warning level="4" type="SEVERE">
+d177 1
+a177 1
+    <system_warning level="1" type="INFO">
+d195 1
+a195 1
+    <system_warning level="4" type="SEVERE">
+d214 1
+a214 1
+    <system_warning level="3" type="ERROR">
+d221 1
+a221 1
+    <system_warning level="3" type="ERROR">
+d236 1
+a236 1
+    <system_warning level="3" type="ERROR">
+d241 1
+a241 1
+    <system_warning level="3" type="ERROR">
+d419 1
+a419 1
+        <system_warning level="4" type="SEVERE">
+d470 1
+a470 1
+        <system_warning level="4" type="SEVERE">
+@
+
+
+1.11
+log
+@protect trailing whitespace
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.10 $
+:Date: $Date: 2001/10/31 05:48:12 $
+d80 1
+a80 1
+        <system_warning level="3">
+d94 1
+a94 1
+    <system_warning level="0">
+d139 1
+a139 1
+    <system_warning level="3">
+d150 1
+a150 1
+    <system_warning level="3">
+d162 1
+a162 1
+    <system_warning level="3">
+d177 1
+a177 1
+    <system_warning level="0">
+d195 1
+a195 1
+    <system_warning level="3">
+d214 1
+a214 1
+    <system_warning level="2">
+d221 1
+a221 1
+    <system_warning level="2">
+d236 1
+a236 1
+    <system_warning level="2">
+d241 1
+a241 1
+    <system_warning level="2">
+d419 1
+a419 1
+        <system_warning level="3">
+d470 1
+a470 1
+        <system_warning level="3">
+@
+
+
+1.10
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.9 $
+:Date: $Date: 2001/10/30 05:29:19 $
+d490 1
+a490 1
+            Title containing 
+d493 1
+a493 1
+             
+@
+
+
+1.9
+log
+@expanded & updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.8 $
+:Date: $Date: 2001/10/27 05:22:09 $
+d141 9
+a149 1
+            Incomplete section title or empty division at line 1.
+@
+
+
+1.8
+log
+@inline markup in titles
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.7 $
+:Date: $Date: 2001/10/20 02:49:41 $
+d192 44
+@
+
+
+1.7
+log
+@Updated for new divisions.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.6 $
+:Date: $Date: 2001/09/26 03:44:25 $
+d427 19
+@
+
+
+1.6
+log
+@updated for transformation-free initial parse
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.5 $
+:Date: $Date: 2001/09/18 04:43:19 $
+d141 1
+a141 1
+            Incomplete section title at line 1.
+@
+
+
+1.5
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2001/09/13 02:41:22 $
+d30 6
+a35 5
+<document name="title">
+    <title>
+        Title
+    <paragraph>
+        Paragraph.
+d43 6
+a48 5
+<document name="title">
+    <title>
+        Title
+    <paragraph>
+        Paragraph (no blank line).
+d93 1
+a93 3
+<document name="title">
+    <title>
+        Title
+d97 5
+a101 2
+    <paragraph>
+        Test short underline.
+d111 6
+a116 5
+<document name="title">
+    <title>
+        Title
+    <paragraph>
+        Test overline title.
+d126 6
+a131 5
+<document name="title">
+    <title>
+        Title
+    <paragraph>
+        Test overline title with inset.
+d168 1
+a168 3
+<document name="long title">
+    <title>
+        Long    Title
+d172 5
+a176 2
+    <paragraph>
+        Test long title and space normalization.
+@
+
+
+1.4
+log
+@Updated for simpler dps.nodes._Element.pformat().
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2001/09/07 01:53:13 $
+d363 1
+a363 3
+                <strong>
+                    ABORT
+                : Title level inconsistent at line 15:
+d414 1
+a414 3
+                <strong>
+                    ABORT
+                : Title level inconsistent at line 19:
+@
+
+
+1.3
+log
+@  - Updated for section -> document promotion.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.2 $
+:Date: $Date: 2001/09/02 14:06:55 $
+a32 1
+    </title>
+a34 2
+    </paragraph>
+</document>
+a44 1
+    </title>
+a46 2
+    </paragraph>
+</document>
+a59 1
+    </paragraph>
+a62 1
+        </title>
+a64 3
+        </paragraph>
+    </section>
+</document>
+a76 1
+    </paragraph>
+a80 2
+            </paragraph>
+        </system_warning>
+a82 3
+        </paragraph>
+    </block_quote>
+</document>
+a93 1
+    </title>
+a96 2
+        </paragraph>
+    </system_warning>
+a98 2
+    </paragraph>
+</document>
+a110 1
+    </title>
+a112 2
+    </paragraph>
+</document>
+a124 1
+    </title>
+a126 2
+    </paragraph>
+</document>
+a136 2
+        </paragraph>
+    </system_warning>
+a139 3
+        </paragraph>
+    </system_warning>
+</document>
+a151 2
+        </paragraph>
+    </system_warning>
+a153 2
+    </paragraph>
+</document>
+a165 1
+    </title>
+a168 2
+        </paragraph>
+    </system_warning>
+a170 2
+    </paragraph>
+</document>
+a183 2
+        </paragraph>
+    </system_warning>
+a185 2
+    </paragraph>
+</document>
+a209 1
+    </comment>
+a212 1
+        </title>
+a214 1
+        </paragraph>
+a217 1
+            </title>
+a219 3
+            </paragraph>
+        </section>
+    </section>
+a222 1
+        </title>
+a224 1
+        </paragraph>
+a227 1
+            </title>
+a229 4
+            </paragraph>
+        </section>
+    </section>
+</document>
+a257 1
+    </paragraph>
+a260 1
+        </title>
+a262 1
+        </paragraph>
+a265 1
+            </title>
+a267 3
+            </paragraph>
+        </section>
+    </section>
+a270 1
+        </title>
+a272 1
+        </paragraph>
+a275 1
+            </title>
+a277 4
+            </paragraph>
+        </section>
+    </section>
+</document>
+a301 1
+    </paragraph>
+a304 1
+        </title>
+a306 1
+        </paragraph>
+a309 1
+            </title>
+a311 1
+            </paragraph>
+a314 1
+                </title>
+a316 3
+                </paragraph>
+            </section>
+        </section>
+a319 1
+            </title>
+a321 4
+            </paragraph>
+        </section>
+    </section>
+</document>
+a345 1
+    </paragraph>
+a348 1
+        </title>
+a350 1
+        </paragraph>
+a353 1
+            </title>
+a355 3
+            </paragraph>
+        </section>
+    </section>
+a358 1
+        </title>
+a360 1
+        </paragraph>
+a364 1
+                </strong>
+a365 1
+            </paragraph>
+a368 2
+            </literal_block>
+        </system_warning>
+a370 3
+        </paragraph>
+    </section>
+</document>
+a398 1
+    </paragraph>
+a401 1
+        </title>
+a403 1
+        </paragraph>
+a406 1
+            </title>
+a408 3
+            </paragraph>
+        </section>
+    </section>
+a411 1
+        </title>
+a413 1
+        </paragraph>
+a417 1
+                </strong>
+a418 1
+            </paragraph>
+a422 2
+            </literal_block>
+        </system_warning>
+a424 3
+        </paragraph>
+    </section>
+</document>
+@
+
+
+1.2
+log
+@Removed "id=__file__" from ParserTestSuite call (now auto-detected).
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.1 $
+:Date: $Date: 2001/09/01 17:01:40 $
+d30 7
+a36 9
+<document>
+    <section name="title">
+        <title>
+            Title
+        </title>
+        <paragraph>
+            Paragraph.
+        </paragraph>
+    </section>
+d45 7
+a51 9
+<document>
+    <section name="title">
+        <title>
+            Title
+        </title>
+        <paragraph>
+            Paragraph (no blank line).
+        </paragraph>
+    </section>
+d108 4
+a111 1
+<document>
+d117 3
+a119 8
+    <section name="title">
+        <title>
+            Title
+        </title>
+        <paragraph>
+            Test short underline.
+        </paragraph>
+    </section>
+d130 7
+a136 9
+<document>
+    <section name="title">
+        <title>
+            Title
+        </title>
+        <paragraph>
+            Test overline title.
+        </paragraph>
+    </section>
+d147 7
+a153 9
+<document>
+    <section name="title">
+        <title>
+            Title
+        </title>
+        <paragraph>
+            Test overline title with inset.
+        </paragraph>
+    </section>
+d200 4
+a203 1
+<document>
+d209 3
+a211 8
+    <section name="long title">
+        <title>
+            Long    Title
+        </title>
+        <paragraph>
+            Test long title and space normalization.
+        </paragraph>
+    </section>
+d234 1
+a234 1
+Test return to existing, highest-level section (Title 3).
+d254 1
+a254 1
+    <paragraph>
+d256 1
+a256 1
+    </paragraph>
+@
+
+
+1.1
+log
+@Refactored from the monolithic restructuredtext/test_states.py, using the Garth Kidd's framework. Thanks Garth!
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision$
+:Date: $Date$
+d16 1
+a16 1
+    s = RSTTestSupport.ParserTestSuite(id=__file__)
+@
+

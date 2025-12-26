@@ -1,0 +1,1244 @@
+head	1.8;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.8
+date	2002.02.15.22.58.17;	author goodger;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2002.02.06.02.19.03;	author goodger;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2001.09.13.22.34.09;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2001.09.13.02.41.42;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.09.07.01.46.04;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.09.05.02.52.02;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.09.02.14.07.20;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.09.01.17.01.59;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.8
+log
+@  - Changed "system_warning" to "system_message".
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.7 $
+:Date: $Date: 2002/02/06 02:19:03 $
+:Copyright: This module has been placed in the public domain.
+
+Tests for states.py.
+"""
+
+import RSTTestSupport
+
+def suite():
+    s = RSTTestSupport.ParserTestSuite()
+    s.generateTests(totest)
+    return s
+
+totest = {}
+
+totest['tables'] = [
+["""\
++-------------------------------------+
+| A table with one cell and one line. |
++-------------------------------------+
+""",
+"""\
+<document>
+    <table>
+        <tgroup cols="1">
+            <colspec colwidth="37">
+            <tbody>
+                <row>
+                    <entry>
+                        <paragraph>
+                            A table with one cell and one line.
+"""],
+["""\
++-----------------------+
+| A table with one cell |
+| and two lines.        |
++-----------------------+
+""",
+"""\
+<document>
+    <table>
+        <tgroup cols="1">
+            <colspec colwidth="23">
+            <tbody>
+                <row>
+                    <entry>
+                        <paragraph>
+                            A table with one cell
+                            and two lines.
+"""],
+["""\
++-----------------------+
+| A malformed table. |
++-----------------------+
+""",
+"""\
+<document>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Malformed table at line 1; formatting as a literal block.
+    <literal_block>
+        +-----------------------+
+        | A malformed table. |
+        +-----------------------+
+"""],
+["""\
++------------------------+
+| A well-formed | table. |
++------------------------+
+
++------------------------+
+| This +----------+ too! |
++------------------------+
+""",
+"""\
+<document>
+    <table>
+        <tgroup cols="1">
+            <colspec colwidth="24">
+            <tbody>
+                <row>
+                    <entry>
+                        <paragraph>
+                            A well-formed | table.
+    <table>
+        <tgroup cols="1">
+            <colspec colwidth="24">
+            <tbody>
+                <row>
+                    <entry>
+                        <paragraph>
+                            This +----------+ too!
+"""],
+["""\
++--------------+--------------+
+| A table with | two columns. |
++--------------+--------------+
+""",
+"""\
+<document>
+    <table>
+        <tgroup cols="2">
+            <colspec colwidth="14">
+            <colspec colwidth="14">
+            <tbody>
+                <row>
+                    <entry>
+                        <paragraph>
+                            A table with
+                    <entry>
+                        <paragraph>
+                            two columns.
+"""],
+["""\
++--------------+
+| A table with |
++--------------+
+| two rows.    |
++--------------+
+""",
+"""\
+<document>
+    <table>
+        <tgroup cols="1">
+            <colspec colwidth="14">
+            <tbody>
+                <row>
+                    <entry>
+                        <paragraph>
+                            A table with
+                <row>
+                    <entry>
+                        <paragraph>
+                            two rows.
+"""],
+["""\
++--------------+-------------+
+| A table with | two columns |
++--------------+-------------+
+| and          | two rows.   |
++--------------+-------------+
+""",
+"""\
+<document>
+    <table>
+        <tgroup cols="2">
+            <colspec colwidth="14">
+            <colspec colwidth="13">
+            <tbody>
+                <row>
+                    <entry>
+                        <paragraph>
+                            A table with
+                    <entry>
+                        <paragraph>
+                            two columns
+                <row>
+                    <entry>
+                        <paragraph>
+                            and
+                    <entry>
+                        <paragraph>
+                            two rows.
+"""],
+["""\
++--------------+---------------+
+| A table with | two columns,  |
++--------------+---------------+
+| two rows, and a column span. |
++------------------------------+
+""",
+"""\
+<document>
+    <table>
+        <tgroup cols="2">
+            <colspec colwidth="14">
+            <colspec colwidth="15">
+            <tbody>
+                <row>
+                    <entry>
+                        <paragraph>
+                            A table with
+                    <entry>
+                        <paragraph>
+                            two columns,
+                <row>
+                    <entry morecols="1">
+                        <paragraph>
+                            two rows, and a column span.
+"""],
+["""\
++--------------------------+
+| A table with three rows, |
++------------+-------------+
+| and two    | columns.    |
++------------+-------------+
+| First and last rows      |
+| contains column spans.   |
++--------------------------+
+""",
+"""\
+<document>
+    <table>
+        <tgroup cols="2">
+            <colspec colwidth="12">
+            <colspec colwidth="13">
+            <tbody>
+                <row>
+                    <entry morecols="1">
+                        <paragraph>
+                            A table with three rows,
+                <row>
+                    <entry>
+                        <paragraph>
+                            and two
+                    <entry>
+                        <paragraph>
+                            columns.
+                <row>
+                    <entry morecols="1">
+                        <paragraph>
+                            First and last rows
+                            contains column spans.
+"""],
+["""\
++--------------+--------------+
+| A table with | two columns, |
++--------------+ and a row    |
+| two rows,    | span.        |
++--------------+--------------+
+""",
+"""\
+<document>
+    <table>
+        <tgroup cols="2">
+            <colspec colwidth="14">
+            <colspec colwidth="14">
+            <tbody>
+                <row>
+                    <entry>
+                        <paragraph>
+                            A table with
+                    <entry morerows="1">
+                        <paragraph>
+                            two columns,
+                            and a row
+                            span.
+                <row>
+                    <entry>
+                        <paragraph>
+                            two rows,
+"""],
+["""\
++------------+-------------+---------------+
+| A table    | two rows in | and row spans |
+| with three +-------------+ to left and   |
+| columns,   | the middle, | right.        |
++------------+-------------+---------------+
+""",
+"""\
+<document>
+    <table>
+        <tgroup cols="3">
+            <colspec colwidth="12">
+            <colspec colwidth="13">
+            <colspec colwidth="15">
+            <tbody>
+                <row>
+                    <entry morerows="1">
+                        <paragraph>
+                            A table
+                            with three
+                            columns,
+                    <entry>
+                        <paragraph>
+                            two rows in
+                    <entry morerows="1">
+                        <paragraph>
+                            and row spans
+                            to left and
+                            right.
+                <row>
+                    <entry>
+                        <paragraph>
+                            the middle,
+"""],
+["""\
+Complex spanning pattern (no edge knows all rows/cols):
+
++-----------+-------------------------+
+| W/NW cell | N/NE cell               |
+|           +-------------+-----------+
+|           | Middle cell | E/SE cell |
++-----------+-------------+           |
+| S/SE cell               |           |
++-------------------------+-----------+
+""",
+"""\
+<document>
+    <paragraph>
+        Complex spanning pattern (no edge knows all rows/cols):
+    <table>
+        <tgroup cols="3">
+            <colspec colwidth="11">
+            <colspec colwidth="13">
+            <colspec colwidth="11">
+            <tbody>
+                <row>
+                    <entry morerows="1">
+                        <paragraph>
+                            W/NW cell
+                    <entry morecols="1">
+                        <paragraph>
+                            N/NE cell
+                <row>
+                    <entry>
+                        <paragraph>
+                            Middle cell
+                    <entry morerows="1">
+                        <paragraph>
+                            E/SE cell
+                <row>
+                    <entry morecols="1">
+                        <paragraph>
+                            S/SE cell
+"""],
+["""\
++------------------------+------------+----------+----------+
+| Header row, column 1   | Header 2   | Header 3 | Header 4 |
++========================+============+==========+==========+
+| body row 1, column 1   | column 2   | column 3 | column 4 |
++------------------------+------------+----------+----------+
+| body row 2             | Cells may span columns.          |
++------------------------+------------+---------------------+
+| body row 3             | Cells may  | - Table cells       |
++------------------------+ span rows. | - contain           |
+| body row 4             |            | - body elements.    |
++------------------------+------------+---------------------+
+""",
+"""\
+<document>
+    <table>
+        <tgroup cols="4">
+            <colspec colwidth="24">
+            <colspec colwidth="12">
+            <colspec colwidth="10">
+            <colspec colwidth="10">
+            <thead>
+                <row>
+                    <entry>
+                        <paragraph>
+                            Header row, column 1
+                    <entry>
+                        <paragraph>
+                            Header 2
+                    <entry>
+                        <paragraph>
+                            Header 3
+                    <entry>
+                        <paragraph>
+                            Header 4
+            <tbody>
+                <row>
+                    <entry>
+                        <paragraph>
+                            body row 1, column 1
+                    <entry>
+                        <paragraph>
+                            column 2
+                    <entry>
+                        <paragraph>
+                            column 3
+                    <entry>
+                        <paragraph>
+                            column 4
+                <row>
+                    <entry>
+                        <paragraph>
+                            body row 2
+                    <entry morecols="2">
+                        <paragraph>
+                            Cells may span columns.
+                <row>
+                    <entry>
+                        <paragraph>
+                            body row 3
+                    <entry morerows="1">
+                        <paragraph>
+                            Cells may
+                            span rows.
+                    <entry morecols="1" morerows="1">
+                        <bullet_list bullet="-">
+                            <list_item>
+                                <paragraph>
+                                    Table cells
+                            <list_item>
+                                <paragraph>
+                                    contain
+                            <list_item>
+                                <paragraph>
+                                    body elements.
+                <row>
+                    <entry>
+                        <paragraph>
+                            body row 4
+"""],
+["""\
++-----------------+--------+
+| A simple table  | cell 2 |
++-----------------+--------+
+| cell 3          | cell 4 |
++-----------------+--------+
+No blank line after table.
+""",
+"""\
+<document>
+    <table>
+        <tgroup cols="2">
+            <colspec colwidth="17">
+            <colspec colwidth="8">
+            <tbody>
+                <row>
+                    <entry>
+                        <paragraph>
+                            A simple table
+                    <entry>
+                        <paragraph>
+                            cell 2
+                <row>
+                    <entry>
+                        <paragraph>
+                            cell 3
+                    <entry>
+                        <paragraph>
+                            cell 4
+    <system_message level="2" type="WARNING">
+        <paragraph>
+            Blank line required after table at line 6.
+    <paragraph>
+        No blank line after table.
+"""],
+["""\
++-----------------+--------+
+| A simple table  | cell 2 |
++-----------------+--------+
+| cell 3          | cell 4 |
++-----------------+--------+
+    Unexpected indent and no blank line after table.
+""",
+"""\
+<document>
+    <table>
+        <tgroup cols="2">
+            <colspec colwidth="17">
+            <colspec colwidth="8">
+            <tbody>
+                <row>
+                    <entry>
+                        <paragraph>
+                            A simple table
+                    <entry>
+                        <paragraph>
+                            cell 2
+                <row>
+                    <entry>
+                        <paragraph>
+                            cell 3
+                    <entry>
+                        <paragraph>
+                            cell 4
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Unexpected indentation at line 6.
+    <system_message level="2" type="WARNING">
+        <paragraph>
+            Blank line required after table at line 6.
+    <block_quote>
+        <paragraph>
+            Unexpected indent and no blank line after table.
+"""],
+["""\
++--------------+-------------+
+| A bad table. |             |
++--------------+             |
+| Cells must be rectangles.  |
++----------------------------+
+""",
+"""\
+<document>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Malformed table at line 1; formatting as a literal block.
+            Malformed table; parse incomplete.
+    <literal_block>
+        +--------------+-------------+
+        | A bad table. |             |
+        +--------------+             |
+        | Cells must be rectangles.  |
+        +----------------------------+
+"""],
+["""\
++------------------------------+
+| This table contains another. |
+|                              |
+| +-------------------------+  |
+| | A table within a table. |  |
+| +-------------------------+  |
++------------------------------+
+""",
+"""\
+<document>
+    <table>
+        <tgroup cols="1">
+            <colspec colwidth="30">
+            <tbody>
+                <row>
+                    <entry>
+                        <paragraph>
+                            This table contains another.
+                        <table>
+                            <tgroup cols="1">
+                                <colspec colwidth="25">
+                                <tbody>
+                                    <row>
+                                        <entry>
+                                            <paragraph>
+                                                A table within a table.
+"""],
+["""\
++------------------+--------+
+| A simple table   |        |
++------------------+--------+
+| with empty cells |        |
++------------------+--------+
+""",
+"""\
+<document>
+    <table>
+        <tgroup cols="2">
+            <colspec colwidth="18">
+            <colspec colwidth="8">
+            <tbody>
+                <row>
+                    <entry>
+                        <paragraph>
+                            A simple table
+                    <entry>
+                <row>
+                    <entry>
+                        <paragraph>
+                            with empty cells
+                    <entry>
+"""],
+]
+
+if __name__ == '__main__':
+    import unittest
+    unittest.main(defaultTest='suite')
+@
+
+
+1.7
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.6 $
+:Date: $Date: 2001/09/13 22:34:09 $
+d64 1
+a64 1
+    <system_warning level="3" type="ERROR">
+d442 1
+a442 1
+    <system_warning level="2" type="WARNING">
+d477 1
+a477 1
+    <system_warning level="3" type="ERROR">
+d480 1
+a480 1
+    <system_warning level="2" type="WARNING">
+d496 1
+a496 1
+    <system_warning level="3" type="ERROR">
+@
+
+
+1.6
+log
+@Added a test for empty cells.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.5 $
+:Date: $Date: 2001/09/13 02:41:42 $
+d64 1
+a64 1
+    <system_warning level="2">
+d442 1
+a442 1
+    <system_warning level="1">
+d477 1
+a477 1
+    <system_warning level="2">
+d480 1
+a480 1
+    <system_warning level="1">
+d496 1
+a496 1
+    <system_warning level="2">
+@
+
+
+1.5
+log
+@Updated for simpler dps.nodes._Element.pformat().
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2001/09/07 01:46:04 $
+d534 25
+@
+
+
+1.4
+log
+@  - Added a couple of interesting cases.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2001/09/05 02:52:02 $
+d32 1
+a32 1
+            <colspec colwidth="37"/>
+a37 7
+                        </paragraph>
+                    </entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </table>
+</document>
+d49 1
+a49 1
+            <colspec colwidth="23"/>
+a55 7
+                        </paragraph>
+                    </entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </table>
+</document>
+a66 2
+        </paragraph>
+    </system_warning>
+a70 2
+    </literal_block>
+</document>
+d85 1
+a85 1
+            <colspec colwidth="24"/>
+a90 6
+                        </paragraph>
+                    </entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </table>
+d93 1
+a93 1
+            <colspec colwidth="24"/>
+a98 7
+                        </paragraph>
+                    </entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </table>
+</document>
+d109 2
+a110 2
+            <colspec colwidth="14"/>
+            <colspec colwidth="14"/>
+a115 2
+                        </paragraph>
+                    </entry>
+a118 7
+                        </paragraph>
+                    </entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </table>
+</document>
+d131 1
+a131 1
+            <colspec colwidth="14"/>
+a136 3
+                        </paragraph>
+                    </entry>
+                </row>
+a140 7
+                        </paragraph>
+                    </entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </table>
+</document>
+d153 2
+a154 2
+            <colspec colwidth="14"/>
+            <colspec colwidth="13"/>
+a159 2
+                        </paragraph>
+                    </entry>
+a162 3
+                        </paragraph>
+                    </entry>
+                </row>
+a166 2
+                        </paragraph>
+                    </entry>
+a169 7
+                        </paragraph>
+                    </entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </table>
+</document>
+d182 2
+a183 2
+            <colspec colwidth="14"/>
+            <colspec colwidth="15"/>
+a188 2
+                        </paragraph>
+                    </entry>
+a191 3
+                        </paragraph>
+                    </entry>
+                </row>
+a195 7
+                        </paragraph>
+                    </entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </table>
+</document>
+d211 2
+a212 2
+            <colspec colwidth="12"/>
+            <colspec colwidth="13"/>
+a217 3
+                        </paragraph>
+                    </entry>
+                </row>
+a221 2
+                        </paragraph>
+                    </entry>
+a224 3
+                        </paragraph>
+                    </entry>
+                </row>
+a229 7
+                        </paragraph>
+                    </entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </table>
+</document>
+d242 2
+a243 2
+            <colspec colwidth="14"/>
+            <colspec colwidth="14"/>
+a248 2
+                        </paragraph>
+                    </entry>
+a253 3
+                        </paragraph>
+                    </entry>
+                </row>
+a257 7
+                        </paragraph>
+                    </entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </table>
+</document>
+d270 3
+a272 3
+            <colspec colwidth="12"/>
+            <colspec colwidth="13"/>
+            <colspec colwidth="15"/>
+a279 2
+                        </paragraph>
+                    </entry>
+a282 2
+                        </paragraph>
+                    </entry>
+a287 3
+                        </paragraph>
+                    </entry>
+                </row>
+a291 7
+                        </paragraph>
+                    </entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </table>
+</document>
+a307 1
+    </paragraph>
+d310 3
+a312 3
+            <colspec colwidth="11"/>
+            <colspec colwidth="13"/>
+            <colspec colwidth="11"/>
+a317 2
+                        </paragraph>
+                    </entry>
+a320 3
+                        </paragraph>
+                    </entry>
+                </row>
+a324 2
+                        </paragraph>
+                    </entry>
+a327 3
+                        </paragraph>
+                    </entry>
+                </row>
+a331 7
+                        </paragraph>
+                    </entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </table>
+</document>
+d350 4
+a353 4
+            <colspec colwidth="24"/>
+            <colspec colwidth="12"/>
+            <colspec colwidth="10"/>
+            <colspec colwidth="10"/>
+a358 2
+                        </paragraph>
+                    </entry>
+a361 2
+                        </paragraph>
+                    </entry>
+a364 2
+                        </paragraph>
+                    </entry>
+a367 4
+                        </paragraph>
+                    </entry>
+                </row>
+            </thead>
+a372 2
+                        </paragraph>
+                    </entry>
+a375 2
+                        </paragraph>
+                    </entry>
+a378 2
+                        </paragraph>
+                    </entry>
+a381 3
+                        </paragraph>
+                    </entry>
+                </row>
+a385 2
+                        </paragraph>
+                    </entry>
+a388 3
+                        </paragraph>
+                    </entry>
+                </row>
+a392 2
+                        </paragraph>
+                    </entry>
+a396 2
+                        </paragraph>
+                    </entry>
+a401 2
+                                </paragraph>
+                            </list_item>
+a404 2
+                                </paragraph>
+                            </list_item>
+a407 5
+                                </paragraph>
+                            </list_item>
+                        </bullet_list>
+                    </entry>
+                </row>
+a411 7
+                        </paragraph>
+                    </entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </table>
+</document>
+d425 2
+a426 2
+            <colspec colwidth="17"/>
+            <colspec colwidth="8"/>
+a431 2
+                        </paragraph>
+                    </entry>
+a434 3
+                        </paragraph>
+                    </entry>
+                </row>
+a438 2
+                        </paragraph>
+                    </entry>
+a441 6
+                        </paragraph>
+                    </entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </table>
+a444 2
+        </paragraph>
+    </system_warning>
+a446 2
+    </paragraph>
+</document>
+d460 2
+a461 2
+            <colspec colwidth="17"/>
+            <colspec colwidth="8"/>
+a466 2
+                        </paragraph>
+                    </entry>
+a469 3
+                        </paragraph>
+                    </entry>
+                </row>
+a473 2
+                        </paragraph>
+                    </entry>
+a476 6
+                        </paragraph>
+                    </entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </table>
+a479 2
+        </paragraph>
+    </system_warning>
+a482 2
+        </paragraph>
+    </system_warning>
+a485 3
+        </paragraph>
+    </block_quote>
+</document>
+a499 2
+        </paragraph>
+    </system_warning>
+a505 2
+    </literal_block>
+</document>
+d520 1
+a520 1
+            <colspec colwidth="30"/>
+a525 1
+                        </paragraph>
+d528 1
+a528 1
+                                <colspec colwidth="25"/>
+a533 12
+                                            </paragraph>
+                                        </entry>
+                                    </row>
+                                </tbody>
+                            </tgroup>
+                        </table>
+                    </entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </table>
+</document>
+@
+
+
+1.3
+log
+@  - Replaced temporary expected results (literal blocks) with    the genuine article (fully marked-up CALS tables).
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.2 $
+:Date: $Date: 2001/09/02 14:07:20 $
+d701 65
+@
+
+
+1.2
+log
+@Removed "id=__file__" from ParserTestSuite call (now auto-detected).
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision$
+:Date: $Date$
+a26 2
+
+XXX Temporarily parsing tables as literal blocks.
+d30 14
+a43 8
+    <literal_block>
+        +-------------------------------------+
+        | A table with one cell and one line. |
+        +-------------------------------------+
+    </literal_block>
+    <paragraph>
+        XXX Temporarily parsing tables as literal blocks.
+    </paragraph>
+d54 15
+a68 6
+    <literal_block>
+        +-----------------------+
+        | A table with one cell |
+        | and two lines.        |
+        +-----------------------+
+    </literal_block>
+d101 28
+a128 10
+    <literal_block>
+        +------------------------+
+        | A well-formed | table. |
+        +------------------------+
+    </literal_block>
+    <literal_block>
+        +------------------------+
+        | This +----------+ too! |
+        +------------------------+
+    </literal_block>
+d138 20
+a157 5
+    <literal_block>
+        +--------------+--------------+
+        | A table with | two columns. |
+        +--------------+--------------+
+    </literal_block>
+d169 21
+a189 7
+    <literal_block>
+        +--------------+
+        | A table with |
+        +--------------+
+        | two rows.    |
+        +--------------+
+    </literal_block>
+d201 32
+a232 7
+    <literal_block>
+        +--------------+-------------+
+        | A table with | two columns |
+        +--------------+-------------+
+        | and          | two rows.   |
+        +--------------+-------------+
+    </literal_block>
+d244 27
+a270 7
+    <literal_block>
+        +--------------+---------------+
+        | A table with | two columns,  |
+        +--------------+---------------+
+        | two rows, and a column span. |
+        +------------------------------+
+    </literal_block>
+d285 35
+a319 10
+    <literal_block>
+        +--------------------------+
+        | A table with three rows, |
+        +------------+-------------+
+        | and two    | columns.    |
+        +------------+-------------+
+        | First and last rows      |
+        | contains column spans.   |
+        +--------------------------+
+    </literal_block>
+d331 29
+a359 7
+    <literal_block>
+        +--------------+--------------+
+        | A table with | two columns, |
+        +--------------+ and a row    |
+        | two rows,    | span.        |
+        +--------------+--------------+
+    </literal_block>
+d371 37
+a407 7
+    <literal_block>
+        +------------+-------------+---------------+
+        | A table    | two rows in | and row spans |
+        | with three +-------------+ to left and   |
+        | columns,   | the middle, | right.        |
+        +------------+-------------+---------------+
+    </literal_block>
+d426 40
+a465 9
+    <literal_block>
+        +-----------+-------------------------+
+        | W/NW cell | N/NE cell               |
+        |           +-------------+-----------+
+        |           | Middle cell | E/SE cell |
+        +-----------+-------------+           |
+        | S/SE cell               |           |
+        +-------------------------+-----------+
+    </literal_block>
+d483 107
+a589 13
+    <literal_block>
+        +------------------------+------------+----------+----------+
+        | Header row, column 1   | Header 2   | Header 3 | Header 4 |
+        +========================+============+==========+==========+
+        | body row 1, column 1   | column 2   | column 3 | column 4 |
+        +------------------------+------------+----------+----------+
+        | body row 2             | Cells may span columns.          |
+        +------------------------+------------+---------------------+
+        | body row 3             | Cells may  | - Table cells       |
+        +------------------------+ span rows. | - contain           |
+        | body row 4             |            | - body elements.    |
+        +------------------------+------------+---------------------+
+    </literal_block>
+d602 32
+a633 7
+    <literal_block>
+        +-----------------+--------+
+        | A simple table  | cell 2 |
+        +-----------------+--------+
+        | cell 3          | cell 4 |
+        +-----------------+--------+
+    </literal_block>
+d654 32
+a685 7
+    <literal_block>
+        +-----------------+--------+
+        | A simple table  | cell 2 |
+        +-----------------+--------+
+        | cell 3          | cell 4 |
+        +-----------------+--------+
+    </literal_block>
+@
+
+
+1.1
+log
+@Refactored from the monolithic restructuredtext/test_states.py, using the Garth Kidd's framework. Thanks Garth!
+@
+text
+@d16 1
+a16 1
+    s = RSTTestSupport.ParserTestSuite(id=__file__)
+@
+

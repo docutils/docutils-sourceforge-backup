@@ -1,0 +1,139 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2001.09.21.03.48.41;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@example text by Remi Bertholet (slightly edited)
+@
+text
+@Grand Titre
+===========
+
+Titre
+-----
+
+Sous titre
+~~~~~~~~~~
+
+Sous Sous titre
+_______________
+
+
+Sous Sous remi
+_______________
+
+
+
+Sous Sous Sous titre
+********************
+
+
+*italique* **gras** `text interpreté` ``literal`` http://www.python.org
+
+.. _lien_indirect: http://www.python.org
+
+Où est mon un lien_interne_
+
+Note de référence [5]_
+
+Lien sur un Titre_
+
+:Auteur: Rémi BERTHOLET
+:Version: 1.0 31/08/01
+
+Exemple de code ::
+	
+	main ()
+	{
+		printf ("hello world\n");
+		{
+			printf ("hello world\n");
+			printf ("hello world\n");
+		}
+	}
+
+	main ()
+	{
+		printf ("hello world\n");
+		{
+			printf ("hello world\n");
+			printf ("hello world\n");
+		}
+	}
+
+Lien auto numeroté [#]_ et [#]_
+
+
+
+
+Liste à puce:
+
+- element 1
+- element 2
+
+Liste de définitions:
+
+Nom
+  Voici un nom
+  
+Prénom
+  Voici un prénom
+  
+
+Ajout d'un graphique : 
+
+.. graphics:: images/ball1.gif
+
+.. image:: images/ball1.gif
+
+.. commentaire interne non visible
+
+Indentation:
+
+  Une indentation,
+  
+    Une sous indentation.
+
+
+
+  
+Liste numérotée: 
+
+1. element 1
+2. element 2
+
+
+.. [#] premier lien auto numéroté
+.. [#] deuxième lien auto numéroté
+
+.. _lien_interne:
+
+Voici mon lien interne
+
+.. [5] Une note de référence
+
+
+       +------------+------------+------------+--------------+
+       |  Header 1  |  Header 2  |  Header 3  |  Header 4    |
+       +============+============+============+==============+
+       |  Column 1  |  Column 2  | Column 3 & 4 span (Row 1) |
+       +------------+------------+------------+--------------+
+       |    Column 1 & 2 span    |  Column 3  | - Column 4   |
+       +------------+------------+------------+ - Row 2 & 3  |
+       |      1     |      2     |      3     | - span       |
+       +------------+------------+------------+--------------+
+@

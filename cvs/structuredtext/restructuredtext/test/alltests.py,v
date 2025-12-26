@@ -1,0 +1,191 @@
+head	1.5;
+access;
+symbols
+	Rrefactor-test:1.1.0.2;
+locks; strict;
+comment	@# @;
+
+
+1.5
+date	2002.01.25.23.41.32;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.09.07.01.36.32;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.09.02.13.50.48;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.09.01.16.29.12;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.09.01.15.19.21;	author goodger;	state dead;
+branches
+	1.1.2.1;
+next	;
+
+1.1.2.1
+date	2001.09.01.15.19.21;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.5
+log
+@whitespace
+@
+text
+@#!/usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2001/09/07 01:36:32 $
+:Copyright: This module has been placed in the public domain.
+"""
+
+import time
+start = time.time()
+
+import sys, os
+
+
+class Tee:
+
+    """Write to a file and a stream (default: stdout) simultaneously."""
+
+    def __init__(self, filename, stream=sys.__stdout__):
+        self.file = open(filename, 'w')
+        self.stream = stream
+
+    def write(self, string):
+        self.stream.write(string)
+        self.file.write(string)
+
+# must redirect stderr *before* first import of unittest
+sys.stdout = sys.stderr = Tee('alltests.out')
+
+import UnitTestFolder
+
+
+if __name__ == '__main__':
+    path, script = os.path.split(sys.argv[0])
+    suite = UnitTestFolder.loadModulesFromFolder(path, 'test_', subfolders=1)
+    UnitTestFolder.main(suite)
+    finish = time.time()
+    print 'Elapsed time: %.3f seconds' % (finish - start)
+@
+
+
+1.4
+log
+@  - Reduced ridiculous elapsed time precision.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2001/09/02 13:50:48 $
+d20 1
+a20 1
+    
+d24 1
+a24 1
+    
+@
+
+
+1.3
+log
+@  - Added elapsed time reporting.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.2 $
+:Date: $Date: 2001/09/01 16:29:12 $
+d40 1
+a40 1
+    print 'Elapsed time: %s seconds' % (finish - start)
+@
+
+
+1.2
+log
+@merged from branch Rrefactor-test
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.1.2.1 $
+:Date: $Date: 2001/09/01 15:19:21 $
+d11 3
+d39 2
+@
+
+
+1.1
+log
+@file alltests.py was initially added on branch Rrefactor-test.
+@
+text
+@d1 35
+@
+
+
+1.1.2.1
+log
+@refactored from test_all.py
+@
+text
+@a0 35
+#!/usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision$
+:Date: $Date$
+:Copyright: This module has been placed in the public domain.
+"""
+
+import sys, os
+
+
+class Tee:
+
+    """Write to a file and a stream (default: stdout) simultaneously."""
+    
+    def __init__(self, filename, stream=sys.__stdout__):
+        self.file = open(filename, 'w')
+        self.stream = stream
+    
+    def write(self, string):
+        self.stream.write(string)
+        self.file.write(string)
+
+# must redirect stderr *before* first import of unittest
+sys.stdout = sys.stderr = Tee('alltests.out')
+
+import UnitTestFolder
+
+
+if __name__ == '__main__':
+    path, script = os.path.split(sys.argv[0])
+    suite = UnitTestFolder.loadModulesFromFolder(path, 'test_', subfolders=1)
+    UnitTestFolder.main(suite)
+@
+

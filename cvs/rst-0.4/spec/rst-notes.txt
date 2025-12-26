@@ -1,0 +1,382 @@
+=======
+ Notes
+=======
+:Date: $Date: 2002/04/18 02:43:22 $
+:Revision: $Revision: 1.42 $
+
+.. contents::
+
+To Do
+=====
+
+- Document!
+
+  - Keep the quickref up to date.
+  - Internal module documentation.
+  - User docs.
+  - Add motivation sections for constructs.
+
+- Refactor the complicated bits of the parser.
+
+  - Rename methods & variables according to the coding conventions set
+    out in dps-notes.txt_
+
+    .. _dps-notes.txt:
+       http://docstring.sourceforge.net/spec/dps-notes.txt
+
+- Create a standalone reStructuredText -> HTML/XML converter (stdin ->
+  stdout filter).  (Flesh out tools/quicktest.py.)
+
+- Allow very long titles (on two or more lines)?
+
+- And for the sake of completeness, should definition list terms be
+  allowed to be very long (two or more lines) also?
+
+- Allow hyperlink references to targets in other documents?  Not in an
+  HTML-centric way, though (it's trivial to say
+  ``http://www.whatever.com/doc#name``, and useless in non-HTML
+  contexts).  XLink/XPointer?  ``.. baseref::``?  See Doc-SIG
+  2001-08-10.
+
+- Add character processing?  For example:
+
+  - ``--`` -> em-dash (or ``--`` -> en-dash, and ``---`` -> em-dash).
+    (Look for pre-existing conventions.)
+  - Convert quotes to curly quote entities.  (Essentially impossible
+    for HTML?  Unnecessary for TeX.  An output issue?)
+  - Various forms of ``:-)`` to smiley icons.
+  - ``"\ "`` -> &nbsp;.
+  - Escaped newlines -> <BR>.
+  - Escaped period or quote as a disappearing catalyst to allow
+    character-level inline markup?
+  - Others?
+
+  How to represent character entities in the text though?  Probably as
+  Unicode.
+
+  Which component is responsible for this, the parser, the reader, or
+  the writer?
+
+- Implement the header row separator modification to table.el.  (Wrote
+  to Takaaki Ota & the table.el mailing list on 2001-08-12, suggesting
+  support for '=====' header rows.  On 2001-08-17 he replied, saying
+  he'd put it on his to-do list, but "don't hold your breath".)
+
+- Tony says inline markup rule 7 could do with a *little* more
+  exposition in the spec, to make clear what is going on for people
+  with head colds.
+
+- Alan Jaffray suggested (and I agree) that it would be sensible to:
+
+  - have a directive to specify a default role for interpreted text
+  - allow the reST processor to take an argument for the default role
+  - issue a warning when processing documents with no default role
+    which contain interpreted text with no explicitly specified role
+
+- Fix the parser's indentation handling to conform with the stricter
+  definition in the spec.  (Explicit markup blocks should be strict or
+  forgiving?)
+
+- Tighten up the spec for indentation of "constructs using complex
+  markers": field lists and option lists?  Bodies may begin on the
+  same line as the marker or on a subsequent line (with blank lines
+  optional).  Require that for bodies beginning on the same line as
+  the marker, all lines be in strict alignment.  Currently, this is
+  acceptable::
+
+      :Field-name-of-medium-length: Field body beginning on the same
+          line as the field name.
+
+  This proposal would make the above example illegal, instead
+  requiring strict alignment.  A field body may either begin on the
+  same line::
+
+      :Field-name-of-medium-length: Field body beginning on the same
+                                    line as the field name.
+
+  Or it may begin on a subsequent line::
+
+      :Field-name-of-medium-length:
+          Field body beginning on a line subsequent to that of the
+          field name.
+
+  This would be especially relevant in degenerate cases like this::
+
+      :Number-of-African-swallows-requried-to-carry-a-coconut:
+          It would be very difficult to align the field body with
+          the left edge of the first line if it began on the same
+          line as the field name.
+
+- Implement directives:
+
+  - html.imagemap
+
+  - components.endnotes, .citations, .topic, .sectnum (section
+    numbering; add support to .contents; could be cmdline option also)
+
+  - misc.raw
+
+  - misc.include: ``#include`` one file in another.  But how to
+    parse wrt sections, reference names, conflicts?
+
+  - misc.exec: Execute Python code & insert the results.  Perhaps
+    dangerous?
+
+  - misc.eval: Evaluate an expression & insert the text.  At parse
+    time or at substitution time?
+
+  - block.qa: Questions & Answers.  Implement as a generic two-column
+    marked list?  Or as a standalone construct?
+
+  - block.columns: Multi-column table/list, with number of columns as
+    argument.
+
+  - colorize.python: Colorize Python code.  Fine for HTML output, but
+    what about other formats?  Revert to a literal block?  Do we need
+    some kind of "alternate" mechanism?  Perhaps use a "pending"
+    transform, which could switch its output based on the "format" in
+    use.  Use a factory function "transformFF()" which returns either
+    "HTMLTransform()" instance or "GenericTransform" instance?
+
+  - text.date: Datestamp.  For substitutions.
+
+    - Combined with misc.include, implement canned macros?
+
+- Allow directives to be added at run-time.
+
+- Use the language module for directive attribute names?
+
+- Add more attributes to the image directive: align, border?
+
+- Allow syntax constructs to be added or disabled at run-time.
+
+- Make footnotes two-way, GNU-style?  What if there are multiple
+  references to a single footnote?
+
+- Add RFC-2822 header parsing (for PEP, email Readers).
+
+- Change ``.. meta::`` to use a "pending" element, only activated for
+  HTML writers.
+
+- Allow for variant styles by interpreting indented lists as if they
+  weren't indented?  For example, currently the list below will be
+  parsed as a list within a block quote::
+
+      paragraph
+
+        * list item 1
+        * list item 2
+
+  But a lot of people seem to write that way, and HTML browsers make
+  it look as if that's the way it should be.  The parser could check
+  the contents of block quotes, and if they contain only a single
+  list, remove the block quote wrapper.  There would be two problems:
+
+  1. What if we actually *do* want a list inside a block quote?
+
+  2. What if such a list comes immediately after an indented
+     construct, such as a literal block?
+
+  Both could be solved using empty comments (problem 2 already exists
+  for a block quote after a literal block).  But that's a hack.
+
+  See the Doc-SIG discussion starting 2001-04-18 with Ed Loper's
+  "Structuring: a summary; and an attempt at EBNF", item 4.
+
+- Add a "verse" construct, for paragraphs with linebreaks preserved?
+  A directive would be easy; what about a literal-block-like prefix,
+  perhaps ';;'?  E.g.::
+
+      Take it away, Eric the orchestra leader!  ;;
+
+          Half a bee,
+          Philosophically,
+          Must ipso-facto
+          Half not be.
+          You see?
+
+          ...
+
+
+Or Not To Do?
+=============
+
+This is the realm of the possible but questionably probable.  These
+ideas are kept here as a record of what has been proposed, for
+posterity and in case any of them prove to be useful.
+
+
+Compound Enumerated Lists
+-------------------------
+
+(A future revision of this specification may allow for compound
+enumerators, such as '1.1.' or '1.a.' or '1(a)', to allow for nested
+enumerated lists without indentation.)
+
+
+Auto-Numbered Enumerated Lists
+------------------------------
+
+Add these?  Example::
+
+    #. Item 1.
+    #. Item 2.
+    #. Item 3.
+
+Arabic numerals only, or any sequence if first initialized?  For
+example::
+
+    a) Item a.
+    #) Item b.
+    #) Item c.
+
+
+Sloppy Indentation of List Items
+--------------------------------
+
+Perhaps the indentation shouldn't be so strict.  Currently, this is
+required::
+
+    1. First line,
+       second line.
+
+Anything wrong with this? ::
+
+    1. First line,
+     second line.
+
+Problem?
+
+    1. First para.
+
+       Block quote.  (no good: requires some indent relative to first
+       para)
+
+     Second Para.
+
+    2. Have to carefully define where the literal block ends::
+
+         Literal block
+
+       Literal block?
+
+Hmm...  Non-strict indentation isn't such a good idea.
+
+
+Lazy Indentation of List Items
+------------------------------
+
+Another approach: Going back to the first draft of reStructuredText
+(2000-11-27 post to Doc-SIG)::
+
+    - This is the fourth item of the main list (no blank line above).
+    The second line of this item is not indented relative to the
+    bullet, which precludes it from having a second paragraph.
+
+Change that to *require* a blank line above and below, to reduce
+ambiguity.  This "loosening" may be added later, once the parser's
+been nailed down.  However, a serious drawback of this approach is to
+limit the content of each list item to a single paragraph.
+
+
+David's Idea for Lazy Indentation
+`````````````````````````````````
+
+Consider a paragraph in a word processor.  It is a single logical line
+of text which ends with a newline, soft-wrapped arbitrarily at the
+right edge of the page or screen.  We can think of a plaintext
+paragraph in the same way, as a single logical line of text, ending
+with two newlines (a blank line) instead of one, and which may contain
+arbitrary line breaks (newlines) where it was accidentally
+hard-wrapped by an application.  We can compensate for the accidental
+hard-wrapping by "unwrapping" every unindented second and subsequent
+line.  The indentation of the first line of a paragraph or list item
+would determine the indentation for the entire element.  Blank lines
+would be required between list items when using lazy indentation.
+
+The following example shows the lazy indentation of multiple body
+elements::
+
+    - This is the first paragraph
+    of the first list item.
+
+      Here is the second paragraph
+    of the first list item.
+
+    - This is the first paragraph
+    of the second list item.
+
+      Here is the second paragraph
+    of the second list item.
+
+A more complex example shows the limitations of lazy indentation::
+
+    - This is the first paragraph
+    of the first list item.
+
+      Next is a definition list item:
+
+      Term
+          Definition.  The indentation of the term is
+    required, as is the indentation of the definition's
+    first line.
+
+          When the definition extends to more than
+    one line, lazy indentation may occur.  (This is the second
+    paragraph of the definition.)
+
+    - This is the first paragraph
+    of the second list item.
+
+      - Here is the first paragraph of
+    the first item of a nested list.
+
+      So this paragraph would be outside of the nested list,
+    but inside the second list item of the outer list.
+
+    But this paragraph is not part of the list at all.
+
+And the ambiguity remains::
+
+    - Look at the hyphen at the beginning of the next line
+    - is it a second list item marker, or a dash in the text?
+
+    Similarly, we may want to refer to numbers inside enumerated
+    lists:
+
+    1. How many socks in a pair? There are
+    2. How many pants in a pair? Exactly
+    1. Go figure.
+
+Literal blocks and block quotes would still require consistent
+indentation for all their lines.  For block quotes, we might be able
+to get away with only requiring that the first line of each contained
+element be indented.  For example::
+
+    Here's a paragraph.
+
+        This is a paragraph inside a block quote.
+    Second and subsequent lines need not be indented at all.
+
+        - A bullet list inside
+    the block quote.
+
+          Second paragraph of the
+    bullet list inside the block quote.
+
+Although feasible, this form of lazy indentation has problems.  The
+document structure and hierarchy is not obvious from the indentation,
+making the source plaintext difficult to read.  This will also make
+keeping track of the indentation while writing difficult and
+error-prone.  However, these problems may be acceptable for Wikis and
+email mode, where we may be able to rely on less complex structure
+(few nested lists, for example).
+
+
+..
+   Local Variables:
+   mode: indented-text
+   indent-tabs-mode: nil
+   sentence-end-double-space: t
+   fill-column: 70
+   End:

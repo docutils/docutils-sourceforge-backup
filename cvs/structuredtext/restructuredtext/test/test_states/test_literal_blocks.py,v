@@ -1,0 +1,387 @@
+head	1.6;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.6
+date	2002.02.15.22.58.17;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2002.02.06.02.18.21;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2002.01.25.23.43.15;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.09.13.02.40.31;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.09.02.14.05.23;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.09.01.17.00.38;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.6
+log
+@  - Changed "system_warning" to "system_message".
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.5 $
+:Date: $Date: 2002/02/06 02:18:21 $
+:Copyright: This module has been placed in the public domain.
+
+Tests for states.py.
+"""
+
+import RSTTestSupport
+
+def suite():
+    s = RSTTestSupport.ParserTestSuite()
+    s.generateTests(totest)
+    return s
+
+totest = {}
+
+totest['literal_blocks'] = [
+["""\
+A paragraph::
+
+    A literal block.
+""",
+"""\
+<document>
+    <paragraph>
+        A paragraph:
+    <literal_block>
+        A literal block.
+"""],
+["""\
+A paragraph::
+
+    A literal block.
+
+Another paragraph::
+
+    Another literal block.
+    With two blank lines following.
+
+
+A final paragraph.
+""",
+"""\
+<document>
+    <paragraph>
+        A paragraph:
+    <literal_block>
+        A literal block.
+    <paragraph>
+        Another paragraph:
+    <literal_block>
+        Another literal block.
+        With two blank lines following.
+    <paragraph>
+        A final paragraph.
+"""],
+["""\
+A paragraph
+on more than
+one line::
+
+    A literal block.
+""",
+"""\
+<document>
+    <paragraph>
+        A paragraph
+        on more than
+        one line:
+    <literal_block>
+        A literal block.
+"""],
+["""\
+A paragraph
+on more than
+one line::
+    A literal block
+    with no blank line above.
+""",
+"""\
+<document>
+    <paragraph>
+        A paragraph
+        on more than
+        one line:
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Unexpected indentation at line 4.
+    <literal_block>
+        A literal block
+        with no blank line above.
+"""],
+["""\
+A paragraph::
+
+    A literal block.
+no blank line
+""",
+"""\
+<document>
+    <paragraph>
+        A paragraph:
+    <literal_block>
+        A literal block.
+    <system_message level="2" type="WARNING">
+        <paragraph>
+            Unindent without blank line at line 4.
+    <paragraph>
+        no blank line
+"""],
+["""\
+A paragraph: ::
+
+    A literal block.
+""",
+"""\
+<document>
+    <paragraph>
+        A paragraph:
+    <literal_block>
+        A literal block.
+"""],
+["""\
+A paragraph:
+
+::
+
+    A literal block.
+""",
+"""\
+<document>
+    <paragraph>
+        A paragraph:
+    <literal_block>
+        A literal block.
+"""],
+["""\
+A paragraph::
+
+Not a literal block.
+""",
+"""\
+<document>
+    <paragraph>
+        A paragraph:
+    <system_message level="2" type="WARNING">
+        <paragraph>
+            Literal block expected at line 2; none found.
+    <paragraph>
+        Not a literal block.
+"""],
+["""\
+A paragraph::
+
+    A wonky literal block.
+  Literal line 2.
+
+    Literal line 3.
+""",
+"""\
+<document>
+    <paragraph>
+        A paragraph:
+    <literal_block>
+          A wonky literal block.
+        Literal line 2.
+        \n\
+          Literal line 3.
+"""],
+["""\
+EOF, even though a literal block is indicated::
+""",
+"""\
+<document>
+    <paragraph>
+        EOF, even though a literal block is indicated:
+    <system_message level="2" type="WARNING">
+        <paragraph>
+            Literal block expected at line 2; none found.
+"""],
+]
+
+if __name__ == '__main__':
+    import unittest
+    unittest.main(defaultTest='suite')
+@
+
+
+1.5
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2002/01/25 23:43:15 $
+d91 1
+a91 1
+    <system_warning level="3" type="ERROR">
+d110 1
+a110 1
+    <system_warning level="2" type="WARNING">
+d151 1
+a151 1
+    <system_warning level="2" type="WARNING">
+d182 1
+a182 1
+    <system_warning level="2" type="WARNING">
+@
+
+
+1.4
+log
+@protect trailing whitespace
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2001/09/13 02:40:31 $
+d36 27
+d91 1
+a91 1
+    <system_warning level="2">
+d110 1
+a110 1
+    <system_warning level="1">
+d151 1
+a151 1
+    <system_warning level="1">
+d182 1
+a182 1
+    <system_warning level="1">
+@
+
+
+1.3
+log
+@Updated for simpler dps.nodes._Element.pformat().
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.2 $
+:Date: $Date: 2001/09/02 14:05:23 $
+d145 1
+a145 1
+        
+@
+
+
+1.2
+log
+@Removed "id=__file__" from ParserTestSuite call (now auto-detected).
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.1 $
+:Date: $Date: 2001/09/01 17:00:38 $
+a31 1
+    </paragraph>
+a33 2
+    </literal_block>
+</document>
+a47 1
+    </paragraph>
+a49 2
+    </literal_block>
+</document>
+a63 1
+    </paragraph>
+a66 2
+        </paragraph>
+    </system_warning>
+a69 2
+    </literal_block>
+</document>
+a80 1
+    </paragraph>
+a82 1
+    </literal_block>
+a85 2
+        </paragraph>
+    </system_warning>
+a87 2
+    </paragraph>
+</document>
+a97 1
+    </paragraph>
+a99 2
+    </literal_block>
+</document>
+a111 1
+    </paragraph>
+a113 2
+    </literal_block>
+</document>
+a123 1
+    </paragraph>
+a126 2
+        </paragraph>
+    </system_warning>
+a128 2
+    </paragraph>
+</document>
+a141 1
+    </paragraph>
+a146 2
+    </literal_block>
+</document>
+a154 1
+    </paragraph>
+a157 3
+        </paragraph>
+    </system_warning>
+</document>
+@
+
+
+1.1
+log
+@Refactored from the monolithic restructuredtext/test_states.py, using the Garth Kidd's framework. Thanks Garth!
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision$
+:Date: $Date$
+d16 1
+a16 1
+    s = RSTTestSupport.ParserTestSuite(id=__file__)
+@
+

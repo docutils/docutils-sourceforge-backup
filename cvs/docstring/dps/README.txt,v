@@ -1,0 +1,340 @@
+head	1.6;
+access;
+symbols
+	rel-0-3:1.1.1.1 open:1.1.1;
+locks; strict;
+comment	@# @;
+
+
+1.6
+date	2002.04.19.01.45.36;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2002.04.18.02.54.47;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2002.04.14.19.40.54;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.08.23.03.53.45;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.07.29.15.55.58;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.07.22.22.36.35;	author goodger;	state Exp;
+branches
+	1.1.1.1;
+next	;
+
+1.1.1.1
+date	2001.07.22.22.36.35;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.6
+log
+@updated
+@
+text
+@============================================
+ README: Python Docstring Processing System
+============================================
+
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Date: $Date: 2002/04/18 02:54:47 $
+:Web-site: http://docstring.sourceforge.net/
+
+Thank you for downloading the Python Docstring Processing System
+project arhive.  Development has been transferred to the Docutils_
+project.  As this is a work in progress, please check the
+project web site for updated working files.
+
+To run the code, Python 2.0 or later must already be installed.  You
+can get Python from http://www.python.org/.  You will also need the
+latest reStructuredText package, available from
+http://structuredtext.sourceforge.net/.
+
+.. _Docutils: http://docutils.sourceforge.net/
+
+
+Project Files & Directories
+===========================
+
+* README.txt: You're reading it.
+
+* HISTORY.txt: Release notes for the current and previous project
+  releases.
+
+* setup.py: Installation script.  See "Installation" below.
+
+* install.py: Quick & dirty installation script.
+
+* dps: The project source directory, installed as a Python package.
+
+* spec: The project specification directory.  Contains PEPs (Python
+  Enhancement Proposals) and XML DTDs (document type definitions)
+
+
+Installation
+============
+
+The first step is to expand the .tar.gz archive.  It contains a
+distutils setup file "setup.py".  OS-specific installation
+instructions follow.
+
+Linux, Unix, MacOS X
+--------------------
+
+1. Open a shell.
+
+2. Go to the directory created by expanding the archive::
+
+       cd <archive_directory_path>
+
+3. Install the package::
+
+       python setup.py install
+
+   If the python executable isn't on your path, you'll have to specify
+   the complete path, such as /usr/local/bin/python.  You may need
+   root permissions to complete this step.
+
+You can also just run install.py; it does the same thing.
+
+Windows
+-------
+
+1. Open a DOS box (Command Shell, MSDOS Prompt, or whatever they're
+   calling it these days).
+
+2. Go to the directory created by expanding the archive::
+
+       cd <archive_directory_path>
+
+3. Install the package::
+
+       <path_to_python.exe>\python setup.py install
+
+If your system is set up to run Python when you double-click on .py
+files, you can run install.py to do the same as the above.
+
+MacOS
+-----
+
+1. Open the folder containing the expanded archive.
+
+2. Double-click on the file "setup.py", which should be a "Python
+   module" file.
+
+   If the file isn't a "Python module", the line endings are probably
+   also wrong, and you will need to set up your system to recognize
+   ".py" file extensions as Python files.  See
+   http://gotools.sourceforge.net/mac/python.html for detailed
+   instructions.  Once set up, it's easiest to start over by expanding
+   the archive again.
+
+3. The distutils options window will appear.  From the "Command" popup
+   list choose "install", click "Add", then click "OK".
+
+If install.py is a "Python module" (see step 2 above if it isn't), you
+can run it instead of the above.  The distutils options window will
+not appear.
+
+
+Usage
+=====
+
+The package modules are mostly in their infancy, continually growing
+and evolving.  The module evolution is being driven by the
+reStructuredText parser project; see
+http://structuredtext.sourceforge.net.  The dps.statemachine module is
+usable independently.  It contains extensive inline documentation (in
+reStructuredText format).
+
+The specs, the package structure, and the skeleton modules may also be
+of interest to you.  Contributions are welcome!
+
+
+..
+   Local Variables:
+   mode: indented-text
+   indent-tabs-mode: nil
+   sentence-end-double-space: t
+   fill-column: 70
+   End:
+@
+
+
+1.5
+log
+@fixed whitespace & updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/04/14 19:40:54 $
+d11 3
+a13 4
+project arhive.  As this is a work in progress, please check the
+project web site for updated working files.  The latest release
+archive is available at
+http://sourceforge.net/project/showfiles.php?group_id=26626.
+d16 5
+a20 1
+can get Python from http://www.python.org/.
+@
+
+
+1.4
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/08/23 03:53:45 $
+d11 3
+a13 3
+project arhive. As this is a work in progress, please check the
+project web site for updated working files. The latest release archive
+is available at
+d16 1
+a16 1
+To run the code, Python 2.0 or later must already be installed. You
+d28 1
+a28 1
+* setup.py: Installation script. See "Installation" below.
+d34 1
+a34 1
+* spec: The project specification directory. Contains PEPs (Python
+d41 3
+a43 3
+The first step is to expand the .tar.gz archive. It contains a
+distutils setup file "setup.py". OS-specific installation instructions
+follow.
+d59 2
+a60 2
+   the complete path, such as /usr/local/bin/python. You may need root
+   permissions to complete this step.
+d91 1
+a91 1
+   ".py" file extensions as Python files. See
+d93 1
+a93 1
+   instructions. Once set up, it's easiest to start over by expanding
+d96 1
+a96 1
+3. The distutils options window will appear. From the "Command" popup
+d100 1
+a100 1
+can run it instead of the above. The distutils options window will
+d108 1
+a108 1
+and evolving. The module evolution is being driven by the
+d110 2
+a111 2
+http://structuredtext.sourceforge.net. The dps.statemachine module is
+usable independently. It contains extensive inline documentation (in
+d115 1
+a115 1
+of interest to you. Contributions are welcome!
+d118 7
+a124 5
+Local Variables:
+mode: indented-text
+indent-tabs-mode: nil
+fill-column: 70
+End:
+@
+
+
+1.3
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/07/29 15:55:58 $
+d100 1
+a100 1
+can run it instead of the above. The distutils options windown will
+@
+
+
+1.2
+log
+@brought up to date
+@
+text
+@d5 4
+a8 4
+Author: David Goodger
+Contact: dgoodger@@bigfoot.com
+Date: $Date: 2001/07/22 22:36:35 $
+Web-site: http://docstring.sourceforge.net/
+d13 2
+a14 1
+is available at http://sf.net/project/showfiles.php?group_id=26626.
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d7 1
+a7 2
+Version: 0.3
+Date: $Date: 2001/07/20 00:22:11 $
+d19 2
+a20 2
+Archive Contents
+================
+d29 4
+a35 2
+* dps: The project source directory, installed as a Python package.
+
+d40 1
+a40 1
+The first step is to expand the dps.0.3.tar.gz archive. It contains a
+d61 2
+d77 3
+d91 3
+a93 3
+   http://gotools.sf.net/mac/python.html for detailed instructions.
+   Once set up, it's easiest to start over by expanding the archive
+   again.
+d98 4
+d108 4
+a111 3
+reStructuredText parser project; see http://structuredtext.sf.net. The
+dps.statemachine module is usable independently. It contains extensive
+inline documentation (in reStructuredText format).
+@
+
+
+1.1.1.1
+log
+@First Imported.
+@
+text
+@@

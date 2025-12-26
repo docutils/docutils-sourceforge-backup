@@ -1,0 +1,66 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2001.10.18.04.06.46;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Alan Jaffray's style sheet
+@
+text
+@<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="rst.xsl"?>
+<document><section name="readme: restructuredtext"><title>README: reStructuredText</title><field_list><field><field_name>Author</field_name><field_body><paragraph>David Goodger</paragraph></field_body></field><field><field_name>Contact</field_name><field_body><paragraph><link refuri="mailto:goodger@@users.sourceforge.net">goodger@@users.sourceforge.net</link></paragraph></field_body></field><field><field_name>Date</field_name><field_body><paragraph>$Date: 2001/08/25 01:54:52 $</paragraph></field_body></field><field><field_name>Web-site</field_name><field_body><paragraph><link refuri="http://structuredtext.sourceforge.net/">http://structuredtext.sourceforge.net/</link></paragraph></field_body></field></field_list><paragraph>This is <emphasis>emphasis</emphasis>. This is <strong>strong</strong>.</paragraph><paragraph>This is an <literal>inline literal</literal>.</paragraph><paragraph>Internal crossreferences, like <link refname="example">example</link>.</paragraph><paragraph>Footnote references, like <footnote_reference refname="5">5</footnote_reference> and
+<footnote_reference refname="rm98">RM98</footnote_reference>. Note that footnotes may get
+rearranged, e.g., to the bottom of
+the &quot;page&quot;.</paragraph><footnote name="5"><label>5</label><paragraph>A numerical footnote. Note
+there's no colon after the <literal>]</literal>.</paragraph></footnote><footnote name="rm98"><label>RM98</label><paragraph>And a reference
+(as often used in journals).</paragraph></footnote><paragraph>dfjgfg</paragraph><system_warning level="2"><paragraph>Unknown directive type &quot;graphic&quot; at line 29.
+Rendering the directive as a literal block.</paragraph></system_warning><literal_block>.. graphic:: images/ball1.gif</literal_block><paragraph>Wiblbelhj</paragraph><paragraph>Table time</paragraph><table><tgroup cols="3"><colspec colwidth="12"/><colspec colwidth="12"/><colspec colwidth="11"/><thead><row><entry><paragraph>Header 1</paragraph></entry><entry><paragraph>Header 2</paragraph></entry><entry><paragraph>Header 3</paragraph></entry></row></thead><tbody><row><entry><paragraph>body row 1</paragraph></entry><entry><paragraph>column 2</paragraph></entry><entry><paragraph>column 3</paragraph></entry></row><row><entry><paragraph>body row 2</paragraph></entry><entry morecols="1"><paragraph>Cells may span columns.</paragraph></entry></row><row><entry><paragraph>body row 3</paragraph></entry><entry morerows="1"><paragraph>Cells may
+span rows.</paragraph></entry><entry morerows="1"><bullet_list bullet="-"><list_item><paragraph>Cells</paragraph></list_item><list_item><paragraph>contain</paragraph></list_item><list_item><paragraph>blocks.</paragraph></list_item></bullet_list></entry></row><row><entry><paragraph>body row 4</paragraph></entry></row></tbody></tgroup></table><paragraph>hdjfghf</paragraph><target name="example"/><paragraph>This is an example crossreference target.</paragraph><paragraph>Why not look at <link refname="project files &amp; directories">Project Files &amp; Directories</link>?</paragraph><paragraph>Block quotes are just:</paragraph><block_quote><paragraph>Indented paragraphs,</paragraph><block_quote><paragraph>and they may nest.</paragraph></block_quote></block_quote><paragraph>Here's a definition list:</paragraph><definition_list><definition_list_item><term>what</term><definition><paragraph>Definition lists associate a term with
+a definition.</paragraph></definition></definition_list_item><definition_list_item><term>how</term><definition><paragraph>The term is a one-line phrase, and the
+definition is one or more paragraphs or
+body elements, indented relative to the
+term. Blank lines are not allowed
+between term and definition.</paragraph></definition></definition_list_item></definition_list><paragraph>Thank you for downloading the reStructuredText project archive. As
+this is a work in progress, please check the project web site for
+updated working files. The latest release archive is available at
+<link refuri="http://sourceforge.net/project/showfiles.php?group_id=7050">http://sourceforge.net/project/showfiles.php?group_id=7050</link>.</paragraph><paragraph>reStructuredText is an input parser component of the <link refname="python docstring processing system">Python Docstring
+Processing System</link>, and is installed as
+&quot;dps.parsers.restructuredtext&quot;.</paragraph><paragraph>To run the code, Python 2.0 or later must already be installed. You
+can get Python from <link refuri="http://www.python.org/">http://www.python.org/</link>. You will also need the
+latest DPS package, available from <link refuri="http://docstring.sourceforge.net/">http://docstring.sourceforge.net/</link>.</paragraph><target name="python docstring processing system">http://docstring.sourceforge.net/</target><section name="project files &amp; directories"><title>Project Files &amp; Directories</title><bullet_list bullet="*"><list_item><paragraph>README.txt: You're reading it.</paragraph></list_item><list_item><paragraph>HISTORY.txt: Release notes for the current and previous project
+releases.</paragraph></list_item><list_item><paragraph>setup.py: Installation script. See &quot;Installation&quot; below.</paragraph></list_item><list_item><paragraph>install.py: Quick &amp; dirty installation script.</paragraph></list_item><list_item><paragraph>restructuredtext: The project source directory, installed as Python
+package <literal>dps.parsers.restructuredtext</literal>.</paragraph></list_item><list_item><paragraph>test: The unit test directory (currently experimental). Not required
+to use the software, but very useful if you're planning to modify
+it.</paragraph></list_item><list_item><paragraph>tools: Directory for standalone scripts that use reStructuredText.</paragraph><bullet_list bullet="-"><list_item><paragraph>quicktest.py: Input reStructuredText, output pretty-printed
+pseudo-XML.</paragraph></list_item></bullet_list></list_item><list_item><paragraph>spec: The project specification directory. Contains the markup
+syntax spec and implementation notes.</paragraph></list_item><list_item><paragraph>docs: The project documentation directory.</paragraph></list_item></bullet_list></section><section name="installation"><title>Installation</title><paragraph>The first step is to expand the .tar.gz archive. It contains a
+distutils setup file &quot;setup.py&quot;. OS-specific installation instructions
+follow.</paragraph><section name="linux, unix, macos x"><title>Linux, Unix, MacOS X</title><enumerated_list enumtype="arabic" prefix="" start="1" suffix="."><list_item><paragraph>Open a shell.</paragraph></list_item><list_item><paragraph>Go to the directory created by expanding the archive:</paragraph><literal_block>cd &lt;archive_directory_path&gt;</literal_block></list_item><list_item><paragraph>Install the package:</paragraph><literal_block>python setup.py install</literal_block><paragraph>If the python executable isn't on your path, you'll have to specify
+the complete path, such as /usr/local/bin/python. You may need root
+permissions to complete this step.</paragraph></list_item></enumerated_list><paragraph>You can also just run install.py; it does the same thing.</paragraph></section><section name="windows"><title>Windows</title><enumerated_list enumtype="arabic" prefix="" start="1" suffix="."><list_item><paragraph>Open a DOS box (Command Shell, MSDOS Prompt, or whatever they're
+calling it these days).</paragraph></list_item><list_item><paragraph>Go to the directory created by expanding the archive:</paragraph><literal_block>cd &lt;archive_directory_path&gt;</literal_block></list_item><list_item><paragraph>Install the package:</paragraph><literal_block>&lt;path_to_python.exe&gt;\python setup.py install</literal_block></list_item></enumerated_list><paragraph>If your system is set up to run Python when you double-click on .py
+files, you can run install.py to do the same as the above.</paragraph></section><section name="macos"><title>MacOS</title><enumerated_list enumtype="arabic" prefix="" start="1" suffix="."><list_item><paragraph>Open the folder containing the expanded archive.</paragraph></list_item><list_item><paragraph>Double-click on the file &quot;setup.py&quot;, which should be a &quot;Python
+module&quot; file.</paragraph><paragraph>If the file isn't a &quot;Python module&quot;, the line endings are probably
+also wrong, and you will need to set up your system to recognize
+&quot;.py&quot; file extensions as Python files. See
+<link refuri="http://gotools.sourceforge.net/mac/python.html">http://gotools.sourceforge.net/mac/python.html</link> for detailed
+instructions. Once set up, it's easiest to start over by expanding
+the archive again.</paragraph></list_item><list_item><paragraph>The distutils options window will appear. From the &quot;Command&quot; popup
+list choose &quot;install&quot;, click &quot;Add&quot;, then click &quot;OK&quot;.</paragraph></list_item></enumerated_list><paragraph>If install.py is a &quot;Python module&quot; (see step 2 above if it isn't), you
+can run it instead of the above. The distutils options windown will
+not appear.</paragraph></section></section></section></document>
+@

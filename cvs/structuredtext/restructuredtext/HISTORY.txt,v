@@ -1,0 +1,1665 @@
+head	1.51;
+access;
+symbols
+	RELEASE:1.1.1.1
+	Rrefactor-test:1.1.1.1.0.4
+	rel-0-3:1.1.1.1.0.2
+	open:1.1.1;
+locks; strict;
+comment	@# @;
+
+
+1.51
+date	2002.04.20.16.23.41;	author goodger;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2002.04.19.01.49.04;	author goodger;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2002.04.18.02.48.48;	author goodger;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2002.04.14.19.40.19;	author goodger;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2002.03.16.05.45.11;	author goodger;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2002.03.16.05.42.39;	author goodger;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2002.03.13.02.38.23;	author goodger;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2002.03.12.03.34.14;	author goodger;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2002.03.07.03.49.01;	author goodger;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2002.02.22.02.14.54;	author goodger;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2002.02.15.23.00.24;	author goodger;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2002.02.07.01.55.41;	author goodger;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2002.02.06.02.33.58;	author goodger;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2002.01.30.05.03.53;	author goodger;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2002.01.28.02.14.58;	author goodger;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2002.01.25.23.48.31;	author goodger;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2002.01.16.06.19.32;	author goodger;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2001.11.22.04.28.43;	author goodger;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2001.11.19.04.34.52;	author goodger;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2001.11.13.03.16.31;	author goodger;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2001.11.06.00.56.29;	author goodger;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2001.11.01.04.12.28;	author goodger;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2001.10.31.05.53.32;	author goodger;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2001.10.30.05.06.16;	author goodger;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2001.10.27.05.28.38;	author goodger;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2001.10.23.03.42.19;	author goodger;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2001.10.20.02.55.49;	author goodger;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2001.10.18.04.09.12;	author goodger;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2001.09.26.03.45.26;	author goodger;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2001.09.21.03.54.19;	author goodger;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2001.09.18.21.28.32;	author goodger;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2001.09.18.04.46.20;	author goodger;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2001.09.17.04.35.35;	author goodger;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2001.09.13.22.34.54;	author goodger;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2001.09.13.03.43.30;	author goodger;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2001.09.12.04.12.54;	author goodger;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2001.09.10.04.52.37;	author goodger;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2001.09.07.01.58.32;	author goodger;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2001.09.05.02.53.04;	author goodger;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2001.09.01.17.13.57;	author goodger;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2001.09.01.15.54.35;	author goodger;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2001.08.28.03.29.05;	author goodger;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2001.08.25.02.22.42;	author goodger;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2001.08.23.04.20.02;	author goodger;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2001.08.22.03.59.21;	author goodger;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2001.08.17.02.33.09;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2001.08.16.02.43.51;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.08.14.03.55.22;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.08.11.02.14.02;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.07.29.15.54.59;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.07.21.22.14.04;	author goodger;	state Exp;
+branches
+	1.1.1.1;
+next	;
+
+1.1.1.1
+date	2001.07.21.22.14.04;	author goodger;	state Exp;
+branches
+	1.1.1.1.4.1;
+next	;
+
+1.1.1.1.4.1
+date	2001.07.25.08.09.21;	author gtk;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.51
+log
+@*** empty log message ***
+@
+text
+@==================================
+ reStructuredText Project History
+==================================
+
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Date: $Date: 2002/04/19 01:49:04 $
+:Web-site: http://structuredtext.sourceforge.net/
+
+
+Acknowledgements
+================
+
+I would like to acknowledge the people who have made a direct impact
+on the reStructuredText project, knowingly or not, in terms of
+encouragement, suggestions, criticism, bug reports, code
+contributions, and ideas borrowed from related projects:
+
+    David Ascher, Remi Bertholet, Fred Drake, Jim Fulton, Peter Funk,
+    Doug Hellmann, Juergen Hermann, Tony (Tibs) Ibbs, Alan Jaffray,
+    Richard Jones, Garth Kidd, Daniel Larsson, Marc-Andre Lemburg,
+    Wolfgang Lipp, Edward Loper, Ken Manheimer, Alex Martelli, Paul
+    Moore, Michel Pelletier, Sam Penrose, Tim Peters, Mark Pilgrim,
+    Tavis Rudd, Ueli Schlaepfer, Bob Tolbert, Laurence Tratt, Guido
+    van Rossum, Barry Warsaw, Edward Welbourne, Paul Wright, Ka-Ping
+    Yee, Moshe Zadka
+
+(I did get some yummy treats, but I'm still waiting for contributions
+of computer equipment and cold hard cash :-).)  Hopefully I haven't
+forgotten anyone or misspelled any names; apologies (and please let me
+know!) if I have.
+
+
+Release 0.4 (2002-04-18)
+========================
+
+This is the final release of reStructuredText as an independent
+package.  Development is being transferred to the Docutils_ project
+immediately.
+
+.. _Docutils: http://docutils.sourceforge.net/
+
+General: updated docstrings for new field list syntax (bibliographic
+info); changed contact email addresses.
+
+* install.py: Added to project.
+
+* setup.py:
+
+  - Modified for import by install.py.
+  - Added 'restructuredtext.languages' subpackage.
+
+* COPYING.txt: Added to project.
+
+* docs: Subdirectory added. Contains quickref.html by Tony Ibbs and
+  quickstart.txt by Richard Jones.
+
+* restructuredtext/__init__.py:
+
+  - Added docstrings.
+  - Modified Parser.parse() for updated RSTStateMachine and
+    dps.parsers.Parser.
+  - Added form feed & vertical tab conversion to spaces.
+  - Added a ``Parser.statemachine`` instance attribute.
+  - Added parser language module support.
+  - Updated for new root document Node creation protocol.
+
+* restructuredtext/states.py:
+
+  - Added support for enumerated lists (Body.enumerated(),
+    EnumeratedList).
+  - Added new exceptions: ParserError, TransformationError.
+  - Loosened inline markup start-string & end-string patterns.
+  - Added docstrings.
+  - Changed RSTStateMachine.run() to return the document instance.
+  - Extracted checksubsection() and newsubsection() from
+    RSTState.section().
+  - Added RSTState.nestedparse().
+  - Fixed bugs with overline-section-header level parsing.
+  - Fixed URI pattern to match absolute paths & news (opaque); only
+    known URI schemes; IPv6 support.
+  - Removed dependency on trailing spaces.
+  - Extracted Body.block_quote() from Body.indent().
+  - Changed underlines/overlines to require at least 4 characters
+    (avoids '...', '???', etc.).
+  - Factored SpecializedBody out of Body subclasses.
+  - Factored SpecializedText out of Text subclass.
+  - Added support for field lists, option lists.
+  - Changed interpreted text roles to ':role:' syntax, outside of
+    backquotes.
+  - Simplified RSTState.inlineobj().
+  - Dropped leading '_' from footnotes.
+  - Dropped brackets from footnotes' implicit hyperlink names.
+  - Added check for whitespace in hyperlinks.
+  - Added empty comment support.
+  - Added support for auto-numbered footnotes, auto-symbol footnotes.
+  - Dropped requirement for blank line between definition list items.
+  - Added support for classifier after term in definition list items.
+  - Fixed bugs with literal blocks.
+  - Changed ``element.extend(nodelist)`` to ``element += nodelist``.
+  - Added full table support (Body.table() etc.).
+  - Split off NestedStateMachine (recursive) from RSTStateMachine
+    (entry point).
+  - Changed indentSM to nestedSM where appropriate.
+  - Added language module support.
+  - Changed numbered reporter.system_warning calls to named methods.
+  - Name changes (lowercased, updated, improved).
+  - Integer attributes on elements as appropriate.
+  - Added directive functionality.
+  - Mild refactoring: meaningful variable names, extracted common
+    code to methods.
+  - Removed debug code.
+  - Updated: 'errorist' -> 'reporter'.
+  - Added support for indirect hyperlink targets.
+  - Updated for renamed ``add*link`` -> ``add*target``.
+  - Added inline hyperlink targets.
+  - Added anonymous hyperlinks (``.. __:`` & ``__`` syntax).
+  - External targets' URIs now in "refuri" attribute, not data.
+  - Changed "[hyper]link" to "reference".
+  - Added substitution definitions & substitution references.
+  - Modified ``RSTState.inlineobj()`` to return end-string.
+  - Added support for multi-line label text for hyperlink targets &
+    substitution definitions.
+  - Moved 'normname()' to dps/utils.py.
+  - Updated for languagecode.
+  - Updated for hyperlink, footnote transforms.
+  - Updated for new root document Node creation protocol.
+  - Changed "system_warning" to "system_message".
+  - Removed gratuitous pseudo-default arguments from functions &
+    methods.
+  - Added literal blocks to system messages whenever the erroneous
+    source text was omitted.
+  - Wrapped problematic inline markup in "problematic" elements, added
+    links to & from system messages.
+  - Added ``Body.parse_extension_attributes()``.
+
+* restructuredtest/tableparser.py: Added to project.  Contains the
+  TableParser class.
+
+* restructuredtext/test_states.py: Refactored to test directory.  This
+  file removed.
+
+* restructuredtext/directives/__init__.py:
+
+  - Added directive registry.
+  - Added directive module & function import support.
+
+* restructuredtext/directives/misc.py: Implementation of a test
+  directive, 'restructuredtext-test-directive'.  Added to project.
+
+* restructuredtext/directives/admonitions.py: Implementation of
+  admonition directives 'note', 'caution', etc.  Added to project.
+
+* restructuredtext/directives/components.py: Implementation of
+  document components directives 'contents', 'footnotes', etc.  Added
+  to project.
+
+* restructuredtext/directives/images.py: Implementation of
+  directives 'image' & 'figure'.  Added to project.
+
+* restructuredtext/directives/html.py: Implementation of
+  HTML-specific directives 'meta' & 'imagemap'.  Added to project.
+
+* restructuredtext/languages: Subpackage added to project.  Contains
+  modules for language-dependent language-dependent parser features.
+  Includes en.py for English.
+
+* test: Subdirectory added.  The top-level consists of a modular test
+  framework begun by Garth Kidd.
+
+* test/test_states: Subdirectory added; contains test modules
+  refactored from the old restructuredtext/test_states.py.
+
+* tools: Subdirectory added.  Contains quicktest.py by Garth Kidd, a
+  front-end to the reStructuredText parser; publish.py, a minimal
+  front-end to the Docutils Publisher producing pretty-printed
+  pseudo-XML; and html.py, a simple HTML-producing front-end.
+
+* sandbox: Subdirectory added; for playing around.  It's OK to make
+  a mess!
+
+* sandbox/rtxt2html: Subdirectory added, from files by Remi Bertholet.
+
+* sandbox/paulw: Subdirectory added, from files by Paul Wright.
+
+* sandbox/alanj: Subdirectory added, from files by Alan Jaffray.
+
+* sandbox/richardj: Subdirectory added, from files by Richard Jones.
+
+* spec/alternatives.txt: Added to project.
+
+* spec/directives.txt: Added to project.
+
+* spec/introduction.txt:
+
+  - Python interpretation of interpreted text is a DPS job.
+  - Converted sf to sourceforge.
+  - Expanded markup purpose.
+  - Updated footnotes.
+  - Removed "Python-specific markup" from implementation plan.
+  - Expanded on the "Unobtrusive" goal.
+
+* spec/problems.txt:
+
+  - Added mention of GvR's backslash escape endorsement.
+  - Removed mention of compound enumerators.
+  - Updated footnotes.
+  - Removed "Parser Implementation Plan".  (It's implemented!)
+  - Revised.
+
+* spec/reStructuredText.txt:
+
+  - Modified inline markup prefix & suffix definitions.
+  - Added a note on inline markup & escapes.
+  - Added inline markup recognition order info.
+  - Moved interpreted text's role outside of backquotes.
+  - Changed interpreted text roles to ":role:" syntax.
+  - Settled on field list syntax, updated definition.
+  - Added 'abstract' to list of bibliographic elements.
+  - Removed 'title' and 'subtitle' from the list of bibliographic
+    elements.
+  - Expanded bibliographic field list handling description.
+  - Updated comments, indent/dedent.
+  - Added definition of empty comments.
+  - Loosened enumerated list requirements; clarified Roman numerals &
+    alphabet letters; added syntax diagram.
+  - Removed requirement for blank lines between definition list
+    items.
+  - Added 'classifier' to definition list items.
+  - Added auto-numbered footnotes.
+  - Removed leading underscores from footnote definition; added
+    implicit hyperlink generation.
+  - Updated & expanded definition of directives; added link to new
+    directives.txt.
+  - Added option lists & doctest blocks from pyextensions.txt.
+  - Added VMS/DOS-style options to option lists.
+  - Converted sf->sourceforge.
+  - Expanded definition of whitespace.
+  - Added Reference Names section.
+  - Moved Standalone Hyperlinks section.
+  - Expanded definition of standalone URIs.
+  - Clarified definition of underlines/overlines.
+  - Clarified handling of duplicate explicit hyperlink target names
+    with identical URIs.
+  - Added two escapes where needed.
+  - Added a note about backslashes in other contexts.
+  - Reworked literal block section in a more logical and
+    easy-to-remember way.
+  - Converted footnotes in text to auto-numbered.
+  - Standardized on double-quotes (").
+  - Changed "indirect hyperlinks" to "external hyperlinks".
+  - Added new "indrect hyperlinks".
+  - Added "anonymous hyperlinks".
+  - Rearranged hyperlink description.
+  - Added "Document Structure" section.
+  - Added "division" construct.
+  - Removed element hierarchy diagram to dps/spec/doctree.txt.
+  - Added inline hyperlink targets.
+  - Changed "hyperlink names" to "reference names", "link" to
+    "reference".
+  - Added substitution definitions, substitution references (use cases
+    contributed by Alan Jaffray).
+  - Added to table description.
+  - Added note about hyperlink/footnote/citation reference name
+    shared namespace.
+  - Added "Auto-Symbol Footnotes", "Mixed Manual and Auto-Numbered
+    Footnotes", and "Citations".
+
+* spec/pyextensions.txt:
+
+  - Removed from project (became DPS spec/python-mode.txt).
+
+
+Release 0.3 (2001-07-19)
+========================
+
+Removed all explicit hyperlink targets matching section titles in spec
+documents; they are now declared implicitly (see
+spec/reStructuredText.txt).
+
+* restructuredtext/states.py: Added to project.
+
+* restructuredtext/test_states.py: Added to project.
+
+* restructuredtext/ndiff.py: Added to project.  This is a modified
+  version of Python's Tools/scripts/ndiff.py, and is used by
+  test_states.py.  I have committed to adding its functionality to
+  Python's Lib/difflib.py.
+
+* spec/reStructuredText.txt:
+
+  - Introduced implicit hyperlink targets for section titles.
+  - Changed 'comment block' to 'explicit markup block'.  Rearranged &
+    edited the text of footnotes, hyperlink targets, directives, &
+    comments.
+  - Clarified the syntax of interpreted text roles.
+  - Clarified the case-insensitivity and character set of hyperlink
+    names, footnote labels, and directives.
+  - Changed the definition for simple link names and footnote labels
+    (underlines and dashes allowed internally only, not at begin/end).
+  - Added 'Error Handling' section.
+
+
+Release 0.2 (2001-06-18)
+========================
+
+* spec/introduction.txt: Minor changes.
+
+* spec/reStructuredText.txt:
+
+  - Added workable indented section syntax, then removed it.  See
+    spec/indentedsections.txt (included in this release only).
+  - Added details of whitespace preservation in inline literals.
+
+* spec/problems.txt:
+
+  - Revised analysis of indented sections.
+
+* HISTORY.txt: Added to project.
+
+
+Release 0.1 (2001-06-02)
+========================
+
+The project web site and the first project release were rolled out.
+Posted all but dps-notes.txt to the Doc-SIG 2001-06-03.
+
+* spec/introduction.txt:
+
+  - Title changed from "A Plan for Structured Text".
+  - Expanded and revised the "Goals" section.
+  - Brought the "History" section up to date.
+  - Added the "Parser Implementation Plan" section.
+  - Added internal cross-references (in anticipation of the far-off
+    day when we can actually *process* these files :-).
+
+* spec/reStructuredText.txt:
+
+  - Title changed from "reStructuredText: Revised Structured Text
+    Specification".
+  - Added "Quick Syntax Overview".
+  - Moved syntax diagrams from their own section to be adjacent to
+    their construct.
+  - Tightened up syntax specifications.
+  - Changed "descriptive lists" to "definition lists", changed syntax.
+  - Added field lists.  Syntax not settled yet.
+  - Added header row separator ('=') to tables.
+  - Allowed comment blocks (comments, directives, hyperlink targets,
+    footnotes) to occur in nested blocks.
+  - Changed phrase-link delimiters from square brackets to backquotes.
+  - Added a set of inline markup delimiter recognition rules.
+  - Added interpreted text using backquotes ('`').
+  - Changed inline literals to use double-backquotes ('``').
+  - Added internal cross-references (to the doc, not the spec).
+  - General reorganization, editing, & cleanup.
+
+* spec/pyextensions.txt: Added to project (option lists, doctest
+  blocks, and interpreted text interpretations).
+
+* spec/problems.txt:
+
+  - Added sections: "Blank Lines in Lists", "Definition List Markup",
+    "Underlining".
+  - General editing & cleanup.  Tightened up analyses, added
+    alternatives.
+
+* spec/rst-notes.txt: Added to project.
+
+
+First Draft of Specification (2000-11-24)
+=========================================
+
+First posted to the Python Documentation Special Interests Group
+(Doc-SIG) in three parts:
+
+* A Plan for Structured Text
+  http://mail.python.org/pipermail/doc-sig/2000-November/001239.html
+
+* Problems With StructuredText
+  http://mail.python.org/pipermail/doc-sig/2000-November/001240.html
+
+* reStructuredText: Revised Structured Text Specification
+  http://mail.python.org/pipermail/doc-sig/2000-November/001241.html
+
+
+..
+   Local Variables:
+   mode: indented-text
+   indent-tabs-mode: nil
+   sentence-end-double-space: t
+   fill-column: 70
+   End:
+@
+
+
+1.50
+log
+@updated
+@
+text
+@d7 2
+a8 2
+:Date: $Date: 2002/04/18 02:48:48 $
+:Website: http://structuredtext.sourceforge.net/
+@
+
+
+1.49
+log
+@fixed whitespace & updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/04/14 19:40:19 $
+d34 1
+a34 1
+Release 0.4 (2002-04-??)
+d37 6
+d52 2
+@
+
+
+1.48
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/03/16 05:45:11 $
+d28 4
+a31 4
+(I'm still waiting for contributions of yummy treats, computer
+equipment, and cold hard cash. :-) Hopefully I haven't forgotten
+anyone or misspelled any names; apologies (and please let me know!) if
+I have.
+d34 1
+a34 1
+Release 0.4? (pending)
+d37 2
+a38 2
+Updated docstrings for new field list syntax (bibliographic info).
+Changed contact email addresses.
+d129 1
+a129 1
+* restructuredtest/tableparser.py: Added to project. Contains the
+d132 1
+a132 1
+* restructuredtext/test_states.py: Refactored to test directory. This
+d140 2
+a141 2
+* restructuredtext/directives/misc.py: Implementation of a
+  test directive, 'restructuredtext-test-directive'. Added to project.
+d144 1
+a144 1
+  admonition directives 'note', 'caution', etc. Added to project.
+d147 1
+a147 1
+  document components directives 'contents', 'footnotes', etc. Added
+d151 1
+a151 1
+  directives 'image' & 'figure'. Added to project.
+d154 1
+a154 1
+  HTML-specific directives 'meta' & 'imagemap'. Added to project.
+d156 1
+a156 1
+* restructuredtext/languages: Subpackage added to project. Contains
+d160 1
+a160 1
+* test: Subdirectory added. The top-level consists of a modular test
+d164 1
+a164 1
+  refactored from restructuredtext/test_states.py:
+d166 4
+a169 23
+  - Added unit tests from Garth Kidd.
+  - Changed to match state.RSTStateMachine.run()'s return value.
+  - Added explanatory text to several tests (makes them
+    self-documenting: "what am I testing?").
+  - Added tests for overline-titles, duplicate link targets.
+  - Moved some tests around to where they make more sense.
+  - Added enumerated list tests.
+  - Clarified some edge-case tests.
+  - Added tests for field lists, option lists.
+  - Added tests for tables.
+  - Added tests for table parser.
+  - New tests for literal_block edge cases.
+  - Added tests for empty list items.
+  - New test for comment edge case.
+  - Added 'term : classifier' tests.
+  - Added auto-numbered footnote tests.
+  - Updated 'test directive' tests.
+  - Added 'unknown directive' tests.
+  - Added tests for admonitions and image/figure directives.
+
+* tools: Subdirectory added. Contains quicktest.py by Garth Kidd, a
+  a front-end to the reStructuredText parser; and publish.py, a
+  minimal front-end to the Docutils Publisher.
+d171 1
+a171 1
+* sandbox: Subdirectory added; for playing around. It's OK to make
+d180 2
+d200 1
+a200 1
+  - Removed "Parser Implementation Plan". (It's implemented!)
+d277 1
+a277 1
+* restructuredtext/ndiff.py: Added to project. This is a modified
+d279 1
+a279 1
+  test_states.py. I have committed to adding its functionality to
+d285 1
+a285 1
+  - Changed 'comment block' to 'explicit markup block'. Rearranged &
+d303 1
+a303 1
+  - Added workable indented section syntax, then removed it. See
+d338 1
+a338 1
+  - Added field lists. Syntax not settled yet.
+d356 1
+a356 1
+  - General editing & cleanup. Tightened up analyses, added
+d378 7
+a384 5
+.. Local Variables:
+.. mode: indented-text
+.. indent-tabs-mode: nil
+.. fill-column: 70
+.. End:
+@
+
+
+1.47
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/03/16 05:42:39 $
+d47 2
+a48 1
+* docs: Subdirectory added. Contains quickref.html by Tony Ibbs.
+@
+
+
+1.46
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/03/13 02:38:23 $
+d144 4
+@
+
+
+1.45
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/03/12 03:34:14 $
+d126 1
+d212 2
+@
+
+
+1.44
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/03/07 03:49:01 $
+d265 4
+a268 2
+  - Added citations & citation references.
+  - Reworked footnotes, adding a symbolic form.
+@
+
+
+1.43
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/02/22 02:14:54 $
+d120 6
+@
+
+
+1.42
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/02/15 23:00:24 $
+d87 1
+a87 1
+  - Added support for auto-numbered footnotes.
+d132 1
+a132 1
+* restructuredtext/directives/directivetest.py: Implementation of a
+d141 3
+d244 1
+a244 1
+  - Converted footnotes to auto-numbered.
+d259 2
+@
+
+
+1.41
+log
+@  - Changed "system_warning" to "system_message".
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/02/07 01:55:41 $
+d21 6
+a26 5
+    Garth Kidd, Daniel Larsson, Marc-Andre Lemburg, Wolfgang Lipp,
+    Edward Loper, Ken Manheimer, Alex Martelli, Paul Moore, Michel
+    Pelletier, Sam Penrose, Tim Peters, Mark Pilgrim, Tavis Rudd, Ueli
+    Schlaepfer, Bob Tolbert, Laurence Tratt, Guido van Rossum, Barry
+    Warsaw, Edward Welbourne, Paul Wright, Ka-Ping Yee, Moshe Zadka
+@
+
+
+1.40
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/02/06 02:33:58 $
+d118 1
+@
+
+
+1.39
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/01/30 05:03:53 $
+d169 3
+a171 1
+* tools: Subdirectory added; contains quicktest.py by Garth Kidd.
+@
+
+
+1.38
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/01/28 02:14:58 $
+d89 1
+a89 1
+  - Fixed a bug with literal blocks.
+d106 1
+a106 1
+  - Added inline literal targets.
+@
+
+
+1.37
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/01/25 23:48:31 $
+d52 1
+a52 1
+    dps.parsers.model.
+d56 1
+d117 1
+@
+
+
+1.36
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/01/16 06:19:32 $
+d115 1
+a115 1
+  - Updated for hyperlink transforms.
+@
+
+
+1.35
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/11/22 04:28:43 $
+d115 1
+@
+
+
+1.34
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/11/19 04:34:52 $
+d113 2
+@
+
+
+1.33
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/11/13 03:16:31 $
+d111 2
+@
+
+
+1.32
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/11/06 00:56:29 $
+d109 2
+d220 1
+a220 1
+  - Added Hyperlink Names section.
+d240 5
+a244 2
+  - Changed "hyperlink names" to "reference names".
+  - Added substitutions, substitution references.
+@
+
+
+1.31
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/11/01 04:12:28 $
+d193 2
+a213 1
+  - Added a note on inline markup & escapes.
+@
+
+
+1.30
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/10/31 05:53:32 $
+d238 1
+@
+
+
+1.29
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/10/30 05:06:16 $
+d70 1
+a70 1
+    known URI schemes.
+@
+
+
+1.28
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/10/27 05:28:38 $
+d108 1
+d237 1
+@
+
+
+1.27
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/10/23 03:42:19 $
+a102 1
+  - Added anonymous hyperlink support.
+a103 1
+  - Adding transitions.
+d105 3
+@
+
+
+1.26
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/10/20 02:55:49 $
+d69 2
+a70 1
+  - Fixed URI pattern to match absolute paths & news (opaque).
+d105 1
+a105 1
+  - Adding divisions.
+d234 1
+@
+
+
+1.25
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/10/18 04:09:12 $
+d102 2
+a103 1
+  - Adding anonymous hyperlinks.
+d105 1
+@
+
+
+1.24
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/09/26 03:45:26 $
+d103 1
+d230 1
+@
+
+
+1.23
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/09/21 03:54:19 $
+d20 6
+a25 6
+    Doug Hellmann, Juergen Hermann, Tony Ibbs, Garth Kidd, Daniel
+    Larsson, Marc-Andre Lemburg, Wolfgang Lipp, Edward Loper, Ken
+    Manheimer, Alex Martelli, Paul Moore, Michel Pelletier, Sam
+    Penrose, Tim Peters, Mark Pilgrim, Tavis Rudd, Bob Tolbert,
+    Laurence Tratt, Guido van Rossum, Barry Warsaw, Edward Welbourne,
+    Ka-Ping Yee, Moshe Zadka
+d102 1
+d161 4
+a221 1
+  - Added section explaining the top-level document element.
+d223 6
+a228 3
+  - Added section on 'Post-Parse Transformations'
+  - Moved explanation of bibliographic field lists to transformations
+    section.
+@
+
+
+1.22
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/09/18 21:28:32 $
+a93 2
+  - Added 1-section -> document promotion transformation.
+  - Added bibliographic field list transformations.
+a101 1
+  - Added RCS keyword filtering to bibliographic field lists.
+d186 2
+d217 5
+@
+
+
+1.21
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/09/18 04:46:20 $
+d157 5
+@
+
+
+1.20
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/09/17 04:35:35 $
+d104 1
+a104 2
+  - Added RCS keyword handling to bibliographic field lists; almost
+    done.
+@
+
+
+1.19
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/09/13 22:34:54 $
+d104 2
+d185 1
+d213 1
+@
+
+
+1.18
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/09/13 03:43:30 $
+d96 1
+a96 1
+  - Changed numbered errorist.system_warning calls to named methods.
+d103 1
+@
+
+
+1.17
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/09/12 04:12:54 $
+d100 3
+@
+
+
+1.16
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/09/10 04:52:37 $
+d89 1
+a89 1
+  - Added full table support (class TableParser & Body.table() etc.).
+d92 1
+d101 3
+d155 2
+d189 2
+a190 1
+  - Updated directives.
+@
+
+
+1.15
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/09/07 01:58:32 $
+d22 4
+a25 4
+    Manheimer, Alex Martelli, Michel Pelletier, Sam Penrose, Tim
+    Peters, Mark Pilgrim, Tavis Rudd, Bob Tolbert, Laurence Tratt,
+    Guido van Rossum, Barry Warsaw, Edward Welbourne, Ka-Ping Yee,
+    Moshe Zadka
+d41 4
+a44 1
+* setup.py: Modified for import by install.py.
+d67 1
+d98 1
+a98 1
+  - Beginnings of directive functionality.
+d111 6
+d143 3
+@
+
+
+1.14
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/09/05 02:53:04 $
+d52 1
+a52 1
+  - Language module support.
+d92 3
+d98 12
+@
+
+
+1.13
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/09/01 17:13:57 $
+d19 7
+a25 6
+    David Ascher, Fred Drake, Jim Fulton, Peter Funk, Doug Hellmann,
+    Juergen Hermann, Tony Ibbs, Garth Kidd, Daniel Larsson, Marc-Andre
+    Lemburg, Wolfgang Lipp, Edward Loper, Ken Manheimer, Alex
+    Martelli, Michel Pelletier, Sam Penrose, Tim Peters, Mark Pilgrim,
+    Tavis Rudd, Bob Tolbert, Laurence Tratt, Guido van Rossum, Barry
+    Warsaw, Edward Welbourne, Ka-Ping Yee, Moshe Zadka
+d51 2
+a52 1
+  - Added a shared ``Parser.statemachine`` class attribute.
+d58 1
+a58 1
+  - Added new exception: ParserError.
+d86 6
+@
+
+
+1.12
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/08/28 03:29:05 $
+a70 1
+  - Added temporary support for tables.
+d83 1
+a83 1
+  - Began work on table support (class TableParser).
+d103 1
+a103 1
+  - Added temporary tests for tables.
+@
+
+
+1.11
+log
+@updated
+@
+text
+@d50 1
+a50 1
+  - Added a shared ``Parser.statemachine`` class attribute. 
+d86 8
+a93 1
+* restructuredtext/test_states.py:
+a96 1
+  - Added a bit more explanation to DataTests.totest etc.
+d104 2
+a105 1
+  - Added temporary test for tables.
+a111 5
+* restructuredtext/difflib.py: Added to project. Modified version of
+  standard library module, contributed back to Python.
+
+* test: Subdirectory added by Garth Kidd for unit test refactoring.
+
+d182 1
+a182 1
+  version of Python's Tools/scripts/ndiff.py, and is used by 
+@
+
+
+1.10
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/08/25 02:22:42 $
+d50 1
+d84 1
+@
+
+
+1.9
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/08/23 04:20:02 $
+d78 1
+a78 1
+  - Began adding auto-numbered footnote support.
+d80 1
+d98 4
+@
+
+
+1.8
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/08/22 03:59:21 $
+d49 1
+d81 1
+d135 1
+d153 2
+d273 5
+a277 5
+Local Variables:
+mode: indented-text
+indent-tabs-mode: nil
+fill-column: 70
+End:
+@
+
+
+1.7
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/08/16 02:43:51 $
+d67 1
+d79 1
+a79 2
+  - Fixed a bug with literal blocks (but the fix may have to be
+    fixed).
+d149 1
+@
+
+
+1.6
+log
+@updated
+@
+text
+@d5 4
+a8 4
+Author: David Goodger
+Contact: dgoodger@@bigfoot.com
+Date: $Date: 2001/08/16 02:43:51 $
+Website: http://structuredtext.sf.net/
+d35 3
+a55 1
+  - Added warnings for bad hyperlink targets.
+d69 11
+a79 1
+  - Updated docstrings for new field list syntax.
+d94 1
+d112 1
+d124 1
+d128 1
+d139 1
+d148 5
+@
+
+
+1.5
+log
+@updated
+@
+text
+@d7 1
+a7 1
+Date: $Date: 2001/08/14 03:55:22 $
+d39 2
+d97 2
+d104 1
+d109 3
+a111 1
+  - Settled on field list syntax.
+d115 8
+d127 1
+d129 2
+a130 1
+  - Expanded definition of standalone URIs.
+@
+
+
+1.4
+log
+@updated
+@
+text
+@d7 1
+a7 1
+Date: $Date: 2001/08/11 02:14:02 $
+d88 2
+d104 4
+a107 2
+  - Updated field lists, comments, indent/dedent.
+  - Loosened enumerated list requirements
+a109 1
+  - Added enumerated lists syntax diagram.
+@
+
+
+1.3
+log
+@updated
+@
+text
+@d7 1
+a7 1
+Date: $Date: 2001/07/29 15:54:59 $
+d62 4
+d78 2
+@
+
+
+1.2
+log
+@brought up to date
+@
+text
+@d7 1
+a7 1
+Date: $Date: 2001/07/21 22:14:04 $
+d11 21
+d39 6
+d47 3
+d52 10
+d66 13
+d80 25
+a104 5
+* restructuredtext/difflib.py: Added to project, replaces ndiff.py
+  (now removed). Contributed back to Python.
+  
+* restructuredtest/test: Subdirectory added by Garth Kidd for unit
+  test refactoring.
+a216 21
+
+
+Acknowledgements
+================
+
+I would like to acknowledge the people who have made a direct impact
+on the reStructuredText project, knowingly or not, in terms of
+encouragement, suggestions, criticism, bug reports, code
+contributions, and ideas borrowed from related projects:
+
+    David Ascher, Fred Drake, Jim Fulton, Peter Funk, Doug Hellmann,
+    Juergen Hermann, Tony Ibbs, Garth Kidd, Daniel Larsson, Marc-Andre
+    Lemburg, Wolfgang Lipp, Edward Loper, Ken Manheimer, Alex
+    Martelli, Michel Pelletier, Sam Penrose, Tim Peters, Tavis Rudd,
+    Bob Tolbert, Laurence Tratt, Guido van Rossum, Barry Warsaw,
+    Edward Welbourne, Ka-Ping Yee, Moshe Zadka
+
+(I'm still waiting for contributions of yummy treats, computer
+equipment, and cold hard cash. :-) Hopefully I haven't forgotten
+anyone or misspelled any names; apologies (and please let me know!) if
+I have.
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d7 1
+a7 1
+Date: $Date: 2001/07/20 01:09:48 $
+d11 23
+d155 5
+a159 5
+    Juergen Hermann, Tony Ibbs, Daniel Larsson, Marc-Andre Lemburg,
+    Wolfgang Lipp, Edward Loper, Ken Manheimer, Alex Martelli, Michel
+    Pelletier, Sam Penrose, Tim Peters, Tavis Rudd, Bob Tolbert,
+    Laurence Tratt, Guido van Rossum, Barry Warsaw, Edward Welbourne,
+    Ka-Ping Yee, Moshe Zadka
+@
+
+
+1.1.1.1
+log
+@initial checkin
+@
+text
+@@
+
+
+1.1.1.1.4.1
+log
+@Added some history notes for the Rrefactor-test branch.
+@
+text
+@d7 1
+a7 1
+Date: $Date: 2001/07/21 22:14:04 $
+a9 14
+Rrefactor-test
+==============
+
+The ``Rrefactor-test`` branch is being used by Garth to try out a major 
+re-structuring of the reStructuredText unit tests. Working on such an 
+update in ``MAIN`` or ``rel-0-3`` would be downright impolite, hence the 
+branch. 
+
+Changes made in ``Rrefactor-test`` will be merged into ``MAIN`` when, and 
+if, the following occur: 
+
+* Garth starts his work. 
+* Garth finishes his work. 
+* David is persuaded that Garth's changes are useful. 
+@
+

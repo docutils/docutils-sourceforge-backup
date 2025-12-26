@@ -1,0 +1,277 @@
+head	1.5;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.5
+date	2002.02.15.22.58.17;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2002.02.06.02.16.50;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.09.13.02.37.53;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.09.02.14.00.50;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.09.01.16.56.43;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.5
+log
+@  - Changed "system_warning" to "system_message".
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2002/02/06 02:16:50 $
+:Copyright: This module has been placed in the public domain.
+
+Tests for states.py.
+"""
+
+import RSTTestSupport
+
+def suite():
+    s = RSTTestSupport.ParserTestSuite()
+    s.generateTests(totest)
+    return s
+
+totest = {}
+
+totest['block_quotes'] = [
+["""\
+Line 1.
+Line 2.
+
+   Indented.
+""",
+"""\
+<document>
+    <paragraph>
+        Line 1.
+        Line 2.
+    <block_quote>
+        <paragraph>
+            Indented.
+"""],
+["""\
+Line 1.
+Line 2.
+
+   Indented 1.
+
+      Indented 2.
+""",
+"""\
+<document>
+    <paragraph>
+        Line 1.
+        Line 2.
+    <block_quote>
+        <paragraph>
+            Indented 1.
+        <block_quote>
+            <paragraph>
+                Indented 2.
+"""],
+["""\
+Line 1.
+Line 2.
+    Unexpectedly indented.
+""",
+"""\
+<document>
+    <paragraph>
+        Line 1.
+        Line 2.
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Unexpected indentation at line 3.
+    <block_quote>
+        <paragraph>
+            Unexpectedly indented.
+"""],
+["""\
+Line 1.
+Line 2.
+
+   Indented.
+no blank line
+""",
+"""\
+<document>
+    <paragraph>
+        Line 1.
+        Line 2.
+    <block_quote>
+        <paragraph>
+            Indented.
+    <system_message level="2" type="WARNING">
+        <paragraph>
+            Unindent without blank line at line 5.
+    <paragraph>
+        no blank line
+"""],
+["""\
+Here is a paragraph.
+
+        Indent 8 spaces.
+
+    Indent 4 spaces.
+
+Is this correct? Should it generate a warning?
+Yes, it is correct, no warning necessary.
+""",
+"""\
+<document>
+    <paragraph>
+        Here is a paragraph.
+    <block_quote>
+        <block_quote>
+            <paragraph>
+                Indent 8 spaces.
+        <paragraph>
+            Indent 4 spaces.
+    <paragraph>
+        Is this correct? Should it generate a warning?
+        Yes, it is correct, no warning necessary.
+"""],
+]
+
+if __name__ == '__main__':
+    import unittest
+    unittest.main(defaultTest='suite')
+@
+
+
+1.4
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2001/09/13 02:37:53 $
+d68 1
+a68 1
+    <system_warning level="3" type="ERROR">
+d90 1
+a90 1
+    <system_warning level="2" type="WARNING">
+@
+
+
+1.3
+log
+@Updated for simpler dps.nodes._Element.pformat().
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.2 $
+:Date: $Date: 2001/09/02 14:00:50 $
+d68 1
+a68 1
+    <system_warning level="2">
+d90 1
+a90 1
+    <system_warning level="1">
+@
+
+
+1.2
+log
+@Removed "id=__file__" from ParserTestSuite call (now auto-detected).
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.1 $
+:Date: $Date: 2001/09/01 16:56:43 $
+a33 1
+    </paragraph>
+a36 3
+        </paragraph>
+    </block_quote>
+</document>
+a50 1
+    </paragraph>
+a53 1
+        </paragraph>
+a56 4
+            </paragraph>
+        </block_quote>
+    </block_quote>
+</document>
+a67 1
+    </paragraph>
+a70 2
+        </paragraph>
+    </system_warning>
+a73 3
+        </paragraph>
+    </block_quote>
+</document>
+a86 1
+    </paragraph>
+a89 2
+        </paragraph>
+    </block_quote>
+a92 2
+        </paragraph>
+    </system_warning>
+a94 2
+    </paragraph>
+</document>
+a109 1
+    </paragraph>
+a113 2
+            </paragraph>
+        </block_quote>
+a115 2
+        </paragraph>
+    </block_quote>
+a118 2
+    </paragraph>
+</document>
+@
+
+
+1.1
+log
+@Refactored from the monolithic restructuredtext/test_states.py, using the Garth Kidd's framework. Thanks Garth!
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision$
+:Date: $Date$
+d16 1
+a16 1
+    s = RSTTestSupport.ParserTestSuite(id=__file__)
+@
+

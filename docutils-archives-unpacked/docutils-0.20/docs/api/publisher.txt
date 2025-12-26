@@ -1,0 +1,521 @@
+.. include:: ../header.txt
+
+========================
+ The Docutils Publisher
+========================
+
+:Author: David Goodger
+:Contact: docutils-develop@lists.sourceforge.net
+:Date: $Date: 2023-05-03 01:04:27 +0200 (Mi, 03. Mai 2023) $
+:Revision: $Revision: 9369 $
+:Copyright: This document has been placed in the public domain.
+
+.. contents::
+
+
+The ``docutils.core.Publisher`` class is the core of Docutils,
+managing all the processing and relationships between components.  See
+`PEP 258`_ for an overview of Docutils components.
+Configuration is done via `runtime settings`_ assembled from several sources.
+The *Publisher convenience functions* are the normal entry points for
+using Docutils as a library.
+
+.. _PEP 258: ../peps/pep-0258.html
+
+
+Publisher Convenience Functions
+===============================
+
+There are several convenience functions in the ``docutils.core`` module.
+Each of these functions sets up a `docutils.core.Publisher` object,
+then calls its ``publish()`` method.  ``docutils.core.Publisher.publish()``
+handles everything else.
+
+See the module docstring, ``help(docutils.core)``, and the function
+docstrings, e.g., ``help(docutils.core.publish_string)``, for details and
+a description of the function arguments.
+
+.. TODO: generate API documentation with Sphinx and add links to it.
+
+
+publish_cmdline()
+-----------------
+
+Function for command-line front-end tools, like ``rst2html.py`` or
+`"console_scripts" entry points`_ like `core.rst2html()` with file I/O.
+In addition to writing the output document to a file-like object, also
+returns it as `str` instance (rsp. `bytes` for binary output document
+formats).
+
+There are several examples in the ``tools/`` directory of the Docutils
+repository. A detailed analysis of one such tool is `Inside A Docutils
+Command-Line Front-End Tool`_.
+
+.. _"console_scripts" entry points:
+    https://packaging.python.org/en/latest/specifications/entry-points/
+.. _Inside A Docutils Command-Line Front-End Tool: ../howto/cmdline-tool.html
+
+
+publish_file()
+--------------
+
+For programmatic use with file I/O. In addition to writing the output
+document to a file-like object, also returns it as `str` instance
+(rsp. `bytes` for binary output document formats).
+
+
+publish_string()
+----------------
+
+For programmatic use with _`string I/O`:
+
+Input
+  can be a `str` or `bytes` instance.
+  `bytes` are decoded with input_encoding_.
+
+Output
+  * is a `bytes` instance, if output_encoding_ is set to an encoding
+    registered with Python's "codecs_" module (default: "utf-8"),
+  * a `str` instance, if output_encoding_ is set to the special value
+    ``"unicode"``.
+
+.. Caution::
+   The "output_encoding" and "output_encoding_error_handler" `runtime
+   settings`_ may affect the content of the output document:
+   Some document formats contain an *encoding declaration*,
+   some formats use substitutions for non-encodable characters.
+
+   Use `publish_parts()`_ to get a `str` instance of the output document
+   as well as the values of the output_encoding_ and
+   output_encoding_error_handler_ runtime settings.
+
+*This function is provisional* because in Python 3 the name and behaviour
+no longer match.
+
+.. _codecs: https://docs.python.org/3/library/codecs.html
+
+
+publish_doctree()
+-----------------
+
+Parse string input (cf. `string I/O`_) into a `Docutils document tree`_ data
+structure (doctree). The doctree can be modified, pickled & unpickled,
+etc., and then reprocessed with `publish_from_doctree()`_.
+
+
+publish_from_doctree()
+----------------------
+
+Render from an existing `document tree`_ data structure (doctree).
+Returns the output document as a memory object (cf. `string I/O`_).
+
+*This function is provisional* because in Python 3 the name and behaviour
+of the *string output* interface no longer match.
+
+
+publish_programmatically()
+--------------------------
+
+Auxilliary function used by `publish_file()`_, `publish_string()`_,
+`publish_doctree()`_, and `publish_parts()`_.
+Applications should not need to call this function directly.
+
+.. _publish-parts-details:
+
+publish_parts()
+---------------
+
+For programmatic use with string input (cf. `string I/O`_).
+Returns a dictionary of document parts as `str` instances. [#binary-output]_
+Dictionary keys are the part names.
+Each Writer component may publish a different set of document parts,
+described below.
+
+Example: post-process the output document with a custom function
+``post_process()`` before encoding with user-customizable encoding
+and errors ::
+
+       def publish_bytes_with_postprocessing(*args, **kwargs):
+           parts = publish_parts(*args, **kwargs)
+           out_str = post_process(parts['whole'])
+           return out_str.encode(parts['encoding'], parts['errors'])
+
+There are more usage examples in the `docutils/examples.py`_ module.
+
+.. _docutils/examples.py: ../../docutils/examples.py
+.. _ODT: ../user/odt.html
+
+
+Parts Provided By All Writers
+`````````````````````````````
+
+_`encoding`
+    The `output_encoding`_ setting.
+
+_`errors`
+    The `output_encoding_error_handler`_ setting.
+
+_`version`
+    The version of Docutils used.
+
+_`whole`
+    Contains the entire formatted document. [#binary-output]_
+
+    .. [#binary-output] Output documents in binary formats (e.g. ODT_)
+       are stored as a `bytes` instance.
+
+
+Parts Provided By the HTML Writers
+``````````````````````````````````
+
+HTML4 Writer
+^^^^^^^^^^^^
+
+_`body`
+    ``parts['body']`` is equivalent to parts['fragment_'].  It is
+    *not* equivalent to parts['html_body_'].
+
+_`body_prefix`
+    ``parts['body_prefix']`` contains::
+
+        </head>
+        <body>
+        <div class="document" ...>
+
+    and, if applicable::
+
+        <div class="header">
+        ...
+        </div>
+
+_`body_pre_docinfo`
+    ``parts['body_pre_docinfo]`` contains (as applicable)::
+
+        <h1 class="title">...</h1>
+        <h2 class="subtitle" id="...">...</h2>
+
+_`body_suffix`
+    ``parts['body_suffix']`` contains::
+
+        </div>
+
+    (the end-tag for ``<div class="document">``), the footer division
+    if applicable::
+
+        <div class="footer">
+        ...
+        </div>
+
+    and::
+
+        </body>
+        </html>
+
+_`docinfo`
+    ``parts['docinfo']`` contains the document bibliographic data, the
+    docinfo field list rendered as a table.
+
+_`footer`
+    ``parts['footer']`` contains the document footer content, meant to
+    appear at the bottom of a web page, or repeated at the bottom of
+    every printed page.
+
+_`fragment`
+    ``parts['fragment']`` contains the document body (*not* the HTML
+    ``<body>``).  In other words, it contains the entire document,
+    less the document title, subtitle, docinfo, header, and footer.
+
+_`head`
+    ``parts['head']`` contains ``<meta ... />`` tags and the document
+    ``<title>...</title>``.
+
+_`head_prefix`
+    ``parts['head_prefix']`` contains the XML declaration, the DOCTYPE
+    declaration, the ``<html ...>`` start tag and the ``<head>`` start
+    tag.
+
+_`header`
+    ``parts['header']`` contains the document header content, meant to
+    appear at the top of a web page, or repeated at the top of every
+    printed page.
+
+_`html_body`
+    ``parts['html_body']`` contains the HTML ``<body>`` content, less
+    the ``<body>`` and ``</body>`` tags themselves.
+
+_`html_head`
+    ``parts['html_head']`` contains the HTML ``<head>`` content, less
+    the stylesheet link and the ``<head>`` and ``</head>`` tags
+    themselves.  Since `publish_parts()` returns `str` instances which
+    do not know about the output encoding, the "Content-Type" meta
+    tag's "charset" value is left unresolved, as "%s"::
+
+        <meta http-equiv="Content-Type" content="text/html; charset=%s" />
+
+    The interpolation should be done by client code.
+
+_`html_prolog`
+    ``parts['html_prolog]`` contains the XML declaration and the
+    doctype declaration.  The XML declaration's "encoding" attribute's
+    value is left unresolved, as "%s"::
+
+        <?xml version="1.0" encoding="%s" ?>
+
+    The interpolation should be done by client code.
+
+_`html_subtitle`
+    ``parts['html_subtitle']`` contains the document subtitle,
+    including the enclosing ``<h2 class="subtitle">`` and ``</h2>``
+    tags.
+
+_`html_title`
+    ``parts['html_title']`` contains the document title, including the
+    enclosing ``<h1 class="title">`` and ``</h1>`` tags.
+
+_`meta`
+    ``parts['meta']`` contains all ``<meta ... />`` tags.
+
+_`stylesheet`
+    ``parts['stylesheet']`` contains the embedded stylesheet or
+    stylesheet link.
+
+_`subtitle`
+    ``parts['subtitle']`` contains the document subtitle text and any
+    inline markup.  It does not include the enclosing ``<h2>`` and
+    ``</h2>`` tags.
+
+_`title`
+    ``parts['title']`` contains the document title text and any inline
+    markup.  It does not include the enclosing ``<h1>`` and ``</h1>``
+    tags.
+
+
+PEP/HTML Writer
+^^^^^^^^^^^^^^^
+
+The PEP/HTML writer provides the same parts as the `HTML4 writer`_,
+plus the following:
+
+_`pepnum`
+    ``parts['pepnum']`` contains the PEP number
+    (extracted from the `header preamble`__).
+
+    __ https://peps.python.org/pep-0001/#pep-header-preamble
+
+
+S5/HTML Writer
+^^^^^^^^^^^^^^
+
+The S5/HTML writer provides the same parts as the `HTML4 writer`_.
+
+
+HTML5 Writer
+^^^^^^^^^^^^
+
+The HTML5 writer provides the same parts as the `HTML4 writer`_.
+However, it uses semantic HTML5 elements for the document, header and
+footer.
+
+
+Parts Provided by the "LaTeX2e" and "XeTeX" Writers
+```````````````````````````````````````````````````
+
+See the template files default.tex_, titlepage.tex_, titlingpage.tex_,
+and xelatex.tex_ for examples how these parts can be combined
+into a valid LaTeX document.
+
+abstract
+    ``parts['abstract']`` contains the formatted content of the
+    'abstract' docinfo field.
+
+body
+    ``parts['body']`` contains the document's content. In other words, it
+    contains the entire document, except the document title, subtitle, and
+    docinfo.
+
+    This part can be included into another LaTeX document body using the
+    ``\input{}`` command.
+
+body_pre_docinfo
+    ``parts['body_pre_docinfo]`` contains the ``\maketitle`` command.
+
+dedication
+    ``parts['dedication']`` contains the formatted content of the
+    'dedication' docinfo field.
+
+docinfo
+    ``parts['docinfo']`` contains the document bibliographic data, the
+    docinfo field list rendered as a table.
+
+    With ``--use-latex-docinfo`` 'author', 'organization', 'contact',
+    'address' and 'date' info is moved to titledata.
+
+    'dedication' and 'abstract' are always moved to separate parts.
+
+fallbacks
+    ``parts['fallbacks']`` contains fallback definitions for
+    Docutils-specific commands and environments.
+
+head_prefix
+    ``parts['head_prefix']`` contains the declaration of
+    documentclass and document options.
+
+latex_preamble
+    ``parts['latex_preamble']`` contains the argument of the
+    ``--latex-preamble`` option.
+
+pdfsetup
+     ``parts['pdfsetup']`` contains the PDF properties
+     ("hyperref" package setup).
+
+requirements
+    ``parts['requirements']`` contains required packages and setup
+    before the stylesheet inclusion.
+
+stylesheet
+    ``parts['stylesheet']`` contains the embedded stylesheet(s) or
+    stylesheet loading command(s).
+
+subtitle
+    ``parts['subtitle']`` contains the document subtitle text and any
+    inline markup.
+
+title
+    ``parts['title']`` contains the document title text and any inline
+    markup.
+
+titledata
+    ``parts['titledata]`` contains the combined title data in
+    ``\title``, ``\author``, and ``\date`` macros.
+
+    With ``--use-latex-docinfo``, this includes the 'author',
+    'organization', 'contact', 'address' and 'date' docinfo items.
+
+.. _default.tex:
+   https://docutils.sourceforge.io/docutils/writers/latex2e/default.tex
+.. _titlepage.tex:
+   https://docutils.sourceforge.io/docutils/writers/latex2e/titlepage.tex
+.. _titlingpage.tex:
+   https://docutils.sourceforge.io/docutils/writers/latex2e/titlingpage.tex
+.. _xelatex.tex:
+   https://docutils.sourceforge.io/docutils/writers/latex2e/xelatex.tex
+
+
+.. _runtime settings:
+
+Configuration
+=============
+
+Docutils is configured by *runtime settings* assembled from several
+sources:
+
+* *settings specifications* of the selected components (reader, parser,
+  writer),
+* the ``settings_overrides`` argument of the `Publisher convenience
+  functions`_ (see below),
+* *configuration files* (unless disabled), and
+* *command-line options* (if enabled).
+
+Docutils overlays default and explicitly specified values from these
+sources such that settings behave the way we want and expect them to
+behave. For details, see `Docutils Runtime Settings`_.
+The individual settings are described in `Docutils Configuration`_.
+
+To pass application-specific setting defaults to the Publisher
+convenience functions, use the ``settings_overrides`` parameter.  Pass
+a dictionary of setting names & values, like this::
+
+    app_defaults = {'input_encoding': 'ascii',
+                    'output_encoding': 'latin-1'}
+    output = publish_string(..., settings_overrides=app_defaults)
+
+Settings from command-line options override configuration file
+settings, and they override application defaults.
+
+See `Docutils Runtime Settings`_ or the docstring of
+`publish_programmatically()` for a description of all `configuration
+arguments`_ of the Publisher convenience functions.
+
+.. _configuration arguments: runtime-settings.html#convenience-functions
+
+
+Encodings
+=========
+
+.. important:: Details will change over the next Docutils versions.
+   See RELEASE-NOTES_
+
+The default **input encoding** is UTF-8. A different encoding can be
+specified with the `input_encoding`_ setting.
+
+The encoding of a reStructuredText source can also be given by a
+`Unicode byte order mark` (BOM_) or a "magic comment" [#magic-comment]_
+similar to :PEP:`263`. This makes the input encoding both *visible* and
+*changeable* on a per-source basis.
+
+If the encoding is unspecified and decoding with UTF-8 fails, the locale's
+`preferred encoding`_ is used as a fallback (if it maps to a valid codec
+and differs from UTF-8).
+
+The default behaviour differs from Python's `open()`:
+
+- The UTF-8 encoding is tried before the `preferred encoding`_.
+  (This is almost sure to fail if the actual source encoding differs.)
+- An `explicit encoding declaration` [#magic-comment]_ in the source
+  takes precedence over the `preferred encoding`_.
+- An optional BOM_ is removed from UTF-8 encoded sources.
+
+The default **output encoding** is UTF-8.
+A different encoding can be specified with the `output_encoding`_ setting.
+
+.. Caution:: Docutils may introduce non-ASCII text if you use
+   `auto-symbol footnotes`_ or the `"contents" directive`_.
+   In non-English documents, also auto-generated labels
+   may contain non-ASCII characters.
+
+.. [#magic-comment] A comment like ::
+
+     .. text encoding: <encoding name>
+
+   on the first or second line of a reStructuredText source
+   defines `<encoding name>` as the source's input encoding.
+
+   Examples: (using formats recognized by popular editors) ::
+
+       .. -*- mode: rst -*-
+          -*- coding: latin1 -*-
+
+   or::
+
+       .. vim: set fileencoding=cp737 :
+
+   More precisely, the first and second line are searched for the following
+   regular expression::
+
+       coding[:=]\s*([-\w.]+)
+
+   The first group of this expression is then interpreted as encoding name.
+   If the first line matches the second line is ignored.
+
+   This feature is scheduled to be removed in Docutils 1.0.
+   See the `inspecting_codecs`_ package for a possible replacement.
+
+
+.. _Inside A Docutils Command-Line Front-End Tool: ../howto/cmdline-tool.html
+.. _RELEASE-NOTES: ../../RELEASE-NOTES.html#future-changes
+.. _input_encoding: ../user/config.html#input-encoding
+.. _preferred encoding:
+   https://docs.python.org/3/library/locale.html#locale.getpreferredencoding
+.. _BOM: https://docs.python.org/3/library/codecs.html#codecs.BOM
+.. _output_encoding: ../user/config.html#output-encoding
+.. _output_encoding_error_handler:
+   ../user/config.html#output-encoding-error-handler
+.. _auto-symbol footnotes:
+   ../ref/rst/restructuredtext.html#auto-symbol-footnotes
+.. _"contents" directive:
+   ../ref/rst/directives.html#table-of-contents
+.. _document tree:
+.. _Docutils document tree: ../ref/doctree.html
+.. _Docutils Runtime Settings: ./runtime-settings.html
+.. _Docutils Configuration: ../user/config.html
+.. _inspecting_codecs: https://codeberg.org/milde/inspecting-codecs

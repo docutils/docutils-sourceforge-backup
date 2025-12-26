@@ -1,0 +1,44 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2002.04.21.15.40.39;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@project retirement
+@
+text
+@===============================
+ |Docstring Processing System|
+===============================
+
+.. meta::
+   :http-equiv=Refresh: 15;URL=http://docutils.sourceforge.net/
+
+:Date: $Date:$
+
+The Docstring Processing System project has moved and been renamed! 
+It is now called "Docutils_"; you should be redirected to the new
+location momentarily.  `Click here to go to the Docutils project home
+page immediately.`__
+
+You may also `visit the inactive Docstring Processing System home
+page`__.
+
+__ Docutils_
+__ index-old.html
+.. _Docutils: http://docutils.sourceforge.net/
+.. |Docstring Processing System| image:: title.png
+@

@@ -1,0 +1,158 @@
+head	1.1;
+access;
+symbols
+	Rrefactor-test:1.1.0.2;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2001.07.31.15.25.01;	author gtk;	state dead;
+branches
+	1.1.2.1;
+next	;
+
+1.1.2.1
+date	2001.07.31.15.25.01;	author gtk;	state Exp;
+branches;
+next	1.1.2.2;
+
+1.1.2.2
+date	2001.09.01.15.13.59;	author goodger;	state dead;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@file test_bulletcomments.py was initially added on branch Rrefactor-test.
+@
+text
+@@
+
+
+1.1.2.1
+log
+@Made some less monolithic parser tests out of stuff I'd previously added
+to test_state.
+@
+text
+@a0 100
+#! /usr/bin/env python
+
+"""
+Author: Garth Kidd
+Contact: garth@@deadlybloodyserious.com
+Revision: $Revision: 1.1.2.1 $
+Date: $Date: 2001/07/29 12:21:09 $
+Copyright: This module has been placed in the public domain.
+
+Test comments in bullets.
+"""
+
+from TestFramework import *
+import ParserTestCase
+
+def suite():
+    f = ParserTestCase.ParserTestCaseFactory('outdenting')
+
+    totest = {}
+    
+    totest['comments_in_bullets'] = [
+["""\
++ bullet paragraph 1
+
+  bullet paragraph 2
+
+  .. comment between bullet paragraphs 2 and 3
+
+  bullet paragraph 3
+""",
+"""\
+<document>
+    <bullet_list bullet="+">
+        <list_item>
+            <paragraph>
+                bullet paragraph 1
+            </paragraph>
+            <paragraph>
+                bullet paragraph 2
+            </paragraph>
+            <comment>
+                comment between bullet paragraphs 2 and 3
+            </comment>
+            <paragraph>
+                bullet paragraph 3
+            </paragraph>
+        </list_item>
+    </bullet_list>
+</document>
+"""],
+["""\
++ bullet paragraph 1
+
+  .. comment between bullet paragraphs 1 (leader) and 2
+
+  bullet paragraph 2
+""",
+"""\
+<document>
+    <bullet_list bullet="+">
+        <list_item>
+            <paragraph>
+                bullet paragraph 1
+            </paragraph>
+            <comment>
+                comment between bullet paragraphs 1 (leader) and 2
+            </comment>
+            <paragraph>
+                bullet paragraph 2
+            </paragraph>
+        </list_item>
+    </bullet_list>
+</document>
+"""],
+["""\
++ bullet
+
+  .. trailing comment
+""",
+"""\
+<document>
+    <bullet_list bullet="+">
+        <list_item>
+            <paragraph>
+                bullet
+            </paragraph>
+            <comment>
+                trailing comment
+            </comment>
+        </list_item>
+    </bullet_list>
+</document>
+"""],
+]
+
+    f.stockFactory(totest)
+    return f
+
+if __name__ == '__main__':
+    main(suite=suite())
+@
+
+
+1.1.2.2
+log
+@refactored into individual test modules in test_states subdirectory
+@
+text
+@d7 1
+a7 1
+Date: $Date: 2001/07/31 15:25:01 $
+@
+
+

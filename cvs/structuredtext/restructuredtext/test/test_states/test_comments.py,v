@@ -1,0 +1,442 @@
+head	1.5;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.5
+date	2002.02.15.22.58.17;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2002.02.06.02.17.10;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.09.13.02.38.14;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.09.02.14.01.49;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.09.01.16.57.10;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.5
+log
+@  - Changed "system_warning" to "system_message".
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2002/02/06 02:17:10 $
+:Copyright: This module has been placed in the public domain.
+
+Tests for states.py.
+"""
+
+import RSTTestSupport
+
+def suite():
+    s = RSTTestSupport.ParserTestSuite()
+    s.generateTests(totest)
+    return s
+
+totest = {}
+
+totest['comments'] = [
+["""\
+.. A comment
+
+Paragraph.
+""",
+"""\
+<document>
+    <comment>
+        A comment
+    <paragraph>
+        Paragraph.
+"""],
+["""\
+.. A comment
+   block.
+
+Paragraph.
+""",
+"""\
+<document>
+    <comment>
+        A comment
+        block.
+    <paragraph>
+        Paragraph.
+"""],
+["""\
+..
+   A comment consisting of multiple lines
+   starting on the line after the
+   explicit markup start.
+""",
+"""\
+<document>
+    <comment>
+        A comment consisting of multiple lines
+        starting on the line after the
+        explicit markup start.
+"""],
+["""\
+.. A comment.
+.. Another.
+
+Paragraph.
+""",
+"""\
+<document>
+    <comment>
+        A comment.
+    <comment>
+        Another.
+    <paragraph>
+        Paragraph.
+"""],
+["""\
+.. A comment
+no blank line
+
+Paragraph.
+""",
+"""\
+<document>
+    <comment>
+        A comment
+    <system_message level="2" type="WARNING">
+        <paragraph>
+            Unindent without blank line at line 2.
+    <paragraph>
+        no blank line
+    <paragraph>
+        Paragraph.
+"""],
+["""\
+.. A comment::
+
+Paragraph.
+""",
+"""\
+<document>
+    <comment>
+        A comment::
+    <paragraph>
+        Paragraph.
+"""],
+["""\
+.. Next is an empty comment, which serves to end this comment and
+   prevents the following block quote being swallowed up.
+
+..
+
+    A block quote.
+""",
+"""\
+<document>
+    <comment>
+        Next is an empty comment, which serves to end this comment and
+        prevents the following block quote being swallowed up.
+    <comment>
+    <block_quote>
+        <paragraph>
+            A block quote.
+"""],
+["""\
+term 1
+  definition 1
+
+  .. a comment
+
+term 2
+  definition 2
+""",
+"""\
+<document>
+    <definition_list>
+        <definition_list_item>
+            <term>
+                term 1
+            <definition>
+                <paragraph>
+                    definition 1
+                <comment>
+                    a comment
+        <definition_list_item>
+            <term>
+                term 2
+            <definition>
+                <paragraph>
+                    definition 2
+"""],
+["""\
+term 1
+  definition 1
+
+.. a comment
+
+term 2
+  definition 2
+""",
+"""\
+<document>
+    <definition_list>
+        <definition_list_item>
+            <term>
+                term 1
+            <definition>
+                <paragraph>
+                    definition 1
+    <comment>
+        a comment
+    <definition_list>
+        <definition_list_item>
+            <term>
+                term 2
+            <definition>
+                <paragraph>
+                    definition 2
+"""],
+["""\
++ bullet paragraph 1
+
+  bullet paragraph 2
+
+  .. comment between bullet paragraphs 2 and 3
+
+  bullet paragraph 3
+""",
+"""\
+<document>
+    <bullet_list bullet="+">
+        <list_item>
+            <paragraph>
+                bullet paragraph 1
+            <paragraph>
+                bullet paragraph 2
+            <comment>
+                comment between bullet paragraphs 2 and 3
+            <paragraph>
+                bullet paragraph 3
+"""],
+["""\
++ bullet paragraph 1
+
+  .. comment between bullet paragraphs 1 (leader) and 2
+
+  bullet paragraph 2
+""",
+"""\
+<document>
+    <bullet_list bullet="+">
+        <list_item>
+            <paragraph>
+                bullet paragraph 1
+            <comment>
+                comment between bullet paragraphs 1 (leader) and 2
+            <paragraph>
+                bullet paragraph 2
+"""],
+["""\
++ bullet
+
+  .. trailing comment
+""",
+"""\
+<document>
+    <bullet_list bullet="+">
+        <list_item>
+            <paragraph>
+                bullet
+            <comment>
+                trailing comment
+"""],
+]
+
+if __name__ == '__main__':
+    import unittest
+    unittest.main(defaultTest='suite')
+@
+
+
+1.4
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2001/09/13 02:38:14 $
+d87 1
+a87 1
+    <system_warning level="2" type="WARNING">
+@
+
+
+1.3
+log
+@Updated for simpler dps.nodes._Element.pformat().
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.2 $
+:Date: $Date: 2001/09/02 14:01:49 $
+d87 1
+a87 1
+    <system_warning level="1">
+@
+
+
+1.2
+log
+@Removed "id=__file__" from ParserTestSuite call (now auto-detected).
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.1 $
+:Date: $Date: 2001/09/01 16:57:10 $
+a31 1
+    </comment>
+a33 2
+    </paragraph>
+</document>
+a45 1
+    </comment>
+a47 2
+    </paragraph>
+</document>
+a60 2
+    </comment>
+</document>
+a71 1
+    </comment>
+a73 1
+    </comment>
+a75 2
+    </paragraph>
+</document>
+a86 1
+    </comment>
+a89 2
+        </paragraph>
+    </system_warning>
+a91 1
+    </paragraph>
+a93 2
+    </paragraph>
+</document>
+a103 1
+    </comment>
+a105 2
+    </paragraph>
+</document>
+d120 1
+a120 2
+    </comment>
+    <comment/>
+a123 3
+        </paragraph>
+    </block_quote>
+</document>
+a139 1
+            </term>
+a142 1
+                </paragraph>
+a144 3
+                </comment>
+            </definition>
+        </definition_list_item>
+a147 1
+            </term>
+a150 5
+                </paragraph>
+            </definition>
+        </definition_list_item>
+    </definition_list>
+</document>
+a166 1
+            </term>
+a169 4
+                </paragraph>
+            </definition>
+        </definition_list_item>
+    </definition_list>
+a171 1
+    </comment>
+a175 1
+            </term>
+a178 5
+                </paragraph>
+            </definition>
+        </definition_list_item>
+    </definition_list>
+</document>
+a194 1
+            </paragraph>
+a196 1
+            </paragraph>
+a198 1
+            </comment>
+a200 4
+            </paragraph>
+        </list_item>
+    </bullet_list>
+</document>
+a214 1
+            </paragraph>
+a216 1
+            </comment>
+a218 4
+            </paragraph>
+        </list_item>
+    </bullet_list>
+</document>
+a230 1
+            </paragraph>
+a232 4
+            </comment>
+        </list_item>
+    </bullet_list>
+</document>
+@
+
+
+1.1
+log
+@Refactored from the monolithic restructuredtext/test_states.py, using the Garth Kidd's framework. Thanks Garth!
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision$
+:Date: $Date$
+d16 1
+a16 1
+    s = RSTTestSupport.ParserTestSuite(id=__file__)
+@
+

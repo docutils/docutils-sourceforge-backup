@@ -1,0 +1,1634 @@
+head	1.19;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.19
+date	2002.04.13.16.27.57;	author goodger;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2002.03.16.05.29.19;	author goodger;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2002.03.12.03.28.24;	author goodger;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2002.03.07.03.46.21;	author goodger;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2002.02.20.04.25.08;	author goodger;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2002.02.15.22.58.17;	author goodger;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2002.02.06.02.18.10;	author goodger;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2002.01.30.05.03.17;	author goodger;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2002.01.25.23.43.03;	author goodger;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2001.11.19.04.33.03;	author goodger;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2001.11.06.00.46.01;	author goodger;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2001.11.01.04.08.36;	author goodger;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2001.10.31.05.48.00;	author goodger;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2001.10.30.05.04.11;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2001.10.27.05.21.36;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.10.20.02.46.58;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.09.13.02.40.14;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.09.02.14.05.04;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.09.01.17.00.21;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.19
+log
+@updated
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.18 $
+:Date: $Date: 2002/03/16 05:29:19 $
+:Copyright: This module has been placed in the public domain.
+
+Tests for states.py.
+"""
+
+import RSTTestSupport
+
+def suite():
+    s = RSTTestSupport.ParserTestSuite()
+    s.generateTests(totest)
+    return s
+
+totest = {}
+
+totest['emphasis'] = [
+["""\
+*emphasis*
+""",
+"""\
+<document>
+    <paragraph>
+        <emphasis>
+            emphasis
+"""],
+["""\
+*emphasized sentence
+across lines*
+""",
+"""\
+<document>
+    <paragraph>
+        <emphasis>
+            emphasized sentence
+            across lines
+"""],
+["""\
+*emphasis without closing asterisk
+""",
+"""\
+<document>
+    <paragraph>
+        <problematic id="id2" refid="id1">
+            *
+        emphasis without closing asterisk
+    <system_message backrefs="id2" id="id1" level="2" type="WARNING">
+        <paragraph>
+            Inline emphasis start-string without end-string at line 1.
+"""],
+["""\
+'*emphasis*' but not '*' or '"*"' or  x*2* or 2*x* or \\*args or *
+or *the\\* *stars\\\\\\* *inside*
+
+(however, '*args' will trigger a warning and may be problematic)
+
+what about *this**?
+""",
+"""\
+<document>
+    <paragraph>
+        '
+        <emphasis>
+            emphasis
+        ' but not '*' or '"*"' or  x*2* or 2*x* or *args or *
+        or \n\
+        <emphasis>
+            the* *stars\* *inside
+    <paragraph>
+        (however, '
+        <problematic id="id2" refid="id1">
+            *
+        args' will trigger a warning and may be problematic)
+    <system_message backrefs="id2" id="id1" level="2" type="WARNING">
+        <paragraph>
+            Inline emphasis start-string without end-string at line 4.
+    <paragraph>
+        what about \n\
+        <emphasis>
+            this*
+        ?
+"""],
+["""\
+Emphasized asterisk: *\\**
+
+Emphasized double asterisk: *\\***
+""",
+"""\
+<document>
+    <paragraph>
+        Emphasized asterisk: \n\
+        <emphasis>
+            *
+    <paragraph>
+        Emphasized double asterisk: \n\
+        <emphasis>
+            **
+"""],
+]
+
+totest['strong'] = [
+["""\
+**strong**
+""",
+"""\
+<document>
+    <paragraph>
+        <strong>
+            strong
+"""],
+["""\
+(**strong**) but not (**) or '(** ' or x**2 or \\**kwargs or **
+
+(however, '**kwargs' will trigger a warning and may be problematic)
+""",
+"""\
+<document>
+    <paragraph>
+        (
+        <strong>
+            strong
+        ) but not (**) or '(** ' or x**2 or **kwargs or **
+    <paragraph>
+        (however, '
+        <problematic id="id2" refid="id1">
+            **
+        kwargs' will trigger a warning and may be problematic)
+    <system_message backrefs="id2" id="id1" level="2" type="WARNING">
+        <paragraph>
+            Inline strong start-string without end-string at line 3.
+"""],
+["""\
+Strong asterisk: *****
+
+Strong double asterisk: ******
+""",
+"""\
+<document>
+    <paragraph>
+        Strong asterisk: \n\
+        <strong>
+            *
+    <paragraph>
+        Strong double asterisk: \n\
+        <strong>
+            **
+"""],
+]
+
+totest['literal'] = [
+["""\
+``literal``
+""",
+"""\
+<document>
+    <paragraph>
+        <literal>
+            literal
+"""],
+["""\
+``\\literal``
+""",
+"""\
+<document>
+    <paragraph>
+        <literal>
+            \\literal
+"""],
+["""\
+``lite\\ral``
+""",
+"""\
+<document>
+    <paragraph>
+        <literal>
+            lite\\ral
+"""],
+["""\
+``literal\\``
+""",
+"""\
+<document>
+    <paragraph>
+        <literal>
+            literal\\
+"""],
+["""\
+``literal ``TeX quotes'' & \\backslash`` but not "``" or ``
+
+(however, ``standalone TeX quotes'' will trigger a warning
+and may be problematic)
+""",
+"""\
+<document>
+    <paragraph>
+        <literal>
+            literal ``TeX quotes'' & \\backslash
+         but not "``" or ``
+    <paragraph>
+        (however, \n\
+        <problematic id="id2" refid="id1">
+            ``
+        standalone TeX quotes'' will trigger a warning
+        and may be problematic)
+    <system_message backrefs="id2" id="id1" level="2" type="WARNING">
+        <paragraph>
+            Inline literal start-string without end-string at line 3.
+"""],
+["""\
+Find the ```interpreted text``` in this paragraph!
+""",
+"""\
+<document>
+    <paragraph>
+        Find the \n\
+        <literal>
+            `interpreted text`
+         in this paragraph!
+"""],
+]
+
+totest['interpreted'] = [
+["""\
+`interpreted`
+""",
+"""\
+<document>
+    <paragraph>
+        <interpreted>
+            interpreted
+"""],
+["""\
+:role:`interpreted`
+""",
+"""\
+<document>
+    <paragraph>
+        <interpreted position="prefix" role="role">
+            interpreted
+"""],
+["""\
+`interpreted`:role:
+""",
+"""\
+<document>
+    <paragraph>
+        <interpreted position="suffix" role="role">
+            interpreted
+"""],
+["""\
+:role:`:not-role: interpreted`
+""",
+"""\
+<document>
+    <paragraph>
+        <interpreted position="prefix" role="role">
+            :not-role: interpreted
+"""],
+["""\
+:very.long-role_name:`interpreted`
+""",
+"""\
+<document>
+    <paragraph>
+        <interpreted position="prefix" role="very.long-role_name">
+            interpreted
+"""],
+["""\
+`interpreted` but not \\`interpreted` [`] or ({[`] or [`]}) or `
+""",
+"""\
+<document>
+    <paragraph>
+        <interpreted>
+            interpreted
+         but not `interpreted` [`] or ({[`] or [`]}) or `
+"""],
+["""\
+`interpreted`-text `interpreted`: text `interpreted`:text `text`'s interpreted
+""",
+"""\
+<document>
+    <paragraph>
+        <interpreted>
+            interpreted
+        -text \n\
+        <interpreted>
+            interpreted
+        : text \n\
+        <interpreted>
+            interpreted
+        :text \n\
+        <interpreted>
+            text
+        's interpreted
+"""],
+]
+
+totest['references'] = [
+["""\
+ref_
+""",
+"""\
+<document>
+    <paragraph>
+        <reference refname="ref">
+            ref
+"""],
+["""\
+ref__
+""",
+"""\
+<document>
+    <paragraph>
+        <reference anonymous="1">
+            ref
+"""],
+["""\
+ref_, r_, r_e-f_, and anonymousref__, but not _ref_ or -ref_
+""",
+"""\
+<document>
+    <paragraph>
+        <reference refname="ref">
+            ref
+        , \n\
+        <reference refname="r">
+            r
+        , \n\
+        <reference refname="r_e-f">
+            r_e-f
+        , and \n\
+        <reference anonymous="1">
+            anonymousref
+        , but not _ref_ or -ref_
+"""],
+]
+
+totest['phrase_references'] = [
+["""\
+`phrase reference`_
+""",
+"""\
+<document>
+    <paragraph>
+        <reference refname="phrase reference">
+            phrase reference
+"""],
+["""\
+`anonymous reference`__
+""",
+"""\
+<document>
+    <paragraph>
+        <reference anonymous="1">
+            anonymous reference
+"""],
+["""\
+`phrase reference
+across lines`_
+""",
+"""\
+<document>
+    <paragraph>
+        <reference refname="phrase reference across lines">
+            phrase reference
+            across lines
+"""],
+["""\
+`phrase\`_ reference`_
+""",
+"""\
+<document>
+    <paragraph>
+        <reference refname="phrase`_ reference">
+            phrase`_ reference
+"""],
+["""\
+Invalid phrase reference:
+
+:role:`phrase reference`_
+""",
+"""\
+<document>
+    <paragraph>
+        Invalid phrase reference:
+    <paragraph>
+        :role:
+        <problematic id="id2" refid="id1">
+            `
+        phrase reference`_
+    <system_message backrefs="id2" id="id1" level="2" type="WARNING">
+        <paragraph>
+            Mismatch: inline interpreted text start-string and role with phrase-reference end-string at line 3.
+"""],
+["""\
+Invalid phrase reference:
+
+`phrase reference`:role:_
+""",
+"""\
+<document>
+    <paragraph>
+        Invalid phrase reference:
+    <paragraph>
+        <interpreted>
+            phrase reference
+        :role:_
+"""],
+]
+
+totest['inline_targets'] = [
+["""\
+_`target`
+
+Here is _`another target` in some text. And _`yet
+another target`, spanning lines.
+
+_`Here is  a    TaRgeT` with case and spacial difficulties.
+""",
+"""\
+<document>
+    <paragraph>
+        <target id="target" name="target">
+            target
+    <paragraph>
+        Here is \n\
+        <target id="another-target" name="another target">
+            another target
+         in some text. And \n\
+        <target id="yet-another-target" name="yet another target">
+            yet
+            another target
+        , spanning lines.
+    <paragraph>
+        <target id="here-is-a-target" name="here is a target">
+            Here is  a    TaRgeT
+         with case and spacial difficulties.
+"""],
+["""\
+But this isn't a _target; targets require backquotes.
+
+And _`this`_ is just plain confusing.
+""",
+"""\
+<document>
+    <paragraph>
+        But this isn't a _target; targets require backquotes.
+    <paragraph>
+        And \n\
+        <problematic id="id2" refid="id1">
+            _`
+        this`_ is just plain confusing.
+    <system_message backrefs="id2" id="id1" level="2" type="WARNING">
+        <paragraph>
+            Inline target start-string without end-string at line 3.
+"""],
+]
+
+totest['footnote_reference'] = [
+["""\
+[1]_
+""",
+"""\
+<document>
+    <paragraph>
+        <footnote_reference id="id1" refname="1">
+            1
+"""],
+["""\
+[#]_
+""",
+"""\
+<document>
+    <paragraph>
+        <footnote_reference auto="1" id="id1">
+"""],
+["""\
+[#label]_
+""",
+"""\
+<document>
+    <paragraph>
+        <footnote_reference auto="1" id="id1" refname="label">
+"""],
+["""\
+[*]_
+""",
+"""\
+<document>
+    <paragraph>
+        <footnote_reference auto="*" id="id1">
+"""],
+]
+
+totest['citation_reference'] = [
+["""\
+[citation]_
+""",
+"""\
+<document>
+    <paragraph>
+        <citation_reference id="id1" refname="citation">
+            citation
+"""],
+["""\
+[citation]_ and [cit-ation]_ and [cit.ation]_ and [CIT1]_ but not [CIT 1]_
+""",
+"""\
+<document>
+    <paragraph>
+        <citation_reference id="id1" refname="citation">
+            citation
+         and \n\
+        <citation_reference id="id2" refname="cit-ation">
+            cit-ation
+         and \n\
+        <citation_reference id="id3" refname="cit.ation">
+            cit.ation
+         and \n\
+        <citation_reference id="id4" refname="cit1">
+            CIT1
+         but not [CIT 1]_
+"""],
+]
+
+totest['substitution_references'] = [
+["""\
+|subref|
+""",
+"""\
+<document>
+    <paragraph>
+        <substitution_reference refname="subref">
+            subref
+"""],
+["""\
+|subref|_ and |subref|__
+""",
+"""\
+<document>
+    <paragraph>
+        <reference refname="subref">
+            <substitution_reference refname="subref">
+                subref
+         and \n\
+        <reference anonymous="1">
+            <substitution_reference refname="subref">
+                subref
+"""],
+["""\
+|substitution reference|
+""",
+"""\
+<document>
+    <paragraph>
+        <substitution_reference refname="substitution reference">
+            substitution reference
+"""],
+["""\
+|substitution
+reference|
+""",
+"""\
+<document>
+    <paragraph>
+        <substitution_reference refname="substitution reference">
+            substitution
+            reference
+"""],
+]
+
+totest['standalone_hyperlink'] = [
+["""\
+http://www.standalone.hyperlink.com
+
+http:/one-slash-only.absolute.path
+
+http://[1080:0:0:0:8:800:200C:417A]/IPv6address.html
+
+http://[3ffe:2a00:100:7031::1]
+
+mailto:someone@@somewhere.com
+
+news:comp.lang.python
+
+An email address in a sentence: someone@@somewhere.com.
+
+ftp://ends.with.a.period.
+
+(a.question.mark@@end?)
+""",
+"""\
+<document>
+    <paragraph>
+        <reference refuri="http://www.standalone.hyperlink.com">
+            http://www.standalone.hyperlink.com
+    <paragraph>
+        <reference refuri="http:/one-slash-only.absolute.path">
+            http:/one-slash-only.absolute.path
+    <paragraph>
+        <reference refuri="http://[1080:0:0:0:8:800:200C:417A]/IPv6address.html">
+            http://[1080:0:0:0:8:800:200C:417A]/IPv6address.html
+    <paragraph>
+        <reference refuri="http://[3ffe:2a00:100:7031::1]">
+            http://[3ffe:2a00:100:7031::1]
+    <paragraph>
+        <reference refuri="mailto:someone@@somewhere.com">
+            mailto:someone@@somewhere.com
+    <paragraph>
+        <reference refuri="news:comp.lang.python">
+            news:comp.lang.python
+    <paragraph>
+        An email address in a sentence: \n\
+        <reference refuri="mailto:someone@@somewhere.com">
+            someone@@somewhere.com
+        .
+    <paragraph>
+        <reference refuri="ftp://ends.with.a.period">
+            ftp://ends.with.a.period
+        .
+    <paragraph>
+        (
+        <reference refuri="mailto:a.question.mark@@end">
+            a.question.mark@@end
+        ?)
+"""],
+["""\
+None of these are standalone hyperlinks (their "schemes"
+are not recognized): signal:noise, a:b.
+""",
+"""\
+<document>
+    <paragraph>
+        None of these are standalone hyperlinks (their "schemes"
+        are not recognized): signal:noise, a:b.
+"""],
+]
+
+totest['miscellaneous'] = [
+["""\
+__This__ should be left alone.
+""",
+"""\
+<document>
+    <paragraph>
+        __This__ should be left alone.
+"""],
+]
+
+
+if __name__ == '__main__':
+    import unittest
+    unittest.main(defaultTest='suite')
+@
+
+
+1.18
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.17 $
+:Date: $Date: 2002/03/12 03:28:24 $
+d52 1
+a52 1
+    <system_message id="id1" level="2" refid="id2" type="WARNING">
+d79 1
+a79 1
+    <system_message id="id1" level="2" refid="id2" type="WARNING">
+d133 1
+a133 1
+    <system_message id="id1" level="2" refid="id2" type="WARNING">
+d210 1
+a210 1
+    <system_message id="id1" level="2" refid="id2" type="WARNING">
+d397 1
+a397 1
+    <system_message id="id1" level="2" refid="id2" type="WARNING">
+d459 1
+a459 1
+    <system_message id="id1" level="2" refid="id2" type="WARNING">
+d472 1
+a472 1
+        <footnote_reference refname="1">
+d481 1
+a481 1
+        <footnote_reference auto="1">
+d489 1
+a489 1
+        <footnote_reference auto="1" refname="label">
+d497 1
+a497 1
+        <footnote_reference auto="*">
+d508 1
+a508 1
+        <citation_reference refname="citation">
+d517 1
+a517 1
+        <citation_reference refname="citation">
+d520 1
+a520 1
+        <citation_reference refname="cit-ation">
+d523 1
+a523 1
+        <citation_reference refname="cit.ation">
+d526 1
+a526 1
+        <citation_reference refname="cit1">
+@
+
+
+1.17
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.16 $
+:Date: $Date: 2002/03/07 03:46:21 $
+d71 1
+a71 1
+        or 
+d83 1
+a83 1
+        what about 
+d205 1
+a205 1
+        (however, 
+d429 1
+a429 1
+        <target id="id1" name="target">
+d433 1
+a433 1
+        <target id="id2" name="another target">
+d436 1
+a436 1
+        <target id="id3" name="yet another target">
+d441 1
+a441 1
+        <target id="id4" name="here is a target">
+d455 1
+a455 1
+        And 
+@
+
+
+1.16
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.15 $
+:Date: $Date: 2002/02/20 04:25:08 $
+d44 1
+a44 1
+*emphasis
+d49 4
+a52 2
+        *emphasis
+    <system_message level="2" type="WARNING">
+d71 1
+a71 1
+        or \n\
+d73 1
+a73 1
+            the* *stars\\* *inside
+d75 5
+a79 2
+        (however, '*args' will trigger a warning and may be problematic)
+    <system_message level="2" type="WARNING">
+d83 1
+a83 1
+        what about \n\
+d129 5
+a133 2
+        (however, '**kwargs' will trigger a warning and may be problematic)
+    <system_message level="2" type="WARNING">
+d205 4
+a208 1
+        (however, ``standalone TeX quotes'' will trigger a warning
+d210 1
+a210 1
+    <system_message level="2" type="WARNING">
+d393 5
+a397 2
+        :role:`phrase reference`_
+    <system_message level="2" type="WARNING">
+d455 5
+a459 2
+        And _`this`_ is just plain confusing.
+    <system_message level="2" type="WARNING">
+@
+
+
+1.15
+log
+@updated (ids)
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.14 $
+:Date: $Date: 2002/02/15 22:58:17 $
+d450 1
+a450 1
+[footnote]_
+d455 26
+a480 2
+        <footnote_reference refname="footnote">
+            footnote
+d482 3
+d486 1
+a486 1
+[footnote]_ and [foot-note]_ and [foot.note]_ and [1]_ but not [foot note]_
+d491 11
+a501 2
+        <footnote_reference refname="footnote">
+            footnote
+d503 2
+a504 2
+        <footnote_reference refname="foot-note">
+            foot-note
+d506 2
+a507 2
+        <footnote_reference refname="foot.note">
+            foot.note
+d509 3
+a511 3
+        <footnote_reference refname="1">
+            1
+         but not [foot note]_
+@
+
+
+1.14
+log
+@  - Changed "system_warning" to "system_message".
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.13 $
+:Date: $Date: 2002/02/06 02:18:10 $
+d415 1
+a415 1
+        <target name="target">
+d419 1
+a419 1
+        <target name="another target">
+d422 1
+a422 1
+        <target name="yet another target">
+d427 1
+a427 1
+        <target name="here is a target">
+@
+
+
+1.13
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.12 $
+:Date: $Date: 2002/01/30 05:03:17 $
+d50 1
+a50 1
+    <system_warning level="2" type="WARNING">
+d74 1
+a74 1
+    <system_warning level="2" type="WARNING">
+d125 1
+a125 1
+    <system_warning level="2" type="WARNING">
+d199 1
+a199 1
+    <system_warning level="2" type="WARNING">
+d383 1
+a383 1
+    <system_warning level="2" type="WARNING">
+d442 1
+a442 1
+    <system_warning level="2" type="WARNING">
+@
+
+
+1.12
+log
+@added tests
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.11 $
+:Date: $Date: 2002/01/25 23:43:03 $
+d50 1
+a50 1
+    <system_warning level="1">
+d74 1
+a74 1
+    <system_warning level="1">
+d125 1
+a125 1
+    <system_warning level="1">
+d199 1
+a199 1
+    <system_warning level="1">
+d383 1
+a383 1
+    <system_warning level="1">
+d442 1
+a442 1
+    <system_warning level="1">
+@
+
+
+1.11
+log
+@protect trailing whitespace
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.10 $
+:Date: $Date: 2001/11/19 04:33:03 $
+d512 11
+d591 12
+@
+
+
+1.10
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.9 $
+:Date: $Date: 2001/11/06 00:46:01 $
+d69 1
+a69 1
+        or 
+d78 1
+a78 1
+        what about 
+d91 1
+a91 1
+        Emphasized asterisk: 
+d95 1
+a95 1
+        Emphasized double asterisk: 
+d137 1
+a137 1
+        Strong asterisk: 
+d141 1
+a141 1
+        Strong double asterisk: 
+d209 1
+a209 1
+        Find the 
+d280 1
+a280 1
+        -text 
+d283 1
+a283 1
+        : text 
+d286 1
+a286 1
+        :text 
+d320 1
+a320 1
+        , 
+d323 1
+a323 1
+        , 
+d326 1
+a326 1
+        , and 
+d418 1
+a418 1
+        Here is 
+d421 1
+a421 1
+         in some text. And 
+d466 1
+a466 1
+         and 
+d469 1
+a469 1
+         and 
+d472 1
+a472 1
+         and 
+d498 1
+a498 1
+         and 
+d555 1
+a555 1
+        An email address in a sentence: 
+@
+
+
+1.9
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.8 $
+:Date: $Date: 2001/11/01 04:08:36 $
+d293 1
+a293 1
+totest['links'] = [
+d295 1
+a295 1
+link_
+d300 2
+a301 2
+        <reference refname="link">
+            link
+d304 1
+a304 1
+link__
+d310 1
+a310 1
+            link
+d313 1
+a313 1
+link_, l_, l_i-n_k_, and anonymouslink__, but not _link_ or -link_
+d318 2
+a319 2
+        <reference refname="link">
+            link
+d321 2
+a322 2
+        <reference refname="l">
+            l
+d324 2
+a325 2
+        <reference refname="l_i-n_k">
+            l_i-n_k
+d328 2
+a329 2
+            anonymouslink
+        , but not _link_ or -link_
+d333 1
+a333 1
+totest['phrase_links'] = [
+d335 1
+a335 1
+`phrase link`_
+d340 2
+a341 2
+        <reference refname="phrase link">
+            phrase link
+d344 1
+a344 1
+`anonymous link`__
+d350 1
+a350 1
+            anonymous link
+d353 1
+a353 1
+`phrase link
+d359 2
+a360 2
+        <reference refname="phrase link across lines">
+            phrase link
+d364 1
+a364 1
+`phrase\`_ link`_
+d369 2
+a370 2
+        <reference refname="phrase`_ link">
+            phrase`_ link
+d373 1
+a373 1
+Invalid phrase link:
+d375 1
+a375 1
+:role:`phrase link`_
+d380 1
+a380 1
+        Invalid phrase link:
+d382 1
+a382 1
+        :role:`phrase link`_
+d385 1
+a385 1
+            Mismatch: inline interpreted text start-string and role with phrase-link end-string at line 3.
+d388 1
+a388 1
+Invalid phrase link:
+d390 1
+a390 1
+`phrase link`:role:_
+d395 1
+a395 1
+        Invalid phrase link:
+d398 1
+a398 1
+            phrase link
+d476 35
+@
+
+
+1.8
+log
+@  - Added support for IPv6 URIs.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.7 $
+:Date: $Date: 2001/10/31 05:48:00 $
+d309 1
+a309 1
+        <reference anonymous="1" refname="link">
+d327 1
+a327 1
+        <reference anonymous="1" refname="anonymouslink">
+d349 1
+a349 1
+        <reference anonymous="1" refname="anonymous link">
+@
+
+
+1.7
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.6 $
+:Date: $Date: 2001/10/30 05:04:11 $
+d485 4
+d507 6
+@
+
+
+1.6
+log
+@expanded & updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.5 $
+:Date: $Date: 2001/10/27 05:21:36 $
+d300 1
+a300 1
+        <link refname="link">
+d309 1
+a309 1
+        <link anonymous="1" refname="link">
+d318 1
+a318 1
+        <link refname="link">
+d321 1
+a321 1
+        <link refname="l">
+d324 1
+a324 1
+        <link refname="l_i-n_k">
+d327 1
+a327 1
+        <link anonymous="1" refname="anonymouslink">
+d340 1
+a340 1
+        <link refname="phrase link">
+d349 1
+a349 1
+        <link anonymous="1" refname="anonymous link">
+d359 1
+a359 1
+        <link refname="phrase link across lines">
+d369 1
+a369 1
+        <link refname="phrase`_ link">
+d407 1
+a407 1
+Here's _`another target` in some text. And _`yet
+d410 1
+a410 1
+_`Here's  a    TaRgeT` with case and spacial difficulties.
+d418 1
+a418 1
+        Here's 
+d427 2
+a428 2
+        <target name="here's a target">
+            Here's  a    TaRgeT
+d498 1
+a498 1
+        <link refuri="http://www.standalone.hyperlink.com">
+d501 1
+a501 1
+        <link refuri="http:/one-slash-only.absolute.path">
+d504 1
+a504 1
+        <link refuri="mailto:someone@@somewhere.com">
+d507 1
+a507 1
+        <link refuri="news:comp.lang.python">
+d511 1
+a511 1
+        <link refuri="mailto:someone@@somewhere.com">
+d515 1
+a515 1
+        <link refuri="ftp://ends.with.a.period">
+d520 1
+a520 1
+        <link refuri="mailto:a.question.mark@@end">
+@
+
+
+1.5
+log
+@known URI schemes only
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2001/10/20 02:46:58 $
+d293 1
+a293 1
+totest['link'] = [
+d333 1
+a333 1
+totest['phrase_link'] = [
+d400 45
+@
+
+
+1.4
+log
+@Updated for anonymous links.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2001/09/13 02:40:14 $
+d438 1
+a438 1
+one-slash-only:/absolute.path
+d456 2
+a457 2
+        <link refuri="one-slash-only:/absolute.path">
+            one-slash-only:/absolute.path
+d478 10
+@
+
+
+1.3
+log
+@Updated for simpler dps.nodes._Element.pformat().
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.2 $
+:Date: $Date: 2001/09/02 14:05:04 $
+d304 10
+a313 1
+link_, l_, and l_i-n_k_, but not _link_ or -link_ or link__
+d323 1
+a323 1
+        , and 
+d326 4
+a329 1
+        , but not _link_ or -link_ or link__
+d342 9
+@
+
+
+1.2
+log
+@Removed "id=__file__" from ParserTestSuite call (now auto-detected).
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.1 $
+:Date: $Date: 2001/09/01 17:00:21 $
+a30 3
+        </emphasis>
+    </paragraph>
+</document>
+a41 3
+        </emphasis>
+    </paragraph>
+</document>
+a49 1
+    </paragraph>
+a52 3
+        </paragraph>
+    </system_warning>
+</document>
+a67 1
+        </emphasis>
+a71 2
+        </emphasis>
+    </paragraph>
+a73 1
+    </paragraph>
+a76 2
+        </paragraph>
+    </system_warning>
+a80 1
+        </emphasis>
+a81 2
+    </paragraph>
+</document>
+a93 2
+        </emphasis>
+    </paragraph>
+a97 3
+        </emphasis>
+    </paragraph>
+</document>
+a109 3
+        </strong>
+    </paragraph>
+</document>
+a121 1
+        </strong>
+a122 1
+    </paragraph>
+a124 1
+    </paragraph>
+a127 3
+        </paragraph>
+    </system_warning>
+</document>
+a139 2
+        </strong>
+    </paragraph>
+a143 3
+        </strong>
+    </paragraph>
+</document>
+a155 3
+        </literal>
+    </paragraph>
+</document>
+a164 3
+        </literal>
+    </paragraph>
+</document>
+a173 3
+        </literal>
+    </paragraph>
+</document>
+a182 3
+        </literal>
+    </paragraph>
+</document>
+a194 1
+        </literal>
+a195 1
+    </paragraph>
+a198 1
+    </paragraph>
+a201 3
+        </paragraph>
+    </system_warning>
+</document>
+a211 1
+        </literal>
+a212 2
+    </paragraph>
+</document>
+a224 3
+        </interpreted>
+    </paragraph>
+</document>
+a233 3
+        </interpreted>
+    </paragraph>
+</document>
+a242 3
+        </interpreted>
+    </paragraph>
+</document>
+a251 3
+        </interpreted>
+    </paragraph>
+</document>
+a260 3
+        </interpreted>
+    </paragraph>
+</document>
+a269 1
+        </interpreted>
+a270 2
+    </paragraph>
+</document>
+a279 1
+        </interpreted>
+a282 1
+        </interpreted>
+a285 1
+        </interpreted>
+a288 1
+        </interpreted>
+a289 2
+    </paragraph>
+</document>
+a301 3
+        </link>
+    </paragraph>
+</document>
+a310 1
+        </link>
+a313 1
+        </link>
+a316 1
+        </link>
+a317 2
+    </paragraph>
+</document>
+a329 3
+        </link>
+    </paragraph>
+</document>
+a340 3
+        </link>
+    </paragraph>
+</document>
+a349 3
+        </link>
+    </paragraph>
+</document>
+a359 1
+    </paragraph>
+a361 1
+    </paragraph>
+a364 3
+        </paragraph>
+    </system_warning>
+</document>
+a374 1
+    </paragraph>
+a377 1
+        </interpreted>
+a378 2
+    </paragraph>
+</document>
+a390 3
+        </footnote_reference>
+    </paragraph>
+</document>
+a399 1
+        </footnote_reference>
+a402 1
+        </footnote_reference>
+a405 1
+        </footnote_reference>
+a408 1
+        </footnote_reference>
+a409 2
+    </paragraph>
+</document>
+a433 2
+        </link>
+    </paragraph>
+a436 2
+        </link>
+    </paragraph>
+a439 2
+        </link>
+    </paragraph>
+a442 2
+        </link>
+    </paragraph>
+a446 1
+        </link>
+a447 1
+    </paragraph>
+a450 1
+        </link>
+a451 1
+    </paragraph>
+a455 1
+        </link>
+a456 2
+    </paragraph>
+</document>
+@
+
+
+1.1
+log
+@Refactored from the monolithic restructuredtext/test_states.py, using the Garth Kidd's framework. Thanks Garth!
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision$
+:Date: $Date$
+d16 1
+a16 1
+    s = RSTTestSupport.ParserTestSuite(id=__file__)
+@
+

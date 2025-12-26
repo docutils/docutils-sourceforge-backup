@@ -1,0 +1,1775 @@
+head	1.17;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.17
+date	2002.04.13.17.04.46;	author goodger;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2002.03.28.05.09.04;	author goodger;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2002.03.28.04.41.03;	author goodger;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2002.03.16.05.53.22;	author goodger;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2002.03.13.02.40.42;	author goodger;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2002.03.11.23.49.35;	author goodger;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2002.03.11.03.35.07;	author goodger;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2002.03.08.04.32.05;	author goodger;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2002.03.07.05.00.58;	author richard;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2002.03.07.03.58.30;	author goodger;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2002.03.07.02.12.28;	author richard;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2002.03.04.04.44.09;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2002.03.01.03.16.22;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2002.02.23.16.51.31;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2002.02.22.01.59.22;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2002.02.21.03.41.31;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2002.02.20.04.49.32;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.17
+log
+@Attribute case bug fix.Table of contents => compact.Multiple backrefs from system messages.
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.16 $
+:Date: $Date: 2002/03/28 05:09:04 $
+:Copyright: This module has been placed in the public domain.
+
+Simple HyperText Markup Language document tree Writer.
+
+The output uses the HTML 4.01 Transitional DTD (*almost* strict) and
+contains a minimum of formatting information. A cascading style sheet
+"default.css" is required for proper viewing with a browser.
+"""
+
+__docformat__ = 'reStructuredText'
+
+
+import time
+from types import ListType
+from dps import writers, nodes, languages
+
+
+class Writer(writers.Writer):
+
+    output = None
+    """Final translated form of `document`."""
+
+    def translate(self):
+        visitor = HTMLTranslator(self.document)
+        self.document.walkabout(visitor)
+        self.output = visitor.astext()
+
+    def record(self):
+        self.recordfile(self.output, self.destination)
+
+
+class HTMLTranslator(nodes.NodeVisitor):
+
+    def __init__(self, doctree):
+        nodes.NodeVisitor.__init__(self, doctree)
+        self.language = languages.getlanguage(doctree.languagecode)
+        self.head = ['<!DOCTYPE HTML PUBLIC'
+                     ' "-//W3C//DTD HTML 4.01 Transitional//EN"\n'
+                     ' "http://www.w3.org/TR/html4/loose.dtd">\n',
+                     '<HTML LANG="%s">\n<HEAD>\n' % doctree.languagecode,
+                     '<LINK REL="StyleSheet" HREF="default.css"'
+                     ' TYPE="text/css">\n']
+        self.body = ['</HEAD>\n<BODY>\n']
+        self.foot = ['</BODY>\n</HTML>\n']
+        self.sectionlevel = 0
+        self.context = []
+        self.topic_class = ''
+
+    def astext(self):
+        return ''.join(self.head + self.body + self.foot)
+
+    def encode(self, text):
+        """Encode special characters in `text` & return."""
+        text = text.replace("&", "&amp;")
+        text = text.replace("<", "&lt;")
+        text = text.replace('"', "&quot;")
+        text = text.replace(">", "&gt;")
+        return text
+
+    def starttag(self, node, tagname, suffix='\n', **attributes):
+        atts = {}
+        for (name, value) in attributes.items():
+            atts[name.lower()] = value
+        for att in ('class',):          # append to node attribute
+            if node.has_key(att):
+                if atts.has_key(att):
+                    atts[att] = node[att] + ' ' + atts[att]
+        for att in ('id',):             # node attribute overrides
+            if node.has_key(att):
+                atts[att] = node[att]
+        attlist = atts.items()
+        attlist.sort()
+        parts = [tagname.upper()]
+        for name, value in attlist:
+            if value is None:           # boolean attribute
+                parts.append(name.upper())
+            elif isinstance(value, ListType):
+                values = [str(v) for v in value]
+                parts.append('%s="%s"' % (name.upper(),
+                                          self.encode(' '.join(values))))
+            else:
+                parts.append('%s="%s"' % (name.upper(),
+                                          self.encode(str(value))))
+        return '<%s>%s' % (' '.join(parts), suffix)
+
+    def visit_Text(self, node):
+        self.body.append(self.encode(node.astext()))
+
+    def depart_Text(self, node):
+        pass
+
+    def visit_admonition(self, node, name):
+        self.body.append(self.starttag(node, 'div', CLASS=name))
+        self.body.append('<P CLASS="admonition-title">' + self.language.labels[name] + '</P>\n')
+
+    def depart_admonition(self):
+        self.body.append('</DIV>\n')
+
+    def visit_attention(self, node):
+        self.visit_admonition(node, 'attention')
+
+    def depart_attention(self, node):
+        self.depart_admonition()
+
+    def visit_author(self, node):
+        self.visit_docinfo_item(node, 'author')
+
+    def depart_author(self, node):
+        self.depart_docinfo_item()
+
+    def visit_authors(self, node):
+        pass
+
+    def depart_authors(self, node):
+        pass
+
+    def visit_block_quote(self, node):
+        self.body.append(self.starttag(node, 'blockquote'))
+
+    def depart_block_quote(self, node):
+        self.body.append('</BLOCKQUOTE>\n')
+
+    def visit_bullet_list(self, node):
+        if self.topic_class == 'contents':
+            self.body.append(self.starttag(node, 'ul', compact=None))
+        else:
+            self.body.append(self.starttag(node, 'ul'))
+
+    def depart_bullet_list(self, node):
+        self.body.append('</UL>\n')
+
+    def visit_caption(self, node):
+        self.body.append(self.starttag(node, 'p', '', CLASS='caption'))
+
+    def depart_caption(self, node):
+        self.body.append('</P>\n')
+
+    def visit_caution(self, node):
+        self.visit_admonition(node, 'caution')
+
+    def depart_caution(self, node):
+        self.depart_admonition()
+
+    def visit_citation(self, node):
+        self.body.append(self.starttag(node, 'table', CLASS='citation',
+                                       frame="void", rules="none"))
+        self.body.append('<COL CLASS="label">\n'
+                         '<COL>\n'
+                         '<TBODY VALIGN="top">\n'
+                         '<TR><TD>\n')
+
+    def depart_citation(self, node):
+        self.body.append('</TD></TR>\n'
+                         '</TBODY>\n</TABLE>\n')
+
+    def visit_citation_reference(self, node):
+        href = ''
+        if node.has_key('refid'):
+            href = '#' + node['refid']
+        elif node.has_key('refname'):
+            href = '#' + self.doctree.nameids[node['refname']]
+        self.body.append(self.starttag(node, 'a', '[', href=href, #node['refid'],
+                                       CLASS='citation-reference'))
+
+    def depart_citation_reference(self, node):
+        self.body.append(']</A>')
+
+    def visit_classifier(self, node):
+        self.body.append(' <SPAN CLASS="classifier-delimiter">:</SPAN> ')
+        self.body.append(self.starttag(node, 'span', '', CLASS='classifier'))
+
+    def depart_classifier(self, node):
+        self.body.append('</SPAN>')
+
+    def visit_colspec(self, node):
+        atts = {}
+        #if node.has_key('colwidth'):
+        #    atts['width'] = str(node['colwidth']) + '*'
+        self.body.append(self.starttag(node, 'col', **atts))
+
+    def depart_colspec(self, node):
+        pass
+
+    def visit_comment(self, node):
+        self.body.append('<!-- ')
+
+    def depart_comment(self, node):
+        self.body.append(' -->\n')
+
+    def visit_contact(self, node):
+        self.visit_docinfo_item(node, 'contact')
+
+    def depart_contact(self, node):
+        self.depart_docinfo_item()
+
+    def visit_copyright(self, node):
+        self.visit_docinfo_item(node, 'copyright')
+
+    def depart_copyright(self, node):
+        self.depart_docinfo_item()
+
+    def visit_danger(self, node):
+        self.visit_admonition(node, 'danger')
+
+    def depart_danger(self, node):
+        self.depart_admonition()
+
+    def visit_date(self, node):
+        self.visit_docinfo_item(node, 'date')
+
+    def depart_date(self, node):
+        self.depart_docinfo_item()
+
+    def visit_definition(self, node):
+        self.body.append('</DT>\n')
+        self.body.append(self.starttag(node, 'dd'))
+
+    def depart_definition(self, node):
+        self.body.append('</DD>\n')
+
+    def visit_definition_list(self, node):
+        self.body.append(self.starttag(node, 'dl'))
+
+    def depart_definition_list(self, node):
+        self.body.append('</DL>\n')
+
+    def visit_definition_list_item(self, node):
+        pass
+
+    def depart_definition_list_item(self, node):
+        pass
+
+    def visit_description(self, node):
+        self.body.append('<TD>\n')
+
+    def depart_description(self, node):
+        self.body.append('</TD>')
+
+    def visit_docinfo(self, node):
+        self.body.append(self.starttag(node, 'table', CLASS='docinfo',
+                                       frame="void", rules="none"))
+        self.body.append('<COL CLASS="docinfo-name">\n'
+                         '<COL CLASS="docinfo-content">\n'
+                         '<TBODY VALIGN="top">\n')
+
+    def depart_docinfo(self, node):
+        self.body.append('</TBODY>\n</TABLE>\n')
+
+    def visit_docinfo_item(self, node, name):
+        self.head.append('<META NAME="%s" CONTENT="%s">\n'
+                         % (name, self.encode(node.astext())))
+        self.body.append(self.starttag(node, 'tr', ''))
+        self.body.append('<TD>\n'
+                         '<P CLASS="docinfo-name">%s:</P>\n'
+                         '</TD><TD>\n'
+                         '<P>' % self.language.labels[name])
+
+    def depart_docinfo_item(self):
+        self.body.append('</P>\n</TD></TR>')
+
+    def visit_doctest_block(self, node):
+        self.body.append(self.starttag(node, 'pre', CLASS='doctest-block'))
+
+    def depart_doctest_block(self, node):
+        self.body.append('</PRE>\n')
+
+    def visit_document(self, node):
+        self.body.append(self.starttag(node, 'div', CLASS='document'))
+
+    def depart_document(self, node):
+        self.body.append('</DIV>\n')
+        #self.body.append(
+        #      '<P CLASS="credits">HTML generated from <CODE>%s</CODE> on %s '
+        #      'by <A HREF="http://docutils.sourceforge.net/">Docutils</A>.'
+        #      '</P>\n' % (node['source'], time.strftime('%Y-%m-%d')))
+
+    def visit_emphasis(self, node):
+        self.body.append('<EM>')
+
+    def depart_emphasis(self, node):
+        self.body.append('</EM>')
+
+    def visit_entry(self, node):
+        if isinstance(node.parent.parent, nodes.thead):
+            tagname = 'th'
+        else:
+            tagname = 'td'
+        atts = {}
+        if node.has_key('morerows'):
+            atts['rowspan'] = node['morerows'] + 1
+        if node.has_key('morecols'):
+            atts['colspan'] = node['morecols'] + 1
+        self.body.append(self.starttag(node, tagname, **atts))
+        self.context.append('</%s>' % tagname.upper())
+        if len(node) == 0:              # empty cell
+            self.body.append('&nbsp;')
+
+    def depart_entry(self, node):
+        self.body.append(self.context.pop())
+
+    def visit_enumerated_list(self, node):
+        """
+        The 'start' attribute does not conform to HTML 4.01's strict.dtd, but
+        CSS1 doesn't help. CSS2 isn't widely enough supported yet to be
+        usable.
+        """
+        atts = {}
+        if node.has_key('start'):
+            atts['start'] = node['start']
+        if node.has_key('enumtype'):
+            atts['class'] = node['enumtype']
+        # @@@@@@ To do: prefix, suffix. How? Change prefix/suffix to a
+        # single "format" attribute? Use CSS2?
+        self.body.append(self.starttag(node, 'ol', **atts))
+
+    def depart_enumerated_list(self, node):
+        self.body.append('</OL>\n')
+
+    def visit_error(self, node):
+        self.visit_admonition(node, 'error')
+
+    def depart_error(self, node):
+        self.depart_admonition()
+
+    def visit_field(self, node):
+        self.body.append(self.starttag(node, 'tr', CLASS='field'))
+
+    def depart_field(self, node):
+        self.body.append('</TR>\n')
+
+    def visit_field_argument(self, node):
+        self.body.append(' ')
+        self.body.append(self.starttag(node, 'span', '',
+                                       CLASS='field-argument'))
+
+    def depart_field_argument(self, node):
+        self.body.append('</SPAN>')
+
+    def visit_field_body(self, node):
+        self.body.append(':</P>\n</TD><TD>')
+        self.body.append(self.starttag(node, 'div', CLASS='field-body'))
+
+    def depart_field_body(self, node):
+        self.body.append('</DIV></TD>\n')
+
+    def visit_field_list(self, node):
+        self.body.append(self.starttag(node, 'table', frame='void',
+                                       rules='none'))
+        self.body.append('<COL CLASS="field-name">\n'
+                         '<COL CLASS="field-body">\n'
+                         '<TBODY VALIGN="top">\n')
+
+    def depart_field_list(self, node):
+        self.body.append('</TBODY>\n</TABLE>\n')
+
+    def visit_field_name(self, node):
+        self.body.append('<TD>\n')
+        self.body.append(self.starttag(node, 'p', '', CLASS='field-name'))
+
+    def depart_field_name(self, node):
+        """
+        Leave the end tag to `self.visit_field_body()`, in case there are any
+        field_arguments.
+        """
+        pass
+
+    def visit_figure(self, node):
+        self.body.append(self.starttag(node, 'div', CLASS='figure'))
+
+    def depart_figure(self, node):
+        self.body.append('</DIV>\n')
+
+    def visit_footnote(self, node):
+        self.body.append(self.starttag(node, 'table', CLASS='footnote',
+                                       frame="void", rules="none"))
+        self.body.append('<COL CLASS="label">\n'
+                         '<COL>\n'
+                         '<TBODY VALIGN="top">\n'
+                         '<TR><TD>\n')
+
+    def depart_footnote(self, node):
+        self.body.append('</TD></TR>\n'
+                         '</TBODY>\n</TABLE>\n')
+
+    def visit_footnote_reference(self, node):
+        href = ''
+        if node.has_key('refid'):
+            href = '#' + node['refid']
+        elif node.has_key('refname'):
+            href = '#' + self.doctree.nameids[node['refname']]
+        self.body.append(self.starttag(node, 'a', '', href=href, #node['refid'],
+                                       CLASS='footnote-reference'))
+
+    def depart_footnote_reference(self, node):
+        self.body.append('</A>')
+
+    def visit_hint(self, node):
+        self.visit_admonition(node, 'hint')
+
+    def depart_hint(self, node):
+        self.depart_admonition()
+
+    def visit_image(self, node):
+        atts = node.attributes.copy()
+        atts['src'] = atts['uri']
+        del atts['uri']
+        if not atts.has_key('alt'):
+            atts['alt'] = atts['src']
+        self.body.append(self.starttag(node, 'img', '', **atts))
+
+    def depart_image(self, node):
+        pass
+
+    def visit_important(self, node):
+        self.visit_admonition(node, 'important')
+
+    def depart_important(self, node):
+        self.depart_admonition()
+
+    def visit_interpreted(self, node):
+        self.body.append('<SPAN class="interpreted">')
+
+    def depart_interpreted(self, node):
+        self.body.append('</SPAN>')
+
+    def visit_label(self, node):
+        self.body.append(self.starttag(node, 'p', '[', CLASS='label'))
+
+    def depart_label(self, node):
+        self.body.append(']</P>\n'
+                         '</TD><TD>\n')
+
+    def visit_legend(self, node):
+        self.body.append(self.starttag(node, 'div', CLASS='legend'))
+
+    def depart_legend(self, node):
+        self.body.append('</DIV>\n')
+
+    def visit_list_item(self, node):
+        self.body.append(self.starttag(node, 'li'))
+
+    def depart_list_item(self, node):
+        self.body.append('</LI>\n')
+
+    def visit_literal(self, node):
+        self.body.append('<CODE>')
+
+    def depart_literal(self, node):
+        self.body.append('</CODE>')
+
+    def visit_literal_block(self, node):
+        self.body.append(self.starttag(node, 'pre', CLASS='literal-block'))
+
+    def depart_literal_block(self, node):
+        self.body.append('</PRE>\n')
+
+    def visit_meta(self, node):
+        self.head.append(self.starttag(node, 'meta', **node.attributes))
+
+    def depart_meta(self, node):
+        pass
+
+    def visit_note(self, node):
+        self.visit_admonition(node, 'note')
+
+    def depart_note(self, node):
+        self.depart_admonition()
+
+    def visit_option(self, node):
+        if self.context[-1]:
+            self.body.append(', ')
+
+    def depart_option(self, node):
+        self.context[-1] += 1
+
+    def visit_option_argument(self, node):
+        self.body.append(node.get('delimiter', ' '))
+        self.body.append(self.starttag(node, 'span', '',
+                                       CLASS='option-argument'))
+
+    def depart_option_argument(self, node):
+        self.body.append('</SPAN>')
+
+    def visit_option_group(self, node):
+        atts = {}
+        if len(node.astext()) > 14:
+            atts['colspan'] = 2
+            self.context.append('</TR>\n<TR><TD>&nbsp;</TD>')
+        else:
+            self.context.append('')
+        self.body.append(self.starttag(node, 'td', **atts))
+        self.body.append('<P><CODE>')
+        self.context.append(0)
+
+    def depart_option_group(self, node):
+        self.context.pop()
+        self.body.append('</CODE></P>\n</TD>')
+        self.body.append(self.context.pop())
+
+    def visit_option_list(self, node):
+        self.body.append(
+              self.starttag(node, 'table', CLASS='option-list',
+                            frame="void", rules="none", cellspacing=12))
+        self.body.append('<COL CLASS="option">\n'
+                         '<COL CLASS="description">\n'
+                         '<TBODY VALIGN="top">\n')
+
+    def depart_option_list(self, node):
+        self.body.append('</TBODY>\n</TABLE>\n')
+
+    def visit_option_list_item(self, node):
+        self.body.append(self.starttag(node, 'tr', ''))
+
+    def depart_option_list_item(self, node):
+        self.body.append('</TR>\n')
+
+    def visit_option_string(self, node):
+        self.body.append(self.starttag(node, 'span', '', CLASS='option'))
+
+    def depart_option_string(self, node):
+        self.body.append('</SPAN>')
+
+    def visit_organization(self, node):
+        self.visit_docinfo_item(node, 'organization')
+
+    def depart_organization(self, node):
+        self.depart_docinfo_item()
+
+    def visit_paragraph(self, node):
+        if not self.topic_class == 'contents':
+            self.body.append(self.starttag(node, 'p', ''))
+
+    def depart_paragraph(self, node):
+        if self.topic_class == 'contents':
+            self.body.append('\n')
+        else:
+            self.body.append('</P>\n')
+
+    def visit_problematic(self, node):
+        if node.hasattr('refid'):
+            self.body.append('<A HREF="#%s">' % node['refid'])
+            self.context.append('</A>')
+        else:
+            self.context.append('')
+        self.body.append(self.starttag(node, 'span', '', CLASS='problematic'))
+
+    def depart_problematic(self, node):
+        self.body.append('</SPAN>')
+        self.body.append(self.context.pop())
+
+    def visit_raw(self, node):
+        if node.has_key('format') and node['format'] == 'html':
+            self.body.append(node.astext())
+        raise nodes.SkipNode
+
+    def visit_reference(self, node):
+        if node.has_key('refuri'):
+            href = node['refuri']
+        elif node.has_key('refid'):
+        #else:
+            href = '#' + node['refid']
+        elif node.has_key('refname'):
+            # @@@@@@ Check for non-existent mappings. Here or in a transform?
+            href = '#' + self.doctree.nameids[node['refname']]
+        self.body.append(self.starttag(node, 'a', '', href=href,
+                                       CLASS='reference'))
+
+    def depart_reference(self, node):
+        self.body.append('</A>')
+
+    def visit_revision(self, node):
+        self.visit_docinfo_item(node, 'revision')
+
+    def depart_revision(self, node):
+        self.depart_docinfo_item()
+
+    def visit_row(self, node):
+        self.body.append(self.starttag(node, 'tr', ''))
+
+    def depart_row(self, node):
+        self.body.append('</TR>\n')
+
+    def visit_section(self, node):
+        self.sectionlevel += 1
+        self.body.append(self.starttag(node, 'div', CLASS='section'))
+
+    def depart_section(self, node):
+        self.sectionlevel -= 1
+        self.body.append('</DIV>\n')
+
+    def visit_status(self, node):
+        self.visit_docinfo_item(node, 'status')
+
+    def depart_status(self, node):
+        self.depart_docinfo_item()
+
+    def visit_strong(self, node):
+        self.body.append('<STRONG>')
+
+    def depart_strong(self, node):
+        self.body.append('</STRONG>')
+
+    def visit_substitution_definition(self, node):
+        raise nodes.SkipChildren
+
+    def depart_substitution_definition(self, node):
+        pass
+
+    def visit_substitution_reference(self, node):
+        self.unimplemented_visit(node)
+
+    def visit_subtitle(self, node):
+        self.body.append(self.starttag(node, 'H2', '', CLASS='subtitle'))
+
+    def depart_subtitle(self, node):
+        self.body.append('</H1>\n')
+
+    def visit_system_message(self, node):
+        if node['level'] < self.doctree.reporter['writer'].warninglevel:
+            raise nodes.SkipNode
+        self.body.append(self.starttag(node, 'div', CLASS='system-message'))
+        self.body.append('<P CLASS="system-message-title">')
+        if node.hasattr('backrefs'):
+            backrefs = node['backrefs']
+            if len(backrefs) == 1:
+                self.body.append('<A HREF="#%s">%s</A> '
+                                 '(level %s system message)</P>\n'
+                                 % (backrefs[0], node['type'], node['level']))
+            else:
+                i = 1
+                backlinks = []
+                for backref in backrefs:
+                    backlinks.append('<A HREF="#%s">%s</A>' % (backref, i))
+                    i += 1
+                self.body.append('%s (%s; level %s system message)</P>\n'
+                                 % (node['type'], '|'.join(backlinks),
+                                    node['level']))
+        else:
+            self.body.append('%s (level %s system message)</P>\n'
+                             % (node['type'], node['level']))
+
+    def depart_system_message(self, node):
+        self.body.append('</DIV>\n')
+
+    def visit_table(self, node):
+        self.body.append(
+              self.starttag(node, 'table', frame='border', rules='all'))
+
+    def depart_table(self, node):
+        self.body.append('</TABLE>\n')
+
+    def visit_target(self, node):
+        if not (node.has_key('refuri') or node.has_key('refid')
+                or node.has_key('refname')):
+            self.body.append(self.starttag(node, 'a', '', CLASS='target'))
+            self.context.append('</A>')
+        else:
+            self.context.append('')
+
+    def depart_target(self, node):
+        self.body.append(self.context.pop())
+
+    def visit_tbody(self, node):
+        self.body.append(self.context.pop()) # '</COLGROUP>\n' or ''
+        self.body.append(self.starttag(node, 'tbody', valign='top'))
+
+    def depart_tbody(self, node):
+        self.body.append('</TBODY>\n')
+
+    def visit_term(self, node):
+        self.body.append(self.starttag(node, 'dt', ''))
+
+    def depart_term(self, node):
+        """
+        Leave the end tag to `self.visit_definition()`, in case there's a
+        classifier.
+        """
+        pass
+
+    def visit_tgroup(self, node):
+        self.body.append(self.starttag(node, 'colgroup'))
+        self.context.append('</COLGROUP>\n')
+
+    def depart_tgroup(self, node):
+        pass
+
+    def visit_thead(self, node):
+        self.body.append(self.context.pop()) # '</COLGROUP>\n'
+        self.context.append('')
+        self.body.append(self.starttag(node, 'thead', valign='bottom'))
+
+    def depart_thead(self, node):
+        self.body.append('</THEAD>\n')
+
+    def visit_tip(self, node):
+        self.visit_admonition(node, 'tip')
+
+    def depart_tip(self, node):
+        self.depart_admonition()
+
+    def visit_title(self, node):
+        """Only 6 section levels are supported by HTML."""
+        if isinstance(node.parent, nodes.topic):
+            self.body.append(
+                  self.starttag(node, 'P', '', CLASS='topic-title'))
+            self.context.append('</P>\n')
+        elif self.sectionlevel == 0:
+            self.head.append('<TITLE>%s</TITLE>\n'
+                             % self.encode(node.astext()))
+            self.body.append(self.starttag(node, 'H1', '', CLASS='title'))
+            self.context.append('</H1>\n')
+        else:
+            self.body.append(
+                  self.starttag(node, 'H%s' % self.sectionlevel, ''))
+            context = ''
+            if node.hasattr('refid'):
+                self.body.append('<A HREF="#%s">' % node['refid'])
+                context = '</A>'
+            self.context.append('%s</H%s>\n' % (context, self.sectionlevel))
+
+    def depart_title(self, node):
+        self.body.append(self.context.pop())
+
+    def visit_topic(self, node):
+        self.body.append(self.starttag(node, 'div', CLASS='topic'))
+        self.topic_class = node.get('class')
+
+    def depart_topic(self, node):
+        self.body.append('</DIV>\n')
+        self.topic_class = ''
+
+    def visit_transition(self, node):
+        self.body.append(self.starttag(node, 'hr'))
+
+    def depart_transition(self, node):
+        pass
+
+    def visit_version(self, node):
+        self.visit_docinfo_item(node, 'version')
+
+    def depart_version(self, node):
+        self.depart_docinfo_item()
+
+    def visit_warning(self, node):
+        self.visit_admonition(node, 'warning')
+
+    def depart_warning(self, node):
+        self.depart_admonition()
+
+    def unimplemented_visit(self, node):
+        raise NotImplementedError('visiting unimplemented node type: %s'
+                                  % node.__class__.__name__)
+@
+
+
+1.16
+log
+@fixed bugs
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.15 $
+:Date: $Date: 2002/03/28 04:41:03 $
+d49 1
+a49 1
+                     ' TYPE="text/css">']
+d70 1
+a70 1
+            atts[name] = value
+d537 2
+a538 1
+        self.body.append(self.starttag(node, 'p', ''))
+d541 4
+a544 1
+        self.body.append('</P>\n')
+d630 15
+a644 4
+        if node.hasattr('refid'):
+            self.body.append('<A HREF="#%s">%s</A> '
+                             '(level %s system message)</P>\n'
+                             % (node['refid'], node['type'], node['level']))
+@
+
+
+1.15
+log
+@many improvements
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.14 $
+:Date: $Date: 2002/03/16 05:53:22 $
+d21 1
+d164 6
+a169 4
+        #href = ''
+        #if node.has_key('refname'):
+        #    href = '#' + self.doctree.nameids[node['refname']]
+        self.body.append(self.starttag(node, 'a', '[', href=node['refid'],
+d393 6
+a398 6
+        #href = ''
+        #if node.has_key('refid'):
+        #    href = '#' + node['refid']
+        #elif node.has_key('refname'):
+        #    href = '#' + self.doctree.nameids[node['refname']]
+        self.body.append(self.starttag(node, 'a', '', href=node['refid'],
+d718 1
+a718 2
+        if node.hasattr('class'):
+            self.topic_class = topic['class']
+@
+
+
+1.14
+log
+@  - Added credits, ToC two-way references.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.13 $
+:Date: $Date: 2002/03/13 02:40:42 $
+a18 2
+__all__ = ['Writer']
+
+d53 1
+d69 1
+a69 1
+            atts[name.lower()] = value
+d79 12
+a90 5
+        return '<%s>%s' % (' '.join([tagname.upper()]
+                                    + ['%s="%s"' % (name.upper(),
+                                                    self.encode(str(value)))
+                                       for name, value in attlist]),
+                           suffix)
+d100 1
+a100 1
+        self.body.append('<H3>' + self.language.labels[name] + '</H3>\n')
+d130 4
+a133 1
+        self.body.append(self.starttag(node, 'ul'))
+d163 4
+a166 4
+        href = ''
+        if node.has_key('refname'):
+            href = '#' + self.doctree.nameids[node['refname']]
+        self.body.append(self.starttag(node, 'a', '[', href=href,
+d276 4
+a279 4
+        self.body.append(
+              '<P CLASS="credits">HTML generated from <CODE>%s</CODE> on %s '
+              'by <A HREF="http://docutils.sourceforge.net/">Docutils</A>.'
+              '</P>\n' % (node['source'], time.strftime('%Y-%m-%d')))
+d390 6
+a395 6
+        href = ''
+        if node.has_key('refid'):
+            href = '#' + node['refid']
+        elif node.has_key('refname'):
+            href = '#' + self.doctree.nameids[node['refname']]
+        self.body.append(self.starttag(node, 'a', '', href=href,
+d560 1
+d610 1
+a610 4
+        pass
+
+    def depart_substitution_reference(self, node):
+        pass
+d622 1
+d624 2
+a625 2
+            self.body.append('<H3><A HREF="#%s">%s</A> '
+                             '(level %s system message)</H3>\n'
+d628 1
+a628 1
+            self.body.append('<H3>%s (level %s system message)</H3>\n'
+d645 3
+d650 1
+a650 1
+        self.body.append('</A>')
+d715 2
+d720 1
+d739 4
+@
+
+
+1.13
+log
+@reporter convention change
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.12 $
+:Date: $Date: 2002/03/11 23:49:35 $
+d22 1
+d254 1
+a254 1
+        self.body.append('</P></TD>\n</TR>\n')
+d267 4
+d683 2
+a684 2
+                  self.starttag(node, 'H6', '', CLASS='topic-title'))
+            self.context.append('</H6>\n')
+d693 5
+a697 1
+            self.context.append('</H%s>\n' % self.sectionlevel)
+@
+
+
+1.12
+log
+@Modified system_message title link (now two-tone!).
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.11 $
+:Date: $Date: 2002/03/11 03:35:07 $
+d607 1
+a607 2
+        if node['level'] < self.doctree.reporter['output'].warninglevel:
+            # @@@@@@ need another threshold for writer? gotta fix that
+@
+
+
+1.11
+log
+@Fixed tables & docinfo.Added problematic <-> system_message cross-references.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.10 $
+:Date: $Date: 2002/03/08 04:32:05 $
+d612 3
+a614 3
+            self.body.append('<H3><A HREF="#%s">%s (level %s system message)'
+                             '</A></H3>\n' % (node['refid'], node['type'],
+                                              node['level']))
+@
+
+
+1.10
+log
+@fixes & additions
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.9 $
+:Date: $Date: 2002/03/07 05:00:58 $
+d244 5
+a248 4
+        self.head.append(self.starttag(node, 'meta', name=name,
+                                       content=node.astext()))
+        self.body.append('<TR><TD>\n'
+                         '<P>%s:</P>\n'
+d526 5
+d535 1
+d607 2
+a608 2
+        if node['level'] < self.doctree.reporter.getcategory('output')[1]:
+            # @@@@@@ need another threshold? gotta fix that
+d611 7
+a617 2
+        self.body.append('<H3>%s (level %s system message)</H3>\n'
+                         % (node['type'], node['level']))
+d623 2
+a624 1
+        self.body.append(self.starttag(node, 'table', frame='box', rules='all'))
+@
+
+
+1.9
+log
+@changed _ to - in CSS class names
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.8 $
+:Date: $Date: 2002/03/07 03:58:30 $
+d123 1
+a123 2
+        self.body.append(self.starttag(node, 'ul',
+                                       CLASS='bullet'+node['bullet']))
+d611 1
+a611 1
+        self.body.append(self.starttag(node, 'table', rules='all'))
+d625 1
+d642 2
+a643 1
+        pass
+d649 2
+@
+
+
+1.8
+log
+@citation, footnote, raw updates
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.7 $
+:Date: $Date: 2002/03/07 02:12:28 $
+d158 1
+a158 1
+                                       CLASS='citation_reference'))
+d164 1
+a164 1
+        self.body.append(' <SPAN CLASS="classifier_delimiter">:</SPAN> ')
+d237 2
+a238 2
+        self.body.append('<COL CLASS="docinfo_name">\n'
+                         '<COL CLASS="docinfo_content">\n'
+d256 1
+a256 1
+        self.body.append(self.starttag(node, 'pre', CLASS='doctest_block'))
+d324 1
+a324 1
+                                       CLASS='field_argument'))
+d331 1
+a331 1
+        self.body.append(self.starttag(node, 'div', CLASS='field_body'))
+d339 2
+a340 2
+        self.body.append('<COL CLASS="field_name">\n'
+                         '<COL CLASS="field_body">\n'
+d348 1
+a348 1
+        self.body.append(self.starttag(node, 'p', '', CLASS='field_name'))
+d382 1
+a382 1
+                                       CLASS='footnote_reference'))
+d442 1
+a442 1
+        self.body.append(self.starttag(node, 'pre', CLASS='literal_block'))
+d469 1
+a469 1
+                                       CLASS='option_argument'))
+d492 1
+a492 1
+              self.starttag(node, 'table', CLASS='option_list',
+d604 1
+a604 1
+        self.body.append(self.starttag(node, 'div', CLASS='system_message'))
+d663 1
+a663 1
+                  self.starttag(node, 'H6', '', CLASS='topic_title'))
+@
+
+
+1.7
+log
+@<DT> is traditionally terminated by </DT>, not </TERM> :)
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.6 $
+:Date: $Date: 2002/03/04 04:44:09 $
+d142 6
+a147 1
+        pass
+d150 12
+a161 1
+        pass
+d296 1
+a296 1
+        """        
+d377 3
+a379 1
+        if node.has_key('refname'):
+d381 1
+a381 1
+        self.body.append(self.starttag(node, 'a', '[', href=href,
+d385 1
+a385 1
+        self.body.append(']</A>')
+d530 5
+@
+
+
+1.6
+log
+@progress
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.5 $
+:Date: $Date: 2002/03/01 03:16:22 $
+d194 1
+a194 1
+        self.body.append('</TERM>\n')
+@
+
+
+1.5
+log
+@progress
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2002/02/23 16:51:31 $
+d12 3
+a14 3
+The output uses the HTML 4.01 strict.dtd and contains a minimum of formatting
+information. A cascading style sheet "default.css" is required for proper
+viewing with a browser.
+a90 6
+    def visit_abstract(self, node):
+        self.visit_admonition(node, 'abstract')
+
+    def depart_abstract(self, node):
+        self.depart_admonition()
+
+d141 6
+d597 1
+a597 1
+            self.body.append(self.starttag(node, 'a', ''))
+d638 7
+a644 2
+        if self.sectionlevel == 0:
+            self.head.append('<TITLE>%s</TITLE>\n' % self.encode(node.astext()))
+d646 1
+d648 3
+a650 1
+            self.body.append(self.starttag(node, 'H%s' % self.sectionlevel, ''))
+d653 7
+a659 4
+        if self.sectionlevel == 0:
+            self.body.append('</H1>\n')
+        else:
+            self.body.append('</H%s>\n' % self.sectionlevel)
+@
+
+
+1.4
+log
+@progress
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2002/02/22 01:59:22 $
+d44 3
+a46 2
+        self.head = ['<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"\n'
+                     ' "http://www.w3.org/TR/html4/strict.dtd">\n',
+d53 1
+d67 1
+a67 1
+        attrs = {}
+d69 1
+a69 1
+            attrs[name.lower()] = value
+d72 2
+a73 2
+                if attrs.has_key(att):
+                    attrs[att] = node[att] + ' ' + attrs[att]
+d76 2
+a77 2
+                attrs[att] = node[att]
+        attlist = attrs.items()
+d81 1
+a81 1
+                                                    self.encode(value))
+d123 1
+a123 1
+        pass
+d126 1
+a126 1
+        pass
+d136 1
+a136 1
+        pass
+d139 1
+a139 1
+        pass
+d142 1
+a142 1
+        pass
+d145 1
+a145 1
+        pass
+d155 4
+a158 1
+        pass
+d182 1
+a182 1
+        pass
+d185 1
+a185 1
+        pass
+d213 1
+a213 1
+        pass
+d216 1
+a216 1
+        pass
+d219 3
+a221 3
+        self.body.append(self.starttag(node, 'DIV', CLASS='docinfo'))
+        self.body.append('<TABLE FRAME="void" RULES="none">\n'
+                         '<COL CLASS="docinfo_name">\n'
+d226 1
+a226 1
+        self.body.append('</TABLE>\n</TBODY>\n</DIV>\n')
+d240 1
+a240 1
+        pass
+d243 1
+a243 1
+        pass
+d258 13
+a270 1
+        pass
+d273 1
+a273 1
+        pass
+d276 13
+a288 1
+        pass
+d291 1
+a291 1
+        pass
+d294 1
+a294 1
+        pass
+d297 1
+a297 1
+        pass
+d300 1
+a300 1
+        pass
+d303 1
+a303 1
+        pass
+d306 3
+a308 1
+        pass
+d311 1
+a311 1
+        pass
+d314 2
+a315 1
+        pass
+d318 1
+a318 1
+        pass
+d321 5
+a325 1
+        pass
+d328 1
+a328 1
+        pass
+d331 2
+a332 1
+        pass
+d335 4
+d342 1
+a342 1
+        pass
+d345 1
+a345 1
+        pass
+d348 6
+a353 1
+        pass
+d356 2
+a357 1
+        pass
+d360 5
+a364 1
+        pass
+d367 1
+a367 1
+        pass
+d370 1
+a370 1
+        pass
+d373 1
+a373 1
+        pass
+d376 6
+a381 6
+        attrs = node.attributes.copy()
+        attrs['src'] = attrs['uri']
+        del attrs['uri']
+        if not attrs.has_key('alt'):
+            attrs['alt'] = attrs['src']
+        self.body.append(self.starttag(node, 'img', '', **attrs))
+d387 1
+a387 1
+        pass
+d390 1
+a390 1
+        pass
+d399 1
+a399 1
+        pass
+d402 2
+a403 1
+        pass
+d406 1
+a406 1
+        pass
+d409 1
+a409 1
+        pass
+d424 1
+a424 1
+        pass
+d427 1
+a427 7
+        pass
+
+    def visit_long_option(self, node):
+        pass
+
+    def depart_long_option(self, node):
+        pass
+d436 1
+a436 1
+        pass
+d439 1
+a439 1
+        pass
+d442 2
+a443 1
+        pass
+d446 1
+a446 1
+        pass
+d449 3
+a451 1
+        pass
+d454 17
+a470 1
+        pass
+d473 6
+a478 1
+        pass
+d481 1
+a481 1
+        pass
+d484 1
+a484 1
+        pass
+d487 7
+a493 1
+        pass
+d514 9
+a522 1
+        pass
+d525 1
+a525 1
+        pass
+d534 1
+a534 1
+        pass
+d537 1
+a537 1
+        pass
+a546 6
+    def visit_short_option(self, node):
+        pass
+
+    def depart_short_option(self, node):
+        pass
+
+d578 4
+a581 1
+        self.body.append(self.starttag(node, 'DIV', CLASS='system_message'))
+d589 1
+a589 1
+        pass
+d592 1
+a592 1
+        pass
+d595 3
+a597 1
+        pass
+d600 1
+a600 1
+        pass
+d603 1
+a603 1
+        pass
+d606 1
+a606 1
+        pass
+d612 4
+a615 1
+        # leave the end tag to visit_definition, in case there's a classifier
+d625 1
+a625 1
+        pass
+d628 1
+a628 1
+        pass
+d631 1
+a631 1
+        pass
+d634 1
+a634 1
+        pass
+d637 1
+a642 1
+            # @@@@@@ >H6?
+d648 1
+a648 1
+            self.body.append('</H%s>\n' % self.sectionlevel) # @@@@@@ >H6?
+d651 1
+a651 1
+        self.body.append('<HR>\n')
+a661 6
+    def visit_vms_option(self, node):
+        pass
+
+    def depart_vms_option(self, node):
+        pass
+
+d663 1
+a663 1
+        pass
+d666 1
+a666 1
+        pass
+@
+
+
+1.3
+log
+@progress
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.2 $
+:Date: $Date: 2002/02/21 03:41:31 $
+d44 1
+a44 1
+        self.head = ['<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"'
+d90 1
+a90 4
+        self.body.append(self.starttag(node, 'div', CLASS='abstract'))
+        self.body.append('<H3>'
+                         + self.language.bibliographic_labels['abstract']
+                         + '</H3>\n')
+d93 7
+d103 1
+a103 1
+        pass
+d106 1
+a106 1
+        pass
+d109 1
+a109 2
+        self.head.append(self.starttag(node, 'meta', name='author',
+                                       content=node.astext()))
+d112 1
+a112 1
+        pass
+d165 1
+a165 1
+        pass
+d168 1
+a168 1
+        pass
+d171 1
+a171 2
+        self.head.append(self.starttag(node, 'meta', name='copyright',
+                                       content=node.astext()))
+d174 1
+a174 1
+        pass
+d183 1
+a183 2
+        self.head.append(self.starttag(node, 'meta', name='date',
+                                       content=node.astext()))
+d186 1
+a186 1
+        pass
+a213 1
+        # @@@@@@ as a table?
+d215 4
+d221 12
+a232 1
+        self.body.append('</DIV>\n')
+d420 1
+a420 1
+        pass
+d423 1
+a423 1
+        pass
+d444 1
+a444 1
+        pass
+d447 1
+a447 1
+        pass
+d470 1
+a470 1
+        pass
+d473 1
+a473 1
+        pass
+d501 2
+a502 1
+        self.body.append('<H3>%s (%s)</H3>\n' % (node['type'], node['level']))
+d571 1
+a571 1
+        pass
+d574 1
+a574 1
+        pass
+@
+
+
+1.2
+log
+@progress
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.1 $
+:Date: $Date: 2002/02/20 04:49:32 $
+d64 11
+a74 1
+    def starttag(self, node, tagname, suffix='\n', **attrs):
+a75 3
+        for att in ('id', 'class'):
+            if node.has_key(att):
+                attlist.append((att, node[att]))
+d77 4
+a80 3
+        return '<%s>%s' % (' '.join([tagname.upper()] +
+                                    ['%s="%s"' % (n.upper(), self.encode(v))
+                                     for n, v in attlist]),
+d214 1
+a214 1
+        pass
+d217 1
+a217 1
+        pass
+d485 2
+a486 1
+        pass
+d489 1
+a489 1
+        pass
+@
+
+
+1.1
+log
+@Simple HTML writer for HTML 4.0.1 strict.dtd.
+@
+text
+@d4 1
+a4 1
+:Authors: David Goodger
+d6 2
+a7 2
+:Revision: $Revision$
+:Date: $Date$
+d10 5
+a14 1
+Hypertext Markup Language document tree Writer.
+d64 1
+a64 1
+    def starttag(self, node, tagname, **attrs):
+d70 4
+a73 3
+        return '<%s>' % ' '.join([tagname.upper()] +
+                                 ['%s="%s"' % (n.upper(), self.encode(v))
+                                  for n, v in attlist])
+d82 3
+a84 3
+        self.body.append(self.starttag(node, 'div', CLASS='abstract')
+                         + '\n<BLOCKQUOTE>\n')
+        self.body.append('<H3>' + self.language.bibliographic_labels['abstract']
+d88 1
+a88 1
+        self.body.append('</BLOCKQUOTE>\n</DIV>\n')
+d98 1
+a98 1
+                                       content=node.astext()) + '\n')
+d117 1
+a117 1
+                                       CLASS='bullet'+node['bullet']) + '\n')
+d135 2
+a136 1
+        pass
+d139 1
+a139 1
+        pass
+d161 1
+a161 1
+                                       content=node.astext()) + '\n')
+d174 1
+a174 1
+                                       content=node.astext()) + '\n')
+d180 2
+a181 1
+        pass
+d184 1
+a184 1
+        pass
+d187 1
+a187 1
+        pass
+d190 1
+a190 1
+        pass
+d218 1
+a218 1
+        self.body.append(self.starttag(node, 'div', CLASS='document') + '\n')
+d302 6
+a307 1
+        pass
+d337 1
+a337 1
+        self.body.append(self.starttag(node, 'li') + '\n')
+d361 1
+a361 1
+        self.head.append(self.starttag(node, 'meta', **node.attributes) + '\n')
+d403 1
+a403 1
+        self.body.append(self.starttag(node, 'p'))
+d409 1
+a409 1
+        self.body.append('<SPAN class="problematic">')
+d434 1
+a434 1
+        self.body.append(self.starttag(node, 'div', CLASS='section') + '\n')
+d459 1
+a459 1
+        pass
+d471 1
+a471 1
+        self.body.append(self.starttag(node, 'H2', CLASS='subtitle'))
+d501 1
+a501 1
+        pass
+d504 1
+d528 1
+a528 1
+            self.body.append(self.starttag(node, 'H1', CLASS='title'))
+d530 1
+a530 1
+            self.body.append(self.starttag(node, 'H%s' % self.sectionlevel))
+@
+

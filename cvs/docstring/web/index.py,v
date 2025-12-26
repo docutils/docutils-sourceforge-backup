@@ -1,0 +1,47 @@
+head	1.2;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2001.08.23.03.50.09;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.07.22.22.42.15;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@updated
+@
+text
+@#! /usr/bin/env python
+
+import templater
+
+templater.main('index.html.template')
+@
+
+
+1.1
+log
+@initial checkin
+@
+text
+@d5 1
+a5 3
+templater.main('index.html.template', '../dps/spec',
+               ['pep-0256.txt', 'pep-0257.txt', 'pep-0258.txt', 'gpdi.dtd',
+                'ppdi.dtd', 'soextblx.dtd', 'dps.cat', 'dps-notes.txt'])
+@
+

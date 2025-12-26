@@ -1,0 +1,1297 @@
+head	1.10;
+access;
+symbols
+	rel-0-3:1.1.1.1 open:1.1.1;
+locks; strict;
+comment	@# @;
+
+
+1.10
+date	2002.04.18.02.53.42;	author goodger;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2002.04.13.17.00.21;	author goodger;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2002.04.04.05.52.44;	author goodger;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2002.03.28.04.36.53;	author goodger;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2002.02.15.22.53.17;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2002.02.07.01.56.41;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2002.02.06.03.08.42;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.08.16.02.28.00;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.08.04.15.43.33;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.07.22.22.36.26;	author goodger;	state Exp;
+branches
+	1.1.1.1;
+next	;
+
+1.1.1.1
+date	2001.07.22.22.36.26;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.10
+log
+@fixed whitespace
+@
+text
+@PEP: 258
+Title: Docutils Design Specification
+Version: $Revision: 1.9 $
+Last-Modified: $Date: 2002/04/13 17:00:21 $
+Author: goodger@@users.sourceforge.net (David Goodger)
+Discussions-To: doc-sig@@python.org
+Status: Draft
+Type: Standards Track
+Requires: 256, 257
+Created: 31-May-2001
+Post-History: 13-Jun-2001
+
+
+Abstract
+
+    This PEP documents design issues and implementation details for
+    Docutils, a Python Docstring Processing System (DPS).  The
+    rationale and high-level concepts of a DPS are documented in PEP
+    256, "Docstring Processing System Framework" [1].
+
+    No changes to the core Python language are required by this PEP.
+    Its deliverables consist of a package for the standard library and
+    its documentation.
+
+    @@@@@@ s/dps/Docutils/ from here down
+
+
+Specification
+
+    Docstring Extraction Rules
+    ==========================
+
+    1. What to examine:
+
+       a) If the "__all__" variable is present in the module being
+          documented, only identifiers listed in "__all__" are
+          examined for docstrings.
+
+       b) In the absense of "__all__", all identifiers are examined,
+          except those whose names are private (names begin with "_"
+          but don't begin and end with "__").
+
+       c) 1a and 1b can be overridden by a parameter or command-line
+          option.
+
+    2. Where:
+
+       Docstrings are string literal expressions, and are recognized
+       in the following places within Python modules:
+
+       a) At the beginning of a module, function definition, class
+          definition, or method definition, after any comments.  This
+          is the standard for Python __doc__ attributes.
+
+       b) Immediately following a simple assignment at the top level
+          of a module, class definition, or __init__ method
+          definition, after any comments.  See "Attribute Docstrings"
+          below.
+
+       c) Additional string literals found immediately after the
+          docstrings in (a) and (b) will be recognized, extracted, and
+          concatenated.  See "Additional Docstrings" below.
+
+       d) @@@@@@ 2.2-style "properties" with attribute docstrings?
+
+    3. How:
+
+       Whenever possible, Python modules should be parsed by Docutils,
+       not imported.  There are security reasons for not importing
+       untrusted code.  Information from the source is lost when using
+       introspection to examine an imported module, such as comments
+       and the order of definitions.  Also, docstrings are to be
+       recognized in places where the bytecode compiler ignores string
+       literal expressions (2b and 2c above), meaning importing the
+       module will lose these docstrings.  Of course, standard Python
+       parsing tools such as the "parser" library module may be used.
+
+       When the Python source code for a module is not available
+       (i.e. only the .pyc file exists) or for C extension modules, to
+       access docstrings the module can only be imported, and any
+       limitations must be lived with.
+
+    Since attribute docstrings and additional docstrings are ignored
+    by the Python bytecode compiler, no namespace pollution or runtime
+    bloat will result from their use.  They are not assigned to
+    __doc__ or to any other attribute.  The initial parsing of a
+    module may take a slight performance hit.
+
+
+    Attribute Docstrings
+    --------------------
+
+    (This is a simplified version of PEP 224 [2] by Marc-Andre
+    Lemberg.)
+
+    A string literal immediately following an assignment statement is
+    interpreted by the docstring extration machinery as the docstring
+    of the target of the assignment statement, under the following
+    conditions:
+
+    1. The assignment must be in one of the following contexts:
+
+       a) At the top level of a module (i.e., not nested inside a
+          compound statement such as a loop or conditional): a module
+          attribute.
+
+       b) At the top level of a class definition: a class attribute.
+
+       c) At the top level of the "__init__" method definition of a
+          class: an instance attribute.
+
+       Since each of the above contexts are at the top level (i.e., in
+       the outermost suite of a definition), it may be necessary to
+       place dummy assignments for attributes assigned conditionally
+       or in a loop.
+
+    2. The assignment must be to a single target, not to a list or a
+       tuple of targets.
+
+    3. The form of the target:
+
+       a) For contexts 1a and 1b above, the target must be a simple
+          identifier (not a dotted identifier, a subscripted
+          expression, or a sliced expression).
+
+       b) For context 1c above, the target must be of the form
+          "self.attrib", where "self" matches the "__init__" method's
+          first parameter (the instance parameter) and "attrib" is a
+          simple indentifier as in 3a.
+
+    Blank lines may be used after attribute docstrings to emphasize
+    the connection between the assignment and the docstring.
+
+    Examples::
+
+        g = 'module attribute (module-global variable)'
+        """This is g's docstring."""
+
+        class AClass:
+
+            c = 'class attribute'
+            """This is AClass.c's docstring."""
+
+            def __init__(self):
+                self.i = 'instance attribute'
+                """This is self.i's docstring."""
+
+
+    Additional Docstrings
+    ---------------------
+
+    (This idea was adapted from PEP 216, Docstring Format [3], by
+    Moshe Zadka.)
+
+    Many programmers would like to make extensive use of docstrings
+    for API documentation.  However, docstrings do take up space in
+    the running program, so some of these programmers are reluctant to
+    "bloat up" their code.  Also, not all API documentation is
+    applicable to interactive environments, where __doc__ would be
+    displayed.
+
+    The docstring processing system's extraction tools will
+    concatenate all string literal expressions which appear at the
+    beginning of a definition or after a simple assignment.  Only the
+    first strings in definitions will be available as __doc__, and can
+    be used for brief usage text suitable for interactive sessions;
+    subsequent string literals and all attribute docstrings are
+    ignored by the Python bytecode compiler and may contain more
+    extensive API information.
+
+    Example::
+
+        def function(arg):
+            """This is __doc__, function's docstring."""
+            """
+            This is an additional docstring, ignored by the bytecode
+            compiler, but extracted by the DPS.
+            """
+            pass
+
+    Issue: This breaks "from __future__ import" statements in Python
+    2.1 for multiple module docstrings.  The Python Reference Manual
+    specifies:
+
+        A future statement must appear near the top of the module.
+        The only lines that can appear before a future statement are:
+
+        * the module docstring (if any),
+        * comments,
+        * blank lines, and
+        * other future statements.
+
+    Resolution?
+
+    1. Should we search for docstrings after a __future__ statement?
+       Very ugly.
+
+    2. Redefine __future__ statements to allow multiple preceeding
+       string literals?
+
+    3. Or should we not even worry about this?  There shouldn't be
+       __future__ statements in production code, after all.  Will
+       modules with __future__ statements simply have to put up with
+       the single-docstring limitation?
+
+
+    Choice of Docstring Format
+    ==========================
+
+    Rather than force everyone to use a single docstring format,
+    multiple input formats are allowed by the processing system.  A
+    special variable, __docformat__, may appear at the top level of a
+    module before any function or class definitions.  Over time or
+    through decree, a standard format or set of formats should emerge.
+
+    The __docformat__ variable is a string containing the name of the
+    format being used, a case-insensitive string matching the input
+    parser's module or package name (i.e., the same name as required
+    to "import" the module or package), or a registered alias.  If no
+    __docformat__ is specified, the default format is "plaintext" for
+    now; this may be changed to the standard format once determined.
+
+    The __docformat__ string may contain an optional second field,
+    separated from the format name (first field) by a single space: a
+    case-insensitive language identifier as defined in RFC 1766 [4].
+    A typical language identifier consists of a 2-letter language code
+    from ISO 639 [5] (3-letter codes used only if no 2-letter code
+    exists; RFC 1766 is currently being revised to allow 3-letter
+    codes).  If no language identifier is specified, the default is
+    "en" for English.  The language identifier is passed to the parser
+    and can be used for language-dependent markup features.
+
+
+    Docutils Project Model
+    ======================
+
+    ::
+
+                        +--------------------------+
+                        |        Docutils:         |
+                        | docutils.core.Publisher, |
+                        | docutils.core.publish()  |
+                        +--------------------------+
+                          /                      \
+                         /                        \
+               1,3,5    /                          \      6,8
+               +--------+                          +--------+
+               | READER | =======================> | WRITER |
+               +--------+                          +--------+
+                //    \                              /    \
+               //      \                            /      \
+        2     //     4  \               7          /     9  \
+        +--------+   +------------+     +------------+   +--------------+
+        | PARSER |...| reader     |     | writer     |...| DISTRIBUTOR? |
+        +--------+   | transforms |     | transforms |   |              |
+                     |            |     |            |   | - one file   |
+                     | - docinfo  |     | - styling  |   | - many files |
+                     | - titles   |     | - writer-  |   | - objects in |
+                     | - linking  |     |   specific |   |   memory     |
+                     | - lookups  |     | - etc.     |   +--------------+
+                     | - reader-  |     +------------+
+                     |   specific |
+                     | - parser-  |
+                     |   specific |
+                     | - layout   |
+                     | - etc.     |
+                     +------------+
+
+    The numbers indicate the path a document would take through the
+    code.  Double-width lines between reader & parser and between
+    reader & writer, indicating that data sent along these paths
+    should be standard (pure & unextended) DPS doc trees.
+    Single-width lines signify that internal tree extensions or
+    completely unrelated representations are possible, but they must
+    be supported internally at both ends.
+
+
+    Publisher
+    ---------
+
+    The "dps.core" module contains a "Publisher" facade class and
+    "publish" convenience function.  Publisher encapsulates the
+    high-level logic of a Docutils system.  The Publisher.publish()
+    method passes its input to its Reader, then passes the resulting
+    document tree through its Writer to its destination.
+
+
+    Readers
+    -------
+
+    Readers understand the input context (where the data is coming
+    from), send the whole input or discrete "chunks" to the parser,
+    and provide the context to bind the chunks together back into a
+    cohesive whole.  Using transforms_, Readers also resolve
+    references, footnote numbers, interpreted text processing, and
+    anything else that requires context-sensitive computation.
+
+    Each reader is a module or package exporting a "Reader" class with
+    a "read" method.  The base "Reader" class can be found in the
+    dps/readers/__init__.py module.
+
+    Most Readers will have to be told what parser to use.  So far (see
+    the list of examples below), only the Python Source Reader
+    (PySource) will be able to determine the syntax on its own.
+
+    Responsibilities:
+
+    - Do raw input on the source ("Reader.scan()").
+
+    - Pass the raw text to the parser, along with a fresh doctree
+      root ("Reader.parse()").
+
+    - Run transforms over the doctree(s) ("Reader.transform()").
+
+    Examples:
+
+    - Standalone/Raw/Plain: Just read a text file and process it.  The
+      reader needs to be told which parser to use.  Parser-specific
+      readers?
+
+    - Python Source: See `Python Source Reader`_ above.
+
+    - Email: RFC-822 headers, quoted excerpts, signatures, MIME parts.
+
+    - PEP: RFC-822 headers, "PEP xxxx" and "RFC xxxx" conversion to
+      URIs.  Either interpret PEPs' indented sections or convert
+      existing PEPs to reStructuredText (or both?).
+
+    - Wiki: Global reference lookups of "wiki links" incorporated into
+      transforms.  (CamelCase only or unrestricted?)  Lazy
+      indentation?
+
+    - Web Page: As standalone, but recognize meta fields as meta tags.
+      Support for templates of some sort?  (After <body>, before
+      </body>?)
+
+    - FAQ: Structured "question & answer(s)" constructs.
+
+    - Compound document: Merge chapters into a book.  Master TOC file?
+
+
+    Parsers
+    -------
+
+    Parsers analyze their input and produce a Docutils `document
+    tree`_.  They don't know or care anything about the source or
+    destination of the data.
+
+    Each input parser is a module or package exporting a "Parser"
+    class with a "parse" method.  The base "Parser" class can be found
+    in the dps/parsers/__init__.py module.
+
+    Responsibilities: Given raw input text and a doctree root node,
+    populate the doctree by parsing the input text.
+
+    Example: The only parser implemented so far is for the
+    reStructuredText markup.
+
+
+    Transforms
+    ----------
+
+    Transforms change the document tree from one form to another, add
+    to the tree, or prune it.  Transforms are run by Reader and Writer
+    objects.  Some transforms are Reader-specific, some are
+    Parser-specific, and others are Writer-specific.  The choice and
+    order of transforms is specified in the Reader and Writer objects.
+
+    Each transform is a class in a module in the dps/transforms
+    package, a subclass of dps.tranforms.Transform.
+
+    Responsibilities:
+
+    - Modify a doctree in-place, either purely transforming one
+      structure into another, or adding new structures based on the
+      doctree and/or external data.
+
+    Examples (in "dps.transforms"):
+
+    - frontmatter.DocInfo: conversion of document metadata
+      (bibliographic information).
+
+    - references.Hyperlinks: resolution of hyperlinks.
+
+    - document.Merger: combining multiple populated doctrees into one.
+
+
+    Writers
+    -------
+
+    Writers produce the final output (HTML, XML, TeX, etc.).  Writers
+    translate the internal document tree structure into the final data
+    format, possibly running output-specific transforms_ first.
+
+    Each writer is a module or package exporting a "Writer" class with
+    a "write" method.  The base "Writer" class can be found in the
+    dps/writers/__init__.py module.
+
+    Responsibilities:
+
+    - Run transforms over the doctree(s).
+
+    - Translate doctree(s) into specific output formats.
+
+      - Transform references into format-native forms.
+
+    - Write output to the destination (possibly via a "Distributor").
+
+    Examples:
+
+    - XML: Various forms, such as DocBook.  Also, raw doctree XML.
+
+    - HTML
+
+    - TeX
+
+    - Plain text
+
+    - reStructuredText?
+
+
+    Distributors
+    ------------
+
+    Distributors will exist for each method of storing the results of
+    processing:
+
+    - In a single file on disk.
+
+    - In a tree of directories and files on disk.
+
+    - In a single tree-shaped data structure in memory.
+
+    - Some other set of data structures in memory.
+
+    @@@@@@ Distributors are currently just an idea; they may or may not
+    be practical.  Issues:
+
+        Is it better for the writer to control the distributor, or
+        vice versa?  Or should they be equals?
+
+        Looking at the list of writers, it seems that only HTML would
+        require anything other than monolithic output.  Perhaps merge
+        the HTML "distributor" into "writer" variants?
+
+        Perhaps translator/writer instead of writer/distributor?
+
+    Responsibilities:
+
+    - Do raw output to the destination.
+
+    - Transform references per incarnation (method of distribution).
+
+    Examples:
+
+    - Single file.
+
+    - Multiple files & directories.
+
+    - Objects in memory.
+
+
+    DPS Package Structure
+    ==========================
+
+    - Package "dps".
+
+      - Module "dps.core" contains facade class "Publisher" and
+        convenience function "publish()".  See `Publisher API`_ below.
+
+      - Module "dps.nodes" contains the Docutils document tree element
+        class library plus Visitor pattern base classes.  See
+        `Document Tree`_ below.
+
+      - Module "dps.roman" contains Roman numeral conversion
+        routines.
+
+      - Module "dps.statemachine" contains a finite state machine
+        specialized for regular-expression-based text filters.  The
+        reStructuredText parser implementation is based on this
+        module.
+
+      - Module "dps.urischemes" contains a mapping of known URI
+        schemes ("http", "ftp", "mail", etc.).
+
+      - Module "dps.utils" contains utility functions and classes,
+        including a logger class ("Reporter"; see `Error Handling`_
+        below).
+
+      - Package "dps.parsers": markup parsers_.
+
+        - Function "get_parser_class(parsername)" returns a parser
+          module by name.  Class "Parser" is the base class of
+          specific parsers.  (dps/parsers/__init__.py)
+
+        - Package "dps.parsers.restructuredtext": the reStructuredText
+          parser.
+
+        - Alternate markup parsers may be added.
+
+      - Package "dps.readers": context-aware input readers.
+
+        - Function "get_reader_class(readername)" returns a reader
+          module by name or alias.  Class "Reader" is the base class
+          of specific readers.  (dps/readers/__init__.py)
+
+        - Module "dps.readers.standalone": reads independent document
+          files.
+
+        - Readers to be added for: Python source code (structure &
+          docstrings), PEPs, email, FAQ, and perhaps Wiki and others.
+
+      - Package "dps.writers": output format writers.
+
+        - Function "get_writer_class(writername)" returns a writer
+          module by name.  Class "Writer" is the base class of
+          specific writers.  (dps/writers/__init__.py)
+
+        - Module "dps.writers.pprint" is a simple internal document
+          tree writer; it writes indented pseudo-XML.
+
+        - Module "dps.writers.html" is a simple HyperText Markup
+          Language document tree writer for HTML 4.01 and CSS1.
+
+          @@@@@@ Change name to html4_css1.py?  Support aliases?
+
+        - Writers to be added: HTML 3.2 or 4.01-loose, XML (various
+          forms, such as DocBook and the raw internal doctree), TeX,
+          plaintext, reStructuredText, and perhaps others.
+
+      - Package "dps.transforms": tree transform classes.
+
+        - Class "Transform" is the base class of specific transforms;
+          see `Transform API`_ below.  (dps/transforms/__init__.py)
+
+        - Each module contains related transform classes.
+
+      - Package "dps.languages": Language modules contain
+        language-dependent strings and mappings.  They are named for
+        their language identifier (as defined in `Choice of Docstring
+        Format`_ above), converting dashes to underscores.
+
+        - Function "getlanguage(languagecode)", returns matching
+          language module.  (dps/languages/__init__.py)
+
+        - Module "dps.languages.en" (English).
+
+        - Other languages to be added.
+
+
+    Front-End Tools
+    ===============
+
+    @@@@@@ To be determined.
+
+    @@@@@@ Document tools & summarize their command-line interfaces.
+
+
+    Document Tree
+    =============
+
+    A single intermediate data structure is used internally by the
+    DPS, in the interfaces between components; it is defined in the
+    dps.nodes module.  It is not required that this data structure be
+    used *internally* by any of the components, just *between*
+    components.  This data structure is similar to a DOM tree whose
+    schema is documented in an XML DTD (eXtensible Markup Language
+    Document Type Definition), which comes in two parts:
+
+    - the Generic Plaintext Document Interface DTD, gpdi.dtd [6], and
+
+    - the OASIS Exchange Table Model, soextbl.dtd [7].
+
+    The DTD defines a rich set of elements, suitable for many input
+    and output formats.  The DTD retains all information necessary to
+    reconstruct the original input text, or a reasonable facsimile
+    thereof.
+
+
+    Error Handling
+    ==============
+
+    When the parser encounters an error in markup, it inserts a system
+    message (DTD element "system_message").  There are five levels of
+    system messages:
+
+    - Level-0, "DEBUG": an internal reporting issue.  There is no
+      effect on the processing.  Level-0 system messages are
+      handled separately from the others.
+
+    - Level-1, "INFO": a minor issue that can be ignored.  There is
+      little or no effect on the processing.  Typically level-1 system
+      messages are not reported.
+
+    - Level-2, "WARNING": an issue that should be addressed.  If
+      ignored, there may be unpredictable problems with the output.
+      Typically level-2 system messages are reported but do not halt
+      processing
+
+    - Level-3, "ERROR": a major issue that should be addressed.  If
+      ignored, the output will contain errors.  Typically level-3
+      system messages are reported but do not halt processing
+
+    - Level-4, "SEVERE": a critical error that must be addressed.
+      Typically level-4 system messages are turned into exceptions
+      which halt processing.  If ignored, the output will contain
+      severe errors.
+
+    Although the initial message levels were devised independently,
+    they have a strong correspondence to VMS error condition severity
+    levels [8]; the names in quotes for levels 1 through 4 were
+    borrowed from VMS.  Error handling has since been influenced by
+    the log4j project [9].
+
+
+References and Footnotes
+
+    [1] PEP 256, Docstring Processing System Framework, Goodger
+        http://www.python.org/peps/pep-0256.html
+
+    [2] PEP 224, Attribute Docstrings, Lemburg
+        http://www.python.org/peps/pep-0224.html
+
+    [3] PEP 216, Docstring Format, Zadka
+        http://www.python.org/peps/pep-0216.html
+
+    [4] http://www.rfc-editor.org/rfc/rfc1766.txt
+
+    [5] http://lcweb.loc.gov/standards/iso639-2/englangn.html
+
+    [6] http://docstring.sourceforge.net/spec/gpdi.dtd
+
+    [7] http://docstring.sourceforge.net/spec/soextblx.dtd
+
+    [8] http://www.openvms.compaq.com:8000/73final/5841/
+        5841pro_027.html#error_cond_severity
+
+    [9] http://jakarta.apache.org/log4j/
+
+    [10] http://www.python.org/sigs/doc-sig/
+
+
+Project Web Site
+
+    A SourceForge project has been set up for this work at
+    http://docstring.sourceforge.net.
+
+
+Copyright
+
+    This document has been placed in the public domain.
+
+
+Acknowledgements
+
+    This document borrows ideas from the archives of the Python
+    Doc-SIG [10].  Thanks to all members past & present.
+
+
+
+Local Variables:
+mode: indented-text
+indent-tabs-mode: nil
+fill-column: 70
+sentence-end-double-space: t
+End:
+@
+
+
+1.9
+log
+@minor
+@
+text
+@d3 2
+a4 2
+Version: $Revision: 1.7 $
+Last-Modified: $Date: 2002/03/28 04:36:53 $
+d185 2
+a186 2
+        A future statement must appear near the top of the module. The
+        only lines that can appear before a future statement are:
+d317 2
+a318 2
+    - Standalone/Raw/Plain: Just read a text file and process it. The
+      reader needs to be told which parser to use. Parser-specific
+d326 2
+a327 2
+      URIs. Either interpret PEPs' indented sections or convert existing
+      PEPs to reStructuredText (or both?).
+d330 2
+a331 1
+      transforms. (CamelCase only or unrestricted?) Lazy indentation?
+d334 2
+a335 1
+      Support for templates of some sort? (After <body>, before </body>?)
+d339 1
+a339 1
+    - Compound document: Merge chapters into a book. Master TOC file?
+d411 1
+a411 1
+    - XML: Various forms, such as DocBook. Also, raw doctree XML.
+@
+
+
+1.8
+log
+@whitespace
+@
+text
+@d423 1
+a423 1
+    Distributors exist for each method of storing the results of
+@
+
+
+1.7
+log
+@Overhauled; changed title.
+@
+text
+@d3 2
+a4 2
+Version: $Revision: 1.6 $
+Last-Modified: $Date: 2002/02/15 22:53:17 $
+d617 1
+a617 1
+       http://www.python.org/peps/pep-0256.html
+d620 1
+a620 1
+       http://www.python.org/peps/pep-0224.html
+d623 1
+a623 1
+       http://www.python.org/peps/pep-0216.html
+@
+
+
+1.6
+log
+@  - Changed "system_warning" to "system_message".
+@
+text
+@d2 4
+a5 4
+Title: DPS Generic Implementation Details
+Version: $Revision: 1.5 $
+Last-Modified: $Date: 2002/02/07 01:56:41 $
+Author: dgoodger@@bigfoot.com (David Goodger)
+d16 4
+a19 4
+    This PEP documents generic implementation details for a Python
+    Docstring Processing System (DPS).  The rationale and high-level
+    concepts of the DPS are documented in PEP 256, "Docstring
+    Processing System Framework" [1].
+d22 4
+d35 2
+a36 2
+       a) If the '__all__' variable is present in the module being
+          documented, only identifiers listed in '__all__' are
+d39 3
+a41 3
+       b) In the absense of '__all__', all identifiers are examined,
+          except those whose names are private (names begin with '_'
+          but don't begin and end with '__').
+d64 2
+d68 9
+a76 8
+       Whenever possible, Python modules should be parsed by the
+       docstring processing system, not imported.  There are security
+       reasons for not importing untrusted code.  Also, docstrings are
+       to be recognized in places where the bytecode compiler ignores
+       string literal expressions (2b and 2c above), meaning importing
+       the module will lose these docstrings.  Of course, standard
+       Python parsing tools such as the 'parser' library module may
+       be used.
+d80 2
+a81 1
+       access docstrings the module must be imported.
+d89 1
+d109 1
+a109 1
+       c) At the top level of the '__init__' method definition of a
+d127 2
+a128 2
+          'self.attrib', where 'self' matches the '__init__' method's
+          first parameter (the instance parameter) and 'attrib' is a
+d136 1
+a136 1
+        g = 'module attribute (global variable)'
+d148 1
+d152 3
+d158 1
+a158 1
+    'bloat up' their code.  Also, not all API documentation is
+d181 1
+a181 1
+    Issue: This breaks 'from __future__ import' statements in Python
+d188 4
+a191 4
+        * the module docstring (if any), 
+        * comments, 
+        * blank lines, and 
+        * other future statements. 
+d202 4
+a205 3
+       __future__ statements in production code, after all.  Modules
+       with __future__ statements will have to put up with the
+       single-docstring limitation.
+d219 2
+a220 2
+    to 'import' the module or package), or a registered alias.  If no
+    __docformat__ is specified, the default format is 'plaintext' for
+d230 1
+a230 1
+    'en' for English.  The language identifier is passed to the parser
+a232 2
+    DPS Structure
+    =============
+d234 219
+a452 1
+    - package 'dps'
+d454 1
+a454 1
+      - function 'dps.main()' (in 'dps/__init__.py')
+d456 1
+a456 1
+      - package 'dps.parsers'
+d458 1
+a458 1
+        - module 'dps.parsers.model'; see 'Input Parser API' below.
+a459 1
+      - package 'dps.formatters'
+d461 2
+a462 2
+        - module 'dps.formatters.model'; see 'Output Formatter API'
+          below.
+d464 1
+a464 1
+      - package 'dps.languages'
+d466 2
+a467 1
+        - module 'dps.languages.en' (English)
+d469 3
+a471 1
+        - others to be added
+d473 2
+a474 1
+      - utility modules: 'dps.nodes', 'dps.statemachine', 'dps.utils'
+d476 4
+a479 2
+    Command-Line Interface
+    ======================
+d481 2
+a482 1
+    XXX To be determined.
+d484 3
+a486 2
+    System Python API
+    =================
+d488 1
+a488 1
+    XXX To be determined.
+d490 3
+a492 2
+    Input Parser API
+    ================
+d494 2
+a495 2
+    Each input parser is a module or package exporting a 'Parser'
+    class, with the following interface:
+d497 1
+a497 1
+        class Parser:
+d499 1
+a499 3
+            def __init__(self, inputstring, warninglevel=1,
+                         errorlevel=3, language='en'):
+                """Initialize the Parser instance."""
+d501 3
+a503 2
+            def parse(self):
+                """Parse the input string and return a tree."""
+d505 2
+a506 1
+    XXX This needs a lot of work.  What is required for this API?
+d508 2
+a509 2
+    A model 'Parser' class implementing the full interface along with
+    utility functions can be found in the 'dps.parsers.model' module.
+d511 1
+a511 2
+    Output Formatter API
+    ====================
+d513 3
+a515 2
+    Each output formatter is a module or package exporting a
+    'Formatter' class, with the following interface:
+d517 2
+a518 1
+        class Formatter:
+d520 2
+a521 3
+            def __init__(self, domtree, language='en',
+                         showwarnings=0):
+                """Initialize the Formatter instance."""
+d523 1
+a523 2
+            def format(self):
+                """Return a formatted string from the DOM tree."""
+d525 3
+a527 1
+    XXX This also needs a lot of work.  What is required for this API?
+d529 1
+a529 1
+    XXX How to handle unimplemented elements?
+d531 2
+a532 3
+    A model 'Formatter' class implementing the full interface along
+    with utility functions can be found in the 'dps.formatters.model'
+    module.
+d534 1
+a534 2
+    Language Module API
+    ===================
+d536 4
+a539 4
+    Language modules will contain language-dependent strings and
+    mappings.  They will be named for their language identifier (as
+    defined in 'Choice of Docstring Format' above), converting dashes
+    to underscores.
+d541 2
+a542 1
+    XXX Specifics to be determined.
+d544 1
+a544 2
+    Intermediate Data Structure
+    ===========================
+d546 1
+a546 7
+    A single intermediate data structure is used by the docstring
+    processing system, in the interfaces between parsers, the DPS
+    itself, and formatters.  It is not required that this data
+    structure be used internally by any of the componentes.  This data
+    structure is similar to a DOM tree whose schema is documented in
+    an XML DTD (eXtensible Markup Language Document Type Definition),
+    which comes in three parts:
+a547 1
+    - the Python Plaintext Document Interface DTD, ppdi.dtd [6],
+d549 2
+a550 1
+    - the Generic Plaintext Document Interface DTD, gpdi.dtd [7],
+d552 1
+a552 1
+    - and the OASIS Exchange Table Model, soextbl.dtd [8].
+d554 1
+a554 7
+    The DTD defines a rich set of elements, suitable for any input
+    syntax or output format.  The input parser and the output
+    formatter share the same intermediate data structure.  The
+    processing system may do transformations on the data from the
+    input parser before passing it on to the output formatter.  The
+    DTD retains all information necessary to reconstruct the original
+    input text, or a reasonable facsimile thereof.
+a555 1
+    XXX Specifics (about the DOM tree) to be determined.
+d557 2
+a558 2
+    Output Management
+    =================
+d560 16
+a575 1
+    XXX To be determined.
+a576 8
+    Type of output: filesystem only, or in-memory data structure too?
+    File/directory naming & structure conventions.  In-memory data
+    structure should follow filesystem naming; file/directory ==
+    leaf/node.  Use a directory hierarchy rather than long file names.
+    (The files generated by pythondoc used compound file names, like
+    'packagename.modulename.classname.html', which were often too long
+    for the 38-character MacOS file name length limit.  This is one of
+    the reasons pythondoc couldn't run on MacOS).
+d582 1
+a582 1
+    message (DTD element 'system_message).  There are five levels of
+d589 3
+a591 3
+    - Level-1, "INFO": a minor issue that can be ignored.  There is no
+      effect on the processing.  Typically level-1 system messages are
+      not reported.
+d595 2
+d598 3
+a600 2
+    - Level-3, "ERROR": an error that should be addressed.  If
+      ignored, the output will contain errors.
+d602 1
+a602 1
+    - Level-4, "SEVERE": a severe error that must be addressed.
+d609 1
+a609 1
+    levels [9]; the names in quotes for levels 1 through 4 were
+d611 1
+a611 1
+    the log4j project [10].
+d617 1
+a617 1
+        http://www.python.org/peps/pep-0256.html
+d620 1
+a620 1
+        http://www.python.org/peps/pep-0224.html
+d622 2
+a623 2
+    [3] PEP 257, Docstring Conventions, Goodger, Van Rossum
+        http://www.python.org/peps/pep-0257.html
+d629 1
+a629 3
+    [6] http://docstring.sourceforge.net/spec/ppdi.dtd
+
+    [7] http://docstring.sourceforge.net/spec/gpdi.dtd
+d631 1
+a631 1
+    [8] http://docstring.sourceforge.net/spec/soextblx.dtd
+d633 1
+a633 1
+    [9] http://www.openvms.compaq.com:8000/73final/5841/
+d636 1
+a636 1
+    [10] http://jakarta.apache.org/log4j/
+d638 1
+a638 1
+    [11] http://www.python.org/sigs/doc-sig/
+d655 1
+a655 1
+    Doc-SIG [11].  Thanks to all members past & present.
+@
+
+
+1.5
+log
+@minor
+@
+text
+@d3 2
+a4 2
+Version: $Revision: 1.4 $
+Last-Modified: $Date: 2002/02/06 03:08:42 $
+d351 2
+a352 2
+    warning (DTD element 'system_warning').  There are five levels of
+    system warnings:
+d355 1
+a355 1
+      effect on the processing.  Level-0 system warnings are
+d359 1
+a359 1
+      effect on the processing.  Typically level-1 system warnings are
+d369 1
+a369 1
+      Typically level-4 system warnings are turned into exceptions
+d373 1
+a373 1
+    Although the initial warning levels were devised independently,
+@
+
+
+1.4
+log
+@  - Updated error handling.
+@
+text
+@d3 2
+a4 2
+Version: $Revision: 1.3 $
+Last-Modified: $Date: 2001/08/16 02:28:00 $
+d351 1
+a351 1
+    warning (DTD element 'system_warning').  There are four levels of
+d354 1
+a354 1
+    - Level-0, "DEBUG": An internal reporting issue.  There is no
+d358 1
+a358 1
+    - Level-1, "INFO": A minor issue that can be ignored.  There is no
+d362 1
+a362 1
+    - Level-2, "WARNING": An issue that should be addressed.  If
+d365 1
+a365 1
+    - Level-3, "ERROR": An error that should be addressed.  If
+d368 1
+a368 1
+    - Level-4, "SEVERE": A severe error that must be addressed.
+@
+
+
+1.3
+log
+@  - Added reference to VMS error condition severity.
+@
+text
+@d3 2
+a4 2
+Version: $Revision: 1.2 $
+Last-Modified: $Date: 2001/08/04 15:43:33 $
+d354 7
+a360 3
+    - Level-0, "information": A minor issue that can be ignored.
+      There is no effect on the processing. Typically level-0 system
+      warnings are not reported.
+d362 1
+a362 1
+    - Level-1, "warning": An issue that should be addressed.  If
+d365 1
+a365 1
+    - Level-2, "error": An error that should be addressed.  If
+d368 2
+a369 2
+    - Level-3, "severe": A severe error that must be addressed.
+      Typically level-3 system warnings are turned into exceptions
+d373 5
+a377 3
+    Although the warning levels above were devised independently, they
+    have a strong correspondence to VMS error condition severity
+    levels [9]. The names in quotes were borrowed from VMS.
+d404 3
+a406 1
+    [10] http://www.python.org/sigs/doc-sig/
+d423 1
+a423 1
+    Doc-SIG [10].  Thanks to all members past & present.
+@
+
+
+1.2
+log
+@clarifications due to Tony Ibbs; added names to system warnings
+@
+text
+@d3 2
+a4 2
+Version: $Revision: 1.1.1.1 $
+Last-Modified: $Date: 2001/07/22 22:36:26 $
+d369 4
+d395 4
+a398 1
+    [9] http://www.python.org/sigs/doc-sig/
+d415 1
+a415 1
+    Doc-SIG [9].  Thanks to all members past & present.
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d3 2
+a4 2
+Version: $Revision: 1.1.1.3 $
+Last-Modified: $Date: 2001/07/19 23:54:48 $
+d47 3
+a49 3
+       a) At the beginning of a module, class definition, or function
+          definition, after any comments.  This is the standard for
+          Python __doc__ attributes.
+d68 1
+a68 1
+       Python parsing tools such as the 'parser' library module should
+d169 12
+a180 1
+    2.1 for multiple module docstrings.  Resolution?
+d309 7
+a315 5
+    A single intermediate data structure is used internally by the
+    docstring processing system.  This data structure is a DOM tree
+    (or equivalent) whose schema is documented in an XML DTD
+    (eXtensible Markup Language Document Type Definition), which comes
+    in three parts:
+d341 5
+a345 3
+    leaf/node.  Use a directory hierarchy rather than long file names
+    (long file names were one of the reasons pythondoc couldn't run on
+    MacOS).
+d351 1
+a351 1
+    warning (DTD element 'system_warning'). There are four levels of
+d354 14
+a367 14
+    - Level-0: A minor issue that can be ignored. There is no effect
+      on the processing. Typically level-0 system warnings are not
+      reported.
+
+    - Level-1: An issue that should be addressed. If ignored, there
+      may be minor problems with the output.
+
+    - Level-2: An issue that should be addressed. If ignored, there
+      may be significant problems with the output.
+
+    - Level-3: A major issue that must be addressed. Typically level-3
+      system warnings are turned into exceptions which halt
+      processing. If ignored, the output will have significant
+      problems.
+d385 1
+a385 1
+    [6] http://docstring.sf.net/spec/ppdi.dtd
+d387 1
+a387 1
+    [7] http://docstring.sf.net/spec/gpdi.dtd
+d389 1
+a389 1
+    [8] http://docstring.sf.net/spec/soextblx.dtd
+d397 1
+a397 1
+    http://docstring.sf.net.
+@
+
+
+1.1.1.1
+log
+@First Imported.
+@
+text
+@@

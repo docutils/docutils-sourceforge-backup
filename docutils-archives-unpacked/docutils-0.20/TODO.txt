@@ -1,0 +1,6 @@
+More consistent formatting in HISTORY log.
+------------------------------------------
+
+Use "inline-literal" for code snippets, filenames, command-line-options, and terminal output.
+Use hyperlinks for configuration settings.
+Use double quotes for, e.g., rST directive names and string values.

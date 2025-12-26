@@ -1,0 +1,78 @@
+head	1.2;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2002.02.06.02.25.41;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.09.10.04.46.13;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@  - ``language()`` -> ``getlanguage()``.
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.1 $
+:Date: $Date: 2001/09/10 04:46:13 $
+:Copyright: This module has been placed in the public domain.
+
+This package contains modules for language-dependent features of
+reStructuredText.
+"""
+
+__docformat__ = 'reStructuredText'
+
+__all__ = ['getlanguage']
+
+_languages = {}
+
+def getlanguage(languagecode):
+    if _languages.has_key(languagecode):
+        return _languages[languagecode]
+    module = __import__(languagecode, globals(), locals())
+    _languages[languagecode] = module
+    return module
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision$
+:Date: $Date$
+d16 1
+a16 1
+__all__ = ['language']
+d20 1
+a20 1
+def language(languagecode):
+d23 1
+a23 4
+    try:
+        module = __import__(languagecode, globals(), locals())
+    except:
+        raise
+@
+

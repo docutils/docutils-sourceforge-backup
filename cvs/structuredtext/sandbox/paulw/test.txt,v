@@ -1,0 +1,209 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2001.10.18.04.07.49;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Paul Wright's style sheet
+@
+text
+@==========================
+ README: reStructuredText
+==========================
+
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Date: $Date: 2001/08/25 01:54:52 $
+:Web-site: http://structuredtext.sourceforge.net/
+
+This is *emphasis*. This is **strong**.
+
+This is an ``inline literal``.
+
+Internal crossreferences, like example_. 
+
+Footnote references, like [5]_ and
+[RM98]_. Note that footnotes may get
+rearranged, e.g., to the bottom of
+the "page".
+
+.. [5] A numerical footnote. Note
+   there's no colon after the ``]``.
+.. [RM98] And a reference
+   (as often used in journals).
+
+
+dfjgfg
+
+.. graphic:: images/ball1.gif
+
+
+Wiblbelhj 
+
+Table time
+
++------------+------------+-----------+
+| Header 1   | Header 2   | Header 3  |
++============+============+===========+
+| body row 1 | column 2   | column 3  |
++------------+------------+-----------+
+| body row 2 | Cells may span columns.|
++------------+------------+-----------+
+| body row 3 | Cells may  | - Cells   |
++------------+ span rows. | - contain |
+| body row 4 |            | - blocks. |
++------------+------------+-----------+
+
+hdjfghf
+
+
+.. _example: 
+
+This is an example crossreference target. 
+
+Why not look at `Project Files & Directories`_?
+
+Block quotes are just: 
+
+    Indented paragraphs, 
+
+        and they may nest. 
+
+Here's a definition list:
+
+what
+  Definition lists associate a term with
+  a definition.
+
+how
+  The term is a one-line phrase, and the
+  definition is one or more paragraphs or
+  body elements, indented relative to the
+  term. Blank lines are not allowed
+  between term and definition.
+
+Thank you for downloading the reStructuredText project archive. As
+this is a work in progress, please check the project web site for
+updated working files. The latest release archive is available at
+http://sourceforge.net/project/showfiles.php?group_id=7050.
+
+reStructuredText is an input parser component of the `Python Docstring
+Processing System`_, and is installed as
+"dps.parsers.restructuredtext".
+
+To run the code, Python 2.0 or later must already be installed. You
+can get Python from http://www.python.org/. You will also need the
+latest DPS package, available from http://docstring.sourceforge.net/.
+
+.. _Python Docstring Processing System:
+   http://docstring.sourceforge.net/
+
+
+Project Files & Directories
+===========================
+
+* README.txt: You're reading it.
+
+* HISTORY.txt: Release notes for the current and previous project
+  releases.
+
+* setup.py: Installation script. See "Installation" below.
+
+* install.py: Quick & dirty installation script.
+
+* restructuredtext: The project source directory, installed as Python
+  package ``dps.parsers.restructuredtext``.
+
+* test: The unit test directory (currently experimental). Not required
+  to use the software, but very useful if you're planning to modify
+  it.
+
+* tools: Directory for standalone scripts that use reStructuredText.
+
+  - quicktest.py: Input reStructuredText, output pretty-printed
+    pseudo-XML.
+
+* spec: The project specification directory. Contains the markup
+  syntax spec and implementation notes.
+
+* docs: The project documentation directory.
+
+
+Installation
+============
+
+The first step is to expand the .tar.gz archive. It contains a
+distutils setup file "setup.py". OS-specific installation instructions
+follow.
+
+Linux, Unix, MacOS X
+--------------------
+
+1. Open a shell.
+
+2. Go to the directory created by expanding the archive::
+
+       cd <archive_directory_path>
+
+3. Install the package::
+
+       python setup.py install
+
+   If the python executable isn't on your path, you'll have to specify
+   the complete path, such as /usr/local/bin/python. You may need root
+   permissions to complete this step.
+
+You can also just run install.py; it does the same thing.
+
+Windows
+-------
+
+1. Open a DOS box (Command Shell, MSDOS Prompt, or whatever they're
+   calling it these days).
+
+2. Go to the directory created by expanding the archive::
+
+       cd <archive_directory_path>
+
+3. Install the package::
+
+       <path_to_python.exe>\python setup.py install
+
+If your system is set up to run Python when you double-click on .py
+files, you can run install.py to do the same as the above.
+
+MacOS
+-----
+
+1. Open the folder containing the expanded archive.
+
+2. Double-click on the file "setup.py", which should be a "Python
+   module" file.
+
+   If the file isn't a "Python module", the line endings are probably
+   also wrong, and you will need to set up your system to recognize
+   ".py" file extensions as Python files. See
+   http://gotools.sourceforge.net/mac/python.html for detailed
+   instructions. Once set up, it's easiest to start over by expanding
+   the archive again.
+
+3. The distutils options window will appear. From the "Command" popup
+   list choose "install", click "Add", then click "OK".
+
+If install.py is a "Python module" (see step 2 above if it isn't), you
+can run it instead of the above. The distutils options windown will
+not appear.
+@

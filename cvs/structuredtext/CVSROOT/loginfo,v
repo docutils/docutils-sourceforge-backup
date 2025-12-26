@@ -1,0 +1,209 @@
+head	1.9;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.9
+date	2001.08.02.01.53.26;	author goodger;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2001.08.01.04.32.00;	author goodger;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2001.07.28.15.09.17;	author goodger;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2001.07.28.15.08.25;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2001.07.26.03.41.26;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.07.26.02.51.50;	author gtk;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.07.26.02.25.25;	author gtk;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.07.26.02.20.39;	author gtk;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2000.06.18.02.11.01;	author root;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.9
+log
+@might as well have all checkins go to the new list
+@
+text
+@# The "loginfo" file controls where "cvs commit" log information
+# is sent.  The first entry on a line is a regular expression which must match
+# the directory that the change is being made to, relative to the
+# $CVSROOT.  If a match is found, then the remainder of the line is a filter
+# program that should expect log information on its standard input.
+#
+# If the repository name does not match any of the regular expressions in this
+# file, the "DEFAULT" line is used, if it is specified.
+#
+# If the name ALL appears as a regular expression it is always used
+# in addition to the first matching regex or DEFAULT.
+#
+# You may specify a format string as part of the
+# filter.  The string is composed of a `%' followed
+# by a single format character, or followed by a set of format
+# characters surrounded by `{' and `}' as separators.  The format
+# characters are:
+#
+#   s = file name
+#   V = old version number (pre-checkin)
+#   v = new version number (post-checkin)
+#
+# For example:
+#DEFAULT (echo ""; id; echo %s; date; cat) >> $CVSROOT/CVSROOT/commitlog
+# or
+#DEFAULT (echo ""; id; echo %{sVv}; date; cat) >> $CVSROOT/CVSROOT/commitlog
+#
+# ----------------------------------------------------------------------------
+# structuredtext-specific loginfo configuration
+# ----------------------------------------------------------------------------
+# 
+# We're using syncmail (see documentation_) to send updates on CVS activity 
+# to whomever is interested. At the moment, we're assuming that everyone on 
+# structuredtext-develop is interested. 
+#
+# .. _documentation: http://sf.net/docman/display_doc.php?docid=772&group_id=1
+# ----------------------------------------------------------------------------
+#
+DEFAULT /usr/bin/python $CVSROOT/CVSROOT/syncmail %{sVv} structuredtext-checkins@@lists.sourceforge.net
+@
+
+
+1.8
+log
+@mailing list change
+@
+text
+@a38 2
+CVSROOT /usr/bin/python $CVSROOT/CVSROOT/syncmail %{sVv} goodger@@users.sourceforge.net
+web/ /usr/bin/python $CVSROOT/CVSROOT/syncmail %{sVv} goodger@@users.sourceforge.net
+@
+
+
+1.7
+log
+@syncmail test
+@
+text
+@d41 1
+a41 1
+DEFAULT /usr/bin/python $CVSROOT/CVSROOT/syncmail %{sVv} structuredtext-develop@@lists.sourceforge.net
+@
+
+
+1.6
+log
+@added explicit /usr/bin/python for syncmail
+@
+text
+@a41 1
+# test
+@
+
+
+1.5
+log
+@changed email addrs for checkins
+@
+text
+@d39 4
+a42 3
+CVSROOT $CVSROOT/CVSROOT/syncmail %{sVv} goodger@@users.sourceforge.net
+web/ $CVSROOT/CVSROOT/syncmail %{sVv} goodger@@users.sourceforge.net
+DEFAULT $CVSROOT/CVSROOT/syncmail %{sVv} structuredtext-develop@@lists.sourceforge.net
+@
+
+
+1.4
+log
+@Switched mail targets to structuredtext-develop@@lists.sourceforge.net.
+
+This should also test the execute bits on syncmail, which seem to be
+set when I check out to my NT system but not when I check out to the
+Unix system underneath structuredtext.sf.net. Wierd.
+@
+text
+@d39 3
+a41 3
+CVSROOT $CVSROOT/CVSROOT/syncmail %{sVv} structuredtext-develop@@lists.sourceforge.net
+web/ $CVSROOT/CVSROOT/syncmail %{sVv} structuredtext-develop@@lists.sourceforge.net
+restructuredtext/ $CVSROOT/CVSROOT/syncmail %{sVv} structuredtext-develop@@lists.sourceforge.net
+@
+
+
+1.3
+log
+@Added documentation to loginfo. This checkin will also test the system.
+@
+text
+@d33 2
+a34 4
+# to whomever is interested. At the moment, this is just a test, so the mail 
+# is only being sent to some of Garth's test accounts. We'll send mail to 
+# mailing lists when the test is complete and, frankly, when we get around to 
+# creating the mailing lists. 
+a35 3
+# The check-in of this text will constitute the first test of syncmail and 
+# of this configuration. 
+# 
+d39 3
+a41 3
+CVSROOT $CVSROOT/CVSROOT/syncmail %{sVv} structuredtext-cvsroot-cvs@@deadlybloodyserious.com
+web/ $CVSROOT/CVSROOT/syncmail %{sVv} structuredtext-web-cvs@@deadlybloodyserious.com
+restructuredtext/ $CVSROOT/CVSROOT/syncmail %{sVv} structuredtext-restructuredtext-cvs@@deadlybloodyserious.com
+@
+
+
+1.2
+log
+@Configuring syncmail to send mail to appropriate test accounts. We can,
+and should, redirect those to Sourceforge-hosted mailing lists when
+we're happy with the functionality.
+@
+text
+@d27 17
+@
+
+
+1.1
+log
+@initial checkin
+@
+text
+@d27 3
+@
+
+

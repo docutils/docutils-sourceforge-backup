@@ -1,0 +1,294 @@
+head	1.7;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.7
+date	2002.03.16.05.39.36;	author goodger;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2002.03.13.02.37.35;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2002.03.12.03.09.05;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2002.03.01.04.02.44;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2002.02.20.04.21.45;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2002.02.13.02.22.53;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2002.02.12.02.29.42;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.6 $
+:Date: $Date: 2002/03/13 02:37:35 $
+:Copyright: This module has been placed in the public domain.
+
+Directives for typically HTML-specific constructs.
+"""
+
+__docformat__ = 'reStructuredText'
+
+__all__ = ['meta', 'imagemap']
+
+
+from dps import nodes, utils
+try:
+    from restructuredtext import states
+except ImportError:
+    from dps.parsers.restructuredtext import states
+
+
+def meta(match, typename, data, state, statemachine, attributes):
+    lineoffset = statemachine.lineoffset
+    block, indent, offset, blankfinish = \
+          statemachine.getfirstknownindented(match.end(), uptoblank=1)
+    node = nodes.Element()
+    if block:
+        newlineoffset, blankfinish = state.nestedlistparse(
+              block, offset, node, initialstate='MetaBody',
+              blankfinish=blankfinish, statemachinekwargs=metaSMkwargs)
+        if (newlineoffset - offset) != len(block): # incomplete parse of block?
+            blocktext = '\n'.join(statemachine.inputlines[
+                  lineoffset : statemachine.lineoffset+1])
+            msg = statemachine.memo.reporter.error(
+                  'Invalid meta directive at line %s.'
+                  % statemachine.abslineno(), '',
+                  nodes.literal_block(blocktext, blocktext))
+            node += msg
+    else:
+        msg = statemachine.memo.reporter.error(
+              'Empty meta directive at line %s.' % statemachine.abslineno())
+        node += msg
+    return node.getchildren(), blankfinish
+
+def imagemap(match, typename, data, state, statemachine, attributes):
+    return [], 0
+
+
+class MetaBody(states.SpecializedBody):
+
+    class meta(nodes.Special, nodes.PreBibliographic, nodes.Element):
+        """HTML-specific "meta" element."""
+        pass
+
+    def field_marker(self, match, context, nextstate):
+        """Meta element."""
+        node, blankfinish = self.parsemeta(match)
+        self.statemachine.node += node
+        return [], nextstate, []
+
+    def parsemeta(self, match):
+        name, args = self.parse_field_marker(match)
+        indented, indent, lineoffset, blankfinish = \
+              self.statemachine.getfirstknownindented(match.end())
+        node = self.meta()
+        node['content'] = ' '.join(indented)
+        if not indented:
+            line = self.statemachine.line
+            msg = self.statemachine.memo.reporter.info(
+                  'No content for meta tag "%s".' % name, '',
+                  nodes.literal_block(line, line))
+            self.statemachine.node += msg
+        try:
+            attname, val = utils.extract_name_value(name)[0]
+            node[attname.lower()] = val
+        except utils.NameValueError:
+            node['name'] = name
+        for arg in args:
+            try:
+                attname, val = utils.extract_name_value(arg)[0]
+                node[attname.lower()] = val
+            except utils.NameValueError, detail:
+                line = self.statemachine.line
+                msg = self.statemachine.memo.reporter.error(
+                      'Error parsing meta tag attribute "%s": %s'
+                      % (arg, detail), '', nodes.literal_block(line, line))
+                self.statemachine.node += msg
+        return node, blankfinish
+
+
+metaSMkwargs = {'stateclasses': (MetaBody,)}
+@
+
+
+1.6
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.5 $
+:Date: $Date: 2002/03/12 03:09:05 $
+d38 1
+a38 1
+                  'Invalid meta directive at line %s.' 
+@
+
+
+1.5
+log
+@  - Added literal blocks to system messages whenever    the erroneous source text is omitted.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2002/03/01 04:02:44 $
+d79 1
+a79 1
+        except utils.AttributeParsingError:
+d85 1
+a85 1
+            except utils.AttributeParsingError, detail:
+@
+
+
+1.4
+log
+@minor name change
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2002/02/20 04:21:45 $
+d26 1
+d35 2
+d38 3
+a40 2
+                  'Invalid meta directive at line %s.'
+                  % statemachine.abslineno())
+d70 6
+d86 1
+d89 1
+a89 1
+                      % (arg, detail))
+@
+
+
+1.3
+log
+@reworked so a 'meta' class & function could coexist.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.2 $
+:Date: $Date: 2002/02/13 02:22:53 $
+d54 1
+a54 1
+    def fieldmarker(self, match, context, nextstate):
+d61 1
+a61 1
+        name, args = self.parsefieldmarker(match)
+@
+
+
+1.2
+log
+@works now
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision$
+:Date: $Date$
+d34 1
+a34 1
+            sw = statemachine.memo.reporter.error(
+d37 1
+a37 1
+            node += sw
+d39 1
+a39 1
+        sw = statemachine.memo.reporter.error(
+d41 1
+a41 1
+        node += sw
+d50 4
+d56 2
+a57 2
+        meta, blankfinish = self.parsemeta(match)
+        self.statemachine.node += meta
+d64 2
+a65 2
+        meta = meta_node()
+        meta['content'] = ' '.join(indented)
+d68 1
+a68 1
+            meta[attname.lower()] = val
+d70 1
+a70 1
+            meta['name'] = name
+d74 1
+a74 1
+                meta[attname.lower()] = val
+d76 1
+a76 1
+                sw = self.statemachine.memo.reporter.error(
+d79 2
+a80 9
+                self.statemachine.node += sw
+        return meta, blankfinish
+
+
+class meta_node(nodes.Special, nodes.PreBibliographic, nodes.Element):
+
+    """HTML-specific "meta" element."""
+
+    tagname = 'meta'
+@
+
+
+1.1
+log
+@HTML-specific directives: meta, imagemap
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.5 $
+:Date: $Date: 2001/11/19 04:30:58 $
+d79 1
+a79 1
+class meta_node(nodes.Special, nodes.Bibliographic, nodes.Element):
+d84 3
+@
+

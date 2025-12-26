@@ -1,0 +1,201 @@
+head	1.4;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.4
+date	2002.01.25.23.43.34;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.09.13.02.41.00;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.09.02.14.06.19;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.09.01.17.01.14;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.4
+log
+@protect trailing whitespace
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2001/09/13 02:41:00 $
+:Copyright: This module has been placed in the public domain.
+
+Tests for states.py.
+"""
+
+import RSTTestSupport
+
+def suite():
+    s = RSTTestSupport.ParserTestSuite()
+    s.generateTests(totest)
+    return s
+
+totest = {}
+
+totest['outdenting'] = [
+["""\
+Anywhere a paragraph would have an effect on the current
+indentation level, a comment or list item should also.
+
++ bullet
+
+This paragraph ends the bullet list item before a block quote.
+
+  Block quote.
+""",
+"""\
+<document>
+    <paragraph>
+        Anywhere a paragraph would have an effect on the current
+        indentation level, a comment or list item should also.
+    <bullet_list bullet="+">
+        <list_item>
+            <paragraph>
+                bullet
+    <paragraph>
+        This paragraph ends the bullet list item before a block quote.
+    <block_quote>
+        <paragraph>
+            Block quote.
+"""],
+["""\
++ bullet
+
+.. Comments swallow up all indented text following.
+
+  (Therefore this is not a) block quote.
+
+- bullet
+
+  If we want a block quote after this bullet list item,
+  we need to use an empty comment:
+
+..
+
+  Block quote.
+""",
+"""\
+<document>
+    <bullet_list bullet="+">
+        <list_item>
+            <paragraph>
+                bullet
+    <comment>
+        Comments swallow up all indented text following.
+        \n\
+        (Therefore this is not a) block quote.
+    <bullet_list bullet="-">
+        <list_item>
+            <paragraph>
+                bullet
+            <paragraph>
+                If we want a block quote after this bullet list item,
+                we need to use an empty comment:
+    <comment>
+    <block_quote>
+        <paragraph>
+            Block quote.
+"""],
+]
+
+if __name__ == '__main__':
+    import unittest
+    unittest.main(defaultTest='suite')
+@
+
+
+1.3
+log
+@Updated for simpler dps.nodes._Element.pformat().
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.2 $
+:Date: $Date: 2001/09/02 14:06:19 $
+d72 1
+a72 1
+        
+@
+
+
+1.2
+log
+@Removed "id=__file__" from ParserTestSuite call (now auto-detected).
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.1 $
+:Date: $Date: 2001/09/01 17:01:14 $
+a37 1
+    </paragraph>
+a41 3
+            </paragraph>
+        </list_item>
+    </bullet_list>
+a43 1
+    </paragraph>
+a46 3
+        </paragraph>
+    </block_quote>
+</document>
+a69 3
+            </paragraph>
+        </list_item>
+    </bullet_list>
+a73 1
+    </comment>
+a77 1
+            </paragraph>
+d81 1
+a81 4
+            </paragraph>
+        </list_item>
+    </bullet_list>
+    <comment/>
+a84 3
+        </paragraph>
+    </block_quote>
+</document>
+@
+
+
+1.1
+log
+@Refactored from the monolithic restructuredtext/test_states.py, using the Garth Kidd's framework. Thanks Garth!
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision$
+:Date: $Date$
+d16 1
+a16 1
+    s = RSTTestSupport.ParserTestSuite(id=__file__)
+@
+

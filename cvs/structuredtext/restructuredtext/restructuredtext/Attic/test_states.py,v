@@ -1,0 +1,6936 @@
+head	1.11;
+access;
+symbols
+	RELEASE:1.1.1.1
+	Rrefactor-test:1.1.1.1.0.4
+	rel-0-3:1.1.1.1.0.2
+	open:1.1.1;
+locks; strict;
+comment	@# @;
+
+
+1.11
+date	2001.09.01.17.05.31;	author goodger;	state dead;
+branches;
+next	1.10;
+
+1.10
+date	2001.08.28.03.26.15;	author goodger;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2001.08.25.04.01.35;	author goodger;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2001.08.23.04.19.35;	author goodger;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2001.08.22.03.38.30;	author goodger;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2001.08.14.03.41.14;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2001.08.11.02.08.02;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.08.04.15.13.54;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.08.02.02.20.13;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.07.28.05.17.44;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.07.21.22.14.13;	author goodger;	state Exp;
+branches
+	1.1.1.1;
+next	;
+
+1.1.1.1
+date	2001.07.21.22.14.13;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.11
+log
+@refactored to ../test
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.10 $
+:Date: $Date: 2001/08/28 03:26:15 $
+:Copyright: This module has been placed in the public domain.
+
+Test module for states.py.
+"""
+
+import sys
+
+class Tee:
+
+    """Write to a file and a stream (default: stdout) simulteaneously."""
+
+    def __init__(self, filename, stream=sys.__stdout__):
+        self.file = open(filename, 'w')
+        self.stream = stream
+
+    def write(self, string):
+        self.stream.write(string)
+        self.file.write(string)
+
+# redirect output to a common stream & a file
+sys.stderr = sys.stdout = Tee('test_states.out')
+
+
+import unittest, re, difflib
+import states
+from dps.statemachine import string2lines
+try:
+    import mypdb as pdb
+except:
+    import pdb
+
+debug = 0
+
+
+class DataTests(unittest.TestCase):
+
+    """
+    Test data marked with 'XXX' denotes areas where further error checking
+    needs to be done.
+    """
+
+    diff = difflib.Differ().compare
+
+    def setUp(self):
+        self.sm = states.RSTStateMachine(stateclasses=states.stateclasses,
+                                         initialstate='Body', debug=debug)
+
+    def trytest(self, name, index):
+        input, expected = self.totest[name][index]
+        document = self.sm.run(string2lines(input), warninglevel=4,
+                               errorlevel=4)
+        output = document.pprint()
+        try:
+            self.assertEquals('\n' + output, '\n' + expected)
+        except AssertionError:
+            print
+            print 'input:'
+            print input
+            print '-: expected'
+            print '+: output'
+            print ''.join(self.diff(expected.splitlines(1),
+                                    output.splitlines(1)))
+            raise
+
+    totest = {}
+    """Tests to be run. Each key (test type name) maps to a list of tests.
+    Each test is a list: input, expected output, optional modifier. The
+    optional third entry, a behavior modifier, can be 0 (temporarily disable
+    this test) or 1 (run this test under the pdb debugger). Tests should be
+    self-documenting and not require external comments."""
+
+    proven = {}
+    """Tests that have already proven successful."""
+
+    notyet = {}
+    """Experimental, expected-to-fail tests that we *don't* want to run
+    (they don't work yet)."""
+
+    proven['paragraph'] = [
+["""\
+A paragraph.
+""",
+"""\
+<document>
+    <paragraph>
+        A paragraph.
+    </paragraph>
+</document>
+"""],
+["""\
+Paragraph 1.
+
+Paragraph 2.
+""",
+"""\
+<document>
+    <paragraph>
+        Paragraph 1.
+    </paragraph>
+    <paragraph>
+        Paragraph 2.
+    </paragraph>
+</document>
+"""],
+["""\
+Line 1.
+Line 2.
+Line 3.
+""",
+"""\
+<document>
+    <paragraph>
+        Line 1.
+        Line 2.
+        Line 3.
+    </paragraph>
+</document>
+"""],
+["""\
+Paragraph 1, Line 1.
+Line 2.
+Line 3.
+
+Paragraph 2, Line 1.
+Line 2.
+Line 3.
+""",
+"""\
+<document>
+    <paragraph>
+        Paragraph 1, Line 1.
+        Line 2.
+        Line 3.
+    </paragraph>
+    <paragraph>
+        Paragraph 2, Line 1.
+        Line 2.
+        Line 3.
+    </paragraph>
+</document>
+"""],
+]
+
+    proven['block_quote'] = [
+["""\
+Line 1.
+Line 2.
+
+   Indented.
+""",
+"""\
+<document>
+    <paragraph>
+        Line 1.
+        Line 2.
+    </paragraph>
+    <block_quote>
+        <paragraph>
+            Indented.
+        </paragraph>
+    </block_quote>
+</document>
+"""],
+["""\
+Line 1.
+Line 2.
+
+   Indented 1.
+
+      Indented 2.
+""",
+"""\
+<document>
+    <paragraph>
+        Line 1.
+        Line 2.
+    </paragraph>
+    <block_quote>
+        <paragraph>
+            Indented 1.
+        </paragraph>
+        <block_quote>
+            <paragraph>
+                Indented 2.
+            </paragraph>
+        </block_quote>
+    </block_quote>
+</document>
+"""],
+["""\
+Line 1.
+Line 2.
+    Unexpectedly indented.
+""",
+"""\
+<document>
+    <paragraph>
+        Line 1.
+        Line 2.
+    </paragraph>
+    <system_warning level="2">
+        <paragraph>
+            Unexpected indentation at line 3.
+        </paragraph>
+    </system_warning>
+    <block_quote>
+        <paragraph>
+            Unexpectedly indented.
+        </paragraph>
+    </block_quote>
+</document>
+"""],
+["""\
+Line 1.
+Line 2.
+
+   Indented.
+no blank line
+""",
+"""\
+<document>
+    <paragraph>
+        Line 1.
+        Line 2.
+    </paragraph>
+    <block_quote>
+        <paragraph>
+            Indented.
+        </paragraph>
+    </block_quote>
+    <system_warning level="1">
+        <paragraph>
+            Unindent without blank line at line 5.
+        </paragraph>
+    </system_warning>
+    <paragraph>
+        no blank line
+    </paragraph>
+</document>
+"""],
+["""\
+Here is a paragraph.
+
+        Indent 8 spaces.
+
+    Indent 4 spaces.
+
+Is this correct? Should it generate a warning?
+Yes, it is correct, no warning necessary.
+""",
+"""\
+<document>
+    <paragraph>
+        Here is a paragraph.
+    </paragraph>
+    <block_quote>
+        <block_quote>
+            <paragraph>
+                Indent 8 spaces.
+            </paragraph>
+        </block_quote>
+        <paragraph>
+            Indent 4 spaces.
+        </paragraph>
+    </block_quote>
+    <paragraph>
+        Is this correct? Should it generate a warning?
+        Yes, it is correct, no warning necessary.
+    </paragraph>
+</document>
+"""],
+]
+
+    proven['literal_block'] = [
+["""\
+A paragraph::
+
+    A literal block.
+""",
+"""\
+<document>
+    <paragraph>
+        A paragraph:
+    </paragraph>
+    <literal_block>
+        A literal block.
+    </literal_block>
+</document>
+"""],
+["""\
+A paragraph
+on more than
+one line::
+
+    A literal block.
+""",
+"""\
+<document>
+    <paragraph>
+        A paragraph
+        on more than
+        one line:
+    </paragraph>
+    <literal_block>
+        A literal block.
+    </literal_block>
+</document>
+"""],
+["""\
+A paragraph
+on more than
+one line::
+    A literal block
+    with no blank line above.
+""",
+"""\
+<document>
+    <paragraph>
+        A paragraph
+        on more than
+        one line:
+    </paragraph>
+    <system_warning level="2">
+        <paragraph>
+            Unexpected indentation at line 4.
+        </paragraph>
+    </system_warning>
+    <literal_block>
+        A literal block
+        with no blank line above.
+    </literal_block>
+</document>
+"""],
+["""\
+A paragraph::
+
+    A literal block.
+no blank line
+""",
+"""\
+<document>
+    <paragraph>
+        A paragraph:
+    </paragraph>
+    <literal_block>
+        A literal block.
+    </literal_block>
+    <system_warning level="1">
+        <paragraph>
+            Unindent without blank line at line 4.
+        </paragraph>
+    </system_warning>
+    <paragraph>
+        no blank line
+    </paragraph>
+</document>
+"""],
+["""\
+A paragraph: ::
+
+    A literal block.
+""",
+"""\
+<document>
+    <paragraph>
+        A paragraph:
+    </paragraph>
+    <literal_block>
+        A literal block.
+    </literal_block>
+</document>
+"""],
+["""\
+A paragraph:
+
+::
+
+    A literal block.
+""",
+"""\
+<document>
+    <paragraph>
+        A paragraph:
+    </paragraph>
+    <literal_block>
+        A literal block.
+    </literal_block>
+</document>
+"""],
+["""\
+A paragraph::
+
+Not a literal block.
+""",
+"""\
+<document>
+    <paragraph>
+        A paragraph:
+    </paragraph>
+    <system_warning level="1">
+        <paragraph>
+            Literal block expected at line 2; none found.
+        </paragraph>
+    </system_warning>
+    <paragraph>
+        Not a literal block.
+    </paragraph>
+</document>
+"""],
+["""\
+A paragraph::
+
+    A wonky literal block.
+  Literal line 2.
+
+    Literal line 3.
+""",
+"""\
+<document>
+    <paragraph>
+        A paragraph:
+    </paragraph>
+    <literal_block>
+          A wonky literal block.
+        Literal line 2.
+        
+          Literal line 3.
+    </literal_block>
+</document>
+"""],
+["""\
+EOF, even though a literal block is indicated::
+""",
+"""\
+<document>
+    <paragraph>
+        EOF, even though a literal block is indicated:
+    </paragraph>
+    <system_warning level="1">
+        <paragraph>
+            Literal block expected at line 2; none found.
+        </paragraph>
+    </system_warning>
+</document>
+"""],
+]
+
+    proven['bullet_list'] = [
+["""\
+- item
+""",
+"""\
+<document>
+    <bullet_list bullet="-">
+        <list_item>
+            <paragraph>
+                item
+            </paragraph>
+        </list_item>
+    </bullet_list>
+</document>
+"""],
+["""\
+* item 1
+
+* item 2
+""",
+"""\
+<document>
+    <bullet_list bullet="*">
+        <list_item>
+            <paragraph>
+                item 1
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                item 2
+            </paragraph>
+        </list_item>
+    </bullet_list>
+</document>
+"""],
+["""\
+No blank line between:
+
++ item 1
++ item 2
+""",
+"""\
+<document>
+    <paragraph>
+        No blank line between:
+    </paragraph>
+    <bullet_list bullet="+">
+        <list_item>
+            <paragraph>
+                item 1
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                item 2
+            </paragraph>
+        </list_item>
+    </bullet_list>
+</document>
+"""],
+["""\
+- item 1, para 1.
+
+  item 1, para 2.
+
+- item 2
+""",
+"""\
+<document>
+    <bullet_list bullet="-">
+        <list_item>
+            <paragraph>
+                item 1, para 1.
+            </paragraph>
+            <paragraph>
+                item 1, para 2.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                item 2
+            </paragraph>
+        </list_item>
+    </bullet_list>
+</document>
+"""],
+["""\
+- item 1, line 1
+  item 1, line 2
+- item 2
+""",
+"""\
+<document>
+    <bullet_list bullet="-">
+        <list_item>
+            <paragraph>
+                item 1, line 1
+                item 1, line 2
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                item 2
+            </paragraph>
+        </list_item>
+    </bullet_list>
+</document>
+"""],
+["""\
+Different bullets:
+
+- item 1
+
++ item 2
+
+* item 3
+- item 4
+""",
+"""\
+<document>
+    <paragraph>
+        Different bullets:
+    </paragraph>
+    <bullet_list bullet="-">
+        <list_item>
+            <paragraph>
+                item 1
+            </paragraph>
+        </list_item>
+    </bullet_list>
+    <bullet_list bullet="+">
+        <list_item>
+            <paragraph>
+                item 2
+            </paragraph>
+        </list_item>
+    </bullet_list>
+    <bullet_list bullet="*">
+        <list_item>
+            <paragraph>
+                item 3
+            </paragraph>
+        </list_item>
+    </bullet_list>
+    <system_warning level="1">
+        <paragraph>
+            Unindent without blank line at line 8.
+        </paragraph>
+    </system_warning>
+    <bullet_list bullet="-">
+        <list_item>
+            <paragraph>
+                item 4
+            </paragraph>
+        </list_item>
+    </bullet_list>
+</document>
+"""],
+["""\
+- item
+no blank line
+""",
+"""\
+<document>
+    <bullet_list bullet="-">
+        <list_item>
+            <paragraph>
+                item
+            </paragraph>
+        </list_item>
+    </bullet_list>
+    <system_warning level="1">
+        <paragraph>
+            Unindent without blank line at line 2.
+        </paragraph>
+    </system_warning>
+    <paragraph>
+        no blank line
+    </paragraph>
+</document>
+"""],
+["""\
+-
+
+empty item above
+""",
+"""\
+<document>
+    <bullet_list bullet="-">
+        <list_item/>
+    </bullet_list>
+    <paragraph>
+        empty item above
+    </paragraph>
+</document>
+"""],
+["""\
+-
+empty item above, no blank line
+""",
+"""\
+<document>
+    <bullet_list bullet="-">
+        <list_item/>
+    </bullet_list>
+    <system_warning level="1">
+        <paragraph>
+            Unindent without blank line at line 2.
+        </paragraph>
+    </system_warning>
+    <paragraph>
+        empty item above, no blank line
+    </paragraph>
+</document>
+"""],
+]
+
+    proven['definition_list'] = [
+["""\
+term
+  definition
+""",
+"""\
+<document>
+    <definition_list>
+        <definition_list_item>
+            <term>
+                term
+            </term>
+            <definition>
+                <paragraph>
+                    definition
+                </paragraph>
+            </definition>
+        </definition_list_item>
+    </definition_list>
+</document>
+"""],
+["""\
+term
+  definition
+
+paragraph
+""",
+"""\
+<document>
+    <definition_list>
+        <definition_list_item>
+            <term>
+                term
+            </term>
+            <definition>
+                <paragraph>
+                    definition
+                </paragraph>
+            </definition>
+        </definition_list_item>
+    </definition_list>
+    <paragraph>
+        paragraph
+    </paragraph>
+</document>
+"""],
+["""\
+term
+  definition
+no blank line
+""",
+"""\
+<document>
+    <definition_list>
+        <definition_list_item>
+            <term>
+                term
+            </term>
+            <definition>
+                <paragraph>
+                    definition
+                </paragraph>
+            </definition>
+        </definition_list_item>
+    </definition_list>
+    <system_warning level="1">
+        <paragraph>
+            Unindent without blank line at line 3.
+        </paragraph>
+    </system_warning>
+    <paragraph>
+        no blank line
+    </paragraph>
+</document>
+"""],
+["""\
+A paragraph::
+    A literal block without a blank line first?
+""",
+"""\
+<document>
+    <definition_list>
+        <definition_list_item>
+            <term>
+                A paragraph::
+            </term>
+            <definition>
+                <system_warning level="0">
+                    <paragraph>
+                        Blank line missing before literal block? Interpreted as a definition list item. At line 2.
+                    </paragraph>
+                </system_warning>
+                <paragraph>
+                    A literal block without a blank line first?
+                </paragraph>
+            </definition>
+        </definition_list_item>
+    </definition_list>
+</document>
+"""],
+["""\
+term 1
+  definition 1
+
+term 2
+  definition 2
+""",
+"""\
+<document>
+    <definition_list>
+        <definition_list_item>
+            <term>
+                term 1
+            </term>
+            <definition>
+                <paragraph>
+                    definition 1
+                </paragraph>
+            </definition>
+        </definition_list_item>
+        <definition_list_item>
+            <term>
+                term 2
+            </term>
+            <definition>
+                <paragraph>
+                    definition 2
+                </paragraph>
+            </definition>
+        </definition_list_item>
+    </definition_list>
+</document>
+"""],
+["""\
+term 1
+  definition 1 (no blank line below)
+term 2
+  definition 2
+""",
+"""\
+<document>
+    <definition_list>
+        <definition_list_item>
+            <term>
+                term 1
+            </term>
+            <definition>
+                <paragraph>
+                    definition 1 (no blank line below)
+                </paragraph>
+            </definition>
+        </definition_list_item>
+        <definition_list_item>
+            <term>
+                term 2
+            </term>
+            <definition>
+                <paragraph>
+                    definition 2
+                </paragraph>
+            </definition>
+        </definition_list_item>
+    </definition_list>
+</document>
+"""],
+["""\
+term 1
+  definition 1
+
+  term 1a
+    definition 1a
+
+  term 1b
+    definition 1b
+
+term 2
+  definition 2
+
+paragraph
+""",
+"""\
+<document>
+    <definition_list>
+        <definition_list_item>
+            <term>
+                term 1
+            </term>
+            <definition>
+                <paragraph>
+                    definition 1
+                </paragraph>
+                <definition_list>
+                    <definition_list_item>
+                        <term>
+                            term 1a
+                        </term>
+                        <definition>
+                            <paragraph>
+                                definition 1a
+                            </paragraph>
+                        </definition>
+                    </definition_list_item>
+                    <definition_list_item>
+                        <term>
+                            term 1b
+                        </term>
+                        <definition>
+                            <paragraph>
+                                definition 1b
+                            </paragraph>
+                        </definition>
+                    </definition_list_item>
+                </definition_list>
+            </definition>
+        </definition_list_item>
+        <definition_list_item>
+            <term>
+                term 2
+            </term>
+            <definition>
+                <paragraph>
+                    definition 2
+                </paragraph>
+            </definition>
+        </definition_list_item>
+    </definition_list>
+    <paragraph>
+        paragraph
+    </paragraph>
+</document>
+"""],
+["""\
+Term : classifier
+    The ' : ' indicates a classifier in
+    definition list item terms only.
+""",
+"""\
+<document>
+    <definition_list>
+        <definition_list_item>
+            <term>
+                Term
+            </term>
+            <classifier>
+                classifier
+            </classifier>
+            <definition>
+                <paragraph>
+                    The ' : ' indicates a classifier in
+                    definition list item terms only.
+                </paragraph>
+            </definition>
+        </definition_list_item>
+    </definition_list>
+</document>
+"""],
+["""\
+Term: not a classifier
+    Because there's no space before the colon.
+Term :not a classifier
+    Because there's no space after the colon.
+Term \: not a classifier
+    Because the colon is escaped.
+""",
+"""\
+<document>
+    <definition_list>
+        <definition_list_item>
+            <term>
+                Term: not a classifier
+            </term>
+            <definition>
+                <paragraph>
+                    Because there's no space before the colon.
+                </paragraph>
+            </definition>
+        </definition_list_item>
+        <definition_list_item>
+            <term>
+                Term :not a classifier
+            </term>
+            <definition>
+                <paragraph>
+                    Because there's no space after the colon.
+                </paragraph>
+            </definition>
+        </definition_list_item>
+        <definition_list_item>
+            <term>
+                Term : not a classifier
+            </term>
+            <definition>
+                <paragraph>
+                    Because the colon is escaped.
+                </paragraph>
+            </definition>
+        </definition_list_item>
+    </definition_list>
+</document>
+"""],
+["""\
+Term `with *inline ``text **errors : classifier `with *errors ``too
+    Definition `with *inline ``text **markup errors.
+""",
+"""\
+<document>
+    <definition_list>
+        <definition_list_item>
+            <term>
+                Term `with *inline ``text **errors
+            </term>
+            <classifier>
+                classifier `with *errors ``too
+            </classifier>
+            <definition>
+                <system_warning level="1">
+                    <paragraph>
+                        Inline interpreted text or phrase link start-string without end-string at line 1.
+                    </paragraph>
+                </system_warning>
+                <system_warning level="1">
+                    <paragraph>
+                        Inline emphasis start-string without end-string at line 1.
+                    </paragraph>
+                </system_warning>
+                <system_warning level="1">
+                    <paragraph>
+                        Inline literal start-string without end-string at line 1.
+                    </paragraph>
+                </system_warning>
+                <system_warning level="1">
+                    <paragraph>
+                        Inline strong start-string without end-string at line 1.
+                    </paragraph>
+                </system_warning>
+                <system_warning level="1">
+                    <paragraph>
+                        Inline interpreted text or phrase link start-string without end-string at line 1.
+                    </paragraph>
+                </system_warning>
+                <system_warning level="1">
+                    <paragraph>
+                        Inline emphasis start-string without end-string at line 1.
+                    </paragraph>
+                </system_warning>
+                <system_warning level="1">
+                    <paragraph>
+                        Inline literal start-string without end-string at line 1.
+                    </paragraph>
+                </system_warning>
+                <paragraph>
+                    Definition `with *inline ``text **markup errors.
+                </paragraph>
+                <system_warning level="1">
+                    <paragraph>
+                        Inline interpreted text or phrase link start-string without end-string at line 2.
+                    </paragraph>
+                </system_warning>
+                <system_warning level="1">
+                    <paragraph>
+                        Inline emphasis start-string without end-string at line 2.
+                    </paragraph>
+                </system_warning>
+                <system_warning level="1">
+                    <paragraph>
+                        Inline literal start-string without end-string at line 2.
+                    </paragraph>
+                </system_warning>
+                <system_warning level="1">
+                    <paragraph>
+                        Inline strong start-string without end-string at line 2.
+                    </paragraph>
+                </system_warning>
+            </definition>
+        </definition_list_item>
+    </definition_list>
+</document>
+"""],
+]
+
+    proven['doctest_block'] = [
+["""\
+Paragraph.
+
+>>> print "Doctest block."
+Doctest block.
+
+Paragraph.
+""",
+"""\
+<document>
+    <paragraph>
+        Paragraph.
+    </paragraph>
+    <doctest_block>
+        >>> print "Doctest block."
+        Doctest block.
+    </doctest_block>
+    <paragraph>
+        Paragraph.
+    </paragraph>
+</document>
+"""],
+["""\
+Paragraph.
+
+>>> print "    Indented output."
+    Indented output.
+""",
+"""\
+<document>
+    <paragraph>
+        Paragraph.
+    </paragraph>
+    <doctest_block>
+        >>> print "    Indented output."
+            Indented output.
+    </doctest_block>
+</document>
+"""],
+["""\
+Paragraph.
+
+    >>> print "    Indented block & output."
+        Indented block & output.
+""",
+"""\
+<document>
+    <paragraph>
+        Paragraph.
+    </paragraph>
+    <block_quote>
+        <doctest_block>
+            >>> print "    Indented block & output."
+                Indented block & output.
+        </doctest_block>
+    </block_quote>
+</document>
+"""],
+]
+
+    proven['section_header'] = [
+["""\
+Title
+=====
+
+Paragraph.
+""",
+"""\
+<document>
+    <section name="title">
+        <title>
+            Title
+        </title>
+        <paragraph>
+            Paragraph.
+        </paragraph>
+    </section>
+</document>
+"""],
+["""\
+Title
+=====
+Paragraph (no blank line).
+""",
+"""\
+<document>
+    <section name="title">
+        <title>
+            Title
+        </title>
+        <paragraph>
+            Paragraph (no blank line).
+        </paragraph>
+    </section>
+</document>
+"""],
+["""\
+Paragraph.
+
+Title
+=====
+
+Paragraph.
+""",
+"""\
+<document>
+    <paragraph>
+        Paragraph.
+    </paragraph>
+    <section name="title">
+        <title>
+            Title
+        </title>
+        <paragraph>
+            Paragraph.
+        </paragraph>
+    </section>
+</document>
+"""],
+["""\
+Test unexpected section title.
+
+    Title
+    =====
+    Paragraph.
+""",
+"""\
+<document>
+    <paragraph>
+        Test unexpected section title.
+    </paragraph>
+    <block_quote>
+        <system_warning level="3">
+            <paragraph>
+                Unexpected section title at line 4.
+            </paragraph>
+        </system_warning>
+        <paragraph>
+            Paragraph.
+        </paragraph>
+    </block_quote>
+</document>
+"""],
+["""\
+Title
+====
+
+Test short underline.
+""",
+"""\
+<document>
+    <system_warning level="0">
+        <paragraph>
+            Title underline too short at line 2.
+        </paragraph>
+    </system_warning>
+    <section name="title">
+        <title>
+            Title
+        </title>
+        <paragraph>
+            Test short underline.
+        </paragraph>
+    </section>
+</document>
+"""],
+["""\
+=====
+Title
+=====
+
+Test overline title.
+""",
+"""\
+<document>
+    <section name="title">
+        <title>
+            Title
+        </title>
+        <paragraph>
+            Test overline title.
+        </paragraph>
+    </section>
+</document>
+"""],
+["""\
+=======
+ Title
+=======
+
+Test overline title with inset.
+""",
+"""\
+<document>
+    <section name="title">
+        <title>
+            Title
+        </title>
+        <paragraph>
+            Test overline title with inset.
+        </paragraph>
+    </section>
+</document>
+"""],
+["""\
+========================
+ Test Missing Underline
+""",
+"""\
+<document>
+    <system_warning level="3">
+        <paragraph>
+            Incomplete section title at line 1.
+        </paragraph>
+    </system_warning>
+    <system_warning level="3">
+        <paragraph>
+            Missing underline for overline at line 1.
+        </paragraph>
+    </system_warning>
+</document>
+"""],
+["""\
+=======
+ Title
+
+Test missing underline, with paragraph.
+""",
+"""\
+<document>
+    <system_warning level="3">
+        <paragraph>
+            Missing underline for overline at line 1.
+        </paragraph>
+    </system_warning>
+    <paragraph>
+        Test missing underline, with paragraph.
+    </paragraph>
+</document>
+"""],
+["""\
+=======
+ Long    Title
+=======
+
+Test long title and space normalization.
+""",
+"""\
+<document>
+    <system_warning level="0">
+        <paragraph>
+            Title overline too short at line 1.
+        </paragraph>
+    </system_warning>
+    <section name="long title">
+        <title>
+            Long    Title
+        </title>
+        <paragraph>
+            Test long title and space normalization.
+        </paragraph>
+    </section>
+</document>
+"""],
+["""\
+=======
+ Title
+-------
+
+Paragraph.
+""",
+"""\
+<document>
+    <system_warning level="3">
+        <paragraph>
+            Title overline & underline mismatch at line 1.
+        </paragraph>
+    </system_warning>
+    <paragraph>
+        Paragraph.
+    </paragraph>
+</document>
+"""],
+["""\
+Test return to existing, highest-level section (Title 3).
+
+Title 1
+=======
+Paragraph 1.
+
+Title 2
+-------
+Paragraph 2.
+
+Title 3
+=======
+Paragraph 3.
+
+Title 4
+-------
+Paragraph 4.
+""",
+"""\
+<document>
+    <paragraph>
+        Test return to existing, highest-level section (Title 3).
+    </paragraph>
+    <section name="title 1">
+        <title>
+            Title 1
+        </title>
+        <paragraph>
+            Paragraph 1.
+        </paragraph>
+        <section name="title 2">
+            <title>
+                Title 2
+            </title>
+            <paragraph>
+                Paragraph 2.
+            </paragraph>
+        </section>
+    </section>
+    <section name="title 3">
+        <title>
+            Title 3
+        </title>
+        <paragraph>
+            Paragraph 3.
+        </paragraph>
+        <section name="title 4">
+            <title>
+                Title 4
+            </title>
+            <paragraph>
+                Paragraph 4.
+            </paragraph>
+        </section>
+    </section>
+</document>
+"""],
+["""\
+Test return to existing, highest-level section (Title 3, with overlines).
+
+=======
+Title 1
+=======
+Paragraph 1.
+
+-------
+Title 2
+-------
+Paragraph 2.
+
+=======
+Title 3
+=======
+Paragraph 3.
+
+-------
+Title 4
+-------
+Paragraph 4.
+""",
+"""\
+<document>
+    <paragraph>
+        Test return to existing, highest-level section (Title 3, with overlines).
+    </paragraph>
+    <section name="title 1">
+        <title>
+            Title 1
+        </title>
+        <paragraph>
+            Paragraph 1.
+        </paragraph>
+        <section name="title 2">
+            <title>
+                Title 2
+            </title>
+            <paragraph>
+                Paragraph 2.
+            </paragraph>
+        </section>
+    </section>
+    <section name="title 3">
+        <title>
+            Title 3
+        </title>
+        <paragraph>
+            Paragraph 3.
+        </paragraph>
+        <section name="title 4">
+            <title>
+                Title 4
+            </title>
+            <paragraph>
+                Paragraph 4.
+            </paragraph>
+        </section>
+    </section>
+</document>
+"""],
+["""\
+Test return to existing, higher-level section (Title 4).
+
+Title 1
+=======
+Paragraph 1.
+
+Title 2
+-------
+Paragraph 2.
+
+Title 3
+```````
+Paragraph 3.
+
+Title 4
+-------
+Paragraph 4.
+""",
+"""\
+<document>
+    <paragraph>
+        Test return to existing, higher-level section (Title 4).
+    </paragraph>
+    <section name="title 1">
+        <title>
+            Title 1
+        </title>
+        <paragraph>
+            Paragraph 1.
+        </paragraph>
+        <section name="title 2">
+            <title>
+                Title 2
+            </title>
+            <paragraph>
+                Paragraph 2.
+            </paragraph>
+            <section name="title 3">
+                <title>
+                    Title 3
+                </title>
+                <paragraph>
+                    Paragraph 3.
+                </paragraph>
+            </section>
+        </section>
+        <section name="title 4">
+            <title>
+                Title 4
+            </title>
+            <paragraph>
+                Paragraph 4.
+            </paragraph>
+        </section>
+    </section>
+</document>
+"""],
+["""\
+Test bad subsection order (Title 4).
+
+Title 1
+=======
+Paragraph 1.
+
+Title 2
+-------
+Paragraph 2.
+
+Title 3
+=======
+Paragraph 3.
+
+Title 4
+```````
+Paragraph 4.
+""",
+"""\
+<document>
+    <paragraph>
+        Test bad subsection order (Title 4).
+    </paragraph>
+    <section name="title 1">
+        <title>
+            Title 1
+        </title>
+        <paragraph>
+            Paragraph 1.
+        </paragraph>
+        <section name="title 2">
+            <title>
+                Title 2
+            </title>
+            <paragraph>
+                Paragraph 2.
+            </paragraph>
+        </section>
+    </section>
+    <section name="title 3">
+        <title>
+            Title 3
+        </title>
+        <paragraph>
+            Paragraph 3.
+        </paragraph>
+        <system_warning level="3">
+            <paragraph>
+                <strong>
+                    ABORT
+                </strong>
+                : Title level inconsistent at line 15:
+            </paragraph>
+            <literal_block>
+                Title 4
+                ```````
+            </literal_block>
+        </system_warning>
+        <paragraph>
+            Paragraph 4.
+        </paragraph>
+    </section>
+</document>
+"""],
+["""\
+Test bad subsection order (Title 4, with overlines).
+
+=======
+Title 1
+=======
+Paragraph 1.
+
+-------
+Title 2
+-------
+Paragraph 2.
+
+=======
+Title 3
+=======
+Paragraph 3.
+
+```````
+Title 4
+```````
+Paragraph 4.
+""",
+"""\
+<document>
+    <paragraph>
+        Test bad subsection order (Title 4, with overlines).
+    </paragraph>
+    <section name="title 1">
+        <title>
+            Title 1
+        </title>
+        <paragraph>
+            Paragraph 1.
+        </paragraph>
+        <section name="title 2">
+            <title>
+                Title 2
+            </title>
+            <paragraph>
+                Paragraph 2.
+            </paragraph>
+        </section>
+    </section>
+    <section name="title 3">
+        <title>
+            Title 3
+        </title>
+        <paragraph>
+            Paragraph 3.
+        </paragraph>
+        <system_warning level="3">
+            <paragraph>
+                <strong>
+                    ABORT
+                </strong>
+                : Title level inconsistent at line 19:
+            </paragraph>
+            <literal_block>
+                ```````
+                Title 4
+                ```````
+            </literal_block>
+        </system_warning>
+        <paragraph>
+            Paragraph 4.
+        </paragraph>
+    </section>
+</document>
+"""],
+]
+
+    proven['comment'] = [
+["""\
+.. A comment
+
+Paragraph.
+""",
+"""\
+<document>
+    <comment>
+        A comment
+    </comment>
+    <paragraph>
+        Paragraph.
+    </paragraph>
+</document>
+"""],
+["""\
+.. A comment
+   block.
+
+Paragraph.
+""",
+"""\
+<document>
+    <comment>
+        A comment
+        block.
+    </comment>
+    <paragraph>
+        Paragraph.
+    </paragraph>
+</document>
+"""],
+["""\
+..
+   A comment consisting of multiple lines
+   starting on the line after the
+   explicit markup start.
+""",
+"""\
+<document>
+    <comment>
+        A comment consisting of multiple lines
+        starting on the line after the
+        explicit markup start.
+    </comment>
+</document>
+"""],
+["""\
+.. A comment.
+.. Another.
+
+Paragraph.
+""",
+"""\
+<document>
+    <comment>
+        A comment.
+    </comment>
+    <comment>
+        Another.
+    </comment>
+    <paragraph>
+        Paragraph.
+    </paragraph>
+</document>
+"""],
+["""\
+.. A comment
+no blank line
+
+Paragraph.
+""",
+"""\
+<document>
+    <comment>
+        A comment
+    </comment>
+    <system_warning level="1">
+        <paragraph>
+            Unindent without blank line at line 2.
+        </paragraph>
+    </system_warning>
+    <paragraph>
+        no blank line
+    </paragraph>
+    <paragraph>
+        Paragraph.
+    </paragraph>
+</document>
+"""],
+["""\
+.. A comment::
+
+Paragraph.
+""",
+"""\
+<document>
+    <comment>
+        A comment::
+    </comment>
+    <paragraph>
+        Paragraph.
+    </paragraph>
+</document>
+"""],
+["""\
+.. Next is an empty comment, which serves to end this comment and
+   prevents the following block quote being swallowed up.
+
+..
+
+    A block quote.
+""",
+"""\
+<document>
+    <comment>
+        Next is an empty comment, which serves to end this comment and
+        prevents the following block quote being swallowed up.
+    </comment>
+    <comment/>
+    <block_quote>
+        <paragraph>
+            A block quote.
+        </paragraph>
+    </block_quote>
+</document>
+"""],
+["""\
+term 1
+  definition 1
+
+  .. a comment
+
+term 2
+  definition 2
+""",
+"""\
+<document>
+    <definition_list>
+        <definition_list_item>
+            <term>
+                term 1
+            </term>
+            <definition>
+                <paragraph>
+                    definition 1
+                </paragraph>
+                <comment>
+                    a comment
+                </comment>
+            </definition>
+        </definition_list_item>
+        <definition_list_item>
+            <term>
+                term 2
+            </term>
+            <definition>
+                <paragraph>
+                    definition 2
+                </paragraph>
+            </definition>
+        </definition_list_item>
+    </definition_list>
+</document>
+"""],
+["""\
+term 1
+  definition 1
+
+.. a comment
+
+term 2
+  definition 2
+""",
+"""\
+<document>
+    <definition_list>
+        <definition_list_item>
+            <term>
+                term 1
+            </term>
+            <definition>
+                <paragraph>
+                    definition 1
+                </paragraph>
+            </definition>
+        </definition_list_item>
+    </definition_list>
+    <comment>
+        a comment
+    </comment>
+    <definition_list>
+        <definition_list_item>
+            <term>
+                term 2
+            </term>
+            <definition>
+                <paragraph>
+                    definition 2
+                </paragraph>
+            </definition>
+        </definition_list_item>
+    </definition_list>
+</document>
+"""],
+["""\
++ bullet paragraph 1
+
+  bullet paragraph 2
+
+  .. comment between bullet paragraphs 2 and 3
+
+  bullet paragraph 3
+""",
+"""\
+<document>
+    <bullet_list bullet="+">
+        <list_item>
+            <paragraph>
+                bullet paragraph 1
+            </paragraph>
+            <paragraph>
+                bullet paragraph 2
+            </paragraph>
+            <comment>
+                comment between bullet paragraphs 2 and 3
+            </comment>
+            <paragraph>
+                bullet paragraph 3
+            </paragraph>
+        </list_item>
+    </bullet_list>
+</document>
+"""],
+["""\
++ bullet paragraph 1
+
+  .. comment between bullet paragraphs 1 (leader) and 2
+
+  bullet paragraph 2
+""",
+"""\
+<document>
+    <bullet_list bullet="+">
+        <list_item>
+            <paragraph>
+                bullet paragraph 1
+            </paragraph>
+            <comment>
+                comment between bullet paragraphs 1 (leader) and 2
+            </comment>
+            <paragraph>
+                bullet paragraph 2
+            </paragraph>
+        </list_item>
+    </bullet_list>
+</document>
+"""],
+["""\
++ bullet
+
+  .. trailing comment
+""",
+"""\
+<document>
+    <bullet_list bullet="+">
+        <list_item>
+            <paragraph>
+                bullet
+            </paragraph>
+            <comment>
+                trailing comment
+            </comment>
+        </list_item>
+    </bullet_list>
+</document>
+"""],
+]
+
+    proven['directive'] = [
+["""\
+.. directive::
+
+Paragraph.
+""",
+"""\
+<document>
+    <directive type="directive"/>
+    <paragraph>
+        Paragraph.
+    </paragraph>
+</document>
+"""],
+["""\
+.. directive:: argument
+
+Paragraph.
+""",
+"""\
+<document>
+    <directive data="argument" type="directive"/>
+    <paragraph>
+        Paragraph.
+    </paragraph>
+</document>
+"""],
+["""\
+.. directive::
+   block
+
+Paragraph.
+""",
+"""\
+<document>
+    <directive type="directive">
+        <literal_block>
+            block
+        </literal_block>
+    </directive>
+    <paragraph>
+        Paragraph.
+    </paragraph>
+</document>
+"""],
+["""\
+.. directive::
+
+   block
+
+Paragraph.
+""",
+"""\
+<document>
+    <directive type="directive">
+        <literal_block>
+            block
+        </literal_block>
+    </directive>
+    <paragraph>
+        Paragraph.
+    </paragraph>
+</document>
+"""],
+["""\
+.. directive::
+   block
+no blank line.
+
+Paragraph.
+""",
+"""\
+<document>
+    <directive type="directive">
+        <literal_block>
+            block
+        </literal_block>
+    </directive>
+    <system_warning level="1">
+        <paragraph>
+            Unindent without blank line at line 3.
+        </paragraph>
+    </system_warning>
+    <paragraph>
+        no blank line.
+    </paragraph>
+    <paragraph>
+        Paragraph.
+    </paragraph>
+</document>
+"""],
+]
+
+    proven['footnote'] = [
+["""\
+.. [footnote] This is a footnote.
+""",
+"""\
+<document>
+    <footnote name="footnote">
+        <label>
+            footnote
+        </label>
+        <paragraph>
+            This is a footnote.
+        </paragraph>
+    </footnote>
+</document>
+"""],
+["""\
+.. [footnote] This is a footnote
+   on multiple lines.
+""",
+"""\
+<document>
+    <footnote name="footnote">
+        <label>
+            footnote
+        </label>
+        <paragraph>
+            This is a footnote
+            on multiple lines.
+        </paragraph>
+    </footnote>
+</document>
+"""],
+["""\
+.. [footnote1] This is a footnote
+     on multiple lines with more space.
+
+.. [footnote2] This is a footnote
+  on multiple lines with less space.
+""",
+"""\
+<document>
+    <footnote name="footnote1">
+        <label>
+            footnote1
+        </label>
+        <paragraph>
+            This is a footnote
+            on multiple lines with more space.
+        </paragraph>
+    </footnote>
+    <footnote name="footnote2">
+        <label>
+            footnote2
+        </label>
+        <paragraph>
+            This is a footnote
+            on multiple lines with less space.
+        </paragraph>
+    </footnote>
+</document>
+"""],
+["""\
+.. [footnote]
+   This is a footnote on multiple lines
+   whose block starts on line 2.
+""",
+"""\
+<document>
+    <footnote name="footnote">
+        <label>
+            footnote
+        </label>
+        <paragraph>
+            This is a footnote on multiple lines
+            whose block starts on line 2.
+        </paragraph>
+    </footnote>
+</document>
+"""],
+["""\
+.. [footnote]
+
+That was an empty footnote.
+""",
+"""\
+<document>
+    <footnote name="footnote">
+        <label>
+            footnote
+        </label>
+    </footnote>
+    <paragraph>
+        That was an empty footnote.
+    </paragraph>
+</document>
+"""],
+["""\
+.. [footnote]
+No blank line.
+""",
+"""\
+<document>
+    <footnote name="footnote">
+        <label>
+            footnote
+        </label>
+    </footnote>
+    <system_warning level="1">
+        <paragraph>
+            Unindent without blank line at line 2.
+        </paragraph>
+    </system_warning>
+    <paragraph>
+        No blank line.
+    </paragraph>
+</document>
+"""],
+["""\
+.. [foot label with spaces] this isn't a footnote
+
+.. [*footlabelwithmarkup*] this isn't a footnote
+""",
+"""\
+<document>
+    <comment>
+        [foot label with spaces] this isn't a footnote
+    </comment>
+    <comment>
+        [*footlabelwithmarkup*] this isn't a footnote
+    </comment>
+</document>
+"""],
+]
+
+    proven['auto_numbered_footnote'] = [
+["""\
+[#]_ is the first auto-numbered footnote reference.
+[#]_ is the second auto-numbered footnote reference.
+
+.. [#] Auto-numbered footnote 1.
+.. [#] Auto-numbered footnote 2.
+.. [#] Auto-numbered footnote 3.
+
+[#]_ is the third auto-numbered footnote reference.
+""",
+"""\
+<document>
+    <paragraph>
+        <footnote_reference auto="1"/>
+         is the first auto-numbered footnote reference.
+        <footnote_reference auto="1"/>
+         is the second auto-numbered footnote reference.
+    </paragraph>
+    <footnote>
+        <paragraph>
+            Auto-numbered footnote 1.
+        </paragraph>
+    </footnote>
+    <footnote>
+        <paragraph>
+            Auto-numbered footnote 2.
+        </paragraph>
+    </footnote>
+    <footnote>
+        <paragraph>
+            Auto-numbered footnote 3.
+        </paragraph>
+    </footnote>
+    <paragraph>
+        <footnote_reference auto="1"/>
+         is the third auto-numbered footnote reference.
+    </paragraph>
+</document>
+"""],
+["""\
+[#third]_ is a reference to the third auto-numbered footnote.
+
+.. [#first] First auto-numbered footnote.
+.. [#second] Second auto-numbered footnote.
+.. [#third] Third auto-numbered footnote.
+
+[#second]_ is a reference to the second auto-numbered footnote.
+[#first]_ is a reference to the first auto-numbered footnote.
+[#third]_ is another reference to the third auto-numbered footnote.
+
+Here are some internal cross-references to the implicit targets
+generated by the footnotes: first_, second_, third_.
+""",
+"""\
+<document>
+    <paragraph>
+        <footnote_reference auto="1" refname="third"/>
+         is a reference to the third auto-numbered footnote.
+    </paragraph>
+    <footnote name="first">
+        <paragraph>
+            First auto-numbered footnote.
+        </paragraph>
+    </footnote>
+    <footnote name="second">
+        <paragraph>
+            Second auto-numbered footnote.
+        </paragraph>
+    </footnote>
+    <footnote name="third">
+        <paragraph>
+            Third auto-numbered footnote.
+        </paragraph>
+    </footnote>
+    <paragraph>
+        <footnote_reference auto="1" refname="second"/>
+         is a reference to the second auto-numbered footnote.
+        <footnote_reference auto="1" refname="first"/>
+         is a reference to the first auto-numbered footnote.
+        <footnote_reference auto="1" refname="third"/>
+         is another reference to the third auto-numbered footnote.
+    </paragraph>
+    <paragraph>
+        Here are some internal cross-references to the implicit targets
+        generated by the footnotes: 
+        <link refname="first">
+            first
+        </link>
+        , 
+        <link refname="second">
+            second
+        </link>
+        , 
+        <link refname="third">
+            third
+        </link>
+        .
+    </paragraph>
+</document>
+"""],
+["""\
+Mixed anonymous and labelled auto-numbered footnotes:
+
+[#four]_ should be 4, [#]_ should be 1,
+[#]_ should be 3, [#]_ is one too many,
+[#two]_ should be 2, and [#six]_ doesn't exist.
+
+.. [#] Auto-numbered footnote 1.
+.. [#two] Auto-numbered footnote 2.
+.. [#] Auto-numbered footnote 3.
+.. [#four] Auto-numbered footnote 4.
+.. [#five] Auto-numbered footnote 5.
+.. [#five] Auto-numbered footnote 5 again (duplicate).
+""",
+"""\
+<document>
+    <paragraph>
+        Mixed anonymous and labelled auto-numbered footnotes:
+    </paragraph>
+    <paragraph>
+        <footnote_reference auto="1" refname="four"/>
+         should be 4, 
+        <footnote_reference auto="1"/>
+         should be 1,
+        <footnote_reference auto="1"/>
+         should be 3, 
+        <footnote_reference auto="1"/>
+         is one too many,
+        <footnote_reference auto="1" refname="two"/>
+         should be 2, and 
+        <footnote_reference auto="1" refname="six"/>
+         doesn't exist.
+    </paragraph>
+    <footnote>
+        <paragraph>
+            Auto-numbered footnote 1.
+        </paragraph>
+    </footnote>
+    <footnote name="two">
+        <paragraph>
+            Auto-numbered footnote 2.
+        </paragraph>
+    </footnote>
+    <footnote>
+        <paragraph>
+            Auto-numbered footnote 3.
+        </paragraph>
+    </footnote>
+    <footnote name="four">
+        <paragraph>
+            Auto-numbered footnote 4.
+        </paragraph>
+    </footnote>
+    <footnote dupname="five">
+        <paragraph>
+            Auto-numbered footnote 5.
+        </paragraph>
+    </footnote>
+    <footnote dupname="five">
+        <system_warning level="0">
+            <paragraph>
+                Duplicate implicit link name: "five"
+            </paragraph>
+        </system_warning>
+        <paragraph>
+            Auto-numbered footnote 5 again (duplicate).
+        </paragraph>
+    </footnote>
+</document>
+"""],
+]
+
+    proven['target'] = [
+["""\
+.. _target:
+
+(internal hyperlink)
+""",
+"""\
+<document>
+    <target name="target"/>
+    <paragraph>
+        (internal hyperlink)
+    </paragraph>
+</document>
+"""],
+["""\
+.. _one-liner: http://structuredtext.sourceforge.net
+
+.. _starts-on-this-line: http://
+                         structuredtext.
+                         sourceforge.net
+
+.. _entirely-below:
+   http://structuredtext.
+   sourceforge.net
+""",
+"""\
+<document>
+    <target name="one-liner">
+        http://structuredtext.sourceforge.net
+    </target>
+    <target name="starts-on-this-line">
+        http://structuredtext.sourceforge.net
+    </target>
+    <target name="entirely-below">
+        http://structuredtext.sourceforge.net
+    </target>
+</document>
+"""],
+["""\
+.. _target: Not a proper hyperlink target
+""",
+"""\
+<document>
+    <system_warning level="1">
+        <paragraph>
+            Hyperlink target at line 1 contains whitespace. Perhaps a footnote was intended?
+        </paragraph>
+        <literal_block>
+            .. _target: Not a proper hyperlink target
+        </literal_block>
+    </system_warning>
+</document>
+"""],
+["""\
+.. _a long target name:
+
+.. _`a target name: including a colon (quoted)`:
+
+.. _a target name\: including a colon (escaped):
+""",
+"""\
+<document>
+    <target name="a long target name"/>
+    <target name="a target name: including a colon (quoted)"/>
+    <target name="a target name: including a colon (escaped)"/>
+</document>
+"""],
+["""\
+.. _target: http://www.python.org/
+
+(indirect external hyperlink)
+""",
+"""\
+<document>
+    <target name="target">
+        http://www.python.org/
+    </target>
+    <paragraph>
+        (indirect external hyperlink)
+    </paragraph>
+</document>
+"""],
+["""\
+Duplicate indirect links (different URIs):
+
+.. _target: first
+
+.. _target: second
+""",
+"""\
+<document>
+    <paragraph>
+        Duplicate indirect links (different URIs):
+    </paragraph>
+    <target dupname="target">
+        first
+    </target>
+    <system_warning level="1">
+        <paragraph>
+            Duplicate indirect link name: "target"
+        </paragraph>
+    </system_warning>
+    <target name="target">
+        second
+    </target>
+</document>
+"""],
+["""\
+Duplicate indirect links (same URIs):
+
+.. _target: first
+
+.. _target: first
+""",
+"""\
+<document>
+    <paragraph>
+        Duplicate indirect links (same URIs):
+    </paragraph>
+    <target dupname="target">
+        first
+    </target>
+    <system_warning level="0">
+        <paragraph>
+            Duplicate indirect link name: "target"
+        </paragraph>
+    </system_warning>
+    <target name="target">
+        first
+    </target>
+</document>
+"""],
+["""\
+Duplicate implicit links.
+
+Title
+=====
+
+Paragraph.
+
+Title
+=====
+
+Paragraph.
+""",
+"""\
+<document>
+    <paragraph>
+        Duplicate implicit links.
+    </paragraph>
+    <section dupname="title">
+        <title>
+            Title
+        </title>
+        <paragraph>
+            Paragraph.
+        </paragraph>
+    </section>
+    <section dupname="title">
+        <title>
+            Title
+        </title>
+        <system_warning level="0">
+            <paragraph>
+                Duplicate implicit link name: "title"
+            </paragraph>
+        </system_warning>
+        <paragraph>
+            Paragraph.
+        </paragraph>
+    </section>
+</document>
+"""],
+["""\
+Duplicate implicit/explicit links.
+
+Title
+=====
+
+.. _title:
+
+Paragraph.
+""",
+"""\
+<document>
+    <paragraph>
+        Duplicate implicit/explicit links.
+    </paragraph>
+    <section dupname="title">
+        <title>
+            Title
+        </title>
+        <system_warning level="0">
+            <paragraph>
+                Duplicate implicit link name: "title"
+            </paragraph>
+        </system_warning>
+        <target name="title"/>
+        <paragraph>
+            Paragraph.
+        </paragraph>
+    </section>
+</document>
+"""],
+["""\
+Duplicate explicit links.
+
+.. _title:
+
+First.
+
+.. _title:
+
+Second.
+
+.. _title:
+
+Third.
+""",
+"""\
+<document>
+    <paragraph>
+        Duplicate explicit links.
+    </paragraph>
+    <target dupname="title"/>
+    <paragraph>
+        First.
+    </paragraph>
+    <system_warning level="1">
+        <paragraph>
+            Duplicate explicit link name: "title"
+        </paragraph>
+    </system_warning>
+    <target dupname="title"/>
+    <paragraph>
+        Second.
+    </paragraph>
+    <system_warning level="1">
+        <paragraph>
+            Duplicate explicit link name: "title"
+        </paragraph>
+    </system_warning>
+    <target dupname="title"/>
+    <paragraph>
+        Third.
+    </paragraph>
+</document>
+"""],
+["""\
+Duplicate targets:
+
+Target
+======
+
+Implicit section header target.
+
+.. [target] Implicit footnote target.
+
+.. _target:
+
+Explicit internal target.
+
+.. _target: Explicit_indirect_target.
+""",
+"""\
+<document>
+    <paragraph>
+        Duplicate targets:
+    </paragraph>
+    <section dupname="target">
+        <title>
+            Target
+        </title>
+        <paragraph>
+            Implicit section header target.
+        </paragraph>
+        <footnote dupname="target">
+            <label>
+                target
+            </label>
+            <system_warning level="0">
+                <paragraph>
+                    Duplicate implicit link name: "target"
+                </paragraph>
+            </system_warning>
+            <paragraph>
+                Implicit footnote target.
+            </paragraph>
+        </footnote>
+        <system_warning level="0">
+            <paragraph>
+                Duplicate implicit link name: "target"
+            </paragraph>
+        </system_warning>
+        <target dupname="target"/>
+        <paragraph>
+            Explicit internal target.
+        </paragraph>
+        <system_warning level="1">
+            <paragraph>
+                Duplicate indirect link name: "target"
+            </paragraph>
+        </system_warning>
+        <target name="target">
+            Explicit_indirect_target.
+        </target>
+    </section>
+</document>
+"""],
+]
+
+    proven['emphasis'] = [
+["""\
+*emphasis*
+""",
+"""\
+<document>
+    <paragraph>
+        <emphasis>
+            emphasis
+        </emphasis>
+    </paragraph>
+</document>
+"""],
+["""\
+*emphasized sentence
+across lines*
+""",
+"""\
+<document>
+    <paragraph>
+        <emphasis>
+            emphasized sentence
+            across lines
+        </emphasis>
+    </paragraph>
+</document>
+"""],
+["""\
+*emphasis
+""",
+"""\
+<document>
+    <paragraph>
+        *emphasis
+    </paragraph>
+    <system_warning level="1">
+        <paragraph>
+            Inline emphasis start-string without end-string at line 1.
+        </paragraph>
+    </system_warning>
+</document>
+"""],
+["""\
+'*emphasis*' but not '*' or '"*"' or  x*2* or 2*x* or \\*args or *
+or *the\\* *stars\\\\\\* *inside*
+
+(however, '*args' will trigger a warning and may be problematic)
+
+what about *this**?
+""",
+"""\
+<document>
+    <paragraph>
+        '
+        <emphasis>
+            emphasis
+        </emphasis>
+        ' but not '*' or '"*"' or  x*2* or 2*x* or *args or *
+        or 
+        <emphasis>
+            the* *stars\\* *inside
+        </emphasis>
+    </paragraph>
+    <paragraph>
+        (however, '*args' will trigger a warning and may be problematic)
+    </paragraph>
+    <system_warning level="1">
+        <paragraph>
+            Inline emphasis start-string without end-string at line 4.
+        </paragraph>
+    </system_warning>
+    <paragraph>
+        what about 
+        <emphasis>
+            this*
+        </emphasis>
+        ?
+    </paragraph>
+</document>
+"""],
+["""\
+Emphasized asterisk: *\\**
+
+Emphasized double asterisk: *\\***
+""",
+"""\
+<document>
+    <paragraph>
+        Emphasized asterisk: 
+        <emphasis>
+            *
+        </emphasis>
+    </paragraph>
+    <paragraph>
+        Emphasized double asterisk: 
+        <emphasis>
+            **
+        </emphasis>
+    </paragraph>
+</document>
+"""],
+]
+
+    proven['strong'] = [
+["""\
+**strong**
+""",
+"""\
+<document>
+    <paragraph>
+        <strong>
+            strong
+        </strong>
+    </paragraph>
+</document>
+"""],
+["""\
+(**strong**) but not (**) or '(** ' or x**2 or \\**kwargs or **
+
+(however, '**kwargs' will trigger a warning and may be problematic)
+""",
+"""\
+<document>
+    <paragraph>
+        (
+        <strong>
+            strong
+        </strong>
+        ) but not (**) or '(** ' or x**2 or **kwargs or **
+    </paragraph>
+    <paragraph>
+        (however, '**kwargs' will trigger a warning and may be problematic)
+    </paragraph>
+    <system_warning level="1">
+        <paragraph>
+            Inline strong start-string without end-string at line 3.
+        </paragraph>
+    </system_warning>
+</document>
+"""],
+["""\
+Strong asterisk: *****
+
+Strong double asterisk: ******
+""",
+"""\
+<document>
+    <paragraph>
+        Strong asterisk: 
+        <strong>
+            *
+        </strong>
+    </paragraph>
+    <paragraph>
+        Strong double asterisk: 
+        <strong>
+            **
+        </strong>
+    </paragraph>
+</document>
+"""],
+]
+
+    proven['literal'] = [
+["""\
+``literal``
+""",
+"""\
+<document>
+    <paragraph>
+        <literal>
+            literal
+        </literal>
+    </paragraph>
+</document>
+"""],
+["""\
+``\\literal``
+""",
+"""\
+<document>
+    <paragraph>
+        <literal>
+            \\literal
+        </literal>
+    </paragraph>
+</document>
+"""],
+["""\
+``lite\\ral``
+""",
+"""\
+<document>
+    <paragraph>
+        <literal>
+            lite\\ral
+        </literal>
+    </paragraph>
+</document>
+"""],
+["""\
+``literal\\``
+""",
+"""\
+<document>
+    <paragraph>
+        <literal>
+            literal\\
+        </literal>
+    </paragraph>
+</document>
+"""],
+["""\
+``literal ``TeX quotes'' & \\backslash`` but not "``" or ``
+
+(however, ``standalone TeX quotes'' will trigger a warning
+and may be problematic)
+""",
+"""\
+<document>
+    <paragraph>
+        <literal>
+            literal ``TeX quotes'' & \\backslash
+        </literal>
+         but not "``" or ``
+    </paragraph>
+    <paragraph>
+        (however, ``standalone TeX quotes'' will trigger a warning
+        and may be problematic)
+    </paragraph>
+    <system_warning level="1">
+        <paragraph>
+            Inline literal start-string without end-string at line 3.
+        </paragraph>
+    </system_warning>
+</document>
+"""],
+["""\
+Find the ```interpreted text``` in this paragraph!
+""",
+"""\
+<document>
+    <paragraph>
+        Find the 
+        <literal>
+            `interpreted text`
+        </literal>
+         in this paragraph!
+    </paragraph>
+</document>
+"""],
+]
+
+    proven['interpreted'] = [
+["""\
+`interpreted`
+""",
+"""\
+<document>
+    <paragraph>
+        <interpreted>
+            interpreted
+        </interpreted>
+    </paragraph>
+</document>
+"""],
+["""\
+:role:`interpreted`
+""",
+"""\
+<document>
+    <paragraph>
+        <interpreted position="prefix" role="role">
+            interpreted
+        </interpreted>
+    </paragraph>
+</document>
+"""],
+["""\
+`interpreted`:role:
+""",
+"""\
+<document>
+    <paragraph>
+        <interpreted position="suffix" role="role">
+            interpreted
+        </interpreted>
+    </paragraph>
+</document>
+"""],
+["""\
+:role:`:not-role: interpreted`
+""",
+"""\
+<document>
+    <paragraph>
+        <interpreted position="prefix" role="role">
+            :not-role: interpreted
+        </interpreted>
+    </paragraph>
+</document>
+"""],
+["""\
+:very.long-role_name:`interpreted`
+""",
+"""\
+<document>
+    <paragraph>
+        <interpreted position="prefix" role="very.long-role_name">
+            interpreted
+        </interpreted>
+    </paragraph>
+</document>
+"""],
+["""\
+`interpreted` but not \\`interpreted` [`] or ({[`] or [`]}) or `
+""",
+"""\
+<document>
+    <paragraph>
+        <interpreted>
+            interpreted
+        </interpreted>
+         but not `interpreted` [`] or ({[`] or [`]}) or `
+    </paragraph>
+</document>
+"""],
+["""\
+`interpreted`-text `interpreted`: text `interpreted`:text `text`'s interpreted
+""",
+"""\
+<document>
+    <paragraph>
+        <interpreted>
+            interpreted
+        </interpreted>
+        -text 
+        <interpreted>
+            interpreted
+        </interpreted>
+        : text 
+        <interpreted>
+            interpreted
+        </interpreted>
+        :text 
+        <interpreted>
+            text
+        </interpreted>
+        's interpreted
+    </paragraph>
+</document>
+"""],
+]
+
+    proven['link'] = [
+["""\
+link_
+""",
+"""\
+<document>
+    <paragraph>
+        <link refname="link">
+            link
+        </link>
+    </paragraph>
+</document>
+"""],
+["""\
+link_, l_, and l_i-n_k_, but not _link_ or -link_ or link__
+""",
+"""\
+<document>
+    <paragraph>
+        <link refname="link">
+            link
+        </link>
+        , 
+        <link refname="l">
+            l
+        </link>
+        , and 
+        <link refname="l_i-n_k">
+            l_i-n_k
+        </link>
+        , but not _link_ or -link_ or link__
+    </paragraph>
+</document>
+"""],
+]
+
+    proven['phrase_link'] = [
+["""\
+`phrase link`_
+""",
+"""\
+<document>
+    <paragraph>
+        <link refname="phrase link">
+            phrase link
+        </link>
+    </paragraph>
+</document>
+"""],
+["""\
+`phrase link
+across lines`_
+""",
+"""\
+<document>
+    <paragraph>
+        <link refname="phrase link across lines">
+            phrase link
+            across lines
+        </link>
+    </paragraph>
+</document>
+"""],
+["""\
+`phrase\`_ link`_
+""",
+"""\
+<document>
+    <paragraph>
+        <link refname="phrase`_ link">
+            phrase`_ link
+        </link>
+    </paragraph>
+</document>
+"""],
+["""\
+Invalid phrase link:
+
+:role:`phrase link`_
+""",
+"""\
+<document>
+    <paragraph>
+        Invalid phrase link:
+    </paragraph>
+    <paragraph>
+        :role:`phrase link`_
+    </paragraph>
+    <system_warning level="1">
+        <paragraph>
+            Mismatch: inline interpreted text start-string and role with phrase-link end-string at line 3.
+        </paragraph>
+    </system_warning>
+</document>
+"""],
+["""\
+Invalid phrase link:
+
+`phrase link`:role:_
+""",
+"""\
+<document>
+    <paragraph>
+        Invalid phrase link:
+    </paragraph>
+    <paragraph>
+        <interpreted>
+            phrase link
+        </interpreted>
+        :role:_
+    </paragraph>
+</document>
+"""],
+]
+
+    proven['footnote_reference'] = [
+["""\
+[footnote]_
+""",
+"""\
+<document>
+    <paragraph>
+        <footnote_reference refname="footnote">
+            footnote
+        </footnote_reference>
+    </paragraph>
+</document>
+"""],
+["""\
+[footnote]_ and [foot-note]_ and [foot.note]_ and [1]_ but not [foot note]_
+""",
+"""\
+<document>
+    <paragraph>
+        <footnote_reference refname="footnote">
+            footnote
+        </footnote_reference>
+         and 
+        <footnote_reference refname="foot-note">
+            foot-note
+        </footnote_reference>
+         and 
+        <footnote_reference refname="foot.note">
+            foot.note
+        </footnote_reference>
+         and 
+        <footnote_reference refname="1">
+            1
+        </footnote_reference>
+         but not [foot note]_
+    </paragraph>
+</document>
+"""],
+]
+
+    proven['standalone_hyperlink'] = [
+["""\
+http://www.standalone.hyperlink.com
+
+one-slash-only:/absolute.path
+
+mailto:someone@@somewhere.com
+
+news:comp.lang.python
+
+An email address in a sentence: someone@@somewhere.com.
+
+ftp://ends.with.a.period.
+
+(a.question.mark@@end?)
+""",
+"""\
+<document>
+    <paragraph>
+        <link refuri="http://www.standalone.hyperlink.com">
+            http://www.standalone.hyperlink.com
+        </link>
+    </paragraph>
+    <paragraph>
+        <link refuri="one-slash-only:/absolute.path">
+            one-slash-only:/absolute.path
+        </link>
+    </paragraph>
+    <paragraph>
+        <link refuri="mailto:someone@@somewhere.com">
+            mailto:someone@@somewhere.com
+        </link>
+    </paragraph>
+    <paragraph>
+        <link refuri="news:comp.lang.python">
+            news:comp.lang.python
+        </link>
+    </paragraph>
+    <paragraph>
+        An email address in a sentence: 
+        <link refuri="mailto:someone@@somewhere.com">
+            someone@@somewhere.com
+        </link>
+        .
+    </paragraph>
+    <paragraph>
+        <link refuri="ftp://ends.with.a.period">
+            ftp://ends.with.a.period
+        </link>
+        .
+    </paragraph>
+    <paragraph>
+        (
+        <link refuri="mailto:a.question.mark@@end">
+            a.question.mark@@end
+        </link>
+        ?)
+    </paragraph>
+</document>
+"""],
+]
+
+    proven['outdenting'] = [
+["""\
+Anywhere a paragraph would have an effect on the current
+indentation level, a comment or list item should also.
+
++ bullet
+
+This paragraph ends the bullet list item before a block quote.
+
+  Block quote.
+""",
+"""\
+<document>
+    <paragraph>
+        Anywhere a paragraph would have an effect on the current
+        indentation level, a comment or list item should also.
+    </paragraph>
+    <bullet_list bullet="+">
+        <list_item>
+            <paragraph>
+                bullet
+            </paragraph>
+        </list_item>
+    </bullet_list>
+    <paragraph>
+        This paragraph ends the bullet list item before a block quote.
+    </paragraph>
+    <block_quote>
+        <paragraph>
+            Block quote.
+        </paragraph>
+    </block_quote>
+</document>
+"""],
+["""\
++ bullet
+
+.. Comments swallow up all indented text following.
+
+  (Therefore this is not a) block quote.
+
+- bullet
+
+  If we want a block quote after this bullet list item,
+  we need to use an empty comment:
+
+..
+
+  Block quote.
+""",
+"""\
+<document>
+    <bullet_list bullet="+">
+        <list_item>
+            <paragraph>
+                bullet
+            </paragraph>
+        </list_item>
+    </bullet_list>
+    <comment>
+        Comments swallow up all indented text following.
+        
+        (Therefore this is not a) block quote.
+    </comment>
+    <bullet_list bullet="-">
+        <list_item>
+            <paragraph>
+                bullet
+            </paragraph>
+            <paragraph>
+                If we want a block quote after this bullet list item,
+                we need to use an empty comment:
+            </paragraph>
+        </list_item>
+    </bullet_list>
+    <comment/>
+    <block_quote>
+        <paragraph>
+            Block quote.
+        </paragraph>
+    </block_quote>
+</document>
+"""],
+]
+
+    proven['enumerated_list'] = [
+["""\
+1. Item one.
+
+2. Item two.
+
+3. Item three.
+""",
+"""\
+<document>
+    <enumerated_list enumtype="arabic" prefix="" start="1" suffix=".">
+        <list_item>
+            <paragraph>
+                Item one.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item two.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item three.
+            </paragraph>
+        </list_item>
+    </enumerated_list>
+</document>
+"""],
+["""\
+No blank lines betwen items:
+
+1. Item one.
+2. Item two.
+3. Item three.
+""",
+"""\
+<document>
+    <paragraph>
+        No blank lines betwen items:
+    </paragraph>
+    <enumerated_list enumtype="arabic" prefix="" start="1" suffix=".">
+        <list_item>
+            <paragraph>
+                Item one.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item two.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item three.
+            </paragraph>
+        </list_item>
+    </enumerated_list>
+</document>
+"""],
+["""\
+1.
+empty item above, no blank line
+""",
+"""\
+<document>
+    <enumerated_list enumtype="arabic" prefix="" start="1" suffix=".">
+        <list_item/>
+    </enumerated_list>
+    <system_warning level="1">
+        <paragraph>
+            Unindent without blank line at line 2.
+        </paragraph>
+    </system_warning>
+    <paragraph>
+        empty item above, no blank line
+    </paragraph>
+</document>
+"""],
+["""\
+Scrambled:
+
+3. Item three.
+2. Item two.
+1. Item one.
+""",
+"""\
+<document>
+    <paragraph>
+        Scrambled:
+    </paragraph>
+    <system_warning level="0">
+        <paragraph>
+            Enumerated list start value not ordinal-1 at line 3: '3' (ordinal 3)
+        </paragraph>
+    </system_warning>
+    <enumerated_list enumtype="arabic" prefix="" start="3" suffix=".">
+        <list_item>
+            <paragraph>
+                Item three.
+            </paragraph>
+        </list_item>
+    </enumerated_list>
+    <system_warning level="1">
+        <paragraph>
+            Unindent without blank line at line 4.
+        </paragraph>
+    </system_warning>
+    <system_warning level="0">
+        <paragraph>
+            Enumerated list start value not ordinal-1 at line 4: '2' (ordinal 2)
+        </paragraph>
+    </system_warning>
+    <enumerated_list enumtype="arabic" prefix="" start="2" suffix=".">
+        <list_item>
+            <paragraph>
+                Item two.
+            </paragraph>
+        </list_item>
+    </enumerated_list>
+    <system_warning level="1">
+        <paragraph>
+            Unindent without blank line at line 5.
+        </paragraph>
+    </system_warning>
+    <enumerated_list enumtype="arabic" prefix="" start="1" suffix=".">
+        <list_item>
+            <paragraph>
+                Item one.
+            </paragraph>
+        </list_item>
+    </enumerated_list>
+</document>
+"""],
+["""\
+Skipping item 3:
+
+1. Item 1.
+2. Item 2.
+4. Item 4.
+""",
+"""\
+<document>
+    <paragraph>
+        Skipping item 3:
+    </paragraph>
+    <enumerated_list enumtype="arabic" prefix="" start="1" suffix=".">
+        <list_item>
+            <paragraph>
+                Item 1.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item 2.
+            </paragraph>
+        </list_item>
+    </enumerated_list>
+    <system_warning level="1">
+        <paragraph>
+            Unindent without blank line at line 4.
+        </paragraph>
+    </system_warning>
+    <system_warning level="0">
+        <paragraph>
+            Enumerated list start value not ordinal-1 at line 5: '4' (ordinal 4)
+        </paragraph>
+    </system_warning>
+    <enumerated_list enumtype="arabic" prefix="" start="4" suffix=".">
+        <list_item>
+            <paragraph>
+                Item 4.
+            </paragraph>
+        </list_item>
+    </enumerated_list>
+</document>
+"""],
+["""\
+Start with non-ordinal-1:
+
+0. Item zero.
+1. Item one.
+2. Item two.
+3. Item three.
+
+And again:
+
+2. Item two.
+3. Item three.
+""",
+"""\
+<document>
+    <paragraph>
+        Start with non-ordinal-1:
+    </paragraph>
+    <system_warning level="0">
+        <paragraph>
+            Enumerated list start value not ordinal-1 at line 3: '0' (ordinal 0)
+        </paragraph>
+    </system_warning>
+    <enumerated_list enumtype="arabic" prefix="" start="0" suffix=".">
+        <list_item>
+            <paragraph>
+                Item zero.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item one.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item two.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item three.
+            </paragraph>
+        </list_item>
+    </enumerated_list>
+    <paragraph>
+        And again:
+    </paragraph>
+    <system_warning level="0">
+        <paragraph>
+            Enumerated list start value not ordinal-1 at line 10: '2' (ordinal 2)
+        </paragraph>
+    </system_warning>
+    <enumerated_list enumtype="arabic" prefix="" start="2" suffix=".">
+        <list_item>
+            <paragraph>
+                Item two.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item three.
+            </paragraph>
+        </list_item>
+    </enumerated_list>
+</document>
+"""],
+["""\
+1. Item one: line 1,
+   line 2.
+2. Item two: line 1,
+   line 2.
+3. Item three: paragraph 1, line 1,
+   line 2.
+
+   Paragraph 2.
+""",
+"""\
+<document>
+    <enumerated_list enumtype="arabic" prefix="" start="1" suffix=".">
+        <list_item>
+            <paragraph>
+                Item one: line 1,
+                line 2.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item two: line 1,
+                line 2.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item three: paragraph 1, line 1,
+                line 2.
+            </paragraph>
+            <paragraph>
+                Paragraph 2.
+            </paragraph>
+        </list_item>
+    </enumerated_list>
+</document>
+"""],
+["""\
+Different enumeration sequences:
+
+1. Item 1.
+2. Item 2.
+3. Item 3.
+
+A. Item A.
+B. Item B.
+C. Item C.
+
+a. Item a.
+b. Item b.
+c. Item c.
+
+I. Item I.
+II. Item II.
+III. Item III.
+
+i. Item i.
+ii. Item ii.
+iii. Item iii.
+""",
+"""\
+<document>
+    <paragraph>
+        Different enumeration sequences:
+    </paragraph>
+    <enumerated_list enumtype="arabic" prefix="" start="1" suffix=".">
+        <list_item>
+            <paragraph>
+                Item 1.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item 2.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item 3.
+            </paragraph>
+        </list_item>
+    </enumerated_list>
+    <enumerated_list enumtype="upperalpha" prefix="" start="A" suffix=".">
+        <list_item>
+            <paragraph>
+                Item A.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item B.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item C.
+            </paragraph>
+        </list_item>
+    </enumerated_list>
+    <enumerated_list enumtype="loweralpha" prefix="" start="a" suffix=".">
+        <list_item>
+            <paragraph>
+                Item a.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item b.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item c.
+            </paragraph>
+        </list_item>
+    </enumerated_list>
+    <enumerated_list enumtype="upperroman" prefix="" start="I" suffix=".">
+        <list_item>
+            <paragraph>
+                Item I.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item II.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item III.
+            </paragraph>
+        </list_item>
+    </enumerated_list>
+    <enumerated_list enumtype="lowerroman" prefix="" start="i" suffix=".">
+        <list_item>
+            <paragraph>
+                Item i.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item ii.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item iii.
+            </paragraph>
+        </list_item>
+    </enumerated_list>
+</document>
+"""],
+["""\
+Bad Roman numerals:
+
+i. i
+ii. ii
+iii. iii
+iiii. iiii
+
+(I) I
+(IVXLCDM) IVXLCDM
+""",
+"""\
+<document>
+    <paragraph>
+        Bad Roman numerals:
+    </paragraph>
+    <enumerated_list enumtype="lowerroman" prefix="" start="i" suffix=".">
+        <list_item>
+            <paragraph>
+                i
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                ii
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                iii
+            </paragraph>
+        </list_item>
+    </enumerated_list>
+    <system_warning level="1">
+        <paragraph>
+            Unindent without blank line at line 4.
+        </paragraph>
+    </system_warning>
+    <system_warning level="2">
+        <paragraph>
+            Enumerated list start value invalid at line 6: 'iiii' (sequence 'lowerroman')
+        </paragraph>
+    </system_warning>
+    <block_quote>
+        <paragraph>
+            iiii
+        </paragraph>
+    </block_quote>
+    <enumerated_list enumtype="upperroman" prefix="(" start="I" suffix=")">
+        <list_item>
+            <paragraph>
+                I
+            </paragraph>
+        </list_item>
+    </enumerated_list>
+    <system_warning level="1">
+        <paragraph>
+            Unindent without blank line at line 9.
+        </paragraph>
+    </system_warning>
+    <system_warning level="2">
+        <paragraph>
+            Enumerated list start value invalid at line 9: 'IVXLCDM' (sequence 'upperroman')
+        </paragraph>
+    </system_warning>
+    <block_quote>
+        <paragraph>
+            IVXLCDM
+        </paragraph>
+    </block_quote>
+</document>
+"""],
+["""\
+Potentially ambiguous cases:
+
+A. Item A.
+B. Item B.
+C. Item C.
+
+I. Item I.
+II. Item II.
+III. Item III.
+
+a. Item a.
+b. Item b.
+c. Item c.
+
+i. Item i.
+ii. Item ii.
+iii. Item iii.
+
+Phew! Safe!
+""",
+"""\
+<document>
+    <paragraph>
+        Potentially ambiguous cases:
+    </paragraph>
+    <enumerated_list enumtype="upperalpha" prefix="" start="A" suffix=".">
+        <list_item>
+            <paragraph>
+                Item A.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item B.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item C.
+            </paragraph>
+        </list_item>
+    </enumerated_list>
+    <enumerated_list enumtype="upperroman" prefix="" start="I" suffix=".">
+        <list_item>
+            <paragraph>
+                Item I.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item II.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item III.
+            </paragraph>
+        </list_item>
+    </enumerated_list>
+    <enumerated_list enumtype="loweralpha" prefix="" start="a" suffix=".">
+        <list_item>
+            <paragraph>
+                Item a.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item b.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item c.
+            </paragraph>
+        </list_item>
+    </enumerated_list>
+    <enumerated_list enumtype="lowerroman" prefix="" start="i" suffix=".">
+        <list_item>
+            <paragraph>
+                Item i.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item ii.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item iii.
+            </paragraph>
+        </list_item>
+    </enumerated_list>
+    <paragraph>
+        Phew! Safe!
+    </paragraph>
+</document>
+"""],
+["""\
+Definitely ambiguous:
+
+A. Item A.
+B. Item B.
+C. Item C.
+D. Item D.
+E. Item E.
+F. Item F.
+G. Item G.
+H. Item H.
+I. Item I.
+II. Item II.
+III. Item III.
+
+a. Item a.
+b. Item b.
+c. Item c.
+d. Item d.
+e. Item e.
+f. Item f.
+g. Item g.
+h. Item h.
+i. Item i.
+ii. Item ii.
+iii. Item iii.
+""",
+"""\
+<document>
+    <paragraph>
+        Definitely ambiguous:
+    </paragraph>
+    <enumerated_list enumtype="upperalpha" prefix="" start="A" suffix=".">
+        <list_item>
+            <paragraph>
+                Item A.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item B.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item C.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item D.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item E.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item F.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item G.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item H.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item I.
+            </paragraph>
+        </list_item>
+    </enumerated_list>
+    <system_warning level="1">
+        <paragraph>
+            Unindent without blank line at line 4.
+        </paragraph>
+    </system_warning>
+    <system_warning level="0">
+        <paragraph>
+            Enumerated list start value not ordinal-1 at line 12: 'II' (ordinal 2)
+        </paragraph>
+    </system_warning>
+    <enumerated_list enumtype="upperroman" prefix="" start="II" suffix=".">
+        <list_item>
+            <paragraph>
+                Item II.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item III.
+            </paragraph>
+        </list_item>
+    </enumerated_list>
+    <enumerated_list enumtype="loweralpha" prefix="" start="a" suffix=".">
+        <list_item>
+            <paragraph>
+                Item a.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item b.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item c.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item d.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item e.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item f.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item g.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item h.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item i.
+            </paragraph>
+        </list_item>
+    </enumerated_list>
+    <system_warning level="1">
+        <paragraph>
+            Unindent without blank line at line 16.
+        </paragraph>
+    </system_warning>
+    <system_warning level="0">
+        <paragraph>
+            Enumerated list start value not ordinal-1 at line 24: 'ii' (ordinal 2)
+        </paragraph>
+    </system_warning>
+    <enumerated_list enumtype="lowerroman" prefix="" start="ii" suffix=".">
+        <list_item>
+            <paragraph>
+                Item ii.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item iii.
+            </paragraph>
+        </list_item>
+    </enumerated_list>
+</document>
+"""],
+["""\
+Different enumeration formats:
+
+1. Item 1.
+2. Item 2.
+3. Item 3.
+
+1) Item 1).
+2) Item 2).
+3) Item 3).
+
+(1) Item (1).
+(2) Item (2).
+(3) Item (3).
+""",
+"""\
+<document>
+    <paragraph>
+        Different enumeration formats:
+    </paragraph>
+    <enumerated_list enumtype="arabic" prefix="" start="1" suffix=".">
+        <list_item>
+            <paragraph>
+                Item 1.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item 2.
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item 3.
+            </paragraph>
+        </list_item>
+    </enumerated_list>
+    <enumerated_list enumtype="arabic" prefix="" start="1" suffix=")">
+        <list_item>
+            <paragraph>
+                Item 1).
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item 2).
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item 3).
+            </paragraph>
+        </list_item>
+    </enumerated_list>
+    <enumerated_list enumtype="arabic" prefix="(" start="1" suffix=")">
+        <list_item>
+            <paragraph>
+                Item (1).
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item (2).
+            </paragraph>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item (3).
+            </paragraph>
+        </list_item>
+    </enumerated_list>
+</document>
+"""],
+["""\
+Nested enumerated lists:
+
+1. Item 1.
+
+   A) Item A).
+   B) Item B).
+   C) Item C).
+
+2. Item 2.
+
+   (a) Item (a).
+
+       I) Item I).
+       II) Item II).
+       III) Item III).
+
+   (b) Item (b).
+
+   (c) Item (c).
+
+       (i) Item (i).
+       (ii) Item (ii).
+       (iii) Item (iii).
+
+3. Item 3.
+""",
+"""\
+<document>
+    <paragraph>
+        Nested enumerated lists:
+    </paragraph>
+    <enumerated_list enumtype="arabic" prefix="" start="1" suffix=".">
+        <list_item>
+            <paragraph>
+                Item 1.
+            </paragraph>
+            <enumerated_list enumtype="upperalpha" prefix="" start="A" suffix=")">
+                <list_item>
+                    <paragraph>
+                        Item A).
+                    </paragraph>
+                </list_item>
+                <list_item>
+                    <paragraph>
+                        Item B).
+                    </paragraph>
+                </list_item>
+                <list_item>
+                    <paragraph>
+                        Item C).
+                    </paragraph>
+                </list_item>
+            </enumerated_list>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item 2.
+            </paragraph>
+            <enumerated_list enumtype="loweralpha" prefix="(" start="a" suffix=")">
+                <list_item>
+                    <paragraph>
+                        Item (a).
+                    </paragraph>
+                    <enumerated_list enumtype="upperroman" prefix="" start="I" suffix=")">
+                        <list_item>
+                            <paragraph>
+                                Item I).
+                            </paragraph>
+                        </list_item>
+                        <list_item>
+                            <paragraph>
+                                Item II).
+                            </paragraph>
+                        </list_item>
+                        <list_item>
+                            <paragraph>
+                                Item III).
+                            </paragraph>
+                        </list_item>
+                    </enumerated_list>
+                </list_item>
+                <list_item>
+                    <paragraph>
+                        Item (b).
+                    </paragraph>
+                </list_item>
+                <list_item>
+                    <paragraph>
+                        Item (c).
+                    </paragraph>
+                    <enumerated_list enumtype="lowerroman" prefix="(" start="i" suffix=")">
+                        <list_item>
+                            <paragraph>
+                                Item (i).
+                            </paragraph>
+                        </list_item>
+                        <list_item>
+                            <paragraph>
+                                Item (ii).
+                            </paragraph>
+                        </list_item>
+                        <list_item>
+                            <paragraph>
+                                Item (iii).
+                            </paragraph>
+                        </list_item>
+                    </enumerated_list>
+                </list_item>
+            </enumerated_list>
+        </list_item>
+        <list_item>
+            <paragraph>
+                Item 3.
+            </paragraph>
+        </list_item>
+    </enumerated_list>
+</document>
+"""],
+]
+
+    proven['field_list'] = [
+["""\
+One-liners:
+
+:Author: Me
+
+:Version: 1
+
+:Date: 2001-08-11
+
+:Parameter i: integer
+""",
+"""\
+<document>
+    <paragraph>
+        One-liners:
+    </paragraph>
+    <field_list>
+        <field>
+            <field_name>
+                Author
+            </field_name>
+            <field_body>
+                <paragraph>
+                    Me
+                </paragraph>
+            </field_body>
+        </field>
+        <field>
+            <field_name>
+                Version
+            </field_name>
+            <field_body>
+                <paragraph>
+                    1
+                </paragraph>
+            </field_body>
+        </field>
+        <field>
+            <field_name>
+                Date
+            </field_name>
+            <field_body>
+                <paragraph>
+                    2001-08-11
+                </paragraph>
+            </field_body>
+        </field>
+        <field>
+            <field_name>
+                Parameter
+            </field_name>
+            <field_argument>
+                i
+            </field_argument>
+            <field_body>
+                <paragraph>
+                    integer
+                </paragraph>
+            </field_body>
+        </field>
+    </field_list>
+</document>
+"""],
+["""\
+One-liners, no blank lines:
+
+:Author: Me
+:Version: 1
+:Date: 2001-08-11
+:Parameter i: integer
+""",
+"""\
+<document>
+    <paragraph>
+        One-liners, no blank lines:
+    </paragraph>
+    <field_list>
+        <field>
+            <field_name>
+                Author
+            </field_name>
+            <field_body>
+                <paragraph>
+                    Me
+                </paragraph>
+            </field_body>
+        </field>
+        <field>
+            <field_name>
+                Version
+            </field_name>
+            <field_body>
+                <paragraph>
+                    1
+                </paragraph>
+            </field_body>
+        </field>
+        <field>
+            <field_name>
+                Date
+            </field_name>
+            <field_body>
+                <paragraph>
+                    2001-08-11
+                </paragraph>
+            </field_body>
+        </field>
+        <field>
+            <field_name>
+                Parameter
+            </field_name>
+            <field_argument>
+                i
+            </field_argument>
+            <field_body>
+                <paragraph>
+                    integer
+                </paragraph>
+            </field_body>
+        </field>
+    </field_list>
+</document>
+"""],
+["""\
+:field:
+empty item above, no blank line
+""",
+"""\
+<document>
+    <field_list>
+        <field>
+            <field_name>
+                field
+            </field_name>
+            <field_body/>
+        </field>
+    </field_list>
+    <system_warning level="1">
+        <paragraph>
+            Unindent without blank line at line 2.
+        </paragraph>
+    </system_warning>
+    <paragraph>
+        empty item above, no blank line
+    </paragraph>
+</document>
+"""],
+["""\
+Field bodies starting on the next line:
+
+:Author:
+  Me
+:Version:
+  1
+:Date:
+  2001-08-11
+:Parameter i:
+  integer
+""",
+"""\
+<document>
+    <paragraph>
+        Field bodies starting on the next line:
+    </paragraph>
+    <field_list>
+        <field>
+            <field_name>
+                Author
+            </field_name>
+            <field_body>
+                <paragraph>
+                    Me
+                </paragraph>
+            </field_body>
+        </field>
+        <field>
+            <field_name>
+                Version
+            </field_name>
+            <field_body>
+                <paragraph>
+                    1
+                </paragraph>
+            </field_body>
+        </field>
+        <field>
+            <field_name>
+                Date
+            </field_name>
+            <field_body>
+                <paragraph>
+                    2001-08-11
+                </paragraph>
+            </field_body>
+        </field>
+        <field>
+            <field_name>
+                Parameter
+            </field_name>
+            <field_argument>
+                i
+            </field_argument>
+            <field_body>
+                <paragraph>
+                    integer
+                </paragraph>
+            </field_body>
+        </field>
+    </field_list>
+</document>
+"""],
+["""\
+One-paragraph, multi-liners:
+
+:Authors: Me,
+          Myself,
+          and I
+:Version: 1
+          or so
+:Date: 2001-08-11
+       (Saturday)
+:Parameter i: counter
+              (integer)
+""",
+"""\
+<document>
+    <paragraph>
+        One-paragraph, multi-liners:
+    </paragraph>
+    <field_list>
+        <field>
+            <field_name>
+                Authors
+            </field_name>
+            <field_body>
+                <paragraph>
+                    Me,
+                    Myself,
+                    and I
+                </paragraph>
+            </field_body>
+        </field>
+        <field>
+            <field_name>
+                Version
+            </field_name>
+            <field_body>
+                <paragraph>
+                    1
+                    or so
+                </paragraph>
+            </field_body>
+        </field>
+        <field>
+            <field_name>
+                Date
+            </field_name>
+            <field_body>
+                <paragraph>
+                    2001-08-11
+                    (Saturday)
+                </paragraph>
+            </field_body>
+        </field>
+        <field>
+            <field_name>
+                Parameter
+            </field_name>
+            <field_argument>
+                i
+            </field_argument>
+            <field_body>
+                <paragraph>
+                    counter
+                    (integer)
+                </paragraph>
+            </field_body>
+        </field>
+    </field_list>
+</document>
+"""],
+["""\
+One-paragraph, multi-liners, not lined up:
+
+:Authors: Me,
+  Myself,
+  and I
+:Version: 1
+  or so
+:Date: 2001-08-11
+  (Saturday)
+:Parameter i: counter
+  (integer)
+""",
+"""\
+<document>
+    <paragraph>
+        One-paragraph, multi-liners, not lined up:
+    </paragraph>
+    <field_list>
+        <field>
+            <field_name>
+                Authors
+            </field_name>
+            <field_body>
+                <paragraph>
+                    Me,
+                    Myself,
+                    and I
+                </paragraph>
+            </field_body>
+        </field>
+        <field>
+            <field_name>
+                Version
+            </field_name>
+            <field_body>
+                <paragraph>
+                    1
+                    or so
+                </paragraph>
+            </field_body>
+        </field>
+        <field>
+            <field_name>
+                Date
+            </field_name>
+            <field_body>
+                <paragraph>
+                    2001-08-11
+                    (Saturday)
+                </paragraph>
+            </field_body>
+        </field>
+        <field>
+            <field_name>
+                Parameter
+            </field_name>
+            <field_argument>
+                i
+            </field_argument>
+            <field_body>
+                <paragraph>
+                    counter
+                    (integer)
+                </paragraph>
+            </field_body>
+        </field>
+    </field_list>
+</document>
+"""],
+["""\
+Multiple body elements:
+
+:Authors: - Me
+          - Myself
+          - I
+
+:Abstract:
+    This is a field list item's body,
+    containing multiple elements.
+
+    Here's a literal block::
+
+        def f(x):
+            return x**2 + x
+
+    Even nested field lists are possible:
+
+    :Date: 2001-08-11
+    :Day: Saturday
+    :Time: 15:07
+""",
+"""\
+<document>
+    <paragraph>
+        Multiple body elements:
+    </paragraph>
+    <field_list>
+        <field>
+            <field_name>
+                Authors
+            </field_name>
+            <field_body>
+                <bullet_list bullet="-">
+                    <list_item>
+                        <paragraph>
+                            Me
+                        </paragraph>
+                    </list_item>
+                    <list_item>
+                        <paragraph>
+                            Myself
+                        </paragraph>
+                    </list_item>
+                    <list_item>
+                        <paragraph>
+                            I
+                        </paragraph>
+                    </list_item>
+                </bullet_list>
+            </field_body>
+        </field>
+        <field>
+            <field_name>
+                Abstract
+            </field_name>
+            <field_body>
+                <paragraph>
+                    This is a field list item's body,
+                    containing multiple elements.
+                </paragraph>
+                <paragraph>
+                    Here's a literal block:
+                </paragraph>
+                <literal_block>
+                    def f(x):
+                        return x**2 + x
+                </literal_block>
+                <paragraph>
+                    Even nested field lists are possible:
+                </paragraph>
+                <field_list>
+                    <field>
+                        <field_name>
+                            Date
+                        </field_name>
+                        <field_body>
+                            <paragraph>
+                                2001-08-11
+                            </paragraph>
+                        </field_body>
+                    </field>
+                    <field>
+                        <field_name>
+                            Day
+                        </field_name>
+                        <field_body>
+                            <paragraph>
+                                Saturday
+                            </paragraph>
+                        </field_body>
+                    </field>
+                    <field>
+                        <field_name>
+                            Time
+                        </field_name>
+                        <field_body>
+                            <paragraph>
+                                15:07
+                            </paragraph>
+                        </field_body>
+                    </field>
+                </field_list>
+            </field_body>
+        </field>
+    </field_list>
+</document>
+"""],
+["""\
+:Parameter i j k: multiple arguments
+""",
+"""\
+<document>
+    <field_list>
+        <field>
+            <field_name>
+                Parameter
+            </field_name>
+            <field_argument>
+                i
+            </field_argument>
+            <field_argument>
+                j
+            </field_argument>
+            <field_argument>
+                k
+            </field_argument>
+            <field_body>
+                <paragraph>
+                    multiple arguments
+                </paragraph>
+            </field_body>
+        </field>
+    </field_list>
+</document>
+"""],
+["""\
+Some edge cases:
+
+:Empty:
+:Author: Me
+No blank line before this paragraph.
+
+:*Field* `with` **inline** ``markup``: inline markup shouldn't be recognized.
+
+: Field: marker must not begin with whitespace.
+
+:Field : marker must not end with whitespace.
+
+Field: marker is missing its open-colon.
+
+:Field marker is missing its close-colon.
+""",
+"""\
+<document>
+    <paragraph>
+        Some edge cases:
+    </paragraph>
+    <field_list>
+        <field>
+            <field_name>
+                Empty
+            </field_name>
+            <field_body/>
+        </field>
+        <field>
+            <field_name>
+                Author
+            </field_name>
+            <field_body>
+                <paragraph>
+                    Me
+                </paragraph>
+            </field_body>
+        </field>
+    </field_list>
+    <system_warning level="1">
+        <paragraph>
+            Unindent without blank line at line 4.
+        </paragraph>
+    </system_warning>
+    <paragraph>
+        No blank line before this paragraph.
+    </paragraph>
+    <field_list>
+        <field>
+            <field_name>
+                *Field*
+            </field_name>
+            <field_argument>
+                `with`
+            </field_argument>
+            <field_argument>
+                **inline**
+            </field_argument>
+            <field_argument>
+                ``markup``
+            </field_argument>
+            <field_body>
+                <paragraph>
+                    inline markup shouldn't be recognized.
+                </paragraph>
+            </field_body>
+        </field>
+    </field_list>
+    <paragraph>
+        : Field: marker must not begin with whitespace.
+    </paragraph>
+    <paragraph>
+        :Field : marker must not end with whitespace.
+    </paragraph>
+    <paragraph>
+        Field: marker is missing its open-colon.
+    </paragraph>
+    <paragraph>
+        :Field marker is missing its close-colon.
+    </paragraph>
+</document>
+"""],
+]
+
+    proven['option_list'] = [
+["""\
+Short options:
+
+-a       option a
+
+-b file  option b
+
+-cname   option c
+""",
+"""\
+<document>
+    <paragraph>
+        Short options:
+    </paragraph>
+    <option_list>
+        <option_list_item>
+            <option>
+                <short_option>
+                    -a
+                </short_option>
+            </option>
+            <description>
+                <paragraph>
+                    option a
+                </paragraph>
+            </description>
+        </option_list_item>
+        <option_list_item>
+            <option>
+                <short_option>
+                    -b
+                </short_option>
+                <option_argument>
+                    file
+                </option_argument>
+            </option>
+            <description>
+                <paragraph>
+                    option b
+                </paragraph>
+            </description>
+        </option_list_item>
+        <option_list_item>
+            <option>
+                <short_option>
+                    -c
+                </short_option>
+                <option_argument>
+                    name
+                </option_argument>
+            </option>
+            <description>
+                <paragraph>
+                    option c
+                </paragraph>
+            </description>
+        </option_list_item>
+    </option_list>
+</document>
+"""],
+["""\
+Long options:
+
+--aaaa       option aaaa
+--bbbb=file  option bbbb
+--cccc name  option cccc
+--d-e-f-g    option d-e-f-g
+--h_i_j_k    option h_i_j_k
+""",
+"""\
+<document>
+    <paragraph>
+        Long options:
+    </paragraph>
+    <option_list>
+        <option_list_item>
+            <option>
+                <long_option>
+                    --aaaa
+                </long_option>
+            </option>
+            <description>
+                <paragraph>
+                    option aaaa
+                </paragraph>
+            </description>
+        </option_list_item>
+        <option_list_item>
+            <option>
+                <long_option>
+                    --bbbb
+                </long_option>
+                <option_argument>
+                    file
+                </option_argument>
+            </option>
+            <description>
+                <paragraph>
+                    option bbbb
+                </paragraph>
+            </description>
+        </option_list_item>
+        <option_list_item>
+            <option>
+                <long_option>
+                    --cccc
+                </long_option>
+                <option_argument>
+                    name
+                </option_argument>
+            </option>
+            <description>
+                <paragraph>
+                    option cccc
+                </paragraph>
+            </description>
+        </option_list_item>
+        <option_list_item>
+            <option>
+                <long_option>
+                    --d-e-f-g
+                </long_option>
+            </option>
+            <description>
+                <paragraph>
+                    option d-e-f-g
+                </paragraph>
+            </description>
+        </option_list_item>
+        <option_list_item>
+            <option>
+                <long_option>
+                    --h_i_j_k
+                </long_option>
+            </option>
+            <description>
+                <paragraph>
+                    option h_i_j_k
+                </paragraph>
+            </description>
+        </option_list_item>
+    </option_list>
+</document>
+"""],
+["""\
+VMS/DOS-style options:
+
+/A        option A
+/B file   option B
+/Cstring  option C
+""",
+"""\
+<document>
+    <paragraph>
+        VMS/DOS-style options:
+    </paragraph>
+    <option_list>
+        <option_list_item>
+            <option>
+                <vms_option>
+                    /A
+                </vms_option>
+            </option>
+            <description>
+                <paragraph>
+                    option A
+                </paragraph>
+            </description>
+        </option_list_item>
+        <option_list_item>
+            <option>
+                <vms_option>
+                    /B
+                </vms_option>
+                <option_argument>
+                    file
+                </option_argument>
+            </option>
+            <description>
+                <paragraph>
+                    option B
+                </paragraph>
+            </description>
+        </option_list_item>
+        <option_list_item>
+            <option>
+                <vms_option>
+                    /C
+                </vms_option>
+                <option_argument>
+                    string
+                </option_argument>
+            </option>
+            <description>
+                <paragraph>
+                    option C
+                </paragraph>
+            </description>
+        </option_list_item>
+    </option_list>
+</document>
+"""],
+["""\
+Mixed short, long, and VMS/DOS options:
+
+-a           option a
+--bbbb=file  option bbbb
+/C           option C
+--dddd name  option dddd
+-e string    option e
+/F file      option F
+""",
+"""\
+<document>
+    <paragraph>
+        Mixed short, long, and VMS/DOS options:
+    </paragraph>
+    <option_list>
+        <option_list_item>
+            <option>
+                <short_option>
+                    -a
+                </short_option>
+            </option>
+            <description>
+                <paragraph>
+                    option a
+                </paragraph>
+            </description>
+        </option_list_item>
+        <option_list_item>
+            <option>
+                <long_option>
+                    --bbbb
+                </long_option>
+                <option_argument>
+                    file
+                </option_argument>
+            </option>
+            <description>
+                <paragraph>
+                    option bbbb
+                </paragraph>
+            </description>
+        </option_list_item>
+        <option_list_item>
+            <option>
+                <vms_option>
+                    /C
+                </vms_option>
+            </option>
+            <description>
+                <paragraph>
+                    option C
+                </paragraph>
+            </description>
+        </option_list_item>
+        <option_list_item>
+            <option>
+                <long_option>
+                    --dddd
+                </long_option>
+                <option_argument>
+                    name
+                </option_argument>
+            </option>
+            <description>
+                <paragraph>
+                    option dddd
+                </paragraph>
+            </description>
+        </option_list_item>
+        <option_list_item>
+            <option>
+                <short_option>
+                    -e
+                </short_option>
+                <option_argument>
+                    string
+                </option_argument>
+            </option>
+            <description>
+                <paragraph>
+                    option e
+                </paragraph>
+            </description>
+        </option_list_item>
+        <option_list_item>
+            <option>
+                <vms_option>
+                    /F
+                </vms_option>
+                <option_argument>
+                    file
+                </option_argument>
+            </option>
+            <description>
+                <paragraph>
+                    option F
+                </paragraph>
+            </description>
+        </option_list_item>
+    </option_list>
+</document>
+"""],
+["""\
+Aliased options:
+
+-a, --aaaa, /A                 option a, aaaa, A
+-b file, --bbbb=file, /B file  option b, bbbb, B
+""",
+"""\
+<document>
+    <paragraph>
+        Aliased options:
+    </paragraph>
+    <option_list>
+        <option_list_item>
+            <option>
+                <short_option>
+                    -a
+                </short_option>
+            </option>
+            <option>
+                <long_option>
+                    --aaaa
+                </long_option>
+            </option>
+            <option>
+                <vms_option>
+                    /A
+                </vms_option>
+            </option>
+            <description>
+                <paragraph>
+                    option a, aaaa, A
+                </paragraph>
+            </description>
+        </option_list_item>
+        <option_list_item>
+            <option>
+                <short_option>
+                    -b
+                </short_option>
+                <option_argument>
+                    file
+                </option_argument>
+            </option>
+            <option>
+                <long_option>
+                    --bbbb
+                </long_option>
+                <option_argument>
+                    file
+                </option_argument>
+            </option>
+            <option>
+                <vms_option>
+                    /B
+                </vms_option>
+                <option_argument>
+                    file
+                </option_argument>
+            </option>
+            <description>
+                <paragraph>
+                    option b, bbbb, B
+                </paragraph>
+            </description>
+        </option_list_item>
+    </option_list>
+</document>
+"""],
+["""\
+Multiple lines in descriptions, aligned:
+
+-a       option a, line 1
+         line 2
+-b file  option b, line 1
+         line 2
+""",
+"""\
+<document>
+    <paragraph>
+        Multiple lines in descriptions, aligned:
+    </paragraph>
+    <option_list>
+        <option_list_item>
+            <option>
+                <short_option>
+                    -a
+                </short_option>
+            </option>
+            <description>
+                <paragraph>
+                    option a, line 1
+                    line 2
+                </paragraph>
+            </description>
+        </option_list_item>
+        <option_list_item>
+            <option>
+                <short_option>
+                    -b
+                </short_option>
+                <option_argument>
+                    file
+                </option_argument>
+            </option>
+            <description>
+                <paragraph>
+                    option b, line 1
+                    line 2
+                </paragraph>
+            </description>
+        </option_list_item>
+    </option_list>
+</document>
+"""],
+["""\
+Multiple lines in descriptions, not aligned:
+
+-a  option a, line 1
+    line 2
+-b file  option b, line 1
+    line 2
+""",
+"""\
+<document>
+    <paragraph>
+        Multiple lines in descriptions, not aligned:
+    </paragraph>
+    <option_list>
+        <option_list_item>
+            <option>
+                <short_option>
+                    -a
+                </short_option>
+            </option>
+            <description>
+                <paragraph>
+                    option a, line 1
+                    line 2
+                </paragraph>
+            </description>
+        </option_list_item>
+        <option_list_item>
+            <option>
+                <short_option>
+                    -b
+                </short_option>
+                <option_argument>
+                    file
+                </option_argument>
+            </option>
+            <description>
+                <paragraph>
+                    option b, line 1
+                    line 2
+                </paragraph>
+            </description>
+        </option_list_item>
+    </option_list>
+</document>
+"""],
+["""\
+Descriptions begin on next line:
+
+-a
+    option a, line 1
+    line 2
+-b file
+    option b, line 1
+    line 2
+""",
+"""\
+<document>
+    <paragraph>
+        Descriptions begin on next line:
+    </paragraph>
+    <option_list>
+        <option_list_item>
+            <option>
+                <short_option>
+                    -a
+                </short_option>
+            </option>
+            <description>
+                <paragraph>
+                    option a, line 1
+                    line 2
+                </paragraph>
+            </description>
+        </option_list_item>
+        <option_list_item>
+            <option>
+                <short_option>
+                    -b
+                </short_option>
+                <option_argument>
+                    file
+                </option_argument>
+            </option>
+            <description>
+                <paragraph>
+                    option b, line 1
+                    line 2
+                </paragraph>
+            </description>
+        </option_list_item>
+    </option_list>
+</document>
+"""],
+["""\
+Multiple body elements in descriptions:
+
+-a  option a, para 1
+
+    para 2
+-b file
+    option b, para 1
+
+    para 2
+""",
+"""\
+<document>
+    <paragraph>
+        Multiple body elements in descriptions:
+    </paragraph>
+    <option_list>
+        <option_list_item>
+            <option>
+                <short_option>
+                    -a
+                </short_option>
+            </option>
+            <description>
+                <paragraph>
+                    option a, para 1
+                </paragraph>
+                <paragraph>
+                    para 2
+                </paragraph>
+            </description>
+        </option_list_item>
+        <option_list_item>
+            <option>
+                <short_option>
+                    -b
+                </short_option>
+                <option_argument>
+                    file
+                </option_argument>
+            </option>
+            <description>
+                <paragraph>
+                    option b, para 1
+                </paragraph>
+                <paragraph>
+                    para 2
+                </paragraph>
+            </description>
+        </option_list_item>
+    </option_list>
+</document>
+"""],
+["""\
+--option
+empty item above, no blank line
+""",
+"""\
+<document>
+    <option_list>
+        <option_list_item>
+            <option>
+                <long_option>
+                    --option
+                </long_option>
+            </option>
+            <description/>
+        </option_list_item>
+    </option_list>
+    <system_warning level="1">
+        <paragraph>
+            Unindent without blank line at line 2.
+        </paragraph>
+    </system_warning>
+    <paragraph>
+        empty item above, no blank line
+    </paragraph>
+</document>
+"""],
+["""\
+Some edge cases:
+
+--option=arg arg  too many arguments
+
+--option=arg=arg  too many arguments
+
+-aletter arg      too many arguments (-a letter)
+
+/Aletter arg      too many arguments (/A letter)
+
+-a=b              can't use = for short arguments
+
+/A=b              can't use = for DOS/VMS arguments?
+
+--option=         argument missing
+
+--=argument       option missing
+
+--                everything missing
+
+-                 this should be a bullet list item
+""",
+"""\
+<document>
+    <paragraph>
+        Some edge cases:
+    </paragraph>
+    <paragraph>
+        --option=arg arg  too many arguments
+    </paragraph>
+    <paragraph>
+        --option=arg=arg  too many arguments
+    </paragraph>
+    <paragraph>
+        -aletter arg      too many arguments (-a letter)
+    </paragraph>
+    <paragraph>
+        /Aletter arg      too many arguments (/A letter)
+    </paragraph>
+    <paragraph>
+        -a=b              can't use = for short arguments
+    </paragraph>
+    <paragraph>
+        /A=b              can't use = for DOS/VMS arguments?
+    </paragraph>
+    <paragraph>
+        --option=         argument missing
+    </paragraph>
+    <paragraph>
+        --=argument       option missing
+    </paragraph>
+    <paragraph>
+        --                everything missing
+    </paragraph>
+    <bullet_list bullet="-">
+        <list_item>
+            <paragraph>
+                this should be a bullet list item
+            </paragraph>
+        </list_item>
+    </bullet_list>
+</document>
+"""],
+]
+
+    totest['tables'] = [
+["""\
++-------------------------------------+
+| A table with one cell and one line. |
++-------------------------------------+
+
+XXX Temporarily parsing tables as literal blocks.
+""",
+"""\
+<document>
+    <literal_block>
+        +-------------------------------------+
+        | A table with one cell and one line. |
+        +-------------------------------------+
+    </literal_block>
+    <paragraph>
+        XXX Temporarily parsing tables as literal blocks.
+    </paragraph>
+</document>
+"""],
+["""\
++-----------------------+
+| A table with one cell |
+| and two lines.        |
++-----------------------+
+""",
+"""\
+<document>
+    <literal_block>
+        +-----------------------+
+        | A table with one cell |
+        | and two lines.        |
+        +-----------------------+
+    </literal_block>
+</document>
+"""],
+["""\
++--------------+--------------+
+| A table with | two columns. |
++--------------+--------------+
+""",
+"""\
+<document>
+    <literal_block>
+        +--------------+--------------+
+        | A table with | two columns. |
+        +--------------+--------------+
+    </literal_block>
+</document>
+"""],
+["""\
++--------------+
+| A table with |
++--------------+
+| two rows.    |
++--------------+
+""",
+"""\
+<document>
+    <literal_block>
+        +--------------+
+        | A table with |
+        +--------------+
+        | two rows.    |
+        +--------------+
+    </literal_block>
+</document>
+"""],
+["""\
++--------------+-------------+
+| A table with | two columns |
++--------------+-------------+
+| and          | two rows.   |
++--------------+-------------+
+""",
+"""\
+<document>
+    <literal_block>
+        +--------------+-------------+
+        | A table with | two columns |
+        +--------------+-------------+
+        | and          | two rows.   |
+        +--------------+-------------+
+    </literal_block>
+</document>
+"""],
+["""\
++--------------+---------------+
+| A table with | two columns,  |
++--------------+---------------+
+| two rows, and a column span. |
++------------------------------+
+""",
+"""\
+<document>
+    <literal_block>
+        +--------------+---------------+
+        | A table with | two columns,  |
+        +--------------+---------------+
+        | two rows, and a column span. |
+        +------------------------------+
+    </literal_block>
+</document>
+"""],
+["""\
++--------------+--------------+
+| A table with | two columns, |
++--------------+ and a row    |
+| two rows,    | span.        |
++--------------+--------------+
+""",
+"""\
+<document>
+    <literal_block>
+        +--------------+--------------+
+        | A table with | two columns, |
+        +--------------+ and a row    |
+        | two rows,    | span.        |
+        +--------------+--------------+
+    </literal_block>
+</document>
+"""],
+["""\
+Complex spanning pattern (no edge knows all rows/cols):
+
++-----------+-------------------------+
+| W/NW cell | N/NE cell               |
+|           +-------------+-----------+
+|           | Middle cell | E/SE cell |
++-----------+-------------+           |
+| S/SE cell               |           |
++-------------------------+-----------+
+""",
+"""\
+<document>
+    <paragraph>
+        Complex spanning pattern (no edge knows all rows/cols):
+    </paragraph>
+    <literal_block>
+        +-----------+-------------------------+
+        | W/NW cell | N/NE cell               |
+        |           +-------------+-----------+
+        |           | Middle cell | E/SE cell |
+        +-----------+-------------+           |
+        | S/SE cell               |           |
+        +-------------------------+-----------+
+    </literal_block>
+</document>
+"""],
+["""\
++------------------------+------------+----------+----------+
+| Header row, column 1   | Header 2   | Header 3 | Header 4 |
+| (header rows optional) |            |          |          |
++========================+============+==========+==========+
+| body row 1, column 1   | column 2   | column 3 | column 4 |
++------------------------+------------+----------+----------+
+| body row 2             | Cells may span columns.          |
++------------------------+------------+---------------------+
+| body row 3             | Cells may  | - Table cells       |
++------------------------+ span rows. | - contain           |
+| body row 4             |            | - body elements.    |
++------------------------+------------+---------------------+
+""",
+"""\
+<document>
+    <literal_block>
+        +------------------------+------------+----------+----------+
+        | Header row, column 1   | Header 2   | Header 3 | Header 4 |
+        | (header rows optional) |            |          |          |
+        +========================+============+==========+==========+
+        | body row 1, column 1   | column 2   | column 3 | column 4 |
+        +------------------------+------------+----------+----------+
+        | body row 2             | Cells may span columns.          |
+        +------------------------+------------+---------------------+
+        | body row 3             | Cells may  | - Table cells       |
+        +------------------------+ span rows. | - contain           |
+        | body row 4             |            | - body elements.    |
+        +------------------------+------------+---------------------+
+    </literal_block>
+</document>
+"""],
+["""\
++-----------------+--------+
+| A simple table  | cell 2 |
++-----------------+--------+
+| cell 3          | cell 4 |
++-----------------+--------+
+No blank line after table.
+""",
+"""\
+<document>
+    <literal_block>
+        +-----------------+--------+
+        | A simple table  | cell 2 |
+        +-----------------+--------+
+        | cell 3          | cell 4 |
+        +-----------------+--------+
+    </literal_block>
+    <system_warning level="1">
+        <paragraph>
+            Blank line required after table at line 6.
+        </paragraph>
+    </system_warning>
+    <paragraph>
+        No blank line after table.
+    </paragraph>
+</document>
+"""],
+["""\
++-----------------+--------+
+| A simple table  | cell 2 |
++-----------------+--------+
+| cell 3          | cell 4 |
++-----------------+--------+
+    Unexpected indent and no blank line after table.
+""",
+"""\
+<document>
+    <literal_block>
+        +-----------------+--------+
+        | A simple table  | cell 2 |
+        +-----------------+--------+
+        | cell 3          | cell 4 |
+        +-----------------+--------+
+    </literal_block>
+    <system_warning level="2">
+        <paragraph>
+            Unexpected indentation at line 6.
+        </paragraph>
+    </system_warning>
+    <system_warning level="1">
+        <paragraph>
+            Blank line required after table at line 6.
+        </paragraph>
+    </system_warning>
+    <block_quote>
+        <paragraph>
+            Unexpected indent and no blank line after table.
+        </paragraph>
+    </block_quote>
+</document>
+"""],
+]
+
+    ''' # copy this for new entries:
+    totest[''] = [
+["""\
+""",
+"""\
+"""],
+]
+    '''
+
+    ## Uncomment to run previously successful tests also.
+    ## Uncommented by default.
+    totest.update(proven)
+
+    ## Uncomment to run previously successful tests *only*.
+    #totest = proven
+
+    ## Uncomment to run experimental, expected-to-fail tests also.
+    #totest.update(notyet)
+
+    ## Uncomment to run experimental, expected-to-fail tests *only*.
+    #totest = notyet
+
+    for name, cases in totest.items():
+        numcases = len(cases)
+        casenumlen = len('%s' % (numcases - 1))
+        for i in range(numcases):
+            trace = ''
+            if len(cases[i]) == 3:      # optional modifier
+                if cases[i][-1] == 1:   # 1 => run under debugger
+                    del cases[i][0]
+                    trace = 'pdb.set_trace();'
+                else:                   # 0 => disable
+                    continue
+            exec ('def test_%s_%0*i(self): %s self.trytest("%s", %i)'
+                  % (name, casenumlen, i, trace, name, i))
+
+
+class FuctionTests(unittest.TestCase):
+
+    escaped = r'escapes: \*one, \\*two, \\\*three'
+    nulled = 'escapes: \x00*one, \x00\\*two, \x00\\\x00*three'
+    unescaped = r'escapes: *one, \*two, \*three'
+
+    def test_escape2null(self):
+        nulled = states.escape2null(self.escaped)
+        self.assertEquals(nulled, self.nulled)
+        nulled = states.escape2null(self.escaped + '\\')
+        self.assertEquals(nulled, self.nulled + '\x00')
+
+    def test_unescape(self):
+        unescaped = states.unescape(self.nulled)
+        self.assertEquals(unescaped, self.unescaped)
+        restored = states.unescape(self.nulled, 1)
+        self.assertEquals(restored, self.escaped)
+
+
+if __name__ == '__main__':
+#    sys.argv.extend(['-v'])             # uncomment for verbose output
+#    sys.argv.extend(['-v', '-d'])       # uncomment for verbose debug output
+    if sys.argv[-1] == '-d':
+        debug = 1
+        del sys.argv[-1]
+    # When this module is executed from the command-line, run all its tests
+    unittest.main()
+@
+
+
+1.10
+log
+@  - Added 'term : classifier' tests.  - Added auto-numbered footnote tests.  - Added table tests.173 tests OK
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.9 $
+:Date: $Date: 2001/08/25 04:01:35 $
+@
+
+
+1.9
+log
+@  - Added tests for empty list items.  - New test for comment edge case.159 tests, all run OK.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.8 $
+:Date: $Date: 2001/08/23 04:19:35 $
+a316 25
+A paragraph::
+    A literal block without a blank line first?
+""",
+"""\
+<document>
+    <definition_list>
+        <definition_list_item>
+            <term>
+                A paragraph::
+            </term>
+            <definition>
+                <system_warning level="0">
+                    <paragraph>
+                        Blank line missing before literal block? Interpreted as a definition list item. At line 2.
+                    </paragraph>
+                </system_warning>
+                <paragraph>
+                    A literal block without a blank line first?
+                </paragraph>
+            </definition>
+        </definition_list_item>
+    </definition_list>
+</document>
+"""],
+["""\
+d749 25
+d904 147
+d1694 3
+a1696 3
+         A comment consisting of multiple lines
+         starting on the line after the
+         explicit markup start.
+d1858 72
+d2160 173
+d2427 1
+a2427 1
+    <target>
+d2432 1
+a2432 1
+            duplicate indirect link name: "target"
+d2452 1
+a2452 1
+    <target>
+d2457 1
+a2457 1
+            duplicate indirect link name: "target"
+d2483 1
+a2483 1
+    <section>
+d2491 1
+a2491 1
+    <section>
+d2497 1
+a2497 1
+                duplicate implicit link name: "title"
+d2521 1
+a2521 1
+    <section>
+d2527 1
+a2527 1
+                duplicate implicit link name: "title"
+d2557 1
+a2557 1
+    <target/>
+d2563 1
+a2563 1
+            duplicate explicit link name: "title"
+d2566 1
+a2566 1
+    <target/>
+d2572 1
+a2572 1
+            duplicate explicit link name: "title"
+d2575 1
+a2575 1
+    <target/>
+d2602 1
+a2602 1
+    <section>
+d2609 1
+a2609 1
+        <footnote>
+d2615 1
+a2615 1
+                    duplicate implicit link name: "target"
+d2624 1
+a2624 1
+                duplicate implicit link name: "target"
+d2627 1
+a2627 1
+        <target/>
+d2633 1
+a2633 1
+                duplicate indirect link name: "target"
+a3214 75
+    proven['comments_in_bullets'] = [
+["""\
++ bullet paragraph 1
+
+  bullet paragraph 2
+
+  .. comment between bullet paragraphs 2 and 3
+
+  bullet paragraph 3
+""",
+"""\
+<document>
+    <bullet_list bullet="+">
+        <list_item>
+            <paragraph>
+                bullet paragraph 1
+            </paragraph>
+            <paragraph>
+                bullet paragraph 2
+            </paragraph>
+            <comment>
+                comment between bullet paragraphs 2 and 3
+            </comment>
+            <paragraph>
+                bullet paragraph 3
+            </paragraph>
+        </list_item>
+    </bullet_list>
+</document>
+"""],
+["""\
++ bullet paragraph 1
+
+  .. comment between bullet paragraphs 1 (leader) and 2
+
+  bullet paragraph 2
+""",
+"""\
+<document>
+    <bullet_list bullet="+">
+        <list_item>
+            <paragraph>
+                bullet paragraph 1
+            </paragraph>
+            <comment>
+                comment between bullet paragraphs 1 (leader) and 2
+            </comment>
+            <paragraph>
+                bullet paragraph 2
+            </paragraph>
+        </list_item>
+    </bullet_list>
+</document>
+"""],
+["""\
++ bullet
+
+  .. trailing comment
+""",
+"""\
+<document>
+    <bullet_list bullet="+">
+        <list_item>
+            <paragraph>
+                bullet
+            </paragraph>
+            <comment>
+                trailing comment
+            </comment>
+        </list_item>
+    </bullet_list>
+</document>
+"""],
+]
+
+d3222 1
+a3222 1
+paragraph used to end a bullet before a blockquote
+d3224 1
+a3224 1
+  blockquote
+d3240 1
+a3240 1
+        paragraph used to end a bullet before a blockquote
+d3244 1
+a3244 1
+            blockquote
+d3252 3
+a3254 2
+.. a comment used to end a bullet before a blockquote
+   (if you can't think of what to write in the paragraph)
+d3256 1
+a3256 1
+  blockquote
+d3258 6
+a3263 1
+XXX Is this correct? Perhaps comments should be one-liners only.
+d3275 3
+a3277 2
+        a comment used to end a bullet before a blockquote
+        (if you can't think of what to write in the paragraph)
+d3279 12
+d3293 1
+a3293 1
+            blockquote
+a3295 3
+    <paragraph>
+        XXX Is this correct? Perhaps comments should be one-liners only.
+    </paragraph>
+d4233 1
+a4233 1
+    proven['field_lists'] = [
+d4806 1
+a4806 1
+    proven['option_lists'] = [
+d5467 122
+a5588 1
+XXX Temporarily parsing tables as a literal blocks:
+d5590 25
+a5629 3
+    <paragraph>
+        XXX Temporarily parsing tables as a literal blocks:
+    </paragraph>
+a5646 2
+XXX Temporarily parsing tables as a literal blocks:
+
+a5655 3
+    <paragraph>
+        XXX Temporarily parsing tables as a literal blocks:
+    </paragraph>
+d5665 1
+a5665 1
+            Blank line required after table at line 8.
+a5673 2
+XXX Temporarily parsing tables as a literal blocks:
+
+a5682 3
+    <paragraph>
+        XXX Temporarily parsing tables as a literal blocks:
+    </paragraph>
+d5692 1
+a5692 1
+            Unexpected indentation at line 8.
+d5697 1
+a5697 1
+            Blank line required after table at line 8.
+@
+
+
+1.8
+log
+@  - More tests for literal blocks & tables.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.7 $
+:Date: $Date: 2001/08/22 03:38:30 $
+d1539 15
+a1611 1
+
+d3028 19
+d4025 24
+d5038 26
+@
+
+
+1.7
+log
+@Updated.  - New tests for literal_block edge cases.  - New tests for option lists.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.6 $
+:Date: $Date: 2001/08/14 03:41:14 $
+d200 1
+a200 1
+   Unexpectedly indented.
+d342 25
+d722 25
+d2491 1
+a2491 1
+    totest['interpreted'] = [
+d5051 1
+a5051 1
+XXX Temporarily parse a table as a literal_block:
+d5069 1
+a5069 1
+        XXX Temporarily parse a table as a literal_block:
+d5085 71
+@
+
+
+1.6
+log
+@  - Added tests for field lists, option lists.  - Added temporary test for tables.142 tests ran OK
+@
+text
+@d5 3
+a7 3
+:Contact: dgoodger@@bigfoot.com
+:Revision: $Revision: 1.5 $
+:Date: $Date: 2001/08/11 02:08:02 $
+d298 19
+d318 1
+a318 1
+    A literal block without a blank line first.
+d328 1
+a328 1
+                <system_warning level="2">
+d334 1
+a334 1
+                    A literal block without a blank line first.
+d438 15
+a709 5
+                <system_warning level="1">
+                    <paragraph>
+                        Unindent without blank line at line 3.
+                    </paragraph>
+                </system_warning>
+d713 5
+a772 5
+                <system_warning level="1">
+                    <paragraph>
+                        Unindent without blank line at line 3.
+                    </paragraph>
+                </system_warning>
+d1547 23
+d1744 1
+a1744 1
+.. _[footnote] This is a footnote.
+d1748 1
+a1748 1
+    <footnote name="[footnote]">
+d1759 1
+a1759 1
+.. _[footnote] This is a footnote
+d1764 1
+a1764 1
+    <footnote name="[footnote]">
+d1776 1
+a1776 1
+.. _[footnote1] This is a footnote
+d1779 1
+a1779 1
+.. _[footnote2] This is a footnote
+d1784 1
+a1784 1
+    <footnote name="[footnote1]">
+d1793 1
+a1793 1
+    <footnote name="[footnote2]">
+d1805 1
+a1805 1
+.. _[footnote]
+d1811 1
+a1811 1
+    <footnote name="[footnote]">
+d1823 1
+a1823 1
+.. _[footnote]
+d1829 1
+a1829 1
+    <footnote name="[footnote]">
+d1840 1
+a1840 1
+.. _[footnote]
+d1845 1
+a1845 1
+    <footnote name="[footnote]">
+d1861 1
+a1861 1
+.. _[foot label with spaces] text
+d1863 1
+a1863 1
+.. _[*footlabelwithmarkup*] text
+d1868 1
+a1868 1
+        _[foot label with spaces] text
+a1869 5
+    <system_warning level="1">
+        <paragraph>
+            MarkupError: malformed hyperlink target at line 1.
+        </paragraph>
+    </system_warning>
+d1871 1
+a1871 1
+        _[*footlabelwithmarkup*] text
+a1872 5
+    <system_warning level="1">
+        <paragraph>
+            MarkupError: malformed hyperlink target at line 3.
+        </paragraph>
+    </system_warning>
+d1916 15
+d1960 1
+a1960 1
+Duplicate indirect links:
+d1969 1
+a1969 1
+        Duplicate indirect links:
+d1971 1
+a1971 1
+    <target name="target">
+d1985 25
+d2125 61
+d2441 1
+a2441 1
+    proven['interpreted'] = [
+d2455 1
+a2455 1
+`role: interpreted`
+d2460 1
+a2460 1
+        <interpreted role="role">
+d2467 1
+a2467 1
+`interpreted :role`
+d2472 1
+a2472 1
+        <interpreted role="role">
+d2479 1
+a2479 1
+`role\: escaped: interpreted`
+d2484 2
+a2485 2
+        <interpreted role="role: escaped">
+            interpreted
+d2491 1
+a2491 1
+`role: not escaped: interpreted`
+d2496 2
+a2497 2
+        <interpreted role="role">
+            not escaped: interpreted
+a2499 5
+    <system_warning level="1">
+        <paragraph>
+            Multiple role-separators in interpreted text at line 1.
+        </paragraph>
+    </system_warning>
+d2617 38
+d2664 2
+a2665 2
+        <footnote_reference refname="[footnote]">
+            [footnote]
+d2676 2
+a2677 2
+        <footnote_reference refname="[footnote]">
+            [footnote]
+d2680 2
+a2681 2
+        <footnote_reference refname="[foot-note]">
+            [foot-note]
+d2684 2
+a2685 2
+        <footnote_reference refname="[foot.note]">
+            [foot.note]
+d2688 2
+a2689 2
+        <footnote_reference refname="[1]">
+            [1]
+d4512 59
+a4570 1
+Mixed short and long options:
+d4574 4
+a4577 2
+--cccc name  option cccc
+-d string    option d
+d4582 1
+a4582 1
+        Mixed short and long options:
+d4614 12
+d4627 1
+a4627 1
+                    --cccc
+d4635 1
+a4635 1
+                    option cccc
+d4642 1
+a4642 1
+                    -d
+d4650 16
+a4665 1
+                    option d
+d4675 2
+a4676 2
+-a, --aaaa            option aaaa
+-b file, --bbbb=file  option bbbb
+d4695 5
+d4702 1
+a4702 1
+                    option aaaa
+d4723 8
+d4733 1
+a4733 1
+                    option bbbb
+d4942 2
+d4946 2
+d4971 3
+d4975 3
+@
+
+
+1.5
+log
+@124 tests ran OK
+@
+text
+@d4 5
+a8 5
+Author: David Goodger
+Contact: dgoodger@@bigfoot.com
+Revision: $Revision: 1.4 $
+Date: $Date: 2001/08/04 15:13:54 $
+Copyright: This module has been placed in the public domain.
+d255 2
+a256 1
+XXX Is this correct? Should it generate a warning?
+d274 2
+a275 1
+        XXX Is this correct? Should it generate a warning?
+d3538 1
+a3538 1
+   
+d3637 1112
+@
+
+
+1.4
+log
+@added enumerated list tests (to ``notyet``, so they don't get run yet); clarified some edge-case tests
+@
+text
+@d6 2
+a7 2
+Revision: $Revision: 1.2 $
+Date: $Date: 2001/07/28 05:17:44 $
+d602 1
+a602 1
+- 
+d604 1
+a604 1
+empty item (space after hyphen)
+d612 1
+a612 1
+        empty item (space after hyphen)
+d618 1
+a618 3
+empty item, no blank line, but no space after hyphen
+
+XXX Is this correct behavior?
+d622 8
+d631 1
+a631 5
+        -
+        empty item, no blank line, but no space after hyphen
+    </paragraph>
+    <paragraph>
+        XXX Is this correct behavior?
+d1807 1
+a1807 1
+.. _[foot label with spaces] text 
+d1809 1
+a1809 1
+.. _[*footlabelwithmarkup*] text 
+d1814 1
+a1814 1
+        _[foot label with spaces] text 
+d1822 1
+a1822 1
+        _[*footlabelwithmarkup*] text 
+d2523 2
+d2527 2
+d2543 5
+d2553 5
+d2725 1
+a2725 1
+    notyet['enumerated_list'] = [
+d2734 19
+d2762 22
+d2793 46
+d2843 3
+a2845 3
+1. Item three.
+2. Item two.
+4. Item four.
+d2848 34
+d2897 52
+d2961 25
+d2990 15
+a3004 24
+1. First item.
+2. Second item.
+3. Third item.
+
+A. First item.
+B. Second item.
+C. Third item.
+
+a. First item.
+b. Second item.
+c. Third item.
+
+I. First item.
+II. Second item.
+III. Third item.
+
+i. First item.
+ii. Second item.
+iii. Third item.
+""",
+"""\
+"""],
+["""\
+Potentially ambiguous cases:
+d3006 3
+a3008 15
+A. First item.
+B. Second item.
+C. Third item.
+
+I. First item.
+II. Second item.
+III. Third item.
+
+a. First item.
+b. Second item.
+c. Third item.
+
+i. First item.
+ii. Second item.
+iii. Third item.
+d3011 90
+d3103 1
+a3103 1
+Definitely ambiguous:
+d3105 4
+a3108 28
+A. First item.
+B. Second item.
+C. Third item.
+D. Fourth item.
+E. Fifth item.
+F. Sixth item.
+G. Seventh item.
+H. Eighth item.
+I. First item.
+II. Second item.
+III. Third item.
+
+a. First item.
+b. Second item.
+c. Third item.
+d. Fourth item.
+e. Fifth item.
+f. Sixth item.
+g. Seventh item.
+h. Eighth item.
+i. First item.
+ii. Second item.
+iii. Third item.
+""",
+"""\
+"""],
+["""\
+Different enumeration formats:
+d3110 2
+a3111 11
+1. First item.
+2. Second item.
+3. Third item.
+
+1) First item.
+2) Second item.
+3) Third item.
+
+(1) First item.
+(2) Second item.
+(3) Third item.
+d3114 522
+@
+
+
+1.3
+log
+@- Changed to match state.RSTStateMachine.run()'s return value.- Added a bit more explanation to DataTests.totest etc.- Added explanatory text to several tests (makes them self-documenting: "what am I testing?").- Added tests for overline-titles, duplicate link targets.- Moved some tests around to where they make more sense.111 tests, all OK.
+@
+text
+@d248 29
+d620 1
+a620 1
+XXX is this correct behavior?
+d629 1
+a629 1
+        XXX is this correct behavior?
+d1720 1
+a1720 1
+.. _[footnote] This is a footnote
+d1723 1
+a1723 1
+.. _[footnote] This is a footnote
+d1728 1
+a1728 1
+    <footnote>
+d1730 1
+a1730 1
+            footnote
+d1737 1
+a1737 1
+    <footnote>
+d1739 1
+a1739 1
+            footnote
+a1740 5
+        <system_warning level="1">
+            <paragraph>
+                duplicate explicit link name: "[footnote]"
+            </paragraph>
+        </system_warning>
+d2681 2
+d2702 3
+d2706 158
+@
+
+
+1.2
+log
+@Patch 443276 "comment handling" -- added most test cases (but empty comments remain).Added test cases for bugs 443270 & 443294.
+@
+text
+@d6 2
+a7 2
+Revision: $Revision: 1.1.1.1 $
+Date: $Date: 2001/07/21 22:14:13 $
+d57 3
+a59 3
+        self.sm.run(string2lines(input), warninglevel=4,
+                    errorlevel=4)
+        output = self.sm.memo.document.pprint()
+a72 1
+
+d76 2
+a77 1
+    this test) or 1 (run this test under the pdb debugger)."""
+d80 1
+a80 1
+    """tests that have proven successful"""
+d83 2
+a84 1
+    """tests we *don't* want to run"""
+d200 1
+a200 1
+   Indented.
+d215 1
+a215 1
+            Indented.
+d370 1
+a370 1
+    A literal block.
+d381 1
+a381 1
+          A literal block.
+d427 2
+d434 3
+d500 2
+d511 3
+d537 1
+a537 1
+            Unindent without blank line at line 6.
+d575 1
+a575 1
+empty item
+d583 1
+a583 1
+        empty item
+d875 17
+d894 23
+d924 1
+a924 1
+        Paragraph.
+d942 1
+a942 1
+Paragraph.
+d956 1
+a956 1
+            Paragraph.
+d966 1
+a966 1
+Paragraph.
+d975 1
+a975 1
+            Paragraph.
+d985 1
+a985 1
+Paragraph.
+d994 1
+a994 1
+            Paragraph.
+d1000 2
+a1001 2
+=======
+ Title
+d1021 1
+a1021 1
+Paragraph
+d1031 1
+a1031 1
+        Paragraph
+d1040 1
+a1040 1
+Paragraph.
+d1054 1
+a1054 1
+            Paragraph.
+d1079 17
+a1095 3
+Title
+=====
+Paragraph.
+d1099 4
+a1102 1
+    <section name="title">
+d1104 1
+a1104 1
+            Title
+d1107 1
+a1107 1
+            Paragraph.
+d1109 8
+d1118 1
+a1118 16
+</document>
+"""],
+["""\
+Paragraph.
+
+Title
+=====
+
+Paragraph.
+""",
+"""\
+<document>
+    <paragraph>
+        Paragraph.
+    </paragraph>
+    <section name="title">
+d1120 1
+a1120 1
+            Title
+d1123 1
+a1123 1
+            Paragraph.
+d1125 8
+d1137 1
+a1137 1
+Paragraph 1.
+d1139 1
+d1142 1
+a1142 1
+Paragraph 2.
+d1144 1
+d1147 1
+a1147 1
+Paragraph 3.
+d1149 1
+d1152 1
+a1152 1
+Paragraph 4.
+d1154 1
+d1157 1
+a1157 1
+Paragraph 5.
+d1162 1
+a1162 1
+        Paragraph 1.
+d1169 1
+a1169 1
+            Paragraph 2.
+d1176 1
+a1176 1
+                Paragraph 3.
+d1185 1
+a1185 1
+            Paragraph 4.
+d1192 1
+a1192 1
+                Paragraph 5.
+d1199 1
+a1199 1
+Paragraph 1.
+d1203 1
+a1203 1
+Paragraph 2.
+d1207 1
+a1207 1
+Paragraph 3.
+d1211 1
+a1211 1
+Paragraph 4.
+d1215 1
+a1215 1
+Paragraph 5.
+d1220 1
+a1220 1
+        Paragraph 1.
+d1227 1
+a1227 1
+            Paragraph 2.
+d1234 1
+a1234 1
+                Paragraph 3.
+d1241 1
+a1241 1
+                    Paragraph 4.
+d1250 1
+a1250 1
+                Paragraph 5.
+d1257 1
+a1257 1
+Paragraph 1.
+d1261 1
+a1261 1
+Paragraph 2.
+d1265 1
+a1265 1
+Paragraph 3.
+d1269 1
+a1269 1
+Paragraph 4.
+d1272 2
+a1273 2
+~~~~~~~
+Paragraph 5.
+d1278 1
+a1278 1
+        Paragraph 1.
+d1285 1
+a1285 1
+            Paragraph 2.
+d1292 1
+a1292 1
+                Paragraph 3.
+d1301 1
+a1301 1
+            Paragraph 4.
+d1312 1
+a1312 1
+                ~~~~~~~
+d1316 1
+a1316 1
+            Paragraph 5.
+d1322 6
+a1327 2
+Title
+=====
+d1329 4
+a1332 1
+Paragraph.
+d1334 4
+a1337 2
+Title
+=====
+d1339 4
+a1342 1
+Paragraph.
+d1346 4
+a1349 1
+    <section>
+d1351 1
+a1351 1
+            Title
+d1354 1
+a1354 1
+            Paragraph.
+d1356 8
+d1365 1
+a1365 1
+    <section>
+d1367 1
+a1367 1
+            Title
+d1369 4
+a1372 1
+        <system_warning level="0">
+d1374 4
+a1377 1
+                duplicate implicit link name: "title"
+d1379 5
+d1386 1
+a1386 1
+            Paragraph.
+d1875 2
+d1883 3
+d1899 116
+d2541 1
+a2541 1
+    totest['comments_in_bullets'] = [
+d2616 1
+a2616 1
+    totest['outdenting'] = [
+d2689 2
+a2690 1
+    ## uncomment to run previously successful tests also
+d2693 1
+a2693 1
+    ## uncomment to run previously successful tests *only*
+d2696 1
+a2696 1
+    ## uncomment to run experimental, expected-to-fail tests also
+d2699 1
+a2699 1
+    ## uncomment to run experimental, expected-to-fail tests *only*
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d6 2
+a7 2
+Revision: $Revision: 1.2 $
+Date: $Date: 2001/07/20 00:39:32 $
+d18 1
+a18 1
+    
+d22 1
+a22 1
+    
+d31 1
+a31 1
+import unittest, re, ndiff
+d49 2
+d66 4
+a69 3
+            print '-: output'
+            print '+: expected'
+            ndiff.lcompare(output.splitlines(1), expected.splitlines(1))
+d78 1
+a78 1
+    
+d1673 25
+d2121 25
+d2271 1
+a2271 1
+someone@@somewhere.com
+d2290 1
+d2294 1
+d2309 139
+@
+
+
+1.1.1.1
+log
+@initial checkin
+@
+text
+@@

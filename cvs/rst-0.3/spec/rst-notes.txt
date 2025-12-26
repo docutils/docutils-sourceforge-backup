@@ -1,0 +1,137 @@
+=======
+ Notes
+=======
+Date: $Date: 2001/07/21 22:14:24 $
+Revision: $Revision: 1.1.1.1 $
+
+
+To Do
+=====
+
+- set up CVS on SF!
+
+- implement a parser according to the markup implementation plan
+
+- create a standalone reStructuredText -> HTML/XML converter (stdin ->
+  stdout filter)
+
+- allow very long titles (on two or more lines)?
+
+- interpret RCS keywords in field lists? ``$keyword: value$`` could be
+  interpreted as ``keyword: value``; ``$keyword$`` could be
+  interpreted as ``keyword:`` (no value).
+
+
+Enumerated Lists
+================
+
+(A future revision of this specification may allow for compound
+enumerators, such as '1.a.' or '1(a)', to allow for nested enumerated
+lists without indentation.)
+
+
+Literal Blocks
+==============
+
+[Aside: One possible variation is for meta-documentation (perhaps an
+extension?): use triple-colons (':::') or a directive ('..
+literal-parsed::') to indicate 'take the following literal block, mark
+it up as a literal block, then copy it and mark it up as if it weren't
+a literal block'.  The implementation may insert text in-between, such
+as 'Marked up as:', or may alter the formatting (different font, set
+in a colored box, whatever).]
+
+
+Indentation of List Items
+=========================
+
+Perhaps the indentation shouldn't be so strict. Currently, this is
+required::
+
+    1. First line,
+       second line.
+
+Anything wrong with this? ::
+
+    1. First line,
+     second line.
+
+Especially for option lists & field lists, this could be handy::
+
+    --longopt  Description,
+               second line.
+    --verylongopt  Description,
+               second line.
+    --very_long_option_name, --another_long_option, -s
+               Description,
+               second line.
+
+(Currently, the second option's second line has to be lined up with
+the first; and the third option would be very difficult indeed.)
+
+Problem?
+
+    1. First para.
+
+       Block quote. (no good: requires some indent relative to first
+       para)
+
+     Second Para.
+
+    2. Have to carefully define where the literal block ends::
+
+         Literal block
+
+       Literal block?
+
+Hmm... Non-strict indentation isn't such a good idea.
+
+Another approach: Going back to the first draft of reStructuredText
+(2000-11-27 post to Doc-SIG):
+
+    - This is the fourth item of the main list (no blank line above).
+    The second line of this item is not indented relative to the
+    bullet, which precludes it from having a second paragraph.
+
+Change that to *require* a blank line above and below, to reduce
+ambiguity. This "loosening" may be added later, once the parser's
+been nailed down.
+
+
+Horizontal Rules
+================
+
+Wolfgang Lipp suggested adding horizontal rules (HTML <HR>) to the
+syntax.  A line of punctuation with a blank line before and after::
+
+    Para.
+
+    ------------------------------------------------------------
+
+    Para.
+
+The problem is, HRs are purely presentational.  What structural
+significance do they have?
+
+
+Parser Notes
+============
+
+- What should incorrect indentation do? E.g.::
+
+      Here is a paragraph.
+
+              Indent 8 spaces.
+
+          Indent 4 spaces.
+
+  As is, this generates a <block_quote><block_quote></></>. Should
+  this trigger a warning?
+
+
+Local Variables:
+mode: indented-text
+indent-tabs-mode: nil
+sentence-end-double-space: t
+fill-column: 70
+End:

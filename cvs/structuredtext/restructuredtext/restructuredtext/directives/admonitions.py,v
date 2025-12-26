@@ -1,0 +1,182 @@
+head	1.5;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.5
+date	2002.03.07.02.07.46;	author richard;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.11.19.04.30.51;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.11.06.00.53.35;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.09.13.02.21.05;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.09.12.04.05.41;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.5
+log
+@fixed imports so the package path is correct for installed modules.
+... the non-package restructuredtext reference should probably go away,
+    though that'll make testing a bugger while dps and rest are split...
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2001/11/19 04:30:51 $
+:Copyright: This module has been placed in the public domain.
+
+Admonition directives.
+"""
+
+__docformat__ = 'reStructuredText'
+
+__all__ = ['attention', 'caution', 'danger', 'error', 'important', 'note',
+           'tip', 'hint', 'warning']
+
+
+try:
+    from restructuredtext import states
+except ImportError:
+    from dps.parsers.restructuredtext import states
+from dps import nodes
+
+
+def admonition(nodeclass, match, typename, data, state, statemachine,
+               attributes):
+    indented, indent, lineoffset, blankfinish \
+          = statemachine.getfirstknownindented(match.end())
+    text = '\n'.join(indented)
+    admonitionnode = nodeclass(text)
+    if text:
+        state.nestedparse(indented, lineoffset, admonitionnode)
+    return [admonitionnode], blankfinish
+
+def attention(*args, **kwargs):
+    return admonition(nodes.attention, *args, **kwargs)
+
+def caution(*args, **kwargs):
+    return admonition(nodes.caution, *args, **kwargs)
+
+def danger(*args, **kwargs):
+    return admonition(nodes.danger, *args, **kwargs)
+
+def error(*args, **kwargs):
+    return admonition(nodes.error, *args, **kwargs)
+
+def important(*args, **kwargs):
+    return admonition(nodes.important, *args, **kwargs)
+
+def note(*args, **kwargs):
+    return admonition(nodes.note, *args, **kwargs)
+
+def tip(*args, **kwargs):
+    return admonition(nodes.tip, *args, **kwargs)
+
+def hint(*args, **kwargs):
+    return admonition(nodes.hint, *args, **kwargs)
+
+def warning(*args, **kwargs):
+    return admonition(nodes.warning, *args, **kwargs)
+@
+
+
+1.4
+log
+@  - Updated for directive 'attributes' parameter.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2001/11/06 00:53:35 $
+d19 4
+a22 1
+from restructuredtext import states
+@
+
+
+1.3
+log
+@  - Added 'hint'.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.2 $
+:Date: $Date: 2001/09/13 02:21:05 $
+d23 2
+a24 1
+def admonition(nodeclass, match, typename, data, state, statemachine):
+@
+
+
+1.2
+log
+@  - Added 'attention' admonition.  - Sorted admonitions alphabetically.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.1 $
+:Date: $Date: 2001/09/12 04:05:41 $
+d16 1
+a16 1
+           'tip', 'warning']
+d52 3
+@
+
+
+1.1
+log
+@Implementation of admonition directives, 'note', 'caution', etc.
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/09/10 04:44:21 $
+d15 2
+a16 1
+__all__ = ['note', 'tip', 'warning', 'error', 'caution', 'danger', 'important']
+d32 2
+a33 11
+def note(*args, **kwargs):
+    return admonition(nodes.note, *args, **kwargs)
+
+def tip(*args, **kwargs):
+    return admonition(nodes.tip, *args, **kwargs)
+
+def warning(*args, **kwargs):
+    return admonition(nodes.warning, *args, **kwargs)
+
+def error(*args, **kwargs):
+    return admonition(nodes.error, *args, **kwargs)
+d41 3
+d46 9
+@
+

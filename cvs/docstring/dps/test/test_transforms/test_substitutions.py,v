@@ -1,0 +1,197 @@
+head	1.6;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.6
+date	2002.04.13.16.59.29;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2002.03.11.03.26.16;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2002.02.15.22.45.58;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2002.02.06.03.11.25;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2002.01.30.04.43.23;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2002.01.29.02.18.14;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.6
+log
+@updated
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.5 $
+:Date: $Date: 2002/03/11 03:26:16 $
+:Copyright: This module has been placed in the public domain.
+
+Tests for dps.transforms.references.Substitutions.
+"""
+
+import DPSTestSupport
+from dps.transforms.references import Substitutions
+import UnitTestFolder
+try:
+    from restructuredtext import Parser
+except ImportError:
+    from dps.parsers.restructuredtext import Parser
+
+
+def suite():
+    parser = Parser()
+    s = DPSTestSupport.TransformTestSuite(parser)
+    s.generateTests(totest)
+    return s
+
+totest = {}
+
+totest['substitutions'] = ((Substitutions,), [
+["""\
+The |biohazard| symbol is deservedly scary-looking.
+
+.. |biohazard| image:: biohazard.png
+""",
+"""\
+<document>
+    <paragraph>
+        The 
+        <image alt="biohazard" uri="biohazard.png">
+         symbol is deservedly scary-looking.
+    <substitution_definition name="biohazard">
+        <image alt="biohazard" uri="biohazard.png">
+"""],
+["""\
+Here's an |unknown| substitution.
+""",
+"""\
+<document>
+    <paragraph>
+        Here's an 
+        <problematic id="id2" refid="id1">
+            |unknown|
+         substitution.
+    <system_message backrefs="id2" id="id1" level="3" type="ERROR">
+        <paragraph>
+            Undefined substitution referenced: "unknown".
+"""],
+])
+
+
+if __name__ == '__main__':
+    import unittest
+    unittest.main(defaultTest='suite')
+@
+
+
+1.5
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2002/02/15 22:45:58 $
+d53 1
+a53 1
+            unknown
+d55 1
+a55 1
+    <system_message id="id1" level="3" refid="id2" type="ERROR">
+@
+
+
+1.4
+log
+@  - Changed "system_warning" to "system_message".
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2002/02/06 03:11:25 $
+d52 1
+a52 1
+        <problematic>
+d55 1
+a55 1
+    <system_message level="3" type="ERROR">
+@
+
+
+1.3
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.2 $
+:Date: $Date: 2002/01/30 04:43:23 $
+d55 1
+a55 1
+    <system_warning level="3" type="ERROR">
+@
+
+
+1.2
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.1 $
+:Date: $Date: 2002/01/29 02:18:14 $
+d23 1
+a23 1
+    parser = Parser(debug=UnitTestFolder.debug)
+d55 1
+a55 1
+    <system_warning level="2">
+@
+
+
+1.1
+log
+@tests for dps.transforms.references.Substitutions
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/01/28 02:20:33 $
+d23 1
+a23 2
+    parser = Parser(warninglevel=4, errorlevel=4, languagecode='en',
+                    debug=UnitTestFolder.debug)
+@
+

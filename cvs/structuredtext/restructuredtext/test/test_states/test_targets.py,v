@@ -1,0 +1,1454 @@
+head	1.20;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.20
+date	2002.04.13.16.28.10;	author goodger;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2002.03.28.04.20.55;	author goodger;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2002.03.16.05.29.51;	author goodger;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2002.03.12.03.28.54;	author goodger;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2002.03.11.03.18.45;	author goodger;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2002.03.07.03.46.31;	author goodger;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2002.02.20.04.25.58;	author goodger;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2002.02.15.22.58.16;	author goodger;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2002.02.06.02.19.12;	author goodger;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2002.01.29.02.15.36;	author goodger;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2002.01.25.23.45.44;	author goodger;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2001.11.22.04.21.17;	author goodger;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2001.11.19.04.33.50;	author goodger;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2001.10.31.05.48.24;	author goodger;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2001.10.30.05.04.33;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2001.10.23.03.38.36;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.10.20.02.49.04;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.09.13.02.41.53;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.09.02.14.07.43;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.09.01.17.02.21;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.20
+log
+@updated
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.19 $
+:Date: $Date: 2002/03/28 04:20:55 $
+:Copyright: This module has been placed in the public domain.
+
+Tests for states.py.
+"""
+
+import RSTTestSupport
+
+def suite():
+    s = RSTTestSupport.ParserTestSuite()
+    s.generateTests(totest)
+    return s
+
+totest = {}
+
+totest['targets'] = [
+["""\
+.. _target:
+
+(Internal hyperlink target.)
+""",
+"""\
+<document>
+    <target id="target" name="target">
+    <paragraph>
+        (Internal hyperlink target.)
+"""],
+["""\
+External hyperlink targets:
+
+.. _one-liner: http://structuredtext.sourceforge.net
+
+.. _starts-on-this-line: http://
+                         structuredtext.
+                         sourceforge.net
+
+.. _entirely-below:
+   http://structuredtext.
+   sourceforge.net
+
+.. _not-indirect: uri\_
+""",
+"""\
+<document>
+    <paragraph>
+        External hyperlink targets:
+    <target id="one-liner" name="one-liner" refuri="http://structuredtext.sourceforge.net">
+    <target id="starts-on-this-line" name="starts-on-this-line" refuri="http://structuredtext.sourceforge.net">
+    <target id="entirely-below" name="entirely-below" refuri="http://structuredtext.sourceforge.net">
+    <target id="not-indirect" name="not-indirect" refuri="uri_">
+"""],
+["""\
+Indirect hyperlink targets:
+
+.. _target1: reference_
+
+.. _target2: `phrase-link reference`_
+""",
+"""\
+<document>
+    <paragraph>
+        Indirect hyperlink targets:
+    <target id="target1" name="target1" refname="reference">
+    <target id="target2" name="target2" refname="phrase-link reference">
+"""],
+["""\
+.. _target1: Not a proper hyperlink target
+
+.. _target2: Although it ends with an underscore, this is not a phrase-link_
+
+.. _target3: A multi-line verson of something
+   ending with an underscore, but not a phrase-link_
+""",
+"""\
+<document>
+    <system_message level="2" type="WARNING">
+        <paragraph>
+            Hyperlink target at line 1 contains whitespace. Perhaps a footnote was intended?
+        <literal_block>
+            .. _target1: Not a proper hyperlink target
+    <system_message level="2" type="WARNING">
+        <paragraph>
+            Hyperlink target at line 3 contains whitespace. Perhaps a footnote was intended?
+        <literal_block>
+            .. _target2: Although it ends with an underscore, this is not a phrase-link_
+    <system_message level="2" type="WARNING">
+        <paragraph>
+            Hyperlink target at line 5 contains whitespace. Perhaps a footnote was intended?
+        <literal_block>
+            .. _target3: A multi-line verson of something
+               ending with an underscore, but not a phrase-link_
+"""],
+["""\
+.. __: Not a proper hyperlink target
+
+__ Although it ends with an underscore, this is not a phrase-link_
+
+__ A multi-line verson of something
+   ending with an underscore, but not a phrase-link_
+""",
+"""\
+<document>
+    <system_message level="2" type="WARNING">
+        <paragraph>
+            Hyperlink target at line 1 contains whitespace. Perhaps a footnote was intended?
+        <literal_block>
+            .. __: Not a proper hyperlink target
+    <system_message level="2" type="WARNING">
+        <paragraph>
+            Anonymous hyperlink target at line 3 contains whitespace. Perhaps a footnote was intended?
+        <literal_block>
+            __ Although it ends with an underscore, this is not a phrase-link_
+    <system_message level="2" type="WARNING">
+        <paragraph>
+            Anonymous hyperlink target at line 5 contains whitespace. Perhaps a footnote was intended?
+        <literal_block>
+            __ A multi-line verson of something
+            ending with an underscore, but not a phrase-link_
+"""],
+["""\
+.. _a long target name:
+
+.. _`a target name: including a colon (quoted)`:
+
+.. _a target name\: including a colon (escaped):
+""",
+"""\
+<document>
+    <target id="a-long-target-name" name="a long target name">
+    <target id="a-target-name-including-a-colon-quoted" name="a target name: including a colon (quoted)">
+    <target id="a-target-name-including-a-colon-escaped" name="a target name: including a colon (escaped)">
+"""],
+["""\
+.. _a very long target name,
+   split across lines:
+.. _`and another,
+   with backquotes`:
+""",
+"""\
+<document>
+    <target id="a-very-long-target-name-split-across-lines" name="a very long target name, split across lines">
+    <target id="and-another-with-backquotes" name="and another, with backquotes">
+"""],
+["""\
+External hyperlink:
+
+.. _target: http://www.python.org/
+""",
+"""\
+<document>
+    <paragraph>
+        External hyperlink:
+    <target id="target" name="target" refuri="http://www.python.org/">
+"""],
+["""\
+Duplicate external targets (different URIs):
+
+.. _target: first
+
+.. _target: second
+""",
+"""\
+<document>
+    <paragraph>
+        Duplicate external targets (different URIs):
+    <target dupname="target" id="target" refuri="first">
+    <system_message backrefs="id1" level="2" type="WARNING">
+        <paragraph>
+            Duplicate explicit target name: "target".
+    <target dupname="target" id="id1" refuri="second">
+"""],
+["""\
+Duplicate external targets (same URIs):
+
+.. _target: first
+
+.. _target: first
+""",
+"""\
+<document>
+    <paragraph>
+        Duplicate external targets (same URIs):
+    <target dupname="target" id="target" refuri="first">
+    <system_message backrefs="id1" level="1" type="INFO">
+        <paragraph>
+            Duplicate explicit target name: "target".
+    <target id="id1" name="target" refuri="first">
+"""],
+["""\
+Duplicate implicit targets.
+
+Title
+=====
+
+Paragraph.
+
+Title
+=====
+
+Paragraph.
+""",
+"""\
+<document>
+    <paragraph>
+        Duplicate implicit targets.
+    <section dupname="title" id="title">
+        <title>
+            Title
+        <paragraph>
+            Paragraph.
+    <section dupname="title" id="id1">
+        <title>
+            Title
+        <system_message backrefs="id1" level="1" type="INFO">
+            <paragraph>
+                Duplicate implicit target name: "title".
+        <paragraph>
+            Paragraph.
+"""],
+["""\
+Duplicate implicit/explicit targets.
+
+Title
+=====
+
+.. _title:
+
+Paragraph.
+""",
+"""\
+<document>
+    <paragraph>
+        Duplicate implicit/explicit targets.
+    <section dupname="title" id="title">
+        <title>
+            Title
+        <system_message backrefs="id1" level="1" type="INFO">
+            <paragraph>
+                Duplicate implicit target name: "title".
+        <target id="id1" name="title">
+        <paragraph>
+            Paragraph.
+"""],
+["""\
+Duplicate explicit targets.
+
+.. _title:
+
+First.
+
+.. _title:
+
+Second.
+
+.. _title:
+
+Third.
+""",
+"""\
+<document>
+    <paragraph>
+        Duplicate explicit targets.
+    <target dupname="title" id="title">
+    <paragraph>
+        First.
+    <system_message backrefs="id1" level="2" type="WARNING">
+        <paragraph>
+            Duplicate explicit target name: "title".
+    <target dupname="title" id="id1">
+    <paragraph>
+        Second.
+    <system_message backrefs="id2" level="2" type="WARNING">
+        <paragraph>
+            Duplicate explicit target name: "title".
+    <target dupname="title" id="id2">
+    <paragraph>
+        Third.
+"""],
+["""\
+Duplicate targets:
+
+Target
+======
+
+Implicit section header target.
+
+.. [target] Citation target.
+
+.. [#target] Autonumber-labeled footnote target.
+
+.. _target:
+
+Explicit internal target.
+
+.. _target: Explicit_external_target
+""",
+"""\
+<document>
+    <paragraph>
+        Duplicate targets:
+    <section dupname="target" id="target">
+        <title>
+            Target
+        <paragraph>
+            Implicit section header target.
+        <citation dupname="target" id="id1">
+            <label>
+                target
+            <system_message backrefs="id1" level="1" type="INFO">
+                <paragraph>
+                    Duplicate implicit target name: "target".
+            <paragraph>
+                Citation target.
+        <footnote auto="1" dupname="target" id="id2">
+            <system_message backrefs="id2" level="2" type="WARNING">
+                <paragraph>
+                    Duplicate explicit target name: "target".
+            <paragraph>
+                Autonumber-labeled footnote target.
+        <system_message backrefs="id3" level="2" type="WARNING">
+            <paragraph>
+                Duplicate explicit target name: "target".
+        <target dupname="target" id="id3">
+        <paragraph>
+            Explicit internal target.
+        <system_message backrefs="id4" level="2" type="WARNING">
+            <paragraph>
+                Duplicate explicit target name: "target".
+        <target dupname="target" id="id4" refuri="Explicit_external_target">
+"""],
+]
+
+totest['anonymous_targets'] = [
+["""\
+Anonymous external hyperlink target:
+
+.. __: http://w3c.org/
+""",
+"""\
+<document>
+    <paragraph>
+        Anonymous external hyperlink target:
+    <target anonymous="1" id="id1" refuri="http://w3c.org/">
+"""],
+["""\
+Anonymous external hyperlink target:
+
+__ http://w3c.org/
+""",
+"""\
+<document>
+    <paragraph>
+        Anonymous external hyperlink target:
+    <target anonymous="1" id="id1" refuri="http://w3c.org/">
+"""],
+["""\
+Anonymous indirect hyperlink target:
+
+.. __: reference_
+""",
+"""\
+<document>
+    <paragraph>
+        Anonymous indirect hyperlink target:
+    <target anonymous="1" id="id1" refname="reference">
+"""],
+["""\
+Anonymous indirect hyperlink targets:
+
+__ reference_
+__ `a very long
+   reference`_
+""",
+"""\
+<document>
+    <paragraph>
+        Anonymous indirect hyperlink targets:
+    <target anonymous="1" id="id1" refname="reference">
+    <target anonymous="1" id="id2" refname="a very long reference">
+"""],
+["""\
+Mixed anonymous & named indirect hyperlink targets:
+
+__ reference_
+.. __: reference_
+__ reference_
+.. _target1: reference_
+no blank line
+
+.. _target2: reference_
+__ reference_
+.. __: reference_
+__ reference_
+no blank line
+""",
+"""\
+<document>
+    <paragraph>
+        Mixed anonymous & named indirect hyperlink targets:
+    <target anonymous="1" id="id1" refname="reference">
+    <target anonymous="1" id="id2" refname="reference">
+    <target anonymous="1" id="id3" refname="reference">
+    <target id="target1" name="target1" refname="reference">
+    <system_message level="2" type="WARNING">
+        <paragraph>
+            Unindent without blank line at line 7.
+    <paragraph>
+        no blank line
+    <target id="target2" name="target2" refname="reference">
+    <target anonymous="1" id="id4" refname="reference">
+    <target anonymous="1" id="id5" refname="reference">
+    <target anonymous="1" id="id6" refname="reference">
+    <system_message level="2" type="WARNING">
+        <paragraph>
+            Unindent without blank line at line 13.
+    <paragraph>
+        no blank line
+"""],
+]
+
+if __name__ == '__main__':
+    import unittest
+    unittest.main(defaultTest='suite')
+@
+
+
+1.19
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.18 $
+:Date: $Date: 2002/03/16 05:29:51 $
+d173 1
+a173 1
+    <system_message level="2" refid="id1" type="WARNING">
+d190 1
+a190 1
+    <system_message level="1" refid="id1" type="INFO">
+d220 1
+a220 1
+        <system_message level="1" refid="id1" type="INFO">
+d243 1
+a243 1
+        <system_message level="1" refid="id1" type="INFO">
+d272 1
+a272 1
+    <system_message level="2" refid="id1" type="WARNING">
+d278 1
+a278 1
+    <system_message level="2" refid="id2" type="WARNING">
+d315 1
+a315 1
+            <system_message level="1" refid="id1" type="INFO">
+d321 1
+a321 1
+            <system_message level="2" refid="id2" type="WARNING">
+d326 1
+a326 1
+        <system_message level="2" refid="id3" type="WARNING">
+d332 1
+a332 1
+        <system_message level="2" refid="id4" type="WARNING">
+d349 1
+a349 1
+    <target anonymous="1" refuri="http://w3c.org/">
+d360 1
+a360 1
+    <target anonymous="1" refuri="http://w3c.org/">
+d371 1
+a371 1
+    <target anonymous="1" refname="reference">
+d384 2
+a385 2
+    <target anonymous="1" refname="reference">
+    <target anonymous="1" refname="a very long reference">
+d406 3
+a408 3
+    <target anonymous="1" refname="reference">
+    <target anonymous="1" refname="reference">
+    <target anonymous="1" refname="reference">
+d416 3
+a418 3
+    <target anonymous="1" refname="reference">
+    <target anonymous="1" refname="reference">
+    <target anonymous="1" refname="reference">
+@
+
+
+1.18
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.17 $
+:Date: $Date: 2002/03/12 03:28:54 $
+d175 1
+a175 1
+            Duplicate explicit target name: "target"
+d192 1
+a192 1
+            Duplicate explicit target name: "target"
+d222 1
+a222 1
+                Duplicate implicit target name: "title"
+d245 1
+a245 1
+                Duplicate implicit target name: "title"
+d274 1
+a274 1
+            Duplicate explicit target name: "title"
+d280 1
+a280 1
+            Duplicate explicit target name: "title"
+d317 1
+a317 1
+                    Duplicate implicit target name: "target"
+d323 1
+a323 1
+                    Duplicate explicit target name: "target"
+d328 1
+a328 1
+                Duplicate explicit target name: "target"
+d334 1
+a334 1
+                Duplicate explicit target name: "target"
+@
+
+
+1.17
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.16 $
+:Date: $Date: 2002/03/11 03:18:45 $
+d30 1
+a30 1
+    <target id="id1" name="target">
+d53 4
+a56 4
+    <target id="id1" name="one-liner" refuri="http://structuredtext.sourceforge.net">
+    <target id="id2" name="starts-on-this-line" refuri="http://structuredtext.sourceforge.net">
+    <target id="id3" name="entirely-below" refuri="http://structuredtext.sourceforge.net">
+    <target id="id4" name="not-indirect" refuri="uri_">
+d69 2
+a70 2
+    <target id="id1" name="target1" refname="reference">
+    <target id="id2" name="target2" refname="phrase-link reference">
+d135 3
+a137 3
+    <target id="id1" name="a long target name">
+    <target id="id2" name="a target name: including a colon (quoted)">
+    <target id="id3" name="a target name: including a colon (escaped)">
+d147 2
+a148 2
+    <target id="id1" name="a very long target name, split across lines">
+    <target id="id2" name="and another, with backquotes">
+d159 1
+a159 1
+    <target id="id1" name="target" refuri="http://www.python.org/">
+d172 2
+a173 2
+    <target dupname="target" id="id1" refuri="first">
+    <system_message level="2" refid="id2" type="WARNING">
+d176 1
+a176 1
+    <target dupname="target" id="id2" refuri="second">
+d189 2
+a190 2
+    <target dupname="target" id="id1" refuri="first">
+    <system_message level="1" refid="id2" type="INFO">
+d193 1
+a193 1
+    <target id="id2" name="target" refuri="first">
+d212 1
+a212 1
+    <section dupname="title" id="id1">
+d217 1
+a217 1
+    <section dupname="title" id="id2">
+d220 1
+a220 1
+        <system_message level="1" refid="id2" type="INFO">
+d240 1
+a240 1
+    <section dupname="title" id="id1">
+d243 1
+a243 1
+        <system_message level="1" refid="id2" type="INFO">
+d246 1
+a246 1
+        <target id="id2" name="title">
+d269 1
+a269 1
+    <target dupname="title" id="id1">
+d272 1
+a272 1
+    <system_message level="2" refid="id2" type="WARNING">
+d275 1
+a275 1
+    <target dupname="title" id="id2">
+d278 1
+a278 1
+    <system_message level="2" refid="id3" type="WARNING">
+d281 1
+a281 1
+    <target dupname="title" id="id3">
+d295 2
+d307 1
+a307 1
+    <section dupname="target" id="id1">
+d312 1
+a312 1
+        <citation dupname="target" id="id2">
+d315 1
+a315 1
+            <system_message level="1" refid="id2" type="INFO">
+d320 6
+d409 1
+a409 1
+    <target id="id1" name="target1" refname="reference">
+d415 1
+a415 1
+    <target id="id2" name="target2" refname="reference">
+@
+
+
+1.16
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.15 $
+:Date: $Date: 2002/03/07 03:46:31 $
+d76 3
+d92 33
+@
+
+
+1.15
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.14 $
+:Date: $Date: 2002/02/20 04:25:58 $
+d137 1
+a137 1
+    <system_message level="2" type="WARNING">
+d154 1
+a154 1
+    <system_message level="1" type="INFO">
+d184 1
+a184 1
+        <system_message level="1" type="INFO">
+d207 1
+a207 1
+        <system_message level="1" type="INFO">
+d236 1
+a236 1
+    <system_message level="2" type="WARNING">
+d242 1
+a242 1
+    <system_message level="2" type="WARNING">
+d277 1
+a277 1
+            <system_message level="1" type="INFO">
+d282 1
+a282 1
+        <system_message level="2" type="WARNING">
+d288 1
+a288 1
+        <system_message level="2" type="WARNING">
+@
+
+
+1.14
+log
+@updated (ids)
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.13 $
+:Date: $Date: 2002/02/15 22:58:16 $
+d257 1
+a257 1
+.. [target] Footnote target.
+d274 1
+a274 1
+        <footnote dupname="target" id="id2">
+d281 1
+a281 1
+                Footnote target.
+@
+
+
+1.13
+log
+@  - Changed "system_warning" to "system_message".
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.12 $
+:Date: $Date: 2002/02/06 02:19:12 $
+d30 1
+a30 1
+    <target name="target">
+d53 4
+a56 4
+    <target name="one-liner" refuri="http://structuredtext.sourceforge.net">
+    <target name="starts-on-this-line" refuri="http://structuredtext.sourceforge.net">
+    <target name="entirely-below" refuri="http://structuredtext.sourceforge.net">
+    <target name="not-indirect" refuri="uri_">
+d69 2
+a70 2
+    <target name="target1" refname="reference">
+    <target name="target2" refname="phrase-link reference">
+d99 3
+a101 3
+    <target name="a long target name">
+    <target name="a target name: including a colon (quoted)">
+    <target name="a target name: including a colon (escaped)">
+d111 2
+a112 2
+    <target name="a very long target name, split across lines">
+    <target name="and another, with backquotes">
+d123 1
+a123 1
+    <target name="target" refuri="http://www.python.org/">
+d136 1
+a136 1
+    <target dupname="target" refuri="first">
+d140 1
+a140 1
+    <target dupname="target" refuri="second">
+d153 1
+a153 1
+    <target dupname="target" refuri="first">
+d157 1
+a157 1
+    <target name="target" refuri="first">
+d176 1
+a176 1
+    <section dupname="title">
+d181 1
+a181 1
+    <section dupname="title">
+d204 1
+a204 1
+    <section dupname="title">
+d210 1
+a210 1
+        <target name="title">
+d233 1
+a233 1
+    <target dupname="title">
+d239 1
+a239 1
+    <target dupname="title">
+d245 1
+a245 1
+    <target dupname="title">
+d269 1
+a269 1
+    <section dupname="target">
+d274 1
+a274 1
+        <footnote dupname="target">
+d285 1
+a285 1
+        <target dupname="target">
+d291 1
+a291 1
+        <target dupname="target" refuri="Explicit_external_target">
+d365 1
+a365 1
+    <target name="target1" refname="reference">
+d371 1
+a371 1
+    <target name="target2" refname="reference">
+@
+
+
+1.12
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.11 $
+:Date: $Date: 2002/01/29 02:15:36 $
+d79 1
+a79 1
+    <system_warning level="2" type="WARNING">
+d84 1
+a84 1
+    <system_warning level="2" type="WARNING">
+d137 1
+a137 1
+    <system_warning level="2" type="WARNING">
+d154 1
+a154 1
+    <system_warning level="1" type="INFO">
+d184 1
+a184 1
+        <system_warning level="1" type="INFO">
+d207 1
+a207 1
+        <system_warning level="1" type="INFO">
+d236 1
+a236 1
+    <system_warning level="2" type="WARNING">
+d242 1
+a242 1
+    <system_warning level="2" type="WARNING">
+d277 1
+a277 1
+            <system_warning level="1" type="INFO">
+d282 1
+a282 1
+        <system_warning level="2" type="WARNING">
+d288 1
+a288 1
+        <system_warning level="2" type="WARNING">
+d366 1
+a366 1
+    <system_warning level="2" type="WARNING">
+d375 1
+a375 1
+    <system_warning level="2" type="WARNING">
+@
+
+
+1.11
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.10 $
+:Date: $Date: 2002/01/25 23:45:44 $
+d79 1
+a79 1
+    <system_warning level="1">
+d84 1
+a84 1
+    <system_warning level="1">
+d137 1
+a137 1
+    <system_warning level="1">
+d154 1
+a154 1
+    <system_warning level="0">
+d184 1
+a184 1
+        <system_warning level="0">
+d207 1
+a207 1
+        <system_warning level="0">
+d236 1
+a236 1
+    <system_warning level="1">
+d242 1
+a242 1
+    <system_warning level="1">
+d277 1
+a277 1
+            <system_warning level="0">
+d282 1
+a282 1
+        <system_warning level="1">
+d288 1
+a288 1
+        <system_warning level="1">
+d366 1
+a366 1
+    <system_warning level="1">
+d375 1
+a375 1
+    <system_warning level="1">
+@
+
+
+1.10
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.9 $
+:Date: $Date: 2001/11/22 04:21:17 $
+d257 1
+a257 1
+.. [target] Implicit footnote target.
+d281 2
+a282 2
+                Implicit footnote target.
+        <system_warning level="0">
+d284 1
+a284 1
+                Duplicate implicit target name: "target"
+@
+
+
+1.9
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.8 $
+:Date: $Date: 2001/11/19 04:33:50 $
+a21 1
+# @@@@@@test for multi-line target names
+d139 2
+a140 2
+            Duplicate external target name: "target"
+    <target name="target" refuri="second">
+d156 1
+a156 1
+            Duplicate external target name: "target"
+d290 2
+a291 2
+                Duplicate external target name: "target"
+        <target name="target" refuri="Explicit_external_target">
+@
+
+
+1.8
+log
+@- Updated & extended.- Multi-line test fails.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.7 $
+:Date: $Date: 2001/10/31 05:48:24 $
+d369 1
+a369 1
+            Unindent without blank line at line 4.
+d378 1
+a378 1
+            Unindent without blank line at line 10.
+@
+
+
+1.7
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.6 $
+:Date: $Date: 2001/10/30 05:04:33 $
+d22 1
+d103 11
+@
+
+
+1.6
+log
+@expanded & updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.5 $
+:Date: $Date: 2001/10/23 03:38:36 $
+d73 3
+a75 1
+.. _target: Not a proper hyperlink target
+d83 6
+a88 1
+            .. _target: Not a proper hyperlink target
+@
+
+
+1.5
+log
+@link -> target name change
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2001/10/20 02:49:04 $
+d46 2
+d53 4
+a56 6
+    <target name="one-liner">
+        http://structuredtext.sourceforge.net
+    <target name="starts-on-this-line">
+        http://structuredtext.sourceforge.net
+    <target name="entirely-below">
+        http://structuredtext.sourceforge.net
+d97 2
+a99 2
+
+(external hyperlink)
+a102 2
+    <target name="target">
+        http://www.python.org/
+d104 2
+a105 1
+        (external hyperlink)
+d118 1
+a118 2
+    <target dupname="target">
+        first
+d122 1
+a122 2
+    <target name="target">
+        second
+d135 1
+a135 2
+    <target dupname="target">
+        first
+d139 1
+a139 2
+    <target name="target">
+        first
+d245 1
+a245 1
+.. _target: Explicit_external_target.
+d273 89
+a361 2
+        <target name="target">
+            Explicit_external_target.
+@
+
+
+1.4
+log
+@Updated for indirect -> external name change, added tests for new indirect targets.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2001/09/13 02:41:53 $
+d68 3
+a70 3
+        Indirect hyperlink target:
+    <target name="target1" refuri="reference">
+    <target name="target2" refuri="phrase-link reference">
+d109 1
+a109 1
+Duplicate external links (different URIs):
+d118 1
+a118 1
+        Duplicate external links (different URIs):
+d123 1
+a123 1
+            Duplicate external link name: "target"
+d128 1
+a128 1
+Duplicate external links (same URIs):
+d137 1
+a137 1
+        Duplicate external links (same URIs):
+d142 1
+a142 1
+            Duplicate external link name: "target"
+d147 1
+a147 1
+Duplicate implicit links.
+d162 1
+a162 1
+        Duplicate implicit links.
+d173 1
+a173 1
+                Duplicate implicit link name: "title"
+d178 1
+a178 1
+Duplicate implicit/explicit links.
+d190 1
+a190 1
+        Duplicate implicit/explicit links.
+d196 1
+a196 1
+                Duplicate implicit link name: "title"
+d202 1
+a202 1
+Duplicate explicit links.
+d219 1
+a219 1
+        Duplicate explicit links.
+d225 1
+a225 1
+            Duplicate explicit link name: "title"
+d231 1
+a231 1
+            Duplicate explicit link name: "title"
+d266 1
+a266 1
+                    Duplicate implicit link name: "target"
+d271 1
+a271 1
+                Duplicate implicit link name: "target"
+d277 1
+a277 1
+                Duplicate external link name: "target"
+@
+
+
+1.3
+log
+@Updated for simpler dps.nodes._Element.pformat().
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.2 $
+:Date: $Date: 2001/09/02 14:07:43 $
+d26 1
+a26 1
+(internal hyperlink)
+d32 1
+a32 1
+        (internal hyperlink)
+d35 2
+d49 2
+d59 14
+d99 1
+a99 1
+(indirect external hyperlink)
+d106 1
+a106 1
+        (indirect external hyperlink)
+d109 1
+a109 1
+Duplicate indirect links (different URIs):
+d118 1
+a118 1
+        Duplicate indirect links (different URIs):
+d123 1
+a123 1
+            Duplicate indirect link name: "target"
+d128 1
+a128 1
+Duplicate indirect links (same URIs):
+d137 1
+a137 1
+        Duplicate indirect links (same URIs):
+d142 1
+a142 1
+            Duplicate indirect link name: "target"
+d250 1
+a250 1
+.. _target: Explicit_indirect_target.
+d277 1
+a277 1
+                Duplicate indirect link name: "target"
+d279 1
+a279 1
+            Explicit_indirect_target.
+@
+
+
+1.2
+log
+@Removed "id=__file__" from ParserTestSuite call (now auto-detected).
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.1 $
+:Date: $Date: 2001/09/01 17:02:21 $
+d30 1
+a30 1
+    <target name="target"/>
+a32 2
+    </paragraph>
+</document>
+a48 1
+    </target>
+a50 1
+    </target>
+a52 2
+    </target>
+</document>
+a61 1
+        </paragraph>
+a63 3
+        </literal_block>
+    </system_warning>
+</document>
+d74 3
+a76 4
+    <target name="a long target name"/>
+    <target name="a target name: including a colon (quoted)"/>
+    <target name="a target name: including a colon (escaped)"/>
+</document>
+a86 1
+    </target>
+a88 2
+    </paragraph>
+</document>
+a100 1
+    </paragraph>
+a102 1
+    </target>
+a105 2
+        </paragraph>
+    </system_warning>
+a107 2
+    </target>
+</document>
+a119 1
+    </paragraph>
+a121 1
+    </target>
+a124 2
+        </paragraph>
+    </system_warning>
+a126 2
+    </target>
+</document>
+a144 1
+    </paragraph>
+a147 1
+        </title>
+a149 2
+        </paragraph>
+    </section>
+a152 1
+        </title>
+a155 2
+            </paragraph>
+        </system_warning>
+a157 3
+        </paragraph>
+    </section>
+</document>
+a172 1
+    </paragraph>
+a175 1
+        </title>
+d179 1
+a179 3
+            </paragraph>
+        </system_warning>
+        <target name="title"/>
+a181 3
+        </paragraph>
+    </section>
+</document>
+d202 1
+a202 2
+    </paragraph>
+    <target dupname="title"/>
+a204 1
+    </paragraph>
+d208 1
+a208 3
+        </paragraph>
+    </system_warning>
+    <target dupname="title"/>
+a210 1
+    </paragraph>
+d214 1
+a214 3
+        </paragraph>
+    </system_warning>
+    <target dupname="title"/>
+a216 2
+    </paragraph>
+</document>
+a237 1
+    </paragraph>
+a240 1
+        </title>
+a242 1
+        </paragraph>
+a245 1
+            </label>
+a248 2
+                </paragraph>
+            </system_warning>
+a250 2
+            </paragraph>
+        </footnote>
+d254 1
+a254 3
+            </paragraph>
+        </system_warning>
+        <target dupname="target"/>
+a256 1
+        </paragraph>
+a259 2
+            </paragraph>
+        </system_warning>
+a261 3
+        </target>
+    </section>
+</document>
+@
+
+
+1.1
+log
+@Refactored from the monolithic restructuredtext/test_states.py, using the Garth Kidd's framework. Thanks Garth!
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision$
+:Date: $Date$
+d16 1
+a16 1
+    s = RSTTestSupport.ParserTestSuite(id=__file__)
+@
+

@@ -1,0 +1,176 @@
+head	1.6;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.6
+date	2002.03.07.03.30.21;	author goodger;	state dead;
+branches;
+next	1.5;
+
+1.5
+date	2002.02.06.02.27.10;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.11.19.04.31.47;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.11.09.23.18.25;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.09.12.04.04.11;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.09.10.04.44.21;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.6
+log
+@renamed to misc.py
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.5 $
+:Date: $Date: 2002/02/06 02:27:10 $
+:Copyright: This module has been placed in the public domain.
+
+Test directive implementation.
+"""
+
+__docformat__ = 'reStructuredText'
+
+__all__ = ['directive_test_function']
+
+
+from restructuredtext import states
+from dps import nodes
+
+
+def directive_test_function(match, typename, data, state, statemachine,
+                            attributes):
+    try:
+        statemachine.nextline()
+        indented, indent, offset, blankfinish = statemachine.getindented()
+        text = '\n'.join(indented)
+    except IndexError:
+        text = ''
+        blankfinish = 1
+    if text:
+        info = statemachine.memo.reporter.info(
+              'Directive processed. Type="%s", data="%s", directive block:'
+              % (typename, data), [nodes.literal_block(text, text)])
+    else:
+        info = statemachine.memo.reporter.info(
+              'Directive processed. Type="%s", data="%s", directive block: None'
+              % (typename, data))
+    return [info], blankfinish
+@
+
+
+1.5
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2001/11/19 04:31:47 $
+@
+
+
+1.4
+log
+@  - Updated generated elements (generic directives gone).  - Updated for directive 'attributes' parameter.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2001/11/09 23:18:25 $
+d32 1
+a32 1
+        info = statemachine.memo.reporter.information(
+d36 1
+a36 1
+        info = statemachine.memo.reporter.information(
+@
+
+
+1.3
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.2 $
+:Date: $Date: 2001/09/12 04:04:11 $
+d22 2
+a23 4
+def directive_test_function(match, typename, data, state, statemachine):
+    atts = {'type': typename}
+    if data:
+        atts['data'] = data
+d31 9
+a39 2
+    directivenode = nodes.directive(text, text, **atts)
+    return [directivenode], blankfinish
+@
+
+
+1.2
+log
+@  - Changed name of and implemented directive_test_function.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.1 $
+:Date: $Date: 2001/09/10 04:44:21 $
+d33 1
+a33 3
+    directivenode = nodes.directive(text, **atts)
+    if text:
+        state.nestedparse(indented, offset, directivenode)
+@
+
+
+1.1
+log
+@Implementation of a test directive, 'restructuredtext-test-directive'.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision$
+:Date: $Date$
+d15 1
+a15 1
+__all__ = ['test_directive_function']
+d17 20
+a36 2
+def test_directive_function():
+    pass
+@
+

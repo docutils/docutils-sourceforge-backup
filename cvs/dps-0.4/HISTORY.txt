@@ -1,0 +1,341 @@
+====================================================
+ Python Docstring Processing System Project History
+====================================================
+
+:Author: David Goodger
+:Contact: goodger@users.sourceforge.net
+:Date: $Date: 2002/04/19 01:45:12 $
+:Website: http://docstring.sourceforge.net/
+
+
+Acknowledgements
+================
+
+I would like to acknowledge the people who have made a direct impact
+on the Python Docstring Processing System (DPS) project, knowingly or
+not, in terms of encouragement, suggestions, criticism, bug reports,
+code contributions, and related projects:
+
+    David Ascher, Fred Drake, Jim Fulton, Peter Funk, Doug Hellmann,
+    Juergen Hermann, Tony Ibbs, Richard Jones, Garth Kidd, Daniel
+    Larsson, Marc-Andre Lemburg, Wolfgang Lipp, Edward Loper, Ken
+    Manheimer, Paul Moore, Michel Pelletier, Sam Penrose, Tim Peters,
+    Mark Pilgrim, Tavis Rudd, Ueli Schlaepfer, Bob Tolbert, Laurence
+    Tratt, Guido van Rossum, Barry Warsaw, Edward Welbourne, Ka-Ping
+    Yee, Moshe Zadka
+
+(I'm still waiting for contributions of computer equipment and cold
+hard cash :-).)  Hopefully I haven't forgotten anyone or misspelled
+any names; apologies (and please let me know!) if I have.
+
+
+Release 0.4 (2002-04-18)
+========================
+
+This is the final release of DPS as an independent package.
+Development is being transferred to the Docutils_ project immediately.
+
+.. _Docutils: http://docutils.sourceforge.net/
+
+General: updated docstrings for new field list syntax (bibliographic
+info); changed contact email addresses.
+
+* install.py: Added to project.
+
+* setup.py: Modified for import by install.py.
+
+* COPYING.txt: Added to project.
+
+* dps/__init__.py: Added docstring.
+
+* dps/core.py: Added to project.
+
+* dps/nodes.py:
+
+  - Added 'classifier'.
+  - Added 'error', 'attention'.
+  - Fixed link bookkeeping.
+  - Added docstrings.
+  - Extended Element.__iadd__ (``+=``) to lists of nodes.
+  - Duplicate hyperlink names -> dupname attribute.
+  - Allow any DOM implementation from ``asdom()`` method.  (I think.)
+  - _Node's always true.
+  - Changed .pprint() to .pformat(); removed endtags from output.
+  - Added slice support to elements.
+  - Added .findclass() & .findnonclass() methods.
+  - Added support for auto-numbered and symbolic footnotes.
+  - Changed 'tagName' to 'tagname'.
+  - Improved auto-tagname generation.
+  - Added string-conversion to attribute values in DOM-conversion.
+  - Changed footnote/footnote_reference 'auto' attribute to integer.
+  - Changed 'graphic' to 'image'.
+  - Added 'docinfo', container for bibliographic elements.
+  - Added 'transition'.
+  - Renamed 'indirect' hyperlink targets -> 'external'.
+  - Renamed ``.*links?`` -> ``.*targets?``.
+  - Added support for indirect & anonymous targets.
+  - External targets' URIs now in "refuri" attribute, not data.
+  - Changed "link" to "reference".
+  - Removed leading underscores from functional node base classes.
+  - Added "hint", "substitution", "substitution_reference" classes.
+  - Added element hierarchy base classes.
+  - Removed generic 'directive'.
+  - 'errorhandler' -> 'reporter'.  ``dps.utils.Reporter`` reform.
+  - Added document.languagecode.
+  - Added Visitor classes, ``Node.walk()`` & ``Node.walkabout()``.
+  - Improved ``__repr__()``.
+  - Improved some names.
+  - Removed Python-specific element classes.
+  - Reworked for hyperlink transforms.
+  - Added support for footnote transform.
+  - Added 'problematic', inline relative of 'system_warning'.
+  - Added ``Node.parent`` back-reference for transforms.
+  - Added ``Element.index()`` and ``Element.replace()`` methods.
+  - Simplified target record keeping.
+  - Changed "system_warning" to "system_message".
+  - Modified post-parse system message storage.
+  - Added 'id' attribute support to ``document``.
+  - Reworked option lists.
+  - Removed "abstract"
+  - Added "topic", "pending", "citation" and "citation_reference".
+  - Added support for system_message cross-references.
+  - Added support for list-value attributes (including
+    "Element.setdefault()").
+  - Added "BackLinkable" mixin.
+
+* dps/roman.py: Added to project.  Written by and courtesy of Mark
+  Pilgrim.  From http://diveintopython.org.
+
+* dps/statemachine.py (1.3):
+
+  - Fixed bugs in StateMachineWS.getknownindented().
+  - Added trimming of blank first lines to
+    StateMachineWS.getindented(), .getknownindented(), and
+    .getfirstknownindented().
+  - Cleaned up & updated.
+  - Fixed bug in StateMachine.getunindented().
+  - Added form feed & vertical tab conversion to string2lines.
+  - Added StateMachine.nextlineblank().
+  - Added 'nestedSM' and 'nestedSMkwargs' to State.
+  - Added 'uptoblank' and 'stripindent' optional arguments to
+    'getindented', 'getknownindented', and 'getfirstknownindented'
+    methods of StateMachineWS, and to 'extractindented' function.
+  - Added 'atbof' and 'ateof' methods to StateMachine.
+  - Added support for 'TransitionCorrection' exception.
+
+* dps/urischemes.py: Known URI schemes; added to project.
+
+* dps/utils.py:
+
+  - Renamed error reporter class to 'Reporter' from 'Errorist'.
+  - Added named methods (aliases to numbered system_warning calls) to
+    Reporter.
+  - Removed Reporter.strong_system_warning (not needed).
+  - Changed "system_warning" to "system_message".
+  - Improved error stream handling.
+  - Reworked ``Reporter`` based on "log4j".
+  - Added some docstrings.
+  - Added 'extract_extension_attributes()', associated functions and
+    exceptions.
+  - Added 'extract_name_value()' & 'NameValueError' exception.
+  - Moved 'normname()' from restructuredtext.states.
+  - Added ``newdocument()``: document Node creation.
+  - Added name -> id conversion, ``id()``.
+
+* dps/test_*.py: Moved to new test/ directory.
+
+* dps/readers: Subpackage added to project.
+
+* dps/parsers/model.py:
+
+  - Added setup_parse() so unoverridden parse() could raise a
+    NotImplementedError.
+  - Moved Parser class to __init__.py, with updates.  Module removed
+    from project.
+
+* dps/writers: Subpackage added to project.
+
+* dps/languages/__init__.py:
+
+  - Added language module import function.
+
+* dps/languages/en.py:
+
+  - Fixed ``__all__``.
+  - Changed node class names to node classes.
+  - Removed parser-specific data.
+  - Added 'bibliographic_fields' and 'author_separators' (transform
+    support).
+  - Removed Python-specific interpreted text mapping.
+  - Changed 'bibliographic_labels' to 'labels'.
+  - Added labels for admonitions.
+  - Added label for table of contents title.
+
+* dps/transforms: Subpackage added.  Thanks to Ueli Schlaepfer for the
+  initial work.
+
+* dps/formatters: Removed subpackage from project.  Replaced by
+  "writers".
+
+* test: Subdirectory added.  The top-level consists of a modular test
+  framework begun by Garth Kidd.
+
+* test/test_utils.py: Converted from doctest to unittest & updated.
+
+* spec/doctree.txt: "DPS Document Tree Structure", added to project.
+
+* spec/pep-0256.txt: Overhauled.
+
+* spec/pep-0257.txt:
+
+  - Added "methods" to descriptions.
+  - Mentioned Unicode strings.
+
+* spec/pep-0258.txt: Overhauled and retitled.
+
+* spec/gdpi.dtd:
+
+  - Fixed typos & omissions; now validates.
+  - Added 'source' to %basic.atts, removed 'rawtext'.
+  - Added 'class' to %basic.atts for style sheets.
+  - Changed field_argument's model to PCDATA.
+  - Added option_list and doctest_block from ppdi.dtd.
+  - Added classifier element to definition_list_item.
+  - Added dupname attribute to %basic.atts; for duplicate names.
+  - Added support for auto-numbered footnotes.
+  - Added 'morecols' attribute to table entries (<entry>), for simpler
+    column span indication.
+  - Made document subtitle dependent on the existence of a title.
+  - Changed 'graphic' to 'image'.
+  - Moved 'caption' to after 'image' in 'figure'.
+  - Added 'error' and 'hint' admonition elements.
+  - Added 'docinfo' as container for bibliographic elements.
+  - Added 'transition'.
+  - Changed %link.atts to %reference.atts.
+  - Separated out %reference.atts into constituent parts.
+  - Added all reference and "anonymous" attributes to "target".
+  - Changed "link" to "reference".
+  - Added "anonymous" attribute to "reference".
+  - Changed the content model of "reference" to allow inline elements,
+    specifically images and substitution references.
+  - Added 'image' as body element; 'target' as inline element.
+  - Added 'alt' attribute to 'image'.
+  - Expanded 'authors' content.
+  - Clarified 'figure' content.
+  - Added 'substitution_definition' and 'substitution_reference'.
+  - Changed content models of most inline elements to %text.model,
+    allowing nested inline elements.
+  - Removed generic 'directive'.
+  - Added 'problematic', inline relative of 'system_message'.
+  - Added 'type' attribute to 'system_warning', removed 'warning'.
+  - Changed "system_warning" to "system_message"; added backlink
+    attribute "backrefs".
+  - Reworked option lists.
+  - Removed "abstract"
+  - Added "topic".
+  - Added "pending".
+  - Added "citation" and "citation_reference".
+  - Added "raw".
+  - Added "refid" attribute to "title" for two-way Tables of Contents.
+  - Added "backrefs" attribute to "footnote" & "citation" for
+    backlinks.
+
+* spec/pdpi.dtd:
+
+  - Fixed typos; now validates.
+  - Moved option_list and doctest_block from gpdi.dtd.
+
+* spec/pysource-reader.txt: Added to project (from reStructuredText).
+
+
+Release 0.3 (2001-07-19)
+========================
+
+* dps/nodes.py: Added to project.
+
+* dps/test_nodes.py: Added to project.
+
+* dps/utils.py: Added to project.
+
+* dps/test_utils.py: Added to project.
+
+* dps/statemachine.py (1.2):
+
+  - Added exceptions: UnknownTransitionError,
+    DuplicateTransitionError, TransitionPatternNotFound,
+    TransitionMethodNotFound, UnexpectedIndentationError.
+  - Changed StateMachine.lineno to lineoffset.
+  - Added methods to StateMachine: unlink(), gotoline(),
+    gettextblock(), getunindented(), abslineoffset(), abslineno().
+  - Changed StateMachine method signatures: addtransitions(),
+    addtransition().
+  - Changed function extractindented(), and StateMachineWS methods
+    getindented(), getknownindented(), and getfirstknownindented():
+    added a 'blankfinish' boolean return value to each.
+  - Fixed a bug in StateMachineWS methods getindented(),
+    getknownindented(), and getfirstknownindented(), where an empty
+    block caused an infinite loop.
+  - Changed State's transition storage (instance attributes
+    transitions & transitionorder).
+  - Added methods to State: unlink(), removetransition().
+  - Relaxed State.patterns contents: values can be strings or compiled
+    patterns; strings will be compiled by State.maketransition().
+
+* dps/test_statemachine.py: Modified per statemachine.py changes.
+
+* dps/parsers/model.py: Progress on the API.
+
+* spec/gpdi.dtd: Added 'level' attribute to 'system_warning'.
+
+* spec/pep-0258.txt: Added 'Error Handling' section.
+
+
+Release 0.2 (2001-06-18)
+========================
+
+PEP numbers assigned 2001-06-06.  PEPs first posted to
+comp.lang.python 2001-06-13.
+
+* spec/pep-0256.txt:
+
+  - File renamed from dps-framework-pep.txt.
+
+* spec/pep-0257.txt:
+
+  - File renamed from docstring-conventions-pep.txt.
+  - Added "Rationale" section.
+  - Resolved additions ([+]) and deletions ([-]).
+  - Added a description of "What is a Docstring?".
+  - Added descriptions of attribute and additional docstrings.
+
+* spec/pep-0258.txt:
+
+  - File renamed from dps-genericspec-pep.txt.
+  - Optional override of what docstrings to examine.
+
+* dps/statemachine.py:
+
+  - Catch `EOFError` to end statemachine processing.
+  - Relaxed State.initialtransitions contents: entries can be strings
+    as well as tuples.  (Also argument to State.maketransitions().)
+
+* dps/test_statemachine.py: Modified tests for statemachine.py
+  changes.
+
+* HISTORY.txt: Added to project.
+
+
+Release 0.1 (2001-06-02)
+========================
+
+The project web site and the first project release were rolled out.
+Candidate PEPs posted to Doc-SIG 2001-06-03.
+
+
+..
+   Local Variables:
+   mode: indented-text
+   indent-tabs-mode: nil
+   sentence-end-double-space: t
+   fill-column: 70
+   End:

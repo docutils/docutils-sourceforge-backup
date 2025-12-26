@@ -1,0 +1,29 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2002.04.19.02.58.43;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@for distutils
+@
+text
+@include *.txt
+include *.py
+recursive-include docs *
+recursive-include spec *
+recursive-include test *
+recursive-include tools *
+@

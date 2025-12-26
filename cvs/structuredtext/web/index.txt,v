@@ -1,0 +1,44 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2002.04.21.15.43.32;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@project retirement
+@
+text
+@====================
+ |reStructuredText|
+====================
+
+.. meta::
+   :http-equiv=Refresh: 15;URL=http://docutils.sourceforge.net/
+
+:Date: $Date$
+
+The reStructuredText_ project has moved!  It is now part of the
+Docutils_ project; you should be redirected to the new location
+momentarily.  `Click here to go to the Docutils project home page
+immediately.`__
+
+You may also `visit the inactive reStructuredText home page`__.
+
+__ Docutils_
+__ index-old.html
+.. _reStructuredText: http://docutils.sourceforge.net/rst.html
+.. _Docutils: http://docutils.sourceforge.net/
+.. |reStructuredText| image:: title.png
+@

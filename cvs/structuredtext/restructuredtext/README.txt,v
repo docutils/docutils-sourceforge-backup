@@ -1,0 +1,408 @@
+head	1.7;
+access;
+symbols
+	RELEASE:1.1.1.1
+	Rrefactor-test:1.1.1.1.0.4
+	rel-0-3:1.1.1.1.0.2
+	open:1.1.1;
+locks; strict;
+comment	@# @;
+
+
+1.7
+date	2002.04.19.01.49.16;	author goodger;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2002.04.18.02.49.03;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2002.03.16.05.42.50;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.08.25.01.54.52;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.08.23.04.11.47;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.07.29.15.55.11;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.07.21.22.14.04;	author goodger;	state Exp;
+branches
+	1.1.1.1;
+next	;
+
+1.1.1.1
+date	2001.07.21.22.14.04;	author goodger;	state Exp;
+branches
+	1.1.1.1.4.1;
+next	;
+
+1.1.1.1.4.1
+date	2001.07.25.08.11.25;	author gtk;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.7
+log
+@updated
+@
+text
+@==========================
+ README: reStructuredText
+==========================
+
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Date: $Date: 2002/04/18 02:49:03 $
+:Web-site: http://structuredtext.sourceforge.net/
+
+Thank you for downloading the reStructuredText project archive.
+Development has been transferred to the Docutils_ project.  As this is
+a work in progress, please check the project web site for updated
+working files.
+
+reStructuredText is an input parser component of the `Python Docstring
+Processing System`_, and is installed as
+"dps.parsers.restructuredtext".
+
+To run the code, Python 2.0 or later must already be installed.  You
+can get Python from http://www.python.org/.  You will also need the
+latest DPS package, available from http://docstring.sourceforge.net/.
+
+.. _Docutils: http://docutils.sourceforge.net/
+.. _Python Docstring Processing System:
+   http://docstring.sourceforge.net/
+
+
+Project Files & Directories
+===========================
+
+* README.txt: You're reading it.
+
+* HISTORY.txt: Release notes for the current and previous project
+  releases.
+
+* setup.py: Installation script.  See "Installation" below.
+
+* install.py: Quick & dirty installation script.
+
+* restructuredtext: The project source directory, installed as Python
+  package ``dps.parsers.restructuredtext``.
+
+* test: The unit test directory (currently experimental).  Not
+  required to use the software, but very useful if you're planning to
+  modify it.
+
+* tools: Directory for standalone scripts that use reStructuredText.
+
+  - quicktest.py: Input reStructuredText, output pretty-printed
+    pseudo-XML and various other forms.
+
+  - publish.py: A minimal example of a complete Docutils system, using
+    the "standalone" reader and "pformat" writer.
+
+  - html.py: Read standalone reStructuredText documents and write
+    HTML4/CSS1.  Uses the default.css stylesheet.
+
+* spec: The project specification directory.  Contains the markup
+  syntax spec and implementation notes.
+
+* docs: The project user documentation directory.
+
+
+Installation
+============
+
+The first step is to expand the .tar.gz archive.  It contains a
+distutils setup file "setup.py".  OS-specific installation
+instructions follow.
+
+Linux, Unix, MacOS X
+--------------------
+
+1. Open a shell.
+
+2. Go to the directory created by expanding the archive::
+
+       cd <archive_directory_path>
+
+3. Install the package::
+
+       python setup.py install
+
+   If the python executable isn't on your path, you'll have to specify
+   the complete path, such as /usr/local/bin/python.  You may need
+   root permissions to complete this step.
+
+   You can also just run install.py; it does the same thing.
+
+Windows
+-------
+
+1. Open a DOS box (Command Shell, MSDOS Prompt, or whatever they're
+   calling it these days).
+
+2. Go to the directory created by expanding the archive::
+
+       cd <archive_directory_path>
+
+3. Install the package::
+
+       <path_to_python.exe>\python setup.py install
+
+If your system is set up to run Python when you double-click on .py
+files, you can run install.py to do the same as the above.
+
+MacOS
+-----
+
+1. Open the folder containing the expanded archive.
+
+2. Double-click on the file "setup.py", which should be a "Python
+   module" file.
+
+   If the file isn't a "Python module", the line endings are probably
+   also wrong, and you will need to set up your system to recognize
+   ".py" file extensions as Python files.  See
+   http://gotools.sourceforge.net/mac/python.html for detailed
+   instructions.  Once set up, it's easiest to start over by expanding
+   the archive again.
+
+3. The distutils options window will appear.  From the "Command" popup
+   list choose "install", click "Add", then click "OK".
+
+If install.py is a "Python module" (see step 2 above if it isn't), you
+can run it instead of steps 2 and 3 above.  The distutils options
+windown will not appear.
+
+
+Usage
+=====
+
+After installing both the reStructuredText and DPS packages, start
+with the html.py and publish.py front-ends from the unpacked
+reStructuredText "tools" subdirectory.  Both take up to two arguments,
+the source path and destination path, with STDIN and STDOUT being the
+defaults.
+
+
+..
+   Local Variables:
+   mode: indented-text
+   indent-tabs-mode: nil
+   sentence-end-double-space: t
+   fill-column: 70
+   End:
+@
+
+
+1.6
+log
+@fixed whitespace & updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/03/16 05:42:50 $
+d10 4
+a13 4
+Thank you for downloading the reStructuredText project archive.  As
+this is a work in progress, please check the project web site for
+updated working files.  The latest release archive is available at
+http://sourceforge.net/project/showfiles.php?group_id=7050.
+d23 1
+@
+
+
+1.5
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/08/25 01:54:52 $
+d10 1
+a10 1
+Thank you for downloading the reStructuredText project archive. As
+d12 1
+a12 1
+updated working files. The latest release archive is available at
+d19 2
+a20 2
+To run the code, Python 2.0 or later must already be installed. You
+can get Python from http://www.python.org/. You will also need the
+d35 1
+a35 1
+* setup.py: Installation script. See "Installation" below.
+d42 3
+a44 3
+* test: The unit test directory (currently experimental). Not required
+  to use the software, but very useful if you're planning to modify
+  it.
+d57 1
+a57 1
+* spec: The project specification directory. Contains the markup
+d60 1
+a60 1
+* docs: The project documentation directory.
+d66 3
+a68 3
+The first step is to expand the .tar.gz archive. It contains a
+distutils setup file "setup.py". OS-specific installation instructions
+follow.
+d84 2
+a85 2
+   the complete path, such as /usr/local/bin/python. You may need root
+   permissions to complete this step.
+d87 1
+a87 1
+You can also just run install.py; it does the same thing.
+d116 1
+a116 1
+   ".py" file extensions as Python files. See
+d118 1
+a118 1
+   instructions. Once set up, it's easiest to start over by expanding
+d121 1
+a121 1
+3. The distutils options window will appear. From the "Command" popup
+d125 12
+a136 2
+can run it instead of the above. The distutils options windown will
+not appear.
+d143 1
+@
+
+
+1.4
+log
+@made emacs local variables into a reST comment
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/07/29 15:55:11 $
+d49 7
+a55 1
+    pseudo-XML.
+@
+
+
+1.3
+log
+@updated
+@
+text
+@d123 6
+a128 5
+Local Variables:
+mode: indented-text
+indent-tabs-mode: nil
+fill-column: 70
+End:
+@
+
+
+1.2
+log
+@brought up to date
+@
+text
+@d5 4
+a8 4
+Author: David Goodger
+Contact: dgoodger@@bigfoot.com
+Date: $Date: 2001/07/21 22:14:04 $
+Web-site: http://structuredtext.sourceforge.net/
+d13 1
+a13 1
+http://sf.net/project/showfiles.php?group_id=7050.
+d54 1
+a54 1
+* doc: The project documentation directory.
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d7 2
+a8 3
+Version: 0.3
+Date: $Date: 2001/07/20 01:31:28 $
+Web-site: http://structuredtext.sf.net/
+d21 1
+a21 1
+latest DPS package, available from http://docstring.sf.net/.
+d23 2
+a24 1
+.. _Python Docstring Processing System: http://docstring.sf.net/
+d27 2
+a28 2
+Archive Contents
+================
+d37 14
+d54 1
+a54 2
+* restructuredtext: The project source directory, installed as Python
+  package ``dps.parsers.restructuredtext``.
+d60 1
+a60 1
+The first step is to expand the rst.0.3.tar.gz archive. It contains a
+d81 2
+d97 3
+d111 3
+a113 3
+   http://gotools.sf.net/mac/python.html for detailed instructions.
+   Once set up, it's easiest to start over by expanding the archive
+   again.
+d117 4
+@
+
+
+1.1.1.1
+log
+@initial checkin
+@
+text
+@@
+
+
+1.1.1.1.4.1
+log
+@Added a disclaimer to README.txt for the Rrefactor-test branch.
+@
+text
+@d7 2
+a8 2
+Version: Rrefactor-test (EXPERIMENTAL)
+Date: $Date: 2001/07/21 22:14:04 $
+a9 4
+
+**THIS IS AN EXPERIMENTAL VERSION**
+
+**IF YOU WANT THE OFFICIAL VERSION, CHECK OUT ``RELEASE``**
+@
+

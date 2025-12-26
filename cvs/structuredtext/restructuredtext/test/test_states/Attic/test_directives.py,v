@@ -1,0 +1,1484 @@
+head	1.15;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.15
+date	2002.03.12.03.29.09;	author goodger;	state dead;
+branches;
+next	1.14;
+
+1.14
+date	2002.02.15.22.58.17;	author goodger;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2002.02.13.02.20.57;	author goodger;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2002.02.12.02.30.27;	author goodger;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2002.02.06.02.17.29;	author goodger;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2001.11.19.04.32.55;	author goodger;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2001.11.15.03.09.18;	author goodger;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2001.11.09.23.14.28;	author goodger;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2001.11.06.00.45.47;	author goodger;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2001.09.17.04.29.24;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2001.09.13.02.38.43;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.09.12.04.10.58;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.09.10.04.50.53;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.09.02.14.02.43;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.09.01.16.58.11;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.15
+log
+@split up into test_directives subdirectory
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.14 $
+:Date: $Date: 2002/02/15 22:58:17 $
+:Copyright: This module has been placed in the public domain.
+
+Tests for states.py.
+"""
+
+import RSTTestSupport
+
+def suite():
+    s = RSTTestSupport.ParserTestSuite()
+    s.generateTests(totest)
+    return s
+
+totest = {}
+
+totest['directives'] = [
+["""\
+.. reStructuredText-test-directive::
+
+Paragraph.
+""",
+"""\
+<document>
+    <system_message level="1" type="INFO">
+        <paragraph>
+            Directive processed. Type="reStructuredText-test-directive", data="", directive block: None
+    <paragraph>
+        Paragraph.
+"""],
+["""\
+.. reStructuredText-test-directive:: argument
+
+Paragraph.
+""",
+"""\
+<document>
+    <system_message level="1" type="INFO">
+        <paragraph>
+            Directive processed. Type="reStructuredText-test-directive", data="argument", directive block: None
+    <paragraph>
+        Paragraph.
+"""],
+["""\
+.. reStructuredText-test-directive::
+
+   Directive block contains one paragraph, with a blank line before.
+
+Paragraph.
+""",
+"""\
+<document>
+    <system_message level="1" type="INFO">
+        <paragraph>
+            Directive processed. Type="reStructuredText-test-directive", data="", directive block:
+        <literal_block>
+            Directive block contains one paragraph, with a blank line before.
+    <paragraph>
+        Paragraph.
+"""],
+["""\
+.. reStructuredText-test-directive::
+   Directive block contains one paragraph, no blank line before.
+
+Paragraph.
+""",
+"""\
+<document>
+    <system_message level="1" type="INFO">
+        <paragraph>
+            Directive processed. Type="reStructuredText-test-directive", data="", directive block:
+        <literal_block>
+            Directive block contains one paragraph, no blank line before.
+    <paragraph>
+        Paragraph.
+"""],
+["""\
+.. reStructuredText-test-directive::
+   block
+no blank line.
+
+Paragraph.
+""",
+"""\
+<document>
+    <system_message level="1" type="INFO">
+        <paragraph>
+            Directive processed. Type="reStructuredText-test-directive", data="", directive block:
+        <literal_block>
+            block
+    <system_message level="2" type="WARNING">
+        <paragraph>
+            Unindent without blank line at line 3.
+    <paragraph>
+        no blank line.
+    <paragraph>
+        Paragraph.
+"""],
+["""\
+.. reStructuredText-unknown-directive::
+
+.. reStructuredText-unknown-directive:: argument
+
+.. reStructuredText-unknown-directive::
+   block
+""",
+"""\
+<document>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Unknown directive type "reStructuredText-unknown-directive" at line 1.
+            Rendering the directive as a literal block.
+    <literal_block>
+        .. reStructuredText-unknown-directive::
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Unknown directive type "reStructuredText-unknown-directive" at line 3.
+            Rendering the directive as a literal block.
+    <literal_block>
+        .. reStructuredText-unknown-directive:: argument
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Unknown directive type "reStructuredText-unknown-directive" at line 5.
+            Rendering the directive as a literal block.
+    <literal_block>
+        .. reStructuredText-unknown-directive::
+           block
+"""],
+]
+
+totest['admonitions'] = [
+["""\
+.. Attention:: Directives at large.
+
+.. Note:: This is a note.
+
+.. Tip:: 15% if the
+   service is good.
+
+.. Hint:: It's bigger than a bread box.
+
+- .. WARNING:: Strong prose may provoke extreme mental exertion.
+     Reader discretion is strongly advised.
+- .. Error:: Does not compute.
+
+.. Caution::
+
+   Don't take any wooden nickels.
+
+.. DANGER:: Mad scientist at work!
+
+.. Important::
+   - Wash behind your ears.
+   - Clean up your room.
+   - Call your mother.
+   - Back up your data.
+""",
+"""\
+<document>
+    <attention>
+        <paragraph>
+            Directives at large.
+    <note>
+        <paragraph>
+            This is a note.
+    <tip>
+        <paragraph>
+            15% if the
+            service is good.
+    <hint>
+        <paragraph>
+            It's bigger than a bread box.
+    <bullet_list bullet="-">
+        <list_item>
+            <warning>
+                <paragraph>
+                    Strong prose may provoke extreme mental exertion.
+                    Reader discretion is strongly advised.
+        <list_item>
+            <error>
+                <paragraph>
+                    Does not compute.
+    <caution>
+        <paragraph>
+            Don't take any wooden nickels.
+    <danger>
+        <paragraph>
+            Mad scientist at work!
+    <important>
+        <bullet_list bullet="-">
+            <list_item>
+                <paragraph>
+                    Wash behind your ears.
+            <list_item>
+                <paragraph>
+                    Clean up your room.
+            <list_item>
+                <paragraph>
+                    Call your mother.
+            <list_item>
+                <paragraph>
+                    Back up your data.
+"""],
+["""\
+.. note:: One-line notes.
+.. note:: One after the other.
+.. note:: No blank lines in-between.
+""",
+"""\
+<document>
+    <note>
+        <paragraph>
+            One-line notes.
+    <note>
+        <paragraph>
+            One after the other.
+    <note>
+        <paragraph>
+            No blank lines in-between.
+"""],
+]
+
+totest['images'] = [
+["""\
+.. image:: picture.png
+""",
+"""\
+<document>
+    <image uri="picture.png">
+"""],
+["""\
+.. image::
+""",
+"""\
+<document>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Missing image URI argument at line 1.
+        <literal_block>
+            .. image::
+"""],
+["""\
+.. image:: one two three
+""",
+"""\
+<document>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Image URI at line 1 contains whitespace.
+        <literal_block>
+            .. image:: one two three
+"""],
+["""\
+.. image:: picture.png
+   [height=100 width=200 scale=50]
+""",
+"""\
+<document>
+    <image height="100" scale="50" uri="picture.png" width="200">
+"""],
+["""\
+.. image::
+   picture.png
+   [height=100 width=200 scale=50]
+""",
+"""\
+<document>
+    <image height="100" scale="50" uri="picture.png" width="200">
+"""],
+["""\
+.. image:: a/very/long/path/to/
+   picture.png
+   [height=100 width=200 scale=50]
+""",
+"""\
+<document>
+    <image height="100" scale="50" uri="a/very/long/path/to/picture.png" width="200">
+"""],
+["""\
+.. image:: picture.png
+   [height=100 width=200 scale=50]
+   [alt="Alternate text for the picture"]
+""",
+"""\
+<document>
+    <image alt="Alternate text for the picture" height="100" scale="50" uri="picture.png" width="200">
+"""],
+["""\
+.. image:: picture.png
+   [height=100]
+   [width=200]
+   [scale=50]
+   [alt="Alternate text for the picture"]
+""",
+"""\
+<document>
+    <image alt="Alternate text for the picture" height="100" scale="50" uri="picture.png" width="200">
+"""],
+["""\
+.. image:: picture.png
+   [height=100]
+   [width=200 scale=50
+""",
+"""\
+<document>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Invalid image attribute data at line 1: input line not enclosed in "[" and "]".
+        <literal_block>
+            .. image:: picture.png
+               [height=100]
+               [width=200 scale=50
+"""],
+["""\
+.. image:: picture.png
+   [scale=]
+""",
+"""\
+<document>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Invalid image attribute data at line 1: missing value after "scale=".
+        <literal_block>
+            .. image:: picture.png
+               [scale=]
+"""],
+["""\
+.. image:: picture.png
+   [scale 50]
+""",
+"""\
+<document>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Invalid image attribute data at line 1: missing "=".
+        <literal_block>
+            .. image:: picture.png
+               [scale 50]
+"""],
+["""\
+.. image:: picture.png
+   [=50]
+""",
+"""\
+<document>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Invalid image attribute data at line 1: missing attribute name before "=".
+        <literal_block>
+            .. image:: picture.png
+               [=50]
+"""],
+["""\
+.. image:: picture.png
+   [sale=50]
+""",
+"""\
+<document>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Unknown image attribute at line 1: "sale".
+        <literal_block>
+            .. image:: picture.png
+               [sale=50]
+"""],
+["""\
+.. image:: picture.png
+   [scale=fifty]
+""",
+"""\
+<document>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Invalid image attribute value at line 1: invalid literal for int(): fifty.
+        <literal_block>
+            .. image:: picture.png
+               [scale=fifty]
+"""],
+["""\
+.. image:: picture.png
+   [scale=50 scale=50]
+""",
+"""\
+<document>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Invalid image attribute data at line 1: duplicate attribute "scale".
+        <literal_block>
+            .. image:: picture.png
+               [scale=50 scale=50]
+"""],
+["""\
+.. image:: picture.png
+   [alt='a picture]
+""",
+"""\
+<document>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Invalid image attribute data at line 1: attribute "alt" missing end quote (').
+        <literal_block>
+            .. image:: picture.png
+               [alt='a picture]
+"""],
+["""\
+.. image:: picture.png
+   [alt='a picture'scale=50]
+""",
+"""\
+<document>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Invalid image attribute data at line 1: attribute "alt" end quote (') not followed by whitespace.
+        <literal_block>
+            .. image:: picture.png
+               [alt='a picture'scale=50]
+"""],
+]
+
+totest['figures'] = [
+["""\
+.. figure:: picture.png
+
+   A picture with a caption.
+""",
+"""\
+<document>
+    <figure>
+        <image uri="picture.png">
+        <caption>
+            A picture with a caption.
+"""],
+["""\
+.. figure:: picture.png
+
+   ..
+
+   A picture with a legend but no caption.
+""",
+"""\
+<document>
+    <figure>
+        <image uri="picture.png">
+        <legend>
+            <paragraph>
+                A picture with a legend but no caption.
+"""],
+["""\
+.. Figure:: picture.png
+   [height=100 width=200 scale=50]
+
+   A picture with image attributes and a caption.
+""",
+"""\
+<document>
+    <figure>
+        <image height="100" scale="50" uri="picture.png" width="200">
+        <caption>
+            A picture with image attributes and a caption.
+"""],
+["""\
+.. Figure:: picture.png
+   [height=100]
+   [alt="alternate text"]
+   [width=200]
+   [scale=50]
+
+   A picture with image attributes on individual lines, and this caption.
+""",
+"""\
+<document>
+    <figure>
+        <image alt="alternate text" height="100" scale="50" uri="picture.png" width="200">
+        <caption>
+            A picture with image attributes on individual lines, and this caption.
+"""],
+["""\
+This figure lacks a caption. It may still have a
+"Figure 1."-style caption appended in the output.
+
+.. figure:: picture.png
+""",
+"""\
+<document>
+    <paragraph>
+        This figure lacks a caption. It may still have a
+        "Figure 1."-style caption appended in the output.
+    <figure>
+        <image uri="picture.png">
+"""],
+["""\
+.. figure:: picture.png
+
+   A picture with a caption and a legend.
+
+   +-----------------------+-----------------------+
+   | Symbol                | Meaning               |
+   +=======================+=======================+
+   | .. image:: tent.png   | Campground            |
+   +-----------------------+-----------------------+
+   | .. image:: waves.png  | Lake                  |
+   +-----------------------+-----------------------+
+   | .. image:: peak.png   | Mountain              |
+   +-----------------------+-----------------------+
+""",
+"""\
+<document>
+    <figure>
+        <image uri="picture.png">
+        <caption>
+            A picture with a caption and a legend.
+        <legend>
+            <table>
+                <tgroup cols="2">
+                    <colspec colwidth="23">
+                    <colspec colwidth="23">
+                    <thead>
+                        <row>
+                            <entry>
+                                <paragraph>
+                                    Symbol
+                            <entry>
+                                <paragraph>
+                                    Meaning
+                    <tbody>
+                        <row>
+                            <entry>
+                                <image uri="tent.png">
+                            <entry>
+                                <paragraph>
+                                    Campground
+                        <row>
+                            <entry>
+                                <image uri="waves.png">
+                            <entry>
+                                <paragraph>
+                                    Lake
+                        <row>
+                            <entry>
+                                <image uri="peak.png">
+                            <entry>
+                                <paragraph>
+                                    Mountain
+"""],
+["""\
+.. figure:: picture.png
+
+   ..
+
+   A picture with a legend but no caption.
+   (The empty comment replaces the caption, which must
+   be a single paragraph.)
+""",
+"""\
+<document>
+    <figure>
+        <image uri="picture.png">
+        <legend>
+            <paragraph>
+                A picture with a legend but no caption.
+                (The empty comment replaces the caption, which must
+                be a single paragraph.)
+"""],
+["""\
+Testing for line-leaks:
+
+.. figure:: picture.png
+
+   A picture with a caption.
+.. figure:: picture.png
+
+   A picture with a caption.
+.. figure:: picture.png
+
+   A picture with a caption.
+.. figure:: picture.png
+.. figure:: picture.png
+.. figure:: picture.png
+.. figure:: picture.png
+
+   A picture with a caption.
+
+.. figure:: picture.png
+
+.. figure:: picture.png
+
+   A picture with a caption.
+
+.. figure:: picture.png
+""",
+"""\
+<document>
+    <paragraph>
+        Testing for line-leaks:
+    <figure>
+        <image uri="picture.png">
+        <caption>
+            A picture with a caption.
+    <figure>
+        <image uri="picture.png">
+        <caption>
+            A picture with a caption.
+    <figure>
+        <image uri="picture.png">
+        <caption>
+            A picture with a caption.
+    <figure>
+        <image uri="picture.png">
+    <figure>
+        <image uri="picture.png">
+    <figure>
+        <image uri="picture.png">
+    <figure>
+        <image uri="picture.png">
+        <caption>
+            A picture with a caption.
+    <figure>
+        <image uri="picture.png">
+    <figure>
+        <image uri="picture.png">
+        <caption>
+            A picture with a caption.
+    <figure>
+        <image uri="picture.png">
+"""],
+]
+
+totest['meta'] = [
+["""\
+.. meta::
+   :description: The reStructuredText plaintext markup language
+   :keywords: plaintext,markup language
+""",
+"""\
+<document>
+    <meta content="The reStructuredText plaintext markup language" name="description">
+    <meta content="plaintext,markup language" name="keywords">
+"""],
+["""\
+.. meta::
+   :description lang=en: An amusing story
+   :description lang=fr: Un histoire amusant
+""",
+"""\
+<document>
+    <meta content="An amusing story" lang="en" name="description">
+    <meta content="Un histoire amusant" lang="fr" name="description">
+"""],
+["""\
+.. meta::
+   :http-equiv=Content-Type: text/html; charset=ISO-8859-1
+""",
+"""\
+<document>
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="Content-Type">
+"""],
+["""\
+.. meta::
+   :name: content
+     over multiple lines
+""",
+"""\
+<document>
+    <meta content="content over multiple lines" name="name">
+"""],
+["""\
+Paragraph
+
+.. meta::
+   :name: content
+""",
+"""\
+<document>
+    <paragraph>
+        Paragraph
+    <meta content="content" name="name">
+"""],
+["""\
+.. meta::
+""",
+"""\
+<document>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Empty meta directive at line 1.
+"""],
+["""\
+.. meta::
+   not a field list
+""",
+"""\
+<document>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Invalid meta directive at line 2.
+"""],
+["""\
+.. meta::
+   :name: content
+   not a field
+""",
+"""\
+<document>
+    <meta content="content" name="name">
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Invalid meta directive at line 3.
+"""],
+["""\
+.. meta::
+   :name notattval: content
+""",
+"""\
+<document>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Error parsing meta tag attribute "notattval": missing "="
+    <meta content="content" name="name">
+"""],
+]
+
+
+if __name__ == '__main__':
+    import unittest
+    unittest.main(defaultTest='suite')
+@
+
+
+1.14
+log
+@  - Changed "system_warning" to "system_message".
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.13 $
+:Date: $Date: 2002/02/13 02:20:57 $
+@
+
+
+1.13
+log
+@added meta tests
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.11 $
+:Date: $Date: 2002/02/06 02:17:29 $
+d30 1
+a30 1
+    <system_warning level="1" type="INFO">
+d43 1
+a43 1
+    <system_warning level="1" type="INFO">
+d58 1
+a58 1
+    <system_warning level="1" type="INFO">
+d74 1
+a74 1
+    <system_warning level="1" type="INFO">
+d91 1
+a91 1
+    <system_warning level="1" type="INFO">
+d96 1
+a96 1
+    <system_warning level="2" type="WARNING">
+d114 1
+a114 1
+    <system_warning level="3" type="ERROR">
+d120 1
+a120 1
+    <system_warning level="3" type="ERROR">
+d126 1
+a126 1
+    <system_warning level="3" type="ERROR">
+d241 1
+a241 1
+    <system_warning level="3" type="ERROR">
+d252 1
+a252 1
+    <system_warning level="3" type="ERROR">
+d311 1
+a311 1
+    <system_warning level="3" type="ERROR">
+d325 1
+a325 1
+    <system_warning level="3" type="ERROR">
+d338 1
+a338 1
+    <system_warning level="3" type="ERROR">
+d351 1
+a351 1
+    <system_warning level="3" type="ERROR">
+d364 1
+a364 1
+    <system_warning level="3" type="ERROR">
+d377 1
+a377 1
+    <system_warning level="3" type="ERROR">
+d390 1
+a390 1
+    <system_warning level="3" type="ERROR">
+d403 1
+a403 1
+    <system_warning level="3" type="ERROR">
+d416 1
+a416 1
+    <system_warning level="3" type="ERROR">
+d688 1
+a688 1
+    <system_warning level="3" type="ERROR">
+d698 1
+a698 1
+    <system_warning level="3" type="ERROR">
+d710 1
+a710 1
+    <system_warning level="3" type="ERROR">
+d720 1
+a720 1
+    <system_warning level="3" type="ERROR">
+@
+
+
+1.12
+log
+@added tests for "meta" directive
+@
+text
+@d662 63
+@
+
+
+1.11
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.10 $
+:Date: $Date: 2001/11/19 04:32:55 $
+d632 32
+@
+
+
+1.10
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.9 $
+:Date: $Date: 2001/11/15 03:09:18 $
+d30 1
+a30 1
+    <system_warning level="0">
+d43 1
+a43 1
+    <system_warning level="0">
+d58 1
+a58 1
+    <system_warning level="0">
+d74 1
+a74 1
+    <system_warning level="0">
+d91 1
+a91 1
+    <system_warning level="0">
+d96 1
+a96 1
+    <system_warning level="1">
+d114 1
+a114 1
+    <system_warning level="2">
+d120 1
+a120 1
+    <system_warning level="2">
+d126 1
+a126 1
+    <system_warning level="2">
+d241 1
+a241 1
+    <system_warning level="2">
+d252 1
+a252 1
+    <system_warning level="2">
+d311 1
+a311 1
+    <system_warning level="2">
+d325 1
+a325 1
+    <system_warning level="2">
+d338 1
+a338 1
+    <system_warning level="2">
+d351 1
+a351 1
+    <system_warning level="2">
+d364 1
+a364 1
+    <system_warning level="2">
+d377 1
+a377 1
+    <system_warning level="2">
+d390 1
+a390 1
+    <system_warning level="2">
+d403 1
+a403 1
+    <system_warning level="2">
+d416 1
+a416 1
+    <system_warning level="2">
+@
+
+
+1.9
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.7 $
+:Date: $Date: 2001/11/06 00:45:47 $
+d30 3
+a32 1
+    <directive type="reStructuredText-test-directive">
+d43 3
+a45 1
+    <directive data="argument" type="reStructuredText-test-directive">
+d58 5
+a62 2
+    <directive type="reStructuredText-test-directive">
+        Directive block contains one paragraph, with a blank line before.
+d74 5
+a78 2
+    <directive type="reStructuredText-test-directive">
+        Directive block contains one paragraph, no blank line before.
+d91 5
+a95 2
+    <directive type="reStructuredText-test-directive">
+        block
+@
+
+
+1.8
+log
+@updated
+@
+text
+@d239 1
+a239 1
+    <system_warning level="1">
+d271 139
+d426 15
+d452 16
+@
+
+
+1.7
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.6 $
+:Date: $Date: 2001/09/17 04:29:24 $
+d55 1
+a55 2
+        <paragraph>
+            Directive block contains one paragraph, with a blank line before.
+d68 1
+a68 2
+        <paragraph>
+            Directive block contains one paragraph, no blank line before.
+d82 1
+a82 2
+        <paragraph>
+            block
+@
+
+
+1.6
+log
+@  - Updated for new image/figure syntax.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.5 $
+:Date: $Date: 2001/09/13 02:38:43 $
+d135 2
+d165 3
+@
+
+
+1.5
+log
+@Updated for simpler dps.nodes._Element.pformat().
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2001/09/12 04:10:58 $
+d237 1
+a237 1
+    <system_warning level="2">
+d239 1
+a239 1
+            Unknown image attribute "two" at line 1.
+d244 11
+a254 1
+.. image:: picture.png height=100 width=200 scale=50
+d261 12
+d274 1
+d285 3
+a287 1
+.. Figure:: picture.png height=100 width=200 scale=50
+d388 1
+d391 1
+d394 1
+d400 1
+d406 1
+@
+
+
+1.4
+log
+@  - Updated test directive tests.  - Added unknown directive tests.  - Added tests for admonitions and image/figure directives.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2001/09/10 04:50:53 $
+d30 1
+a30 1
+    <directive type="reStructuredText-test-directive"/>
+a32 2
+    </paragraph>
+</document>
+d41 1
+a41 1
+    <directive data="argument" type="reStructuredText-test-directive"/>
+a43 2
+    </paragraph>
+</document>
+a56 2
+        </paragraph>
+    </directive>
+a58 2
+    </paragraph>
+</document>
+a70 2
+        </paragraph>
+    </directive>
+a72 2
+    </paragraph>
+</document>
+a85 2
+        </paragraph>
+    </directive>
+a88 2
+        </paragraph>
+    </system_warning>
+a90 1
+    </paragraph>
+a92 2
+    </paragraph>
+</document>
+a107 2
+        </paragraph>
+    </system_warning>
+a109 1
+    </literal_block>
+a113 2
+        </paragraph>
+    </system_warning>
+a115 1
+    </literal_block>
+a119 2
+        </paragraph>
+    </system_warning>
+a122 2
+    </literal_block>
+</document>
+d128 2
+d153 3
+a158 2
+        </paragraph>
+    </note>
+a162 2
+        </paragraph>
+    </tip>
+a168 3
+                </paragraph>
+            </warning>
+        </list_item>
+a172 4
+                </paragraph>
+            </error>
+        </list_item>
+    </bullet_list>
+a175 2
+        </paragraph>
+    </caution>
+a178 2
+        </paragraph>
+    </danger>
+a183 2
+                </paragraph>
+            </list_item>
+a186 2
+                </paragraph>
+            </list_item>
+a189 2
+                </paragraph>
+            </list_item>
+a192 5
+                </paragraph>
+            </list_item>
+        </bullet_list>
+    </important>
+</document>
+a203 2
+        </paragraph>
+    </note>
+a206 2
+        </paragraph>
+    </note>
+a209 3
+        </paragraph>
+    </note>
+</document>
+d219 1
+a219 2
+    <image uri="picture.png"/>
+</document>
+a228 1
+        </paragraph>
+a230 3
+        </literal_block>
+    </system_warning>
+</document>
+a239 1
+        </paragraph>
+a241 3
+        </literal_block>
+    </system_warning>
+</document>
+d248 1
+a248 2
+    <image height="100" scale="50" uri="picture.png" width="200"/>
+</document>
+d257 1
+a257 1
+        <image uri="picture.png"/>
+a259 3
+        </caption>
+    </figure>
+</document>
+d268 1
+a268 1
+        <image height="100" scale="50" uri="picture.png" width="200"/>
+a270 3
+        </caption>
+    </figure>
+</document>
+a282 1
+    </paragraph>
+d284 1
+a284 3
+        <image uri="picture.png"/>
+    </figure>
+</document>
+d304 1
+a304 1
+        <image uri="picture.png"/>
+a306 1
+        </caption>
+d310 2
+a311 2
+                    <colspec colwidth="23"/>
+                    <colspec colwidth="23"/>
+a316 2
+                                </paragraph>
+                            </entry>
+a319 4
+                                </paragraph>
+                            </entry>
+                        </row>
+                    </thead>
+d323 1
+a323 2
+                                <image uri="tent.png"/>
+                            </entry>
+a326 3
+                                </paragraph>
+                            </entry>
+                        </row>
+d329 1
+a329 2
+                                <image uri="waves.png"/>
+                            </entry>
+a332 3
+                                </paragraph>
+                            </entry>
+                        </row>
+d335 1
+a335 2
+                                <image uri="peak.png"/>
+                            </entry>
+a338 9
+                                </paragraph>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </legend>
+    </figure>
+</document>
+d352 1
+a352 1
+        <image uri="picture.png"/>
+a357 4
+            </paragraph>
+        </legend>
+    </figure>
+</document>
+a384 1
+    </paragraph>
+d386 1
+a386 1
+        <image uri="picture.png"/>
+a388 2
+        </caption>
+    </figure>
+d390 1
+a390 1
+        <image uri="picture.png"/>
+a392 2
+        </caption>
+    </figure>
+d394 1
+a394 1
+        <image uri="picture.png"/>
+a396 2
+        </caption>
+    </figure>
+d398 1
+a398 2
+        <image uri="picture.png"/>
+    </figure>
+d400 1
+a400 2
+        <image uri="picture.png"/>
+    </figure>
+d402 1
+a402 2
+        <image uri="picture.png"/>
+    </figure>
+d404 1
+a404 1
+        <image uri="picture.png"/>
+a406 2
+        </caption>
+    </figure>
+d408 1
+a408 2
+        <image uri="picture.png"/>
+    </figure>
+d410 1
+a410 1
+        <image uri="picture.png"/>
+a412 2
+        </caption>
+    </figure>
+d414 1
+a414 3
+        <image uri="picture.png"/>
+    </figure>
+</document>
+@
+
+
+1.3
+log
+@  - Changed name of test directive.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.2 $
+:Date: $Date: 2001/09/02 14:02:43 $
+d59 1
+a59 1
+        <literal_block>
+d61 1
+a61 1
+        </literal_block>
+d77 1
+a77 1
+        <literal_block>
+d79 1
+a79 1
+        </literal_block>
+d96 1
+a96 1
+        <literal_block>
+d98 1
+a98 1
+        </literal_block>
+d111 425
+@
+
+
+1.2
+log
+@Removed "id=__file__" from ParserTestSuite call (now auto-detected).
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.1 $
+:Date: $Date: 2001/09/01 16:58:11 $
+d24 1
+a24 1
+.. directive::
+d30 1
+a30 1
+    <directive type="directive"/>
+d37 1
+a37 1
+.. directive:: argument
+d43 1
+a43 1
+    <directive data="argument" type="directive"/>
+d50 3
+a52 2
+.. directive::
+   block
+d58 1
+a58 1
+    <directive type="directive">
+d60 1
+a60 1
+            block
+d69 2
+a70 3
+.. directive::
+
+   block
+d76 1
+a76 1
+    <directive type="directive">
+d78 1
+a78 1
+            block
+d87 1
+a87 1
+.. directive::
+d95 1
+a95 1
+    <directive type="directive">
+@
+
+
+1.1
+log
+@Refactored from the monolithic restructuredtext/test_states.py, using the Garth Kidd's framework. Thanks Garth!
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision$
+:Date: $Date$
+d16 1
+a16 1
+    s = RSTTestSupport.ParserTestSuite(id=__file__)
+@
+

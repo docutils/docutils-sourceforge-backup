@@ -1,0 +1,310 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2002.04.21.15.40.06;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@project retirement
+@
+text
+@<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- $Id: index.html.template,v 1.5 2002/04/13 16:59:57 goodger Exp $ -->
+#  latest_dps_release = 'dps-0.4.tar.gz'
+#  latest_rst_release = 'restructuredtext-0.4.tar.gz'
+<HTML>
+<HEAD>
+   <TITLE>Python Docstring Processing System</TITLE>
+</HEAD>
+<BODY bgcolor="#F0F0FF">
+
+<P><A HREF="http://sourceforge.net/projects/docstring/"
+><IMG SRC="title.png"
+ALT="Docstring Processing System" BORDER=0 ALIGN=bottom></A></P>
+
+<P><FONT color="red">This project is now <B>inactive</B>.  All
+development has been taken over by the <A
+HREF="http://docutils.sourceforge.het/">Docutils</A>
+project.</FONT></P>
+
+<P><I>last updated: `date`</I></P>
+
+<P>The purpose of the Python Docstring Processing System project is to create
+a standard, modular tool for extracting inline documentation from Python
+modules and converting it into useful formats, such as HTML, XML, and TeX.</P>
+
+<H2>Project Status</H2>
+
+<P>This project is now <B>inactive</B>.  All development has been
+taken over by the <A
+HREF="http://docutils.sourceforge.het/">Docutils</A> project.</P>
+
+<P>This project consists of a Python package, &ldquo;<TT>dps</TT>&rdquo;. This
+contains utility modules and three subpackages, <TT>dps.parsers</TT>,
+<TT>dps.formatters</TT>, and <TT>dps.languages</TT>. Each of the subpackages
+will contain further modules or packages implementing individual
+components.</P>
+
+<P>Good progress is being made with regards to the parser interface.
+The <A HREF="dps/statemachine.py"><TT>dps.statemachine</TT></A> module
+is useful for line-based parsing of input text using regular
+expressions, and is being used by the <A
+HREF="http://structuredtext.sourceforge.net/" >reStructuredText</A>
+input parser.</P>
+
+<H3><A NAME="snapshots">CVS Snapshots</A></H3>
+
+<P>The final CVS snapshots are available below:</P>
+
+<UL>
+
+ <LI><P><A
+     HREF="http://docstring.sourceforge.net/dps-snapshot.tgz"
+     >DPS code, tests, and specifications (no user docs yet)</A>
+     Except for a few typos, this is equivalent to the final release
+     package.</P></LI>
+
+ <LI><P><A
+     HREF="http://structuredtext.sourceforge.net/rst-snapshot.tgz"
+     >reStructuredText code, tests, documentation, and specifications</A>
+     Except for a few typos, this is equivalent to the final release
+     package.</P></LI>
+
+ <LI><P><A
+     HREF="http://docstring.sourceforge.net/dps-web-snapshot.tgz"
+     >DPS homepage files</A>
+     </P></LI>
+
+</UL>
+
+<H3><A NAME="releases">Project Releases</A></H3>
+
+<P>Development has been suspended at this site.  All new development is
+taking place at the <A HREF="http://docutils.sourceforge.net">Docutils</A>
+project.</P>
+
+<P>The <A
+HREF="http://prdownloads.sourceforge.net/docstring/`latest_dps_release`"
+>final project release package (`latest_dps_release`)</A> and past project
+releases can be downloaded from the <A
+HREF="http://sourceforge.net/project/showfiles.php?group_id=26626" >project files
+page</A>.  The <A
+HREF="http://prdownloads.sourceforge.net/structuredtext/`latest_rst_release`"
+>final reStructuredText package (`latest_rst_release`)</A> is also required. <A
+ HREF="http://sourceforge.net/cvs/?group_id=26626">Anonymous CVS
+access is available.</A> You can also <A
+HREF="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/~checkout~/docstring/dps/"
+>browse the latest source files (CVS) individually</A>, and read the final <A
+HREF="README.html"
+>README</A> and <A
+HREF="HISTORY.html"
+>HISTORY</A> files.</P>
+
+<H2>Specification</H2>
+
+<P>The specification consists of: candidate PEPs (<A
+HREF="http://www.python.org/peps/">Python Enhancement Proposals</A>), XML DTDs
+(document type definitions), an XML catalog file, and some notes. All
+of the specification files are located in the <TT>spec</TT> directory
+of the <A
+HREF="http://prdownloads.sourceforge.net/docstring/`latest_dps_release`">latest
+project release package (`latest_dps_release`)</A> (which may not be up to
+date). The up-to-date working documents (from CVS) may be accessed
+individually below, or from the <A HREF="#snapshots">snapshots</A> above.
+You can also <A
+HREF="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/~checkout~/docstring/dps/spec/"
+>browse the CVS repository</A> directly.</P>
+
+<UL>
+
+ <LI><P><A HREF="spec/pep-0256.txt">
+     PEP 256: Docstring Processing System Framework</A>
+     <BR>[<A HREF="http://www.python.org/peps/pep-0256.html"
+     >PEP 256 in master repository</A>]<A HREF="#master">*</A>
+     </P></LI>
+
+ <LI><P><A HREF="spec/pep-0257.txt">
+     PEP 257: Docstring Conventions</A>
+     <BR>[<A HREF="http://www.python.org/peps/pep-0257.html"
+     >PEP 257 in master repository</A>]<A HREF="#master">*</A>
+     </P></LI>
+
+ <LI><P><A HREF="spec/pep-0258.txt">
+     PEP 258: DPS Generic Implementation Details</A>
+     <BR>[<A HREF="http://www.python.org/peps/pep-0258.html"
+     >PEP 258 in master repository</A>]<A HREF="#master">*</A>
+     </P></LI>
+
+ <LI><P><A HREF="spec/python-docstring-mode.txt">
+     Python Docstring Mode</A>
+     </P></LI>
+
+ <LI><P><A HREF="spec/gpdi.dtd">
+     Generic Plaintext Document Interface DTD</A>
+     </P></LI>
+
+ <LI><P><A HREF="spec/ppdi.dtd">
+     Python Plaintext Document Interface DTD</A>
+     </P></LI>
+
+ <LI><P><A HREF="spec/soextblx.dtd">
+     OASIS XML Exchange Table Model Declaration Module</A>
+     </P></LI>
+
+ <LI><P><A HREF="spec/dps.cat">
+     Python Docstring Processing System Catalog Data</A>
+     </P></LI>
+
+ <LI><P><A HREF="spec/dps-notes.txt">
+     Notes</A>
+     </P></LI>
+
+</UL>
+
+<P><A NAME="master">*</A> The PEP titles above are links to local working
+copies, possibly newer than the versions checked in to the 
+<A HREF="http://www.python.org/peps/">master PEP repository</A>.</P>
+
+
+<H2>Components</H2>
+
+<UL>
+
+ <LI><P>Input Context Readers:</P>
+
+  <UL>
+
+   <LI><P>For standalone input files: <A
+       HREF="http://docstring.sourceforge.net/dps/readers/standalone.py"
+       ><TT>dps.readers.standalone</TT></A>
+   </P></LI>
+
+   <LI><P>More to be implemented: Python Source, Email, PEP, Wiki, 
+          Web Page, FAQ.
+   </P></LI>
+
+  </UL>
+
+ <LI><P>Parsers:</P>
+
+  <UL>
+
+   <LI><P>
+     <A HREF="http://structuredtext.sourceforge.net/">reStructuredText</A>
+   </P></LI>
+
+  </UL>
+
+  <P>There's room for competition! Survival of the fittest? Amicable
+  coexistence? Evolution by cross-pollination? Put your ideas into
+  practice!</P>
+
+ </LI>
+
+ <LI><P>Output Format Writers:</P>
+
+  <UL>
+
+   <LI><P>Raw XML (corresponding to the DTDs in the spec): built-in.</P></LI>
+
+   <LI><P>Pretty-printed pseudo-XML: <A 
+       HREF="http://docstring.sourceforge.net/dps/writers/pprint.py"
+       ><TT>dps.writers.pprint</TT></A>.</P></LI>
+
+   <LI><P>HTML 4.01 (loose) for CSS-1 stylesheets: <A 
+       HREF="http://docstring.sourceforge.net/dps/writers/html.py"
+       ><TT>dps.writers.html</TT></A>.</P></LI>
+
+   <LI><P>More to be implemented: other forms of XML (DocBook etc.),
+          HTML 3.2, TeX, plain text, maybe even reStructuredText.
+   </P></LI>
+
+  </UL>
+
+  <P>Please help develop one!</P>
+
+ </LI>
+
+ <LI><P>Languages:</P>
+
+  <UL>
+
+   <LI><P>English: under development.</P></LI>
+
+  </UL>
+
+  <P>Parlez-vous fran&ccedil;ais? Sprechen ze Deutsch? Nihongo hanasemasu ka?
+  </P>
+
+ </LI>
+
+</UL>
+
+<H2>DPS Wants You!</H2>
+
+<P>This project will only succeed through the combined efforts of
+many. We're looking for contributions of testing, ideas, code, bug
+reports, administration, tasty snacks, computer equipment, and large
+sums of money. If you're interested in participating, please <A
+HREF="mailto:goodger@@users.sourceforge.net">contact the project
+administrator</A>.</P>
+
+<H2>Project Info</H2>
+
+<UL>
+
+ <LI><P><A HREF="http://sourceforge.net/projects/docstring/"
+     >Project Summary page</A>: <A
+     HREF="http://sourceforge.net/tracker/?group_id=26626&atid=387775" 
+     >Bug reports</A>, <A
+     HREF="http://sourceforge.net/tracker/?group_id=26626&atid=387777"
+     >patches</A>, <A
+     HREF="http://sourceforge.net/tracker/?group_id=26626&atid=387778"
+     >feature requests</A>, <A
+     HREF="http://sourceforge.net/mail/?group_id=26626"
+     >mailing lists</A>, <A
+     HREF="http://sourceforge.net/news/?group_id=26626"
+     >news</A></P></LI>
+
+ <LI><P><A
+     HREF="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/~checkout~/docstring/dps/"
+     >Docstring Processing System CVS repository</A></P></LI>
+
+ <LI><P>Project administrator:
+     <A HREF="mailto:goodger@@users.sourceforge.net">David Goodger</A></P></LI>
+
+ <LI><P>Please direct discussions to the
+     <A HREF="http://www.python.org/sigs/doc-sig/">Python Documentation
+     Special Interest Group (Doc-SIG)</A>:
+     <A HREF="mailto:doc-sig@@python.org">doc-sig@@python.org</A></P></LI>
+
+ <LI><P>Page generated using Alex Martelli's
+     <A HREF="http://aspn.activestate.com/ASPN/Python/Cookbook/Recipe/52305">
+     YAPTU</A> (Yet Another Python Templating Utility)</P></LI>
+
+ <LI><P>Powered by <A href="http://www.python.org/">
+     <IMG src="PyBanner016.png" ALIGN="top" ALT="Python" BORDER="0"></A>
+     </P></LI>
+
+ <LI><P>Hosted by <A href="http://sourceforge.net">
+     <IMG src="http://sourceforge.net/sflogo.php?group_id=26626" width="88"
+          height="31" border="0" alt="SourceForge Logo" ALIGN="top"></A>
+     </P></LI>
+
+</UL>
+
+</BODY>
+</HTML>
+@

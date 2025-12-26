@@ -1,0 +1,506 @@
+head	1.1;
+access;
+symbols
+	Rrefactor-test:1.1.0.2;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2001.07.29.09.05.39;	author gtk;	state dead;
+branches
+	1.1.2.1;
+next	;
+
+1.1.2.1
+date	2001.07.29.09.05.39;	author gtk;	state Exp;
+branches;
+next	1.1.2.2;
+
+1.1.2.2
+date	2001.07.29.12.21.09;	author gtk;	state Exp;
+branches;
+next	1.1.2.3;
+
+1.1.2.3
+date	2001.07.29.22.34.52;	author gtk;	state Exp;
+branches;
+next	1.1.2.4;
+
+1.1.2.4
+date	2001.07.31.14.46.24;	author gtk;	state Exp;
+branches;
+next	1.1.2.5;
+
+1.1.2.5
+date	2001.07.31.15.21.54;	author gtk;	state Exp;
+branches;
+next	1.1.2.6;
+
+1.1.2.6
+date	2001.08.02.04.44.20;	author gtk;	state Exp;
+branches;
+next	1.1.2.7;
+
+1.1.2.7
+date	2001.09.01.15.10.50;	author goodger;	state dead;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@file TestFramework.py was initially added on branch Rrefactor-test.
+@
+text
+@@
+
+
+1.1.2.1
+log
+@First stage of the refactoring. Victory so far in developing the framework
+itself. Plenty to do so far, in particular migrating all existing tests.
+@
+text
+@a0 178
+#! /usr/bin/env python
+
+"""
+Author: Garth Kidd
+Contact: garth@@deadlybloodyserious.com
+Revision: $Revision: 1.1.1.1 $
+Date: $Date: 2001/07/21 22:14:13 $
+Copyright: This module has been placed in the public domain.
+"""
+
+# So that individual test modules can share a bit of state,
+# `TestFramework` acts as an intermediary for the following
+# variables: 
+
+debug = 0
+verbosity = 1
+
+# Imports
+
+import sys, os
+
+# Import `states`, prepending to `sys.path` if necessary. 
+
+try:
+    import states
+except ImportError:
+    sys.path.insert(0, os.path.join('..', 'restructuredtext'))
+    import states
+
+class Tee:
+
+    """Write to a file and a stream (default: stdout) simulteaneously."""
+    
+    def __init__(self, filename, stream=sys.__stdout__):
+        self.file = open(filename, 'w')
+        self.stream = stream
+    
+    def write(self, string):
+        self.stream.write(string)
+        self.file.write(string)
+
+import unittest, re
+# import ndiff
+# import states
+#from dps.statemachine import string2lines
+#try:
+#    import mypdb as pdb
+#except:
+#    import pdb
+
+class DataTests(unittest.TestCase):
+
+    """
+    Test data marked with 'XXX' denotes areas where further error checking
+    needs to be done.
+    """
+
+    def setUp(self):
+        self.sm = states.RSTStateMachine(stateclasses=states.stateclasses,
+                                         initialstate='Body', debug=debug)
+
+    def trytest(self, name, index):
+        input, expected = self.totest[name][index]
+        self.sm.run(string2lines(input), warninglevel=4,
+                    errorlevel=4)
+        output = self.sm.memo.document.pprint()
+        try:
+            self.assertEquals('\n' + output, '\n' + expected)
+        except AssertionError:
+            print
+            print 'input:'
+            print input
+            print '-: output'
+            print '+: expected'
+            ndiff.lcompare(output.splitlines(1), expected.splitlines(1))
+            raise
+
+    totest = {}
+
+    """Tests to be run. Each key (test type name) maps to a list of tests.
+    Each test is a list: input, expected output, optional modifier. The
+    optional third entry, a behavior modifier, can be 0 (temporarily disable
+    this test) or 1 (run this test under the pdb debugger)."""
+    
+    proven = {}
+    """tests that have proven successful"""
+
+    notyet = {}
+    """tests we *don't* want to run"""
+
+    ## uncomment to run previously successful tests also
+    totest.update(proven)
+
+    ## uncomment to run previously successful tests *only*
+    #totest = proven
+
+    ## uncomment to run experimental, expected-to-fail tests also
+    #totest.update(notyet)
+
+    ## uncomment to run experimental, expected-to-fail tests *only*
+    #totest = notyet
+
+    for name, cases in totest.items():
+        numcases = len(cases)
+        casenumlen = len('%s' % (numcases - 1))
+        for i in range(numcases):
+            trace = ''
+            if len(cases[i]) == 3:      # optional modifier
+                if cases[i][-1] == 1:   # 1 => run under debugger
+                    del cases[i][0]
+                    trace = 'pdb.set_trace();'
+                else:                   # 0 => disable
+                    continue
+            exec ('def test_%s_%0*i(self): %s self.trytest("%s", %i)'
+                  % (name, casenumlen, i, trace, name, i))
+
+USAGE = """\
+Usage: %(progName)s [options]
+
+Options:
+  -h, --help       Show this message
+  -v, --verbose    Verbose output
+  -q, --quiet      Minimal output
+  -d, --debug      Debug mode
+"""
+
+def usageExit(self, msg=None):
+    """Print usage and exit."""
+    if msg:
+        print msg
+    print self.USAGE % self.__dict__
+    sys.exit(2)
+
+def parseArgs(argv=sys.argv):
+    """Parse command line arguments and set TestFramework state.
+    
+    State is to be acquired by test_* modules by a grotty hack:
+    ``from TestFramework import *``. For this stylistic
+    transgression, I expect to be first up against the wall
+    when the revolution comes. --Garth"""
+    try:
+        options, args = getopt.getopt(argv[1:], 'hHvqd',
+                                      ['help', 'verbose', 'quiet', 'debug'])
+        
+        for opt, value in options:
+            if opt in ('-h', '-H', '--help'):
+                usageExit()
+            if opt in ('-q', '--quiet'):
+                verbosity = 0
+            if opt in ('-v', '--verbose'):
+                verbosity = 2
+            if opt in ('-d', '--debug'):
+                debug =1
+        
+        if len(args) != 0:
+            usageExit("No command-line arguments supported yet.")
+        
+    except getopt.error, msg:
+        self.usageExit(msg)
+
+def main(suite=None):
+    """Shared `main` for any individual test_* file.
+    
+    suite -- TestSuite to run. If not specified, look for any
+    globally defined tests and run them."""
+    
+    # ### Need to consider the output filename. ###
+    sys.stderr = sys.stdout = Tee('test_all.out')
+    parseArgs()
+    if suite is None:
+        # Load any globally defined tests.
+        # WARNING: picks up DataTests above. Oops. 
+        module = __import__('__main__')
+        suite = unittest.defaultTestLoader.loadTestsFromModule(module)
+    if debug:
+        print "Debug: Suite=%s" % suite
+    testRunner = unittest.TextTestRunner(verbosity=verbosity)
+    testRunner.run(suite)
+@
+
+
+1.1.2.2
+log
+@More hacking away. Still pretty hopeless but getting there. This checkin
+is mainly so that I can shift work to my laptop.
+@
+text
+@d6 2
+a7 2
+Revision: $Revision: 1.1.2.1 $
+Date: $Date: 2001/07/29 09:05:39 $
+a17 2
+__all__ = ( 'debug', 'verbosity', 'states' )
+
+d20 1
+a20 1
+import sys, os, getopt
+a159 12
+
+def loadTestsFromModule(self, module, exceptThese=[]):
+    """Return a suite of all tests cases contained in the given module"""
+    tests = []
+    module = __import__('__main__')
+    for name in dir(module):
+        if name in exceptThese:
+            continue
+        obj = getattr(module, name)
+        if type(obj) == types.ClassType and issubclass(obj, TestCase):
+            tests.append(self.loadTestsFromTestCase(obj))
+    return self.suiteClass(tests)
+d173 2
+a174 1
+        suite = loadTestsFromModule(module)
+@
+
+
+1.1.2.3
+log
+@More work.
+Finally decided on how to architect ParserTestSuite.
+Fixed all the accursed linefeeds, hence the absurd length of the diffs.
+Sorry about that.
+@
+text
+@d6 2
+a7 2
+Revision: $Revision: 1.1.2.2 $
+Date: $Date: 2001/07/29 12:21:09 $
+d10 21
+a30 21
+
+# So that individual test modules can share a bit of state,
+# `TestFramework` acts as an intermediary for the following
+# variables: 
+
+debug = 0
+verbosity = 1
+
+__all__ = ( 'debug', 'verbosity', 'states' )
+
+# Imports
+
+import sys, os, getopt
+
+# Import `states`, prepending to `sys.path` if necessary. 
+
+try:
+    import states
+except ImportError:
+    sys.path.insert(0, os.path.join('..', 'restructuredtext'))
+    import states
+d44 1
+a44 1
+import unittest, re
+d118 1
+a118 1
+
+d126 1
+a126 1
+  -d, --debug      Debug mode
+d128 64
+a191 64
+
+def usageExit(self, msg=None):
+    """Print usage and exit."""
+    if msg:
+        print msg
+    print self.USAGE % self.__dict__
+    sys.exit(2)
+
+def parseArgs(argv=sys.argv):
+    """Parse command line arguments and set TestFramework state.
+    
+    State is to be acquired by test_* modules by a grotty hack:
+    ``from TestFramework import *``. For this stylistic
+    transgression, I expect to be first up against the wall
+    when the revolution comes. --Garth"""
+    try:
+        options, args = getopt.getopt(argv[1:], 'hHvqd',
+                                      ['help', 'verbose', 'quiet', 'debug'])
+        
+        for opt, value in options:
+            if opt in ('-h', '-H', '--help'):
+                usageExit()
+            if opt in ('-q', '--quiet'):
+                verbosity = 0
+            if opt in ('-v', '--verbose'):
+                verbosity = 2
+            if opt in ('-d', '--debug'):
+                debug =1
+        
+        if len(args) != 0:
+            usageExit("No command-line arguments supported yet.")
+        
+    except getopt.error, msg:
+        self.usageExit(msg)
+
+def loadTestsFromModule(self, module, exceptThese=[]):
+    """Return a suite of all tests cases contained in the given module"""
+    tests = []
+    module = __import__('__main__')
+    for name in dir(module):
+        if name in exceptThese:
+            continue
+        obj = getattr(module, name)
+        if type(obj) == types.ClassType and issubclass(obj, TestCase):
+            tests.append(self.loadTestsFromTestCase(obj))
+    return self.suiteClass(tests)
+
+def main(suite=None):
+    """Shared `main` for any individual test_* file.
+    
+    suite -- TestSuite to run. If not specified, look for any
+    globally defined tests and run them."""
+    
+    # ### Need to consider the output filename. ###
+    sys.stderr = sys.stdout = Tee('test_all.out')
+    parseArgs()
+    if suite is None:
+        # Load any globally defined tests.
+        # WARNING: picks up DataTests above. Oops. 
+        suite = loadTestsFromModule(module)
+    if debug:
+        print "Debug: Suite=%s" % suite
+    testRunner = unittest.TextTestRunner(verbosity=verbosity)
+    testRunner.run(suite)
+@
+
+
+1.1.2.4
+log
+@Phew! Now I'm late for bed. That said, I think it's semi-working.
+@
+text
+@d6 2
+a7 2
+Revision: $Revision: 1.1.2.3 $
+Date: $Date: 2001/07/29 22:34:52 $
+d18 1
+a18 1
+__all__ = ( 'debug', 'verbosity', 'states', 'main', 'unittest' )
+d22 1
+a22 1
+import sys, os, getopt, types, unittest, re
+d31 1
+a31 1
+
+d44 74
+d120 1
+a120 1
+Usage: test_whatever [options]
+d129 1
+a129 1
+def usageExit(msg=None):
+d133 1
+a133 1
+    print USAGE
+d163 1
+a163 1
+def loadTestsFromModule(module, exceptThese=[]):
+d171 2
+a172 2
+        if type(obj) == types.ClassType and issubclass(obj, unittest.TestCase):
+            tests.append(unittest.defaultTestLoader.loadTestsFromTestCase(obj))
+d187 1
+a187 1
+        suite = unittest.defaultTestLoader.loadTestsFromModule(__import__('__main__'))
+@
+
+
+1.1.2.5
+log
+@Removed bogus function.
+@
+text
+@d6 2
+a7 2
+Revision: $Revision: 1.1.2.4 $
+Date: $Date: 2001/07/31 14:46:24 $
+d88 13
+a100 1
+
+@
+
+
+1.1.2.6
+log
+@* Removed redundant tests from test_states.
+* Fixed handling of aggregate suites in test_all.py
+* Deliberately screwed up the first test in test_states to aid
+  diagnosis.
+
+I still haven't figured out why two tests bomb out in an error in
+test_states but not in test_all.
+@
+text
+@d6 2
+a7 2
+Revision: $Revision: 1.1.2.5 $
+Date: $Date: 2001/07/31 15:21:54 $
+d96 2
+a97 4
+    sys.stderr = sys.stdout = Tee('test_all.out')
+    
+    parseArgs()
+    
+d101 1
+a101 2
+        suite = unittest.defaultTestLoader.loadTestsFromModule(__import__('__main__'))
+        
+d103 3
+a105 10
+        print "Debug: Suite=%s" % suite
+        
+    testRunner = unittest.TextTestRunner(verbosity=verbosity)
+
+    # run suites (if we were called from test_all) or suite...
+    if type(suite) == type([]):
+        for s in suite:
+            testRunner.run(s)
+    else:
+        testRunner.run(suite)
+@
+
+
+1.1.2.7
+log
+@refactored into UnitTestFolder.py
+@
+text
+@d6 2
+a7 2
+Revision: $Revision: 1.1.2.6 $
+Date: $Date: 2001/08/02 04:44:20 $
+@
+
+

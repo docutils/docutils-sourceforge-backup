@@ -1,0 +1,1589 @@
+head	1.54;
+access;
+symbols
+	rel-0-3:1.1.1.1 open:1.1.1;
+locks; strict;
+comment	@# @;
+
+
+1.54
+date	2002.04.20.16.24.57;	author goodger;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2002.04.19.01.45.12;	author goodger;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2002.04.18.02.57.42;	author goodger;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2002.04.13.17.09.12;	author goodger;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2002.03.28.05.18.06;	author goodger;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2002.03.28.04.47.58;	author goodger;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2002.03.16.06.11.01;	author goodger;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2002.03.13.02.48.27;	author goodger;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2002.03.11.03.45.08;	author goodger;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2002.03.07.04.06.54;	author goodger;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2002.03.04.04.50.17;	author goodger;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2002.03.01.03.19.41;	author goodger;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2002.02.23.16.54.23;	author goodger;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2002.02.22.02.13.27;	author goodger;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2002.02.20.04.18.25;	author goodger;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2002.02.15.22.54.35;	author goodger;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2002.02.13.02.29.39;	author goodger;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2002.02.06.03.11.28;	author goodger;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2002.01.30.04.56.45;	author goodger;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2002.01.29.02.24.40;	author goodger;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2002.01.28.02.22.34;	author goodger;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2002.01.26.00.10.29;	author goodger;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2002.01.16.02.56.37;	author goodger;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2001.11.22.04.18.23;	author goodger;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2001.11.19.04.07.29;	author goodger;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2001.11.15.02.59.13;	author goodger;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2001.11.13.03.07.53;	author goodger;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2001.11.09.23.13.48;	author goodger;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2001.11.06.02.10.08;	author goodger;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2001.10.31.05.56.52;	author goodger;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2001.10.30.05.18.03;	author goodger;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2001.10.27.05.41.58;	author goodger;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2001.10.23.02.23.56;	author goodger;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2001.10.20.03.07.56;	author goodger;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2001.10.18.03.35.50;	author goodger;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2001.09.26.03.33.06;	author goodger;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2001.09.25.03.09.01;	author goodger;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2001.09.18.04.34.35;	author goodger;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2001.09.17.04.15.23;	author goodger;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2001.09.13.02.16.24;	author goodger;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2001.09.12.03.48.44;	author goodger;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2001.09.10.04.22.57;	author goodger;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2001.09.07.02.13.11;	author goodger;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2001.09.05.02.40.26;	author goodger;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2001.09.01.15.03.07;	author goodger;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2001.08.28.03.28.39;	author goodger;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2001.08.25.01.51.03;	author goodger;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2001.08.23.03.59.30;	author goodger;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2001.08.22.04.12.27;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2001.08.17.02.32.42;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.08.14.03.54.58;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.08.11.01.53.18;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.07.29.15.55.48;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.07.22.22.36.34;	author goodger;	state Exp;
+branches
+	1.1.1.1;
+next	;
+
+1.1.1.1
+date	2001.07.22.22.36.34;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.54
+log
+@quoted "__", looked like reference
+@
+text
+@====================================================
+ Python Docstring Processing System Project History
+====================================================
+
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Date: $Date: 2002/04/19 01:45:12 $
+:Web-site: http://docstring.sourceforge.net/
+
+
+Acknowledgements
+================
+
+I would like to acknowledge the people who have made a direct impact
+on the Python Docstring Processing System (DPS) project, knowingly or
+not, in terms of encouragement, suggestions, criticism, bug reports,
+code contributions, and related projects:
+
+    David Ascher, Fred Drake, Jim Fulton, Peter Funk, Doug Hellmann,
+    Juergen Hermann, Tony Ibbs, Richard Jones, Garth Kidd, Daniel
+    Larsson, Marc-Andre Lemburg, Wolfgang Lipp, Edward Loper, Ken
+    Manheimer, Paul Moore, Michel Pelletier, Sam Penrose, Tim Peters,
+    Mark Pilgrim, Tavis Rudd, Ueli Schlaepfer, Bob Tolbert, Laurence
+    Tratt, Guido van Rossum, Barry Warsaw, Edward Welbourne, Ka-Ping
+    Yee, Moshe Zadka
+
+(I'm still waiting for contributions of computer equipment and cold
+hard cash :-).)  Hopefully I haven't forgotten anyone or misspelled
+any names; apologies (and please let me know!) if I have.
+
+
+Release 0.4 (2002-04-18)
+========================
+
+This is the final release of DPS as an independent package.
+Development is being transferred to the Docutils_ project immediately.
+
+.. _Docutils: http://docutils.sourceforge.net/
+
+General: updated docstrings for new field list syntax (bibliographic
+info); changed contact email addresses.
+
+* install.py: Added to project.
+
+* setup.py: Modified for import by install.py.
+
+* COPYING.txt: Added to project.
+
+* dps/__init__.py: Added docstring.
+
+* dps/core.py: Added to project.
+
+* dps/nodes.py:
+
+  - Added 'classifier'.
+  - Added 'error', 'attention'.
+  - Fixed link bookkeeping.
+  - Added docstrings.
+  - Extended ``Element.__iadd__`` (``+=``) to lists of nodes.
+  - Duplicate hyperlink names -> dupname attribute.
+  - Allow any DOM implementation from ``asdom()`` method.  (I think.)
+  - _Node's always true.
+  - Changed .pprint() to .pformat(); removed endtags from output.
+  - Added slice support to elements.
+  - Added .findclass() & .findnonclass() methods.
+  - Added support for auto-numbered and symbolic footnotes.
+  - Changed 'tagName' to 'tagname'.
+  - Improved auto-tagname generation.
+  - Added string-conversion to attribute values in DOM-conversion.
+  - Changed footnote/footnote_reference 'auto' attribute to integer.
+  - Changed 'graphic' to 'image'.
+  - Added 'docinfo', container for bibliographic elements.
+  - Added 'transition'.
+  - Renamed 'indirect' hyperlink targets -> 'external'.
+  - Renamed ``.*links?`` -> ``.*targets?``.
+  - Added support for indirect & anonymous targets.
+  - External targets' URIs now in "refuri" attribute, not data.
+  - Changed "link" to "reference".
+  - Removed leading underscores from functional node base classes.
+  - Added "hint", "substitution", "substitution_reference" classes.
+  - Added element hierarchy base classes.
+  - Removed generic 'directive'.
+  - 'errorhandler' -> 'reporter'.  ``dps.utils.Reporter`` reform.
+  - Added document.languagecode.
+  - Added Visitor classes, ``Node.walk()`` & ``Node.walkabout()``.
+  - Improved ``__repr__()``.
+  - Improved some names.
+  - Removed Python-specific element classes.
+  - Reworked for hyperlink transforms.
+  - Added support for footnote transform.
+  - Added 'problematic', inline relative of 'system_warning'.
+  - Added ``Node.parent`` back-reference for transforms.
+  - Added ``Element.index()`` and ``Element.replace()`` methods.
+  - Simplified target record keeping.
+  - Changed "system_warning" to "system_message".
+  - Modified post-parse system message storage.
+  - Added 'id' attribute support to ``document``.
+  - Reworked option lists.
+  - Removed "abstract"
+  - Added "topic", "pending", "citation" and "citation_reference".
+  - Added support for system_message cross-references.
+  - Added support for list-value attributes (including
+    "Element.setdefault()").
+  - Added "BackLinkable" mixin.
+
+* dps/roman.py: Added to project.  Written by and courtesy of Mark
+  Pilgrim.  From http://diveintopython.org.
+
+* dps/statemachine.py (1.3):
+
+  - Fixed bugs in StateMachineWS.getknownindented().
+  - Added trimming of blank first lines to
+    StateMachineWS.getindented(), .getknownindented(), and
+    .getfirstknownindented().
+  - Cleaned up & updated.
+  - Fixed bug in StateMachine.getunindented().
+  - Added form feed & vertical tab conversion to string2lines.
+  - Added StateMachine.nextlineblank().
+  - Added 'nestedSM' and 'nestedSMkwargs' to State.
+  - Added 'uptoblank' and 'stripindent' optional arguments to
+    'getindented', 'getknownindented', and 'getfirstknownindented'
+    methods of StateMachineWS, and to 'extractindented' function.
+  - Added 'atbof' and 'ateof' methods to StateMachine.
+  - Added support for 'TransitionCorrection' exception.
+
+* dps/urischemes.py: Known URI schemes; added to project.
+
+* dps/utils.py:
+
+  - Renamed error reporter class to 'Reporter' from 'Errorist'.
+  - Added named methods (aliases to numbered system_warning calls) to
+    Reporter.
+  - Removed Reporter.strong_system_warning (not needed).
+  - Changed "system_warning" to "system_message".
+  - Improved error stream handling.
+  - Reworked ``Reporter`` based on "log4j".
+  - Added some docstrings.
+  - Added 'extract_extension_attributes()', associated functions and
+    exceptions.
+  - Added 'extract_name_value()' & 'NameValueError' exception.
+  - Moved 'normname()' from restructuredtext.states.
+  - Added ``newdocument()``: document Node creation.
+  - Added name -> id conversion, ``id()``.
+
+* dps/test_*.py: Moved to new test/ directory.
+
+* dps/readers: Subpackage added to project.
+
+* dps/parsers/model.py:
+
+  - Added setup_parse() so unoverridden parse() could raise a
+    NotImplementedError.
+  - Moved Parser class to __init__.py, with updates.  Module removed
+    from project.
+
+* dps/writers: Subpackage added to project.
+
+* dps/languages/__init__.py:
+
+  - Added language module import function.
+
+* dps/languages/en.py:
+
+  - Fixed ``__all__``.
+  - Changed node class names to node classes.
+  - Removed parser-specific data.
+  - Added 'bibliographic_fields' and 'author_separators' (transform
+    support).
+  - Removed Python-specific interpreted text mapping.
+  - Changed 'bibliographic_labels' to 'labels'.
+  - Added labels for admonitions.
+  - Added label for table of contents title.
+
+* dps/transforms: Subpackage added.  Thanks to Ueli Schlaepfer for the
+  initial work.
+
+* dps/formatters: Removed subpackage from project.  Replaced by
+  "writers".
+
+* test: Subdirectory added.  The top-level consists of a modular test
+  framework begun by Garth Kidd.
+
+* test/test_utils.py: Converted from doctest to unittest & updated.
+
+* spec/doctree.txt: "DPS Document Tree Structure", added to project.
+
+* spec/pep-0256.txt: Overhauled.
+
+* spec/pep-0257.txt:
+
+  - Added "methods" to descriptions.
+  - Mentioned Unicode strings.
+
+* spec/pep-0258.txt: Overhauled and retitled.
+
+* spec/gdpi.dtd:
+
+  - Fixed typos & omissions; now validates.
+  - Added 'source' to %basic.atts, removed 'rawtext'.
+  - Added 'class' to %basic.atts for style sheets.
+  - Changed field_argument's model to PCDATA.
+  - Added option_list and doctest_block from ppdi.dtd.
+  - Added classifier element to definition_list_item.
+  - Added dupname attribute to %basic.atts; for duplicate names.
+  - Added support for auto-numbered footnotes.
+  - Added 'morecols' attribute to table entries (<entry>), for simpler
+    column span indication.
+  - Made document subtitle dependent on the existence of a title.
+  - Changed 'graphic' to 'image'.
+  - Moved 'caption' to after 'image' in 'figure'.
+  - Added 'error' and 'hint' admonition elements.
+  - Added 'docinfo' as container for bibliographic elements.
+  - Added 'transition'.
+  - Changed %link.atts to %reference.atts.
+  - Separated out %reference.atts into constituent parts.
+  - Added all reference and "anonymous" attributes to "target".
+  - Changed "link" to "reference".
+  - Added "anonymous" attribute to "reference".
+  - Changed the content model of "reference" to allow inline elements,
+    specifically images and substitution references.
+  - Added 'image' as body element; 'target' as inline element.
+  - Added 'alt' attribute to 'image'.
+  - Expanded 'authors' content.
+  - Clarified 'figure' content.
+  - Added 'substitution_definition' and 'substitution_reference'.
+  - Changed content models of most inline elements to %text.model,
+    allowing nested inline elements.
+  - Removed generic 'directive'.
+  - Added 'problematic', inline relative of 'system_message'.
+  - Added 'type' attribute to 'system_warning', removed 'warning'.
+  - Changed "system_warning" to "system_message"; added backlink
+    attribute "backrefs".
+  - Reworked option lists.
+  - Removed "abstract"
+  - Added "topic".
+  - Added "pending".
+  - Added "citation" and "citation_reference".
+  - Added "raw".
+  - Added "refid" attribute to "title" for two-way Tables of Contents.
+  - Added "backrefs" attribute to "footnote" & "citation" for
+    backlinks.
+
+* spec/pdpi.dtd:
+
+  - Fixed typos; now validates.
+  - Moved option_list and doctest_block from gpdi.dtd.
+
+* spec/pysource-reader.txt: Added to project (from reStructuredText).
+
+
+Release 0.3 (2001-07-19)
+========================
+
+* dps/nodes.py: Added to project.
+
+* dps/test_nodes.py: Added to project.
+
+* dps/utils.py: Added to project.
+
+* dps/test_utils.py: Added to project.
+
+* dps/statemachine.py (1.2):
+
+  - Added exceptions: UnknownTransitionError,
+    DuplicateTransitionError, TransitionPatternNotFound,
+    TransitionMethodNotFound, UnexpectedIndentationError.
+  - Changed StateMachine.lineno to lineoffset.
+  - Added methods to StateMachine: unlink(), gotoline(),
+    gettextblock(), getunindented(), abslineoffset(), abslineno().
+  - Changed StateMachine method signatures: addtransitions(),
+    addtransition().
+  - Changed function extractindented(), and StateMachineWS methods
+    getindented(), getknownindented(), and getfirstknownindented():
+    added a 'blankfinish' boolean return value to each.
+  - Fixed a bug in StateMachineWS methods getindented(),
+    getknownindented(), and getfirstknownindented(), where an empty
+    block caused an infinite loop.
+  - Changed State's transition storage (instance attributes
+    transitions & transitionorder).
+  - Added methods to State: unlink(), removetransition().
+  - Relaxed State.patterns contents: values can be strings or compiled
+    patterns; strings will be compiled by State.maketransition().
+
+* dps/test_statemachine.py: Modified per statemachine.py changes.
+
+* dps/parsers/model.py: Progress on the API.
+
+* spec/gpdi.dtd: Added 'level' attribute to 'system_warning'.
+
+* spec/pep-0258.txt: Added 'Error Handling' section.
+
+
+Release 0.2 (2001-06-18)
+========================
+
+PEP numbers assigned 2001-06-06.  PEPs first posted to
+comp.lang.python 2001-06-13.
+
+* spec/pep-0256.txt:
+
+  - File renamed from dps-framework-pep.txt.
+
+* spec/pep-0257.txt:
+
+  - File renamed from docstring-conventions-pep.txt.
+  - Added "Rationale" section.
+  - Resolved additions ([+]) and deletions ([-]).
+  - Added a description of "What is a Docstring?".
+  - Added descriptions of attribute and additional docstrings.
+
+* spec/pep-0258.txt:
+
+  - File renamed from dps-genericspec-pep.txt.
+  - Optional override of what docstrings to examine.
+
+* dps/statemachine.py:
+
+  - Catch `EOFError` to end statemachine processing.
+  - Relaxed State.initialtransitions contents: entries can be strings
+    as well as tuples.  (Also argument to State.maketransitions().)
+
+* dps/test_statemachine.py: Modified tests for statemachine.py
+  changes.
+
+* HISTORY.txt: Added to project.
+
+
+Release 0.1 (2001-06-02)
+========================
+
+The project web site and the first project release were rolled out.
+Candidate PEPs posted to Doc-SIG 2001-06-03.
+
+
+..
+   Local Variables:
+   mode: indented-text
+   indent-tabs-mode: nil
+   sentence-end-double-space: t
+   fill-column: 70
+   End:
+@
+
+
+1.53
+log
+@updated
+@
+text
+@d7 2
+a8 2
+:Date: $Date: 2002/04/18 02:57:42 $
+:Website: http://docstring.sourceforge.net/
+d59 1
+a59 1
+  - Extended Element.__iadd__ (``+=``) to lists of nodes.
+@
+
+
+1.52
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/04/13 17:09:12 $
+d15 3
+a17 3
+on the Python Docstring Processing System project, knowingly or not,
+in terms of encouragement, suggestions, criticism, bug reports, code
+contributions, and related projects:
+d32 1
+a32 1
+Release 0.4? (pending)
+d35 7
+a41 2
+Updated docstrings for new field list syntax (bibliographic info).
+Changed contact email addresses.
+d46 2
+@
+
+
+1.51
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/03/28 05:18:06 $
+d27 3
+a29 4
+(I'm still waiting for contributions of tasty snacks, computer
+equipment, and cold hard cash. :-) Hopefully I haven't forgotten
+anyone or misspelled any names; apologies (and please let me know!) if
+I have.
+d54 1
+a54 1
+  - Allow any DOM implementation from ``asdom()`` method. (I think.)
+d76 1
+a76 1
+  - 'errorhandler' -> 'reporter'. ``dps.utils.Reporter`` reform.
+d99 2
+a100 2
+* dps/roman.py: Added to project. Written by and courtesy of Mark
+  Pilgrim. From http://diveintopython.org.
+d117 1
+d146 1
+a146 1
+  - Moved Parser class to __init__.py, with updates. Module removed
+d167 1
+a167 1
+* dps/transforms: Subpackage added. Thanks to Ueli Schlaepfer for the
+d170 1
+a170 1
+* dps/formatters: Removed subpackage from project. Replaced by
+d173 1
+a173 1
+* test: Subdirectory added. The top-level consists of a modular test
+d289 2
+a290 2
+PEP numbers assigned 2001-06-06. PEPs first posted to comp.lang.python
+2001-06-13.
+d313 1
+a313 1
+    as well as tuples. (Also argument to State.maketransitions().)
+d332 1
+@
+
+
+1.50
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/03/28 04:47:58 $
+d225 1
+a225 1
+    attribute "refids".
+d233 2
+a234 1
+  - Added "refids" attribute to "footnote" & "citation" for backlinks.
+@
+
+
+1.49
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/03/16 06:11:01 $
+d180 1
+a180 4
+* spec/pep-0256.txt:
+
+  - Added ref to Ed Loper's STminus.
+  - Added "methods" to abstract.
+d187 1
+a187 4
+* spec/pep-0258.txt:
+
+  - Clarifications due to Tony Ibbs.
+  - Added names to system warnings, updated.
+@
+
+
+1.48
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/03/13 02:48:27 $
+d96 3
+d230 2
+a231 2
+  - Changed "system_warning" to "system_message"; added
+    cross-reference attribute "refid".
+d239 1
+@
+
+
+1.47
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/03/11 03:45:08 $
+d133 1
+a133 1
+
+d162 1
+d235 1
+@
+
+
+1.46
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/03/07 04:06:54 $
+d128 3
+a130 1
+  - Added 'parseattributes()', associated functions and exceptions.
+d133 1
+@
+
+
+1.45
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/03/04 04:50:17 $
+d95 1
+d221 1
+a221 1
+  - Added 'problematic', inline relative of 'system_warning'.
+d223 2
+a224 1
+  - Changed "system_warning" to "system_message".
+@
+
+
+1.44
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/03/01 03:19:41 $
+d60 1
+a60 1
+  - Added support for auto-numbered footnotes.
+d228 1
+@
+
+
+1.43
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/02/23 16:54:23 $
+a48 1
+  - Added 'vms_option'.
+a64 1
+  - Moved 'abstract' into bibliographic elements section.
+d93 2
+a203 1
+  - Made 'abstract' a structural element, after 'docinfo'.
+d224 4
+@
+
+
+1.42
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/02/22 02:13:27 $
+d94 1
+a193 2
+  - Added vms_option element to option.
+  - Added support for 'option_list' attribute 'optarg_delimiter'.
+d224 1
+@
+
+
+1.41
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/02/20 04:18:25 $
+d155 2
+d194 1
+@
+
+
+1.40
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/02/15 22:54:35 $
+d20 6
+a25 5
+    Juergen Hermann, Tony Ibbs, Garth Kidd, Daniel Larsson, Marc-Andre
+    Lemburg, Wolfgang Lipp, Edward Loper, Ken Manheimer, Paul Moore,
+    Michel Pelletier, Sam Penrose, Tim Peters, Mark Pilgrim, Tavis
+    Rudd, Ueli Schlaepfer, Bob Tolbert, Laurence Tratt, Guido van
+    Rossum, Barry Warsaw, Edward Welbourne, Ka-Ping Yee, Moshe Zadka
+d92 1
+a197 1
+  - Moved 'abstract' into the bibliographic elements section.
+d202 1
+@
+
+
+1.39
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/02/13 02:29:39 $
+d91 1
+d185 2
+a186 1
+  - Added 'source' to basic.atts; removed 'rawtext'.
+@
+
+
+1.38
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/02/06 03:11:28 $
+d90 1
+d119 1
+d217 1
+@
+
+
+1.37
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/01/30 04:56:45 $
+d80 1
+a80 1
+  - Added Visitor classes & Node.walk().
+@
+
+
+1.36
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/01/29 02:24:40 $
+d44 2
+d78 1
+a78 1
+  - 'errorhandler' -> 'reporter'.
+d119 1
+d127 2
+d136 2
+d154 2
+a155 2
+* dps/formatters: Removed subpackage from project. To be replaced by
+  "writers" or "builders" subpackage.
+d177 1
+a177 1
+  - Added names to system warnings.
+d214 1
+@
+
+
+1.35
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/01/28 02:22:34 $
+d23 2
+a24 2
+    Rudd, Bob Tolbert, Laurence Tratt, Guido van Rossum, Barry Warsaw,
+    Edward Welbourne, Ka-Ping Yee, Moshe Zadka
+d87 1
+d120 1
+d128 2
+d144 5
+a148 1
+* dps/transforms: Subpackage added.
+@
+
+
+1.34
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/01/26 00:10:29 $
+d84 3
+d198 1
+@
+
+
+1.33
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2002/01/16 02:56:37 $
+d83 1
+@
+
+
+1.32
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/11/22 04:18:23 $
+d50 2
+a51 2
+  - Added docstrings to _Element.
+  - Extended _Element.__iadd__ (``+=``) to lists of nodes.
+d78 5
+d134 1
+@
+
+
+1.31
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/11/19 04:07:29 $
+d42 2
+d76 2
+d109 1
+d127 4
+@
+
+
+1.30
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/11/15 02:59:13 $
+d82 2
+a83 1
+    StateMachineWS.getfirstknownindented().
+d91 2
+a92 1
+    methods of StateWS, and to 'extractindented' function.
+d102 1
+@
+
+
+1.29
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/11/13 03:07:53 $
+d73 1
+a73 1
+  - Changed 'directive' to a TextElement.
+d172 1
+a172 2
+  - Added 'substitution' and 'substitution_reference'.
+  - Changed content model 'directive' to PCDATA.
+d175 1
+@
+
+
+1.28
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/11/09 23:13:48 $
+d101 1
+d169 1
+@
+
+
+1.27
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/11/06 02:10:08 $
+d88 3
+a90 3
+  - Added 'uptoblank' optional argument to 'getindented',
+    'getknownindented', and 'getfirstknownindented' methods of
+    StateWS, and to 'extractindented' function.
+@
+
+
+1.26
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/10/31 05:56:52 $
+d73 1
+d171 3
+@
+
+
+1.25
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/10/30 05:18:03 $
+d66 1
+a66 1
+  - Renamed ``*links?`` -> ``*targets?``.
+d70 3
+d156 1
+a156 1
+  - Added 'error' admonishment element.
+d162 4
+a165 1
+  - Added "anonymous" attribute to "link".
+d169 1
+a169 1
+  - Changed "link" to "reference".
+@
+
+
+1.24
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/10/27 05:41:58 $
+d69 1
+d163 1
+@
+
+
+1.23
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/10/23 02:23:56 $
+d68 1
+d155 3
+a157 2
+  - Separated out %link.atts into constituent parts.
+  - Added "refname" and "anonymous" attrbites to "target".
+@
+
+
+1.22
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/10/20 03:07:56 $
+d64 1
+a64 1
+  - Added 'division', repeatable container for body elements.
+d86 2
+d153 1
+a153 1
+  - Added 'division', repeatable container of body elements.
+d157 3
+@
+
+
+1.21
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/10/18 03:35:50 $
+d66 2
+@
+
+
+1.20
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/09/26 03:33:06 $
+d64 2
+d114 2
+d149 4
+a152 1
+  - Added 'division'.
+@
+
+
+1.19
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/09/25 03:09:01 $
+d145 1
+d152 1
+a152 2
+* spec/python-docstring-mode.txt: Added to project (from
+  reStructuredText).
+@
+
+
+1.18
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/09/18 04:34:35 $
+d63 1
+d144 1
+@
+
+
+1.17
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/09/17 04:15:23 $
+d129 1
+@
+
+
+1.16
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/09/13 02:16:24 $
+d86 1
+d88 2
+@
+
+
+1.15
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/09/12 03:48:44 $
+d77 3
+d83 1
+d85 2
+a86 1
+    Errorist.
+d102 5
+@
+
+
+1.14
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/09/10 04:22:57 $
+d46 1
+a46 1
+  - Added 'error'.
+d53 1
+a53 1
+  - Changed .pprint() to .pformat().
+d76 1
+@
+
+
+1.13
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/09/07 02:13:11 $
+d21 4
+a24 4
+    Lemburg, Wolfgang Lipp, Edward Loper, Ken Manheimer, Michel
+    Pelletier, Sam Penrose, Tim Peters, Mark Pilgrim, Tavis Rudd, Bob
+    Tolbert, Laurence Tratt, Guido van Rossum, Barry Warsaw, Edward
+    Welbourne, Ka-Ping Yee, Moshe Zadka
+d44 3
+a46 2
+  - Added vms_option.
+  - Added classifier.
+d75 1
+d126 2
+@
+
+
+1.12
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/09/05 02:40:26 $
+d56 6
+a78 1
+  - Added language module support.
+a83 1
+  - Added language module support.
+d85 5
+a89 1
+* dps/languages/en.py: Now in use.
+d93 1
+d123 1
+@
+
+
+1.11
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/09/01 15:03:07 $
+d51 5
+d69 6
+d79 3
+d83 2
+a84 1
+* dps/languages/en.py: Fixed ``__all__``.
+d112 2
+@
+
+
+1.10
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/08/28 03:28:39 $
+d103 2
+a104 1
+* spec/python-mode.txt: Added to project (from reStructuredText).
+@
+
+
+1.9
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/08/25 01:51:03 $
+d50 1
+d95 2
+@
+
+
+1.8
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/08/23 03:59:30 $
+d49 1
+d56 3
+a58 1
+  - Fixed bug in StateMachineWS.getknownindented().
+d93 1
+@
+
+
+1.7
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/08/22 04:12:27 $
+d45 1
+d47 2
+d58 1
+d87 2
+a88 1
+  - Added vms_option.
+d183 6
+a188 5
+Local Variables:
+mode: indented-text
+indent-tabs-mode: nil
+fill-column: 70
+End:
+@
+
+
+1.6
+log
+@updated
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/08/14 03:54:58 $
+a54 2
+  - Added startoffset parameter to StateMachineWS.getindented() (but
+    I may be backing this off soon -- not the right solution).
+@
+
+
+1.5
+log
+@updated
+@
+text
+@d5 4
+a8 4
+Author: David Goodger
+Contact: dgoodger@@bigfoot.com
+Date: $Date: 2001/08/14 03:54:58 $
+Website: http://docstring.sourceforge.net/
+d35 3
+d42 5
+d54 3
+d85 3
+a87 1
+  
+d92 2
+@
+
+
+1.4
+log
+@updated
+@
+text
+@d7 1
+a7 1
+Date: $Date: 2001/08/11 01:53:18 $
+d42 1
+a42 1
+* dps/statemachine.py:
+d45 1
+d52 2
+d73 3
+d77 2
+a78 1
+* spec/pdpi.dtd: Fixed typos; now validates.
+@
+
+
+1.3
+log
+@updated
+@
+text
+@d7 1
+a7 1
+Date: $Date: 2001/07/29 15:55:48 $
+d66 4
+a69 1
+* spec/gdpi.dtd: Fixed typos & omissions; now validates.
+@
+
+
+1.2
+log
+@brought up to date
+@
+text
+@d7 1
+a7 1
+Date: $Date: 2001/07/22 22:36:34 $
+d11 21
+d35 31
+a152 21
+
+
+Acknowledgements
+================
+
+I would like to acknowledge the people who have made a direct impact
+on the Python Docstring Processing System project, knowingly or not,
+in terms of encouragement, suggestions, criticism, bug reports, code
+contributions, and related projects:
+
+    David Ascher, Fred Drake, Jim Fulton, Peter Funk, Doug Hellmann,
+    Juergen Hermann, Tony Ibbs, Garth Kidd, Daniel Larsson, Marc-Andre
+    Lemburg, Wolfgang Lipp, Edward Loper, Ken Manheimer, Michel
+    Pelletier, Sam Penrose, Tim Peters, Tavis Rudd, Bob Tolbert,
+    Laurence Tratt, Guido van Rossum, Barry Warsaw, Edward Welbourne,
+    Ka-Ping Yee, Moshe Zadka
+
+(I'm still waiting for contributions of tasty snacks, computer
+equipment, and cold hard cash. :-) Hopefully I haven't forgotten
+anyone or misspelled any names; apologies (and please let me know!) if
+I have.
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d7 1
+a7 1
+Date: $Date: 2001/07/20 00:21:33 $
+d11 8
+d112 5
+a116 5
+    Juergen Hermann, Tony Ibbs, Daniel Larsson, Marc-Andre Lemburg,
+    Wolfgang Lipp, Edward Loper, Ken Manheimer, Michel Pelletier, Sam
+    Penrose, Tim Peters, Tavis Rudd, Bob Tolbert, Laurence Tratt,
+    Guido van Rossum, Barry Warsaw, Edward Welbourne, Ka-Ping Yee,
+    Moshe Zadka
+@
+
+
+1.1.1.1
+log
+@First Imported.
+@
+text
+@@

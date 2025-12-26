@@ -1,0 +1,1213 @@
+head	1.20;
+access;
+symbols
+	rel-0-3:1.1.1.1 open:1.1.1;
+locks; strict;
+comment	@# @;
+
+
+1.20
+date	2002.03.28.04.47.33;	author goodger;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2002.03.16.05.57.30;	author goodger;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2002.03.13.02.43.47;	author goodger;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2002.03.11.03.37.55;	author goodger;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2002.02.22.02.02.57;	author goodger;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2002.02.15.22.42.44;	author goodger;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2002.02.12.02.16.27;	author goodger;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2002.02.07.02.00.45;	author goodger;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2002.02.06.02.53.53;	author goodger;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2002.01.30.04.47.02;	author goodger;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2002.01.16.02.45.22;	author goodger;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2001.11.22.04.10.50;	author goodger;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2001.11.15.02.57.22;	author goodger;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2001.09.18.04.32.12;	author goodger;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2001.09.17.03.54.29;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2001.09.10.04.07.11;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.09.08.03.20.58;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.09.07.02.03.14;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.08.23.03.56.27;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.07.22.22.36.09;	author goodger;	state Exp;
+branches
+	1.1.1.1;
+next	;
+
+1.1.1.1
+date	2001.07.22.22.36.09;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.20
+log
+@docstring mods
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.19 $
+:Date: $Date: 2002/03/16 05:57:30 $
+:Copyright: This module has been placed in the public domain.
+
+Miscellaneous utilities for the documentation utilities.
+"""
+
+import sys, re
+import nodes
+
+
+class SystemMessage(Exception):
+
+    def __init__(self, system_message):
+        Exception.__init__(self, system_message.astext())
+
+
+class Reporter:
+
+    """
+    Info/warning/error reporter and ``system_message`` element generator.
+
+    Five levels of system messages are defined, along with corresponding
+    methods: `debug()`, `info()`, `warning()`, `error()`, and `severe()`.
+
+    There is typically one Reporter object per process. A Reporter object is
+    instantiated with thresholds for generating warnings and errors (raising
+    exceptions), a switch to turn debug output on or off, and an I/O stream
+    for warnings. These are stored in the default reporting category, ''
+    (zero-length string).
+
+    Multiple reporting categories [#]_ may be set, each with its own warning
+    and error thresholds, debugging switch, and warning stream (collectively a
+    `ConditionSet`). Categories are hierarchically-named strings that look
+    like attribute references: 'spam', 'spam.eggs', 'neeeow.wum.ping'. The
+    'spam' category is the ancestor of 'spam.bacon.eggs'. Unset categories
+    inherit stored conditions from their closest ancestor category that has
+    been set.
+
+    When a system message is generated, the stored conditions from its
+    category (or ancestor if unset) are retrieved. The system message level is
+    compared to the thresholds stored in the category, and a warning or error
+    is generated as appropriate. Debug messages are produced iff the stored
+    debug switch is on. Message output is sent to the stored warning stream.
+
+    The default category is '' (empty string). By convention, Writers should
+    retrieve reporting conditions from the 'writer' category (which, unless
+    explicitly set, defaults to the conditions of the default category).
+
+    .. [#] The concept of "categories" was inspired by the log4j project:
+       http://jakarta.apache.org/log4j/.
+    """
+
+    levels = 'DEBUG INFO WARNING ERROR SEVERE'.split()
+    """List of names for system message levels, indexed by level."""
+
+    def __init__(self, warninglevel, errorlevel, stream=None, debug=0):
+        """
+        Initialize the `ConditionSet` forthe `Reporter`'s default category.
+
+        :Parameters:
+
+            - `warninglevel`: The level at or above which warning output will
+              be sent to `stream`.
+            - `errorlevel`: The level at or above which `SystemMessage`
+              exceptions will be raised.
+            - `debug`: Show debug (level=0) system messages?
+            - `stream`: Where warning output is sent (`None` implies
+              `sys.stderr`).
+        """
+
+        if stream is None:
+            stream = sys.stderr
+
+        self.categories = {'': ConditionSet(debug, warninglevel, errorlevel,
+                                            stream)}
+        """Mapping of category names to conditions. Default category is ''."""
+
+    def setconditions(self, category, warninglevel, errorlevel,
+                      stream=None, debug=0):
+        if stream is None:
+            stream = sys.stderr
+        self.categories[category] = ConditionSet(debug, warninglevel,
+                                                 errorlevel, stream)
+
+    def unsetconditions(self, category):
+        if category and self.categories.has_key(category):
+            del self.categories[category]
+
+    __delitem__ = unsetconditions
+
+    def getconditions(self, category):
+        while not self.categories.has_key(category):
+            category = category[:category.rfind('.') + 1][:-1]
+        return self.categories[category]
+
+    __getitem__ = getconditions
+
+    def system_message(self, level, comment=None, category='',
+                       *children, **attributes):
+        """
+        Return a system_message object.
+
+        Raise an exception or generate a warning if appropriate.
+        """
+        msg = nodes.system_message(comment, level=level,
+                                   type=self.levels[level],
+                                   *children, **attributes)
+        debug, warninglevel, errorlevel, stream = self[category].astuple()
+        if level >= warninglevel or debug and level == 0:
+            if category:
+                print >>stream, 'Reporter "%s":' % category, msg.astext()
+            else:
+                print >>stream, 'Reporter:', msg.astext()
+        if level >= errorlevel:
+            raise SystemMessage(msg)
+        return msg
+
+    def debug(self, comment=None, category='', *children, **attributes):
+        """
+        Level-0, "DEBUG": an internal reporting issue. Typically, there is no
+        effect on the processing. Level-0 system messages are handled
+        separately from the others.
+        """
+        return self.system_message(
+              0, comment, category, *children, **attributes)
+
+    def info(self, comment=None, category='', *children, **attributes):
+        """
+        Level-1, "INFO": a minor issue that can be ignored. Typically there is
+        no effect on processing, and level-1 system messages are not reported.
+        """
+        return self.system_message(
+              1, comment, category, *children, **attributes)
+
+    def warning(self, comment=None, category='', *children, **attributes):
+        """
+        Level-2, "WARNING": an issue that should be addressed. If ignored,
+        there may be unpredictable problems with the output.
+        """
+        return self.system_message(
+              2, comment, category, *children, **attributes)
+
+    def error(self, comment=None, category='', *children, **attributes):
+        """
+        Level-3, "ERROR": an error that should be addressed. If ignored, the
+        output will contain errors.
+        """
+        return self.system_message(
+              3, comment, category, *children, **attributes)
+
+    def severe(self, comment=None, category='', *children, **attributes):
+        """
+        Level-4, "SEVERE": a severe error that must be addressed. If ignored,
+        the output will contain severe errors. Typically level-4 system
+        messages are turned into exceptions which halt processing.
+        """
+        return self.system_message(
+              4, comment, category, *children, **attributes)
+
+
+class ConditionSet:
+
+    """
+    A set of thresholds, switches, and streams corresponding to one `Reporter`
+    category.
+    """
+
+    def __init__(self, debug, warninglevel, errorlevel, stream):
+        self.debug = debug
+        self.warninglevel = warninglevel
+        self.errorlevel = errorlevel
+        self.stream = stream
+
+    def astuple(self):
+        return (self.debug, self.warninglevel, self.errorlevel,
+                self.stream)
+
+
+class ExtensionAttributeError(Exception): pass
+class BadAttributeError(ExtensionAttributeError): pass
+class BadAttributeDataError(ExtensionAttributeError): pass
+class DuplicateAttributeError(ExtensionAttributeError): pass
+
+
+def extract_extension_attributes(field_list, attribute_spec):
+    """
+    Return a dictionary mapping extension attribute names to converted values.
+
+    :Parameters:
+        - `field_list`: A flat field list without field arguments, where each
+          field body consists of a single paragraph only.
+        - `attribute_spec`: Dictionary mapping known attribute names to a
+          conversion function such as `int` or `float`.
+
+    :Exceptions:
+        - `KeyError` for unknown attribute names.
+        - `ValueError` for invalid attribute values (raised by the conversion
+           function).
+        - `DuplicateAttributeError` for duplicate attributes.
+        - `BadAttributeError` for invalid fields.
+        - `BadAttributeDataError` for invalid attribute data (missing name,
+          missing data, bad quotes, etc.).
+    """
+    attlist = extract_attributes(field_list)
+    attdict = assemble_attribute_dict(attlist, attribute_spec)
+    return attdict
+
+def extract_attributes(field_list):
+    """
+    Return a list of attribute (name, value) pairs from field names & bodies.
+
+    :Parameter:
+        `field_list`: A flat field list without field arguments, where each
+        field body consists of a single paragraph only.
+
+    :Exceptions:
+        - `BadAttributeError` for invalid fields.
+        - `BadAttributeDataError` for invalid attribute data (missing name,
+          missing data, bad quotes, etc.).
+    """
+    attlist = []
+    for field in field_list:
+        if len(field) != 2:
+            raise BadAttributeError(
+                  'extension attribute field may not contain field arguments')
+        name = field[0].astext().lower()
+        body = field[1]
+        if len(body) == 0:
+            data = None
+        elif len(body) > 1 or not isinstance(body[0], nodes.paragraph) \
+              or len(body[0]) != 1 or not isinstance(body[0][0], nodes.Text):
+            raise BadAttributeDataError(
+                  'extension attribute field body may contain\n'
+                  'a single paragraph only (attribute "%s")' % name)
+        else:
+            data = body[0][0].astext()
+        attlist.append((name, data))
+    return attlist
+
+def assemble_attribute_dict(attlist, attspec):
+    """
+    Return a mapping of attribute names to values.
+
+    :Parameters:
+        - `attlist`: A list of (name, value) pairs (the output of
+          `extract_attributes()`).
+        - `attspec`: Dictionary mapping known attribute names to a
+          conversion function such as `int` or `float`.
+
+    :Exceptions:
+        - `KeyError` for unknown attribute names.
+        - `DuplicateAttributeError` for duplicate attributes.
+        - `ValueError` for invalid attribute values (raised by conversion
+           function).
+    """
+    attributes = {}
+    for name, value in attlist:
+        convertor = attspec[name]       # raises KeyError if unknown
+        if attributes.has_key(name):
+            raise DuplicateAttributeError('duplicate attribute "%s"' % name)
+        try:
+            attributes[name] = convertor(value)
+        except (ValueError, TypeError), detail:
+            raise detail.__class__('(attribute "%s", value "%r") %s'
+                                   % (name, value, detail))
+    return attributes
+
+
+class NameValueError(Exception): pass
+
+
+def extract_name_value(line):
+    """
+    Return a list of (name, value) from a line of the form "name=value ...".
+
+    :Exception:
+        `NameValueError` for invalid input (missing name, missing data, bad
+        quotes, etc.).
+    """
+    attlist = []
+    while line:
+        equals = line.find('=')
+        if equals == -1:
+            raise NameValueError('missing "="')
+        attname = line[:equals].strip()
+        if equals == 0 or not attname:
+            raise NameValueError(
+                  'missing attribute name before "="')
+        line = line[equals+1:].lstrip()
+        if not line:
+            raise NameValueError(
+                  'missing value after "%s="' % attname)
+        if line[0] in '\'"':
+            endquote = line.find(line[0], 1)
+            if endquote == -1:
+                raise NameValueError(
+                      'attribute "%s" missing end quote (%s)'
+                      % (attname, line[0]))
+            if len(line) > endquote + 1 and line[endquote + 1].strip():
+                raise NameValueError(
+                      'attribute "%s" end quote (%s) not followed by '
+                      'whitespace' % (attname, line[0]))
+            data = line[1:endquote]
+            line = line[endquote+1:].lstrip()
+        else:
+            space = line.find(' ')
+            if space == -1:
+                data = line
+                line = ''
+            else:
+                data = line[:space]
+                line = line[space+1:].lstrip()
+        attlist.append((attname.lower(), data))
+    return attlist
+
+
+def normname(name):
+    """Return a case- and whitespace-normalized name."""
+    return ' '.join(name.lower().split())
+
+def id(string):
+    """
+    Convert `string` into an identifier and return it.
+
+    Docutils identifiers will conform to the regular expression
+    ``[a-z][-a-z0-9]*``. For CSS compatibility, identifiers (the "class" and
+    "id" attributes) should have no underscores, colons, or periods. Hyphens
+    may be used.
+
+    - The `HTML 4.01 spec`_ defines identifiers based on SGML tokens:
+
+          ID and NAME tokens must begin with a letter ([A-Za-z]) and may be
+          followed by any number of letters, digits ([0-9]), hyphens ("-"),
+          underscores ("_"), colons (":"), and periods (".").
+
+    - However the `CSS1 spec`_ defines identifiers based on the "name" token,
+      a tighter interpretation ("flex" tokenizer notation; "latin1" and
+      "escape" 8-bit characters have been replaced with entities)::
+
+          unicode     \\[0-9a-f]{1,4}
+          latin1      [&iexcl;-&yuml;]
+          escape      {unicode}|\\[ -~&iexcl;-&yuml;]
+          nmchar      [-a-z0-9]|{latin1}|{escape}
+          name        {nmchar}+
+
+    The CSS1 "nmchar" rule does not include underscores ("_"), colons (":"),
+    or periods ("."), therefore "class" and "id" attributes should not contain
+    these characters. They should be replaced with hyphens ("-"). Combined
+    with HTML's requirements (the first character must be a letter; no
+    "unicode", "latin1", or "escape" characters), this results in the
+    ``[a-z][-a-z0-9]*`` pattern.
+
+    .. _HTML 4.01 spec: http://www.w3.org/TR/html401
+    .. _CSS1 spec: http://www.w3.org/TR/REC-CSS1
+    """
+    id = non_id_chars.sub('-', normname(string))
+    id = non_id_at_ends.sub('', id)
+    return str(id)
+
+non_id_chars = re.compile('[^a-z0-9]+')
+non_id_at_ends = re.compile('^[-0-9]+|-+$')
+
+def newdocument(languagecode='en', warninglevel=2, errorlevel=4,
+                stream=None, debug=0):
+    reporter = Reporter(warninglevel, errorlevel, stream, debug)
+    document = nodes.document(languagecode=languagecode, reporter=reporter)
+    return document
+@
+
+
+1.19
+log
+@  - Added name -> id conversion, ``id()``.  - Updated extension attribute support.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.18 $
+:Date: $Date: 2002/03/13 02:43:47 $
+d55 1
+a55 1
+    .. [#]_ The concept of "categories" was inspired by the log4j project:
+@
+
+
+1.18
+log
+@  - Removed 'parseattributes()' in favour of    'extract_extension_attributes()' which uses field_list syntax.  - Renamed exceptions.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.17 $
+:Date: $Date: 2002/03/11 03:37:55 $
+d13 1
+a13 1
+import sys
+d186 1
+a186 1
+class BadAttributeLineError(ExtensionAttributeError): pass
+d206 1
+a206 1
+        - `BadAttributeError` for input lines not enclosed in brackets.
+d223 1
+a223 1
+        - `BadAttributeError` for input lines not enclosed in brackets.?
+d234 3
+a236 1
+        if len(body) != 1 or not isinstance(body[0], nodes.paragraph) \
+d239 1
+a239 1
+                  'extension attribute field body may consist of\n'
+d241 2
+a242 1
+        data = body[0][0].astext()
+d269 3
+a271 2
+        except ValueError, detail:
+            raise ValueError('(attribute "%s") %s' % (name, detail))
+d326 42
+@
+
+
+1.17
+log
+@Reworked Reporter; added ConditionSet class.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.16 $
+:Date: $Date: 2002/02/22 02:02:57 $
+d38 16
+a53 11
+    and error thresholds, debugging switch, and warning stream. Categories are
+    hierarchically-named strings that look like attribute references: 'spam',
+    'spam.eggs', 'neeeow.wum.ping'. The 'spam' category is the ancestor of
+    'spam.bacon.eggs'. Unset categories inherit stored values from their
+    closest ancestor category that has been set.
+
+    When a system message is generated, the stored values from its category
+    (or ancestor if unset) are retrieved. The system message level is compared
+    to the thresholds stored in the category, and a warning or error is
+    generated as appropriate. Debug messages are produced iff the stored debug
+    switch is on. Message output is sent to the stored warning stream.
+d185 4
+a188 4
+class AttributeParsingError(Exception): pass
+class BadAttributeLineError(AttributeParsingError): pass
+class BadAttributeDataError(AttributeParsingError): pass
+class DuplicateAttributeError(AttributeParsingError): pass
+d191 1
+a191 1
+def parseattributes(lines, attributespec):
+d193 1
+a193 1
+    Return a dictionary mapping attribute names to converted values.
+d196 3
+a198 5
+        - `lines`: List of one-line strings of the form::
+
+            ['[name1=value1 name2=value2]', '[name3="value 3"]']
+
+        - `attributespec`: Dictionary mapping known attribute names to a
+d203 1
+a203 1
+        - `ValueError` for invalid attribute values (raised by conversion
+d206 1
+a206 1
+        - `BadAttributeLineError` for input lines not enclosed in brackets.
+d210 2
+a211 2
+    attlist = extractattributes(lines)
+    attdict = assembleattributes(attlist, attributespec)
+d214 1
+a214 1
+def extractattributes(lines):
+d216 1
+a216 1
+    Return a list of attribute (name, value) pairs.
+d219 2
+a220 3
+        `lines`: List of one-line strings of the form::
+
+            ['[name1=value1 name2=value2]', '[name3="value 3"]']
+d223 1
+a223 1
+        - `BadAttributeLineError` for input lines not enclosed in brackets.
+d228 13
+a240 7
+    for line in lines:
+        line = line.strip()
+        if line[:1] != '[' or line[-1:] != ']':
+            raise BadAttributeLineError(
+                  'input line not enclosed in "[" and "]"')
+        line = line[1:-1].strip()
+        attlist += extract_name_value(line)
+d243 31
+d279 2
+a280 2
+        `BadAttributeDataError` for invalid attribute data (missing name,
+        missing data, bad quotes, etc.).
+d286 1
+a286 1
+            raise BadAttributeDataError('missing "="')
+d289 1
+a289 1
+            raise BadAttributeDataError(
+d293 1
+a293 1
+            raise BadAttributeDataError(
+d298 1
+a298 1
+                raise BadAttributeDataError(
+d302 1
+a302 1
+                raise BadAttributeDataError(
+a317 23
+def assembleattributes(attlist, attributespec):
+    """
+    Return a mapping of attribute names to values.
+
+    :Parameters:
+        - `attlist`: A list of (name, value) pairs (the output of
+          `extractattributes()`).
+        - `attributespec`: Dictionary mapping known attribute names to a
+          conversion function such as `int` or `float`.
+
+    :Exceptions:
+        - `KeyError` for unknown attribute names.
+        - `DuplicateAttributeError` for duplicate attributes.
+        - `ValueError` for invalid attribute values (raised by conversion
+           function).
+    """
+    attributes = {}
+    for name, value in attlist:
+        convertor = attributespec[name] # raises KeyError if unknown
+        if attributes.has_key(name):
+            raise DuplicateAttributeError('duplicate attribute "%s"' % name)
+        attributes[name] = convertor(value) # raises ValueError if invalud
+    return attributes
+@
+
+
+1.16
+log
+@'sw' -> 'msg'
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.15 $
+:Date: $Date: 2002/02/15 22:42:44 $
+d57 1
+a57 1
+    def __init__(self, warninglevel, errorlevel, warningstream=None, debug=0):
+d59 1
+a59 1
+        Initialize the `Reporter`'s default logging category.
+d61 1
+a61 1
+        Parameters:
+d63 7
+a69 7
+        - `warninglevel`: The level at or above which warning output will be
+          sent to `warningstream`.
+        - `errorlevel`: The level at or above which `SystemMessage` exceptions
+          will be raised.
+        - `debug`: Show debug (level=0) system messages?
+        - `warningstream`: Where warning output is sent (`None` implies
+          `sys.stderr`).
+d72 2
+a73 2
+        if warningstream is None:
+            warningstream = sys.stderr
+d75 3
+a77 2
+        self.categories = {'': (debug, warninglevel, errorlevel, warningstream)}
+        """Mapping of category names to levels. Default category is ''."""
+d79 6
+a84 6
+    def setcategory(self, category, warninglevel, errorlevel,
+                    warningstream=None, debug=0):
+        if warningstream is None:
+            warningstream = sys.stderr
+        self.categories[category] = (debug, warninglevel, errorlevel,
+                                     warningstream)
+d86 1
+a86 1
+    def unsetcategory(self, category):
+d90 3
+a92 1
+    def getcategory(self, category):
+d97 4
+a100 1
+    def system_message(self, level, comment=None, children=[], category=''):
+d107 3
+a109 2
+                                   type=self.levels[level], *children)
+        debug, warninglevel, errorlevel, stream = self.getcategory(category)
+d119 1
+a119 1
+    def debug(self, comment=None, children=[], category=''):
+d125 2
+a126 1
+        return self.system_message(0, comment, children, category)
+d128 1
+a128 1
+    def info(self, comment=None, children=[], category=''):
+d133 2
+a134 1
+        return self.system_message(1, comment, children, category)
+d136 1
+a136 1
+    def warning(self, comment=None, children=[], category=''):
+d141 2
+a142 1
+        return self.system_message(2, comment, children, category)
+d144 1
+a144 1
+    def error(self, comment=None, children=[], category=''):
+d149 2
+a150 1
+        return self.system_message(3, comment, children, category)
+d152 1
+a152 1
+    def severe(self, comment=None, children=[], category=''):
+d158 20
+a177 1
+        return self.system_message(4, comment, children, category)
+d198 1
+a198 1
+    :Raises:
+d220 1
+a220 1
+    :Raises:
+d239 3
+a241 2
+    :Raises: `BadAttributeDataError` for invalid attribute data (missing name,
+             missing data, bad quotes, etc.).
+d289 1
+a289 1
+    :Raises:
+d308 2
+a309 2
+                warningstream=None, debug=0):
+    reporter = Reporter(warninglevel, errorlevel, warningstream, debug)
+@
+
+
+1.15
+log
+@  - Changed "system_warning" to "system_message".
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.14 $
+:Date: $Date: 2002/02/12 02:16:27 $
+d100 2
+a101 2
+        sw = nodes.system_message(comment, level=level,
+                                  type=self.levels[level], *children)
+d105 1
+a105 1
+                print >>stream, 'Reporter "%s":' % category, sw.astext()
+d107 1
+a107 1
+                print >>stream, 'Reporter:', sw.astext()
+d109 2
+a110 2
+            raise SystemMessage(sw)
+        return sw
+@
+
+
+1.14
+log
+@Factored ``extract_name_value`` out of ``extractattributes()``.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.13 $
+:Date: $Date: 2002/02/07 02:00:45 $
+d17 1
+a17 1
+class SystemWarning(Exception):
+d19 2
+a20 2
+    def __init__(self, system_warning):
+        Exception.__init__(self, system_warning.astext())
+d26 1
+a26 1
+    Info/warning/error reporter and ``system_warning`` element generator.
+d28 1
+a28 1
+    Five levels of system warnings are defined, along with corresponding
+d33 3
+a35 2
+    exceptions), a switch to turn debug output on or off, and a I/O stream for
+    warnings. These are stored in the default reporting category, ''.
+d44 2
+a45 2
+    When a system warning is generated, the stored values from its category
+    (or ancestor if unset) are retrieved. The system warning level is compared
+d47 2
+a48 2
+    generated as appropriate. Debug warnings are produced iff the stored debug
+    switch is on. Warning output is sent to the stored warning stream.
+d55 1
+a55 1
+    """List of names for system warning levels, indexed by level."""
+d65 1
+a65 1
+        - `errorlevel`: The level at or above which `SystemWarning` exceptions
+d67 1
+a67 1
+        - `debug`: Show debug (level=0) system warnings?
+d94 1
+a94 1
+    def system_warning(self, level, comment=None, children=[], category=''):
+d96 1
+a96 1
+        Return a system_warning object.
+d100 1
+a100 1
+        sw = nodes.system_warning(comment, level=level,
+d109 1
+a109 1
+            raise SystemWarning(sw)
+d115 1
+a115 1
+        effect on the processing. Level-0 system warnings are handled
+d118 1
+a118 1
+        return self.system_warning(0, comment, children, category)
+d123 1
+a123 1
+        no effect on processing, and level-1 system warnings are not reported.
+d125 1
+a125 1
+        return self.system_warning(1, comment, children, category)
+d132 1
+a132 1
+        return self.system_warning(2, comment, children, category)
+d139 1
+a139 1
+        return self.system_warning(3, comment, children, category)
+d145 1
+a145 1
+        warnings are turned into exceptions which halt processing.
+d147 1
+a147 1
+        return self.system_warning(4, comment, children, category)
+@
+
+
+1.13
+log
+@docstrings
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.12 $
+:Date: $Date: 2002/02/06 02:53:53 $
+d201 26
+a226 5
+        while line:
+            equals = line.find('=')
+            if equals == -1:
+                raise BadAttributeDataError('missing "="')
+            elif equals == 0:
+d228 3
+a230 4
+                      'missing attribute name before "="')
+            attname = line[:equals]
+            line = line[equals+1:]
+            if not line:
+d232 9
+a240 13
+                      'missing value after "%s="' % attname)
+            if line[0] in '\'"':
+                endquote = line.find(line[0], 1)
+                if endquote == -1:
+                    raise BadAttributeDataError(
+                          'attribute "%s" missing end quote (%s)'
+                          % (attname, line[0]))
+                if len(line) > endquote + 1 and line[endquote + 1].strip():
+                    raise BadAttributeDataError(
+                          'attribute "%s" end quote (%s) not followed by '
+                          'whitespace' % (attname, line[0]))
+                data = line[1:endquote]
+                line = line[endquote+1:].lstrip()
+d242 3
+a244 8
+                space = line.find(' ')
+                if space == -1:
+                    data = line
+                    line = ''
+                else:
+                    data = line[:space]
+                    line = line[space+1:].lstrip()
+            attlist.append((attname.lower(), data))
+@
+
+
+1.12
+log
+@  - Reworked ``Reporter`` based on "log4j".
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.11 $
+:Date: $Date: 2002/01/30 04:47:02 $
+d26 1
+a26 1
+    The concept of "categories" was inspired by the log4j__ project.
+d28 23
+a50 1
+    __ http://jakarta.apache.org/log4j/
+d59 1
+a59 1
+        
+d61 1
+a61 1
+        
+d73 1
+a73 1
+ 
+d75 1
+a75 1
+        """Mapping of category names to levels. Default is ''."""
+d112 5
+d120 4
+d127 4
+d134 4
+d141 5
+d161 1
+a161 1
+          
+@
+
+
+1.11
+log
+@  - Updated new document Node creation protocol.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.10 $
+:Date: $Date: 2002/01/16 02:45:22 $
+d10 1
+d25 23
+a47 8
+    def __init__(self, warninglevel, errorlevel, warningstream=None):
+        self.warninglevel = warninglevel
+        """The level at or above which warning output will be sent to
+        `self.stream`."""
+
+        self.errorlevel = errorlevel
+        """The level at or above which `SystemWarning` exceptions will be
+        raised."""
+d52 2
+a53 2
+        self.stream = warningstream
+        """Where warning output is sent."""
+d55 17
+a71 1
+    def system_warning(self, level, comment=None, children=[]):
+d77 9
+a85 2
+        sw = nodes.system_warning(comment, level=level, *children)
+        if level >= self.errorlevel:
+a86 2
+        if level >= self.warninglevel:
+            print >>self.stream, 'Warning:', sw.astext()
+d89 5
+a93 2
+    def information(self, comment=None, children=[]):
+        return self.system_warning(0, comment, children)
+d95 2
+a96 2
+    def warning(self, comment=None, children=[]):
+        return self.system_warning(1, comment, children)
+d98 2
+a99 2
+    def error(self, comment=None, children=[]):
+        return self.system_warning(2, comment, children)
+d101 2
+a102 2
+    def severe(self, comment=None, children=[]):
+        return self.system_warning(3, comment, children)
+a110 6
+def newdocument(languagecode='en', warninglevel=1, errorlevel=3,
+                warningstream=None):
+    reporter = Reporter(warninglevel, errorlevel)
+    document = nodes.document(languagecode='en', reporter=reporter)
+    return document
+
+d219 6
+@
+
+
+1.10
+log
+@  - Moved `normname()` from restructuredtext/states.py.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.9 $
+:Date: $Date: 2001/11/22 04:10:50 $
+d70 6
+@
+
+
+1.9
+log
+@  - Improved error stream handling.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.8 $
+:Date: $Date: 2001/11/15 02:57:22 $
+d175 4
+@
+
+
+1.8
+log
+@  - Added 'parseattributes()', associated functions and exceptions.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.7 $
+:Date: $Date: 2001/09/18 04:32:12 $
+d24 1
+a24 1
+    def __init__(self, warninglevel, errorlevel, warningstream=sys.stderr):
+d32 3
+@
+
+
+1.7
+log
+@  - Removed Reporter.strong_system_warning as unneeded.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.6 $
+:Date: $Date: 2001/09/17 03:54:29 $
+d60 112
+@
+
+
+1.6
+log
+@  - Renamed error reporter class to 'Reporter' from 'Errorist'.    Seemed clever at the time; seems less so now.  - Added docstrings.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.5 $
+:Date: $Date: 2001/09/10 04:07:11 $
+a59 9
+
+    def strong_system_warning(self, admonition, comment, sourcetext=None):
+        p = nodes.paragraph()
+        p += nodes.strong('', admonition)
+        p += nodes.Text(': ' + comment)
+        children = [p]
+        if sourcetext:
+            children.append(nodes.literal_block('', sourcetext))
+        return self.system_warning(3, children=children)
+@
+
+
+1.5
+log
+@  - Restored integer attribute 'level' on system_warning (fixed in    XML conversion code).  - Removed language support code; moved to dps/languages/__init__.py.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2001/09/08 03:20:58 $
+d22 1
+a22 1
+class Errorist:
+d26 3
+d30 3
+d34 1
+@
+
+
+1.4
+log
+@  - Fixed integer attribute bug on system_warning.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2001/09/07 02:03:14 $
+d35 1
+a35 1
+        sw = nodes.system_warning(comment, level=str(level), *children)
+a61 15
+
+
+languages = {}
+
+def language(languagecode):
+    if languages.has_key(languagecode):
+        return languages[languagecode]
+    try:
+        module = getattr(__import__('dps.languages', globals(), locals(),
+                                    [languagecode]),
+                         languagecode)
+    except:
+        raise
+    languages[languagecode] = module
+    return module
+@
+
+
+1.3
+log
+@  - Added named methods (aliases to numbered system_warning    calls) to Errorist.  - Added language module support.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.2 $
+:Date: $Date: 2001/08/23 03:56:27 $
+d35 1
+a35 1
+        sw = nodes.system_warning(comment, level=level, *children)
+@
+
+
+1.2
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.1.1.1 $
+:Date: $Date: 2001/07/22 22:36:09 $
+d42 12
+d62 15
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d4 5
+a8 5
+Author: David Goodger
+Contact: dgoodger@@bigfoot.com
+Revision: $Revision: 1.1 $
+Date: $Date: 2001/07/20 00:03:38 $
+Copyright: This module has been placed in the public domain.
+@
+
+
+1.1.1.1
+log
+@First Imported.
+@
+text
+@@

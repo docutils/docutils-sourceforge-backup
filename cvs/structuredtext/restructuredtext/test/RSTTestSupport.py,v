@@ -1,0 +1,970 @@
+head	1.13;
+access;
+symbols
+	Rrefactor-test:1.1.0.2;
+locks; strict;
+comment	@# @;
+
+
+1.13
+date	2002.04.19.02.37.35;	author goodger;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2002.02.06.02.19.04;	author goodger;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2002.01.30.05.01.37;	author goodger;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2002.01.25.23.41.43;	author goodger;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2001.11.15.03.08.10;	author goodger;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2001.09.17.04.28.26;	author goodger;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2001.09.13.02.29.39;	author goodger;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2001.09.07.01.43.00;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2001.09.05.02.44.58;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.09.04.04.14.11;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.09.02.13.59.35;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.09.01.16.29.12;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.09.01.15.18.51;	author goodger;	state dead;
+branches
+	1.1.2.1;
+next	;
+
+1.1.2.1
+date	2001.09.01.15.18.51;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.13
+log
+@fixed imports
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Authors: Garth Kidd, David Goodger
+:Contact: garth@@deadlybloodyserious.com
+:Revision: $Revision: 1.12 $
+:Date: $Date: 2002/02/06 02:19:04 $
+:Copyright: This module has been placed in the public domain.
+
+Exports the following:
+
+:Modules:
+    Try to import modules from the current working copy of restructuredtext
+    first, or from the installed version. In test modules, import these modules
+    from here:
+
+    - `states` is 'restructuredtext.states'
+    - `tableparser` is 'restructuredtext.tableparser'
+
+:Classes:
+    - `CustomTestSuite`
+    - `CustomTestCase`
+    - `ParserTestSuite`
+    - `ParserTestCase`
+    - `TableParserTestSuite`
+    - `TableParserTestCase`
+"""
+__docformat__ = 'reStructuredText'
+
+import UnitTestFolder
+import sys, os, unittest, re, difflib, types, inspect
+from pprint import pformat
+from dps.parsers import restructuredtext
+from dps.parsers.restructuredtext import states, tableparser, directives, \
+      languages
+from dps.statemachine import string2lines
+import dps.utils
+
+try:
+    import mypdb as pdb
+except:
+    import pdb
+
+
+class CustomTestSuite(unittest.TestSuite):
+
+    """
+    A collection of custom TestCases.
+
+    """
+
+    id = ''
+    """Identifier for the TestSuite. Prepended to the
+    TestCase identifiers to make identification easier."""
+
+    nextTestCaseId = 0
+    """The next identifier to use for non-identified test cases."""
+
+    def __init__(self, tests=(), id=None):
+        """Initialise the CustomTestSuite.
+
+        Arguments:
+
+        id -- identifier for the suite, prepended to test cases.
+        """
+        unittest.TestSuite.__init__(self, tests)
+        if id is None:
+            outerframes = inspect.getouterframes(inspect.currentframe())
+            mypath = outerframes[0][1]
+            callerpath = outerframes[1][1]
+            mydir, myname = os.path.split(mypath)
+            if not mydir:
+                mydir = os.curdir
+            if callerpath.startswith(mydir):
+                self.id = callerpath[len(mydir) + 1:] # caller's module
+            else:
+                self.id = callerpath
+        else:
+            self.id = id
+
+    def addTestCase(self, testCaseClass, methodName, input, expected,
+                    id=None, runInDebugger=0, shortDescription=None):
+        """
+        Create a custom TestCase in the CustomTestSuite.
+        Also returns it, just in case.
+
+        Arguments:
+
+        testCaseClass --
+        methodName --
+        input -- input to the parser.
+        expected -- expected output from the parser.
+        id -- unique test identifier, used by the test framework.
+        runInDebugger -- if true, run this test under the pdb debugger.
+        shortDescription -- override to default test description.
+        """
+        # generate id if required
+        if id is None:
+            id = self.nextTestCaseId
+            self.nextTestCaseId += 1
+
+        # test identifier will become suiteid.testid
+        tcid = '%s: %s' % (self.id, id)
+
+        # generate and add test case
+        tc = testCaseClass(methodName, input, expected, tcid,
+                             runInDebugger=runInDebugger,
+                             shortDescription=shortDescription)
+        self.addTest(tc)
+        return tc
+
+
+class CustomTestCase(unittest.TestCase):
+
+    compare = difflib.Differ().compare
+    """Comparison method shared by all subclasses."""
+
+    def __init__(self, methodName, input, expected, id,
+                 runInDebugger=0, shortDescription=None):
+        """
+        Initialise the CustomTestCase.
+
+        Arguments:
+
+        methodName -- name of test method to run.
+        input -- input to the parser.
+        expected -- expected output from the parser.
+        id -- unique test identifier, used by the test framework.
+        runInDebugger -- if true, run this test under the pdb debugger.
+        shortDescription -- override to default test description.
+        """
+        self.id = id
+        self.input = input
+        self.expected = expected
+        self.runInDebugger = runInDebugger
+        # Ring your mother.
+        unittest.TestCase.__init__(self, methodName)
+
+    def __str__(self):
+        """
+        Return string conversion. Overridden to give test id, in addition to
+        method name.
+        """
+        return '%s; %s' % (self.id, unittest.TestCase.__str__(self))
+
+    def compareOutput(self, input, output, expected):
+        """`input`, `output`, and `expected` should all be strings."""
+        try:
+            self.assertEquals('\n' + output, '\n' + expected)
+        except AssertionError:
+            print >>sys.stderr, '\n%s\ninput:' % (self,)
+            print >>sys.stderr, input
+            print >>sys.stderr, '-: expected\n+: output'
+            print >>sys.stderr, ''.join(self.compare(expected.splitlines(1),
+                                                     output.splitlines(1)))
+            raise
+
+
+class ParserTestSuite(CustomTestSuite):
+
+    """
+    A collection of ParserTestCases.
+
+    A ParserTestSuite instance manufactures ParserTestCases,
+    keeps track of them, and provides a shared test fixture (a-la
+    setUp and tearDown).
+    """
+
+    def generateTests(self, dict, dictname='totest'):
+        """
+        Stock the suite with test cases generated from a test data dictionary.
+
+        Each dictionary key (test type name) maps to a list of tests. Each
+        test is a list: input, expected output, optional modifier. The
+        optional third entry, a behavior modifier, can be 0 (temporarily
+        disable this test) or 1 (run this test under the pdb debugger). Tests
+        should be self-documenting and not require external comments.
+        """
+        for name, cases in dict.items():
+            casenum = 0
+            for casenum in range(len(cases)):
+                case = cases[casenum]
+                runInDebugger = 0
+                if len(case)==3:
+                    if case[2]:
+                        runInDebugger = 1
+                    else:
+                        continue
+                self.addTestCase(ParserTestCase, 'test_parser',
+                                 input=case[0], expected=case[1],
+                                 id='%s[%r][%s]' % (dictname, name, casenum),
+                                 runInDebugger=runInDebugger)
+
+
+class ParserTestCase(CustomTestCase):
+
+    """
+    Output checker for the parser.
+
+    Should probably be called ParserOutputChecker, but I can deal with
+    that later when/if someone comes up with a category of parser test
+    cases that have nothing to do with the input and output of the parser.
+    """
+
+    parser = restructuredtext.Parser()
+    """restructuredtext.Parser shared by all ParserTestCases."""
+
+    def test_parser(self):
+        if self.runInDebugger:
+            pdb.set_trace()
+        document = dps.utils.newdocument(warninglevel=5, errorlevel=5,
+                                         debug=UnitTestFolder.debug)
+        self.parser.parse(self.input, document)
+        output = document.pformat()
+        self.compareOutput(self.input, output, self.expected)
+
+
+class TableParserTestSuite(CustomTestSuite):
+
+    """
+    A collection of TableParserTestCases.
+
+    A TableParserTestSuite instance manufactures TableParserTestCases,
+    keeps track of them, and provides a shared test fixture (a-la
+    setUp and tearDown).
+    """
+
+    def generateTests(self, dict, dictname='totest'):
+        """
+        Stock the suite with test cases generated from a test data dictionary.
+
+        Each dictionary key (test type name) maps to a list of tests. Each
+        test is a list: an input table, expected output from parsegrid(),
+        expected output from parse(), optional modifier. The optional fourth
+        entry, a behavior modifier, can be 0 (temporarily disable this test)
+        or 1 (run this test under the pdb debugger). Tests should be
+        self-documenting and not require external comments.
+        """
+        for name, cases in dict.items():
+            for casenum in range(len(cases)):
+                case = cases[casenum]
+                runInDebugger = 0
+                if len(case) == 4:
+                    if case[3]:
+                        runInDebugger = 1
+                    else:
+                        continue
+                self.addTestCase(TableParserTestCase, 'test_parsegrid',
+                                 input=case[0], expected=case[1],
+                                 id='%s[%r][%s]' % (dictname, name, casenum),
+                                 runInDebugger=runInDebugger)
+                self.addTestCase(TableParserTestCase, 'test_parse',
+                                 input=case[0], expected=case[2],
+                                 id='%s[%r][%s]' % (dictname, name, casenum),
+                                 runInDebugger=runInDebugger)
+
+
+class TableParserTestCase(CustomTestCase):
+
+    parser = tableparser.TableParser()
+
+    def test_parsegrid(self):
+        self.parser.setup(string2lines(self.input))
+        try:
+            self.parser.findheadbodysep()
+            self.parser.parsegrid()
+            output = self.parser.cells
+        except Exception, details:
+            output = '%s: %s' % (details.__class__.__name__, details)
+        self.compareOutput(self.input, pformat(output) + '\n',
+                           pformat(self.expected) + '\n')
+
+    def test_parse(self):
+        try:
+            output = self.parser.parse(string2lines(self.input))
+        except Exception, details:
+            output = '%s: %s' % (details.__class__.__name__, details)
+        self.compareOutput(self.input, pformat(output) + '\n',
+                           pformat(self.expected) + '\n')
+@
+
+
+1.12
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.11 $
+:Date: $Date: 2002/01/30 05:01:37 $
+d33 3
+a35 12
+
+# try to import the current working version if possible
+try:
+    sys.path.insert(0, os.pardir)       # running in test framework dir?
+    import restructuredtext             # or restructuredtext on path?
+except ImportError:                     # try to run installed code
+    from dps.parsers import restructuredtext
+
+from restructuredtext import states
+from restructuredtext import tableparser
+from restructuredtext import directives
+from restructuredtext import languages
+@
+
+
+1.11
+log
+@  - Updated for new document Node creation protocol.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.10 $
+:Date: $Date: 2002/01/25 23:41:43 $
+d214 1
+a214 1
+    parser = restructuredtext.Parser(debug=UnitTestFolder.debug)
+d220 2
+a221 1
+        document = dps.utils.newdocument(warninglevel=4, errorlevel=4)
+@
+
+
+1.10
+log
+@whitespace
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.9 $
+:Date: $Date: 2001/11/15 03:08:10 $
+d46 1
+d214 1
+a214 3
+    parser = restructuredtext.Parser(warninglevel=4, errorlevel=4,
+                                     languagecode='en',
+                                     debug=UnitTestFolder.debug)
+d220 2
+a221 1
+        document = self.parser.parse(self.input)
+@
+
+
+1.9
+log
+@Added imports.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.8 $
+:Date: $Date: 2001/09/17 04:28:26 $
+a87 1
+        
+d97 2
+a98 2
+        testCaseClass -- 
+        methodName -- 
+@
+
+
+1.8
+log
+@  - Removed some docstring discourse as no longer relevant.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.7 $
+:Date: $Date: 2001/09/13 02:29:39 $
+d43 2
+@
+
+
+1.7
+log
+@  - Updated for tableparser.py.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.6 $
+:Date: $Date: 2001/09/07 01:43:00 $
+d10 1
+a10 6
+All of my previous ramblings about metaclasses_ are fatigue-deranged.
+The primary benefit of basing tests as ``test*`` methods in a very
+large TestCase is that they can share `setUp()` and `tearDown()`. If
+it's too hard to use the method method <ahem>, the appropriate recourse
+is to *find another way of providing shared fixtures*. So, here's the
+design I'm going to pursue when I can next sit down and hack code:
+d12 15
+a26 12
+`ParserTestSuite` instances will provide shared test fixtures (`sm`, an
+instance of `states.RSTStateMachine`) and methods (`matchOutput()` et
+al) and will crank out internally any `ParserTest`s required.
+
+I'll decide on whether it should subclass `unittest.Suite` or just
+return one from a `suite()` method when I get back to the code.
+
+Finally; now that I've decided on which class I'm going to expose, the
+filename of this module is looking like a silly choice. I'll ponder
+that issue later, too.
+
+.. _metaclasses: http://www.python.org/doc/essays/metaclasses/
+d28 1
+a28 2
+
+__all__ = [ 'ParserTestSuite', 'TableParserTestSuite' ]
+@
+
+
+1.6
+log
+@  - Use 'import restructuredtext' instead of 'import states'; access    parser via `restructuredtext.Parser`.  - Removed private name access (__testMethodDoc wouldn't have worked    because of name mangling; forced mangling of __testMethodName was    wrong).  - Cleaned up diff reporting.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.5 $
+:Date: $Date: 2001/09/05 02:44:58 $
+d45 1
+d270 1
+a270 1
+    parser = states.TableParser()
+d273 1
+a273 1
+        self.parser.init(string2lines(self.input))
+@
+
+
+1.5
+log
+@  - Improved test module path reporting.  - Improved test case method reporting.  - Removed CustomTestCase.id() (unreachable).  - Enabled TableParserTestCase.test_parse().
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2001/09/04 04:14:11 $
+d39 4
+a42 10
+    import states                       # works if running in local directory
+except ImportError:
+    try:                                # running in test framework dir?
+        sys.path.insert(0, os.path.join(os.pardir, 'restructuredtext'))
+        import states
+    except ImportError:
+        try:                            # restructuredtext on path?
+            from restructuredtext import states
+        except ImportError:             # try to run installed code
+            from dps.parsers.restructuredtext import states
+d44 1
+a146 3
+        # Cheat on the method documentation. Oh, the shame!
+        if shortDescription is not None:
+            self.__testMethodDoc = shortDescription
+d150 2
+a151 1
+        Return string conversion. Overridden to give test id, not method name.
+d153 1
+a153 2
+        return '%s (%s.%s)' % (self.id, self.__class__,
+                               self._TestCase__testMethodName)
+d160 1
+a160 2
+            print >>sys.stderr
+            print >>sys.stderr, 'input:'
+d162 1
+a162 2
+            print >>sys.stderr, '-: expected'
+            print >>sys.stderr, '+: output'
+d198 1
+a198 1
+                self.addTestCase(ParserTestCase, 'test_statemachine',
+d214 4
+a217 4
+    statemachine = states.RSTStateMachine(stateclasses=states.stateclasses,
+                                          initialstate='Body',
+                                          debug=UnitTestFolder.debug)
+    """states.RSTStateMachine shared by all ParserTestCases."""
+d219 1
+a219 1
+    def test_statemachine(self):
+d222 2
+a223 4
+        document = self.statemachine.run(string2lines(self.input),
+                                         warninglevel=4,
+                                         errorlevel=4)
+        output = document.pprint()
+d252 1
+a252 1
+                if len(case)==4:
+@
+
+
+1.4
+log
+@  - Updated TableParserTestCase.test_parsegrid().
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2001/09/02 13:59:35 $
+d31 1
+a31 1
+__all__ = [ 'ParserTestCaseSuite' ]
+d85 2
+d160 2
+a161 5
+        return "%s (%s)" % (self.id, self.__class__)
+
+    def id(self):
+        """Return identifier. Overridden to give test id, not method name."""
+        return "%s.%s" % (self.__class__, self.id)
+d273 1
+a273 1
+                """self.addTestCase(TableParserTestCase, 'test_parse',
+d276 1
+a276 1
+                                 runInDebugger=runInDebugger)"""
+d289 8
+@
+
+
+1.3
+log
+@  - Fixed minor bugs in TableParserTestSuite & TableParserTestCase.  - Added calling module path auto-detection to CustomTestSuite for `id`    (a module as __main__ has no __file__ attribute).
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.2 $
+:Date: $Date: 2001/09/01 16:29:12 $
+d201 2
+a202 1
+            for case in cases:
+a212 1
+                casenum = casenum + 1
+d262 2
+a263 2
+            casenum = 0
+            for case in cases:
+a277 1
+                casenum = casenum + 1
+d285 9
+a293 4
+        self.parser.init(self.input)
+        output = self.parser.parsegrid()
+        self.compareOutput(pformat(self.input), pformat(output),
+                           pformat(self.expected))
+@
+
+
+1.2
+log
+@merged from branch Rrefactor-test
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.1.2.1 $
+:Date: $Date: 2001/09/01 15:18:51 $
+d34 1
+a34 1
+import sys, os, unittest, re, difflib, types
+d80 10
+a89 1
+        if id is not None:
+d91 1
+d240 1
+a240 1
+class TableParserTestSuite(unittest.TestSuite):
+d286 2
+a287 2
+        parser.init(self.input)
+        output = parser.parsegrid(self.input)
+@
+
+
+1.1
+log
+@file RSTTestSupport.py was initially added on branch Rrefactor-test.
+@
+text
+@d1 279
+@
+
+
+1.1.2.1
+log
+@refactored from ParserTestCase.py
+@
+text
+@a0 279
+#! /usr/bin/env python
+
+"""
+:Authors: Garth Kidd, David Goodger
+:Contact: garth@@deadlybloodyserious.com
+:Revision: $Revision: 1.1.2.4 $
+:Date: $Date: 2001/08/02 04:44:20 $
+:Copyright: This module has been placed in the public domain.
+
+All of my previous ramblings about metaclasses_ are fatigue-deranged.
+The primary benefit of basing tests as ``test*`` methods in a very
+large TestCase is that they can share `setUp()` and `tearDown()`. If
+it's too hard to use the method method <ahem>, the appropriate recourse
+is to *find another way of providing shared fixtures*. So, here's the
+design I'm going to pursue when I can next sit down and hack code:
+
+`ParserTestSuite` instances will provide shared test fixtures (`sm`, an
+instance of `states.RSTStateMachine`) and methods (`matchOutput()` et
+al) and will crank out internally any `ParserTest`s required.
+
+I'll decide on whether it should subclass `unittest.Suite` or just
+return one from a `suite()` method when I get back to the code.
+
+Finally; now that I've decided on which class I'm going to expose, the
+filename of this module is looking like a silly choice. I'll ponder
+that issue later, too.
+
+.. _metaclasses: http://www.python.org/doc/essays/metaclasses/
+"""
+
+__all__ = [ 'ParserTestCaseSuite' ]
+
+import UnitTestFolder
+import sys, os, unittest, re, difflib, types
+from pprint import pformat
+
+# try to import the current working version if possible
+try:
+    import states                       # works if running in local directory
+except ImportError:
+    try:                                # running in test framework dir?
+        sys.path.insert(0, os.path.join(os.pardir, 'restructuredtext'))
+        import states
+    except ImportError:
+        try:                            # restructuredtext on path?
+            from restructuredtext import states
+        except ImportError:             # try to run installed code
+            from dps.parsers.restructuredtext import states
+
+from dps.statemachine import string2lines
+
+try:
+    import mypdb as pdb
+except:
+    import pdb
+
+
+class CustomTestSuite(unittest.TestSuite):
+
+    """
+    A collection of custom TestCases.
+
+    """
+
+    id = ''
+    """Identifier for the TestSuite. Prepended to the
+    TestCase identifiers to make identification easier."""
+
+    nextTestCaseId = 0
+    """The next identifier to use for non-identified test cases."""
+
+    def __init__(self, tests=(), id=None):
+        """Initialise the CustomTestSuite.
+
+        Arguments:
+
+        id -- identifier for the suite, prepended to test cases.
+        """
+        unittest.TestSuite.__init__(self, tests)
+        if id is not None:
+            self.id = id
+
+    def addTestCase(self, testCaseClass, methodName, input, expected,
+                    id=None, runInDebugger=0, shortDescription=None):
+        """
+        Create a custom TestCase in the CustomTestSuite.
+        Also returns it, just in case.
+
+        Arguments:
+
+        testCaseClass -- 
+        methodName -- 
+        input -- input to the parser.
+        expected -- expected output from the parser.
+        id -- unique test identifier, used by the test framework.
+        runInDebugger -- if true, run this test under the pdb debugger.
+        shortDescription -- override to default test description.
+        """
+        # generate id if required
+        if id is None:
+            id = self.nextTestCaseId
+            self.nextTestCaseId += 1
+
+        # test identifier will become suiteid.testid
+        tcid = '%s: %s' % (self.id, id)
+
+        # generate and add test case
+        tc = testCaseClass(methodName, input, expected, tcid,
+                             runInDebugger=runInDebugger,
+                             shortDescription=shortDescription)
+        self.addTest(tc)
+        return tc
+
+
+class CustomTestCase(unittest.TestCase):
+
+    compare = difflib.Differ().compare
+    """Comparison method shared by all subclasses."""
+
+    def __init__(self, methodName, input, expected, id,
+                 runInDebugger=0, shortDescription=None):
+        """
+        Initialise the CustomTestCase.
+
+        Arguments:
+
+        methodName -- name of test method to run.
+        input -- input to the parser.
+        expected -- expected output from the parser.
+        id -- unique test identifier, used by the test framework.
+        runInDebugger -- if true, run this test under the pdb debugger.
+        shortDescription -- override to default test description.
+        """
+        self.id = id
+        self.input = input
+        self.expected = expected
+        self.runInDebugger = runInDebugger
+        # Ring your mother.
+        unittest.TestCase.__init__(self, methodName)
+        # Cheat on the method documentation. Oh, the shame!
+        if shortDescription is not None:
+            self.__testMethodDoc = shortDescription
+
+    def __str__(self):
+        """
+        Return string conversion. Overridden to give test id, not method name.
+        """
+        return "%s (%s)" % (self.id, self.__class__)
+
+    def id(self):
+        """Return identifier. Overridden to give test id, not method name."""
+        return "%s.%s" % (self.__class__, self.id)
+
+    def compareOutput(self, input, output, expected):
+        """`input`, `output`, and `expected` should all be strings."""
+        try:
+            self.assertEquals('\n' + output, '\n' + expected)
+        except AssertionError:
+            print >>sys.stderr
+            print >>sys.stderr, 'input:'
+            print >>sys.stderr, input
+            print >>sys.stderr, '-: expected'
+            print >>sys.stderr, '+: output'
+            print >>sys.stderr, ''.join(self.compare(expected.splitlines(1),
+                                                     output.splitlines(1)))
+            raise
+
+
+class ParserTestSuite(CustomTestSuite):
+
+    """
+    A collection of ParserTestCases.
+
+    A ParserTestSuite instance manufactures ParserTestCases,
+    keeps track of them, and provides a shared test fixture (a-la
+    setUp and tearDown).
+    """
+
+    def generateTests(self, dict, dictname='totest'):
+        """
+        Stock the suite with test cases generated from a test data dictionary.
+
+        Each dictionary key (test type name) maps to a list of tests. Each
+        test is a list: input, expected output, optional modifier. The
+        optional third entry, a behavior modifier, can be 0 (temporarily
+        disable this test) or 1 (run this test under the pdb debugger). Tests
+        should be self-documenting and not require external comments.
+        """
+        for name, cases in dict.items():
+            casenum = 0
+            for case in cases:
+                runInDebugger = 0
+                if len(case)==3:
+                    if case[2]:
+                        runInDebugger = 1
+                    else:
+                        continue
+                self.addTestCase(ParserTestCase, 'test_statemachine',
+                                 input=case[0], expected=case[1],
+                                 id='%s[%r][%s]' % (dictname, name, casenum),
+                                 runInDebugger=runInDebugger)
+                casenum = casenum + 1
+
+
+class ParserTestCase(CustomTestCase):
+
+    """
+    Output checker for the parser.
+
+    Should probably be called ParserOutputChecker, but I can deal with
+    that later when/if someone comes up with a category of parser test
+    cases that have nothing to do with the input and output of the parser.
+    """
+
+    statemachine = states.RSTStateMachine(stateclasses=states.stateclasses,
+                                          initialstate='Body',
+                                          debug=UnitTestFolder.debug)
+    """states.RSTStateMachine shared by all ParserTestCases."""
+
+    def test_statemachine(self):
+        if self.runInDebugger:
+            pdb.set_trace()
+        document = self.statemachine.run(string2lines(self.input),
+                                         warninglevel=4,
+                                         errorlevel=4)
+        output = document.pprint()
+        self.compareOutput(self.input, output, self.expected)
+
+
+class TableParserTestSuite(unittest.TestSuite):
+
+    """
+    A collection of TableParserTestCases.
+
+    A TableParserTestSuite instance manufactures TableParserTestCases,
+    keeps track of them, and provides a shared test fixture (a-la
+    setUp and tearDown).
+    """
+
+    def generateTests(self, dict, dictname='totest'):
+        """
+        Stock the suite with test cases generated from a test data dictionary.
+
+        Each dictionary key (test type name) maps to a list of tests. Each
+        test is a list: an input table, expected output from parsegrid(),
+        expected output from parse(), optional modifier. The optional fourth
+        entry, a behavior modifier, can be 0 (temporarily disable this test)
+        or 1 (run this test under the pdb debugger). Tests should be
+        self-documenting and not require external comments.
+        """
+        for name, cases in dict.items():
+            casenum = 0
+            for case in cases:
+                runInDebugger = 0
+                if len(case)==4:
+                    if case[3]:
+                        runInDebugger = 1
+                    else:
+                        continue
+                self.addTestCase(TableParserTestCase, 'test_parsegrid',
+                                 input=case[0], expected=case[1],
+                                 id='%s[%r][%s]' % (dictname, name, casenum),
+                                 runInDebugger=runInDebugger)
+                """self.addTestCase(TableParserTestCase, 'test_parse',
+                                 input=case[0], expected=case[2],
+                                 id='%s[%r][%s]' % (dictname, name, casenum),
+                                 runInDebugger=runInDebugger)"""
+                casenum = casenum + 1
+
+
+class TableParserTestCase(CustomTestCase):
+
+    parser = states.TableParser()
+
+    def test_parsegrid(self):
+        parser.init(self.input)
+        output = parser.parsegrid(self.input)
+        self.compareOutput(pformat(self.input), pformat(output),
+                           pformat(self.expected))
+@
+

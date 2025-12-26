@@ -1,0 +1,275 @@
+head	1.1;
+access;
+symbols
+	Rrefactor-test:1.1.0.2;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2001.07.29.09.05.39;	author gtk;	state dead;
+branches
+	1.1.2.1;
+next	;
+
+1.1.2.1
+date	2001.07.29.09.05.39;	author gtk;	state Exp;
+branches;
+next	1.1.2.2;
+
+1.1.2.2
+date	2001.07.29.22.34.52;	author gtk;	state Exp;
+branches;
+next	1.1.2.3;
+
+1.1.2.3
+date	2001.07.31.14.46.24;	author gtk;	state Exp;
+branches;
+next	1.1.2.4;
+
+1.1.2.4
+date	2001.07.31.15.23.35;	author gtk;	state Exp;
+branches;
+next	1.1.2.5;
+
+1.1.2.5
+date	2001.08.02.04.44.20;	author gtk;	state Exp;
+branches;
+next	1.1.2.6;
+
+1.1.2.6
+date	2001.09.01.15.13.10;	author goodger;	state dead;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@file test_all.py was initially added on branch Rrefactor-test.
+@
+text
+@@
+
+
+1.1.2.1
+log
+@First stage of the refactoring. Victory so far in developing the framework
+itself. Plenty to do so far, in particular migrating all existing tests.
+@
+text
+@a0 30
+#!/usr/bin/env python
+
+"""
+Author: Garth Kidd
+Contact: garth@@deadlybloodyserious.com
+Revision: $Revision: 1.1.1.1 $
+Date: $Date: 2001/07/21 22:14:13 $
+Copyright: This module has been placed in the public domain.
+"""
+
+from TestFramework import *
+
+def suite():
+    """Return a test suite composed of all the tests we can find."""
+    testLoader = unittest.defaultTestLoader
+    testSuite = unittest.TestSuite()
+    
+    # Import modules and add their tests to the suite. 
+    for modname in [ 'test_escapers' ]:
+        module = __import__(modname)
+        moduleTests = testLoader.loadTestsFromModule(module)
+        # unittest.TestSuite.addTests() doesn't work as advertised, 
+        # as it can't load tests from another TestSuite, so we have
+        # to cheat: 
+        testSuite.addTests(moduleTests._tests)
+        
+    return testSuite
+
+if __name__ == '__main__':
+    main(suite=suite())
+@
+
+
+1.1.2.2
+log
+@More work.
+Finally decided on how to architect ParserTestSuite.
+Fixed all the accursed linefeeds, hence the absurd length of the diffs.
+Sorry about that.
+@
+text
+@d6 2
+a7 2
+Revision: $Revision: 1.1.2.1 $
+Date: $Date: 2001/07/29 09:05:39 $
+d10 21
+a30 21
+
+from TestFramework import *
+
+def suite():
+    """Return a test suite composed of all the tests we can find."""
+    testLoader = unittest.defaultTestLoader
+    testSuite = unittest.TestSuite()
+    
+    # Import modules and add their tests to the suite. 
+    for modname in [ 'test_escapers' ]:
+        module = __import__(modname)
+        moduleTests = testLoader.loadTestsFromModule(module)
+        # unittest.TestSuite.addTests() doesn't work as advertised, 
+        # as it can't load tests from another TestSuite, so we have
+        # to cheat: 
+        testSuite.addTests(moduleTests._tests)
+        
+    return testSuite
+
+if __name__ == '__main__':
+    main(suite=suite())
+@
+
+
+1.1.2.3
+log
+@Phew! Now I'm late for bed. That said, I think it's semi-working.
+@
+text
+@d6 2
+a7 2
+Revision: $Revision: 1.1.2.2 $
+Date: $Date: 2001/07/29 22:34:52 $
+a11 9
+import os, os.path, re, sys
+
+def isTestModule(filename):
+    matcher = re.compile(r"^(test_[^\.]+)\.py$")
+    match = matcher.match(filename)
+    if match:
+        return match.group(1)
+    else:
+        return None
+d13 1
+a13 1
+def allSuite(scriptPath):
+d17 1
+a17 15
+
+    path, scriptName= os.path.split(os.path.abspath(scriptPath))
+    print "p", path
+    print "sn", scriptName
+    if path is not None: 
+        os.chdir(path)
+    
+    # get a list of test_*.py
+    testPyMatcher = re.compile(r"^test_[^\.]+\.py$")  
+    testModules = filter(None, map(isTestModule, os.listdir(path)))
+
+    # remove test_all.py to avoid trouble
+    if 'test_all.py' in testModules:
+        testModules.remove('test_all.py')
+        
+d19 1
+a19 1
+    for modname in testModules:
+d29 2
+a30 2
+if __name__ == '__main__':
+    main(suite=allSuite(sys.argv[0]))
+@
+
+
+1.1.2.4
+log
+@Fixed blunder in gathering tests -- I'm surprised any ran at all.
+test_all now looks for ``suite`` as a function or TestSuite and does
+the right thing.
+@
+text
+@d6 2
+a7 2
+Revision: $Revision: 1.1.2.3 $
+Date: $Date: 2001/07/31 14:46:24 $
+d12 1
+a12 1
+import os, os.path, re, sys, types
+d28 2
+d38 2
+a39 2
+    if 'test_all' in testModules:
+        testModules.remove('test_all')
+d43 6
+a48 24
+        # import the module
+        if debug:
+            print "importing %s" % modname
+        module = __import__(modname)
+        
+        # if there's a suite defined, incorporate its contents
+        if 'suite' in dir(module):
+            suite = getattr(module, 'suite')
+            if type(suite) == types.FunctionType:
+                s = suite()
+                testSuite.addTests(s._tests)
+            elif type(suite) == types.InstanceType \
+                 and isinstance(suite, unittest.TestSuite):
+                testSuite.addTests(suite._tests)
+            else: 
+                raise AssertionError, "don't understand suite"
+        else:
+            # Look for individual tests
+            moduleTests = testLoader.loadTestsFromModule(module) 
+
+            # unittest.TestSuite.addTests() doesn't work as advertised, 
+            # as it can't load tests from another TestSuite, so we have
+            # to cheat: 
+            testSuite.addTests(moduleTests._tests)
+@
+
+
+1.1.2.5
+log
+@* Removed redundant tests from test_states.
+* Fixed handling of aggregate suites in test_all.py
+* Deliberately screwed up the first test in test_states to aid
+  diagnosis.
+
+I still haven't figured out why two tests bomb out in an error in
+test_states but not in test_all.
+@
+text
+@d6 2
+a7 2
+Revision: $Revision: 1.1.2.4 $
+Date: $Date: 2001/07/31 15:23:35 $
+d25 2
+a26 2
+    testSuite = unittest.TestSuite()
+    
+d50 2
+a51 1
+                testSuite.addTest(suite())
+d54 1
+a54 1
+                testSuite.addTest(suite)
+d64 1
+a64 1
+            testSuite.addTest(moduleTests)
+@
+
+
+1.1.2.6
+log
+@refactored into alltests.py
+@
+text
+@d6 2
+a7 2
+Revision: $Revision: 1.1.2.5 $
+Date: $Date: 2001/08/02 04:44:20 $
+@
+
+

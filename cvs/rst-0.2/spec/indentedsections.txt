@@ -1,0 +1,79 @@
+The Rise and Fall of Indented Sections
+======================================
+
+Following two impassioned arguments [1]_ on the Doc-SIG against
+abolishing indentation for section structure, I reconsidered my
+arguments and posted a comporomise `Proposal for indented sections in
+reStructuredText`_.
+
+.. [1] One from `Wolfgang Lipp`_ and one from `Edward Welbourne`_.
+
+.. Wolfgang Lipp:
+   http://mail.python.org/pipermail/doc-sig/2001-June/001872.html
+.. Edward Welbourne:
+   http://mail.python.org/pipermail/doc-sig/2001-June/001877.html
+.. Proposal for indented sections in reStructuredText:
+   http://mail.python.org/pipermail/doc-sig/2001-June/001890.html
+
+Response from most of the pro-indentation camp was positive. `Guido
+van Rossum`_ was against section-indentation, citing 30+ centuries of
+tradition, reinforcing my original arguments, and invoking "there's
+only one way to do it." As Dictator and chief arbiter of Python
+morals, Guido's opinions are always influential. But the most
+convincing arguments came from a surprising source: `Ken Manheimer`_,
+a once-stalwart proponent of indented sections, made a strong case
+*against* their continued use. He still likes them, finds them easier
+to read, but concedes that they can be hard to write. He'll miss them.
+
+You've got to admire that kind of objectivity.
+
+.. Guido van Rossum:
+   http://mail.python.org/pipermail/doc-sig/2001-June/001893.html
+.. Ken Manheimer:
+   http://mail.python.org/pipermail/doc-sig/2001-June/001901.html
+
+Convinced by Guido's and Ken's arguments, in the wee hours of Friday,
+June 15, I put out a call for final arguments in favor of indented
+sections. Some attempts were made, but we knew the cause was lost. It
+is my sad duty to report the tragic demise of indented sections in
+reStructuredText.
+
+Indented sections are dead! Long live reStructuredText!
+
+In Memoriam
+-----------
+
+Born June 12, died June 18. It had a brief but exciting life.
+Requiescat In Pace.
+
+For the sake of posterity, the text removed from the spec regarding
+indented sections is included below.
+
+Removed from `Problems With StructuredText`_, version 0.2.1, end of
+section 3:
+
+    However, indented sections are dear to many users of
+    StructuredText. reStructuredText recognizes the value of indented
+    sections by also allowing entire section bodies to be indented
+    relative to the title. Title adornment (an underline and possibly
+    an overline) is still required, as is overall consistency. Once a
+    section is indented, all subsections must also be indented
+    relative to their titles. Title adornment style usage must remain
+    consistent.
+
+.. Problems With StructuredText:
+   http://structuredtext.sf.net/spec/problems.txt
+
+Removed from `reStructuredText Markup Specification`_, version 0.2.1,
+'Section Structure', end of first paragraph:
+
+    A section may optionally be indented relative to its enclosing
+    block. Once a section is indented, all of its subsections must be
+    further indented.
+
+End of second paragraph:
+
+    With indented sections, adornment styles may be reused.
+
+.. reStructuredText Markup Specification:
+   http://structuredtext.sf.net/spec/reStructuredText.txt

@@ -1,0 +1,1666 @@
+head	1.42;
+access;
+symbols
+	RELEASE:1.1.1.1
+	Rrefactor-test:1.1.1.1.0.4
+	rel-0-3:1.1.1.1.0.2
+	open:1.1.1;
+locks; strict;
+comment	@# @;
+
+
+1.42
+date	2002.04.18.02.43.22;	author goodger;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2002.04.13.16.27.04;	author goodger;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2002.03.28.04.29.06;	author goodger;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2002.03.16.05.35.44;	author goodger;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2002.03.12.03.34.22;	author goodger;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2002.03.11.03.18.15;	author goodger;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2002.03.07.03.45.08;	author goodger;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2002.03.04.04.39.10;	author goodger;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2002.03.01.03.00.01;	author goodger;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2002.02.22.01.41.29;	author goodger;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2002.02.13.02.22.10;	author goodger;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2002.02.07.01.55.50;	author goodger;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2002.02.06.02.20.17;	author goodger;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2002.01.25.23.44.50;	author goodger;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2002.01.08.02.44.17;	author goodger;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2001.11.23.03.19.15;	author goodger;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2001.11.22.04.21.13;	author goodger;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2001.11.13.03.17.06;	author goodger;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2001.11.01.04.12.34;	author goodger;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2001.10.30.05.07.16;	author goodger;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2001.10.27.05.28.51;	author goodger;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2001.10.19.03.06.58;	author goodger;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2001.10.18.04.10.20;	author goodger;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2001.09.26.03.46.09;	author goodger;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2001.09.13.03.44.00;	author goodger;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2001.09.07.01.58.50;	author goodger;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2001.09.05.03.11.33;	author goodger;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2001.09.05.02.41.23;	author goodger;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2001.09.01.15.48.40;	author goodger;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2001.08.28.03.29.20;	author goodger;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2001.08.25.02.22.10;	author goodger;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2001.08.22.03.41.26;	author goodger;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2001.08.17.01.58.17;	author goodger;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2001.08.15.02.59.33;	author goodger;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2001.08.14.03.37.58;	author goodger;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2001.08.11.23.20.51;	author goodger;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2001.08.11.02.11.59;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2001.08.06.04.40.33;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.08.04.15.22.24;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.08.01.02.49.11;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.07.29.16.00.48;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.07.21.22.14.24;	author goodger;	state Exp;
+branches
+	1.1.1.1;
+next	;
+
+1.1.1.1
+date	2001.07.21.22.14.24;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.42
+log
+@Fixed whitespace & updated
+@
+text
+@=======
+ Notes
+=======
+:Date: $Date: 2002/04/13 16:27:04 $
+:Revision: $Revision: 1.41 $
+
+.. contents::
+
+To Do
+=====
+
+- Document!
+
+  - Keep the quickref up to date.
+  - Internal module documentation.
+  - User docs.
+  - Add motivation sections for constructs.
+
+- Refactor the complicated bits of the parser.
+
+  - Rename methods & variables according to the coding conventions set
+    out in dps-notes.txt_
+
+    .. _dps-notes.txt:
+       http://docstring.sourceforge.net/spec/dps-notes.txt
+
+- Create a standalone reStructuredText -> HTML/XML converter (stdin ->
+  stdout filter).  (Flesh out tools/quicktest.py.)
+
+- Allow very long titles (on two or more lines)?
+
+- And for the sake of completeness, should definition list terms be
+  allowed to be very long (two or more lines) also?
+
+- Allow hyperlink references to targets in other documents?  Not in an
+  HTML-centric way, though (it's trivial to say
+  ``http://www.whatever.com/doc#name``, and useless in non-HTML
+  contexts).  XLink/XPointer?  ``.. baseref::``?  See Doc-SIG
+  2001-08-10.
+
+- Add character processing?  For example:
+
+  - ``--`` -> em-dash (or ``--`` -> en-dash, and ``---`` -> em-dash).
+    (Look for pre-existing conventions.)
+  - Convert quotes to curly quote entities.  (Essentially impossible
+    for HTML?  Unnecessary for TeX.  An output issue?)
+  - Various forms of ``:-)`` to smiley icons.
+  - ``"\ "`` -> &nbsp;.
+  - Escaped newlines -> <BR>.
+  - Escaped period or quote as a disappearing catalyst to allow
+    character-level inline markup?
+  - Others?
+
+  How to represent character entities in the text though?  Probably as
+  Unicode.
+
+  Which component is responsible for this, the parser, the reader, or
+  the writer?
+
+- Implement the header row separator modification to table.el.  (Wrote
+  to Takaaki Ota & the table.el mailing list on 2001-08-12, suggesting
+  support for '=====' header rows.  On 2001-08-17 he replied, saying
+  he'd put it on his to-do list, but "don't hold your breath".)
+
+- Tony says inline markup rule 7 could do with a *little* more
+  exposition in the spec, to make clear what is going on for people
+  with head colds.
+
+- Alan Jaffray suggested (and I agree) that it would be sensible to:
+
+  - have a directive to specify a default role for interpreted text
+  - allow the reST processor to take an argument for the default role
+  - issue a warning when processing documents with no default role
+    which contain interpreted text with no explicitly specified role
+
+- Fix the parser's indentation handling to conform with the stricter
+  definition in the spec.  (Explicit markup blocks should be strict or
+  forgiving?)
+
+- Tighten up the spec for indentation of "constructs using complex
+  markers": field lists and option lists?  Bodies may begin on the
+  same line as the marker or on a subsequent line (with blank lines
+  optional).  Require that for bodies beginning on the same line as
+  the marker, all lines be in strict alignment.  Currently, this is
+  acceptable::
+
+      :Field-name-of-medium-length: Field body beginning on the same
+          line as the field name.
+
+  This proposal would make the above example illegal, instead
+  requiring strict alignment.  A field body may either begin on the
+  same line::
+
+      :Field-name-of-medium-length: Field body beginning on the same
+                                    line as the field name.
+
+  Or it may begin on a subsequent line::
+
+      :Field-name-of-medium-length:
+          Field body beginning on a line subsequent to that of the
+          field name.
+
+  This would be especially relevant in degenerate cases like this::
+
+      :Number-of-African-swallows-requried-to-carry-a-coconut:
+          It would be very difficult to align the field body with
+          the left edge of the first line if it began on the same
+          line as the field name.
+
+- Implement directives:
+
+  - html.imagemap
+
+  - components.endnotes, .citations, .topic, .sectnum (section
+    numbering; add support to .contents; could be cmdline option also)
+
+  - misc.raw
+
+  - misc.include: ``#include`` one file in another.  But how to
+    parse wrt sections, reference names, conflicts?
+
+  - misc.exec: Execute Python code & insert the results.  Perhaps
+    dangerous?
+
+  - misc.eval: Evaluate an expression & insert the text.  At parse
+    time or at substitution time?
+
+  - block.qa: Questions & Answers.  Implement as a generic two-column
+    marked list?  Or as a standalone construct?
+
+  - block.columns: Multi-column table/list, with number of columns as
+    argument.
+
+  - colorize.python: Colorize Python code.  Fine for HTML output, but
+    what about other formats?  Revert to a literal block?  Do we need
+    some kind of "alternate" mechanism?  Perhaps use a "pending"
+    transform, which could switch its output based on the "format" in
+    use.  Use a factory function "transformFF()" which returns either
+    "HTMLTransform()" instance or "GenericTransform" instance?
+
+  - text.date: Datestamp.  For substitutions.
+
+    - Combined with misc.include, implement canned macros?
+
+- Allow directives to be added at run-time.
+
+- Use the language module for directive attribute names?
+
+- Add more attributes to the image directive: align, border?
+
+- Allow syntax constructs to be added or disabled at run-time.
+
+- Make footnotes two-way, GNU-style?  What if there are multiple
+  references to a single footnote?
+
+- Add RFC-2822 header parsing (for PEP, email Readers).
+
+- Change ``.. meta::`` to use a "pending" element, only activated for
+  HTML writers.
+
+- Allow for variant styles by interpreting indented lists as if they
+  weren't indented?  For example, currently the list below will be
+  parsed as a list within a block quote::
+
+      paragraph
+
+        * list item 1
+        * list item 2
+
+  But a lot of people seem to write that way, and HTML browsers make
+  it look as if that's the way it should be.  The parser could check
+  the contents of block quotes, and if they contain only a single
+  list, remove the block quote wrapper.  There would be two problems:
+
+  1. What if we actually *do* want a list inside a block quote?
+
+  2. What if such a list comes immediately after an indented
+     construct, such as a literal block?
+
+  Both could be solved using empty comments (problem 2 already exists
+  for a block quote after a literal block).  But that's a hack.
+
+  See the Doc-SIG discussion starting 2001-04-18 with Ed Loper's
+  "Structuring: a summary; and an attempt at EBNF", item 4.
+
+- Add a "verse" construct, for paragraphs with linebreaks preserved?
+  A directive would be easy; what about a literal-block-like prefix,
+  perhaps ';;'?  E.g.::
+
+      Take it away, Eric the orchestra leader!  ;;
+
+          Half a bee,
+          Philosophically,
+          Must ipso-facto
+          Half not be.
+          You see?
+
+          ...
+
+
+Or Not To Do?
+=============
+
+This is the realm of the possible but questionably probable.  These
+ideas are kept here as a record of what has been proposed, for
+posterity and in case any of them prove to be useful.
+
+
+Compound Enumerated Lists
+-------------------------
+
+(A future revision of this specification may allow for compound
+enumerators, such as '1.1.' or '1.a.' or '1(a)', to allow for nested
+enumerated lists without indentation.)
+
+
+Auto-Numbered Enumerated Lists
+------------------------------
+
+Add these?  Example::
+
+    #. Item 1.
+    #. Item 2.
+    #. Item 3.
+
+Arabic numerals only, or any sequence if first initialized?  For
+example::
+
+    a) Item a.
+    #) Item b.
+    #) Item c.
+
+
+Sloppy Indentation of List Items
+--------------------------------
+
+Perhaps the indentation shouldn't be so strict.  Currently, this is
+required::
+
+    1. First line,
+       second line.
+
+Anything wrong with this? ::
+
+    1. First line,
+     second line.
+
+Problem?
+
+    1. First para.
+
+       Block quote.  (no good: requires some indent relative to first
+       para)
+
+     Second Para.
+
+    2. Have to carefully define where the literal block ends::
+
+         Literal block
+
+       Literal block?
+
+Hmm...  Non-strict indentation isn't such a good idea.
+
+
+Lazy Indentation of List Items
+------------------------------
+
+Another approach: Going back to the first draft of reStructuredText
+(2000-11-27 post to Doc-SIG)::
+
+    - This is the fourth item of the main list (no blank line above).
+    The second line of this item is not indented relative to the
+    bullet, which precludes it from having a second paragraph.
+
+Change that to *require* a blank line above and below, to reduce
+ambiguity.  This "loosening" may be added later, once the parser's
+been nailed down.  However, a serious drawback of this approach is to
+limit the content of each list item to a single paragraph.
+
+
+David's Idea for Lazy Indentation
+`````````````````````````````````
+
+Consider a paragraph in a word processor.  It is a single logical line
+of text which ends with a newline, soft-wrapped arbitrarily at the
+right edge of the page or screen.  We can think of a plaintext
+paragraph in the same way, as a single logical line of text, ending
+with two newlines (a blank line) instead of one, and which may contain
+arbitrary line breaks (newlines) where it was accidentally
+hard-wrapped by an application.  We can compensate for the accidental
+hard-wrapping by "unwrapping" every unindented second and subsequent
+line.  The indentation of the first line of a paragraph or list item
+would determine the indentation for the entire element.  Blank lines
+would be required between list items when using lazy indentation.
+
+The following example shows the lazy indentation of multiple body
+elements::
+
+    - This is the first paragraph
+    of the first list item.
+
+      Here is the second paragraph
+    of the first list item.
+
+    - This is the first paragraph
+    of the second list item.
+
+      Here is the second paragraph
+    of the second list item.
+
+A more complex example shows the limitations of lazy indentation::
+
+    - This is the first paragraph
+    of the first list item.
+
+      Next is a definition list item:
+
+      Term
+          Definition.  The indentation of the term is
+    required, as is the indentation of the definition's
+    first line.
+
+          When the definition extends to more than
+    one line, lazy indentation may occur.  (This is the second
+    paragraph of the definition.)
+
+    - This is the first paragraph
+    of the second list item.
+
+      - Here is the first paragraph of
+    the first item of a nested list.
+
+      So this paragraph would be outside of the nested list,
+    but inside the second list item of the outer list.
+
+    But this paragraph is not part of the list at all.
+
+And the ambiguity remains::
+
+    - Look at the hyphen at the beginning of the next line
+    - is it a second list item marker, or a dash in the text?
+
+    Similarly, we may want to refer to numbers inside enumerated
+    lists:
+
+    1. How many socks in a pair? There are
+    2. How many pants in a pair? Exactly
+    1. Go figure.
+
+Literal blocks and block quotes would still require consistent
+indentation for all their lines.  For block quotes, we might be able
+to get away with only requiring that the first line of each contained
+element be indented.  For example::
+
+    Here's a paragraph.
+
+        This is a paragraph inside a block quote.
+    Second and subsequent lines need not be indented at all.
+
+        - A bullet list inside
+    the block quote.
+
+          Second paragraph of the
+    bullet list inside the block quote.
+
+Although feasible, this form of lazy indentation has problems.  The
+document structure and hierarchy is not obvious from the indentation,
+making the source plaintext difficult to read.  This will also make
+keeping track of the indentation while writing difficult and
+error-prone.  However, these problems may be acceptable for Wikis and
+email mode, where we may be able to rely on less complex structure
+(few nested lists, for example).
+
+
+..
+   Local Variables:
+   mode: indented-text
+   indent-tabs-mode: nil
+   sentence-end-double-space: t
+   fill-column: 70
+   End:
+@
+
+
+1.41
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2002/03/28 04:29:06 $
+:Revision: $Revision: 1.40 $
+d28 1
+a28 1
+  stdout filter). (Flesh out tools/quicktest.py.)
+d35 1
+a35 1
+- Allow hyperlink references to targets in other documents? Not in an
+d38 1
+a38 1
+  contexts).  XLink/XPointer? ``.. baseref::``? See Doc-SIG
+d41 1
+a41 1
+- Add character processing? For example:
+d45 2
+a46 2
+  - Convert quotes to curly quote entities. (Essentially impossible
+    for HTML?  Unnecessary for TeX. An output issue?)
+d54 1
+a54 1
+  How to represent character entities in the text though? Probably as
+d60 4
+a63 5
+- Implement the header row separator modification to table.el. (Wrote
+  to Takaaki Ota & the table.el mailing list on 2001-08-12,
+  suggesting support for '=====' header rows. On 2001-08-17 he
+  replied, saying he'd put it on his to-do list, but don't hold your
+  breath.)
+d81 2
+a82 2
+  markers": field lists and option lists? Bodies may begin on the same
+  line as the marker or on a subsequent line (with blank lines
+d91 1
+a91 1
+  requiring strict alignment. A field body may either begin on the
+d117 1
+a117 15
+  - misc.raw, .include (``#include`` one file in another; but how to
+    parse wrt sections, reference names, conflicts?), .exec
+    (execute Python code & insert the results; dangerous?), .eval
+    (evaluate an expression & insert the text; at parse time or
+    substitution time?)
+
+  - block.qa (Questions & Answers; implement as a generic two-column
+    marked list?)
+
+  - colorize.python (Colorize Python code.  Fine for HTML output, what
+    about other formats?  Revert to a literal block?  Do we need some
+    kind of "alternate" mechanism?  Perhaps use a "pending" transform,
+    which could switch its output based on the "format" in use.  Use a
+    factory function "transformFF()" which returns either
+    "HTMLTransform()" instance or "GenericTransform" instance?)
+d119 23
+a141 1
+  - text.date (for substitutions)
+d149 2
+d153 1
+a153 1
+- Make footnotes two-way, GNU-style? What if there are multiple
+d156 1
+a156 1
+- Add RFC-822 header parsing (for PEP, email Readers).
+d180 2
+a181 2
+  Both could be solved using empty comments (#2 already exists for a
+  block quote after a literal block).  But that's a hack.
+d186 14
+d204 1
+a204 1
+This is the realm of the possible but questionably probable. These
+d213 2
+a214 2
+enumerators, such as '1.a.' or '1(a)', to allow for nested enumerated
+lists without indentation.)
+d220 1
+a220 1
+Add these? Example::
+d226 1
+a226 1
+Arabic numerals only, or any sequence if first initialized? For
+a233 12
+Two-For-One Literal Blocks
+--------------------------
+
+[Aside: One possible variation is for meta-documentation (perhaps an
+extension?): use triple-colons (':::') or a directive ('..
+literal-parsed::') to indicate 'take the following literal block, mark
+it up as a literal block, then copy it and mark it up as if it weren't
+a literal block'.  The implementation may insert text in-between, such
+as 'Marked up as:', or may alter the formatting (different font, set
+in a colored box, whatever).]
+
+
+d237 1
+a237 1
+Perhaps the indentation shouldn't be so strict. Currently, this is
+d252 1
+a252 1
+       Block quote. (no good: requires some indent relative to first
+d263 1
+a263 1
+Hmm... Non-strict indentation isn't such a good idea.
+d277 3
+a279 5
+ambiguity. This "loosening" may be added later, once the parser's been
+nailed down. However, a serious drawback of this approach is to limit
+the content of each list item to a single paragraph. Garth Kidd is
+attempting to work out a consistent set of rules for "lazy
+indentation".
+d285 1
+a285 1
+Consider a paragraph in a word processor. It is a single logical line
+d287 1
+a287 1
+right edge of the page or screen. We can think of a plaintext
+d291 1
+a291 1
+hard-wrapped by an application. We can compensate for the accidental
+d293 2
+a294 2
+line. The indentation of the first line of a paragraph or list item
+would determine the indentation for the entire element. Blank lines
+d320 1
+a320 1
+          Definition. The indentation of the term is
+d325 1
+a325 1
+    one line, lazy indentation may occur. (This is the second
+d352 3
+a354 3
+indentation for all their lines. For block quotes, we might be able to
+get away with only requiring that the first line of each contained
+element be indented. For example::
+d367 1
+a367 1
+Although feasible, this form of lazy indentation has problems. The
+d369 1
+a369 1
+making the source plaintext difficult to read. This will also make
+d371 1
+a371 1
+error-prone. However, these problems may be acceptable for Wikis and
+@
+
+
+1.40
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2002/03/16 05:35:44 $
+:Revision: $Revision: 1.39 $
+d148 28
+@
+
+
+1.39
+log
+@*** empty log message ***
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2002/03/12 03:34:22 $
+:Revision: $Revision: 1.38 $
+d111 26
+a136 1
+- Implement the HTML "imagemap" directive.
+d147 1
+a147 8
+- Add directives: components.contents (GNU-style two-way table of
+  contents), components.endnotes, components.citations,
+  components.topic, misc.raw.
+
+- Add support for "pending", noting pending transforms in the document
+  node, as generated by directives.
+
+- Add support for topics.
+@
+
+
+1.38
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2002/03/11 03:18:15 $
+:Revision: $Revision: 1.37 $
+d7 1
+d56 1
+a56 1
+  
+d114 2
+@
+
+
+1.37
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2002/03/07 03:45:08 $
+:Revision: $Revision: 1.36 $
+a19 2
+  - Remove gratuitous pseudo-default arguments from functions &
+    methods.
+a108 3
+
+- Add literal blocks to system messages whenever the erroneous source
+  text is omitted.
+@
+
+
+1.36
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2002/03/04 04:39:10 $
+:Revision: $Revision: 1.35 $
+d55 3
+a57 1
+  How to represent character entities in the text though? Unicode?
+a113 2
+
+- Link system messages back to their sources?
+@
+
+
+1.35
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2002/02/22 01:41:29 $
+:Revision: $Revision: 1.33 $
+d124 3
+a126 2
+- Directive ideas: TOC (GNU-style two-way), endnotes *here*,
+  citations *here*.
+d128 4
+a131 8
+- Add a list of pending transforms to the document node, generated by
+  directives? Or add an element, "pending" perhaps, which encapsulates
+  the transform, the point at which to apply it, and any data
+  required.
+
+- Add a "topic" element to the DTD? Like a generic admonition or
+  flexible mini-section. Useful for TOC, system messages section,
+  abstract, etc.
+@
+
+
+1.34
+log
+@updated
+@
+text
+@d56 2
+d132 1
+a132 1
+- Add a "sidebar" element to the DTD? Like a generic admonition or
+@
+
+
+1.33
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2002/02/13 02:22:10 $
+:Revision: $Revision: 1.32 $
+d42 14
+a55 3
+- Interpret backslash-escaped spaces as non-breaking spaces? Escaped
+  newlines as forced-breaks? Escaped period or quote as a disappearing
+  catalyst to allow character-level inline markup?
+d75 1
+a75 1
+  definition in the spec. (Explicit markup blocks should be strict or
+d78 30
+d118 15
+@
+
+
+1.32
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2002/02/07 01:55:50 $
+:Revision: $Revision: 1.31 $
+d38 3
+a40 2
+  http://www.whatever.com/doc#name, and useless in non-HTML contexts).
+  XLink/XPointer? ``.. baseref::``? See Doc-SIG 2001-08-10.
+d67 4
+a70 2
+- Add literal blocks to more system warnings whenever the erroneous
+  source text is omitted.
+@
+
+
+1.31
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2002/02/06 02:20:17 $
+:Revision: $Revision: 1.30 $
+d69 1
+a69 5
+- Put verbose name into system warnings (not just level).
+
+- Add support for meta tags for web pages: a directive or a
+  bibliographic field. A directive would probably be better, since the
+  meta data won't show up in the visible document.
+@
+
+
+1.30
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2002/01/25 23:44:50 $
+:Revision: $Revision: 1.29 $
+d26 1
+a26 1
+       http://docstring.sourceforge.net/spec/dpsnotes.txt
+a137 13
+
+Especially for option lists & field lists, this could be handy::
+
+    --longopt  Description,
+               second line.
+    --verylongopt  Description,
+               second line.
+    --very_long_option_name, --another_long_option, -s
+               Description,
+               second line.
+
+(Currently, the second option's second line has to be lined up with
+the first; and the third option would be very difficult indeed.)
+@
+
+
+1.29
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2002/01/08 02:44:17 $
+:Revision: $Revision: 1.28 $
+d71 1
+a71 1
+- Add support for meta tags for web pages. A directive or a
+d77 2
+d174 1
+a174 1
+(2000-11-27 post to Doc-SIG):
+@
+
+
+1.28
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2001/11/22 04:21:13 $
+:Revision: $Revision: 1.26 $
+d22 5
+@
+
+
+1.27
+log
+@updated
+@
+text
+@d20 3
+d69 2
+@
+
+
+1.26
+log
+@  - Added --debug/-d option.  - Minor fixes.
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2001/11/13 03:17:06 $
+:Revision: $Revision: 1.25 $
+d62 4
+@
+
+
+1.25
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2001/11/01 04:12:34 $
+:Revision: $Revision: 1.24 $
+d34 2
+a35 1
+  newlines as forced-breaks?
+d57 5
+@
+
+
+1.24
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2001/10/30 05:07:16 $
+:Revision: $Revision: 1.23 $
+d16 1
+d18 1
+a18 1
+- Implement a parser according to the markup implementation plan.
+a52 4
+- Add inline substitutions? See alternatives.txt__.
+
+  __ http://structuredtext.sourceforge.net/spec/alternatives.txt
+
+d54 2
+a55 1
+  definition in the spec.
+@
+
+
+1.23
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2001/10/27 05:28:51 $
+:Revision: $Revision: 1.22 $
+d51 7
+@
+
+
+1.22
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2001/10/19 03:06:58 $
+:Revision: $Revision: 1.21 $
+a50 6
+
+- Add transition support.
+
+- Add "__" anonymous link support.
+
+- Add inline hyperlink target support.
+@
+
+
+1.21
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2001/09/26 03:46:09 $
+:Revision: $Revision: 1.19 $
+a44 4
+- To avoid mistakenly marking up text like ``signal:noise`` as URIs,
+  limit standalone hyperlink URI recognition to known schemes, as per
+  http://www.w3.org/Addressing/schemes.html.
+
+d51 6
+@
+
+
+1.20
+log
+@updated
+@
+text
+@d13 4
+d49 7
+a256 42
+
+
+Horizontal Rules
+----------------
+
+Wolfgang Lipp suggested adding horizontal rules (HTML <HR>) to the
+syntax.  A line of punctuation with a blank line before and after::
+
+    Para.
+
+    ------------------------------------------------------------
+
+    Para.
+
+The problem is, HRs are purely presentational.  What structural
+significance do they have?
+
+Hmm. Stories are often broken up into "segments" with vertical
+whitespace, sometimes with a horizontal line or a group of symbols
+(e.g. three widely-separated asterisks). This could be modeled by
+horizontal rules.
+
+HRs could be allowed to be indented without generating a block quote::
+
+    Para.
+
+        --------
+
+    Para.
+
+Tony Ibbs' mention of HRs on 2001-10-16 triggered an idea from the
+nether regions of my cerebrum, relating to constructs commonly seen in
+novels and short fiction.  Rummaging around in my copy of The Chicago
+Manual of Style, 14th ed., I found this confirmation (sect. 1.80):
+
+    Instead of subheads, extra space or a type ornament between
+    paragraphs may be used to mark text divisions or to signal
+    changes in subject or emphasis.
+
+In other words, "anonymous sections"! *There's* the structural
+significance. An HTML Writer could render these text divisions as
+horizontal rules if it likes.
+@
+
+
+1.19
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2001/09/13 03:44:00 $
+:Revision: $Revision: 1.18 $
+d41 4
+d195 1
+a195 1
+    
+d215 1
+a215 1
+    
+d218 1
+a218 1
+    
+d262 26
+@
+
+
+1.18
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2001/09/07 01:58:50 $
+:Revision: $Revision: 1.17 $
+a21 5
+
+- Interpret RCS keywords in field lists? Just values, or the entire
+  field? I.E, ``$keyword: value$`` could be interpreted as ``keyword:
+  value``; ``$keyword$`` could be interpreted as ``keyword:`` (no
+  value).
+@
+
+
+1.17
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2001/09/05 03:11:33 $
+:Revision: $Revision: 1.16 $
+d23 4
+a26 3
+- Interpret RCS keywords in field lists? ``$keyword: value$`` could
+  be interpreted as ``keyword: value``; ``$keyword$`` could be
+  interpreted as ``keyword:`` (no value).
+a44 13
+
+- Add to spec: discussion of directive behavior:
+
+    I think most directives won't survive (as directives) past the
+    parsing stage (they can't, since they're a *parser
+    construct*). Instead, they'll transform their contents into
+    elements on the doc tree. Only unknown directives will survive to
+    any later stage, and be formatted in a generic "directive" way,
+    perhaps as a system warning.
+    
+    Now, the newly transformed directive *contents* may be specialized
+    elements which require further processing later on, but they're no
+    longer raw directives.
+@
+
+
+1.16
+log
+@updated some more
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2001/09/01 15:48:40 $
+:Revision: $Revision: 1.14 $
+a44 3
+- Add auto-numbered enumerated lists? Arabic numerals only, or any
+  sequence if first initialized?
+
+d73 17
+@
+
+
+1.15
+log
+@updated
+@
+text
+@d37 3
+a39 1
+  suggesting support for '=====' header rows.)
+a46 18
+
+- Tables.
+
+  - Parsing can never encounter a corner inside a table.
+
+  - Use state machine, or a standalone class or set of functions?
+
+    - Trace out the border and row/column separators, to determine the
+      total number and position of columns.
+
+  - Use a sparse array (dictionary) to support spans?
+
+  - Data structure:
+
+    - (column specs, header rows, body rows)
+    - colspec = column width
+    - row = [cells]
+    - cell = (morerows=0, morecols=0, block)
+@
+
+
+1.14
+log
+@emacs stanza; minor changes
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2001/08/28 03:29:20 $
+:Revision: $Revision: 1.13 $
+d63 13
+@
+
+
+1.13
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2001/08/25 02:22:10 $
+:Revision: $Revision: 1.12 $
+d46 17
+a62 1
+- Tables. (Parsing can never encounter a corner inside a table.)
+@
+
+
+1.12
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2001/08/11 23:20:51 $
+:Revision: $Revision: 1.7 $
+a42 3
+- Add auto-numbered footnotes & references, with optional labels.
+  What to label the ``[#]`` footnotes?
+
+d46 1
+a46 3
+- Tables.
+
+- Add 'term : [ classifier ]' support to definition list items.
+@
+
+
+1.11
+log
+@Updated.
+@
+text
+@d20 3
+a31 3
+- Explicitly define what characters constitute whitespace, and enable
+  the parser to recognize them all.
+
+d49 1
+a49 5
+- Perhaps it's better to think of "::" as pure markup, which
+  disappears from the processed output as would the asterisks in
+  *emphasis*. As a special case, if the "::" ends a paragraph preceded
+  by non-whitespace, we keep one ":" in place. Reverse the order of
+  the explanation.
+d51 1
+a51 1
+- Tables.
+d255 7
+a261 6
+Local Variables:
+mode: indented-text
+indent-tabs-mode: nil
+sentence-end-double-space: t
+fill-column: 70
+End:
+@
+
+
+1.10
+log
+@minor fixes & updates
+@
+text
+@a31 3
+- For duplicate indirect external hyperlink targets (explicit), check
+  the target URIs: same -> level-0 warning; different -> level-1.
+
+a42 13
+- Move interpreted text roles outside of the quotes::
+
+      role:`interpreted text`
+
+- Add DOS/VMS-style "/A" option support to option lists.
+
+- Enable optional blank lines between definition list items.
+
+- Add empty comment support. "A tiny but practical wart."
+
+- Merge pyextensions.txt into reStructuredText.txt, and ppdi.dtd into
+  gpdi.dtd?
+
+a45 4
+- Perhaps, to make footnotes even more distinct from hyperlink
+  targets, we can drop the leading '_'? Doc-SIG 2001-08-09, "Colons
+  and footnotes".
+
+a48 7
+- Put in a check for spaces inside text in hyperlink targets. The
+  parser can generate a warning, including the entire "target" as a
+  literal block.
+
+- Document & implement the shared namespace for hyperlink names &
+  footnote labels (without brackets).
+
+d52 4
+a55 1
+  by non-whitespace, we keep one ":" in place.
+a256 46
+
+
+Comments Revisited
+------------------
+
+Perhaps comments should be one-liners only? Would this mean that
+footnotes, hyperlink targets, and directives must also be
+one-liners?
+
+If we adopt Tony Ibbs' suggested "comment" directive, we could limit
+a comment to a single text block. A "multi-block comment" could use
+"comment-start" and "comment-end" directives. This would remove the
+indentation-incompatibility.
+
+
+Parser Notes
+============
+
+Wonky cases, marked by "XXX" in the unit tests:
+
+- What should incorrect indentation do? E.g.::
+
+      Here is a paragraph.
+
+              Indent 8 spaces.
+
+          Indent 4 spaces.
+
+  As is, this generates a <block_quote><block_quote>...</>...</>.
+  Should this trigger a warning?
+
+- Is this correct behavior? ::
+
+      -
+      Empty item, no blank line, but no space after hyphen.
+
+  Currently this generates a single paragraph.
+
+- Multi-line comments are incompatible with block quotes::
+
+      + bullet
+
+      .. a comment used to end a bullet before a blockquote
+         (if you can't think of what to write in the paragraph)
+
+        blockquote
+@
+
+
+1.9
+log
+@updated (lots more To Do's)
+@
+text
+@d4 2
+a5 2
+Date: $Date: 2001/08/11 23:20:51 $
+Revision: $Revision: 1.7 $
+d54 1
+a54 1
+- Add empty quote support. "A tiny but practical wart."
+d85 3
+a87 3
+This is the realm of the possible but questionably probable. These ideas
+are kept here as a record of what has been proposed, for posterity and
+just in case any of them prove to be useful.
+@
+
+
+1.8
+log
+@updated
+@
+text
+@a23 4
+- Figure out field lists better: syntax, directive or not, context.
+  Reply to issues raised in "usage docstrings and bibliographic field
+  lists (Garth Kidd)" (Doc-SIG 2001-07-27).
+
+d27 1
+a27 1
+  XLink/XPointer?
+d35 2
+a36 2
+- Interpret backslash-escaped spaces as non-breaking spaces? Newlines
+  too?
+d41 39
+@
+
+
+1.7
+log
+@added "David's Idea for Lazy Indentation"
+@
+text
+@d4 2
+a5 2
+Date: $Date: 2001/08/11 02:11:59 $
+Revision: $Revision: 1.6 $
+d18 1
+a18 1
+- allow very long titles (on two or more lines)?
+d20 2
+a21 2
+- interpret RCS keywords in field lists? ``$keyword: value$`` could be
+  interpreted as ``keyword: value``; ``$keyword$`` could be
+d42 3
+a44 2
+- Write to Takaaki Ota & the table.el mailing list, suggesting support
+  for '=====' header rows.
+@
+
+
+1.6
+log
+@updated
+@
+text
+@d4 2
+a5 2
+Date: $Date: 2001/08/06 04:40:33 $
+Revision: $Revision: 1.5 $
+d135 94
+@
+
+
+1.5
+log
+@added "Or Not To Do?" section; added mention of comment directive
+@
+text
+@d4 2
+a5 2
+Date: $Date: 2001/08/04 15:22:24 $
+Revision: $Revision: 1.4 $
+d38 6
+@
+
+
+1.4
+log
+@added wonky cases; updated to do list
+@
+text
+@d4 2
+a5 2
+Date: $Date: 2001/07/29 16:00:48 $
+Revision: $Revision: 1.2 $
+d40 10
+a49 2
+Enumerated Lists
+================
+d56 2
+a57 2
+Literal Blocks
+==============
+d68 2
+a69 2
+Indentation of List Items
+=========================
+d112 4
+d132 1
+a132 1
+================
+d147 13
+a190 4
+
+  Perhaps comments should be one-liners only? Would this mean that
+  footnotes, hyperlink targets, and directives must also be
+  one-liners?
+@
+
+
+1.3
+log
+@up to date
+@
+text
+@d28 11
+d114 3
+a116 1
+the content of each list item to a single paragraph. Garth Kidd is 
+d138 2
+d148 22
+a169 2
+  As is, this generates a <block_quote><block_quote></></>. Should
+  this trigger a warning?
+@
+
+
+1.2
+log
+@removed CVS from to-do list
+@
+text
+@d4 2
+a5 2
+Date: $Date: 2001/07/21 22:14:24 $
+Revision: $Revision: 1.1.1.1 $
+d11 1
+a11 1
+- implement a parser according to the markup implementation plan
+d13 4
+a16 2
+- create a standalone reStructuredText -> HTML/XML converter (stdin ->
+  stdout filter)
+d24 4
+d101 3
+a103 2
+ambiguity. This "loosening" may be added later, once the parser's
+been nailed down.
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d4 2
+a5 2
+Date: $Date: 2001/07/20 00:43:37 $
+Revision: $Revision: 1.29 $
+a9 2
+
+- set up CVS on SF!
+@
+
+
+1.1.1.1
+log
+@initial checkin
+@
+text
+@@

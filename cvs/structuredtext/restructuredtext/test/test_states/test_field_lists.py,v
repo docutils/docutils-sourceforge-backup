@@ -1,0 +1,1541 @@
+head	1.11;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.11
+date	2002.02.15.22.58.17;	author goodger;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2002.02.12.02.30.42;	author goodger;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2002.02.06.02.17.47;	author goodger;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2001.09.26.03.44.08;	author goodger;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2001.09.22.02.42.02;	author goodger;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2001.09.18.21.24.27;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2001.09.18.04.44.19;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.09.13.02.39.39;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.09.07.01.47.00;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.09.02.14.04.06;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.09.01.16.59.41;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.11
+log
+@  - Changed "system_warning" to "system_message".
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.10 $
+:Date: $Date: 2002/02/12 02:30:42 $
+:Copyright: This module has been placed in the public domain.
+
+Tests for states.py.
+"""
+
+import RSTTestSupport
+
+def suite():
+    s = RSTTestSupport.ParserTestSuite()
+    s.generateTests(totest)
+    return s
+
+totest = {}
+
+totest['field_lists'] = [
+["""\
+One-liners:
+
+:Author: Me
+
+:Version: 1
+
+:Date: 2001-08-11
+
+:Parameter i: integer
+""",
+"""\
+<document>
+    <paragraph>
+        One-liners:
+    <field_list>
+        <field>
+            <field_name>
+                Author
+            <field_body>
+                <paragraph>
+                    Me
+        <field>
+            <field_name>
+                Version
+            <field_body>
+                <paragraph>
+                    1
+        <field>
+            <field_name>
+                Date
+            <field_body>
+                <paragraph>
+                    2001-08-11
+        <field>
+            <field_name>
+                Parameter
+            <field_argument>
+                i
+            <field_body>
+                <paragraph>
+                    integer
+"""],
+["""\
+One-liners, no blank lines:
+
+:Author: Me
+:Version: 1
+:Date: 2001-08-11
+:Parameter i: integer
+""",
+"""\
+<document>
+    <paragraph>
+        One-liners, no blank lines:
+    <field_list>
+        <field>
+            <field_name>
+                Author
+            <field_body>
+                <paragraph>
+                    Me
+        <field>
+            <field_name>
+                Version
+            <field_body>
+                <paragraph>
+                    1
+        <field>
+            <field_name>
+                Date
+            <field_body>
+                <paragraph>
+                    2001-08-11
+        <field>
+            <field_name>
+                Parameter
+            <field_argument>
+                i
+            <field_body>
+                <paragraph>
+                    integer
+"""],
+["""\
+:field:
+empty item above, no blank line
+""",
+"""\
+<document>
+    <field_list>
+        <field>
+            <field_name>
+                field
+            <field_body>
+    <system_message level="2" type="WARNING">
+        <paragraph>
+            Unindent without blank line at line 2.
+    <paragraph>
+        empty item above, no blank line
+"""],
+["""\
+Field bodies starting on the next line:
+
+:Author:
+  Me
+:Version:
+  1
+:Date:
+  2001-08-11
+:Parameter i:
+  integer
+""",
+"""\
+<document>
+    <paragraph>
+        Field bodies starting on the next line:
+    <field_list>
+        <field>
+            <field_name>
+                Author
+            <field_body>
+                <paragraph>
+                    Me
+        <field>
+            <field_name>
+                Version
+            <field_body>
+                <paragraph>
+                    1
+        <field>
+            <field_name>
+                Date
+            <field_body>
+                <paragraph>
+                    2001-08-11
+        <field>
+            <field_name>
+                Parameter
+            <field_argument>
+                i
+            <field_body>
+                <paragraph>
+                    integer
+"""],
+["""\
+One-paragraph, multi-liners:
+
+:Authors: Me,
+          Myself,
+          and I
+:Version: 1
+          or so
+:Date: 2001-08-11
+       (Saturday)
+:Parameter i: counter
+              (integer)
+""",
+"""\
+<document>
+    <paragraph>
+        One-paragraph, multi-liners:
+    <field_list>
+        <field>
+            <field_name>
+                Authors
+            <field_body>
+                <paragraph>
+                    Me,
+                    Myself,
+                    and I
+        <field>
+            <field_name>
+                Version
+            <field_body>
+                <paragraph>
+                    1
+                    or so
+        <field>
+            <field_name>
+                Date
+            <field_body>
+                <paragraph>
+                    2001-08-11
+                    (Saturday)
+        <field>
+            <field_name>
+                Parameter
+            <field_argument>
+                i
+            <field_body>
+                <paragraph>
+                    counter
+                    (integer)
+"""],
+["""\
+One-paragraph, multi-liners, not lined up:
+
+:Authors: Me,
+  Myself,
+  and I
+:Version: 1
+  or so
+:Date: 2001-08-11
+  (Saturday)
+:Parameter i: counter
+  (integer)
+""",
+"""\
+<document>
+    <paragraph>
+        One-paragraph, multi-liners, not lined up:
+    <field_list>
+        <field>
+            <field_name>
+                Authors
+            <field_body>
+                <paragraph>
+                    Me,
+                    Myself,
+                    and I
+        <field>
+            <field_name>
+                Version
+            <field_body>
+                <paragraph>
+                    1
+                    or so
+        <field>
+            <field_name>
+                Date
+            <field_body>
+                <paragraph>
+                    2001-08-11
+                    (Saturday)
+        <field>
+            <field_name>
+                Parameter
+            <field_argument>
+                i
+            <field_body>
+                <paragraph>
+                    counter
+                    (integer)
+"""],
+["""\
+Multiple body elements:
+
+:Authors: - Me
+          - Myself
+          - I
+
+:Abstract:
+    This is a field list item's body,
+    containing multiple elements.
+
+    Here's a literal block::
+
+        def f(x):
+            return x**2 + x
+
+    Even nested field lists are possible:
+
+    :Date: 2001-08-11
+    :Day: Saturday
+    :Time: 15:07
+""",
+"""\
+<document>
+    <paragraph>
+        Multiple body elements:
+    <field_list>
+        <field>
+            <field_name>
+                Authors
+            <field_body>
+                <bullet_list bullet="-">
+                    <list_item>
+                        <paragraph>
+                            Me
+                    <list_item>
+                        <paragraph>
+                            Myself
+                    <list_item>
+                        <paragraph>
+                            I
+        <field>
+            <field_name>
+                Abstract
+            <field_body>
+                <paragraph>
+                    This is a field list item's body,
+                    containing multiple elements.
+                <paragraph>
+                    Here's a literal block:
+                <literal_block>
+                    def f(x):
+                        return x**2 + x
+                <paragraph>
+                    Even nested field lists are possible:
+                <field_list>
+                    <field>
+                        <field_name>
+                            Date
+                        <field_body>
+                            <paragraph>
+                                2001-08-11
+                    <field>
+                        <field_name>
+                            Day
+                        <field_body>
+                            <paragraph>
+                                Saturday
+                    <field>
+                        <field_name>
+                            Time
+                        <field_body>
+                            <paragraph>
+                                15:07
+"""],
+["""\
+Nested field lists on one line:
+
+:field1: :field2: :field3: body
+:field4: :field5: :field6: body
+                  :field7: body
+         :field8: body
+         :field9: body line 1
+           body line 2
+""",
+"""\
+<document>
+    <paragraph>
+        Nested field lists on one line:
+    <field_list>
+        <field>
+            <field_name>
+                field1
+            <field_body>
+                <field_list>
+                    <field>
+                        <field_name>
+                            field2
+                        <field_body>
+                            <field_list>
+                                <field>
+                                    <field_name>
+                                        field3
+                                    <field_body>
+                                        <paragraph>
+                                            body
+        <field>
+            <field_name>
+                field4
+            <field_body>
+                <field_list>
+                    <field>
+                        <field_name>
+                            field5
+                        <field_body>
+                            <field_list>
+                                <field>
+                                    <field_name>
+                                        field6
+                                    <field_body>
+                                        <paragraph>
+                                            body
+                                <field>
+                                    <field_name>
+                                        field7
+                                    <field_body>
+                                        <paragraph>
+                                            body
+                    <field>
+                        <field_name>
+                            field8
+                        <field_body>
+                            <paragraph>
+                                body
+                    <field>
+                        <field_name>
+                            field9
+                        <field_body>
+                            <paragraph>
+                                body line 1
+                                body line 2
+"""],
+["""\
+:Parameter i j k: multiple arguments
+""",
+"""\
+<document>
+    <field_list>
+        <field>
+            <field_name>
+                Parameter
+            <field_argument>
+                i
+            <field_argument>
+                j
+            <field_argument>
+                k
+            <field_body>
+                <paragraph>
+                    multiple arguments
+"""],
+["""\
+Some edge cases:
+
+:Empty:
+:Author: Me
+No blank line before this paragraph.
+
+:*Field* `with` **inline** ``markup``: inline markup shouldn't be recognized.
+
+: Field: marker must not begin with whitespace.
+
+:Field : marker must not end with whitespace.
+
+Field: marker is missing its open-colon.
+
+:Field marker is missing its close-colon.
+""",
+"""\
+<document>
+    <paragraph>
+        Some edge cases:
+    <field_list>
+        <field>
+            <field_name>
+                Empty
+            <field_body>
+        <field>
+            <field_name>
+                Author
+            <field_body>
+                <paragraph>
+                    Me
+    <system_message level="2" type="WARNING">
+        <paragraph>
+            Unindent without blank line at line 4.
+    <paragraph>
+        No blank line before this paragraph.
+    <field_list>
+        <field>
+            <field_name>
+                *Field*
+            <field_argument>
+                `with`
+            <field_argument>
+                **inline**
+            <field_argument>
+                ``markup``
+            <field_body>
+                <paragraph>
+                    inline markup shouldn't be recognized.
+    <paragraph>
+        : Field: marker must not begin with whitespace.
+    <paragraph>
+        :Field : marker must not end with whitespace.
+    <paragraph>
+        Field: marker is missing its open-colon.
+    <paragraph>
+        :Field marker is missing its close-colon.
+"""],
+]
+
+if __name__ == '__main__':
+    import unittest
+    unittest.main(defaultTest='suite')
+@
+
+
+1.10
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.9 $
+:Date: $Date: 2002/02/06 02:17:47 $
+d117 1
+a117 1
+    <system_warning level="2" type="WARNING">
+d460 1
+a460 1
+    <system_warning level="2" type="WARNING">
+@
+
+
+1.9
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.8 $
+:Date: $Date: 2001/09/26 03:44:08 $
+d341 67
+@
+
+
+1.8
+log
+@updated for transformation-free initial parse
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.7 $
+:Date: $Date: 2001/09/22 02:42:02 $
+d117 1
+a117 1
+    <system_warning level="1">
+d393 1
+a393 1
+    <system_warning level="1">
+@
+
+
+1.7
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.6 $
+:Date: $Date: 2001/09/18 21:24:27 $
+a419 318
+]
+
+totest['bibliographic_field_lists'] = [
+["""\
+.. Bibliographic element extraction.
+
+:Title: Document Title
+:Abstract:
+    There can only be one abstract.
+
+    It is automatically moved to the end of the other bibliographic elements.
+    
+:Author: Me
+:Version: 1
+:Date: 2001-08-11
+:Parameter i: integer
+""",
+"""\
+<document>
+    <title>
+        Document Title
+    <author>
+        Me
+    <version>
+        1
+    <date>
+        2001-08-11
+    <abstract>
+        <paragraph>
+            There can only be one abstract.
+        <paragraph>
+            It is automatically moved to the end of the other bibliographic elements.
+    <comment>
+        Bibliographic element extraction.
+    <field_list>
+        <field>
+            <field_name>
+                Parameter
+            <field_argument>
+                i
+            <field_body>
+                <paragraph>
+                    integer
+"""],
+["""\
+.. Bibliographic element extraction.
+
+Title
+=====
+:Title: Second Title (this should generate a warning)
+:Subtitle: First Subtitle
+:Abstract: Abstract 1.
+:Author: Me
+:Contact: me@@my.org
+:Version: 1
+:Abstract: Abstract 2 (should generate a warning).
+:Date: 2001-08-11
+:Parameter i: integer
+:Subtitle: Second Subtitle (should generate a warning)
+""",
+"""\
+<document name="title">
+    <title>
+        Title
+    <subtitle>
+        First Subtitle
+    <author>
+        Me
+    <contact>
+        <link refuri="mailto:me@@my.org">
+            me@@my.org
+    <version>
+        1
+    <date>
+        2001-08-11
+    <abstract>
+        <paragraph>
+            Abstract 1.
+    <comment>
+        Bibliographic element extraction.
+    <field_list>
+        <field>
+            <field_name>
+                Title
+            <field_body>
+                <paragraph>
+                    Second Title (this should generate a warning)
+                <system_warning level="2">
+                    <paragraph>
+                        Multiple document titles (bibliographic field "Title").
+        <field>
+            <field_name>
+                Abstract
+            <field_body>
+                <paragraph>
+                    Abstract 2 (should generate a warning).
+                <system_warning level="2">
+                    <paragraph>
+                        There can only be one abstract.
+        <field>
+            <field_name>
+                Parameter
+            <field_argument>
+                i
+            <field_body>
+                <paragraph>
+                    integer
+        <field>
+            <field_name>
+                Subtitle
+            <field_body>
+                <paragraph>
+                    Second Subtitle (should generate a warning)
+                <system_warning level="2">
+                    <paragraph>
+                        Multiple document subtitles (bibliographic field "Subtitle").
+"""],
+["""\
+:Author: - must be a paragraph
+:Status: a *simple* paragraph
+:Date: But only one
+
+       paragraph.
+:Version:
+
+.. and not empty either
+""",
+"""\
+<document>
+    <status>
+        a 
+        <emphasis>
+            simple
+         paragraph
+    <field_list>
+        <field>
+            <field_name>
+                Author
+            <field_body>
+                <bullet_list bullet="-">
+                    <list_item>
+                        <paragraph>
+                            must be a paragraph
+                <system_warning level="2">
+                    <paragraph>
+                        Cannot extract bibliographic field "Author" containing anything other than a single paragraph.
+        <field>
+            <field_name>
+                Date
+            <field_body>
+                <paragraph>
+                    But only one
+                <paragraph>
+                    paragraph.
+                <system_warning level="2">
+                    <paragraph>
+                        Cannot extract compound bibliographic field "Date".
+        <field>
+            <field_name>
+                Version
+            <field_body>
+                <system_warning level="2">
+                    <paragraph>
+                        Cannot extract empty bibliographic field "Version".
+    <comment>
+        and not empty either
+"""],
+["""\
+:Authors: Me, Myself, **I**
+:Authors: PacMan; Ms. PacMan; PacMan, Jr.
+:Authors:
+    Here
+
+    There
+
+    *Everywhere*
+:Authors: - First
+          - Second
+          - Third
+""",
+"""\
+<document>
+    <authors>
+        <author>
+            Me
+        <author>
+            Myself
+        <author>
+            I
+    <authors>
+        <author>
+            PacMan
+        <author>
+            Ms. PacMan
+        <author>
+            PacMan, Jr.
+    <authors>
+        <author>
+            Here
+        <author>
+            There
+        <author>
+            <emphasis>
+                Everywhere
+    <authors>
+        <author>
+            First
+        <author>
+            Second
+        <author>
+            Third
+"""],
+["""\
+:Authors:
+
+:Authors: 1. One
+          2. Two
+
+:Authors:
+    -
+    -
+
+:Authors:
+    - One
+
+    Two
+
+:Authors:
+    - One
+
+      Two
+""",
+"""\
+<document>
+    <field_list>
+        <field>
+            <field_name>
+                Authors
+            <field_body>
+                <system_warning level="2">
+                    <paragraph>
+                        Cannot extract empty bibliographic field "Authors".
+        <field>
+            <field_name>
+                Authors
+            <field_body>
+                <enumerated_list enumtype="arabic" prefix="" start="1" suffix=".">
+                    <list_item>
+                        <paragraph>
+                            One
+                    <list_item>
+                        <paragraph>
+                            Two
+                <system_warning level="2">
+                    <paragraph>
+                        Bibliographic field "Authors" incompatible with extraction: it must contain either a single paragraph (with authors separated by one of ";,"), multiple paragraphs (one per author), or a bullet list with one paragraph (one author) per item.
+        <field>
+            <field_name>
+                Authors
+            <field_body>
+                <bullet_list bullet="-">
+                    <list_item>
+                    <list_item>
+                <system_warning level="2">
+                    <paragraph>
+                        Bibliographic field "Authors" incompatible with extraction: it must contain either a single paragraph (with authors separated by one of ";,"), multiple paragraphs (one per author), or a bullet list with one paragraph (one author) per item.
+        <field>
+            <field_name>
+                Authors
+            <field_body>
+                <bullet_list bullet="-">
+                    <list_item>
+                        <paragraph>
+                            One
+                <paragraph>
+                    Two
+                <system_warning level="2">
+                    <paragraph>
+                        Bibliographic field "Authors" incompatible with extraction: it must contain either a single paragraph (with authors separated by one of ";,"), multiple paragraphs (one per author), or a bullet list with one paragraph (one author) per item.
+        <field>
+            <field_name>
+                Authors
+            <field_body>
+                <bullet_list bullet="-">
+                    <list_item>
+                        <paragraph>
+                            One
+                        <paragraph>
+                            Two
+                <system_warning level="2">
+                    <paragraph>
+                        Bibliographic field "Authors" incompatible with extraction: it must contain either a single paragraph (with authors separated by one of ";,"), multiple paragraphs (one per author), or a bullet list with one paragraph (one author) per item.
+"""],
+["""\
+.. RCS keyword extraction.
+
+:Title: $RCSfile: test_field_lists.py,v $
+:Date: $Date: 2001/09/18 21:24:27 $
+
+RCS keyword 'RCSfile' doesn't change unless the file name changes,
+so it's safe. The 'Date' keyword changes every time the file is
+checked in to CVS, so the test's expected output text has to be
+derived (hacked) in parallel in order to stay in sync.
+""",
+"""\
+<document>
+    <title>
+        test_field_lists.py
+    <date>
+        %s
+    <comment>
+        RCS keyword extraction.
+    <paragraph>
+        RCS keyword 'RCSfile' doesn't change unless the file name changes,
+        so it's safe. The 'Date' keyword changes every time the file is
+        checked in to CVS, so the test's expected output text has to be
+        derived (hacked) in parallel in order to stay in sync.
+""" % ('$Date: 2001/09/18 21:24:27 $'[7:17].replace('/', '-'),)],
+@
+
+
+1.6
+log
+@updated & extended
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.5 $
+:Date: $Date: 2001/09/18 04:44:19 $
+d473 1
+d488 3
+d549 5
+d565 1
+a565 13
+                        Cannot extract bibliographic field "Author" containing anything other than a simple, unformatted paragraph.
+        <field>
+            <field_name>
+                Status
+            <field_body>
+                <paragraph>
+                    a 
+                    <emphasis>
+                        simple
+                     paragraph
+                <system_warning level="2">
+                    <paragraph>
+                        Cannot extract bibliographic field "Status" containing anything other than a simple, unformatted paragraph.
+d717 1
+a717 1
+:Date: $Date: 2001/09/18 04:44:19 $
+d737 1
+a737 1
+""" % ('$Date: 2001/09/18 04:44:19 $'[7:17].replace('/', '-'),)],
+@
+
+
+1.5
+log
+@  - Added a test for RCS keyword handling in bibliographic field list.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2001/09/13 02:39:39 $
+d469 2
+a470 2
+:Title: Second Title
+:Subtitle: The Title field should generate a warning
+d474 1
+a474 1
+:Abstract: Abstract 2.
+d477 1
+d484 1
+a484 1
+        The Title field should generate a warning
+d502 1
+a502 1
+                    Second Title
+d511 1
+a511 1
+                    Abstract 2.
+d523 9
+d535 1
+d556 13
+a568 1
+                        Cannot extract bibliographic field "Author" containing anything other than a simple paragraph.
+d579 1
+a579 1
+                        Cannot extract compound title bibliographic field "Date".
+d719 7
+a725 2
+:Title: Document Title
+:Status: $RCSfile: test_field_lists.py,v $
+d730 3
+a732 3
+        Document Title
+    <status>
+        test_field_lists.py,v
+d735 6
+a740 1
+"""],
+@
+
+
+1.4
+log
+@Updated for simpler dps.nodes._Element.pformat().
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2001/09/07 01:47:00 $
+d692 15
+@
+
+
+1.3
+log
+@ - Added bibliographic field list transformation tests.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.2 $
+:Date: $Date: 2001/09/02 14:04:06 $
+a37 1
+    </paragraph>
+a41 1
+            </field_name>
+a44 3
+                </paragraph>
+            </field_body>
+        </field>
+a47 1
+            </field_name>
+a50 3
+                </paragraph>
+            </field_body>
+        </field>
+a53 1
+            </field_name>
+a56 3
+                </paragraph>
+            </field_body>
+        </field>
+a59 1
+            </field_name>
+a61 1
+            </field_argument>
+a64 5
+                </paragraph>
+            </field_body>
+        </field>
+    </field_list>
+</document>
+a77 1
+    </paragraph>
+a81 1
+            </field_name>
+a84 3
+                </paragraph>
+            </field_body>
+        </field>
+a87 1
+            </field_name>
+a90 3
+                </paragraph>
+            </field_body>
+        </field>
+a93 1
+            </field_name>
+a96 3
+                </paragraph>
+            </field_body>
+        </field>
+a99 1
+            </field_name>
+a101 1
+            </field_argument>
+a104 5
+                </paragraph>
+            </field_body>
+        </field>
+    </field_list>
+</document>
+d116 1
+a116 4
+            </field_name>
+            <field_body/>
+        </field>
+    </field_list>
+a119 2
+        </paragraph>
+    </system_warning>
+a121 2
+    </paragraph>
+</document>
+a138 1
+    </paragraph>
+a142 1
+            </field_name>
+a145 3
+                </paragraph>
+            </field_body>
+        </field>
+a148 1
+            </field_name>
+a151 3
+                </paragraph>
+            </field_body>
+        </field>
+a154 1
+            </field_name>
+a157 3
+                </paragraph>
+            </field_body>
+        </field>
+a160 1
+            </field_name>
+a162 1
+            </field_argument>
+a165 5
+                </paragraph>
+            </field_body>
+        </field>
+    </field_list>
+</document>
+a183 1
+    </paragraph>
+a187 1
+            </field_name>
+a192 3
+                </paragraph>
+            </field_body>
+        </field>
+a195 1
+            </field_name>
+a199 3
+                </paragraph>
+            </field_body>
+        </field>
+a202 1
+            </field_name>
+a206 3
+                </paragraph>
+            </field_body>
+        </field>
+a209 1
+            </field_name>
+a211 1
+            </field_argument>
+a215 5
+                </paragraph>
+            </field_body>
+        </field>
+    </field_list>
+</document>
+a233 1
+    </paragraph>
+a237 1
+            </field_name>
+a242 3
+                </paragraph>
+            </field_body>
+        </field>
+a245 1
+            </field_name>
+a249 3
+                </paragraph>
+            </field_body>
+        </field>
+a252 1
+            </field_name>
+a256 3
+                </paragraph>
+            </field_body>
+        </field>
+a259 1
+            </field_name>
+a261 1
+            </field_argument>
+a265 5
+                </paragraph>
+            </field_body>
+        </field>
+    </field_list>
+</document>
+a292 1
+    </paragraph>
+a296 1
+            </field_name>
+a301 2
+                        </paragraph>
+                    </list_item>
+a304 2
+                        </paragraph>
+                    </list_item>
+a307 5
+                        </paragraph>
+                    </list_item>
+                </bullet_list>
+            </field_body>
+        </field>
+a310 1
+            </field_name>
+a314 1
+                </paragraph>
+a316 1
+                </paragraph>
+a319 1
+                </literal_block>
+a321 1
+                </paragraph>
+a325 1
+                        </field_name>
+a328 3
+                            </paragraph>
+                        </field_body>
+                    </field>
+a331 1
+                        </field_name>
+a334 3
+                            </paragraph>
+                        </field_body>
+                    </field>
+a337 1
+                        </field_name>
+a340 8
+                            </paragraph>
+                        </field_body>
+                    </field>
+                </field_list>
+            </field_body>
+        </field>
+    </field_list>
+</document>
+a350 1
+            </field_name>
+a352 1
+            </field_argument>
+a354 1
+            </field_argument>
+a356 1
+            </field_argument>
+a359 5
+                </paragraph>
+            </field_body>
+        </field>
+    </field_list>
+</document>
+a381 1
+    </paragraph>
+d386 1
+a386 3
+            </field_name>
+            <field_body/>
+        </field>
+a389 1
+            </field_name>
+a392 4
+                </paragraph>
+            </field_body>
+        </field>
+    </field_list>
+a395 2
+        </paragraph>
+    </system_warning>
+a397 1
+    </paragraph>
+a401 1
+            </field_name>
+a403 1
+            </field_argument>
+a405 1
+            </field_argument>
+a407 1
+            </field_argument>
+a410 4
+                </paragraph>
+            </field_body>
+        </field>
+    </field_list>
+a412 1
+    </paragraph>
+a414 1
+    </paragraph>
+a416 1
+    </paragraph>
+a418 2
+    </paragraph>
+</document>
+a440 1
+    </title>
+a442 1
+    </author>
+a444 1
+    </version>
+a446 1
+    </date>
+a449 1
+        </paragraph>
+a451 2
+        </paragraph>
+    </abstract>
+a453 1
+    </comment>
+a457 1
+            </field_name>
+a459 1
+            </field_argument>
+a462 5
+                </paragraph>
+            </field_body>
+        </field>
+    </field_list>
+</document>
+a481 1
+    </title>
+a483 1
+    </subtitle>
+a485 1
+    </author>
+a487 1
+    </version>
+a489 1
+    </date>
+a492 2
+        </paragraph>
+    </abstract>
+a494 1
+    </comment>
+a498 1
+            </field_name>
+a501 1
+                </paragraph>
+a504 4
+                    </paragraph>
+                </system_warning>
+            </field_body>
+        </field>
+a507 1
+            </field_name>
+a510 1
+                </paragraph>
+a513 4
+                    </paragraph>
+                </system_warning>
+            </field_body>
+        </field>
+a516 1
+            </field_name>
+a518 1
+            </field_argument>
+a521 5
+                </paragraph>
+            </field_body>
+        </field>
+    </field_list>
+</document>
+a537 1
+            </field_name>
+a542 3
+                        </paragraph>
+                    </list_item>
+                </bullet_list>
+a545 4
+                    </paragraph>
+                </system_warning>
+            </field_body>
+        </field>
+a548 1
+            </field_name>
+a551 1
+                </paragraph>
+a553 1
+                </paragraph>
+a556 4
+                    </paragraph>
+                </system_warning>
+            </field_body>
+        </field>
+a559 1
+            </field_name>
+a563 5
+                    </paragraph>
+                </system_warning>
+            </field_body>
+        </field>
+    </field_list>
+a565 2
+    </comment>
+</document>
+a584 1
+        </author>
+a586 1
+        </author>
+a588 2
+        </author>
+    </authors>
+a591 1
+        </author>
+a593 1
+        </author>
+a595 2
+        </author>
+    </authors>
+a598 1
+        </author>
+a600 1
+        </author>
+a603 3
+            </emphasis>
+        </author>
+    </authors>
+a606 1
+        </author>
+a608 1
+        </author>
+a610 3
+        </author>
+    </authors>
+</document>
+a637 1
+            </field_name>
+a641 4
+                    </paragraph>
+                </system_warning>
+            </field_body>
+        </field>
+a644 1
+            </field_name>
+a649 2
+                        </paragraph>
+                    </list_item>
+a652 3
+                        </paragraph>
+                    </list_item>
+                </enumerated_list>
+a655 4
+                    </paragraph>
+                </system_warning>
+            </field_body>
+        </field>
+a658 1
+            </field_name>
+d661 2
+a662 3
+                    <list_item/>
+                    <list_item/>
+                </bullet_list>
+a665 4
+                    </paragraph>
+                </system_warning>
+            </field_body>
+        </field>
+a668 1
+            </field_name>
+a673 3
+                        </paragraph>
+                    </list_item>
+                </bullet_list>
+a675 1
+                </paragraph>
+a678 4
+                    </paragraph>
+                </system_warning>
+            </field_body>
+        </field>
+a681 1
+            </field_name>
+a686 1
+                        </paragraph>
+a688 3
+                        </paragraph>
+                    </list_item>
+                </bullet_list>
+a691 6
+                    </paragraph>
+                </system_warning>
+            </field_body>
+        </field>
+    </field_list>
+</document>
+@
+
+
+1.2
+log
+@Removed "id=__file__" from ParserTestSuite call (now auto-detected).
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.1 $
+:Date: $Date: 2001/09/01 16:59:41 $
+d591 397
+@
+
+
+1.1
+log
+@Refactored from the monolithic restructuredtext/test_states.py, using the Garth Kidd's framework. Thanks Garth!
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision$
+:Date: $Date$
+d16 1
+a16 1
+    s = RSTTestSupport.ParserTestSuite(id=__file__)
+@
+

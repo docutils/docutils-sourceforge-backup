@@ -1,0 +1,115 @@
+head	1.1;
+access;
+symbols
+	Rrefactor-test:1.1.0.2;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2001.07.26.04.55.50;	author gtk;	state dead;
+branches
+	1.1.2.1;
+next	;
+
+1.1.2.1
+date	2001.07.26.04.55.50;	author gtk;	state Exp;
+branches;
+next	1.1.2.2;
+
+1.1.2.2
+date	2001.07.29.09.05.39;	author gtk;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@file README.txt was initially added on branch Rrefactor-test.
+@
+text
+@@
+
+
+1.1.2.1
+log
+@Beginning work on refactoring test suite. My apologies to David Goodger
+for the massive stuff-up installing syncmail; it *still* doesn't work.
+@
+text
+@a0 32
+==============
+ README: test
+==============
+
+Author: Garth Kidd
+Contact: garth@@deadlybloodyserious.com
+Version: Rrefactor-test (EXPERIMENTAL)
+Date: $Date: 2001/07/25 08:11:25 $
+Web-site: http://structuredtext.sf.net/
+
+**THIS IS AN EXPERIMENTAL VERSION**
+
+**IF YOU WANT THE OFFICIAL VERSION, CHECK OUT ``RELEASE``**
+
+Notes on my restructuring of the test framework: 
+
+* This experiment is a direct result of tracker item `443275`_, 
+  "refactor tests". I raised that item, so no surprises there. 
+
+  .. http://sf.net/tracker/?func=detail&aid=443275&group_id=7050&atid=107050
+
+* I'm also addressing tracker item `443273`_, "need new test types."
+
+  .. http://sf.net/tracker/?func=detail&aid=443273&group_id=7050&atid=107050
+
+* I'm removing restructuredtext/test_states.py and replacing it with 
+  test/*. The specific reason for moving it is that I can't see a 
+  need for the test suite to be installed into someone's Python 
+  distribution. If there turns out to be a good reason for moving 
+  test/* to restructuredtext/test/*, let me know. 
+
+* 
+@
+
+
+1.1.2.2
+log
+@First stage of the refactoring. Victory so far in developing the framework
+itself. Plenty to do so far, in particular migrating all existing tests.
+@
+text
+@d8 1
+a8 1
+Date: $Date: 2001/07/26 04:55:50 $
+a14 20
+Files
+-----
+
+``README.txt``: 
+    You're reading it. 
+
+``TestFramework.py``: 
+    Provides some handy classes, command line parsing, a ``main()`` method 
+    for other tests to use, and some shared state. 
+
+``test_all.py``: 
+    Finds all test_* apart from itself, builds a TestSuite, and runs it. 
+
+    **DISCLAIMER:** Currently doesn't do any of the searching. Oops. 
+
+``test_*.py``: individual tests. 
+
+Notes
+-----
+
+d32 1
+a32 1
+ 
+@
+
+

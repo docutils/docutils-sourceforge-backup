@@ -1,0 +1,50 @@
+=======================
+ Modernising Packaging
+=======================
+
+:Date: 2022-01-03
+
+Proposal
+========
+
+Adam Turner proposed `patch#186`_ on *Modernise packaging*
+
+  I had a go at modernising the packaging stack. setup.py based invocations
+  have been deprecated
+  (https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html), and
+  setuptools may remove them in the future.
+
+  This takes the opportunity to move to a PEP 621 based declarative config, and
+  also fixes a longstanding TODO item about providing script wappers for the
+  frontend tools on windows, by migrating them to entry points.
+
+  I've updated install and development docs with the new guidance, and updated
+  references to the frontend tools to remove .py, given they are now installed
+  as proper scripts.
+
+Patch commit summary from Adam's `pull request#1`_ ::
+
+    4a7ba6f Use flit and pyproject.toml
+    9e2f8bb Add `docutils-cli` entry point
+    84cf997 Use entry points for `rst*` tools
+    2986a9f Update docs for packaging changes
+    cdb96cd Deprecate `rst*` entry points in favour of `docutils-cli`
+    0535577 Update documentation to focus on `docutils-cli`
+
+Analysis
+========
+
+Use flit and pyproject.toml
+---------------------------
+
+Removes MANIFEST.in, install.py, setup.py and setup.cfg and adds pyproject.toml.
+
+Building of source and wheel distributions is then done with build or flit.
+flit can also replace twine for upload to pypi.
+
+Question: Who is using source distributions and relies on setup.py ?
+
+.. _patch#186: https://sourceforge.net/p/docutils/patches/186/
+.. _pull request#1: https://github.com/AA-Turner/docutils/pull/1/commits
+.. _using manifets in: https://packaging.python.org/en/latest/guides/using-manifest-in/
+

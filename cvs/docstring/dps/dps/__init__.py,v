@@ -1,0 +1,170 @@
+head	1.5;
+access;
+symbols
+	rel-0-3:1.1.1.1 open:1.1.1;
+locks; strict;
+comment	@# @;
+
+
+1.5
+date	2002.03.16.06.09.45;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2002.02.07.02.03.01;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2002.02.06.02.41.37;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2002.01.16.02.51.47;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.07.22.22.35.43;	author goodger;	state Exp;
+branches
+	1.1.1.1;
+next	;
+
+1.1.1.1
+date	2001.07.22.22.35.43;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2002/02/07 02:03:01 $
+:Copyright: This module has been placed in the public domain.
+
+This is the Docstring Processing System (DPS) Python package.
+
+Package Structure
+=================
+
+Modules:
+
+- __init__.py: Contains the package docstring only (this text).
+
+- core.py: Contains the ``Publisher`` class and ``publish()`` convenience
+  function.
+
+- nodes.py: DPS document tree (doctree) node class library.
+
+- roman.py: Conversion to and from Roman numerals. Courtesy of Mark
+  Pilgrim (http://diveintopython.org/).
+
+- statemachine.py: A finite state machine specialized for
+  regular-expression-based text filters.
+
+- urischemes.py: Contains a complete mapping of known URI addressing
+  scheme names to descriptions.
+
+- utils.py: Contains the ``Reporter`` system warning class and miscellaneous
+  utilities.
+
+Subpackages:
+
+- languages: Language-specific mappings of terms.
+
+- parsers: Syntax-specific input parser modules or packages.
+
+- readers: Context-specific input handlers which understand the data
+  source and manage a parser.
+
+- transforms: Modules used by readers and writers to modify DPS
+  doctrees.
+
+- writers: Format-specific output translators.
+"""
+
+__docformat__ = 'reStructuredText'
+@
+
+
+1.4
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2002/02/06 02:41:37 $
+d10 1
+a10 1
+This is the Docstring Processing System (DPS) Python package. 
+@
+
+
+1.3
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.2 $
+:Date: $Date: 2002/01/16 02:51:47 $
+d19 2
+a20 1
+- core.py: Contains the ``Publisher`` class and ``convert()`` function.
+d33 2
+a34 1
+- utils.py: Miscellaneous utilities.
+@
+
+
+1.2
+log
+@  - Added docstring.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision$
+:Date: $Date$
+d17 3
+a19 1
+- __init__.py: Contains package docstring only (this text).
+d48 2
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d2 44
+a45 2
+# $Id: __init__.py,v 1.1 2001/05/22 00:25:28 David_Goodger Exp $
+# by David Goodger
+@
+
+
+1.1.1.1
+log
+@First Imported.
+@
+text
+@@

@@ -1,0 +1,828 @@
+head	1.15;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.15
+date	2002.02.13.02.18.54;	author goodger;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2002.02.07.01.52.52;	author goodger;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2002.02.06.02.18.27;	author goodger;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2002.01.30.05.01.55;	author goodger;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2002.01.25.23.43.53;	author goodger;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2001.11.22.04.21.23;	author goodger;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2001.10.18.03.58.02;	author goodger;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2001.09.21.03.53.44;	author goodger;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2001.09.10.04.25.59;	author goodger;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2001.09.08.03.30.08;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2001.08.25.02.14.30;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.08.22.03.56.44;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.08.03.01.19.37;	author gtk;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.07.27.04.10.28;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.07.27.02.11.50;	author gtk;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.15
+log
+@removed unused import
+@
+text
+@#!/usr/bin/env python
+
+"""
+:Author: Garth Kidd
+:Contact: garth@@deadlybloodyserious.com
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.14 $
+:Date: $Date: 2002/02/07 01:52:52 $
+:Copyright: This module has been placed in the public domain.
+"""
+
+import sys, os, getopt
+import dps.utils
+try:
+    from restructuredtext import Parser
+except ImportError:
+    from dps.parsers.restructuredtext import Parser
+
+
+usage_header = """\
+quicktest.py: quickly test the restructuredtext parser.
+
+Usage::
+
+    quicktest.py [options] [filename]
+
+``filename`` is the name of the file to use as input (default is stdin).
+
+Options:
+"""
+
+options = [('pretty', 'p',
+            'output pretty pseudo-xml: no "&abc;" entities (default)'),
+           ('test', 't', 'output test-ready data (input & expected output, '
+            'ready to be copied to a parser test module)'),
+           ('rawxml', 'r', 'output raw XML'),
+           ('styledxml=', 's', 'output raw XML with XSL style sheet reference '
+            '(filename supplied in the option argument)'),
+           ('xml', 'x', 'output pretty XML (indented)'),
+           ('debug', 'd', 'debug mode (lots of output)'),
+           ('help', 'h', 'show help text')]
+"""See distutils.fancy_getopt.FancyGetopt.__init__ for a description of the
+data structure: (long option, short option, description)."""
+
+def usage():
+    print usage_header
+    for longopt, shortopt, description in options:
+        if longopt[-1:] == '=':
+            opts = '-%s arg, --%sarg' % (shortopt, longopt)
+        else:
+            opts = '-%s, --%s' % (shortopt, longopt),
+        print '%-15s' % opts,
+        if len(opts) > 14:
+            print '%-16s' % '\n',
+        while len(description) > 60:
+            limit = description.rindex(' ', 0, 60)
+            print description[:limit].strip()
+            description = description[limit + 1:]
+            print '%-15s' % ' ',
+        print description
+
+def _pretty(input, document, optargs):
+    return document.pformat()
+
+def _rawxml(input, document, optargs):
+    return document.asdom().toxml()
+
+def _styledxml(input, document, optargs):
+    docnode = document.asdom().childNodes[0]
+    return '%s\n%s\n%s' % (
+          '<?xml version="1.0" encoding="ISO-8859-1"?>',
+          '<?xml-stylesheet type="text/xsl" href="%s"?>' % optargs['styledxml'],
+          docnode.toxml())
+
+def _prettyxml(input, document, optargs):
+    return document.asdom().toprettyxml('    ', '\n')
+
+def _test(input, document, optargs):
+    tq = '"""'
+    output = document.pformat()         # same as _pretty()
+    return """\
+    totest['change_this_test_name'] = [
+[%s\\
+%s
+%s,
+%s\\
+%s
+%s],
+]
+""" % ( tq, escape(input.rstrip()), tq, tq, escape(output.rstrip()), tq )
+
+def escape(text):
+    """
+    Return `text` in a form compatible with triple-double-quoted Python strings.
+    """
+    text = text.replace('\\', '\\\\')   # escape backslashes
+    text = text.replace('"""', '""\\"') # break up triple-double-quotes
+    text = text.replace(' \n', ' \\n\\\n') # protect trailing whitespace
+    return text
+
+_outputFormatters = {
+    'rawxml': _rawxml,
+    'styledxml': _styledxml,
+    'xml': _prettyxml,
+    'pretty' : _pretty,
+    'test': _test
+    }
+
+def format(outputFormat, input, document, optargs):
+    formatter = _outputFormatters[outputFormat]
+    return formatter(input, document, optargs)
+
+def getArgs():
+    if os.name == 'mac' and len(sys.argv) <= 1:
+        return macGetArgs()
+    else:
+        return posixGetArgs(sys.argv[1:])
+
+def posixGetArgs(argv):
+    outputFormat = 'pretty'
+    # convert fancy_getopt style option list to getopt.getopt() arguments
+    shortopts = ''.join([option[1] + ':' * (option[0][-1:] == '=')
+                         for option in options if option[1]])
+    longopts = [option[0] for option in options if option[0]]
+    try:
+        opts, args = getopt.getopt(argv, shortopts, longopts)
+    except getopt.GetoptError:
+        usage()
+        sys.exit(2)
+    optargs = {'debug': 0}
+    for o, a in opts:
+        if o in ['-h', '--help']:
+            usage()
+            sys.exit()
+        elif o in ['-r', '--rawxml']:
+            outputFormat = 'rawxml'
+        elif o in ['-s', '--styledxml']:
+            outputFormat = 'styledxml'
+            optargs['styledxml'] = a
+        elif o in ['-x', '--xml']:
+            outputFormat = 'xml'
+        elif o in ['-p', '--pretty']:
+            outputFormat = 'pretty'
+        elif o in ['-t', '--test']:
+            outputFormat = 'test'
+        elif o in ['-d', '--debug']:
+            optargs['debug'] = 1
+        else:
+            raise getopt.GetoptError, "getopt should have saved us!"
+    if len(args) > 1:
+        print "Only one file at a time, thanks."
+        usage()
+        sys.exit(1)
+    if len(args) == 1:
+        inputFile = open(args[0])
+    else:
+        inputFile = sys.stdin
+    return inputFile, outputFormat, optargs
+
+def macGetArgs():
+    import EasyDialogs
+    EasyDialogs.Message("""\
+In the following window, please:
+
+1. Choose an output format from the "Option" list.
+2. Click "Add" (if you don't, the default format will
+   be "pretty").
+3. Click "Add existing file..." and choose an input file.
+4. Click "OK".""")
+    optionlist = [(longopt, description)
+                  for (longopt, shortopt, description) in options]
+    argv = EasyDialogs.GetArgv(optionlist=optionlist, addnewfile=0, addfolder=0)
+    return posixGetArgs(argv)
+
+def main():
+    inputFile, outputFormat, optargs = getArgs() # process cmdline arguments
+    parser = Parser()
+    input = inputFile.read()
+    document = dps.utils.newdocument(debug=optargs['debug'])
+    parser.parse(input, document)
+    output = format(outputFormat, input, document, optargs)
+    print output,
+
+
+if __name__ == '__main__':
+    sys.stderr = sys.stdout
+    main()
+@
+
+
+1.14
+log
+@administrivia
+@
+text
+@d8 2
+a9 2
+:Revision: $Revision: 1.13 $
+:Date: $Date: 2002/02/06 02:18:27 $
+a13 1
+from StringIO import StringIO
+@
+
+
+1.13
+log
+@updated
+@
+text
+@d6 4
+a9 2
+:Revision: $Revision: 1.12 $
+:Date: $Date: 2002/01/30 05:01:55 $
+@
+
+
+1.12
+log
+@  - Updated for new document Node creation protocol.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.11 $
+:Date: $Date: 2002/01/25 23:43:53 $
+d177 1
+a177 1
+    parser = Parser(debug=optargs['debug'])
+d179 1
+a179 1
+    document = dps.utils.newdocument()
+@
+
+
+1.11
+log
+@protect trailing whitespace
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.10 $
+:Date: $Date: 2001/11/22 04:21:23 $
+d13 1
+a13 1
+
+d177 4
+a180 3
+    parser = Parser(debug=optargs['debug']) # create a parser
+    input = inputFile.read()            # gather input
+    document = parser.parse(input)      # parse the input
+@
+
+
+1.10
+log
+@  - Added --debug/-d option.  - Minor fixes.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.9 $
+:Date: $Date: 2001/10/18 03:58:02 $
+d96 4
+a99 1
+    return text.replace('\\', '\\\\').replace('"""', '""\\"')
+@
+
+
+1.9
+log
+@  - Added XSL style sheet filename argument to --styledxml option.  - Made raw & styled XML truly raw.  - Improved usage().
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.8 $
+:Date: $Date: 2001/09/21 03:53:44 $
+d40 1
+a44 1
+#(long option, short option, description)
+d80 1
+a80 1
+    output = _pretty(input, document)
+d127 1
+a127 1
+    optargs = {}
+d143 2
+d174 1
+a174 1
+    parser = Parser()                   # create a parser
+d182 1
+@
+
+
+1.8
+log
+@  - Added --styledxml output option.    See sandbox/rtxt2html for style sheets.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.7 $
+:Date: $Date: 2001/09/10 04:25:59 $
+d32 1
+a32 2
+options = [#(long option, short option, description)
+           ('pretty', 'p',
+d34 2
+a35 1
+           ('test', 't', 'output parser test data (input & expected output)'),
+d37 2
+a38 1
+           ('styledxml', 's', 'output XML with XSL style sheet reference'),
+d41 2
+d44 1
+d48 6
+a53 2
+        print '-%s, --%-9s' % (shortopt, longopt),
+        if len(longopt) > 8:
+d55 5
+d62 1
+a62 1
+def _pretty(input, document):
+d65 2
+a66 2
+def _rawxml(input, document):
+    return document.asdom().toprettyxml('', '\n')
+d68 1
+a68 1
+def _styledxml(input, document):
+d72 2
+a73 2
+          '<?xml-stylesheet type="text/xsl" href="rtxt2html.xsl"?>',
+          docnode.toprettyxml('', '\n'))
+d75 1
+a75 1
+def _prettyxml(input, document):
+d78 1
+a78 1
+def _test(input, document):
+d106 1
+a106 1
+def format(outputFormat, input, document):
+d108 1
+a108 1
+    return formatter(input, document)
+d118 4
+a121 2
+    shortopts = ''.join([option[1] for option in options])
+    longopts = [option[0] for option in options]
+d127 1
+d136 1
+d153 1
+a153 1
+    return inputFile, outputFormat
+d171 1
+a171 1
+    inputFile, outputFormat = getArgs() # process cmdline arguments
+d175 1
+a175 1
+    output = format(outputFormat, input, document)
+@
+
+
+1.7
+log
+@  - Added rudimentary interface for MacOS.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.6 $
+:Date: $Date: 2001/09/08 03:30:08 $
+a34 1
+           ('rawxml', 'r', 'output raw xml'),
+d36 3
+a38 1
+           ('xml', 'x', 'output pretty xml (indented)'),
+d55 7
+d87 1
+a103 1
+    print 'posixGetArgs: argv=%r' % (argv,)
+d118 2
+d158 3
+a160 1
+    print format(outputFormat, input, document), # format & print
+@
+
+
+1.6
+log
+@  - Removed -q/--quiet option.  - Converted to .pformat().  - Using minidom.Document.toprettyxml() now.  - Factored getArgs() out of main(), making main() a 5-liner.  - Beginnings of an interface for an OS lacking a command line.  - I think it's pretty enough now to get rid of the self-deprecating    comment at the top. ;-)
+@
+text
+@a2 17
+"""\
+quicktest.py: quickly test the restructuredtext parser.
+
+Usage::
+
+    quicktest.py [-p|-r|-t|-x] [filename]
+
+``filename`` is the name of the file to use as input (default is stdin).
+
+Options:
+
+-p, --pretty  output pretty pseudo-xml: no '&abc;' entities (default)
+-r, --rawxml  output raw xml
+-t, --test    output in test format as per test_states.py
+-x, --xml     output pretty xml (indented)
+"""
+
+d6 2
+a7 2
+:Revision: $Revision: 1.5 $
+:Date: $Date: 2001/08/25 02:14:30 $
+a8 1
+
+d19 21
+d41 6
+a46 1
+    print __doc__
+d89 4
+a92 4
+	if os.name == 'mac' and len(sys.argv) <= 1:
+		return macGetArgs()
+	else:
+		return posixGetArgs()
+d94 2
+a95 1
+def posixGetArgs():
+d97 2
+d100 1
+a100 2
+        opts, args = getopt.getopt(sys.argv[1:], "rxpth",
+            [ "rawxml", "xml", "pretty", "test", "help" ])
+d105 1
+a105 1
+        if o in ['-h', '--help']: # undocumented!
+d117 2
+a118 2
+            raise AssertionError, "getopt should have saved us!"
+    if len(args)>1:
+d127 15
+@
+
+
+1.5
+log
+@  - Changed --xml to be pretty-print indented.  - Added --rawxml.  - Improved --test output, including escaping backslashes & """'s.  - Fixed a bug I introduced last time.
+@
+text
+@a1 4
+#
+# I used to have a much prettier version of this script, but
+# inadvertently deleted it. Oops. Here's a quick, ugly, grotty hack
+# as a temporary replacement. --gtk
+d8 1
+a8 1
+    quicktest.py [-p|-q|-r|-t|-x] [-q] [filename]
+a14 1
+-q, --quiet   don't print delimeters (except test wrappers)
+d23 2
+a24 2
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2001/08/22 03:56:44 $
+d29 1
+a29 2
+import sys
+import getopt
+d41 1
+a41 6
+    return document.pprint()
+
+def _xml(document, indent):
+    writer = StringIO()
+    document.asdom().writexml(writer, '', indent, '\n')
+    return writer.getvalue()
+d44 1
+a44 1
+    return _xml(document, '')
+d47 1
+a47 1
+    return _xml(document, '    ')
+d80 7
+a86 1
+def main():
+a87 2
+    isQuiet = 0
+
+d89 2
+a90 2
+        opts, args = getopt.getopt(sys.argv[1:], "rxptq",
+            [ "rawxml", "xml", "pretty", "test", "quiet" ])
+a93 1
+
+a105 2
+        elif o in ['-q', '--quiet']:
+            isQuiet = 1
+a107 1
+
+a111 1
+
+d116 1
+d118 2
+a119 3
+    # All of that hard work getting the options, when doing the work
+    # couldn't possibly be simpler:
+
+a121 2
+    if not isQuiet:                     # print a delimiter
+        print '=>'
+@
+
+
+1.4
+log
+@  - Reworked for clarity, brevity.  - Factored parsing out of formatting.
+@
+text
+@a1 1
+# $Id: quicktest.py,v 1.3 2001/08/03 01:19:37 gtk Exp $
+d10 1
+a10 1
+Usage: quicktest.py [-x|-p|-t] [-q] [filename]
+d12 11
+a22 5
+    filename     : filename to use as input (default is stdin)
+    -x --xml     : output raw xml
+    -p --pretty  : output pretty print (default)
+    -t --test    : output in test format as per test_states.py
+    -q --quiet   : don't print delimeters (except test wrappers)
+d28 2
+a29 2
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2001/08/03 01:19:37 $
+d36 2
+d49 10
+a58 2
+def _xml(input, document):
+    return document.asdom().toxml()
+d62 1
+a62 1
+    output = _pretty(document)
+d64 1
+a64 1
+    proven['change_this_test_name'] = [
+d71 8
+a78 1
+]""" % ( tq, input, tq, tq, output, tq )
+d81 2
+a82 1
+    'xml': _xml,
+d96 2
+a97 2
+        opts, args = getopt.getopt(sys.argv[1:], "xptq",
+            [ "xml", "pretty", "test", "quiet" ])
+d106 2
+d137 1
+a137 1
+    print format(outputFormat, input, document) # format & print
+@
+
+
+1.3
+log
+@Fleshed out to add XML output, simple test output.
+
+To do:
+
+* add better test output
+* add HTML output when we develop a basic gpdi-XHTML XSLT template
+@
+text
+@d2 2
+a3 2
+# $Id: quicktest.py,v 1.2 2001/07/27 04:10:28 goodger Exp $
+# 
+d9 1
+a9 1
+quicktest.py: quickly test the restructuredtext parser. 
+d11 1
+a11 1
+Usage: quicktest.py [-x|-p|-t] [-q] [filename] 
+d21 5
+a25 5
+Author: Garth Kidd
+Contact: garth@@deadlybloodyserious.com
+Revision: $Revision: 1.2 $
+Date: $Date: 2001/07/27 04:10:28 $
+Copyright: This module has been placed in the public domain.
+a29 1
+import dps.parsers.restructuredtext
+d31 4
+d36 1
+a36 1
+def usage(): 
+d39 2
+a40 2
+def _parse_pretty(parser, text):
+    return parser.parse(text).pprint()
+d42 2
+a43 2
+def _parse_xml(parser, text):
+    return parser.parse(text).asdom().toxml()
+d45 1
+a45 1
+def _parse_test(parser, text):
+d47 1
+a47 1
+    output = _parse_pretty(parser, text)
+d56 1
+a56 1
+]""" % ( tq, text, tq, tq, output, tq )
+d58 4
+a61 4
+_outputHandlers = {
+    'xml': _parse_xml,
+    'pretty' : _parse_pretty,
+    'test': _parse_test
+d64 5
+a68 5
+def formattedOutput(format, parser, text): 
+    handler = _outputHandlers[format]
+    return apply(handler, (parser, text))
+    
+def main(): 
+a69 1
+    inputFile = sys.stdin
+d78 1
+a78 1
+    
+d93 1
+a93 1
+    
+d98 1
+a98 1
+    
+d101 2
+a105 6
+    
+    # create a parser
+    parser = dps.parsers.restructuredtext.Parser()
+
+    # gather input
+    input = inputFile.read()
+d107 3
+a109 2
+    # print a delimiter
+    if not isQuiet:
+d111 2
+a112 3
+        
+    # print the parser output
+    print formattedOutput(outputFormat, parser, input)
+@
+
+
+1.2
+log
+@simplified input
+@
+text
+@d2 1
+a2 1
+# $Id: quicktest.py,v 1.1 2001/07/27 02:11:50 gtk Exp $
+d4 3
+a6 3
+# I used to have a much prettier version of this script, but inadvertently 
+# deleted it. Oops. Here's a quick, ugly, grotty hack as a temporary 
+# replacement. --gtk
+d11 1
+a11 5
+No command line arguments are supported in this version. 
+
+Proposed usage::
+
+  quicktest.py [-x|-p|-t] [filename] 
+d17 1
+d23 2
+a24 2
+Revision: $Revision: 1.1 $
+Date: $Date: 2001/07/27 02:11:50 $
+d31 1
+d33 2
+a34 5
+# create a parser
+p = dps.parsers.restructuredtext.Parser()
+
+# gather input
+input = sys.stdin.read()
+d36 2
+a37 2
+# generate parsed output
+o = p.parse(input)
+d39 76
+a114 2
+# print a delimiter
+print '=>'
+d116 2
+a117 2
+# print the parser output
+print o.pprint()
+@
+
+
+1.1
+log
+@Added tools directory, quicktest.py to help people familiarise themselves
+with the parser. Please accept my apologies for the current grotty hack
+nature of quicktest.py. A meager excuse is contained within the source.
+@
+text
+@d2 1
+a2 1
+# $Id$
+d26 2
+a27 2
+Revision: $Revision: 1.1.1.1 $
+Date: $Date: 2001/07/21 22:14:04 $
+d32 1
+d39 1
+a39 6
+input = []
+try: 
+  while 1:
+    input.append(raw_input())
+except EOFError:
+  pass
+d42 1
+a42 1
+o = p.parse('\n'.join(input))
+@
+

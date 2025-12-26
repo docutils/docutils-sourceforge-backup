@@ -1,0 +1,476 @@
+==========================
+ Docutils Front-End Tools
+==========================
+
+:Author: David Goodger
+:Contact: goodger@users.sourceforge.net
+:Revision: $Revision: 1.9 $
+:Date: $Date: 2002/08/01 00:23:26 $
+
+Once the Docutils package is unpacked, you will discover a "``tools``"
+directory containing several front ends for common Docutils
+processing.  Rather than a single all-purpose program, Docutils has
+many small front ends, each specialized for a specific "Reader" (which
+knows how to interpret a file in context), a "Parser" (which
+understands the syntax of the text), and a "Writer" (which knows how
+to generate a specific data format).  Most front ends have common
+options and the same command-line usage pattern::
+
+    toolname [options] [<source> [<destination]]
+
+The exceptions are buildhtml.py_ and pep2html.py_.  See html.py_ for
+concrete examples.  Each tool has a "``--help``" option which lists
+the `command-line options`_ and arguments it supports.  Processing can
+also be customized with `configuration files`_.
+
+The two arguments, "source" and "destination", are optional.  If only
+one argument (source) is specified, the standard output (stdout) is
+used for the destination.  If no arguments are specified, the standard
+input (stdin) is used for the source as well.
+
+
+.. contents::
+
+
+buildhtml.py
+============
+
+:Readers: Standalone, PEP
+:Parser: reStructuredText
+:Writers: HTML, PEP/HTML
+
+Use ``buildhtml.py`` to generate .html from all the .txt files
+(including PEPs) in each <directory> given, and their subdirectories
+too.  (Use the ``--local`` option to skip subdirectories.)
+
+Usage::
+
+    buildhtml.py [options] [<directory> ...]
+
+After unpacking the Docutils package, the following shell commands
+will generate HTML for all included documentation::
+
+    cd docutils/tools
+    buildhtml.py ..
+
+For official releases, the directory may be called "docutils-X.Y",
+where "X.Y" is the release version.  Alternatively::
+
+    cd docutils
+    tools/buildhtml.py --config=tools/docutils.conf
+
+The current directory (and all subdirectories) is chosen by default if
+no directory is named.  Incomplete files (such as spec/doctree.txt)
+may generate system messages; use the ``--quiet`` option to suppress
+all warnings.  The ``--config`` option ensures that the correct
+stylesheets, templates, and settings are in place (``./docutils.conf``
+is picked up automatically).  Command-line options may be used to
+override config file settings or replace them altogether.
+
+
+html.py
+=======
+
+:Reader: Standalone
+:Parser: reStructuredText
+:Writer: HTML
+
+The ``html.py`` front end reads standalone reStructuredText source
+files and produces HTML 4 (XHTML 1) output compatible with modern
+browsers.  For example, to process a reStructuredText file
+"``test.txt``" into HTML::
+
+    html.py test.txt test.html
+
+In fact, there *is* a "``test.txt``" file in the "``tools``"
+directory.  It contains "at least one example of each reStructuredText
+construct", including intentional errors.  Use it to put the system
+through its paces and compare input to output.
+
+Now open the "``test.html``" file in your favorite browser to see the
+results.  To get a footer with a link to the source file, date & time
+of processing, and links to the Docutils projects, add some options::
+
+    html.py -stg test.txt test.html
+
+
+Stylesheets
+-----------
+
+``html.py`` inserts into the generated HTML a link to a cascading
+stylesheet, defaulting to "``default.css``" (override with a
+"``--stylesheet``" command-line option or with a configuration file).
+The "``tools/default.css``" stylesheet is provided for basic use.  To
+experiment with styles, rather than editing the default stylesheet
+(which will be updated as the project evolves), it is recommended to
+use the "``@import``" statement to create a "wrapper" stylesheet.  For
+example, a "``my.css``" stylesheet could contain the following::
+
+    @import url(default.css);
+    
+    h1, h2, h3, h4, h5, h6, p.topic-title {
+      font-family: sans-serif }
+
+Generate HTML with the following command::
+
+    html.py -stg --stylesheet my.css test.txt test.html
+
+When viewed in a browser, the new "wrapper" stylesheet will change the
+typeface family of titles to "sans serif", typically Helvetica or
+Arial.  Other styles will not be affected.  Styles in wrapper
+stylesheets override styles in imported stylesheets, enabling
+incremental experimentation.
+
+
+pep.py
+======
+
+:Reader: PEP
+:Parser: reStructuredText
+:Writer: PEP/HTML
+
+``pep.py`` reads a new-style PEP (marked up with reStructuredText) and
+produces HTML.  It requires a template file and a stylesheet.  By
+default, it makes use of a "``pep-html-template``" file and a
+"``default.css``" stylesheet in the current directory, but these can
+be overridden by command-line options or configuration files.  The
+"``tools/stylesheets/pep.css``" stylesheet is intended specifically
+for PEP use.
+
+The "``docutils.conf``" `configuration file`_ in the "``spec``"
+directory of Docutils contains a default setup for use in processing
+the PEP files there (``spec/pep-*.txt``) into HTML.  It specifies a
+default template (``tools/pep-html-template``) and a default
+stylesheet (``tools/stylesheets/pep.css``).  See Stylesheets_ above
+for more information.
+
+
+pep2html.py
+===========
+
+:Reader: PEP
+:Parser: reStructuredText
+:Writer: PEP/HTML
+
+``pep2html.py`` is a modified version of the original script by
+Fredrik Lundh, with support for Docutils added.  It reads the
+beginning of a PEP text file to determine the format (old-style
+indented or new-style reStructuredText) and processes accordingly.
+Since it does not use the Docutils front end mechanism (the common
+command-line options are not supported), it must be configured using
+`configuration files`_.  The template and stylesheet requirements of
+``pep2html.py`` are the same as those of `pep.py`_ above.
+
+Arguments to ``pep2html.py`` may be a list of PEP numbers or .txt
+files.  If no arguments are given, all files of the form
+"``pep-*.txt``" are processed.
+
+
+docutils-xml.py
+===============
+
+:Reader: Standalone
+:Parser: reStructuredText
+:Writer: XML (Docutils native)
+
+The ``docutils-xml.py`` front end produces Docutils-native XML output.
+This can be transformed with standard XML tools such as XSLT
+processors into arbitrary final forms.
+
+
+publish.py
+==========
+
+:Reader: Standalone
+:Parser: reStructuredText
+:Writer: Pseudo-XML
+
+``publish.py`` is used for debugging the Docutils Reader -> Transform
+-> Writer pipeline.  It produces a compact pretty-printed
+"pseudo-XML", where nesting is indicated by indentation (no end-tags).
+External attributes for all elements are output, and internal
+attributes for any leftover "pending" elements are also given.
+
+
+quicktest.py
+============
+
+:Reader: N/A
+:Parser: reStructuredText
+:Writer: N/A
+
+The ``quicktest.py`` tool is used for testing the reStructuredText
+parser.  It does not use a Docutils Reader or Writer or the standard
+Docutils command-line options.  Rather, it does its own I/O and calls
+the parser directly.  No transforms are applied to the parsed
+document.  Various forms output are possible:
+
+- Pretty-printed pseudo-XML (default)
+- Test data (Python list of input and pseudo-XML output strings;
+  useful for creating new test cases)
+- Pretty-printed native XML
+- Raw native XML (with or without a stylesheet reference)
+
+
+Customization
+=============
+
+Command-Line Options
+--------------------
+
+Each front-end tool supports command-line options for one-off
+customization.  For persistent customization, use `configuration
+files`_.
+
+Use the "--help" option on each of the front ends to list the
+command-line options it supports.  Command-line options and their
+corresponding configuration file entry names are listed in
+`Configuration File Entries`_ below.
+
+
+.. _configuration file:
+
+Configuration Files
+-------------------
+
+Configuration files are used for persistent customization; they can be
+set once and take effect every time you use a front-end tool.
+
+By default, Docutils checks the following places for configuration
+files, in the following order:
+
+1. ``/etc/docutils.conf``: This is a system-wide configuration file,
+   applicable to all Docutils processing on the system.
+
+2. ``./docutils.conf``: This is a project-specific configuration file,
+   located in the current directory.  The Docutils front end has to be
+   executed from the directory containing this configuration file for
+   it to take effect (note that this may have nothing to do with the
+   location of the source files).  The project-specific configuration
+   file overrides the system-wide file.
+
+3. ``~/.docutils``: This is a user-specific configuration file,
+   located in the user's home directory.  This file overrides both the
+   system-wide and project-specific configuration files.
+
+If more than one configuration file is found, all will be read but
+later entries will override earlier ones.  For example, a "stylesheet"
+entry in a user-specific configuration file will override a
+system-wide entry.
+
+In addition, a configuration file may be explicitly specified with the
+"--config" command-line option.  This configuration file is read after
+the three implicit ones listed above.
+
+Configuration files use the standard ConfigParser.py_ Python_ module.
+From its documentation:
+
+    The configuration file consists of sections, lead by a "[section]"
+    header and followed by "name: value" entries, with continuations
+    in the style of `RFC 822`_; "name=value" is also accepted.  Note
+    that leading whitespace is removed from values.  The optional
+    values can contain format strings which refer to other values in
+    the same section, or values in a special DEFAULT section.
+    Additional defaults can be provided upon initialization and
+    retrieval.  Lines beginning with "#" or ";" are ignored and may be
+    used to provide comments.
+
+Docutils only uses an "[options]" section; all other sections will be
+ignored.
+
+Configuration entry names correspond to internal option attributes.
+Underscores ("_") and hyphens ("-") can be used interchangably in
+entry names.  The correspondence between entry names and command-line
+options is listed in `Configuration File Entries`_ below.
+
+.. _ConfigParser.py:
+   http://www.python.org/doc/current/lib/module-ConfigParser.html
+.. _Python: http://www.python.org/
+.. _RFC 822: http://www.rfc-editor.org/rfc/rfc822.txt
+
+
+Configuration File Entries
+--------------------------
+
+The entry names listed below may be specified in `configuration
+files`_.  Hyphens may be used in place of underscores in entry names.
+Some knowledge of Python_ is assumed for some attributes.
+
+====================  ================================================
+Config Entry Name     Description
+====================  ================================================
+config                Path to a configuration file to read (if it
+                      exists) [#pwd]_. Settings may override defaults
+                      and earlier settings.  This is only effective as
+                      a command-line option; setting it in a config
+                      file has no effect.
+
+                      Filesystem path settings contained within the
+                      config file will be interpreted relative to the
+                      config file's location (*not* relative to the
+                      current working directory).
+
+                      Default: None.  Options: ``--config``.
+--------------------  ------------------------------------------------
+datestamp             Include a time/datestamp in the document footer.
+                      Contains a format string for ``time.strftime``.
+
+                      Default: None.  Options: ``--date, -d, --time,
+                      -t, --no-datestamp``.
+--------------------  ------------------------------------------------
+debug                 Report debug-level system messages.
+
+                      Default: don't (None).  Options: ``--debug,
+                      --no-debug``.
+--------------------  ------------------------------------------------
+dump_internals        (Hidden option.)  At the end of processing,
+                      print out all internal attributes of the
+                      document (``document.__dict__``).
+
+                      Default: don't (None).  Options:
+                      ``--dump-internals``.
+--------------------  ------------------------------------------------
+footnote_backlinks    Enable or disable backlinks from footnotes and
+                      citations to their references.
+
+                      Default: enabled (1).  Options:
+                      ``--footnote-backlinks,
+                      --no-footnote-backlinks``.
+--------------------  ------------------------------------------------
+generator             Include a "Generated by Docutils" credit and
+                      link in the document footer.
+
+                      Default: off (None).  Options: ``--generator,
+                      -g, --no-generator``.
+--------------------  ------------------------------------------------
+halt_level            The threshold at or above which system messages
+                      are converted to exceptions, halting execution
+                      immediately.
+
+                      Default: severe (4).  Options: ``--halt,
+                      --strict``.
+--------------------  ------------------------------------------------
+indents               (XML Writer.)  Generate XML with indents and
+                      newlines.
+
+                      Default: don't (None).  Options: ``--indents``.
+--------------------  ------------------------------------------------
+input_encoding        Default: auto-detect (None).  Options:
+                      ``--input-encoding, -i``.
+--------------------  ------------------------------------------------
+language_code         `ISO 639`_ 2-letter language code (3-letter
+                      codes used only if no 2-letter code exists).
+
+                      Default: English ("en").  Options: ``--language,
+                      -l``.
+--------------------  ------------------------------------------------
+newlines              (XML Writer.)  Generate XML with newlines before
+                      and after tags.
+
+                      Default: don't (None).  Options: ``--newlines``.
+--------------------  ------------------------------------------------
+no_random             (PEP/HTML Writer; hidden option.)  Workaround
+                      for platforms which core-dump on "``import
+                      random``".
+
+                      Default: random enabled (None).  Options:
+                      ``--no-random``.
+--------------------  ------------------------------------------------
+output_encoding       Default: UTF-8.  Options: ``--output-encoding,
+                      -o``.
+--------------------  ------------------------------------------------
+pep_home              (PEP/HTML Writer.)  Home URL prefix for PEPs.
+
+                      Default: current directory (".").  Options:
+                      ``--pep-home``.
+--------------------  ------------------------------------------------
+pep_stylesheet        (PEP/HTML Writer.)  Path to CSS stylesheet
+                      [#pwd]_.  Overrides HTML stylesheet
+                      (``--stylesheet``).
+
+                      Default: None.  Options: ``--pep-stylesheet``.
+--------------------  ------------------------------------------------
+pep_template          (PEP/HTML Writer.)  Path to PEP template file
+                      [#pwd]_.
+
+                      Default: "pep-html-template" (in current
+                      directory).  Options: ``--pep-template``.
+--------------------  ------------------------------------------------
+python_home           (PEP/HTML Writer.)  Python's home URL.
+
+                      Default: parent directory ("..").  Options:
+                      ``--python-home``.
+--------------------  ------------------------------------------------
+recurse               (``buildhtml.py`` front end.)  Recursively scan
+                      subdirectories.
+
+                      Default: recurse (1).  Options: ``--recurse,
+                      --local``.
+--------------------  ------------------------------------------------
+report_level          Verbosity threshold at or above which system
+                      messages are reported.
+
+                      Default: warning (2).  Options: ``--report, -r,
+                      --verbose, --quiet, -q``.
+--------------------  ------------------------------------------------
+source_link           Include a "View document source" link in the
+                      document footer.  URL will be relative to the
+                      destination.
+
+                      Default: don't (None).  Options:
+                      ``--source-link, --no-source-link``.
+--------------------  ------------------------------------------------
+source_url            An explicit URL for a "View document source"
+                      link.
+
+                      Default: compute if source_link (None).
+                      Options: ``--source-uri, --no-source-link``.
+--------------------  ------------------------------------------------
+stylesheet            (HTML Writer.)  Path to CSS stylesheet [#pwd]_.
+
+                      Default: "default.css".  Options:
+                      ``--stylesheet``.
+--------------------  ------------------------------------------------
+toc_backlinks         Enable backlinks from section titles to table of
+                      contents entries ("entry"), to the top of the
+                      TOC ("top"), or disable ("none").
+
+                      Default: "entry".  Options:
+                      ``--toc-entry-backlinks, --toc-top-backlinks,
+                      --no-toc-backlinks``.
+--------------------  ------------------------------------------------
+warning_stream        Path to a file for the output of system messages
+                      (warnings) [#pwd]_.
+
+                      Default: stderr (None).  Options:
+                      ``--warnings``.
+
+For Internal Use Only (setting these in a config file has no effect)
+----------------------------------------------------------------------
+_directories          (``buildhtml.py`` front end.)  List of paths to
+                      source directories, set from positional
+                      arguments.  Default: current working directory
+                      (None).  No command-line options.
+--------------------  ------------------------------------------------
+_destination          Path to output destination, set from positional
+                      arguments.  Default: stdout (None).  No 
+                      command-line options.
+--------------------  ------------------------------------------------
+_source               Path to input source, set from positional
+                      arguments.  Default: stdin (None).  No 
+                      command-line options.
+====================  ================================================
+
+.. _ISO 639: http://lcweb.loc.gov/standards/iso639-2/englangn.html
+
+.. [#pwd] Path relative to the working directory of the process at
+   launch.
+
+
+..
+   Local Variables:
+   mode: indented-text
+   indent-tabs-mode: nil
+   sentence-end-double-space: t
+   fill-column: 70
+   End:

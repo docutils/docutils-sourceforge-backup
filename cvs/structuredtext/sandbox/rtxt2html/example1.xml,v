@@ -1,0 +1,352 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2001.09.21.03.49.55;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@output of ``quicktest.py --styledxml example1.txt``
+@
+text
+@<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="rtxt2html.xsl"?>
+<document name="grand titre">
+<title>
+Grand Titre
+</title>
+<section name="titre">
+<title>
+Titre
+</title>
+<section name="sous titre">
+<title>
+Sous titre
+</title>
+<section name="sous sous titre">
+<title>
+Sous Sous titre
+</title>
+</section>
+<section name="sous sous remi">
+<title>
+Sous Sous remi
+</title>
+<section name="sous sous sous titre">
+<title>
+Sous Sous Sous titre
+</title>
+<paragraph>
+<emphasis>
+italique
+</emphasis>
+ 
+<strong>
+gras
+</strong>
+ 
+<interpreted>
+text interpreté
+</interpreted>
+ 
+<literal>
+literal
+</literal>
+ 
+<link refuri="http://www.python.org">
+http://www.python.org
+</link>
+</paragraph>
+<target name="lien_indirect">
+http://www.python.org
+</target>
+<paragraph>
+Où est mon un 
+<link refname="lien_interne">
+lien_interne
+</link>
+</paragraph>
+<paragraph>
+Note de référence 
+<footnote_reference refname="5">
+5
+</footnote_reference>
+</paragraph>
+<paragraph>
+Lien sur un 
+<link refname="titre">
+Titre
+</link>
+</paragraph>
+<field_list>
+<field>
+<field_name>
+Auteur
+</field_name>
+<field_body>
+<paragraph>
+Rémi BERTHOLET
+</paragraph>
+</field_body>
+</field>
+<field>
+<field_name>
+Version
+</field_name>
+<field_body>
+<paragraph>
+1.0 31/08/01
+</paragraph>
+</field_body>
+</field>
+</field_list>
+<paragraph>
+Exemple de code
+</paragraph>
+<literal_block>
+main ()
+{
+        printf (&quot;hello world\n&quot;);
+        {
+                printf (&quot;hello world\n&quot;);
+                printf (&quot;hello world\n&quot;);
+        }
+}
+
+main ()
+{
+        printf (&quot;hello world\n&quot;);
+        {
+                printf (&quot;hello world\n&quot;);
+                printf (&quot;hello world\n&quot;);
+        }
+}
+</literal_block>
+<paragraph>
+Lien auto numeroté 
+<footnote_reference auto="1"/>
+ et 
+<footnote_reference auto="1"/>
+</paragraph>
+<paragraph>
+Liste à puce:
+</paragraph>
+<bullet_list bullet="-">
+<list_item>
+<paragraph>
+element 1
+</paragraph>
+</list_item>
+<list_item>
+<paragraph>
+element 2
+</paragraph>
+</list_item>
+</bullet_list>
+<paragraph>
+Liste de définitions:
+</paragraph>
+<definition_list>
+<definition_list_item>
+<term>
+Nom
+</term>
+<definition>
+<paragraph>
+Voici un nom
+</paragraph>
+</definition>
+</definition_list_item>
+<definition_list_item>
+<term>
+Prénom
+</term>
+<definition>
+<paragraph>
+Voici un prénom
+</paragraph>
+</definition>
+</definition_list_item>
+</definition_list>
+<paragraph>
+Ajout d'un graphique :
+</paragraph>
+<system_warning level="2">
+<paragraph>
+Unknown directive type &quot;graphics&quot; at line 77.
+Rendering the directive as a literal block.
+</paragraph>
+</system_warning>
+<literal_block>
+.. graphics:: images/ball1.gif
+</literal_block>
+<image uri="images/ball1.gif"/>
+<comment>
+commentaire interne non visible
+</comment>
+<paragraph>
+Indentation:
+</paragraph>
+<block_quote>
+<paragraph>
+Une indentation,
+</paragraph>
+<block_quote>
+<paragraph>
+Une sous indentation.
+</paragraph>
+</block_quote>
+</block_quote>
+<paragraph>
+Liste numérotée:
+</paragraph>
+<enumerated_list enumtype="arabic" prefix="" start="1" suffix=".">
+<list_item>
+<paragraph>
+element 1
+</paragraph>
+</list_item>
+<list_item>
+<paragraph>
+element 2
+</paragraph>
+</list_item>
+</enumerated_list>
+<footnote auto="1">
+<paragraph>
+premier lien auto numéroté
+</paragraph>
+</footnote>
+<footnote auto="1">
+<paragraph>
+deuxième lien auto numéroté
+</paragraph>
+</footnote>
+<target name="lien_interne"/>
+<paragraph>
+Voici mon lien interne
+</paragraph>
+<footnote name="5">
+<label>
+5
+</label>
+<paragraph>
+Une note de référence
+</paragraph>
+<table>
+<tgroup cols="4">
+<colspec colwidth="12"/>
+<colspec colwidth="12"/>
+<colspec colwidth="12"/>
+<colspec colwidth="14"/>
+<thead>
+<row>
+<entry>
+<paragraph>
+Header 1
+</paragraph>
+</entry>
+<entry>
+<paragraph>
+Header 2
+</paragraph>
+</entry>
+<entry>
+<paragraph>
+Header 3
+</paragraph>
+</entry>
+<entry>
+<paragraph>
+Header 4
+</paragraph>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<paragraph>
+Column 1
+</paragraph>
+</entry>
+<entry>
+<paragraph>
+Column 2
+</paragraph>
+</entry>
+<entry morecols="1">
+<paragraph>
+Column 3 &amp; 4 span (Row 1)
+</paragraph>
+</entry>
+</row>
+<row>
+<entry morecols="1">
+<paragraph>
+Column 1 &amp; 2 span
+</paragraph>
+</entry>
+<entry>
+<paragraph>
+Column 3
+</paragraph>
+</entry>
+<entry morerows="1">
+<bullet_list bullet="-">
+<list_item>
+<paragraph>
+Column 4
+</paragraph>
+</list_item>
+<list_item>
+<paragraph>
+Row 2 &amp; 3
+</paragraph>
+</list_item>
+<list_item>
+<paragraph>
+span
+</paragraph>
+</list_item>
+</bullet_list>
+</entry>
+</row>
+<row>
+<entry>
+<paragraph>
+1
+</paragraph>
+</entry>
+<entry>
+<paragraph>
+2
+</paragraph>
+</entry>
+<entry>
+<paragraph>
+3
+</paragraph>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</footnote>
+</section>
+</section>
+</section>
+</section>
+</document>
+@

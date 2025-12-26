@@ -1,0 +1,99 @@
+/home/engelbert/projects/docutils-code/docutils/test/test_parsers/test_recommonmark/test_section_headers.py:121: DeprecationWarning: invalid escape sequence \ 
+  """\
+/home/engelbert/projects/docutils-code/docutils/test/test_parsers/test_recommonmark/test_section_headers.py:159: DeprecationWarning: invalid escape sequence \ 
+  """\
+/home/engelbert/projects/docutils-code/docutils/test/test_parsers/test_recommonmark/test_section_headers.py:185: DeprecationWarning: invalid escape sequence \ 
+  """\
+/home/engelbert/projects/docutils-code/docutils/test/test_parsers/test_recommonmark/test_section_headers.py:232: DeprecationWarning: invalid escape sequence \ 
+  """\
+Testing Docutils 0.19b.dev with Python 3.8.12 on 2022-01-29 at 12:33:29
+OS: Linux 5.13.0-22-generic #22-Ubuntu SMP Fri Nov 5 13:21:36 UTC 2021 (linux, Linux-5.13.0-22-generic-x86_64-with-glibc2.33)
+Working directory: /home/engelbert/projects/docutils-code/docutils/test
+Docutils package: /home/engelbert/projects/docutils-code/docutils/docutils
+...............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................ssssssssssssssssssss...ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss...................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+test_parsers/test_rst/test_directives/test_include.py: totest['include-markdown'][0]; test_parser (DocutilsTestSupport.ParserTestCase)
+input:
+b'Include Markdown source.\n\n.. include:: test_parsers/test_rst/test_directives/include.md\n   :parser: markdown\n\nA paragraph.\n'
+-: expected
++: output
+  <document source="test data">
+      <paragraph>
+          Include Markdown source.
+-     <section ids="title-1" names="title\ 1">
++     <section ids="title-1 title-1" level="1" names="title\ 1">
+?                          ++++++++++++++++++
+          <title>
+              Title 1
+          <paragraph>
+              <emphasis>
+                  emphasis
+               and 
+              <emphasis>
+                  also emphasis
+          <paragraph>
+              No whitespace required around a
+              <reference name="phrase reference" refuri="/uri">
+                  phrase reference
+              .
++         <target names="" refuri="">
+      <paragraph>
+          A paragraph.
+F
+======================================================================
+FAIL: test_parsers/test_rst/test_directives/test_include.py: totest['include-markdown'][0]; test_parser (DocutilsTestSupport.ParserTestCase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/engelbert/projects/docutils-code/docutils/test/DocutilsTestSupport.py", line 451, in test_parser
+    self.compare_output(self.input, output, self.expected)
+  File "/home/engelbert/projects/docutils-code/docutils/test/DocutilsTestSupport.py", line 221, in compare_output
+    raise error
+  File "/home/engelbert/projects/docutils-code/docutils/test/DocutilsTestSupport.py", line 208, in compare_output
+    self.assertEqual(output, expected)
+  File "/home/engelbert/projects/docutils-code/docutils/test/DocutilsTestSupport.py", line 119, in assertEqual
+    raise self.failureException(
+AssertionError: '''\
+<document source="test data">
+    <paragraph>
+        Include Markdown source.
+    <section ids="title-1 title-1" level="1" names="title\\ 1">
+        <title>
+            Title 1
+        <paragraph>
+            <emphasis>
+                emphasis
+             and \n\
+            <emphasis>
+                also emphasis
+        <paragraph>
+            No whitespace required around a
+            <reference name="phrase reference" refuri="/uri">
+                phrase reference
+            .
+        <target names="" refuri="">
+    <paragraph>
+        A paragraph.''' != '''\
+<document source="test data">
+    <paragraph>
+        Include Markdown source.
+    <section ids="title-1" names="title\\ 1">
+        <title>
+            Title 1
+        <paragraph>
+            <emphasis>
+                emphasis
+             and \n\
+            <emphasis>
+                also emphasis
+        <paragraph>
+            No whitespace required around a
+            <reference name="phrase reference" refuri="/uri">
+                phrase reference
+            .
+    <paragraph>
+        A paragraph.'''
+
+----------------------------------------------------------------------
+Ran 1604 tests in 6.960s
+
+FAILED (failures=1, skipped=110)
+Elapsed time: 7.591 seconds

@@ -1,0 +1,496 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2001.10.18.04.07.27;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Paul Wright's style sheet
+@
+text
+@<HTML>
+  <HEAD>
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+    <TITLE>
+README: reStructuredText
+</TITLE>
+  </HEAD>
+  <BODY>
+    <CENTER>
+      <H1>
+README: reStructuredText
+</H1>
+    </CENTER>
+    <STRONG>Author:</STRONG>
+David Goodger
+<BR>
+    <STRONG>Contact:</STRONG>
+    <A HREF='mailto:goodger@@users.sourceforge.net'>
+goodger@@users.sourceforge.net
+</A>
+    <BR>
+    <STRONG>Date:</STRONG>
+2001-08-25
+<BR>
+    <TABLE CELLPADDING='2'>
+      <TR>
+        <TH>
+Web-site
+</TH>
+        <TD>
+          <P>
+            <A HREF='http://structuredtext.sourceforge.net/'>
+http://structuredtext.sourceforge.net/
+</A>
+          </P>
+        </TD>
+      </TR>
+    </TABLE>
+    <BR CLEAR='all'>
+    <P>
+This is 
+<EM>
+emphasis
+</EM>
+. This is 
+<STRONG>
+strong
+</STRONG>
+.
+</P>
+    <P>
+This is an 
+<samp>
+inline literal
+</samp>
+.
+</P>
+    <P>
+Internal crossreferences, like 
+<A HREF='#example'>
+example
+</A>
+.
+</P>
+    <P>
+Footnote references, like 
+<A NAME='back_5'></A>
+      <A HREF='#5'>
+5
+</A>
+ and
+
+<A NAME='back_rm98'></A>
+      <A HREF='#rm98'>
+RM98
+</A>
+. Note that footnotes may get
+rearranged, e.g., to the bottom of
+the "page".
+</P>
+    <P>
+dfjgfg
+</P>
+    <P>
+Unknown directive type "graphic" at line 29.
+Rendering the directive as a literal block.
+</P>
+    <PRE>
+.. graphic:: images/ball1.gif
+</PRE>
+<P>
+Wiblbelhj
+</P>
+    <P>
+Table time
+</P>
+    <TABLE CELLPADDING='1' BORDER='1'>
+      <TR>
+        <TH>
+          <P>
+Header 1
+</P>
+        </TH>
+        <TH>
+          <P>
+Header 2
+</P>
+        </TH>
+        <TH>
+          <P>
+Header 3
+</P>
+        </TH>
+      </TR>
+      <TR>
+        <TD>
+          <P>
+body row 1
+</P>
+        </TD>
+        <TD>
+          <P>
+column 2
+</P>
+        </TD>
+        <TD>
+          <P>
+column 3
+</P>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <P>
+body row 2
+</P>
+        </TD>
+        <TD COLSPAN='2'>
+          <P>
+Cells may span columns.
+</P>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <P>
+body row 3
+</P>
+        </TD>
+        <TD ROWSPAN='2'>
+          <P>
+Cells may
+span rows.
+</P>
+        </TD>
+        <TD ROWSPAN='2'>
+          <UL>
+            <LI>
+              <P>
+Cells
+</P>
+            </LI>
+            <LI>
+              <P>
+contain
+</P>
+            </LI>
+            <LI>
+              <P>
+blocks.
+</P>
+            </LI>
+          </UL>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          <P>
+body row 4
+</P>
+        </TD>
+      </TR>
+    </TABLE>
+    <P>
+hdjfghf
+</P>
+    <A NAME='example'></A>
+    <P>
+This is an example crossreference target.
+</P>
+    <P>
+Why not look at 
+<A HREF='#project files &amp;amp; directories'>
+Project Files &amp; Directories
+</A>
+?
+</P>
+    <P>
+Block quotes are just:
+</P>
+    <BLOCKQUOTE>
+      <P>
+Indented paragraphs,
+</P>
+      <BLOCKQUOTE>
+        <P>
+and they may nest.
+</P>
+      </BLOCKQUOTE>
+    </BLOCKQUOTE>
+    <P>
+Here's a definition list:
+</P>
+    <DL>
+      <DT>
+what
+</DT>
+      <DD>
+        <P>
+Definition lists associate a term with
+a definition.
+</P>
+      </DD>
+      <DT>
+how
+</DT>
+      <DD>
+        <P>
+The term is a one-line phrase, and the
+definition is one or more paragraphs or
+body elements, indented relative to the
+term. Blank lines are not allowed
+between term and definition.
+</P>
+      </DD>
+    </DL>
+    <P>
+Thank you for downloading the reStructuredText project archive. As
+this is a work in progress, please check the project web site for
+updated working files. The latest release archive is available at
+
+<A HREF='http://sourceforge.net/project/showfiles.php?group_id=7050'>
+http://sourceforge.net/project/showfiles.php?group_id=7050
+</A>
+.
+</P>
+    <P>
+reStructuredText is an input parser component of the 
+<A HREF='http://docstring.sourceforge.net/'>
+Python Docstring
+Processing System
+</A>
+, and is installed as
+"dps.parsers.restructuredtext".
+</P>
+    <P>
+To run the code, Python 2.0 or later must already be installed. You
+can get Python from 
+<A HREF='http://www.python.org/'>
+http://www.python.org/
+</A>
+. You will also need the
+latest DPS package, available from 
+<A HREF='http://docstring.sourceforge.net/'>
+http://docstring.sourceforge.net/
+</A>
+.
+</P>
+    <A NAME='python docstring processing system'></A>
+    <A NAME='project files &amp;amp; directories'></A>
+    <H2>
+Project Files &amp; Directories
+</H2>
+    <UL>
+      <LI>
+        <P>
+README.txt: You're reading it.
+</P>
+      </LI>
+      <LI>
+        <P>
+HISTORY.txt: Release notes for the current and previous project
+releases.
+</P>
+      </LI>
+      <LI>
+        <P>
+setup.py: Installation script. See "Installation" below.
+</P>
+      </LI>
+      <LI>
+        <P>
+install.py: Quick &amp; dirty installation script.
+</P>
+      </LI>
+      <LI>
+        <P>
+restructuredtext: The project source directory, installed as Python
+package 
+<samp>
+dps.parsers.restructuredtext
+</samp>
+.
+</P>
+      </LI>
+      <LI>
+        <P>
+test: The unit test directory (currently experimental). Not required
+to use the software, but very useful if you're planning to modify
+it.
+</P>
+      </LI>
+      <LI>
+        <P>
+tools: Directory for standalone scripts that use reStructuredText.
+</P>
+        <UL>
+          <LI>
+            <P>
+quicktest.py: Input reStructuredText, output pretty-printed
+pseudo-XML.
+</P>
+          </LI>
+        </UL>
+      </LI>
+      <LI>
+        <P>
+spec: The project specification directory. Contains the markup
+syntax spec and implementation notes.
+</P>
+      </LI>
+      <LI>
+        <P>
+docs: The project documentation directory.
+</P>
+      </LI>
+    </UL>
+    <A NAME='installation'></A>
+    <H2>
+Installation
+</H2>
+    <P>
+The first step is to expand the .tar.gz archive. It contains a
+distutils setup file "setup.py". OS-specific installation instructions
+follow.
+</P>
+    <A NAME='linux, unix, macos x'></A>
+    <H3>
+Linux, Unix, MacOS X
+</H3>
+    <OL>
+      <LI>
+        <P>
+Open a shell.
+</P>
+      </LI>
+      <LI>
+        <P>
+Go to the directory created by expanding the archive:
+</P>
+        <PRE>
+cd &lt;archive_directory_path>
+</PRE>
+</LI>
+<LI>
+        <P>
+Install the package:
+</P>
+        <PRE>
+python setup.py install
+</PRE>
+<P>
+If the python executable isn't on your path, you'll have to specify
+the complete path, such as /usr/local/bin/python. You may need root
+permissions to complete this step.
+</P>
+      </LI>
+    </OL>
+    <P>
+You can also just run install.py; it does the same thing.
+</P>
+    <A NAME='windows'></A>
+    <H3>
+Windows
+</H3>
+    <OL>
+      <LI>
+        <P>
+Open a DOS box (Command Shell, MSDOS Prompt, or whatever they're
+calling it these days).
+</P>
+      </LI>
+      <LI>
+        <P>
+Go to the directory created by expanding the archive:
+</P>
+        <PRE>
+cd &lt;archive_directory_path>
+</PRE>
+</LI>
+<LI>
+        <P>
+Install the package:
+</P>
+        <PRE>
+&lt;path_to_python.exe>\python setup.py install
+</PRE>
+</LI>
+</OL>
+<P>
+If your system is set up to run Python when you double-click on .py
+files, you can run install.py to do the same as the above.
+</P>
+    <A NAME='macos'></A>
+    <H3>
+MacOS
+</H3>
+    <OL>
+      <LI>
+        <P>
+Open the folder containing the expanded archive.
+</P>
+      </LI>
+      <LI>
+        <P>
+Double-click on the file "setup.py", which should be a "Python
+module" file.
+</P>
+        <P>
+If the file isn't a "Python module", the line endings are probably
+also wrong, and you will need to set up your system to recognize
+".py" file extensions as Python files. See
+
+<A HREF='http://gotools.sourceforge.net/mac/python.html'>
+http://gotools.sourceforge.net/mac/python.html
+</A>
+ for detailed
+instructions. Once set up, it's easiest to start over by expanding
+the archive again.
+</P>
+      </LI>
+      <LI>
+        <P>
+The distutils options window will appear. From the "Command" popup
+list choose "install", click "Add", then click "OK".
+</P>
+      </LI>
+    </OL>
+    <P>
+If install.py is a "Python module" (see step 2 above if it isn't), you
+can run it instead of the above. The distutils options windown will
+not appear.
+</P>
+    <HR>
+    <H2>Footnotes</H2>
+    <A NAME='5'></A>
+    <B><A HREF='#back_5'>5</A>:</B>
+    <P>
+A numerical footnote. Note
+there's no colon after the 
+<samp>
+]
+</samp>
+.
+</P>
+    <A NAME='rm98'></A>
+    <B><A HREF='#back_rm98'>RM98</A>:</B>
+    <P>
+And a reference
+(as often used in journals).
+</P>
+  </BODY>
+</HTML>
+@

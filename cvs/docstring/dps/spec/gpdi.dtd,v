@@ -1,0 +1,1659 @@
+head	1.41;
+access;
+symbols
+	rel-0-3:1.1.1.1 open:1.1.1;
+locks; strict;
+comment	@# @;
+
+
+1.41
+date	2002.04.13.17.01.20;	author goodger;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2002.03.28.04.38.48;	author goodger;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2002.03.16.05.50.44;	author goodger;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2002.03.11.03.26.52;	author goodger;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2002.03.07.03.53.53;	author goodger;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2002.03.04.04.43.25;	author goodger;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2002.03.01.03.15.18;	author goodger;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2002.02.23.16.49.54;	author goodger;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2002.02.22.01.53.48;	author goodger;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2002.02.20.04.10.29;	author goodger;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2002.02.15.22.53.17;	author goodger;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2002.02.06.03.06.03;	author goodger;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2002.01.29.02.17.42;	author goodger;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2002.01.26.00.03.16;	author goodger;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2001.11.19.04.04.46;	author goodger;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2001.11.19.04.02.02;	author goodger;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2001.11.15.02.54.04;	author goodger;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2001.11.13.03.08.01;	author goodger;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2001.11.09.23.10.37;	author goodger;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2001.11.06.01.05.33;	author goodger;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2001.10.31.05.56.04;	author goodger;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2001.10.30.05.16.37;	author goodger;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2001.10.27.05.36.17;	author goodger;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2001.10.20.03.02.05;	author goodger;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2001.10.18.03.32.58;	author goodger;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2001.09.26.03.21.15;	author goodger;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2001.09.25.03.02.55;	author goodger;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2001.09.12.03.39.23;	author goodger;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2001.09.10.04.19.05;	author goodger;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2001.09.07.01.51.58;	author goodger;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2001.09.01.15.02.06;	author goodger;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2001.08.28.03.21.05;	author goodger;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2001.08.25.01.45.27;	author goodger;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2001.08.23.03.52.51;	author goodger;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2001.08.22.04.03.37;	author goodger;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2001.08.17.01.56.09;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2001.08.14.03.52.29;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.07.27.04.07.56;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.07.27.02.23.24;	author gtk;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.07.26.06.05.34;	author gtk;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.07.22.22.36.13;	author goodger;	state Exp;
+branches
+	1.1.1.1;
+next	;
+
+1.1.1.1
+date	2001.07.22.22.36.13;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.41
+log
+@  - Changed "refids" attribute to "backrefs".
+@
+text
+@<!--
+======================================================================
+    Generic Plaintext Document Interface DTD
+======================================================================
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.40 $
+:Date: $Date: 2002/03/28 04:38:48 $
+:Copyright: This DTD has been placed in the public domain.
+:Filename: gpdi.dtd
+
+More information about this DTD (document type definition) and the
+Python Docstring Processing System project can be found at
+http://docstring.sf.net/. The latest version of this DTD is available
+from http://docstring.sf.net/spec/gpdi.dtd.
+
+The proposed formal public identifier for this DTD is::
+
+    +//IDN python.org//DTD Generic Plaintext Document Interface
+        1.0a1//EN//XML
+-->
+
+
+<!--
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Parameter Entities
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Parameter entities are used to simplify the DTD (reduce duplication)
+and to allow the DTD to be customized by wrapper DTDs. Parameter
+entities beginning with 'additional' are meant to allow easy extension
+by wrapper DTDs.
+-->
+
+<!-- Attributes
+================================================================== -->
+
+<!-- Boolean: no if zero(s), yes if any other value. -->
+<!ENTITY % yesorno "NMTOKEN">
+
+<!ENTITY % additional.basic.atts "">
+<!--
+Attributes shared by all elements in this DTD:
+
+- `id` is a unique identifier, typically assigned by the system.
+- `name` is an identifier assigned in the markup.
+- `dupname` is the same as `name`, used when it's a duplicate.
+- `source` is the name of the source of this document or fragment.
+- `class` is used to transmit individuality information forward.
+-->
+<!ENTITY % basic.atts
+  " id        ID        #IMPLIED
+    name      CDATA     #IMPLIED
+    dupname   CDATA     #IMPLIED
+    source    CDATA     #IMPLIED
+    class     CDATA     #IMPLIED
+    %additional.basic.atts; ">
+
+<!-- External reference to a URI/URL. -->
+<!ENTITY % refuri.att
+  " refuri    CDATA     #IMPLIED ">
+
+<!-- Internal reference to the `id` attribute of an element. -->
+<!ENTITY % refid.att
+  " refid     IDREF     #IMPLIED ">
+
+<!-- Space-separated list of id references, for backlinks. -->
+<!ENTITY % backrefs.att
+  " backrefs  IDREFS    #IMPLIED ">
+
+<!--
+Internal reference to the `name` attribute of an element. On a
+'target' element, 'refname' indicates an indirect target which may
+resolve to either an internal or external reference.
+-->
+<!ENTITY % refname.att
+  " refname   CDATA     #IMPLIED ">
+
+<!ENTITY % additional.reference.atts "">
+<!-- Collected hyperlink reference attributes. -->
+<!ENTITY % reference.atts
+  " %refuri.att;
+    %refid.att;
+    %refname.att;
+    %additional.reference.atts; ">
+
+<!-- Unnamed hyperlink. -->
+<!ENTITY % anonymous.att
+  " anonymous %yesorno; #IMPLIED ">
+
+<!-- Auto-numbered footnote. -->
+<!ENTITY % auto.att
+  " auto      %yesorno; #IMPLIED ">
+
+<!-- XML standard attribute for whitespace-preserving elements. -->
+<!ENTITY % fixedspace.att
+  " xml:space (default | preserve) #FIXED 'preserve' ">
+
+
+<!-- Element OR-Lists
+============================================================= -->
+
+<!ENTITY % additional.bibliographic.elements "">
+<!ENTITY % bibliographic.elements
+  " author | authors | organization | contact
+    | version | revision | status | date | copyright
+    %additional.bibliographic.elements; ">
+
+<!ENTITY % additional.structural.elements "">
+<!ENTITY % structural.elements
+  " section
+    %additional.structural.elements; ">
+
+<!ENTITY % additional.body.elements "">
+<!ENTITY % body.elements
+  " paragraph | literal_block | block_quote | doctest_block| table
+    | figure | image | footnote | citation
+    | bullet_list | enumerated_list | definition_list | field_list
+    | option_list
+    | attention | caution | danger | error | hint | important | note
+    | tip | warning
+    | target | substitution_definition | comment | pending
+    | system_message | raw
+    %additional.body.elements; ">
+
+<!ENTITY % additional.inline.elements "">
+<!ENTITY % inline.elements
+  " emphasis | strong | interpreted | literal
+    | reference | footnote_reference | citation_reference
+    | substitution_reference | target | image | problematic | raw
+    %additional.inline.elements; ">
+
+<!-- Element Content Models
+================================================================== -->
+
+<!ENTITY % structure.model
+  " ( ( (%body.elements; | topic)+,
+        (transition, (%body.elements; | topic)+ )*,
+        (%structural.elements;)* )
+    | (%structural.elements;)+ ) ">
+
+<!ENTITY % text.model
+  " (#PCDATA | %inline.elements;)* ">
+
+<!-- Table Model
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This DTD uses the Exchange subset of the CALS-table model (OASIS
+Technical Memorandum 9901:1999 "XML Exchange Table Model DTD",
+http://www.oasis-open.org/html/tm9901.htm).
+-->
+
+<!ENTITY % calstblx PUBLIC
+    "-//OASIS//DTD XML Exchange Table Model 19990315//EN"
+    "soextblx.dtd">
+
+<!-- These parameter entities customize the table model DTD. -->
+<!ENTITY % bodyatt              " %basic.atts; ">  <!-- table elt -->
+<!ENTITY % tbl.tgroup.att       " %basic.atts; ">
+<!ENTITY % tbl.thead.att        " %basic.atts; ">
+<!ENTITY % tbl.tbody.att        " %basic.atts; ">
+<!ENTITY % tbl.colspec.att      " %basic.atts; ">
+<!ENTITY % tbl.row.att          " %basic.atts; ">
+<!ENTITY % tbl.entry.mdl        " (%body.elements;)* ">
+<!ENTITY % tbl.entry.att
+  " %basic.atts;
+    morecols  NMTOKEN   #IMPLIED ">
+
+
+<!--
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Root Element
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-->
+
+<!-- Optional elements may be generated by internal processing. -->
+<!ELEMENT document
+    ((title, subtitle?)?, docinfo?, %structure.model;)>
+<!ATTLIST document %basic.atts;>
+
+
+<!--
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Title Elements
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-->
+
+<!ELEMENT title %text.model;>
+<!ATTLIST title
+    %basic.atts;
+    %refid.att;>
+
+<!ELEMENT subtitle %text.model;>
+<!ATTLIST subtitle %basic.atts;>
+
+
+<!--
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Bibliographic Elements
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-->
+
+<!-- Container for bibliographic elements. May not be empty. -->
+<!ELEMENT docinfo (%bibliographic.elements;)+>
+<!ATTLIST docinfo %basic.atts;>
+
+<!ELEMENT author %text.model;>
+<!ATTLIST author %basic.atts;>
+
+<!ELEMENT authors ((author, organization?, contact?)+)>
+<!ATTLIST authors %basic.atts;>
+
+<!ELEMENT organization %text.model;>
+<!ATTLIST organization %basic.atts;>
+
+<!ELEMENT contact %text.model;>
+<!ATTLIST contact %basic.atts;>
+
+<!ELEMENT version %text.model;>
+<!ATTLIST version %basic.atts;>
+
+<!ELEMENT revision %text.model;>
+<!ATTLIST revision %basic.atts;>
+
+<!ELEMENT status %text.model;>
+<!ATTLIST status %basic.atts;>
+
+<!ELEMENT date %text.model;>
+<!ATTLIST date %basic.atts;>
+
+<!ELEMENT copyright %text.model;>
+<!ATTLIST copyright %basic.atts;>
+
+
+<!--
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Structural Elements
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-->
+
+<!ELEMENT section (title, %structure.model;)>
+<!ATTLIST section %basic.atts;>
+
+<!ELEMENT topic (title?, (%body.elements;)+)>
+<!ATTLIST topic %basic.atts;>
+
+<!ELEMENT transition EMPTY>
+<!ATTLIST transition %basic.atts;>
+
+
+<!--
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Body Elements
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-->
+
+<!ELEMENT paragraph %text.model;>
+<!ATTLIST paragraph %basic.atts;>
+
+<!ELEMENT bullet_list (list_item+)>
+<!ATTLIST bullet_list
+    %basic.atts;
+    bullet    CDATA     #IMPLIED>
+
+<!ELEMENT enumerated_list (list_item+)>
+<!ATTLIST enumerated_list
+    %basic.atts;
+    enumtype  (arabic | loweralpha | upperalpha
+                      | lowerroman | upperroman)
+                        #IMPLIED
+    prefix    CDATA     #IMPLIED
+    suffix    CDATA     #IMPLIED
+    start     NUMBER    #IMPLIED>
+
+<!ELEMENT list_item (%body.elements;)+>
+<!ATTLIST list_item %basic.atts;>
+
+<!ELEMENT definition_list (definition_list_item+)>
+<!ATTLIST definition_list %basic.atts;>
+
+<!ELEMENT definition_list_item (term, classifier?, definition)>
+<!ATTLIST definition_list_item %basic.atts;>
+
+<!ELEMENT term %text.model;>
+<!ATTLIST term %basic.atts;>
+
+<!ELEMENT classifier %text.model;>
+<!ATTLIST classifier %basic.atts;>
+
+<!ELEMENT definition (%body.elements;)+>
+<!ATTLIST definition %basic.atts;>
+
+<!ELEMENT field_list (field+)>
+<!ATTLIST field_list %basic.atts;>
+
+<!ELEMENT field (field_name, field_argument*, field_body)>
+<!ATTLIST field %basic.atts;>
+
+<!ELEMENT field_name (#PCDATA)>
+<!ATTLIST field_name %basic.atts;>
+
+<!-- Support for Javadoc-style tags with arguments. -->
+<!ELEMENT field_argument (#PCDATA)>
+<!ATTLIST field_argument %basic.atts;>
+
+<!ELEMENT field_body (%body.elements;)+>
+<!ATTLIST field_body %basic.atts;>
+
+<!ELEMENT option_list (option_list_item+)>
+<!ATTLIST option_list %basic.atts;>
+
+<!ELEMENT option_list_item (option_group, description)>
+<!ATTLIST option_list_item %basic.atts;>
+
+<!ELEMENT option_group (option+)>
+<!ATTLIST option_group %basic.atts;>
+
+<!ELEMENT option (option_string, option_argument*)>
+<!ATTLIST option %basic.atts;>
+
+<!ELEMENT option_string (#PCDATA)>
+<!ATTLIST option_string %basic.atts;>
+
+<!--
+`delimiter` contains the string preceding the `option_argument`:
+either the string separating it from the `option` (typically either
+"=" or " ") or the string between option arguments (typically either
+"," or " ").
+-->
+<!ELEMENT option_argument (#PCDATA)>
+<!ATTLIST option_argument
+    %basic.atts;
+    delimiter  CDATA    #IMPLIED>
+
+<!ELEMENT description (%body.elements;)+>
+<!ATTLIST description %basic.atts;>
+
+<!ELEMENT literal_block (#PCDATA)>
+<!ATTLIST literal_block
+    %basic.atts;
+    %fixedspace.att;>
+
+<!ELEMENT block_quote (%body.elements;)+>
+<!ATTLIST block_quote %basic.atts;>
+
+<!ELEMENT doctest_block (#PCDATA)>
+<!ATTLIST doctest_block
+    %basic.atts;
+    %fixedspace.att;>
+
+<!ELEMENT attention (%body.elements;)+>
+<!ATTLIST attention %basic.atts;>
+
+<!ELEMENT caution (%body.elements;)+>
+<!ATTLIST caution %basic.atts;>
+
+<!ELEMENT danger (%body.elements;)+>
+<!ATTLIST danger %basic.atts;>
+
+<!ELEMENT error (%body.elements;)+>
+<!ATTLIST error %basic.atts;>
+
+<!ELEMENT hint (%body.elements;)+>
+<!ATTLIST hint %basic.atts;>
+
+<!ELEMENT important (%body.elements;)+>
+<!ATTLIST important %basic.atts;>
+
+<!ELEMENT note (%body.elements;)+>
+<!ATTLIST note %basic.atts;>
+
+<!ELEMENT tip (%body.elements;)+>
+<!ATTLIST tip %basic.atts;>
+
+<!ELEMENT warning (%body.elements;)+>
+<!ATTLIST warning %basic.atts;>
+
+<!ELEMENT footnote (label?, (%body.elements;)+)>
+<!ATTLIST footnote
+    %basic.atts;
+    %backrefs.att;
+    %auto.att;>
+
+<!ELEMENT citation (label, (%body.elements;)+)>
+<!ATTLIST citation
+    %basic.atts;
+    %backrefs.att;>
+
+<!ELEMENT label (#PCDATA)>
+<!ATTLIST label %basic.atts;>
+
+<!-- Empty except when used as an inline element. -->
+<!ELEMENT target (%text.model;)>
+<!ATTLIST target
+    %basic.atts;
+    %reference.atts;
+    %anonymous.att;>
+
+<!ELEMENT substitution_definition (%text.model;)>
+<!ATTLIST substitution_definition %basic.atts;>
+
+<!ELEMENT comment (#PCDATA)>
+<!ATTLIST comment
+    %basic.atts;
+    %fixedspace.att;>
+
+<!ELEMENT pending EMPTY>
+<!ATTLIST pending %basic.atts;>
+
+<!ELEMENT figure (image, ((caption, legend?) | legend) >
+<!ATTLIST figure %basic.atts;>
+
+<!-- Also an inline element. -->
+<!ELEMENT image EMPTY>
+<!ATTLIST image
+    %basic.atts;
+    uri       CDATA     #REQUIRED
+    alt       CDATA     #IMPLIED
+    height    NMTOKEN   #IMPLIED
+    width     NMTOKEN   #IMPLIED
+    scale     NMTOKEN   #IMPLIED>
+
+<!ELEMENT caption %text.model;>
+<!ATTLIST caption %basic.atts;>
+
+<!ELEMENT legend (%body.elements;)+>
+<!ATTLIST legend %basic.atts;>
+
+<!--
+Table elements: table, tgroup, colspec, thead, tbody, row, entry.
+-->
+%calstblx;
+
+<!-- Used to record processing information. -->
+<!ELEMENT system_message (%body.elements;)+>
+<!ATTLIST system_message
+    %basic.atts;
+    %backrefs.att;
+    level     NMTOKEN   #IMPLIED
+    type      CDATA     #IMPLIED>
+
+<!-- Used to pass raw data through the system. Also inline. -->
+<!ELEMENT raw %text.model;>
+<!ATTLIST raw
+    %basic.atts;
+    %fixedspace.att;
+    format    CDATA     #IMPLIED>
+
+
+<!--
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Inline Elements
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Inline elements occur within the text contents of body elements. Some
+nesting of inline elements is allowed by these definitions, with the
+following caveats:
+
+- An inline element may not contain a nested element of the same type
+  (e.g. <strong> may not contain another <strong>).
+- Nested inline elements may or may not be supported by individual
+  applications using this DTD.
+- The inline elements <footnote_reference>, <citation_reference>,
+  <literal>, and <image> do not support nesting.
+-->
+
+<!ELEMENT emphasis (%text.model;)>
+<!ATTLIST emphasis %basic.atts;>
+
+<!ELEMENT strong (%text.model;)>
+<!ATTLIST strong %basic.atts;>
+
+<!ELEMENT interpreted (%text.model;)>
+<!ATTLIST interpreted
+    %basic.atts;
+    type      CDATA     #IMPLIED>
+
+<!ELEMENT literal (#PCDATA)>
+<!ATTLIST literal %basic.atts;>
+
+<!ELEMENT reference (%text.model;)>
+<!ATTLIST reference
+    %basic.atts;
+    %reference.atts;
+    %anonymous.att;>
+
+<!ELEMENT footnote_reference (#PCDATA)>
+<!ATTLIST footnote_reference
+    %basic.atts;
+    %reference.atts;
+    %auto.att;>
+
+<!ELEMENT citation_reference (#PCDATA)>
+<!ATTLIST citation_reference
+    %basic.atts;
+    %reference.atts;>
+
+<!ELEMENT substitution_reference (%text.model;)>
+<!ATTLIST substitution_reference
+    %basic.atts;
+    %refname.att;>
+
+<!ELEMENT problematic (%text.model;)>
+<!ATTLIST problematic
+    %basic.atts;
+    %refid.att;>
+
+
+<!--
+Local Variables:
+mode: sgml
+indent-tabs-mode: nil
+fill-column: 70
+End:
+-->
+@
+
+
+1.40
+log
+@  - Added "refids" attribute to footnote, citation, and    system_message, for backlinks.
+@
+text
+@d7 2
+a8 2
+:Revision: $Revision: 1.39 $
+:Date: $Date: 2002/03/16 05:50:44 $
+d68 2
+a69 2
+<!ENTITY % refids.att
+  " refids    IDREFS    #IMPLIED ">
+d381 1
+a381 1
+    %refids.att;
+d387 1
+a387 1
+    %refids.att;>
+d438 1
+a438 1
+    %refids.att;
+@
+
+
+1.39
+log
+@  - Added "refid" attribute to "title" for two-way Tables of Contents.  - Made "topic" title optional.  - Removed "directive" attribute from "pending": it will use    internal attributes.
+@
+text
+@d7 2
+a8 2
+:Revision: $Revision: 1.38 $
+:Date: $Date: 2002/03/11 03:26:52 $
+d67 4
+d381 1
+d385 3
+a387 1
+<!ATTLIST citation %basic.atts;>
+d438 1
+a438 1
+    %refid.att;
+@
+
+
+1.38
+log
+@  - Added "refid" attribute to "system_message" and "problematic".
+@
+text
+@d7 2
+a8 2
+:Revision: $Revision: 1.37 $
+:Date: $Date: 2002/03/07 03:53:53 $
+d185 3
+a187 1
+<!ATTLIST title %basic.atts;>
+d240 1
+a240 1
+<!ELEMENT topic (title, (%body.elements;)+)>
+d400 2
+a401 4
+<!ELEMENT pending (field_list)>
+<!ATTLIST pending
+    %basic.atts;
+    directive  CDATA    #REQUIRED>
+@
+
+
+1.37
+log
+@  - Added "raw".
+@
+text
+@d7 2
+a8 2
+:Revision: $Revision: 1.36 $
+:Date: $Date: 2002/03/04 04:43:25 $
+d431 1
+d497 3
+a499 1
+<!ATTLIST problematic %basic.atts;>
+@
+
+
+1.36
+log
+@  - Removed "abstract"  - Added "topic".  - Added "pending".  - Added "citation" and "citation_reference".
+@
+text
+@d7 2
+a8 2
+:Revision: $Revision: 1.35 $
+:Date: $Date: 2002/03/01 03:15:18 $
+d119 1
+a119 1
+    | system_message
+d126 1
+a126 1
+    | substitution_reference | target | image | problematic
+d434 7
+d455 2
+a456 2
+- The inline elements <footnote_reference>, <literal>, and <image> do
+  not support nesting.
+@
+
+
+1.35
+log
+@  - Reworked option lists.
+@
+text
+@d7 2
+a8 2
+:Revision: $Revision: 1.34 $
+:Date: $Date: 2002/02/23 16:49:54 $
+d113 1
+a113 1
+    | figure | image | footnote 
+d116 4
+a119 3
+    | note | tip | hint | warning | error | attention | caution
+    | danger | important
+    | target | substitution_definition | comment | system_message
+d125 2
+a126 2
+    | reference | footnote_reference | substitution_reference
+    | target | image | problematic
+d133 3
+a135 1
+  " ( ((%body.elements; | transition)+, (%structural.elements;)*)
+d174 1
+a174 1
+    ((title, subtitle?)?, docinfo?, abstract?, %structure.model;)>
+a234 3
+<!ELEMENT abstract (%body.elements;)+>
+<!ATTLIST abstract %basic.atts;>
+
+d238 3
+d345 2
+a346 2
+<!ELEMENT note (%body.elements;)+>
+<!ATTLIST note %basic.atts;>
+d348 2
+a349 2
+<!ELEMENT tip (%body.elements;)+>
+<!ATTLIST tip %basic.atts;>
+d351 2
+a352 5
+<!ELEMENT hint (%body.elements;)+>
+<!ATTLIST hint %basic.atts;>
+
+<!ELEMENT warning (%body.elements;)+>
+<!ATTLIST warning %basic.atts;>
+d357 2
+a358 5
+<!ELEMENT caution (%body.elements;)+>
+<!ATTLIST caution %basic.atts;>
+
+<!ELEMENT danger (%body.elements;)+>
+<!ATTLIST danger %basic.atts;>
+d363 9
+d377 3
+d398 5
+d477 5
+@
+
+
+1.34
+log
+@  - Added support for 'option_list' attribute 'optarg_delimiter'.
+@
+text
+@d7 2
+a8 2
+:Revision: $Revision: 1.33 $
+:Date: $Date: 2002/02/22 01:53:48 $
+d264 1
+a264 1
+    start     CDATA     #IMPLIED>
+a299 8
+<!--
+`optarg_delimiter` contains the delimiter (either " " or "=")
+consistently used by `long_option` and/or `vms_option` elements with
+option arguments, or "mixed" if delimiter usage is mixed (both " " and
+"=" used). If no such options exist, no `optarg_delimiter` attribute
+will be present. `short_option` elements may only use spaces as
+opt/arg delimiters; they don't affect the attribute.
+-->
+d301 1
+a301 3
+<!ATTLIST option_list
+    %basic.atts;
+    optarg_delimiter  CDATA  #IMPLIED>
+d303 1
+a303 1
+<!ELEMENT option_list_item (option+, description)>
+d306 4
+a309 2
+<!ELEMENT option
+    ((short_option | long_option | vms_option), option_argument?)>
+d312 2
+a313 8
+<!ELEMENT short_option (#PCDATA)>
+<!ATTLIST short_option %basic.atts;>
+
+<!ELEMENT long_option (#PCDATA)>
+<!ATTLIST long_option %basic.atts;>
+
+<!ELEMENT vms_option (#PCDATA)>
+<!ATTLIST vms_option %basic.atts;>
+d315 6
+d322 3
+a324 1
+<!ATTLIST option_argument %basic.atts;>
+@
+
+
+1.33
+log
+@  - Made ``abstract`` a structural element, after ``docinfo``.
+@
+text
+@d7 2
+a8 2
+:Revision: $Revision: 1.32 $
+:Date: $Date: 2002/02/20 04:10:29 $
+d116 2
+a117 2
+    | note | tip | hint | warning | error | caution | danger
+    | important
+d300 8
+d309 3
+a311 1
+<!ATTLIST option_list %basic.atts;>
+@
+
+
+1.32
+log
+@  - Added 'class' to %basic.atts for style sheets.
+@
+text
+@d7 2
+a8 2
+:Revision: $Revision: 1.31 $
+:Date: $Date: 2002/02/15 22:53:17 $
+d170 2
+a171 1
+<!ELEMENT document ((title, subtitle?)?, docinfo?, %structure.model;)>
+d195 1
+a195 2
+<!ELEMENT docinfo
+    (((%bibliographic.elements;)+, abstract?) | abstract)>
+a224 3
+<!ELEMENT abstract (%body.elements;)+>
+<!ATTLIST abstract %basic.atts;>
+
+d231 3
+@
+
+
+1.31
+log
+@  - Changed "system_warning" to "system_message".
+@
+text
+@d7 2
+a8 2
+:Revision: $Revision: 1.30 $
+:Date: $Date: 2002/02/06 03:06:03 $
+d49 1
+d56 1
+@
+
+
+1.30
+log
+@system_warning attribute
+@
+text
+@d7 2
+a8 2
+:Revision: $Revision: 1.29 $
+:Date: $Date: 2002/01/29 02:17:42 $
+d116 1
+a116 1
+    | target | substitution_definition | comment | system_warning
+d407 3
+a409 3
+<!-- Used by the processing system to record a warning. -->
+<!ELEMENT system_warning (%body.elements;)+>
+<!ATTLIST system_warning
+@
+
+
+1.29
+log
+@updated
+@
+text
+@d7 2
+a8 2
+:Revision: $Revision: 1.28 $
+:Date: $Date: 2002/01/26 00:03:16 $
+d412 1
+a412 1
+    warning   CDATA     #IMPLIED>
+@
+
+
+1.28
+log
+@comments
+@
+text
+@d7 2
+a8 2
+:Revision: $Revision: 1.27 $
+:Date: $Date: 2001/11/19 04:04:46 $
+d123 1
+a123 1
+    | target | image
+d462 3
+@
+
+
+1.27
+log
+@  - Changed 'substitution' to 'substitution_definition'.
+@
+text
+@d7 2
+a8 2
+:Revision: $Revision: 1.26 $
+:Date: $Date: 2001/11/19 04:02:02 $
+d57 1
+a57 1
+<!-- Reference to an external URI/URL. -->
+d61 1
+a61 1
+<!-- Reference to the `id` attribute of another element. -->
+d65 5
+a69 1
+<!-- Reference to the `name` attribute of another element. -->
+@
+
+
+1.26
+log
+@  - Removed generic 'directive'.
+@
+text
+@d7 2
+a8 2
+:Revision: $Revision: 1.25 $
+:Date: $Date: 2001/11/15 02:54:04 $
+d371 2
+a372 2
+<!ELEMENT substitution (%text.model;)>
+<!ATTLIST substitution %basic.atts;>
+@
+
+
+1.25
+log
+@  - Added 'alt' attribute to 'image'.
+@
+text
+@d7 2
+a8 2
+:Revision: $Revision: 1.22 $
+:Date: $Date: 2001/11/06 01:05:33 $
+d112 1
+a112 1
+    | target | substitution | directive | comment | system_warning
+a372 7
+
+<!ELEMENT directive (#PCDATA)>
+<!ATTLIST directive
+    %basic.atts;
+    %fixedspace.att;
+    type      CDATA     #IMPLIED
+    data      CDATA     #IMPLIED>
+@
+
+
+1.24
+log
+@updated
+@
+text
+@d394 1
+@
+
+
+1.23
+log
+@  - Changed content model 'directive' to PCDATA.  - Changed content models of most inline elements to %text.model,    allowing nested inline elements.
+@
+text
+@d374 1
+a374 1
+<!ELEMENT directive (#PCDATA)*>
+@
+
+
+1.22
+log
+@  - Added 'hint' admonition element.  - Changed the content model of "reference" to allow inline elements,    specifically images and substitution references.  - Added 'substitution' and 'substitution_reference'.
+@
+text
+@d7 2
+a8 2
+:Revision: $Revision: 1.21 $
+:Date: $Date: 2001/10/31 05:56:04 $
+d364 2
+a365 2
+<!-- Also an inline element; empty otherwise. -->
+<!ELEMENT target (#PCDATA)>
+d374 1
+a374 1
+<!ELEMENT directive (%body.elements;)*>
+d377 1
+d422 10
+a431 1
+Inline elements occur within the PCDATA of body elements.
+d434 1
+a434 1
+<!ELEMENT emphasis (#PCDATA)>
+d437 1
+a437 1
+<!ELEMENT strong (#PCDATA)>
+d440 1
+a440 1
+<!ELEMENT interpreted (#PCDATA)>
+d460 1
+a460 1
+<!ELEMENT substitution_reference (#PCDATA)>
+@
+
+
+1.21
+log
+@  - Changed "link" to "reference".
+@
+text
+@d7 2
+a8 2
+:Revision: $Revision: 1.20 $
+:Date: $Date: 2001/10/30 05:16:37 $
+d106 2
+a107 1
+  " paragraph
+d110 3
+a112 5
+    | literal_block | block_quote | doctest_block | table
+    | figure | image
+    | note | tip | warning | error | caution | danger | important
+    | footnote | target | directive | comment
+    | system_warning
+d118 2
+a119 1
+    | reference | target | footnote_reference | image
+d338 3
+d371 3
+d438 1
+a438 1
+<!ELEMENT reference (#PCDATA)>
+d449 6
+@
+
+
+1.20
+log
+@  - Changed %link.atts to %reference.atts.  - Added %reference.atts to target.
+@
+text
+@d7 2
+a8 2
+:Revision: $Revision: 1.19 $
+:Date: $Date: 2001/10/27 05:36:17 $
+d119 1
+a119 1
+    | link | target | footnote_reference | image
+d432 2
+a433 2
+<!ELEMENT link (#PCDATA)>
+<!ATTLIST link
+@
+
+
+1.19
+log
+@  - 'image' as body element; 'target' as inline element.  - 'division' gone; 'transition' added.  - 'authors' content expanded.  - 'figure' content clarified.
+@
+text
+@d7 2
+a8 2
+:Revision: $Revision: 1.18 $
+:Date: $Date: 2001/10/20 03:02:05 $
+d69 3
+a71 3
+<!ENTITY % additional.link.atts "">
+<!-- Collected hyperlink attributes. -->
+<!ENTITY % link.atts
+d75 1
+a75 1
+    %additional.link.atts; ">
+d361 1
+a361 1
+<!-- Also an inline element. -->
+d365 1
+a365 1
+    %refname.att;
+d435 1
+a435 1
+    %link.atts;
+d441 1
+a441 1
+    %link.atts;
+@
+
+
+1.18
+log
+@  - Separated out %link.atts into constituent parts.  - Changed %structure.model for mandatory divisions.  - Added "refname" and "anonymous" attrbites to "target".  - Added "anonymous" attribute to "link".
+@
+text
+@d7 2
+a8 2
+:Revision: $Revision: 1.16 $
+:Date: $Date: 2001/09/26 03:21:15 $
+d81 4
+d109 2
+a110 1
+    | literal_block | block_quote | doctest_block | table | figure
+d119 1
+a119 1
+    | link | footnote_reference | image
+d126 1
+a126 1
+  " ( (division+, (%structural.elements;)*)
+d170 1
+a170 1
+    Bibliographic Elements
+d180 7
+d195 1
+a195 1
+<!ELEMENT authors (author+)>
+d232 2
+a233 2
+<!ELEMENT division (%body.elements;)+>
+<!ATTLIST division %basic.atts;>
+d356 1
+a356 1
+    auto      %yesorno; #IMPLIED>
+d361 1
+d379 1
+a379 1
+<!ELEMENT figure (image, caption?, legend?)>
+d382 9
+d442 1
+a442 10
+    auto      %yesorno; #IMPLIED>
+
+<!-- Also used in `figure`. -->
+<!ELEMENT image EMPTY>
+<!ATTLIST image
+    %basic.atts;
+    uri       CDATA     #REQUIRED
+    height    NMTOKEN   #IMPLIED
+    width     NMTOKEN   #IMPLIED
+    scale     NMTOKEN   #IMPLIED>
+@
+
+
+1.17
+log
+@  - Added "division" element.
+@
+text
+@d38 3
+d57 12
+d70 1
+a70 8
+<!--
+Hyperlink attributes.
+
+- `refuri` is used to refer to an external URI/URL.
+- `refid` is used to refer to the `id` attribute of another element.
+- `refname` is used to refer to the `name` attribute of another
+  element.
+-->
+d72 3
+a74 3
+  " refuri    CDATA     #IMPLIED
+    refid     IDREF     #IMPLIED
+    refname   CDATA     #IMPLIED
+d77 4
+a84 3
+<!-- Boolean: no if zero(s), yes if any other value. -->
+<!ENTITY % yesorno 'NMTOKEN'>
+
+d121 1
+a121 2
+  " ( ((%body.elements;)+, division*, (%structural.elements;)*)
+    | (division+, (%structural.elements;)*)
+d350 4
+a353 1
+<!ATTLIST target %basic.atts;>
+d413 2
+a414 1
+    %link.atts;>
+@
+
+
+1.16
+log
+@  - Added 'docinfo' as container for bibliographic elements.
+@
+text
+@d7 2
+a8 2
+:Revision: $Revision: 1.15 $
+:Date: $Date: 2001/09/25 03:02:55 $
+d112 2
+a113 1
+  " ( ((%body.elements;)+, (%structural.elements;)*)
+d211 3
+@
+
+
+1.15
+log
+@  - Added 'source' to basic.atts; removed 'rawtext'.
+@
+text
+@d7 2
+a8 2
+:Revision: $Revision: 1.14 $
+:Date: $Date: 2001/09/12 03:39:23 $
+d150 1
+a150 3
+<!ELEMENT document
+    ((title, subtitle?)?, (%bibliographic.elements;)*, abstract?,
+     %structure.model;)>
+d165 5
+@
+
+
+1.14
+log
+@  - Moved 'caption' to after 'image' in 'figure'.  - Added 'error' admonishment element.
+@
+text
+@d7 2
+a8 2
+:Revision: $Revision: 1.13 $
+:Date: $Date: 2001/09/10 04:19:05 $
+d44 2
+a45 1
+- `rawdata` contains the unprocessed text that produced the element.
+d51 1
+a51 1
+    rawtext   CDATA     #IMPLIED
+@
+
+
+1.13
+log
+@  - Changed 'graphic' to 'image'.
+@
+text
+@d7 2
+a8 2
+:Revision: $Revision: 1.12 $
+:Date: $Date: 2001/09/07 01:51:58 $
+d96 1
+a96 1
+    | note | tip | warning | caution | danger | important
+d313 3
+d347 1
+a347 1
+<!ELEMENT figure (caption?, image, legend?)>
+@
+
+
+1.12
+log
+@  - Made document subtitle dependent on the existence of a title.  - Moved 'abstract' into the bibliographic elements section.  - Added "auto" attribute to footnotes after all.    Because it's explicit, and the right thing to do.
+@
+text
+@d7 2
+a8 2
+:Revision: $Revision: 1.11 $
+:Date: $Date: 2001/09/01 15:02:06 $
+d104 1
+a104 1
+    | link | footnote_reference | graphic
+d344 1
+a344 1
+<!ELEMENT figure (caption?, graphic, legend?)>
+d400 2
+a401 2
+<!ELEMENT graphic EMPTY>
+<!ATTLIST graphic
+@
+
+
+1.11
+log
+@  - Added 'morecols' attribute to table entries (<entry>), for simpler    column span indication.
+@
+text
+@d7 2
+a8 2
+:Revision: $Revision: 1.9 $
+:Date: $Date: 2001/08/25 01:45:27 $
+d150 1
+a150 1
+    (title?, subtitle?, (%bibliographic.elements;)*, abstract?,
+d194 3
+a203 3
+<!ELEMENT abstract (%body.elements;)+>
+<!ATTLIST abstract %basic.atts;>
+
+a321 1
+<!-- A footnote with no label is auto-numbered. -->
+d323 3
+a325 1
+<!ATTLIST footnote %basic.atts;>
+@
+
+
+1.10
+log
+@  - Support for auto-numbered footnotes.
+@
+text
+@d137 3
+a139 1
+<!ENTITY % tbl.entry.att        " %basic.atts; ">
+@
+
+
+1.9
+log
+@  - Added ``classifier``.
+@
+text
+@d7 2
+a8 2
+:Revision: $Revision: 1.8 $
+:Date: $Date: 2001/08/23 03:52:51 $
+d320 2
+a321 1
+<!ELEMENT footnote (label, (%body.elements;)+)>
+d324 3
+a340 3
+<!ELEMENT label (#PCDATA)>
+<!ATTLIST label %basic.atts;>
+
+d393 2
+a394 1
+    %link.atts;>
+@
+
+
+1.8
+log
+@updated
+@
+text
+@d7 2
+a8 2
+:Revision: $Revision: 1.6 $
+:Date: $Date: 2001/08/17 01:56:09 $
+d236 1
+a236 1
+<!ELEMENT definition_list_item (term, definition)>
+d241 3
+@
+
+
+1.7
+log
+@  - Added vms_option.  - Added dupname attribute to %basic.atts;, for duplicate names.
+@
+text
+@d6 1
+a6 1
+:Contact: dgoodger@@bigfoot.com
+@
+
+
+1.6
+log
+@  - Moved option_list and doctest_block from ppdi.dtd to gpdi.dtd.
+@
+text
+@d7 2
+a8 2
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2001/07/27 04:07:56 $
+d49 1
+d267 2
+a268 1
+<!ELEMENT option ((short_option | long_option), option_argument?)>
+d276 3
+@
+
+
+1.5
+log
+@  - Changed field_argument's model to PCDATA.
+@
+text
+@d5 6
+a10 6
+Author: David Goodger
+Contact: dgoodger@@bigfoot.com
+Revision: $Revision: 1.4 $
+Date: $Date: 2001/07/27 04:07:56 $
+Copyright: This DTD has been placed in the public domain.
+Filename: gpdi.dtd
+d93 2
+a94 1
+    | literal_block | block_quote | table | figure
+d260 21
+d288 5
+@
+
+
+1.4
+log
+@changed CVS keywords
+@
+text
+@d7 2
+a8 2
+Revision: $Revision: 1.3 $
+Date: $Date: 2001/07/27 02:23:24 $
+d253 1
+a253 1
+<!ELEMENT field_argument %text.model;>
+@
+
+
+1.3
+log
+@Added appropriate SystemLiterals to PUBLIC external entity declarations,
+fixing bugs #444342, #444347, and #444348.
+@
+text
+@d7 2
+a8 3
+Version: 0.2
+Revision: $Revision: 1.2 $
+Date: $Date: 2001/07/26 06:05:34 $
+@
+
+
+1.2
+log
+@Fixed #444347 **except** for the PUBLIC identifier.
+@
+text
+@d8 2
+a9 2
+Revision: $Revision: 1.1.1.1 $
+Date: $Date: 2001/07/22 22:36:13 $
+d125 2
+a126 1
+    "-//OASIS//DTD XML Exchange Table Model 19990315//EN">
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d8 2
+a9 2
+Revision: $Revision: 1.24 $
+Date: $Date: 2001/07/19 23:49:25 $
+d70 1
+a70 1
+  " xml:space (default | preserve) #FIXED preserve ">
+d213 1
+a213 1
+<!ELEMENT bullet_list (listitem+)>
+d218 1
+a218 1
+<!ELEMENT enumerated_list (listitem+)>
+d231 1
+a231 1
+<!ELEMENT definition_list (definitionlistitem+)>
+d256 1
+a256 1
+<!ELEMENT field_body (&body.elements;)+>
+@
+
+
+1.1.1.1
+log
+@First Imported.
+@
+text
+@@

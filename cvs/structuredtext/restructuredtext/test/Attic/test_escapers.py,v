@@ -1,0 +1,125 @@
+head	1.1;
+access;
+symbols
+	Rrefactor-test:1.1.0.2;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2001.07.29.09.05.39;	author gtk;	state dead;
+branches
+	1.1.2.1;
+next	;
+
+1.1.2.1
+date	2001.07.29.09.05.39;	author gtk;	state Exp;
+branches;
+next	1.1.2.2;
+
+1.1.2.2
+date	2001.07.29.22.34.52;	author gtk;	state Exp;
+branches;
+next	1.1.2.3;
+
+1.1.2.3
+date	2001.09.01.15.14.08;	author goodger;	state dead;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@file test_escapers.py was initially added on branch Rrefactor-test.
+@
+text
+@@
+
+
+1.1.2.1
+log
+@First stage of the refactoring. Victory so far in developing the framework
+itself. Plenty to do so far, in particular migrating all existing tests.
+@
+text
+@a0 32
+#!/usr/bin/env python
+
+"""
+Author: Garth Kidd
+Contact: garth@@deadlybloodyserious.com
+Revision: $Revision: 1.1.1.1 $
+Date: $Date: 2001/07/21 22:14:13 $
+Copyright: This module has been placed in the public domain.
+"""
+
+from TestFramework import *
+
+class FuctionTests(unittest.TestCase):
+
+    escaped = r'escapes: \*one, \\*two, \\\*three'
+    nulled = 'escapes: \x00*one, \x00\\*two, \x00\\\x00*three'
+    unescaped = r'escapes: *one, \*two, \*three'
+
+    def test_escape2null(self):
+        nulled = states.escape2null(self.escaped)
+        self.assertEquals(nulled, self.nulled)
+        nulled = states.escape2null(self.escaped + '\\')
+        self.assertEquals(nulled, self.nulled + '\x00')
+
+    def test_unescape(self):
+        unescaped = states.unescape(self.nulled)
+        self.assertEquals(unescaped, self.unescaped)
+        restored = states.unescape(self.nulled, 1)
+        self.assertEquals(restored, self.escaped)
+
+if __name__ == '__main__':
+    main()
+@
+
+
+1.1.2.2
+log
+@More work.
+Finally decided on how to architect ParserTestSuite.
+Fixed all the accursed linefeeds, hence the absurd length of the diffs.
+Sorry about that.
+@
+text
+@d1 2
+a2 2
+#!/usr/bin/env python
+
+d6 2
+a7 2
+Revision: $Revision: 1.1.2.1 $
+Date: $Date: 2001/07/29 09:05:39 $
+d10 3
+a12 3
+
+from TestFramework import *
+
+d30 3
+a32 3
+
+if __name__ == '__main__':
+    main()
+@
+
+
+1.1.2.3
+log
+@refactored into individual test modules in test_states subdirectory
+@
+text
+@d6 2
+a7 2
+Revision: $Revision: 1.1.2.2 $
+Date: $Date: 2001/07/29 22:34:52 $
+@
+
+

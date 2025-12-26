@@ -1,0 +1,392 @@
+==================================
+ reStructuredText Project History
+==================================
+
+:Author: David Goodger
+:Contact: goodger@users.sourceforge.net
+:Date: $Date: 2002/04/19 01:49:04 $
+:Website: http://structuredtext.sourceforge.net/
+
+
+Acknowledgements
+================
+
+I would like to acknowledge the people who have made a direct impact
+on the reStructuredText project, knowingly or not, in terms of
+encouragement, suggestions, criticism, bug reports, code
+contributions, and ideas borrowed from related projects:
+
+    David Ascher, Remi Bertholet, Fred Drake, Jim Fulton, Peter Funk,
+    Doug Hellmann, Juergen Hermann, Tony (Tibs) Ibbs, Alan Jaffray,
+    Richard Jones, Garth Kidd, Daniel Larsson, Marc-Andre Lemburg,
+    Wolfgang Lipp, Edward Loper, Ken Manheimer, Alex Martelli, Paul
+    Moore, Michel Pelletier, Sam Penrose, Tim Peters, Mark Pilgrim,
+    Tavis Rudd, Ueli Schlaepfer, Bob Tolbert, Laurence Tratt, Guido
+    van Rossum, Barry Warsaw, Edward Welbourne, Paul Wright, Ka-Ping
+    Yee, Moshe Zadka
+
+(I did get some yummy treats, but I'm still waiting for contributions
+of computer equipment and cold hard cash :-).)  Hopefully I haven't
+forgotten anyone or misspelled any names; apologies (and please let me
+know!) if I have.
+
+
+Release 0.4 (2002-04-18)
+========================
+
+This is the final release of reStructuredText as an independent
+package.  Development is being transferred to the Docutils_ project
+immediately.
+
+.. _Docutils: http://docutils.sourceforge.net/
+
+General: updated docstrings for new field list syntax (bibliographic
+info); changed contact email addresses.
+
+* install.py: Added to project.
+
+* setup.py:
+
+  - Modified for import by install.py.
+  - Added 'restructuredtext.languages' subpackage.
+
+* COPYING.txt: Added to project.
+
+* docs: Subdirectory added. Contains quickref.html by Tony Ibbs and
+  quickstart.txt by Richard Jones.
+
+* restructuredtext/__init__.py:
+
+  - Added docstrings.
+  - Modified Parser.parse() for updated RSTStateMachine and
+    dps.parsers.Parser.
+  - Added form feed & vertical tab conversion to spaces.
+  - Added a ``Parser.statemachine`` instance attribute.
+  - Added parser language module support.
+  - Updated for new root document Node creation protocol.
+
+* restructuredtext/states.py:
+
+  - Added support for enumerated lists (Body.enumerated(),
+    EnumeratedList).
+  - Added new exceptions: ParserError, TransformationError.
+  - Loosened inline markup start-string & end-string patterns.
+  - Added docstrings.
+  - Changed RSTStateMachine.run() to return the document instance.
+  - Extracted checksubsection() and newsubsection() from
+    RSTState.section().
+  - Added RSTState.nestedparse().
+  - Fixed bugs with overline-section-header level parsing.
+  - Fixed URI pattern to match absolute paths & news (opaque); only
+    known URI schemes; IPv6 support.
+  - Removed dependency on trailing spaces.
+  - Extracted Body.block_quote() from Body.indent().
+  - Changed underlines/overlines to require at least 4 characters
+    (avoids '...', '???', etc.).
+  - Factored SpecializedBody out of Body subclasses.
+  - Factored SpecializedText out of Text subclass.
+  - Added support for field lists, option lists.
+  - Changed interpreted text roles to ':role:' syntax, outside of
+    backquotes.
+  - Simplified RSTState.inlineobj().
+  - Dropped leading '_' from footnotes.
+  - Dropped brackets from footnotes' implicit hyperlink names.
+  - Added check for whitespace in hyperlinks.
+  - Added empty comment support.
+  - Added support for auto-numbered footnotes, auto-symbol footnotes.
+  - Dropped requirement for blank line between definition list items.
+  - Added support for classifier after term in definition list items.
+  - Fixed bugs with literal blocks.
+  - Changed ``element.extend(nodelist)`` to ``element += nodelist``.
+  - Added full table support (Body.table() etc.).
+  - Split off NestedStateMachine (recursive) from RSTStateMachine
+    (entry point).
+  - Changed indentSM to nestedSM where appropriate.
+  - Added language module support.
+  - Changed numbered reporter.system_warning calls to named methods.
+  - Name changes (lowercased, updated, improved).
+  - Integer attributes on elements as appropriate.
+  - Added directive functionality.
+  - Mild refactoring: meaningful variable names, extracted common
+    code to methods.
+  - Removed debug code.
+  - Updated: 'errorist' -> 'reporter'.
+  - Added support for indirect hyperlink targets.
+  - Updated for renamed ``add*link`` -> ``add*target``.
+  - Added inline hyperlink targets.
+  - Added anonymous hyperlinks (``.. __:`` & ``__`` syntax).
+  - External targets' URIs now in "refuri" attribute, not data.
+  - Changed "[hyper]link" to "reference".
+  - Added substitution definitions & substitution references.
+  - Modified ``RSTState.inlineobj()`` to return end-string.
+  - Added support for multi-line label text for hyperlink targets &
+    substitution definitions.
+  - Moved 'normname()' to dps/utils.py.
+  - Updated for languagecode.
+  - Updated for hyperlink, footnote transforms.
+  - Updated for new root document Node creation protocol.
+  - Changed "system_warning" to "system_message".
+  - Removed gratuitous pseudo-default arguments from functions &
+    methods.
+  - Added literal blocks to system messages whenever the erroneous
+    source text was omitted.
+  - Wrapped problematic inline markup in "problematic" elements, added
+    links to & from system messages.
+  - Added ``Body.parse_extension_attributes()``.
+
+* restructuredtest/tableparser.py: Added to project.  Contains the
+  TableParser class.
+
+* restructuredtext/test_states.py: Refactored to test directory.  This
+  file removed.
+
+* restructuredtext/directives/__init__.py:
+
+  - Added directive registry.
+  - Added directive module & function import support.
+
+* restructuredtext/directives/misc.py: Implementation of a test
+  directive, 'restructuredtext-test-directive'.  Added to project.
+
+* restructuredtext/directives/admonitions.py: Implementation of
+  admonition directives 'note', 'caution', etc.  Added to project.
+
+* restructuredtext/directives/components.py: Implementation of
+  document components directives 'contents', 'footnotes', etc.  Added
+  to project.
+
+* restructuredtext/directives/images.py: Implementation of
+  directives 'image' & 'figure'.  Added to project.
+
+* restructuredtext/directives/html.py: Implementation of
+  HTML-specific directives 'meta' & 'imagemap'.  Added to project.
+
+* restructuredtext/languages: Subpackage added to project.  Contains
+  modules for language-dependent language-dependent parser features.
+  Includes en.py for English.
+
+* test: Subdirectory added.  The top-level consists of a modular test
+  framework begun by Garth Kidd.
+
+* test/test_states: Subdirectory added; contains test modules
+  refactored from the old restructuredtext/test_states.py.
+
+* tools: Subdirectory added.  Contains quicktest.py by Garth Kidd, a
+  front-end to the reStructuredText parser; publish.py, a minimal
+  front-end to the Docutils Publisher producing pretty-printed
+  pseudo-XML; and html.py, a simple HTML-producing front-end.
+
+* sandbox: Subdirectory added; for playing around.  It's OK to make
+  a mess!
+
+* sandbox/rtxt2html: Subdirectory added, from files by Remi Bertholet.
+
+* sandbox/paulw: Subdirectory added, from files by Paul Wright.
+
+* sandbox/alanj: Subdirectory added, from files by Alan Jaffray.
+
+* sandbox/richardj: Subdirectory added, from files by Richard Jones.
+
+* spec/alternatives.txt: Added to project.
+
+* spec/directives.txt: Added to project.
+
+* spec/introduction.txt:
+
+  - Python interpretation of interpreted text is a DPS job.
+  - Converted sf to sourceforge.
+  - Expanded markup purpose.
+  - Updated footnotes.
+  - Removed "Python-specific markup" from implementation plan.
+  - Expanded on the "Unobtrusive" goal.
+
+* spec/problems.txt:
+
+  - Added mention of GvR's backslash escape endorsement.
+  - Removed mention of compound enumerators.
+  - Updated footnotes.
+  - Removed "Parser Implementation Plan".  (It's implemented!)
+  - Revised.
+
+* spec/reStructuredText.txt:
+
+  - Modified inline markup prefix & suffix definitions.
+  - Added a note on inline markup & escapes.
+  - Added inline markup recognition order info.
+  - Moved interpreted text's role outside of backquotes.
+  - Changed interpreted text roles to ":role:" syntax.
+  - Settled on field list syntax, updated definition.
+  - Added 'abstract' to list of bibliographic elements.
+  - Removed 'title' and 'subtitle' from the list of bibliographic
+    elements.
+  - Expanded bibliographic field list handling description.
+  - Updated comments, indent/dedent.
+  - Added definition of empty comments.
+  - Loosened enumerated list requirements; clarified Roman numerals &
+    alphabet letters; added syntax diagram.
+  - Removed requirement for blank lines between definition list
+    items.
+  - Added 'classifier' to definition list items.
+  - Added auto-numbered footnotes.
+  - Removed leading underscores from footnote definition; added
+    implicit hyperlink generation.
+  - Updated & expanded definition of directives; added link to new
+    directives.txt.
+  - Added option lists & doctest blocks from pyextensions.txt.
+  - Added VMS/DOS-style options to option lists.
+  - Converted sf->sourceforge.
+  - Expanded definition of whitespace.
+  - Added Reference Names section.
+  - Moved Standalone Hyperlinks section.
+  - Expanded definition of standalone URIs.
+  - Clarified definition of underlines/overlines.
+  - Clarified handling of duplicate explicit hyperlink target names
+    with identical URIs.
+  - Added two escapes where needed.
+  - Added a note about backslashes in other contexts.
+  - Reworked literal block section in a more logical and
+    easy-to-remember way.
+  - Converted footnotes in text to auto-numbered.
+  - Standardized on double-quotes (").
+  - Changed "indirect hyperlinks" to "external hyperlinks".
+  - Added new "indrect hyperlinks".
+  - Added "anonymous hyperlinks".
+  - Rearranged hyperlink description.
+  - Added "Document Structure" section.
+  - Added "division" construct.
+  - Removed element hierarchy diagram to dps/spec/doctree.txt.
+  - Added inline hyperlink targets.
+  - Changed "hyperlink names" to "reference names", "link" to
+    "reference".
+  - Added substitution definitions, substitution references (use cases
+    contributed by Alan Jaffray).
+  - Added to table description.
+  - Added note about hyperlink/footnote/citation reference name
+    shared namespace.
+  - Added "Auto-Symbol Footnotes", "Mixed Manual and Auto-Numbered
+    Footnotes", and "Citations".
+
+* spec/pyextensions.txt:
+
+  - Removed from project (became DPS spec/python-mode.txt).
+
+
+Release 0.3 (2001-07-19)
+========================
+
+Removed all explicit hyperlink targets matching section titles in spec
+documents; they are now declared implicitly (see
+spec/reStructuredText.txt).
+
+* restructuredtext/states.py: Added to project.
+
+* restructuredtext/test_states.py: Added to project.
+
+* restructuredtext/ndiff.py: Added to project.  This is a modified
+  version of Python's Tools/scripts/ndiff.py, and is used by
+  test_states.py.  I have committed to adding its functionality to
+  Python's Lib/difflib.py.
+
+* spec/reStructuredText.txt:
+
+  - Introduced implicit hyperlink targets for section titles.
+  - Changed 'comment block' to 'explicit markup block'.  Rearranged &
+    edited the text of footnotes, hyperlink targets, directives, &
+    comments.
+  - Clarified the syntax of interpreted text roles.
+  - Clarified the case-insensitivity and character set of hyperlink
+    names, footnote labels, and directives.
+  - Changed the definition for simple link names and footnote labels
+    (underlines and dashes allowed internally only, not at begin/end).
+  - Added 'Error Handling' section.
+
+
+Release 0.2 (2001-06-18)
+========================
+
+* spec/introduction.txt: Minor changes.
+
+* spec/reStructuredText.txt:
+
+  - Added workable indented section syntax, then removed it.  See
+    spec/indentedsections.txt (included in this release only).
+  - Added details of whitespace preservation in inline literals.
+
+* spec/problems.txt:
+
+  - Revised analysis of indented sections.
+
+* HISTORY.txt: Added to project.
+
+
+Release 0.1 (2001-06-02)
+========================
+
+The project web site and the first project release were rolled out.
+Posted all but dps-notes.txt to the Doc-SIG 2001-06-03.
+
+* spec/introduction.txt:
+
+  - Title changed from "A Plan for Structured Text".
+  - Expanded and revised the "Goals" section.
+  - Brought the "History" section up to date.
+  - Added the "Parser Implementation Plan" section.
+  - Added internal cross-references (in anticipation of the far-off
+    day when we can actually *process* these files :-).
+
+* spec/reStructuredText.txt:
+
+  - Title changed from "reStructuredText: Revised Structured Text
+    Specification".
+  - Added "Quick Syntax Overview".
+  - Moved syntax diagrams from their own section to be adjacent to
+    their construct.
+  - Tightened up syntax specifications.
+  - Changed "descriptive lists" to "definition lists", changed syntax.
+  - Added field lists.  Syntax not settled yet.
+  - Added header row separator ('=') to tables.
+  - Allowed comment blocks (comments, directives, hyperlink targets,
+    footnotes) to occur in nested blocks.
+  - Changed phrase-link delimiters from square brackets to backquotes.
+  - Added a set of inline markup delimiter recognition rules.
+  - Added interpreted text using backquotes ('`').
+  - Changed inline literals to use double-backquotes ('``').
+  - Added internal cross-references (to the doc, not the spec).
+  - General reorganization, editing, & cleanup.
+
+* spec/pyextensions.txt: Added to project (option lists, doctest
+  blocks, and interpreted text interpretations).
+
+* spec/problems.txt:
+
+  - Added sections: "Blank Lines in Lists", "Definition List Markup",
+    "Underlining".
+  - General editing & cleanup.  Tightened up analyses, added
+    alternatives.
+
+* spec/rst-notes.txt: Added to project.
+
+
+First Draft of Specification (2000-11-24)
+=========================================
+
+First posted to the Python Documentation Special Interests Group
+(Doc-SIG) in three parts:
+
+* A Plan for Structured Text
+  http://mail.python.org/pipermail/doc-sig/2000-November/001239.html
+
+* Problems With StructuredText
+  http://mail.python.org/pipermail/doc-sig/2000-November/001240.html
+
+* reStructuredText: Revised Structured Text Specification
+  http://mail.python.org/pipermail/doc-sig/2000-November/001241.html
+
+
+..
+   Local Variables:
+   mode: indented-text
+   indent-tabs-mode: nil
+   sentence-end-double-space: t
+   fill-column: 70
+   End:

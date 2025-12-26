@@ -1,0 +1,304 @@
+head	1.6;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.6
+date	2002.03.28.04.47.22;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2002.03.16.06.04.30;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2002.02.22.02.01.02;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2002.02.12.02.19.27;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2002.02.07.01.59.51;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2002.02.06.03.01.40;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.6
+log
+@docstring mods
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Authors: David Goodger; Ueli Schlaepfer
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.5 $
+:Date: $Date: 2002/03/16 06:04:30 $
+:Copyright: This module has been placed in the public domain.
+
+This package contains DPS Reader modules.
+"""
+
+__docformat__ = 'reStructuredText'
+
+__all__ = ['Reader', 'get_reader_class']
+
+
+import sys
+from dps import nodes, utils
+from dps.transforms import universal
+
+
+class Reader:
+
+    """
+    Abstract base class for docutils Readers.
+
+    Each reader module or package must export a subclass also called 'Reader'.
+
+    The three steps of a Reader's responsibility are defined: `scan()`,
+    `parse()`, and `transform()`. Call `read()` to process a document.
+    """
+
+    transforms = ()
+    """Ordered tuple of transform classes (each with a ``transform()`` method).
+    Populated by subclasses. `Reader.transform()` instantiates & runs them."""
+
+    def __init__(self, reporter, languagecode):
+        """
+        Initialize the Reader instance.
+
+        Several instance attributes are defined with dummy initial values.
+        Subclasses may use these attributes as they wish.
+        """
+
+        self.languagecode = languagecode
+        """Default language for new documents."""
+
+        self.reporter = reporter
+        """A `utils.Reporter` instance shared by all doctrees."""
+
+        self.source = None
+        """Path to the source of raw input."""
+
+        self.input = None
+        """Raw text input; either a single string or, for more complex cases,
+        a collection of strings."""
+
+        self.transforms = tuple(self.transforms)
+        """Instance copy of `Reader.transforms`; may be modified by client."""
+
+    def read(self, source, parser):
+        self.source = source
+        self.parser = parser
+        self.scan()               # may modify self.parser, depending on input
+        self.parse()
+        self.transform()
+        return self.document
+
+    def scan(self):
+        """Override to read `self.input` from `self.source`."""
+        raise NotImplementedError('subclass must override this method')
+
+    def scanfile(self, source):
+        """
+        Scan a single file and return the raw data.
+
+        Parameter `source` may be:
+
+        (a) a file-like object, which is read directly;
+        (b) a path to a file, which is opened and then read; or
+        (c) `None`, which implies `sys.stdin`.
+        """
+        if hasattr(source, 'read'):
+            return source.read()
+        if self.source:
+            return open(source).read()
+        return sys.stdin.read()
+
+    def parse(self):
+        """Parse `self.input` into a document tree."""
+        self.document = self.newdocument()
+        self.parser.parse(self.input, self.document)
+
+    def transform(self):
+        """Run all of the transforms defined for this Reader."""
+        for xclass in (universal.first_reader_transforms
+                       + tuple(self.transforms)
+                       + universal.last_reader_transforms):
+            xclass(self.document).transform()
+
+    def newdocument(self, languagecode=None):
+        """Create and return a new empty document tree (root node)."""
+        document = nodes.document(
+              languagecode=(languagecode or self.languagecode),
+              reporter=self.reporter)
+        document['source'] = self.source
+        return document
+
+
+_reader_aliases = {'rtxt': 'standalone',
+                   'restructuredtext': 'standalone'}
+
+def get_reader_class(readername):
+    """Return the Reader class from the `readername` module."""
+    readername = readername.lower()
+    if _reader_aliases.has_key(readername):
+        readername = _reader_aliases[readername]
+    module = __import__(readername, globals(), locals())
+    return module.Reader
+@
+
+
+1.5
+log
+@  - Transform API update.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2002/02/22 02:01:02 $
+d27 2
+@
+
+
+1.4
+log
+@  - Added support for universal transforms.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2002/02/12 02:19:27 $
+d98 1
+a98 1
+            xclass().transform(self.document)
+d105 1
+@
+
+
+1.3
+log
+@rearranged logic
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.2 $
+:Date: $Date: 2002/02/07 01:59:51 $
+d20 1
+d33 1
+a33 1
+    """Ordered list of transform classes (each with a ``transform()`` method).
+d57 1
+a57 1
+        self.transforms = list(self.transforms)
+d95 3
+a97 1
+        for xclass in self.transforms:
+@
+
+
+1.2
+log
+@progress
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.1 $
+:Date: $Date: 2002/02/06 03:01:40 $
+d62 2
+a63 3
+        self.scan(self.source)          # may modify self.parser,
+                                        # depending on input
+        self.parse(self.parser)
+d67 2
+a68 2
+    def scan(self, source):
+        """Override to read `self.input` from `source`."""
+d73 1
+a73 1
+        Scan a single file, store data in `self.input`.
+d82 4
+a85 5
+            self.input = source.read()
+        elif self.source:
+            self.input = open(source).read()
+        else:
+            self.input = sys.stdin.read()
+d87 1
+a87 1
+    def parse(self, parser):
+d90 1
+a90 1
+        parser.parse(self.input, self.document)
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision:$
+:Date: $Date:$
+d18 1
+d31 5
+a35 2
+    def __init__(self, languagecode='en', warninglevel=2, errorlevel=4,
+                 warningstream=None, debug=0):
+d46 1
+a46 2
+        self.reporter = utils.Reporter(warninglevel, errorlevel, warningstream,
+                                       debug)
+d56 3
+d61 4
+a64 2
+        self.scan()
+        self.parse(parser)              # parser may vary depending on input
+d66 1
+a66 1
+        return self.getdocument()
+d72 17
+d90 3
+a92 2
+        """Override to parse `self.input` into one or more document trees."""
+        raise NotImplementedError('subclass must override this method')
+d95 3
+a97 2
+        """Override to run document tree transforms."""
+        raise NotImplementedError('subclass must override this method')
+d101 3
+a103 4
+        if not languagecode:
+            languagecode = self.languagecode
+        document = nodes.document(languagecode=languagecode,
+                                  reporter=self.reporter)
+d108 1
+a108 1
+            'restructuredtext': 'standalone'}
+@
+

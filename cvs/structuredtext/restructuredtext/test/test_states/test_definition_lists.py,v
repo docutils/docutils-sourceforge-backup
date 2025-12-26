@@ -1,0 +1,845 @@
+head	1.9;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.9
+date	2002.04.13.16.27.11;	author goodger;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2002.03.16.05.28.33;	author goodger;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2002.03.12.03.28.11;	author goodger;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2002.02.15.22.58.17;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2002.02.06.02.17.21;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.11.19.04.32.39;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.09.13.02.38.26;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.09.02.14.02.12;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.09.01.16.57.25;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.9
+log
+@updated
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.8 $
+:Date: $Date: 2002/03/16 05:28:33 $
+:Copyright: This module has been placed in the public domain.
+
+Tests for states.py.
+"""
+
+import RSTTestSupport
+
+def suite():
+    s = RSTTestSupport.ParserTestSuite()
+    s.generateTests(totest)
+    return s
+
+totest = {}
+
+totest['definition_lists'] = [
+["""\
+term
+  definition
+""",
+"""\
+<document>
+    <definition_list>
+        <definition_list_item>
+            <term>
+                term
+            <definition>
+                <paragraph>
+                    definition
+"""],
+["""\
+term
+  definition
+
+paragraph
+""",
+"""\
+<document>
+    <definition_list>
+        <definition_list_item>
+            <term>
+                term
+            <definition>
+                <paragraph>
+                    definition
+    <paragraph>
+        paragraph
+"""],
+["""\
+term
+  definition
+no blank line
+""",
+"""\
+<document>
+    <definition_list>
+        <definition_list_item>
+            <term>
+                term
+            <definition>
+                <paragraph>
+                    definition
+    <system_message level="2" type="WARNING">
+        <paragraph>
+            Unindent without blank line at line 3.
+    <paragraph>
+        no blank line
+"""],
+["""\
+A paragraph::
+    A literal block without a blank line first?
+""",
+"""\
+<document>
+    <definition_list>
+        <definition_list_item>
+            <term>
+                A paragraph::
+            <definition>
+                <system_message level="1" type="INFO">
+                    <paragraph>
+                        Blank line missing before literal block? Interpreted as a definition list item. At line 2.
+                <paragraph>
+                    A literal block without a blank line first?
+"""],
+["""\
+term 1
+  definition 1
+
+term 2
+  definition 2
+""",
+"""\
+<document>
+    <definition_list>
+        <definition_list_item>
+            <term>
+                term 1
+            <definition>
+                <paragraph>
+                    definition 1
+        <definition_list_item>
+            <term>
+                term 2
+            <definition>
+                <paragraph>
+                    definition 2
+"""],
+["""\
+term 1
+  definition 1 (no blank line below)
+term 2
+  definition 2
+""",
+"""\
+<document>
+    <definition_list>
+        <definition_list_item>
+            <term>
+                term 1
+            <definition>
+                <paragraph>
+                    definition 1 (no blank line below)
+        <definition_list_item>
+            <term>
+                term 2
+            <definition>
+                <paragraph>
+                    definition 2
+"""],
+["""\
+term 1
+  definition 1
+
+  term 1a
+    definition 1a
+
+  term 1b
+    definition 1b
+
+term 2
+  definition 2
+
+paragraph
+""",
+"""\
+<document>
+    <definition_list>
+        <definition_list_item>
+            <term>
+                term 1
+            <definition>
+                <paragraph>
+                    definition 1
+                <definition_list>
+                    <definition_list_item>
+                        <term>
+                            term 1a
+                        <definition>
+                            <paragraph>
+                                definition 1a
+                    <definition_list_item>
+                        <term>
+                            term 1b
+                        <definition>
+                            <paragraph>
+                                definition 1b
+        <definition_list_item>
+            <term>
+                term 2
+            <definition>
+                <paragraph>
+                    definition 2
+    <paragraph>
+        paragraph
+"""],
+["""\
+Term : classifier
+    The ' : ' indicates a classifier in
+    definition list item terms only.
+""",
+"""\
+<document>
+    <definition_list>
+        <definition_list_item>
+            <term>
+                Term
+            <classifier>
+                classifier
+            <definition>
+                <paragraph>
+                    The ' : ' indicates a classifier in
+                    definition list item terms only.
+"""],
+["""\
+Term: not a classifier
+    Because there's no space before the colon.
+Term :not a classifier
+    Because there's no space after the colon.
+Term \: not a classifier
+    Because the colon is escaped.
+""",
+"""\
+<document>
+    <definition_list>
+        <definition_list_item>
+            <term>
+                Term: not a classifier
+            <definition>
+                <paragraph>
+                    Because there's no space before the colon.
+        <definition_list_item>
+            <term>
+                Term :not a classifier
+            <definition>
+                <paragraph>
+                    Because there's no space after the colon.
+        <definition_list_item>
+            <term>
+                Term : not a classifier
+            <definition>
+                <paragraph>
+                    Because the colon is escaped.
+"""],
+["""\
+Term `with *inline ``text **errors : classifier `with *errors ``too
+    Definition `with *inline ``text **markup errors.
+""",
+"""\
+<document>
+    <definition_list>
+        <definition_list_item>
+            <term>
+                Term \n\
+                <problematic id="id2" refid="id1">
+                    `
+                with \n\
+                <problematic id="id4" refid="id3">
+                    *
+                inline \n\
+                <problematic id="id6" refid="id5">
+                    ``
+                text \n\
+                <problematic id="id8" refid="id7">
+                    **
+                errors
+            <classifier>
+                classifier \n\
+                <problematic id="id10" refid="id9">
+                    `
+                with \n\
+                <problematic id="id12" refid="id11">
+                    *
+                errors \n\
+                <problematic id="id14" refid="id13">
+                    ``
+                too
+            <definition>
+                <system_message backrefs="id2" id="id1" level="2" type="WARNING">
+                    <paragraph>
+                        Inline interpreted text or phrase reference start-string without end-string at line 1.
+                <system_message backrefs="id4" id="id3" level="2" type="WARNING">
+                    <paragraph>
+                        Inline emphasis start-string without end-string at line 1.
+                <system_message backrefs="id6" id="id5" level="2" type="WARNING">
+                    <paragraph>
+                        Inline literal start-string without end-string at line 1.
+                <system_message backrefs="id8" id="id7" level="2" type="WARNING">
+                    <paragraph>
+                        Inline strong start-string without end-string at line 1.
+                <system_message backrefs="id10" id="id9" level="2" type="WARNING">
+                    <paragraph>
+                        Inline interpreted text or phrase reference start-string without end-string at line 1.
+                <system_message backrefs="id12" id="id11" level="2" type="WARNING">
+                    <paragraph>
+                        Inline emphasis start-string without end-string at line 1.
+                <system_message backrefs="id14" id="id13" level="2" type="WARNING">
+                    <paragraph>
+                        Inline literal start-string without end-string at line 1.
+                <paragraph>
+                    Definition \n\
+                    <problematic id="id16" refid="id15">
+                        `
+                    with \n\
+                    <problematic id="id18" refid="id17">
+                        *
+                    inline \n\
+                    <problematic id="id20" refid="id19">
+                        ``
+                    text \n\
+                    <problematic id="id22" refid="id21">
+                        **
+                    markup errors.
+                <system_message backrefs="id16" id="id15" level="2" type="WARNING">
+                    <paragraph>
+                        Inline interpreted text or phrase reference start-string without end-string at line 2.
+                <system_message backrefs="id18" id="id17" level="2" type="WARNING">
+                    <paragraph>
+                        Inline emphasis start-string without end-string at line 2.
+                <system_message backrefs="id20" id="id19" level="2" type="WARNING">
+                    <paragraph>
+                        Inline literal start-string without end-string at line 2.
+                <system_message backrefs="id22" id="id21" level="2" type="WARNING">
+                    <paragraph>
+                        Inline strong start-string without end-string at line 2.
+"""],
+]
+
+if __name__ == '__main__':
+    import unittest
+    unittest.main(defaultTest='suite')
+@
+
+
+1.8
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.7 $
+:Date: $Date: 2002/03/12 03:28:11 $
+d265 1
+a265 1
+                <system_message id="id1" level="2" refid="id2" type="WARNING">
+d268 1
+a268 1
+                <system_message id="id3" level="2" refid="id4" type="WARNING">
+d271 1
+a271 1
+                <system_message id="id5" level="2" refid="id6" type="WARNING">
+d274 1
+a274 1
+                <system_message id="id7" level="2" refid="id8" type="WARNING">
+d277 1
+a277 1
+                <system_message id="id9" level="2" refid="id10" type="WARNING">
+d280 1
+a280 1
+                <system_message id="id11" level="2" refid="id12" type="WARNING">
+d283 1
+a283 1
+                <system_message id="id13" level="2" refid="id14" type="WARNING">
+d300 1
+a300 1
+                <system_message id="id15" level="2" refid="id16" type="WARNING">
+d303 1
+a303 1
+                <system_message id="id17" level="2" refid="id18" type="WARNING">
+d306 1
+a306 1
+                <system_message id="id19" level="2" refid="id20" type="WARNING">
+d309 1
+a309 1
+                <system_message id="id21" level="2" refid="id22" type="WARNING">
+@
+
+
+1.7
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.6 $
+:Date: $Date: 2002/02/15 22:58:17 $
+d240 1
+a240 1
+                Term 
+d243 1
+a243 1
+                with 
+d246 1
+a246 1
+                inline 
+d249 1
+a249 1
+                text 
+d254 1
+a254 1
+                classifier 
+d257 1
+a257 1
+                with 
+d260 1
+a260 1
+                errors 
+d287 1
+a287 1
+                    Definition 
+d290 1
+a290 1
+                    with 
+d293 1
+a293 1
+                    inline 
+d296 1
+a296 1
+                    text 
+@
+
+
+1.6
+log
+@  - Changed "system_warning" to "system_message".
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.5 $
+:Date: $Date: 2002/02/06 02:17:21 $
+d240 13
+a252 1
+                Term `with *inline ``text **errors
+d254 10
+a263 1
+                classifier `with *errors ``too
+d265 1
+a265 1
+                <system_message level="2" type="WARNING">
+d268 1
+a268 1
+                <system_message level="2" type="WARNING">
+d271 1
+a271 1
+                <system_message level="2" type="WARNING">
+d274 1
+a274 1
+                <system_message level="2" type="WARNING">
+d277 1
+a277 1
+                <system_message level="2" type="WARNING">
+d280 1
+a280 1
+                <system_message level="2" type="WARNING">
+d283 1
+a283 1
+                <system_message level="2" type="WARNING">
+d287 14
+a300 2
+                    Definition `with *inline ``text **markup errors.
+                <system_message level="2" type="WARNING">
+d303 1
+a303 1
+                <system_message level="2" type="WARNING">
+d306 1
+a306 1
+                <system_message level="2" type="WARNING">
+d309 1
+a309 1
+                <system_message level="2" type="WARNING">
+@
+
+
+1.5
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2001/11/19 04:32:39 $
+d69 1
+a69 1
+    <system_warning level="2" type="WARNING">
+d86 1
+a86 1
+                <system_warning level="1" type="INFO">
+d244 1
+a244 1
+                <system_warning level="2" type="WARNING">
+d247 1
+a247 1
+                <system_warning level="2" type="WARNING">
+d250 1
+a250 1
+                <system_warning level="2" type="WARNING">
+d253 1
+a253 1
+                <system_warning level="2" type="WARNING">
+d256 1
+a256 1
+                <system_warning level="2" type="WARNING">
+d259 1
+a259 1
+                <system_warning level="2" type="WARNING">
+d262 1
+a262 1
+                <system_warning level="2" type="WARNING">
+d267 1
+a267 1
+                <system_warning level="2" type="WARNING">
+d270 1
+a270 1
+                <system_warning level="2" type="WARNING">
+d273 1
+a273 1
+                <system_warning level="2" type="WARNING">
+d276 1
+a276 1
+                <system_warning level="2" type="WARNING">
+@
+
+
+1.4
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2001/09/13 02:38:26 $
+d69 1
+a69 1
+    <system_warning level="1">
+d86 1
+a86 1
+                <system_warning level="0">
+d244 1
+a244 1
+                <system_warning level="1">
+d247 1
+a247 1
+                <system_warning level="1">
+d250 1
+a250 1
+                <system_warning level="1">
+d253 1
+a253 1
+                <system_warning level="1">
+d256 1
+a256 1
+                <system_warning level="1">
+d259 1
+a259 1
+                <system_warning level="1">
+d262 1
+a262 1
+                <system_warning level="1">
+d267 1
+a267 1
+                <system_warning level="1">
+d270 1
+a270 1
+                <system_warning level="1">
+d273 1
+a273 1
+                <system_warning level="1">
+d276 1
+a276 1
+                <system_warning level="1">
+@
+
+
+1.3
+log
+@Updated for simpler dps.nodes._Element.pformat().
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.2 $
+:Date: $Date: 2001/09/02 14:02:12 $
+d246 1
+a246 1
+                        Inline interpreted text or phrase link start-string without end-string at line 1.
+d258 1
+a258 1
+                        Inline interpreted text or phrase link start-string without end-string at line 1.
+d269 1
+a269 1
+                        Inline interpreted text or phrase link start-string without end-string at line 2.
+@
+
+
+1.2
+log
+@Removed "id=__file__" from ParserTestSuite call (now auto-detected).
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.1 $
+:Date: $Date: 2001/09/01 16:57:25 $
+a32 1
+            </term>
+a35 5
+                </paragraph>
+            </definition>
+        </definition_list_item>
+    </definition_list>
+</document>
+a48 1
+            </term>
+a51 4
+                </paragraph>
+            </definition>
+        </definition_list_item>
+    </definition_list>
+a53 2
+    </paragraph>
+</document>
+a65 1
+            </term>
+a68 4
+                </paragraph>
+            </definition>
+        </definition_list_item>
+    </definition_list>
+a71 2
+        </paragraph>
+    </system_warning>
+a73 2
+    </paragraph>
+</document>
+a84 1
+            </term>
+a88 2
+                    </paragraph>
+                </system_warning>
+a90 5
+                </paragraph>
+            </definition>
+        </definition_list_item>
+    </definition_list>
+</document>
+a104 1
+            </term>
+a107 3
+                </paragraph>
+            </definition>
+        </definition_list_item>
+a110 1
+            </term>
+a113 5
+                </paragraph>
+            </definition>
+        </definition_list_item>
+    </definition_list>
+</document>
+a126 1
+            </term>
+a129 3
+                </paragraph>
+            </definition>
+        </definition_list_item>
+a132 1
+            </term>
+a135 5
+                </paragraph>
+            </definition>
+        </definition_list_item>
+    </definition_list>
+</document>
+a157 1
+            </term>
+a160 1
+                </paragraph>
+a164 1
+                        </term>
+a167 3
+                            </paragraph>
+                        </definition>
+                    </definition_list_item>
+a170 1
+                        </term>
+a173 6
+                            </paragraph>
+                        </definition>
+                    </definition_list_item>
+                </definition_list>
+            </definition>
+        </definition_list_item>
+a176 1
+            </term>
+a179 4
+                </paragraph>
+            </definition>
+        </definition_list_item>
+    </definition_list>
+a181 2
+    </paragraph>
+</document>
+a193 1
+            </term>
+a195 1
+            </classifier>
+a199 5
+                </paragraph>
+            </definition>
+        </definition_list_item>
+    </definition_list>
+</document>
+a214 1
+            </term>
+a217 3
+                </paragraph>
+            </definition>
+        </definition_list_item>
+a220 1
+            </term>
+a223 3
+                </paragraph>
+            </definition>
+        </definition_list_item>
+a226 1
+            </term>
+a229 5
+                </paragraph>
+            </definition>
+        </definition_list_item>
+    </definition_list>
+</document>
+a240 1
+            </term>
+a242 1
+            </classifier>
+a246 2
+                    </paragraph>
+                </system_warning>
+a249 2
+                    </paragraph>
+                </system_warning>
+a252 2
+                    </paragraph>
+                </system_warning>
+a255 2
+                    </paragraph>
+                </system_warning>
+a258 2
+                    </paragraph>
+                </system_warning>
+a261 2
+                    </paragraph>
+                </system_warning>
+a264 2
+                    </paragraph>
+                </system_warning>
+a266 1
+                </paragraph>
+a269 2
+                    </paragraph>
+                </system_warning>
+a272 2
+                    </paragraph>
+                </system_warning>
+a275 2
+                    </paragraph>
+                </system_warning>
+a278 6
+                    </paragraph>
+                </system_warning>
+            </definition>
+        </definition_list_item>
+    </definition_list>
+</document>
+@
+
+
+1.1
+log
+@Refactored from the monolithic restructuredtext/test_states.py, using the Garth Kidd's framework. Thanks Garth!
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision$
+:Date: $Date$
+d16 1
+a16 1
+    s = RSTTestSupport.ParserTestSuite(id=__file__)
+@
+

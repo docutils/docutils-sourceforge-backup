@@ -1,0 +1,5 @@
+Testing Docutils 0.16 with Python 2.7.16 on 2020-01-12 at 14:29:30
+OS: Linux 5.0.0-38-generic #41-Ubuntu SMP Tue Dec 3 00:27:35 UTC 2019 (linux2, Linux-5.0.0-38-generic-x86_64-with-Ubuntu-19.04-disco)
+Working directory: /home/engelbert/projects/docutils-code/docutils/test
+Docutils package: /home/engelbert/projects/docutils-code/docutils/docutils
+Elapsed time: 6.861 seconds

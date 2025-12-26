@@ -1,0 +1,412 @@
+head	1.10;
+access;
+symbols
+	rel-0-3:1.1.1.1 open:1.1.1;
+locks; strict;
+comment	@# @;
+
+
+1.10
+date	2002.03.16.06.09.23;	author goodger;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2002.03.04.04.47.52;	author goodger;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2002.02.23.16.53.30;	author goodger;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2002.02.06.02.41.54;	author goodger;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2002.01.25.23.50.55;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2002.01.16.02.50.12;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.09.10.04.10.40;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.09.07.02.12.28;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.08.17.02.31.39;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.07.22.22.35.42;	author goodger;	state Exp;
+branches
+	1.1.1.1;
+next	;
+
+1.1.1.1
+date	2001.07.22.22.35.42;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.10
+log
+@  - Added label for "contents".
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.9 $
+:Date: $Date: 2002/03/04 04:47:52 $
+:Copyright: This module has been placed in the public domain.
+
+English-language mappings for language-dependent features of the Python
+Docstring Processing System.
+"""
+
+__docformat__ = 'reStructuredText'
+
+__all__ = ['labels', 'bibliographic_fields', 'author_separators']
+
+
+from dps import nodes
+
+
+labels = {
+      'author': 'Author',
+      'authors': 'Authors',
+      'organization': 'Organization',
+      'contact': 'Contact',
+      'version': 'Version',
+      'revision': 'Revision',
+      'status': 'Status',
+      'date': 'Date',
+      'copyright': 'Copyright',
+      'abstract': 'Abstract',
+      'attention': 'Attention!',
+      'caution': 'Caution!',
+      'danger': '!DANGER!',
+      'error': 'Error',
+      'hint': 'Hint',
+      'important': 'Important',
+      'note': 'Note',
+      'tip': 'Tip',
+      'warning': 'Warning',
+      'contents': 'Contents'}
+"""Mapping of node class name to label text."""
+
+bibliographic_fields = {
+      'author': nodes.author,
+      'authors': nodes.authors,
+      'organization': nodes.organization,
+      'contact': nodes.contact,
+      'version': nodes.version,
+      'revision': nodes.revision,
+      'status': nodes.status,
+      'date': nodes.date,
+      'copyright': nodes.copyright,
+      'abstract': nodes.topic}
+"""Field name (lowcased) to node class name mapping for bibliographic fields
+(field_list)."""
+
+author_separators = [';', ',']
+"""List of separator strings for the 'Authors' bibliographic field. Tried in
+order."""
+@
+
+
+1.9
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.8 $
+:Date: $Date: 2002/02/23 16:53:30 $
+d42 1
+a42 1
+      }
+@
+
+
+1.8
+log
+@  - Changed 'bibliographic_labels' to 'labels'.  - Added labels for admonitions.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.7 $
+:Date: $Date: 2002/02/06 02:41:54 $
+d55 1
+a55 1
+      'abstract': nodes.abstract}
+@
+
+
+1.7
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.6 $
+:Date: $Date: 2002/01/25 23:50:55 $
+d16 1
+a16 1
+__all__ = ['bibliographic_labels', 'bibliographic_fields', 'author_separators']
+d22 1
+a22 1
+bibliographic_labels = {
+d32 12
+a43 2
+      'abstract': 'Abstract'}
+"""Mapping of bibliographic node class name to label text."""
+@
+
+
+1.6
+log
+@  - Removed Python-specific interpreted text mapping.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.5 $
+:Date: $Date: 2002/01/16 02:50:12 $
+d16 1
+a16 2
+__all__ = ['interpreted', 'bibliographic_labels', 'bibliographic_fields',
+           'author_separators']
+@
+
+
+1.5
+log
+@  - Added 'bibliographic_fields' and 'author_separators' (transform    support).
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2001/09/10 04:10:40 $
+a21 21
+
+interpreted = {
+      'package': nodes.package,
+      'module': nodes.module,
+      'class': nodes.inline_class,
+      'method': nodes.method,
+      'function': nodes.function,
+      'variable': nodes.variable,
+      'parameter': nodes.parameter,
+      'type': nodes.type,
+      'class attribute': nodes.class_attribute,
+      'classatt': nodes.class_attribute,
+      'instance attribute': nodes.instance_attribute,
+      'instanceatt': nodes.instance_attribute,
+      'module attribute': nodes.module_attribute,
+      'moduleatt': nodes.module_attribute,
+      'exception class': nodes.exception_class,
+      'exception': nodes.exception_class,
+      'warning class': nodes.warning_class,
+      'warning': nodes.warning_class,}
+"""Mapping of interpreted text role name to nodes.py class."""
+@
+
+
+1.4
+log
+@  - Removed parser-specific data.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision$
+:Date: $Date$
+d16 2
+a17 1
+__all__ = ['interpreted', 'bibliographic_labels']
+d56 18
+@
+
+
+1.3
+log
+@  - Changed node class names to node classes.
+@
+text
+@a1 2
+# $Id: en.py,v 1.2 2001/08/17 02:31:39 goodger Exp $
+# by David Goodger (dgoodger@@bigfoot.com)
+d4 8
+a11 2
+This module contains English-language mappings for language-dependent
+features.
+a13 1
+__all__ = ['parser', 'formatter']
+d16 2
+d22 33
+a54 72
+class Stuff:
+
+    """Stores a bunch of stuff for dotted-attribute access."""
+
+    def __init__(self, **keywordargs):
+        self.__dict__.update(keywordargs)
+
+
+parser = Stuff()
+"""
+Mappings for input parsers. Attributes:
+
+- bibliofields: Field name (lowcased) to node class name mapping for
+  bibliographic elements.
+- authorseps: List of separator strings for 'Authors' fields, tried in order.
+- interpreted: Interpreted text role name to node class name mapping.
+- directives: Directive name to directive module name mapping.
+"""
+
+parser.bibliofields = {'title': nodes.title,
+                       'subtitle': nodes.subtitle,
+                       'author': nodes.author,
+                       'authors': nodes.authors,
+                       'organization': nodes.organization,
+                       'contact': nodes.contact,
+                       'version': nodes.version,
+                       'revision': nodes.revision,
+                       'status': nodes.status,
+                       'date': nodes.date,
+                       'copyright': nodes.copyright,
+                       'abstract': nodes.abstract}
+
+parser.authorseps = [';', ',']
+
+parser.interpreted = {'package': nodes.package,
+                      'module': nodes.module,
+                      'class': nodes.inline_class,
+                      'method': nodes.method,
+                      'function': nodes.function,
+                      'variable': nodes.variable,
+                      'parameter': nodes.parameter,
+                      'type': nodes.type,
+                      'class attribute': nodes.class_attribute,
+                      'classatt': nodes.class_attribute,
+                      'instance attribute': nodes.instance_attribute,
+                      'instanceatt': nodes.instance_attribute,
+                      'module attribute': nodes.module_attribute,
+                      'moduleatt': nodes.module_attribute,
+                      'exception class': nodes.exception_class,
+                      'exception': nodes.exception_class,
+                      'warning class': nodes.warning_class,
+                      'warning': nodes.warning_class,}
+
+parser.directives = {}
+
+formatter = Stuff()
+"""
+Mappings for output formatters. Attributes:
+
+- bibliolabels: Bibliographic node class name to label text mapping.
+"""
+
+formatter.bibliolabels = {'title': 'Title',
+                          'author': 'Author',
+                          'authors': 'Authors',
+                          'organization': 'Organization',
+                          'contact': 'Contact',
+                          'version': 'Version',
+                          'revision': 'Revision',
+                          'status': 'Status',
+                          'date': 'Date',
+                          'copyright': 'Copyright',}
+@
+
+
+1.2
+log
+@  - Fixed ``__all__``.
+@
+text
+@d2 1
+a2 1
+# $Id: en.py,v 1.1.1.1 2001/07/22 22:35:42 goodger Exp $
+d14 3
+d36 12
+a47 10
+parser.bibliofields = {'title': 'title',
+                       'author': 'author',
+                       'authors': 'authors',
+                       'organization': 'organization',
+                       'contact': 'contact',
+                       'version': 'version',
+                       'revision': 'revision',
+                       'status': 'status',
+                       'date': 'date',
+                       'copyright': 'copyright',}
+d51 18
+a68 18
+parser.interpreted = {'package': 'package',
+                      'module': 'module',
+                      'class': 'inline_class',
+                      'method': 'method',
+                      'function': 'function',
+                      'variable': 'variable',
+                      'parameter': 'parameter',
+                      'type': 'type',
+                      'class attribute': 'class_attribute',
+                      'classatt': 'class_attribute',
+                      'instance attribute': 'instance_attribute',
+                      'instanceatt': 'instance_attribute',
+                      'module attribute': 'module_attribute',
+                      'moduleatt': 'module_attribute',
+                      'exception class': 'exception_class',
+                      'exception': 'exception_class',
+                      'warning class': 'warning_class',
+                      'warning': 'warning_class',}
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d2 1
+a2 1
+# $Id: en.py,v 1.4 2001/07/20 00:13:07 David_Goodger Exp David_Goodger $
+d10 1
+a10 1
+__all__ = [parser, formatter]
+@
+
+
+1.1.1.1
+log
+@First Imported.
+@
+text
+@@

@@ -1,0 +1,57 @@
+head	1.2;
+access;
+symbols
+	rel-0-3:1.1.1.1 open:1.1.1;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2002.01.30.04.40.52;	author goodger;	state dead;
+branches;
+next	1.1;
+
+1.1
+date	2001.07.22.22.35.39;	author goodger;	state Exp;
+branches
+	1.1.1.1;
+next	;
+
+1.1.1.1
+date	2001.07.22.22.35.39;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@to be replaced by "writers" or "builders" subpackage
+@
+text
+@#! /usr/bin/env python
+# $Id: __init__.py,v 1.1 2001/07/22 22:35:39 goodger Exp $
+# by David Goodger (dgoodger@@bigfoot.com)
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d2 1
+a2 1
+# $Id: __init__.py,v 1.1 2001/05/22 00:26:50 David_Goodger Exp $
+@
+
+
+1.1.1.1
+log
+@First Imported.
+@
+text
+@@

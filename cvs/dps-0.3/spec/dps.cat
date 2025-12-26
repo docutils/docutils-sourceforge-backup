@@ -1,0 +1,24 @@
+--
+.. $Id: dps.cat,v 1.1.1.1 2001/07/22 22:36:10 goodger Exp $
+
+===========================================================================
+ Python Docstring Processing System Catalog Data
+===========================================================================
+Author: David Goodger
+Contact: dgoodger@bigfoot.com
+Version: 0.1
+Date: 2001-05-29
+Filename: dps.cat
+
+This file provides a mapping from formal public identifier to system filename.
+
+More information about this file and the Python Docstring Processing System
+project can be found at http://docstring.sf.net/. The latest version of this
+file is available from http://docstring.sf.net/spec/dps.cat.
+--
+
+PUBLIC "+//IDN python.org//DTD Generic Plaintext Document Interface 0.1//EN//XML" "gpdi.dtd"
+
+PUBLIC "+//IDN python.org//DTD Python Plaintext Document Interface 0.1//EN//XML" "ppdi.dtd"
+
+PUBLIC "-//OASIS//DTD XML Exchange Table Model 19990315//EN" "soextblx.dtd"

@@ -1,0 +1,1848 @@
+head	1.36;
+access;
+symbols
+	rel-0-3:1.1.1.1 open:1.1.1;
+locks; strict;
+comment	@# @;
+
+
+1.36
+date	2002.04.18.02.54.58;	author goodger;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2002.04.13.17.09.21;	author goodger;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2002.04.04.05.53.11;	author goodger;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2002.03.28.04.34.58;	author goodger;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2002.03.16.06.11.18;	author goodger;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2002.03.13.02.48.34;	author goodger;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2002.03.11.03.45.15;	author goodger;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2002.03.08.04.32.03;	author goodger;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2002.03.01.03.15.42;	author goodger;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2002.02.20.04.42.14;	author goodger;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2002.02.15.22.55.08;	author goodger;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2002.02.13.02.25.29;	author goodger;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2002.02.07.02.03.30;	author goodger;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2002.02.06.03.11.41;	author goodger;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2002.01.30.04.56.54;	author goodger;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2002.01.29.02.18.32;	author goodger;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2002.01.28.02.18.17;	author goodger;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2002.01.26.00.02.16;	author goodger;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2002.01.16.02.43.21;	author goodger;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2001.11.06.02.10.13;	author goodger;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2001.10.31.05.57.09;	author goodger;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2001.10.30.05.18.30;	author goodger;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2001.10.18.03.36.12;	author goodger;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2001.09.26.03.33.21;	author goodger;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2001.09.13.02.16.38;	author goodger;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2001.09.12.03.49.00;	author goodger;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2001.09.05.02.38.55;	author goodger;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2001.08.28.03.28.53;	author goodger;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2001.08.23.03.52.29;	author goodger;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2001.08.16.02.26.54;	author goodger;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2001.08.15.03.23.44;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2001.08.11.01.53.29;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.08.06.04.32.20;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.08.04.15.25.52;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.08.01.02.46.47;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.07.22.22.36.09;	author goodger;	state Exp;
+branches
+	1.1.1.1;
+next	;
+
+1.1.1.1
+date	2001.07.22.22.36.09;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.36
+log
+@fixed whitespace & updated
+@
+text
+@=======
+ Notes
+=======
+:Date: $Date: 2002/04/13 17:09:21 $
+:Revision: $Revision: 1.35 $
+
+.. contents::
+
+To Do
+=====
+
+- Complete PEP 258 DPS Generic Implementation Details.
+
+  - Fill in the blanks in API details.
+
+  - Specify the nodes.py internal data structure implementation.
+
+        [Tibs:] Eventually we need to have direct documentation in
+        there on how it all hangs together - the DTD is not enough
+        (indeed, is it still meant to be correct?  [Yes, it is.]).
+
+- Rework PEP 257, separating style from spec from tools, wrt DPS?  See
+  Doc-SIG from 2001-06-19/20.
+
+- Document!
+
+  - Modules.
+
+  - DPS nodes (DTD element) semantics:
+
+    - External (public) attributes (node.attributes).
+    - Internal attributes (node.*).
+    - Linking mechanism.
+
+- Get cracking on the DPS itself!
+
+- Add layout component to framework?  Or part of the formatter?
+
+- Add validation?  See http://pytrex.sourceforge.net, RELAX NG.
+
+- Write modules for common transforms.  See `Unimplemented
+  Transforms`_ below.
+
+- Ask Python-dev for opinions (GvR for a pronouncement) on special
+  variables (__author__, __version__, etc.): convenience vs. namespace
+  pollution.  Ask opinions on whether or not the DPS should recognize
+  & use them.
+
+- Once doctree.txt is fleshed out, how about breaking (most of) it up
+  and putting it into nodes.py as docstrings?
+
+- Refactor:
+
+  - Apply the `coding conventions`_ as given below.
+
+- Merge reStructuredText into DPS and rename it to "docutils".
+  (SourceForge project registered & waiting.)
+
+  - Merge test directories.
+  - Remove complex import code.
+  - Rename gpdi.dtd to docutils.dtd.
+  - Rename writers/html.py to html4_css1.py.  With aliases?
+
+- Provide a mechanism to pass options to Readers, Writers, and Parsers
+  through dps.core.publish/Publisher?  Or create custom
+  Reader/Writer/Parser objects first, and pass *them* to
+  publish/Publisher?
+
+- In reader.get_reader_class (& parser & writer too), should we be
+  importing 'standalone' or 'dps.readers.standalone'?  (This would
+  avoid importing top-level modules if the module name is not in
+  dps/readers.  Potential nastiness.)
+
+- Perhaps store a name->id mapping file?  This could be stored
+  permanently, read by subsequent processing runs, and updated with
+  new entries.  ("Persistent ID mapping"?)
+
+- The name->id conversion and hyperlink resolution code needs to be
+  checked for correctness and refactored.  I'm afraid it's a bit of a
+  spaghetti mess now.
+
+- Considerations for an HTML Writer [#]_:
+
+  - Boolean attributes.  ``<element boolean>`` is good, ``<element
+    boolean="boolean">`` is bad.  Use a special value in attribute
+    mappings, such as ``None``?
+
+  - Escape double-dashes inside comments.
+
+  - Put the language code into an appropriate element's LANG
+    attribute (<HTML>?).
+
+  - Docutils identifiers (the "class" and "id" attributes) will
+    conform to the regular expression ``[a-z][-a-z0-9]*``.  See
+    ``docutils.utils.id()``.
+
+  .. _HTML 4.01 spec: http://www.w3.org/TR/html401
+  .. _CSS1 spec: http://www.w3.org/TR/REC-CSS1
+  .. [#] Source: `HTML 4.0 in Netscape and Explorer`__.
+  __ http://www.webreference.com/dev/html4nsie/index.html
+
+- Allow for style sheet info to be passed in, either as a <LINK>, or
+  as embedded style info.
+
+- Construct a templating system, as in ht2html/yaptu, using directives
+  and substitutions for dynamic stuff.
+
+- Improve the granularity of document parts in the HTML writer, so
+  that one could just grab the parts needed.
+
+
+Coding Conventions
+==================
+
+This project shall follow the generic coding conventions as specified
+in the `Style Guide for Python Code`__ and `Docstring Conventions`__
+PEPs, with the following clarifications:
+
+- 4 spaces per indentation level.  No tabs.
+- No one-liner compound statements (i.e., no ``if x: return``: use two
+  lines & indentation), except for degenerate class or method
+  definitions (i.e., ``class X: pass`` is O.K.).
+- Lines should be no more than 78 or 79 characters long.
+- "CamelCase" shall be used for class names.
+- Use "lowercase" or "lowercase_with_underscores" for function,
+  method, and variable names.  For short names, maximum two joined
+  words, use lowercase (e.g. 'tagname').  For long names with three or
+  more joined words, or where it's hard to parse the split between two
+  words, use lowercase_with_underscores (e.g., 'note_explicit_target',
+  'explicit_target').
+
+__ http://www.python.org/peps/pep-0008.html
+__ http://www.python.org/peps/pep-0257.html
+
+
+Unimplemented Transforms
+========================
+
+Footnote Gathering
+------------------
+
+Collect and move footnotes to the end of a document.
+
+
+Hyperlink Target Gathering
+--------------------------
+
+It probably comes in two phases, because in a Python context we need
+to *resolve* them on a per-docstring basis [do we? --DG], but if the
+user is trying to do the callout form of presentation, they would then
+want to group them all at the end of the document.
+
+
+Reference Merging
+-----------------
+
+When merging two or more subdocuments (such as docstrings),
+conflicting references may need to be resolved.  There may be:
+
+- duplicate reference and/or substitution names that need to be made
+  unique; and/or
+- duplicate footnote numbers that need to be renumbered.
+
+Should this be done before or after reference-resolving transforms
+are applied?  What about references from within one subdocument to
+inside another?
+
+
+Document Splitting
+------------------
+
+If the processed document is written to multiple files (possibly in a
+directory tree), it will need to be split up.  References will have to
+be adjusted.
+
+(HTML only?  See Distributors_ below.)
+
+
+Navigation
+----------
+
+If a document is split up, each segment will need navigation links:
+parent, children (small TOC), previous (preorder), next (preorder).
+
+
+Index
+-----
+
+@@@@@@
+
+
+I/O APIs
+========
+
+Can we use codecs for this?  Input to parser and output from formatter
+are strings, but the intermediate data structure is a DOM tree.
+
+
+Docstring Extractor
+===================
+
+We need code that scans a parsed Python module, and returns an ordered
+tree containing the names, docstrings (including attribute and
+additional docstrings), and additional info (in parentheses below) of
+all of the following objects:
+
+- packages
+- modules
+- module attributes (+ values)
+- classes (+ inheritance)
+- class attributes (+ values)
+- instance attributes (+ values)
+- methods (+ formal parameters & defaults)
+- functions (+ formal parameters & defaults)
+
+(Extract comments too?  For example, comments at the start of a module
+would be a good place for bibliographic field lists.)
+
+In order to evaluate interpreted text cross-references, namespaces for
+each of the above will also be required.
+
+See python-dev/docstring-develop thread "AST mining", started on
+2001-08-14.
+
+
+Python Source Reader
+====================
+
+The Python Source Reader ("PySource") model that's evolving in my mind
+goes something like this:
+
+1. Extract the docstring/namespace [#]_ tree from the module(s) and/or
+   package(s).
+
+   .. [#] See `Docstring Extractor`_ above.
+
+2. Run the parser on each docstring in turn, producing a forest of
+   doctrees (per nodes.py).
+
+3. Join the docstring trees together into a single tree, running
+   transforms:
+
+   - merge hyperlinks
+   - merge namespaces
+   - create various sections like "Module Attributes", "Functions",
+     "Classes", "Class Attributes", etc.; see the DPS spec/ppdi.dtd
+   - convert the above special sections to ordinary DPS nodes
+
+4. Run transforms on the combined doctree.  Examples: resolving
+   cross-references/hyperlinks (including interpreted text on Python
+   identifiers); footnote auto-numbering; first field list ->
+   bibliographic elements.
+
+   (Or should step 4's transforms come before step 3?)
+
+5. Pass the resulting unified tree to the writer/builder.
+
+I've had trouble reconciling the roles of input parser and output
+writer with the idea of modes ("readers" or "directors").  Does the
+mode govern the tranformation of the input, the output, or both?
+Perhaps the mode should be split into two.
+
+For example, say the source of our input is a Python module.  Our
+"input mode" should be the "Python Source Reader".  It discovers (from
+``__docformat__``) that the input parser is "reStructuredText".  If we
+want HTML, we'll specify the "HTML" output formatter.  But there's a
+piece missing.  What *kind* or *style* of HTML output do we want?
+PyDoc-style, LibRefMan style, etc.  (many people will want to specify
+and control their own style).  Is the output style specific to a
+particular output format (XML, HTML, etc.)?  Is the style specific to
+the input mode?  Or can/should they be independent?
+
+I envision interaction between the input parser, an "input mode" , and
+the output formatter.  The same intermediate data format would be used
+between each of these, being transformed as it progresses.
+
+
+
+Local Variables:
+mode: indented-text
+indent-tabs-mode: nil
+sentence-end-double-space: t
+fill-column: 70
+End:
+@
+
+
+1.35
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2002/03/28 04:34:58 $
+:Revision: $Revision: 1.33 $
+d20 1
+a20 1
+        (indeed, is it still meant to be correct? [Yes, it is.]).
+d37 1
+a37 1
+- Add layout component to framework? Or part of the formatter?
+d39 1
+a39 1
+- Add validation? See http://pytrex.sourceforge.net, RELAX NG.
+d41 2
+a42 2
+- Write modules for common transforms. See `Unimplemented Transforms`_
+  below.
+d46 2
+a47 2
+  pollution. Ask opinions on whether or not the DPS should recognize &
+  use them.
+d62 1
+a62 1
+  - Rename writers/html.py to html4_css1.py. With aliases?
+d65 1
+a65 1
+  through dps.core.publish/Publisher? Or create custom
+d70 1
+a70 1
+  importing 'standalone' or 'dps.readers.standalone'? (This would
+d72 1
+a72 1
+  dps/readers. Potential nastiness.)
+d84 1
+a84 1
+  - Boolean attributes. ``<element boolean>`` is good, ``<element
+d108 3
+d119 1
+a119 1
+- 4 spaces per indentation level. No tabs.
+d126 2
+a127 2
+  method, and variable names. For short names, maximum two joined
+  words, use lowercase (e.g. 'tagname'). For long names with three or
+d165 1
+a165 1
+are applied? What about references from within one subdocument to
+d173 1
+a173 1
+directory tree), it will need to be split up. References will have to
+d176 1
+a176 1
+(HTML only? See Distributors_ below.)
+d216 1
+a216 1
+(Extract comments too? For example, comments at the start of a module
+d259 1
+a259 1
+writer with the idea of modes ("readers" or "directors"). Does the
+d263 9
+a271 9
+For example, say the source of our input is a Python module. Our
+"input mode" should be the "Python Source Reader". It discovers (from
+``__docformat__``) that the input parser is "reStructuredText". If we
+want HTML, we'll specify the "HTML" output formatter. But there's a
+piece missing. What *kind* or *style* of HTML output do we want?
+PyDoc-style, LibRefMan style, etc. (many people will want to specify
+and control their own style). Is the output style specific to a
+particular output format (XML, HTML, etc.)? Is the style specific to
+the input mode? Or can/should they be independent?
+d274 1
+a274 1
+the output formatter. The same intermediate data format would be used
+@
+
+
+1.34
+log
+@minor mod
+@
+text
+@d74 7
+a80 18
+- Add "name" -> "id" attribute conversion.  We must have unique,
+  SGML-ID-friendly id's and a one-to-one mapping for later lookup.
+
+  - Remove dependency on names as sole distinguishing characteristic.
+    Use IDs instead.
+
+    - Perhaps get rid of "name" attributes altoghether?  Certainly get
+      rid of the "_:1:_" abominations.
+
+  - Perhaps keep a name->id mapping file?  This could be stored
+    permanently, read by subsequent processing runs, and updated with
+    new entries.  ("Persistent ID mapping"?)
+
+  - When resolving reference IDs from names, we must check for
+    non-existent mappings.  In the Writer or in a transform?
+
+- Add support for "refids" attribute on footnotes & citations, for
+  backlinks.
+d101 6
+@
+
+
+1.33
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2002/03/16 06:11:18 $
+:Revision: $Revision: 1.32 $
+d240 1
+a240 1
+   trees (internal data structure as per nodes.py).
+@
+
+
+1.32
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2002/03/13 02:48:34 $
+:Revision: $Revision: 1.31 $
+d22 1
+a22 1
+- Rework PEP 257, separating style from spec from tools, wrt DPS. See
+a24 10
+- PEP 256:
+
+  - Incorporate "modes" (one or two sets).
+  - Draw the framework diagram properly as a graphic (once PEPs
+    support graphics !-).
+
+- PEP 258:
+
+  - Mention 2.2-style "properties" with attribute docstrings.
+
+a40 3
+- Incorporate readers/"input modes", using Tony Ibbs' 2001-08-03
+  Doc-SIG post 'Suggestions for reST "modes"' as a base.
+
+a76 10
+  - Implement a "name mangling" scheme: name "section title" becomes
+    id "section_title", name "1" becomes id "footnote1" (or just
+    "1"?).
+
+  - Whenever possible, use the "name mangling" scheme.  When that's
+    not possible (duplicate names, no name), and use an arbitrary
+    sequential id.
+
+  - ID as required.
+
+d90 2
+a91 1
+- Add "refids" attribute to all target types, for backlinks.
+a277 177
+
+
+Docutils Project Model
+======================
+
+Here's the latest project model::
+
+                    +--------------------------+
+                    |        Docutils:         |
+                    | docutils.core.Publisher, |
+                    | docutils.core.publish()  |
+                    +--------------------------+
+                      /                      \
+                     /                        \
+           1,3,5    /                          \      6,8
+           +--------+                          +--------+
+           | READER | =======================> | WRITER |
+           +--------+ (purely presentational)  +--------+
+            //    \                              /    \
+           //      \                            /      \
+    2     //     4  \               7          /     9  \
+    +--------+   +------------+     +------------+   +--------------+
+    | PARSER |...| reader     |     | writer     |...| DISTRIBUTOR  |
+    +--------+   | transforms |     | transforms |   |              |
+                 |            |     |            |   | - one file   |
+                 | - docinfo  |     | - styling  |   | - many files |
+                 | - titles   |     | - writer-  |   | - objects in |
+                 | - linking  |     |   specific |   |   memory     |
+                 | - lookups  |     | - etc.     |   +--------------+
+                 | - reader-  |     +------------+
+                 |   specific |
+                 | - parser-  |
+                 |   specific |
+                 | - layout   |
+                 | - etc.     |
+                 +------------+
+
+The numbers indicate the path a document would take through the code.
+Double-width lines between reader & parser and between reader &
+writer, indicating that data sent along these paths should be standard
+(pure & unextended) DPS doc trees. Single-width lines signify that
+internal tree extensions are OK (but must be supported internally at
+both ends), and may in fact be totally unrelated to the DPS doc tree
+structure. I've added "reader-specific" and "layout" transforms to the
+list of transforms. BTW, these transforms are not necessarily all in
+one directory; it's a nebulous grouping (it's hard to draw ASCII
+clouds).
+
+
+Issues
+------
+
+- Transforms.  How to specify which transforms (and in what order)
+  apply to each combination of reader, parser/syntax, writer, and
+  distributor?  Even if we restrict ourselves to one parser, there
+  will eventually be a multitude of readers, writers, and distributor
+  options.
+
+  Or are readers & writers independent?  Then we have reader/parser
+  and writer/distributor combinations to consider.
+
+
+Components
+----------
+
+Production -> Publication -> Distribution
+
+Producer -> Publisher -> Distributor
+
+
+Parsers
+```````
+
+Responsibilities: Given raw input text and an empty doctree, populate
+the doctree by parsing the input text.
+
+
+Readers
+```````
+
+Most Readers will have to be told what parser to use. So far (see the
+list of examples below), only the Python Source Reader (PySource) will
+be able to determine the syntax on its own.
+
+Responsibilities:
+
+- Do raw input on the source.
+- Pass the raw text to the parser, along with a fresh doctree.
+- Combine and collate doctrees if necessary.
+- Run transforms over the doctree(s).
+
+Examples:
+
+- Standalone/Raw/Plain: Just read a text file and process it. The
+  reader needs to be told which parser to use. Parser-specific
+  readers?
+- Python Source: See `Python Source Reader`_ above.
+- Email: RFC-822 headers, quoted excerpts, signatures, MIME parts.
+- PEP: RFC-822 headers, "PEP xxxx" and "RFC xxxx" conversion to
+  URIs. Either interpret PEPs' indented sections or convert existing
+  PEPs to reStructuredText (or both?).
+- Wiki: Global reference lookups of "wiki links" incorporated into
+  transforms. (CamelCase only or unrestricted?) Lazy indentation?
+- Web Page: As standalone, but recognize meta fields as meta tags.
+  Support for templates of some sort? (After <body>, before </body>?)
+- FAQ: Structured "question & answer(s)" constructs.
+- Compound document: Merge chapters into a book. Master TOC file?
+
+
+Transforms
+``````````
+
+Responsibilities:
+
+- Modify a doctree in-place.
+
+Examples:
+
+- Already implemented: DocInfo, DocTitle (in frontmatter.py);
+  Hyperlinks, Footnotes, Substitutions (in references.py).
+- Unimplemented: See `Unimplemented Transforms`_ above.
+
+
+Writers
+```````
+
+Responsibilities:
+
+- Transform doctree into specific output formats.
+- Transform references into format-native forms.
+
+Examples:
+
+- XML: Various forms, such as DocBook. Also, raw doctree XML.
+- HTML
+- TeX
+- Plain text
+- reStructuredText?
+
+
+Distributors
+````````````
+
+(Writer/distributor components may change places. After rearranging,
+the model would look like this::
+
+
+           1,3,5                               6,8
+           +--------+                          +-------------+
+           | READER | =======================> | DISTRIBUTOR |
+           +--------+ (purely presentational)  +-------------+
+            //    \                              /    \
+           //      \                            /      \
+    2     //     4  \               7          /     9  \
+    +--------+   +------------+     +------------+   +--------+
+    | PARSER |...| reader     |     | writer     |...| WRITER |
+    +--------+   | transforms |     | transforms |   +--------+
+                 | ...        |     | ...        |
+
+We'll wait and see which arrangement works out best.  Is it better for
+the writer to control the distributor, or vice versa?  Or should they
+be equals?
+
+Looking at the list of writers, it seems that only HTML would require
+anything other than monolithic output.  Perhaps merge the HTML
+"distributor" into "writer" variants?)
+
+Responsibilities:
+
+- Do raw output to the destination.
+- Transform references per incarnation (type of distribution).
+
+Examples:
+
+- Single file
+- Multiple files & directories
+- Objects in memory
+@
+
+
+1.31
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2002/03/11 03:45:15 $
+:Revision: $Revision: 1.30 $
+d7 1
+d103 2
+a104 1
+    - Perhaps get rid of "name" attributes altoghether?
+d113 2
+d126 3
+a128 1
+  - "Class" attributes should have no underscores (CSS requirement).
+d130 2
+a207 12
+
+
+Table of Contents
+-----------------
+
+This runs over the entire tree, and locates <section> elements. It
+produces a <contents> subtree, which can be inserted at the
+appropriate place, with links to the <section> elements. It needs to
+make sure that the links it uses are *real*, so ideally it will use
+the "implicit" link for a section when it exists, and it will have to
+invent one when the implicit link isn't there (presumably because the
+section is the twelfth "Introduction" in the document...).
+@
+
+
+1.30
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2002/03/08 04:32:03 $
+:Revision: $Revision: 1.29 $
+d89 3
+a91 2
+  - Add conversion to nodes.document record-keeping code? Or as a new
+    transform?
+d93 3
+a95 4
+  - Use a "name mangling" scheme (like name "section title" becomes id
+    "section_title", name "1" becomes id "footnote1")?  Or use an
+    arbitrary sequential id?  How to do inter-document references in
+    that case?
+d97 1
+a97 1
+    - Perhaps combine name mangling with sequential ids?
+d99 2
+a100 1
+  - ID everything?  Or only named elements?
+d102 1
+a102 1
+  - How to do inter-document references in *any* case?
+d108 3
+a126 3
+- The Reporter needs another threshold writers. Use warninglevel as a
+  default.
+
+d408 1
+a480 36
+
+
+Mixing Automatic and Manual Footnote Numbering
+==============================================
+
+[David]
+I'm re-examining (for validity) what I wrote in the spec:
+
+    Automatic footnote numbering may not be mixed with manual footnote
+    numbering; it would cause numbering and referencing conflicts.
+
+Would such mixing inevitably cause conflicts? We could probably work
+around potential conflicts with a decent algorithm. Should we?
+Requires thought.  Opinions?
+
+[Tony]
+Well, I read that paragraph in the documentation, and decided that it
+was in the category of "don't, in practice, care" so far as I was
+concerned. This is the same category I put the forbidding of nested
+inline markup - quite clearly one *can* do it, but equally clearly
+it's a pain to implement, and not a terribly great gain, all things
+considered.
+
+It's a category with the subtext "examine for correctness after we've
+had some experience of people *using* reST in the wild".
+
+Thus, given there are lots of other things to do, I would tend to
+leave it as-is (especially if you are able to *warn* people about it
+if they do it by mistake).
+
+To my mind, being able to do ``[#thing]_`` probably give people enough
+precision over footnotes whils still allowing autonumbering - the
+*only* potential problem is when referring to a footnote in a
+different document (and that, again, is something I would leave fallow
+for the moment, although we know I tend to want to use roles as
+annotation for that sort of thing).
+@
+
+
+1.29
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2002/03/01 03:15:42 $
+:Revision: $Revision: 1.28 $
+d30 4
+d74 1
+d77 1
+a77 1
+  through dps.core.convert/Publisher? Or create custom
+d79 1
+a79 1
+  convert/Publisher?
+d118 2
+d123 3
+d310 8
+a317 1
+           1,3,5                               6,8
+a382 2
+("Readers" may be renamed to "Directors".)
+
+d403 1
+a403 1
+  PEPs to reStructuredText.
+@
+
+
+1.28
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2002/02/20 04:42:14 $
+:Revision: $Revision: 1.27 $
+d92 2
+d105 2
+a106 2
+    boolean="boolean">`` is bad.  Use a special value in attributes
+    mapping, such as ``None``?
+d181 1
+a181 1
+(HTML only? See Deployment_ below.)
+d308 1
+a308 1
+    | PARSER |...| reader     |     | writer     |...| deployment   |
+d338 1
+a338 4
+- Naming. Use "director"/"builder" instead of "reader"/"writer"? Then
+  "deployment" could be replaced by "writer".
+
+- Transforms. How to specify which transforms (and in what order)
+d340 2
+a341 2
+  deployment?  Even if we restrict ourselves to one parser, there will
+  eventually be a multitude of readers, writers, and deployment
+d344 2
+a345 2
+  Or are readers & writers independent? Then we have reader/parser and
+  writer/deployment combinations to consider.
+d351 5
+a412 2
+("Writers" may be renamed to "Builders".)
+
+d427 5
+a431 2
+Deployment
+``````````
+a432 3
+("Deployment" may be renamed to "Writers" or "Publishers", and current
+writer/deployment [renamed to builder/writer] components may change
+places. After renaming, the model would look like this::
+d435 3
+a437 3
+           +--------+                          +---------+ formerly
+           | READER | =======================> | BUILDER | writer
+           +--------+ (purely presentational)  +---------+
+d444 1
+a444 4
+                 | ...        |     | ...        |    formerly
+                                                      deployment
+
+After renaming *and* rearrangement, the model would look like this::
+d446 3
+a448 15
+           1,3,5                               6,8
+           +--------+                          +--------+ formerly
+           | READER | =======================> | WRITER | deployment
+           +--------+ (purely presentational)  +--------+
+            //    \                              /    \
+           //      \                            /      \
+    2     //     4  \               7          /     9  \
+    +--------+   +------------+     +------------+   +---------+
+    | PARSER |...| reader     |     | writer     |...| BUILDER |
+    +--------+   | transforms |     | transforms |   +---------+
+                 | ...        |     | ...        |    formerly writer
+
+We'll wait and see which arrangement works out best. Is it better for
+the writer/builder to control the deployment/writer, or vice versa? Or
+should they be equals?
+d451 2
+a452 2
+anything other than monolithic output. Perhaps merge the "deployment"
+into the "writer"?)
+d457 1
+a457 1
+- Transform references per incarnation.
+@
+
+
+1.27
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2002/02/15 22:55:08 $
+:Revision: $Revision: 1.26 $
+d66 4
+@
+
+
+1.26
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2002/02/13 02:25:29 $
+:Revision: $Revision: 1.25 $
+d94 1
+a94 1
+    new entries.  
+@
+
+
+1.25
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2002/02/07 02:03:30 $
+:Revision: $Revision: 1.24 $
+d76 33
+@
+
+
+1.24
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2002/02/06 03:11:41 $
+:Revision: $Revision: 1.23 $
+a439 30
+
+
+Visitors
+========
+
+To nodes.py, add ``Node.walkabout()``, ``Visitor.leave_*()``, and
+``GenericVisitor.default_leave()`` methods to catch elements on the
+way out? Here's ``Node.walkabout()``::
+
+    def walkabout(self, visitor, ancestry=()):
+        """
+        Traverse a tree of `Node` objects. Call `visitor`'s
+        ``visit_...`` method (upon initial entry) **and** its
+        ``leave_...`` method (before exiting).
+
+        Parameters:
+
+        - `visitor`: A `Visitor` object, containing a ``visit_...``
+          and ``leave_...`` method for each `Node` subclass
+          encountered.
+        - `ancestry`: A list of (parent, index) pairs. `self`'s parent
+          is the last entry.
+        """
+        method = getattr(visitor, 'visit_' + self.__class__.__name__)
+        method(self, ancestry)
+        children = self.getchildren()
+        for i in range(len(children)):
+            children[i].walkabout(visitor, ancestry + ((self, i),))
+        method = getattr(visitor, 'leave_' + self.__class__.__name__)
+        method(self, ancestry)
+@
+
+
+1.23
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2002/01/30 04:56:54 $
+:Revision: $Revision: 1.22 $
+d66 10
+@
+
+
+1.22
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2002/01/29 02:18:32 $
+:Revision: $Revision: 1.21 $
+d49 2
+a50 1
+- Write modules for common transforms. See Transforms_ below.
+d64 3
+d92 2
+a93 2
+Transforms
+==========
+d117 1
+a117 1
+  unique; and
+d125 17
+d147 3
+a149 3
+appropriate place, with links to the <section>s. It needs to make sure
+that the links it uses are *real*, so ideally it will use the
+"implicit" link for a section when it exists, and it will have to
+d194 2
+a195 2
+Modes and Styles
+================
+d197 2
+a198 2
+The Python docstring mode model that's evolving in my mind goes
+something like this:
+d200 1
+a200 1
+1. Extract the docstring/namespace tree from the module(s) and/or
+d203 2
+d208 2
+a209 9
+3. Run various transformations on the individual docstring trees.
+   Examples: resolving cross-references; resolving hyperlinks;
+   footnote auto-numbering; first field list -> bibliographic
+   elements.
+
+4. Join the docstring trees together into a single tree, running more
+   transformations (such as creating various sections like "Module
+   Attributes", "Functions", "Classes", "Class Attributes", etc.; see
+   the DPS spec/ppdi.dtd).
+d211 14
+a224 1
+5. Pass the resulting unified tree to the output formatter.
+d227 3
+a229 3
+formatter with the idea of "modes". Does the mode govern the
+tranformation of the input, the output, or both? Perhaps the mode
+should be split into two.
+d232 1
+a232 1
+"input mode" should be "Python Docstring Mode". It discovers (from
+d241 189
+a429 45
+I envision interaction between the input parser, an "input mode"
+(would control steps 1, 2, & 3), a "transformation style" (would
+control step 4), and the output formatter. The same intermediate data
+format would be used between each of these, gaining detail as it
+progresses.
+
+This requires thought.
+
+Tony's contribution:
+
+    OK - my model is not dissimilar, but goes like:
+    
+    1. Parse the Python module(s) [remembering we may have a package]
+       This locates the docstrings, amongst other things.
+    
+    2. Trim the tree to lose stuff we didn't need (!).
+    
+    3. Parse the docstrings (this might, instead, be done at the time
+       that each docstring is "discovered").
+    
+    4. Integrate the docstring into the tree - this *may* be as simple
+       as having "thing.docstring = <docstring instance>"
+    
+    5. Perform internal resolutions on the docstring (footnotes, etc.)
+    
+    6. Perform intra-module/package resolutions on the docstring
+       (so this is when we work out that `Fred` in *this* docstring
+       refers to class Fred over here in the datastructure).
+    
+    7. Format.
+
+    ...
+
+    A mode needs to:
+    
+    1. Provide plugins for parsing - this *may* go so far as to
+       subsume the DPS functionality into a new program, as I'm doing
+       for Python. In this case the "plugin" for parsing may be
+       virtual - I just need to ferret around in the docstring looking
+       for things that are already there, perhaps.
+    
+    2. Provide plugins for formatting - again, these may subsume a
+       DPS parser process. In the Python case, I clearly want to *use*
+       the normal HTML parser for HTML output, but with extra support
+       "around it" for the Python specific infrastructure.
+d435 3
+a437 3
+To nodes.py, add ``Node.walkabout()``, ``Visitor.walkabout()``,
+``Visitor.leave_*()``, and ``GenericVisitor.default_leave()`` methods
+to catch elements on the way out? Here's ``Node.walkabout()``::
+a460 5
+Here's ``Visitor.walkabout()``::
+
+    def walkabout(self):
+        self.doctree.walkabout(self)
+
+d471 3
+a473 3
+Would such mixing inevitably cause conflicts? We could probably work around
+potential conflicts with a decent algorithm. Should we? Requires thought.
+Opinions?
+d479 2
+a480 2
+inline markup - quite clearly one *can* do it, but equally clearly it's
+a pain to implement, and not a terribly great gain, all things
+d486 3
+a488 3
+Thus, given there are lots of other things to do, I would tend to leave
+it as-is (especially if you are able to *warn* people about it if they
+do it by mistake).
+d491 5
+a495 5
+precision over footnotes whils still allowing autonumbering - the *only*
+potential problem is when referring to a footnote in a different
+document (and that, again, is something I would leave fallow for the
+moment, although we know I tend to want to use roles as annotation for
+that sort of thing).
+@
+
+
+1.21
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2002/01/28 02:18:17 $
+:Revision: $Revision: 1.20 $
+a61 6
+
+- Reconsider the need to keep a list of duplicates in
+  ``nodes.document.explicit_targets``. Rather, just keep the last
+  instance, and "clear" it and any new ones if necessary. Perhaps just
+  a {'name': None} mapping is enough to indicate that the target is
+  invalid?
+@
+
+
+1.20
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2002/01/26 00:02:16 $
+:Revision: $Revision: 1.19 $
+d19 1
+a19 1
+        (indeed, is it still meant to be correct?).
+a50 6
+  - Resolving auto-numbered footnotes & references.
+  - Resolving internal, external, and indirect hyperlinks.
+  - Propagating URIs to chained hyperlink targets.
+
+  These transformations may be turned on or off by individual modes.
+
+a96 150
+Footnote Numbering
+------------------
+
+[Tony]
+This runs over a subtree (clearly for Python code, we don't want to
+run it over anything bigger than a docstring, lest we confuse
+footnotes!) and sorts out the numbering (in my development version of
+pyspd (not on the web yet) this is actually done as part of the HTML
+output phase, which is clearly the Wrong Place for it.
+
+David - a question or two on this. Each autonumbered footnote/footnote
+reference has the attribute 'auto' set to "1". I want to *insert*
+actual footnote numbers into the tree. I can just add a new attribute
+'auto-number' into elements as required, *or* I could ask that you set
+'auto' to be "-1" for the "no number yet" case, and use 'auto' to
+store the *actual* number calculated. Which to do is a style issue, so
+I'd prefer to leave it up to you (but using the same attribute would
+make things a bit neater in the code - I'm not sure if it would
+generate as elegant XML, though - I'd need to look up the detailed
+attribute present/absent rules).
+
+[David]
+Auto-numbered footnotes have attribute ``auto=1`` and no label.
+Auto-numbered footnote_references have no reference text (they're
+empty elements). If you resolve the numbering, just add a label
+element to the beginning of the footnote, and reference text to the
+footnote_reference. Take this input::
+
+    References to the first ([A]_), third ([#spam]_), and second
+    ([#]_) footnotes.
+
+    .. [A] This footnote is labeled with "A".
+    .. [#] This footnote is auto-numbered.
+    .. [#spam] This footnote has autonumber name "spam".
+
+Parsed (watch for empty footnote_reference elements: indentation)::
+
+    <document>
+        <paragraph>
+            References to the first (
+            <footnote_reference refname="a">
+                A
+            ), third (
+            <footnote_reference auto="1" refname="spam">
+            ), and second
+            (
+            <footnote_reference auto="1">
+            ) footnotes.
+        <footnote name="a">
+            <label>
+                A
+            <paragraph>
+                This footnote is labeled with "A".
+        <footnote auto="1">
+            <paragraph>
+                This footnote is auto-numbered.
+        <footnote auto="1" name="spam">
+            <paragraph>
+                This footnote has autonumber name "spam".
+
+Only the first footnote_reference contains reference text. After
+auto-numbering resolution, the tree should become::
+
+    <document>
+        <paragraph>
+            References to the first (
+            <footnote_reference refname="a">
+                A
+            ), third (
+            <footnote_reference auto="1" refname="spam">
+                2
+            ), and second
+            (
+            <footnote_reference auto="1" refname="_footnote 1">
+                1
+            ) footnotes.
+        <footnote name="a">
+            <label>
+                A
+            <paragraph>
+                This footnote is labeled with "A".
+        <footnote auto="1" name="_footnote 1">
+            <label>
+                1
+            <paragraph>
+                This footnote is auto-numbered.
+        <footnote auto="1" name="spam">
+            <label>
+                2
+            <paragraph>
+                This footnote has autonumber name "spam".
+
+The labels and reference text are added to the two auto-numbered
+footnotes & footnote_references. The unnamed auto-numbered footnote
+& reference need name & refname attributes. Let's use "_footnote " +
+footnote number for those attributes (a name-mangling unlikely to
+occur in the real world; note that this hasn't been documented yet).
+Of course (!), the implicitlinks and refnames instance attributes of
+the dps.nodes.document instance must be updated. (It will soon be my
+pleasure to document the dps/nodes.py data structure, since I'm
+gradually forgetting its details.)
+
+After adding labels and reference text, the "auto" attributes can be
+ignored.
+
+
+[David]
+> Let's use "_footnote " + footnote number for those attributes
+> (a name-mangling unlikely to occur in the real world; note that
+> this hasn't been documented yet).
+
+[Tony]
+> Hmm - I wasn't assuming that unnamed autonumbered footnotes would have any
+> name other than the number (since you're following the XML tradition and
+> storing such things as strings anyway).
+
+[David]
+I suppose we could go either way. I'm re-examining (for validity) what I
+wrote in the spec:
+
+    Automatic footnote numbering may not be mixed with manual footnote
+    numbering; it would cause numbering and referencing conflicts.
+
+Would such mixing inevitably cause conflicts? We could probably work around
+potential conflicts with a decent algorithm. Should we? Requires thought.
+Opinions?
+
+[Tony]
+Well, I read that paragraph in the documentation, and decided that it
+was in the category of "don't, in practice, care" so far as I was
+concerned. This is the same category I put the forbidding of nested
+inline markup - quite clearly one *can* do it, but equally clearly it's
+a pain to implement, and not a terribly great gain, all things
+considered.
+
+It's a category with the subtext "examine for correctness after we've
+had some experience of people *using* reST in the wild".
+
+Thus, given there are lots of other things to do, I would tend to leave
+it as-is (especially if you are able to *warn* people about it if they
+do it by mistake).
+
+To my mind, being able to do ``[#thing]_`` probably give people enough
+precision over footnotes whils still allowing autonumbering - the *only*
+potential problem is when referring to a footnote in a different
+document (and that, again, is something I would leave fallow for the
+moment, although we know I tend to want to use roles as annotation for
+that sort of thing).
+
+
+d107 4
+a110 3
+to *resolve* them on a per-docstring basis, but if the user is trying
+to do the callout form of presentation, they would then want to group
+them all at the end of the document.
+d112 2
+d115 2
+a116 2
+Substitutions
+-------------
+d118 7
+a124 1
+@@@@@@
+a129 2
+@@@@@@
+
+d299 35
+@
+
+
+1.19
+log
+@added coding conventions, transform notes
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2002/01/16 02:43:21 $
+:Revision: $Revision: 1.18 $
+d69 6
+d414 1
+a414 1
+nodes.py
+d417 1
+a417 1
+Add ``Nodes.walkabout()``, ``Visitor.walkabout()``,
+d419 1
+a419 1
+to catch elements on the way out? Here's ``Nodes.walkabout()``::
+@
+
+
+1.18
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2001/11/06 02:10:13 $
+:Revision: $Revision: 1.17 $
+d49 1
+a49 1
+- Write modules for common transformations, such as:
+d52 1
+a52 1
+  - Resolving internal cross-references and indirect hyperlinks.
+d65 222
+d406 36
+@
+
+
+1.17
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2001/10/31 05:57:09 $
+:Revision: $Revision: 1.16 $
+d46 2
+a47 2
+- Incorporate "modes", using Tony Ibbs' 2001-08-03 Doc-SIG post
+  'Suggestions for reST "modes"' as a base.
+@
+
+
+1.16
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2001/10/30 05:18:30 $
+:Revision: $Revision: 1.15 $
+d61 3
+@
+
+
+1.15
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2001/10/18 03:36:12 $
+:Revision: $Revision: 1.14 $
+a60 2
+
+- Change "link" to "reference"?
+@
+
+
+1.14
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2001/09/26 03:33:21 $
+:Revision: $Revision: 1.13 $
+d61 2
+@
+
+
+1.13
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2001/09/13 02:16:38 $
+:Revision: $Revision: 1.12 $
+d53 2
+a54 1
+  
+@
+
+
+1.12
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2001/09/12 03:49:00 $
+:Revision: $Revision: 1.11 $
+d33 6
+a38 1
+  - DTD element semantics.
+@
+
+
+1.11
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2001/09/05 02:38:55 $
+:Revision: $Revision: 1.10 $
+a33 3
+
+- statemachine.py: Add nestedSM, nestedSMkwargs to State? StateWS
+  instances can default to these.
+@
+
+
+1.10
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2001/08/28 03:28:53 $
+:Revision: $Revision: 1.9 $
+d34 3
+@
+
+
+1.9
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2001/08/23 03:52:29 $
+:Revision: $Revision: 1.8 $
+d15 6
+d24 5
+a28 2
+- PEP 256: Draw the framework diagram properly as a graphic (once PEPs
+  support graphics !-).
+d89 87
+@
+
+
+1.8
+log
+@updated
+@
+text
+@d4 2
+a5 2
+:Date: $Date: 2001/08/11 01:53:29 $
+:Revision: $Revision: 1.5 $
+d34 7
+@
+
+
+1.7
+log
+@updated
+@
+text
+@d65 3
+@
+
+
+1.6
+log
+@updated
+@
+text
+@d4 2
+a5 2
+Date: $Date: 2001/08/11 01:53:29 $
+Revision: $Revision: 1.5 $
+a40 28
+Error Handling
+==============
+
+Tibs pointed out that the four levels correspond to `VMS severity levels`_:
+
++-------+-------+--------------+------------------------------------+
+| DPS   | VMS   |              |                                    |
+| Level | Value | Severity     | Response                           |
++=======+=======+==============+====================================+
+| n/a   | 1     | Success      | Execution continues, expected      |
+|       |       |              | results                            |
++-------+-------+--------------+------------------------------------+
+| 0     | 3     | Information  | Execution continues, informational |
+|       |       |              | message displayed                  |
++-------+-------+--------------+------------------------------------+
+| 1     | 0     | Warning      | Execution continues, unpredictable |
+|       |       |              | results                            |
++-------+-------+--------------+------------------------------------+
+| 2     | 2     | Error        | Execution continues, erroneous     |
+|       |       |              | results                            |
++-------+-------+--------------+------------------------------------+
+| 3     | 4     | Severe error | Execution terminates, no output    |
++-------+-------+--------------+------------------------------------+
+
+.. _VMS severity levels:
+   http://www.openvms.compaq.com:8000/73final/5841/5841pro_027.html#error_cond_severity
+
+
+d52 3
+a54 3
+tree containing the names, docstrings (including additional
+docstrings), and additional info (in parentheses below) of all of the
+following objects:
+d62 2
+a63 2
+- methods (+ formal parameters)
+- functions (+ formal parameters)
+d68 1
+a68 1
+See python-dev/docstring-develp thread "AST mining", started on
+@
+
+
+1.5
+log
+@updated
+@
+text
+@d4 2
+a5 2
+Date: $Date: 2001/08/06 04:32:20 $
+Revision: $Revision: 1.4 $
+d95 3
+@
+
+
+1.4
+log
+@modes
+@
+text
+@d4 2
+a5 2
+Date: $Date: 2001/08/04 15:25:52 $
+Revision: $Revision: 1.3 $
+d19 1
+a19 1
+  support inline graphics !-).
+d35 6
+d67 1
+@
+
+
+1.3
+log
+@added system warning names from VMS
+@
+text
+@d4 2
+a5 2
+Date: $Date: 2001/07/22 22:36:09 $
+Revision: $Revision: 1.1.1.1 $
+d32 2
+@
+
+
+1.2
+log
+@minor mods
+@
+text
+@d15 5
+a19 2
+- Rework PEP 257, separating style from spec wrt DPS. See Doc-SIG
+  from 2001-06-19/20.
+d30 26
+a55 1
+- Add validation? See http://pytrex.sf.net, RELAX NG.
+d57 2
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d4 2
+a5 2
+Date: $Date: 2001/07/19 23:53:29 $
+Revision: $Revision: 1.7 $
+a10 2
+- set up CVS on SF!
+
+d18 1
+a18 1
+- Document DTD element semantics.
+d20 2
+a21 2
+- Create a standalone reStructuredText -> HTML/XML converter (stdin ->
+  stdout filter), as a proof of concept.
+d26 2
+@
+
+
+1.1.1.1
+log
+@First Imported.
+@
+text
+@@

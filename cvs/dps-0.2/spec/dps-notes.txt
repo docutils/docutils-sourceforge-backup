@@ -1,0 +1,58 @@
+=======
+ Notes
+=======
+Date: $Date: 2001/06/18 00:57:20 $
+Revision: $Revision: 1.5 $
+
+
+To Do
+=====
+
+- Complete PEP 258 DPS Generic Implementation Details.
+
+  - Fill in the blanks in API details.
+
+- Updates based on feedback. Currently at Doc-SIG #366.
+
+- Document DTD element semantics.
+
+- Create a standalone reStructuredText -> HTML/XML converter (stdin ->
+  stdout filter), as a proof of concept.
+
+- Get cracking on the DPS itself!
+
+
+I/O APIs
+========
+
+Can we use codecs for this?  Input to parser and output from formatter
+are strings, but the intermediate data structure is a DOM tree.
+
+
+Docstring Extractor
+===================
+
+We need code that scans a parsed Python module, and returns an ordered
+tree containing the names, docstrings (including additional
+docstrings), and additional info (in parentheses) of all of the
+following objects:
+
+- packages
+- modules
+- module attributes (+ values)
+- classes (+ inheritance)
+- class attributes (+ values)
+- instance attributes (+ values)
+- methods (+ formal parameters)
+- functions (+ formal parameters)
+
+Eventually it should also return namespaces for each of the above as
+well.
+
+
+Local Variables:
+mode: indented-text
+indent-tabs-mode: nil
+sentence-end-double-space: t
+fill-column: 70
+End:

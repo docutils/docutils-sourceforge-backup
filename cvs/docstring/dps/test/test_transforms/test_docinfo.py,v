@@ -1,0 +1,631 @@
+head	1.9;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.9
+date	2002.03.04.04.40.28;	author goodger;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2002.03.01.03.14.36;	author goodger;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2002.02.22.01.57.22;	author goodger;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2002.02.20.04.45.57;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2002.02.15.22.45.58;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2002.02.06.03.10.38;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2002.01.30.04.42.50;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2002.01.26.00.07.53;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2002.01.16.02.41.06;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.9
+log
+@updated
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.8 $
+:Date: $Date: 2002/03/01 03:14:36 $
+:Copyright: This module has been placed in the public domain.
+
+Tests for dps.transforms.frontmatter.DocInfo.
+"""
+
+import DPSTestSupport
+from dps.transforms.frontmatter import DocInfo
+import UnitTestFolder
+try:
+    from restructuredtext import Parser
+except ImportError:
+    from dps.parsers.restructuredtext import Parser
+
+
+def suite():
+    parser = Parser()
+    s = DPSTestSupport.TransformTestSuite(parser)
+    s.generateTests(totest)
+    return s
+
+totest = {}
+
+totest['bibliographic_field_lists'] = ((DocInfo,), [
+["""\
+.. Bibliographic element extraction.
+
+:Abstract:
+    There can only be one abstract.
+
+    It is automatically moved to the end of the other bibliographic elements.
+
+:Author: Me
+:Version: 1
+:Date: 2001-08-11
+:Parameter i: integer
+""",
+"""\
+<document>
+    <docinfo>
+        <author>
+            Me
+        <version>
+            1
+        <date>
+            2001-08-11
+    <topic class="abstract">
+        <title>
+            Abstract
+        <paragraph>
+            There can only be one abstract.
+        <paragraph>
+            It is automatically moved to the end of the other bibliographic elements.
+    <comment>
+        Bibliographic element extraction.
+    <field_list>
+        <field>
+            <field_name>
+                Parameter
+            <field_argument>
+                i
+            <field_body>
+                <paragraph>
+                    integer
+"""],
+["""\
+.. Bibliographic element extraction.
+
+:Abstract: Abstract 1.
+:Author: Me
+:Contact: me@@my.org
+:Version: 1
+:Abstract: Abstract 2 (should generate a warning).
+:Date: 2001-08-11
+:Parameter i: integer
+""",
+"""\
+<document>
+    <docinfo>
+        <author>
+            Me
+        <contact>
+            <reference refuri="mailto:me@@my.org">
+                me@@my.org
+        <version>
+            1
+        <date>
+            2001-08-11
+    <topic class="abstract">
+        <title>
+            Abstract
+        <paragraph>
+            Abstract 1.
+    <comment>
+        Bibliographic element extraction.
+    <field_list>
+        <field>
+            <field_name>
+                Abstract
+            <field_body>
+                <paragraph>
+                    Abstract 2 (should generate a warning).
+                <system_message level="2" type="WARNING">
+                    <paragraph>
+                        There can only be one abstract.
+        <field>
+            <field_name>
+                Parameter
+            <field_argument>
+                i
+            <field_body>
+                <paragraph>
+                    integer
+"""],
+["""\
+:Author: - must be a paragraph
+:Status: a *simple* paragraph
+:Date: But only one
+
+       paragraph.
+:Version:
+
+.. and not empty either
+""",
+"""\
+<document>
+    <docinfo>
+        <status>
+            a \n\
+            <emphasis>
+                simple
+             paragraph
+    <field_list>
+        <field>
+            <field_name>
+                Author
+            <field_body>
+                <bullet_list bullet="-">
+                    <list_item>
+                        <paragraph>
+                            must be a paragraph
+                <system_message level="2" type="WARNING">
+                    <paragraph>
+                        Cannot extract bibliographic field "Author" containing anything other than a single paragraph.
+        <field>
+            <field_name>
+                Date
+            <field_body>
+                <paragraph>
+                    But only one
+                <paragraph>
+                    paragraph.
+                <system_message level="2" type="WARNING">
+                    <paragraph>
+                        Cannot extract compound bibliographic field "Date".
+        <field>
+            <field_name>
+                Version
+            <field_body>
+                <system_message level="2" type="WARNING">
+                    <paragraph>
+                        Cannot extract empty bibliographic field "Version".
+    <comment>
+        and not empty either
+"""],
+["""\
+:Authors: Me, Myself, **I**
+:Authors: PacMan; Ms. PacMan; PacMan, Jr.
+:Authors:
+    Here
+
+    There
+
+    *Everywhere*
+:Authors: - First
+          - Second
+          - Third
+""",
+"""\
+<document>
+    <docinfo>
+        <authors>
+            <author>
+                Me
+            <author>
+                Myself
+            <author>
+                I
+        <authors>
+            <author>
+                PacMan
+            <author>
+                Ms. PacMan
+            <author>
+                PacMan, Jr.
+        <authors>
+            <author>
+                Here
+            <author>
+                There
+            <author>
+                <emphasis>
+                    Everywhere
+        <authors>
+            <author>
+                First
+            <author>
+                Second
+            <author>
+                Third
+"""],
+["""\
+:Authors:
+
+:Authors: 1. One
+          2. Two
+
+:Authors:
+    -
+    -
+
+:Authors:
+    - One
+
+    Two
+
+:Authors:
+    - One
+
+      Two
+""",
+"""\
+<document>
+    <field_list>
+        <field>
+            <field_name>
+                Authors
+            <field_body>
+                <system_message level="2" type="WARNING">
+                    <paragraph>
+                        Cannot extract empty bibliographic field "Authors".
+        <field>
+            <field_name>
+                Authors
+            <field_body>
+                <enumerated_list enumtype="arabic" prefix="" suffix=".">
+                    <list_item>
+                        <paragraph>
+                            One
+                    <list_item>
+                        <paragraph>
+                            Two
+                <system_message level="2" type="WARNING">
+                    <paragraph>
+                        Bibliographic field "Authors" incompatible with extraction: it must contain either a single paragraph (with authors separated by one of ";,"), multiple paragraphs (one per author), or a bullet list with one paragraph (one author) per item.
+        <field>
+            <field_name>
+                Authors
+            <field_body>
+                <bullet_list bullet="-">
+                    <list_item>
+                    <list_item>
+                <system_message level="2" type="WARNING">
+                    <paragraph>
+                        Bibliographic field "Authors" incompatible with extraction: it must contain either a single paragraph (with authors separated by one of ";,"), multiple paragraphs (one per author), or a bullet list with one paragraph (one author) per item.
+        <field>
+            <field_name>
+                Authors
+            <field_body>
+                <bullet_list bullet="-">
+                    <list_item>
+                        <paragraph>
+                            One
+                <paragraph>
+                    Two
+                <system_message level="2" type="WARNING">
+                    <paragraph>
+                        Bibliographic field "Authors" incompatible with extraction: it must contain either a single paragraph (with authors separated by one of ";,"), multiple paragraphs (one per author), or a bullet list with one paragraph (one author) per item.
+        <field>
+            <field_name>
+                Authors
+            <field_body>
+                <bullet_list bullet="-">
+                    <list_item>
+                        <paragraph>
+                            One
+                        <paragraph>
+                            Two
+                <system_message level="2" type="WARNING">
+                    <paragraph>
+                        Bibliographic field "Authors" incompatible with extraction: it must contain either a single paragraph (with authors separated by one of ";,"), multiple paragraphs (one per author), or a bullet list with one paragraph (one author) per item.
+"""],
+["""\
+.. RCS keyword extraction.
+
+:Status: $RCSfile: test_docinfo.py,v $
+:Date: $Date: 2002/03/01 03:14:36 $
+
+RCS keyword 'RCSfile' doesn't change unless the file name changes,
+so it's safe. The 'Date' keyword changes every time the file is
+checked in to CVS, so the test's expected output text has to be
+derived (hacked) in parallel in order to stay in sync.
+""",
+"""\
+<document>
+    <docinfo>
+        <status>
+            test_docinfo.py
+        <date>
+            %s
+    <comment>
+        RCS keyword extraction.
+    <paragraph>
+        RCS keyword 'RCSfile' doesn't change unless the file name changes,
+        so it's safe. The 'Date' keyword changes every time the file is
+        checked in to CVS, so the test's expected output text has to be
+        derived (hacked) in parallel in order to stay in sync.
+""" % ('$Date: 2002/03/01 03:14:36 $'[7:17].replace('/', '-'),)],
+])
+
+
+if __name__ == '__main__':
+    import unittest
+    unittest.main(defaultTest='suite')
+@
+
+
+1.8
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.7 $
+:Date: $Date: 2002/02/22 01:57:22 $
+d53 3
+a55 1
+    <abstract>
+d95 3
+a97 1
+    <abstract>
+d303 1
+a303 1
+:Date: $Date: 2002/02/22 01:57:22 $
+d324 1
+a324 1
+""" % ('$Date: 2002/02/22 01:57:22 $'[7:17].replace('/', '-'),)],
+@
+
+
+1.7
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.6 $
+:Date: $Date: 2002/02/20 04:45:57 $
+d248 1
+a248 1
+                <enumerated_list enumtype="arabic" prefix="" start="1" suffix=".">
+d299 1
+a299 1
+:Date: $Date: 2002/02/20 04:45:57 $
+d320 1
+a320 1
+""" % ('$Date: 2002/02/20 04:45:57 $'[7:17].replace('/', '-'),)],
+@
+
+
+1.6
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.5 $
+:Date: $Date: 2002/02/15 22:45:58 $
+d53 5
+a57 5
+        <abstract>
+            <paragraph>
+                There can only be one abstract.
+            <paragraph>
+                It is automatically moved to the end of the other bibliographic elements.
+d93 3
+a95 3
+        <abstract>
+            <paragraph>
+                Abstract 1.
+d299 1
+a299 1
+:Date: $Date: 2002/02/15 22:45:58 $
+d320 1
+a320 1
+""" % ('$Date: 2002/02/15 22:45:58 $'[7:17].replace('/', '-'),)],
+@
+
+
+1.5
+log
+@  - Changed "system_warning" to "system_message".
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2002/02/06 03:10:38 $
+d299 1
+a299 1
+:Date: $Date: 2002/02/06 03:10:38 $
+d320 1
+a320 1
+""" % ('$Date: 2002/02/06 03:10:38 $'[7:17].replace('/', '-'),)],
+d322 1
+@
+
+
+1.4
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2002/01/30 04:42:50 $
+d105 1
+a105 1
+                <system_warning level="2" type="WARNING">
+d144 1
+a144 1
+                <system_warning level="2" type="WARNING">
+d155 1
+a155 1
+                <system_warning level="2" type="WARNING">
+d162 1
+a162 1
+                <system_warning level="2" type="WARNING">
+d241 1
+a241 1
+                <system_warning level="2" type="WARNING">
+d255 1
+a255 1
+                <system_warning level="2" type="WARNING">
+d265 1
+a265 1
+                <system_warning level="2" type="WARNING">
+d278 1
+a278 1
+                <system_warning level="2" type="WARNING">
+d291 1
+a291 1
+                <system_warning level="2" type="WARNING">
+d299 1
+a299 1
+:Date: $Date: 2002/01/30 04:42:50 $
+d320 1
+a320 1
+""" % ('$Date: 2002/01/30 04:42:50 $'[7:17].replace('/', '-'),)],
+@
+
+
+1.3
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.2 $
+:Date: $Date: 2002/01/26 00:07:53 $
+d23 1
+a23 1
+    parser = Parser(debug=UnitTestFolder.debug)
+d105 1
+a105 1
+                <system_warning level="2">
+d144 1
+a144 1
+                <system_warning level="2">
+d155 1
+a155 1
+                <system_warning level="2">
+d162 1
+a162 1
+                <system_warning level="2">
+d241 1
+a241 1
+                <system_warning level="2">
+d255 1
+a255 1
+                <system_warning level="2">
+d265 1
+a265 1
+                <system_warning level="2">
+d278 1
+a278 1
+                <system_warning level="2">
+d291 1
+a291 1
+                <system_warning level="2">
+d299 1
+a299 1
+:Date: $Date: 2002/01/26 00:07:53 $
+d320 1
+a320 1
+""" % ('$Date: 2002/01/26 00:07:53 $'[7:17].replace('/', '-'),)],
+@
+
+
+1.2
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.1 $
+:Date: $Date: 2002/01/16 02:41:06 $
+d23 1
+a23 2
+    parser = Parser(warninglevel=4, errorlevel=4, languagecode='en',
+                    debug=UnitTestFolder.debug)
+d299 1
+a299 1
+:Date: $Date: 2002/01/16 02:41:06 $
+d320 1
+a320 1
+""" % ('$Date: 2002/01/16 02:41:06 $'[7:17].replace('/', '-'),)],
+@
+
+
+1.1
+log
+@added to project
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision$
+:Date: $Date$
+d39 1
+a39 1
+    
+d132 1
+a132 1
+            a 
+d299 2
+a300 2
+:Status: $RCSfile: test_field_lists.py,v $
+:Date: $Date: 2001/09/22 02:42:02 $
+d311 1
+a311 1
+            test_field_lists.py
+d321 1
+a321 1
+""" % ('$Date: 2001/09/22 02:42:02 $'[7:17].replace('/', '-'),)],
+@
+

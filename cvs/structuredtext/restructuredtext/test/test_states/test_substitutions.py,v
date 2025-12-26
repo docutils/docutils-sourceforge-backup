@@ -1,0 +1,569 @@
+head	1.9;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.9
+date	2002.03.28.04.20.37;	author goodger;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2002.03.13.02.30.53;	author goodger;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2002.03.12.03.28.45;	author goodger;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2002.02.15.22.58.17;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2002.02.06.02.18.54;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.11.22.04.21.08;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.11.19.04.33.36;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.11.13.03.17.16;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.11.06.23.11.52;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.9
+log
+@updated
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.8 $
+:Date: $Date: 2002/03/13 02:30:53 $
+:Copyright: This module has been placed in the public domain.
+
+Tests for states.py.
+"""
+
+import RSTTestSupport
+
+def suite():
+    s = RSTTestSupport.ParserTestSuite()
+    s.generateTests(totest)
+    return s
+
+totest = {}
+
+totest['substitution_definitions'] = [
+["""\
+Here's an image substitution definition:
+
+.. |symbol| image:: symbol.png
+""",
+"""\
+<document>
+    <paragraph>
+        Here's an image substitution definition:
+    <substitution_definition name="symbol">
+        <image alt="symbol" uri="symbol.png">
+"""],
+["""\
+Embedded directive starts on the next line:
+
+.. |symbol|
+   image:: symbol.png
+""",
+"""\
+<document>
+    <paragraph>
+        Embedded directive starts on the next line:
+    <substitution_definition name="symbol">
+        <image alt="symbol" uri="symbol.png">
+"""],
+["""\
+Here's a series of substitution definitions:
+
+.. |symbol 1| image:: symbol1.png
+.. |SYMBOL 2| image:: symbol2.png
+   :height: 50
+   :width: 100
+.. |symbol 3| image:: symbol3.png
+""",
+"""\
+<document>
+    <paragraph>
+        Here's a series of substitution definitions:
+    <substitution_definition name="symbol 1">
+        <image alt="symbol 1" uri="symbol1.png">
+    <substitution_definition name="symbol 2">
+        <image alt="SYMBOL 2" height="50" uri="symbol2.png" width="100">
+    <substitution_definition name="symbol 3">
+        <image alt="symbol 3" uri="symbol3.png">
+"""],
+["""\
+.. |very long substitution text,
+   split across lines| image:: symbol.png
+""",
+"""\
+<document>
+    <substitution_definition name="very long substitution text, split across lines">
+        <image alt="very long substitution text, split across lines" uri="symbol.png">
+"""],
+["""\
+.. |symbol 1| image:: symbol.png
+
+Followed by a paragraph.
+
+.. |symbol 2| image:: symbol.png
+
+    Followed by a block quote.
+""",
+"""\
+<document>
+    <substitution_definition name="symbol 1">
+        <image alt="symbol 1" uri="symbol.png">
+    <paragraph>
+        Followed by a paragraph.
+    <substitution_definition name="symbol 2">
+        <image alt="symbol 2" uri="symbol.png">
+    <block_quote>
+        <paragraph>
+            Followed by a block quote.
+"""],
+["""\
+Here are some duplicate substitution definitions:
+
+.. |symbol| image:: symbol.png
+.. |symbol| image:: symbol.png
+""",
+"""\
+<document>
+    <paragraph>
+        Here are some duplicate substitution definitions:
+    <substitution_definition dupname="symbol">
+        <image alt="symbol" uri="symbol.png">
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Duplicate substitution definition name: "symbol".
+    <substitution_definition name="symbol">
+        <image alt="symbol" uri="symbol.png">
+"""],
+["""\
+Here are some bad cases:
+
+.. |symbol| image:: symbol.png
+No blank line after.
+
+.. |empty|
+
+.. |unknown| directive:: symbol.png
+
+.. |invalid 1| there's no directive here
+.. |invalid 2| there's no directive here
+   With some block quote text, line 1.
+   And some more, line 2.
+
+.. |invalid 3| there's no directive here
+
+.. | bad name | bad data
+""",
+"""\
+<document>
+    <paragraph>
+        Here are some bad cases:
+    <substitution_definition name="symbol">
+        <image alt="symbol" uri="symbol.png">
+    <system_message level="2" type="WARNING">
+        <paragraph>
+            Unindent without blank line at line 4.
+    <paragraph>
+        No blank line after.
+    <system_message level="2" type="WARNING">
+        <paragraph>
+            Substitution definition "empty" missing contents at line 6.
+        <literal_block>
+            .. |empty|
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Unknown directive type "directive" at line 8.
+        <literal_block>
+            directive:: symbol.png
+    <system_message level="2" type="WARNING">
+        <paragraph>
+            Substitution definition "unknown" empty or invalid at line 8.
+        <literal_block>
+            .. |unknown| directive:: symbol.png
+    <system_message level="2" type="WARNING">
+        <paragraph>
+            Substitution definition "invalid 1" empty or invalid at line 10.
+        <literal_block>
+            .. |invalid 1| there's no directive here
+    <system_message level="2" type="WARNING">
+        <paragraph>
+            Substitution definition "invalid 2" empty or invalid at line 11.
+        <literal_block>
+            .. |invalid 2| there's no directive here
+               With some block quote text, line 1.
+               And some more, line 2.
+    <system_message level="2" type="WARNING">
+        <paragraph>
+            Unindent without blank line at line 12.
+    <block_quote>
+        <paragraph>
+            With some block quote text, line 1.
+            And some more, line 2.
+    <system_message level="2" type="WARNING">
+        <paragraph>
+            Substitution definition "invalid 3" empty or invalid at line 15.
+        <literal_block>
+            .. |invalid 3| there's no directive here
+    <comment>
+        | bad name | bad data
+"""],
+]
+
+if __name__ == '__main__':
+    import unittest
+    unittest.main(defaultTest='suite')
+@
+
+
+1.8
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.7 $
+:Date: $Date: 2002/03/12 03:28:45 $
+d112 1
+a112 1
+            Duplicate substitution definition name: "symbol"
+@
+
+
+1.7
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.6 $
+:Date: $Date: 2002/02/15 22:58:17 $
+d53 2
+a54 1
+   [height=50 width=100]
+@
+
+
+1.6
+log
+@  - Changed "system_warning" to "system_message".
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.5 $
+:Date: $Date: 2002/02/06 02:18:54 $
+d131 2
+d148 2
+d153 2
+a154 3
+            Rendering the directive as a literal block.
+    <literal_block>
+        directive:: symbol.png
+d158 2
+d163 2
+d168 4
+d182 4
+@
+
+
+1.5
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2001/11/22 04:21:08 $
+d109 1
+a109 1
+    <system_warning level="3" type="ERROR">
+d138 1
+a138 1
+    <system_warning level="2" type="WARNING">
+d143 1
+a143 1
+    <system_warning level="2" type="WARNING">
+d146 1
+a146 1
+    <system_warning level="3" type="ERROR">
+d152 1
+a152 1
+    <system_warning level="2" type="WARNING">
+d155 1
+a155 1
+    <system_warning level="2" type="WARNING">
+d158 1
+a158 1
+    <system_warning level="2" type="WARNING">
+d161 1
+a161 1
+    <system_warning level="2" type="WARNING">
+d168 1
+a168 1
+    <system_warning level="2" type="WARNING">
+@
+
+
+1.4
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2001/11/19 04:33:36 $
+d109 1
+a109 1
+    <system_warning level="2">
+d138 1
+a138 1
+    <system_warning level="1">
+d143 1
+a143 1
+    <system_warning level="1">
+d146 1
+a146 1
+    <system_warning level="2">
+d152 1
+a152 1
+    <system_warning level="1">
+d155 1
+a155 1
+    <system_warning level="1">
+d158 1
+a158 1
+    <system_warning level="1">
+d161 1
+a161 1
+    <system_warning level="1">
+d168 1
+a168 1
+    <system_warning level="1">
+@
+
+
+1.3
+log
+@- Updated & extended.- Multi-line test fails.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.2 $
+:Date: $Date: 2001/11/13 03:17:16 $
+d77 21
+d125 6
+a130 1
+.. |invalid| there's no directive here
+d157 14
+a170 1
+            Substitution definition "invalid" empty or invalid at line 10.
+@
+
+
+1.2
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision$
+:Date: $Date$
+d22 1
+a22 1
+totest['substitutions'] = [
+d24 1
+a24 1
+Here's an image substitution:
+d26 1
+a26 1
+.. /symbol/ image:: symbol.png
+d31 3
+a33 3
+        Here's an image substitution:
+    <substitution name="symbol">
+        <image uri="symbol.png">
+d36 1
+a36 1
+Here's a series of substitutions:
+d38 15
+a52 2
+.. /symbol1/ image:: symbol1.png
+.. /symbol2/ image:: symbol2.png
+d54 1
+a54 1
+.. /symbol3/ image:: symbol3.png
+d59 16
+a74 7
+        Here's a series of substitutions:
+    <substitution name="symbol1">
+        <image uri="symbol1.png">
+    <substitution name="symbol2">
+        <image height="50" uri="symbol2.png" width="100">
+    <substitution name="symbol3">
+        <image uri="symbol3.png">
+d77 1
+a77 1
+Here are some duplicate substitutions:
+d79 2
+a80 2
+.. /symbol/ image:: symbol.png
+.. /symbol/ image:: symbol.png
+d85 3
+a87 3
+        Here are some duplicate substitutions:
+    <substitution name="symbol">
+        <image uri="symbol.png">
+d90 3
+a92 3
+            Duplicate substitution name: "symbol"
+    <substitution name="symbol">
+        <image uri="symbol.png">
+d97 1
+a97 1
+.. /symbol/ image:: symbol.png
+d100 1
+a100 1
+.. /empty/
+d102 1
+a102 1
+.. /unknown/ directive:: symbol.png
+d104 1
+a104 1
+.. /invalid/ there's no directive here
+d110 2
+a111 2
+    <substitution name="symbol">
+        <image uri="symbol.png">
+d119 1
+a119 1
+            Substitution "empty" missing contents at line 6.
+d128 1
+a128 1
+            Substitution "unknown" empty or invalid at line 8.
+d131 1
+a131 1
+            Substitution "invalid" empty or invalid at line 10.
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@a23 33
+.. /text/ This is replacement text.
+""",
+"""\
+<document>
+    <substitution name="text">
+        This is replacement text.
+"""],
+["""\
+.. /text/ This is replacement text with *inline* ``markup``.
+""",
+"""\
+<document>
+    <substitution name="text">
+        This is replacement text with 
+        <emphasis>
+            inline
+         
+        <literal>
+            markup
+        .
+"""],
+["""\
+.. /text/ This is replacement text with another `/substitution/`.
+""",
+"""\
+<document>
+    <substitution name="text">
+        This is replacement text with another 
+        <substitution_reference refname="substitution">
+            substitution
+        .
+"""],
+["""\
+a38 1
+.. /text1/ This is replacement text.
+d40 2
+a41 1
+.. /text2/ This is replacement text.
+a48 2
+    <substitution name="text1">
+        This is replacement text.
+d50 3
+a52 3
+        <image uri="symbol2.png">
+    <substitution name="text2">
+        This is replacement text.
+a57 1
+.. /text/ This is replacement text.
+a58 1
+.. /text/ This is replacement text.
+a65 2
+    <substitution name="text">
+        This is replacement text.
+a70 5
+    <system_warning level="2">
+        <paragraph>
+            Duplicate substitution name: "text"
+    <substitution name="text">
+        This is replacement text.
+d81 2
+d97 1
+a97 2
+            Substitution missing contents at line 6
+    <substitution name="empty">
+d104 6
+a109 1
+    <substitution name="unknown">
+@
+

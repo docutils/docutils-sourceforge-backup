@@ -1,0 +1,28 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2002.03.08.05.14.08;	author richard;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@pythonpoint "writer"
+@
+text
+@This generates an XML slideshow usable by PythonPoint.
+
+  http://www.reportlab.com/demos/pythonpoint/pythonpoint.html
+
+See the example slides.stx for information - and restrictions.
+@

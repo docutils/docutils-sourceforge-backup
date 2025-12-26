@@ -1,0 +1,491 @@
+head	1.6;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.6
+date	2002.04.21.15.42.48;	author goodger;	state dead;
+branches;
+next	1.5;
+
+1.5
+date	2002.04.13.16.57.18;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.09.07.02.44.21;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.08.23.03.49.00;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.08.04.15.08.57;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.07.22.22.43.42;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.6
+log
+@project retirement
+@
+text
+@<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- $Id: index.html,v 1.5 2002/04/13 16:57:18 goodger Exp $ -->
+<HTML>
+<HEAD>
+   <TITLE>reStructuredText</TITLE>
+</HEAD>
+<BODY bgcolor="#F0FFF0">
+
+<P><A HREF="http://sourceforge.net/projects/structuredtext/" 
+><IMG SRC="title.png" ALT="reStructuredText" BORDER=0 ALIGN=bottom></A></P>
+
+<P><I>last updated: 2002-04-12</I></P>
+
+<P>reStructuredText is an easy-to-read, what-you-see-is-what-you-get plaintext
+markup syntax and parser system. It is useful for in-line program
+documentation (such as Python docstrings), for quickly creating simple web
+pages, and for standalone documents. reStructuredText is designed for
+extensibility for specific application domains. It is a candidate markup
+syntax for the <A HREF="http://docstring.sourceforge.net/">Python Docstring
+Processing System</A>. reStructuredText is a revision and reinterpretation of
+the <A HREF="http://dev.zope.org/Members/jim/StructuredTextWiki/FrontPage/"
+>StructuredText</A> and <A HREF="http://docutils.sourceforge.net/mirror/setext.html"
+>Setext</A> lightweight markup systems.</P>
+
+<P>The primary goal of the reStructuredText project is to define and implement
+a markup syntax for use in Python docstrings and other documentation domains,
+that is readable and simple, yet powerful enough for non-trivial use. The
+intended purpose of the markup is the conversion of reStructuredText documents
+into useful structured data formats.</P>
+
+<P>See <A HREF="http://docstring.sourceforge.net/dps/statemachine.py"
+><TT>statemachine.py</TT></A> for an example of a Python module fully
+documented using reStructuredText.</P>
+
+<H2>Project Status</H2>
+
+<P>This project consists of a Python package,
+&ldquo;<TT>dps.parsers.restructuredtext</TT>&rdquo;, a component of the <A
+HREF="http://docstring.sourceforge.net/">Python Docstring Processing System
+(DPS)</A>. The reStructuredText parser is functionally complete.</P>
+
+<H3><A NAME="snapshots">Daily Snapshots</A></H3>
+
+<P>Daily snapshots of the project files are also available. They are
+generated automatically from CVS around midnight in North America's Eastern
+time zone (UTC-0400 from April to October, UTC-0500 from October to
+April). The snapshots should be used with caution, as they may contain
+transient bugs or incompatibilities.</P>
+
+<UL>
+
+ <LI><P><A
+     HREF="http://structuredtext.sourceforge.net/rst-snapshot.tgz"
+     >reStructuredText code, tests, documentation, and specifications</A>
+     </P></LI>
+
+ <LI><P><A
+     HREF="http://docstring.sourceforge.net/dps-snapshot.tgz"
+     >DPS code, tests, and specifications (no user docs yet)</A>
+     </P></LI>
+
+ <LI><P><A
+     HREF="http://structuredtext.sourceforge.net/rst-web-snapshot.tgz"
+     >reStructuredText homepage files</A>
+     </P></LI>
+
+</UL>
+
+<H3><A NAME="releases">Project Releases</A></H3>
+
+<P>Please note that the <A HREF="#snapshots">snapshots</A> above
+contain the latest versions of project files.</P>
+
+<P>The <A
+HREF="http://prdownloads.sourceforge.net/structuredtext/rst.0.3.tar.gz"
+>latest project release package (rst.0.3.tar.gz)</A> and past project
+releases can be downloaded from the <A
+HREF="http://sourceforge.net/project/showfiles.php?group_id=7050">project
+files page</A>. Please also download the <A
+HREF="http://prdownloads.sourceforge.net/docstring/dps.0.3.tar.gz"
+>latest DPS package (dps.0.3.tar.gz)</A> which is required by the
+reStructuredText parser. <A
+HREF="http://sourceforge.net/cvs/?group_id=7050">Anonymous CVS access is
+available.</A> You can also <A
+HREF="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/~checkout~/structuredtext/restructuredtext/"
+>browse the latest reStructuredText source files (CVS) individually</A>, and
+read the latest <A HREF="README.txt">README.txt</A> and <A
+HREF="HISTORY.txt">HISTORY.txt</A>.</P>
+
+<H2>User Documentation</H2>
+
+<P>The user documentation files are located in the <TT>docs</TT> directory of the <A
+HREF="http://prdownloads.sourceforge.net/structuredtext/rst.0.3.tar.gz"
+>latest project release package</A> (which may not be up to date). The
+up-to-date working documents (from CVS) may be accessed individually below,
+or from the <A HREF="#snapshots">snapshots</A> above. You can also <A
+HREF="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/~checkout~/structuredtext/restructuredtext/docs/"
+>browse the CVS repository</A> directly.</P>
+
+<UL>
+
+ <LI><P><A HREF="docs/quickstart.html">A ReStructuredText Primer</A> (HTML file),
+        and <A HREF="docs/quickstart.txt">A ReStructuredText Primer</A> (text source).
+     </P></LI>
+
+ <LI><P><A
+     HREF="docs/quickref.html"
+     >Quick reStructuredText</A> (user reference)
+     </P></LI>
+</UL>
+
+<H2>Specification</H2>
+
+<P>All of the specification files are located in the <TT>spec</TT> directory of the <A
+HREF="http://prdownloads.sourceforge.net/structuredtext/rst.0.3.tar.gz"
+>latest project release package</A> (which may not be up to date). The
+up-to-date working documents (from CVS) may be accessed individually below,
+or from the <A HREF="#snapshots">snapshots</A> above. You can also <A
+HREF="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/~checkout~/structuredtext/restructuredtext/spec/"
+>browse the CVS repository</A> directly.</P>
+
+<UL>
+ <LI><P><A
+     HREF="spec/introduction.txt"
+     >An Introduction to reStructuredText</A>
+     </P></LI>
+
+ <LI><P><A
+     HREF="spec/reStructuredText.txt"
+     >reStructuredText Markup Specification</A>
+     </P></LI>
+
+ <LI><P><A
+     HREF="spec/alternatives.txt"
+     >A Record of reStructuredText Syntax Alternatives</A>
+     </P></LI>
+
+ <LI><P><A
+     HREF="spec/problems.txt"
+     >Problems With StructuredText</A>
+     </P></LI>
+
+ <LI><P><A
+     HREF="spec/rst-notes.txt"
+     >Notes</A>
+     </P></LI>
+</UL>
+
+<H2>You Can Help!</H2>
+
+<P>If you can test, administrate, or contribute code, ideas, bug
+reports, yummy treats, computer equipment, and/or large sums of money,
+please <A HREF="mailto:goodger@@users.sourceforge.net">contact the
+project administrator</A>.</P>
+
+<H2>Project Info</H2>
+
+<UL>
+
+ <LI><P><A
+     HREF="http://sourceforge.net/projects/structuredtext/"
+     >Project Summary page</A>: <A
+     HREF="http://sourceforge.net/tracker/?atid=107050&group_id=7050" 
+     >Bug reports</A>, <A
+     HREF="http://sourceforge.net/tracker/?atid=307050&group_id=7050"
+     >patches</A>, <A
+     HREF="http://sourceforge.net/tracker/?atid=357050&group_id=7050"
+     >feature requests</A>, <A
+     HREF="http://sourceforge.net/mail/?group_id=7050"
+     >mailing lists</A>, <A
+     HREF="http://sourceforge.net/news/?group_id=7050"
+     >news</A></P></LI>
+
+ <LI><P><A
+     HREF="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/~checkout~/structuredtext/restructuredtext/"
+     >reStructuredText CVS repository</A></P></LI>
+
+ <LI><P>Project administrator:
+     <A HREF="mailto:goodger@@users.sourceforge.net">David Goodger</A></P></LI>
+
+ <LI><P>Please direct discussions to the
+     <A HREF="http://www.python.org/sigs/doc-sig/">Python Documentation
+     Special Interest Group (Doc-SIG)</A>:
+     <A HREF="mailto:doc-sig@@python.org">doc-sig@@python.org</A></P></LI>
+
+ <LI><P>Page generated using Alex Martelli's
+     <A HREF="http://aspn.activestate.com/ASPN/Python/Cookbook/Recipe/52305">
+     YAPTU</A> (Yet Another Python Templating Utility)</P></LI>
+
+ <LI><P>Powered by <A href="http://www.python.org/">
+     <IMG src="PyBanner016.png" ALIGN="top" ALT="Python" BORDER="0"></A>
+     </P></LI>
+
+ <LI><P>Hosted by <A href="http://sourceforge.net">
+     <IMG src="http://sourceforge.net/sflogo.php?group_id=7050" width="88"
+          height="31" border="0" alt="SourceForge Logo" ALIGN="top"></A>
+     </P></LI>
+
+</UL>
+
+</BODY>
+</HTML>
+@
+
+
+1.5
+log
+@updated
+@
+text
+@d2 1
+a2 1
+<!-- $Id: index.html.template,v 1.4 2001/09/07 02:44:39 goodger Exp $ -->
+@
+
+
+1.4
+log
+@updated
+@
+text
+@d2 1
+a2 1
+<!-- $Id: index.html.template,v 1.3 2001/08/23 03:49:13 goodger Exp $ -->
+d12 1
+a12 1
+<P><I>last updated: 2001-09-06</I></P>
+d22 2
+a23 2
+>StructuredText</A> and <A HREF="http://www.bsdi.com/setext/" >Setext</A>
+lightweight markup systems.</P>
+d40 1
+a40 18
+(DPS)</A>. The reStructuredText parser is almost complete. Only a few details
+remain to be implemented.</P>
+
+<P>The <A
+HREF="http://prdownloads.sourceforge.net/structuredtext/rst.0.3.tar.gz"
+>latest project release package (rst.0.3.tar.gz)</A> and past project
+releases can be downloaded from the <A
+HREF="http://sourceforge.net/project/showfiles.php?group_id=7050">project
+files page</A>. Please also download the <A
+HREF="http://prdownloads.sourceforge.net/docstring/dps.0.3.tar.gz"
+>latest DPS package (dps.0.3.tar.gz)</A> which is required by the
+reStructuredText parser. <A
+HREF="http://sourceforge.net/cvs/?group_id=7050">Anonymous CVS access is
+available.</A> You can also <A
+HREF="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/~checkout~/structuredtext/restructuredtext/"
+>browse the latest reStructuredText source files (CVS) individually</A>, and
+read the latest <A HREF="README.txt">README.txt</A> and <A
+HREF="HISTORY.txt">HISTORY.txt</A>.</P>
+d45 1
+a45 1
+generated automatically from CVS at 24:00 in North America's Eastern
+d69 21
+d101 5
+d108 1
+a108 1
+     >Quick reStructuredText</A>
+d135 1
+a135 1
+     >Record of reStructuredText Syntax Alternatives</A>
+@
+
+
+1.3
+log
+@updated
+@
+text
+@d2 1
+a2 1
+<!-- $Id: index.html.template,v 1.2 2001/08/04 15:09:10 goodger Exp $ -->
+d12 1
+a12 1
+<P><I>last updated: 2001-08-22</I></P>
+d40 2
+a41 3
+(DPS)</A>. The reStructuredText parser is coming along nicely, with most
+constructs implemented. Remaining to be implemented are only tables and a
+few details.</P>
+d151 13
+a163 3
+ <LI><P>Bug reports, patches, feature requests, mailing lists, news: <A
+     HREF="http://sourceforge.net/projects/structuredtext/" >reStructuredText
+     project page</A></P></LI>
+@
+
+
+1.2
+log
+@updates
+@
+text
+@d2 1
+a2 1
+<!-- $Id: index.html.template,v 1.1 2001/07/22 22:43:52 goodger Exp $ -->
+d12 1
+a12 1
+<P><I>last updated: 2001-08-03</I></P>
+d31 1
+a31 1
+<P>See <A HREF="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/~checkout~/docstring/dps/dps/statemachine.py?rcontent-type=text/plain"
+d41 2
+a42 2
+constructs implemented. Remaining to be implemented are: enumerated lists,
+field lists, tables, and option lists.</P>
+d57 46
+a102 5
+read the latest <A
+HREF="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/~checkout~/structuredtext/restructuredtext/README.txt?rcontent-type=text/plain"
+>README.txt</A> and <A
+HREF="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/~checkout~/structuredtext/restructuredtext/HISTORY.txt?rcontent-type=text/plain"
+>HISTORY.txt</A>.</P>
+d106 1
+a106 1
+<P>All of the specification files are included in the <A
+d109 2
+a110 3
+up-to-date working documents (from CVS) may be accessed individually below.
+Note that some of the files listed below may be newer than those included in
+the latest project release package. You can also <A
+a114 2
+
+
+d116 1
+a116 1
+     HREF="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/~checkout~/structuredtext/restructuredtext/spec/introduction.txt?rcontent-type=text/plain"
+d121 1
+a121 1
+     HREF="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/~checkout~/structuredtext/restructuredtext/spec/reStructuredText.txt?rcontent-type=text/plain"
+d126 2
+a127 2
+     HREF="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/~checkout~/structuredtext/restructuredtext/spec/pyextensions.txt?rcontent-type=text/plain"
+     >Python Extensions to the reStructuredText Markup Specification</A>
+d131 1
+a131 1
+     HREF="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/~checkout~/structuredtext/restructuredtext/spec/problems.txt?rcontent-type=text/plain"
+d136 1
+a136 1
+     HREF="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/~checkout~/structuredtext/restructuredtext/spec/rst-notes.txt?rcontent-type=text/plain"
+a138 3
+
+</UL>
+
+d143 4
+a146 4
+<P>If you can test, administrate, or contribute code, ideas, bug reports,
+yummy treats, computer equipment, and/or large sums of money, please
+<A HREF="mailto:dgoodger@@bigfoot.com">contact the project administrator</A>.
+</P>
+d161 1
+a161 1
+     <A HREF="mailto:dgoodger@@bigfoot.com">David Goodger</A></P></LI>
+@
+
+
+1.1
+log
+@initial checkin
+@
+text
+@d2 1
+a2 1
+<!-- $Id: index.html.template,v 1.4 2001/06/18 01:07:26 David_Goodger Exp David_Goodger $ -->
+d9 2
+a10 3
+<P><A HREF="http://sf.net/projects/structuredtext/">
+<IMG SRC="title.png" ALT="reStructuredText" BORDER=0 ALIGN=bottom>
+</A></P>
+d12 1
+a12 1
+<P><I>last updated: 2001-07-20</I></P>
+d19 4
+a22 4
+syntax for the <A HREF="http://docstring.sf.net/">Python Docstring Processing
+System</A>. reStructuredText is a revision and reinterpretation of the <A
+HREF="http://dev.zope.org/Members/jim/StructuredTextWiki/FrontPage/">
+StructuredText</A> and <A HREF="http://www.bsdi.com/setext/">Setext</A>
+d31 2
+a32 2
+<P>See <A HREF="http://docstring.sf.net/dps/statemachine.py">
+<TT>statemachine.py</TT></A> for an example of a Python module fully
+d35 28
+d66 7
+a72 4
+HREF="http://prdownloads.sourceforge.net/structuredtext/rst.0.3.tar.gz">latest
+project release package</A>, or they can be accessed individually below. Note
+that some of the individual files below may be newer than those included in
+the latest project release package.</P>
+d77 3
+a79 3
+ <LI><P><A HREF="spec/introduction.txt">
+     An Introduction to reStructuredText</A>
+     <BR>Date: 2001-07-20.
+d82 3
+a84 3
+ <LI><P><A HREF="spec/reStructuredText.txt">
+     reStructuredText Markup Specification</A>
+     <BR>Date: 2001-07-20.
+d87 3
+a89 3
+ <LI><P><A HREF="spec/pyextensions.txt">
+     Python Extensions to the reStructuredText Markup Specification</A>
+     <BR>Date: 2001-07-20.
+d92 3
+a94 3
+ <LI><P><A HREF="spec/problems.txt">
+     Problems With StructuredText</A>
+     <BR>Date: 2001-07-20.
+d97 3
+a99 3
+ <LI><P><A HREF="spec/rst-notes.txt">
+     Notes</A>
+     <BR>Date: 2001-07-20.
+a105 22
+<H2>Project Status</H2>
+
+<P>This project consists of a Python package,
+"<TT>dps.parsers.restructuredtext</TT>", a component of the <A
+HREF="http://docstring.sf.net/">Python Docstring Processing System (DPS)</A>.
+The reStructuredText parser is coming along nicely, with most constructs
+implemented. Remaining to be implemented are: footnotes, hyperlink targets,
+enumerated lists, field lists, tables, and option lists.</P>
+
+<P>The <A
+HREF="http://prdownloads.sourceforge.net/structuredtext/rst.0.3.tar.gz">latest
+project release package (rst.0.3.tar.gz)</A> and past project releases
+can be downloaded from the <A
+HREF="http://sf.net/project/showfiles.php?group_id=7050">project files
+page</A>. Please also download the <A
+HREF="http://prdownloads.sourceforge.net/docstring/dps.0.3.tar.gz">latest
+DPS package (dps.0.3.tar.gz)</A> which is required by the
+reStructuredText parser. You can also <A HREF="restructuredtext/">browse the
+latest reStructuredText source files</A> individually, and read the latest <A
+HREF="README.txt">README.txt</A> and <A
+HREF="HISTORY.txt">HISTORY.txt</A>.</P>
+
+d117 7
+a123 2
+ <LI><P><A HREF="http://sf.net/projects/structuredtext/">
+     reStructuredText project page</A></P></LI>
+@
+

@@ -1,0 +1,143 @@
+head	1.1;
+access;
+symbols
+	Rrefactor-test:1.1.0.2;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2001.07.31.15.25.01;	author gtk;	state dead;
+branches
+	1.1.2.1;
+next	;
+
+1.1.2.1
+date	2001.07.31.15.25.01;	author gtk;	state Exp;
+branches;
+next	1.1.2.2;
+
+1.1.2.2
+date	2001.09.01.15.14.19;	author goodger;	state dead;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@file test_outdenting.py was initially added on branch Rrefactor-test.
+@
+text
+@@
+
+
+1.1.2.1
+log
+@Made some less monolithic parser tests out of stuff I'd previously added
+to test_state.
+@
+text
+@a0 85
+#! /usr/bin/env python
+
+"""
+Author: Garth Kidd
+Contact: garth@@deadlybloodyserious.com
+Revision: $Revision: 1.1.2.1 $
+Date: $Date: 2001/07/29 12:21:09 $
+Copyright: This module has been placed in the public domain.
+
+Test outdenting. 
+"""
+
+from TestFramework import *
+import ParserTestCase
+
+def suite():
+    f = ParserTestCase.ParserTestCaseFactory('outdenting')
+
+    f.addParserTestCase("""\
+Anywhere a paragraph would have an effect on the current
+indentation level, a comment or list item should also.
+
++ bullet
+
+paragraph used to end a bullet before a blockquote
+
+  blockquote
+""", 
+"""\
+<document>
+    <paragraph>
+        Anywhere a paragraph would have an effect on the current
+        indentation level, a comment or list item should also.
+    </paragraph>
+    <bullet_list bullet="+">
+        <list_item>
+            <paragraph>
+                bullet
+            </paragraph>
+        </list_item>
+    </bullet_list>
+    <paragraph>
+        paragraph used to end a bullet before a blockquote
+    </paragraph>
+    <block_quote>
+        <paragraph>
+            blockquote
+        </paragraph>
+    </block_quote>
+</document>
+""")
+
+    f.addParserTestCase("""\
++ bullet
+
+.. a comment used to end a bullet before a blockquote
+   (if you can't think of what to write in the paragraph)
+
+  blockquote
+""",
+"""\
+<document>
+    <bullet_list bullet="+">
+        <list_item>
+            <paragraph>
+                bullet
+            </paragraph>
+        </list_item>
+    </bullet_list>
+    <comment>
+        a comment used to end a bullet before a blockquote
+        (if you can't think of what to write in the paragraph)
+    </comment>
+    <block_quote>
+        <paragraph>
+            blockquote
+        </paragraph>
+    </block_quote>
+</document>
+""")
+
+    return f
+
+if __name__ == '__main__':
+    main(suite=suite())
+@
+
+
+1.1.2.2
+log
+@refactored into individual test modules in test_states subdirectory
+@
+text
+@d7 1
+a7 1
+Date: $Date: 2001/07/31 15:25:01 $
+@
+
+

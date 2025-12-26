@@ -1,0 +1,514 @@
+head	1.10;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.10
+date	2002.03.16.05.40.16;	author goodger;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2002.03.13.02.37.06;	author goodger;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2002.03.12.03.09.12;	author goodger;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2002.03.11.03.21.35;	author goodger;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2002.03.07.02.07.46;	author richard;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2001.11.19.04.30.58;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.11.15.03.07.17;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.11.06.00.53.40;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.09.17.04.26.56;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.09.12.04.07.07;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.10
+log
+@  - Changed extension attribute syntax.
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.9 $
+:Date: $Date: 2002/03/13 02:37:06 $
+:Copyright: This module has been placed in the public domain.
+
+Directives for figures and simple images.
+"""
+
+__docformat__ = 'reStructuredText'
+
+__all__ = ['image', 'figure']
+
+
+import sys
+try:
+    from restructuredtext import states
+except ImportError:
+    from dps.parsers.restructuredtext import states
+from dps import nodes, utils
+
+def unchanged(arg):
+    return arg                          # unchanged!
+
+image_attribute_spec = {'alt': unchanged,
+                        'height': int,
+                        'width': int,
+                        'scale': int}
+
+def image(match, typename, data, state, statemachine, attributes):
+    lineno = statemachine.abslineno()
+    lineoffset = statemachine.lineoffset
+    datablock, indent, offset, blankfinish = \
+          statemachine.getfirstknownindented(match.end(), uptoblank=1)
+    blocktext = '\n'.join(statemachine.inputlines[
+          lineoffset : lineoffset + len(datablock) + 1])
+    for i in range(len(datablock)):
+        if datablock[i][:1] == ':':
+            attlines = datablock[i:]
+            datablock = datablock[:i]
+            break
+    else:
+        attlines = []
+    if not datablock:
+        error = statemachine.memo.reporter.error(
+              'Missing image URI argument at line %s.' % lineno, '',
+              nodes.literal_block(blocktext, blocktext))
+        return [error], blankfinish
+    attoffset = lineoffset + i
+    reference = ''.join([line.strip() for line in datablock])
+    if reference.find(' ') != -1:
+        error = statemachine.memo.reporter.error(
+              'Image URI at line %s contains whitespace.' % lineno, '',
+              nodes.literal_block(blocktext, blocktext))
+        return [error], blankfinish
+    if attlines:
+        success, data, blankfinish = state.parse_extension_attributes(
+              image_attribute_spec, attlines, blankfinish)
+        if success:                     # data is a dict of attributes
+            attributes.update(data)
+        else:                           # data is an error string
+            error = statemachine.memo.reporter.error(
+                  'Error in "%s" directive attributes at line %s:\n%s.'
+                  % (match.group(1), lineno, data), '',
+                  nodes.literal_block(blocktext, blocktext))
+            return [error], blankfinish
+    attributes['uri'] = reference
+    imagenode = nodes.image(blocktext, **attributes)
+    return [imagenode], blankfinish
+
+def figure(match, typename, data, state, statemachine, attributes):
+    lineoffset = statemachine.lineoffset
+    (imagenode,), blankfinish = image(match, typename, data, state,
+                                      statemachine, attributes)
+    indented, indent, offset, blankfinish \
+          = statemachine.getfirstknownindented(sys.maxint)
+    blocktext = '\n'.join(statemachine.inputlines[lineoffset:
+                                                  statemachine.lineoffset+1])
+    if isinstance(imagenode, nodes.system_message):
+        if indented:
+            imagenode[-1] = nodes.literal_block(blocktext, blocktext)
+        return [imagenode], blankfinish
+    figurenode = nodes.figure('', imagenode)
+    if indented:
+        node = nodes.Element()          # anonymous container for parsing
+        state.nestedparse(indented, lineoffset, node)
+        firstnode = node[0]
+        if isinstance(firstnode, nodes.paragraph):
+            caption = nodes.caption(firstnode.rawsource, '',
+                                    *firstnode.children)
+            figurenode += caption
+        elif not (isinstance(firstnode, nodes.comment) and len(firstnode) == 0):
+            error = statemachine.memo.reporter.error(
+                  'Figure caption must be a paragraph or empty comment.', '',
+                  nodes.literal_block(blocktext, blocktext))
+            return [figurenode, error], blankfinish
+        if len(node) > 1:
+            figurenode += nodes.legend('', *node[1:])
+    return [figurenode], blankfinish
+@
+
+
+1.9
+log
+@  - Adapted to field_list extension attribute syntax.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.8 $
+:Date: $Date: 2002/03/12 03:09:12 $
+d60 5
+a64 16
+        node = nodes.field_list()
+        newlineoffset, blankfinish = state.nestedlistparse(
+              attlines, attoffset, node, initialstate='FieldList',
+              blankfinish=blankfinish) #, statemachinekwargs=imageSMkwargs)
+        if (newlineoffset - attoffset) != len(attlines):
+            # incomplete parse of block
+            blocktext = '\n'.join(statemachine.inputlines[
+                  lineoffset : statemachine.lineoffset + 1])
+            msg = statemachine.memo.reporter.error(
+                  'Invalid attribute block for image directive at line %s.' 
+                  % lineno, '', nodes.literal_block(blocktext, blocktext))
+            return [msg], blankfinish
+        try:
+            imageatts = utils.extract_extension_attributes(
+                  node, image_attribute_spec)
+        except KeyError, detail:
+d66 2
+a67 2
+                  'Unknown image attribute at line %s: "%s".'
+                  % (lineno, detail), '',
+a69 13
+        except ValueError, detail:
+            error = statemachine.memo.reporter.error(
+                  'Invalid image attribute value at line %s:\n%s.'
+                  % (lineno, detail), '',
+                  nodes.literal_block(blocktext, blocktext))
+            return [error], blankfinish
+        except utils.ExtensionAttributeError, detail:
+            error = statemachine.memo.reporter.error(
+                  'Invalid image attribute data at line %s:\n%s.'
+                  % (lineno, detail), '',
+                  nodes.literal_block(blocktext, blocktext))
+            return [error], blankfinish
+        attributes.update(imageatts)
+@
+
+
+1.8
+log
+@  - Added literal blocks to system messages whenever    the erroneous source text is omitted.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.7 $
+:Date: $Date: 2002/03/11 03:21:35 $
+d26 1
+a26 1
+    return arg
+d28 4
+a31 1
+imageattributes = {'alt': unchanged, 'height': int, 'width': int, 'scale': int}
+d38 2
+a39 7
+    if not datablock:
+        error = statemachine.memo.reporter.error(
+              'Missing image URI argument at line %s.' % lineno, '',
+              nodes.literal_block(match.string, match.string))
+        return [error], blankfinish
+    blocktext = '\n'.join(statemachine.inputlines[lineoffset:
+                                                  lineoffset+len(datablock)])
+d41 1
+a41 1
+        if datablock[i][:1] == '[' and datablock[i].rstrip()[-1:] == ']':
+d47 6
+d59 35
+a93 19
+    try:
+        attributes.update(utils.parseattributes(attlines, imageattributes))
+    except KeyError, detail:
+        error = statemachine.memo.reporter.error(
+              'Unknown image attribute at line %s: "%s".' % (lineno, detail),
+              '', nodes.literal_block(blocktext, blocktext))
+        return [error], blankfinish
+    except ValueError, detail:
+        error = statemachine.memo.reporter.error(
+              'Invalid image attribute value at line %s: %s.'
+              % (lineno, detail), '',
+              nodes.literal_block(blocktext, blocktext))
+        return [error], blankfinish
+    except utils.AttributeParsingError, detail:
+        error = statemachine.memo.reporter.error(
+              'Invalid image attribute data at line %s: %s.'
+              % (lineno, detail), '',
+              nodes.literal_block(blocktext, blocktext))
+        return [error], blankfinish
+@
+
+
+1.7
+log
+@reporter updates
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.6 $
+:Date: $Date: 2002/03/07 02:07:46 $
+d86 1
+a86 3
+    blocktext = match.string + '\n'.join(indented[1:])
+    text = '\n'.join(indented)
+    if not isinstance(imagenode, nodes.image):
+d88 12
+d101 5
+a105 24
+                  'Rendering the figure block as a literal block.')
+            literalblock = nodes.literal_block(text, text)
+            nodelist = [imagenode, error, literalblock]
+            return nodelist, blankfinish
+        else:
+            return [imagenode], blankfinish
+    figurenode = nodes.figure('', imagenode)
+    if not text:
+        return [figurenode], blankfinish
+    node = nodes.Element()              # anonymous container for parsing
+    state.nestedparse(indented, lineoffset, node)
+    firstnode = node[0]
+    if isinstance(firstnode, nodes.paragraph):
+        caption = nodes.caption(firstnode.rawsource, '', *firstnode.children)
+        figurenode += caption
+    elif not (isinstance(firstnode, nodes.comment) and len(firstnode) == 0):
+        error = self.statemachine.memo.reporter.error(
+              'Figure caption must be a paragraph or empty comment. '
+              'Rendering the figure block as a literal block.')
+        literalblock = nodes.literal_block(text, text)
+        nodelist = [figurenode, error, literalblock]
+        return nodelist, blankfinish
+    if len(node) > 1:
+        figurenode += nodes.legend('', *node[1:])
+@
+
+
+1.6
+log
+@fixed imports so the package path is correct for installed modules.
+... the non-package restructuredtext reference should probably go away,
+    though that'll make testing a bugger while dps and rest are split...
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.5 $
+:Date: $Date: 2001/11/19 04:30:58 $
+d37 2
+a38 2
+              'Missing image URI argument at line %s.' % lineno,
+              [nodes.literal_block(match.string, match.string)])
+d52 2
+a53 2
+              'Image URI at line %s contains whitespace.' % lineno)
+        error += nodes.literal_block(blocktext, blocktext)
+d59 2
+a60 2
+              'Unknown image attribute at line %s: "%s".' % (lineno, detail))
+        error += nodes.literal_block(blocktext, blocktext)
+d65 2
+a66 2
+              % (lineno, detail))
+        error += nodes.literal_block(blocktext, blocktext)
+d71 2
+a72 2
+              % (lineno, detail))
+        error += nodes.literal_block(blocktext, blocktext)
+@
+
+
+1.5
+log
+@  - Updated for directive 'attributes' parameter.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2001/11/15 03:07:17 $
+d19 4
+a22 1
+from restructuredtext import states
+@
+
+
+1.4
+log
+@  - Extracted attribute parsing code to dps.utils.  - Added 'alt' attribute.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2001/11/06 00:53:40 $
+d27 1
+a27 1
+def image(match, typename, data, state, statemachine):
+d53 1
+a53 1
+        attributes = utils.parseattributes(attlines, imageattributes)
+d72 1
+a72 1
+    imagenode = nodes.image(data, **attributes)
+d75 1
+a75 1
+def figure(match, typename, data, state, statemachine):
+d78 1
+a78 1
+                                      statemachine)
+@
+
+
+1.3
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.2 $
+:Date: $Date: 2001/09/17 04:26:56 $
+d20 1
+a20 1
+from dps import nodes
+d22 4
+d39 7
+a45 3
+    tokens = []
+    if datablock[-1][0] == '[' and datablock[-1][-1] == ']':
+        tokens = datablock.pop()[1:-1].split()
+d48 1
+a48 1
+        warning = statemachine.memo.reporter.warning(
+d50 22
+a71 33
+        warning += nodes.literal_block(blocktext, blocktext)
+        return [warning], blankfinish
+    attributes = {'uri': reference}
+    for token in tokens:
+        parts = token.split('=')
+        if parts[0].lower() not in ('height', 'width', 'scale'):
+            error = statemachine.memo.reporter.error(
+                  'Unknown image attribute "%s" at line %s.'
+                  % (parts[0], lineno),
+                  [nodes.literal_block(match.string, match.string)])
+            return [error], blankfinish
+        if len(parts) != 2:
+            error = statemachine.memo.reporter.error(
+                  'Invalid image attribute expression at line %s: "%s".'
+                  % (lineno, token),
+                  [nodes.literal_block(match.string, match.string)])
+            return [error], blankfinish
+        name = parts[0].lower()
+        if attributes.has_key(name):
+            error = statemachine.memo.reporter.error(
+                  'Duplicate image attribute name at line %s: "%s"'
+                  % (lineno, name),
+                  [nodes.literal_block(match.string, match.string)])
+            return [error], blankfinish
+        try:
+            value = int(parts[1])
+        except:
+            error = statemachine.memo.reporter.error(
+                  'Invalid image attribute value for "%s" at line %s: "%s" is '
+                  'not an integer.' % (name, lineno, parts[1]),
+                  [nodes.literal_block(match.string, match.string)])
+            return [error], blankfinish
+        attributes[name.lower()] = value
+@
+
+
+1.2
+log
+@  - Reworked parsins; still needs some refactoring.  - Updated: 'errorist' -> 'reporter'.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.1 $
+:Date: $Date: 2001/09/12 04:07:07 $
+d100 1
+a100 1
+    node = nodes._Element()
+@
+
+
+1.1
+log
+@Implementation of directives 'image' & 'figure'.
+@
+text
+@d7 1
+a7 1
+:Date: $Date: 2001/09/10 04:44:21 $
+d18 1
+a23 1
+    blankfinish = statemachine.nextlineblank()
+d25 5
+a29 2
+    if not data:
+        error = statemachine.memo.errorist.error(
+d33 13
+a45 3
+    tokens = data.split()
+    attributes = {'uri': tokens[0]}
+    for token in tokens[1:]:
+d48 1
+a48 1
+            error = statemachine.memo.errorist.error(
+d54 1
+a54 1
+            error = statemachine.memo.errorist.error(
+d61 1
+a61 1
+            error = statemachine.memo.errorist.error(
+d69 1
+a69 1
+            error = statemachine.memo.errorist.error(
+d71 1
+a71 1
+                  'not an integer.' % (name, lineno, value),
+d79 1
+d82 5
+a86 2
+    indented, indent, lineoffset, blankfinish \
+          = statemachine.getfirstknownindented(len(match.string))
+d90 1
+a90 1
+            error = self.statemachine.memo.errorist.error(
+d107 1
+a107 1
+        error = self.statemachine.memo.errorist.error(
+@
+

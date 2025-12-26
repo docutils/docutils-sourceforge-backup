@@ -1,0 +1,1141 @@
+head	1.17;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.17
+date	2002.04.13.16.27.44;	author goodger;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2002.03.28.04.20.20;	author goodger;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2002.03.16.05.28.57;	author goodger;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2002.03.11.03.18.29;	author goodger;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2002.03.07.03.46.09;	author goodger;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2002.02.20.04.25.02;	author goodger;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2002.02.15.22.58.17;	author goodger;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2002.02.06.02.17.56;	author goodger;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2002.01.29.02.15.13;	author goodger;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2002.01.28.02.13.19;	author goodger;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2002.01.25.23.42.49;	author goodger;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2001.10.31.05.47.47;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2001.10.23.03.39.32;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.09.13.02.39.57;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.09.07.01.48.52;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.09.02.14.04.37;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.09.01.16.59.56;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.17
+log
+@updated
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.16 $
+:Date: $Date: 2002/03/28 04:20:20 $
+:Copyright: This module has been placed in the public domain.
+
+Tests for states.py.
+"""
+
+import RSTTestSupport
+
+def suite():
+    s = RSTTestSupport.ParserTestSuite()
+    s.generateTests(totest)
+    return s
+
+totest = {}
+
+totest['footnotes'] = [
+["""\
+.. [1] This is a footnote.
+""",
+"""\
+<document>
+    <footnote id="id1" name="1">
+        <label>
+            1
+        <paragraph>
+            This is a footnote.
+"""],
+["""\
+.. [1] This is a footnote
+   on multiple lines.
+""",
+"""\
+<document>
+    <footnote id="id1" name="1">
+        <label>
+            1
+        <paragraph>
+            This is a footnote
+            on multiple lines.
+"""],
+["""\
+.. [1] This is a footnote
+     on multiple lines with more space.
+
+.. [2] This is a footnote
+  on multiple lines with less space.
+""",
+"""\
+<document>
+    <footnote id="id1" name="1">
+        <label>
+            1
+        <paragraph>
+            This is a footnote
+            on multiple lines with more space.
+    <footnote id="id2" name="2">
+        <label>
+            2
+        <paragraph>
+            This is a footnote
+            on multiple lines with less space.
+"""],
+["""\
+.. [1]
+   This is a footnote on multiple lines
+   whose block starts on line 2.
+""",
+"""\
+<document>
+    <footnote id="id1" name="1">
+        <label>
+            1
+        <paragraph>
+            This is a footnote on multiple lines
+            whose block starts on line 2.
+"""],
+["""\
+.. [1]
+
+That was an empty footnote.
+""",
+"""\
+<document>
+    <footnote id="id1" name="1">
+        <label>
+            1
+    <paragraph>
+        That was an empty footnote.
+"""],
+["""\
+.. [1]
+No blank line.
+""",
+"""\
+<document>
+    <footnote id="id1" name="1">
+        <label>
+            1
+    <system_message level="2" type="WARNING">
+        <paragraph>
+            Unindent without blank line at line 2.
+    <paragraph>
+        No blank line.
+"""],
+]
+
+totest['auto_numbered_footnotes'] = [
+["""\
+[#]_ is the first auto-numbered footnote reference.
+[#]_ is the second auto-numbered footnote reference.
+
+.. [#] Auto-numbered footnote 1.
+.. [#] Auto-numbered footnote 2.
+.. [#] Auto-numbered footnote 3.
+
+[#]_ is the third auto-numbered footnote reference.
+""",
+"""\
+<document>
+    <paragraph>
+        <footnote_reference auto="1" id="id1">
+         is the first auto-numbered footnote reference.
+        <footnote_reference auto="1" id="id2">
+         is the second auto-numbered footnote reference.
+    <footnote auto="1" id="id3">
+        <paragraph>
+            Auto-numbered footnote 1.
+    <footnote auto="1" id="id4">
+        <paragraph>
+            Auto-numbered footnote 2.
+    <footnote auto="1" id="id5">
+        <paragraph>
+            Auto-numbered footnote 3.
+    <paragraph>
+        <footnote_reference auto="1" id="id6">
+         is the third auto-numbered footnote reference.
+"""],
+["""\
+[#third]_ is a reference to the third auto-numbered footnote.
+
+.. [#first] First auto-numbered footnote.
+.. [#second] Second auto-numbered footnote.
+.. [#third] Third auto-numbered footnote.
+
+[#second]_ is a reference to the second auto-numbered footnote.
+[#first]_ is a reference to the first auto-numbered footnote.
+[#third]_ is another reference to the third auto-numbered footnote.
+
+Here are some internal cross-references to the targets generated by
+the footnotes: first_, second_, third_.
+""",
+"""\
+<document>
+    <paragraph>
+        <footnote_reference auto="1" id="id1" refname="third">
+         is a reference to the third auto-numbered footnote.
+    <footnote auto="1" id="first" name="first">
+        <paragraph>
+            First auto-numbered footnote.
+    <footnote auto="1" id="second" name="second">
+        <paragraph>
+            Second auto-numbered footnote.
+    <footnote auto="1" id="third" name="third">
+        <paragraph>
+            Third auto-numbered footnote.
+    <paragraph>
+        <footnote_reference auto="1" id="id2" refname="second">
+         is a reference to the second auto-numbered footnote.
+        <footnote_reference auto="1" id="id3" refname="first">
+         is a reference to the first auto-numbered footnote.
+        <footnote_reference auto="1" id="id4" refname="third">
+         is another reference to the third auto-numbered footnote.
+    <paragraph>
+        Here are some internal cross-references to the targets generated by
+        the footnotes: \n\
+        <reference refname="first">
+            first
+        , \n\
+        <reference refname="second">
+            second
+        , \n\
+        <reference refname="third">
+            third
+        .
+"""],
+["""\
+Mixed anonymous and labelled auto-numbered footnotes:
+
+[#four]_ should be 4, [#]_ should be 1,
+[#]_ should be 3, [#]_ is one too many,
+[#two]_ should be 2, and [#six]_ doesn't exist.
+
+.. [#] Auto-numbered footnote 1.
+.. [#two] Auto-numbered footnote 2.
+.. [#] Auto-numbered footnote 3.
+.. [#four] Auto-numbered footnote 4.
+.. [#five] Auto-numbered footnote 5.
+.. [#five] Auto-numbered footnote 5 again (duplicate).
+""",
+"""\
+<document>
+    <paragraph>
+        Mixed anonymous and labelled auto-numbered footnotes:
+    <paragraph>
+        <footnote_reference auto="1" id="id1" refname="four">
+         should be 4, \n\
+        <footnote_reference auto="1" id="id2">
+         should be 1,
+        <footnote_reference auto="1" id="id3">
+         should be 3, \n\
+        <footnote_reference auto="1" id="id4">
+         is one too many,
+        <footnote_reference auto="1" id="id5" refname="two">
+         should be 2, and \n\
+        <footnote_reference auto="1" id="id6" refname="six">
+         doesn't exist.
+    <footnote auto="1" id="id7">
+        <paragraph>
+            Auto-numbered footnote 1.
+    <footnote auto="1" id="two" name="two">
+        <paragraph>
+            Auto-numbered footnote 2.
+    <footnote auto="1" id="id8">
+        <paragraph>
+            Auto-numbered footnote 3.
+    <footnote auto="1" id="four" name="four">
+        <paragraph>
+            Auto-numbered footnote 4.
+    <footnote auto="1" dupname="five" id="five">
+        <paragraph>
+            Auto-numbered footnote 5.
+    <footnote auto="1" dupname="five" id="id9">
+        <system_message backrefs="id9" level="2" type="WARNING">
+            <paragraph>
+                Duplicate explicit target name: "five".
+        <paragraph>
+            Auto-numbered footnote 5 again (duplicate).
+"""],
+["""\
+Mixed manually-numbered, anonymous auto-numbered,
+and labelled auto-numbered footnotes:
+
+[#four]_ should be 4, [#]_ should be 2,
+[1]_ is 1, [3]_ is 3,
+[#]_ should be 6, [#]_ is one too many,
+[#five]_ should be 5, and [#six]_ doesn't exist.
+
+.. [1] Manually-numbered footnote 1.
+.. [#] Auto-numbered footnote 2.
+.. [#four] Auto-numbered footnote 4.
+.. [3] Manually-numbered footnote 3
+.. [#five] Auto-numbered footnote 5.
+.. [#five] Auto-numbered footnote 5 again (duplicate).
+.. [#] Auto-numbered footnote 6.
+""",
+"""\
+<document>
+    <paragraph>
+        Mixed manually-numbered, anonymous auto-numbered,
+        and labelled auto-numbered footnotes:
+    <paragraph>
+        <footnote_reference auto="1" id="id1" refname="four">
+         should be 4, \n\
+        <footnote_reference auto="1" id="id2">
+         should be 2,
+        <footnote_reference id="id3" refname="1">
+            1
+         is 1, \n\
+        <footnote_reference id="id4" refname="3">
+            3
+         is 3,
+        <footnote_reference auto="1" id="id5">
+         should be 6, \n\
+        <footnote_reference auto="1" id="id6">
+         is one too many,
+        <footnote_reference auto="1" id="id7" refname="five">
+         should be 5, and \n\
+        <footnote_reference auto="1" id="id8" refname="six">
+         doesn't exist.
+    <footnote id="id9" name="1">
+        <label>
+            1
+        <paragraph>
+            Manually-numbered footnote 1.
+    <footnote auto="1" id="id10">
+        <paragraph>
+            Auto-numbered footnote 2.
+    <footnote auto="1" id="four" name="four">
+        <paragraph>
+            Auto-numbered footnote 4.
+    <footnote id="id11" name="3">
+        <label>
+            3
+        <paragraph>
+            Manually-numbered footnote 3
+    <footnote auto="1" dupname="five" id="five">
+        <paragraph>
+            Auto-numbered footnote 5.
+    <footnote auto="1" dupname="five" id="id12">
+        <system_message backrefs="id12" level="2" type="WARNING">
+            <paragraph>
+                Duplicate explicit target name: "five".
+        <paragraph>
+            Auto-numbered footnote 5 again (duplicate).
+    <footnote auto="1" id="id13">
+        <paragraph>
+            Auto-numbered footnote 6.
+"""],
+]
+
+totest['auto_symbol_footnotes'] = [
+["""\
+.. [*] This is an auto-symbol footnote.
+""",
+"""\
+<document>
+    <footnote auto="*" id="id1">
+        <paragraph>
+            This is an auto-symbol footnote.
+"""],
+]
+
+
+if __name__ == '__main__':
+    import unittest
+    unittest.main(defaultTest='suite')
+@
+
+
+1.16
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.15 $
+:Date: $Date: 2002/03/16 05:28:57 $
+d127 1
+a127 1
+        <footnote_reference auto="1">
+d129 1
+a129 1
+        <footnote_reference auto="1">
+d131 1
+a131 1
+    <footnote auto="1">
+d134 1
+a134 1
+    <footnote auto="1">
+d137 1
+a137 1
+    <footnote auto="1">
+d141 1
+a141 1
+        <footnote_reference auto="1">
+d161 1
+a161 1
+        <footnote_reference auto="1" refname="third">
+d173 1
+a173 1
+        <footnote_reference auto="1" refname="second">
+d175 1
+a175 1
+        <footnote_reference auto="1" refname="first">
+d177 1
+a177 1
+        <footnote_reference auto="1" refname="third">
+d211 1
+a211 1
+        <footnote_reference auto="1" refname="four">
+d213 1
+a213 1
+        <footnote_reference auto="1">
+d215 1
+a215 1
+        <footnote_reference auto="1">
+d217 1
+a217 1
+        <footnote_reference auto="1">
+d219 1
+a219 1
+        <footnote_reference auto="1" refname="two">
+d221 1
+a221 1
+        <footnote_reference auto="1" refname="six">
+d223 1
+a223 1
+    <footnote auto="1">
+d229 1
+a229 1
+    <footnote auto="1">
+d238 2
+a239 2
+    <footnote auto="1" dupname="five" id="id1">
+        <system_message level="2" refid="id1" type="WARNING">
+d268 1
+a268 1
+        <footnote_reference auto="1" refname="four">
+d270 1
+a270 1
+        <footnote_reference auto="1">
+d272 1
+a272 1
+        <footnote_reference refname="1">
+d275 1
+a275 1
+        <footnote_reference refname="3">
+d278 1
+a278 1
+        <footnote_reference auto="1">
+d280 1
+a280 1
+        <footnote_reference auto="1">
+d282 1
+a282 1
+        <footnote_reference auto="1" refname="five">
+d284 1
+a284 1
+        <footnote_reference auto="1" refname="six">
+d286 1
+a286 1
+    <footnote id="id1" name="1">
+d291 1
+a291 1
+    <footnote auto="1">
+d297 1
+a297 1
+    <footnote id="id2" name="3">
+d305 2
+a306 2
+    <footnote auto="1" dupname="five" id="id3">
+        <system_message level="2" refid="id3" type="WARNING">
+d311 1
+a311 1
+    <footnote auto="1">
+d323 1
+a323 1
+    <footnote auto="*">
+@
+
+
+1.15
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.14 $
+:Date: $Date: 2002/03/11 03:18:29 $
+d241 1
+a241 1
+                Duplicate explicit target name: "five"
+d308 1
+a308 1
+                Duplicate explicit target name: "five"
+@
+
+
+1.14
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.13 $
+:Date: $Date: 2002/03/07 03:46:09 $
+d163 1
+a163 1
+    <footnote auto="1" id="id1" name="first">
+d166 1
+a166 1
+    <footnote auto="1" id="id2" name="second">
+d169 1
+a169 1
+    <footnote auto="1" id="id3" name="third">
+d226 1
+a226 1
+    <footnote auto="1" id="id1" name="two">
+d232 1
+a232 1
+    <footnote auto="1" id="id2" name="four">
+d235 1
+a235 1
+    <footnote auto="1" dupname="five" id="id3">
+d238 2
+a239 2
+    <footnote auto="1" dupname="five" id="id4">
+        <system_message level="2" refid="id4" type="WARNING">
+d294 1
+a294 1
+    <footnote auto="1" id="id2" name="four">
+d297 1
+a297 1
+    <footnote id="id3" name="3">
+d302 1
+a302 1
+    <footnote auto="1" dupname="five" id="id4">
+d305 2
+a306 2
+    <footnote auto="1" dupname="five" id="id5">
+        <system_message level="2" refid="id5" type="WARNING">
+@
+
+
+1.13
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.12 $
+:Date: $Date: 2002/02/20 04:25:02 $
+d239 1
+a239 1
+        <system_message level="2" type="WARNING">
+d306 1
+a306 1
+        <system_message level="2" type="WARNING">
+@
+
+
+1.12
+log
+@updated (ids)
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.11 $
+:Date: $Date: 2002/02/15 22:58:17 $
+d24 1
+a24 1
+.. [footnote] This is a footnote.
+d28 1
+a28 1
+    <footnote id="id1" name="footnote">
+d30 1
+a30 1
+            footnote
+d35 1
+a35 1
+.. [footnote] This is a footnote
+d40 1
+a40 1
+    <footnote id="id1" name="footnote">
+d42 1
+a42 1
+            footnote
+d48 1
+a48 1
+.. [footnote1] This is a footnote
+d51 1
+a51 1
+.. [footnote2] This is a footnote
+d56 1
+a56 1
+    <footnote id="id1" name="footnote1">
+d58 1
+a58 1
+            footnote1
+d62 1
+a62 1
+    <footnote id="id2" name="footnote2">
+d64 1
+a64 1
+            footnote2
+d70 1
+a70 1
+.. [footnote]
+d76 1
+a76 1
+    <footnote id="id1" name="footnote">
+d78 1
+a78 1
+            footnote
+d84 1
+a84 1
+.. [footnote]
+d90 1
+a90 1
+    <footnote id="id1" name="footnote">
+d92 1
+a92 1
+            footnote
+d97 1
+a97 1
+.. [footnote]
+d102 1
+a102 1
+    <footnote id="id1" name="footnote">
+d104 1
+a104 1
+            footnote
+a110 12
+["""\
+.. [foot label with spaces] this isn't a footnote
+
+.. [*footlabelwithmarkup*] this isn't a footnote
+""",
+"""\
+<document>
+    <comment>
+        [foot label with spaces] this isn't a footnote
+    <comment>
+        [*footlabelwithmarkup*] this isn't a footnote
+"""],
+d245 82
+d328 1
+@
+
+
+1.11
+log
+@  - Changed "system_warning" to "system_message".
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.10 $
+:Date: $Date: 2002/02/06 02:17:56 $
+d28 1
+a28 1
+    <footnote name="footnote">
+d40 1
+a40 1
+    <footnote name="footnote">
+d56 1
+a56 1
+    <footnote name="footnote1">
+d62 1
+a62 1
+    <footnote name="footnote2">
+d76 1
+a76 1
+    <footnote name="footnote">
+d90 1
+a90 1
+    <footnote name="footnote">
+d102 1
+a102 1
+    <footnote name="footnote">
+d175 1
+a175 1
+    <footnote auto="1" name="first">
+d178 1
+a178 1
+    <footnote auto="1" name="second">
+d181 1
+a181 1
+    <footnote auto="1" name="third">
+d238 1
+a238 1
+    <footnote auto="1" name="two">
+d244 1
+a244 1
+    <footnote auto="1" name="four">
+d247 1
+a247 1
+    <footnote auto="1" dupname="five">
+d250 1
+a250 1
+    <footnote auto="1" dupname="five">
+@
+
+
+1.10
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.9 $
+:Date: $Date: 2002/01/29 02:15:13 $
+d105 1
+a105 1
+    <system_warning level="2" type="WARNING">
+d251 1
+a251 1
+        <system_warning level="2" type="WARNING">
+@
+
+
+1.9
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.8 $
+:Date: $Date: 2002/01/28 02:13:19 $
+d105 1
+a105 1
+    <system_warning level="1">
+d251 1
+a251 1
+        <system_warning level="1">
+@
+
+
+1.8
+log
+@mods for footnote transforms
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.7 $
+:Date: $Date: 2002/01/25 23:42:49 $
+d251 1
+a251 1
+        <system_warning level="0">
+@
+
+
+1.7
+log
+@protect trailing whitespace
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.6 $
+:Date: $Date: 2001/10/31 05:47:47 $
+d167 2
+a168 2
+Here are some internal cross-references to the implicit targets
+generated by the footnotes: first_, second_, third_.
+d192 2
+a193 2
+        Here are some internal cross-references to the implicit targets
+        generated by the footnotes: \n\
+d253 1
+a253 1
+                Duplicate implicit target name: "five"
+@
+
+
+1.6
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.5 $
+:Date: $Date: 2001/10/23 03:39:32 $
+d193 1
+a193 1
+        generated by the footnotes: 
+d196 1
+a196 1
+        , 
+d199 1
+a199 1
+        , 
+d224 1
+a224 1
+         should be 4, 
+d228 1
+a228 1
+         should be 3, 
+d232 1
+a232 1
+         should be 2, and 
+@
+
+
+1.5
+log
+@link -> target name change
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2001/09/13 02:39:57 $
+d194 1
+a194 1
+        <link refname="first">
+d197 1
+a197 1
+        <link refname="second">
+d200 1
+a200 1
+        <link refname="third">
+@
+
+
+1.4
+log
+@Updated for simpler dps.nodes._Element.pformat().
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2001/09/07 01:48:52 $
+d253 1
+a253 1
+                Duplicate implicit link name: "five"
+@
+
+
+1.3
+log
+@  - Added "auto" attribute to footnotes after all.    Because it's explicit, and the right thing to do.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.2 $
+:Date: $Date: 2001/09/02 14:04:37 $
+a30 1
+        </label>
+a32 3
+        </paragraph>
+    </footnote>
+</document>
+a42 1
+        </label>
+a45 3
+        </paragraph>
+    </footnote>
+</document>
+a58 1
+        </label>
+a61 2
+        </paragraph>
+    </footnote>
+a64 1
+        </label>
+a67 3
+        </paragraph>
+    </footnote>
+</document>
+a78 1
+        </label>
+a81 3
+        </paragraph>
+    </footnote>
+</document>
+a92 2
+        </label>
+    </footnote>
+a94 2
+    </paragraph>
+</document>
+a104 2
+        </label>
+    </footnote>
+a107 2
+        </paragraph>
+    </system_warning>
+a109 2
+    </paragraph>
+</document>
+a119 1
+    </comment>
+a121 2
+    </comment>
+</document>
+d139 1
+a139 1
+        <footnote_reference auto="1"/>
+d141 1
+a141 1
+        <footnote_reference auto="1"/>
+a142 1
+    </paragraph>
+a145 2
+        </paragraph>
+    </footnote>
+a148 2
+        </paragraph>
+    </footnote>
+a151 2
+        </paragraph>
+    </footnote>
+d153 1
+a153 1
+        <footnote_reference auto="1"/>
+a154 2
+    </paragraph>
+</document>
+d173 1
+a173 1
+        <footnote_reference auto="1" refname="third"/>
+a174 1
+    </paragraph>
+a177 2
+        </paragraph>
+    </footnote>
+a180 2
+        </paragraph>
+    </footnote>
+a183 2
+        </paragraph>
+    </footnote>
+d185 1
+a185 1
+        <footnote_reference auto="1" refname="second"/>
+d187 1
+a187 1
+        <footnote_reference auto="1" refname="first"/>
+d189 1
+a189 1
+        <footnote_reference auto="1" refname="third"/>
+a190 1
+    </paragraph>
+a195 1
+        </link>
+a198 1
+        </link>
+a201 1
+        </link>
+a202 2
+    </paragraph>
+</document>
+a221 1
+    </paragraph>
+d223 1
+a223 1
+        <footnote_reference auto="1" refname="four"/>
+d225 1
+a225 1
+        <footnote_reference auto="1"/>
+d227 1
+a227 1
+        <footnote_reference auto="1"/>
+d229 1
+a229 1
+        <footnote_reference auto="1"/>
+d231 1
+a231 1
+        <footnote_reference auto="1" refname="two"/>
+d233 1
+a233 1
+        <footnote_reference auto="1" refname="six"/>
+a234 1
+    </paragraph>
+a237 2
+        </paragraph>
+    </footnote>
+a240 2
+        </paragraph>
+    </footnote>
+a243 2
+        </paragraph>
+    </footnote>
+a246 2
+        </paragraph>
+    </footnote>
+a249 2
+        </paragraph>
+    </footnote>
+a253 2
+            </paragraph>
+        </system_warning>
+a255 3
+        </paragraph>
+    </footnote>
+</document>
+@
+
+
+1.2
+log
+@Removed "id=__file__" from ParserTestSuite call (now auto-detected).
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.1 $
+:Date: $Date: 2001/09/01 16:59:56 $
+d176 1
+a176 1
+    <footnote>
+d181 1
+a181 1
+    <footnote>
+d186 1
+a186 1
+    <footnote>
+d217 1
+a217 1
+    <footnote name="first">
+d222 1
+a222 1
+    <footnote name="second">
+d227 1
+a227 1
+    <footnote name="third">
+d291 1
+a291 1
+    <footnote>
+d296 1
+a296 1
+    <footnote name="two">
+d301 1
+a301 1
+    <footnote>
+d306 1
+a306 1
+    <footnote name="four">
+d311 1
+a311 1
+    <footnote dupname="five">
+d316 1
+a316 1
+    <footnote dupname="five">
+@
+
+
+1.1
+log
+@Refactored from the monolithic restructuredtext/test_states.py, using the Garth Kidd's framework. Thanks Garth!
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision$
+:Date: $Date$
+d16 1
+a16 1
+    s = RSTTestSupport.ParserTestSuite(id=__file__)
+@
+

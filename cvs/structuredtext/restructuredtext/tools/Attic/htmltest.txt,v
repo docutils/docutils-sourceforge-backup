@@ -1,0 +1,113 @@
+head	1.2;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2002.02.21.03.30.18;	author goodger;	state dead;
+branches;
+next	1.1;
+
+1.1
+date	2002.02.20.04.29.13;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@renamed to test.txt (not just for HTML)
+@
+text
+@.. comment
+
+=======
+ Title
+=======
+
+----------
+ Subtitle
+----------
+
+.. bibliographic fields:
+
+:author: me
+:authors: myself, I
+:contact: me@@my.org
+:date: 2002-02-19
+:organization: humankind
+:status: test
+:version: 1
+:copyright: This document has been placed in the public domain.
+
+:abstract:
+
+    This is a test document, containing at least one example of each
+    reStructuredText construct.
+
+.. meta::
+   :keywords: reStructuredText, test
+   :description lang=en: A test document, containing at least one
+       example of each reStructuredText construct.
+
+Structural Elements
+===================
+
+Section Title
+-------------
+
+That's it, just above.
+
+Transitions
+-----------
+
+Here's a transition:
+
+---------
+
+It divides the section.
+
+Body Elements
+=============
+
+Paragraphs
+----------
+
+A paragraph.
+
+Inline Markup
+`````````````
+
+Paragraphs contain text and may contain inline markup: *emphasis*,
+**strong emphasis**, `interpreted text`, ``inline literals``,
+standalone hyperlinks (http://www.python.org), external hyperlinks
+(Python_), internal cross-references (example_), footnote references
+([1]_), substitution references (|example|), and _`inline hyperlink
+targets`. Problems are indicated by |problematic| text.
+
+Bullet Lists
+------------
+
+- A bullet list
+
+  + Nested bullet list.
+  + Nested item 2.
+
+- Item 2.
+
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@@
+

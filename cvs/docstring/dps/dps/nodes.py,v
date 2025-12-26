@@ -1,0 +1,3213 @@
+head	1.39;
+access;
+symbols
+	rel-0-3:1.1.1.1 open:1.1.1;
+locks; strict;
+comment	@# @;
+
+
+1.39
+date	2002.04.13.17.08.10;	author goodger;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2002.03.28.04.46.24;	author goodger;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2002.03.16.06.07.41;	author goodger;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2002.03.11.03.43.26;	author goodger;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2002.03.07.04.06.08;	author goodger;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2002.03.04.04.47.06;	author goodger;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2002.03.01.03.17.06;	author goodger;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2002.02.22.02.11.14;	author goodger;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2002.02.21.03.44.53;	author goodger;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2002.02.20.04.17.36;	author goodger;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2002.02.15.22.42.44;	author goodger;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2002.02.13.02.26.54;	author goodger;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2002.02.12.02.21.18;	author goodger;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2002.02.06.02.44.42;	author goodger;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2002.01.30.04.52.09;	author goodger;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2002.01.29.02.17.18;	author goodger;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2002.01.28.02.18.45;	author goodger;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2002.01.25.23.58.09;	author goodger;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2002.01.16.02.47.59;	author goodger;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2001.11.22.04.11.44;	author goodger;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2001.11.19.04.06.00;	author goodger;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2001.11.09.23.13.22;	author goodger;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2001.11.06.02.09.44;	author goodger;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2001.10.31.05.55.26;	author goodger;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2001.10.30.05.11.35;	author goodger;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2001.10.27.05.41.17;	author goodger;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2001.10.23.02.23.25;	author goodger;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2001.10.20.03.07.15;	author goodger;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2001.09.26.03.32.11;	author goodger;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2001.09.13.02.12.55;	author goodger;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2001.09.12.03.47.12;	author goodger;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2001.09.10.04.17.38;	author goodger;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2001.09.07.02.08.41;	author goodger;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2001.08.30.04.28.58;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2001.08.28.03.27.31;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.08.25.01.44.16;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.08.23.03.55.19;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.08.22.04.10.11;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.07.22.22.35.51;	author goodger;	state Exp;
+branches
+	1.1.1.1;
+next	;
+
+1.1.1.1
+date	2001.07.22.22.35.51;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.39
+log
+@Reworked references.
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.38 $
+:Date: $Date: 2002/03/28 04:46:24 $
+:Copyright: This module has been placed in the public domain.
+
+Docutils document tree element class library.
+
+Classes in CamelCase are abstract base classes or auxiliary classes. The one
+exception is `Text`, for a text node; uppercase is used to differentiate from
+element classes.
+
+Classes in lower_case_with_underscores are element classes, matching the XML
+element generic identifiers in the DTD_.
+
+.. _DTD: http://docstring.sourceforge.net/spec/gpdi.dtd
+"""
+
+import sys, os
+import xml.dom.minidom
+from types import IntType, SliceType, StringType, TupleType, ListType
+from UserString import MutableString
+import utils
+import dps
+
+
+# ==============================
+#  Functional Node Base Classes
+# ==============================
+
+class Node:
+
+    """Abstract base class of nodes in a document tree."""
+
+    parent = None
+    """Back-reference to the `Node` containing this `Node`."""
+
+    def __nonzero__(self):
+        """Node instances are always true."""
+        return 1
+
+    def asdom(self, dom=xml.dom.minidom):
+        """Return a DOM representation of this Node."""
+        return self._dom_node(dom)
+
+    def pformat(self, indent='    ', level=0):
+        """Return an indented pseudo-XML representation, for test purposes."""
+        raise NotImplementedError
+
+    def walk(self, visitor):
+        """
+        Traverse a tree of `Node` objects, calling ``visit_...`` methods of
+        `visitor` when entering each node. If there is no
+        ``visit_particular_node`` method for a node of type
+        ``particular_node``, the ``unknown_visit`` method is called.
+
+        Doesn't handle arbitrary modification in-place during the traversal.
+        Replacing one element with one element is OK.
+
+        Parameter `visitor`: A `NodeVisitor` object, containing a
+        ``visit_...`` method for each `Node` subclass encountered.
+        """
+        name = 'visit_' + self.__class__.__name__
+        method = getattr(visitor, name, visitor.unknown_visit)
+        visitor.doctree.reporter.debug(name, category='nodes.Node.walk')
+        try:
+            method(self)
+            children = self.getchildren()
+            try:
+                for i in range(len(children)):
+                    children[i].walk(visitor)
+            except SkipSiblings:
+                pass
+        except (SkipChildren, SkipNode):
+            pass
+
+    def walkabout(self, visitor):
+        """
+        Perform a tree traversal similarly to `Node.walk()`, except also call
+        ``depart_...`` methods before exiting each node. If there is no
+        ``depart_particular_node`` method for a node of type
+        ``particular_node``, the ``unknown_departure`` method is called.
+
+        Parameter `visitor`: A `NodeVisitor` object, containing ``visit_...``
+        and ``depart_...`` methods for each `Node` subclass encountered.
+        """
+        name = 'visit_' + self.__class__.__name__
+        method = getattr(visitor, name, visitor.unknown_visit)
+        visitor.doctree.reporter.debug(name, category='nodes.Node.walkabout')
+        try:
+            method(self)
+            children = self.getchildren()
+            try:
+                for i in range(len(children)):
+                    children[i].walkabout(visitor)
+            except SkipSiblings:
+                pass
+        except SkipChildren:
+            pass
+        except SkipNode:
+            return
+        name = 'depart_' + self.__class__.__name__
+        method = getattr(visitor, name, visitor.unknown_departure)
+        visitor.doctree.reporter.debug(name, category='nodes.Node.walkabout')
+        method(self)
+
+
+class Text(Node, MutableString):
+
+    tagname = '#text'
+
+    def __repr__(self):
+        data = repr(self.data)
+        if len(data) > 70:
+            data = repr(self.data[:64] + ' ...')
+        return '<%s: %s>' % (self.tagname, data)
+
+    def shortrepr(self):
+        data = repr(self.data)
+        if len(data) > 20:
+            data = repr(self.data[:16] + ' ...')
+        return '<%s: %s>' % (self.tagname, data)
+
+    def _dom_node(self, dom):
+        return dom.Text(self.data)
+
+    def _rooted_dom_node(self, domroot):
+        return domroot.createTextNode(self.data)
+
+    def astext(self):
+        return self.data
+
+    def pformat(self, indent='    ', level=0):
+        result = []
+        indent = indent * level
+        for line in self.data.splitlines():
+            result.append(indent + line + '\n')
+        return ''.join(result)
+
+    def getchildren(self):
+        """Text nodes have no children. Return []."""
+        return []
+
+
+class Element(Node):
+
+    """
+    `Element` is the superclass to all specific elements.
+
+    Elements contain attributes and child nodes. Elements emulate dictionaries
+    for attributes, indexing by attribute name (a string). To set the
+    attribute 'att' to 'value', do::
+
+        element['att'] = 'value'
+
+    Elements also emulate lists for child nodes (element nodes and/or text
+    nodes), indexing by integer. To get the first child node, use::
+
+        element[0]
+
+    Elements may be constructed using the ``+=`` operator. To add one new
+    child node to element, do::
+
+        element += node
+
+    To add a list of multiple child nodes at once, use the same ``+=``
+    operator::
+
+        element += [node1, node2]
+    """
+
+    tagname = None
+    """The element generic identifier. If None, it is set as an instance
+    attribute to the name of the class."""
+
+    child_text_separator = '\n\n'
+    """Separator for child nodes, used by `astext()` method."""
+
+    def __init__(self, rawsource='', *children, **attributes):
+        self.rawsource = rawsource
+        """The raw text from which this element was constructed."""
+
+        self.children = []
+        """List of child nodes (elements and/or `Text`)."""
+
+        self.extend(children)           # extend self.children w/ attributes
+
+        self.attributes = {}
+        """Dictionary of attribute {name: value}."""
+
+        for att, value in attributes.items():
+            self.attributes[att.lower()] = value
+
+        if self.tagname is None:
+            self.tagname = self.__class__.__name__
+
+    def _dom_node(self, dom):
+        element = dom.Element(self.tagname)
+        for attribute, value in self.attributes.items():
+            element.setAttribute(attribute, str(value))
+        for child in self.children:
+            element.appendChild(child._dom_node(dom))
+        return element
+
+    def _rooted_dom_node(self, domroot):
+        element = domroot.createElement(self.tagname)
+        for attribute, value in self.attributes.items():
+            element.setAttribute(attribute, str(value))
+        for child in self.children:
+            element.appendChild(child._rooted_dom_node(domroot))
+        return element
+
+    def __repr__(self):
+        data = ''
+        for c in self.children:
+            data += c.shortrepr()
+            if len(data) > 60:
+                data = data[:56] + ' ...'
+                break
+        if self.hasattr('name'):
+            return '<%s "%s": %s>' % (self.__class__.__name__,
+                                      self.attributes['name'], data)
+        else:
+            return '<%s: %s>' % (self.__class__.__name__, data)
+
+    def shortrepr(self):
+        if self.hasattr('name'):
+            return '<%s "%s"...>' % (self.__class__.__name__,
+                                      self.attributes['name'])
+        else:
+            return '<%s...>' % self.tagname
+
+    def __str__(self):
+        if self.children:
+            return '%s%s%s' % (self.starttag(),
+                                ''.join([str(c) for c in self.children]),
+                                self.endtag())
+        else:
+            return self.emptytag()
+
+    def starttag(self):
+        parts = [self.tagname]
+        for name, value in self.attlist():
+            if value is None:           # boolean attribute
+                parts.append(name)
+            elif isinstance(value, ListType):
+                values = [str(v) for v in value]
+                parts.append('%s="%s"' % (name, ' '.join(values)))
+            else:
+                parts.append('%s="%s"' % (name, str(value)))
+        return '<%s>' % ' '.join(parts)
+
+    def endtag(self):
+        return '</%s>' % self.tagname
+
+    def emptytag(self):
+        return '<%s/>' % ' '.join([self.tagname] +
+                                  ['%s="%s"' % (n, v)
+                                   for n, v in self.attlist()])
+
+    def __len__(self):
+        return len(self.children)
+
+    def __getitem__(self, key):
+        if isinstance(key, StringType):
+            return self.attributes[key]
+        elif isinstance(key, IntType):
+            return self.children[key]
+        elif isinstance(key, SliceType):
+            assert key.step is None, 'cannot handle slice with stride'
+            return self.children[key.start:key.stop]
+        else:
+            raise TypeError, ('element index must be an integer, a slice, or '
+                              'an attribute name string')
+
+    def __setitem__(self, key, item):
+        if isinstance(key, StringType):
+            self.attributes[key] = item
+        elif isinstance(key, IntType):
+            item.parent = self
+            self.children[key] = item
+        elif isinstance(key, SliceType):
+            assert key.step is None, 'cannot handle slice with stride'
+            for node in item:
+                node.parent = self
+            self.children[key.start:key.stop] = item
+        else:
+            raise TypeError, ('element index must be an integer, a slice, or '
+                              'an attribute name string')
+
+    def __delitem__(self, key):
+        if isinstance(key, StringType):
+            del self.attributes[key]
+        elif isinstance(key, IntType):
+            del self.children[key]
+        elif isinstance(key, SliceType):
+            assert key.step is None, 'cannot handle slice with stride'
+            del self.children[key.start:key.stop]
+        else:
+            raise TypeError, ('element index must be an integer, a simple '
+                              'slice, or an attribute name string')
+
+    def __add__(self, other):
+        return self.children + other
+
+    def __radd__(self, other):
+        return other + self.children
+
+    def __iadd__(self, other):
+        """Append a node or a list of nodes to `self.children`."""
+        if isinstance(other, Node):
+            other.parent = self
+            self.children.append(other)
+        elif other is not None:
+            for node in other:
+                node.parent = self
+            self.children.extend(other)
+        return self
+
+    def astext(self):
+        return self.child_text_separator.join(
+              [child.astext() for child in self.children])
+
+    def attlist(self):
+        attlist = self.attributes.items()
+        attlist.sort()
+        return attlist
+
+    def get(self, key, failobj=None):
+        return self.attributes.get(key, failobj)
+
+    def hasattr(self, attr):
+        return self.attributes.has_key(attr)
+
+    def delattr(self, attr):
+        if self.attributes.has_key(attr):
+            del self.attributes[attr]
+
+    def setdefault(self, key, failobj=None):
+        return self.attributes.setdefault(key, failobj)
+
+    has_key = hasattr
+
+    def append(self, item):
+        item.parent = self
+        self.children.append(item)
+
+    def extend(self, item):
+        for node in item:
+            node.parent = self
+        self.children.extend(item)
+
+    def insert(self, i, item):
+        assert isinstance(item, Node)
+        item.parent = self
+        self.children.insert(i, item)
+
+    def pop(self, i=-1):
+        return self.children.pop(i)
+
+    def remove(self, item):
+        self.children.remove(item)
+
+    def index(self, item):
+        return self.children.index(item)
+
+    def replace(self, old, new):
+        """Replace one child `Node` with another child or children."""
+        index = self.index(old)
+        if isinstance(new, Node):
+            self[index] = new
+        elif new is not None:
+            self[index:index+1] = new
+
+    def findclass(self, childclass, start=0, end=sys.maxint):
+        """
+        Return the index of the first child whose class exactly matches.
+
+        Parameters:
+
+        - `childclass`: A `Node` subclass to search for, or a tuple of `Node`
+          classes. If a tuple, any of the classes may match.
+        - `start`: Initial index to check.
+        - `end`: Initial index to *not* check.
+        """
+        if not isinstance(childclass, TupleType):
+            childclass = (childclass,)
+        for index in range(start, min(len(self), end)):
+            for c in childclass:
+                if isinstance(self[index], c):
+                    return index
+        return None
+
+    def findnonclass(self, childclass, start=0, end=sys.maxint):
+        """
+        Return the index of the first child whose class does *not* match.
+
+        Parameters:
+
+        - `childclass`: A `Node` subclass to skip, or a tuple of `Node`
+          classes. If a tuple, none of the classes may match.
+        - `start`: Initial index to check.
+        - `end`: Initial index to *not* check.
+        """
+        if not isinstance(childclass, TupleType):
+            childclass = (childclass,)
+        for index in range(start, min(len(self), end)):
+            match = 0
+            for c in childclass:
+                if isinstance(self.children[index], c):
+                    match = 1
+            if not match:
+                return index
+        return None
+
+    def pformat(self, indent='    ', level=0):
+        return ''.join(['%s%s\n' % (indent * level, self.starttag())] +
+                       [child.pformat(indent, level+1)
+                        for child in self.children])
+
+    def getchildren(self):
+        """Return this element's children."""
+        return self.children
+
+
+class TextElement(Element):
+
+    """
+    An element which directly contains text.
+
+    Its children are all Text or TextElement nodes.
+    """
+
+    child_text_separator = ''
+    """Separator for child nodes, used by `astext()` method."""
+
+    def __init__(self, rawsource='', text='', *children, **attributes):
+        if text != '':
+            textnode = Text(text)
+            Element.__init__(self, rawsource, textnode, *children,
+                              **attributes)
+        else:
+            Element.__init__(self, rawsource, *children, **attributes)
+
+
+# ========
+#  Mixins
+# ========
+
+class Resolvable:
+
+    resolved = 0
+
+
+class BackLinkable:
+
+    def add_backref(self, refid):
+        self.setdefault('backrefs', []).append(refid)
+
+
+# ====================
+#  Element Categories
+# ====================
+
+class Root: pass
+
+class Titular: pass
+
+class Bibliographic: pass
+
+
+class PreBibliographic:
+    """Category of Node which may occur before Bibliographic Nodes."""
+    pass
+
+
+class Structural: pass
+
+class Body: pass
+
+class General(Body): pass
+
+class Sequential(Body): pass
+
+class Admonition(Body): pass
+
+
+class Special(Body):
+    """Special internal body elements, not true document components."""
+    pass
+
+
+class Component: pass
+
+class Inline: pass
+
+class Referential(Resolvable): pass
+    #refnode = None
+    #"""Resolved reference to a node."""
+
+
+class Targetable(Resolvable):
+
+    referenced = 0
+
+
+# ==============
+#  Root Element
+# ==============
+
+class document(Root, Structural, Element):
+
+    def __init__(self, reporter, languagecode, *args, **kwargs):
+        Element.__init__(self, *args, **kwargs)
+
+        self.reporter = reporter
+        """System message generator."""
+
+        self.languagecode = languagecode
+        """ISO 639 2-letter language identifier."""
+
+        self.explicit_targets = {}
+        """Mapping of target names to explicit target nodes."""
+
+        self.implicit_targets = {}
+        """Mapping of target names to implicit (internal) target
+        nodes."""
+
+        self.external_targets = []
+        """List of external target nodes."""
+
+        self.internal_targets = []
+        """List of internal target nodes."""
+
+        self.indirect_targets = []
+        """List of indirect target nodes."""
+
+        self.substitution_defs = {}
+        """Mapping of substitution names to substitution_definition nodes."""
+
+        self.refnames = {}
+        """Mapping of names to lists of referencing nodes."""
+
+        self.refids = {}
+        """Mapping of ids to lists of referencing nodes."""
+
+        self.nameids = {}
+        """Mapping of names to unique id's."""
+
+        self.ids = {}
+        """Mapping of ids to nodes."""
+
+        self.substitution_refs = {}
+        """Mapping of substitution names to lists of substitution_reference
+        nodes."""
+
+        self.footnote_refs = {}
+        """Mapping of footnote labels to lists of footnote_reference nodes."""
+
+        self.citation_refs = {}
+        """Mapping of citation labels to lists of citation_reference nodes."""
+
+        self.anonymous_targets = []
+        """List of anonymous target nodes."""
+
+        self.anonymous_refs = []
+        """List of anonymous reference nodes."""
+
+        self.autofootnotes = []
+        """List of auto-numbered footnote nodes."""
+
+        self.autofootnote_refs = []
+        """List of auto-numbered footnote_reference nodes."""
+
+        self.symbol_footnotes = []
+        """List of symbol footnote nodes."""
+
+        self.symbol_footnote_refs = []
+        """List of symbol footnote_reference nodes."""
+
+        self.footnotes = []
+        """List of manually-numbered footnote nodes."""
+
+        self.citations = []
+        """List of citation nodes."""
+
+        self.pending = []
+        """List of pending elements @@@@@@."""
+
+        self.autofootnote_start = 1
+        """Initial auto-numbered footnote number."""
+
+        self.symbol_footnote_start = 0
+        """Initial symbol footnote symbol index."""
+
+        self.id_start = 1
+        """Initial ID number."""
+
+        self.messages = Element()
+        """System messages generated after parsing."""
+
+    def asdom(self, dom=xml.dom.minidom):
+        domroot = dom.Document()
+        domroot.appendChild(Element._rooted_dom_node(self, domroot))
+        return domroot
+
+    def set_id(self, node, msgnode=None):
+        if msgnode == None:
+            msgnode = self.messages
+        if node.has_key('id'):
+            id = node['id']
+            if self.ids.has_key(id) and self.ids[id] is not node:
+                msg = self.reporter.severe('Duplicate ID: "%s".' % id)
+                msgnode += msg
+        else:
+            if node.has_key('name'):
+                id = utils.id(node['name'])
+            else:
+                id = ''
+            while not id or self.ids.has_key(id):
+                id = 'id%s' % self.id_start
+                self.id_start += 1
+            node['id'] = id
+        self.ids[id] = node
+        if node.has_key('name'):
+            self.nameids[node['name']] = id
+        return id
+
+    def note_implicit_target(self, target, msgnode=None):
+        if msgnode == None:
+            msgnode = self.messages
+        id = self.set_id(target, msgnode)
+        name = target['name']
+        if self.explicit_targets.has_key(name) \
+              or self.implicit_targets.has_key(name):
+            msg = self.reporter.info(
+                  'Duplicate implicit target name: "%s".' % name, backrefs=[id])
+            msgnode += msg
+            self.clear_target_names(name, self.implicit_targets)
+            del target['name']
+            target['dupname'] = name
+            self.implicit_targets[name] = None
+        else:
+            self.implicit_targets[name] = target
+
+    def note_explicit_target(self, target, msgnode=None):
+        if msgnode == None:
+            msgnode = self.messages
+        id = self.set_id(target, msgnode)
+        name = target['name']
+        if self.explicit_targets.has_key(name):
+            level = 2
+            if target.has_key('refuri'): # external target, dups OK
+                refuri = target['refuri']
+                t = self.explicit_targets[name]
+                if t.has_key('name') and t.has_key('refuri') \
+                      and t['refuri'] == refuri:
+                    level = 1           # just inform if refuri's identical
+            msg = self.reporter.system_message(
+                  level, 'Duplicate explicit target name: "%s".' % name,
+                  backrefs=[id])
+            msgnode += msg
+            self.clear_target_names(name, self.explicit_targets,
+                                    self.implicit_targets)
+            if level > 1:
+                del target['name']
+                target['dupname'] = name
+        elif self.implicit_targets.has_key(name):
+            msg = self.reporter.info(
+                  'Duplicate implicit target name: "%s".' % name, backrefs=[id])
+            msgnode += msg
+            self.clear_target_names(name, self.implicit_targets)
+        self.explicit_targets[name] = target
+
+    def clear_target_names(self, name, *targetdicts):
+        for targetdict in targetdicts:
+            if not targetdict.has_key(name):
+                continue
+            node = targetdict[name]
+            if node.has_key('name'):
+                node['dupname'] = node['name']
+                del node['name']
+
+    def note_refname(self, node):
+        self.refnames.setdefault(node['refname'], []).append(node)
+
+    def note_refid(self, node):
+        self.refids.setdefault(node['refid'], []).append(node)
+
+    def note_external_target(self, target):
+        self.external_targets.append(target)
+
+    def note_internal_target(self, target):
+        self.internal_targets.append(target)
+
+    def note_indirect_target(self, target):
+        self.indirect_targets.append(target)
+        if target.has_key('name'):
+            self.note_refname(target)
+
+    def note_anonymous_target(self, target):
+        self.set_id(target)
+        self.anonymous_targets.append(target)
+
+    def note_anonymous_ref(self, ref):
+        self.anonymous_refs.append(ref)
+
+    def note_autofootnote(self, footnote):
+        self.set_id(footnote)
+        self.autofootnotes.append(footnote)
+
+    def note_autofootnote_ref(self, ref):
+        self.set_id(ref)
+        self.autofootnote_refs.append(ref)
+
+    def note_symbol_footnote(self, footnote):
+        self.set_id(footnote)
+        self.symbol_footnotes.append(footnote)
+
+    def note_symbol_footnote_ref(self, ref):
+        self.set_id(ref)
+        self.symbol_footnote_refs.append(ref)
+
+    def note_footnote(self, footnote):
+        self.set_id(footnote)
+        self.footnotes.append(footnote)
+
+    def note_footnote_ref(self, ref):
+        self.set_id(ref)
+        self.footnote_refs.setdefault(ref['refname'], []).append(ref)
+        self.note_refname(ref)
+
+    def note_citation(self, citation):
+        self.set_id(citation)
+        self.citations.append(citation)
+
+    def note_citation_ref(self, ref):
+        self.set_id(ref)
+        self.citation_refs.setdefault(ref['refname'], []).append(ref)
+        self.note_refname(ref)
+
+    def note_substitution_def(self, subdef, msgnode=None):
+        name = subdef['name']
+        if self.substitution_defs.has_key(name):
+            msg = self.reporter.error(
+                  'Duplicate substitution definition name: "%s".' % name)
+            if msgnode == None:
+                msgnode = self.messages
+            msgnode += msg
+            oldnode = self.substitution_defs[name]
+            oldnode['dupname'] = oldnode['name']
+            del oldnode['name']
+        # keep only the last definition
+        self.substitution_defs[name] = subdef
+
+    def note_substitution_ref(self, subref):
+        self.substitution_refs.setdefault(
+              subref['refname'], []).append(subref)
+
+    def note_pending(self, pending):
+        self.pending.append(pending)
+
+
+# ================
+#  Title Elements
+# ================
+
+class title(Titular, PreBibliographic, TextElement): pass
+class subtitle(Titular, PreBibliographic, TextElement): pass
+
+
+# ========================
+#  Bibliographic Elements
+# ========================
+
+class docinfo(Bibliographic, Element): pass
+class author(Bibliographic, TextElement): pass
+class authors(Bibliographic, Element): pass
+class organization(Bibliographic, TextElement): pass
+class contact(Bibliographic, TextElement): pass
+class version(Bibliographic, TextElement): pass
+class revision(Bibliographic, TextElement): pass
+class status(Bibliographic, TextElement): pass
+class date(Bibliographic, TextElement): pass
+class copyright(Bibliographic, TextElement): pass
+
+
+# =====================
+#  Structural Elements
+# =====================
+
+class section(Structural, Element): pass
+
+class topic(Structural, Element):
+
+    """
+    Topics are terminal, "leaf" mini-sections, like block quotes with titles,
+    or textual figures. A topic is just like a section, except that it has no
+    subsections, and it doesn't have to conform to section placement rules.
+
+    Topics are allowed wherever body elements (list, table, etc.) are allowed,
+    but only at the top level of a section or document. Topics cannot nest
+    inside topics or body elements; you can't have a topic inside a table,
+    list, block quote, etc.
+    """
+
+    pass
+
+
+class transition(Structural, Element): pass
+
+
+# ===============
+#  Body Elements
+# ===============
+
+class paragraph(General, TextElement): pass
+class bullet_list(Sequential, Element): pass
+class enumerated_list(Sequential, Element): pass
+class list_item(Component, Element): pass
+class definition_list(Sequential, Element): pass
+class definition_list_item(Component, Element): pass
+class term(Component, TextElement): pass
+class classifier(Component, TextElement): pass
+class definition(Component, Element): pass
+class field_list(Sequential, Element): pass
+class field(Component, Element): pass
+class field_name(Component, TextElement): pass
+class field_argument(Component, TextElement): pass
+class field_body(Component, Element): pass
+
+
+class option(Component, Element):
+
+    child_text_separator = ''
+
+
+class option_argument(Component, TextElement):
+
+    def astext(self):
+        return self.get('delimiter', ' ') + TextElement.astext(self)
+
+
+class option_group(Component, Element):
+
+    child_text_separator = ', '
+
+
+class option_list(Sequential, Element): pass
+
+
+class option_list_item(Component, Element):
+
+    child_text_separator = '  '
+
+
+class option_string(Component, TextElement): pass
+class description(Component, Element): pass
+class literal_block(General, TextElement): pass
+class block_quote(General, Element): pass
+class doctest_block(General, TextElement): pass
+class attention(Admonition, Element): pass
+class caution(Admonition, Element): pass
+class danger(Admonition, Element): pass
+class error(Admonition, Element): pass
+class important(Admonition, Element): pass
+class note(Admonition, Element): pass
+class tip(Admonition, Element): pass
+class hint(Admonition, Element): pass
+class warning(Admonition, Element): pass
+class comment(Special, PreBibliographic, TextElement): pass
+class substitution_definition(Special, TextElement): pass
+class target(Special, Inline, TextElement, Targetable): pass
+class footnote(General, Element, BackLinkable): pass
+class citation(General, Element, BackLinkable): pass
+class label(Component, TextElement): pass
+class figure(General, Element): pass
+class caption(Component, TextElement): pass
+class legend(Component, Element): pass
+class table(General, Element): pass
+class tgroup(Component, Element): pass
+class colspec(Component, Element): pass
+class thead(Component, Element): pass
+class tbody(Component, Element): pass
+class row(Component, Element): pass
+class entry(Component, Element): pass
+
+
+class system_message(Special, PreBibliographic, Element, BackLinkable):
+
+    def __init__(self, comment=None, *children, **attributes):
+        if comment:
+            p = paragraph('', comment)
+            children = (p,) + children
+        Element.__init__(self, '', *children, **attributes)
+
+    def astext(self):
+        return '%s (%s) %s' % (self['type'], self['level'],
+                               Element.astext(self))
+
+
+class pending(Special, PreBibliographic, Element):
+
+    """
+    The "pending" element is used to encapsulate a pending operation: the
+    operation, the point at which to apply it, and any data it requires.  Only
+    the pending operation's location within the document is stored in the
+    public document tree; the operation itself and its data are stored in
+    internal instance attributes.
+
+    For example, say you want a table of contents in your reStructuredText
+    document.  The easiest way to specify where to put it is from within the
+    document, with a directive::
+
+        .. contents::
+
+    But the "contents" directive can't do its work until the entire document
+    has been parsed (and possibly transformed to some extent).  So the
+    directive code leaves a placeholder behind that will trigger the second
+    phase of the its processing, something like this::
+
+        <pending ...public attributes...> + internal attributes
+
+    The "pending" node is also appended to `document.pending`, so that a later
+    stage of processing can easily run all pending transforms.
+    """
+
+    def __init__(self, transform, stage, details,
+                 rawsource='', *children, **attributes):
+        Element.__init__(self, rawsource, *children, **attributes)
+
+        self.transform = transform
+        """The `dps.transforms.Transform` class implementing the pending
+        operation."""
+
+        self.stage = stage
+        """The stage of processing when the function will be called."""
+
+        self.details = details
+        """Detail data (dictionary) required by the pending operation."""
+
+    def pformat(self, indent='    ', level=0):
+        internals = [
+              '.. internal attributes:',
+              '     .transform: %s.%s' % (self.transform.__module__,
+                                                 self.transform.__name__),
+              '     .stage: %r' % self.stage,
+              '     .details:']
+        details = self.details.items()
+        details.sort()
+        for key, value in details:
+            if isinstance(value, Node):
+                internals.append('%7s%s:' % ('', key))
+                internals.extend(['%9s%s' % ('', line)
+                                  for line in value.pformat().splitlines()])
+            else:
+                internals.append('%7s%s: %r' % ('', key, value))
+        return (Element.pformat(self, indent, level)
+                + ''.join([('    %s%s\n' % (indent * level, line))
+                           for line in internals]))
+
+
+class raw(Special, Inline, PreBibliographic, TextElement):
+
+    """
+    Raw data that is to be passed untouched to the Writer.
+    """
+
+    pass
+
+
+# =================
+#  Inline Elements
+# =================
+
+class emphasis(Inline, TextElement): pass
+class strong(Inline, TextElement): pass
+class interpreted(Inline, Referential, TextElement): pass
+class literal(Inline, TextElement): pass
+class reference(Inline, Referential, TextElement): pass
+class footnote_reference(Inline, Referential, TextElement): pass
+class citation_reference(Inline, Referential, TextElement): pass
+class substitution_reference(Inline, TextElement): pass
+class image(General, Inline, TextElement): pass
+class problematic(Inline, TextElement): pass
+
+
+# ========================================
+#  Auxiliary Classes, Functions, and Data
+# ========================================
+
+node_class_names = """
+    Text
+    attention author authors
+    block_quote bullet_list
+    caption caution citation citation_reference classifier colspec
+        comment contact copyright
+    danger date definition definition_list definition_list_item
+        description docinfo doctest_block document
+    emphasis entry enumerated_list error
+    field field_argument field_body field_list field_name figure
+        footnote footnote_reference
+    hint
+    image important interpreted
+    label legend list_item literal literal_block
+    note
+    option option_argument option_group option_list option_list_item
+        option_string organization
+    paragraph pending problematic
+    raw reference revision row
+    section status strong substitution_definition
+        substitution_reference subtitle system_message
+    table target tbody term tgroup thead tip title topic transition
+    version
+    warning""".split()
+"""A list of names of all concrete Node subclasses."""
+
+
+class NodeVisitor:
+
+    """
+    "Visitor" pattern [GoF95]_ abstract superclass implementation for document
+    tree traversals.
+
+    Each node class has corresponding methods, doing nothing by default;
+    override individual methods for specific and useful behaviour. The
+    "``visit_`` + node class name" method is called by `Node.walk()` upon
+    entering a node. `Node.walkabout()` also calls the "``depart_`` + node
+    class name" method before exiting a node.
+
+    .. [GoF95] Gamma, Helm, Johnson, Vlissides. *Design Patterns: Elements of
+       Reusable Object-Oriented Software*. Addison-Wesley, Reading, MA, USA,
+       1995.
+    """
+
+    def __init__(self, doctree):
+        self.doctree = doctree
+
+    def unknown_visit(self, node):
+        """
+        Called when entering unknown `Node` types.
+
+        Raise an exception unless overridden.
+        """
+        raise NotImplementedError('visiting unknown node type: %s'
+                                  % node.__class__.__name__)
+
+    def unknown_departure(self, node):
+        """
+        Called before exiting unknown `Node` types.
+
+        Raise exception unless overridden.
+        """
+        raise NotImplementedError('departing unknown node type: %s'
+                                  % node.__class__.__name__)
+
+    # Save typing with dynamic definitions.
+    for name in node_class_names:
+        exec """def visit_%s(self, node): pass\n""" % name
+        exec """def depart_%s(self, node): pass\n""" % name
+    del name
+
+
+class GenericNodeVisitor(NodeVisitor):
+
+    """
+    Generic "Visitor" abstract superclass, for simple traversals.
+
+    Unless overridden, each ``visit_...`` method calls `default_visit()`, and
+    each ``depart_...`` method (when using `Node.walkabout()`) calls
+    `default_departure()`. `default_visit()` (`default_departure()`) must be
+    overridden in subclasses.
+
+    Define fully generic visitors by overriding `default_visit()`
+    (`default_departure()`) only. Define semi-generic visitors by overriding
+    individual ``visit_...()`` (``depart_...()``) methods also.
+
+    `NodeVisitor.unknown_visit()` (`NodeVisitor.unknown_departure()`) should
+    be overridden for default behavior.
+    """
+
+    def default_visit(self, node):
+        """Override for generic, uniform traversals."""
+        raise NotImplementedError
+
+    def default_departure(self, node):
+        """Override for generic, uniform traversals."""
+        raise NotImplementedError
+
+    # Save typing with dynamic definitions.
+    for name in node_class_names:
+        exec """def visit_%s(self, node):
+                    self.default_visit(node)\n""" % name
+        exec """def depart_%s(self, node):
+                    self.default_departure(node)\n""" % name
+    del name
+
+
+class VisitorException(Exception): pass
+class SkipChildren(VisitorException): pass
+class SkipSiblings(VisitorException): pass
+class SkipNode(VisitorException): pass
+@
+
+
+1.38
+log
+@  - Added support for list-value attributes (including    "Element.setdefault()").  - Added "BackLinkable" mixin.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.37 $
+:Date: $Date: 2002/03/16 06:07:41 $
+d26 1
+a26 1
+from dps import utils
+d246 1
+a246 1
+        for name, value in self.attlist:
+d338 4
+d453 1
+a453 1
+class ToBeResolved:
+d460 2
+a461 2
+    def add_refid(self, refid):
+        self.setdefault('refid', []).append(refid)
+d500 4
+d505 1
+a505 1
+class Referential(ToBeResolved):
+d507 1
+a507 2
+    refnode = None
+    """Resolved reference to a node."""
+d532 5
+a536 2
+        self.external_targets = {}
+        """Mapping of target names to external target nodes."""
+d538 2
+a539 2
+        self.indirect_targets = {}
+        """Mapping of target names to indirect target nodes."""
+d545 4
+a548 1
+        """Mapping of reference names to lists of reference nodes."""
+d584 6
+a592 3
+        self.anonymous_start = 1
+        """Initial anonymous hyperlink number."""
+
+d616 1
+a616 1
+                msg = self.reporter.error('Duplicate ID: "%s".' % id)
+d629 1
+a629 2
+            name = node['name']
+            self.nameids[name] = id
+d632 1
+a632 1
+    def note_implicit_target(self, targetnode, msgnode=None):
+d635 2
+a636 2
+        id = self.set_id(targetnode, msgnode)
+        name = targetnode['name']
+d640 1
+a640 1
+                  'Duplicate implicit target name: "%s".' % name, refid=id)
+d643 5
+a647 3
+            del targetnode['name']
+            targetnode['dupname'] = name
+        self.implicit_targets[name] = targetnode
+d649 1
+a649 1
+    def note_explicit_target(self, targetnode, msgnode=None):
+d652 2
+a653 2
+        id = self.set_id(targetnode, msgnode)
+        name = targetnode['name']
+d656 2
+a657 2
+            if targetnode.has_key('refuri'): # external target, dups OK
+                refuri = targetnode['refuri']
+d664 1
+a664 1
+                  refid=id)
+d669 2
+a670 2
+                del targetnode['name']
+                targetnode['dupname'] = name
+d673 1
+a673 1
+                  'Duplicate implicit target name: "%s".' % name, refid=id)
+d676 1
+a676 1
+        self.explicit_targets[name] = targetnode
+d690 2
+a691 2
+    def note_external_target(self, targetnode):
+        self.external_targets[targetnode['name']] = targetnode
+d693 2
+a694 3
+    def note_indirect_target(self, targetnode):
+        self.indirect_targets[targetnode['name']] = targetnode
+        self.note_refname(targetnode)
+d696 2
+a697 2
+    def note_anonymous_target(self, targetnode):
+        self.anonymous_targets.append(targetnode)
+d699 11
+a709 2
+    def note_anonymous_ref(self, refnode):
+        self.anonymous_refs.append(refnode)
+d712 1
+d715 3
+a717 2
+    def note_autofootnote_ref(self, refnode):
+        self.autofootnote_refs.append(refnode)
+d720 1
+d723 21
+a743 10
+    def note_symbol_footnote_ref(self, refnode):
+        self.symbol_footnote_refs.append(refnode)
+
+    def note_footnote_ref(self, refnode):
+        self.footnote_refs.setdefault(refnode['refname'], []).append(refnode)
+        self.note_refname(refnode)
+
+    def note_citation_ref(self, refnode):
+        self.citation_refs.setdefault(refnode['refname'], []).append(refnode)
+        self.note_refname(refnode)
+d745 2
+a746 2
+    def note_substitution_def(self, substitutiondefnode, msgnode=None):
+        name = substitutiondefnode['name']
+d757 1
+a757 1
+        self.substitution_defs[name] = substitutiondefnode
+d759 1
+a759 1
+    def note_substitution_ref(self, subrefnode):
+d761 1
+a761 1
+              subrefnode['refname'], []).append(subrefnode)
+d763 2
+a764 2
+    def note_pending(self, pendingnode):
+        self.pending.append(pendingnode)
+d876 1
+a876 1
+class target(Special, Inline, TextElement, ToBeResolved): pass
+d948 1
+a948 1
+              '     pending.transform: %s.%s' % (self.transform.__module__,
+d950 2
+a951 2
+              '     pending.stage: %r' % self.stage,
+              '     pending.details:']
+d986 1
+a986 1
+class substitution_reference(Inline, Referential, TextElement): pass
+@
+
+
+1.37
+log
+@  - Added support for "pending" elements.  - Changed ID attribute generation.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.36 $
+:Date: $Date: 2002/03/11 03:43:26 $
+d10 2
+d24 1
+a24 1
+from types import IntType, SliceType, StringType, TupleType
+d245 10
+a254 3
+        return '<%s>' % ' '.join([self.tagname] +
+                                 ['%s="%s"' % (n, v)
+                                  for n, v in self.attlist()])
+d338 3
+d454 6
+d600 1
+a600 1
+                msg = self.reporter.error('Duplicate ID: "%s"' % id)
+a613 6
+            #if self.nameids.has_key(name) \
+            #      and self.ids[self.nameids[name]].has_key('name'):
+            #    msg = self.reporter.info(
+            #          'Multiple IDs for name "%s": "%s", "%s"'
+            #          % (name, self.nameids[name], id))
+            #    msgnode += msg
+d625 1
+a625 1
+                  'Duplicate implicit target name: "%s"' % name, refid=id)
+d646 1
+a646 1
+                  level, 'Duplicate explicit target name: "%s"' % name,
+d656 1
+a656 1
+                  'Duplicate implicit target name: "%s"' % name, refid=id)
+d710 1
+a710 1
+                  'Duplicate substitution definition name: "%s"' % name)
+d838 2
+a839 2
+class footnote(General, Element): pass
+class citation(General, Element): pass
+d853 1
+a853 1
+class system_message(Special, PreBibliographic, Element):
+a868 1
+
+d904 1
+a904 1
+        """Detail data required by the pending operation."""
+@
+
+
+1.36
+log
+@  - Added support for system_message cross-references    (often to "problematic").
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.35 $
+:Date: $Date: 2002/03/07 04:06:08 $
+d20 1
+a20 1
+import sys
+d24 3
+d44 1
+d47 4
+d489 1
+a489 1
+class document(Root, Element):
+d553 3
+d585 5
+a589 1
+            while 1:
+a591 2
+                if not self.ids.has_key(id):
+                    break
+d712 3
+d857 7
+a863 3
+    The "pending" element is used to encapsulate a pending transform: the
+    transform, the point at which to apply it, and any data it requires.
+    
+d865 1
+a865 1
+    document. The easiest way to specify where to put it is from within the
+d869 1
+a869 1
+    
+d871 1
+a871 1
+    has been parsed (and possibly transformed to some extent). So the
+d875 1
+a875 2
+        <pending directive="contents" ...other attributes...>
+            ...any directive data...
+d881 4
+a884 1
+    def __init__(self, transform, *children, **attributes):
+d886 28
+a913 1
+        """Contains the transform class..."""
+@
+
+
+1.35
+log
+@  - Added support for citations, symbolic footnotes, pending, raw.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.34 $
+:Date: $Date: 2002/03/04 04:47:06 $
+d583 6
+a588 6
+            if self.nameids.has_key(name) \
+                  and self.ids[self.nameids[name]].has_key('name'):
+                msg = self.reporter.info(
+                      'Multiple IDs for name "%s": "%s", "%s"'
+                      % (name, self.nameids[name], id))
+                msgnode += msg
+d590 1
+d595 1
+a597 1
+              or self.external_targets.has_key(name) \
+d600 1
+a600 1
+                  'Duplicate implicit target name: "%s"' % name)
+a605 1
+        self.set_id(targetnode, msgnode)
+d610 1
+d621 2
+a622 1
+                  level, 'Duplicate explicit target name: "%s"' % name)
+d631 1
+a631 1
+                  'Duplicate implicit target name: "%s"' % name)
+a634 1
+        self.set_id(targetnode, msgnode)
+@
+
+
+1.34
+log
+@  - Removed "abstract"  - Added "topic".  - Added "pending".  - Added "citation" and "citation_reference".
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.33 $
+:Date: $Date: 2002/03/01 03:17:06 $
+d524 3
+d539 6
+d551 3
+d660 2
+a661 2
+    def note_autofootnote(self, footnotenode):
+        self.autofootnotes.append(footnotenode)
+d666 6
+d676 4
+d728 17
+a744 1
+class topic(Structural, Element): pass
+d837 38
+d912 2
+a913 2
+    paragraph problematic
+    reference revision row
+@
+
+
+1.33
+log
+@  - Reworked option lists.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.32 $
+:Date: $Date: 2002/02/22 02:11:14 $
+a698 1
+class abstract(Bibliographic, Element): pass
+d706 1
+d772 1
+d809 1
+d821 1
+a821 1
+    abstract attention author authors
+d823 2
+a824 1
+    caption caution classifier colspec comment contact copyright
+d840 1
+a840 1
+    table target tbody term tgroup thead tip title transition
+@
+
+
+1.32
+log
+@  - Modified post-parse system message storage.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.31 $
+:Date: $Date: 2002/02/21 03:44:53 $
+d67 1
+a67 1
+        except (SkipChildren, SkipDeparture):
+d93 1
+a93 1
+        except SkipDeparture:
+d728 18
+d747 8
+a754 6
+class option_list_item(Component, Element): pass
+class option(Component, Element): pass
+class short_option(Component, TextElement): pass
+class long_option(Component, TextElement): pass
+class vms_option(Component, TextElement): pass
+class option_argument(Component, TextElement): pass
+d829 1
+a829 1
+    label legend list_item literal literal_block long_option
+d831 2
+a832 1
+    option option_argument option_list option_list_item organization
+d835 1
+a835 1
+    section short_option status strong substitution_definition
+d838 1
+a838 1
+    version vms_option
+d926 1
+a926 1
+class SkipDeparture(VisitorException): pass
+@
+
+
+1.31
+log
+@  - Added debug trace to Node.walk() & Node.walkabout().  - Simplified system_message.astext().
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.30 $
+:Date: $Date: 2002/02/20 04:17:36 $
+d181 1
+a181 1
+        self.attributes = attributes
+d184 3
+d545 3
+d553 3
+a555 3
+    def set_id(self, node, innode=None):
+        if innode == None:
+            innode = self
+d560 1
+a560 1
+                innode += msg
+d576 1
+a576 1
+                innode += msg
+d579 3
+a581 1
+    def note_implicit_target(self, targetnode, innode=None):
+d586 1
+a586 1
+            sw = self.reporter.info(
+d588 1
+a588 3
+            if innode == None:
+                innode = self
+            innode += sw
+d593 1
+a593 1
+        self.set_id(targetnode)
+d595 3
+a597 3
+    def note_explicit_target(self, targetnode, innode=None):
+        if innode == None:
+            innode = self
+d607 1
+a607 1
+            sw = self.reporter.system_message(
+d609 1
+a609 1
+            innode += sw
+d616 1
+a616 1
+            sw = self.reporter.info(
+d618 1
+a618 1
+            innode += sw
+d621 1
+a621 1
+        self.set_id(targetnode)
+d658 1
+a658 1
+    def note_substitution_def(self, substitutiondefnode, innode=None):
+d661 1
+a661 1
+            sw = self.reporter.error(
+d663 3
+a665 3
+            if innode == None:
+                innode = self
+            innode += sw
+@
+
+
+1.30
+log
+@  - Added flow controls to ``Node.walk()`` & ``Node.walkabout()``.  - Added 'id' attribute support to ``document``.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.29 $
+:Date: $Date: 2002/02/15 22:42:44 $
+d56 3
+a58 2
+        method = getattr(visitor, 'visit_' + self.__class__.__name__,
+                         visitor.unknown_visit)
+d80 3
+a82 2
+        method = getattr(visitor, 'visit_' + self.__class__.__name__,
+                         visitor.unknown_visit)
+d95 3
+a97 2
+        method = getattr(visitor, 'depart_' + self.__class__.__name__,
+                         visitor.unknown_departure)
+d768 2
+a769 2
+        return '%s [level %s] %s' % (self['type'], self['level'],
+                                     Element.astext(self))
+@
+
+
+1.29
+log
+@  - Changed "system_warning" to "system_message".
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.28 $
+:Date: $Date: 2002/02/13 02:26:54 $
+d58 10
+a67 4
+        method(self)
+        children = self.getchildren()
+        for i in range(len(children)):
+            children[i].walk(visitor)
+d81 12
+a92 4
+        method(self)
+        children = self.getchildren()
+        for i in range(len(children)):
+            children[i].walkabout(visitor)
+d505 6
+d536 3
+d544 1
+a544 1
+    def note_implicit_target(self, targetnode, innode=None):
+d547 24
+d577 2
+d584 1
+d612 1
+a649 2
+        if innode == None:
+            innode = self
+d654 2
+d891 6
+@
+
+
+1.28
+log
+@  - Added ``Node.walkabout()`` and "depart" methods to visitors.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.26 $
+:Date: $Date: 2002/02/06 02:44:42 $
+d467 1
+a467 1
+        """System warning generator."""
+d548 1
+a548 1
+            sw = self.reporter.system_warning(
+d705 1
+a705 1
+class system_warning(Special, PreBibliographic, Element):
+d755 1
+a755 1
+        substitution_reference subtitle system_warning
+@
+
+
+1.27
+log
+@Renamed node categories; added ``NodeVisitor.unknown_visit()``.
+@
+text
+@d45 4
+a48 3
+        Traverse a tree of `Node` objects, calling ``visit_*`` methods of
+        `visitor`. If there is no ``visit_particular_node`` method for a node
+        of type ``particular_node``, the ``unknown_visit`` method is called.
+d63 20
+d771 2
+a772 1
+    entering a node.
+d783 16
+a798 2
+        """Called for unknown `Node` types. Does nothing unless overridden."""
+        pass
+d803 1
+d812 8
+a819 6
+    Unless overridden, each ``visit_*`` method calls `default_visit()`.
+    ``default_visit()`` must be overridden in subclasses.
+
+    Define fully generic visitors by overriding ``default_visit()`` only.
+    Define semi-generic visitors by overriding individual ``visit_*()``
+    methods also.
+d821 2
+a822 1
+    `NodeVisitor.unknown_visit()` should be overridden for default behavior.
+d829 4
+d837 2
+@
+
+
+1.26
+log
+@  - Removed ``ancestry`` parameter from ``Node.walk()``.  - ``dps.utils.Reporter`` reform.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.25 $
+:Date: $Date: 2002/01/30 04:52:09 $
+d46 2
+a47 1
+        `visitor`.
+d55 2
+a56 1
+        method = getattr(visitor, 'visit_' + self.__class__.__name__)
+d399 1
+a399 1
+class Title: pass
+d403 6
+d415 1
+a415 1
+class List(Body): pass
+d419 5
+a423 1
+class Special(Body): pass
+d430 1
+a430 1
+class Reference(ToBeResolved):
+d600 2
+a601 2
+class title(Title, TextElement): pass
+class subtitle(Title, TextElement): pass
+d634 2
+a635 2
+class bullet_list(List, Element): pass
+class enumerated_list(List, Element): pass
+d637 1
+a637 1
+class definition_list(List, Element): pass
+d642 1
+a642 1
+class field_list(List, Element): pass
+d647 1
+a647 1
+class option_list(List, Element): pass
+d667 1
+a667 1
+class comment(Special, TextElement): pass
+d684 1
+a684 1
+class system_warning(Special, Element):
+a686 2
+        #print ('nodes.system_warning.__init__: comment=%r, children=%r, '
+        #       'attributes=%r' % (comment, children, attributes))
+d703 1
+a703 1
+class interpreted(Inline, Reference, TextElement): pass
+d705 3
+a707 3
+class reference(Inline, Reference, TextElement): pass
+class footnote_reference(Inline, Reference, TextElement): pass
+class substitution_reference(Inline, Reference, TextElement): pass
+d760 4
+d781 2
+@
+
+
+1.25
+log
+@  - Simplified target record keeping.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.24 $
+:Date: $Date: 2002/01/29 02:17:18 $
+d43 1
+a43 1
+    def walk(self, visitor, ancestry=()):
+d48 2
+a49 1
+        Parameters:
+d51 2
+a52 4
+        - `visitor`: A `Visitor` object, containing a ``visit_...`` method for
+          each `Node` subclass encountered.
+        - `ancestry`: A list of (parent, index) pairs. `self`'s parent is the
+          last entry.
+d55 1
+a55 1
+        method(self, ancestry)
+d58 1
+a58 1
+            children[i].walk(visitor, ancestry + ((self, i),))
+d495 1
+a495 1
+            sw = self.reporter.information(
+d508 1
+a508 1
+            level = 1
+d514 1
+a514 1
+                    level = 0           # just inform if refuri's identical
+d520 1
+a520 1
+            if level > 0:
+d524 1
+a524 1
+            sw = self.reporter.information(
+d683 2
+a684 1
+        return '[level %s] ' % self['level'] + Element.astext(self)
+d731 1
+a731 1
+class Visitor:
+d752 1
+a752 1
+        exec """def visit_%s(self, node, ancestry): pass\n""" % name
+d756 1
+a756 1
+class GenericVisitor(Visitor):
+d769 1
+a769 1
+    def default_visit(self, node, ancestry):
+d775 2
+a776 2
+        exec """def visit_%s(self, node, ancestry):
+                    self.default_visit(node, ancestry)\n""" % name
+@
+
+
+1.24
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.23 $
+:Date: $Date: 2002/01/28 02:18:45 $
+d441 1
+a441 1
+        """Mapping of target names to lists of explicit target nodes."""
+d444 1
+a444 1
+        """Mapping of target names to lists of implicit (internal) target
+d448 1
+a448 1
+        """Mapping of target names to lists of external target nodes."""
+d457 1
+a457 1
+        """Mapping of reference names to reference nodes."""
+d460 2
+a461 1
+        """Mapping of substitution names to substitution_reference nodes."""
+d464 1
+a464 1
+        """Mapping of footnote labels to footnote_reference nodes."""
+d502 1
+a502 1
+        self.implicit_targets.setdefault(name, []).append(targetnode)
+d512 3
+a514 4
+                for t in self.explicit_targets.get(name, []):
+                    if not t.has_key('refuri') or t['refuri'] != refuri:
+                        break
+                else:
+d529 1
+a529 1
+        self.explicit_targets.setdefault(name, []).append(targetnode)
+d533 6
+a538 4
+            for node in targetdict.get(name, []):
+                if node.has_key('name'):
+                    node['dupname'] = node['name']
+                    del node['name']
+d544 1
+a544 2
+        self.external_targets.setdefault(
+              targetnode['name'], []).append(targetnode)
+d547 1
+a547 2
+        self.indirect_targets.setdefault(
+              targetnode['name'], []).append(targetnode)
+a748 3
+
+    def walk(self):
+        self.doctree.walk(self)
+@
+
+
+1.23
+log
+@  - Added support for footnote transform.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.22 $
+:Date: $Date: 2002/01/25 23:58:09 $
+d33 3
+d137 4
+a140 2
+        self.children = list(children)
+        """List of child nodes (elements and/or text)."""
+d224 1
+d228 2
+d256 1
+d259 2
+d282 1
+a282 1
+        assert isinstance(item, Node)
+d286 2
+d292 1
+a298 1
+        assert isinstance(item, Node)
+d301 11
+d699 1
+d721 1
+a721 1
+    paragraph
+d741 1
+a741 1
+    
+@
+
+
+1.22
+log
+@  - Added Visitor classes & Node.walk().  - Improved ``__repr__()``.  - Improved some names.  - Removed Python-specific element classes.  - Reworked for hyperlink transforms.  - Added docstrings.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.21 $
+:Date: $Date: 2002/01/16 02:47:59 $
+d438 3
+d537 4
+@
+
+
+1.21
+log
+@  - 'errorhandler' -> 'reporter'.  - Added document.languagecode.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.20 $
+:Date: $Date: 2001/11/22 04:11:44 $
+d10 8
+d31 2
+d40 4
+a43 5
+    def _dom_node(self, dom):
+        pass
+    
+    def _rooted_dom_node(self, domroot):
+        pass
+d45 1
+a45 2
+    def astext(self):
+        pass
+d47 10
+a56 2
+    def validate(self):
+        pass
+d69 6
+d77 1
+a77 1
+    
+d91 4
+d127 1
+a127 1
+    childtextsep = '\n\n'
+d133 1
+a133 1
+        
+d136 1
+a136 1
+        
+d162 1
+a162 1
+            data += '<%s...>' % c.tagname
+d166 12
+a177 1
+        return '<%s: %s>' % (self.__class__.__name__, data)
+d254 2
+a255 2
+        return self.childtextsep.join([child.astext()
+                                       for child in self.children])
+d290 3
+a292 1
+        Return the index of the first child whose class matches `childclass`.
+d294 4
+a297 2
+        `childclass` may also be a tuple of node classes, in which case any
+        of the classes may match.
+d309 3
+a311 1
+        Return the index of the first child not matching `childclass`.
+d313 4
+a316 2
+        `childclass` may also be a tuple of node classes, in which case none
+        of the classes may match.
+d323 1
+a323 1
+                if isinstance(self[index], c):
+d331 6
+a336 2
+                           [child.pformat(indent, level+1)
+                            for child in self.children])
+d347 1
+a347 1
+    childtextsep = ''
+d359 9
+d395 6
+d409 1
+d411 2
+d414 18
+a431 5
+        self.explicittargets = {}
+        self.implicittargets = {}
+        self.externaltargets = {}
+        self.indirecttargets = {}
+        self.substitutiondefs = {}
+d433 11
+a443 3
+        self.substitutionrefs = {}
+        self.anonymoustargets = []
+        self.anonymousrefs = []
+d445 10
+a454 1
+        self.autofootnoterefs = []
+d461 1
+a461 1
+    def addimplicittarget(self, name, targetnode, innode=None):
+d463 5
+a467 4
+            innode = targetnode
+        if self.explicittargets.has_key(name) \
+              or self.externaltargets.has_key(name) \
+              or self.implicittargets.has_key(name):
+d471 2
+a472 1
+            self.cleartargetnames(name, self.implicittargets)
+d474 1
+a474 4
+            self.implicittargets.setdefault(name, []).append(targetnode)
+        else:
+            self.implicittargets[name] = [targetnode]
+            targetnode['name'] = name
+d476 1
+a476 1
+    def addexplicittarget(self, name, targetnode, innode=None):
+d478 13
+a490 4
+            innode = targetnode
+        if self.explicittargets.has_key(name):
+            sw = self.reporter.warning(
+                  'Duplicate explicit target name: "%s"' % name)
+d492 6
+a497 6
+            self.cleartargetnames(name, self.explicittargets,
+                                  self.implicittargets, self.externaltargets)
+            targetnode['dupname'] = name
+            self.explicittargets.setdefault(name, []).append(targetnode)
+            return
+        elif self.implicittargets.has_key(name):
+d501 2
+a502 3
+            self.cleartargetnames(name, self.implicittargets)
+        self.explicittargets[name] = [targetnode]
+        targetnode['name'] = name
+d504 1
+a504 1
+    def cleartargetnames(self, name, *targetdicts):
+d511 17
+a527 2
+    def addrefname(self, name, node):
+        self.refnames.setdefault(name, []).append(node)
+d529 5
+a533 41
+    def addexternaltarget(self, name, reference, targetnode, innode):
+        if self.explicittargets.has_key(name):
+            level = 0
+            for t in self.explicittargets.get(name, []):
+                if not t.has_key('refuri') or t['refuri'] != reference:
+                    level = 1
+                    break
+            sw = self.reporter.system_warning(
+                  level, 'Duplicate external target name: "%s"' % name)
+            innode += sw
+            self.cleartargetnames(name, self.explicittargets,
+                                  self.externaltargets, self.implicittargets)
+        elif self.implicittargets.has_key(name):
+            sw = self.reporter.information(
+                  'Duplicate implicit target name: "%s"' % name)
+            innode += sw
+            self.cleartargetnames(name, self.implicittargets)
+        self.externaltargets.setdefault(name, []).append(targetnode)
+        self.explicittargets.setdefault(name, []).append(targetnode)
+        targetnode['name'] = name
+        targetnode['refuri'] = reference
+
+    def addindirecttarget(self, refname, targetnode):
+        targetnode['refname'] = refname
+        self.indirecttargets[refname] = targetnode
+
+    def addanonymoustarget(self, targetnode):
+        targetnode['anonymous'] = 1
+        self.anonymoustargets.append(targetnode)
+
+    def addanonymousref(self, refnode):
+        refnode['anonymous'] = 1
+        self.anonymousrefs.append(refnode)
+
+    def addautofootnote(self, name, footnotenode):
+        footnotenode['auto'] = 1
+        self.autofootnotes.append((name, footnotenode))
+
+    def addautofootnoteref(self, refname, refnode):
+        refnode['auto'] = 1
+        self.autofootnoterefs.append((refname, refnode))
+d535 5
+a539 2
+    def addsubstitutiondef(self, name, substitutiondefnode, innode):
+        if self.substitutiondefs.has_key(name):
+d543 1
+a543 1
+            oldnode = self.substitutiondefs[name]
+d546 2
+a547 1
+        self.substitutiondefs[name] = substitutiondefnode
+d549 3
+a551 3
+    def addsubstitutionref(self, refname, subrefnode):
+        subrefnode['refname'] = refname
+        self.substitutionrefs.setdefault(refname, []).append(subrefnode)
+a585 20
+class package_section(Structural, Element): pass
+class module_section(Structural, Element): pass
+class class_section(Structural, Element): pass
+class method_section(Structural, Element): pass
+class function_section(Structural, Element): pass
+class module_attribute_section(Structural, Element): pass
+class class_attribute_section(Structural, Element): pass
+class instance_attribute_section(Structural, Element): pass
+
+# Structural Support Elements
+# ---------------------------
+
+class inheritance_list(Component, Element): pass
+class parameter_list(Component, Element): pass
+class parameter_item(Component, Element): pass
+class optional_parameters(Component, Element): pass
+class parameter_tuple(Component, Element): pass
+class parameter_default(Component, TextElement): pass
+class initial_value(Component, TextElement): pass
+
+d627 1
+a627 1
+class target(Special, Inline, TextElement): pass
+d662 1
+a662 1
+class interpreted(Inline, TextElement): pass
+d664 3
+a666 3
+class reference(Inline, TextElement): pass
+class footnote_reference(Inline, TextElement): pass
+class substitution_reference(Inline, TextElement): pass
+a668 2
+class package(Component, Inline, TextElement): pass
+class module(Component, Inline, TextElement): pass
+d670 55
+a725 1
+class inline_class(Component, Inline, TextElement):
+d727 1
+a727 1
+    tagname = 'class'
+d729 10
+d740 9
+a748 10
+class method(Component, Inline, TextElement): pass
+class function(Component, Inline, TextElement): pass
+class variable(Inline, TextElement): pass
+class parameter(Component, Inline, TextElement): pass
+class type(Inline, TextElement): pass
+class class_attribute(Component, Inline, TextElement): pass
+class module_attribute(Component, Inline, TextElement): pass
+class instance_attribute(Component, Inline, TextElement): pass
+class exception_class(Inline, TextElement): pass
+class warning_class(Inline, TextElement): pass
+@
+
+
+1.20
+log
+@- Removed a debug print.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.19 $
+:Date: $Date: 2001/11/19 04:06:00 $
+d343 1
+a343 1
+    def __init__(self, errorhandler, *args, **kwargs):
+d345 2
+a357 1
+        self.errorhandler = errorhandler
+d370 1
+a370 1
+            sw = self.errorhandler.information(
+d384 1
+a384 1
+            sw = self.errorhandler.warning(
+d393 1
+a393 1
+            sw = self.errorhandler.information(
+d417 1
+a417 1
+            sw = self.errorhandler.system_warning(
+d423 1
+a423 1
+            sw = self.errorhandler.information(
+d454 1
+a454 1
+            sw = self.errorhandler.error(
+@
+
+
+1.19
+log
+@- Removed generic 'directive'.- Changed 'substitution' to 'substitution_defnition'.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.18 $
+:Date: $Date: 2001/11/09 23:13:22 $
+a421 1
+            print >>sys.stderr, "already has explicit target"
+@
+
+
+1.18
+log
+@- Changed 'directive' to a TextElement.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.17 $
+:Date: $Date: 2001/11/06 02:09:44 $
+d349 1
+a349 1
+        self.substitutions = {}
+d452 2
+a453 2
+    def addsubstitution(self, name, substitutionnode, innode):
+        if self.substitutions.has_key(name):
+d455 1
+a455 1
+                  'Duplicate substitution name: "%s"' % name)
+d457 4
+a460 2
+        self.substitutions[name] = substitutionnode
+        substitutionnode['name'] = name
+d559 1
+a559 2
+class directive(Special, TextElement): pass
+class substitution(Special, TextElement): pass
+@
+
+
+1.17
+log
+@  - Removed leading underscores from functional node base classes.  - Added 'hint', 'substitution', 'substitution_reference' classes.  - Added element hierarchy base classes.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.16 $
+:Date: $Date: 2001/10/31 05:55:26 $
+d557 1
+a557 1
+class directive(Special, Element): pass
+@
+
+
+1.16
+log
+@  - Changed "link" to "reference".
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.15 $
+:Date: $Date: 2001/10/30 05:11:35 $
+d17 5
+a21 1
+class _Node:
+d24 1
+a24 1
+        """_Node instances are always true."""
+d43 1
+a43 1
+class Text(_Node, MutableString):
+d70 1
+a70 1
+class _Element(_Node):
+d73 1
+a73 1
+    `_Element` is the superclass to all specific elements.
+d210 1
+a210 1
+        if isinstance(other, _Node):
+d234 1
+a234 1
+        assert isinstance(item, _Node)
+d241 1
+a241 1
+        assert isinstance(item, _Node)
+d248 1
+a248 1
+        assert isinstance(item, _Node)
+d290 1
+a290 1
+class _TextElement(_Element):
+d295 1
+a295 1
+    Its children are all Text or _TextElement nodes.
+d304 1
+a304 1
+            _Element.__init__(self, rawsource, textnode, *children,
+d307 28
+a334 1
+            _Element.__init__(self, rawsource, *children, **attributes)
+d341 1
+a341 1
+class document(_Element):
+d344 1
+a344 1
+        _Element.__init__(self, *args, **kwargs)
+d349 1
+d351 1
+d360 1
+a360 1
+        domroot.appendChild(_Element._rooted_dom_node(self, domroot))
+d369 2
+a370 2
+            sw = self.errorhandler.system_warning(
+                  0, 'Duplicate implicit target name: "%s"' % name)
+d383 2
+a384 2
+            sw = self.errorhandler.system_warning(
+                  1, 'Duplicate explicit target name: "%s"' % name)
+d392 2
+a393 2
+            sw = self.errorhandler.system_warning(
+                  0, 'Duplicate implicit target name: "%s"' % name)
+d423 2
+a424 2
+            sw = self.errorhandler.system_warning(
+                  0, 'Duplicate implicit target name: "%s"' % name)
+d452 12
+d469 2
+a470 2
+class title(_TextElement): pass
+class subtitle(_TextElement): pass
+d477 11
+a487 11
+class docinfo(_Element): pass
+class author(_TextElement): pass
+class authors(_Element): pass
+class organization(_TextElement): pass
+class contact(_TextElement): pass
+class version(_TextElement): pass
+class revision(_TextElement): pass
+class status(_TextElement): pass
+class date(_TextElement): pass
+class copyright(_TextElement): pass
+class abstract(_Element): pass
+d494 2
+a495 2
+class section(_Element): pass
+class transition(_Element): pass
+d497 8
+a504 8
+class package_section(_Element): pass
+class module_section(_Element): pass
+class class_section(_Element): pass
+class method_section(_Element): pass
+class function_section(_Element): pass
+class module_attribute_section(_Element): pass
+class class_attribute_section(_Element): pass
+class instance_attribute_section(_Element): pass
+d509 7
+a515 7
+class inheritance_list(_Element): pass
+class parameter_list(_Element): pass
+class parameter_item(_Element): pass
+class optional_parameters(_Element): pass
+class parameter_tuple(_Element): pass
+class parameter_default(_TextElement): pass
+class initial_value(_TextElement): pass
+d522 50
+a571 39
+class paragraph(_TextElement): pass
+class bullet_list(_Element): pass
+class enumerated_list(_Element): pass
+class list_item(_Element): pass
+class definition_list(_Element): pass
+class definition_list_item(_Element): pass
+class term(_TextElement): pass
+class classifier(_TextElement): pass
+class definition(_Element): pass
+class field_list(_Element): pass
+class field(_Element): pass
+class field_name(_TextElement): pass
+class field_argument(_TextElement): pass
+class field_body(_Element): pass
+class literal_block(_TextElement): pass
+class block_quote(_Element): pass
+class attention(_Element): pass
+class caution(_Element): pass
+class danger(_Element): pass
+class error(_Element): pass
+class important(_Element): pass
+class note(_Element): pass
+class tip(_Element): pass
+class warning(_Element): pass
+class comment(_TextElement): pass
+class directive(_Element): pass
+class target(_TextElement): pass
+class footnote(_Element): pass
+class label(_TextElement): pass
+class figure(_Element): pass
+class caption(_TextElement): pass
+class legend(_Element): pass
+class table(_Element): pass
+class tgroup(_Element): pass
+class colspec(_Element): pass
+class thead(_Element): pass
+class tbody(_Element): pass
+class row(_Element): pass
+class entry(_Element): pass
+d574 1
+a574 1
+class system_warning(_Element):
+d582 1
+a582 1
+        _Element.__init__(self, '', *children, **attributes)
+d585 1
+a585 12
+        return '[level %s] ' % self['level'] + _Element.astext(self)
+
+
+class option_list(_Element): pass
+class option_list_item(_Element): pass
+class option(_Element): pass
+class short_option(_TextElement): pass
+class long_option(_TextElement): pass
+class vms_option(_TextElement): pass
+class option_argument(_TextElement): pass
+class description(_Element): pass
+class doctest_block(_TextElement): pass
+d592 8
+a599 7
+class emphasis(_TextElement): pass
+class strong(_TextElement): pass
+class interpreted(_TextElement): pass
+class literal(_TextElement): pass
+class reference(_TextElement): pass
+class footnote_reference(_TextElement): pass
+class image(_TextElement): pass
+d601 2
+a602 2
+class package(_TextElement): pass
+class module(_TextElement): pass
+d605 1
+a605 1
+class inline_class(_TextElement):
+d610 10
+a619 10
+class method(_TextElement): pass
+class function(_TextElement): pass
+class variable(_TextElement): pass
+class parameter(_TextElement): pass
+class type(_TextElement): pass
+class class_attribute(_TextElement): pass
+class module_attribute(_TextElement): pass
+class instance_attribute(_TextElement): pass
+class exception_class(_TextElement): pass
+class warning_class(_TextElement): pass
+@
+
+
+1.15
+log
+@  - External targets' URIs now in "refuri" attribute, not data.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.14 $
+:Date: $Date: 2001/10/27 05:41:17 $
+d551 1
+a551 1
+class link(_TextElement): pass
+@
+
+
+1.14
+log
+@  - Added 'transition'.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.13 $
+:Date: $Date: 2001/10/23 02:23:25 $
+d380 1
+a380 1
+                if len(t) != 1 or str(t[0]) != reference:
+d397 1
+d400 1
+a401 1
+        targetnode['refname'] = refname
+d404 1
+d408 1
+@
+
+
+1.13
+log
+@  - Renamed ``*links?`` -> ``*targets?``.  - Added support for indirect & anonymous targets.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.12 $
+:Date: $Date: 2001/10/20 03:07:15 $
+d417 8
+a428 2
+class title(_TextElement): pass
+class subtitle(_TextElement): pass
+d447 1
+@
+
+
+1.12
+log
+@  - Renamed 'indirect' hyperlink targets -> 'external'.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.11 $
+:Date: $Date: 2001/09/26 03:32:11 $
+d314 4
+a317 3
+        self.explicitlinks = {}
+        self.implicitlinks = {}
+        self.externallinks = {}
+d319 2
+d330 1
+a330 1
+    def addimplicitlink(self, name, linknode, innode=None):
+d332 4
+a335 4
+            innode = linknode
+        if self.explicitlinks.has_key(name) \
+              or self.externallinks.has_key(name) \
+              or self.implicitlinks.has_key(name):
+d337 1
+a337 1
+                  0, 'Duplicate implicit link name: "%s"' % name)
+d339 3
+a341 3
+            self.clearlinknames(name, self.implicitlinks)
+            linknode['dupname'] = name
+            self.implicitlinks.setdefault(name, []).append(linknode)
+d343 2
+a344 2
+            self.implicitlinks[name] = [linknode]
+            linknode['name'] = name
+d346 1
+a346 1
+    def addexplicitlink(self, name, linknode, innode=None):
+d348 2
+a349 2
+            innode = linknode
+        if self.explicitlinks.has_key(name):
+d351 1
+a351 1
+                  1, 'Duplicate explicit link name: "%s"' % name)
+d353 4
+a356 4
+            self.clearlinknames(name, self.explicitlinks, self.implicitlinks,
+                                self.externallinks)
+            linknode['dupname'] = name
+            self.explicitlinks.setdefault(name, []).append(linknode)
+d358 1
+a358 1
+        elif self.implicitlinks.has_key(name):
+d360 1
+a360 1
+                  0, 'Duplicate implicit link name: "%s"' % name)
+d362 7
+a368 7
+            self.clearlinknames(name, self.implicitlinks)
+        self.explicitlinks[name] = [linknode]
+        linknode['name'] = name
+
+    def clearlinknames(self, name, *linkdicts):
+        for linkdict in linkdicts:
+            for node in linkdict.get(name, []):
+d376 2
+a377 2
+    def addexternallink(self, name, reference, linknode, innode):
+        if self.explicitlinks.has_key(name):
+d379 1
+a379 1
+            for t in self.explicitlinks.get(name, []):
+d384 1
+a384 1
+                  level, 'Duplicate external link name: "%s"' % name)
+d386 4
+a389 4
+            self.clearlinknames(name, self.explicitlinks, self.externallinks,
+                                self.implicitlinks)
+        elif self.implicitlinks.has_key(name):
+            print >>sys.stderr, "already has explicit link"
+d391 1
+a391 1
+                  0, 'Duplicate implicit link name: "%s"' % name)
+d393 14
+a406 4
+            self.clearlinknames(name, self.implicitlinks)
+        self.externallinks.setdefault(name, []).append(linknode)
+        self.explicitlinks.setdefault(name, []).append(linknode)
+        linknode['name'] = name
+@
+
+
+1.11
+log
+@  - Added 'docinfo', container for bibliographic elements.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.10 $
+:Date: $Date: 2001/09/13 02:12:55 $
+d316 1
+a316 1
+        self.indirectlinks = {}
+d331 1
+a331 1
+              or self.indirectlinks.has_key(name) \
+d351 1
+a351 1
+                                self.indirectlinks)
+d373 1
+a373 1
+    def addindirectlink(self, name, reference, linknode, innode):
+d381 1
+a381 1
+                  level, 'Duplicate indirect link name: "%s"' % name)
+d383 1
+a383 1
+            self.clearlinknames(name, self.explicitlinks, self.indirectlinks,
+d391 1
+a391 1
+        self.indirectlinks.setdefault(name, []).append(linknode)
+@
+
+
+1.10
+log
+@  - Removed endtags from .pformat() output.  - Reordered admonitions.  - Added 'attention' admonition.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.9 $
+:Date: $Date: 2001/09/12 03:47:12 $
+d410 1
+@
+
+
+1.9
+log
+@  - Added 'error' class.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.8 $
+:Date: $Date: 2001/09/10 04:17:38 $
+d281 1
+a281 2
+        if self.children:
+            return ''.join(['%s%s\n' % (indent * level, self.starttag())] +
+d283 1
+a283 4
+                            for child in self.children]
+                           + ['%s%s\n' % (indent * level, self.endtag())])
+        else:
+            return '%s%s\n' % (indent * level, self.emptytag())
+d469 5
+a476 4
+class error(_Element): pass
+class caution(_Element): pass
+class danger(_Element): pass
+class important(_Element): pass
+@
+
+
+1.8
+log
+@  - Changed 'tagName' to 'tagname'.  - Improved auto-tagname generation.  - Added string-conversion to attribute values in DOM-conversion.  - Changed footnote/footnote_reference 'auto' attribute to integer.  - Moved 'abstract' into bibliographic elements section.  - Changed 'graphic' to 'image'.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.7 $
+:Date: $Date: 2001/09/07 02:08:41 $
+d476 1
+@
+
+
+1.7
+log
+@  - _Node's always true.  - Changed .pprint() to .pformat().  - Added slice support to elements.  - Added .findclass() & .findnonclass() methods.  - Added support for auto-numbered footnotes.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.6 $
+:Date: $Date: 2001/08/30 04:28:58 $
+d41 1
+a41 1
+    tagName = '#text'
+d47 1
+a47 1
+        return '<%s: %s>' % (self.tagName, data)
+d92 5
+a96 1
+    
+d110 2
+a111 2
+        self.tagName = self.__class__.__name__
+        """The element generic identifier, usually the class name."""
+d114 1
+a114 1
+        element = dom.Element(self.tagName)
+d116 1
+a116 1
+            element.setAttribute(attribute, value)
+d122 1
+a122 1
+        element = domroot.createElement(self.tagName)
+d124 1
+a124 1
+            element.setAttribute(attribute, value)
+d132 1
+a132 1
+            data += '<%s...>' % c.tagName
+d147 1
+a147 1
+        return '<%s>' % ' '.join([self.tagName] +
+d152 1
+a152 1
+        return '</%s>' % self.tagName
+d155 1
+a155 1
+        return '<%s/>' % ' '.join([self.tagName] +
+d400 1
+a400 1
+        footnotenode['auto'] = '1'
+d404 1
+a404 1
+        refnode['auto'] = '1'
+d423 1
+a429 1
+class abstract(_Element): pass
+d531 1
+a531 1
+class graphic(_TextElement): pass
+d539 1
+a539 3
+    def __init__(self, *args, **kwargs):
+        _TextElement.__init__(self, *args, **kwargs)
+        self.tagName = 'class'
+@
+
+
+1.6
+log
+@  - Allow any DOM implementation from ``asdom()`` method. (I think.)
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2001/08/25 01:44:16 $
+d14 1
+a14 1
+from types import StringType
+d19 4
+d58 1
+a58 1
+    def pprint(self, indent='    ', level=0):
+d161 5
+d167 2
+a168 1
+            return self.children[key]
+d173 5
+d179 2
+a180 1
+            self.children[key] = item
+d185 5
+d191 2
+a192 1
+            del self.children[key]
+d243 34
+a276 1
+    def pprint(self, indent='    ', level=0):
+d279 2
+a280 1
+                           [c.pprint(indent, level+1) for c in self.children]
+d318 2
+d394 8
+@
+
+
+1.5
+log
+@  - Duplicate hyperlink names -> dupname attribute.
+@
+text
+@d13 1
+a13 1
+import xml.dom.minidom as dom
+d19 2
+a20 2
+    def asdom(self):
+        return self._dom_node()
+d22 1
+a22 1
+    def _dom_node(self):
+d45 1
+a45 1
+    def _dom_node(self):
+d105 1
+a105 1
+    def _dom_node(self):
+d110 1
+a110 1
+            element.appendChild(child._dom_node())
+d264 1
+a264 1
+    def asdom(self):
+@
+
+
+1.4
+log
+@  - Added docstrings to ``_Element``.  - Extended ``+=`` to lists of nodes.  - Added ``classifier``.
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2001/08/23 03:55:19 $
+d276 1
+a276 1
+                  0, 'duplicate implicit link name: "%s"' % name)
+d279 1
+d290 1
+a290 1
+                  1, 'duplicate explicit link name: "%s"' % name)
+d294 1
+d299 1
+a299 1
+                  0, 'duplicate implicit link name: "%s"' % name)
+d309 1
+a315 3
+        #print >>sys.stderr, 'Adding indirect link: %s -> %s' % (name, reference)
+        #print >>sys.stderr, 'self.indirectlinks=%r' % self.indirectlinks
+        #print >>sys.stderr, 'self.explicitlinks=%r' % self.explicitlinks
+a316 1
+            #print >>sys.stderr, "already has explicit link"
+d323 1
+a323 1
+                  level, 'duplicate indirect link name: "%s"' % name)
+d330 1
+a330 1
+                  0, 'duplicate implicit link name: "%s"' % name)
+@
+
+
+1.3
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.1.1.1 $
+:Date: $Date: 2001/07/22 22:35:51 $
+d64 25
+d94 2
+d97 2
+d100 2
+d103 1
+d179 2
+a180 2
+        if other is not None:
+            assert isinstance(other, _Node)
+d182 2
+d395 1
+@
+
+
+1.2
+log
+@  - Added vms_option.  - Fixed link bookkeeping.
+@
+text
+@d5 1
+a5 1
+:Contact: dgoodger@@bigfoot.com
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d4 5
+a8 5
+Author: David Goodger
+Contact: dgoodger@@bigfoot.com
+Revision: $Revision: 1.1 $
+Date: $Date: 2001/07/20 00:09:04 $
+Copyright: This module has been placed in the public domain.
+d245 1
+a245 1
+            self.implicitlinks[name].append(linknode)
+d253 1
+a253 1
+        if self.explicitlinks.has_key(name) or self.indirectlinks.has_key(name):
+d257 3
+a259 2
+            self.clearlinknames(name, self.explicitlinks, self.implicitlinks)
+            self.explicitlinks[name].append(linknode)
+d279 17
+a295 3
+        if self.explicitlinks.has_key(name) \
+              or self.indirectlinks.has_key(name) \
+              or self.implicitlinks.has_key(name):
+d297 1
+a297 1
+                  1, 'duplicate indirect link name: "%s"' % name)
+d299 3
+a301 1
+        self.indirectlinks[name] = reference
+d411 1
+@
+
+
+1.1.1.1
+log
+@First Imported.
+@
+text
+@@

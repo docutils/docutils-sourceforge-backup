@@ -1,0 +1,1788 @@
+head	1.10;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.10
+date	2002.04.18.02.40.50;	author goodger;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2002.03.01.03.00.21;	author goodger;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2002.02.23.16.46.33;	author goodger;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2002.02.21.03.33.54;	author goodger;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2002.02.15.22.58.17;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2002.02.06.02.18.32;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2001.10.27.05.22.49;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2001.09.13.02.40.46;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2001.09.02.14.05.53;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2001.09.01.17.01.03;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.10
+log
+@updated
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.9 $
+:Date: $Date: 2002/03/01 03:00:21 $
+:Copyright: This module has been placed in the public domain.
+
+Tests for states.py.
+"""
+
+import RSTTestSupport
+
+def suite():
+    s = RSTTestSupport.ParserTestSuite()
+    s.generateTests(totest)
+    return s
+
+totest = {}
+
+totest['option_lists'] = [
+["""\
+Short options:
+
+-a       option -a
+
+-b file  option -b
+
+-c name  option -c
+""",
+"""\
+<document>
+    <paragraph>
+        Short options:
+    <option_list>
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        -a
+            <description>
+                <paragraph>
+                    option -a
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        -b
+                    <option_argument delimiter=" ">
+                        file
+            <description>
+                <paragraph>
+                    option -b
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        -c
+                    <option_argument delimiter=" ">
+                        name
+            <description>
+                <paragraph>
+                    option -c
+"""],
+["""\
+Long options:
+
+--aaaa       option --aaaa
+--bbbb=file  option --bbbb
+--cccc name  option --cccc
+--d-e-f-g    option --d-e-f-g
+--h_i_j_k    option --h_i_j_k
+""",
+"""\
+<document>
+    <paragraph>
+        Long options:
+    <option_list>
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        --aaaa
+            <description>
+                <paragraph>
+                    option --aaaa
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        --bbbb
+                    <option_argument delimiter="=">
+                        file
+            <description>
+                <paragraph>
+                    option --bbbb
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        --cccc
+                    <option_argument delimiter=" ">
+                        name
+            <description>
+                <paragraph>
+                    option --cccc
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        --d-e-f-g
+            <description>
+                <paragraph>
+                    option --d-e-f-g
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        --h_i_j_k
+            <description>
+                <paragraph>
+                    option --h_i_j_k
+"""],
+["""\
+Old GNU-style options:
+
++a       option +a
+
++b file  option +b
+
++c name  option +c
+""",
+"""\
+<document>
+    <paragraph>
+        Old GNU-style options:
+    <option_list>
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        +a
+            <description>
+                <paragraph>
+                    option +a
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        +b
+                    <option_argument delimiter=" ">
+                        file
+            <description>
+                <paragraph>
+                    option +b
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        +c
+                    <option_argument delimiter=" ">
+                        name
+            <description>
+                <paragraph>
+                    option +c
+"""],
+["""\
+VMS/DOS-style options:
+
+/A        option /A
+/B file   option /B
+/CCC      option /CCC
+/DDD string  option /DDD
+/EEE=int  option /EEE
+""",
+"""\
+<document>
+    <paragraph>
+        VMS/DOS-style options:
+    <option_list>
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        /A
+            <description>
+                <paragraph>
+                    option /A
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        /B
+                    <option_argument delimiter=" ">
+                        file
+            <description>
+                <paragraph>
+                    option /B
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        /CCC
+            <description>
+                <paragraph>
+                    option /CCC
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        /DDD
+                    <option_argument delimiter=" ">
+                        string
+            <description>
+                <paragraph>
+                    option /DDD
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        /EEE
+                    <option_argument delimiter="=">
+                        int
+            <description>
+                <paragraph>
+                    option /EEE
+"""],
+["""\
+Mixed short, long, and VMS/DOS options:
+
+-a           option -a
+--bbbb=file  option -bbbb
+/C           option /C
+--dddd name  option --dddd
+-e string    option -e
+/F file      option /F
+""",
+"""\
+<document>
+    <paragraph>
+        Mixed short, long, and VMS/DOS options:
+    <option_list>
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        -a
+            <description>
+                <paragraph>
+                    option -a
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        --bbbb
+                    <option_argument delimiter="=">
+                        file
+            <description>
+                <paragraph>
+                    option -bbbb
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        /C
+            <description>
+                <paragraph>
+                    option /C
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        --dddd
+                    <option_argument delimiter=" ">
+                        name
+            <description>
+                <paragraph>
+                    option --dddd
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        -e
+                    <option_argument delimiter=" ">
+                        string
+            <description>
+                <paragraph>
+                    option -e
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        /F
+                    <option_argument delimiter=" ">
+                        file
+            <description>
+                <paragraph>
+                    option /F
+"""],
+["""\
+Aliased options:
+
+-a, --aaaa, /A                 option -a, --aaaa, /A
+-b file, --bbbb=file, /B file  option -b, --bbbb, /B
+""",
+"""\
+<document>
+    <paragraph>
+        Aliased options:
+    <option_list>
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        -a
+                <option>
+                    <option_string>
+                        --aaaa
+                <option>
+                    <option_string>
+                        /A
+            <description>
+                <paragraph>
+                    option -a, --aaaa, /A
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        -b
+                    <option_argument delimiter=" ">
+                        file
+                <option>
+                    <option_string>
+                        --bbbb
+                    <option_argument delimiter="=">
+                        file
+                <option>
+                    <option_string>
+                        /B
+                    <option_argument delimiter=" ">
+                        file
+            <description>
+                <paragraph>
+                    option -b, --bbbb, /B
+"""],
+["""\
+Multiple lines in descriptions, aligned:
+
+-a       option -a, line 1
+         line 2
+-b file  option -b, line 1
+         line 2
+""",
+"""\
+<document>
+    <paragraph>
+        Multiple lines in descriptions, aligned:
+    <option_list>
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        -a
+            <description>
+                <paragraph>
+                    option -a, line 1
+                    line 2
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        -b
+                    <option_argument delimiter=" ">
+                        file
+            <description>
+                <paragraph>
+                    option -b, line 1
+                    line 2
+"""],
+["""\
+Multiple lines in descriptions, not aligned:
+
+-a  option -a, line 1
+    line 2
+-b file  option -b, line 1
+    line 2
+""",
+"""\
+<document>
+    <paragraph>
+        Multiple lines in descriptions, not aligned:
+    <option_list>
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        -a
+            <description>
+                <paragraph>
+                    option -a, line 1
+                    line 2
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        -b
+                    <option_argument delimiter=" ">
+                        file
+            <description>
+                <paragraph>
+                    option -b, line 1
+                    line 2
+"""],
+["""\
+Descriptions begin on next line:
+
+-a
+    option -a, line 1
+    line 2
+-b file
+    option -b, line 1
+    line 2
+""",
+"""\
+<document>
+    <paragraph>
+        Descriptions begin on next line:
+    <option_list>
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        -a
+            <description>
+                <paragraph>
+                    option -a, line 1
+                    line 2
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        -b
+                    <option_argument delimiter=" ">
+                        file
+            <description>
+                <paragraph>
+                    option -b, line 1
+                    line 2
+"""],
+["""\
+Multiple body elements in descriptions:
+
+-a  option -a, para 1
+
+    para 2
+-b file
+    option -b, para 1
+
+    para 2
+""",
+"""\
+<document>
+    <paragraph>
+        Multiple body elements in descriptions:
+    <option_list>
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        -a
+            <description>
+                <paragraph>
+                    option -a, para 1
+                <paragraph>
+                    para 2
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        -b
+                    <option_argument delimiter=" ">
+                        file
+            <description>
+                <paragraph>
+                    option -b, para 1
+                <paragraph>
+                    para 2
+"""],
+["""\
+--option
+empty item above, no blank line
+""",
+"""\
+<document>
+    <paragraph>
+        --option
+        empty item above, no blank line
+"""],
+["""\
+An option list using equals:
+
+--long1=arg1  Description 1
+--long2=arg2  Description 2
+
+An option list using spaces:
+
+--long1 arg1  Description 1
+--long2 arg2  Description 2
+
+An option list using mixed delimiters:
+
+--long1=arg1  Description 1
+--long2 arg2  Description 2
+
+An option list using mixed delimiters in one line:
+
+--long1=arg1, --long2 arg2  Description
+""",
+"""\
+<document>
+    <paragraph>
+        An option list using equals:
+    <option_list>
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        --long1
+                    <option_argument delimiter="=">
+                        arg1
+            <description>
+                <paragraph>
+                    Description 1
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        --long2
+                    <option_argument delimiter="=">
+                        arg2
+            <description>
+                <paragraph>
+                    Description 2
+    <paragraph>
+        An option list using spaces:
+    <option_list>
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        --long1
+                    <option_argument delimiter=" ">
+                        arg1
+            <description>
+                <paragraph>
+                    Description 1
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        --long2
+                    <option_argument delimiter=" ">
+                        arg2
+            <description>
+                <paragraph>
+                    Description 2
+    <paragraph>
+        An option list using mixed delimiters:
+    <option_list>
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        --long1
+                    <option_argument delimiter="=">
+                        arg1
+            <description>
+                <paragraph>
+                    Description 1
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        --long2
+                    <option_argument delimiter=" ">
+                        arg2
+            <description>
+                <paragraph>
+                    Description 2
+    <paragraph>
+        An option list using mixed delimiters in one line:
+    <option_list>
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        --long1
+                    <option_argument delimiter="=">
+                        arg1
+                <option>
+                    <option_string>
+                        --long2
+                    <option_argument delimiter=" ">
+                        arg2
+            <description>
+                <paragraph>
+                    Description
+"""],
+["""\
+Some edge cases:
+
+--option=arg arg  too many arguments
+
+--option=arg,arg  not supported (yet?)
+
+--option=arg=arg  too many arguments
+
+--option arg arg  too many arguments
+
+-a letter arg2    too many arguments
+
+/A letter arg2    too many arguments
+
+--option=         argument missing
+
+--=argument       option missing
+
+--                everything missing
+
+-                 this should be a bullet list item
+
+These next ones should be simple paragraphs:
+
+-1
+
+--option
+
+--1
+
+-1 and this one too.
+""",
+"""\
+<document>
+    <paragraph>
+        Some edge cases:
+    <paragraph>
+        --option=arg arg  too many arguments
+    <paragraph>
+        --option=arg,arg  not supported (yet?)
+    <paragraph>
+        --option=arg=arg  too many arguments
+    <paragraph>
+        --option arg arg  too many arguments
+    <paragraph>
+        -a letter arg2    too many arguments
+    <paragraph>
+        /A letter arg2    too many arguments
+    <paragraph>
+        --option=         argument missing
+    <paragraph>
+        --=argument       option missing
+    <paragraph>
+        --                everything missing
+    <bullet_list bullet="-">
+        <list_item>
+            <paragraph>
+                this should be a bullet list item
+    <paragraph>
+        These next ones should be simple paragraphs:
+    <paragraph>
+        -1
+    <paragraph>
+        --option
+    <paragraph>
+        --1
+    <paragraph>
+        -1 and this one too.
+"""],
+]
+
+if __name__ == '__main__':
+    import unittest
+    unittest.main(defaultTest='suite')
+@
+
+
+1.9
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.8 $
+:Date: $Date: 2002/02/23 16:46:33 $
+a495 10
+    <option_list>
+        <option_list_item>
+            <option_group>
+                <option>
+                    <option_string>
+                        --option
+            <description>
+    <system_message level="2" type="WARNING">
+        <paragraph>
+            Unindent without blank line at line 2.
+d497 1
+d632 10
+d669 10
+@
+
+
+1.8
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.7 $
+:Date: $Date: 2002/02/21 03:33:54 $
+d26 1
+a26 1
+-a       option a
+d28 1
+a28 1
+-b file  option b
+d30 1
+a30 1
+-c name  option c
+d38 4
+a41 3
+            <option>
+                <short_option>
+                    a
+d44 1
+a44 1
+                    option a
+d46 6
+a51 5
+            <option>
+                <short_option>
+                    b
+                <option_argument>
+                    file
+d54 1
+a54 1
+                    option b
+d56 6
+a61 5
+            <option>
+                <short_option>
+                    c
+                <option_argument>
+                    name
+d64 1
+a64 1
+                    option c
+d69 5
+a73 5
+--aaaa       option aaaa
+--bbbb=file  option bbbb
+--cccc name  option cccc
+--d-e-f-g    option d-e-f-g
+--h_i_j_k    option h_i_j_k
+d79 1
+a79 1
+    <option_list optarg_delimiter="mixed">
+d81 4
+a84 3
+            <option>
+                <long_option>
+                    aaaa
+d87 1
+a87 1
+                    option aaaa
+d89 6
+a94 5
+            <option>
+                <long_option>
+                    bbbb
+                <option_argument>
+                    file
+d97 1
+a97 1
+                    option bbbb
+d99 6
+a104 5
+            <option>
+                <long_option>
+                    cccc
+                <option_argument>
+                    name
+d107 1
+a107 1
+                    option cccc
+d109 4
+a112 3
+            <option>
+                <long_option>
+                    d-e-f-g
+d115 1
+a115 1
+                    option d-e-f-g
+d117 4
+a120 3
+            <option>
+                <long_option>
+                    h_i_j_k
+d123 44
+a166 1
+                    option h_i_j_k
+d171 5
+a175 5
+/A        option A
+/B file   option B
+/CCC      option CCC
+/DDD string  option DDD
+/EEE=int  option EEE
+d181 1
+a181 1
+    <option_list optarg_delimiter="mixed">
+d183 4
+a186 3
+            <option>
+                <vms_option>
+                    A
+d189 1
+a189 1
+                    option A
+d191 6
+a196 5
+            <option>
+                <vms_option>
+                    B
+                <option_argument>
+                    file
+d199 1
+a199 1
+                    option B
+d201 4
+a204 3
+            <option>
+                <vms_option>
+                    CCC
+d207 1
+a207 1
+                    option CCC
+d209 6
+a214 5
+            <option>
+                <vms_option>
+                    DDD
+                <option_argument>
+                    string
+d217 1
+a217 1
+                    option DDD
+d219 6
+a224 5
+            <option>
+                <vms_option>
+                    EEE
+                <option_argument>
+                    int
+d227 1
+a227 1
+                    option EEE
+d232 6
+a237 6
+-a           option a
+--bbbb=file  option bbbb
+/C           option C
+--dddd name  option dddd
+-e string    option e
+/F file      option F
+d243 1
+a243 1
+    <option_list optarg_delimiter="mixed">
+d245 4
+a248 3
+            <option>
+                <short_option>
+                    a
+d251 1
+a251 1
+                    option a
+d253 6
+a258 5
+            <option>
+                <long_option>
+                    bbbb
+                <option_argument>
+                    file
+d261 1
+a261 1
+                    option bbbb
+d263 4
+a266 3
+            <option>
+                <vms_option>
+                    C
+d269 1
+a269 1
+                    option C
+d271 6
+a276 5
+            <option>
+                <long_option>
+                    dddd
+                <option_argument>
+                    name
+d279 1
+a279 1
+                    option dddd
+d281 6
+a286 5
+            <option>
+                <short_option>
+                    e
+                <option_argument>
+                    string
+d289 1
+a289 1
+                    option e
+d291 6
+a296 5
+            <option>
+                <vms_option>
+                    F
+                <option_argument>
+                    file
+d299 1
+a299 1
+                    option F
+d304 2
+a305 2
+-a, --aaaa, /A                 option a, aaaa, A
+-b file, --bbbb=file, /B file  option b, bbbb, B
+d311 1
+a311 1
+    <option_list optarg_delimiter="mixed">
+d313 30
+a342 28
+            <option>
+                <short_option>
+                    a
+            <option>
+                <long_option>
+                    aaaa
+            <option>
+                <vms_option>
+                    A
+            <description>
+                <paragraph>
+                    option a, aaaa, A
+        <option_list_item>
+            <option>
+                <short_option>
+                    b
+                <option_argument>
+                    file
+            <option>
+                <long_option>
+                    bbbb
+                <option_argument>
+                    file
+            <option>
+                <vms_option>
+                    B
+                <option_argument>
+                    file
+d345 1
+a345 1
+                    option b, bbbb, B
+d350 1
+a350 1
+-a       option a, line 1
+d352 1
+a352 1
+-b file  option b, line 1
+d361 4
+a364 3
+            <option>
+                <short_option>
+                    a
+d367 1
+a367 1
+                    option a, line 1
+d370 6
+a375 5
+            <option>
+                <short_option>
+                    b
+                <option_argument>
+                    file
+d378 1
+a378 1
+                    option b, line 1
+d384 1
+a384 1
+-a  option a, line 1
+d386 1
+a386 1
+-b file  option b, line 1
+d395 4
+a398 3
+            <option>
+                <short_option>
+                    a
+d401 1
+a401 1
+                    option a, line 1
+d404 6
+a409 5
+            <option>
+                <short_option>
+                    b
+                <option_argument>
+                    file
+d412 1
+a412 1
+                    option b, line 1
+d419 1
+a419 1
+    option a, line 1
+d422 1
+a422 1
+    option b, line 1
+d431 4
+a434 3
+            <option>
+                <short_option>
+                    a
+d437 1
+a437 1
+                    option a, line 1
+d440 6
+a445 5
+            <option>
+                <short_option>
+                    b
+                <option_argument>
+                    file
+d448 1
+a448 1
+                    option b, line 1
+d454 1
+a454 1
+-a  option a, para 1
+d458 1
+a458 1
+    option b, para 1
+d468 4
+a471 3
+            <option>
+                <short_option>
+                    a
+d474 1
+a474 1
+                    option a, para 1
+d478 6
+a483 5
+            <option>
+                <short_option>
+                    b
+                <option_argument>
+                    file
+d486 1
+a486 1
+                    option b, para 1
+d498 4
+a501 3
+            <option>
+                <long_option>
+                    option
+d533 1
+a533 1
+    <option_list optarg_delimiter="=">
+d535 6
+a540 5
+            <option>
+                <long_option>
+                    long1
+                <option_argument>
+                    arg1
+d545 6
+a550 5
+            <option>
+                <long_option>
+                    long2
+                <option_argument>
+                    arg2
+d556 1
+a556 1
+    <option_list optarg_delimiter=" ">
+d558 6
+a563 5
+            <option>
+                <long_option>
+                    long1
+                <option_argument>
+                    arg1
+d568 6
+a573 5
+            <option>
+                <long_option>
+                    long2
+                <option_argument>
+                    arg2
+d579 1
+a579 1
+    <option_list optarg_delimiter="mixed">
+d581 6
+a586 5
+            <option>
+                <long_option>
+                    long1
+                <option_argument>
+                    arg1
+d591 6
+a596 5
+            <option>
+                <long_option>
+                    long2
+                <option_argument>
+                    arg2
+d602 1
+a602 1
+    <option_list optarg_delimiter="mixed">
+d604 11
+a614 10
+            <option>
+                <long_option>
+                    long1
+                <option_argument>
+                    arg1
+            <option>
+                <long_option>
+                    long2
+                <option_argument>
+                    arg2
+d622 1
+a622 1
+-longname         long option with only one hyphen
+d624 1
+a624 1
+--option=arg arg  too many arguments
+a633 2
+-a=b              can't use = for short arguments
+
+d647 1
+a647 1
+        -longname         long option with only one hyphen
+d649 1
+a649 1
+        --option=arg arg  too many arguments
+a657 2
+    <paragraph>
+        -a=b              can't use = for short arguments
+@
+
+
+1.7
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.6 $
+:Date: $Date: 2002/02/15 22:58:17 $
+d76 1
+a76 1
+    <option_list>
+d124 1
+d130 1
+a130 1
+    <option_list>
+d163 9
+d187 1
+a187 1
+    <option_list>
+d249 1
+a249 1
+    <option_list>
+d435 103
+@
+
+
+1.6
+log
+@  - Changed "system_warning" to "system_message".
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.5 $
+:Date: $Date: 2002/02/06 02:18:32 $
+d429 2
+d435 3
+a437 1
+-aletter arg2     too many arguments (-a letter)
+d439 1
+a439 1
+/A letter arg2    too many arguments (/A letter)
+d456 2
+d462 3
+a464 1
+        -aletter arg2     too many arguments (-a letter)
+d466 1
+a466 1
+        /A letter arg2    too many arguments (/A letter)
+@
+
+
+1.5
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2001/10/27 05:22:49 $
+d420 1
+a420 1
+    <system_warning level="2" type="WARNING">
+@
+
+
+1.4
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2001/09/13 02:40:46 $
+d420 1
+a420 1
+    <system_warning level="1">
+@
+
+
+1.3
+log
+@Updated for simpler dps.nodes._Element.pformat().
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.2 $
+:Date: $Date: 2001/09/02 14:05:53 $
+d30 1
+a30 1
+-cname   option c
+d40 1
+a40 1
+                    -a
+d47 1
+a47 1
+                    -b
+d56 1
+a56 1
+                    -c
+d80 1
+a80 1
+                    --aaaa
+d87 1
+a87 1
+                    --bbbb
+d96 1
+a96 1
+                    --cccc
+d105 1
+a105 1
+                    --d-e-f-g
+d112 1
+a112 1
+                    --h_i_j_k
+d122 2
+a123 1
+/Cstring  option C
+d133 1
+a133 1
+                    /A
+d140 1
+a140 1
+                    /B
+d149 8
+a156 1
+                    /C
+d161 1
+a161 1
+                    option C
+d181 1
+a181 1
+                    -a
+d188 1
+a188 1
+                    --bbbb
+d197 1
+a197 1
+                    /C
+d204 1
+a204 1
+                    --dddd
+d213 1
+a213 1
+                    -e
+d222 1
+a222 1
+                    /F
+d243 1
+a243 1
+                    -a
+d246 1
+a246 1
+                    --aaaa
+d249 1
+a249 1
+                    /A
+d256 1
+a256 1
+                    -b
+d261 1
+a261 1
+                    --bbbb
+d266 1
+a266 1
+                    /B
+d289 1
+a289 1
+                    -a
+d297 1
+a297 1
+                    -b
+d321 1
+a321 1
+                    -a
+d329 1
+a329 1
+                    -b
+d355 1
+a355 1
+                    -a
+d363 1
+a363 1
+                    -b
+d390 1
+a390 1
+                    -a
+d399 1
+a399 1
+                    -b
+d418 1
+a418 1
+                    --option
+d433 1
+a433 1
+-aletter arg      too many arguments (-a letter)
+d435 1
+a435 1
+/Aletter arg      too many arguments (/A letter)
+a438 2
+/A=b              can't use = for DOS/VMS arguments?
+
+d456 1
+a456 1
+        -aletter arg      too many arguments (-a letter)
+d458 1
+a458 1
+        /Aletter arg      too many arguments (/A letter)
+a460 2
+    <paragraph>
+        /A=b              can't use = for DOS/VMS arguments?
+@
+
+
+1.2
+log
+@Removed "id=__file__" from ParserTestSuite call (now auto-detected).
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.1 $
+:Date: $Date: 2001/09/01 17:01:03 $
+a35 1
+    </paragraph>
+a40 2
+                </short_option>
+            </option>
+a43 3
+                </paragraph>
+            </description>
+        </option_list_item>
+a47 1
+                </short_option>
+a49 2
+                </option_argument>
+            </option>
+a52 3
+                </paragraph>
+            </description>
+        </option_list_item>
+a56 1
+                </short_option>
+a58 2
+                </option_argument>
+            </option>
+a61 5
+                </paragraph>
+            </description>
+        </option_list_item>
+    </option_list>
+</document>
+a75 1
+    </paragraph>
+a80 2
+                </long_option>
+            </option>
+a83 3
+                </paragraph>
+            </description>
+        </option_list_item>
+a87 1
+                </long_option>
+a89 2
+                </option_argument>
+            </option>
+a92 3
+                </paragraph>
+            </description>
+        </option_list_item>
+a96 1
+                </long_option>
+a98 2
+                </option_argument>
+            </option>
+a101 3
+                </paragraph>
+            </description>
+        </option_list_item>
+a105 2
+                </long_option>
+            </option>
+a108 3
+                </paragraph>
+            </description>
+        </option_list_item>
+a112 2
+                </long_option>
+            </option>
+a115 5
+                </paragraph>
+            </description>
+        </option_list_item>
+    </option_list>
+</document>
+a127 1
+    </paragraph>
+a132 2
+                </vms_option>
+            </option>
+a135 3
+                </paragraph>
+            </description>
+        </option_list_item>
+a139 1
+                </vms_option>
+a141 2
+                </option_argument>
+            </option>
+a144 3
+                </paragraph>
+            </description>
+        </option_list_item>
+a148 1
+                </vms_option>
+a150 2
+                </option_argument>
+            </option>
+a153 5
+                </paragraph>
+            </description>
+        </option_list_item>
+    </option_list>
+</document>
+a168 1
+    </paragraph>
+a173 2
+                </short_option>
+            </option>
+a176 3
+                </paragraph>
+            </description>
+        </option_list_item>
+a180 1
+                </long_option>
+a182 2
+                </option_argument>
+            </option>
+a185 3
+                </paragraph>
+            </description>
+        </option_list_item>
+a189 2
+                </vms_option>
+            </option>
+a192 3
+                </paragraph>
+            </description>
+        </option_list_item>
+a196 1
+                </long_option>
+a198 2
+                </option_argument>
+            </option>
+a201 3
+                </paragraph>
+            </description>
+        </option_list_item>
+a205 1
+                </short_option>
+a207 2
+                </option_argument>
+            </option>
+a210 3
+                </paragraph>
+            </description>
+        </option_list_item>
+a214 1
+                </vms_option>
+a216 2
+                </option_argument>
+            </option>
+a219 5
+                </paragraph>
+            </description>
+        </option_list_item>
+    </option_list>
+</document>
+a230 1
+    </paragraph>
+a235 2
+                </short_option>
+            </option>
+a238 2
+                </long_option>
+            </option>
+a241 2
+                </vms_option>
+            </option>
+a244 3
+                </paragraph>
+            </description>
+        </option_list_item>
+a248 1
+                </short_option>
+a250 2
+                </option_argument>
+            </option>
+a253 1
+                </long_option>
+a255 2
+                </option_argument>
+            </option>
+a258 1
+                </vms_option>
+a260 2
+                </option_argument>
+            </option>
+a263 5
+                </paragraph>
+            </description>
+        </option_list_item>
+    </option_list>
+</document>
+a276 1
+    </paragraph>
+a281 2
+                </short_option>
+            </option>
+a285 3
+                </paragraph>
+            </description>
+        </option_list_item>
+a289 1
+                </short_option>
+a291 2
+                </option_argument>
+            </option>
+a295 5
+                </paragraph>
+            </description>
+        </option_list_item>
+    </option_list>
+</document>
+a308 1
+    </paragraph>
+a313 2
+                </short_option>
+            </option>
+a317 3
+                </paragraph>
+            </description>
+        </option_list_item>
+a321 1
+                </short_option>
+a323 2
+                </option_argument>
+            </option>
+a327 5
+                </paragraph>
+            </description>
+        </option_list_item>
+    </option_list>
+</document>
+a342 1
+    </paragraph>
+a347 2
+                </short_option>
+            </option>
+a351 3
+                </paragraph>
+            </description>
+        </option_list_item>
+a355 1
+                </short_option>
+a357 2
+                </option_argument>
+            </option>
+a361 5
+                </paragraph>
+            </description>
+        </option_list_item>
+    </option_list>
+</document>
+a377 1
+    </paragraph>
+a382 2
+                </short_option>
+            </option>
+a385 1
+                </paragraph>
+a387 3
+                </paragraph>
+            </description>
+        </option_list_item>
+a391 1
+                </short_option>
+a393 2
+                </option_argument>
+            </option>
+a396 1
+                </paragraph>
+a398 5
+                </paragraph>
+            </description>
+        </option_list_item>
+    </option_list>
+</document>
+d411 1
+a411 5
+                </long_option>
+            </option>
+            <description/>
+        </option_list_item>
+    </option_list>
+a414 2
+        </paragraph>
+    </system_warning>
+a416 2
+    </paragraph>
+</document>
+a444 1
+    </paragraph>
+a446 1
+    </paragraph>
+a448 1
+    </paragraph>
+a450 1
+    </paragraph>
+a452 1
+    </paragraph>
+a454 1
+    </paragraph>
+a456 1
+    </paragraph>
+a458 1
+    </paragraph>
+a460 1
+    </paragraph>
+a462 1
+    </paragraph>
+a466 4
+            </paragraph>
+        </list_item>
+    </bullet_list>
+</document>
+@
+
+
+1.1
+log
+@Refactored from the monolithic restructuredtext/test_states.py, using the Garth Kidd's framework. Thanks Garth!
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision$
+:Date: $Date$
+d16 1
+a16 1
+    s = RSTTestSupport.ParserTestSuite(id=__file__)
+@
+

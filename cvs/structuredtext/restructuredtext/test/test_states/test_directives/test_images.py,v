@@ -1,0 +1,432 @@
+head	1.3;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.3
+date	2002.03.16.05.28.43;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2002.03.13.02.30.16;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2002.03.12.03.32.26;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@updated
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.2 $
+:Date: $Date: 2002/03/13 02:30:16 $
+:Copyright: This module has been placed in the public domain.
+
+Tests for images.py image directives.
+"""
+
+import RSTTestSupport
+
+def suite():
+    s = RSTTestSupport.ParserTestSuite()
+    s.generateTests(totest)
+    return s
+
+totest = {}
+
+totest['images'] = [
+["""\
+.. image:: picture.png
+""",
+"""\
+<document>
+    <image uri="picture.png">
+"""],
+["""\
+.. image::
+""",
+"""\
+<document>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Missing image URI argument at line 1.
+        <literal_block>
+            .. image::
+"""],
+["""\
+.. image:: one two three
+""",
+"""\
+<document>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Image URI at line 1 contains whitespace.
+        <literal_block>
+            .. image:: one two three
+"""],
+["""\
+.. image:: picture.png
+   :height: 100
+   :width: 200
+   :scale: 50
+""",
+"""\
+<document>
+    <image height="100" scale="50" uri="picture.png" width="200">
+"""],
+["""\
+.. image::
+   picture.png
+   :height: 100
+   :width: 200
+   :scale: 50
+""",
+"""\
+<document>
+    <image height="100" scale="50" uri="picture.png" width="200">
+"""],
+["""\
+.. image::
+   :height: 100
+   :width: 200
+   :scale: 50
+""",
+"""\
+<document>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Missing image URI argument at line 1.
+        <literal_block>
+            .. image::
+               :height: 100
+               :width: 200
+               :scale: 50
+"""],
+["""\
+.. image:: a/very/long/path/to/
+   picture.png
+   :height: 100
+   :width: 200
+   :scale: 50
+""",
+"""\
+<document>
+    <image height="100" scale="50" uri="a/very/long/path/to/picture.png" width="200">
+"""],
+["""\
+.. image:: picture.png
+   :height: 100
+   :width: 200
+   :scale: 50
+   :alt: Alternate text for the picture
+""",
+"""\
+<document>
+    <image alt="Alternate text for the picture" height="100" scale="50" uri="picture.png" width="200">
+"""],
+["""\
+.. image:: picture.png
+   :scale: - 50
+""",
+"""\
+<document>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Error in "image" directive attributes at line 1:
+            invalid attribute data: extension attribute field body may contain
+            a single paragraph only (attribute "scale").
+        <literal_block>
+            .. image:: picture.png
+               :scale: - 50
+"""],
+["""\
+.. image:: picture.png
+   :scale:
+""",
+"""\
+<document>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Error in "image" directive attributes at line 1:
+            invalid attribute value:
+            (attribute "scale", value "None") object can't be converted to int.
+        <literal_block>
+            .. image:: picture.png
+               :scale:
+"""],
+["""\
+.. image:: picture.png
+   :scale 50
+""",
+"""\
+<document>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Error in "image" directive attributes at line 1:
+            invalid attribute block.
+        <literal_block>
+            .. image:: picture.png
+               :scale 50
+"""],
+["""\
+.. image:: picture.png
+   scale: 50
+""",
+"""\
+<document>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Image URI at line 1 contains whitespace.
+        <literal_block>
+            .. image:: picture.png
+               scale: 50
+"""],
+["""\
+.. image:: picture.png
+   :: 50
+""",
+"""\
+<document>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Error in "image" directive attributes at line 1:
+            invalid attribute block.
+        <literal_block>
+            .. image:: picture.png
+               :: 50
+"""],
+["""\
+.. image:: picture.png
+   :sale: 50
+""",
+"""\
+<document>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Error in "image" directive attributes at line 1:
+            unknown attribute: "sale".
+        <literal_block>
+            .. image:: picture.png
+               :sale: 50
+"""],
+["""\
+.. image:: picture.png
+   :scale: fifty
+""",
+"""\
+<document>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Error in "image" directive attributes at line 1:
+            invalid attribute value:
+            (attribute "scale", value "'fifty'") invalid literal for int(): fifty.
+        <literal_block>
+            .. image:: picture.png
+               :scale: fifty
+"""],
+["""\
+.. image:: picture.png
+   :scale: 50
+   :scale: 50
+""",
+"""\
+<document>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Error in "image" directive attributes at line 1:
+            invalid attribute data: duplicate attribute "scale".
+        <literal_block>
+            .. image:: picture.png
+               :scale: 50
+               :scale: 50
+"""],
+]
+
+
+if __name__ == '__main__':
+    import unittest
+    unittest.main(defaultTest='suite')
+@
+
+
+1.2
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.1 $
+:Date: $Date: 2002/03/12 03:32:26 $
+d120 2
+a121 2
+            Invalid image attribute data at line 1:
+            extension attribute field body may consist of
+d135 3
+a137 3
+            Invalid image attribute data at line 1:
+            extension attribute field body may consist of
+            a single paragraph only (attribute "scale").
+d150 2
+a151 1
+            Invalid attribute block for image directive at line 1.
+d177 2
+a178 1
+            Invalid attribute block for image directive at line 1.
+d191 2
+a192 1
+            Unknown image attribute at line 1: "sale".
+d205 3
+a207 2
+            Invalid image attribute value at line 1:
+            (attribute "scale") invalid literal for int(): fifty.
+d221 2
+a222 2
+            Invalid image attribute data at line 1:
+            duplicate attribute "scale".
+@
+
+
+1.1
+log
+@from test_states/test_directives.py
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.14 $
+:Date: $Date: 2002/02/15 22:58:17 $
+d54 3
+a56 1
+   [height=100 width=200 scale=50]
+d65 3
+a67 1
+   [height=100 width=200 scale=50]
+d74 4
+a77 3
+.. image:: a/very/long/path/to/
+   picture.png
+   [height=100 width=200 scale=50]
+d81 8
+a88 1
+    <image height="100" scale="50" uri="a/very/long/path/to/picture.png" width="200">
+d91 5
+a95 3
+.. image:: picture.png
+   [height=100 width=200 scale=50]
+   [alt="Alternate text for the picture"]
+d99 1
+a99 1
+    <image alt="Alternate text for the picture" height="100" scale="50" uri="picture.png" width="200">
+d103 4
+a106 4
+   [height=100]
+   [width=200]
+   [scale=50]
+   [alt="Alternate text for the picture"]
+d114 1
+a114 2
+   [height=100]
+   [width=200 scale=50
+d120 3
+a122 1
+            Invalid image attribute data at line 1: input line not enclosed in "[" and "]".
+d125 1
+a125 2
+               [height=100]
+               [width=200 scale=50
+d129 1
+a129 1
+   [scale=]
+d135 3
+a137 1
+            Invalid image attribute data at line 1: missing value after "scale=".
+d140 1
+a140 1
+               [scale=]
+d144 1
+a144 1
+   [scale 50]
+d150 1
+a150 1
+            Invalid image attribute data at line 1: missing "=".
+d153 1
+a153 1
+               [scale 50]
+d157 1
+a157 1
+   [=50]
+d163 1
+a163 1
+            Invalid image attribute data at line 1: missing attribute name before "=".
+d166 1
+a166 1
+               [=50]
+d170 1
+a170 1
+   [sale=50]
+d176 1
+a176 1
+            Unknown image attribute at line 1: "sale".
+d179 1
+a179 1
+               [sale=50]
+d183 1
+a183 1
+   [scale=fifty]
+d189 1
+a189 14
+            Invalid image attribute value at line 1: invalid literal for int(): fifty.
+        <literal_block>
+            .. image:: picture.png
+               [scale=fifty]
+"""],
+["""\
+.. image:: picture.png
+   [scale=50 scale=50]
+""",
+"""\
+<document>
+    <system_message level="3" type="ERROR">
+        <paragraph>
+            Invalid image attribute data at line 1: duplicate attribute "scale".
+d192 1
+a192 1
+               [scale=50 scale=50]
+d196 1
+a196 1
+   [alt='a picture]
+d202 2
+a203 1
+            Invalid image attribute data at line 1: attribute "alt" missing end quote (').
+d206 1
+a206 1
+               [alt='a picture]
+d210 2
+a211 1
+   [alt='a picture'scale=50]
+d217 2
+a218 1
+            Invalid image attribute data at line 1: attribute "alt" end quote (') not followed by whitespace.
+d221 2
+a222 1
+               [alt='a picture'scale=50]
+@
+

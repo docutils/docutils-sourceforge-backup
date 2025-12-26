@@ -1,0 +1,458 @@
+head	1.1;
+access;
+symbols
+	Rrefactor-test:1.1.0.2;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2001.07.29.12.21.09;	author gtk;	state dead;
+branches
+	1.1.2.1;
+next	;
+
+1.1.2.1
+date	2001.07.29.12.21.09;	author gtk;	state Exp;
+branches;
+next	1.1.2.2;
+
+1.1.2.2
+date	2001.07.29.22.34.52;	author gtk;	state Exp;
+branches;
+next	1.1.2.3;
+
+1.1.2.3
+date	2001.07.31.14.46.24;	author gtk;	state Exp;
+branches;
+next	1.1.2.4;
+
+1.1.2.4
+date	2001.08.02.04.44.20;	author gtk;	state Exp;
+branches;
+next	1.1.2.5;
+
+1.1.2.5
+date	2001.09.01.15.10.16;	author goodger;	state dead;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@file ParserTestCase.py was initially added on branch Rrefactor-test.
+@
+text
+@@
+
+
+1.1.2.1
+log
+@More hacking away. Still pretty hopeless but getting there. This checkin
+is mainly so that I can shift work to my laptop.
+@
+text
+@a0 103
+#! /usr/bin/env python
+
+"""
+Author: Garth Kidd 
+Contact: dgoodger@@bigfoot.com
+Revision: $Revision: 1.2 $
+Date: $Date: 2001/07/28 05:17:44 $
+Copyright: This module has been placed in the public domain.
+
+Test module for states.py.
+"""
+
+from TestFramework import *  # states, main, debug, verbose
+import sys
+import unittest, re, difflib
+
+from dps.statemachine import string2lines
+
+try:
+    import mypdb as pdb
+except:
+    import pdb
+
+"""\
+Okay, here's where things get a little confusing. For this part of the
+test framework I'm going to be resorting to the use of metaclasses_.
+Why? I need to be able to add bound methods to a test case *after* it
+has been defined, which counts out the previous methodology. 
+
+.. _metaclasses: http://www.python.org/doc/essays/metaclasses/
+
+David's old code follows:
+"""
+
+class ParserTestCase(unittest.TestCase):
+
+    """
+    Test data marked with 'XXX' denotes areas where further error checking
+    needs to be done.
+    """
+
+    diff = difflib.Differ().compare
+
+    def setUp(self):
+        self.sm = states.RSTStateMachine(stateclasses=states.stateclasses,
+                                         initialstate='Body', debug=debug)
+
+    def trytest(self, name, index):
+        input, expected = self.totest[name][index]
+        self.sm.run(string2lines(input), warninglevel=4,
+                    errorlevel=4)
+        output = self.sm.memo.document.pprint()
+        try:
+            self.assertEquals('\n' + output, '\n' + expected)
+        except AssertionError:
+            print
+            print 'input:'
+            print input
+            print '-: expected'
+            print '+: output'
+            print ''.join(self.diff(expected.splitlines(1),
+                                    output.splitlines(1)))
+            raise
+
+    totest = {}
+
+    """Tests to be run. Each key (test type name) maps to a list of tests.
+    Each test is a list: input, expected output, optional modifier. The
+    optional third entry, a behavior modifier, can be 0 (temporarily disable
+    this test) or 1 (run this test under the pdb debugger)."""
+
+    proven = {}
+    """tests that have proven successful"""
+
+    notyet = {}
+    """tests we *don't* want to run"""
+
+    ## uncomment to run previously successful tests also
+    totest.update(proven)
+
+    ## uncomment to run previously successful tests *only*
+    #totest = proven
+
+    ## uncomment to run experimental, expected-to-fail tests also
+    #totest.update(notyet)
+
+    ## uncomment to run experimental, expected-to-fail tests *only*
+    #totest = notyet
+
+    for name, cases in totest.items():
+        numcases = len(cases)
+        casenumlen = len('%s' % (numcases - 1))
+        for i in range(numcases):
+            trace = ''
+            if len(cases[i]) == 3:      # optional modifier
+                if cases[i][-1] == 1:   # 1 => run under debugger
+                    del cases[i][0]
+                    trace = 'pdb.set_trace();'
+                else:                   # 0 => disable
+                    continue
+            exec ('def test_%s_%0*i(self): %s self.trytest("%s", %i)'
+                  % (name, casenumlen, i, trace, name, i))
+
+@
+
+
+1.1.2.2
+log
+@More work.
+Finally decided on how to architect ParserTestSuite.
+Fixed all the accursed linefeeds, hence the absurd length of the diffs.
+Sorry about that.
+@
+text
+@d5 3
+a7 3
+Contact: garth@@deadlybloodyserious.com
+Revision: $Revision: 1.1.2.1 $
+Date: $Date: 2001/07/29 12:21:09 $
+d14 2
+a15 1
+import sys, unittest, re, difflib, types
+d17 1
+a17 1
+from dps.statemachine import string2lines
+d23 12
+a34 28
+
+"""\
+All of my previous ramblings about metaclasses_ are fatigue-deranged.
+The primary benefit of basing tests as ``test*`` methods in a very
+large TestCase is that they can share `setUp()` and `tearDown()`. If
+it's too hard to use the method method <ahem>, the appropriate recourse
+is to *find another way of providing shared fixtures*. So, here's the
+design I'm going to pursue when I can next sit down and hack code: 
+
+`ParserTestSuite` instances will provide shared test fixtures (`sm`, an 
+instance of `states.RSTStateMachine`) and methods (`matchOutput()` et
+al) and will crank out internally any `ParserTest`s required.
+
+I'll decide on whether it should subclass `unittest.Suite` or just
+return one from a `suite()` method when I get back to the code. 
+
+Finally; now that I've decided on which class I'm going to expose, the 
+filename of this module is looking like a silly choice. I'll ponder
+that issue later, too. 
+
+.. _metaclasses: http://www.python.org/doc/essays/metaclasses/
+"""
+
+
+"""
+David's old code follows:
+"""
+
+@
+
+
+1.1.2.3
+log
+@Phew! Now I'm late for bed. That said, I think it's semi-working.
+@
+text
+@d6 2
+a7 2
+Revision: $Revision: 1.1.2.2 $
+Date: $Date: 2001/07/29 22:34:52 $
+a11 2
+
+__all__ = [ 'ParserTestCaseFactory' ]
+d44 5
+a48 104
+
+def makeStateMachine():
+    """Make an RSTStateMachine for a ParserTestCaseFactory or a lone
+    ParserTestCase."""
+    return states.RSTStateMachine(stateclasses=states.stateclasses,
+                                  initialstate='Body', debug=debug)
+
+def makeDiffer():
+    """Make a Differ for a ParserTestCaseFactory or a lone
+    ParserTestCase."""
+    return difflib.Differ()
+
+class ParserTestCaseFactory(unittest.TestSuite):
+    """A collection of ParserTestCases.
+    
+    A ParserTestCaseFactory instance manufactures ParserTestCases,
+    keeps track of them, and provides a shared test fixture (a-la
+    setUp and tearDown).
+
+    """
+
+    sharedStateMachine = None
+
+    """states.RSTStateMachine shared during tests by ParserTestCases
+    created by the factory."""
+
+    differ = None
+
+    """difflib.Differ shared during tests by ParserTestCases created
+    by the factory."""
+    
+    id = "AnonymousCoward"
+    
+    """Identifier for the ParserTestCaseFactory. Prepended to the
+    ParserTestCase identifiers to make identification easier."""
+    
+    nextParserTestCaseId = 0
+    
+    """The next identifier to use for non-identified test cases."""
+    
+    def __init__(self, id=None, tests=()):
+        """Initialise the ParserTestCaseFactory.
+        
+        Arguments:
+        
+        id -- identifier for the factory, prepended to test cases.
+        
+        """
+        unittest.TestSuite.__init__(self, tests)
+        if id is not None:
+            self.id = id
+        
+    def addParserTestCase(self, input, expected,
+                          id=None, 
+                          runInDebugger=0,
+                          shortDescription=None):
+        """Create a ParserTestCase in the ParserTestCaseFactory.
+        Also returns it, just in case.
+
+        Arguments:
+
+        id -- unique test identifier, used by the test framework.
+        input -- input to the parser.
+        expected -- expected output from the parser.
+        runInDebugger -- if true, run this test under the pdb debugger.
+        shortDescription -- override to default test description.
+        """
+        # generate id if required
+        if id is None:
+            id = self.nextParserTestCaseId
+            self.nextParserTestCaseId = self.nextParserTestCaseId+1
+            
+        # test identifier will become factoryid.testid
+        ptcid = "%s.%s" % (self.id, id)
+        
+        # generate and add test case
+        ptc = ParserTestCase(input, expected, ptcid, 
+                             runInDebugger=runInDebugger,
+                             shortDescription=shortDescription,
+                             factory=self)
+        self.addTest(ptc)
+        return ptc
+    
+    def stockFactory(self, oldStyleTestDictionary):
+        """Stock the factory using an old-style test dictionary."""
+        for name, cases in oldStyleTestDictionary.items():
+            for case in cases:
+                runInDebugger = 0
+                if len(case)==3 and case[2]:
+                    runInDebugger = 1
+                self.addParserTestCase(case[0], case[1], 
+                                       runInDebugger=runInDebugger)
+
+    def getStateMachine(self):
+        """Return a shared RSTStateMachine."""
+        if self.sharedStateMachine is None:
+            self.sharedStateMachine = makeStateMachine()
+        return self.sharedStateMachine
+    
+    def getCompareFunction(self):
+        """Return a shared compare function."""
+        if self.differ is None: 
+            self.differ = makeDiffer()
+        return self.differ.compare
+d51 17
+a67 58
+    """Output checker for the parser.
+    
+    Should probably be called ParserOutputChecker, but I can deal with
+    that later when/if someone comes up with a category of parser test
+    cases that have nothing to do with the input and output of the parser.
+    
+    """
+    
+    def __init__(self, input, expected, id, 
+                 runInDebugger=0,
+                 shortDescription=None,
+                 factory=None):
+        """Initialise the ParserTestCase.
+        
+        Arguments:
+        
+        id -- unique test identifier, used by the test framework.
+        input -- input to the parser.
+        expected -- expected output from the parser.
+        runInDebugger -- if true, run this test under the pdb debugger.
+        shortDescription -- override to default test description.
+        factory -- ParserTestCaseFactory() from which to get shared state. 
+        """
+        
+        # Set ParserTestCase attributes
+        self.id = id
+        self.input = input
+        self.expected = expected
+        self.runInDebugger = runInDebugger
+        self.factory = factory
+                
+        # Ring your mother.
+        unittest.TestCase.__init__(self, methodName = 'compareOutput')
+        
+        # Cheat on the method documentation. Oh, the shame!
+        if shortDescription is not None:
+            self.__testMethodDoc = shortDescription
+            
+    def id(self):
+        """Return identifier.
+        Overridden to give test id, not method name."""
+        return "%s.%s" % (self.__class__, self.id)
+    
+    def __str__(self):
+        """Return string conversion.
+        Overridden to give test id, not method name."""
+        return "%s (%s)" % (self.id, self.__class__)
+        
+    # Is it worth over-riding id()? 
+    
+    def compareOutput(self):
+        sm = self.getStateMachine()
+        compare = self.getCompareFunction()
+        if self.runInDebugger:
+            pdb.set_trace()
+        sm.run(string2lines(self.input), warninglevel=4, errorlevel=4)
+        output = sm.memo.document.pprint()
+        
+d69 1
+a69 1
+            self.assertEquals('\n' + output, '\n' + self.expected)
+d76 1
+a76 1
+            print ''.join(compare(self.expected.splitlines(1),
+d78 41
+a118 14
+            raise
+            
+        
+    def getStateMachine(self):
+        """Return the RSTStateMachine from the factory, or a new one."""
+        if self.factory is not None:
+            return self.factory.getStateMachine()
+        return makeStateMachine()
+    
+    def getCompareFunction(self):
+        """Return the compare function from the factory, or a new one."""
+        if self.factory is not None:
+            return self.factory.getCompareFunction()
+        return makeDiffer().compare
+@
+
+
+1.1.2.4
+log
+@* Removed redundant tests from test_states.
+* Fixed handling of aggregate suites in test_all.py
+* Deliberately screwed up the first test in test_states to aid
+  diagnosis.
+
+I still haven't figured out why two tests bomb out in an error in
+test_states but not in test_all.
+@
+text
+@d6 2
+a7 2
+Revision: $Revision: 1.1.2.3 $
+Date: $Date: 2001/07/31 14:46:24 $
+a131 1
+            casenum = 0
+d136 1
+a136 2
+                self.addParserTestCase(case[0], case[1],
+                                       id='%s.%d' % (name, casenum), 
+a137 1
+                casenum = casenum + 1
+@
+
+
+1.1.2.5
+log
+@refactored into RTSTestSupport.py
+@
+text
+@d6 2
+a7 2
+Revision: $Revision: 1.1.2.4 $
+Date: $Date: 2001/08/02 04:44:20 $
+@
+
+

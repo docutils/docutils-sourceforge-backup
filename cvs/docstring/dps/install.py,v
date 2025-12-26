@@ -1,0 +1,43 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2001.07.28.04.48.12;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@quick & dirty install script: double-click & it's done
+@
+text
+@#!/usr/bin/env python
+# $Id: setup.py,v 1.1.1.1 2001/07/22 22:36:35 goodger Exp $
+
+"""
+This is a quick & dirty installation shortcut. It is equivalent to the
+command::
+
+    python setup.py install
+
+However, the shortcut lacks error checking!
+"""
+
+from distutils import core
+from setup import do_setup
+
+if __name__ == '__main__' :
+    core._setup_stop_after = 'config'
+    dist = do_setup()
+    dist.commands = ['install']
+    dist.run_commands()
+@

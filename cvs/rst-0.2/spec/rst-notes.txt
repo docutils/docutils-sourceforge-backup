@@ -1,0 +1,142 @@
+=======
+ Notes
+=======
+Date: $Date: 2001/06/18 01:06:57 $
+Revision: $Revision: 1.27 $
+
+
+To Do
+=====
+
+- implement a parser according to the markup implementation plan
+
+- create a standalone reStructuredText -> HTML/XML converter (stdin ->
+  stdout filter)
+
+- rename comment blocks to something not implying "ignore".
+  Processing instruction? Directive blocks? Meta blocks?
+
+- allow very long titles (on two or more lines)?
+
+- back out indented section changes
+
+
+Enumerated Lists
+================
+
+(A future revision of this specification may allow for compound
+enumerators, such as '1.a.' or '1(a)', to allow for nested enumerated
+lists without indentation.)
+
+
+Literal Blocks
+==============
+
+[Aside: One possible variation is for meta-documentation (perhaps an
+extension?): use triple-colons (':::') or a directive ('..
+literal-parsed::') to indicate 'take the following literal block, mark
+it up as a literal block, then copy it and mark it up as if it weren't
+a literal block'.  The implementation may insert text in-between, such
+as 'Marked up as:', or may alter the formatting (different font, set
+in a colored box, whatever).]
+
+
+Indentation of List Items
+=========================
+
+Perhaps the indentation shouldn't be so strict. Currently, this is
+required::
+
+    1. First line,
+       second line.
+
+Anything wrong with this? ::
+
+    1. First line,
+     second line.
+
+Especially for option lists & field lists, this could be handy::
+
+    --longopt  Description,
+               second line.
+    --verylongopt  Description,
+               second line.
+    --very_long_option_name, --another_long_option, -s
+               Description,
+               second line.
+
+(Currently, the second option's second line has to be lined up with
+the first; and the third option would be very difficult indeed.)
+
+Problem?
+
+    1. First para.
+
+       Block quote. (no good: requires some indent relative to first
+       para)
+
+     Second Para.
+
+    2. Have to carefully define where the literal block ends::
+
+         Literal block
+
+       Literal block?
+
+
+Horizontal Rules
+================
+
+Wolfgang Lipp suggested adding horizontal rules (HTML <HR>) to the
+syntax.  A line of punctuation with a blank line before and after::
+
+    Para.
+
+    ------------------------------------------------------------
+
+    Para.
+
+The problem is, HRs are purely presentational.  What structural
+significance do they have?
+
+
+Parser Notes
+============
+
+- parser: state machine (Structural & body element markup only?
+  Separate mechanism for inline markup?)
+
+- recursive: in a table, call parser with cells as text blocks and
+  "body elements only" state.  Should all nested structures use
+  recursive state machines?
+
+- states:
+
+  - body elements & structure
+
+  - body elements only
+
+  - read paragraph first line, looking for context (title underline,
+    definition, or paragraph)
+
+  - list (dedent w/o blank line ok, as long as its another list item)
+
+  - potential enumerated list item
+
+- Adding syntax to the parser: new transitions are prepended to the
+  list, meaning new syntax either overrides old syntax or new & old
+  are mutually exclusive.
+
+- Inline markup: List of all start-strings is made into a pattern.
+  Search for a start-string. When one is found, check for validity.
+  If valid, search for the corresponding end string.  Check for
+  validity.  If not found or invalid, raise a warning and ignore the
+  start-string. Standalone hyperlinks are found last.
+
+
+Local Variables:
+mode: indented-text
+indent-tabs-mode: nil
+sentence-end-double-space: t
+fill-column: 70
+End:

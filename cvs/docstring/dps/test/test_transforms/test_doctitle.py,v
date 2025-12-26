@@ -1,0 +1,747 @@
+head	1.8;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.8
+date	2002.03.16.05.47.48;	author goodger;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2002.03.11.23.50.08;	author goodger;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2002.02.20.04.48.28;	author goodger;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2002.02.15.22.45.58;	author goodger;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2002.02.12.02.11.00;	author goodger;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2002.02.06.03.10.48;	author goodger;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2002.01.30.04.42.56;	author goodger;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2002.01.16.02.41.12;	author goodger;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.8
+log
+@updated
+@
+text
+@#! /usr/bin/env python
+
+"""
+:Author: David Goodger
+:Contact: goodger@@users.sourceforge.net
+:Revision: $Revision: 1.7 $
+:Date: $Date: 2002/03/11 23:50:08 $
+:Copyright: This module has been placed in the public domain.
+
+Tests for dps.transforms.frontmatter.DocTitle.
+"""
+
+import DPSTestSupport
+from dps.transforms.frontmatter import DocTitle
+import UnitTestFolder
+try:
+    from restructuredtext import Parser
+except ImportError:
+    from dps.parsers.restructuredtext import Parser
+
+
+def suite():
+    parser = Parser()
+    s = DPSTestSupport.TransformTestSuite(parser)
+    s.generateTests(totest)
+    return s
+
+totest = {}
+
+totest['section_headers'] = ((DocTitle,), [
+["""\
+.. test title promotion
+
+Title
+=====
+
+Paragraph.
+""",
+"""\
+<document id="title" name="title">
+    <title>
+        Title
+    <comment>
+        test title promotion
+    <paragraph>
+        Paragraph.
+"""],
+["""\
+Title
+=====
+Paragraph (no blank line).
+""",
+"""\
+<document id="title" name="title">
+    <title>
+        Title
+    <paragraph>
+        Paragraph (no blank line).
+"""],
+["""\
+Paragraph.
+
+Title
+=====
+
+Paragraph.
+""",
+"""\
+<document>
+    <paragraph>
+        Paragraph.
+    <section id="title" name="title">
+        <title>
+            Title
+        <paragraph>
+            Paragraph.
+"""],
+["""\
+Title
+=====
+
+Subtitle
+--------
+
+Test title & subtitle.
+""",
+"""\
+<document id="title" name="title">
+    <title>
+        Title
+    <subtitle id="subtitle" name="subtitle">
+        Subtitle
+    <paragraph>
+        Test title & subtitle.
+"""],
+["""\
+Title
+====
+
+Test short underline.
+""",
+"""\
+<document id="title" name="title">
+    <title>
+        Title
+    <system_message level="1" type="INFO">
+        <paragraph>
+            Title underline too short at line 2.
+        <literal_block>
+            Title
+            ====
+    <paragraph>
+        Test short underline.
+"""],
+["""\
+=======
+ Long    Title
+=======
+
+Test long title and space normalization.
+The system_message should move after the document title
+(it was before the beginning of the section).
+""",
+"""\
+<document id="long-title" name="long title">
+    <title>
+        Long    Title
+    <system_message level="1" type="INFO">
+        <paragraph>
+            Title overline too short at line 1.
+        <literal_block>
+            =======
+             Long    Title
+            =======
+    <paragraph>
+        Test long title and space normalization.
+        The system_message should move after the document title
+        (it was before the beginning of the section).
+"""],
+["""\
+.. Test multiple second-level titles.
+
+Title 1
+=======
+Paragraph 1.
+
+Title 2
+-------
+Paragraph 2.
+
+Title 3
+-------
+Paragraph 3.
+""",
+"""\
+<document id="title-1" name="title 1">
+    <title>
+        Title 1
+    <comment>
+        Test multiple second-level titles.
+    <paragraph>
+        Paragraph 1.
+    <section id="title-2" name="title 2">
+        <title>
+            Title 2
+        <paragraph>
+            Paragraph 2.
+    <section id="title-3" name="title 3">
+        <title>
+            Title 3
+        <paragraph>
+            Paragraph 3.
+"""],
+])
+
+if __name__ == '__main__':
+    import unittest
+    unittest.main(defaultTest='suite')
+@
+
+
+1.7
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.6 $
+:Date: $Date: 2002/02/20 04:48:28 $
+d40 1
+a40 1
+<document id="id1" name="title">
+d54 1
+a54 1
+<document id="id1" name="title">
+d72 1
+a72 1
+    <section id="id1" name="title">
+d88 1
+a88 1
+<document id="id1" name="title">
+d91 1
+a91 1
+    <subtitle id="id2" name="subtitle">
+d103 1
+a103 1
+<document id="id1" name="title">
+d125 1
+a125 1
+<document id="id1" name="long title">
+d156 1
+a156 1
+<document id="id1" name="title 1">
+d163 1
+a163 1
+    <section id="id2" name="title 2">
+d168 1
+a168 1
+    <section id="id3" name="title 3">
+@
+
+
+1.6
+log
+@updated (ids)
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.5 $
+:Date: $Date: 2002/02/15 22:45:58 $
+d109 3
+d131 4
+@
+
+
+1.5
+log
+@  - Changed "system_warning" to "system_message".
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.4 $
+:Date: $Date: 2002/02/12 02:11:00 $
+d40 1
+a40 1
+<document name="title">
+d54 1
+a54 1
+<document name="title">
+d72 1
+a72 1
+    <section name="title">
+d88 1
+a88 1
+<document name="title">
+d91 1
+a91 1
+    <subtitle name="subtitle">
+d103 1
+a103 1
+<document name="title">
+d122 1
+a122 1
+<document name="long title">
+d149 1
+a149 1
+<document name="title 1">
+d156 1
+a156 1
+    <section name="title 2">
+d161 1
+a161 1
+    <section name="title 3">
+@
+
+
+1.4
+log
+@updated; removed a lot of useless tests
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.3 $
+:Date: $Date: 2002/02/06 03:10:48 $
+d106 1
+a106 1
+    <system_warning level="1" type="INFO">
+d118 1
+a118 1
+The system_warning should move after the document title
+d125 1
+a125 1
+    <system_warning level="1" type="INFO">
+d130 1
+a130 1
+        The system_warning should move after the document title
+@
+
+
+1.3
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.2 $
+:Date: $Date: 2002/01/30 04:42:56 $
+d79 5
+a83 1
+Test unexpected section title.
+d85 1
+a85 3
+    Title
+    =====
+    Paragraph.
+d88 5
+a92 1
+<document>
+d94 1
+a94 7
+        Test unexpected section title.
+    <block_quote>
+        <system_warning level="4" type="SEVERE">
+            <paragraph>
+                Unexpected section title at line 4.
+        <paragraph>
+            Paragraph.
+a112 56
+=====
+Title
+=====
+
+Test overline title.
+""",
+"""\
+<document name="title">
+    <title>
+        Title
+    <paragraph>
+        Test overline title.
+"""],
+["""\
+=======
+ Title
+=======
+
+Test overline title with inset.
+""",
+"""\
+<document name="title">
+    <title>
+        Title
+    <paragraph>
+        Test overline title with inset.
+"""],
+["""\
+========================
+ Test Missing Underline
+
+Paragraph.
+""",
+"""\
+<document>
+    <system_warning level="4" type="SEVERE">
+        <paragraph>
+            Missing underline for overline at line 1.
+    <paragraph>
+        Paragraph.
+"""],
+["""\
+=======
+ Title
+
+Test missing underline, with paragraph.
+""",
+"""\
+<document>
+    <system_warning level="4" type="SEVERE">
+        <paragraph>
+            Missing underline for overline at line 1.
+    <paragraph>
+        Test missing underline, with paragraph.
+"""],
+["""\
+d118 2
+d130 2
+d134 1
+a134 16
+=======
+ Title
+-------
+
+Paragraph.
+""",
+"""\
+<document>
+    <system_warning level="4" type="SEVERE">
+        <paragraph>
+            Title overline & underline mismatch at line 1.
+    <paragraph>
+        Paragraph.
+"""],
+["""\
+.. Test return to existing, highest-level section (Title 3).
+d145 1
+a145 1
+=======
+a146 4
+
+Title 4
+-------
+Paragraph 4.
+d149 3
+a151 1
+<document>
+d153 1
+a153 186
+        Test return to existing, highest-level section (Title 3).
+    <section name="title 1">
+        <title>
+            Title 1
+        <paragraph>
+            Paragraph 1.
+        <section name="title 2">
+            <title>
+                Title 2
+            <paragraph>
+                Paragraph 2.
+    <section name="title 3">
+        <title>
+            Title 3
+        <paragraph>
+            Paragraph 3.
+        <section name="title 4">
+            <title>
+                Title 4
+            <paragraph>
+                Paragraph 4.
+"""],
+["""\
+Test return to existing, highest-level section (Title 3, with overlines).
+
+=======
+Title 1
+=======
+Paragraph 1.
+
+-------
+Title 2
+-------
+Paragraph 2.
+
+=======
+Title 3
+=======
+Paragraph 3.
+
+-------
+Title 4
+-------
+Paragraph 4.
+""",
+"""\
+<document>
+    <paragraph>
+        Test return to existing, highest-level section (Title 3, with overlines).
+    <section name="title 1">
+        <title>
+            Title 1
+        <paragraph>
+            Paragraph 1.
+        <section name="title 2">
+            <title>
+                Title 2
+            <paragraph>
+                Paragraph 2.
+    <section name="title 3">
+        <title>
+            Title 3
+        <paragraph>
+            Paragraph 3.
+        <section name="title 4">
+            <title>
+                Title 4
+            <paragraph>
+                Paragraph 4.
+"""],
+["""\
+Test return to existing, higher-level section (Title 4).
+
+Title 1
+=======
+Paragraph 1.
+
+Title 2
+-------
+Paragraph 2.
+
+Title 3
+```````
+Paragraph 3.
+
+Title 4
+-------
+Paragraph 4.
+""",
+"""\
+<document>
+    <paragraph>
+        Test return to existing, higher-level section (Title 4).
+    <section name="title 1">
+        <title>
+            Title 1
+        <paragraph>
+            Paragraph 1.
+        <section name="title 2">
+            <title>
+                Title 2
+            <paragraph>
+                Paragraph 2.
+            <section name="title 3">
+                <title>
+                    Title 3
+                <paragraph>
+                    Paragraph 3.
+        <section name="title 4">
+            <title>
+                Title 4
+            <paragraph>
+                Paragraph 4.
+"""],
+["""\
+Test bad subsection order (Title 4).
+
+Title 1
+=======
+Paragraph 1.
+
+Title 2
+-------
+Paragraph 2.
+
+Title 3
+=======
+Paragraph 3.
+
+Title 4
+```````
+Paragraph 4.
+""",
+"""\
+<document>
+    <paragraph>
+        Test bad subsection order (Title 4).
+    <section name="title 1">
+        <title>
+            Title 1
+        <paragraph>
+            Paragraph 1.
+        <section name="title 2">
+            <title>
+                Title 2
+            <paragraph>
+                Paragraph 2.
+    <section name="title 3">
+        <title>
+            Title 3
+        <paragraph>
+            Paragraph 3.
+        <system_warning level="4" type="SEVERE">
+            <paragraph>
+                Title level inconsistent at line 15:
+            <literal_block>
+                Title 4
+                ```````
+        <paragraph>
+            Paragraph 4.
+"""],
+["""\
+Test bad subsection order (Title 4, with overlines).
+
+=======
+Title 1
+=======
+Paragraph 1.
+
+-------
+Title 2
+-------
+Paragraph 2.
+
+=======
+Title 3
+=======
+Paragraph 3.
+
+```````
+Title 4
+```````
+Paragraph 4.
+""",
+"""\
+<document>
+d155 2
+a156 2
+        Test bad subsection order (Title 4, with overlines).
+    <section name="title 1">
+d158 1
+a158 1
+            Title 1
+d160 1
+a160 6
+            Paragraph 1.
+        <section name="title 2">
+            <title>
+                Title 2
+            <paragraph>
+                Paragraph 2.
+a165 9
+        <system_warning level="4" type="SEVERE">
+            <paragraph>
+                Title level inconsistent at line 19:
+            <literal_block>
+                ```````
+                Title 4
+                ```````
+        <paragraph>
+            Paragraph 4.
+@
+
+
+1.2
+log
+@updated
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision: 1.1 $
+:Date: $Date: 2002/01/16 02:41:12 $
+d23 1
+a23 1
+    parser = Parser(debug=UnitTestFolder.debug)
+d90 1
+a90 1
+        <system_warning level="3">
+d106 1
+a106 1
+    <system_warning level="0">
+d148 1
+a148 1
+    <system_warning level="3">
+d162 1
+a162 1
+    <system_warning level="3">
+d179 1
+a179 1
+    <system_warning level="0">
+d194 1
+a194 1
+    <system_warning level="3">
+d374 1
+a374 1
+        <system_warning level="3">
+d425 1
+a425 1
+        <system_warning level="3">
+@
+
+
+1.1
+log
+@added to project
+@
+text
+@d6 2
+a7 2
+:Revision: $Revision$
+:Date: $Date$
+d23 1
+a23 2
+    parser = Parser(warninglevel=4, errorlevel=4, languagecode='en',
+                    debug=UnitTestFolder.debug)
+@
+

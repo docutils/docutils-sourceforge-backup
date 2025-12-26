@@ -1,0 +1,284 @@
+=======
+ Notes
+=======
+:Date: $Date: 2002/04/18 02:54:58 $
+:Revision: $Revision: 1.36 $
+
+.. contents::
+
+To Do
+=====
+
+- Complete PEP 258 DPS Generic Implementation Details.
+
+  - Fill in the blanks in API details.
+
+  - Specify the nodes.py internal data structure implementation.
+
+        [Tibs:] Eventually we need to have direct documentation in
+        there on how it all hangs together - the DTD is not enough
+        (indeed, is it still meant to be correct?  [Yes, it is.]).
+
+- Rework PEP 257, separating style from spec from tools, wrt DPS?  See
+  Doc-SIG from 2001-06-19/20.
+
+- Document!
+
+  - Modules.
+
+  - DPS nodes (DTD element) semantics:
+
+    - External (public) attributes (node.attributes).
+    - Internal attributes (node.*).
+    - Linking mechanism.
+
+- Get cracking on the DPS itself!
+
+- Add layout component to framework?  Or part of the formatter?
+
+- Add validation?  See http://pytrex.sourceforge.net, RELAX NG.
+
+- Write modules for common transforms.  See `Unimplemented
+  Transforms`_ below.
+
+- Ask Python-dev for opinions (GvR for a pronouncement) on special
+  variables (__author__, __version__, etc.): convenience vs. namespace
+  pollution.  Ask opinions on whether or not the DPS should recognize
+  & use them.
+
+- Once doctree.txt is fleshed out, how about breaking (most of) it up
+  and putting it into nodes.py as docstrings?
+
+- Refactor:
+
+  - Apply the `coding conventions`_ as given below.
+
+- Merge reStructuredText into DPS and rename it to "docutils".
+  (SourceForge project registered & waiting.)
+
+  - Merge test directories.
+  - Remove complex import code.
+  - Rename gpdi.dtd to docutils.dtd.
+  - Rename writers/html.py to html4_css1.py.  With aliases?
+
+- Provide a mechanism to pass options to Readers, Writers, and Parsers
+  through dps.core.publish/Publisher?  Or create custom
+  Reader/Writer/Parser objects first, and pass *them* to
+  publish/Publisher?
+
+- In reader.get_reader_class (& parser & writer too), should we be
+  importing 'standalone' or 'dps.readers.standalone'?  (This would
+  avoid importing top-level modules if the module name is not in
+  dps/readers.  Potential nastiness.)
+
+- Perhaps store a name->id mapping file?  This could be stored
+  permanently, read by subsequent processing runs, and updated with
+  new entries.  ("Persistent ID mapping"?)
+
+- The name->id conversion and hyperlink resolution code needs to be
+  checked for correctness and refactored.  I'm afraid it's a bit of a
+  spaghetti mess now.
+
+- Considerations for an HTML Writer [#]_:
+
+  - Boolean attributes.  ``<element boolean>`` is good, ``<element
+    boolean="boolean">`` is bad.  Use a special value in attribute
+    mappings, such as ``None``?
+
+  - Escape double-dashes inside comments.
+
+  - Put the language code into an appropriate element's LANG
+    attribute (<HTML>?).
+
+  - Docutils identifiers (the "class" and "id" attributes) will
+    conform to the regular expression ``[a-z][-a-z0-9]*``.  See
+    ``docutils.utils.id()``.
+
+  .. _HTML 4.01 spec: http://www.w3.org/TR/html401
+  .. _CSS1 spec: http://www.w3.org/TR/REC-CSS1
+  .. [#] Source: `HTML 4.0 in Netscape and Explorer`__.
+  __ http://www.webreference.com/dev/html4nsie/index.html
+
+- Allow for style sheet info to be passed in, either as a <LINK>, or
+  as embedded style info.
+
+- Construct a templating system, as in ht2html/yaptu, using directives
+  and substitutions for dynamic stuff.
+
+- Improve the granularity of document parts in the HTML writer, so
+  that one could just grab the parts needed.
+
+
+Coding Conventions
+==================
+
+This project shall follow the generic coding conventions as specified
+in the `Style Guide for Python Code`__ and `Docstring Conventions`__
+PEPs, with the following clarifications:
+
+- 4 spaces per indentation level.  No tabs.
+- No one-liner compound statements (i.e., no ``if x: return``: use two
+  lines & indentation), except for degenerate class or method
+  definitions (i.e., ``class X: pass`` is O.K.).
+- Lines should be no more than 78 or 79 characters long.
+- "CamelCase" shall be used for class names.
+- Use "lowercase" or "lowercase_with_underscores" for function,
+  method, and variable names.  For short names, maximum two joined
+  words, use lowercase (e.g. 'tagname').  For long names with three or
+  more joined words, or where it's hard to parse the split between two
+  words, use lowercase_with_underscores (e.g., 'note_explicit_target',
+  'explicit_target').
+
+__ http://www.python.org/peps/pep-0008.html
+__ http://www.python.org/peps/pep-0257.html
+
+
+Unimplemented Transforms
+========================
+
+Footnote Gathering
+------------------
+
+Collect and move footnotes to the end of a document.
+
+
+Hyperlink Target Gathering
+--------------------------
+
+It probably comes in two phases, because in a Python context we need
+to *resolve* them on a per-docstring basis [do we? --DG], but if the
+user is trying to do the callout form of presentation, they would then
+want to group them all at the end of the document.
+
+
+Reference Merging
+-----------------
+
+When merging two or more subdocuments (such as docstrings),
+conflicting references may need to be resolved.  There may be:
+
+- duplicate reference and/or substitution names that need to be made
+  unique; and/or
+- duplicate footnote numbers that need to be renumbered.
+
+Should this be done before or after reference-resolving transforms
+are applied?  What about references from within one subdocument to
+inside another?
+
+
+Document Splitting
+------------------
+
+If the processed document is written to multiple files (possibly in a
+directory tree), it will need to be split up.  References will have to
+be adjusted.
+
+(HTML only?  See Distributors_ below.)
+
+
+Navigation
+----------
+
+If a document is split up, each segment will need navigation links:
+parent, children (small TOC), previous (preorder), next (preorder).
+
+
+Index
+-----
+
+@@@
+
+
+I/O APIs
+========
+
+Can we use codecs for this?  Input to parser and output from formatter
+are strings, but the intermediate data structure is a DOM tree.
+
+
+Docstring Extractor
+===================
+
+We need code that scans a parsed Python module, and returns an ordered
+tree containing the names, docstrings (including attribute and
+additional docstrings), and additional info (in parentheses below) of
+all of the following objects:
+
+- packages
+- modules
+- module attributes (+ values)
+- classes (+ inheritance)
+- class attributes (+ values)
+- instance attributes (+ values)
+- methods (+ formal parameters & defaults)
+- functions (+ formal parameters & defaults)
+
+(Extract comments too?  For example, comments at the start of a module
+would be a good place for bibliographic field lists.)
+
+In order to evaluate interpreted text cross-references, namespaces for
+each of the above will also be required.
+
+See python-dev/docstring-develop thread "AST mining", started on
+2001-08-14.
+
+
+Python Source Reader
+====================
+
+The Python Source Reader ("PySource") model that's evolving in my mind
+goes something like this:
+
+1. Extract the docstring/namespace [#]_ tree from the module(s) and/or
+   package(s).
+
+   .. [#] See `Docstring Extractor`_ above.
+
+2. Run the parser on each docstring in turn, producing a forest of
+   doctrees (per nodes.py).
+
+3. Join the docstring trees together into a single tree, running
+   transforms:
+
+   - merge hyperlinks
+   - merge namespaces
+   - create various sections like "Module Attributes", "Functions",
+     "Classes", "Class Attributes", etc.; see the DPS spec/ppdi.dtd
+   - convert the above special sections to ordinary DPS nodes
+
+4. Run transforms on the combined doctree.  Examples: resolving
+   cross-references/hyperlinks (including interpreted text on Python
+   identifiers); footnote auto-numbering; first field list ->
+   bibliographic elements.
+
+   (Or should step 4's transforms come before step 3?)
+
+5. Pass the resulting unified tree to the writer/builder.
+
+I've had trouble reconciling the roles of input parser and output
+writer with the idea of modes ("readers" or "directors").  Does the
+mode govern the tranformation of the input, the output, or both?
+Perhaps the mode should be split into two.
+
+For example, say the source of our input is a Python module.  Our
+"input mode" should be the "Python Source Reader".  It discovers (from
+``__docformat__``) that the input parser is "reStructuredText".  If we
+want HTML, we'll specify the "HTML" output formatter.  But there's a
+piece missing.  What *kind* or *style* of HTML output do we want?
+PyDoc-style, LibRefMan style, etc.  (many people will want to specify
+and control their own style).  Is the output style specific to a
+particular output format (XML, HTML, etc.)?  Is the style specific to
+the input mode?  Or can/should they be independent?
+
+I envision interaction between the input parser, an "input mode" , and
+the output formatter.  The same intermediate data format would be used
+between each of these, being transformed as it progresses.
+
+
+
+Local Variables:
+mode: indented-text
+indent-tabs-mode: nil
+sentence-end-double-space: t
+fill-column: 70
+End:
