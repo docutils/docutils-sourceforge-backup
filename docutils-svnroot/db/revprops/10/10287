@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-01-07T13:40:59.207305Z
+K 7
+svn:log
+V 215
+Use name of custom role based on "code" as its language default.
+
+Now,
+
+    .. role:: python(code)
+
+suffices to define a role with syntax highlight for Python code.
+
+Turn off syntax highlight with `:langauge: none`.
+END
