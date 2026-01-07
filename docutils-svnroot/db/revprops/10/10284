@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-01-07T07:52:27.841331Z
+K 7
+svn:log
+V 473
+LaTeX writer: don't write labels for implicit IDs that are not referenced.
+
+With LaTeX-generated PDFs, there is no (easy) way to link to a fragment from
+an external source. Therefore, we only need `\label` macros for IDs that actually
+are either from an explicit target (or a directive with "name" option) or
+referenced to from the current document (internal cross-links).
+
+This drops most labels from section titles, making the TeX file less verbose
+and faster to compile.
+END

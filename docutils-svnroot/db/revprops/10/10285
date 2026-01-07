@@ -1,0 +1,26 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-01-07T07:52:49.000342Z
+K 7
+svn:log
+V 594
+Move LaTeX styling for "html-roles" definitions to docutils.sty.
+
+The "standard definition file" "html-roles.txt" contained a "raw" directive
+with LaTeX macros for the styling of the "semantic markup" roles added by
+this file. This leads to WARNING messages, if applications disable the "raw"
+directive for security reasons.
+
+Move the definitions to the LaTex package/stylefile "docutils.sty" and
+ensure that relevant definitions are loaded on demand.
+
+Nice side effects:
+
+* works also if any of the roles are defined via the "role" directive
+* less overhead if just some of the roles are used.
+END

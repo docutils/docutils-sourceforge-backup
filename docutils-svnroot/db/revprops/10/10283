@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-01-07T07:52:09.223140Z
+K 7
+svn:log
+V 226
+More relaxed "include" directive.
+
+The options :start-after: and :end-before: may now also be used
+with an empty value field (standing for an empty line).
+
+The severity of reported errors is lowered from 4: SEVERE to 3: ERROR.
+END

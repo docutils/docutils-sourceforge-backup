@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-01-07T07:51:16.650997Z
+K 7
+svn:log
+V 386
+Fix "input_offset" in tables.
+
+When parsing the cell content of grid tables and simple tables,
+the "input_offset" passed to the nested parser was off by one line.
+
+This led to wrong "lineno" and "content_offset" attributes in Directive
+class instances and to wrong line numbers in system-messages.
+
+Fixes bug #517.
+
+TODO: the reported line numbers for CSV table content are still wrong.
+END

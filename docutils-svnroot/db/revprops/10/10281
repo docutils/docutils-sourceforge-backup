@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-01-07T07:51:37.979281Z
+K 7
+svn:log
+V 129
+Bump version to 0.23b.dev
+
+It seems the 0.22.4 release did not break things.
+Let's start with announced changes and new features.
+END
