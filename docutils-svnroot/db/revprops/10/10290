@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-01-11T19:35:49.676273Z
+K 7
+svn:log
+V 169
+Update FAQ answer about MIME type.
+
+Document the 3rd party entry "text/prs.fallenstein.rst" in the
+"personal or vanity" IANA Media Type Registration Tree.
+
+Cf. bug #516.
+END
