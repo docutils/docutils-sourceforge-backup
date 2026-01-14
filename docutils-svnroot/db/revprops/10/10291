@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-01-14T20:46:05.117297Z
+K 7
+svn:log
+V 288
+HTML5 writer: Use the last "ids" value for the section-self-link.
+
+If a section has several IDs, use the last one
+(from the first explicit target) in the "self-link".
+
+All hyperlinks to the section stay valid (we only change which ID is
+shown to users when hovering over the link symbol).
+END
