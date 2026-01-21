@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-01-21T15:18:32.505199Z
+K 7
+svn:log
+V 417
+Fix :number-lines: option of the "include" directive.
+
+Fix Sphinx issue #14261: ":number-lines: 0 for includes does not work correctly".
+
+Commit [r9909] changed the conversion function to return "None" or an integer.
+The former simple test for an optional start value failed for value 0,
+because bool("0") == True but bool(0) == False.
+
+Use the conversion function `value_or((None,), int)` also in the Code directive.
+END
