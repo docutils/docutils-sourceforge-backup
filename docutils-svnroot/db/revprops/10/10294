@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-01-25T14:12:56.959572Z
+K 7
+svn:log
+V 197
+Fix type annotation for get_default_settings()
+
+Apply patch #216 by Dmitry Shachnev to fix type annotation
+of `get_default_settings():
+It accepts classes themselves, not instances of those classes.
+END
