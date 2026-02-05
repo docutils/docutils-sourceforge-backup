@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-02-05T21:27:00.687812Z
+K 7
+svn:log
+V 244
+"Directives" documentation: Correct the matrix of supported image formats.
+
+The ODT writer does not support vector images.
+
+The ODT format supports vector images in the ODG format,
+but this is currently not supported by the Docutils ODT writer.
+END
