@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-02-06T09:09:11.417648Z
+K 7
+svn:log
+V 339
+Re-sort class definitions in nodes.py.
+
+Move the definition of "special purpose elements" before all other
+concrete DocTree elements.
+Required for the fix to `transition.validate_position()` in the next commit
+(most "special purpose elements" must be ignored when validating that
+the transition is not first or last element of its parent).
+END

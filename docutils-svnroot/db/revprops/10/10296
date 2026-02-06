@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-02-06T09:08:56.762302Z
+K 7
+svn:log
+V 55
+Simplify check if its valid to insert a system_message.
+END
