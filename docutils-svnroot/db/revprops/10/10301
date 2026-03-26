@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-03-26T13:52:27.065313Z
+K 7
+svn:log
+V 358
+New configuration setting "legacy_ids".
+
+The next commits will enable matching element (fraction) identifiers
+when an explicit target overrides a homonymous implicit target.
+The new setting "legacy_ids" section tells the rST parser
+to keep IDs compatible to Docutils ≤ 0.22.
+
+Add a test that demonstrates the problem.
+Update documentation and test samples.
+END
