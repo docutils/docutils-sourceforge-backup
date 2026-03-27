@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-03-27T21:45:52.780322Z
+K 7
+svn:log
+V 282
+Drop spurious back references from system messages.
+
+Fix the conditional deciding whether to add a "backrefs" attribute to
+a system message.
+The test for empty `<target>`s (which are not shown in the output document)
+now also catches indirect targets with a "refid" but no children.
+END
