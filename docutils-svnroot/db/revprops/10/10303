@@ -1,0 +1,30 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-03-27T08:41:10.999634Z
+K 7
+svn:log
+V 635
+Generate identifiers for sections and ToC in transforms.
+
+If the setting "legacy_ids" is False, the rST parser does not generate
+IDs for implicit targets. OTOH, writers and the `parts.Contents` transform
+rely on section IDs. `transforms.parts.Contents` also expects an identifier
+for the `<topic>` containing the table of contents.
+
+New and changed transforms:
+
+`references.SectionIDs`
+   new, ensures all sections have an identifier.
+
+`references.IndirectHyperlinks?
+   don't break, if the "relay target" points to an element with
+   reference-name but no identifier.
+
+`parts.Contents`
+   sets an identifier for the table of contents.
+END
