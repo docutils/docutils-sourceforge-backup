@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-03-28T18:54:25.168560Z
+K 7
+svn:log
+V 360
+More tests with "legacy_ids = False".
+
+After parsing:
+
+* the ToC, a subtitle, the document and sections with unique name
+  have no identifier (added later in "transforms"),
+
+  Exception: sections with duplicate names get an identifier
+  (normalized dupname + number) for the system-message backlink.
+
+* references with embedded URI or alias have no identifier.
+END

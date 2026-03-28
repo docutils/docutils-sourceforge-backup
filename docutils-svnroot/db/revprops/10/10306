@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-03-28T18:54:04.915262Z
+K 7
+svn:log
+V 202
+Move "legacy_ids" setting to generic [parsers] config section.
+
+The change in `nodes.document.note_implicit_target()` affects all parsers,
+so the setting should be available to alternative parsers, too.
+END
