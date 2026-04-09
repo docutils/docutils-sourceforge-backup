@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-04-09T14:35:52.381225Z
+K 7
+svn:log
+V 374
+Dcumentation update.
+
+Update Public API and Backwards Compatibility Policy proposal.
+
+Add link to EP Purpose and Guidelines to documentation overview.
+Refactor PEP links: main link to upstream PEP, local copy in brackets.
+Move "stalled" PEP 256 to the "suspended projects" list.
+
+Build Docutils documentation with "legacy_ids: False".
+
+Update `Contents` transfrom docstring.
+END
