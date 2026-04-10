@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-04-10T07:39:10.301629Z
+K 7
+svn:log
+V 134
+Small documentation fixes.
+
+Add an example for "auto-id-prefix" setting.
+
+Decrease nesting level in section "Rejected Ideas" of EP 10.
+END
