@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-04-17T17:54:14.921023Z
+K 7
+svn:log
+V 380
+Ensure and test backwards compatible auto-id-prefix behaviour.
+
+Only derive IDs from duplicate names if the setting
+"auto_id_prefix" ends in "%".
+
+Sphinx still forces `auto_id_prefix = 'id"` and
+`tests/test_intl/test_intl.py::test_xml_label_targets` failed
+because an ID changed from "id1" to "explicit-target".
+
+Add test cases for `auto_id_prefix = 'id"` and `legacy_ids = True`.
+END
