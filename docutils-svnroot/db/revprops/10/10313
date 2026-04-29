@@ -1,0 +1,28 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-04-29T15:15:49.858232Z
+K 7
+svn:log
+V 541
+Documentation update.
+
+Reword description of LaTeX writer changes.
+
+Reword description of doctree element attributes.
+
+doctree doc: Solve ID conflict of "footnote references" section
+vs. "footnote_references" configuration setting.
+
+Fix documentation of "raw_enabled" and "file_insertion_enabled" settings.
+
+Remove non-working footnote styling example from LaTeX writer documentation.
+Fix another non-working example.
+
+Update "Citations" problem description in LaTeX writer documentation --
+footnotes stopped using "figure floats" years ago.
+END
