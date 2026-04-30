@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-04-30T19:17:27.925226Z
+K 7
+svn:log
+V 163
+latex-footnotes: Fix self-referencing footnote.
+
+Register processed footnotes before handling the content
+so that a self-referencing footnote is not printed twice.
+END

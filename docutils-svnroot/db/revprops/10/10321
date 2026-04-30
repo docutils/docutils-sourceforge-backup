@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-04-30T19:18:34.989637Z
+K 7
+svn:log
+V 277
+Replace "docutils_footnotes" setting with "latex_footnotes".
+
+* The name fits better with other LaTeX writer settings.
+* The name change makes the setting easier to explain and memorize.
+
+Default behaviour and command line options remain unchanged.
+
+Document "latex-footnotes".
+END

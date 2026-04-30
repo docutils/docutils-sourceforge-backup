@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-04-30T19:18:46.224234Z
+K 7
+svn:log
+V 317
+latex-footnotes: Fix footnotes in titles.
+
+`\protect` the `\footnote` command in the title of the document, sections,
+admonitions, topics and sidebars.
+
+Add use case to functional test sample.
+
+Document the failure of footnotes in sidebars (can be fixed by re-defining
+DUsidebar using a minipage instead of a parbox).
+END

@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-04-30T19:16:50.718182Z
+K 7
+svn:log
+V 235
+Functional test for latex-footnotes.
+
+Update and use the sample document "footnote-targets.rst" for a
+functional test of "LaTeX footnotes".
+
+The "expected" *.tex document contains some bugs that will be solved
+in the following commits.
+END

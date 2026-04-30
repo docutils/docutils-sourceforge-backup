@@ -1,0 +1,38 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-04-30T19:16:39.455148Z
+K 7
+svn:log
+V 1019
+Implement the --latex-footnotes option for 99% of use cases.
+
+Contributed by John Thorvald Wodder II <git@varonathe.org>
+on https://sourceforge.net/p/docutils/patches/182/
+
+Shortcomings of this implementation:
+
+ * Footnotes aren't hyperlinked back to their references.
+   I am not aware of a way to solve this without basically
+   reimplemeting docutils-footnotes.
+
+ * Recursive footnotes are not supported and will cause
+   a recursion error. Support would require tracking and
+   referencing (à la https://tex.stackexchange.com/a/23158/) the
+   number that LaTeX assigns to each footnote, which normally
+   resets on chapters and would be broken by packages like
+   footmisc and perpage.
+
+ * If the same footnote is referenced multiple times, it will be
+   treated as a new footnote each time. I believe this has the
+   same solution as the above.
+
+ * If a footnote contains two or more nested
+   footnotes, the numbering will be messed up; see
+   https://tex.stackexchange.com/q/38643/ for a way to address
+   this.
+END

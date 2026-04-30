@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-04-30T19:17:38.702513Z
+K 7
+svn:log
+V 195
+latex-footnotes: Only add label if required.
+
+A footnote only needs a `\label` if there is more than one reference to it
+or the footnote is referenced from inside a footnote ("nested footnotes").
+END

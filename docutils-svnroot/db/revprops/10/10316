@@ -1,0 +1,27 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-04-30T19:17:00.952044Z
+K 7
+svn:log
+V 424
+Fixup for latex-footnotes.
+
+Only deactivate "hyperfootnotes" if ``docutils_footnotes`` is True.
+
+Simplify code:
+  After the `Footnotes` transform, all footnote references contain
+  a "refid" attribute.
+
+  Use `document.ids` (a mapping of ids to nodes populated by the
+  parser and transforms) to get the footnote text.
+
+Add comments.
+
+The functional test fails with a RecursionError.
+This will be solved in the next commits.
+END

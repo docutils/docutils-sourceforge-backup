@@ -1,0 +1,25 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-04-30T19:17:18.029722Z
+K 7
+svn:log
+V 444
+latex-footnotes: Fix nested footnotes and multiple references.
+
+Store footnote ID (instead of footnote content) in the "footnote_queue".
+Store IDs of already set footnotes in "processed_footnotes".
+
+Add a `\label` to all footnotes.
+
+Use `\footref` and `\footnotetext` for nested footnotes.
+
+If a footnote is referenced again, just insert a `\footref` reference.
+
+Call `visit_reference()` if the target of a footnote-reference
+is not a footnote.
+END
