@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-05-07T12:36:02.466427Z
+K 7
+svn:log
+V 112
+latex-footnotes: Fix PDF sidebar.
+
+Prevent footnotes in section titles from showing up in the PDF "sidebar ToC".
+END

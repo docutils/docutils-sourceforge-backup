@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-05-07T12:36:11.970709Z
+K 7
+svn:log
+V 362
+LaTeX writer: fix styling if footnote ends with an admonition.
+
+Footnotes in LaTeX are not designed for block-level content and have
+therefore uneven spacing around lists, tables, etc.
+To work around an overlap with a subsequent footnote, add a `\smallskip`
+if a footnote ends with an admonition.
+
+Add a functional test case (for checking the layout in the PDF).
+END
