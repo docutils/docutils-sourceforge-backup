@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-05-08T14:57:15.570357Z
+K 7
+svn:log
+V 284
+LaTeX writer: Fix footnote references in titles.
+
+Safeguarding footnotes in titles with `\texofpdfstring` and `\protect`
+is also required with "docutils-footnotes".
+
+The new `\DUbracketfootnotemark` command allows cleaner LaTeX code if
+the "footnote-references" setting is "brackets".
+END

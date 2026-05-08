@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-05-08T14:56:31.807864Z
+K 7
+svn:log
+V 238
+Documentation update.
+
+Fix/Update links.
+
+Correct description of "footnote_references" config setting.
+Amend description of "latex_footnotes" config setting.
+
+LaTeX doc:
+Use citations instead of simple links for the official LaTeX guides.
+END

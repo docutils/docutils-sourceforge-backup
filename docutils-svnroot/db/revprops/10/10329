@@ -1,0 +1,25 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-05-08T14:57:03.180182Z
+K 7
+svn:log
+V 503
+Update functional test for footnotes and footnote references.
+
+footnotes.rst:
+  Trim the "Citations" section title. (Only include "standard.rst"
+  from "Footnotes" to "Citations", copy sample citation.)
+
+  Add a section title with footnote reference as this needs testing
+  with latex-footnotes.
+  The LaTeX compilation failure will be fixed in the next commit.
+
+footnote-references.rst:
+  Refactor to include footnotes referenced from tables and directives
+  while keeping it self-explaining and short.
+END

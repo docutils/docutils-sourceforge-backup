@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-05-08T14:57:38.223343Z
+K 7
+svn:log
+V 110
+Define public API and backwards compatibility policy.
+
+Accept and implement EP 10 (cf. [feature-requests:#89].
+END

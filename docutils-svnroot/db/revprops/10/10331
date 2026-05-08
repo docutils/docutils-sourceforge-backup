@@ -1,0 +1,26 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-05-08T14:57:28.557293Z
+K 7
+svn:log
+V 496
+LaTeX writer: improve rendering of unreferenced footnotes.
+
+The "backrefs" attribute of a `<footnote>` is empty, if there is no matching
+`<footnote_reference>` but the `\DUfootnote` command expects a backref.
+Use an empty string instead of a self-reference as fallback value.
+The LaTeX warning changes from
+
+  name{[...]} has been referenced but does not exist, replaced by a fixed one
+
+to
+
+  Suppressing link with empty target [...]
+
+which is better than a spurious backlink to the document top.
+END

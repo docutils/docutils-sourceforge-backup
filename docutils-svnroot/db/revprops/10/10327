@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-05-08T14:56:41.321239Z
+K 7
+svn:log
+V 250
+LaTeX writer: Simplifications.
+
+Simplify LaTeX "footnote" code: Always put a "%" after
+`\DUfootnotetext{`.  No change in the compiled PDF.
+
+Simpler LaTeX code for `footnote_references = "brackets"`.
+There is no need to safeguard square brackets here.
+END
