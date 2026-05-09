@@ -1,0 +1,52 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2026-05-09T10:18:14.864847Z
+K 7
+svn:log
+V 2247
+version 0.23rc2.dev
+ss Diese und die folgenden Zeilen werden ignoriert --
+
+M    docutils/HISTORY.rst
+M    docutils/README.rst
+M    docutils/RELEASE-NOTES.rst
+M    docutils/docutils/__init__.py
+M    docutils/test/functional/expected/buggy_mathml.html
+M    docutils/test/functional/expected/buggy_mathml_blahtexml.html
+M    docutils/test/functional/expected/buggy_mathml_pandoc.html
+M    docutils/test/functional/expected/buggy_mathml_ttm.html
+M    docutils/test/functional/expected/compact_lists.html
+M    docutils/test/functional/expected/dangerous.html
+M    docutils/test/functional/expected/field_name_limit.html
+M    docutils/test/functional/expected/footnotes_html5.html
+M    docutils/test/functional/expected/length_units_html5.html
+M    docutils/test/functional/expected/math_experiments_mathml.html
+M    docutils/test/functional/expected/math_experiments_mathml_blahtexml.html
+M    docutils/test/functional/expected/math_experiments_mathml_pandoc.html
+M    docutils/test/functional/expected/math_experiments_mathml_ttm.html
+M    docutils/test/functional/expected/math_output_html.html
+M    docutils/test/functional/expected/math_output_latex.html
+M    docutils/test/functional/expected/math_output_mathjax.html
+M    docutils/test/functional/expected/math_output_mathml.html
+M    docutils/test/functional/expected/mathematics_mathml.html
+M    docutils/test/functional/expected/mathematics_mathml_blahtexml.html
+M    docutils/test/functional/expected/mathematics_mathml_pandoc.html
+M    docutils/test/functional/expected/mathematics_mathml_ttm.html
+M    docutils/test/functional/expected/misc_rst_html4css1.html
+M    docutils/test/functional/expected/misc_rst_html5.html
+M    docutils/test/functional/expected/pep_html.html
+M    docutils/test/functional/expected/rst_html5_tuftig.html
+M    docutils/test/functional/expected/standalone_rst_docutils_xml.xml
+M    docutils/test/functional/expected/standalone_rst_html4css1.html
+M    docutils/test/functional/expected/standalone_rst_html5.html
+M    docutils/test/functional/expected/standalone_rst_manpage.man
+M    docutils/test/functional/expected/standalone_rst_s5_html_1.html
+M    docutils/test/functional/expected/standalone_rst_s5_html_2.html
+M    docutils/test/test_writers/test_manpage.py
+
+END

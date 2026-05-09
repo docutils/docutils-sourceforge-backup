@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 7
+grubert
+K 8
+svn:date
+V 27
+2026-05-09T10:21:22.656426Z
+K 7
+svn:log
+V 111
+release 0.23rc1
+--se Diese und die folgenden Zeilen werden ignoriert --
+
+M    infrastructure/releasing-log.rst
+
+END
