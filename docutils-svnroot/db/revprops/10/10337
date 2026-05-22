@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-05-22T10:32:28.043759Z
+K 7
+svn:log
+V 63
+Prepare docs for 0.23; tag "legacy_ids" setting as provisional.
+END
