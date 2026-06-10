@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-06-10T09:54:57.061358Z
+K 7
+svn:log
+V 322
+Announce outgoing support for Python versions past their sell-by date.
+
+Also update announcement about system message, if a directive that does
+not take arguments has content above and below directive options.
+A WARNING would stand in the way in cases like::
+
+   .. note:: Summary line
+      :name: example
+
+      Details.
+END
