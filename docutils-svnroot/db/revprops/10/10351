@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-06-11T21:51:21.726489Z
+K 7
+svn:log
+V 138
+Remove the internal attribute `nodes.Targetable.indirect_reference_name`.
+
+Was required for MoinMoin <= 1.9. but is not required in Moin2.
+END

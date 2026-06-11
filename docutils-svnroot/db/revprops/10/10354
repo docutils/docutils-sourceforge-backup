@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-06-11T21:52:26.961872Z
+K 7
+svn:log
+V 161
+Remove wrapper module for the "recommonmark" parser.
+
+The 3rd party "Recommonmark" parser is unmaintained since 2021
+and deprecated in favour of the MyST parser.
+END

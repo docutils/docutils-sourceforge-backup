@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-06-11T21:51:09.768189Z
+K 7
+svn:log
+V 352
+Drop the "name" attribute from `<reference>` nodes.
+
+The "name" attribute in `<reference>` nodes was added for the MoinMoin Wiki
+but is no longer used in Moin2. Its use with <reference> has been deprecated
+since Docutils 0.21.
+
++ less redundancy in XML and pseudoXML output
++ simpler definition of the remaining "name" attribute
+  in `<meta>` elements.
+END

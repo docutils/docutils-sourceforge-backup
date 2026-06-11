@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-06-11T21:52:10.481255Z
+K 7
+svn:log
+V 200
+Remove `utils.decode_path()` and `utils.get_stylesheet_reference()`.
+
+`utils.decode_path()`: not required with Python 3.
+`utils.get_stylesheet_reference()`: obsoleted by `utils.get_stylesheet_list()`.
+END
