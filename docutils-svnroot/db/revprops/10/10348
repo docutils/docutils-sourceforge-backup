@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-06-11T07:46:01.679094Z
+K 7
+svn:log
+V 173
+Drop the DESTINATION positional argument.
+
+Use ``--output=DESTINATION`` (cf. the "output_path_" configuration setting)
+or output redirection.
+
+Solves [feature-requests:#36].
+END

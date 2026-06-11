@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-06-11T05:54:43.864984Z
+K 7
+svn:log
+V 51
+Implement the removals announced for Docutils 0.24.
+END

@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-06-11T06:05:32.734409Z
+K 7
+svn:log
+V 99
+Accept the short option ``-o`` for ``--output``.
+
+Suppress help for option alias ``--output-path``.
+END

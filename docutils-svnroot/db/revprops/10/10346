@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-06-11T06:05:06.092699Z
+K 7
+svn:log
+V 265
+Fix CSS selector for "topics" in HTML5.
+
+In HTML5, a `<topic>` is exported as `<aside>` with class topic.
+Styling just based on the "class" value leads to problems with
+other elements using "topic" as class value, e.g.
+a docinfo item "topic" in Enhancement Reports.
+END
