@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-06-12T21:49:56.466903Z
+K 7
+svn:log
+V 296
+Remove `input_encoding` auto-detection code.
+
+With Unicode and UTF-8 now beeing universally supported,
+we want to keep it simple.
+
+Users still relying of input-encoding auto-detection are referred to
+the "inspecting_codecs" package for a replacement.
+
+https://codeberg.org/milde/inspecting-codecs
+END

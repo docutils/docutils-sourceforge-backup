@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-06-12T21:49:45.759630Z
+K 7
+svn:log
+V 59
+Update release notes.
+
+Fix typos, improve wording, shorten.
+END
