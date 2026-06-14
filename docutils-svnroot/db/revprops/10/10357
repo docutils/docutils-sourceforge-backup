@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-06-14T21:16:29.608098Z
+K 7
+svn:log
+V 265
+Remove the "TransformSpec.unknown_reference_resolvers" hook chain.
+
+This hook was added for the MoinMoin wiki rST parser but is
+no longer used in Moin2.
+
+Unknown references can be solved in a transform,
+see `transforms.references.CitationReferences` for an example.
+END
