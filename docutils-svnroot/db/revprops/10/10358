@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-06-16T17:13:37.707627Z
+K 7
+svn:log
+V 307
+Lower  the default priority of the `SmartQuotes` transform; documentation fixes.
+
+Change the default priority of the `SmartQuotes` transform
+from 855 (very late) to 510 (main).
+
+Fix spelling of the `frontmatter.SectionSubTitle` transform.
+
+Shorten docstring of the `references.DanglingReferences` Transform.
+END
