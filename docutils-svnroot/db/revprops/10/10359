@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-06-17T06:33:47.118601Z
+K 7
+svn:log
+V 276
+Split `DanglingReferences` transform
+
+... into `MatchReferences`, `ReportDanglingReferences, and
+`ReportUnreferencedTargets` to allow applications/components to
+selectively activate the transformation steps and/or to handle unresolved
+references before leftovers are reported.
+END
