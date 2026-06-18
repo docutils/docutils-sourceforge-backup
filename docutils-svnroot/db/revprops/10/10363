@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-06-18T07:56:49.567736Z
+K 7
+svn:log
+V 138
+Small fixes.
+
+Remove redundant lines from test scripts.
+
+"Unblack" code formatting.
+
+Use `True` instead of 1 for boolean true.
+
+Fix typos.
+END
