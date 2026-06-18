@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-06-18T13:27:39.703466Z
+K 7
+svn:log
+V 177
+Inform when a directive has content above and below options.
+
+Generate an INFO message if a directive that does not take arguments
+has content above and below directive options.
+END

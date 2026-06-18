@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-06-18T13:28:08.595066Z
+K 7
+svn:log
+V 262
+Change "section_self_link" setting default to True.
+
+The "section_self_link" setting tells the HTML5 writer to
+extend section headings with an empty <a> element with a ``href``
+to the section.
+
+CSS rules show a link symbol when the mouse hovers over the heading.
+END
