@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-06-22T12:04:21.526196Z
+K 7
+svn:log
+V 167
+End support for the special "encoding" value "" (empty string).
+
+Remove exception for `""` in `frontend.validate_encoding()`.
+
+Fix error message for unknown encodings.
+END
