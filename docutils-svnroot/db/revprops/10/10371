@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-06-23T17:20:41.002908Z
+K 7
+svn:log
+V 534
+HTML5 writer: More robust handling of figure captions.
+
+The content models of "figure" elements in the Doctree and HTML differ, so
+we cannot easily map a `<caption>` to a `<figcaption>`.
+Use the same conditions for opening and closing tag of a HTML `<figcaption>`
+element, so that the tags are balanced also in case of invalid `<figure>`
+child elements (e.g. a `<system-message>`).
+(cf. https://docutils.sourceforge.io/docs/ref/doctree.html#caption,
+https://html.spec.whatwg.org/multipage/grouping-content.html#the-figcaption-element)
+END
