@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-06-23T14:59:05.102596Z
+K 7
+svn:log
+V 93
+Postpone removal of `nodes.set_name_id_map()`
+
+... as already announced in the RELEASE NOTES.
+END

@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-06-23T14:59:13.052070Z
+K 7
+svn:log
+V 255
+Ignore the "match_titles" argument of `RSTState.nested_list_parse()`.
+
+The rST parser function `parsers.rst.states.RSTState.nested_list_parse()`
+is used to parse the content of lists and list-like constructs where
+section titles are generally not allowed.
+END
