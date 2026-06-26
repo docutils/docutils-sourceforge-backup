@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-06-26T10:26:58.234781Z
+K 7
+svn:log
+V 384
+"responsive.css": Highlight `<h1>` link target.
+
+Add selectors for `<h1>` to the CSS rule highlighting section headings
+if they are the current ":target" in the "responsive.css" stylesheet of the
+HTML5 writer.
+
+Since the change of the "initial_header_level" setting default to "auto"
+in [r10365], `<h1>` is regularely used for top-level section headings if
+there is no document title.
+END
