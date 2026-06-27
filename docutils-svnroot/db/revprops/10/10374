@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-06-27T17:25:52.707393Z
+K 7
+svn:log
+V 129
+Update command-line help.
+
+Use more consistent style.
+
+After 10 years, character_level_inline_markup is no longer "experimental".
+END

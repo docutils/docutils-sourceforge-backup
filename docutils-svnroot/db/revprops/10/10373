@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-06-27T17:25:07.548516Z
+K 7
+svn:log
+V 191
+Imrove readability of generated HTML5 document source.
+
+Add newlines to the `<span>` elements used for additional IDs
+if the context allows.  Makes affected section title lines a bit shorter.
+END

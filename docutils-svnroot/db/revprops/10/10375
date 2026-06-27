@@ -1,0 +1,20 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-06-27T17:26:02.929688Z
+K 7
+svn:log
+V 276
+Revise `SettingsSpec` definitions.
+
+Use more consistent style.
+
+A `frontend.validate_boolean` validator is required for boolean settings
+(converts config file entries to True/False).
+It does not need to be specified again in the "reverse-option" for the same
+setting variable.
+END
