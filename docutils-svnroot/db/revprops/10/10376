@@ -1,0 +1,22 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-06-29T14:03:43.647965Z
+K 7
+svn:log
+V 319
+Improve warning for figures without caption.
+
+Move details to a separate paragraph (not shown in console output).
+
+Add hint to cheat with an empty comment in place of the caption.
+
+Note: When cheating with an empty comment, the `<figure>` element
+remains invalid (but most writers can handle this).
+
+Fixup for [r10370].
+END
