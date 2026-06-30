@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-06-30T08:11:33.190589Z
+K 7
+svn:log
+V 330
+Make section-titles test sample less discombobulating.
+
+The "section_titles.rst" functional test sample tests, among other things,
+inline markup (including a reference) in a section title.
+
+Move the sample refeference's target to a place where it makes some sense
+instead of causing puzzlement.  Adapt the tests using this sample.
+END

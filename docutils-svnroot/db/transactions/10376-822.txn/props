@@ -1,0 +1,34 @@
+K 10
+svn:author
+V 5
+milde
+K 15
+svn:check-locks
+V 4
+true
+K 8
+svn:date
+V 27
+2026-06-30T08:08:16.017070Z
+K 7
+svn:log
+V 319
+Improve warning for figures without caption.
+
+Move details to a separate paragraph (not shown in console output).
+
+Add hint to cheat with an empty comment in place of the caption.
+
+Note: When cheating with an empty comment, the `<figure>` element
+remains invalid (but most writers can handle this).
+
+Fixup for [r10370].
+K 29
+svn:txn-client-compat-version
+V 6
+1.14.5
+K 18
+svn:txn-user-agent
+V 44
+SVN/1.14.5 (x86_64-pc-linux-gnu) serf/1.3.10
+END
