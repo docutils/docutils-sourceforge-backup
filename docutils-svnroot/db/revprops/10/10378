@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-07-13T11:13:03.195325Z
+K 7
+svn:log
+V 193
+Inform if a target cannot be propagated to the next element.
+
+Add an INFO system_message if a `<target>` cannot be "propagated" because the
+next element is invisible, a footnote, or a citation.
+END
