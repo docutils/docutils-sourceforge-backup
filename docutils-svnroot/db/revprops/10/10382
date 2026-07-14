@@ -1,0 +1,33 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-07-14T13:32:05.488397Z
+K 7
+svn:log
+V 691
+"lazy IDs": Don't generate IDs for external and indirect targets.
+
+External and indirect targets have a "refuri", "refname" or "refid"
+attribute that is transferred to all references to this target
+(by the `IndirectHyperlinks` transform for named targets and by the
+`AnonymousHyperlinks` transform for anonymouns targets).
+The target's ID is not required and not shown in the output.
+
+The change keeps the "identifier" namespace clean.
+Example: The reference names "topic" and "<topic>" both map to the ID "topic".
+With "legacy_ids", the section title in the following sample
+would get the ID "topic-1":
+
+~~~
+.. _<topic>: ../doctree.html#topic
+
+Topic
+=====
+
+:Doctree Element: `\<topic>`_
+~~~
+END

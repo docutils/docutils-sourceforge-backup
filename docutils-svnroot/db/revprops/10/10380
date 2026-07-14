@@ -1,0 +1,32 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-07-14T13:31:13.390327Z
+K 7
+svn:log
+V 579
+Small fixes.
+
+Fix typos, improve wording and formatting at various places.
+
+Remove obsolete change announcements.
+
+Sort link targets.
+
+Update comments and simplifiy conditional in nodes.py.
+
+Update `document.names` after transferring names from explicit internal targets,
+simplify conditional, and use `True` instead of 1 for boolean value
+in transforms/references.py.
+
+Format code in html5 writer. More precise condition in `section_title_tags()`.
+
+Simplify CSS rule to highlight "targeted" elements,
+also highlight target admonitions and topics.
+
+No change to tested behaviour.
+END

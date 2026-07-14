@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-07-14T13:31:00.939948Z
+K 7
+svn:log
+V 463
+Add test for the bug with anonymous links to images with a :target:.
+
+Anonymous internal hyperlinks to "clickable" images currently link to the
+wrapping `<reference>` instead of the `<image>`.
+The reference is handled similar to an indirect target: the reference's
+"refid" or "refuri" is transferred to the internal reference.
+
+As a result, clicking the hyperlink reference to the image brings you
+directly to the image's "target" (instead of the internal image).
+END

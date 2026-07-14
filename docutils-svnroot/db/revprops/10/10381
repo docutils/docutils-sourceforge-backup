@@ -1,0 +1,24 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-07-14T13:31:29.859520Z
+K 7
+svn:log
+V 436
+"lazy IDs": Generate "implicit" section IDs only if required.
+
+Do not load/run the `SectionIDs` transform.
+Keep it so that components/applications that want IDs on all sections
+can easily add it to their `get_transforms_spec()` method.
+
++ Links from the ToC and "self-links" use the same ID
+  ("explicit" ID, if available).
+
++ Less "noise" in the output document.
+
+Full backwards compatibility can be achieved with setting "legacy_ids".
+END
