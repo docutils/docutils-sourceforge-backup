@@ -1,0 +1,39 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-07-15T18:57:56.218849Z
+K 7
+svn:log
+V 1056
+"lazy IDs": postpone generation of IDs for explicit targets.
+
+Generate IDs for explicit targets after parsing is complete:
+
+`nodes.document.note_explicit_target()` only generates an ID for the target,
+if the "legacy_ids" setting is True.
+
+The `transforms.references.PropagateTargets` transform adds IDs to
+internal explicit targets (which may also be <topics> or other elements)
+before "propagating" empty targets.
+
+`transforms.references.Footnotes.number_footnote_references()`
+sets IDs on footnotes with "reference name" but no ID.
+
+This is a precondition for a future check whether the destination of
+to-be-propagated targets is an external or indirect target that does
+not require an ID. For example in
+~~~
+.. _e.g.:
+.. _example: eg.html
+~~~
+the second target may become `<target names="example e.g." refuri="eg.html">`
+instead of `<target ids="e-g" names="example e.g." refuri="eg.html">`.
+
+Adapt tests: the output of parser tests has no IDs for explicit targets,
+nor has the output of transform tests that do not run the `PropagateTargets`
+transform.
+END
