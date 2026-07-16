@@ -1,0 +1,29 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-07-16T10:43:14.159538Z
+K 7
+svn:log
+V 703
+"lazy IDs": postpone generation of IDs for anonymous targets.
+
+Generate IDs for explicit targets after parsing is complete:
+
+`nodes.document.note_explicit_target()` only generates an ID for the target,
+if the "legacy_ids" setting is True.
+
+The `transforms.references.PropagateTargets` transform now can also
+propagate targets without reference name or ID and sets an ID on the
+destination of the propagation if required.
+
+This is a precondition for a future check whether the destination of
+to-be-propagated anonymous targets is an external or indirect target
+that does not require an ID.
+
+Anonymous internal targets now re-use an existing ID or get an auto-ID
+based on the tagname of the target element
+END

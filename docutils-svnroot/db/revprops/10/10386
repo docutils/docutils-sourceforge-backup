@@ -1,0 +1,28 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-07-16T10:43:33.187589Z
+K 7
+svn:log
+V 695
+Fix issue with inline targets containing substring "refname" or "refuri".
+
+`nodes.Node.next_node()` may return a `nodes.Text` instance
+where ``if "refname" in node`` does not test for attributes but
+the substring "refname" in the text content.
+
+This led to `<target names="%refname.att">%refname.att</target>`
+beeing wrongly identified as an indirect target and a subsequent
+AssertionError because the corresponding `<reference>` did not get
+a "refid" attribute.
+
+Adding a check makes `PropagateTargets.next_suitable_target()`
+return None if called with a non-empty start target.
+
+For added robustness, `PropagateTargets.is_internal()` checks if
+the given argument is a `nodes.Element` instance.
+END

@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-07-16T10:43:24.207095Z
+K 7
+svn:log
+V 151
+"lazy IDs": handle "chained" targets.
+
+Recursively test the next nodes of a to-be-propagated target; only set IDs
+if it is an explicit internal target.
+END
