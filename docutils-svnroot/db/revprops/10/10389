@@ -1,0 +1,26 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-07-21T17:55:03.300515Z
+K 7
+svn:log
+V 615
+Use `%tbl.table.att` instead of `%bodyatt` in docutils.dtd.
+
+Use the ``%tbl.table.att`` parameter entity instead of ``%bodyatt``
+to customize the <table> element's attribute list.
+The "CALS XML Exchange Table Model" defines both parameter entities
+(%bodyatt for backwards compatibility).
+
+Move the reference to the CALS-table model behind the declarations of
+the customization parameter entities:
+
+> [...] these entities can be redefined (by giving the appropriate
+> parameter entity declaration(s) prior to the reference
+> to this Table Model declaration set entity)
+-- https://www.oasis-open.org/specs/tm9901.html
+END
