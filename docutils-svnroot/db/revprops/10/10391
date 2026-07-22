@@ -1,0 +1,23 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-07-22T20:59:24.244028Z
+K 7
+svn:log
+V 457
+Use `<inline>` elements for inline targets (anchors).
+
+As all Doctree elements support "ids" and "names" attributes, there is no need
+to use a `<target>` element, the generic `<inline>` is well suited.
+
+Therefore, `<target>` elements will become "Empty Body Elements" and
+use of `<target>` in inline context or with content become invalid in
+Docutils 2.0.
+
+The "rst" parser now uses `<inline>` (instead of `<target>`) elements
+for "inline internal targets".
+END

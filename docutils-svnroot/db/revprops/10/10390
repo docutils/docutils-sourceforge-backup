@@ -1,0 +1,17 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-07-22T20:59:04.158559Z
+K 7
+svn:log
+V 220
+The `<footnote>` element's first child (`<label>`) is now mandatory.
+
+The rST parser always only created footnotes with label.
+The "doctree" element reference says
+"The <footnote> element is used for labelled notes …".
+END
