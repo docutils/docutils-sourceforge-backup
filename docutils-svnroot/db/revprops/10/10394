@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-08-21T08:27:55.292965Z
+K 7
+svn:log
+V 378
+Avoid unescaped special characters in PEP HTML output.
+
+Do not use a "raw" html node to mask author email address in PEP transforms.
+The email masking is now a bit less obscuring but this should be OK for
+local previews (the official PEPs are produced with a different toolchain).
+
+Escape special HTML characters in HTML header generated from index metadata.
+
+Fixes [bugs:#519].
+END

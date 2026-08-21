@@ -1,0 +1,27 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-08-21T08:27:15.643752Z
+K 7
+svn:log
+V 710
+Deprecate obsolete parts of PEP processing.
+
+Since several years, PEPs are no longer generated using Docutils' "rst2pephtml"
+but a Sphinx with https://github.com/python/peps/tree/main/pep_sphinx_extensions.
+We keep the PEP reader and writer as a way for PEP authors to easily preview
+their drafts and edits (when restricting the rST content to the directives and
+roles supported by Docutils).
+
+Deprecate the `--no-random`, `--pep-home`, and `--python-home` settings
+of the "pep_html" writer and hide them from the command line help.
+
+Also deprecate the `transforms.peps.PEPZero` and `transforms.peps.PEPZeroSpecial`
+classes. (PEP 0 is no longer generated from a rST source.)
+
+Announce removals in Docutils 2.0.
+END
