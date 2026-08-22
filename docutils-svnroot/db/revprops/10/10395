@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-08-22T20:59:31.348473Z
+K 7
+svn:log
+V 195
+Stop XML writer from loading external entities when checking raw XML.
+
+Do not activate the "external-general-entities" feature
+of the SAX parser used to check raw XML content.
+
+Fixes [bugs:#521].
+END
