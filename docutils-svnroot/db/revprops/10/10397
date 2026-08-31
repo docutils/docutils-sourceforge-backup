@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-08-31T08:26:50.582252Z
+K 7
+svn:log
+V 468
+Store the "colwidth" attribute as a `str` variable.
+
+To match the definition as a measure (value + optional unit) in the
+"Exchange Table Model", the `"colwidth" attribute`_ is stored as
+a `str` value (instead of `int`) in Python element instances.
+This opens the way to allow fixed length units in later Docutils versions
+and to change the default unit to the Exchange Table Model's "pt".
+
+The "xml" writer adds the "proportional unit" symbol "*" to "colwidth" values.
+END
