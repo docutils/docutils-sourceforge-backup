@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-09-02T15:46:37.583929Z
+K 7
+svn:log
+V 199
+Stop `languages.get_language()` from returning incompatible modules.
+
+`get_language()` now returns ``None`` if the module found is not a
+compatible translation definitions module.  Fixes [bugs:#522].
+END
