@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-09-05T21:08:47.059227Z
+K 7
+svn:log
+V 28
+Deprecate `<doctest_block>`.
+END
