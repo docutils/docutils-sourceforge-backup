@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-09-16T16:23:03.616775Z
+K 7
+svn:log
+V 283
+Update RFC base URL to https://www.rfc-editor.org/info/.
+
+Drop ".html" file extension from the RFC URL template
+`parsers.rst.states.Inliner.rfc_url`; add a slash instead.
+
+Cf. https://github.com/ietf-tools/datatracker/issues/11334
+and https://github.com/sphinx-doc/sphinx/pull/14662.
+END
