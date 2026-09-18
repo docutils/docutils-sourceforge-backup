@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-09-18T11:52:14.547489Z
+K 7
+svn:log
+V 251
+Support the environment variable SOURCE_DATE_EPOCH.
+
+Facilitate "reproducible builds":
+If the standardized environment variable SOURCE_DATE_EPOCH is set,
+the "date" directive and the footer timestamp use its value
+instead of the current time and date.
+END
