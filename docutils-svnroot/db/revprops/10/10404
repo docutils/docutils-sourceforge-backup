@@ -1,0 +1,21 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-09-21T19:10:16.674748Z
+K 7
+svn:log
+V 384
+Move attributions out of the attributed `<blockquote>`.
+
+Comply with https://html.spec.whatwg.org/#the-blockquote-element
+by placing attributions outside, under the "blockquote" element.
+
+Adapt CSS stylesheets:
+Left-align attributions (right-aligned attributions do not not
+go well together with ragged-right text).
+Indent attributions to the same level as the attributed block-quote.
+END
