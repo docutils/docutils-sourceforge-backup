@@ -1,0 +1,19 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-09-26T17:50:44.378624Z
+K 7
+svn:log
+V 136
+Small documentation updates.
+
+Update links to creativecommons.org.
+
+Fix type hint for nodes.Node.asdom().
+
+Update/clarify TODO comments.
+END
