@@ -1,0 +1,16 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-10-02T16:05:17.651240Z
+K 7
+svn:log
+V 178
+Add "figalign" option to "figure" directive.
+
+With legacy_figure_align = False, the "align" option value is
+passed to the contained image (together with all other image options).
+END
