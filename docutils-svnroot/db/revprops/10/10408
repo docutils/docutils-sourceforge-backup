@@ -1,0 +1,27 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-10-16T00:23:19.068248Z
+K 7
+svn:log
+V 554
+New DocTree element `<line_break>`.
+
+The `<line_break>` element is a compatibility addition.
+
+In rST, the recommended syntax for use cases like poems or addresses
+is a "line block". However, translating a Markdown "hard line break"
+or a HTML `<br>` into a `<line_block>` with two or more `<lines>`
+is tricky and error prone.
+Using the inline `<line_break>` element as representation in the
+Document Tree makes translating explicit line breaks into HTML,
+LaTeX, troff, and ODT straigtforward.
+
+Fixes [feature-requests:#101].
+
+TODO: manpage writer support.
+END
