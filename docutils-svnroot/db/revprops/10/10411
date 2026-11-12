@@ -1,0 +1,18 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-11-12T09:46:17.740848Z
+K 7
+svn:log
+V 187
+Add AI policy, update copyright policy.
+
+Lay down rules for the use of AI in contributions to Docutils.
+
+Add a paragraph about contributions with unclear copyright status
+beeing rejected.
+END
