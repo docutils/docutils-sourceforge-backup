@@ -1,0 +1,15 @@
+K 10
+svn:author
+V 5
+milde
+K 8
+svn:date
+V 27
+2026-11-24T17:27:16.780258Z
+K 7
+svn:log
+V 108
+Don't embed images if "file_insertion_enabled" is False.
+
+Fixes vulnerability reported by Zachariah Mithani.
+END
